@@ -1,6 +1,6 @@
 # Investment and Trading v1
 
-Private archive of the complete shared investment research workspace: Claude and Codex research, source bundles, datasets, dashboards, scripts, audit reports and versioned releases.
+Public archive of the complete shared investment research workspace: Claude and Codex research, source bundles, datasets, dashboards, scripts, audit reports and versioned releases.
 
 ## Start here
 
@@ -40,6 +40,6 @@ git lfs pull
 
 A browser ZIP download may contain LFS pointers rather than all large-file contents; a Git LFS clone is the reliable full-workspace download. Original text bytes are preserved without automatic line-ending conversion so archived hashes remain meaningful.
 
-Open the downloaded HTML dashboards locally. GitHub's file viewer shows HTML source and does not execute the interactive dashboards. The repository is private; no public website or GitHub Pages deployment is configured.
+Open the downloaded HTML dashboards locally. GitHub's file viewer shows HTML source and does not execute the interactive dashboards. No GitHub Pages website is configured.
 
 This is research and its audit trail. Uploading it does not validate every historical claim, change an investment recommendation or authorize trades. Credentials are excluded from version control.
