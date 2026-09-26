@@ -1,0 +1,80 @@
+{
+ "agent": "lead-corrections",
+ "as_of": "2026-09-26",
+ "note": "Per-ticker lead corrections that supersede an earlier diligence summary only for the tickers listed, each with a dated dossier addendum.",
+ "tickers": {
+  "UDR": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "An apartment landlord buying back its own stock, which trades cheaply versus peers, though rent growth has stalled and Southern-market supply weighs on results.",
+   "kill_criteria": [
+    "Same-store NOI growth negative for two consecutive quarters (FY26 guide is barely positive at +0.625% midpoint).",
+    "Consolidated Net Debt-to-EBITDAre (adjusted) rises above 6.0x (from 5.6x now).",
+    "FFO-as-Adjusted per-share guidance is cut (not just plain FFO) at either of the next two quarterly updates.",
+    "Southeast or Southwest same-store NOI decline exceeds -4% YoY in any quarter (supply absorption failing, not just slowing).",
+    "Share buyback program paused or reduced to a token level for two consecutive quarters (loss of the primary capital-return signal underpinning the thesis)."
+   ],
+   "key_adverse_facts": [
+    "Q2 2026 GAAP diluted EPS rose +91% YoY ($0.21 vs $0.11) almost entirely on a $35.7M gain on sale of real estate; FFO per share actually fell -1.6% YoY ($0.60 vs $0.61) and FFO-as-Adjusted was flat ($0.64 vs $0.64).",
+    "1H26 operating cash flow fell -3.8% YoY ($390.9M vs $406.5M) even as GAAP net income more than doubled ($276.6M vs $114.4M) -- an earnings-quality gap driven by gains on property sales ($193.1M in 1H26 vs $47.9M in 1H25).",
+    "The July 27, 2026 release headlined 'raises full-year guidance' but the plain FFO/share guidance midpoint was actually cut $0.02 (to $2.51 from $2.53); only FFO-as-Adjusted and Net Income guidance rose.",
+    "FY2026 guided FFO-as-Adjusted per share midpoint ($2.53) is essentially flat versus FY2025's actual ($2.54); FFOA/share has been range-bound $0.61-$0.65 for eight consecutive quarters -- no per-share growth in two years, despite V1's +22%/yr base case.",
+    "Same-store NOI is contracting in the Southeast (-2.0% YoY Q2'26) and Southwest (-2.2% YoY Q2'26), 23% of the same-store portfolio, due to new supply; full-year 2026 same-store NOI guidance is barely positive (+0.625% midpoint).",
+    "Consolidated Net Debt-to-EBITDAre (adjusted) is 5.6x, up from 5.5x a year ago, on the higher side of the multifamily REIT peer range.",
+    "Two close peers, AvalonBay and Equity Residential, announced an all-stock merger in 2026 and suspended their own FFO guidance, reshaping UDR's competitive/comp set.",
+    "FY2025 actual FFO ($2.43) missed the bottom of the company's own final FY2025 guidance range ($2.44-$2.46) by one cent."
+   ],
+   "data_conflicts": [
+    "V1's reverse-DCF used TTM capex of $7.76M (0.45% of revenue) for UDR; the Q2 2026 10-Q cash-flow statement shows $104.2M of 'capital expenditures and other major improvements' plus $53.0M of development capex for just 1H26 (~$314M annualized, ~18% of revenue) -- roughly 20-40x the D3 figure feeding V1. This understates V1's FCFF and biases the reverse-DCF's implied growth (-5.2%) too far negative, making the stock look more underpriced-for-growth than a corrected calculation would show.",
+    "V1's peer_median (44.6x) for UDR's P/FFO comparison is NTM GAAP P/E of peers (CPT, ESS, MAA, and an unrecognised 'VMRK' ticker), not true P/FFO -- flagged as unreliable by V1 itself; true peer P/FFO multiples were not independently reconstructed within the time box."
+   ],
+   "next_earnings_date": "2026-10-28",
+   "horizon": "12-36 months",
+   "confidence_in_thesis": "medium -- the statistical cheapness vs. own history and the real, verified buyback are solid evidence, but near-term FFO growth is flat (guided and delivered), leverage has crept up, and V1's implied-growth math needed a material correction, so conviction is capped at a small/half-weight position rather than full INCLUDE.",
+   "valuation_view_vs_v1": {
+    "v1_verdict": "attractive",
+    "v1_base_3y": "+21.9%/yr annualized (3-yr base case; bear -7.4%/yr, bull +57.4%/yr)",
+    "dossier_view": "cheap",
+    "consistent": false,
+    "reconciliation": "I agree UDR is statistically cheap versus its own 15-year P/FFO history, but V1's capex input was understated by roughly 20-40x (verified against the 10-Q cash-flow statement), which overstates how negative the reverse-DCF's implied growth looks and inflates V1's 0.874 score; correcting it would still show the stock as reasonably priced but far less dramatically so. V1 also does not see that FY2026 guided FFOA is flat YoY and that leverage has risen, both of which argue for a smaller position than V1's score alone implies -- hence INCLUDE-SMALL, not full INCLUDE. Lead correction 2026-09-26 (V2R): cheap versus apartment-REIT peers (13.5-13.7x FFO vs ~15.8x); the own-history comparison could not be verified (only 14 clean months of data), so 'historically cheap' is withdrawn."
+   },
+   "correction_note": "Lead correction from agent V2R's rebuilt FFO (v4/outputs/v2r_reit_valuation.md); verdict unchanged; see the dated addendum at the end of dossiers/UDR.md."
+  },
+  "NOW": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "Best-in-class enterprise workflow and AI software, priced below a reasonable growth case; an open DOJ hiring probe and heavy stock-based pay justify a half position.",
+   "horizon": "12-36 months",
+   "kill_criteria": [
+    "Subscription revenue growth decelerates below 18% YoY for two consecutive quarters.",
+    "DOJ investigation into the 2023 Army-CIO hiring results in a formal finding against the company (not just the departed executive) or any debarment/suspension action against ServiceNow's federal business.",
+    "Non-GAAP FCF margin falls below 30% for two consecutive quarters (guide is 35%).",
+    "Net debt/EBITDA (GAAP) exceeds 2.0x following further debt-funded buybacks or M&A."
+   ],
+   "key_adverse_facts": [
+    "DOJ / DoD-IG / Army Suspension & Debarment Office investigation into the March 2023 hiring of the outgoing U.S. Army CIO as head of ServiceNow's Global Public Sector business; the company's President/COO resigned 24 Jul 2024 after a board finding of a policy violation; DOJ's own investigation was still open per secondary reporting (primary Legal Proceedings text not independently re-read this session).",
+    "The pending $2.85B Moveworks acquisition is under an active DOJ antitrust 'second request' review, not yet closed.",
+    "SBC is roughly mid-teens % of quarterly revenue, the main driver of a wide GAAP-vs-non-GAAP EPS gap (GAAP EPS $0.29-$0.45/qtr vs non-GAAP $0.90-$0.97/qtr in 2026).",
+    "Issued $4.0B of new senior notes in May 2026 while simultaneously buying back $2.23B of stock in H1 2026 -- a real increase in leverage, not just a capital-return story.",
+    "Non-GAAP operating margin guidance was cut from 32% to 31.5% (Q1 FY26 print) specifically due to Armis acquisition dilution, even as revenue guidance was raised the same quarter."
+   ],
+   "data_conflicts": [
+    "None found vs the b1/d4 quant files themselves, but the pre-registered quant model ranks NOW poorly (decile 1, live_rank 474) purely on value/momentum factors, while the fundamentals (steady 21-24.5% subscription growth, raised guidance three quarters running) do not support a deteriorating business -- the low rank reflects the model's factor tilts, not a fundamental red flag; NOW reached this wave via the triage/quality-growth path, not the live-rank gate."
+   ],
+   "next_earnings_date": "2026-10-28",
+   "confidence_in_thesis": "medium: fundamentals and guidance trend are well verified from primary filings, but the size/outcome of the two open DOJ matters (Army-CIO investigation, Moveworks antitrust) could not be fully resolved from public sources in this session",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "cheap",
+    "consistent": null,
+    "implied_vs_base": "below",
+    "reconciliation": "NOW has no V1 valuation row this cycle. My own reverse DCF (TTM FCF $5.15B, EV $146.2B, WACC ~9.2%, 10y fade to 3% terminal) implies ~10.1%/yr FCF growth for 10 years, below my evidence-based base case of ~14-16%/yr (subscription growth decelerating from 22-24% toward high-single-digits, FCF margin expanding toward ~40%) -- growth priced in is below my base case."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.053,
+    "base": 0.163,
+    "bull": 0.29
+   },
+   "correction_note": "Lead correction after auditor A3 (Loop 3): the Moveworks acquisition closed in December 2025 (8-K filed 2025-12-15); kill criterion 3 is withdrawn; see the dated correction at the end of dossiers/NOW.md."
+  }
+ }
+}

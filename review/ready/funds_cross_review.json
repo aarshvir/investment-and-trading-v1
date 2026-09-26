@@ -1,0 +1,53 @@
+{
+  "prepared_date": "2026-09-26",
+  "source_archives": "raw_funds/manifest.json",
+  "funds": [
+    {
+      "ticker": "IB01",
+      "exchange": "London Stock Exchange",
+      "trade_currency": "USD",
+      "ISIN": "IE00BGSF1X88",
+      "NAV": 121.86,
+      "NAV_date": "2026-09-24",
+      "TER": 0.0007,
+      "effective_duration": 0.31,
+      "YTM": 0.0416,
+      "YTM_date": "2026-09-24",
+      "distribution": "accumulating",
+      "domicile": "Ireland",
+      "executable_price": null
+    },
+    {
+      "ticker": "VUAA",
+      "exchange": "London Stock Exchange",
+      "trade_currency": "USD",
+      "ISIN": "IE00BFMXXD54",
+      "NAV": 149.0017,
+      "NAV_date": "2026-09-24",
+      "OCF_TER": 0.0007,
+      "distribution": "accumulating",
+      "domicile": "Ireland",
+      "executable_price": null,
+      "rejected_as_USD_price": {
+        "ticker": "VUAG",
+        "price": 112.8,
+        "currency": "GBP",
+        "date": "2026-09-25"
+      }
+    }
+  ],
+  "lookthrough": {
+    "holdings_date": "2026-08-31",
+    "VUAA_weight": 0.2,
+    "NVDA_underlying_weight": 0.0807902,
+    "MSFT_underlying_weight": 0.0569335,
+    "NVDA_direct_weight": 0.015,
+    "MSFT_direct_weight": 0.02,
+    "NVDA_total_weight": 0.03115804,
+    "MSFT_total_weight": 0.031386700000000003
+  },
+  "prospectus_dates": {
+    "vanguard": "2026-09-04",
+    "ishares": "2026-09-21"
+  }
+}

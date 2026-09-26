@@ -1,0 +1,18 @@
+PASS fundamentals: max_filed_used < month_end for every row  [rows=86442, violations=0]
+PASS fundamentals: last_filed_date < month_end  [violations=0]
+PASS fundamentals: max_filed_used consistent with raw XBRL filings available before t (300 samples)  [violations=0]
+PASS momentum(t) identical when prices after t are removed (250 samples)  [mismatch=0]
+PASS 1y vol(t) identical when prices after t are removed (250 samples)  [mismatch=0]
+PASS market-cap price = Close(t) x split factor after t  [mismatch=0]
+PASS ret_next = AdjClose(t+1)/AdjClose(t)-1 (outcome only)  [mismatch=0]
+PASS membership: every sampled panel row is a D1 member at t (1000 samples)  [violations=0]
+PASS membership: panel month == D1 member set (2019-06)  [d1=499 panel=499]
+PASS one row per (month, entity)
+PASS composite at t invariant to row order / presence of later rows
+PASS composite re-derived independently from family scores
+PASS NW t-stat matches statsmodels HAC (Bartlett, 3 lags)  [2.483794 vs 2.483794]
+PASS Wilson CI(50/100) = [0.4038, 0.5962]  [0.4038,0.5962]
+PASS CAGR of 12 x 1% months = 12.68%
+PASS max drawdown of [+10%, -50%, +20%] = -50%
+
+16/16 passed

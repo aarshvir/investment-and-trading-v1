@@ -1,0 +1,40 @@
+{
+  "agent": "r3",
+  "dataset": "r3_largecap_longonly_stats.csv",
+  "built_utc": "2026-09-25T20:52:34Z",
+  "source": "computed from r3_largecap_longonly_monthly.parquet and r3_ff_factors_monthly.parquet",
+  "rows": 42,
+  "columns": [
+    "capm_alpha_ann",
+    "capm_alpha_t",
+    "beta_vs_universe",
+    "key",
+    "label",
+    "window",
+    "n_fav_firms_latest",
+    "n_fav_firms_median_2010on",
+    "LO_active_ann_mean",
+    "LO_TE",
+    "LO_IR",
+    "LO_t",
+    "LO_pct_calyears_pos",
+    "LO_pct_roll12_pos",
+    "LO_pct_roll36_pos",
+    "LO_pct_roll60_pos",
+    "LO_max_rel_drawdown",
+    "LO_worst_12m",
+    "LS_big_ann_mean",
+    "LS_all_ann_mean",
+    "capture_LO_vs_LS_all",
+    "capture_LSbig_vs_LS_all"
+  ],
+  "definitions": {
+    "LO_*": "stats of the large-cap long-only active return vs the big-cap VW universe",
+    "capm_alpha_ann / beta_vs_universe": "OLS of (favoured - RF) on (big universe - RF), monthly, alpha x 12",
+    "capture_LO_vs_LS_all": "mean(LO_big active) / mean(published all-cap long-short factor); NaN when factor mean <= 0",
+    "LO_pct_*_pos": "share of calendar years / rolling windows with positive compounded active return (relative wealth)"
+  },
+  "caveats": [
+    "gross of costs; windows after 2010 are short and noisy"
+  ]
+}

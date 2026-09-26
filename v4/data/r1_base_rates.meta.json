@@ -1,0 +1,106 @@
+{
+  "name": "r1_base_rates",
+  "agent": "r1",
+  "retrieved_utc": "2026-09-25T20:44:25Z",
+  "description": "Long-format table of S&P 500 historical base rates: rolling-window returns, calendar-window stock vs T-bill, drawdown episode stats, holding-window drawdown probabilities, intra-year declines, CAPE vs forward returns, volatility.",
+  "sources": {
+    "shiller": "https://shillerdata.com/ -> ie_data.xls (https://img1.wsimg.com/blobby/go/e5e77e0b-59d1-44d9-ab25-4763ac982e53/downloads/70fec4f5-727f-4e53-b5f1-179af109c5fa/ie_data.xls), file saved 2026-09-02",
+    "gspc": "Yahoo Finance ^GSPC daily (yfinance 1.7), 1927-12-30..2026-09-25",
+    "sp500tr": "Yahoo Finance ^SP500TR daily, 1988-01-04..2026-09-25",
+    "vix": "Yahoo Finance ^VIX daily, 1990-01-02..2026-09-25",
+    "damodaran": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/histretSP.xls (data 1928-2025)"
+  },
+  "rows": 674,
+  "columns": [
+    "section",
+    "metric",
+    "sample",
+    "horizon",
+    "statistic",
+    "value",
+    "unit",
+    "n_obs",
+    "source"
+  ],
+  "coverage": "1926-01..2026-09-25 depending on section (see 'sample' column)",
+  "caveats": [
+    "Shiller prices are monthly averages of daily closes: rolling returns are smoothed and drawdown depths understated vs daily data.",
+    "Shiller Jul-Sep 2026 dividends are forward-filled from Jun 2026; Aug/Sep 2026 CPI are Shiller estimates; Sept-2026 price is Sept-1 close.",
+    "Overlapping rolling windows are highly autocorrelated: effective independent sample sizes are far smaller than n_obs (e.g., ~9 independent 10y windows since 1926).",
+    "^GSPC drawdown statistics are price-only (exclude dividends); total-return recoveries are shorter.",
+    "Drawdown episodes are defined between successive all-time highs (underwater periods); nested sell-offs inside a larger episode are not counted separately.",
+    "CAPE regressions use overlapping monthly observations; Newey-West HAC t-stats reported; current CAPE (~41) is near the top of the historical range, so fitted values are extrapolations."
+  ],
+  "validation_checks": [
+    {
+      "check": "shiller_months_monotonic_unique",
+      "passed": true,
+      "detail": "1871-01..2026-09 n=1869"
+    },
+    {
+      "check": "real_TR_matches_shiller_column",
+      "passed": true,
+      "detail": "max abs monthly growth diff=4.44e-16"
+    },
+    {
+      "check": "damodaran_years_1928_2025",
+      "passed": true,
+      "detail": "n=98"
+    },
+    {
+      "check": "gspc_last_close_matches_lead",
+      "passed": true,
+      "detail": "last=2026-09-25 7743.41"
+    },
+    {
+      "check": "gspc_no_nonpositive",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "gspc_no_extreme_jumps_except_1987",
+      "passed": true,
+      "detail": "days |ret|>25%: 0"
+    },
+    {
+      "check": "no_duplicate_rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fractions_in_0_1",
+      "passed": true,
+      "detail": "n=163"
+    },
+    {
+      "check": "positive_share_increases_with_horizon_1926",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "shiller_vs_SP500TR_1990_1y_within_5pp",
+      "passed": true,
+      "detail": "shiller=0.827 sp500tr=0.839"
+    },
+    {
+      "check": "known_bear_markets_found",
+      "passed": true,
+      "detail": "peaks: 1929-09-16,1968-11-29,1973-01-11,1987-08-25,2000-03-24,2007-10-09,2020-02-19"
+    },
+    {
+      "check": "GFC_depth_about_minus_56pct",
+      "passed": true,
+      "detail": "-0.5678"
+    },
+    {
+      "check": "zigzag20_finds_nested_and_recent_bears",
+      "passed": true,
+      "detail": "n=27 peak years: [1929, 1930, 1931, 1932, 1933, 1934, 1937, 1938, 1939, 1940, 1946, 1948, 1956, 1961, 1966, 1968, 1973, 1980, 1987, 2000, 2002, 2007, 2009, 2020, 2022]"
+    },
+    {
+      "check": "1929_depth_about_minus_86pct",
+      "passed": true,
+      "detail": "-0.8619"
+    }
+  ]
+}

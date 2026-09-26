@@ -1,0 +1,71 @@
+{
+  "description": "D2 download universe: union of current S&P 500 (Wikipedia), Wikipedia changes-table tickers, fja05680 historical components on any date >= 2000-01-01, and benchmark/ETF list. Yahoo-normalised tickers ('.'->'-'); '-YYYYMM' suffixes stripped (none present in this vintage).",
+  "sources": {
+    "wiki_current": {
+      "url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+      "retrieved_utc": "2026-09-25T20:24:24Z",
+      "bytes": 569305
+    },
+    "wiki_changes": {
+      "url": "https://en.wikipedia.org/wiki/Historical_components_of_the_S%26P_500",
+      "retrieved_utc": "2026-09-25T20:24:26Z",
+      "bytes": 1124091
+    },
+    "fja05680": {
+      "url": "https://raw.githubusercontent.com/fja05680/sp500/master/S%26P%20500%20Historical%20Components%20%26%20Changes%20%28Updated%29.csv",
+      "retrieved_utc": "2026-09-25T20:24:27Z",
+      "bytes": 5530907
+    }
+  },
+  "rows": 1172,
+  "columns": [
+    "ticker",
+    "ticker_orig",
+    "asset_class",
+    "sources",
+    "in_current",
+    "in_fja_since2000",
+    "wiki_pre2000_only",
+    "suffix_stripped",
+    "current_name",
+    "gics_sector",
+    "gics_sub_industry",
+    "wiki_date_added",
+    "cik",
+    "member_first",
+    "member_last_excl",
+    "n_spells",
+    "wiki_added_dates",
+    "wiki_removed_dates",
+    "wiki_names",
+    "wiki_removal_reasons"
+  ],
+  "summary": {
+    "n_total": 1172,
+    "n_equity": 1136,
+    "n_current": 503,
+    "n_fja_since2000": 1097,
+    "n_wiki_changes_only": 37,
+    "n_wiki_pre2000_only": 8,
+    "n_benchmarks": 36,
+    "n_suffix_stripped": 0,
+    "fja_last_row_date": "2026-08-18",
+    "wiki_changes_applied_after_fja": [
+      "+BE@2026-09-21",
+      "-TAP@2026-09-21",
+      "+P@2026-09-21",
+      "-TTD@2026-09-21",
+      "+ILMN@2026-09-21",
+      "-BLDR@2026-09-21"
+    ],
+    "recon_vs_wiki_current_only_recon": [],
+    "recon_vs_wiki_current_only_wiki": []
+  },
+  "caveats": [
+    "Tickers are symbols, not permanent IDs: a historical symbol may now belong to a different company (ticker reuse). See d2_coverage.csv flags.",
+    "Wikipedia changes table is 'selected' changes, not exhaustive; fja05680 is a community file.",
+    "D1 builds the authoritative point-in-time membership; d2 spells are only for coverage statistics."
+  ],
+  "agent": "d2",
+  "written_utc": "2026-09-25T20:24:28Z"
+}

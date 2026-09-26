@@ -1,0 +1,67 @@
+{
+  "dataset": "entity x CIK map with validity dates, SEC name, SIC, FYE, tickers, former names",
+  "source_urls": [
+    "https://data.sec.gov/submissions/CIK##########.json",
+    "https://www.sec.gov/files/company_tickers_exchange.json",
+    "https://www.sec.gov/Archives/edgar/cik-lookup-data.txt",
+    "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+  ],
+  "rows": 1232,
+  "columns": [
+    "entity_id",
+    "ticker_key",
+    "ticker_current_yahoo",
+    "tickers_at_time",
+    "cik",
+    "cik_valid_from",
+    "cik_valid_to",
+    "sec_name",
+    "match_method",
+    "confidence",
+    "cik_first_report",
+    "cik_last_report",
+    "notes",
+    "sic",
+    "sic_description",
+    "fiscal_year_end",
+    "sec_tickers",
+    "sec_exchanges",
+    "former_names",
+    "state_of_incorporation"
+  ],
+  "coverage": {
+    "cik_coverage_member_months_since_2000_pct_by_confidence": {
+      "high": 95.76,
+      "medium": 4.23,
+      "low": 0.0,
+      "none": 0.01
+    },
+    "cik_coverage_high_or_medium_pct": 99.99,
+    "member_months_since_2000": 161066,
+    "sector_agreement_current_members_apriori": 0.8211,
+    "sector_agreement_current_members_tuned": 0.8787,
+    "sector_agreement_current_members_untuned_codes_only": 0.8747,
+    "sector_agreement_historical_vs_last_wikipedia_gics": 0.8404,
+    "n_tuned_overrides": 9,
+    "tuned": {
+      "3021": "2/2 current members with SIC 3021 are GICS Consumer Discretionary (a-priori: Materials)",
+      "3826": "5/5 current members with SIC 3826 are GICS Health Care (a-priori: Information Technology)",
+      "4400": "3/3 current members with SIC 4400 are GICS Consumer Discretionary (a-priori: Industrials)",
+      "4700": "2/2 current members with SIC 4700 are GICS Consumer Discretionary (a-priori: Industrials)",
+      "5331": "5/5 current members with SIC 5331 are GICS Consumer Staples (a-priori: Consumer Discretionary)",
+      "6324": "5/5 current members with SIC 6324 are GICS Health Care (a-priori: Financials)",
+      "7320": "2/3 current members with SIC 7320 are GICS Financials (a-priori: Industrials)",
+      "7370": "4/5 current members with SIC 7370 are GICS Communication Services (a-priori: Information Technology)",
+      "7900": "2/2 current members with SIC 7900 are GICS Communication Services (a-priori: Consumer Discretionary)"
+    },
+    "n_current_members_with_sic": 503
+  },
+  "confidence_definitions": {
+    "high": "filings verified in window AND (Wikipedia CIK column or SEC ticker table with name sim>=0.5, or >=2 independent sources agree, or Wikipedia-name match >=0.8)",
+    "medium": "filings verified with weaker name agreement, or analyst name hypothesis confirmed by SEC name + 10-K/10-Q inside the window, or Norgate 2019 symbol = SEC ticker + filings, or Wikipedia CIK + name match without EDGAR periodic reports (banks)",
+    "low": "other",
+    "none": "no candidate"
+  },
+  "generated_utc": "2026-09-25T22:46:25Z",
+  "agent": "d1"
+}

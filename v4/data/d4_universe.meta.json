@@ -1,0 +1,27 @@
+{
+  "dataset": "d4_universe.csv",
+  "agent": "d4",
+  "written_utc": "2026-09-25T20:22:27Z",
+  "source_urls": [
+    "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+  ],
+  "retrieval_utc": "2026-09-25T20:22:26Z",
+  "rows": 503,
+  "columns": [
+    "ticker",
+    "ticker_orig",
+    "name",
+    "gics_sector",
+    "gics_sub_industry",
+    "cik",
+    "date_added",
+    "hq",
+    "founded"
+  ],
+  "unique_tickers": 503,
+  "unique_cik": 500,
+  "caveats": [
+    "Wikipedia is a secondary source; D1 agent owns authoritative membership/IDs.",
+    "Tickers converted to Yahoo style ('.'->'-'); original kept in ticker_orig."
+  ]
+}

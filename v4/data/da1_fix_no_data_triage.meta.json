@@ -1,0 +1,15 @@
+{
+  "auditor": "da1",
+  "created_utc": "2026-09-26T00:00:00Z",
+  "description": "Triage of the 30 S&P-500-member equity tickers with the largest independently-recomputed 'best' (rename-credited) missing member-day count in D2's dataset. Classifies each as a confirmed D2 download-pipeline defect (price data independently confirmed available from Macrotrends but absent from d2_close/d2_adjclose), an identity/ticker-reuse case (already flagged by D2, needs D1 CIK join not a re-download), or an unverified presumed-genuine Yahoo purge of a delisted symbol.",
+  "method": "Ranked v4/data/d2_coverage.csv (equity rows) by member_days_since2000 - member_days_covered_incl_rename (D2's own rename-credited coverage columns). Top 3 (CMA, EA, K) were spot-verified against Macrotrends (independent, non-Yahoo vendor) stock-price-history pages, which show continuous, liquid trading price data for all three that is completely absent from D2's panels. The remaining 27 were NOT individually re-verified (time-boxed); their 'likely_genuine_yahoo_purge_unverified' label is a presumption based on D2's own documented Yahoo-purge behavior, not new evidence, and should not be treated as confirmed.",
+  "sources": [
+    "https://www.macrotrends.net/stocks/charts/CMA/comerica/stock-price-history (retrieved 2026-09-26, cacheState=miss)",
+    "https://www.macrotrends.net/stocks/charts/EA/electronic-arts/stock-price-history (retrieved 2026-09-26, cacheState=miss)",
+    "https://www.macrotrends.net/stocks/charts/K/kellanova/stock-price-history (retrieved 2026-09-26, cacheState=miss)",
+    "v4/data/d2_coverage.csv (D2)"
+  ],
+  "row_count": 30,
+  "recommendation": "D2 should re-run its yfinance download (fresh session, no cached 'no_data' short-circuit) for at minimum CMA, EA, K, and ideally the full 408-symbol no_data list, before the survivorship-bias narrative in d2_report.md Section 2 is treated as final. CMA in particular is a currently-trading, unambiguous bug (not a delisting) and should be treated as high priority.",
+  "caveat": "This file contains NO price data (triage/classification only). See da1_fix_cma_ea_k_annual_anchors.parquet for the (partial, annual-granularity) price evidence gathered for the 3 confirmed cases."
+}

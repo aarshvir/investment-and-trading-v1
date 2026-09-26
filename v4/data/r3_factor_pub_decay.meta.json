@@ -1,0 +1,11 @@
+{
+  "agent": "r3",
+  "dataset": "r3_factor_pub_decay.csv",
+  "built_utc": "2026-09-25T20:52:31Z",
+  "source": "computed from r3_ff_factors_monthly.parquet",
+  "rows": 5,
+  "note": "French's factor definitions are not identical to each paper's original variable (e.g. RMW uses operating profitability, not Novy-Marx gross profitability; CMA != CGS total asset growth decile spread). In-sample periods are the papers' reported sample periods; post_pub starts the month after journal publication.",
+  "caveats": [
+    "means over short post-publication windows have large standard errors (t-stats reported)"
+  ]
+}

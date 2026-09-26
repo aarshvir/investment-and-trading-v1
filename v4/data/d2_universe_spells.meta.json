@@ -1,0 +1,22 @@
+{
+  "description": "D2-derived membership spells (start inclusive, end exclusive; NaT = still member) from fja05680 row-to-row set differences, with Wikipedia changes applied after the fja last row date. Helper for coverage statistics only; D1 owns authoritative membership.",
+  "sources": {
+    "fja05680": {
+      "url": "https://raw.githubusercontent.com/fja05680/sp500/master/S%26P%20500%20Historical%20Components%20%26%20Changes%20%28Updated%29.csv",
+      "retrieved_utc": "2026-09-25T20:24:27Z",
+      "bytes": 5530907
+    },
+    "wiki_changes": {
+      "url": "https://en.wikipedia.org/wiki/Historical_components_of_the_S%26P_500",
+      "retrieved_utc": "2026-09-25T20:24:26Z",
+      "bytes": 1124091
+    }
+  },
+  "rows": 1145,
+  "consistency_vs_wiki_current": {
+    "only_in_reconstruction": [],
+    "only_in_wiki_current": []
+  },
+  "agent": "d2",
+  "written_utc": "2026-09-25T20:24:28Z"
+}

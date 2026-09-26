@@ -1,0 +1,62 @@
+{
+  "dataset": "S&P 500 point-in-time membership intervals 1996-01-02..2026-09-25 (entity level)",
+  "source_urls": [
+    "https://raw.githubusercontent.com/fja05680/sp500/master/S%26P%20500%20Historical%20Components%20%26%20Changes.csv",
+    "https://raw.githubusercontent.com/fja05680/sp500/master/S%26P%20500%20Historical%20Components%20%26%20Changes%20%28Updated%29.csv",
+    "https://en.wikipedia.org/wiki/Historical_components_of_the_S%26P_500",
+    "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+    "https://en.wikipedia.org/w/api.php (List_of_S%26P_500_companies page history, monthly revisions 2007-2026)",
+    "https://www.sec.gov/files/company_tickers_exchange.json",
+    "https://www.sec.gov/Archives/edgar/cik-lookup-data.txt",
+    "https://data.sec.gov/submissions/CIK##########.json"
+  ],
+  "retrieved_utc": {
+    "README.md": "2026-09-25T20:17:10Z",
+    "S&P 500 Historical Components & Changes (Updated).csv": "2026-09-25T20:17:11Z",
+    "S&P 500 Historical Components & Changes.csv": "2026-09-25T20:17:12Z",
+    "sp500_ticker_start_end.csv": "2026-09-25T20:17:12Z",
+    "sp500_changes_since_2019.csv": "2026-09-25T20:17:13Z",
+    "sp500.csv": "2026-09-25T20:17:13Z",
+    "wiki_sp500.html": "2026-09-25T20:17:15Z",
+    "company_tickers.json": "2026-09-25T20:17:15Z",
+    "company_tickers_exchange.json": "2026-09-25T20:17:16Z",
+    "cik-lookup-data.txt": "2026-09-25T20:17:21Z",
+    "wiki_sp500_historical.html": "2026-09-25T20:18:20Z"
+  },
+  "rows": 1271,
+  "columns": [
+    "entity_id",
+    "cik",
+    "ticker_at_time",
+    "ticker_current_yahoo",
+    "name",
+    "start_date",
+    "end_date",
+    "removal_reason",
+    "source",
+    "ticker_history",
+    "ticker_at_time_basis",
+    "norgate_keys",
+    "start_boundary",
+    "end_boundary",
+    "cik_confidence",
+    "cik_method",
+    "cik_first_report",
+    "cik_last_report"
+  ],
+  "n_entities": 1217,
+  "cik_confidence_rows": {
+    "high": 954,
+    "low": 3,
+    "medium": 191,
+    "none": 123
+  },
+  "semantics": "start_date inclusive (effective date, first day in index); end_date exclusive (removal effective date, first day NOT in index); blank end_date = member on 2026-09-25. A new row starts when the registrant CIK changes (reorganisation) - see start_boundary.",
+  "caveats": [
+    "1996-2019-01-11 from fja05680 original file (Norgate symbols), 2019-01-12..2026-08-18 from fja Updated file, 2026-09-21 change from Wikipedia.",
+    "ticker_at_time before 2007-03 is the first Wikipedia-observed ticker back-filled, else the Norgate symbol (last traded ticker for delisted names) - see ticker_at_time_basis.",
+    "1996-2000 lists hold 499-501 names; fja notes possible missing names in the first years."
+  ],
+  "generated_utc": "2026-09-25T22:46:19Z",
+  "agent": "d1"
+}

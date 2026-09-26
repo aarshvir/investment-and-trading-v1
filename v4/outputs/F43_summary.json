@@ -1,0 +1,114 @@
+{
+  "agent": "F43",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "DPZ": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "World's largest pizza franchisor, collecting royalties on franchisee sales; cheap-looking multiple but growth just decelerated and guidance was already cut once this year.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "U.S. same-store sales negative for two consecutive quarters.",
+        "FY operating-income-growth guidance cut again below the current mid-to-high-single-digit range.",
+        "Debt + capital-lease obligations / EBITDA-proxy rises above 6.0x (from ~4.8x currently).",
+        "International same-store sales (ex-FX) negative for two consecutive quarters.",
+        "Quarterly buyback pace cut by more than half from the trailing-4-quarter average (signal of FCF/leverage stress in the securitization structure)."
+      ],
+      "key_adverse_facts": [
+        "FY2026 operating-income-growth guidance was CUT at the Q1 2026 release (from ~8% to mid-to-high-single-digit) on weaker U.S./international same-store sales guidance, then only held flat (not raised) at Q2 2026 -- not a 'guidance raised' story.",
+        "Q2 2026 U.S. same-store sales were +0.1%, the weakest in over a year and below the +0.62% consensus; international SSS ex-FX was -0.1% vs +0.5% expected.",
+        "Stockholders' equity is deeply negative (-$3.98bn at 2026-06-14) and debt+capital leases were $4.82bn at FY2025-end -- a whole-business-securitization, buyback-funded structure that is by design but leaves less balance-sheet slack than the headline P/E suggests.",
+        "An ongoing securities class action (filed 2024, status ONGOING as of 2025-06-11) alleges Domino's failed to disclose execution problems at its largest master franchisee (DPE) and was unlikely to meet its own long-term global net-store-growth guidance.",
+        "U.S. net-store-growth target was trimmed to ~175 stores from '175-plus' at the Q2 2026 release."
+      ],
+      "data_conflicts": [
+        "Triage's reason ('14.3x NTM P/E for high-teens EPS growth... looks like value') did not check the prior guidance range; this dossier finds guidance was cut once (Q1'26) and only held flat since (Q2'26), and recent same-store-sales trends (U.S. +0.1% in Q2'26) are weaker than the triage framing implies.",
+        "b1 momentum percentile (1st) and book/price percentile (1st, driven by negative equity from buybacks) are not informative on their own for this capital structure; flagged so they are not misread as distress signals."
+      ],
+      "next_earnings_date": "2026-10-13",
+      "confidence_in_thesis": "medium (guidance cut and soft U.S. comps are recent and real, but FCF/buyback execution and international World Cup tailwind are also verified from primary sources; no V1 row exists to cross-check the valuation view)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "DPZ has no V1 row (outside the top-70 quant-ranked universe covered by the systematic valuation model), so there is nothing to reconcile; v1_verdict is null per the standing rule for names without systematic coverage."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.01,
+        "base": 0.10,
+        "bull": 0.20
+      }
+    },
+    "EME": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Largest U.S. electrical/mechanical contractor riding the AI data-center construction boom, with three straight guidance raises and a net-cash balance sheet -- but the growth driver is concentrated and cyclical.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "RPO/backlog growth turns negative YoY for two consecutive quarters (from +32.9% YoY as of 2026-03-31).",
+        "Full-year revenue or EPS guidance is cut, breaking the current three-release raise streak.",
+        "Consolidated operating margin falls below 8.5% for two consecutive quarters (vs 8.7-12.7% range over the last 8 quarters).",
+        "Net cash position flips to net debt exceeding 1.0x EBITDA.",
+        "Cumulative operating cash flow over any trailing 4 quarters falls below 50% of cumulative EBITDA over the same period."
+      ],
+      "key_adverse_facts": [
+        "Growth is concentrated in AI/data-center capex (Network & Communications segment); management itself flags labor availability, wage inflation and cyclical industrial/oil-and-gas exposure as ongoing risks even while raising guidance.",
+        "Operating cash flow fell YoY in FY2025 ($1,302mm vs $1,408mm in FY2024) despite EPS growth, and Q1 2026 OCF was essentially zero ($0.558mm) before rebounding -- consistent with working-capital consumption as the backlog ramps; this was not fully decomposed against contract-asset/unbilled-revenue growth (data limitation).",
+        "Analyst coverage is thin (7 analysts per the live snapshot), increasing model/estimate risk on both the bull and bear case.",
+        "The stock has re-rated from a historical mid-teens P/E (2019-2023) to 20-24x since the data-center buildout began, so much of the good news (record backlog, guidance raises) already appears reflected in the price."
+      ],
+      "data_conflicts": [
+        "Triage flagged EME as 'underappreciated' at 21.3x NTM P/E vs FIX/PWR at 29-34x; the current live snapshot shows a 20.7x forward P/E, meaning the valuation gap versus that peer set has already narrowed materially since the 2026-08-18 triage snapshot -- the 'underappreciated' framing is weaker today than when triage was run."
+      ],
+      "next_earnings_date": "2026-10-27",
+      "confidence_in_thesis": "medium (guidance/backlog trend is unambiguous and well-documented across three consecutive releases, but durability of the data-center capex cycle beyond 2-3 years, and the cash-conversion working-capital swing, are genuine open questions; no V1 row exists to cross-check valuation)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "EME has no V1 row (outside the top-70 quant-ranked universe covered by the systematic valuation model), so there is nothing to reconcile; v1_verdict is null per the standing rule for names without systematic coverage."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.10,
+        "base": 0.12,
+        "bull": 0.26
+      }
+    },
+    "FANG": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Largest low-cost Permian oil producer post-Endeavor merger, actively paying down debt -- but today's 'cheap' multiple is inflated by a geopolitically-driven oil-price spike, not a structural repricing.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "WTI averages below $50/bbl for two consecutive quarters.",
+        "Net debt/EBITDA rises above 2.0x (from ~1.0x currently).",
+        "A third consecutive-year ceiling-test impairment of oil and gas properties in any of the next four quarters.",
+        "Full-year oil production guidance is cut from the current >522 MBO/d target.",
+        "The base dividend (currently $4.40/share annualized) is cut."
+      ],
+      "key_adverse_facts": [
+        "GAAP results carried two large non-cash ceiling-test impairments of oil and gas properties confirmed against the primary XBRL tag: $3,652mm in FY2025 (essentially all in Q4 2025) and a further $1,400mm in Q1 2026, driving a derived Q4 2025 net loss (~$1.46bn) and a near-breakeven Q1 2026 (net income $25mm on $4.24bn revenue).",
+        "WTI closed ~$93/bbl on 2026-09-25, up over 50% from roughly a year earlier, attributed in market commentary to acute Iran/Strait-of-Hormuz supply-disruption risk with negotiations reportedly underway to de-escalate -- current profitability and the 'cheap' forward P/E (9.95x) both depend on this holding, not on a $65-70/bbl mid-cycle deck.",
+        "Independent (non-primary-sourced) commentary flags insider selling and post-merger integration risk; this was not independently verified against Form 4 filings in this pass (data limitation, disclosed).",
+        "Trailing P/E (35.6x) is distorted upward by the impairments and forward P/E (9.95x) is distorted downward by the current price spike -- neither is usable unadjusted, per the sector playbook's explicit warning that low P/E in this sector often marks the top of the cycle."
+      ],
+      "data_conflicts": [
+        "Triage called the low trailing/high-vs-NTM P/E gap 'depressed-base noise' and did not identify the two ceiling-test impairments or the oil-price-spike context behind the low forward multiple; this dossier finds both are real, verifiable, and change the valuation read from 'cheap' to 'fair'.",
+        "b1 value percentile (23rd) is actually LOW, in some tension with triage's framing of the name via a 9.6% normalized FCF yield as pricing 'near-zero growth' (i.e., cheap); the low b1 value percentile likely reflects book/price and earnings-yield inputs distorted by the same impairments and price-spike effects flagged above."
+      ],
+      "next_earnings_date": "2026-11-09",
+      "confidence_in_thesis": "medium (balance-sheet deleveraging and low breakeven cost are well-documented and durable; the current-quarter profitability level is explicitly not durable at spot oil prices, which is the core uncertainty; no V1 row exists to cross-check valuation)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "FANG has no V1 row (outside the top-70 quant-ranked universe covered by the systematic valuation model), so there is nothing to reconcile; v1_verdict is null per the standing rule for names without systematic coverage."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.15,
+        "base": 0.09,
+        "bull": 0.22
+      }
+    }
+  }
+}

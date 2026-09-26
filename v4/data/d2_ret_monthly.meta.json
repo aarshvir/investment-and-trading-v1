@@ -1,0 +1,17 @@
+{
+  "source": "derived from d2_adjclose.parquet",
+  "shape": [
+    380,
+    764
+  ],
+  "definition": "Adj Close(last NYSE trading day of month m) / Adj Close(last trading day of m-1) - 1; NaN if either end has no price (no filling). UCITS columns use their own last LSE trading day of each month. Last row = 2026-08-31 (September 2026 incomplete at the 2026-09-25 cutoff).",
+  "caveats": [
+    "Survivorship: tickers Yahoo no longer serves (most acquired/bankrupt names) are absent; see d2_coverage.csv status=no_data and d2_report.md.",
+    "Ticker reuse: some historical symbols now map to a different company on Yahoo (d2_coverage.csv reuse_suspect/flags). Join to membership by (ticker, date) with care.",
+    "Yahoo data is not point-in-time: Close is split-adjusted as of the retrieval date; Adj Close is split+dividend adjusted (CRSP-style multiplicative) as of the retrieval date.",
+    "Delisting-month returns are NaN when a series ends mid-month; see d2_final_partial_month.csv.",
+    "26 (ticker, month) cells are NaN because the stock has prices in the month but none on the exact month-end day."
+  ],
+  "agent": "d2",
+  "written_utc": "2026-09-25T20:57:23Z"
+}

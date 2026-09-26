@@ -1,0 +1,206 @@
+{
+  "as_of": "2026-09-25",
+  "tickers": {
+    "HST": {
+      "ffo_measure": "NAREIT FFO (recomputed proxy, overlaid with company-reported actuals for 8 of last 8 quarters -- see md) | FY26 guide measure: Adjusted FFO/sh",
+      "pffo_ttm_now": 10.63,
+      "pffo_fy26_guide": 10.36,
+      "own_pct_5y": 57.4,
+      "own_pct_10y": 48.8,
+      "own_history_n_months_5y": 61,
+      "own_history_n_months_10y": 121,
+      "peer_median": 10.95,
+      "peers": [
+        {
+          "ticker": "PK",
+          "pffo": 7.57,
+          "ffo_basis": "FY26 AFFO guide mid ($1.90-2.00)",
+          "price": 14.76,
+          "price_note": "secondary source, ~7wk stale (~2026-08-07)"
+        },
+        {
+          "ticker": "RHP",
+          "pffo": 13.29,
+          "ffo_basis": "FY26 AFFO guide mid ($8.90-9.26), post Grande Lakes Orlando deal",
+          "price": 120.67,
+          "price_note": "secondary source, ~9d stale (~2026-09-16)"
+        },
+        {
+          "ticker": "APLE",
+          "pffo": 10.95,
+          "ffo_basis": "FY2025 actual FFO/sh (FY26 AFFO guide not located this pass)",
+          "price": 16.42,
+          "price_note": "secondary source, approx as-of date"
+        }
+      ],
+      "reported_core_or_adjusted_label": "Adjusted FFO/sh",
+      "reported_core_or_adjusted_ttm": 2.16,
+      "v1_metric": 8.49,
+      "v1_verdict": "attractive",
+      "corrected_verdict": "fair",
+      "verdict_changed": true,
+      "thesis_claim_check": "HST's 'attractive' framing does NOT fully survive. Corrected P/FFO (TTM NAREIT FFO, gains-on-sale excluded) is ~10.6x -- essentially in line with hotel-REIT peers (PK/RHP/APLE, median ~10.9x) and at roughly the 49th-57th percentile of its own 5-10y history (median, not the 29th percentile V1 showed). It is no longer statistically cheap; verdict corrected to FAIR.",
+      "data_quality_note": "1 of 49 quarters dropped as an implausible XBRL value; else clean",
+      "sources": [
+        "SEC EDGAR CIK 0001070750, XBRL companyfacts (data.sec.gov/api/xbrl/companyfacts)",
+        "HST 8-K EX-99.1 Q2 2026 (filed 2026-08-05): https://www.sec.gov/Archives/edgar/data/1070750/000107075026000122/hst-ex991.htm",
+        "HST 8-K EX-99.1 Q4/FY2025 (filed 2026-02-18): https://www.sec.gov/Archives/edgar/data/1070750/000107075026000038/hst-ex991.htm",
+        "HST 8-K EX-99.1 Q3 2025 (filed 2025-11-05): https://www.sec.gov/Archives/edgar/data/1070750/000107075025000164/hst-ex991.htm",
+        "v4/dossiers/HST.md",
+        "v4/data/d2_close.parquet",
+        "Park Hotels (PK) FY26 AFFO guidance, stocktitan.net 8-K coverage (secondary)",
+        "Ryman Hospitality (RHP) 8-K EX-99.1 FY2026 guide: https://www.sec.gov/Archives/edgar/data/0001040829/000110465926104349/tm2624390d1_ex99-1.htm",
+        "Apple Hospitality (APLE) FY2025 actual FFO/sh, company IR / Nasdaq press release (secondary)"
+      ]
+    },
+    "FRT": {
+      "ffo_measure": "NAREIT FFO (recomputed proxy, overlaid with company-reported actuals for 8 of last 8 quarters -- see md) | FY26 guide measure: Core FFO/sh (FFO guide range, Core FFO growth framing)",
+      "pffo_ttm_now": 14.94,
+      "pffo_fy26_guide": 14.7,
+      "own_pct_5y": 55.7,
+      "own_pct_10y": 37.2,
+      "own_history_n_months_5y": 61,
+      "own_history_n_months_10y": 121,
+      "peer_median": 15.07,
+      "peers": [
+        {
+          "ticker": "REG",
+          "pffo": 15.07,
+          "ffo_basis": "FY26 Nareit FFO guide mid ($4.84-4.88)",
+          "price": 73.23,
+          "price_note": "d2_close 2026-09-25"
+        },
+        {
+          "ticker": "KIM",
+          "pffo": 12.23,
+          "ffo_basis": "FY26 FFO guide mid ($1.83-1.84)",
+          "price": 22.44,
+          "price_note": "d2_close 2026-09-25"
+        },
+        {
+          "ticker": "SPG",
+          "pffo": 15.46,
+          "ffo_basis": "FY26 Real Estate FFO guide mid ($13.20-13.30)",
+          "price": 204.82,
+          "price_note": "d2_close 2026-09-25"
+        }
+      ],
+      "reported_core_or_adjusted_label": "Core FFO/sh",
+      "reported_core_or_adjusted_ttm": null,
+      "v1_metric": 10.8,
+      "v1_verdict": "attractive",
+      "corrected_verdict": "fair",
+      "verdict_changed": true,
+      "thesis_claim_check": "FRT's 'near the cheapest ever' claim (V1: 5.65th percentile) does NOT survive. Corrected P/FFO (NAREIT FFO TTM) is ~14.9x -- essentially in line with retail-REIT peers (REG/KIM/SPG, median ~15.1x, not V1's unreliable 31.3x NTM-P/E-based figure) and at roughly the 37th-56th percentile of its own history (median-ish), because V1's proxy failed to exclude realty gains-on-sale (FRT recognized $20.6-113.3m of such gains in Q1-Q2 2026 alone) that inflated its GAAP-net-income-based FFO proxy. Verdict corrected to FAIR.",
+      "data_quality_note": "clean XBRL reconstruction, 46 proxy + 7 reported quarters",
+      "sources": [
+        "SEC EDGAR CIK 0000034903, XBRL companyfacts (data.sec.gov/api/xbrl/companyfacts)",
+        "v4/dossiers/FRT.md sec.4-5 (8-K EX-99.1 quarterly FFO table, all 8 quarters primary-sourced)",
+        "v4/data/d2_close.parquet",
+        "Regency Centers (REG) Q2 2026 results / FY26 Nareit FFO guide, globenewswire.com (secondary)",
+        "Kimco Realty (KIM) Q2 2026 FFO guide raise, stocktitan.net (secondary)",
+        "Simon Property Group (SPG) FY26 Real Estate FFO guide, investors.simon.com press release (secondary)"
+      ]
+    },
+    "UDR": {
+      "ffo_measure": "NAREIT FFO (recomputed proxy, overlaid with company-reported actuals for 8 of last 8 quarters -- see md) | FY26 guide measure: FFO/sh",
+      "pffo_ttm_now": 13.65,
+      "pffo_fy26_guide": 13.48,
+      "own_pct_5y": 7.1,
+      "own_pct_10y": 7.1,
+      "own_history_n_months_5y": 14,
+      "own_history_n_months_10y": 14,
+      "peer_median": 15.76,
+      "peers": [
+        {
+          "ticker": "EQR",
+          "pffo": 15.76,
+          "ffo_basis": "FY26 FFO guide mid ($3.98-4.10)",
+          "price": 63.66,
+          "price_note": "last valid d2_close 2026-08-17 (merger-related gap after)"
+        },
+        {
+          "ticker": "AVB",
+          "pffo": 16.09,
+          "ffo_basis": "Q2'26 Core FFO $2.86/sh x4 (guidance suspended for AVB/EQR merger)",
+          "price": 184.06,
+          "price_note": "last valid d2_close 2026-08-14"
+        },
+        {
+          "ticker": "CPT",
+          "pffo": 14.6,
+          "ffo_basis": "Q2'26 Core FFO $1.68/sh x4 (FY26 guide not located this pass)",
+          "price": 98.12,
+          "price_note": "d2_close 2026-09-25"
+        },
+        {
+          "ticker": "MAA",
+          "pffo": null,
+          "ffo_basis": "not available this pass"
+        },
+        {
+          "ticker": "ESS",
+          "pffo": null,
+          "ffo_basis": "not available this pass"
+        }
+      ],
+      "reported_core_or_adjusted_label": "FFO-as-Adjusted/sh",
+      "reported_core_or_adjusted_ttm": 2.55,
+      "v1_metric": 13.34,
+      "v1_verdict": "attractive",
+      "corrected_verdict": "attractive",
+      "verdict_changed": false,
+      "thesis_claim_check": "UDR's 'attractive'/cheap framing partially survives. Even after removing UDR's own large recent realty gains ($193m in 1H26), corrected P/FFO (~13.5-13.7x) remains below its apartment-REIT peer median (~15.8x, EQR/AVB/CPT), consistent with a still-cheap read. However, a fully independent 10y own-history percentile could not be rebuilt this pass (XBRL D&A tag for UDR is inconsistent/mis-scoped pre-2025 -- flagged, not estimated); V1's 0.874 conviction score is still likely overstated, consistent with the UDR dossier's own INCLUDE-SMALL (not full INCLUDE) downgrade.",
+      "data_quality_note": "UDR's D&A XBRL tag ('DepreciationAndAmortization') is mis-scoped (too small by ~20-25x) for most quarters outside 2025-09-2026-06; 37 of 53 reconstructed quarters were dropped as implausible. own_pct_5y/10y above are therefore based on only 14 clean months (2025-08 to now), NOT a true 5y/10y sample -- treat as low-confidence / directional only. The current-quarter P/FFO figures are unaffected (built entirely from 8 quarters of company-reported actuals).",
+      "sources": [
+        "SEC EDGAR CIK 0000074208, XBRL companyfacts (data.sec.gov/api/xbrl/companyfacts)",
+        "v4/dossiers/UDR.md sec.4-5 (8-K EX-99.1 quarterly FFO/FFOA table, all 8 quarters primary-sourced)",
+        "v4/data/d2_close.parquet",
+        "Equity Residential (EQR) FY26 FFO guide 8-K, sec.gov",
+        "AvalonBay (AVB) Q2 2026 Core FFO, businesswire.com (secondary; guidance suspended for AVB/EQR merger)",
+        "Camden Property Trust (CPT) Q2 2026 Core FFO, d2_close.parquet + secondary earnings coverage"
+      ]
+    },
+    "PSA": {
+      "ffo_measure": "NAREIT FFO (recomputed proxy, overlaid with company-reported actuals for 8 of last 8 quarters -- see md) | FY26 guide measure: Core FFO/sh",
+      "pffo_ttm_now": 16.68,
+      "pffo_fy26_guide": 17.04,
+      "own_pct_5y": 27.9,
+      "own_pct_10y": 17.4,
+      "own_history_n_months_5y": 61,
+      "own_history_n_months_10y": 121,
+      "peer_median": 16.11,
+      "peers": [
+        {
+          "ticker": "EXR",
+          "pffo": 16.02,
+          "ffo_basis": "FY26 Core FFO guide mid ($8.25-8.40)",
+          "price": 133.35,
+          "price_note": "d2_close 2026-09-25"
+        },
+        {
+          "ticker": "CUBE",
+          "pffo": 16.2,
+          "ffo_basis": "FY26 FFO-as-adjusted guide mid ($2.52-2.60)",
+          "price": 41.46,
+          "price_note": "secondary source, approx as-of date"
+        }
+      ],
+      "reported_core_or_adjusted_label": "Core FFO/sh",
+      "reported_core_or_adjusted_ttm": 16.96,
+      "v1_metric": 15.84,
+      "v1_verdict": "fair",
+      "corrected_verdict": "fair",
+      "verdict_changed": false,
+      "thesis_claim_check": "PSA's 'fair' verdict survives. Corrected P/FFO (Core FFO TTM ~17.0x; NAREIT FFO TTM ~16.7x, noisier due to FX swings on Euro debt) is roughly in line with self-storage peers (EXR/CUBE, median ~16.1x) and only moderately cheap vs its own 10y history (~17th percentile) -- consistent with V1 and with the PSA dossier's own more cautious WATCH stance on business-quality grounds (same-store NOI still contracting, NSA-merger integration unproven).",
+      "data_quality_note": "clean XBRL reconstruction, 46 proxy + 8 reported quarters",
+      "sources": [
+        "SEC EDGAR CIK 0001393311, XBRL companyfacts (data.sec.gov/api/xbrl/companyfacts)",
+        "v4/dossiers/PSA.md sec.4-5 (8-K EX-99.1 quarterly FFO/Core FFO table, all 8 quarters primary-sourced)",
+        "v4/data/d2_close.parquet",
+        "Extra Space Storage (EXR) FY26 Core FFO guide, stocktitan.net (secondary)",
+        "CubeSmart (CUBE) FY26 FFO-as-adjusted guide, secondary aggregator"
+      ]
+    }
+  }
+}

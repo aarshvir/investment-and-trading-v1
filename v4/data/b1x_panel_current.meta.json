@@ -1,0 +1,22 @@
+{
+  "agent": "b1x",
+  "built_utc": "2026-09-25T22:40:35.133729+00:00",
+  "rows": 94225,
+  "cols": 64,
+  "month_range": [
+    "2010-01-29",
+    "2026-08-31"
+  ],
+  "n_tickers": 503,
+  "composite_coverage": 0.9409286282833643,
+  "universe": "todays 503 constituents only, same window (survivorship bias-check universe, task 3f)",
+  "source": "d2_close/d2_adjclose/d2_ret_monthly/d2_splits (D2) + d3_pit_monthly_lag1 (D3, filed<t) + d1_current_constituents.csv (D1) + d1_sic_sector_rules.sic_to_sector (D1 function)",
+  "method": "v4/code/b1x_build.py; see v4/outputs/b1x_report.md",
+  "caveats": [
+    "D1 PIT membership/CIK/sector files (d1_membership_monthly.parquet, d1_cik_map.csv, d1_sector_map.csv) were not available when built (polled to 02:39; also not available to B1) -> used d2_universe_spells.csv membership (same fallback B1 used)",
+    "headline stats use 2012-01+ (fundamental coverage ramp, D3 report); full window from 2010-01 shown separately",
+    "financials (is_financial): OCF/FCF/accrual/leverage-based metrics set to NaN (not economically comparable per D3 report sec.5)",
+    "BRK-B shares_out/shares_1y_ago x1500 (Class-A-equivalent fix per D3 report sec.5.6)",
+    "known market-cap outliers: ERIE (Class B share count), few Up-C/OP-unit names (ARES, IBKR, TKO, BX) -- also flagged independently by B1"
+  ]
+}

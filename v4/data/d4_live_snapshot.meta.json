@@ -1,0 +1,48 @@
+{
+  "dataset": "d4_live_snapshot.parquet",
+  "agent": "d4",
+  "written_utc": "2026-09-25T20:53:53Z",
+  "source": "Yahoo Finance via yfinance 1.7.0 (quoteSummary, v7 quote, fundamentals-timeseries, earnings calendar page)",
+  "source_urls": [
+    "https://query2.finance.yahoo.com/v10/finance/quoteSummary/<T>",
+    "https://query1.finance.yahoo.com/v7/finance/quote?symbols=<T>",
+    "https://finance.yahoo.com/calendar/earnings?symbol=<T>",
+    "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
+  ],
+  "retrieval_utc_first": "2026-09-25T20:23:25Z",
+  "retrieval_utc_last": "2026-09-25T20:39:38Z",
+  "as_of_close": "2026-09-25",
+  "rows": 503,
+  "columns_n": 269,
+  "missing_tickers": [],
+  "coverage": {
+    "price": 503,
+    "marketCap": 503,
+    "forwardEps": 502,
+    "eps_fy0": 501,
+    "eps_fy1": 501,
+    "eps_ntm": 500,
+    "pe_ntm": 497,
+    "rev_ntm": 503,
+    "target_mean": 499,
+    "next_earnings_date": 492
+  },
+  "key_definitions": {
+    "price": "info.regularMarketPrice (regular-session close 2026-09-25)",
+    "eps_fy0/eps_fy1": "earnings_estimate avg for Yahoo periods '0y'/'+1y'",
+    "fy0_end": "raw earningsTrend endDate of '0y' (fallback info.nextFiscalYearEnd)",
+    "f_fy0_remaining": "clip((fy0_end-2026-09-25)/(fy1_end-fy0_end),0,1)",
+    "eps_ntm": "f*eps_fy0+(1-f)*eps_fy1",
+    "rev_ntm": "f*rev_fy0+(1-f)*rev_fy1",
+    "yahoo_fwd_horizon": "which period Yahoo's forwardEps equals (0.5% tolerance)",
+    "trailingAnnualDividendYield": "fraction (0.01 = 1%); NOTE y_dividendYield is in PERCENT units in yfinance 1.7",
+    "ud_*_90d": "upgrades_downgrades rows with GradeDate in (2026-06-27, 2026-09-25]",
+    "beats_last8": "count of Surprise(%)>0 over last 8 reported quarters (earnings_dates; fallback earnings_history 4q)",
+    "next_earnings_date": "calendarEvents.earnings.earningsDate epoch converted in America/New_York"
+  },
+  "caveats": [
+    "Yahoo consensus = vendor snapshot; basis (GAAP/adjusted) is vendor-defined and undocumented.",
+    "earningsTrend endDates are month-end normalized (e.g., NVDA FY ends last Sunday of Jan).",
+    "Missing values are NaN; see fetch_errors / fetch_nodata / pe_ntm_reason."
+  ]
+}

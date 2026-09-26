@@ -1,0 +1,24 @@
+{
+ "total": 85,
+ "criteria": {
+  "1": 8,
+  "2": 9,
+  "3": 9,
+  "4": 8,
+  "5": 8,
+  "6": 8,
+  "7": 9,
+  "8": 9,
+  "9": 8,
+  "10": 9
+ },
+ "must_fix": [
+  "De-fang or caveat the v4 sleeve's per-name risk-contribution table (dashboard 'Risk' view / lead_risk_results.json): verified it is mechanically proportional to squared weight (HST=MTB=HAS=FRT=0.130933 to 6dp, each exactly 10% weight) because Ledoit-Wolf shrinkage is pinned at its 1.0 ceiling -- the same failure mode b2_report.md already documents and caveats for the OLD v3 portfolio but that caveat is not attached anywhere the client sees the NEW v4 sleeve's version of this table (no 'shrink'/'Ledoit'/'correlation-aware' text in equity_audit_v4.html or FINAL_REPORT.md). Attach the existing caveat (use avg_pairwise_correlation/vol_annual_unshrunk instead) or replace with a single-factor shrinkage target.",
+  "Carry DA1's data-audit finding into FINAL_REPORT.md section 11 (limitations): a 3-ticker sample (CMA, EA, K) found the 'no_data' survivorship classification itself has confirmed false positives (100% hit rate) -- these are download-pipeline defects, not genuine delistings -- and the true scope of the 408-name no-data list is unverified; currently this is only disclosed inside da1_data_audit.md, not in the client-facing report, even though B1X's +6.3pt today-vs-PIT bias check independently shows the core 'no edge' conclusion is not at risk from this.",
+  "Independently cross-verify the daily-data max-drawdown figures (top-30 -44.4%, sleeve rule -41.7%) with a second implementation (B2's engine already exists and is already used for the sleeve's vol/beta/TE) the same way B1X cross-verified the monthly CAGR/IC numbers.",
+  "Fix presentation loose ends: FINAL_REPORT section 10 still says 'Loop 0 (v3 baseline) running; v4 loops follow' (stale -- loop 0 is finished at 41/42/45); the section 6 sleeve weight column sums to 99.8% when the printed 1-decimal percentages are added by hand (true precise sum 100.001%) with no rounding footnote or explicit cash row; the '3-10% per name' caption omits the INCLUDE-SMALL 1.5% floor that SYF's 2.2% weight actually uses.",
+  "State explicitly, once, that the estate-tax/withholding mitigation section assumes Aarsh is a non-US citizen/non-green-card holder (a checked precondition, not just an implicit one) -- flagged at loop 0, still open.",
+  "Add one canonical run-order artifact (numbered command list or run_all.sh covering D1 to D3 to B1/B1X to B2 to lead_* to lead_assemble) and pin dependency versions (requirements.txt/lockfile) -- both flagged at loop 0, still open.",
+  "Re-verify a larger and more adversarial dossier/fact sample next loop (this loop: 10/10 facts passed across 6 dossiers, all fresh SEC/company-primary-source checks, but small; extend to some of the 40 excluded near-miss names, not just held names)."
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "total": 76,
+ "criteria": {
+  "1": 7,
+  "2": 9,
+  "3": 8,
+  "4": 9,
+  "5": 7,
+  "6": 6,
+  "7": 8,
+  "8": 8,
+  "9": 8,
+  "10": 6
+ },
+ "must_fix": [
+  "RL (9.5% of the 15-stock sleeve, 2nd-largest position) fails the program's own valuation eligibility gate: the CURRENT v1_valuation_table.csv / v1_valuation.json (last written 2026-09-26 07:24:52) gives RL verdict='demanding', score=-0.363, base-case 3y return -7.8%/yr, bear -39.2%/yr -- disqualifying under the stated rule 'V1 verdict in {attractive, fair}', the same rule that excluded TGT/TRV/TPR/CF/COP/BBY elsewhere in this document. But outputs/lead_portfolio_build.json was frozen earlier (07:22:25) against a valuation table that did not yet cover RL, so its candidate row shows val/valpct/bear/base/bull = null and 'why': 'eligible'. Re-run v4/code/lead_build_portfolio.py now against the current v1_valuation_table.csv, confirm RL's eligibility flips to false, and re-solve and re-publish the 15-name table, weights, FINAL_REPORT.md section 6 and the dashboard (d4v.json) accordingly.",
+  "Every row of FINAL_REPORT.md section 6 with blank '– / – / –' scenario cells (currently just RL) needs either a resolved value or an explicit footnote explaining the gap before publication -- a diligence-literate reader will immediately ask why the second-largest position is missing the three numbers every other row has.",
+  "Add a staleness/freshness guard to lead_build_portfolio.py (compare mtimes, row counts, or a content hash of v1_valuation_table.csv and the f*_summary.json dossier files against a recorded manifest at build time) so a late-arriving or updated upstream row cannot silently be treated as 'no data available' again -- this is the same class of silent-gap bug the program was built to eliminate.",
+  "Spot-check the remaining 10 of 15 finalist dossiers' narrative valuation calls against their own V1 systematic verdict for the same silent-conflict pattern found in RL (dossier reads bullish/'arguably earned', V1 model says demanding with a negative base-case return); this loop only checked RL, HST, MTB, LMT and DLTR in full.",
+  "Rewrite the 'The 90% you asked for' verdict heading in FINAL_REPORT.md section 1: none of the four allocation/horizon combinations actually shown (80%, 88%, 86%, 94%, 94%) equals 90% at the stated base case -- either identify and name the specific mix/horizon that clears 90%, or drop the number from the heading so it does not imply a match that is not actually shown."
+ ]
+}

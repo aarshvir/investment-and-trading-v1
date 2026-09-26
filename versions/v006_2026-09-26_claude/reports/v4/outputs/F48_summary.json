@@ -1,0 +1,120 @@
+{
+  "agent": "F48",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "STLD": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Low-cost steelmaker expanding into aluminum with a great guidance-beat record, but priced off a tariff-boosted earnings peak the Street itself doesn't expect to keep growing.",
+      "kill_criteria": [
+        "Quarterly diluted EPS falls below the Q1 2026 level ($2.78) for two consecutive quarters without a one-off explanation",
+        "Section 232/import-tariff protection on steel is materially reduced or removed",
+        "Net debt/EBITDA rises above 2.5x (from ~1.65x now) as aluminum capex continues",
+        "The Columbus, MS aluminum platform fails to reach management's own stated qualification/ramp milestones (e.g., second CASH line not operating by end-2027) after $3bn+ invested",
+        "FY2027 guidance (first given under new CEO Theresa Wagler, effective 1 Jan 2027) shows a step-down in capital-return pace versus the FY2025-26 run-rate"
+      ],
+      "key_adverse_facts": [
+        "V1's reverse-DCF shows the price implies 14.4% 10-year revenue growth versus 9.7%/10.9% delivered 5y/10y CAGR and just 0.4% consensus FY1 growth -- the Street itself does not expect the current run-rate to continue",
+        "TTM FCF yield is only 0.7% (2.6% SBC-adjusted, per V1) because the aluminum build-out is consuming most operating cash flow even as EPS rises -- FCF/NI is roughly 59%",
+        "The current EPS trajectory (Q1'26 $2.78 -> Q2'26 $3.69 -> Q3'26 guided $5.34-5.38) is driven by steel pricing/metal-margin expansion and tariff protection, not volume alone, per the company's own guidance commentary -- more exposed to a pricing reversal than a pure volume story",
+        "Sequential EPS fell 34% just two quarters ago (Q3'25 $2.74 to Q4'25 $1.82) on lower realized selling values -- primary-source evidence of real cyclicality",
+        "CEO Mark Millett (co-founder) retires effective 1 Jan 2027, succeeded by CFO Theresa Wagler -- an orderly but real leadership-continuity item"
+      ],
+      "data_conflicts": [
+        "None identified between b1 quant data and filings; V1's peer set for the NTM P/E comparison is thin (STLD vs NUE only, n=2), flagged as a methodology limitation rather than a data conflict"
+      ],
+      "next_earnings_date": "2026-10-20",
+      "horizon": "re-assess after a multiple reset or a full-cycle guidance test (12-24 months)",
+      "confidence_in_thesis": {"level": "high", "reason": "the guidance-beat record, balance sheet and V1's reverse-DCF math are all independently primary-source-verified and internally consistent with each other"},
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": -0.09694592865185114,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "implied_vs_base": "above",
+        "reconciliation": "V1's reverse-DCF implies 14.4% 10-year revenue growth against 9.7%/10.9% delivered 5y/10y CAGR and 0.4% consensus FY1 growth, with a negative base-case 3y return (-9.7%/yr); this dossier's own read of the primary-source guidance and results (real near-term strength, but pricing/tariff-driven, low FCF conversion, and a Street that itself models flat next-FY growth) independently supports V1's 'excessive' call -- no conflict."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.5432,
+        "base": -0.0969,
+        "bull": 0.5265,
+        "scenario_basis": "Adopted directly from V1's reverse-DCF (v1_valuation.json 'scenarios' block, price+dividends, already annualised 3y) since this dossier independently endorses V1's method and 'excessive' verdict; not separately re-derived."
+      }
+    },
+    "TMUS": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Leading 5G carrier compounding cash flow at double digits and buying back stock aggressively, but new-customer growth is decelerating and debt funding the buybacks is large.",
+      "kill_criteria": [
+        "Postpaid net account additions turn negative (net losses) in any quarter",
+        "Full-year guidance is CUT (not just reiterated) on Core Adjusted EBITDA or Adjusted Free Cash Flow at any release",
+        "Net debt/Core Adjusted EBITDA (this dossier's estimate, currently ~2.4x) rises above 3.0x",
+        "Postpaid net-account YoY growth stays negative for two additional consecutive quarters beyond Q2 2026 (through Q4 2026)",
+        "The current $18.2bn buyback/dividend authorization (through 31 Dec 2026) is not renewed or is renewed materially smaller while cash continues to draw down"
+      ],
+      "key_adverse_facts": [
+        "Postpaid net account additions decelerated from +26% YoY (396k, Q3'25) to -13% YoY (277k, Q2'26) over three quarters, even as revenue/EBITDA kept growing -- the clearest primary-source adverse trend found",
+        "Q1 2026 GAAP net income fell 15% YoY (EPS -12%) on $476m of UScellular merger-related accelerated depreciation, net of tax -- a real, quantified GAAP-vs-adjusted gap the company itself discloses",
+        "Net debt is approximately $80.7bn (this dossier's own XBRL-based estimate, ~2.4x FY2025 Core Adjusted EBITDA); cash fell from $5.6bn to $2.8bn in two quarters as buybacks ($2.2bn in Q2'26 alone) ran ahead of the quarter's own FCF",
+        "Non-GAAP EBITDA reconciliation still excludes settlement/litigation costs tied to the August 2021 cyberattack as of the Q2 2026 release -- five-year-old data-breach litigation still affecting the 'adjusted' framing",
+        "CEO Srini Gopalan has under one year of tenure (effective 1 Nov 2025, succeeding Mike Sievert) -- a modest strategy-continuity item to track"
+      ],
+      "data_conflicts": [
+        "None identified between b1 quant data and filings this pass"
+      ],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": {"level": "med", "reason": "the cash-flow/guidance-raise evidence is strong and primary-source-verified, but the net-account deceleration is a genuine, unresolved trend and no independent DCF was run (no V1 row for this ticker)"},
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "in_line",
+        "reconciliation": "No V1 row exists for TMUS in v1_valuation_table.csv/v1_valuation.json, so there is nothing to reconcile. This dossier's own qualitative reverse read: a ~10.5% FY2026-guided Adjusted FCF yield on market cap is broadly in line with the double-digit EBITDA/FCF growth the company is already guiding and delivering (no reliance on unproven acceleration), provided the postpaid net-account deceleration stabilizes rather than continues -- hence 'in_line' rather than 'above' or 'below'."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.071,
+        "base": 0.101,
+        "bull": 0.19,
+        "scenario_basis": "This dossier's own simple 3y build (no V1 row): current price $165.43, ~$17.25 FY2026-guided Adjusted-FCF/share, current ~9.6x P/FCF, plus ~$4.08/share/yr run-rate dividend (Q2'26 dividend annualised). Bear: net-add deceleration persists, FCF/share flat, multiple compresses to 7.0x. Base: FCF/share +8%/yr, multiple flat at 9.6x. Bull: deceleration reverses, FCF/share +12%/yr, multiple re-rates to 11.0x. All annualised over 3 years, dividends added undiscounted."
+      }
+    },
+    "UBER": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Two-sided rides-and-delivery platform beating its own guidance every quarter with margins expanding, but GAAP earnings are non-operating-item noise and legal/safety exposure is growing.",
+      "kill_criteria": [
+        "Adjusted EBITDA margin (% of Gross Bookings) declines for two consecutive quarters (currently expanding every quarter shown, 4.1% to 4.9%)",
+        "Any single new legal/regulatory settlement or fine (net of insurance/existing accrual) exceeds $1 billion",
+        "Quarterly Gross Bookings guidance is missed (below the low end of the company's own guided range)",
+        "A major AV/robotaxi partner (Waymo, an Nvidia-linked platform partner, or WeRide) terminates or materially narrows its Uber platform agreement",
+        "A court or regulator in a top-5-revenue market legally mandates employee (not independent-contractor) classification for drivers"
+      ],
+      "key_adverse_facts": [
+        "Every one of the last four quarters' GAAP net income included a $1.5bn-4.9bn non-operating swing (a one-off tax valuation release in Q3'25, then equity-stake mark-to-market revaluations each quarter since) -- GAAP EPS 'growth' headlines (e.g. +77% YoY Q2'26) substantially overstate underlying operating improvement",
+        "The Dutch Data Protection Authority fined Uber EUR825m (~$966m) on 23 Aug 2026 over automated driver-account deactivations, under appeal -- not yet reflected in the $1.8bn accrued legal liability on the balance sheet",
+        "A shareholder derivative suit filed 22 June 2026 in N.D. Cal. against 13 directors/officers alleges the board is a 'serial compliance offender' on driver-conduct and rider-safety oversight",
+        "The federal sexual-assault multidistrict litigation case count grew from 'over 3,000' (1 Jun 2026) to 4,588 (Sep 2026 reporting) in three months, with the next trial 7 Oct 2026",
+        "SBC is ~3.5% of revenue (~$500m/quarter), materially higher than the other two names in this batch, partially offset but not fully absorbed by buybacks"
+      ],
+      "data_conflicts": [
+        "None identified between b1 quant data and filings this pass; the b1 composite/live_rank (325/503, decile 4) is notably lower than the triage note's enthusiasm, which this dossier attributes mainly to weak trailing momentum (-22.8%, 12-1mo) rather than a fundamentals disagreement"
+      ],
+      "next_earnings_date": "2026-11-04",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": {"level": "med", "reason": "the operating/guidance-beat evidence is strong and primary-source-verified, but the legal/regulatory exposure is expanding in real time (news-sourced, not yet filing-confirmed) and no independent DCF was run (no V1 row for this ticker)"},
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "in_line",
+        "reconciliation": "No V1 row exists for UBER in v1_valuation_table.csv/v1_valuation.json, so there is nothing to reconcile. This dossier's own qualitative reverse read: a ~7% TTM FCF yield (TTM FCF just over $10bn per the company's own Q2'26 release, market cap ~$142.2bn) is broadly in line with -- not below -- the 22-24% Gross Bookings growth and margin expansion already being delivered and guided, so the price is not obviously discounting more growth than the base case assumes; the real open question is risk-sizing (AV disintermediation, expanding legal/safety exposure), reflected in the INCLUDE-SMALL verdict rather than in the growth-vs-price read."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.10,
+        "base": 0.115,
+        "bull": 0.302,
+        "scenario_basis": "This dossier's own simple 3y build (no V1 row): current price $69.62, ~$4.88 TTM FCF/share, current ~14.3x P/FCF; no dividend. Bear: legal/regulatory risk (Dutch fine, MDL, shareholder suit) realized and AV competition bites, FCF/share +5%/yr, multiple compresses to 9.0x. Base: FCF/share +15%/yr (below current 22-24% Gross Bookings growth, allowing for deceleration), multiple contracts modestly to 13.0x. Bull: legal risk contained, FCF/share +25%/yr, multiple re-rates to 16.0x. All annualised over 3 years."
+      }
+    }
+  }
+}

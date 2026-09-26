@@ -1,0 +1,122 @@
+{
+  "agent": "F52",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "ECL": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Water/hygiene compounder with real pricing power, now funding a $4.75B AI-cooling bet with debt; priced for more growth than the evidence supports.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Organic sales growth falls below 5% for two consecutive quarters (breaks the \"5-7%\" algorithm).",
+        "Net debt/adjusted EBITDA remains above 3.0x beyond FY2027 (past management's own 2-year delever target from the 20-Mar-2026 announcement).",
+        "FY guidance is cut in an upcoming release (breaking the maintain/raise pattern of the last three checkpoints).",
+        "Organic operating income margin stalls below 19% for two consecutive quarters (fails to progress toward \"well beyond 20%\").",
+        "CoolIT/Ovivo integration and acquisition-related special charges exceed the guided ~$0.75-$0.80/share (FY2026) for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "Issued $5.0bn of senior notes (29-May-2026) and drew total consolidated debt to $13.17bn (from $8.13bn at YE2025) to fund the $4.75bn CoolIT Systems acquisition, paid at 29x NTM / 24x FY2027 adjusted EBITDA -- a rich multiple.",
+        "CoolIT is explicitly NOT adjusted-EPS-accretive (ex-amortization) until 2028, per the company's own 20-Mar-2026 disclosure; pro forma net debt/adjusted EBITDA was guided to ~3x at close.",
+        "Q3 2024 GAAP EPS of $2.58 was inflated by a one-off gain on the sale of the Global Surgical Solutions business, not recurring.",
+        "Nalco (Ecolab subsidiary) remains a defendant in TPC Group MDL litigation stemming from a 2019 Texas plant explosion; reached a settlement in principle with substantially all remaining plaintiffs in July 2026, but final resolution and cost were not independently quantified in this pass.",
+        "Two large debt-funded acquisitions (Ovivo Dec-2025 $1.596bn, CoolIT Jul-2026 $4.75bn) in a 12-month window raise simultaneous integration-execution risk in two new-to-Ecolab end markets."
+      ],
+      "data_conflicts": [
+        "b1 quant composite for ECL is weak (composite 0.127, decile 2 of 10, live_rank 434 of ~500) despite the fundamental triage/diligence view of a high-quality compounder (quality 5/5) -- the quant model's gross-profit/assets and FCF-yield metrics penalize this capital-intensive, richly-valued name structurally; recorded as a genuine quant-vs-fundamental disagreement.",
+        "d4 vendor snapshot shows TTM free cash flow of $1,474.8M vs. this analyst's XBRL-derived $1,874.5M (~21% lower); the OCF component reconciles exactly between the two sources, so the discrepancy is isolated to the capex/timing convention used by the vendor."
+      ],
+      "next_earnings_date": "2026-10-27",
+      "confidence_in_thesis": "medium - filed financials, the CoolIT deal terms and the guidance track record are well documented from primary sources; the precise timing of the FY2026 guidance step-down between Apr and Jul 2026, SBC, and the final TPC litigation settlement cost were not independently located in this pass",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": null,
+        "reconciliation": "No V1 systematic valuation row exists for ECL (not in v1_valuation_table.csv). This analyst's own reverse DCF (WACC 8.0%, terminal growth 2.5%) implies a 10-year FCF CAGR of ~14.1% priced in vs. a ~9%/yr evidence-based base case built from management's own 5-7% organic sales / margin-expansion algorithm -- implied growth is ABOVE base case.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.066,
+        "base": 0.076,
+        "bull": 0.179
+      },
+      "scenario_basis": "Entry: price $279.49 (25-Sep-2026), FY2026 adjusted EPS midpoint $8.15 (entry P/E 34.3x), ~1.05% dividend yield; bear = 4%/yr adj. EPS growth exiting at 24x; base = 9%/yr exiting at 32x; bull = 15%/yr exiting at 36x, each over 3 years."
+    },
+    "GE": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Jet-engine duopoly with a 70%-aftermarket annuity model and a raise-raise-maintain guidance record, but priced for a decade of ~17%/yr growth it may not sustain that long.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "FY adjusted EPS guidance is cut in an upcoming release (breaking the initiate-maintain-raise pattern of the last three checkpoints).",
+        "Total engine deliveries growth decelerates below +15% YoY for two consecutive quarters (LEAP ramp stalling).",
+        "Non-GAAP operating profit margin contracts below 20% for two consecutive quarters.",
+        "Total borrowings rise back above $20bn for two consecutive quarters (releveraging, reversing the current delever trend).",
+        "A confirmed new LEAP/CFM durability or safety issue requiring a fleet-wide airworthiness directive beyond the already-announced HPT-blade durability kit."
+      ],
+      "key_adverse_facts": [
+        "Consolidated financials still include a legacy run-off Insurance segment ($36.2bn of insurance/annuity liabilities backed by $37.9bn of investment securities) and the Bank BPH Poland mortgage portfolio, both explicitly named by the company as capital/liquidity risk categories distinct from the aerospace operating business.",
+        "The LEAP-1B durability kit (2x time-on-wing improvement) was only certified in Q2 2026, with full fleet cutover not beginning until 'beginning of 2027' -- the fix for a known durability issue is not yet fully executed.",
+        "BETA Technologies equity-stake mark-to-market created a $262M unrealized loss over six months 2026 (and a $47M unrealized gain in Q2 alone), a real source of non-operating earnings volatility excluded from adjusted EPS.",
+        "Pre-2025 discrete quarterly GAAP profit figures and one quarter's GAAP profit (Q3 2025, ~$2,466M) were derived by subtraction rather than directly filed; flagged as lower-confidence.",
+        "This analyst did not independently pull the dedicated Item 1 'Legal Proceedings' narrative referenced in the 10-Q's own table of contents (pages 30-31); only the forward-looking-statement risk-category language ('shareholder and related lawsuits, Bank BPH and other proceedings') was captured."
+      ],
+      "data_conflicts": [
+        "None material identified: this analyst's independently-derived TTM operating cash flow ($9.80bn) matches the d4 vendor snapshot exactly, and the vendor TTM FCF ($6.59bn) was used directly since it reconciles."
+      ],
+      "next_earnings_date": "2026-10-20",
+      "confidence_in_thesis": "medium-high - the moat, backlog and guidance track record are exceptionally well documented from primary 8-K/10-Q sources; the aerospace-only (ex-Insurance, ex-Bank BPH) net debt figure and the full Legal Proceedings text were not independently isolated in this pass",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": null,
+        "reconciliation": "No V1 systematic valuation row exists for GE (not in v1_valuation_table.csv). This analyst's own reverse DCF (WACC 8.5%, terminal growth 2.5%) implies a 10-year FCF CAGR of ~17.0% priced in vs. a ~13%/yr evidence-based base case (services ramp decelerating from the current +22-38% adjusted EPS growth pace toward a high-single/low-teens sustainable rate) -- implied growth is ABOVE base case.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.093,
+        "base": 0.056,
+        "bull": 0.184
+      },
+      "scenario_basis": "Entry: price $327.09 (25-Sep-2026), FY2026 adjusted EPS midpoint $7.75 (entry P/E 42.2x on FY26 guide, ~35.5x NTM), ~0.5% dividend yield; bear = 6%/yr adj. EPS growth exiting at 26x; base = 13%/yr exiting at 34x; bull = 20%/yr exiting at 40x, each over 3 years."
+    },
+    "GWW": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Best-in-class MRO distributor (46% ROE, three straight guidance raises) whose Q3-2025 profit dip was a clean one-off, but the price still implies more growth than the base case.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "High-Touch Solutions - N.A. daily organic constant-currency growth falls below 3% for two consecutive quarters.",
+        "Adjusted operating margin falls below 15% for two consecutive quarters (below the low end of the FY2026 guided range).",
+        "FY guidance is cut in an upcoming release (breaking the two-consecutive-raise pattern since Feb-2026).",
+        "Gross margin decline resumes and exceeds -50bps YoY for two consecutive quarters (tariff price/cost timing turning unfavorable again, no offsetting refunds).",
+        "Endless Assortment (MonotaRO/Zoro) daily organic constant-currency growth decelerates below 8% for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "Q3 2025 GAAP net income fell 39.5% YoY and diluted EPS fell to $6.12 from $9.87, driven by a non-cash asset-impairment loss tied to the announced exit from the U.K. market (including the planned divestiture of Cromwell); adjusted EPS excluding the charge was actually up 3.4% YoY to $10.21 -- a disclosed one-off, not an operating deterioration, and fully lapped by Q2 2026.",
+        "Full-year 2025 reported (GAAP) diluted EPS of $35.40 was down 8.6% YoY due to the same U.K.-exit charge and an unfavorable tax rate.",
+        "MonotaRO, a majority-owned but separately Tokyo-Stock-Exchange-listed subsidiary, is fully consolidated (100% of P&L and balance sheet) with only the noncontrolling interest ($382M at 30-Jun-2026) carved out at the equity/net-income line -- a real entity-scope nuance for anyone reading segment or balance-sheet figures.",
+        "Gross margin in the High-Touch Solutions - N.A. segment has shown tariff-driven price/cost timing volatility in both directions (-50bps Q3 2025, +80bps Q2 2026, the latter partly a one-off $43M IEEPA tariff refund) -- the current tailwind may not repeat.",
+        "This analyst did not separately pull the dedicated Item 1 'Legal Proceedings' narrative from the 10-Q in this pass; only generic risk-factor litigation categories were found in the forward-looking-statement disclosure."
+      ],
+      "data_conflicts": [
+        "d4 vendor snapshot shows TTM free cash flow of $1,247.75M vs. this analyst's XBRL-derived $1,510M (~17% higher); both draw on the same reconciled TTM operating cash flow figure ($2,175M), so the gap is isolated to the capex/timing convention used by the vendor.",
+        "A Q4-2024-minus-9-months arithmetic derivation implied diluted EPS of $9.85 for Q4 2024, but the company's own comparative column in the Q4 2025 release states $9.44 for that quarter -- a small internal inconsistency in the derived (not directly filed) Q4 series; the company-reported figure was used."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "confidence_in_thesis": "medium-high - the U.K.-exit one-off, the guidance track record and the balance sheet are well documented from primary 8-K/10-Q sources; SBC and the dedicated Legal Proceedings text were not independently isolated in this pass",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": null,
+        "reconciliation": "No V1 systematic valuation row exists for GWW (not in v1_valuation_table.csv). This analyst's own reverse DCF (WACC 8.0%, terminal growth 2.5%) implies a 10-year FCF CAGR of ~12.8% priced in vs. a ~10%/yr evidence-based base case (the company's own historical high-single-digit organic sales plus buybacks algorithm) -- implied growth is ABOVE base case, though by the smallest margin of the three names in this batch.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.04,
+        "base": 0.083,
+        "bull": 0.175
+      },
+      "scenario_basis": "Entry: price $1,243.07 (25-Sep-2026), FY2026 adjusted EPS midpoint $46.375 (entry P/E 26.8x on FY26 guide, ~25.0x NTM), ~0.8% dividend yield; bear = 5%/yr adj. EPS growth exiting at 20x; base = 10%/yr exiting at 25x; bull = 15%/yr exiting at 28x, each over 3 years."
+    }
+  }
+}

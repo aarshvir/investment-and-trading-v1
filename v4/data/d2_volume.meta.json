@@ -1,0 +1,18 @@
+{
+  "source": {
+    "yahoo": "Yahoo Finance chart API via yfinance 1.7 yf.download(start=1995-01-01, end=2026-09-26, auto_adjust=False, actions=True, group_by='ticker', threads=6)",
+    "universe": "C:\\Users\\user\\OneDrive\\Documents\\Projects\\Investing and trading\\Long-term and mid-term investments\\v4\\data\\d2_universe.csv"
+  },
+  "shape": [
+    7986,
+    759
+  ],
+  "values": "Yahoo daily share volume (split-adjusted by Yahoo).",
+  "caveats": [
+    "Survivorship: tickers Yahoo no longer serves (most acquired/bankrupt names) are absent; see d2_coverage.csv status=no_data and d2_report.md.",
+    "Ticker reuse: some historical symbols now map to a different company on Yahoo (d2_coverage.csv reuse_suspect/flags). Join to membership by (ticker, date) with care.",
+    "Yahoo data is not point-in-time: Close is split-adjusted as of the retrieval date; Adj Close is split+dividend adjusted (CRSP-style multiplicative) as of the retrieval date."
+  ],
+  "agent": "d2",
+  "written_utc": "2026-09-25T20:57:23Z"
+}

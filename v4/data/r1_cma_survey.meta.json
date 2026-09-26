@@ -1,0 +1,70 @@
+{
+  "name": "r1_cma_survey",
+  "agent": "r1",
+  "retrieved_utc": "2026-09-25T20:46:59Z",
+  "rows": 14,
+  "columns": [
+    "institution",
+    "edition",
+    "published",
+    "data_as_of",
+    "horizon",
+    "asset",
+    "nominal",
+    "real_published",
+    "real_derived",
+    "real_is_derived",
+    "inflation",
+    "vol",
+    "arith",
+    "cash",
+    "source_type",
+    "note",
+    "url",
+    "retrieved"
+  ],
+  "description": "Institutional long-horizon return assumptions for US large-cap equities (USD, nominal, annualized compound unless noted).",
+  "summary_core_12_firms": {
+    "n": 12,
+    "median": 0.063,
+    "mean": 0.05193371666666668,
+    "p25": 0.050499999999999996,
+    "p75": 0.06725,
+    "min": -0.059495399999999865,
+    "max": 0.0897,
+    "median_real": 0.0388472737932382
+  },
+  "summary_2026_dated_estimates": {
+    "n": 5,
+    "median": 0.049,
+    "members": [
+      "Vanguard (VCMM)",
+      "BlackRock Investment Institute",
+      "GMO",
+      "Research Affiliates",
+      "Invesco Solutions"
+    ]
+  },
+  "caveats": [
+    "Horizons differ (5-15y); GMO is 7y real; Morgan Stanley is 7y and dated 2025-03; BNY is broad US equity.",
+    "real_derived uses each firm's own inflation assumption where available, else the 2.34% 10y breakeven (2026-09-25).",
+    "Research Affiliates and Goldman figures are from secondary reporting (primary not accessible).",
+    "Horizon survey aggregates many of the listed firms; it is not an independent observation."
+  ],
+  "sources": [
+    "https://am.jpmorgan.com/content/dam/jpm-am-aem/global/en/insights/portfolio-insights/ltcma/noindex/ltcma-full-report.pdf",
+    "https://corporate.vanguard.com/content/corporatesite/us/en/corp/vemo/vemo-return-forecasts.html",
+    "https://www.blackrock.com/blk-inst-c-assets/images/tools/blackrock-investment-institute/cma/blackrock-capital-market-assumptions.xlsx",
+    "https://www.gmo.com/globalassets/articles/gmo-7-year-asset-class-forecast/2026/gmo-7-year-asset-class-forecastjun26.pdf",
+    "https://fortune.com/2026/05/21/bond-yields-today-highest-since-2007-stocks-outlook/",
+    "https://www.aqr.com/-/media/AQR/Documents/Alternative-Thinking/AQR-Alternative-Thinking---2026-Capital-Market-Assumptions.pdf",
+    "https://www.tker.co/p/goldman-sachs-10-year-return-forecast-2025",
+    "https://www.morganstanley.com/assets/pdfs/2d9493c3-822f-4f18-8c28-ba3ad25e8473.pdf",
+    "https://www.schwab.com/learn/story/schwabs-long-term-capital-market-expectations",
+    "https://ntam.northerntrust.com/content/dam/northerntrust/investment-management/global/en/documents/thought-leadership/2026/cma/2026-capital-market-assumptions-report.pdf",
+    "https://www.invesco.com/content/dam/invesco/emea/en/pdf/invesco-capital-market-assumption-usd.pdf",
+    "https://www.bny.com/content/dam/imemea/pdfs/endurance-under-pressure-capital-market-assumptions-2026-full.pdf",
+    "https://www.horizonactuarial.com/_files/ugd/f76a4b_a73ade7e6ba748f192d531c974bbea2a.pdf",
+    "https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPbymonth.xlsx"
+  ]
+}

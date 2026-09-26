@@ -1,0 +1,1629 @@
+{
+ "built_utc": "2026-09-25T20:57:07Z",
+ "raw_rows_all_sources": 4607116,
+ "duplicate_ticker_date_rows_in_download": 0,
+ "us_calendar": {
+  "first": "1995-01-03",
+  "last": "2026-09-25",
+  "n_days": 7986,
+  "days_added_beyond_gspc": []
+ },
+ "lse_calendar": {
+  "first": "2009-01-02",
+  "n_days": 4479
+ },
+ "offcalendar_bars": {
+  "n_rows": 2,
+  "n_with_price": 2,
+  "n_dividend_only": 0,
+  "n_weekend": 0,
+  "top_dates": {
+   "2026-05-25": 1,
+   "2026-09-07": 1
+  }
+ },
+ "adj_split_dividend_events": {
+  "n_events": 25,
+  "by_class": {
+   "small_dividend_with_split (plausible stock dividend + cash)": 12,
+   "ambiguous_flagged": 6,
+   "double_count_corrected": 5,
+   "plausible": 2
+  },
+  "corrected": [
+   "ABT@2004-05-03 x1.0742",
+   "CNP@2002-10-01 x1.1110",
+   "DHR@2016-07-05 x1.5555",
+   "DLX@2001-01-02 x1.3350",
+   "ETN@2001-01-02 x1.1910"
+  ],
+  "ambiguous": [
+   {
+    "ticker": "DXC",
+    "date": "2015-11-30",
+    "ret_close": "-0.20501607782524545",
+    "ret_adj_yahoo": "0.08372271136591092"
+   },
+   {
+    "ticker": "EXPE",
+    "date": "2011-12-21",
+    "ret_close": "-0.5115586666383404",
+    "ret_adj_yahoo": "-0.33555694987768236"
+   },
+   {
+    "ticker": "JCI",
+    "date": "2007-07-02",
+    "ret_close": "-0.6052086524494289",
+    "ret_adj_yahoo": "-0.5344618769126088"
+   },
+   {
+    "ticker": "RIG",
+    "date": "2007-11-27",
+    "ret_close": "-0.26601207776260094",
+    "ret_adj_yahoo": "-0.10642914555923355"
+   },
+   {
+    "ticker": "TMUS",
+    "date": "2013-05-01",
+    "ret_close": "-0.3023648545243952",
+    "ret_adj_yahoo": "-0.15800204488523084"
+   },
+   {
+    "ticker": "XRX",
+    "date": "2017-01-03",
+    "ret_close": "0.19805488853587816",
+    "ret_adj_yahoo": "0.37635137550374"
+   }
+  ]
+ },
+ "monthly": {
+  "n_months": 380,
+  "first_month_end": "1995-01-31",
+  "last_month_end": "2026-08-31",
+  "n_nonnull_returns": 218523,
+  "midlife_missing_month_end_prices": 26,
+  "midlife_missing_examples": [
+   "NLV@2007-03-30",
+   "NLV@2010-05-28",
+   "NLV@2010-09-30",
+   "NLV@2010-11-30",
+   "NLV@2012-09-28",
+   "NLV@2015-03-31",
+   "NLV@2015-04-30",
+   "GR@2015-05-29",
+   "NLV@2015-05-29",
+   "GR@2015-06-30",
+   "NLV@2015-06-30",
+   "GR@2015-07-31",
+   "NLV@2015-07-31",
+   "NLV@2015-09-30",
+   "NLV@2015-10-30",
+   "NLV@2015-11-30",
+   "NLV@2015-12-31",
+   "NLV@2016-03-31",
+   "NLV@2016-06-30",
+   "NLV@2016-07-29"
+  ]
+ },
+ "rename_candidates": {
+  "n_rows": 298,
+  "n_1to1": 31,
+  "n_accepted": 24,
+  "accepted": [
+   "HRS->LHX@2019-06-01",
+   "TMK->GL@2019-08-08",
+   "BHGE->BKR@2019-10-18",
+   "CBS->PSKY@2019-12-05",
+   "JEC->J@2019-12-10",
+   "UTX->RTX@2020-04-03",
+   "CTL->LUMN@2020-09-18",
+   "MYL->VTRS@2020-11-17",
+   "LB->BBWI@2021-08-03",
+   "VIAC->PSKY@2022-02-17",
+   "BLL->BALL@2022-05-10",
+   "FB->META@2022-06-09",
+   "ANTM->ELV@2022-06-28",
+   "NLOK->GEN@2022-11-08",
+   "PKI->RVTY@2023-05-16",
+   "RE->EG@2023-07-10",
+   "ABC->COR@2023-08-30",
+   "PEAK->DOC@2024-03-04",
+   "FLT->CPAY@2024-03-25",
+   "PARA->PSKY@2025-08-08",
+   "FI->FISV@2025-11-11",
+   "MMC->MRSH@2026-01-14",
+   "BK->BNY@2026-05-21",
+   "EQR->VMRK@2026-08-18"
+  ],
+  "rejected_1to1": [
+   "QLGC->NE@2011-01-18: no successor in chain has liquid Yahoo data (>=250 days, >=90% of old member-days after its first bar)",
+   "MWV->WRK@2015-07-02: no successor in chain has liquid Yahoo data (>=250 days, >=90% of old member-days after its first bar)",
+   "BBT->TFC@2019-12-09: old ticker has independent, plausible Yahoo data - not remapped",
+   "COG->CTRA@2021-10-04: no successor in chain has liquid Yahoo data (>=250 days, >=90% of old member-days after its first bar)",
+   "FISV->FI@2023-06-07: old ticker has independent, plausible Yahoo data - not remapped; no successor in chain has liquid Yahoo data (>=250 days, >=90% of old member-days after its first bar)",
+   "WRK->SW@2024-07-08: no successor in chain has liquid Yahoo data (>=250 days, >=90% of old member-days after its first bar)",
+   "SATS->ECHO@2026-06-24: no successor in chain has liquid Yahoo data (>=250 days, >=90% of old member-days after its first bar)"
+  ]
+ },
+ "check_c_current_last_date": {
+  "n_current": 503,
+  "n_last_is_cutoff": 503,
+  "exceptions": []
+ },
+ "check_d_nonpositive_prices": {
+  "n_rows": 9,
+  "by_ticker": {
+   "^IRX": 9
+  },
+  "n_zero_close": 0,
+  "n_negative_any": 9
+ },
+ "ohlc_inconsistent_rows": {
+  "n": 1866,
+  "by_ticker_top": {
+   "SPXS.L": 699,
+   "SPY5.L": 523,
+   "CSPX.L": 354,
+   "IUSA.L": 177,
+   "VUAA.L": 109,
+   "^IRX": 2,
+   "AV": 1,
+   "NFX": 1
+  }
+ },
+ "check_e_adj_factor": {
+  "tickers_factor_gt_1": [],
+  "n_tickers_factor_gt_1": 0,
+  "n_tickers_factor_decreasing": 0,
+  "factor_decreasing_examples": [],
+  "n_factor_jumps_not_matching_yahoo_dividend_5pct": 1,
+  "n_tickers_with_mismatch": 1,
+  "n_dividend_events_total": 51183
+ },
+ "coverage": {
+  "n_universe": 1172,
+  "n_equity": 1136,
+  "equity_status": {
+   "active": 711,
+   "no_data": 408,
+   "ended_before_2026-09-25": 17
+  },
+  "current_status": {
+   "active": 503
+  },
+  "historical_nonconstituent_equities": 633,
+  "historical_no_data": 408,
+  "historical_no_data_fja_since2000": 380,
+  "historical_fja_since2000_total": 596,
+  "benchmarks_status": [
+   {
+    "ticker": "BIL",
+    "status": "active",
+    "first_date": "2007-05-30"
+   },
+   {
+    "ticker": "IVV",
+    "status": "active",
+    "first_date": "2000-05-19"
+   },
+   {
+    "ticker": "IWD",
+    "status": "active",
+    "first_date": "2000-05-26"
+   },
+   {
+    "ticker": "IWF",
+    "status": "active",
+    "first_date": "2000-05-26"
+   },
+   {
+    "ticker": "MTUM",
+    "status": "active",
+    "first_date": "2013-04-18"
+   },
+   {
+    "ticker": "QQQ",
+    "status": "active",
+    "first_date": "1999-03-10"
+   },
+   {
+    "ticker": "QUAL",
+    "status": "active",
+    "first_date": "2013-07-18"
+   },
+   {
+    "ticker": "RSP",
+    "status": "active",
+    "first_date": "2003-05-01"
+   },
+   {
+    "ticker": "SGOV",
+    "status": "active",
+    "first_date": "2020-06-01"
+   },
+   {
+    "ticker": "SHV",
+    "status": "active",
+    "first_date": "2007-01-11"
+   },
+   {
+    "ticker": "SPHQ",
+    "status": "active",
+    "first_date": "2005-12-06"
+   },
+   {
+    "ticker": "SPY",
+    "status": "active",
+    "first_date": "1995-01-03"
+   },
+   {
+    "ticker": "USMV",
+    "status": "active",
+    "first_date": "2011-10-20"
+   },
+   {
+    "ticker": "VLUE",
+    "status": "active",
+    "first_date": "2013-04-18"
+   },
+   {
+    "ticker": "VOO",
+    "status": "active",
+    "first_date": "2010-09-09"
+   },
+   {
+    "ticker": "XLB",
+    "status": "active",
+    "first_date": "1998-12-22"
+   },
+   {
+    "ticker": "XLC",
+    "status": "active",
+    "first_date": "2018-06-19"
+   },
+   {
+    "ticker": "XLE",
+    "status": "active",
+    "first_date": "1998-12-22"
+   },
+   {
+    "ticker": "XLF",
+    "status": "active",
+    "first_date": "1998-12-22"
+   },
+   {
+    "ticker": "XLI",
+    "status": "active",
+    "first_date": "1998-12-22"
+   },
+   {
+    "ticker": "XLK",
+    "status": "active",
+    "first_date": "1998-12-22"
+   },
+   {
+    "ticker": "XLP",
+    "status": "active",
+    "first_date": "1998-12-22"
+   },
+   {
+    "ticker": "XLRE",
+    "status": "active",
+    "first_date": "2015-10-08"
+   },
+   {
+    "ticker": "XLU",
+    "status": "active",
+    "first_date": "1998-12-22"
+   },
+   {
+    "ticker": "XLV",
+    "status": "active",
+    "first_date": "1998-12-22"
+   },
+   {
+    "ticker": "XLY",
+    "status": "active",
+    "first_date": "1998-12-22"
+   },
+   {
+    "ticker": "^GSPC",
+    "status": "active",
+    "first_date": "1995-01-03"
+   },
+   {
+    "ticker": "^SP500TR",
+    "status": "active",
+    "first_date": "1995-01-03"
+   },
+   {
+    "ticker": "^VIX",
+    "status": "active",
+    "first_date": "1995-01-03"
+   },
+   {
+    "ticker": "^IRX",
+    "status": "active",
+    "first_date": "1995-01-03"
+   },
+   {
+    "ticker": "^TNX",
+    "status": "active",
+    "first_date": "1995-01-03"
+   },
+   {
+    "ticker": "CSPX.L",
+    "status": "active",
+    "first_date": "2010-09-15"
+   },
+   {
+    "ticker": "IUSA.L",
+    "status": "active",
+    "first_date": "2009-01-02"
+   },
+   {
+    "ticker": "SPXS.L",
+    "status": "active",
+    "first_date": "2010-05-25"
+   },
+   {
+    "ticker": "SPY5.L",
+    "status": "active",
+    "first_date": "2012-03-19"
+   },
+   {
+    "ticker": "VUAA.L",
+    "status": "active",
+    "first_date": "2019-05-14"
+   }
+  ],
+  "reuse_suspect_n": 76,
+  "flag_counts": {
+   "series_starts_after_membership": 76,
+   "series_starts_after_member_start": 26,
+   "thin_pre_history": 22,
+   "thin_during_membership": 5
+  }
+ },
+ "member_day_coverage_by_era": [
+  {
+   "era": "2000-2004",
+   "member_days": 620616,
+   "coverage_strict": 0.5024282325947124,
+   "coverage_valid_excl_reuse": 0.5024282325947124,
+   "coverage_best_incl_renames": 0.5245143534810576,
+   "n_tickers_with_missing_days_best": 340,
+   "top_missing_best": [
+    [
+     "AABA",
+     1256
+    ],
+    [
+     "ABI",
+     1256
+    ],
+    [
+     "ABS",
+     1256
+    ],
+    [
+     "ACV",
+     1256
+    ],
+    [
+     "ADCT",
+     1256
+    ],
+    [
+     "AET",
+     1256
+    ],
+    [
+     "AGN",
+     1256
+    ],
+    [
+     "ANDW",
+     1256
+    ],
+    [
+     "APC",
+     1256
+    ],
+    [
+     "ARNC",
+     1256
+    ],
+    [
+     "ASO",
+     1256
+    ],
+    [
+     "AT",
+     1256
+    ],
+    [
+     "AVP",
+     1256
+    ],
+    [
+     "AW",
+     1256
+    ],
+    [
+     "BBBY",
+     1256
+    ],
+    [
+     "BCR",
+     1256
+    ],
+    [
+     "BDK",
+     1256
+    ],
+    [
+     "BEAM",
+     1256
+    ],
+    [
+     "BIG",
+     1256
+    ],
+    [
+     "BLS",
+     1256
+    ],
+    [
+     "BMC",
+     1256
+    ],
+    [
+     "BMET",
+     1256
+    ],
+    [
+     "BMS",
+     1256
+    ],
+    [
+     "BNI",
+     1256
+    ],
+    [
+     "BOL",
+     1256
+    ],
+    [
+     "BR",
+     1256
+    ],
+    [
+     "BSC",
+     1256
+    ],
+    [
+     "BUD",
+     1256
+    ],
+    [
+     "CA",
+     1256
+    ],
+    [
+     "CBE",
+     1256
+    ],
+    [
+     "CBS",
+     1256
+    ],
+    [
+     "CCE",
+     1256
+    ],
+    [
+     "CCTYQ",
+     1256
+    ],
+    [
+     "CEG",
+     1256
+    ],
+    [
+     "CFC",
+     1256
+    ],
+    [
+     "CIN",
+     1256
+    ],
+    [
+     "CMA",
+     1256
+    ],
+    [
+     "CMVT",
+     1256
+    ],
+    [
+     "CPWR",
+     1256
+    ],
+    [
+     "CTB",
+     1256
+    ]
+   ]
+  },
+  {
+   "era": "2005-2009",
+   "member_days": 625982,
+   "coverage_strict": 0.5848187328070136,
+   "coverage_valid_excl_reuse": 0.5848187328070136,
+   "coverage_best_incl_renames": 0.6139984855794576,
+   "n_tickers_with_missing_days_best": 290,
+   "top_missing_best": [
+    [
+     "AABA",
+     1259
+    ],
+    [
+     "ACS",
+     1259
+    ],
+    [
+     "AET",
+     1259
+    ],
+    [
+     "AGN",
+     1259
+    ],
+    [
+     "ALTR",
+     1259
+    ],
+    [
+     "APC",
+     1259
+    ],
+    [
+     "APOL",
+     1259
+    ],
+    [
+     "ARNC",
+     1259
+    ],
+    [
+     "AVP",
+     1259
+    ],
+    [
+     "AYE",
+     1259
+    ],
+    [
+     "BBBY",
+     1259
+    ],
+    [
+     "BCR",
+     1259
+    ],
+    [
+     "BDK",
+     1259
+    ],
+    [
+     "BEAM",
+     1259
+    ],
+    [
+     "BIG",
+     1259
+    ],
+    [
+     "BJS",
+     1259
+    ],
+    [
+     "BMC",
+     1259
+    ],
+    [
+     "BMS",
+     1259
+    ],
+    [
+     "BNI",
+     1259
+    ],
+    [
+     "BRCM",
+     1259
+    ],
+    [
+     "CA",
+     1259
+    ],
+    [
+     "CCE",
+     1259
+    ],
+    [
+     "CEG",
+     1259
+    ],
+    [
+     "CMA",
+     1259
+    ],
+    [
+     "COL",
+     1259
+    ],
+    [
+     "CTXS",
+     1259
+    ],
+    [
+     "DELL",
+     1259
+    ],
+    [
+     "DOW",
+     1259
+    ],
+    [
+     "EA",
+     1259
+    ],
+    [
+     "EKDKQ",
+     1259
+    ],
+    [
+     "EMC",
+     1259
+    ],
+    [
+     "ESRX",
+     1259
+    ],
+    [
+     "ETFC",
+     1259
+    ],
+    [
+     "FDO",
+     1259
+    ],
+    [
+     "FII",
+     1259
+    ],
+    [
+     "FOXA",
+     1259
+    ],
+    [
+     "FRX",
+     1259
+    ],
+    [
+     "FTR",
+     1259
+    ],
+    [
+     "GAS",
+     1259
+    ],
+    [
+     "GPS",
+     1259
+    ]
+   ]
+  },
+  {
+   "era": "2010-2014",
+   "member_days": 625796,
+   "coverage_strict": 0.6866470862709253,
+   "coverage_valid_excl_reuse": 0.6866470862709253,
+   "coverage_best_incl_renames": 0.719223197335873,
+   "n_tickers_with_missing_days_best": 190,
+   "top_missing_best": [
+    [
+     "AABA",
+     1258
+    ],
+    [
+     "AET",
+     1258
+    ],
+    [
+     "AGN",
+     1258
+    ],
+    [
+     "ALTR",
+     1258
+    ],
+    [
+     "ANDV",
+     1258
+    ],
+    [
+     "APC",
+     1258
+    ],
+    [
+     "ARG",
+     1258
+    ],
+    [
+     "ARNC",
+     1258
+    ],
+    [
+     "AVB",
+     1258
+    ],
+    [
+     "AVP",
+     1258
+    ],
+    [
+     "BBBY",
+     1258
+    ],
+    [
+     "BCR",
+     1258
+    ],
+    [
+     "BRCM",
+     1258
+    ],
+    [
+     "CA",
+     1258
+    ],
+    [
+     "CAM",
+     1258
+    ],
+    [
+     "CCE",
+     1258
+    ],
+    [
+     "CELG",
+     1258
+    ],
+    [
+     "CFN",
+     1258
+    ],
+    [
+     "CHK",
+     1258
+    ],
+    [
+     "CMA",
+     1258
+    ],
+    [
+     "COG",
+     1258
+    ],
+    [
+     "COL",
+     1258
+    ],
+    [
+     "CTXS",
+     1258
+    ],
+    [
+     "DFS",
+     1258
+    ],
+    [
+     "DNB",
+     1258
+    ],
+    [
+     "DNR",
+     1258
+    ],
+    [
+     "DO",
+     1258
+    ],
+    [
+     "DOW",
+     1258
+    ],
+    [
+     "DTV",
+     1258
+    ],
+    [
+     "EA",
+     1258
+    ],
+    [
+     "EMC",
+     1258
+    ],
+    [
+     "ESRX",
+     1258
+    ],
+    [
+     "ETFC",
+     1258
+    ],
+    [
+     "FDO",
+     1258
+    ],
+    [
+     "FLIR",
+     1258
+    ],
+    [
+     "FOXA",
+     1258
+    ],
+    [
+     "FTR",
+     1258
+    ],
+    [
+     "GPS",
+     1258
+    ],
+    [
+     "HAR",
+     1258
+    ],
+    [
+     "HCBK",
+     1258
+    ]
+   ]
+  },
+  {
+   "era": "2015-2019",
+   "member_days": 634675,
+   "coverage_strict": 0.7917154449127506,
+   "coverage_valid_excl_reuse": 0.7917154449127506,
+   "coverage_best_incl_renames": 0.8266530113837791,
+   "n_tickers_with_missing_days_best": 149,
+   "top_missing_best": [
+    [
+     "ADS",
+     1258
+    ],
+    [
+     "AGN",
+     1258
+    ],
+    [
+     "ALXN",
+     1258
+    ],
+    [
+     "ARNC",
+     1258
+    ],
+    [
+     "AVB",
+     1258
+    ],
+    [
+     "CERN",
+     1258
+    ],
+    [
+     "CMA",
+     1258
+    ],
+    [
+     "COG",
+     1258
+    ],
+    [
+     "CTXS",
+     1258
+    ],
+    [
+     "DFS",
+     1258
+    ],
+    [
+     "DISCA",
+     1258
+    ],
+    [
+     "DISCK",
+     1258
+    ],
+    [
+     "EA",
+     1258
+    ],
+    [
+     "ETFC",
+     1258
+    ],
+    [
+     "FLIR",
+     1258
+    ],
+    [
+     "GPS",
+     1258
+    ],
+    [
+     "HES",
+     1258
+    ],
+    [
+     "IPG",
+     1258
+    ],
+    [
+     "JNPR",
+     1258
+    ],
+    [
+     "JWN",
+     1258
+    ],
+    [
+     "K",
+     1258
+    ],
+    [
+     "KSU",
+     1258
+    ],
+    [
+     "LEG",
+     1258
+    ],
+    [
+     "MRO",
+     1258
+    ],
+    [
+     "NBL",
+     1258
+    ],
+    [
+     "NLSN",
+     1258
+    ],
+    [
+     "PBCT",
+     1258
+    ],
+    [
+     "PXD",
+     1258
+    ],
+    [
+     "RTN",
+     1258
+    ],
+    [
+     "SEE",
+     1258
+    ],
+    [
+     "TIF",
+     1258
+    ],
+    [
+     "VAR",
+     1258
+    ],
+    [
+     "WBA",
+     1258
+    ],
+    [
+     "XEC",
+     1258
+    ],
+    [
+     "XLNX",
+     1258
+    ],
+    [
+     "STI",
+     1242
+    ],
+    [
+     "VIAB",
+     1240
+    ],
+    [
+     "CELG",
+     1231
+    ],
+    [
+     "HCP",
+     1219
+    ],
+    [
+     "SYMC",
+     1219
+    ]
+   ]
+  },
+  {
+   "era": "2020-2026",
+   "member_days": 852277,
+   "coverage_strict": 0.9347559537568185,
+   "coverage_valid_excl_reuse": 0.9347559537568185,
+   "coverage_best_incl_renames": 0.9513127774186092,
+   "n_tickers_with_missing_days_best": 61,
+   "top_missing_best": [
+    [
+     "AVB",
+     1663
+    ],
+    [
+     "EA",
+     1654
+    ],
+    [
+     "HOLX",
+     1574
+    ],
+    [
+     "K",
+     1494
+    ],
+    [
+     "IPG",
+     1485
+    ],
+    [
+     "WBA",
+     1421
+    ],
+    [
+     "HES",
+     1395
+    ],
+    [
+     "ANSS",
+     1392
+    ],
+    [
+     "JNPR",
+     1385
+    ],
+    [
+     "DFS",
+     1351
+    ],
+    [
+     "MRO",
+     1234
+    ],
+    [
+     "CTRA",
+     1152
+    ],
+    [
+     "WRK",
+     1134
+    ],
+    [
+     "CMA",
+     1125
+    ],
+    [
+     "PXD",
+     1094
+    ],
+    [
+     "CTLT",
+     1071
+    ],
+    [
+     "SEE",
+     997
+    ],
+    [
+     "ATVI",
+     955
+    ],
+    [
+     "DISH",
+     871
+    ],
+    [
+     "FRC",
+     840
+    ],
+    [
+     "SIVB",
+     805
+    ],
+    [
+     "ABMD",
+     750
+    ],
+    [
+     "FBHS",
+     747
+    ],
+    [
+     "TWTR",
+     714
+    ],
+    [
+     "NLSN",
+     700
+    ],
+    [
+     "CTXS",
+     693
+    ],
+    [
+     "DRE",
+     693
+    ],
+    [
+     "CERN",
+     613
+    ],
+    [
+     "CDAY",
+     595
+    ],
+    [
+     "DISCA",
+     573
+    ],
+    [
+     "DISCK",
+     573
+    ],
+    [
+     "PBCT",
+     568
+    ],
+    [
+     "INFO",
+     545
+    ],
+    [
+     "XLNX",
+     535
+    ],
+    [
+     "GPS",
+     526
+    ],
+    [
+     "WLTW",
+     510
+    ],
+    [
+     "DAY",
+     506
+    ],
+    [
+     "HBI",
+     496
+    ],
+    [
+     "LEG",
+     496
+    ],
+    [
+     "KSU",
+     492
+    ]
+   ]
+  }
+ ],
+ "members_with_price_by_year": [
+  {
+   "year": 2000,
+   "members": 492.1,
+   "with_price": 231.6,
+   "with_price_valid": 231.6,
+   "with_price_best": 240.6
+  },
+  {
+   "year": 2001,
+   "members": 495.1,
+   "with_price": 243.2,
+   "with_price_valid": 243.2,
+   "with_price_best": 252.6
+  },
+  {
+   "year": 2002,
+   "members": 494.7,
+   "with_price": 249.7,
+   "with_price_valid": 249.7,
+   "with_price_best": 261.1
+  },
+  {
+   "year": 2003,
+   "members": 494.0,
+   "with_price": 256.3,
+   "with_price_valid": 256.3,
+   "with_price_best": 268.3
+  },
+  {
+   "year": 2004,
+   "members": 494.8,
+   "with_price": 260.5,
+   "with_price_valid": 260.5,
+   "with_price_best": 273.2
+  },
+  {
+   "year": 2005,
+   "members": 495.9,
+   "with_price": 265.1,
+   "with_price_valid": 265.1,
+   "with_price_best": 278.1
+  },
+  {
+   "year": 2006,
+   "members": 497.0,
+   "with_price": 278.3,
+   "with_price_valid": 278.3,
+   "with_price_best": 292.3
+  },
+  {
+   "year": 2007,
+   "members": 497.0,
+   "with_price": 290.3,
+   "with_price_valid": 290.3,
+   "with_price_best": 304.4
+  },
+  {
+   "year": 2008,
+   "members": 497.4,
+   "with_price": 304.0,
+   "with_price_valid": 304.0,
+   "with_price_best": 319.3
+  },
+  {
+   "year": 2009,
+   "members": 498.8,
+   "with_price": 316.1,
+   "with_price_valid": 316.1,
+   "with_price_best": 332.1
+  },
+  {
+   "year": 2010,
+   "members": 498.2,
+   "with_price": 327.4,
+   "with_price_valid": 327.4,
+   "with_price_best": 343.4
+  },
+  {
+   "year": 2011,
+   "members": 497.0,
+   "with_price": 331.0,
+   "with_price_valid": 331.0,
+   "with_price_best": 347.0
+  },
+  {
+   "year": 2012,
+   "members": 497.0,
+   "with_price": 341.1,
+   "with_price_valid": 341.1,
+   "with_price_best": 357.1
+  },
+  {
+   "year": 2013,
+   "members": 497.0,
+   "with_price": 351.1,
+   "with_price_valid": 351.1,
+   "with_price_best": 367.2
+  },
+  {
+   "year": 2014,
+   "members": 498.2,
+   "with_price": 357.2,
+   "with_price_valid": 357.2,
+   "with_price_best": 374.2
+  },
+  {
+   "year": 2015,
+   "members": 500.6,
+   "with_price": 368.4,
+   "with_price_valid": 368.4,
+   "with_price_best": 385.4
+  },
+  {
+   "year": 2016,
+   "members": 505.4,
+   "with_price": 388.0,
+   "with_price_valid": 388.0,
+   "with_price_best": 405.0
+  },
+  {
+   "year": 2017,
+   "members": 506.0,
+   "with_price": 403.1,
+   "with_price_valid": 403.1,
+   "with_price_best": 420.7
+  },
+  {
+   "year": 2018,
+   "members": 505.6,
+   "with_price": 412.1,
+   "with_price_valid": 412.1,
+   "with_price_best": 430.6
+  },
+  {
+   "year": 2019,
+   "members": 505.0,
+   "with_price": 425.6,
+   "with_price_valid": 425.6,
+   "with_price_best": 443.7
+  },
+  {
+   "year": 2020,
+   "members": 505.0,
+   "with_price": 441.3,
+   "with_price_valid": 441.3,
+   "with_price_best": 457.2
+  },
+  {
+   "year": 2021,
+   "members": 505.0,
+   "with_price": 450.9,
+   "with_price_valid": 450.9,
+   "with_price_best": 464.5
+  },
+  {
+   "year": 2022,
+   "members": 503.7,
+   "with_price": 463.8,
+   "with_price_valid": 463.8,
+   "with_price_best": 474.1
+  },
+  {
+   "year": 2023,
+   "members": 503.0,
+   "with_price": 475.9,
+   "with_price_valid": 475.9,
+   "with_price_best": 483.0
+  },
+  {
+   "year": 2024,
+   "members": 503.0,
+   "with_price": 483.4,
+   "with_price_valid": 483.4,
+   "with_price_best": 487.8
+  },
+  {
+   "year": 2025,
+   "members": 503.0,
+   "with_price": 489.7,
+   "with_price_valid": 489.7,
+   "with_price_best": 493.5
+  },
+  {
+   "year": 2026,
+   "members": 503.0,
+   "with_price": 498.7,
+   "with_price_valid": 498.7,
+   "with_price_best": 500.1
+  }
+ ],
+ "bad_ticks": {
+  "n": 481,
+  "note": "rate series ^IRX/^TNX excluded (yields, not prices)",
+  "by_category": {
+   "persistent_move": 320,
+   "spike_reversal": 148,
+   "distribution_close_only": 9,
+   "unit_100x_break": 3,
+   "split_related": 1
+  },
+  "n_tickers": 94,
+  "not_explained_by_split": 480,
+  "n_in_reuse_suspect_tickers": 147,
+  "during_membership_n": 110,
+  "during_membership_valid_ticker_n": 110,
+  "during_membership_valid_by_category": {
+   "persistent_move": 78,
+   "spike_reversal": 27,
+   "distribution_close_only": 4,
+   "split_related": 1
+  },
+  "during_membership_valid_tickers": 33,
+  "current_constituents_n": 55,
+  "current_constituents_by_category": {
+   "persistent_move": 44,
+   "spike_reversal": 5,
+   "distribution_close_only": 5,
+   "split_related": 1
+  }
+ },
+ "stale_runs": {
+  "n_runs": 465,
+  "n_tickers": 28,
+  "by_position": {
+   "middle": 460,
+   "head": 4,
+   "tail": 1
+  },
+  "during_membership_n": 85,
+  "during_membership_tickers": [
+   "CPWR",
+   "CSR",
+   "EP",
+   "GR",
+   "SII"
+  ],
+  "current_constituents_runs": 199,
+  "current_constituents_runs_during_membership": 0,
+  "current_constituents_runs_during_membership_detail": [],
+  "current_constituents_runs_since_2010": 174,
+  "current_examples": [
+   {
+    "ticker": "AMCR",
+    "start": "2016-08-17",
+    "end": "2016-12-08",
+    "n_days": "80",
+    "close": "58.549999",
+    "zero_volume_frac": "0.9375",
+    "position": "middle",
+    "during_membership": "False",
+    "in_current": "True",
+    "asset_class": "equity"
+   },
+   {
+    "ticker": "FERG",
+    "start": "2012-03-23",
+    "end": "2012-07-09",
+    "n_days": "74",
+    "close": "40.390705",
+    "zero_volume_frac": "0.9864864864864865",
+    "position": "middle",
+    "during_membership": "False",
+    "in_current": "True",
+    "asset_class": "equity"
+   },
+   {
+    "ticker": "SW",
+    "start": "2009-05-12",
+    "end": "2009-08-19",
+    "n_days": "70",
+    "close": "4.75",
+    "zero_volume_frac": "0.9857142857142858",
+    "position": "middle",
+    "during_membership": "False",
+    "in_current": "True",
+    "asset_class": "equity"
+   },
+   {
+    "ticker": "SW",
+    "start": "2010-04-22",
+    "end": "2010-07-13",
+    "n_days": "57",
+    "close": "9.2",
+    "zero_volume_frac": "0.9824561403508771",
+    "position": "middle",
+    "during_membership": "False",
+    "in_current": "True",
+    "asset_class": "equity"
+   },
+   {
+    "ticker": "AMCR",
+    "start": "2016-12-13",
+    "end": "2017-03-06",
+    "n_days": "56",
+    "close": "53.150002",
+    "zero_volume_frac": "0.9642857142857143",
+    "position": "middle",
+    "during_membership": "False",
+    "in_current": "True",
+    "asset_class": "equity"
+   },
+   {
+    "ticker": "FERG",
+    "start": "2011-12-05",
+    "end": "2012-02-22",
+    "n_days": "54",
+    "close": "31.414995",
+    "zero_volume_frac": "0.9814814814814815",
+    "position": "middle",
+    "during_membership": "False",
+    "in_current": "True",
+    "asset_class": "equity"
+   },
+   {
+    "ticker": "AMCR",
+    "start": "2015-05-08",
+    "end": "2015-07-21",
+    "n_days": "51",
+    "close": "53.049999",
+    "zero_volume_frac": "0.9803921568627451",
+    "position": "middle",
+    "during_membership": "False",
+    "in_current": "True",
+    "asset_class": "equity"
+   },
+   {
+    "ticker": "AMCR",
+    "start": "2012-06-07",
+    "end": "2012-08-16",
+    "n_days": "50",
+    "close": "37.0",
+    "zero_volume_frac": "0.98",
+    "position": "middle",
+    "during_membership": "False",
+    "in_current": "True",
+    "asset_class": "equity"
+   },
+   {
+    "ticker": "FERG",
+    "start": "2010-07-19",
+    "end": "2010-09-21",
+    "n_days": "46",
+    "close": "21.119324",
+    "zero_volume_frac": "0.9782608695652174",
+    "position": "middle",
+    "during_membership": "False",
+    "in_current": "True",
+    "asset_class": "equity"
+   },
+   {
+    "ticker": "FERG",
+    "start": "2012-08-23",
+    "end": "2012-10-23",
+    "n_days": "43",
+    "close": "42.238647",
+    "zero_volume_frac": "0.9767441860465116",
+    "position": "middle",
+    "during_membership": "False",
+    "in_current": "True",
+    "asset_class": "equity"
+   }
+  ]
+ },
+ "panel_shapes": {
+  "adjclose": [
+   7986,
+   759
+  ],
+  "close": [
+   7986,
+   759
+  ],
+  "volume": [
+   7986,
+   759
+  ],
+  "ret_monthly": [
+   380,
+   764
+  ],
+  "ucits_adjclose": [
+   4479,
+   5
+  ],
+  "dividends_rows": 51183,
+  "splits_rows": 1154,
+  "final_partial_month_rows": 17
+ }
+}

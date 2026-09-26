@@ -1,0 +1,907 @@
+{
+ "run_utc": "2026-09-25T22:25:16Z",
+ "a_fy_vs_yahoo": {
+  "named25_rev": {
+   "n": 100,
+   "pass_1pct": 90,
+   "pass_rate_1pct": 0.9,
+   "pass_rate_5pct": 1.0,
+   "missing_xbrl": 0
+  },
+  "named25_ni": {
+   "n": 100,
+   "pass_1pct": 100,
+   "pass_rate_1pct": 1.0,
+   "pass_rate_5pct": 1.0,
+   "missing_xbrl": 0
+  },
+  "all_legacy_rev": {
+   "n": 1988,
+   "pass_1pct": 1859,
+   "pass_rate_1pct": 0.9351,
+   "pass_rate_5pct": 0.9764,
+   "missing_xbrl": 6
+  },
+  "all_legacy_ni": {
+   "n": 1980,
+   "pass_1pct": 1942,
+   "pass_rate_1pct": 0.9808,
+   "pass_rate_5pct": 0.9859,
+   "missing_xbrl": 1
+  }
+ },
+ "a_named25_failures": [
+  {
+   "ticker": "CVX",
+   "item": "rev",
+   "fy_end_yahoo": "2025-12-31",
+   "yahoo": "184432000000.0",
+   "xbrl_first": "189031000000.0",
+   "first_filed": "2026-02-24",
+   "xbrl_latest": "189031000000.0",
+   "latest_filed": "2026-02-24",
+   "rel_err_first": "0.024936019779647767",
+   "rel_err_latest": "0.024936019779647767",
+   "match_1pct": "False",
+   "match_5pct": "True",
+   "missing_xbrl": NaN,
+   "named25": "True"
+  },
+  {
+   "ticker": "CVX",
+   "item": "rev",
+   "fy_end_yahoo": "2024-12-31",
+   "yahoo": "193414000000.0",
+   "xbrl_first": "202792000000.0",
+   "first_filed": "2025-02-21",
+   "xbrl_latest": "202792000000.0",
+   "latest_filed": "2026-02-24",
+   "rel_err_first": "0.04848666590836248",
+   "rel_err_latest": "0.04848666590836248",
+   "match_1pct": "False",
+   "match_5pct": "True",
+   "missing_xbrl": NaN,
+   "named25": "True"
+  },
+  {
+   "ticker": "CVX",
+   "item": "rev",
+   "fy_end_yahoo": "2023-12-31",
+   "yahoo": "196913000000.0",
+   "xbrl_first": "200949000000.0",
+   "first_filed": "2024-02-26",
+   "xbrl_latest": "200949000000.0",
+   "latest_filed": "2026-02-24",
+   "rel_err_first": "0.0204963613372402",
+   "rel_err_latest": "0.0204963613372402",
+   "match_1pct": "False",
+   "match_5pct": "True",
+   "missing_xbrl": NaN,
+   "named25": "True"
+  },
+  {
+   "ticker": "CVX",
+   "item": "rev",
+   "fy_end_yahoo": "2022-12-31",
+   "yahoo": "235717000000.0",
+   "xbrl_first": "246252000000.0",
+   "first_filed": "2023-02-23",
+   "xbrl_latest": "246252000000.0",
+   "latest_filed": "2025-02-21",
+   "rel_err_first": "0.044693424742381804",
+   "rel_err_latest": "0.044693424742381804",
+   "match_1pct": "False",
+   "match_5pct": "True",
+   "missing_xbrl": NaN,
+   "named25": "True"
+  },
+  {
+   "ticker": "XOM",
+   "item": "rev",
+   "fy_end_yahoo": "2025-12-31",
+   "yahoo": "323905000000.0",
+   "xbrl_first": "332238000000.0",
+   "first_filed": "2026-02-18",
+   "xbrl_latest": "332238000000.0",
+   "latest_filed": "2026-02-18",
+   "rel_err_first": "0.025726679118877493",
+   "rel_err_latest": "0.025726679118877493",
+   "match_1pct": "False",
+   "match_5pct": "True",
+   "missing_xbrl": NaN,
+   "named25": "True"
+  },
+  {
+   "ticker": "XOM",
+   "item": "rev",
+   "fy_end_yahoo": "2024-12-31",
+   "yahoo": "339247000000.0",
+   "xbrl_first": "349585000000.0",
+   "first_filed": "2025-02-19",
+   "xbrl_latest": "349585000000.0",
+   "latest_filed": "2026-02-18",
+   "rel_err_first": "0.030473371908963154",
+   "rel_err_latest": "0.030473371908963154",
+   "match_1pct": "False",
+   "match_5pct": "True",
+   "missing_xbrl": NaN,
+   "named25": "True"
+  },
+  {
+   "ticker": "XOM",
+   "item": "rev",
+   "fy_end_yahoo": "2023-12-31",
+   "yahoo": "334697000000.0",
+   "xbrl_first": "344582000000.0",
+   "first_filed": "2024-02-28",
+   "xbrl_latest": "344582000000.0",
+   "latest_filed": "2026-02-18",
+   "rel_err_first": "0.029534175687263353",
+   "rel_err_latest": "0.029534175687263353",
+   "match_1pct": "False",
+   "match_5pct": "True",
+   "missing_xbrl": NaN,
+   "named25": "True"
+  },
+  {
+   "ticker": "XOM",
+   "item": "rev",
+   "fy_end_yahoo": "2022-12-31",
+   "yahoo": "398675000000.0",
+   "xbrl_first": "413680000000.0",
+   "first_filed": "2023-02-22",
+   "xbrl_latest": "413680000000.0",
+   "latest_filed": "2025-02-19",
+   "rel_err_first": "0.037637173136013",
+   "rel_err_latest": "0.037637173136013",
+   "match_1pct": "False",
+   "match_5pct": "True",
+   "missing_xbrl": NaN,
+   "named25": "True"
+  },
+  {
+   "ticker": "JPM",
+   "item": "rev",
+   "fy_end_yahoo": "2024-12-31",
+   "yahoo": "169439000000.0",
+   "xbrl_first": "177556000000.0",
+   "first_filed": "2025-02-14",
+   "xbrl_latest": "177556000000.0",
+   "latest_filed": "2026-02-13",
+   "rel_err_first": "0.04790514580468486",
+   "rel_err_latest": "0.04790514580468486",
+   "match_1pct": "False",
+   "match_5pct": "True",
+   "missing_xbrl": NaN,
+   "named25": "True"
+  },
+  {
+   "ticker": "JPM",
+   "item": "rev",
+   "fy_end_yahoo": "2023-12-31",
+   "yahoo": "154952000000.0",
+   "xbrl_first": "158104000000.0",
+   "first_filed": "2024-02-16",
+   "xbrl_latest": "158104000000.0",
+   "latest_filed": "2026-02-13",
+   "rel_err_first": "0.02034178326191327",
+   "rel_err_latest": "0.02034178326191327",
+   "match_1pct": "False",
+   "match_5pct": "True",
+   "missing_xbrl": NaN,
+   "named25": "True"
+  }
+ ],
+ "b_coverage_by_year": [
+  {
+   "year": 2009,
+   "n_constituents": 499.0,
+   "n_mapped": 316.1429,
+   "pct_rev_ttm": 0.0077,
+   "pct_ni_ttm": 0.0183,
+   "pct_assets": 0.3556,
+   "pct_equity": 0.353,
+   "pct_ocf_ttm": 0.0094,
+   "pct_eps_hist8": 0.0,
+   "pct_sue": 0.0,
+   "pct_mapped_rev_ttm": 0.0121,
+   "pct_mapped_ni_ttm": 0.0287,
+   "pct_mapped_assets": 0.5598,
+   "pct_mapped_equity": 0.5558,
+   "pct_mapped_ocf_ttm": 0.0148,
+   "pct_mapped_eps_hist8": 0.0,
+   "pct_mapped_sue": 0.0
+  },
+  {
+   "year": 2010,
+   "n_constituents": 498.0,
+   "n_mapped": 325.75,
+   "pct_rev_ttm": 0.4337,
+   "pct_ni_ttm": 0.4477,
+   "pct_assets": 0.5699,
+   "pct_equity": 0.5659,
+   "pct_ocf_ttm": 0.4486,
+   "pct_eps_hist8": 0.3065,
+   "pct_sue": 0.0039,
+   "pct_mapped_rev_ttm": 0.6618,
+   "pct_mapped_ni_ttm": 0.6833,
+   "pct_mapped_assets": 0.8707,
+   "pct_mapped_equity": 0.8646,
+   "pct_mapped_ocf_ttm": 0.6846,
+   "pct_mapped_eps_hist8": 0.4666,
+   "pct_mapped_sue": 0.0059
+  },
+  {
+   "year": 2011,
+   "n_constituents": 497.0,
+   "n_mapped": 334.1667,
+   "pct_rev_ttm": 0.6133,
+   "pct_ni_ttm": 0.6306,
+   "pct_assets": 0.6598,
+   "pct_equity": 0.6578,
+   "pct_ocf_ttm": 0.631,
+   "pct_eps_hist8": 0.5788,
+   "pct_sue": 0.4257,
+   "pct_mapped_rev_ttm": 0.9119,
+   "pct_mapped_ni_ttm": 0.9376,
+   "pct_mapped_assets": 0.9812,
+   "pct_mapped_equity": 0.9782,
+   "pct_mapped_ocf_ttm": 0.9381,
+   "pct_mapped_eps_hist8": 0.8602,
+   "pct_mapped_sue": 0.6318
+  },
+  {
+   "year": 2012,
+   "n_constituents": 497.0,
+   "n_mapped": 343.8333,
+   "pct_rev_ttm": 0.669,
+   "pct_ni_ttm": 0.6843,
+   "pct_assets": 0.6876,
+   "pct_equity": 0.6865,
+   "pct_ocf_ttm": 0.6836,
+   "pct_eps_hist8": 0.6519,
+   "pct_sue": 0.6202,
+   "pct_mapped_rev_ttm": 0.967,
+   "pct_mapped_ni_ttm": 0.9891,
+   "pct_mapped_assets": 0.9939,
+   "pct_mapped_equity": 0.9922,
+   "pct_mapped_ocf_ttm": 0.9881,
+   "pct_mapped_eps_hist8": 0.9423,
+   "pct_mapped_sue": 0.8963
+  },
+  {
+   "year": 2013,
+   "n_constituents": 497.0,
+   "n_mapped": 353.1667,
+   "pct_rev_ttm": 0.6928,
+   "pct_ni_ttm": 0.7039,
+   "pct_assets": 0.7079,
+   "pct_equity": 0.7062,
+   "pct_ocf_ttm": 0.7019,
+   "pct_eps_hist8": 0.6776,
+   "pct_sue": 0.6618,
+   "pct_mapped_rev_ttm": 0.975,
+   "pct_mapped_ni_ttm": 0.9906,
+   "pct_mapped_assets": 0.9962,
+   "pct_mapped_equity": 0.9939,
+   "pct_mapped_ocf_ttm": 0.9877,
+   "pct_mapped_eps_hist8": 0.9535,
+   "pct_mapped_sue": 0.9313
+  },
+  {
+   "year": 2014,
+   "n_constituents": 498.1667,
+   "n_mapped": 359.8333,
+   "pct_rev_ttm": 0.7119,
+   "pct_ni_ttm": 0.7175,
+   "pct_assets": 0.7208,
+   "pct_equity": 0.7181,
+   "pct_ocf_ttm": 0.7173,
+   "pct_eps_hist8": 0.6922,
+   "pct_sue": 0.6817,
+   "pct_mapped_rev_ttm": 0.9856,
+   "pct_mapped_ni_ttm": 0.9933,
+   "pct_mapped_assets": 0.9979,
+   "pct_mapped_equity": 0.9942,
+   "pct_mapped_ocf_ttm": 0.993,
+   "pct_mapped_eps_hist8": 0.9583,
+   "pct_mapped_sue": 0.9437
+  },
+  {
+   "year": 2015,
+   "n_constituents": 500.75,
+   "n_mapped": 372.75,
+   "pct_rev_ttm": 0.7332,
+   "pct_ni_ttm": 0.7374,
+   "pct_assets": 0.7394,
+   "pct_equity": 0.7385,
+   "pct_ocf_ttm": 0.7374,
+   "pct_eps_hist8": 0.7164,
+   "pct_sue": 0.7074,
+   "pct_mapped_rev_ttm": 0.9851,
+   "pct_mapped_ni_ttm": 0.9907,
+   "pct_mapped_assets": 0.9933,
+   "pct_mapped_equity": 0.9922,
+   "pct_mapped_ocf_ttm": 0.9907,
+   "pct_mapped_eps_hist8": 0.9625,
+   "pct_mapped_sue": 0.9504
+  },
+  {
+   "year": 2016,
+   "n_constituents": 505.4167,
+   "n_mapped": 393.25,
+   "pct_rev_ttm": 0.7645,
+   "pct_ni_ttm": 0.7685,
+   "pct_assets": 0.7693,
+   "pct_equity": 0.7688,
+   "pct_ocf_ttm": 0.7664,
+   "pct_eps_hist8": 0.7481,
+   "pct_sue": 0.7382,
+   "pct_mapped_rev_ttm": 0.9826,
+   "pct_mapped_ni_ttm": 0.9877,
+   "pct_mapped_assets": 0.9888,
+   "pct_mapped_equity": 0.9881,
+   "pct_mapped_ocf_ttm": 0.985,
+   "pct_mapped_eps_hist8": 0.9614,
+   "pct_mapped_sue": 0.9487
+  },
+  {
+   "year": 2017,
+   "n_constituents": 505.9167,
+   "n_mapped": 408.0,
+   "pct_rev_ttm": 0.7939,
+   "pct_ni_ttm": 0.7995,
+   "pct_assets": 0.8009,
+   "pct_equity": 0.8004,
+   "pct_ocf_ttm": 0.7976,
+   "pct_eps_hist8": 0.7776,
+   "pct_sue": 0.7682,
+   "pct_mapped_rev_ttm": 0.9845,
+   "pct_mapped_ni_ttm": 0.9914,
+   "pct_mapped_assets": 0.993,
+   "pct_mapped_equity": 0.9924,
+   "pct_mapped_ocf_ttm": 0.989,
+   "pct_mapped_eps_hist8": 0.9643,
+   "pct_mapped_sue": 0.9526
+  },
+  {
+   "year": 2018,
+   "n_constituents": 505.4167,
+   "n_mapped": 415.75,
+   "pct_rev_ttm": 0.8111,
+   "pct_ni_ttm": 0.817,
+   "pct_assets": 0.8183,
+   "pct_equity": 0.8181,
+   "pct_ocf_ttm": 0.815,
+   "pct_eps_hist8": 0.7974,
+   "pct_sue": 0.783,
+   "pct_mapped_rev_ttm": 0.986,
+   "pct_mapped_ni_ttm": 0.9932,
+   "pct_mapped_assets": 0.9948,
+   "pct_mapped_equity": 0.9946,
+   "pct_mapped_ocf_ttm": 0.9908,
+   "pct_mapped_eps_hist8": 0.9693,
+   "pct_mapped_sue": 0.9519
+  },
+  {
+   "year": 2019,
+   "n_constituents": 505.0,
+   "n_mapped": 427.1667,
+   "pct_rev_ttm": 0.8411,
+   "pct_ni_ttm": 0.8416,
+   "pct_assets": 0.845,
+   "pct_equity": 0.845,
+   "pct_ocf_ttm": 0.8396,
+   "pct_eps_hist8": 0.8231,
+   "pct_sue": 0.8106,
+   "pct_mapped_rev_ttm": 0.9943,
+   "pct_mapped_ni_ttm": 0.9949,
+   "pct_mapped_assets": 0.999,
+   "pct_mapped_equity": 0.999,
+   "pct_mapped_ocf_ttm": 0.9926,
+   "pct_mapped_eps_hist8": 0.9731,
+   "pct_mapped_sue": 0.9583
+  },
+  {
+   "year": 2020,
+   "n_constituents": 505.0,
+   "n_mapped": 441.5833,
+   "pct_rev_ttm": 0.8708,
+   "pct_ni_ttm": 0.8708,
+   "pct_assets": 0.8741,
+   "pct_equity": 0.8741,
+   "pct_ocf_ttm": 0.8706,
+   "pct_eps_hist8": 0.8497,
+   "pct_sue": 0.8386,
+   "pct_mapped_rev_ttm": 0.9959,
+   "pct_mapped_ni_ttm": 0.9959,
+   "pct_mapped_assets": 0.9996,
+   "pct_mapped_equity": 0.9996,
+   "pct_mapped_ocf_ttm": 0.9957,
+   "pct_mapped_eps_hist8": 0.9717,
+   "pct_mapped_sue": 0.959
+  },
+  {
+   "year": 2021,
+   "n_constituents": 505.0,
+   "n_mapped": 451.1667,
+   "pct_rev_ttm": 0.8917,
+   "pct_ni_ttm": 0.8917,
+   "pct_assets": 0.8934,
+   "pct_equity": 0.8934,
+   "pct_ocf_ttm": 0.8917,
+   "pct_eps_hist8": 0.8691,
+   "pct_sue": 0.8596,
+   "pct_mapped_rev_ttm": 0.9982,
+   "pct_mapped_ni_ttm": 0.9982,
+   "pct_mapped_assets": 1.0,
+   "pct_mapped_equity": 1.0,
+   "pct_mapped_ocf_ttm": 0.9982,
+   "pct_mapped_eps_hist8": 0.9728,
+   "pct_mapped_sue": 0.9621
+  },
+  {
+   "year": 2022,
+   "n_constituents": 503.6667,
+   "n_mapped": 464.1667,
+   "pct_rev_ttm": 0.9176,
+   "pct_ni_ttm": 0.9191,
+   "pct_assets": 0.9211,
+   "pct_equity": 0.9211,
+   "pct_ocf_ttm": 0.9191,
+   "pct_eps_hist8": 0.8938,
+   "pct_sue": 0.8858,
+   "pct_mapped_rev_ttm": 0.9957,
+   "pct_mapped_ni_ttm": 0.9973,
+   "pct_mapped_assets": 0.9995,
+   "pct_mapped_equity": 0.9995,
+   "pct_mapped_ocf_ttm": 0.9973,
+   "pct_mapped_eps_hist8": 0.9698,
+   "pct_mapped_sue": 0.9612
+  },
+  {
+   "year": 2023,
+   "n_constituents": 503.0,
+   "n_mapped": 476.25,
+   "pct_rev_ttm": 0.9414,
+   "pct_ni_ttm": 0.9433,
+   "pct_assets": 0.9463,
+   "pct_equity": 0.9463,
+   "pct_ocf_ttm": 0.9433,
+   "pct_eps_hist8": 0.9195,
+   "pct_sue": 0.9081,
+   "pct_mapped_rev_ttm": 0.9942,
+   "pct_mapped_ni_ttm": 0.9963,
+   "pct_mapped_assets": 0.9995,
+   "pct_mapped_equity": 0.9995,
+   "pct_mapped_ocf_ttm": 0.9963,
+   "pct_mapped_eps_hist8": 0.9711,
+   "pct_mapped_sue": 0.9591
+  },
+  {
+   "year": 2024,
+   "n_constituents": 503.0833,
+   "n_mapped": 483.75,
+   "pct_rev_ttm": 0.9559,
+   "pct_ni_ttm": 0.9564,
+   "pct_assets": 0.9609,
+   "pct_equity": 0.9609,
+   "pct_ocf_ttm": 0.9564,
+   "pct_eps_hist8": 0.9279,
+   "pct_sue": 0.9188,
+   "pct_mapped_rev_ttm": 0.9941,
+   "pct_mapped_ni_ttm": 0.9947,
+   "pct_mapped_assets": 0.9993,
+   "pct_mapped_equity": 0.9993,
+   "pct_mapped_ocf_ttm": 0.9947,
+   "pct_mapped_eps_hist8": 0.965,
+   "pct_mapped_sue": 0.9556
+  },
+  {
+   "year": 2025,
+   "n_constituents": 503.0,
+   "n_mapped": 490.0,
+   "pct_rev_ttm": 0.9728,
+   "pct_ni_ttm": 0.9728,
+   "pct_assets": 0.974,
+   "pct_equity": 0.974,
+   "pct_ocf_ttm": 0.9728,
+   "pct_eps_hist8": 0.9433,
+   "pct_sue": 0.9286,
+   "pct_mapped_rev_ttm": 0.9986,
+   "pct_mapped_ni_ttm": 0.9986,
+   "pct_mapped_assets": 0.9998,
+   "pct_mapped_equity": 0.9998,
+   "pct_mapped_ocf_ttm": 0.9986,
+   "pct_mapped_eps_hist8": 0.9684,
+   "pct_mapped_sue": 0.9532
+  },
+  {
+   "year": 2026,
+   "n_constituents": 503.0,
+   "n_mapped": 499.0,
+   "pct_rev_ttm": 0.9905,
+   "pct_ni_ttm": 0.9905,
+   "pct_assets": 0.9912,
+   "pct_equity": 0.9912,
+   "pct_ocf_ttm": 0.9905,
+   "pct_eps_hist8": 0.9613,
+   "pct_sue": 0.945,
+   "pct_mapped_rev_ttm": 0.9984,
+   "pct_mapped_ni_ttm": 0.9984,
+   "pct_mapped_assets": 0.9991,
+   "pct_mapped_equity": 0.9991,
+   "pct_mapped_ocf_ttm": 0.9984,
+   "pct_mapped_eps_hist8": 0.9691,
+   "pct_mapped_sue": 0.9526
+  }
+ ],
+ "b_unmapped_top": [
+  {
+   "ticker": "AVB",
+   "months": "206",
+   "status": "unmapped",
+   "last": "2026-07-31"
+  },
+  {
+   "ticker": "EQR",
+   "months": "206",
+   "status": "unmapped",
+   "last": "2026-07-31"
+  },
+  {
+   "ticker": "EA",
+   "months": "206",
+   "status": "unmapped",
+   "last": "2026-07-31"
+  },
+  {
+   "ticker": "BK",
+   "months": "203",
+   "status": "unmapped",
+   "last": "2026-04-30"
+  },
+  {
+   "ticker": "MMC",
+   "months": "199",
+   "status": "unmapped",
+   "last": "2025-12-31"
+  },
+  {
+   "ticker": "K",
+   "months": "198",
+   "status": "unmapped",
+   "last": "2025-11-28"
+  },
+  {
+   "ticker": "IPG",
+   "months": "197",
+   "status": "unmapped",
+   "last": "2025-10-31"
+  },
+  {
+   "ticker": "WBA",
+   "months": "194",
+   "status": "unmapped",
+   "last": "2025-07-31"
+  },
+  {
+   "ticker": "HES",
+   "months": "193",
+   "status": "unmapped",
+   "last": "2025-06-30"
+  },
+  {
+   "ticker": "JNPR",
+   "months": "193",
+   "status": "unmapped",
+   "last": "2025-06-30"
+  },
+  {
+   "ticker": "DFS",
+   "months": "191",
+   "status": "unmapped",
+   "last": "2025-04-30"
+  },
+  {
+   "ticker": "MRO",
+   "months": "185",
+   "status": "unmapped",
+   "last": "2024-10-31"
+  },
+  {
+   "ticker": "CMA",
+   "months": "180",
+   "status": "unmapped",
+   "last": "2024-05-31"
+  },
+  {
+   "ticker": "PXD",
+   "months": "179",
+   "status": "unmapped",
+   "last": "2024-04-30"
+  },
+  {
+   "ticker": "SEE",
+   "months": "174",
+   "status": "unmapped",
+   "last": "2023-11-30"
+  },
+  {
+   "ticker": "ABC",
+   "months": "170",
+   "status": "unmapped",
+   "last": "2023-07-31"
+  },
+  {
+   "ticker": "PKI",
+   "months": "167",
+   "status": "unmapped",
+   "last": "2023-04-28"
+  },
+  {
+   "ticker": "CTXS",
+   "months": "160",
+   "status": "unmapped",
+   "last": "2022-09-30"
+  },
+  {
+   "ticker": "ANTM",
+   "months": "156",
+   "status": "unmapped",
+   "last": "2022-05-31"
+  },
+  {
+   "ticker": "BLL",
+   "months": "155",
+   "status": "unmapped",
+   "last": "2022-04-29"
+  },
+  {
+   "ticker": "PBCT",
+   "months": "154",
+   "status": "unmapped",
+   "last": "2022-03-31"
+  },
+  {
+   "ticker": "XLNX",
+   "months": "152",
+   "status": "unmapped",
+   "last": "2022-01-31"
+  },
+  {
+   "ticker": "GPS",
+   "months": "152",
+   "status": "unmapped",
+   "last": "2022-01-31"
+  },
+  {
+   "ticker": "LEG",
+   "months": "150",
+   "status": "unmapped",
+   "last": "2021-11-30"
+  },
+  {
+   "ticker": "COG",
+   "months": "148",
+   "status": "unmapped",
+   "last": "2021-09-30"
+  },
+  {
+   "ticker": "LB",
+   "months": "146",
+   "status": "mapping_invalid_for_date",
+   "last": "2021-07-30"
+  },
+  {
+   "ticker": "CERN",
+   "months": "146",
+   "status": "unmapped",
+   "last": "2022-05-31"
+  },
+  {
+   "ticker": "DISCA",
+   "months": "145",
+   "status": "unmapped",
+   "last": "2022-03-31"
+  },
+  {
+   "ticker": "FLIR",
+   "months": "143",
+   "status": "unmapped",
+   "last": "2021-04-30"
+  },
+  {
+   "ticker": "VAR",
+   "months": "142",
+   "status": "unmapped",
+   "last": "2021-03-31"
+  },
+  {
+   "ticker": "TIF",
+   "months": "139",
+   "status": "unmapped",
+   "last": "2020-12-31"
+  },
+  {
+   "ticker": "MYL",
+   "months": "137",
+   "status": "unmapped",
+   "last": "2020-10-30"
+  },
+  {
+   "ticker": "ETFC",
+   "months": "136",
+   "status": "unmapped",
+   "last": "2020-09-30"
+  },
+  {
+   "ticker": "NBL",
+   "months": "136",
+   "status": "unmapped",
+   "last": "2020-09-30"
+  },
+  {
+   "ticker": "CTL",
+   "months": "135",
+   "status": "unmapped",
+   "last": "2020-08-31"
+  },
+  {
+   "ticker": "JWN",
+   "months": "132",
+   "status": "unmapped",
+   "last": "2020-05-29"
+  },
+  {
+   "ticker": "AGN",
+   "months": "131",
+   "status": "unmapped",
+   "last": "2020-04-30"
+  },
+  {
+   "ticker": "ARNC",
+   "months": "130",
+   "status": "unmapped",
+   "last": "2020-03-31"
+  },
+  {
+   "ticker": "RTN",
+   "months": "130",
+   "status": "unmapped",
+   "last": "2020-03-31"
+  },
+  {
+   "ticker": "UTX",
+   "months": "130",
+   "status": "unmapped",
+   "last": "2020-03-31"
+  }
+ ],
+ "c_restatement": {
+  "aapl_fy2009_versions": [
+   {
+    "concept": "SalesRevenueNet",
+    "val": "36537000000.0",
+    "form": "10-K",
+    "filed": "2009-10-27",
+    "accn": "0001193125-09-214859"
+   },
+   {
+    "concept": "SalesRevenueNet",
+    "val": "42905000000.0",
+    "form": "10-K/A",
+    "filed": "2010-01-25",
+    "accn": "0001193125-10-012091"
+   },
+   {
+    "concept": "SalesRevenueNet",
+    "val": "42905000000.0",
+    "form": "10-K",
+    "filed": "2010-10-27",
+    "accn": "0001193125-10-238044"
+   },
+   {
+    "concept": "SalesRevenueNet",
+    "val": "42905000000.0",
+    "form": "10-K",
+    "filed": "2011-10-26",
+    "accn": "0001193125-11-282113"
+   }
+  ],
+  "aapl_panel": [
+   {
+    "month_end": "2009-09-30",
+    "rev_ttm": NaN,
+    "rev_ttm_end": NaN,
+    "rev_ttm_src": NaN,
+    "last_filed_date": "2009-07-22",
+    "last_form": "10-Q"
+   },
+   {
+    "month_end": "2009-10-30",
+    "rev_ttm": "36537000000.0",
+    "rev_ttm_end": "2009-09-26",
+    "rev_ttm_src": "annual",
+    "last_filed_date": "2009-10-27",
+    "last_form": "10-K"
+   },
+   {
+    "month_end": "2009-11-30",
+    "rev_ttm": "36537000000.0",
+    "rev_ttm_end": "2009-09-26",
+    "rev_ttm_src": "annual",
+    "last_filed_date": "2009-10-27",
+    "last_form": "10-K"
+   },
+   {
+    "month_end": "2009-12-31",
+    "rev_ttm": "36537000000.0",
+    "rev_ttm_end": "2009-09-26",
+    "rev_ttm_src": "annual",
+    "last_filed_date": "2009-10-27",
+    "last_form": "10-K"
+   },
+   {
+    "month_end": "2010-01-29",
+    "rev_ttm": "42905000000.0",
+    "rev_ttm_end": "2009-09-26",
+    "rev_ttm_src": "annual",
+    "last_filed_date": "2010-01-25",
+    "last_form": "10-K/A"
+   },
+   {
+    "month_end": "2010-02-26",
+    "rev_ttm": "42905000000.0",
+    "rev_ttm_end": "2009-09-26",
+    "rev_ttm_src": "annual",
+    "last_filed_date": "2010-01-25",
+    "last_form": "10-K/A"
+   },
+   {
+    "month_end": "2010-03-31",
+    "rev_ttm": "42905000000.0",
+    "rev_ttm_end": "2009-09-26",
+    "rev_ttm_src": "annual",
+    "last_filed_date": "2010-01-25",
+    "last_form": "10-K/A"
+   }
+  ],
+  "aapl_check": {
+   "original": 36537000000.0,
+   "original_filed": "2009-10-27",
+   "original_form": "10-K",
+   "restated": 42905000000.0,
+   "restated_filed": "2010-01-25",
+   "restated_form": "10-K/A",
+   "months_using_original": [
+    "2009-10-30",
+    "2009-11-30",
+    "2009-12-31"
+   ],
+   "months_using_restated": [
+    "2010-01-29",
+    "2010-02-26",
+    "2010-03-31"
+   ],
+   "pass": true
+  },
+  "n_restated_annual_periods_scan": 758,
+  "n_companies_with_restated_annual": 278
+ },
+ "d_pit_leakage": {
+  "rows": 114701,
+  "rows_max_filed_used_after_t": 0,
+  "rows_last_filed_after_t": 0,
+  "n_company_dates_tested": 200,
+  "n_feature_comparisons": 6800,
+  "n_mismatches": 0,
+  "mismatch_examples": []
+ },
+ "e_extras": {
+  "d2_nice_splits_2010_2026_current": 166,
+  "d2_splits_with_xbrl_detection_in_same_company": 154,
+  "rev_ttm_mom_change_gt_10x": 30,
+  "shares_mom_change_gt_3x": 77
+ }
+}

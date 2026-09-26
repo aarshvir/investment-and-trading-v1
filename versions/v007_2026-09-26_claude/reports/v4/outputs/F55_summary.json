@@ -1,0 +1,117 @@
+{
+  "agent": "F55",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "MSCI": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Runs the benchmark indexes trillions of dollars track; raised cash-flow guidance on real growth, priced for less than it's delivering.",
+      "kill_criteria": [
+        "Organic recurring subscription Run Rate growth falls below 6% for two consecutive quarters (currently 8.1%, Q2 2026).",
+        "Company-wide Retention Rate falls below 92% for two consecutive quarters (currently 95.3%, Q2 2026; 93.4% a year ago in Q4 2025 -- the metric itself has some seasonal/measurement noise, so two-quarter persistence is the trigger).",
+        "Net debt/Adjusted EBITDA rises above 3.5x (currently ~2.8-2.9x).",
+        "Asset-based fee Run Rate growth turns negative for two consecutive quarters (a direct read on AUM-linked revenue sensitivity to a market downturn).",
+        "FY guidance is cut (as opposed to raised/reaffirmed) at any subsequent quarterly release -- track record is currently initiate -> reaffirm -> raise."
+      ],
+      "key_adverse_facts": [
+        "Q4 2025 GAAP diluted EPS fell 2.3% YoY (to $3.81) even as Adjusted EPS rose 11.5% (to $4.66) -- driven by higher interest expense on higher debt and an $11.8m write-off of a minority investee.",
+        "Q1 2026 GAAP diluted EPS of $5.53 includes an $88m one-off tax benefit from an internal legal-entity restructuring, explicitly excluded from adjusted guidance metrics -- the headline GAAP number overstates underlying run-rate earnings growth.",
+        "Weighted-average diluted share count down 5.9% YoY on buybacks that are partly debt-funded; total debt has risen even as buybacks continue.",
+        "Guidance is conditioned on the First Street acquisition closing in Q3 2026, which remains subject to regulatory approval -- a real, if small (~$120m cash), closing-condition risk."
+      ],
+      "data_conflicts": [
+        "The b1 quant composite ranks MSCI only mid-pack (live_rank 250/~2,300, decile 5) despite the triage's 'quality 5, growth 4' framing -- the gap is explained by weak value-family percentiles (pct_ebit_ev 5th, pct_bp 35th), i.e. the model correctly flags MSCI as expensive on classic value ratios even though the business quality is real."
+      ],
+      "next_earnings_date": "2026-10-20",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "high -- subscription/retention data and the guidance track record are directly primary-sourced and internally consistent; the main uncertainty is AUM/market-level sensitivity, not company execution",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for MSCI in v1_valuation_table.csv, so v1_verdict is null. This dossier's own reverse DCF (EV ~$46.2bn = $40.08bn market cap + $6.475bn debt - $0.353bn cash; FY2026 guided FCF midpoint $1,515m; r=9.0%; terminal growth 3.5%) implies a ~9.7% ten-year FCF CAGR, at or slightly below the ~10-11% evidence-based base case (organic operating-revenue growth has run 10-12% for six straight quarters) -- fair to modestly attractive, not priced for excess."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.022,
+        "base": 0.119,
+        "bull": 0.197
+      },
+      "scenario_basis": "Starting NTM adjusted EPS ~$21.77 (d4 snapshot), price $551.36; bear/base/bull EPS growth 4%/11%/16% off that base; exit P/E 20x/25x/27x; dividend yield ~1.5% growing with EPS."
+    },
+    "NEE": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "America's biggest utility plus its biggest wind-and-solar builder, guiding 8%-plus earnings growth for a decade at a price implying almost none of it.",
+      "kill_criteria": [
+        "Full-year adjusted EPS comes in below the low end of the then-current guidance range (currently $3.92) at any year-end report.",
+        "Consolidated debt/(debt+equity) rises above ~68% (from ~63.4% today) without a credible deleveraging plan, or NEE/NEECH/FPL suffers a credit-rating downgrade.",
+        "FPL's next base rate proceeding (post the 2025 four-year settlement expires ~2029) is resolved with an allowed ROE or capital-recovery mechanism materially worse than the current settlement.",
+        "The 2023 securities class action settlement ($150m, insurance-covered) or the XPLR securities/derivative litigation is not given final court approval and reopens as active, uninsured exposure.",
+        "NEER backlog-to-in-service conversion stalls (two consecutive quarters of GW placed into service below the trailing-four-quarter average), signalling supply-chain, interconnection or financing bottlenecks."
+      ],
+      "key_adverse_facts": [
+        "2023 political-activity securities class action settled for $150m (insurance-covered), pending final court approval; related shareholder derivative actions settled for insurers to pay NEE ~$16m, also pending court approval.",
+        "XPLR Energy (former NextEra Energy Partners) securities class action (filed July 2025, amended Jan 2026) and a related unitholder derivative action name NEE and NEE-affiliated executives, alleging false/misleading statements about XPLR's business model and distributions; motion to dismiss pending as of March 2026.",
+        "Avangrid v. NextEra Energy antitrust suit (originally sought $350m, trebled under the Sherman Act) -- federal/state antitrust claims dismissed Sept 2025, remaining Massachusetts state-law claims still pending as of Dec 2025 oral argument.",
+        "Consolidated long-term debt rose 10.3% in six months (Dec 2025 to Jun 2026, $89.6bn to $98.8bn) funding FPL's $90-100bn 2026-2032 capital plan and NEER's ~33GW backlog -- a real, rising financing/dilution risk.",
+        "Reverse DCF implies the market is pricing in only ~1.2% ten-year EPS growth versus management's reaffirmed 8%+ guide -- either a large opportunity or a sign the market does not fully trust the long-dated guide; this dossier cannot fully resolve which."
+      ],
+      "data_conflicts": [
+        "Triage's red flag cited only Florida hurricane/wildfire physical risk; this dossier's primary-source work found additional, more financially material items (XPLR/Avangrid/political-activity litigation, fast-rising consolidated debt) that the triage pass did not surface."
+      ],
+      "next_earnings_date": "2026-10-27",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium -- the guidance track record and segment disclosures are clean and primary-sourced, but the wide gap between DCF-implied growth (~1%) and guided growth (8%+) is a real, unresolved valuation puzzle, and litigation/financing risk is genuine even if currently immaterial",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for NEE in v1_valuation_table.csv, so v1_verdict is null. This dossier's own reverse DCF (equity basis: FY2026 guided adjusted EPS midpoint $3.97; cost of equity 7.0% consistent with NEE's low beta ~0.64; terminal growth 2.5%) implies only a ~1.2% ten-year EPS CAGR versus management's own reaffirmed 8%+ CAGR guide through 2032 -- a wide gap that reads as cheap if the guide is delivered, but this dossier flags real financing, regulatory and litigation risk (sections 6, 9, 11) as the likely reason the market is discounting the guidance this heavily, which is why the verdict is INCLUDE-SMALL rather than full-weight INCLUDE."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.015,
+        "base": 0.088,
+        "bull": 0.154
+      },
+      "scenario_basis": "Starting FY2026 guided adjusted EPS midpoint $3.97, price $76.08; bear/base/bull EPS growth 3%/8%/11%; exit P/E 15x/18x/20x; dividend yield ~3.27% growing with EPS."
+    },
+    "ORLY": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Auto-parts retailer with 33 straight years of sales growth, just raised guidance again; priced fairly for continued execution, not cheap.",
+      "kill_criteria": [
+        "Comparable store sales growth falls below 2% for two consecutive quarters (from +6.0% currently).",
+        "Gross margin falls below 51.0% of sales for two consecutive quarters (currently 51.5-51.8%).",
+        "Net debt/EBITDA rises above 2.5x (from ~1.4-1.5x currently) without an offsetting reason (e.g. large M&A).",
+        "SG&A growth outpaces sales growth for three consecutive quarters (as already flagged once by management in Q4 2025 -- 'SG&A expenses again exceeded our expectations').",
+        "Net new store openings miss the guided 225-235 range for FY2026."
+      ],
+      "key_adverse_facts": [
+        "Management has twice acknowledged SG&A running hotter than its own expectations (health care and casualty-claim cost inflation), most recently in the Q4 2025 release.",
+        "Shareholders' deficit of $1.84bn (30 Jun 2026) -- a deliberate feature of the aggressive buyback model, not distress, but it means there is no equity cushion beyond the business's own cash generation in a downside scenario.",
+        "Long-term debt (including commercial paper) rose 16.6% in six months (Dec 2025 to Jun 2026), specifically to help fund buybacks -- leverage is low in absolute terms (~1.4-1.5x net debt/EBITDA) but the trend is up."
+      ],
+      "data_conflicts": [
+        "Triage's 'quality 5, growth 4' framing is not fully corroborated by the b1 quant composite, which ranks ORLY only in the third decile (live_rank 363/~2,300), driven mainly by weak 12-1 month momentum (23rd percentile) and expensive value percentiles -- a timing/momentum tension, not a fundamentals conflict; this dossier resolves it in favor of the fundamentals given the accelerating comp-sales trend and clean guidance-raise record."
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "high -- operating results, the guidance track record and the balance sheet are all directly primary-sourced and internally consistent; the only real uncertainty is whether the price already reflects the good news",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "in_line",
+        "reconciliation": "No V1 row exists for ORLY in v1_valuation_table.csv, so v1_verdict is null. This dossier's own reverse DCF (EV ~$76.4bn = $69.66bn market cap + $7.01bn debt - $0.26bn cash; FY2026 guided FCF midpoint $1.95bn; r=8.5%; terminal growth 3.5%) implies a ~11.6% ten-year FCF CAGR, within about half a point of this dossier's ~11% evidence-based base case (mid-single-digit comp/unit growth plus a 3-4%/yr buyback uplift) -- essentially fairly priced, not on sale, which is why this is INCLUDE-SMALL rather than full-weight INCLUDE."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.053,
+        "base": 0.074,
+        "bull": 0.143
+      },
+      "scenario_basis": "Starting FY2026 guided diluted EPS midpoint $3.25, price $86.115; bear/base/bull EPS growth 4%/11%/15%; exit P/E 20x/24x/26x; no dividend."
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "source": {
+    "yahoo": "Yahoo Finance chart API via yfinance 1.7 yf.download(start=1995-01-01, end=2026-09-26, auto_adjust=False, actions=True, group_by='ticker', threads=6)",
+    "universe": "C:\\Users\\user\\OneDrive\\Documents\\Projects\\Investing and trading\\Long-term and mid-term investments\\v4\\data\\d2_universe.csv"
+  },
+  "retrieved_utc_approx": "2026-09-25T20:57:23Z",
+  "shape": [
+    7986,
+    759
+  ],
+  "index": "NYSE trading days (^GSPC calendar) 1995-01-03..2026-09-25",
+  "columns": "Yahoo tickers (US-listed equities, ETFs, indices; UCITS .L listings are in d2_ucits_*.parquet)",
+  "values": "Yahoo 'Adj Close' (split + dividend adjusted, total-return proxy). NaN = no Yahoo bar. Corrected ONLY for Yahoo spin-off double counts (split + same-day dividend), listed in d2_adj_corrections.csv (classification=double_count_corrected): history before the event is rescaled by prior_history_scale. Unmodified Yahoo values: d2_adjclose_yahoo_raw.parquet.",
+  "corrections": [
+    "ABT@2004-05-03 x1.0742",
+    "CNP@2002-10-01 x1.1110",
+    "DHR@2016-07-05 x1.5555",
+    "DLX@2001-01-02 x1.3350",
+    "ETN@2001-01-02 x1.1910"
+  ],
+  "caveats": [
+    "Survivorship: tickers Yahoo no longer serves (most acquired/bankrupt names) are absent; see d2_coverage.csv status=no_data and d2_report.md.",
+    "Ticker reuse: some historical symbols now map to a different company on Yahoo (d2_coverage.csv reuse_suspect/flags). Join to membership by (ticker, date) with care.",
+    "Yahoo data is not point-in-time: Close is split-adjusted as of the retrieval date; Adj Close is split+dividend adjusted (CRSP-style multiplicative) as of the retrieval date."
+  ],
+  "agent": "d2",
+  "written_utc": "2026-09-25T20:57:23Z"
+}

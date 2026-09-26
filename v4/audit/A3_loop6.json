@@ -1,0 +1,78 @@
+{
+  "total": 87,
+  "criteria": {
+    "1": 8,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 9,
+    "7": 9,
+    "8": 9,
+    "9": 9,
+    "10": 9
+  },
+  "must_fix": [
+    "Add the whole-market triage's own pass/fail record (Q01-Q15: 455 scored, 296 ADVANCE) to the same reader-facing verification table (Appendix A.4) that already carries V1X/V2R/DA-series/C1/X1, rather than leaving it only in STATE.md's log. Carried over from Loops 4 and 5.",
+    "Edit MSCI's dossier section 9 kill criterion 2 itself (not just the appended Correction) to state the correct year-ago Retention Rate comparator (Q2 2025: 94.4%, not '93.4% a year ago in Q4 2025'). DA9 found this labeling error; only a footnote fixed it, not the operative sentence a reader checks during the weekly review.",
+    "Disclose the source and computation of the '1.7%' portfolio dividend yield that drives FINAL_REPORT section 1's '0.52% of the portfolio a year' withholding figure and section 9's estate/withholding table. Searched lead_portfolio_build.json, lead_risk_results.json, lead_risk_view.json, v1_valuation_table.csv (no yield column) and r2_implementation_facts.md; found no traceable per-holding yield data or weighted-average calculation, unlike every other headline number checked.",
+    "Re-run C1 against the current build's content_sha256 (31e96bf8693a...) and publish it as v007_2026-09-26_claude with v006_2026-09-26_claude as parent, per STATE.md's own stated next step. Not scored as a current defect (the verification gate reading OPEN is by design per the Loop-6 brief), but versions/catalog.json's latest_completed (v006) currently describes a build one research wave stale (it still shows AMP as held).",
+    "BR's dossier '$227m full-year gain on digital-asset holdings' figure could not be independently pinned to a specific filing line in the time available (the $265m balance-sheet holdings value and the Canton tokenization program are confirmed; the $227m P&L gain figure is plausible but unconfirmed) -- cite the specific exhibit/line so a reader can check it directly."
+  ],
+  "fact_checks": [
+    {
+      "ticker": "CVS",
+      "claim": "Q2 2026 Aetna Medical Benefit Ratio 87.4%, a 250bps YoY improvement in the medical cost ratio",
+      "source": "CNBC/secondary coverage of CVS's own Q2 2026 earnings release (2026-08-05): 'Aetna's medical benefit ratio decreased... to 87.4%'; 'a 250-basis-point improvement in its medical cost ratio'",
+      "status": "PASS"
+    },
+    {
+      "ticker": "CVS",
+      "claim": "Q2 2026 revenue approximately $106.1bn, +7% YoY (dossier: $106,096M, +7.3%)",
+      "source": "CNBC/secondary coverage of CVS's own Q2 2026 earnings release: 'CVS booked sales of $106.10 billion for the second quarter, up 7%'",
+      "status": "PASS"
+    },
+    {
+      "ticker": "CVS",
+      "claim": "FY2026 guidance raised to adjusted EPS $7.90-$8.10 (from $7.30-$7.50), revenue at least $414bn (from at least $405bn)",
+      "source": "Secondary coverage of CVS's own Q2 2026 release and guidance raise",
+      "status": "PASS"
+    },
+    {
+      "ticker": "BR",
+      "claim": "FY2026 recurring-revenue growth 8% constant currency; FY2027 guidance 6-8% recurring revenue growth / 8-12% adjusted EPS growth",
+      "source": "Broadridge's own FY2026 Q4 earnings release (SEC 8-K Ex-99.1, filed 2026-08-04) via secondary coverage: '8% constant-currency recurring-revenue growth'; 'Fiscal 2027 guidance calls for... recurring-revenue growth of 6% to 8% and adjusted-EPS growth of 8% to 12%'",
+      "status": "PASS"
+    },
+    {
+      "ticker": "BR",
+      "claim": "FY2026 adjusted EPS $9.60",
+      "source": "Broadridge's own FY2026 Q4 earnings release coverage: 'Adjusted EPS increased 12% to $9.60 for the full year'",
+      "status": "PASS"
+    },
+    {
+      "ticker": "BR",
+      "claim": "$227m full-year gain on digital-asset (Canton tokenization) holdings, offset by an $11m Q4 non-cash loss",
+      "source": "Broadridge's own FY2026 Q4 release coverage confirms digital-asset holdings of $265m (Canton Coins $216m + Canton Strategic Holdings common/warrants $49m) and the tokenization program, but does not isolate a specific $227m P&L gain line in the sources found",
+      "status": "UNVERIFIABLE"
+    },
+    {
+      "ticker": "MSCI",
+      "claim": "Kill criterion 2: Retention Rate 95.3% (Q2 2026) vs '93.4% a year ago in Q4 2025'",
+      "source": "Re-read dossiers/MSCI.md line 122 (operative kill-criterion text) against its own line-171 Correction (from fact-check DA9): Q4 2025 is two quarters, not a year, before Q2 2026; DA9 found the true year-ago figure is Q2 2025's 94.4%",
+      "status": "MINOR"
+    },
+    {
+      "ticker": "CRH",
+      "claim": "Net debt/adjusted EBITDA approximately 1.8x today (Loop-5 must-fix: disclose calculation basis)",
+      "source": "Re-read dossiers/CRH.md's dated Correction (from fact-check DA8): now cites CRH's own disclosed Q2 2026 Net Debt of $15.4bn directly and reconciles it against the prior ~$14.9bn total-debt-minus-cash computation, stating leverage is about 1.8-1.9x",
+      "status": "PASS"
+    },
+    {
+      "ticker": "COR",
+      "claim": "FY2026 revenue-guidance track record corrected from an erroneous '7-9%->4-6%' sequence to the true '5-7%->7-9%->4-6%'",
+      "source": "Re-read dossiers/COR.md's dated Correction (from fact-check DA10): cites each release's own 8-K guidance table by date and explains kill criterion 1 (adjusted-EPS guidance cut) is unaffected",
+      "status": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,450 @@
+{
+  "metadata": {
+    "generated_at": "2026-09-26 00:15:07",
+    "data_source": "Monty's Uptrend Ratio Dashboard (GitHub CSV)",
+    "api_key_required": false,
+    "latest_data_date": "2026-09-24",
+    "timeseries_rows": 29262,
+    "sectors_available": 11
+  },
+  "composite": {
+    "composite_score": 39.6,
+    "composite_score_raw": 42.6,
+    "warning_penalty": -3,
+    "warning_penalty_breakdown": [
+      {
+        "flag": "divergence",
+        "penalty": -3
+      }
+    ],
+    "zone": "Cautious",
+    "zone_detail": "Cautious-Upper",
+    "zone_color": "orange",
+    "zone_proximity": {
+      "nearest_boundary": 40,
+      "distance": -0.4,
+      "at_boundary": true,
+      "label": "Near boundary: -0.4 points from 40 (below)"
+    },
+    "exposure_guidance": "Defensive (30-60%)",
+    "guidance": "Weak breadth environment. Prioritize capital preservation over gains.",
+    "actions": [
+      "Significant cash allocation (40-70%)",
+      "Only hold strongest leaders in uptrending sectors",
+      "Tight stops on all positions",
+      "Consider defensive sector allocation",
+      "No new aggressive entries"
+    ],
+    "active_warnings": [
+      {
+        "flag": "divergence",
+        "label": "SECTOR DIVERGENCE WARNING",
+        "description": "Significant divergence detected within sector groups. Some sectors within the same group are moving in opposite directions, suggesting hidden risk beneath the averages.",
+        "actions": [
+          "Verify individual sector trends before entering positions",
+          "Avoid sectors diverging from their group majority",
+          "Monitor for group convergence or further deterioration"
+        ]
+      }
+    ],
+    "strongest_component": {
+      "component": "sector_rotation",
+      "label": "Sector Rotation",
+      "score": 73
+    },
+    "weakest_component": {
+      "component": "historical_context",
+      "label": "Historical Context",
+      "score": 16
+    },
+    "data_quality": {
+      "available_count": 5,
+      "total_components": 5,
+      "label": "Complete (5/5 components)",
+      "missing_components": []
+    },
+    "component_scores": {
+      "market_breadth": {
+        "score": 23,
+        "weight": 0.3,
+        "weighted_contribution": 6.9,
+        "label": "Market Breadth (Overall)"
+      },
+      "sector_participation": {
+        "score": 46,
+        "weight": 0.25,
+        "weighted_contribution": 11.5,
+        "label": "Sector Participation"
+      },
+      "sector_rotation": {
+        "score": 73,
+        "weight": 0.15,
+        "weighted_contribution": 10.9,
+        "label": "Sector Rotation"
+      },
+      "momentum": {
+        "score": 58,
+        "weight": 0.2,
+        "weighted_contribution": 11.6,
+        "label": "Momentum"
+      },
+      "historical_context": {
+        "score": 16,
+        "weight": 0.1,
+        "weighted_contribution": 1.6,
+        "label": "Historical Context"
+      }
+    }
+  },
+  "components": {
+    "market_breadth": {
+      "score": 23,
+      "signal": "VERY WEAK: 13.7% uptrend ratio, trend up",
+      "data_available": true,
+      "ratio": 0.1368309110244594,
+      "ratio_pct": 13.7,
+      "ma_10": 0.1375157517318072,
+      "ma_10_pct": 13.8,
+      "trend": "up",
+      "slope": 0.0011132587002113115,
+      "trend_adjustment": 5,
+      "distance_from_upper": -0.2332,
+      "distance_from_lower": 0.0398,
+      "upper_threshold": 0.37,
+      "lower_threshold": 0.097,
+      "date": "2026-09-24"
+    },
+    "sector_participation": {
+      "score": 46,
+      "signal": "MODERATE: 5/11 sectors uptrending, spread 36.5%",
+      "data_available": true,
+      "uptrend_count": 5,
+      "total_sectors": 11,
+      "count_score": 40,
+      "spread": 0.3647,
+      "spread_pct": 36.5,
+      "spread_score": 56,
+      "max_ratio": 0.3647342995169082,
+      "min_ratio": 0.0,
+      "overbought_count": 0,
+      "overbought_sectors": [],
+      "oversold_count": 6,
+      "oversold_sectors": [
+        "Consumer Cyclical",
+        "Financial",
+        "Basic Materials",
+        "Consumer Defensive",
+        "Real Estate",
+        "Utilities"
+      ],
+      "sector_details": [
+        {
+          "sector": "Technology",
+          "ratio": 0.3647342995169082,
+          "ratio_pct": 36.5,
+          "ma_10": 0.25640200434239746,
+          "trend": "Up",
+          "slope": 0.022771506874767783,
+          "status": "Normal",
+          "count": 151,
+          "total": 414
+        },
+        {
+          "sector": "Healthcare",
+          "ratio": 0.19904076738609114,
+          "ratio_pct": 19.9,
+          "ma_10": 0.20074440785647757,
+          "trend": "Up",
+          "slope": 0.005819569696355609,
+          "status": "Normal",
+          "count": 83,
+          "total": 417
+        },
+        {
+          "sector": "Communication Services",
+          "ratio": 0.1320754716981132,
+          "ratio_pct": 13.2,
+          "ma_10": 0.14967172162464,
+          "trend": "Up",
+          "slope": 0.0009433962264150941,
+          "status": "Normal",
+          "count": 14,
+          "total": 106
+        },
+        {
+          "sector": "Industrials",
+          "ratio": 0.12694300518134716,
+          "ratio_pct": 12.7,
+          "ma_10": 0.10671414527901094,
+          "trend": "Up",
+          "slope": 0.00397635180018599,
+          "status": "Normal",
+          "count": 49,
+          "total": 386
+        },
+        {
+          "sector": "Energy",
+          "ratio": 0.125,
+          "ratio_pct": 12.5,
+          "ma_10": 0.27702697593466963,
+          "trend": "Down",
+          "slope": -0.03750000000000003,
+          "status": "Normal",
+          "count": 20,
+          "total": 160
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "ratio": 0.06810035842293907,
+          "ratio_pct": 6.8,
+          "ma_10": 0.0669116525585297,
+          "trend": "Up",
+          "slope": 0.002853201309919798,
+          "status": "Oversold",
+          "count": 19,
+          "total": 279
+        },
+        {
+          "sector": "Financial",
+          "ratio": 0.06412478336221837,
+          "ratio_pct": 6.4,
+          "ma_10": 0.09905868938776413,
+          "trend": "Down",
+          "slope": -0.00702289581343804,
+          "status": "Oversold",
+          "count": 37,
+          "total": 577
+        },
+        {
+          "sector": "Basic Materials",
+          "ratio": 0.06,
+          "ratio_pct": 6.0,
+          "ma_10": 0.0717260127452652,
+          "trend": "Down",
+          "slope": -0.002333333333333326,
+          "status": "Oversold",
+          "count": 9,
+          "total": 150
+        },
+        {
+          "sector": "Consumer Defensive",
+          "ratio": 0.02459016393442623,
+          "ratio_pct": 2.5,
+          "ma_10": 0.059253287932138965,
+          "trend": "Down",
+          "slope": -0.004045048647207783,
+          "status": "Oversold",
+          "count": 3,
+          "total": 122
+        },
+        {
+          "sector": "Real Estate",
+          "ratio": 0.007462686567164179,
+          "ratio_pct": 0.7,
+          "ma_10": 0.01595398968123878,
+          "trend": "Down",
+          "slope": -0.0006925802641468901,
+          "status": "Oversold",
+          "count": 1,
+          "total": 134
+        },
+        {
+          "sector": "Utilities",
+          "ratio": 0.0,
+          "ratio_pct": 0.0,
+          "ma_10": 0.011656326130010341,
+          "trend": "Down",
+          "slope": -0.001282051282051281,
+          "status": "Oversold",
+          "count": 0,
+          "total": 76
+        }
+      ]
+    },
+    "sector_rotation": {
+      "score": 73,
+      "signal": "RISK-ON: Cyclical leads by 9.3pp",
+      "data_available": true,
+      "cyclical_avg": 0.1512,
+      "cyclical_avg_pct": 15.1,
+      "defensive_avg": 0.0578,
+      "defensive_avg_pct": 5.8,
+      "commodity_avg": 0.0925,
+      "commodity_avg_pct": 9.2,
+      "difference": 0.0934,
+      "difference_pct": 9.3,
+      "late_cycle_flag": false,
+      "commodity_penalty": 0,
+      "divergence_flag": true,
+      "divergence_penalty": -5,
+      "cyclical_divergence": {
+        "flagged": true,
+        "std_dev": 0.1105,
+        "spread": 0.3006,
+        "outliers": [
+          {
+            "sector": "Technology",
+            "ratio": 0.3647342995169082,
+            "deviation": 0.2135
+          }
+        ],
+        "trend_dissenters": [
+          {
+            "sector": "Financial",
+            "trend": "down",
+            "majority": "up"
+          }
+        ]
+      },
+      "defensive_divergence": {
+        "flagged": true,
+        "std_dev": 0.082,
+        "spread": 0.199,
+        "outliers": [
+          {
+            "sector": "Healthcare",
+            "ratio": 0.19904076738609114,
+            "deviation": 0.1413
+          }
+        ],
+        "trend_dissenters": [
+          {
+            "sector": "Healthcare",
+            "trend": "up",
+            "majority": "down"
+          }
+        ]
+      },
+      "cyclical_details": [
+        {
+          "sector": "Technology",
+          "ratio": 0.3647342995169082,
+          "ratio_pct": 36.5,
+          "trend": "Up",
+          "slope": 0.022771506874767783
+        },
+        {
+          "sector": "Consumer Cyclical",
+          "ratio": 0.06810035842293907,
+          "ratio_pct": 6.8,
+          "trend": "Up",
+          "slope": 0.002853201309919798
+        },
+        {
+          "sector": "Communication Services",
+          "ratio": 0.1320754716981132,
+          "ratio_pct": 13.2,
+          "trend": "Up",
+          "slope": 0.0009433962264150941
+        },
+        {
+          "sector": "Financial",
+          "ratio": 0.06412478336221837,
+          "ratio_pct": 6.4,
+          "trend": "Down",
+          "slope": -0.00702289581343804
+        },
+        {
+          "sector": "Industrials",
+          "ratio": 0.12694300518134716,
+          "ratio_pct": 12.7,
+          "trend": "Up",
+          "slope": 0.00397635180018599
+        }
+      ],
+      "defensive_details": [
+        {
+          "sector": "Utilities",
+          "ratio": 0.0,
+          "ratio_pct": 0.0,
+          "trend": "Down",
+          "slope": -0.001282051282051281
+        },
+        {
+          "sector": "Consumer Defensive",
+          "ratio": 0.02459016393442623,
+          "ratio_pct": 2.5,
+          "trend": "Down",
+          "slope": -0.004045048647207783
+        },
+        {
+          "sector": "Healthcare",
+          "ratio": 0.19904076738609114,
+          "ratio_pct": 19.9,
+          "trend": "Up",
+          "slope": 0.005819569696355609
+        },
+        {
+          "sector": "Real Estate",
+          "ratio": 0.007462686567164179,
+          "ratio_pct": 0.7,
+          "trend": "Down",
+          "slope": -0.0006925802641468901
+        }
+      ],
+      "commodity_details": [
+        {
+          "sector": "Energy",
+          "ratio": 0.125,
+          "ratio_pct": 12.5,
+          "trend": "Down",
+          "slope": -0.03750000000000003
+        },
+        {
+          "sector": "Basic Materials",
+          "ratio": 0.06,
+          "ratio_pct": 6.0,
+          "trend": "Down",
+          "slope": -0.002333333333333326
+        }
+      ]
+    },
+    "momentum": {
+      "score": 58,
+      "signal": "NEUTRAL MOMENTUM: slope=-0.0007, accelerating",
+      "data_available": true,
+      "slope": 0.0011132587002113115,
+      "slope_smoothed": -0.000705,
+      "slope_smoothing": "EMA(3)",
+      "slope_score": 53,
+      "acceleration": 0.003227,
+      "acceleration_label": "accelerating",
+      "acceleration_score": 75,
+      "acceleration_window": "10v10",
+      "sector_positive_slope_count": 5,
+      "sector_total": 11,
+      "sector_slope_breadth_score": 45,
+      "date": "2026-09-24"
+    },
+    "historical_context": {
+      "score": 16,
+      "signal": "HISTORICALLY LOW: 13.7% at 16.5th percentile historically",
+      "data_available": true,
+      "percentile": 16.5,
+      "current_ratio": 0.1368309110244594,
+      "current_ratio_pct": 13.7,
+      "historical_min": 0.0113,
+      "historical_min_pct": 1.1,
+      "historical_max": 0.4434,
+      "historical_max_pct": 44.3,
+      "historical_median": 0.2351,
+      "historical_median_pct": 23.5,
+      "avg_30d": 0.1918,
+      "avg_30d_pct": 19.2,
+      "avg_90d": 0.2337,
+      "avg_90d_pct": 23.4,
+      "data_points": 808,
+      "date_range": "2023-08-11 to 2026-09-24",
+      "confidence": {
+        "confidence_level": "High",
+        "confidence_score": 5,
+        "sample_size": 808,
+        "sample_label": "moderate",
+        "has_bear_data": true,
+        "has_bull_data": true,
+        "regime_coverage": "Both",
+        "recency_label": "balanced"
+      }
+    }
+  }
+}

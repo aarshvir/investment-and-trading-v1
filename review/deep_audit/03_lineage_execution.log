@@ -1,0 +1,349 @@
+{
+  "as_of": "2026-09-26",
+  "source_snapshot": "2026-09-24 US close",
+  "universe_csv_rows": 503,
+  "scored_companies": 497,
+  "omitted_tickers": [
+    "FDXF",
+    "FOX",
+    "GOOG",
+    "HONA",
+    "NWS",
+    "Q"
+  ],
+  "finalists": 14,
+  "edgar_companies": 66,
+  "edgar_release_documents": 593,
+  "edgar_companies_no_documents": 431,
+  "missing_edgar_management_lens_pass_count": 394,
+  "cached_document_min_date": "2024-07-11",
+  "cached_document_max_date": "2026-09-23",
+  "documents_truncated60000": 56,
+  "documents_scoring_limited15000": 544,
+  "documents_flagging_limited40000": 233,
+  "documents_with_acceptance_timestamp": 0,
+  "full_original_filing_vintage_verified_companies": 0,
+  "historical_membership_interval_rows": 0,
+  "delisting_return_records": 0,
+  "explicit_corporate_action_records": 0,
+  "price_datasets": {
+    "close10": {
+      "rows": 2765,
+      "columns": 498,
+      "first": "2015-09-25",
+      "last": "2026-09-24",
+      "duplicate_dates": 0,
+      "missing_cells": 38795,
+      "ffill_new_cells": 440,
+      "nonpositive_cells": 0,
+      "columns_with_missing": 449
+    },
+    "close3": {
+      "rows": 753,
+      "columns": 504,
+      "first": "2023-09-25",
+      "last": "2026-09-24",
+      "duplicate_dates": 0,
+      "missing_cells": 3051,
+      "ffill_new_cells": 445,
+      "nonpositive_cells": 0,
+      "columns_with_missing": 445
+    }
+  },
+  "corporate_action_examples": [
+    {
+      "ticker": "NVDA",
+      "event_date": "2024-06-10",
+      "split_ratio": 10,
+      "cached_previous_adjusted_close": 120.5442886352539,
+      "cached_event_adjusted_close": 121.44371032714844,
+      "cached_event_return": 0.007461338086419245,
+      "primary_event_source": "https://investor.nvidia.com/files/doc_downloads/2024/06/nvidia-2024-stock-split_faq_investors.pdf",
+      "corporate_action_ledger_present": false,
+      "status": "Price continuity checked; full action reconciliation unverified"
+    },
+    {
+      "ticker": "IBKR",
+      "event_date": "2025-06-18",
+      "split_ratio": 4,
+      "cached_previous_adjusted_close": 51.757198333740234,
+      "cached_event_adjusted_close": 52.3116455078125,
+      "cached_event_return": 0.010712464969550473,
+      "primary_event_source": "https://www.sec.gov/Archives/edgar/data/1381197/000138119725000103/ibkr-20250630x10q.htm",
+      "corporate_action_ledger_present": false,
+      "status": "Price continuity checked; full action reconciliation unverified"
+    },
+    {
+      "ticker": "CPAY",
+      "event_date": "2024-03-25",
+      "split_ratio": 1,
+      "cached_previous_adjusted_close": 303.260009765625,
+      "cached_event_adjusted_close": 307.6600036621094,
+      "cached_event_return": 0.01450898158278413,
+      "primary_event_source": "https://investor.corpay.com/news-releases/news-release-details/fleetcor-announces-rebranding-corpay",
+      "corporate_action_ledger_present": false,
+      "status": "Price continuity checked; full action reconciliation unverified"
+    }
+  ],
+  "backtest_period_counts": {
+    "2023": {
+      "companies_with_revenue": 494,
+      "companies_with_two_years": 1
+    },
+    "2024": {
+      "companies_with_revenue": 497,
+      "companies_with_two_years": 494
+    },
+    "2025": {
+      "companies_with_revenue": 497,
+      "companies_with_two_years": 497
+    }
+  },
+  "forwardfill_by_date": {
+    "2025-11-12": 1,
+    "2026-09-22": 439
+  },
+  "saved_backtest_growth_coverage": {
+    "2023": {
+      "rows": 485,
+      "valid_revenue_growth": 1,
+      "valid_eps_growth": 5,
+      "distinct_growth_scores": 5,
+      "distinct_revenue_growth": 1
+    },
+    "2024": {
+      "rows": 491,
+      "valid_revenue_growth": 488,
+      "valid_eps_growth": 440,
+      "distinct_growth_scores": 400,
+      "distinct_revenue_growth": 488
+    },
+    "2025": {
+      "rows": 495,
+      "valid_revenue_growth": 495,
+      "valid_eps_growth": 462,
+      "distinct_growth_scores": 417,
+      "distinct_revenue_growth": 495
+    }
+  },
+  "annual_periods_2023_with_two_years": [
+    {
+      "rebalance_year": 2023,
+      "ticker": "PSKY",
+      "assumed_period_cutoff": "2023-07-01",
+      "selected_fiscal_end": "2022-12-31",
+      "available_annual_periods": 2,
+      "filing_publication_proven": false,
+      "original_vintage_preserved": false
+    }
+  ],
+  "sep22_outage": {
+    "scored_missing_close10": 438,
+    "scored_missing_close3": 438,
+    "recoverable_from_close3": 0,
+    "finalists_missing_close10": 12,
+    "finalists_missing_close3": 12,
+    "finalist_rows": [
+      {
+        "ticker": "CPAY",
+        "is_finalist": true,
+        "close10_sep22": null,
+        "close3_sep22": null,
+        "close10_missing_sep22": true,
+        "close3_missing_sep22": true,
+        "filled_sep22_return": 0.0,
+        "filled_sep23_return": -0.005186036836672736,
+        "vol252_original_ffill": 0.3684938500849455,
+        "vol252_exclude_gap_intervals_sensitivity": 0.36990760428240493,
+        "source_date": "2026-09-24",
+        "repair_status": "UNREPAIRED: no independently corroborated Sep22 close"
+      },
+      {
+        "ticker": "NVDA",
+        "is_finalist": true,
+        "close10_sep22": 228.8699951171875,
+        "close3_sep22": 228.8699951171875,
+        "close10_missing_sep22": false,
+        "close3_missing_sep22": false,
+        "filled_sep22_return": 0.006552863938686704,
+        "filled_sep23_return": -0.014680826154739757,
+        "vol252_original_ffill": 0.37722869111267043,
+        "vol252_exclude_gap_intervals_sensitivity": 0.37722869111267043,
+        "source_date": "2026-09-24",
+        "repair_status": "UNREPAIRED: no independently corroborated Sep22 close"
+      },
+      {
+        "ticker": "NTAP",
+        "is_finalist": true,
+        "close10_sep22": null,
+        "close3_sep22": null,
+        "close10_missing_sep22": true,
+        "close3_missing_sep22": true,
+        "filled_sep22_return": 0.0,
+        "filled_sep23_return": -0.009184921127882939,
+        "vol252_original_ffill": 0.44284241005883057,
+        "vol252_exclude_gap_intervals_sensitivity": 0.4444601627347857,
+        "source_date": "2026-09-24",
+        "repair_status": "UNREPAIRED: no independently corroborated Sep22 close"
+      },
+      {
+        "ticker": "AIZ",
+        "is_finalist": true,
+        "close10_sep22": null,
+        "close3_sep22": null,
+        "close10_missing_sep22": true,
+        "close3_missing_sep22": true,
+        "filled_sep22_return": 0.0,
+        "filled_sep23_return": -0.03752975513324186,
+        "vol252_original_ffill": 0.2242190718646084,
+        "vol252_exclude_gap_intervals_sensitivity": 0.22174160002350896,
+        "source_date": "2026-09-24",
+        "repair_status": "UNREPAIRED: no independently corroborated Sep22 close"
+      },
+      {
+        "ticker": "AMP",
+        "is_finalist": true,
+        "close10_sep22": null,
+        "close3_sep22": null,
+        "close10_missing_sep22": true,
+        "close3_missing_sep22": true,
+        "filled_sep22_return": 0.0,
+        "filled_sep23_return": -0.061468610391699596,
+        "vol252_original_ffill": 0.2631503742747253,
+        "vol252_exclude_gap_intervals_sensitivity": 0.25680808850905257,
+        "source_date": "2026-09-24",
+        "repair_status": "UNREPAIRED: no independently corroborated Sep22 close"
+      },
+      {
+        "ticker": "PAYX",
+        "is_finalist": true,
+        "close10_sep22": null,
+        "close3_sep22": null,
+        "close10_missing_sep22": true,
+        "close3_missing_sep22": true,
+        "filled_sep22_return": 0.0,
+        "filled_sep23_return": -0.09147034237943841,
+        "vol252_original_ffill": 0.297190043620669,
+        "vol252_exclude_gap_intervals_sensitivity": 0.28397701846157936,
+        "source_date": "2026-09-24",
+        "repair_status": "UNREPAIRED: no independently corroborated Sep22 close"
+      },
+      {
+        "ticker": "ABNB",
+        "is_finalist": true,
+        "close10_sep22": null,
+        "close3_sep22": null,
+        "close10_missing_sep22": true,
+        "close3_missing_sep22": true,
+        "filled_sep22_return": 0.0,
+        "filled_sep23_return": -0.10345237884014546,
+        "vol252_original_ffill": 0.3616748740742025,
+        "vol252_exclude_gap_intervals_sensitivity": 0.34750269729013505,
+        "source_date": "2026-09-24",
+        "repair_status": "UNREPAIRED: no independently corroborated Sep22 close"
+      },
+      {
+        "ticker": "SNA",
+        "is_finalist": true,
+        "close10_sep22": null,
+        "close3_sep22": null,
+        "close10_missing_sep22": true,
+        "close3_missing_sep22": true,
+        "filled_sep22_return": 0.0,
+        "filled_sep23_return": 0.0013522650439485862,
+        "vol252_original_ffill": 0.1951561604808223,
+        "vol252_exclude_gap_intervals_sensitivity": 0.1959358119753375,
+        "source_date": "2026-09-24",
+        "repair_status": "UNREPAIRED: no independently corroborated Sep22 close"
+      },
+      {
+        "ticker": "RL",
+        "is_finalist": true,
+        "close10_sep22": null,
+        "close3_sep22": null,
+        "close10_missing_sep22": true,
+        "close3_missing_sep22": true,
+        "filled_sep22_return": 0.0,
+        "filled_sep23_return": -0.006915443625641227,
+        "vol252_original_ffill": 0.3503301321510068,
+        "vol252_exclude_gap_intervals_sensitivity": 0.35164786311247576,
+        "source_date": "2026-09-24",
+        "repair_status": "UNREPAIRED: no independently corroborated Sep22 close"
+      },
+      {
+        "ticker": "AME",
+        "is_finalist": true,
+        "close10_sep22": null,
+        "close3_sep22": null,
+        "close10_missing_sep22": true,
+        "close3_missing_sep22": true,
+        "filled_sep22_return": 0.0,
+        "filled_sep23_return": 0.021639105058057995,
+        "vol252_original_ffill": 0.23696928473058834,
+        "vol252_exclude_gap_intervals_sensitivity": 0.2370274396023095,
+        "source_date": "2026-09-24",
+        "repair_status": "UNREPAIRED: no independently corroborated Sep22 close"
+      },
+      {
+        "ticker": "MSFT",
+        "is_finalist": true,
+        "close10_sep22": 498.0,
+        "close3_sep22": 498.0,
+        "close10_missing_sep22": false,
+        "close3_missing_sep22": false,
+        "filled_sep22_return": -0.007196797226898033,
+        "filled_sep23_return": 0.005200795859218177,
+        "vol252_original_ffill": 0.3248179347252996,
+        "vol252_exclude_gap_intervals_sensitivity": 0.3248179347252996,
+        "source_date": "2026-09-24",
+        "repair_status": "UNREPAIRED: no independently corroborated Sep22 close"
+      },
+      {
+        "ticker": "HIG",
+        "is_finalist": true,
+        "close10_sep22": null,
+        "close3_sep22": null,
+        "close10_missing_sep22": true,
+        "close3_missing_sep22": true,
+        "filled_sep22_return": 0.0,
+        "filled_sep23_return": -0.0316683203927951,
+        "vol252_original_ffill": 0.19634590840589214,
+        "vol252_exclude_gap_intervals_sensitivity": 0.194538044279245,
+        "source_date": "2026-09-24",
+        "repair_status": "UNREPAIRED: no independently corroborated Sep22 close"
+      },
+      {
+        "ticker": "IBKR",
+        "is_finalist": true,
+        "close10_sep22": null,
+        "close3_sep22": null,
+        "close10_missing_sep22": true,
+        "close3_missing_sep22": true,
+        "filled_sep22_return": 0.0,
+        "filled_sep23_return": -0.017701979852865035,
+        "vol252_original_ffill": 0.3959455396640428,
+        "vol252_exclude_gap_intervals_sensitivity": 0.39705355351841265,
+        "source_date": "2026-09-24",
+        "repair_status": "UNREPAIRED: no independently corroborated Sep22 close"
+      },
+      {
+        "ticker": "ALLE",
+        "is_finalist": true,
+        "close10_sep22": null,
+        "close3_sep22": null,
+        "close10_missing_sep22": true,
+        "close3_missing_sep22": true,
+        "filled_sep22_return": 0.0,
+        "filled_sep23_return": 0.018036441044731122,
+        "vol252_original_ffill": 0.27292915327171663,
+        "vol252_exclude_gap_intervals_sensitivity": 0.27339112557040246,
+        "source_date": "2026-09-24",
+        "repair_status": "UNREPAIRED: no independently corroborated Sep22 close"
+      }
+    ],
+    "max_abs_vol_sensitivity": 0.014172176784067458
+  },
+  "artifact_scope": "This JSON describes preserved original input defects. Later externally corroborated repairs are in the separate linked repair impact; original rows are never overwritten.",
+  "repair_impact_file": "03_finalist_repair_impact.json",
+  "druckenmiller_readiness_file": "reports/03_druckenmiller_readiness.json"
+}

@@ -1,0 +1,14 @@
+{
+  "source": "derived",
+  "rows": 1172,
+  "definitions": {
+    "n_obs": "days with non-NaN Close on the ticker's calendar",
+    "n_gaps_gt5": "gaps between consecutive observations with >5 missing trading days",
+    "status": "active=last bar on 2026-09-25; ended_before_2026-09-25; no_data=Yahoo returned nothing for the symbol",
+    "member_*": "overlap with D2-derived membership spells since 2000 (d2_universe_spells.csv)",
+    "reuse_suspect": "Yahoo series starts after membership ended, or Yahoo name does not match any Wikipedia name for a non-current ticker",
+    "name_check": "fuzzy token match of Yahoo longName vs Wikipedia names (current list + changes table)"
+  },
+  "agent": "d2",
+  "written_utc": "2026-09-25T20:57:23Z"
+}

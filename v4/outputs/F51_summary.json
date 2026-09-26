@@ -1,0 +1,114 @@
+{
+  "agent": "F51",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "ABBV": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Immunology giant that replaced Humira's decline with faster-growing Skyrizi and Rinvoq, but has zero equity cushion and a recurring pipeline-buying expense hidden in adjusted EPS.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Consolidated net debt/EBITDA (per the 10-Q's own reconciliation) exceeds 3.5x in any quarter.",
+        "Combined Skyrizi + Rinvoq operational revenue growth falls below 8% YoY for two consecutive quarters (vs. 14.6% in Q2 2026).",
+        "Acquired IPR&D/milestone expense exceeds $3.00/share on a trailing-12-month basis (vs. $2.76/share in FY2025), signalling an accelerating, not one-off, drag.",
+        "Adjusted diluted EPS guidance is cut on an IPR&D-and-M&A-adjusted, apples-to-apples basis (i.e., excluding the effect of newly disclosed IPR&D charges and disclosed acquisitions, which are not true operating cuts).",
+        "An adverse final judgment or settlement in the Allergan opioid MDL or Biocell breast-implant litigation materially exceeding the current $1.7bn litigation accrual."
+      ],
+      "key_adverse_facts": [
+        "Consolidated stockholders' equity is negative: -$5,935m at 2026-06-30 (-$6,656m at 2026-03-31), against $70.8bn of total debt -- no equity cushion (10-Q balance sheet, period 2026-06-30).",
+        "Acquired IPR&D/milestone expense was $2.76/share for FY2025 and continues quarterly ($0.41/share Q1'26, $0.17/share unfavorable impact cited in Q2'26 release); excluded from 'adjusted' EPS every year despite being effectively recurring.",
+        "Net debt/EBITDA (consolidated, TTM through Q2 2026) is approximately 3.0x.",
+        "Litigation accrual rose to $1.7bn (2026-06-30) from $1.6bn (2025-12-31); ~215 Allergan opioid lawsuits, ~1,300+ Biocell breast-implant MDL cases (US settlement reached June 2026, international cases continue), and a live Humira-rebating antitrust suit (Sheet Metal Workers' Health Plan v. AbbVie, filed Jan 2025) remain open.",
+        "FY2025 adjusted diluted EPS fell 1.2% YoY to $10.00 once the year's cumulative IPR&D charges are counted, even though headline guidance had been raised in Q3 2025."
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv has a blank/missing ROE field for ABBV -- not a pipeline error but a direct, verifiable consequence of ABBV's negative consolidated stockholders' equity found in the 10-Q balance sheet (ROE is undefined/meaningless with negative book equity)."
+      ],
+      "next_earnings_date": "2026-10-30",
+      "confidence_in_thesis": "medium (Skyrizi/Rinvoq growth is verified in four quarters of reported data; the balance-sheet and earnings-quality flags are also filing-verified, so the reservation is as solid as the bull case)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "implied_vs_base": "in_line",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for ABBV (not a prior top-70/lane name); this dossier's own reverse DCF (WACC 7.5-8.5%, terminal growth 3%) implies 5.0-7.7%/yr 10-year FCF growth, which sits inside a reasonable evidence-based base case of 6-8%/yr rather than clearly below it, so the price is read as fair, not cheap."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.030,
+        "base": 0.095,
+        "bull": 0.175
+      },
+      "scenario_basis": "Start: FY2026 adjusted diluted EPS guidance midpoint $13.97 (updated 2026-07-31 release) and px $264.34 (18.9x adj. P/E); dividend yield ~2.6% ($1.73/qtr). Base: 7%/yr EPS growth, stable 18.9x multiple. Bear: 2%/yr growth (faster Skyrizi/Rinvoq deceleration, payer pressure), multiple compresses to 15x. Bull: 11%/yr growth (pipeline delivers), multiple expands to 21x. All annualized over 3 years including dividends."
+    },
+    "AME": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Industrial instrumentation compounder with three straight 2026 guidance raises, now carrying far more debt after a $5 billion all-cash acquisition just closed.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Net debt/EBITDA (consolidated, per the 10-Q's own reconciliation) exceeds 3.0x in any quarter through 2027 without a stated deleveraging plan.",
+        "Organic (ex-acquisition) sales growth falls below 3% for two consecutive quarters.",
+        "FY2026 adjusted EPS guidance is cut (vs. the current $8.20-$8.30 range) at any subsequent quarterly release.",
+        "Adjusted operating margin contracts more than 100bp YoY in any quarter.",
+        "A term-loan covenant waiver or amendment is disclosed."
+      ],
+      "key_adverse_facts": [
+        "The $5.0bn all-cash Indicor Instrumentation acquisition closed 2026-08-26, funded by a new $4.0bn senior unsecured term loan plus up to $1.0bn of a newly upsized ($2.3bn to $3.5bn) revolver -- pro forma net debt/EBITDA is estimated at roughly 2.5x versus 0.6x pre-deal, and this leverage jump is not yet reflected in any filed balance sheet (next 10-Q, Q3 2026, will be first to show it).",
+        "The reverse DCF requires an estimated ~8.4%/yr FCF growth for 10 years to justify the current ~30x forward adjusted P/E, and a meaningful share of AME's growth has historically been M&A-funded rather than pure organic (recent organic growth has been mid-single-digit).",
+        "b1_live_scores.csv's leverage percentile (ranked as very low-levered) is now stale given the post-balance-sheet-date $5bn deal."
+      ],
+      "data_conflicts": [
+        "b1's pct_leverage score (0.846, very low leverage) reflects AME's pre-Indicor balance sheet (2026-06-30 10-Q, net debt/EBITDA ~0.6x); it has not been and cannot yet be updated for the 2026-08-26 acquisition close, which is estimated to raise pro forma net debt/EBITDA to ~2.5x."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "confidence_in_thesis": "medium (operating momentum -- three consecutive guidance raises -- is strongly filing-verified; the post-deal leverage and integration outcome is not yet observable in any filed financial statement)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "implied_vs_base": "below",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for AME (not a prior top-70/lane name); this dossier's own reverse DCF (WACC 8.0%, terminal growth 3%) implies ~8.4%/yr 10-year FCF growth, modestly below the company's own stated long-term algorithm of double-digit (~10%+) EPS growth over the cycle, so the price does not appear to demand more growth than the base case -- but the margin of safety is thin and depends on continued, now balance-sheet-constrained M&A."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.052,
+        "base": 0.075,
+        "bull": 0.154
+      },
+      "scenario_basis": "Start: FY2026 adjusted diluted EPS guidance midpoint $8.25 (raised 2026-08-04 release) and px $250.74 (30.4x adj. P/E); dividend yield ~0.5%. Base: 10%/yr EPS growth (company's own long-term algorithm), stable ~28x multiple (modest de-rate for higher leverage). Bear: 5%/yr growth (M&A pause, integration friction), multiple compresses to 22x. Bull: 13%/yr growth (continued accretive M&A), multiple re-rates to 32x. All annualized over 3 years including dividends."
+    },
+    "AXP": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Premium closed-loop card network with best-in-class, stable credit quality and strong EPS growth, priced for less growth than it is delivering.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Net write-off rate (principal, interest & fees; consolidated, per the quarterly statistical supplement) rises above 3.0% for two consecutive quarters (vs. 2.2-2.3% today).",
+        "CET1/RWA (Basel III, consolidated) falls below 10.0% in any quarter without a stated capital-plan explanation.",
+        "FY guidance (revenue growth or EPS range) is cut at any subsequent quarterly release.",
+        "Card Member spend growth (FX-adjusted) decelerates below 5% for two consecutive quarters.",
+        "An adverse final judgment (not just an adverse motion) in the Pizza Hazel or 5-Star General Store anti-steering antitrust litigation."
+      ],
+      "key_adverse_facts": [
+        "CET1/RWA has drifted down for five straight quarters: 10.6% to 10.4% (Q2'25 through Q2'26, statistical supplement).",
+        "Merchant anti-steering/non-discrimination provisions -- central to AXP's above-average merchant discount economics -- face renewed antitrust class actions (Pizza Hazel, filed 2024-09-30; 5-Star General Store, filed 2024-03-21); courts denied AXP's motions to compel arbitration in both and AXP has appealed to the First Circuit -- unresolved.",
+        "A meaningful share of recent EPS growth (roughly a third in Q2 2026) comes from a ~2.9% YoY reduction in diluted share count via buybacks, not purely organic earnings growth."
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-16",
+      "confidence_in_thesis": "high (credit quality, capital ratios and guidance track record are all directly filing-verified across six consecutive quarters with no deterioration)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "implied_vs_base": "below",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for AXP (not a prior top-70/lane name); this dossier's own reverse DCF (cost of equity ~9.5% via CAPM, terminal growth 3%) implies only ~5.1%/yr 10-year earnings growth, well below AXP's demonstrated trailing four-quarter EPS growth of 8-19% YoY and below management's long-communicated mid-teens EPS growth aspiration, so the price appears to embed less growth than the base case."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.048,
+        "base": 0.120,
+        "bull": 0.213
+      },
+      "scenario_basis": "Start: FY2026 EPS guidance midpoint $17.60 (reaffirmed/raised through 2026-07-24 release) and px $308.89 (17.55x forward P/E); dividend yield ~1.15%. Base: 11%/yr EPS growth, stable 17.5x multiple. Bear: credit cycle turns, 4%/yr growth, multiple compresses to 13x. Bull: 15%/yr growth (premium-spend momentum sustained), multiple expands to 20x. All annualized over 3 years including dividends."
+    }
+  }
+}

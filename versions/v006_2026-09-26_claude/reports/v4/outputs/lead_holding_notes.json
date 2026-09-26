@@ -1,0 +1,335 @@
+{
+  "as_of": "2026-09-26",
+  "tickers": {
+    "DLTR": {
+      "thesis_one_line": "Dollar Tree's stores are healthy and fairly priced, but its eye-catching profitability is inflated by a shrunken balance sheet after the costly Family Dollar sale.",
+      "kill_criteria": [
+        "Comparable-store sales below +1.0% for two consecutive quarters, or traffic negative for two consecutive quarters while ticket growth is below +2%.",
+        "Ex-refund gross margin down more than 150 bps YoY for two consecutive quarters.",
+        "Any cut to FY2026 adjusted EPS guidance (now $7.70-8.05), or FY2027 guidance implying less than 5% ex-refund EPS growth.",
+        "Lease-adjusted (net debt + operating leases) / EBITDAR above 2.5x (1.85x at FYE Jan-2026), or funded net debt / EBITDA above 1.5x (0.65x now).",
+        "Normalized (ex-one-off) TTM FCF below $1.0B."
+      ],
+      "kill_insufficient": false,
+      "valuation_consistency": {
+        "v1_verdict": "fair",
+        "v1_base_3y": 0.0727,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "Dossier calls DLTR 'fairly priced' with a normalized ~15.7x P/E and an undemanding reverse-DCF (~1%/yr embedded FCF growth), matching V1's 'fair' verdict and +7.3%/yr base-case return; both views agree the stock is neither cheap nor expensive."
+      },
+      "dossier_sections_used": [
+        "Section 1 Verdict",
+        "Section 7 Valuation snapshot",
+        "Section 9 Key risks and kill criteria"
+      ],
+      "plain_english_check": [
+        "ROE -> 'profitability'",
+        "NTM P/E / FCF yield -> 'priced' / not used in thesis line"
+      ]
+    },
+    "HST": {
+      "thesis_one_line": "Host owns top hotels with beating forecasts, an improved credit rating, and fair pricing, but next year's comparisons will be tougher.",
+      "kill_criteria": [
+        "Comparable hotel RevPAR growth turns negative for two consecutive quarters (the core, most-watched KPI).",
+        "Adjusted FFO/share guidance is cut (not just raised more slowly) at any quarterly release -- a genuine reversal, not merely deceleration.",
+        "Net debt/EBITDAre rises above ~4.0x (current: 2.95x net debt/EBITDA on ratios.py) without an offsetting asset-sale plan.",
+        "The regular quarterly dividend ($0.20/share) is cut.",
+        "FY2027 comparable RevPAR growth guidance (first given around Feb 2027) comes in below roughly 2% -- the specific, falsifiable test of the '2026 was FIFA-flattered' bear case."
+      ],
+      "kill_insufficient": false,
+      "valuation_consistency": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.0619,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "Dossier says HST trades in line with lodging-REIT peers (10.4x FY26 AFFO), not at a premium; that is not a contradiction of V1's 'attractive' call (29th-percentile own-history multiple, +6.2%/yr base case) -- both agree the stock is not overvalued, they just use different reference points (peer-relative vs own-history)."
+      },
+      "dossier_sections_used": [
+        "Section 1 Verdict",
+        "Section 7 Valuation snapshot",
+        "Section 9 Key risks & kill criteria"
+      ],
+      "plain_english_check": [
+        "RevPAR -> 'bookings'",
+        "Adjusted FFO -> 'forecasts/profits'",
+        "Baa2 (Moody's rating) -> 'credit rating'"
+      ]
+    },
+    "JBHT": {
+      "thesis_one_line": "J.B. Hunt is a strong, low-debt trucking company, but its stock price assumes a brief freight rebound continues, while two of five business lines struggle.",
+      "kill_criteria": [
+        "Intermodal revenue growth (ex-fuel) decelerates back below ~5% YoY for two consecutive quarters -- the core recovery thesis fails.",
+        "Truckload (JBT) segment operating losses persist for more than two more quarters without a clear path to breakeven from pricing actions.",
+        "Net debt/EBITDA rises above 2.0x (would indicate the buyback/capex-cut strategy has outrun cash generation).",
+        "OCF conversion (OCF/NI) stays below 1.0x for two consecutive quarters, signaling the working-capital drag is structural rather than transitory.",
+        "Any loss of the 'record' DCS sales pipeline translating to signed, revenue-generating fleet growth within the stated 12-18 month cycle."
+      ],
+      "kill_insufficient": false,
+      "valuation_consistency": {
+        "v1_verdict": "fair",
+        "v1_base_3y": 0.0638,
+        "dossier_view": "expensive",
+        "consistent": false,
+        "reconciliation": "V1 rates JBHT 'fair' with a positive +6.4%/yr base case (implying ~$266 in 3 years vs $225.46 spot), but the dossier's own probability-weighted scenario centers on $155/share, about 31% below spot, and calls today's multiple 'the rich end' of its own history. Appended a reconciliation paragraph to the dossier's Section 7 explaining the gap and why the dossier's more cautious view is better supported."
+      },
+      "dossier_sections_used": [
+        "Section 1 Verdict",
+        "Section 7 Valuation snapshot",
+        "Section 10 Key risks & kill criteria"
+      ],
+      "plain_english_check": [
+        "Intermodal -> 'freight'",
+        "NTM/trailing P/E -> 'stock price'"
+      ]
+    },
+    "ALL": {
+      "thesis_one_line": "Allstate's car and home insurance profits have surged, but the boom is temporary, and Wall Street already expects a big profit drop next year.",
+      "kill_criteria": [
+        "Property-Liability recorded combined ratio > 100% for two consecutive quarters.",
+        "Auto or homeowners policies-in-force growth turns negative for two consecutive quarters (share loss as competitors reprice back down).",
+        "Adjusted net income ROE (ttm) stays above ~35% for another two quarters without a corresponding upward revision to FY2027 consensus, OR falls below ~15% (confirms hard mean reversion).",
+        "Net favorable reserve development flips negative in auto/casualty for two consecutive quarters.",
+        "Homeowners underlying combined ratio deteriorates a further ~5 pts from 61.5%."
+      ],
+      "kill_insufficient": false,
+      "valuation_consistency": {
+        "v1_verdict": "fair",
+        "v1_base_3y": 0.1049,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "Dossier says even a large ROE mean-reversion 'is largely priced in already' at 7.65x NTM P/E, matching V1's 'fair' verdict; both see the current 44% ROE as a cyclical peak the price already discounts, not a re-rating opportunity."
+      },
+      "dossier_sections_used": [
+        "Section 1 Verdict",
+        "Section 7 Valuation snapshot",
+        "Section 9 Key risks & kill criteria"
+      ],
+      "plain_english_check": [
+        "adjusted net income ROE -> 'profits'",
+        "FY2027 consensus EPS cut -> 'Wall Street expects a profit drop next year'",
+        "combined ratio -> not used in thesis line"
+      ]
+    },
+    "GL": {
+      "thesis_one_line": "Globe Life sells simple life and health insurance through career agents, keeps beating its own raised forecasts, but faces an unresolved lawsuit over sales conduct.",
+      "kill_criteria": [
+        "Full-year (net operating EPS) guidance is cut, not just a smaller raise, versus the prior quarter's range.",
+        "Consolidated Company Action Level RBC ratio falls below ~280% (below its own 300-320% target band).",
+        "Adverse class-certification ruling, or a settlement/verdict in the City of Miami Matter exceeding roughly 5% of shareholders' equity (~$310M on $6.16B equity).",
+        "Life or health underwriting margin growth turns negative for two consecutive quarters at any major division.",
+        "Net operating ROE ex-AOCI falls below ~12% (vs. 14.3% 1H26)."
+      ],
+      "kill_insufficient": false,
+      "valuation_consistency": {
+        "v1_verdict": "fair",
+        "v1_base_3y": 0.084,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "Dossier calls GL's valuation 'reasonable-to-slightly-cheap' versus peer AFL, close to V1's 'fair' verdict (+8.4%/yr base case); the small gap reflects the dossier's view that a litigation overhang, not a business-quality problem, explains the discount."
+      },
+      "dossier_sections_used": [
+        "Section 1 Verdict",
+        "Section 7 Valuation snapshot",
+        "Section 9 Key risks & kill criteria"
+      ],
+      "plain_english_check": [
+        "RBC ratio -> 'capital'/kept as-is (already plain)",
+        "class-certification -> 'lawsuit'",
+        "net operating income -> 'forecasts'"
+      ]
+    },
+    "SWK": {
+      "thesis_one_line": "Stanley Black & Decker looks historically cheap after a cost-cutting program, but last quarter's gain leaned heavily on a one-time tariff refund and asset sale.",
+      "kill_criteria": [
+        "Tools & Outdoor organic volume negative for two more consecutive quarters.",
+        "Net debt/adjusted EBITDA fails to decline from FY25 level despite CAM proceeds.",
+        "Adjusted gross margin excluding the tariff-refund benefit contracts YoY.",
+        "Dividend increase paused (streak at risk) or payout > 90% of adjusted EPS.",
+        "Another guidance cut."
+      ],
+      "kill_insufficient": false,
+      "valuation_consistency": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.1811,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "Both agree SWK is statistically cheap (13th-percentile 13-year NTM P/E; V1 'attractive'); the dossier's own Section 13 already flags that V1's peer set is an imperfect match and that its +18.1%/yr base case exceeds the Street's high target, so no further dossier edit was needed."
+      },
+      "dossier_sections_used": [
+        "Section 1 Verdict",
+        "Section 7 Valuation snapshot",
+        "Section 10 Key risks & kill criteria",
+        "Section 13 Data conflicts vs quant screen"
+      ],
+      "plain_english_check": [
+        "NTM P/E percentile -> 'historically cheap'",
+        "CAM divestiture -> 'asset sale'",
+        "IEEPA tariff refund -> 'tariff refund'"
+      ]
+    },
+    "HIG": {
+      "thesis_one_line": "Hartford's underwriting is strong, but recent profit gains came mostly from one-time tax and settlement items, and pricing power in its core business is fading.",
+      "kill_criteria": [
+        "Business Insurance underlying combined ratio >91% for two consecutive quarters (cycle-turn confirmation).",
+        "Adverse general-liability/commercial-auto/A&E reserve development >$150M in any single quarter.",
+        "Hartford Funds sale is delayed, renegotiated, or terminated.",
+        "Core-earnings ROE <15% for two consecutive quarters (vs. 20.3% TTM stated by management).",
+        "Net FY1 sell-side EPS revisions stay negative for two more months without a corresponding guidance/fundamental offset."
+      ],
+      "kill_insufficient": false,
+      "valuation_consistency": {
+        "v1_verdict": "fair",
+        "v1_base_3y": 0.027,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "Dossier explicitly adopts V1's own figures -- 77th-percentile P/B, 'fair, not cheap,' +2.7%/yr base case -- so the dossier and V1 already state the same view; there is nothing to reconcile."
+      },
+      "dossier_sections_used": [
+        "Section 1 Verdict",
+        "Section 7 Valuation snapshot",
+        "Section 10 Key risks & kill criteria"
+      ],
+      "plain_english_check": [
+        "underlying combined ratio drifting up -> 'pricing power...fading'",
+        "reinsurance commutation gain / tax benefit -> 'one-time tax and settlement items'"
+      ]
+    },
+    "BMY": {
+      "thesis_one_line": "Bristol Myers has strong new drugs replacing declining older ones, but a government price cut on its top drug is now hurting cash flow.",
+      "kill_criteria": [
+        "Legacy-drag overtakes Growth-Portfolio offset again: consolidated quarterly revenue growth turns negative for two consecutive quarters (it was +5.7% in Q2'26).",
+        "OCF decline persists into H2 2026: if Q3/Q4 2026 OCF is also down YoY, the Eliquis cash-flow impact is structural, not a one-time H1 dip.",
+        "FY2026 non-GAAP EPS misses the raised $6.75-$7.00 range when reported (~Feb 2027).",
+        "Cobenfy ADEPT (Alzheimer's-psychosis) data, now expected 'beginning early 2027,' reads out negative or slips again.",
+        "Dividend held flat or cut, breaking the 17-year increase streak."
+      ],
+      "kill_insufficient": false,
+      "valuation_consistency": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.1795,
+        "dossier_view": "fair",
+        "consistent": false,
+        "reconciliation": "V1 rates BMY 'attractive' (score 1.0, the maximum) on a base case assuming the P/E re-rates from 9.4x to ~24.9x, implying a 3-year price V1's own street-flag says exceeds the Street's high target. The dossier's own DCF and probability-weighted scenario instead call it 'a fair-value, not a bargain' (+2.3% to fair value, inside the Street's own range). Appended a reconciliation paragraph to the dossier's Section 7 explaining why the dossier's read is better supported."
+      },
+      "dossier_sections_used": [
+        "Section 1 Verdict",
+        "Section 7 Valuation snapshot",
+        "Section 9 Key risks & kill criteria"
+      ],
+      "plain_english_check": [
+        "Eliquis IRA Medicare price cut -> 'government price cut'",
+        "operating cash flow (OCF) -> 'cash flow'"
+      ]
+    },
+    "MTB": {
+      "thesis_one_line": "M&T Bank's lending profits keep improving as deposit costs fall and loan quality improves, with analysts raising forecasts, not cutting them.",
+      "kill_criteria": [
+        "NIM falls below ~3.55% for two consecutive quarters (vs. 3.70% now, and below management's own 'mid-3.60s' 2H26 guide).",
+        "Net charge-offs exceed ~50bps in any quarter (vs. ~37bps guided, ~23-31bps delivered).",
+        "CET1 falls below the guided 10.0% floor.",
+        "Once disclosed, CRE-office nonaccrual/criticized balances show material deterioration (currently opaque).",
+        "Efficiency ratio deteriorates persistently above ~60% (expenses already guided to the high end of range)."
+      ],
+      "kill_insufficient": false,
+      "valuation_consistency": {
+        "v1_verdict": "fair",
+        "v1_base_3y": 0.1047,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "Dossier again quotes V1 directly -- 40th-percentile P/B, 'fair, modestly cheap to peers,' +10.5%/yr base case -- full agreement, not a conflict."
+      },
+      "dossier_sections_used": [
+        "Section 1 Verdict",
+        "Section 7 Valuation snapshot",
+        "Section 10 Key risks & kill criteria"
+      ],
+      "plain_english_check": [
+        "net interest margin (NIM) -> 'lending profits'",
+        "nonaccrual ratio -> 'loan quality'",
+        "FY1 sell-side EPS revisions -> 'analysts...forecasts'"
+      ]
+    },
+    "LMT": {
+      "thesis_one_line": "Lockheed's missile business is booming with record orders, but the company keeps taking big write-offs on troubled programs, including one still-unresolved classified contract.",
+      "kill_criteria": [
+        "Any newly disclosed reach-forward/classified-program charge exceeding ~$300M pretax in a single quarter.",
+        "Aeronautics segment backlog falling below the 2026-06-30 level of $54.4B at the next 10-Q (a third consecutive decline).",
+        "Full-year 2026 F-35 deliveries pacing materially below the ~150-155 unit run-rate implied by FY2025's 191 (e.g., under ~100-110 units through Q3 2026).",
+        "A guidance cut (not reaffirmation) to FY2026 sales, segment operating profit, or FCF at either of the next two earnings releases.",
+        "A continuing resolution or government shutdown lasting beyond one quarter that management explicitly attributes a revenue/cash shortfall to."
+      ],
+      "kill_insufficient": false,
+      "valuation_consistency": {
+        "v1_verdict": "fair",
+        "v1_base_3y": 0.0411,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "Dossier cites V1's own numbers (16.2x NTM P/E, 31st percentile, 'fair,' score 0.26) and independently agrees the valuation is 'undemanding, not expensive' given two years of charge-driven earnings volatility."
+      },
+      "dossier_sections_used": [
+        "Section 1 Verdict",
+        "Section 7 Valuation snapshot",
+        "Section 9 Key risks & kill criteria"
+      ],
+      "plain_english_check": [
+        "backlog -> 'record orders'",
+        "reach-forward loss / program charge -> 'write-offs'"
+      ]
+    },
+    "FRT": {
+      "thesis_one_line": "Federal Realty's shopping centers keep raising rents, with guidance raised or held every quarter for two years, and shares are near their cheapest ever.",
+      "kill_criteria": [
+        "Comparable POI (same-property NOI) growth below 2% for two consecutive quarters (below the recent 2.8-4.9% band).",
+        "Net debt/EBITDAre above ~6.5x, or any covenant cushion closing to within 25% of its minimum/maximum.",
+        "A cut (not merely a tighten) to FFO/Core FFO guidance vs. the immediately preceding quarter.",
+        "Occupancy or leased rate down >100bp YoY for two consecutive quarters.",
+        "The 59-year dividend-increase streak broken, or payout >90% of Core FFO."
+      ],
+      "kill_insufficient": false,
+      "valuation_consistency": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.1772,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "Dossier adopts V1's 'attractive' verdict directly, corroborated by its own finding that the price-to-cash-flow multiple sits at the 5.65th percentile of FRT's 10-year history -- near the cheapest it has ever traded -- despite accelerating operating performance."
+      },
+      "dossier_sections_used": [
+        "Section 1 Verdict",
+        "Section 7 Valuation snapshot",
+        "Section 9 Key risks & kill criteria"
+      ],
+      "plain_english_check": [
+        "FFO/Core FFO -> 'profits'/'guidance' (kept generic)",
+        "P/FFO own-history percentile -> 'cheapest ever'"
+      ]
+    },
+    "SYF": {
+      "thesis_one_line": "Synchrony lends through store credit cards for Amazon, Lowe's and others; profit growth has come mostly from fewer bad-loan charges, now leveling off.",
+      "kill_criteria": [
+        "NCO rate exceeds 6.00% (top of management's own through-cycle band) for two consecutive quarters.",
+        "Holding-company CET1 falls below 11.5% for two consecutive quarters (vs. 12.6-13.7% over the last four quarters).",
+        "Non-renewal or material repricing of any of the five largest partner programs (54% of interest-and-fee income).",
+        "RSA exceeds 4.5% of average receivables for two consecutive quarters with no offsetting NIM gain.",
+        "CFPB finalizes and implements a new late-fee rule that SYF discloses as expected to materially reduce late-fee income."
+      ],
+      "kill_insufficient": false,
+      "valuation_consistency": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.3117,
+        "dossier_view": "fair",
+        "consistent": false,
+        "reconciliation": "V1 rates SYF 'attractive' (+31.2%/yr base case, implying a price above even the Street's high target) on an assumed ROE-and-buyback-driven book-value re-rating. The dossier instead finds the shares already 'pricing in most of the credit-normalization risk' at a fair, not cheap, level given a plateauing charge-off rate and shrinking reserve releases. Appended a reconciliation paragraph to the dossier's Section 7. Note: no f2/SYF summary.json existed in outputs or cache (only work files: intake/ratios/valuation_syf.json) -- this is the missing structured-data case flagged by the loop-1 audit; kill criteria and thesis here are sourced directly from the dossier."
+      },
+      "dossier_sections_used": [
+        "Section 1 Verdict",
+        "Section 7 Valuation Snapshot",
+        "Section 9 Key Risks & Kill Criteria"
+      ],
+      "plain_english_check": [
+        "private-label/co-brand credit card issuer -> 'store credit cards'",
+        "NCO / provision for credit losses -> 'bad-loan charges'"
+      ]
+    }
+  }
+}

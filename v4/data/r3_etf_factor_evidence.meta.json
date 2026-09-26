@@ -1,0 +1,34 @@
+{
+  "agent": "r3",
+  "dataset": "r3_etf_factor_evidence.csv",
+  "built_utc": "2026-09-25T20:52:39Z",
+  "description": "Realized monthly total-return performance of live large-cap factor ETFs vs SPY (both net of fees; ETF expense ratios approx.)",
+  "source": "Yahoo Finance via yfinance auto_adjust=True (dividend-adjusted closes), month-end",
+  "rows": 8,
+  "columns": [
+    "ticker",
+    "name",
+    "expense_ratio_approx",
+    "start",
+    "end",
+    "months",
+    "ann_return_etf",
+    "ann_return_SPY",
+    "ann_geo_active",
+    "ann_arith_active",
+    "TE",
+    "IR",
+    "beta_vs_SPY",
+    "alpha_ann_vs_SPY",
+    "pct_calyears_outperform",
+    "n_calyears",
+    "pct_roll12_outperform",
+    "pct_roll36_outperform",
+    "max_relative_drawdown"
+  ],
+  "caveats": [
+    "Index methodologies differ from academic factors (sector/constraint-neutral, optimized); VLUE is sector-relative value.",
+    "Period 2011/2013/2015..2026-08 is one regime (mega-cap growth leadership); short samples -> wide confidence intervals.",
+    "Expense ratios quoted from memory of issuer pages (approximate); returns already net of them."
+  ]
+}

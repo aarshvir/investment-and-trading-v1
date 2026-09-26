@@ -1,0 +1,30 @@
+{
+  "name": "r1_scenarios",
+  "agent": "r1",
+  "retrieved_utc": "2026-09-25T20:46:59Z",
+  "rows": 5,
+  "columns": [
+    "scenario",
+    "nominal_geo_return",
+    "real_approx",
+    "vol_log_annual",
+    "arithmetic_equiv",
+    "cash_assumption",
+    "basis",
+    "P_gain_1y",
+    "P_gain_3y",
+    "P_gain_5y",
+    "P_gain_10y",
+    "P_beat_cash_5y",
+    "P_beat_cash_10y",
+    "P_loss_worse_than_20pct_5y_endpoint",
+    "median_5y_cumulative"
+  ],
+  "description": "Recommended Bear/Base/Bull nominal return scenarios for US large caps (5-10y), with illustrative lognormal probabilities.",
+  "model": "annual log returns iid Normal(ln(1+g), s^2), s=0.16; P(gain over T)=Phi(ln(1+g)*sqrt(T)/s); cash 4.0%",
+  "geometric_return_needed_for_90pct_P_gain_5y_at_16pct_vol": 0.09603636240394398,
+  "caveats": [
+    "Model ignores fat tails, volatility clustering and valuation mean reversion; probabilities are conditional on the scenario, not forecasts.",
+    "Scenario returns are geometric (compound). For arithmetic-return simulators use arithmetic_equiv = g + s^2/2."
+  ]
+}

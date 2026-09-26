@@ -1,0 +1,31 @@
+{
+ "total": 82,
+ "criteria": {
+  "1": 8,
+  "2": 8,
+  "3": 8,
+  "4": 8,
+  "5": 8,
+  "6": 9,
+  "7": 9,
+  "8": 8,
+  "9": 8,
+  "10": 8
+ },
+ "must_fix": [
+  "RJF's dossier section 8 bull point 2 (\"parent debt is under $1B\") is still not struck or footnoted, five loops after its own Correction section said it \"should be read as retracted\" (criteria 4/5/9, carried over unresolved from Loop 5). RJF is not a dead name: FINAL_REPORT section 6 lists it, at full conviction, in \"eligible but not held\" -- the first replacement if a held Financials holding's kill criterion fires. A reader who opens RJF.md and reads only section 8 (the bull/bear summary, designed to be read standalone) still sees the retracted point presented as current. Fix: edit RJF.md section 8 bull point 2 directly -- strike it or add an inline footnote pointing to the Correction section.",
+  "No written rule (alongside a-l in STATE.md) requires a completed independent fact-check before a name enters the frozen build at full conviction (criterion 4, carried over from Loop 5). This loop's six new full-conviction names (MA, CAH, COR, VEEV, AXP, MSCI) did get DA9/DA10 passes before the 18:49:31 freeze, so the failure mode that produced the GM error has not recurred -- but that is discipline, not a rule. Fix: add an explicit rule to STATE.md, ideally enforced in lead_build_portfolio.py or lead_verify_gate.py, that blocks a name from reaching the 10%-cap tier without a recorded DA-series or auditor fact-check pass completed before the build timestamp.",
+  "outputs/lead_j_sensitivity.json still does not report near-miss margins for the 96 eligible-but-not-held names (criteria 3/6/7, carried over from Loop 5). PAYX and others are named in FINAL_REPORT sections 6/13 as close calls but with no quantified distance to the cutoff under any ordering. Fix: extend lead_j_sensitivity.py's output to report, for each not-held eligible name, its rank/score margin to the 20th name under each of the four orderings.",
+  "The verification gate's blind spot for its own dashboard mirror (the Loop-5 dashboard/audit-JSON mismatch) has no committed regression test (criterion 10). The specific instance is fixed and I independently confirmed dashboard/d4v.json now shows the correct Loop-2 A3 score (89.0/avg 88.7), but nothing in C1 or the gate script currently asserts, on every future run, that dashboard audits.loops matches audit/A*_loop*.json loop-by-loop. Fix: add that loop-by-loop diff as a named, permanent check inside c1_consistency.py.",
+  "DA9's MSCI retention-rate MINOR (Q4 2025 mislabeled \"a year ago\" when it is two quarters prior) is corrected/disclosed in the dossier but the underlying kill-criterion comparator text is not re-derived to the true year-ago figure (criterion 4, minor, low impact since the 92% threshold and its distance-to-breach are unaffected). Fix: update MSCI.md section 9 kill criterion 2 to cite Q2 2025's 94.4% retention rate as the year-ago comparator instead of Q4 2025's 93.4%."
+ ],
+ "fact_checks": [
+  {"ticker": "MA", "claim": "Q2 2026 net revenue $9,277M (+14.1%); GAAP diluted EPS $4.97; adjusted diluted EPS $5.04", "source": "MA 8-K Ex-99.1 (2026-07-30), independently confirmed via web search of primary-source coverage (TradingView, Investing.com)", "status": "PASS"},
+  {"ticker": "MA", "claim": "Long-term debt $22,184M (2026-06-30) vs $18,251M (2025-12-31), a $3,933M increase", "source": "MA 10-Q Consolidated Balance Sheet (as quoted in MA.md section 6 / DA9); arithmetic re-derived by hand", "status": "PASS"},
+  {"ticker": "CAH", "claim": "FY2026 (FYE 2026-06-30) full-year revenue $254.2bn (+14%); non-GAAP diluted EPS $11.26 (+37%; +33%/$10.95 ex the $100m IEEPA tariff-refund benefit)", "source": "CAH 8-K Ex-99.1 (2026-08-11), independently confirmed via web search of primary-source coverage (BigGo Finance, StockTitan, PRNewswire)", "status": "PASS"},
+  {"ticker": "MSCI", "claim": "Kill-criterion-2 comparator: Q2 2026 Retention Rate 95.3% vs \"93.4% a year ago in Q4 2025\"", "source": "MSCI 8-K Ex-99.1 Q2 2026 and Q4/FY2025 releases, per DA9's own primary-source check", "status": "MINOR"},
+  {"ticker": "COR", "claim": "FY2026 guidance-track-record table: initial revenue guide stated as 7-9% and Q1 FY26 revenue guide stated as \"reaffirmed unchanged\"", "source": "COR Q4/FY2025 and Q1 FY26 8-K Ex-99.1 guidance tables, per DA10's own primary-source check", "status": "FAIL"},
+  {"ticker": "RJF", "claim": "Section 8 bull point 2, \"parent debt is under $1B,\" presented as a live bull-case point", "source": "RJF.md's own Correction section (from Loop-4 DA7), which states this point should be read as retracted", "status": "FAIL"},
+  {"ticker": "N/A (dashboard exhibit)", "claim": "Dashboard audits.loops Loop-2 A3 score", "source": "audit/A3_loop2.json (total=89) cross-checked against dashboard/d4v.json", "status": "PASS"}
+ ]
+}

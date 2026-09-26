@@ -1,0 +1,82 @@
+{
+  "agent": "r3",
+  "dataset": "r3_ff_factors_monthly.parquet",
+  "built_utc": "2026-09-25T20:52:31Z",
+  "source_urls": [
+    "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html",
+    "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_5_Factors_2x3_CSV.zip",
+    "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Momentum_Factor_CSV.zip",
+    "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip"
+  ],
+  "source_vintage": "This file was created using the 202607 CRSP database.",
+  "units": "decimal monthly returns (French files are in percent; divided by 100)",
+  "rows": 1201,
+  "columns": [
+    "mkt_rf",
+    "smb",
+    "hml",
+    "rmw",
+    "cma",
+    "rf",
+    "umd",
+    "mkt_rf_ff3",
+    "smb_ff3",
+    "hml_ff3",
+    "rf_ff3"
+  ],
+  "coverage": {
+    "mkt_rf": [
+      "1963-07-31",
+      "2026-07-31"
+    ],
+    "smb": [
+      "1963-07-31",
+      "2026-07-31"
+    ],
+    "hml": [
+      "1963-07-31",
+      "2026-07-31"
+    ],
+    "rmw": [
+      "1963-07-31",
+      "2026-07-31"
+    ],
+    "cma": [
+      "1963-07-31",
+      "2026-07-31"
+    ],
+    "rf": [
+      "1963-07-31",
+      "2026-07-31"
+    ],
+    "umd": [
+      "1927-01-31",
+      "2026-07-31"
+    ],
+    "mkt_rf_ff3": [
+      "1926-07-31",
+      "2026-07-31"
+    ],
+    "smb_ff3": [
+      "1926-07-31",
+      "2026-07-31"
+    ],
+    "hml_ff3": [
+      "1926-07-31",
+      "2026-07-31"
+    ],
+    "rf_ff3": [
+      "1926-07-31",
+      "2026-07-31"
+    ]
+  },
+  "definitions": {
+    "mkt_rf,smb,hml,rmw,cma,rf": "Fama/French 5 factors (2x3), US, CRSP NYSE/AMEX/NASDAQ; value-weighted long-short",
+    "umd": "Momentum factor (Mom): avg(small high, big high prior 2-12 return) - avg(small low, big low); monthly rebalanced",
+    "*_ff3": "Fama/French 3-factor file, available from 1926-07 (HML identical to FF5 HML on overlap)"
+  },
+  "caveats": [
+    "Long-short, all-cap (includes small caps at 50% weight), gross of trading costs and fees, no shorting constraints; large-cap long-only tilts capture only part of these premia (see r3_largecap_longonly_*).",
+    "Factor definitions and back-history are occasionally revised by French (CRSP vintage changes)."
+  ]
+}

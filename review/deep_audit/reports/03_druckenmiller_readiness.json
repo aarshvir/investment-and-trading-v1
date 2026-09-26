@@ -1,0 +1,89 @@
+{
+  "as_of": "2026-09-26",
+  "overall_status": "NOT_READY_NO_SYNTHESIZED_MARKET_CONVICTION",
+  "required_reports": [
+    {
+      "skill": "market_breadth",
+      "status": "GENERATED_REAL_DATA",
+      "file": "market_breadth_2026-09-26_001520.json",
+      "data_date": "2026-09-24",
+      "score": 28.6,
+      "sha256": "9904a1b0f96dacc2eaf20412aa616dcf209587b115389fad219d7859bad608de"
+    },
+    {
+      "skill": "uptrend_analysis",
+      "status": "GENERATED_REAL_DATA",
+      "file": "uptrend_analysis_2026-09-26_001519.json",
+      "data_date": "2026-09-24",
+      "score": 39.6,
+      "sha256": "deef362c895f4cb02ee21cb1419eed776722a2e0ccd5ceb7508714e179cf9e62"
+    },
+    {
+      "skill": "market_top",
+      "status": "BLOCKED_MISSING_FMP_API_KEY",
+      "attempt_exit_code": 1
+    },
+    {
+      "skill": "macro_regime",
+      "status": "BLOCKED_MISSING_FMP_API_KEY",
+      "attempt_exit_code": 1
+    },
+    {
+      "skill": "ftd_detector",
+      "status": "BLOCKED_MISSING_FMP_API_KEY",
+      "attempt_exit_code": 1
+    }
+  ],
+  "required_present": 2,
+  "required_total": 5,
+  "missing_report_error": "Missing required skill reports: market_top, macro_regime, ftd_detector. Run these skills first or increase --max-age. Searched in: C:\\Users\\user\\OneDrive\\Documents\\Projects\\Investing and trading\\Long-term and mid-term investments\\review\\deep_audit\\reports",
+  "fmp_key_present": false,
+  "upstream_sources_independent": false,
+  "source_note": "Both successful breadth inputs share TraderMonty provenance; cannot count as independent vendors.",
+  "malformed_input_probe": {
+    "test_type": "ISOLATED_MALFORMED_INPUT_TEST_NOT_MARKET_DATA",
+    "empty_required_report_bodies_accepted_by_extractors": true,
+    "empty_market_top_becomes_score": 0,
+    "inverted_distribution_component": 100,
+    "invalid_input_still_returns_conviction_score": 38.5,
+    "invalid_input_claimed_available_components": 5,
+    "data_availability_parameter_ignored": true,
+    "all_bearish_convergence": 85.0
+  },
+  "source_manifest": [
+    {
+      "file": "market_breadth_data.csv",
+      "url": "https://tradermonty.github.io/market-breadth-analysis/market_breadth_data.csv",
+      "sha256": "72afd82c0cab901e914fe268bdb586c5e5ce2bdb7b77098902aafa780620eb5f",
+      "bytes": 447300,
+      "retrieved_at_utc": "2026-09-25T20:19:25.496801+00:00",
+      "rows": 2512
+    },
+    {
+      "file": "market_breadth_summary.csv",
+      "url": "https://tradermonty.github.io/market-breadth-analysis/market_breadth_summary.csv",
+      "sha256": "efa3b1544deb5311aa83caef6da0e1e3403cae085e50dbe2a1a7729a8882df14",
+      "bytes": 350,
+      "retrieved_at_utc": "2026-09-25T20:19:25.756983+00:00",
+      "rows": 12
+    },
+    {
+      "file": "uptrend_ratio_timeseries.csv",
+      "url": "https://raw.githubusercontent.com/tradermonty/uptrend-dashboard/main/data/uptrend_ratio_timeseries.csv",
+      "sha256": "a05296a619b9b72b5f132628067f5de4d717cdb508f32dd29ec8201990518e93",
+      "bytes": 2582832,
+      "retrieved_at_utc": "2026-09-25T20:19:26.173737+00:00",
+      "rows": 29262
+    },
+    {
+      "file": "sector_summary.csv",
+      "url": "https://raw.githubusercontent.com/tradermonty/uptrend-dashboard/main/data/sector_summary.csv",
+      "sha256": "379a26b7ab88da664499d6ba1c8c6d8f8a477f5e7bd55f7ac0566768929a17ee",
+      "bytes": 947,
+      "retrieved_at_utc": "2026-09-25T20:19:26.608418+00:00",
+      "rows": 11
+    }
+  ],
+  "mandate_override": "No leverage; no generic90-100% equity or25% position recommendation approved.15-20% portfolio drawdown tolerance governs risk. Exposure remains blocked until complete inputs, calibrated strategy, and independent data checks pass.",
+  "score_calibration": "Heuristic points; neither win probability nor calibrated drawdown probability."
+}

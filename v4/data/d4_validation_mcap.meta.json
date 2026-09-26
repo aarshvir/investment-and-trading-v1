@@ -1,0 +1,30 @@
+{
+  "dataset": "d4_validation_mcap.csv",
+  "agent": "d4",
+  "written_utc": "2026-09-25T20:55:25Z",
+  "description": "marketCap vs price*sharesOutstanding (tolerance 3%)",
+  "rows": 503,
+  "columns": [
+    "ticker",
+    "price",
+    "marketCap",
+    "sharesOutstanding",
+    "impliedSharesOutstanding",
+    "cik",
+    "mc_calc_so",
+    "mc_calc_implied",
+    "diff_so",
+    "diff_implied",
+    "pass_so_3pct",
+    "pass_implied_3pct",
+    "implied_vs_so",
+    "multi_class_flag"
+  ],
+  "inputs": [
+    "v4/data/d4_live_snapshot.parquet",
+    "v4/data/d4_indep_prices.csv",
+    "https://data.sec.gov/api/xbrl/frames/us-gaap/<Concept>/USD/CY2025.json",
+    "https://data.sec.gov/submissions/CIK##########.json"
+  ],
+  "generated_by": "v4/code/d4_validate.py"
+}

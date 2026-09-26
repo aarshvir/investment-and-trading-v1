@@ -1,0 +1,12 @@
+{
+ "source_urls": [
+  "derived from outputs/lead_prelim_rank.csv (lead-owned file, not da3's)"
+ ],
+ "purpose": "FYI note, not a fix: rev/cogs/gp internal-consistency scan of lead_prelim_rank.csv, flagged for the lead / whichever agent owns that file. Not part of da3's assigned scope (D4 live snapshot / consensus / valuation inputs), which does not contain COGS or gross-profit fields and was checked separately (no defect found there for TGT: d4 revenue = $107.7bn, correct).",
+ "method": "flag if rev<cogs, or |gp-(rev-cogs)|/rev > 5%",
+ "n_flagged": 110,
+ "n_total": 503,
+ "root_cause_hypothesis_confirmed_for_TGT": "lead_prelim_rank.csv TTM revenue/COGS appear built from overlapping SEC XBRL quarterly+YTD periods (same concept tagged for both a 3-month and a cumulative YTD window in the same 10-Q) without deduplicating by (start,end); correct non-overlapping-quarter TTM revenue for TGT = 25.27+30.453+25.443+26.539 = $107.705bn, which matches D4's independently Yahoo-sourced revenue ($107.7bn) exactly, confirming the bug is in lead_prelim_rank.csv's TTM construction, not in D4's data.",
+ "written_utc": "2026-09-26",
+ "agent": "da3"
+}

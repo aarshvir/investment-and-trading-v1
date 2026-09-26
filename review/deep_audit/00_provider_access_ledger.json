@@ -1,0 +1,114 @@
+{
+  "audit_date_dubai": "2026-09-26",
+  "retrieval_date_utc": "2026-09-25",
+  "capture_completed_utc": "2026-09-25T20:25:53.330823+00:00",
+  "provider": "Financial Modeling Prep",
+  "access": "Authenticated existing Free plan via user-provided dashboard and API Viewer; no credential retained",
+  "price_endpoint": "https://site.financialmodelingprep.com/playground/historical-price-eod-full",
+  "price_parameters": {
+    "from": "2026-09-24",
+    "to": "2026-09-24"
+  },
+  "price_access": [
+    {
+      "symbol": "NVDA",
+      "status": "live_response",
+      "sample_rejected": false
+    },
+    {
+      "symbol": "CPAY",
+      "status": "blocked_402",
+      "sample_rejected": true
+    },
+    {
+      "symbol": "AMP",
+      "status": "blocked_402",
+      "sample_rejected": true
+    },
+    {
+      "symbol": "RL",
+      "status": "blocked_402",
+      "sample_rejected": true
+    },
+    {
+      "symbol": "AME",
+      "status": "blocked_402",
+      "sample_rejected": true
+    },
+    {
+      "symbol": "SNA",
+      "status": "blocked_402",
+      "sample_rejected": true
+    },
+    {
+      "symbol": "ABNB",
+      "status": "blocked_402",
+      "sample_rejected": true
+    },
+    {
+      "symbol": "NTAP",
+      "status": "blocked_402",
+      "sample_rejected": true
+    },
+    {
+      "symbol": "PAYX",
+      "status": "blocked_402",
+      "sample_rejected": true
+    },
+    {
+      "symbol": "MSFT",
+      "status": "live_response",
+      "sample_rejected": false
+    },
+    {
+      "symbol": "IBKR",
+      "status": "blocked_402",
+      "sample_rejected": true
+    },
+    {
+      "symbol": "HIG",
+      "status": "blocked_402",
+      "sample_rejected": true
+    },
+    {
+      "symbol": "ALLE",
+      "status": "blocked_402",
+      "sample_rejected": true
+    },
+    {
+      "symbol": "AIZ",
+      "status": "blocked_402",
+      "sample_rejected": true
+    }
+  ],
+  "cashflow_endpoint": "https://site.financialmodelingprep.com/playground/cashflow-statement",
+  "cashflow_parameters": {
+    "limit": 3,
+    "period": "annual default after removing Q1"
+  },
+  "files": [
+    {
+      "path": "raw/fmp_nvda_cashflow_annual.json",
+      "capture": "Full vendor JSON downloaded through Export menu",
+      "sha256": "f91500d3813b73eb8e8547152b89ebc7d87083c0bf2d1c68bdf566665c8b2634"
+    },
+    {
+      "path": "raw/fmp_msft_cashflow_annual.json",
+      "capture": "Selected fields transcribed from actual full response displayed in Raw UI; export download did not complete. Not a byte-for-byte raw payload.",
+      "sha256": "e4824033df895cb393efe1fa2e64a9b38ab8ff70ec860bb57b75f3e3496d59c8"
+    },
+    {
+      "path": "raw/fmp_observed_price_responses.json",
+      "capture": "Full two public price objects transcribed from observed UI responses; not transport-level response capture.",
+      "sha256": "8385d9f2f467cdc3ae4cbfc901896b2f69b97eabc2a39f1e732c29d59076fc96"
+    }
+  ],
+  "financial_datasets": "Now connected: direct MSFT FY2026 cash-flow query returned provider balance $0.00 error. No financial values acquired. See 05_financial_datasets_connection.json; initial audit install-page status is historical.",
+  "limitations": [
+    "FMP annual validation does not itself validate TTM definitions or forecasts",
+    "Optional zero-valued interestPaid/incomeTaxesPaid require filing corroboration; not established true zeros",
+    "403/402 or bundled sample data must never pass instrument/date identity validation",
+    "Common issuer origin is distinct from independent extraction",
+    "Response-level ingestion timestamps are capture-window dates; precise per-request network times were not retained"
+  ]
+}

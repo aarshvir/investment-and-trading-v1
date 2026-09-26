@@ -1,0 +1,20 @@
+{
+  "agent": "d2r",
+  "written_utc": "2026-09-26T04:53:16Z",
+  "shape": [
+    499,
+    25
+  ],
+  "columns": "one row per re-attempted candidate ticker: original D2 status/coverage, download outcome, classification (klass), D1 removal reason where genuinely unavailable, Stooq validation counts",
+  "klass_values": [
+    "recovered_full",
+    "recovered_partial",
+    "genuinely_unavailable_acquired",
+    "genuinely_unavailable_other",
+    "identity_reuse"
+  ],
+  "caveats": [
+    "Does not modify da1_fix_no_data_triage.parquet or any D2/D1/DA1 file.",
+    "genuinely_unavailable_* means: fresh yf.download (>=2 attempts with backoff, re-swept across passes separated by real wall-clock time) still returned nothing, from this session; does not rule out a paid vendor having data."
+  ]
+}

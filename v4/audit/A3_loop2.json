@@ -1,0 +1,22 @@
+{
+  "total": 89,
+  "criteria": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 9,
+    "6": 9,
+    "7": 9,
+    "8": 9,
+    "9": 8,
+    "10": 9
+  },
+  "must_fix": [
+    "Separate the primary reading path from the methodology: move Newey-West/t-stat/Dirichlet/stationary-bootstrap language out of the core Verdict/Evidence narrative into a clearly-marked appendix (the 27-term glossary already exists in d4v.json and FINAL_REPORT.md section 12; the core sections still use the jargon inline). Add one sentence to FINAL_REPORT.md explaining that HAS -- the largest full-conviction position as of Loop 1 -- is no longer eligible because its own valuation base case turned negative (amendment b), rather than leaving it silently absent (it ranks 41st, one place past the disclosed 'top 40 excluded' cutoff, so no client-facing document names it at all). Verify: a name that was ever a >=5% holding in a previous loop either appears in the current portfolio table or is named with a reason in the excluded-names list or a footnote.",
+    "Get a professional answer (or a permanent, clearly-dated 'ask an adviser, unresolvable from public sources' label) on the two implementation items R3 could not close: US-situs status of idle cash at a US broker, and per-ticker fractional-share eligibility for CSPX/VUAA/SPY5/SPXS at IBKR. Verify: r2_implementation_facts.md section 9's open-items list shrinks, or each remaining item is explicitly marked as a permanent limitation rather than a to-do.",
+    "Surface X1/V1X's 185-check, 86.5%-pass valuation re-verification and V2R's from-filings REIT-FFO rebuild as a reader-facing table (which holdings were re-derived, what changed, why) inside FINAL_REPORT.md or the dashboard, rather than leaving the full evidence trail only in STATE.md's working log. Verify: a reader can find, for any of the 20 holdings, whether its valuation was independently re-derived and with what result, without reading the day-by-day build log.",
+    "Surface the already-computed 'effective number of bets' concentration metric (17.1 by weight, 10.7 by risk, out of 20 names, in lead_risk_results.json) somewhere in section 7's diversification discussion, since it directly answers the rubric's concentration question with a number the program already has.",
+    "Once the audit loop concludes (>=95 or an honest ceiling), publish v4 through tools/publish_research_release.py as a numbered release with v005_2026-09-26_codex as an explicit parent, per RESEARCH_VERSIONING.md -- v4 is still an 'observed working branch' in the shared catalog (LATEST_HANDOFF.md), not yet a completed, catalogued publication."
+  ]
+}

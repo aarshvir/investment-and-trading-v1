@@ -1,0 +1,116 @@
+{
+  "agent": "F31",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "STX": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Hard-drive maker whose AI-storage boom is real, but the stock already needs a decade of ~22% yearly cash-flow growth to be worth today's price.",
+      "kill_criteria": [
+        "Guidance beat-margin compresses to <3% (vs the ~4-14% beats of the last three quarters) for two consecutive quarters",
+        "Sequential revenue growth turns negative for two consecutive quarters (vs the +7-24% sequential growth of the last four quarters)",
+        "Net debt/EBITDA rises above 1.5x (currently well under 0.5x)",
+        "Any BIS finding of non-compliance with the April 2023 Settlement Agreement",
+        "Nearline $/TB pricing (company-disclosed or via WDC read-across) declines quarter-over-quarter"
+      ],
+      "key_adverse_facts": [
+        "April 2023 BIS Settlement Agreement over Huawei HDD export violations: $300m penalty, quarterly $15m installments through ~2028; $120m still accrued as of 3 Jul 2026; non-compliance could lift a suspended denial order restricting exports",
+        "Securities class action (class period Sep 2020-Apr 2023) settled in principle Apr 2026 for $175m ($105m company charge); final court approval hearing 2026-11-17",
+        "Federal Circuit vacated a 2022 district-court win for Seagate in the Lambeth Magnetic Structures patent case (Sep 2025), remanding for a new trial",
+        "Stock's own 10-K performance graph shows a >990% five-year total return (Jul 2021-Jul 2026) vs S&P 500's +87.6% - an extreme re-rating on a historically cyclical hardware business",
+        "d4/Yahoo quant snapshot's trailing FCF figure ($1.94bn) is stale vs the FY2026 10-K's actual $3.1bn FCF, understating the true FCF yield by roughly 60%"
+      ],
+      "data_conflicts": [
+        "d4_live_snapshot fcf_yield (0.93%) and y_freeCashflow ($1.94bn) are stale relative to the FY2026 10-K/press-release FCF of $3.1bn (true yield ~1.5%); anyone using the raw quant snapshot without cross-checking primary filings would materially understate FCF",
+        "No V1 valuation row exists for STX in v1_valuation_table.csv/v1_valuation.json; v1_verdict set to null and an independent reverse DCF was built instead"
+      ],
+      "next_earnings_date": "2026-10-27",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "med (operating momentum and guidance-beat pattern are strongly evidenced across three consecutive quarters of primary-source filings; the valuation call rests on a reverse-DCF growth-rate judgement that is inherently uncertain for a historically cyclical hardware name)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for STX. Independent reverse DCF (FCFF-style, 10y fade to 3% terminal, WACC 9-10%) off the FY2026 record FCF base of $3.1bn implies the 25-Sep-2026 EV of ~$210.3bn requires ~21-24%/yr FCF growth sustained for a full decade - well beyond any multi-year period this cyclical, three-player HDD oligopoly has ever delivered, including its own 2022-2023 down-cycle losses."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.35,
+        "base": -0.08,
+        "bull": 0.20
+      }
+    },
+    "ALB": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The world's largest lithium producer, now genuinely low-debt, riding a real 2026 price recovery that could still swing EBITDA 4-5x on lithium price alone.",
+      "kill_criteria": [
+        "Realized Energy Storage price falls back below $15/kg LCE for two consecutive quarters (vs $19.53/kg in Q2 2026)",
+        "Net debt/adjusted EBITDA rises above 1.5x (vs approximately 0.5x at 30 Jun 2026)",
+        "Two consecutive quarters of negative adjusted EBITDA in the Energy Storage segment",
+        "FY2026 total-corporate scenario table is cut below the ~$10/kg case at any quarterly release",
+        "Any further material impairment (Item 2.06 8-K) outside the already-disclosed Ketjen/Eurecat divestitures"
+      ],
+      "key_adverse_facts": [
+        "Single-commodity (lithium) price exposure: the company's own FY2026 sensitivity table shows adjusted EBITDA ranging from $0.9-1.0bn (2025 avg price) to $4.2-4.4bn (2021-2025 avg price), a 4.5x swing on price alone",
+        "Item 2.06 material impairment 8-K (Oct 2025) tied to the Ketjen catalysts divestiture drove a $414.2m Q4 2025 GAAP net loss",
+        "7.25% Series A Mandatory Convertible Preferred Stock remains outstanding, a fixed dividend claim and a real dilution overhang (V1's 136.2m if-converted diluted share count vs 118.0m raw shares outstanding)",
+        "Q2 2026's 83% OCF conversion was boosted by Talison JV dividend timing and non-recurring working-capital benefits per management's own disclosure, i.e. not fully repeatable at that rate",
+        "Trailing GAAP P/E of ~406x is a data-quality artefact of a near-zero prior-year earnings base, not a standalone red flag, but it makes headline P/E screens unreliable for this name"
+      ],
+      "data_conflicts": [
+        "V1 verdict is 'excessive' (implied 10-year growth 33.4%, base 3y return -1.2%/yr) but this dossier finds V1's ebit_margin_used input (4.27% TTM) is stale, still reflecting the Q3 2025 operating loss; the current run-rate margin (Q2 2026 GAAP operating margin 26.0%) is far higher, which mechanically explains V1's extreme growth requirement",
+        "d4/Yahoo enterpriseValue ($15.64bn) is roughly $2.3bn above a directly computed EV from disclosed FY26 balance-sheet figures (market cap + debt - cash approximately $13.3bn), likely because Yahoo's EV includes the mandatory convertible preferred and/or JV minority interests differently than the primary filings suggest"
+      ],
+      "next_earnings_date": "2026-11-04",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "med (the pricing recovery and balance-sheet repair are strongly evidenced by primary sources; confidence is capped at medium because the entire thesis is a single-commodity price call that neither this dossier nor the company itself purports to forecast)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": -0.012075143288572177,
+        "dossier_view": "fair",
+        "consistent": false,
+        "reconciliation": "V1's reverse DCF holds a stale TTM EBIT margin (4.27%) fixed, which is still dragging in the Q3 2025 operating loss and has not caught up to the Q1-Q2 2026 recovery (16.3% and 26.0% GAAP operating margins respectively); this mechanically inflates the implied-growth requirement to an extreme 33.4%/yr. Using the company's own disclosed FY2026 lithium-price/EBITDA sensitivity table with peer-appropriate EV/EBITDA multiples instead, this dossier estimates bear/base/bull equity values of roughly $54/$126/$282 per share versus the $109.73 close - directionally similar risk asymmetry to V1 but centred closer to fair value than excessive, because the price looks roughly in line with the company's own already-realized run rate rather than requiring a return to the 2021-2025 average price."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.20,
+        "base": 0.05,
+        "bull": 0.38
+      }
+    },
+    "CRH": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "The largest US-focused building-materials group, cheap versus peers with 12 straight years of margin gains, now buying the #1 US aggregates position via a debt-funded Arcosa deal.",
+      "kill_criteria": [
+        "Net debt/adjusted EBITDA rises above 3.0x (vs approximately 1.8x today, 2.4x pro forma guided for the Arcosa close)",
+        "Arcosa deal fails to close or closes later than the guided Q1 2027 (stockholder vote or regulatory block)",
+        "FY2026 guidance (Net income $3.9-4.1bn / Adjusted EBITDA $8.1-8.5bn) is cut at any remaining 2026 release",
+        "Adjusted EBITDA margin contracts more than 100bps YoY in any two consecutive quarters",
+        "Negative organic (ex-M&A) revenue growth in Americas Materials Solutions for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "Total debt has risen sharply: $17,653m (FY2025) vs $13,968m (FY2024) vs $11,642m (FY2023), up 26% and 20% YoY respectively, funding a $4.1bn/38-acquisition FY2025 M&A program",
+        "Pending $8.5bn all-cash Arcosa acquisition (announced 22 Jun 2026) is funded by committed bridge debt and guides pro forma FY2026E net debt/adjusted EBITDA to 2.4x; deal is not guaranteed to close (Arcosa stockholder approval and regulatory clearance still required, expected close only Q1 2027)",
+        "Q1 2026 net loss widened to $176m (vs $94m in Q1 2025), explained by management as higher depreciation/impairment charges and increased interest expense - consistent with rising acquisition-funded debt",
+        "12-month share-price momentum is -20.5% despite steady-to-improving fundamentals, i.e. the market has not yet rewarded the value case this dossier makes",
+        "No V1 valuation row exists for CRH; the EV/EBITDA-based valuation view in this dossier is independently constructed, not cross-checked against a systematic model"
+      ],
+      "data_conflicts": [
+        "No V1 valuation row exists for CRH in v1_valuation_table.csv; v1_verdict set to null and an independent EV/EBITDA-based valuation was built instead"
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "med-high (the cheap-vs-peer valuation, margin-expansion trend and guidance discipline are strongly evidenced across primary filings; confidence is not higher because the Arcosa deal introduces binary closing risk and the leverage trend is a genuine, not yet fully resolved, watch item)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for CRH. Independent calculation: market cap ~$56.6bn plus net debt ~$14.9bn gives EV ~$71.5bn, or ~8.6x FY26-guided adjusted EBITDA midpoint ($8.3bn) - below where the closest pure-play aggregates peers (VMC/MLM) typically trade, and the current price does not appear to require growth beyond simply executing the company's own already-reaffirmed FY2026 guidance."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.15,
+        "base": 0.11,
+        "bull": 0.29
+      }
+    }
+  }
+}

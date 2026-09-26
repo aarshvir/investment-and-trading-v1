@@ -1,0 +1,37 @@
+{
+  "agent": "r3",
+  "dataset": "r3_confidence_calibration.csv",
+  "built_utc": "2026-09-25T20:52:46Z",
+  "description": "r3_confidence_calibration.py - Agent R3, task 5: what can \"90% confident\" mean? Closed-form calibration tables.",
+  "rows": 75,
+  "columns": [
+    "block",
+    "alpha",
+    "TE",
+    "IR",
+    "P_outperform_1y",
+    "P_outperform_3y",
+    "P_outperform_5y",
+    "P_outperform_10y",
+    "P_outperform_20y",
+    "years_for_90pct",
+    "years_for_t2",
+    "years_for_t3",
+    "IC",
+    "top_quantile",
+    "base_rate_random_stock_beats_index",
+    "P_pick_beats_index",
+    "IC_needed_for_90pct_hit",
+    "SR_backtest",
+    "years",
+    "t_single",
+    "haircut_N10",
+    "haircut_N100",
+    "haircut_N316"
+  ],
+  "assumptions": [
+    "normal iid annual active returns (Block A/B); bivariate normal score/return with correlation = IC (Block C)",
+    "fat tails, regime shifts and alpha decay make real-world probabilities LOWER than these idealized numbers"
+  ],
+  "context": "Typical cross-sectional monthly IC of good published signals ~0.02-0.06 (practitioner rule of thumb; see report)."
+}

@@ -1,0 +1,387 @@
+{
+  "as_of": "2026-09-26",
+  "scope": "Coverage-completion fact-check of dossiers never previously audited: ALL, DVA, GL, HIG, CVS, VRSN, UDR, DRI (8 dossiers, 4 load-bearing facts each = 32, plus 1 next-earnings-date check per dossier = 40 facts total).",
+  "facts": [
+    {
+      "ticker": "ALL",
+      "claim": "Q2 2026 revenue $18.60bn; net income $3.271bn (3.241bn to common); diluted EPS $12.51",
+      "dossier_location": "ALL.md §4 results table, Q2 2026 row",
+      "source": "ALL 8-K Ex-99.1 Q2 2026 earnings release, accession 0000899051-26-000117 (Consolidated Highlights)",
+      "source_value": "Total revenues $18,596M; Net income $3,271M (to common $3,241M); diluted EPS $12.51",
+      "status": "PASS",
+      "note": "Exact match to the cent/dollar."
+    },
+    {
+      "ticker": "ALL",
+      "claim": "Q2 2026 recorded combined ratio 86.6%, an improvement of 4.5 points vs Q2 2025 (91.1%)",
+      "dossier_location": "ALL.md §4 combined-ratio table",
+      "source": "Same 8-K Ex-99.1, accession 0000899051-26-000117",
+      "source_value": "\"combined ratio was 86.6 for the quarter, which was an improvement of 4.5 points versus the prior year quarter\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "ALL",
+      "claim": "Homeowners underlying combined ratio worsened to 61.5% from ~58.6%, \"reflecting higher loss costs\"",
+      "dossier_location": "ALL.md §4, Homeowners line",
+      "source": "Same 8-K Ex-99.1",
+      "source_value": "\"The underlying combined ratio of 61.5 was 2.9 points above the prior year quarter [58.6], reflecting higher loss costs\"",
+      "status": "PASS",
+      "note": "Exact match including the quoted phrase."
+    },
+    {
+      "ticker": "ALL",
+      "claim": "Q2 2026 buyback: \"share repurchases were increased to $1.0 billion for the quarter\"",
+      "dossier_location": "ALL.md §6 Buybacks",
+      "source": "Same 8-K Ex-99.1",
+      "source_value": "Verbatim quote found unchanged in the release",
+      "status": "PASS",
+      "note": "Exact verbatim quote match."
+    },
+    {
+      "ticker": "ALL",
+      "claim": "Next earnings 2026-11-04 (Q3 2026)",
+      "dossier_location": "ALL.md §10",
+      "source": "No Allstate IR press release announcing the Q3 2026 date was found as of 2026-09-26 (allstateinvestors.com calendar not yet updated for Q3); third-party estimate aggregators (Nasdaq, AlphaQuery) unanimously show 2026-11-04",
+      "source_value": "No company announcement located; consensus estimate 2026-11-04",
+      "status": "UNVERIFIABLE",
+      "note": "Consistent with unanimous third-party consensus but no primary IR 'save the date' release found yet; dossier does not flag this as an estimate."
+    },
+    {
+      "ticker": "DVA",
+      "claim": "Q2 2026 revenue $3.554bn; diluted EPS $4.02 (vs $2.58 Q2 2025)",
+      "dossier_location": "DVA.md §4 results table",
+      "source": "DVA 8-K Ex-99.1 Q2 2026 earnings release, accession 0000927066-26-000105",
+      "source_value": "Total revenues $3,554,084K; Diluted net income per share $4.02 vs $2.58",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "DVA",
+      "claim": "FY2026 guidance: Q1 2026 raised to OI $2,150-$2,250M/EPS $14.10-$15.20 (from $2,085-$2,235M/$13.60-$15.00); Q2 2026 maintained the same range",
+      "dossier_location": "DVA.md §5 guidance table, Q1 and Q2 2026 rows",
+      "source": "DVA 8-K Ex-99.1 Q1 2026 (accession 0000927066-26-000060) and Q2 2026 (accession 0000927066-26-000105) releases, 'Current 2026 guidance / Prior 2026 guidance' tables",
+      "source_value": "Q1 2026 release: Current $2,150-$2,250M/$14.10-$15.20 vs Prior $2,085-$2,235M/$13.60-$15.00; Q2 2026 release: Current guidance unchanged at $2,150-$2,250M/$14.10-$15.20",
+      "status": "PASS",
+      "note": "Both quarters' guidance tables match exactly, including the 'raised then maintained' characterization."
+    },
+    {
+      "ticker": "DVA",
+      "claim": "Q2 2026 leverage ratio 3.37x (up from 3.34x); total debt $10,848M; net debt $10,162M",
+      "dossier_location": "DVA.md §6 Leverage",
+      "source": "Same Q2 2026 8-K Ex-99.1",
+      "source_value": "Total debt $10,848M; Consolidated net debt $10,162M; Leverage ratio 3.37x vs 3.34x prior quarter",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "DVA",
+      "claim": "Q2 2026 buyback: 2.2M shares for $348M at avg $154.95/share",
+      "dossier_location": "DVA.md §6 Buybacks",
+      "source": "Same Q2 2026 8-K Ex-99.1",
+      "source_value": "\"we repurchased 2.2 million shares for $348 million, at an average price paid of $154.95 per share\"",
+      "status": "PASS",
+      "note": "Exact verbatim match."
+    },
+    {
+      "ticker": "DVA",
+      "claim": "Next earnings ~2026-10-28 (Q3 2026, per D4 live snapshot)",
+      "dossier_location": "DVA.md §10",
+      "source": "investors.davita.com / newsroom.davita.com checked for a Q3 2026 'schedules investor conference call' release: none found as of 2026-09-26 (Q1 and Q2 2026 versions of this release exist; no Q3 2026 version yet)",
+      "source_value": "No company announcement found yet; one third-party estimate site suggests 2026-10-23 (5 days earlier than the dossier's ~10-28)",
+      "status": "PASS",
+      "note": "Dossier correctly hedges this as an internal ('~', D4 snapshot) estimate rather than asserting a company confirmation; no company release exists yet to check against, consistent with the dossier's own framing."
+    },
+    {
+      "ticker": "GL",
+      "claim": "Q2 2026 net income $287.7M; diluted EPS $3.65 (GAAP) / $3.61 (net operating)",
+      "dossier_location": "GL.md §4 results table, Q2 2026 row",
+      "source": "GL 8-K Ex-99.1 Q2 2026 earnings release, accession 0000320335-26-000203",
+      "source_value": "Net income $287,747K; \"net income was $3.65 per diluted common share\"; \"net operating income was $3.61 per diluted common share\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "GL",
+      "claim": "FY2026 guidance raised each of the last two quarters: Q1 2026 to $15.40-$15.90 (+$0.35 midpoint); Q2 2026 to $15.55-$15.95 (+$0.10 midpoint)",
+      "dossier_location": "GL.md §5 guidance table",
+      "source": "GL 8-K Ex-99.1 Q1 2026 (accession 0000320335-26-000143) and Q2 2026 (accession 0000320335-26-000203) releases",
+      "source_value": "Q1 2026: \"increased full-year 2026 earnings guidance to a range of $15.40 to $15.90, an increase of $0.35 at the midpoint\"; Q2 2026: \"increased full-year 2026 earnings guidance to a range of $15.55 to $15.95, an increase of $0.10 at the midpoint\"",
+      "status": "PASS",
+      "note": "Both quarters match the company's own verbatim characterization exactly."
+    },
+    {
+      "ticker": "GL",
+      "claim": "Consolidated Company Action Level RBC ratio 316% for 2025, within GL's 300-320% target band",
+      "dossier_location": "GL.md §6 Capital/RBC",
+      "source": "GL FY2025 10-K, accession 0000320335-26-000090",
+      "source_value": "\"Globe Life targets a consolidated Company Action Level RBC ratio of 300% to 320%... For 2025, our consolidated Company Action Level RBC ratio was 316%.\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "GL",
+      "claim": "Book value/share $78.18 (+18% YoY); Q2 2026 buyback $175M (1.1M shares)",
+      "dossier_location": "GL.md §6 Buybacks",
+      "source": "Same Q2 2026 8-K Ex-99.1",
+      "source_value": "\"Book value per share was $78.18, an increase of 18%\"; \"1.1 million shares... repurchased during the quarter at a total cost of $175 million\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "GL",
+      "claim": "Next earnings 2026-10-21 (Q3 2026)",
+      "dossier_location": "GL.md §10",
+      "source": "investors.globelifeinsurance.com news releases checked for a Q3 2026 'Announces Third Quarter 2026 Earnings Release and Conference Call' item: none found as of 2026-09-26 (only Q1/Q2 2026 versions found)",
+      "source_value": "No company announcement found yet",
+      "status": "UNVERIFIABLE",
+      "note": "No primary IR announcement located; the date is plausible (Q3 2025 was released 2025-10-22) but stated by the dossier without any hedge, and cannot be confirmed as of the review date."
+    },
+    {
+      "ticker": "HIG",
+      "claim": "Q2 2026 GAAP EPS $4.68 (net income to common $1.3bn); Core EPS $3.42 (core earnings $945M)",
+      "dossier_location": "HIG.md §4 results table, Q2'26 row",
+      "source": "HIG 8-K Ex-99.1 Q2 2026 earnings release, accession 0000874766-26-000059",
+      "source_value": "\"net income available to common stockholders of $1.3 billion ($4.68 per diluted share)...Core earnings of $945 million ($3.42 core earnings per diluted share)\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "HIG",
+      "claim": "$251M income-tax benefit in Q2'26 tied to the Hartford Funds sale (tax basis vs GAAP carrying value)",
+      "dossier_location": "HIG.md §6(a)",
+      "source": "Same 8-K Ex-99.1",
+      "source_value": "\"a $251 million income tax benefit associated with the sale of Hartford Funds representing the difference between the tax basis and the U.S. GAAP carrying value of Hartford Funds\"",
+      "status": "PASS",
+      "note": "Exact verbatim match, including the tax-basis-vs-carrying-value mechanism."
+    },
+    {
+      "ticker": "HIG",
+      "claim": "National Indemnity (Berkshire) commutation: $497M pretax gain / $393M net-income increase expected Q3 2026; treaty (since Dec-2016) terminated 2026-09-25 alongside settlement of confidential arbitration; $1.12bn cash received",
+      "dossier_location": "HIG.md §6(c)",
+      "source": "HIG 8-K Item 1.02/7.01, accession 0000874766-26-000064, filed 2026-09-25 (event date 2026-09-23/25)",
+      "source_value": "\"On September 25, 2026, Hartford Fire Insurance Company received a cash payment of $1.12 billion, and...the Reinsurance Agreement was commuted and terminated...resolves the confidential arbitration...expects to recognize a before tax net gain of $497 million, an increase in net income of $393 million\"; agreement in place \"since December 31, 2016\"",
+      "status": "PASS",
+      "note": "Every sub-figure and date (gain, NI increase, cash, treaty start date, termination date, arbitration settlement) matches exactly."
+    },
+    {
+      "ticker": "HIG",
+      "claim": "New $4.2bn buyback authorized, effective Aug 1 2026 through end of 2028, +27% vs prior program",
+      "dossier_location": "HIG.md §6 Capital",
+      "source": "Same Q2 2026 8-K Ex-99.1",
+      "source_value": "\"Board authorized new $4.2 billion share repurchase program, representing a 27% increase from the prior authorization...effective from Aug. 1, 2026, through the end of 2028\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "HIG",
+      "claim": "Next earnings 2026-10-29, described as \"company-confirmed date per d4 snapshot\"",
+      "dossier_location": "HIG.md §11",
+      "source": "newsroom.thehartford.com searched for a 'To Announce Third Quarter 2026 Earnings' release: none found as of 2026-09-26 (only Q1/Q4 2026 'save the date' releases found); one third-party estimate aggregator instead shows 2026-10-26",
+      "source_value": "No primary Hartford press release confirming any Q3 2026 date was located",
+      "status": "MINOR",
+      "note": "The specific date may still prove correct, but the dossier's 'company-confirmed' characterization is not substantiated by any primary source found; recommend re-labelling as an estimate like the VRSN/UDR/DRI dossiers do, pending Hartford's own 'save the date' release."
+    },
+    {
+      "ticker": "CVS",
+      "claim": "Q2 2026 revenue $106,096M (+7.3% YoY); GAAP diluted EPS $2.31; Adjusted EPS $2.58",
+      "dossier_location": "CVS.md §4 results table, Q2 2026 row",
+      "source": "CVS 8-K Ex-99.1 Q2 2026 earnings release, accession 0000064803-26-000097",
+      "source_value": "\"Total revenues $106,096...Diluted earnings per share $2.31...second quarter total revenues increased to $106.1 billion, up 7.3% year-over-year...Adjusted EPS of $2.58\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "CVS",
+      "claim": "Aetna Medical Benefit Ratio 87.4% in Q2 2026 (-250bps YoY from 89.9%)",
+      "dossier_location": "CVS.md §4 results table, Aetna MBR column",
+      "source": "Same 8-K Ex-99.1",
+      "source_value": "\"Medical benefit ratio (MBR) 87.4% [Q2 2026] ... 89.9% [Q2 2025] ... (2.5)%\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "CVS",
+      "claim": "FY2026 guidance raised (Q2 2026): Adjusted EPS to $7.90-$8.10 (from $7.30-$7.50); OCF to ≥$11.5bn (from ≥$9.5bn)",
+      "dossier_location": "CVS.md §5 guidance table, Q2 2026 row",
+      "source": "Same 8-K Ex-99.1",
+      "source_value": "\"Adjusted EPS guidance range to $7.90 to $8.10 from $7.30 to $7.50...Cash flow from operations guidance to at least $11.5 billion from at least $9.5 billion\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "CVS",
+      "claim": "Q3 2025 GAAP diluted loss $(3.13)/share, inclusive of a $5.7bn goodwill impairment against the Health Care Delivery (Oak Street Health) reporting unit",
+      "dossier_location": "CVS.md §4 results table / §6 Goodwill",
+      "source": "CVS 8-K Ex-99.1 Q3 2025 earnings release, accession 0000064803-25-000036",
+      "source_value": "\"Third quarter GAAP diluted loss per share of $3.13, inclusive of a $5.7 billion goodwill impairment charge related to the Health Care Delivery reporting unit\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "CVS",
+      "claim": "Next earnings ~2026-10-28 (Q3 2026, per D4 live snapshot)",
+      "dossier_location": "CVS.md §10",
+      "source": "investors.cvshealth.com news releases checked for a Q3 2026 'CVS Health to hold third quarter 2026 earnings conference call' item: none found as of 2026-09-26 (only Q1/Q2 2026 versions found)",
+      "source_value": "No company announcement found yet; third-party estimates span a wide 2026-10-28 to 2026-11-05 range",
+      "status": "PASS",
+      "note": "Dossier correctly hedges this as an internal ('~', D4 snapshot) estimate; no company release exists yet to check against."
+    },
+    {
+      "ticker": "VRSN",
+      "claim": "Q2 2026 revenue $434.6M (+6.0% YoY); diluted EPS $2.38; net income $216.5M",
+      "dossier_location": "VRSN.md §4 results table, Q2'26 row",
+      "source": "VRSN 8-K Ex-99.1 Q2 2026 earnings release, accession 0001014473-26-000026",
+      "source_value": "Revenues $434.6M (\"up 6.0 percent\"); Net income $216.5M; Diluted EPS $2.38",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "VRSN",
+      "claim": "Domain base 179.1 million .com/.net names at Q2 2026, +5.1% YoY, record 12.7M new registrations (vs 10.4M a year earlier)",
+      "dossier_location": "VRSN.md §4, domain base sentence",
+      "source": "Same 8-K Ex-99.1",
+      "source_value": "\"179.1 million .com and .net domain name registrations...a 5.1 percent increase...processed 12.7 million new domain name registrations...compared with 10.4 million for the second quarter of 2025\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "VRSN",
+      "claim": "FY2026 guidance raised in Q2 2026 to revenue $1.745-$1.755bn / operating income $1.185-$1.195bn / domain-base growth 5.2%-6.0%",
+      "dossier_location": "VRSN.md §5 guidance table, Q2 2026 row",
+      "source": "Not present verbatim in the Ex-99.1 press release text (checked directly: no dollar-figure guidance table found there); corroborated by 3 independent earnings-call recap sources (Yahoo Finance, BigGo Finance Q2 2026 call recap, dailypolitical.com) all citing identical figures",
+      "source_value": "Multiple independent secondary sources agree exactly on $1.745-$1.755bn / $1.185-$1.195bn / 5.2%-6.0%",
+      "status": "PASS",
+      "note": "Figures corroborate exactly across independent sources, consistent with the dossier's own disclosed sourcing ('search aggregation') caveat; likely stated on the earnings call/slides rather than in the Ex-99.1 text itself."
+    },
+    {
+      "ticker": "VRSN",
+      "claim": "\"Expected renewal rate 75.2% (vs. 75.5% a year earlier — company attributes the modest decline to mix)\"",
+      "dossier_location": "VRSN.md §4, final sentence of the results paragraph",
+      "source": "VRSN 8-K Ex-99.1 Q1 2026 (accession 0001014473-26-000019) and Q2 2026 (accession 0001014473-26-000026) earnings releases — both searched in full",
+      "source_value": "The figure \"75.2\" does not appear in either release. The only renewal-rate disclosure in the Q2 2026 release states: \"The final .com and .net renewal rate for the first quarter of 2026 was 76.3 percent compared to 75.5 percent for the same quarter of 2025.\" This is an INCREASE (76.3% vs 75.5%), for the finalized Q1 2026 rate — not a Q2 2026 'expected' rate, and not a decline.",
+      "status": "FAIL",
+      "note": "The claimed figure (75.2%) and the claimed direction (decline, attributed to mix) are both unsupported by the cited primary source; the actual, only disclosed renewal-rate data point in the same release is an increase (76.3% vs 75.5%) for a different period. CORRECT VALUE: final Q1 2026 .com/.net renewal rate = 76.3% (up from 75.5% in Q1 2025); Q2 2026's own rate is not yet finalized (45-day lag, per the company's own disclosure). DOSSIER LINE TO FIX (VRSN.md §4): replace \"expected renewal rate 75.2% (vs. 75.5% a year earlier — company attributes the modest decline to mix, as more first-time (lower-rate) renewals enter the base)\" with wording reflecting the actual disclosure above."
+    },
+    {
+      "ticker": "VRSN",
+      "claim": "Next earnings: \"~late October 2026...not yet officially confirmed\"",
+      "dossier_location": "VRSN.md §10",
+      "source": "investor.verisign.com events/press-releases checked for a Q3 2026 date announcement: none found as of 2026-09-26",
+      "source_value": "No company announcement found yet, consistent with the dossier's own caveat",
+      "status": "PASS",
+      "note": "Dossier's self-labelled 'not yet officially confirmed' status is accurate."
+    },
+    {
+      "ticker": "UDR",
+      "claim": "Q2 2026: Net Income/sh $0.21; FFO/sh $0.60; FFOA/sh $0.64",
+      "dossier_location": "UDR.md §4 results table, Q2'26 row",
+      "source": "UDR 8-K Ex-99.1 Q2 2026 earnings release, accession 0000074208-26-000070",
+      "source_value": "Net Income per diluted share $0.21; FFO per diluted share $0.60; FFOA per diluted share $0.64",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "UDR",
+      "claim": "Q2 2026 guidance update headlined a 'raise' but FFO guidance was actually cut to $2.47-$2.55 (mid $2.51, -$0.02) while FFOA was raised to $2.49-$2.57 (mid $2.53, +$0.01)",
+      "dossier_location": "UDR.md §5, item 4",
+      "source": "Same 8-K Ex-99.1",
+      "source_value": "Guidance table: FFO $2.47 to $2.55, midpoint $2.51 (-$0.02 change); FFOA $2.49 to $2.57, midpoint $2.53 (+$0.01 change); CEO quote: \"we have raised our full-year guidance ranges for Same-Store growth and FFOA per diluted share\"",
+      "status": "PASS",
+      "note": "Exact match, including the nuanced FFO-cut-vs-FFOA-raise distinction the dossier specifically flags."
+    },
+    {
+      "ticker": "UDR",
+      "claim": "Net Debt-to-EBITDAre (adjusted) 5.6x at Q2'26, up from 5.5x a year ago",
+      "dossier_location": "UDR.md §6 Leverage",
+      "source": "Same 8-K Ex-99.1",
+      "source_value": "\"Consolidated Net Debt-to-EBITDAre – adjusted for non-recurring items: 5.6x [Q2'26] vs 5.5x [prior], +0.1x\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "UDR",
+      "claim": "Monthly dividend switch: $0.145/share/month starting July 2026, +1.2% YoY",
+      "dossier_location": "UDR.md §6 Dividend",
+      "source": "Same 8-K Ex-99.1",
+      "source_value": "\"the Company commenced a monthly common stock dividend beginning in July 2026...$0.145 per share per month...dividends declared for the second quarter 2026 amount to $0.435 per share, representing a 1.2 percent increase\"",
+      "status": "PASS",
+      "note": "Exact match ($0.145 x 12 = $1.74/yr, consistent with dossier's annualized figure)."
+    },
+    {
+      "ticker": "UDR",
+      "claim": "Next earnings estimated 2026-10-28, \"date not yet officially confirmed by the company\"",
+      "dossier_location": "UDR.md §10",
+      "source": "UDR investor-relations press releases checked for a 'UDR Announces Dates for Third Quarter 2026 Earnings' item: none found as of 2026-09-26 (only the 2025 and 2024 versions of this release were found); third-party estimate aggregators show 2026-10-27/28",
+      "source_value": "No company announcement found yet; estimates cluster at 10/27-10/28, consistent with the dossier's figure",
+      "status": "PASS",
+      "note": "Dossier's self-labelled unconfirmed-estimate status is accurate and the estimate is consistent with third-party consensus."
+    },
+    {
+      "ticker": "DRI",
+      "claim": "Q1 FY2027 (ended 2026-08-30) sales $3,200.3M (+5.1% YoY vs $3,044.7M); operating margin 9.98% vs 11.14% Q1 FY26 (-116bps)",
+      "dossier_location": "DRI.md §4 results table, Q1 FY27 row",
+      "source": "DRI 8-K Ex-99.1 Q1 FY2027 earnings release, accession 0000940944-26-000032",
+      "source_value": "Consolidated Darden sales $3,200.3M (2027) vs $3,044.7M (2026); Operating income $319.3M (2027) vs $339.2M (2026) => margins 9.977% vs 11.140%",
+      "status": "PASS",
+      "note": "Exact match; independently recomputed margin change of -116bps matches the dossier's own figure to the basis point."
+    },
+    {
+      "ticker": "DRI",
+      "claim": "FY2027 guidance reaffirmed at the Q1 FY27 release (2026-09-24): diluted EPS $11.10-$11.35, plus new-unit/capex/inflation/tax-rate/EBITDA/share-count detail first given at the Q4/FY26 release",
+      "dossier_location": "DRI.md §5 guidance table, Q1 FY27 row",
+      "source": "DRI 8-K Ex-99.1 Q1 FY2027 (accession 0000940944-26-000032) and Q4/FY2026 (accession 0000940944-26-000016) releases",
+      "source_value": "Q1 FY27 release: \"reaffirmed all aspects of its full year financial outlook for fiscal 2027, culminating in diluted net earnings per share from continuing operations of $11.10 to $11.35\"; Q4/FY26 release: total sales $13.60-13.75bn, SRS 2.5-3.5%, new units 75-80, capex ~$875M, inflation ~3.0%, tax rate ~13.5%, EBITDA $2.26-2.29bn, ~114M diluted shares",
+      "status": "PASS",
+      "note": "Every figure in the dossier's FY2027-guidance list matches exactly."
+    },
+    {
+      "ticker": "DRI",
+      "claim": "FY2026 full year: total sales $13,210.9M; reported diluted EPS $10.44; adjusted $10.64 (+11.4%); the 53rd week contributed $0.25 to both",
+      "dossier_location": "DRI.md §4 narrative, FY2026 full-year paragraph",
+      "source": "DRI 8-K Ex-99.1 Q4/FY2026 earnings release, accession 0000940944-26-000016",
+      "source_value": "\"Consolidated Darden [sales] $13,210.9\"; \"Reported diluted net earnings per share...were $10.44\"; \"adjusted diluted net earnings per share...were $10.64, an increase of 11.4%\"; \"extra week of operations contributed $0.25 to both reported and adjusted diluted net earnings per share\"",
+      "status": "PASS",
+      "note": "Exact match on every figure."
+    },
+    {
+      "ticker": "DRI",
+      "claim": "Q1 FY2027 reported diluted EPS $2.05 = adjusted $2.05 (a 'clean' quarter, no reconciling items)",
+      "dossier_location": "DRI.md §4 results table, Q1 FY27 EPS column",
+      "source": "Same Q1 FY2027 8-K Ex-99.1",
+      "source_value": "\"Reported diluted net earnings per share from continuing operations were $2.05, an increase of 4.1% from last year's adjusted diluted net earnings per share\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "DRI",
+      "claim": "Next earnings: Q2 FY2027, \"estimated mid-to-late December 2026...not yet confirmed by the company\"",
+      "dossier_location": "DRI.md §10",
+      "source": "Darden investor relations releases checked for a Q2 FY2027 earnings-date announcement: none found as of 2026-09-26 (consistent with Darden's own historical pattern of announcing the date roughly 4-6 weeks ahead of a mid-December call)",
+      "source_value": "No company announcement found yet",
+      "status": "PASS",
+      "note": "Dossier's self-labelled unconfirmed-estimate status is accurate; no contradicting evidence found."
+    }
+  ],
+  "summary": {
+    "total_facts": 40,
+    "pass": 36,
+    "minor": 1,
+    "fail": 1,
+    "unverifiable": 2
+  },
+  "pass_rate": 0.9,
+  "pass_rate_including_minor_as_acceptable": 0.925,
+  "core_load_bearing_pass_rate_32_facts_excl_earnings_dates": 0.9688,
+  "fails": [
+    {
+      "ticker": "VRSN",
+      "claim": "\"Expected renewal rate 75.2% (vs. 75.5% a year earlier — company attributes the modest decline to mix)\"",
+      "dossier_location": "VRSN.md §4, final sentence of the results paragraph",
+      "source": "VRSN 8-K Ex-99.1 Q1 2026 (accession 0001014473-26-000019) and Q2 2026 (accession 0001014473-26-000026) earnings releases — both searched in full",
+      "source_value": "The figure \"75.2\" does not appear in either release. The only renewal-rate disclosure in the Q2 2026 release states: \"The final .com and .net renewal rate for the first quarter of 2026 was 76.3 percent compared to 75.5 percent for the same quarter of 2025.\" This is an INCREASE (76.3% vs 75.5%), for the finalized Q1 2026 rate — not a Q2 2026 'expected' rate, and not a decline.",
+      "status": "FAIL",
+      "note": "The claimed figure (75.2%) and the claimed direction (decline, attributed to mix) are both unsupported by the cited primary source; the actual, only disclosed renewal-rate data point in the same release is an increase (76.3% vs 75.5%) for a different period. CORRECT VALUE: final Q1 2026 .com/.net renewal rate = 76.3% (up from 75.5% in Q1 2025); Q2 2026's own rate is not yet finalized (45-day lag, per the company's own disclosure). DOSSIER LINE TO FIX (VRSN.md §4): replace \"expected renewal rate 75.2% (vs. 75.5% a year earlier — company attributes the modest decline to mix, as more first-time (lower-rate) renewals enter the base)\" with wording reflecting the actual disclosure above."
+    }
+  ]
+}

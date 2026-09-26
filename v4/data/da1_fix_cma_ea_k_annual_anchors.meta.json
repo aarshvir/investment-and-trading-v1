@@ -1,0 +1,14 @@
+{
+  "auditor": "da1",
+  "created_utc": "2026-09-26T00:00:00Z",
+  "description": "PARTIAL price-history backfill anchors for CMA, EA, K -- the 3 tickers this audit confirmed are wrongly 'no_data' in D2's d2_close/d2_adjclose panels despite having continuous real trading history. Values are dividend+split-adjusted YEAR-END closes (2012-2025) plus one recent daily spot close per ticker, scraped from Macrotrends' free tier. This is NOT a full daily reconstruction and NOT pre-2012 -- Macrotrends' free tier only exposes ~14-15 years and no pre-2012 daily table without a paid plan, and FMP's chart/quote endpoints on this account's plan are gated to a small demo-symbol whitelist (confirmed: AAPL/MSFT/JPM/KO/NVDA/TWTR work, CMA/EA/K/ARNC/AGN/BCR/CA/CTXS/XLNX/BBBY/CELG/KSU/CPT/MOH all return ACCESS DENIED regardless of endpoint or date range) and could not be used to backfill delisted or less-common tickers at all.",
+  "sources": [
+    "https://www.macrotrends.net/stocks/charts/CMA/comerica/stock-price-history",
+    "https://www.macrotrends.net/stocks/charts/EA/electronic-arts/stock-price-history",
+    "https://www.macrotrends.net/stocks/charts/K/kellanova/stock-price-history"
+  ],
+  "retrieved_utc": "2026-09-26T00:00:00Z (Firecrawl scrape, cacheState=miss on all 3 -> live fetch, not a stale cache)",
+  "row_count": 45,
+  "units": "USD, dividend+split adjusted (Macrotrends 'Year Close' convention), comparable to D2's Adj Close not Close",
+  "recommendation": "Use only as a sanity-check anchor (e.g., to confirm a future re-download of CMA/EA/K lands in the right ballpark) -- do NOT splice this directly into d2_adjclose.parquet for return-calculation use; re-download full daily history from a proper vendor instead."
+}

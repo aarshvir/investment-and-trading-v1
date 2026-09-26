@@ -1,0 +1,31 @@
+{
+  "name": "r1_regime_indicators",
+  "agent": "r1",
+  "retrieved_utc": "2026-09-25T20:46:59Z",
+  "rows": 23,
+  "columns": [
+    "indicator",
+    "value",
+    "unit",
+    "as_of",
+    "source",
+    "note",
+    "retrieved"
+  ],
+  "description": "US equity valuation, rates, concentration and volatility indicators as of Sept 2026, one row per indicator with source.",
+  "caveats": [
+    "FactSet forward P/E uses the 2026-09-24 close; Shiller CAPE for 2026-09-25 is an R1 estimate scaled from the Sept-1 value."
+  ],
+  "sources": [
+    "Yahoo Finance via yfinance (^GSPC, ^VIX), retrieved 2026-09-26",
+    "https://advantage.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_092526.pdf",
+    "https://advantage.factset.com/hubfs/Website/Resources%20Section/Research%20Desk/Earnings%20Insight/EarningsInsight_092526.pdf ; https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+    "https://am.jpmorgan.com/content/dam/jpm-am-aem/global/en/insights/market-insights/guide-to-the-markets/mi-guide-to-the-markets-us.pdf",
+    "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_bill_rates&field_tdr_date_value=2026&page&_format=csv",
+    "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_real_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+    "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?type=daily_treasury_yield_curve&field_tdr_date_value=2026&page&_format=csv",
+    "https://pages.stern.nyu.edu/~adamodar/ (home page) and https://pages.stern.nyu.edu/~adamodar/pc/implprem/ERPbymonth.xlsx",
+    "https://shillerdata.com/ (ie_data.xls saved 2026-09-02)",
+    "https://www.ssga.com/us/en/intermediary/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx"
+  ]
+}

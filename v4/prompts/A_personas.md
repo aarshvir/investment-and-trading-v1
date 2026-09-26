@@ -1,0 +1,36 @@
+# Auditor personas and focus (identical every loop, so scores are comparable)
+
+Launch each auditor as a Sonnet agent with: "Read and execute `...\v4\prompts\A_auditor.md` with {AUDITOR_ID}, {LOOP}, {PERSONA}, {FOCUS} as below", plus the loop-specific notes at the end.
+
+## A1 — quant and data
+- {PERSONA} = "former head of quantitative research at a systematic equity fund — specialist in point-in-time data, backtest integrity, statistics and risk models"
+- {FOCUS} = "Weight your effort toward rubric criteria 1, 2, 3, 6 and 10 (data integrity, validation rigour, calibration, portfolio risk, reproducibility), but score all ten. Key files: v4\outputs\b1_report.md, b1_results.json, b1x_report.md, b2_report.md, lead_risk_results.json, lead_check_daily_dd.json, v1x_verification.md, d2r_report.md, c1_consistency.md, v4\audit\da1/da2/da3_data_audit.md, v4\outputs\da4_factcheck.md, v4\outputs\lead_error_log.md, v4\code\lead_*.py, v4\run_all.py, v4\requirements.txt."
+
+## A2 — investment committee
+- {PERSONA} = "former portfolio manager and investment-committee member at a top-tier fundamental long-only fund — specialist in company diligence, valuation and portfolio construction"
+- {FOCUS} = "Weight your effort toward rubric criteria 4, 5, 6 and 7 (company diligence, valuation, portfolio construction, strategy coherence), but score all ten. Key files: v4\dossiers\*.md (the held names are listed in FINAL_REPORT.md §6 and v4\outputs\lead_portfolio_build.json), v4\outputs\v1_report.md / v1_valuation_table.csv / v1x_verification.md, v4\outputs\f*_summary.json and F*_summary.json, v4\outputs\lead_holding_notes.json, v4\code\lead_build_portfolio.py, lead_portfolio.py."
+
+## A3 — client and compliance
+- {PERSONA} = "former CIO of a private bank serving UAE high-net-worth clients — specialist in suitability, cross-border structuring (US estate tax, withholding, UCITS), and communicating investment decisions to non-technical owners"
+- {FOCUS} = "Weight your effort toward rubric criteria 3, 7, 8 and 9 (honesty/calibration, mandate fit, implementation, communication), but score all ten. Key files: v4\FINAL_REPORT.md (the deliverable), v4\outputs\r2_implementation_facts.md, r3_implementation_verification.md, r1_cma_research.md, lead_risk_results.json, the dashboard's v4 Verdict, Risk & allocation and Implementation tabs (`v4\dashboard\equity_audit_v4.html`; data object in `v4\dashboard\d4v.json`)."
+
+## Notes added from Loop 2 onward (same for all three auditors)
+- The dashboard HTML to review is `v4\dashboard\equity_audit_v4.html` (v4 tabs = the new work; its data object is also in `v4\dashboard\d4v.json`).
+- The deliverable is frozen for the duration of your audit (build time in `v4\outputs\lead_portfolio_build.json` → "built"; `python v4\code\lead_guard.py` confirms nothing changed since). Judge the frozen version.
+- Check that every must-fix from the previous loop was really fixed (`v4\audit\*_loop<N-1>.json` and `v4\audit\loop_fixes.json`). The sleeve rules were amended after Loop 1 (STATE.md and the header of `lead_build_portfolio.py`, amendments a–f): judge whether each amendment is justified by internal consistency or looks like result-chasing, and say so.
+- Scope constraint set by the program, not a gap: the work is research only and deliberately does not produce a personalised order sheet in the owner's own dollars (the author is not a licensed adviser). Judge instead whether a non-technical reader can convert the published percentages into amounts himself (FINAL_REPORT §9 per-$10,000 table and formula; dashboard Implementation tab).
+- From Loop 2: a parallel Codex workstream published a completed release, `versions\v005_2026-09-26_codex\` (read its `RELEASE_NOTES.md` and `reports\review\ready\INVESTMENT_DECISION_MEMO.md`). The shared workspace rules are in the project-root `CLAUDE.md`, `AGENTS.md` and `RESEARCH_VERSIONING.md`. Judge whether FINAL_REPORT §13 (and the dashboard tab "Reconciliation with Codex v005") treats v005 fairly: it should record what is adopted, confirmed, changed, rejected or unresolved, with evidence (`v4\outputs\x1_v005_verification.md`), and must not silently supersede v005. Do not edit anything under `versions\` or `review\`.
+
+## Notes added from Loop 4 (same for all three auditors)
+- Mandate (set by the owner in chat, Loop 3): an ALL-STOCK portfolio of 5–20 US large caps chosen from the whole S&P 500, no index fund or T-bills "for now"; age 35, growth-tolerant; he asked to beat the index by as much as possible and explicitly asked why NVIDIA/Microsoft were excluded. Judge whether the verdict answers that request directly and honestly (odds, crash history, what cannot be promised), not whether an index/T-bill allocation would be safer; the allocation view is kept as a secondary option.
+- Whole-index process: triage of all names without a dossier (outputs/Q*_triage.json), full diligence waves 1 and 2 (data/full_diligence_wave1.json, wave2.json), rules (g)–(j) in STATE.md and the header of lead_build_portfolio.py. Rule (j) was written after wave-1 verdicts were known (disclosed). Judge whether (g)–(j) are consistent or look like result-chasing.
+- Loop-3 must-fixes are in audit/A*_loop3.json; the fixes claimed are in audit/loop_fixes.json "3". Dossier fact-checks of the new holdings: outputs/da6_factcheck.json (if present).
+
+## Notes added from Loop 5
+- Loop-4 must-fixes: audit/A*_loop4.json; claimed fixes: audit/loop_fixes.json "4". New evidence files: outputs/da7_factcheck.json (GM, LVS, RJF, HBAN), outputs/c1_consistency.json (re-run on the current build; the previous one is in outputs/archive/), outputs/lead_j_sensitivity.json (rule-(j) orderings), outputs/rule_commitments.jsonl (pre-registration firewall; the build refuses to run on uncommitted rule changes).
+- Dossier corrections are appended as dated "Correction" sections; original text is kept on purpose. Judge whether each correction is right and whether the verdict still follows.
+
+## Notes added from Loop 6
+- In your JSON output add a key "fact_checks": a list of {"ticker", "claim", "source", "status"} for every dossier fact you checked (status PASS / MINOR / FAIL / UNVERIFIABLE). Appendix A.5 reads it directly.
+- Evidence added in Loop 5: outputs/da8_factcheck.json (AMP, ADP, CRH, PGR, DOV); code/lead_verify_gate.py (release is blocked unless every holding has an independent fact-check with every FAIL corrected, and C1 names the current build's content_sha256); outputs/build_history.jsonl (content fingerprint of every build).
+- Loop 6 context: release v006_2026-09-26_claude was published after Loop 5 (versions\v006_2026-09-26_claude\). Since then wave-3 diligence (F49–F63, data/full_diligence_wave3.json) changed the portfolio: judge the new build against v006. New rules committed in outputs/rule_commitments.jsonl: (k) V1 input-defect guard (FIX finding) and (l) at most 5 names per sector (disclosed as written after wave-3 verdicts were known, before any build). New fact-checks: outputs/da9_factcheck.json (MA AXP MSCI), da10_factcheck.json (CAH COR VEEV). The verification gate currently reads OPEN only because C1 is re-run last, after your audit and the fixes; do not score that as a defect.

@@ -1,0 +1,22 @@
+{
+ "total": 78,
+ "criteria": {
+  "1": 7,
+  "2": 8,
+  "3": 8,
+  "4": 9,
+  "5": 7,
+  "6": 8,
+  "7": 9,
+  "8": 8,
+  "9": 6,
+  "10": 8
+ },
+ "must_fix": [
+  "PGR's NTM P/E is shown as 0.3x in FINAL_REPORT.md §6 (the 20-name table) and in the dashboard sleeve table (equity_audit_v4.html / d4v.json /port/rows[17] \"pe\": 0.27478) -- this is the exact corrupted d4_live_snapshot.parquet pe_ntm field that PGR's own dossier (v4/dossiers/PGR.md §3) explicitly identifies as a reproducible pipeline defect and says 'should not be used for PGR under any circumstance.' Correct value per the same dossier: trailing P/E 10.3x. Fix in code/lead_build_portfolio.py (the P['pe'] = S.loc[t,'pe_ntm'] line): sanity-bound pe_ntm (e.g. reject values outside roughly [3,60] or flag against each dossier's own stated correction) before it reaches the report/dashboard, regenerate FINAL_REPORT §6 and d4v.json, and re-run C1 (outputs/c1_consistency.md) with a new check that flags any pe value below 1x or above 100x for manual review. Verify by grepping the regenerated files for '0.3x'/'0.27'.",
+   "The 20 sleeve weights in FINAL_REPORT §6, as displayed and rounded to 0.1 point, sum to 100.3%, not the 100% the report's own text claims ('Weights are rounded to 0.1 point; they sum to 100% of the sleeve'). I recomputed from outputs/lead_portfolio_build.json: the raw (unrounded) weights sum correctly to 1.0000000000000002, so the underlying solve is fine -- this is purely a rounding/display and a false-caption problem introduced when the report was written. Fix: round the displayed column with a largest-remainder (Hamilton) method so it sums exactly to 100.0, or replace the caption with the true figure and explain the 0.3pp rounding drift; add an automated check that sums the *displayed* (rounded) weights, not just the raw solver output, before publication.",
+  "The final-size tie-break rule (amendment (j): conviction > margin of safety > base-case return, cap 20, ≤2 per sub-industry) is asserted in STATE.md's 12:38 entry to have been 'written before running the build,' but the same log entry already reports the approximate size of the eligible pool ('~29 new names... ~49 would be eligible -- too many for the owner's 5-20') in the same breath as stating the rule. That is a much smaller integrity gap than v3's (the rule itself references no ticker or return figure, and is generic/plausible), but a top-tier IC would want a harder firewall: commit the tie-break rule to a separately timestamped or hashed file *before* the build script reads any F19-F33 diligence output, and disclose the actual sequencing in §6 rather than only asserting pre-commitment after the fact.",
+  "Nine holdings added in this loop (AMP, EG, CMCSA, CRH, LVS, BR, PGR, BX, NOW) have no independent fact-check registered in Appendix A.5 ('not yet checked' for all nine) -- unlike the 11 Loop-1/2 holdings, which each show a DA4/DA5/V1X or auditor check. I independently verified 3+ load-bearing facts across 8 of these 9 dossiers directly against SEC filings, company press releases and news wires (see 'Facts checked' below) and all passed except the PGR data-integrity issue above (which is a report-generation bug, not a dossier error) -- so the diligence itself held up well under audit, but the report should not claim full audit coverage (Appendix A.4/A.5) while nine of twenty holdings show 'not yet checked.' Fix: run DA6 (a dossier fact-check pass on these 9 names, mirroring DA4/DA5's method) and update Appendix A.5 with the results before the next loop.",
+  "AMP is held via the triage/quality-growth 'lane' (its live_rank is 113, above the top-70 rank-gate threshold), yet the FINAL_REPORT v005-reconciliation table (§13) and the per-holding table (§6) present it identically to top-70, V1-gated holdings without flagging that it took the more permissive lane-eligibility path (verdict + implied-vs-base only, no live_rank requirement). This is disclosed in code (lead_build_portfolio.py comments) and STATE.md but not in the reader-facing report -- add a one-line flag in §6 (e.g. a dagger footnote alongside HST/BMY/UDR/SYF/BKNG's existing ‡ footnote) noting which of the 20 holdings entered via the lane/triage route rather than the original top-70 rank gate, so a reader can see the eligibility test actually applied to each name."
+ ]
+}

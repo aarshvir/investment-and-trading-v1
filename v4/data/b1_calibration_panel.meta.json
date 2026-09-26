@@ -1,0 +1,29 @@
+{
+  "rows": 76118,
+  "columns": [
+    "month_end",
+    "entity",
+    "series",
+    "sector",
+    "composite",
+    "decile",
+    "quintile",
+    "vol_1y",
+    "vol_tercile",
+    "ret_next",
+    "fwd12",
+    "fwd12_excess_spy",
+    "fwd12_maxdd",
+    "fwd36",
+    "fwd36_excess_spy"
+  ],
+  "definitions": {
+    "fwd12": "TR from t to t+12 month-ends (NaN if no price at t+12: acquired/delisted - survivorship within window)",
+    "fwd12_excess_spy": "fwd12 - SPY TR over the same window (arithmetic)",
+    "fwd12_maxdd": "max drawdown of daily adjusted close from t to t+12 month-end",
+    "vol_tercile": "cross-sectional tercile of 1y daily vol at t (1=low)"
+  },
+  "caveat": "overlapping 12m windows: stock-months are not independent; Wilson CIs on raw n are too narrow - see n_eff columns",
+  "agent": "b1",
+  "written_utc": "2026-09-25T22:58:41Z"
+}

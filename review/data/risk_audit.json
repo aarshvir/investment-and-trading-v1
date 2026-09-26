@@ -1,0 +1,372 @@
+{
+  "source_dates": [
+    "2015-09-25 00:00:00",
+    "2026-09-24 00:00:00"
+  ],
+  "monthly_dates": [
+    "2016-09-30 00:00:00",
+    "2026-09-30 00:00:00"
+  ],
+  "monthly_n": 121,
+  "weights": {
+    "NVDA": 0.09973090023610885,
+    "CPAY": 0.07284634687025336,
+    "AMP": 0.06960364592767236,
+    "RL": 0.10632501080311152,
+    "AME": 0.08350026006911229,
+    "SNA": 0.07316161524492784,
+    "ABNB": 0.10632501080311152,
+    "NTAP": 0.08032971589448584,
+    "PAYX": 0.054640655547687655,
+    "MSFT": 0.08238937666733097,
+    "IBKR": 0.04,
+    "HIG": 0.04,
+    "ALLE": 0.051147461936197874,
+    "AIZ": 0.04
+  },
+  "sector_weights": {
+    "Consumer Discretionary": 0.21265002160622304,
+    "Financials": 0.26244999279792575,
+    "Industrials": 0.2624499927979257,
+    "Information Technology": 0.2624499927979257
+  },
+  "weight_sum": 1.0,
+  "cap_violations": {
+    "RL": 0.10632501080311152,
+    "ABNB": 0.10632501080311152
+  },
+  "E": 0.11361673867909997,
+  "replication_1yr": {
+    "p_positive": 0.7192,
+    "p_double": 0.0,
+    "p5": -0.2030581568808236,
+    "median": 0.10745779676796674,
+    "p95": 0.43490963282633033,
+    "mean": 0.1114694121167556
+  },
+  "replication_5yr": {
+    "p_positive": 0.86855,
+    "p_double": 0.2768,
+    "p5": -0.20074786120986196,
+    "median": 0.589569423783704,
+    "p95": 1.973463947387679,
+    "mean": 0.6976424458169956
+  },
+  "max_feasible_invested": 0.95,
+  "monthly_missing": {
+    "NVDA": 0,
+    "CPAY": 0,
+    "AMP": 0,
+    "RL": 0,
+    "AME": 0,
+    "SNA": 0,
+    "ABNB": 52,
+    "NTAP": 0,
+    "PAYX": 0,
+    "MSFT": 0,
+    "IBKR": 0,
+    "HIG": 0,
+    "ALLE": 0,
+    "AIZ": 0
+  },
+  "first_observation": {
+    "NVDA": "2015-09-25 00:00:00",
+    "CPAY": "2015-09-25 00:00:00",
+    "AMP": "2015-09-25 00:00:00",
+    "RL": "2015-09-25 00:00:00",
+    "AME": "2015-09-25 00:00:00",
+    "SNA": "2015-09-25 00:00:00",
+    "ABNB": "2020-12-10 00:00:00",
+    "NTAP": "2015-09-25 00:00:00",
+    "PAYX": "2015-09-25 00:00:00",
+    "MSFT": "2015-09-25 00:00:00",
+    "IBKR": "2015-09-25 00:00:00",
+    "HIG": "2015-09-25 00:00:00",
+    "ALLE": "2015-09-25 00:00:00",
+    "AIZ": "2015-09-25 00:00:00"
+  },
+  "delivered_weight_max_abs_difference": 4.746193619787481e-05,
+  "history_sensitivity": {
+    "original_zero_fill": {
+      "months": 121,
+      "start": "2016-09-30 00:00:00",
+      "stock_vol": 0.1892840899368008,
+      "stock_5yr": {
+        "p_positive": 0.86855,
+        "p_double": 0.2768,
+        "p5": -0.20074786120986196,
+        "median": 0.589569423783704,
+        "p95": 1.973463947387679,
+        "mean": 0.6976424458169956
+      },
+      "blend_5yr": {
+        "p_positive": 0.89845,
+        "p_double": 0.22835,
+        "p5": -0.1266889691908189,
+        "median": 0.5734895522400077,
+        "p95": 1.6532096462745662,
+        "mean": 0.641067180534552
+      }
+    },
+    "prelisting_index_proxy": {
+      "months": 121,
+      "start": "2016-09-30 00:00:00",
+      "stock_vol": 0.19595249240448917,
+      "stock_5yr": {
+        "p_positive": 0.85655,
+        "p_double": 0.2785,
+        "p5": -0.22951330650703602,
+        "median": 0.5816828848031942,
+        "p95": 2.021178381793431,
+        "mean": 0.6961149822284015
+      },
+      "blend_5yr": {
+        "p_positive": 0.89185,
+        "p_double": 0.23195,
+        "p5": -0.14254799492586634,
+        "median": 0.5701112089378217,
+        "p95": 1.6809182764338677,
+        "mean": 0.640191985952803
+      }
+    },
+    "common_history": {
+      "months": 69,
+      "start": "2021-01-31 00:00:00",
+      "stock_vol": 0.19275588375825048,
+      "stock_5yr": {
+        "p_positive": 0.8795,
+        "p_double": 0.2631,
+        "p5": -0.16799949019198757,
+        "median": 0.5719661410501395,
+        "p95": 1.925341970222838,
+        "mean": 0.6827418196159822
+      },
+      "blend_5yr": {
+        "p_positive": 0.91335,
+        "p_double": 0.21815,
+        "p5": -0.0903343854938196,
+        "median": 0.5605743927628082,
+        "p95": 1.6047813715589436,
+        "mean": 0.6358301886314137
+      }
+    }
+  },
+  "drawdown": {
+    "monthly": -0.2617701602601189,
+    "daily_rebalanced_proxy": -0.3594319323064732,
+    "daily_path_monthly_rebalanced": -0.36150912410994385,
+    "daily_path_peak_date": "2020-02-20 00:00:00",
+    "daily_path_trough_date": "2020-03-23 00:00:00",
+    "monthly_endpoint_max_abs_error": 7.460698725481052e-14
+  },
+  "complete_months_only": {
+    "end": "2026-08-31 00:00:00",
+    "stock_5yr": {
+      "p_positive": 0.86865,
+      "p_double": 0.2836,
+      "p5": -0.2059566501313809,
+      "median": 0.5964641362723159,
+      "p95": 1.9663085866371923,
+      "mean": 0.6994291971237453
+    },
+    "blend_5yr": {
+      "p_positive": 0.8978,
+      "p_double": 0.23415,
+      "p5": -0.1286039865040927,
+      "median": 0.5748123117260152,
+      "p95": 1.646279867046973,
+      "mean": 0.6425466781676349
+    }
+  },
+  "v2_constraints": {
+    "Guardian": {
+      "weight_sum": 0.9999,
+      "vol": 0.14292738112686104,
+      "vol_cap": 0.14,
+      "stock_cap_violations": {
+        "BIIB": 0.0724,
+        "AIZ": 0.1035
+      },
+      "sector_weights": {
+        "Consumer Discretionary": 0.17620000000000002,
+        "Financials": 0.2277,
+        "Health Care": 0.1906,
+        "Industrials": 0.1989,
+        "Information Technology": 0.14479999999999998,
+        "Materials": 0.0617
+      },
+      "subindustry_weights": {
+        "Application Software": 0.0975,
+        "Asset Management & Custody Banks": 0.1242,
+        "Biotechnology": 0.12410000000000002,
+        "Cargo Ground Transportation": 0.0507,
+        "Computer & Electronics Retail": 0.0351,
+        "Electrical Components & Equipment": 0.024,
+        "Gold": 0.0617,
+        "Hotels, Resorts & Cruise Lines": 0.0826,
+        "Industrial Conglomerates": 0.1242,
+        "Leisure Products": 0.0585,
+        "Multi-line Insurance": 0.1035,
+        "Pharmaceuticals": 0.0665,
+        "Systems Software": 0.0245,
+        "Technology Hardware, Storage & Peripherals": 0.0228
+      },
+      "sector_violations": {},
+      "subindustry_violations": {
+        "Asset Management & Custody Banks": 0.1242,
+        "Biotechnology": 0.12410000000000002,
+        "Industrial Conglomerates": 0.1242
+      }
+    },
+    "Balanced": {
+      "weight_sum": 1.0001,
+      "vol": 0.15150022613121783,
+      "vol_cap": 0.16,
+      "stock_cap_violations": {},
+      "sector_weights": {
+        "Consumer Discretionary": 0.148,
+        "Financials": 0.2493,
+        "Health Care": 0.1277,
+        "Industrials": 0.1759,
+        "Information Technology": 0.2656,
+        "Materials": 0.0336
+      },
+      "subindustry_weights": {
+        "Application Software": 0.0657,
+        "Asset Management & Custody Banks": 0.101,
+        "Biotechnology": 0.08180000000000001,
+        "Cargo Ground Transportation": 0.0361,
+        "Communications Equipment": 0.0174,
+        "Computer & Electronics Retail": 0.031,
+        "Construction & Engineering": 0.0217,
+        "Electronic Equipment & Instruments": 0.0191,
+        "Gold": 0.0336,
+        "Hotels, Resorts & Cruise Lines": 0.0874,
+        "Industrial Conglomerates": 0.0916,
+        "Industrial Machinery & Supplies & Components": 0.0265,
+        "Leisure Products": 0.0296,
+        "Multi-line Insurance": 0.0924,
+        "Pharmaceuticals": 0.0459,
+        "Semiconductors": 0.0669,
+        "Systems Software": 0.0608,
+        "Technology Hardware, Storage & Peripherals": 0.0357,
+        "Transaction & Payment Processing Services": 0.055900000000000005
+      },
+      "sector_violations": {},
+      "subindustry_violations": {}
+    },
+    "Hurdle": {
+      "weight_sum": 0.9997999999999999,
+      "vol": 0.16738078212552557,
+      "vol_cap": 0.18,
+      "stock_cap_violations": {},
+      "sector_weights": {
+        "Consumer Discretionary": 0.1477,
+        "Financials": 0.1721,
+        "Health Care": 0.1105,
+        "Industrials": 0.21660000000000001,
+        "Information Technology": 0.2935,
+        "Materials": 0.0594
+      },
+      "subindustry_weights": {
+        "Application Software": 0.0514,
+        "Asset Management & Custody Banks": 0.1036,
+        "Biotechnology": 0.0695,
+        "Cargo Ground Transportation": 0.0289,
+        "Communications Equipment": 0.0175,
+        "Computer & Electronics Retail": 0.0384,
+        "Construction & Engineering": 0.0557,
+        "Copper": 0.0269,
+        "Electrical Components & Equipment": 0.0225,
+        "Electronic Equipment & Instruments": 0.0219,
+        "Gold": 0.0325,
+        "Hotels, Resorts & Cruise Lines": 0.0858,
+        "Industrial Conglomerates": 0.061700000000000005,
+        "Industrial Machinery & Supplies & Components": 0.0478,
+        "Leisure Products": 0.0235,
+        "Pharmaceuticals": 0.041,
+        "Semiconductors": 0.0694,
+        "Systems Software": 0.0684,
+        "Technology Hardware, Storage & Peripherals": 0.0649,
+        "Transaction & Payment Processing Services": 0.0685
+      },
+      "sector_violations": {},
+      "subindustry_violations": {}
+    },
+    "Stretch": {
+      "weight_sum": 1.0001,
+      "vol": 0.17113352696786693,
+      "vol_cap": 0.22,
+      "stock_cap_violations": {},
+      "sector_weights": {
+        "Consumer Discretionary": 0.1432,
+        "Financials": 0.1722,
+        "Health Care": 0.09709999999999999,
+        "Industrials": 0.2361,
+        "Information Technology": 0.2907,
+        "Materials": 0.0608
+      },
+      "subindustry_weights": {
+        "Application Software": 0.0516,
+        "Asset Management & Custody Banks": 0.0941,
+        "Biotechnology": 0.0667,
+        "Cargo Ground Transportation": 0.0324,
+        "Communications Equipment": 0.0253,
+        "Computer & Electronics Retail": 0.0294,
+        "Construction & Engineering": 0.0712,
+        "Copper": 0.0358,
+        "Electrical Components & Equipment": 0.0285,
+        "Electronic Equipment & Instruments": 0.0271,
+        "Gold": 0.025,
+        "Hotels, Resorts & Cruise Lines": 0.0928,
+        "Industrial Conglomerates": 0.0548,
+        "Industrial Machinery & Supplies & Components": 0.0492,
+        "Leisure Products": 0.021,
+        "Pharmaceuticals": 0.0304,
+        "Semiconductors": 0.0571,
+        "Systems Software": 0.0512,
+        "Technology Hardware, Storage & Peripherals": 0.0784,
+        "Transaction & Payment Processing Services": 0.0781
+      },
+      "sector_violations": {},
+      "subindustry_violations": {}
+    },
+    "Recommended": {
+      "weight_sum": 1.0002,
+      "vol": 0.16783743129088738,
+      "vol_cap": null,
+      "stock_cap_violations": {},
+      "sector_weights": {
+        "Consumer Discretionary": 0.1487,
+        "Financials": 0.1763,
+        "Health Care": 0.1323,
+        "Industrials": 0.1998,
+        "Information Technology": 0.3042,
+        "Materials": 0.0389
+      },
+      "subindustry_weights": {
+        "Application Software": 0.0615,
+        "Asset Management & Custody Banks": 0.1241,
+        "Biotechnology": 0.0832,
+        "Cargo Ground Transportation": 0.0346,
+        "Computer & Electronics Retail": 0.046,
+        "Construction & Engineering": 0.0667,
+        "Gold": 0.0389,
+        "Hotels, Resorts & Cruise Lines": 0.1027,
+        "Industrial Conglomerates": 0.0413,
+        "Industrial Machinery & Supplies & Components": 0.0572,
+        "Pharmaceuticals": 0.0491,
+        "Semiconductors": 0.08310000000000001,
+        "Systems Software": 0.0819,
+        "Technology Hardware, Storage & Peripherals": 0.0777,
+        "Transaction & Payment Processing Services": 0.0522
+      },
+      "sector_violations": {
+        "Information Technology": 0.3042
+      },
+      "subindustry_violations": {
+        "Asset Management & Custody Banks": 0.1241
+      }
+    }
+  }
+}

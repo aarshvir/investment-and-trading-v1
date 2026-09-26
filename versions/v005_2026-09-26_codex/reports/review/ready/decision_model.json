@@ -1,0 +1,1621 @@
+{
+  "prepared": "2026-09-26 Dubai",
+  "decision_cutoff": "Late September 2026; individual price dates shown",
+  "holding_years": 3,
+  "exit": "September 2029",
+  "stocks": [
+    {
+      "ticker": "AMP",
+      "name": "Ameriprise Financial",
+      "sector": "Financials",
+      "rank": 1,
+      "decision": "BUY NOW",
+      "reference_price": 485.15,
+      "reference_date": "2026-09-24",
+      "limit_price": 500.0,
+      "hurdle": 0.12,
+      "slot_weight": 0.02,
+      "initial_weight": 0.02,
+      "thesis": "Recurring advice fees and high operating leverage support compounding; the price leaves room for moderate growth. Normalize market-sensitive earnings rather than extrapolating record markets.",
+      "countercase": "Equity markets, client cash yields and fund outflows can weaken together; regulated capital is not spare cash.",
+      "failure_rule": "Two quarters of wealth net outflows, normalized annual earning power below $40, or an unexplained regulatory-capital deterioration: suspend additions and revalue.",
+      "baseline": {
+        "reported_H1_adjusted_eps": 22.33,
+        "H1_diluted_shares_m": 93.7,
+        "Q1_nonrecurring_pretax_earnings_benefit_m": 25,
+        "assumed_tax": 0.21,
+        "annualized_normalized_eps_calculated": 44.23844183564567,
+        "selected_eps": 44,
+        "notes": "Q1 adjusted earnings benefit is $25m, distinct from $28m gross revenue in 10-Q. Rounded down. No separate capital addition."
+      },
+      "terminal_period": "FY2029-equivalent annual earning power; three growth steps from normalized FY2026",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000038/q22026er.htm"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000020/q12026er.htm"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/820027/000082002726000043/amp-20260630.htm"
+        },
+        {
+          "url": "https://ir.ameriprise.com/news/news-details/2026/Ameriprise-Financial-Declares-Regular-Quarterly-Dividend-81877f055/default.aspx"
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 37.72449999999999,
+          "terminal_pe": 9.5,
+          "terminal_price": 358.38274999999993,
+          "dividends": [
+            6.8,
+            6.8,
+            6.8
+          ],
+          "irr_reference": -0.08048369955898987,
+          "irr_limit": -0.08982314626763671,
+          "irr_reference_withholding30": -0.08514199963450614,
+          "irr_limit_withholding30": -0.09439119634588072,
+          "pv_hurdle": 271.42221523095833,
+          "pv_hurdle_withholding30": 266.5224794437863,
+          "total_return_reference": -0.21924610945068546,
+          "total_return_limit": -0.24243450000000022
+        },
+        {
+          "name": "base",
+          "terminal_eps": 53.901892000000004,
+          "terminal_pe": 13,
+          "terminal_price": 700.724596,
+          "dividends": [
+            6.8,
+            7.14,
+            7.497
+          ],
+          "irr_reference": 0.14342880789676282,
+          "irr_limit": 0.13185878163161247,
+          "irr_reference_withholding30": 0.13951208785526592,
+          "irr_limit_withholding30": 0.1280223003599924,
+          "pv_hurdle": 515.8615359648322,
+          "pv_hurdle_withholding30": 510.7316531523322,
+          "total_return_reference": 0.48853261053282493,
+          "total_return_limit": 0.44432319200000014
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 61.81683200000002,
+          "terminal_pe": 15,
+          "terminal_price": 927.2524800000003,
+          "dividends": [
+            6.8,
+            7.344,
+            7.931520000000001
+          ],
+          "irr_reference": 0.2532939523716641,
+          "irr_limit": 0.24062812800399092,
+          "irr_reference_withholding30": 0.2496053199032383,
+          "irr_limit_withholding30": 0.2370165871158466,
+          "pv_hurdle": 677.5715196793003,
+          "pv_hurdle_withholding30": 672.3000637755102,
+          "total_return_reference": 0.9567721323302079,
+          "total_return_limit": 0.8986560000000006
+        }
+      ],
+      "base_ceiling": 515.8615359648322,
+      "base_ceiling_withholding30": 510.7316531523322,
+      "detail_file": "financials.md",
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. ",
+      "slot_note": "Funded slot in the model portfolio"
+    },
+    {
+      "ticker": "PAYX",
+      "name": "Paychex",
+      "sector": "Industrials",
+      "rank": 2,
+      "decision": "BUY NOW",
+      "reference_price": 101.59,
+      "reference_date": "2026-09-24",
+      "limit_price": 101.8,
+      "hurdle": 0.12,
+      "slot_weight": 0.02,
+      "initial_weight": 0.02,
+      "thesis": "Payroll and compliance workflows are sticky. Modest growth, integration improvements and dividends can justify the entry without a return to historic premium valuations.",
+      "countercase": "Paycor integration, borrowing and cash-conversion weakness can erode the apparent yield advantage.",
+      "failure_rule": "Normalized FY2027 EPS below $5.50, persistent owner cash below $1.7bn without documented reversible timing, or debt-funded dividends: suspend additions and revalue.",
+      "baseline": "Management FY2026 adjusted EPS5.51 multiplied by midpoint FY2027 guidance growth8%; company-adjusted, not GAAP. Our FY2027 economic anchor5.85 retains0.10/share recurring integration allowance.",
+      "terminal_period": "FY2029 ending May 2029; completed fiscal year at September 2029 exit",
+      "sources": [
+        {
+          "id": "payx_fy26",
+          "url": "https://www.sec.gov/Archives/edgar/data/723531/000119312526280314/payx-ex99_1.htm"
+        },
+        {
+          "id": "payx_q127",
+          "url": "https://www.sec.gov/Archives/edgar/data/723531/000072353126000004/payx-ex99_1.htm"
+        },
+        {
+          "id": "payx_fy26_10k",
+          "url": "https://investor.paychex.com/sec-filings/all-sec-filings/content/0001193125-26-307785/0001193125-26-307785.pdf"
+        },
+        {
+          "id": "payx_q127_10q",
+          "url": "https://investor.paychex.com/sec-filings/all-sec-filings/content/0000723531-26-000006/payx-20260831.htm"
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 4.8,
+          "terminal_pe": 14,
+          "terminal_price": 67.2,
+          "dividends": [
+            4.76,
+            4,
+            4
+          ],
+          "irr_reference": -0.0808084456745502,
+          "irr_limit": -0.08147385701631432,
+          "irr_reference_withholding30": -0.09515496823328101,
+          "irr_limit_withholding30": -0.09580040760215397,
+          "pv_hurdle": 58.117529154518934,
+          "pv_hurdle_withholding30": 55.03176020408162,
+          "total_return_reference": -0.21291465695442457,
+          "total_return_limit": -0.21453831041257354
+        },
+        {
+          "name": "base",
+          "terminal_eps": 6.6,
+          "terminal_pe": 20,
+          "terminal_price": 132.0,
+          "dividends": [
+            4.76,
+            5,
+            5.25
+          ],
+          "irr_reference": 0.1363746378179066,
+          "irr_limit": 0.1355599897265115,
+          "irr_reference_withholding30": 0.12281506157849698,
+          "irr_limit_withholding30": 0.12201974485265799,
+          "pv_hurdle": 105.92780840014575,
+          "pv_hurdle_withholding30": 102.3359636935131,
+          "total_return_reference": 0.4470912491386947,
+          "total_return_limit": 0.44410609037328097
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 7.5,
+          "terminal_pe": 23,
+          "terminal_price": 172.5,
+          "dividends": [
+            4.9,
+            5.4,
+            5.9
+          ],
+          "irr_reference": 0.2376371929434239,
+          "irr_limit": 0.23675238643521357,
+          "irr_reference_withholding30": 0.22423178670457455,
+          "irr_limit_withholding30": 0.22336634459045934,
+          "pv_hurdle": 135.66144314868802,
+          "pv_hurdle_withholding30": 131.79763802842564,
+          "total_return_reference": 0.8574662860517765,
+          "total_return_limit": 0.8536345776031433
+        }
+      ],
+      "base_ceiling": 105.92780840014575,
+      "base_ceiling_withholding30": 102.3359636935131,
+      "detail_file": "quality_compounders.md",
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. ",
+      "slot_note": "Funded slot in the model portfolio"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "sector": "Information Technology",
+      "rank": 3,
+      "decision": "BUY BELOW",
+      "reference_price": 516.05,
+      "reference_date": "2026-09-25",
+      "limit_price": 500,
+      "hurdle": 0.12,
+      "slot_weight": 0.02,
+      "initial_weight": 0,
+      "thesis": "Azure, Microsoft 365 and enterprise distribution support durable earnings; remove investment gains and retain stock compensation.",
+      "countercase": "Heavy AI spending, finance leases and competition can weaken cash returns despite strong accounting earnings.",
+      "failure_rule": "Two quarters of weakening cloud growth with continued capital-intensity increases, or a material cut to operating-margin earning power: rebuild the valuation.",
+      "baseline": {
+        "period": "FY2026ended2026-06-30",
+        "reported_gaap_eps": 17.95,
+        "company_adjusted_eps_excludes_only_OpenAI": 17.28,
+        "analyst_core_eps_at_20pct_tax_zero_nonoperating": 16.66303501945525,
+        "definition": "GAAPoperatingincomeafterSBCtimes(1-20pcttax),zeronormalizednonoperatingincome,dilutedshares;removesotherinvestmentgainsincludingAnthropic"
+      },
+      "terminal_period": "FY2029 ending June 2029; completed fiscal year at September 2029 exit",
+      "sources": [
+        {
+          "id": "msft_10k",
+          "url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+        },
+        {
+          "id": "msft_call",
+          "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4"
+        },
+        {
+          "id": "msft_dividend",
+          "url": "https://www.microsoft.com/en-us/Investor/dividends-and-stock-history"
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 16.568799450278405,
+          "terminal_pe": 22,
+          "terminal_price": 364.51358790612494,
+          "dividends": [
+            3.92,
+            3.92,
+            3.92
+          ],
+          "irr_reference": -0.10085652393345307,
+          "irr_limit": -0.09125147944516104,
+          "irr_reference_withholding30": -0.10342360422243863,
+          "irr_limit_withholding30": -0.09387144208803516,
+          "pv_hurdle": 268.8687505026057,
+          "pv_hurdle_withholding30": 266.0441969311771,
+          "total_return_reference": -0.2708582736050287,
+          "total_return_limit": -0.24745282418775016
+        },
+        {
+          "name": "base",
+          "terminal_eps": 25.553951650073795,
+          "terminal_pe": 28,
+          "terminal_price": 715.5106462020663,
+          "dividends": [
+            3.92,
+            4.12,
+            4.33
+          ],
+          "irr_reference": 0.12225514430101081,
+          "irr_limit": 0.13421741030562184,
+          "irr_reference_withholding30": 0.12010382306256628,
+          "irr_limit_withholding30": 0.13201911985441173,
+          "pv_hurdle": 519.1527923153827,
+          "pv_hurdle_withholding30": 516.19285814082,
+          "total_return_reference": 0.41048473249116624,
+          "total_return_limit": 0.45576129240413255
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 31.282452310052427,
+          "terminal_pe": 32,
+          "terminal_price": 1001.0384739216777,
+          "dividends": [
+            3.92,
+            4.31,
+            4.74
+          ],
+          "irr_reference": 0.25388859575679035,
+          "irr_limit": 0.2672428398821395,
+          "irr_reference_withholding30": 0.2518672172498758,
+          "irr_limit_withholding30": 0.2651763841696667,
+          "pv_hurdle": 722.8291570256108,
+          "pv_hurdle_withholding30": 719.7362338295467,
+          "total_return_reference": 0.9649423000129402,
+          "total_return_limit": 1.0280169478433554
+        }
+      ],
+      "base_ceiling": 519.1527923153827,
+      "base_ceiling_withholding30": 516.19285814082,
+      "detail_file": "technology.md",
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. ",
+      "slot_note": "Funded slot in the model portfolio"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "sector": "Information Technology",
+      "rank": 4,
+      "decision": "BUY BELOW",
+      "reference_price": 224.58,
+      "reference_date": "2026-09-24",
+      "limit_price": 215,
+      "hurdle": 0.15,
+      "slot_weight": 0.015,
+      "initial_weight": 0,
+      "thesis": "Accelerated computing demand and platform economics support growth, but the base case already requires a very large revenue expansion.",
+      "countercase": "Customer concentration, export restrictions and extraordinary supply, cloud and investment commitments make the downside highly nonlinear.",
+      "failure_rule": "Material customer financing stress, cancelled demand, sustained gross margin below 65%, or commitments rising while orders slow: suspend additions and rebuild bear/base cases.",
+      "baseline": {
+        "period": "Q2FY2027ended2026-07-26",
+        "reported_gaap_eps": 2.46,
+        "company_adjusted_eps_includes_sbc": 2.22,
+        "analyst_core_quarter_eps_at_17pct_tax_zero_nonoperating": 2.1782672431542105,
+        "definition": "GAAPoperatingincomeafterSBCtimes(1-tax),zeronormalizednonoperatingincome,dilutedshares;FY2030forecastuses18pcttax"
+      },
+      "terminal_period": "FY2030 ending January 2030; four months forward at September 2029 exit",
+      "sources": [
+        {
+          "id": "nvda_10q",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+        },
+        {
+          "id": "nvda_10k",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+        },
+        {
+          "id": "nvda_release",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 4.456082599714286,
+          "terminal_pe": 18,
+          "terminal_price": 80.20948679485714,
+          "dividends": [
+            1,
+            1,
+            1
+          ],
+          "irr_reference": -0.2839900075501166,
+          "irr_limit": -0.2734337384349036,
+          "irr_reference_withholding30": -0.2859406252606046,
+          "irr_limit_withholding30": -0.27543568181176237,
+          "pv_hurdle": 55.02226467977786,
+          "pv_hurdle_withholding30": 54.33729714464184,
+          "total_return_reference": -0.629488437105454,
+          "total_return_limit": -0.612979131186711
+        },
+        {
+          "name": "base",
+          "terminal_eps": 13.624907953443984,
+          "terminal_pe": 25,
+          "terminal_price": 340.6226988360996,
+          "dividends": [
+            1,
+            1,
+            1
+          ],
+          "irr_reference": 0.15285089185884282,
+          "irr_limit": 0.16978941623737753,
+          "irr_reference_withholding30": 0.15168013543660586,
+          "irr_limit_withholding30": 0.1685823560852645,
+          "pv_hurdle": 226.24817873664807,
+          "pv_hurdle_withholding30": 225.56321120151205,
+          "total_return_reference": 0.5300681219881538,
+          "total_return_limit": 0.5982451108655795
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 20.49385293277311,
+          "terminal_pe": 30,
+          "terminal_price": 614.8155879831933,
+          "dividends": [
+            1,
+            1.1,
+            1.2
+          ],
+          "irr_reference": 0.4024777492247661,
+          "irr_limit": 0.4230682801139999,
+          "irr_reference_withholding30": 0.40140855726899305,
+          "irr_limit_withholding30": 0.42196484344689533,
+          "pv_hurdle": 406.741571781503,
+          "pv_hurdle_withholding30": 405.99446896240215,
+          "total_return_reference": 1.7523180513990257,
+          "total_return_limit": 1.874956223177643
+        }
+      ],
+      "base_ceiling": 226.24817873664807,
+      "base_ceiling_withholding30": 225.56321120151205,
+      "detail_file": "technology.md",
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. ",
+      "slot_note": "Funded slot in the model portfolio"
+    },
+    {
+      "ticker": "ALLE",
+      "name": "Allegion",
+      "sector": "Industrials",
+      "rank": 5,
+      "decision": "BUY BELOW",
+      "reference_price": 152.48,
+      "reference_date": "2026-09-24",
+      "limit_price": 145,
+      "hurdle": 0.12,
+      "slot_weight": 0.015,
+      "initial_weight": 0,
+      "thesis": "Installed security hardware and specification relationships support pricing and recurring replacement demand. A lower entry compensates for construction cyclicality.",
+      "countercase": "Acquisitions, international disruption and construction weakness can impair margins and cash conversion.",
+      "failure_rule": "Two quarters of negative Americas organic growth with over 200bp margin deterioration, or weak cash conversion without a documented bridge: cancel entry and revalue.",
+      "baseline": "MidpointGAAPguidance8.025 +0.60acquisitionamortization =8.625; retain0.30 restructuring/M&A/othercharges rather than company adjusted8.925.",
+      "terminal_period": "FY2029 ending December 2029; three months forward at September 2029 exit",
+      "sources": [
+        {
+          "id": "alle_fy25",
+          "url": "https://investor.allegion.com/news-and-events/news-releases/2026/02-17-2026-110034304"
+        },
+        {
+          "id": "alle_q226",
+          "url": "https://investor.allegion.com/news-and-events/news-releases/2026/07-23-2026-110034749"
+        },
+        {
+          "id": "alle_fy25_10k",
+          "url": "https://www.sec.gov/Archives/edgar/data/1579241/000157924126000007/alle-20251231.htm"
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 6.9,
+          "terminal_pe": 15,
+          "terminal_price": 103.5,
+          "dividends": [
+            2.24,
+            2.24,
+            2.24
+          ],
+          "irr_reference": -0.10437980060561608,
+          "irr_limit": -0.08896828777069793,
+          "irr_reference_withholding30": -0.10940857512947338,
+          "irr_limit_withholding30": -0.09416321055571314,
+          "pv_hurdle": 79.04935768950435,
+          "pv_hurdle_withholding30": 77.43532707725944,
+          "total_return_reference": -0.2771511017838405,
+          "total_return_limit": -0.2398620689655172
+        },
+        {
+          "name": "base",
+          "terminal_eps": 10.4,
+          "terminal_pe": 19.5,
+          "terminal_price": 202.8,
+          "dividends": [
+            2.4,
+            2.55,
+            2.7
+          ],
+          "irr_reference": 0.11492838854130605,
+          "irr_limit": 0.13405122987217577,
+          "irr_reference_withholding30": 0.11036702375792917,
+          "irr_limit_withholding30": 0.12933067339889892,
+          "pv_hurdle": 150.4465424562682,
+          "pv_hurdle_withholding30": 148.61728999635565,
+          "total_return_reference": 0.38018100734522586,
+          "total_return_limit": 0.4513793103448278
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 12.4,
+          "terminal_pe": 22,
+          "terminal_price": 272.8,
+          "dividends": [
+            2.5,
+            2.8,
+            3.1
+          ],
+          "irr_reference": 0.22909354362058731,
+          "irr_limit": 0.2501537525181806,
+          "irr_reference_withholding30": 0.2245563666750724,
+          "irr_limit_withholding30": 0.24545568012356644,
+          "pv_hurdle": 200.84445608600578,
+          "pv_hurdle_withholding30": 198.84321474125358,
+          "total_return_reference": 0.8441762854144805,
+          "total_return_limit": 0.9393103448275861
+        }
+      ],
+      "base_ceiling": 150.4465424562682,
+      "base_ceiling_withholding30": 148.61728999635565,
+      "detail_file": "quality_compounders.md",
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. ",
+      "slot_note": "Funded slot in the model portfolio"
+    },
+    {
+      "ticker": "HIG",
+      "name": "The Hartford",
+      "sector": "Financials",
+      "rank": 6,
+      "decision": "BUY BELOW",
+      "reference_price": 125.69,
+      "reference_date": "2026-09-24",
+      "limit_price": 120.0,
+      "hurdle": 0.115,
+      "slot_weight": 0.01,
+      "initial_weight": 0,
+      "thesis": "Core underwriting and disciplined insurance pricing can compound book value. Strip favorable prior-year reserve development and normalize partnership income.",
+      "countercase": "Catastrophes, reserve deficiencies, social inflation and credit losses can arrive together.",
+      "failure_rule": "Underlying accident-year underwriting deteriorates persistently, adverse development reverses the reserve thesis, or capital weakens: stop additions and review reduction.",
+      "baseline": {
+        "reported_Q2_core_eps": 3.42,
+        "reported_Q2_core_earnings_m": 945,
+        "implied_diluted_shares_m": 276.3157894736842,
+        "Q2_favorable_PYD_m": 111,
+        "Q2_LP_income_m": 114,
+        "reported_LP_annualized_yield": 0.076,
+        "assumed_normal_LP_yield": 0.05,
+        "assumed_tax": 0.21,
+        "annualized_normalized_eps_calculated": 11.964571428571428,
+        "selected_eps": 12,
+        "notes": "Remove all favorable Q2 PYD and LP yield above 5%; retain actual Q2 CAT charge. Do not add Q1 core EPS without removing discontinued Hartford Funds. Annualizing a quarter is a starting point, not annual guidance."
+      },
+      "terminal_period": "FY2029-equivalent annual earning power; three growth steps from normalized FY2026",
+      "sources": [
+        {
+          "url": "https://ir.thehartford.com/news/news-details/2026/The-Hartford-Reports-Strong-Second-Quarter-2026-Financial-Results/"
+        },
+        {
+          "url": "https://ir.thehartford.com/news/news-details/2026/The-Hartford-Reports-First-Quarter-2026-Financial-Results/default.aspx"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/874766/000087476626000060/hig-20260630.htm"
+        },
+        {
+          "url": "https://newsroom.thehartford.com/newsroom-home/news-releases/news-release-details/2026/The-Hartford-Declares-Quarterly-Dividends-Of-0-60-Per-Share-Of-Common-Stock-And-375-Per-Share-Of-Series-G-Preferred-Stock-87687251d/default.aspx"
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 10.616831999999999,
+          "terminal_pe": 9,
+          "terminal_price": 95.55148799999999,
+          "dividends": [
+            2.4,
+            2.4,
+            2.4
+          ],
+          "irr_reference": -0.06638213910102958,
+          "irr_limit": -0.051535864126652176,
+          "irr_reference_withholding30": -0.07266143682286058,
+          "irr_limit_withholding30": -0.058008922485831727,
+          "pv_hurdle": 74.74501249688107,
+          "pv_hurdle_withholding30": 73.00072653873681,
+          "total_return_reference": -0.18250069217917098,
+          "total_return_limit": -0.14373760000000002
+        },
+        {
+          "name": "base",
+          "terminal_eps": 14.292192,
+          "terminal_pe": 11.5,
+          "terminal_price": 164.360208,
+          "dividends": [
+            2.4,
+            2.52,
+            2.646
+          ],
+          "irr_reference": 0.11188603270936681,
+          "irr_limit": 0.1294922383506799,
+          "irr_reference_withholding30": 0.10637846585760469,
+          "irr_limit_withholding30": 0.12380734692776507,
+          "pv_hurdle": 124.65752576272816,
+          "pv_hurdle_withholding30": 122.83104362866466,
+          "total_return_reference": 0.36785908186808824,
+          "total_return_limit": 0.43271839999999995
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 15.972000000000005,
+          "terminal_pe": 13,
+          "terminal_price": 207.63600000000005,
+          "dividends": [
+            2.4,
+            2.592,
+            2.79936
+          ],
+          "irr_reference": 0.19964345877041578,
+          "irr_limit": 0.218610397255541,
+          "irr_reference_withholding30": 0.19438787709094718,
+          "irr_limit_withholding30": 0.21318295611603133,
+          "pv_hurdle": 156.04517651590908,
+          "pv_hurdle_withholding30": 154.1681300992185,
+          "total_return_reference": 0.713957832763148,
+          "total_return_limit": 0.7952280000000005
+        }
+      ],
+      "base_ceiling": 124.65752576272816,
+      "base_ceiling_withholding30": 122.83104362866466,
+      "detail_file": "financials.md",
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. ",
+      "slot_note": "Funded slot in the model portfolio"
+    },
+    {
+      "ticker": "CPAY",
+      "name": "Corpay",
+      "sector": "Financials",
+      "rank": 7,
+      "decision": "BUY BELOW",
+      "reference_price": 400.32,
+      "reference_date": "2026-09-24",
+      "limit_price": 350,
+      "hurdle": 0.125,
+      "slot_weight": 0,
+      "initial_weight": 0,
+      "thesis": "Corporate payments can support high-single-digit earnings growth; explicitly charge stock compensation and recurring integration costs.",
+      "countercase": "Leverage, regulatory expenses and recurring acquisition costs can consume cash. Client funds are not distributable corporate cash.",
+      "failure_rule": "Two quarters of organic growth below 5%, leverage above 3.5x with weak debt repayment, or a material customer-funds/compliance failure: cancel entry and revalue.",
+      "baseline": "Company adjustedEPS27.35 less aftertax SBC150m*74%/66mshares and aftertax annualized integration/dealcosts110.106m*74%/66m. SBCcharged; recurring integration allowancecharged. Amortization addback remains; this is analyst cash-earnings proxy, not GAAP or distributable FCF.",
+      "terminal_period": "FY2029 ending December 2029; three months forward at September 2029 exit",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1175454/000117545426000045/ex991q2_2026.htm"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1175454/000117545426000050/cpay-20260630.htm"
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 20,
+          "terminal_pe": 11,
+          "terminal_price": 220,
+          "dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_reference": -0.18089709861827913,
+          "irr_limit": -0.1433865703279374,
+          "irr_reference_withholding30": -0.18089709861827913,
+          "irr_limit_withholding30": -0.1433865703279374,
+          "pv_hurdle": 154.51303155006858,
+          "pv_hurdle_withholding30": 154.51303155006858,
+          "total_return_reference": -0.45043964828137484,
+          "total_return_limit": -0.37142857142857144
+        },
+        {
+          "name": "base",
+          "terminal_eps": 31.642298276140004,
+          "terminal_pe": 16,
+          "terminal_price": 506.27677241824006,
+          "dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_reference": 0.08141794404822955,
+          "irr_limit": 0.13094109714105484,
+          "irr_reference_withholding30": 0.08141794404822955,
+          "irr_limit_withholding30": 0.13094109714105484,
+          "pv_hurdle": 355.5743586805746,
+          "pv_hurdle_withholding30": 355.5743586805746,
+          "total_return_reference": 0.2646801868960833,
+          "total_return_limit": 0.44650506405211443
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 35,
+          "terminal_pe": 19,
+          "terminal_price": 665,
+          "dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_reference": 0.18432651485578633,
+          "irr_limit": 0.23856232963017077,
+          "irr_reference_withholding30": 0.18432651485578633,
+          "irr_limit_withholding30": 0.23856232963017077,
+          "pv_hurdle": 467.05075445816186,
+          "pv_hurdle_withholding30": 467.05075445816186,
+          "total_return_reference": 0.6611710631494805,
+          "total_return_limit": 0.8999999999999999
+        }
+      ],
+      "base_ceiling": 355.5743586805746,
+      "base_ceiling_withholding30": 355.5743586805746,
+      "detail_file": "industrials_payments.md",
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. ",
+      "slot_note": "Reserve candidate only; replacement requires an explicit switch within the 10% direct-stock cap"
+    },
+    {
+      "ticker": "AIZ",
+      "name": "Assurant",
+      "sector": "Financials",
+      "rank": 8,
+      "decision": "BUY BELOW",
+      "reference_price": 261.86,
+      "reference_date": "2026-09-24",
+      "limit_price": 235.0,
+      "hurdle": 0.12,
+      "slot_weight": 0,
+      "initial_weight": 0,
+      "thesis": "Connected-living services and housing insurance have useful recurring economics; valuation must include a normal catastrophe allowance.",
+      "countercase": "A benign catastrophe year and reserve releases can flatter run-rate earnings. Distribution concentration and claims inflation remain important.",
+      "failure_rule": "Repeated catastrophe/claims experience above the normalized allowance or weakening program economics: increase the loss allowance and reduce the entry value.",
+      "baseline": {
+        "FY2025_adjusted_exCAT_eps": 22.81,
+        "FY2026_management_direction": "mid-single-digit growth in adjusted EPS excluding reportable catastrophes",
+        "analyst_midpoint_growth": 0.05,
+        "FY2026_included_favorable_PYD_m": 41.9,
+        "Q2_non_run_rate_benefit_m": 10,
+        "assumed_full_year_normal_CAT_m": 150,
+        "assumed_tax": 0.2,
+        "assumed_diluted_shares_m": 50.2,
+        "annualized_normalized_eps_calculated": 20.73297011952191,
+        "selected_eps": 21,
+        "notes": "Guidance-based annual anchor, not H1 annualization. Normal CAT charge $150m and share denominator are analyst assumptions. Rounded $20.73 to $21; sensitivity supplied."
+      },
+      "terminal_period": "FY2029-equivalent annual earning power; three growth steps from normalized FY2026",
+      "sources": [
+        {
+          "url": "https://s21.q4cdn.com/997934001/files/doc_financials/2026/q2/AIZ-2026-06-30-Ex-99-1-Press-Release_FINAL.pdf"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1267238/000126723826000041/aiz-20260630.htm"
+        },
+        {
+          "url": "https://www.assurant.com/news-insights/news_releases/quarterly-dividend-3Q26"
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 16.891496999999998,
+          "terminal_pe": 10,
+          "terminal_price": 168.91496999999998,
+          "dividends": [
+            3.52,
+            3.52,
+            3.52
+          ],
+          "irr_reference": -0.12032051186526044,
+          "irr_limit": -0.08745634187667878,
+          "irr_reference_withholding30": -0.12500718402562333,
+          "irr_limit_withholding30": -0.09248147437169701,
+          "pv_hurdle": 128.6847852701348,
+          "pv_hurdle_withholding30": 126.14845145089281,
+          "total_return_reference": -0.31461479416482097,
+          "total_return_limit": -0.23627672340425543
+        },
+        {
+          "name": "base",
+          "terminal_eps": 25.725903000000002,
+          "terminal_pe": 13,
+          "terminal_price": 334.43673900000005,
+          "dividends": [
+            3.52,
+            3.7312000000000003,
+            3.9550720000000004
+          ],
+          "irr_reference": 0.09810086716883026,
+          "irr_limit": 0.13895657224190805,
+          "irr_reference_withholding30": 0.09415900216924855,
+          "irr_limit_withholding30": 0.13471337075763856,
+          "pv_hurdle": 246.97795403038444,
+          "pv_hurdle_withholding30": 244.2982073102678,
+          "total_return_reference": 0.3199534522263807,
+          "total_return_limit": 0.47082132340425553
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 28.720251000000005,
+          "terminal_pe": 16,
+          "terminal_price": 459.5240160000001,
+          "dividends": [
+            3.52,
+            3.8016,
+            4.105728
+          ],
+          "irr_reference": 0.218276440763835,
+          "irr_limit": 0.2635322176778706,
+          "irr_reference_withholding30": 0.21464639706900213,
+          "irr_limit_withholding30": 0.25961670417611604,
+          "pv_hurdle": 336.1759634657434,
+          "pv_hurdle_withholding30": 333.44720982142854,
+          "total_return_reference": 0.7984852363858552,
+          "total_return_limit": 1.0040482723404258
+        }
+      ],
+      "base_ceiling": 246.97795403038444,
+      "base_ceiling_withholding30": 244.2982073102678,
+      "detail_file": "financials.md",
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. ",
+      "slot_note": "Reserve candidate only; replacement requires an explicit switch within the 10% direct-stock cap"
+    },
+    {
+      "ticker": "SNA",
+      "name": "Snap-on",
+      "sector": "Industrials",
+      "rank": 9,
+      "decision": "BUY BELOW",
+      "reference_price": 367.71,
+      "reference_date": "2026-09-24",
+      "limit_price": 310,
+      "hurdle": 0.12,
+      "slot_weight": 0,
+      "initial_weight": 0,
+      "thesis": "Professional tools, diagnostic information and franchise distribution are durable, but current pricing asks too much of a modest-growth business.",
+      "countercase": "Financed purchases link tool demand and credit quality; a slowdown can hit both.",
+      "failure_rule": "Financing past-due rates above 5%, rising provisions with declining tool sales, or two quarters of margin compression over 200bp: re-underwrite.",
+      "baseline": "Analystnormalizedestimate anchoredtoFY2025 GAAP19.19 less0.31legalbenefit=18.88 and H12026 EPSgrowth; not vendorconsensus.",
+      "terminal_period": "FY2029 ending around December 2029; approximately three months forward at September 2029 exit",
+      "sources": [
+        {
+          "id": "sna_fy25",
+          "url": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000008/q42025pressreleaseforpress.htm"
+        },
+        {
+          "id": "sna_q226",
+          "url": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000141/q22026pressreleaseforpress.htm"
+        },
+        {
+          "id": "sna_fy25_10k",
+          "url": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000045/sna-20260103.htm"
+        },
+        {
+          "id": "sna_q226_10q",
+          "url": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000144/sna-20260704.htm"
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 14.6,
+          "terminal_pe": 14,
+          "terminal_price": 204.4,
+          "dividends": [
+            9.68,
+            9.68,
+            9.68
+          ],
+          "irr_reference": -0.14550753074265171,
+          "irr_limit": -0.09365269238853896,
+          "irr_reference_withholding30": -0.15515376303052614,
+          "irr_limit_withholding30": -0.10441657032506307,
+          "pv_hurdle": 168.737609329446,
+          "pv_hurdle_withholding30": 161.76269132653056,
+          "total_return_reference": -0.36515188599711723,
+          "total_return_limit": -0.24696774193548388
+        },
+        {
+          "name": "base",
+          "terminal_eps": 23,
+          "terminal_pe": 18,
+          "terminal_price": 414,
+          "dividends": [
+            9.68,
+            10.16,
+            10.68
+          ],
+          "irr_reference": 0.06688492540780755,
+          "irr_limit": 0.13105753189045977,
+          "irr_reference_withholding30": 0.05891491926057124,
+          "irr_limit_withholding30": 0.12210520107967315,
+          "pv_hurdle": 319.0211825801748,
+          "pv_hurdle_withholding30": 311.717934584548,
+          "total_return_reference": 0.20888743847053393,
+          "total_return_limit": 0.4339354838709677
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 26.2,
+          "terminal_pe": 20,
+          "terminal_price": 524.0,
+          "dividends": [
+            10,
+            11,
+            12
+          ],
+          "irr_reference": 0.15184559190258862,
+          "irr_limit": 0.22103048123645863,
+          "irr_reference_withholding30": 0.1438850242236317,
+          "irr_limit_withholding30": 0.21207705220141315,
+          "pv_hurdle": 399.2119169096209,
+          "pv_hurdle_withholding30": 391.3401967930028,
+          "total_return_reference": 0.5147806695493733,
+          "total_return_limit": 0.7967741935483872
+        }
+      ],
+      "base_ceiling": 319.0211825801748,
+      "base_ceiling_withholding30": 311.717934584548,
+      "detail_file": "quality_compounders.md",
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. ",
+      "slot_note": "Reserve candidate only; replacement requires an explicit switch within the 10% direct-stock cap"
+    },
+    {
+      "ticker": "NTAP",
+      "name": "NetApp",
+      "sector": "Information Technology",
+      "rank": 10,
+      "decision": "BUY BELOW",
+      "reference_price": 197.24,
+      "reference_date": "2026-09-24",
+      "limit_price": 150,
+      "hurdle": 0.12,
+      "slot_weight": 0,
+      "initial_weight": 0,
+      "thesis": "Storage growth can support earnings; use GAAP guidance so stock compensation stays charged.",
+      "countercase": "Recent sales growth exceeds cash conversion; inventory turns and competition weaken the case for paying a premium.",
+      "failure_rule": "Inventory turns remain below 8 while growth falls below 10%, cash conversion continues to weaken, or operating-margin guidance falls over 200bp: cancel entry.",
+      "baseline": "FY2027 GAAPEPS7.50, retainingSBC. Company adjustedEPS9.88 adds2.19SBC and otheritems; not used as interchangeable owner earnings.",
+      "terminal_period": "FY2030 ending April 2030; seven months forward at September 2029 exit",
+      "sources": [
+        {
+          "url": "https://investors.netapp.com/news/news-details/2026/NetApp-Reports-First-Quarter-of-Fiscal-Year-2027-Results/default.aspx"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1002047/000119312526380207/ntap-20260731.htm"
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 6.25,
+          "terminal_pe": 14,
+          "terminal_price": 87.5,
+          "dividends": [
+            1.8,
+            1.8,
+            1.8
+          ],
+          "irr_reference": -0.22510267025582448,
+          "irr_limit": -0.14996331323247541,
+          "irr_reference_withholding30": -0.22876308412090313,
+          "irr_limit_withholding30": -0.15430322906869826,
+          "pv_hurdle": 66.60406796647229,
+          "pv_hurdle_withholding30": 65.30707908163264,
+          "total_return_reference": -0.5290002027986209,
+          "total_return_limit": -0.3806666666666666
+        },
+        {
+          "name": "base",
+          "terminal_eps": 9.982500000000003,
+          "terminal_pe": 21,
+          "terminal_price": 209.63250000000008,
+          "dividends": [
+            2.08,
+            2.16,
+            2.24
+          ],
+          "irr_reference": 0.03124503939625589,
+          "irr_limit": 0.13094101082741594,
+          "irr_reference_withholding30": 0.028027568210815645,
+          "irr_limit_withholding30": 0.12706796836503076,
+          "pv_hurdle": 154.3857421875,
+          "pv_hurdle_withholding30": 152.83370137117348,
+          "total_return_reference": 0.09568292435611458,
+          "total_return_limit": 0.4407500000000004
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 12,
+          "terminal_pe": 24,
+          "terminal_price": 288,
+          "dividends": [
+            2.08,
+            2.3,
+            2.55
+          ],
+          "irr_reference": 0.1447772523969345,
+          "irr_limit": 0.2553052352763917,
+          "irr_reference_withholding30": 0.14168957976594998,
+          "irr_limit_withholding30": 0.25157958024383953,
+          "pv_hurdle": 210.49843977769672,
+          "pv_hurdle_withholding30": 208.8467212554664,
+          "total_return_reference": 0.49528493206246194,
+          "total_return_limit": 0.9662
+        }
+      ],
+      "base_ceiling": 154.3857421875,
+      "base_ceiling_withholding30": 152.83370137117348,
+      "detail_file": "industrials_payments.md",
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. ",
+      "slot_note": "Reserve candidate only; replacement requires an explicit switch within the 10% direct-stock cap"
+    },
+    {
+      "ticker": "IBKR",
+      "name": "Interactive Brokers",
+      "sector": "Financials",
+      "rank": 11,
+      "decision": "BUY BELOW",
+      "reference_price": 89.82,
+      "reference_date": "2026-09-24",
+      "limit_price": 65.0,
+      "hurdle": 0.13,
+      "slot_weight": 0,
+      "initial_weight": 0,
+      "thesis": "Account growth and scalable brokerage economics remain attractive, but the quoted price demands strong growth and a rich terminal multiple.",
+      "countercase": "Falling rates, trading activity, operational incidents and regulation can compress earnings and valuation simultaneously.",
+      "failure_rule": "Account/client-asset growth slows materially while net interest income declines, or a material regulatory/operational capital event occurs: reset growth and multiple.",
+      "baseline": {
+        "reported_Q2_adjusted_eps": 0.69,
+        "reported_Q2_effective_tax": 0.147,
+        "assumed_normal_tax": 0.19,
+        "annualized_normalized_eps_calculated": 2.620867526377491,
+        "selected_eps": 2.6,
+        "notes": "Normalize Q2 tax windfall. All EPS and dividends on post-June2025 4-for-1 split basis. EPS already accounts for noncontrolling interest; do not divide consolidated group earnings or customer equity by Class A shares."
+      },
+      "terminal_period": "FY2029-equivalent annual earning power; three growth steps from normalized FY2026",
+      "sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1381197/000138119726000118/ibkr-ex99_1.htm"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1381197/000138119726000147/ibkr-20260630.htm"
+        },
+        {
+          "url": "https://www.interactivebrokers.com/mkt/getFileNew.php?file=202608MetricsPressRelease.pdf"
+        },
+        {
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/07/21/interactive-brokers-ibkr-q2-2026-earnings-call-transcript/?referring_guid=89ef2ba2-b035-4492-be80-675868705e31&source=financialcontent"
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 2.6,
+          "terminal_pe": 18,
+          "terminal_price": 46.800000000000004,
+          "dividends": [
+            0.35,
+            0.35,
+            0.35
+          ],
+          "irr_reference": -0.1904033021944032,
+          "irr_limit": -0.09769022892056128,
+          "irr_reference_withholding30": -0.19187682072604179,
+          "irr_limit_withholding30": -0.09949825851876454,
+          "pv_hurdle": 33.26115100384852,
+          "pv_hurdle_withholding30": 33.01322998107281,
+          "total_return_reference": -0.4672678690714762,
+          "total_return_limit": -0.26384615384615384
+        },
+        {
+          "name": "base",
+          "terminal_eps": 3.9542749999999995,
+          "terminal_pe": 25,
+          "terminal_price": 98.85687499999999,
+          "dividends": [
+            0.35,
+            0.385,
+            0.42350000000000004
+          ],
+          "irr_reference": 0.03662758720582626,
+          "irr_limit": 0.15515457746585792,
+          "irr_reference_withholding30": 0.03538081610032007,
+          "irr_limit_withholding30": 0.15360806103939828,
+          "pv_hurdle": 69.41752599111372,
+          "pv_hurdle_withholding30": 69.14610017208436,
+          "total_return_reference": 0.11350896236918273,
+          "total_return_limit": 0.5386980769230767
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 4.8382542,
+          "terminal_pe": 32,
+          "terminal_price": 154.8241344,
+          "dividends": [
+            0.35,
+            0.40249999999999997,
+            0.46287499999999987
+          ],
+          "irr_reference": 0.2027473237027212,
+          "irr_limit": 0.3401664332618334,
+          "irr_reference_withholding30": 0.2016252840105629,
+          "irr_limit_withholding30": 0.3387642034706385,
+          "pv_hurdle": 108.24663811762034,
+          "pv_hurdle_withholding30": 107.96291412346137,
+          "total_return_reference": 0.7372468203072813,
+          "total_return_limit": 1.4006078369230766
+        }
+      ],
+      "base_ceiling": 69.41752599111372,
+      "base_ceiling_withholding30": 69.14610017208436,
+      "detail_file": "financials.md",
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. ",
+      "slot_note": "Reserve candidate only; replacement requires an explicit switch within the 10% direct-stock cap"
+    },
+    {
+      "ticker": "ABNB",
+      "name": "Airbnb",
+      "sector": "Consumer Discretionary",
+      "rank": 12,
+      "decision": "AVOID CURRENT PRICE",
+      "reference_price": 151.39,
+      "reference_date": "2026-09-24",
+      "limit_price": 120,
+      "hurdle": 0.13,
+      "slot_weight": 0,
+      "initial_weight": 0,
+      "thesis": "An asset-light marketplace can compound, but stock compensation and ordinary taxes absorb much of headline cash-flow appeal.",
+      "countercase": "Regulation, travel cyclicality, competition and dilution can prevent revenue growth from reaching owners.",
+      "failure_rule": "Material deterioration in nights/bookings and take rate, sustained stock compensation dilution, or broad regulatory restrictions: lower normalized margins and valuation.",
+      "baseline": {
+        "period": "FY2025andQ22026; do notannualizeseasonalQ2",
+        "definition": "normalizedoperatingprofitafterSBCplusrecurringnetinterest,ordinarytax; noinvestmentgainsornetcashpremium",
+        "q2_reported_gaap_eps": 1.37,
+        "q2_tax_normalized_eps": 1.1811055276381912
+      },
+      "terminal_period": "FY2029 ending December 2029; three months forward at September 2029 exit",
+      "sources": [
+        {
+          "id": "annual",
+          "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/abnb-20251231.htm"
+        },
+        {
+          "id": "q2",
+          "url": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000027/abnb-20260630.htm"
+        },
+        {
+          "id": "letter",
+          "url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526337928/d70413dex991.htm"
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 3.2848674991803284,
+          "terminal_pe": 20,
+          "terminal_price": 65.69734998360657,
+          "dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_reference": -0.24290527379713972,
+          "irr_limit": -0.1819330101659828,
+          "irr_reference_withholding30": -0.24290527379713972,
+          "irr_limit_withholding30": -0.1819330101659828,
+          "pv_hurdle": 45.5315590673531,
+          "pv_hurdle_withholding30": 45.5315590673531,
+          "total_return_reference": -0.5660390383538769,
+          "total_return_limit": -0.45252208346994527
+        },
+        {
+          "name": "base",
+          "terminal_eps": 7.0770576993103465,
+          "terminal_pe": 25,
+          "terminal_price": 176.92644248275866,
+          "dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_reference": 0.053331774958538136,
+          "irr_limit": 0.13816134839376237,
+          "irr_reference_withholding30": 0.053331774958538136,
+          "irr_limit_withholding30": 0.13816134839376237,
+          "pv_hurdle": 122.61889967389128,
+          "pv_hurdle_withholding30": 122.61889967389128,
+          "total_return_reference": 0.16867984994225949,
+          "total_return_limit": 0.47438702068965544
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 10.152713142857143,
+          "terminal_pe": 30,
+          "terminal_price": 304.5813942857143,
+          "dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_reference": 0.26241475089067656,
+          "irr_limit": 0.3640827223335833,
+          "irr_reference_withholding30": 0.26241475089067656,
+          "irr_limit_withholding30": 0.3640827223335833,
+          "pv_hurdle": 211.0901847364811,
+          "pv_hurdle_withholding30": 211.0901847364811,
+          "total_return_reference": 1.0118990308852256,
+          "total_return_limit": 1.5381782857142858
+        }
+      ],
+      "base_ceiling": 122.61889967389128,
+      "base_ceiling_withholding30": 122.61889967389128,
+      "detail_file": "airbnb.md",
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. ",
+      "slot_note": "Reserve candidate only; replacement requires an explicit switch within the 10% direct-stock cap"
+    },
+    {
+      "ticker": "AME",
+      "name": "AMETEK",
+      "sector": "Industrials",
+      "rank": 13,
+      "decision": "AVOID CURRENT PRICE",
+      "reference_price": 247.74,
+      "reference_date": "2026-09-24",
+      "limit_price": 185,
+      "hurdle": 0.12,
+      "slot_weight": 0,
+      "initial_weight": 0,
+      "thesis": "Specialized instrumentation and operating discipline are attractive, but the price and the large Indicor acquisition leave insufficient room for error.",
+      "countercase": "A $5bn transaction changes financing and integration risk; June cash/debt cannot represent the post-close balance sheet.",
+      "failure_rule": "Obtain the post-close debt, interest and integration bridge before any purchase; weak organic growth or acquisition returns below capital cost require a lower multiple.",
+      "baseline": "Analyst normalizedEPS8.30 based on pre-close company adjusted8.20–8.30range plus0.05explicit assumedaccretion. Acquisitionamortizationexcluded;SBCremainsexpensed. No unverified proforma debt is asserted as actual.",
+      "terminal_period": "FY2029 ending December 2029; three months forward at September 2029 exit",
+      "sources": [
+        {
+          "url": "https://investors.ametek.com/news-releases/news-release-details/ametek-announces-record-second-quarter-2026-results-and-raises"
+        },
+        {
+          "url": "https://investors.ametek.com/news-releases/news-release-details/ametek-completes-acquisition-indicor-instrumentation"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000175/ame-20260630.htm"
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 7.5,
+          "terminal_pe": 20,
+          "terminal_price": 150.0,
+          "dividends": [
+            1.2,
+            1.2,
+            1.2
+          ],
+          "irr_reference": -0.14823563056649341,
+          "irr_limit": -0.06055423408395727,
+          "irr_reference_withholding30": -0.14996713757065044,
+          "irr_limit_withholding30": -0.06264325360587503,
+          "pv_hurdle": 109.64923469387752,
+          "pv_hurdle_withholding30": 108.78457543731776,
+          "total_return_reference": -0.37999515621215796,
+          "total_return_limit": -0.16972972972972977
+        },
+        {
+          "name": "base",
+          "terminal_eps": 10.748740700000003,
+          "terminal_pe": 24,
+          "terminal_price": 257.9697768000001,
+          "dividends": [
+            1.36,
+            1.46,
+            1.56
+          ],
+          "irr_reference": 0.019388784629587597,
+          "irr_limit": 0.1242620516680425,
+          "irr_reference_withholding30": 0.017646077275159322,
+          "irr_limit_withholding30": 0.12214428514936493,
+          "pv_hurdle": 187.1063576211735,
+          "pv_hurdle_withholding30": 186.05978783254375,
+          "total_return_reference": 0.05897221603293801,
+          "total_return_limit": 0.4181069016216221
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 12.0,
+          "terminal_pe": 28,
+          "terminal_price": 336.0,
+          "dividends": [
+            1.36,
+            1.56,
+            1.8
+          ],
+          "irr_reference": 0.11261727079801764,
+          "irr_limit": 0.22701695483169837,
+          "irr_reference_withholding30": 0.11090683069447371,
+          "irr_limit_withholding30": 0.22493628291626766,
+          "pv_hurdle": 242.8972758746355,
+          "pv_hurdle_withholding30": 241.77554209183666,
+          "total_return_reference": 0.3753128279648019,
+          "total_return_limit": 0.8417297297297299
+        }
+      ],
+      "base_ceiling": 187.1063576211735,
+      "base_ceiling_withholding30": 186.05978783254375,
+      "detail_file": "industrials_payments.md",
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. Post-close financing bridge is also required.",
+      "slot_note": "Reserve candidate only; replacement requires an explicit switch within the 10% direct-stock cap"
+    },
+    {
+      "ticker": "RL",
+      "name": "Ralph Lauren",
+      "sector": "Consumer Discretionary",
+      "rank": 14,
+      "decision": "AVOID CURRENT PRICE",
+      "reference_price": 351.86,
+      "reference_date": "2026-09-24",
+      "limit_price": 265,
+      "hurdle": 0.14,
+      "slot_weight": 0,
+      "initial_weight": 0,
+      "thesis": "Premiumization is working, but the current price capitalizes a strong margin and growth outcome.",
+      "countercase": "Fashion cycles, leases, inventory and discretionary spending make recent growth an unsafe straight-line forecast.",
+      "failure_rule": "Inventory growth exceeds sales by 10 points for two quarters with markdown pressure, or normalized margin falls below 14%: cancel entry and revalue.",
+      "baseline": "AnalysteconomicEPS17.5 anchoredtoFY2026adjusted16.59, latestguidance andQ127; ongoingtransformationcosts charged. Do notextrapolate22%quarterEPSgrowth or53rdweek.",
+      "terminal_period": "FY2029 ending around March 2029; completed fiscal year at September 2029 exit",
+      "sources": [
+        {
+          "id": "rl_fy26",
+          "url": "https://corporate.ralphlauren.com/pr_260521_Q4FY26_EarningsResults.html"
+        },
+        {
+          "id": "rl_q127_release",
+          "url": "https://www.sec.gov/Archives/edgar/data/1037038/000162828026053896/rl-20260627ex991xpressrele.htm"
+        },
+        {
+          "id": "rl_fy26_10k",
+          "url": "https://www.sec.gov/Archives/edgar/data/1037038/000162828026037074/rl-20260328.htm"
+        },
+        {
+          "id": "rl_q127_10q",
+          "url": "https://www.sec.gov/Archives/edgar/data/1037038/000162828026053992/rl-20260627.htm"
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 12.2,
+          "terminal_pe": 13,
+          "terminal_price": 158.6,
+          "dividends": [
+            4,
+            3.5,
+            3.5
+          ],
+          "irr_reference": -0.21954533550139227,
+          "irr_limit": -0.14084300760398966,
+          "irr_reference_withholding30": -0.22365486614908375,
+          "irr_limit_withholding30": -0.14576798722536527,
+          "pv_hurdle": 115.6147910558174,
+          "pv_hurdle_withholding30": 113.04549847996411,
+          "total_return_reference": -0.5179901097027226,
+          "total_return_limit": -0.36
+        },
+        {
+          "name": "base",
+          "terminal_eps": 21,
+          "terminal_pe": 18.5,
+          "terminal_price": 388.5,
+          "dividends": [
+            4,
+            4.2,
+            4.4
+          ],
+          "irr_reference": 0.0451108386387441,
+          "irr_limit": 0.1499885594777025,
+          "irr_reference_withholding30": 0.041649191021600473,
+          "irr_limit_withholding30": 0.14579274734745085,
+          "pv_hurdle": 271.93684426517194,
+          "pv_hurdle_withholding30": 269.02372119896535,
+          "total_return_reference": 0.13994202239527076,
+          "total_return_limit": 0.5135849056603774
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 25.3,
+          "terminal_pe": 22,
+          "terminal_price": 556.6,
+          "dividends": [
+            4.2,
+            4.6,
+            5
+          ],
+          "irr_reference": 0.17638739428959604,
+          "irr_limit": 0.29430712444864315,
+          "irr_reference_withholding30": 0.17302264828554315,
+          "irr_limit_withholding30": 0.29020853075688036,
+          "pv_hurdle": 386.28776465633143,
+          "pv_hurdle_withholding30": 383.1081790348447,
+          "total_return_reference": 0.6210993008582957,
+          "total_return_limit": 1.152452830188679
+        }
+      ],
+      "base_ceiling": 271.93684426517194,
+      "base_ceiling_withholding30": 269.02372119896535,
+      "detail_file": "quality_compounders.md",
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. ",
+      "slot_note": "Reserve candidate only; replacement requires an explicit switch within the 10% direct-stock cap"
+    }
+  ],
+  "funds": [
+    {
+      "ticker": "VUAA",
+      "name": "Vanguard S&P 500 UCITS ETF USD Accumulating",
+      "isin": "IE00BFMXXD54",
+      "exchange": "London Stock Exchange, USD trading line",
+      "domicile": "Ireland",
+      "nav": 149.0017,
+      "nav_date": "2026-09-24",
+      "fee": 0.0007,
+      "weight": 0.15,
+      "source": "https://www.vanguard.co.uk/professional/product/etf/equity/9694/sp-500-ucits-etf-",
+      "note": "NAV is a sizing illustration, not an executable quote. Do not use the VUAG GBP market price. Equity risk remains."
+    },
+    {
+      "ticker": "IB01",
+      "name": "iShares $ Treasury Bond 0-1yr UCITS ETF USD Accumulating",
+      "isin": "IE00BGSF1X88",
+      "exchange": "London Stock Exchange, USD trading line",
+      "domicile": "Ireland",
+      "nav": 121.86,
+      "nav_date": "2026-09-24",
+      "fee": 0.0007,
+      "weight": 0.75,
+      "ytm": 0.0416,
+      "duration": 0.31,
+      "source": "https://www.ishares.com/uk/individual/en/products/307243/ishares-treasury-bond-0-1yr-ucits-etf-fund",
+      "note": "Short-duration Treasury fund, not guaranteed cash. Yield to maturity is not a locked three-year return. Reserve can instead be eligible short Treasury bills held to maturity or insured cash, after checking access and terms."
+    }
+  ],
+  "portfolios": [
+    {
+      "capital": 50000,
+      "rows": [
+        {
+          "ticker": "VUAA",
+          "budget": 7500.0,
+          "illustrative_price": 149.0017,
+          "price_basis": "NAV illustration",
+          "whole_shares": 50,
+          "cost": 7450.085,
+          "weight": 0.1490017
+        },
+        {
+          "ticker": "AMP",
+          "budget": 1000.0,
+          "illustrative_price": 500,
+          "price_basis": "maximum stock purchase limit",
+          "whole_shares": 2,
+          "cost": 1000,
+          "weight": 0.02
+        },
+        {
+          "ticker": "PAYX",
+          "budget": 1000.0,
+          "illustrative_price": 101.8,
+          "price_basis": "maximum stock purchase limit",
+          "whole_shares": 9,
+          "cost": 916.1999999999999,
+          "weight": 0.018324
+        },
+        {
+          "ticker": "IB01",
+          "budget": 40000.0,
+          "illustrative_price": 121.86,
+          "price_basis": "NAV illustration",
+          "whole_shares": 328,
+          "cost": 39970.08,
+          "weight": 0.7994016
+        },
+        {
+          "ticker": "USD cash",
+          "budget": 500.0,
+          "illustrative_price": 1,
+          "price_basis": "cash after share rounding, before fees",
+          "whole_shares": null,
+          "cost": 663.635000000002,
+          "weight": 0.01327270000000004
+        }
+      ],
+      "equity_weight": 0.18732569999999998,
+      "reserve_weight": 0.8126743000000001,
+      "total": 50000.0
+    },
+    {
+      "capital": 100000,
+      "rows": [
+        {
+          "ticker": "VUAA",
+          "budget": 15000.0,
+          "illustrative_price": 149.0017,
+          "price_basis": "NAV illustration",
+          "whole_shares": 100,
+          "cost": 14900.17,
+          "weight": 0.1490017
+        },
+        {
+          "ticker": "AMP",
+          "budget": 2000.0,
+          "illustrative_price": 500,
+          "price_basis": "maximum stock purchase limit",
+          "whole_shares": 4,
+          "cost": 2000,
+          "weight": 0.02
+        },
+        {
+          "ticker": "PAYX",
+          "budget": 2000.0,
+          "illustrative_price": 101.8,
+          "price_basis": "maximum stock purchase limit",
+          "whole_shares": 19,
+          "cost": 1934.2,
+          "weight": 0.019342
+        },
+        {
+          "ticker": "IB01",
+          "budget": 80000.0,
+          "illustrative_price": 121.86,
+          "price_basis": "NAV illustration",
+          "whole_shares": 656,
+          "cost": 79940.16,
+          "weight": 0.7994016
+        },
+        {
+          "ticker": "USD cash",
+          "budget": 1000.0,
+          "illustrative_price": 1,
+          "price_basis": "cash after share rounding, before fees",
+          "whole_shares": null,
+          "cost": 1225.4700000000012,
+          "weight": 0.012254700000000012
+        }
+      ],
+      "equity_weight": 0.1883437,
+      "reserve_weight": 0.8116563000000001,
+      "total": 100000.0
+    }
+  ],
+  "stresses": [
+    {
+      "name": "Equity selloff",
+      "core_shock": -0.3,
+      "direct_shock": -0.4,
+      "reserve_shock": 0,
+      "initial_loss": -0.061,
+      "full_loss": -0.085,
+      "dollars_50k": -4250.0,
+      "dollars_100k": -8500.0
+    },
+    {
+      "name": "Severe correlated shock",
+      "core_shock": -0.5,
+      "direct_shock": -0.6,
+      "reserve_shock": -0.01,
+      "initial_loss": -0.1071,
+      "full_loss": -0.14250000000000002,
+      "dollars_50k": -7125.000000000001,
+      "dollars_100k": -14250.000000000002
+    },
+    {
+      "name": "Tail shock",
+      "core_shock": -0.6,
+      "direct_shock": -0.75,
+      "reserve_shock": -0.02,
+      "initial_loss": -0.1362,
+      "full_loss": -0.18,
+      "dollars_50k": -9000.0,
+      "dollars_100k": -18000.0
+    }
+  ],
+  "portfolio_scenarios": [
+    {
+      "name": "bear",
+      "index_annual_assumption": -0.08,
+      "reserve_annual_assumption": 0.025,
+      "initial_terminal_wealth_multiple": 1.0189482871733788,
+      "initial_wealth_cagr": 0.006276617374411098,
+      "full_terminal_wealth_multiple": 0.9945633367655281,
+      "full_wealth_cagr": -0.0018155151788180612
+    },
+    {
+      "name": "base",
+      "index_annual_assumption": 0.06,
+      "reserve_annual_assumption": 0.035,
+      "initial_terminal_wealth_multiple": 1.1333405445624947,
+      "initial_wealth_cagr": 0.04260581276400566,
+      "full_terminal_wealth_multiple": 1.1553664537379555,
+      "full_wealth_cagr": 0.04931669941737771
+    },
+    {
+      "name": "bull",
+      "index_annual_assumption": 0.12,
+      "reserve_annual_assumption": 0.045,
+      "initial_terminal_wealth_multiple": 1.2089098532025342,
+      "initial_wealth_cagr": 0.06528212329378436,
+      "full_terminal_wealth_multiple": 1.2704863197568657,
+      "full_wealth_cagr": 0.08307034387727441
+    }
+  ],
+  "core_weight": 0.15,
+  "direct_initial": 0.04,
+  "direct_cap": 0.1,
+  "reserve_initial": 0.81,
+  "reserve_min_full": 0.75,
+  "overlap": {
+    "date": "2026-08-31 issuer holdings",
+    "NVDA_index_weight": 0.0807902,
+    "MSFT_index_weight": 0.0569335,
+    "NVDA_total_full": 0.027118530000000002,
+    "MSFT_total_full": 0.028540025
+  },
+  "limitations": [
+    "Analyst scenarios, not calibrated forecasts or probabilities.",
+    "The new portfolio has no validated historical track record.",
+    "Bear terminal values are not maximum drawdowns.",
+    "Tax residency, US-person status, holdings, access, commissions and liabilities are unknown. Model is new-money USD capital with no leverage.",
+    "Conditional stock slots are not simultaneous instructions; cash stays in reserve until limits and thesis tests both pass.",
+    "ETF expense ratios are fund expenses; scenarios are after assumed fund expenses, before personal tax and trading costs."
+  ]
+}

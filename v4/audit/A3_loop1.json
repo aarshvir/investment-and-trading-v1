@@ -1,0 +1,25 @@
+{
+  "total": 80,
+  "criteria": {
+    "1": 8,
+    "2": 9,
+    "3": 8,
+    "4": 9,
+    "5": 8,
+    "6": 8,
+    "7": 7,
+    "8": 8,
+    "9": 6,
+    "10": 9
+  },
+  "must_fix": [
+    "Populate the empty 'Thesis in one line' field for all 15 holdings (13/15 are blank strings in dashboard/d4v.json port.rows -- only MPC and FRT are populated) and add an inline plain-English gloss the first time each technical term appears in the dashboard (t-stat, Newey-West, tracking error, beta, Sharpe, NTM P/E, reverse-DCF, stationary-bootstrap). Verify by confirming zero rows have thesis:\"\" and that a lay reader can explain each glossed term back.",
+    "Fix the kill-criteria extraction pipeline: HAS, SWK and SYF show kill: [] in d4v.json's port.rows even though HAS.md section 10 and SWK.md section 10 each already contain 5 explicit, numbered, measurable kill criteria. FINAL_REPORT.md's portfolio table falls back to the placeholder text 'see dossier' for these three -- HAS is the single largest position in the book at the 10% cap. Re-run the extraction step for these three tickers and confirm the placeholder disappears.",
+    "Add one worked dollar example tied to the actual $50,000-$100,000 mandate (e.g. at $75,000: $X into the UCITS core, $Y into the satellite with a per-name $ table, $Z into T-bills) in FINAL_REPORT.md section 1/9 and the dashboard Implementation tab's order steps, replacing 'Quantity: the number of units for this tranche' with an actual number or worked formula the reader can apply to his own capital.",
+    "Reconcile the SYF sleeve weight (2.22%) against FINAL_REPORT.md section 6's stated band 'Weights are inverse to volatility, 3-10% per name': either state the INCLUDE-SMALL 1.5% floor exception in the client-facing prose (it currently exists only in code comments in lead_build_portfolio.py and the STATE.md log, not in anything the investor reads) or raise SYF to the stated 3% floor and re-verify sector/sum constraints still hold.",
+    "Reconcile the two different 'worst sleeve drawdown' figures: the GFC stress-test replay (-57.3%, FINAL_REPORT section 7 / dashboard risk tab) versus the full 2005-2026 daily max drawdown (-59.7%, lead_risk_results.json sleeve_history.max_drawdown). State which one the investor should treat as the tail-risk anchor against his stated 15-20% tolerance.",
+    "Independently re-verify the valuation blend (reverse-DCF growth-implied figures, three-method completeness) for all 15 holdings rather than a sample -- this loop spot-checked but did not exhaustively re-derive every DCF, and v3's equivalent gap (7/14 holdings incomplete) was a top-3 finding in loop 0.",
+    "Resolve r2_implementation_facts.md's own section 9 open items before the investor relies on them for execution: confirm which IBKR entity actually carries this specific account, and whether Vested currently onboards new UAE residents -- both are flagged 'not verified' but are load-bearing for the implementation plan as written.",
+    "Record and publish the random seed(s) used for the 20,000-path stationary bootstrap so the simulated allocation-outcome table (FINAL_REPORT section 7 / dashboard risk tab) is exactly reproducible -- the same gap loop 0 flagged for v3's bootstrap, still open in v4."
+  ]
+}

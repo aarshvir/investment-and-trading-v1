@@ -1,0 +1,24 @@
+{
+  "observed_on": "2026-09-26 Asia/Dubai",
+  "source": "StockAnalysis public historical-price tables viewed through web tool",
+  "source_url_template": "https://stockanalysis.com/stocks/{ticker_lower}/history/",
+  "provenance_reference": "https://stockanalysis.com/data-sources/",
+  "provenance": "Site identifies Cboe real-time and primarily Nasdaq UTP delayed consolidated open/official-close pricing. This is external distributor evidence, not raw exchange certification.",
+  "date": "2026-09-22",
+  "currency": "USD",
+  "warning": "Original files unchanged. RL current adjusted history reflects a later dividend; use matching adjustment vintage before any merge. Numerical observations are not raw API payloads.",
+  "rows": [
+    {"ticker":"CPAY","close":392.95,"adj_close_current_vintage":392.95,"sep24_close":400.32},
+    {"ticker":"AMP","close":512.37,"adj_close_current_vintage":512.37,"sep24_close":485.15},
+    {"ticker":"RL","close":346.06,"adj_close_current_vintage":345.08,"sep24_close":351.86,"sep24_adj_close_current_vintage":350.86},
+    {"ticker":"AME","close":245.41,"adj_close_current_vintage":245.41,"sep24_close":247.74},
+    {"ticker":"SNA","close":371.80,"adj_close_current_vintage":371.80,"sep24_close":367.71},
+    {"ticker":"ABNB","close":161.81,"adj_close_current_vintage":161.81,"sep24_close":151.39},
+    {"ticker":"NTAP","close":192.91,"adj_close_current_vintage":192.91,"sep24_close":197.24},
+    {"ticker":"PAYX","close":114.53,"adj_close_current_vintage":114.53,"sep24_close":101.59},
+    {"ticker":"IBKR","close":91.88,"adj_close_current_vintage":91.88,"sep24_close":89.82},
+    {"ticker":"HIG","close":128.73,"adj_close_current_vintage":128.73,"sep24_close":125.69},
+    {"ticker":"ALLE","close":153.95,"adj_close_current_vintage":153.95,"sep24_close":152.48},
+    {"ticker":"AIZ","close":271.08,"adj_close_current_vintage":271.08,"sep24_close":261.86}
+  ]
+}

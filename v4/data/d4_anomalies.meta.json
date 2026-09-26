@@ -1,0 +1,20 @@
+{
+  "dataset": "d4_anomalies.csv",
+  "agent": "d4",
+  "written_utc": "2026-09-25T20:55:25Z",
+  "description": "long-format anomaly flags (ticker, check, severity, detail)",
+  "rows": 361,
+  "columns": [
+    "ticker",
+    "check",
+    "severity",
+    "detail"
+  ],
+  "inputs": [
+    "v4/data/d4_live_snapshot.parquet",
+    "v4/data/d4_indep_prices.csv",
+    "https://data.sec.gov/api/xbrl/frames/us-gaap/<Concept>/USD/CY2025.json",
+    "https://data.sec.gov/submissions/CIK##########.json"
+  ],
+  "generated_by": "v4/code/d4_validate.py"
+}

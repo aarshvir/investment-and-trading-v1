@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-09-25 20:38:39 UTC",
+  "plugin": "Financial Datasets",
+  "status": "CONNECTED_BLOCKED_ZERO_BALANCE",
+  "request": {
+    "tool": "get_cash_flow_statement",
+    "ticker": "MSFT",
+    "period": "annual",
+    "report_period": "2026-06-30",
+    "limit": 1
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Error fetching cash_flow_statements for MSFT: Your current balance is $0.00. Please add more credits to continue using the API."
+      }
+    ],
+    "isError": false
+  },
+  "interpretation": "No financial statement values returned. The response text is an error despite isError:false; do not treat wrapper success as data success.",
+  "next_action": "User needs to add provider credits; no purchase or billing change authorized or attempted."
+}

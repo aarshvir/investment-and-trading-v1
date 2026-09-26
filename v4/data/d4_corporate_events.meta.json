@@ -1,0 +1,52 @@
+{
+  "dataset": "d4_corporate_events.csv",
+  "agent": "d4",
+  "written_utc": "2026-09-25T20:55:23Z",
+  "description": "best-effort corporate-event flags (SEC submissions forms + Yahoo headlines)",
+  "source_urls": [
+    "https://data.sec.gov/submissions/CIK##########.json",
+    "Yahoo Finance news + press-release tabs via yfinance get_news()"
+  ],
+  "retrieval_utc": "2026-09-25T20:55:23Z",
+  "rows": 503,
+  "columns": [
+    "ticker",
+    "name",
+    "cik",
+    "gics_sector",
+    "date_added_to_index",
+    "sec_14d9_365d",
+    "sec_merger_proxy_365d",
+    "sec_tender_bidder_365d",
+    "sec_s4_365d",
+    "sec_425_365d_n",
+    "sec_8k_201_180d",
+    "sec_submissions_ok",
+    "sec_recent_oldest",
+    "hl_target",
+    "hl_acquirer",
+    "hl_completed",
+    "hl_spinoff",
+    "n_headlines",
+    "evt_being_acquired",
+    "evt_acquirer_pending_or_recent",
+    "evt_recent_completed_deal",
+    "evt_spinoff_separation"
+  ],
+  "flag_counts": {
+    "evt_being_acquired": 9,
+    "evt_acquirer_pending_or_recent": 96,
+    "evt_recent_completed_deal": 79,
+    "evt_spinoff_separation": 9,
+    "being_acquired_sec_14d9": 1,
+    "being_acquired_merger_proxy": 8,
+    "companies_with_425_filings": 33
+  },
+  "as_of": "2026-09-25",
+  "caveats": [
+    "Headline heuristics; SEC 8-K 2.01 covers acquisitions AND dispositions.",
+    "Merger proxies can be filed by acquirers (large stock deals) or for reorganisations.",
+    "SEC 'recent' block = latest ~1000 filings per filer (sec_recent_oldest shows coverage).",
+    "Yahoo news tabs cover only the latest ~30 headlines each, so older deals can be missed."
+  ]
+}

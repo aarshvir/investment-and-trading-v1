@@ -1,0 +1,1 @@
+The IBKR August URL returned a non-PDF binary response. It is retained as response.bin, not certified as a parsed PDF. Web provider initially exposed the issuer PDF, subsequent retrieval failed. No local parsed metrics are claimed.

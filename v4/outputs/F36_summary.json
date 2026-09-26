@@ -1,0 +1,109 @@
+{
+  "agent": "F36",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "ADP": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "The dominant payroll and HR-outsourcing platform, still beating its own raised guidance every quarter, priced for less growth than management itself expects.",
+      "kill_criteria": [
+        "Organic constant-currency revenue growth below 4% for two consecutive quarters (vs. 6% delivered all of FY26)",
+        "Adjusted EBIT margin guidance cut (vs. the +70-90bps FY27 guide) at any quarterly release",
+        "Client retention rate disclosed as declining year-over-year (ADP publishes this metric periodically)",
+        "Client funds extended investment portfolio yield or balance disclosed as falling faster than the Fed funds curve implies (a signal of client-fund outflows, not just rate cuts)",
+        "Net new business bookings growth negative for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "Client-funds interest income (roughly 15-20% of pretax earnings) is a rate-sensitive, non-operating tailwind that falls mechanically if the Fed cuts faster than the curve implies",
+        "$48 million ERISA/401(k) retirement-plan-fee class action settlement (preliminary approval pending, Aug-2026); a separate 2020-filed TotalSource ERISA suit remains open with loss not estimable",
+        "Reported interest expense implies a ~9.3% blended cost of debt on stated corporate debt, well above plausible bond coupons, because it mixes true corporate interest with client-funds/PEO investment-portfolio financing costs -- a data conflict not fully resolved in this pass",
+        "Well-funded challengers (Gusto, Rippling, Deel) are taking share in the smallest-employer segment where switching costs are lowest"
+      ],
+      "data_conflicts": [
+        "Interest expense / long-term debt implies ~9.3% pretax cost of debt vs. an assumed 5.5% used in the WACC here; treated as a client-funds-financing distortion, not resolved with certainty"
+      ],
+      "next_earnings_date": "2026-10-27",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "high - four consecutive quarters of primary-sourced, reconciled guidance raises culminating in results that beat even the raised range, plus a reverse DCF showing the market pricing in less growth than management guides",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for ADP. Analyst reverse DCF implies ~4.2%/yr 10-year FCF growth priced in, versus a management-guided FY27 trajectory of 5-6% revenue growth and 9-11% adjusted EPS growth -- the analyst's own base case (~9%/yr EPS growth) is above the implied growth, so the price is judged cheap, not full."
+      },
+      "scenario_returns_3y": {"bear": -0.007, "base": 0.115, "bull": 0.189},
+      "scenario_basis": "GAAP diluted EPS $10.94 (FY26) grown at 3%/9%/12% per yr to yr-3, exit P/E 20x/24.1x(flat)/27x vs current trailing 24.1x, plus ~2.5% dividend yield; illustrative, not consensus."
+    },
+    "CPRT": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The salvage-auction leader just posted a rare EPS decline, lost its CEO abruptly, and bet $1.9 billion cash on an unapproved acquisition.",
+      "kill_criteria": [
+        "Gross margin below 43% (i.e., not recovering meaningfully from the reported 44.6% FY26 full-year level) for two consecutive quarters",
+        "Operating cash flow (trailing nine/twelve months) below the prior-year comparable period for a third consecutive reporting period",
+        "HSR review of the ACV acquisition extended past a second request, or the deal terminated/repriced",
+        "Any securities-class-action complaint actually filed (as opposed to a law-firm \"investigation\" solicitation) naming Copart or its officers",
+        "Diluted EPS down year-over-year for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "Q4 FY2026 gross margin fell to 41.8% from 45.3% a year earlier (full-year 44.6% vs 45.2%); full-year diluted EPS declined 2.5% YoY to $1.55, the first EPS decline identified in the record reviewed",
+        "Nine-month FY2026 operating cash flow of $1,246.95 million was down 8.4% YoY from $1,361.27 million, a genuine cash-generation deterioration predating the ACV cash outlay",
+        "CEO Jeffrey Liaw stepped down effective 31-Jul-2026 (announced 29-Jun-2026, stock fell 8.0% same day) with founder A. Jayson Adair resuming the CEO role; no company-stated reason beyond 'CEO transition' was identified",
+        "Multiple plaintiff law firms (Pomerantz, Kessler Topaz Meltzer & Check, Bragar Eagel & Squire) opened securities-related investigation solicitations in Jun-Jul 2026 following the CEO transition and stock decline; no complaint or enforcement action confirmed in this pass",
+        "$1.9 billion all-cash agreement to acquire ACV Auctions (announced 10-Sep-2026, $10.50/share, ~45% premium) is subject to HSR antitrust clearance and is explicitly guided EPS-neutral in year one, offering no near-term financial offset to the execution risk",
+        "Share repurchases jumped to $1,632.5 million in FY2026 from zero in FY2025, deploying cash into buybacks in the same year cash generation weakened and immediately before the ACV cash commitment",
+        "The FY2026 10-K itself was not located or read in this pass; balance-sheet and cash-flow detail rely on the FY2025 10-K, prior 10-Qs and the Q4 FY26 earnings release -- a completeness limitation"
+      ],
+      "data_conflicts": [
+        "The b1/d4 quant inputs for CPRT are stale (max_filed_used 2026-05-29, the Q3 FY26 10-Q), predating both the Q4 FY26 results and the 10-Sep-2026 ACV acquisition announcement, so the triage's 'margin intact' framing no longer reflects the primary record",
+        "D4/Yahoo's reported total cash figure (~$4.49 billion) is not on a clearly reconcilable basis with the $1.91 billion year-end cash figure quoted in the Q4 FY26 release net of buybacks; likely reflects investments beyond narrow cash, not resolved with certainty in this pass"
+      ],
+      "next_earnings_date": "2026-12-03",
+      "horizon": "12-24 months, conditional",
+      "confidence_in_thesis": "medium - the adverse facts (margin compression, cash-flow decline, CEO exit, pending large cash acquisition) are all primary-sourced and consistent with each other, but the FY2026 10-K was not read in this pass and the securities-law-firm investigations have not yet produced a confirmed finding either way",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "implied_vs_base": "in_line",
+        "reconciliation": "No V1 row exists for CPRT. The reverse DCF implies ~3.9%/yr 10-year FCF growth priced in, which looks cheap against the triage's assumed double-digit historical growth, but given the just-reported EPS decline and nine-month OCF decline, the analyst's own base case is closer to 3-4%/yr -- i.e. in line with, not clearly below, what is priced in, so the stock is judged fairly valued rather than cheap."
+      },
+      "scenario_returns_3y": {"bear": -0.122, "base": 0.040, "bull": 0.144},
+      "scenario_basis": "GAAP diluted EPS $1.55 (FY26) grown at -5%/4%/10% per yr to yr-3, exit P/E 14x/17.8x(flat)/20x vs current trailing 17.8x; no dividend. Illustrative, not consensus."
+    },
+    "MCD": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The world's largest burger franchisor, priced for almost no growth, while US traffic has softened for three straight quarters.",
+      "kill_criteria": [
+        "US comparable sales negative (turning from decelerating-positive to outright negative) for two consecutive quarters",
+        "Full-year operating-margin guidance (currently \"mid-to-high 40% range\") formally cut at any quarterly release",
+        "Net debt/EBITDA rising above 3.5x (vs. ≈2.8x estimated here)",
+        "A credit-rating downgrade by S&P/Moody's/Fitch below the current investment-grade tier",
+        "Systemwide sales growth (constant currency) below 3% for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "US comparable sales decelerated for three consecutive quarters to +0.8% in Q2 2026, which management attributed to 'inconsistent restaurant execution' and 'lower consumer awareness' of new value offerings -- an admitted execution problem, not yet fixed",
+        "Stockholders' equity is negative (-$1,023 million at 30-Jun-2026), and net debt is approximately $39.9 billion against estimated adjusted EBITDA of $14.0-14.2 billion (net debt/EBITDA approximately 2.8x) -- a structurally leveraged, buyback-funded capital structure with limited room for a real systemwide-sales downturn",
+        "Franchise-system racial-discrimination litigation (McPherson/Manning-line cases) was largely but not entirely narrowed in McDonald's favour on 21-Sep-2026; some claims proceed",
+        "Operating margin has not yet returned to the 47.2-47.4% level seen in Q2/Q3 2025, running at 45.3% (Q1 2026) and 47.0% (Q2 2026)"
+      ],
+      "data_conflicts": [
+        "D4/Yahoo's reported TTM free cash flow (~$6.26 billion) is about 24% below this dossier's SEC-sourced TTM figure (~$7.76 billion, built from 10-K/10-Q OCF and capex); the gap is disclosed and the SEC-sourced figure is used as primary, but the cause (trailing-window or capex-classification difference) was not resolved with certainty"
+      ],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium - the valuation and cash-generation case is well evidenced and primary-sourced, but the US traffic deceleration is a live, unresolved trend and insider-selling patterns were not audited in this time-boxed pass",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for MCD. The reverse DCF implies only ~2.8%/yr 10-year FCF growth priced in, versus an analyst base case of roughly 7%/yr EPS growth (mid-single-digit systemwide sales growth plus margin recovery toward the guided high-40s% range plus buybacks) -- base case is clearly above the implied growth, so the price is judged cheap; the INCLUDE-SMALL (rather than full INCLUDE) verdict reflects the named reservation on US traffic momentum and leverage, not a valuation disagreement."
+      },
+      "scenario_returns_3y": {"bear": -0.009, "base": 0.101, "bull": 0.192},
+      "scenario_basis": "GAAP diluted EPS $12.31 (TTM Q2'26) grown at 2%/7%/11% per yr to yr-3, exit P/E 16x/19.2x(flat)/22x vs current trailing 19.2x, plus ~3.1% dividend yield; illustrative, not consensus."
+    }
+  }
+}

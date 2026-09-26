@@ -1,0 +1,114 @@
+{
+  "agent": "F28",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "FSLR": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "America's only scaled non-Chinese solar-panel maker, backed by a 45GW backlog and tax credits, priced as if its cash flow barely grows.",
+      "kill_criteria": [
+        "Quarterly net sales YoY growth negative for two consecutive quarters (currently 1 of 2: Q2 2026)",
+        "Full-year 2026 guidance ($4.9-5.2bn sales / $2.6-2.8bn EBITDA) cut at any subsequent release",
+        "Contracted backlog falls below 40 GW (from 45.1 GW at 30-Jun-2026) without an offsetting new-bookings explanation",
+        "An adverse ruling or settlement in the securities class action or derivative suit that implies a material monetary liability or a restatement",
+        "Treasury guidance or legislative action that narrows the FEOC \"material assistance\" safe harbor in a way that disqualifies a material share of First Solar's supply chain from 45X eligibility before 2030"
+      ],
+      "key_adverse_facts": [
+        "New securities class action filed 23-Jun-2026 (E.D.N.Y.) alleging false statements about First Solar's ability to manage US tariff-policy impacts; shareholder derivative suit filed 28-Jul-2026 -- neither was in the original triage",
+        "Revenue growth turned negative in the most recent quarter (Q2 2026 net sales -3.7% YoY) even as gross margin expanded to 57.3%, driven substantially by Section 45X tax-credit accounting rather than pure operating leverage",
+        "Section 45X credit for solar components carries new Foreign-Entity-of-Concern 'material assistance' restrictions (effective for tax years after 4-Jul-2025) and a 65% domestic-content threshold for 'integrated' components (after 31-Dec-2026) -- compliance risk not fully resolved",
+        "JinkoSolar patent litigation (stayed pending USITC Section 337 determination) and an unresolved Federal Circuit antidumping/countervailing-duty appeal leave some retroactive duty exposure legally open"
+      ],
+      "data_conflicts": [
+        "d4_live_snapshot freeCashflow ($1,598.7m TTM) is ~$99m (6.6%) above the SEC-XBRL-derived TTM FCF this dossier computes ($1,500.1m); immaterial to the thesis but d4's freeCashflow field should not be treated as primary for this name",
+        "Q2 2026 8-K states total debt as 'current portion $37.6m, long-term $0' while d4's Yahoo-sourced total-debt field shows $194.0m; net-cash conclusion is unaffected either way"
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium -- valuation and backlog evidence are strong, but two fresh, unresolved lawsuits and a policy-dependent margin structure are real, unquantified overhangs",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation exists for FSLR (absent from v1_valuation_table.csv / v1_valuation.json); this dossier is the first valuation view on file, so there is nothing to reconcile against.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.111,
+        "base": 0.135,
+        "bull": 0.344
+      }
+    },
+    "GEN": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Cheap, deleveraged Norton/Avast/LifeLock cash cow with accelerating growth, but a fresh ~$12bn bid for GoDaddy makes the balance-sheet story unresolved.",
+      "kill_criteria": [
+        "A signed, binding GoDaddy (or other >$5bn) acquisition agreement is announced without disclosed financing terms that keep pro-forma net debt/EBITDA under ~3.5x within 12 months",
+        "Net debt/EBITDA rises above 3.5x for any reason (deal-related or organic)",
+        "Quarterly organic revenue growth below 5% YoY for two consecutive quarters (current: accelerating, 11% last quarter)",
+        "FY27 guidance cut at any subsequent release (currently raised twice in the trailing year per the sources reviewed)",
+        "Buyback program suspended or materially reduced to fund M&A"
+      ],
+      "key_adverse_facts": [
+        "Preliminary ~$12bn takeover approach for GoDaddy reported 24-Sep-2026 (press-sourced, no confirming 8-K found in this pass); GEN shares fell ~12% on the news; any deal would likely require a large equity component given GEN's own ~$8bn net debt vs GoDaddy's ~$3.8bn debt -- this is exactly the kind of 'pending deal' the program's own sleeve-construction rules treat as an automatic exclusion for other names, and it broke one day before this dossier's data cutoff",
+        "GAAP operating margin has compressed from the low-40s% (mid-FY25) to the low-30s% (FY27) even as revenue accelerated, reflecting MoneyLion integration and $32m of restructuring plus $23m of litigation costs disclosed for Q1 FY27",
+        "A $900m 6.75% note matures 30-Sep-2027, inside the thesis horizon, competing for capital with whatever the GoDaddy situation ultimately requires",
+        "Legacy TCPA robocall class action settled for $9.95m (final approval 14-Jul-2026) -- resolved but confirms ongoing consumer-marketing legal risk"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-11-05",
+      "horizon": "12-36 months if the GoDaddy situation resolves without value-destructive financing; otherwise reassess",
+      "confidence_in_thesis": "low -- the standalone valuation and growth case is high-confidence, but the unresolved M&A approach makes the near-term capital-structure outcome genuinely unknown",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation exists for GEN (absent from v1_valuation_table.csv / v1_valuation.json); this dossier is the first valuation view on file. The standalone reverse DCF supports 'cheap', but the verdict is held at WATCH pending the GoDaddy situation, which valuation alone cannot resolve.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": 0.010,
+        "base": 0.151,
+        "bull": 0.277
+      }
+    },
+    "KLAC": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Best-moat semicap inspection-tools maker with real accelerating growth, but priced for decade-long growth this cyclical industry has never sustained.",
+      "kill_criteria": [
+        "Quarterly revenue YoY growth below 5% for two consecutive quarters (currently accelerating at 7-15%)",
+        "GAAP diluted EPS guidance cut at any subsequent release (currently 2-for-2 met/beaten in this pass's sample)",
+        "China revenue share or absolute dollars fall further in a way the company attributes explicitly to new export restrictions",
+        "Net debt/EBITDA (currently trivial) rises above 1.0x without a value-accretive reason disclosed",
+        "Trailing P/FCF (corrected basis) stays above 50x for more than two quarters after revenue growth decelerates below 10% YoY"
+      ],
+      "key_adverse_facts": [
+        "Reverse DCF implies the market is pricing ~22.5%/yr FCF growth for 10 years, versus an evidence-based base case of roughly 12-14%/yr -- a bar this cyclical industry has not cleared over any historical 10-year window, including the current AI-driven upswing",
+        "China export-control risk is reduced in relative weight (China revenue share fell from 42.8% FY2024 to 29.8% FY2026) but not resolved -- the FY2026 10-K attributes flat absolute China revenue to export controls offsetting legacy-node capex, meaning further tightening could still cut dollars, not just share",
+        "Trailing P/FCF is ~65x on the corrected (primary-sourced) FCF figure -- the stock is priced overwhelmingly on future growth, not current cash generation",
+        "KLA does not tag a discrete GAAP OperatingIncomeLoss line in recent XBRL; operating-margin figures in this dossier are taken from earnings-release text, not derived from machine-readable filings -- a minor sourcing friction"
+      ],
+      "data_conflicts": [
+        "d4_live_snapshot's forward-estimate-trend fields for KLAC (eps_q0, eps_q1, eps_fy0, eps_fy1, rev_q0, rev_fy0, rev_fy1, and derived multiples pe_fy0/pe_fy1/pe_ntm_qsum) are internally inconsistent with the row's own headline fields and with primary SEC data (e.g. rev_fy0 = $5.04bn vs actual ~$13.6-14bn annual revenue; eps_fy0/eps_fy1 of $17.49/$23.19 vs SEC-confirmed post-split trailing EPS of ~$3.66-3.70) -- likely a stale pre-split pull or symbol-mapping fault specific to KLAC, not corrected in d4 itself given this agent's write-scope limits; flagged for DA follow-up",
+        "d4_live_snapshot / Yahoo freeCashflow TTM ($2,625m) understates the SEC-primary-sourced TTM FCF ($3,767.1m, from FY2026 10-K operating cash flow $4,143.1m minus capex $375.9m) by roughly 30% ($1.14bn) -- the largest data conflict found across this batch, since it feeds directly into the quant model's FCF-yield (Value family) score"
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "24-48 months",
+      "confidence_in_thesis": "high -- the business-quality and growth evidence is unusually strong and internally consistent; the valuation conclusion (priced above a defensible base case) is the source of the WATCH verdict, not doubt about the business",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation exists for KLAC (absent from v1_valuation_table.csv / v1_valuation.json); this dossier is the first valuation view on file, so there is nothing to reconcile against.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.195,
+        "base": 0.004,
+        "bull": 0.153
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "total": 84,
+  "criteria": {
+    "1": 9,
+    "2": 9,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 9,
+    "7": 8,
+    "8": 7,
+    "9": 8,
+    "10": 8
+  },
+  "must_fix": [
+    "Add an explicit all-stock (0/100/0) row to the per-$10,000 table (FINAL_REPORT.md section 9 and dashboard d4v.json 'impl.dollars.rows') and to the estate-tax/withholding table (section 9's second table). This was must-fix #4 in Loop 3 and remains undone in Loop 4: both tables still only enumerate Index only/Growth/Moderate/Cautious/Defensive rows, none of which is the all-stock portfolio actually recommended first this loop. Verify: a reader following only the all-stock card and the Implementation tab can read a stock-layer dollar amount, an estate-tax figure and a withholding-drag figure for his own size without doing the 100% arithmetic himself or cross-referencing the blended-mix tables.",
+    "Repeat the 30% dividend-withholding fact inside the all-stock answer card itself (dashboard d4v.json answer[0] and FINAL_REPORT section 1's bullet list). Section 1 and answer[0] both now state the ~$60k estate-tax fact directly in the all-stock context, which is real progress, but withholding is still only in section 8/the Implementation tab, two sections away from the all-stock recommendation a reader is most likely to act on.",
+    "Publish v4 through tools/publish_research_release.py as a numbered release with v005_2026-09-26_codex as an explicit parent, per RESEARCH_VERSIONING.md and the shared-workspace CLAUDE.md. This is the third consecutive loop (2, 3, 4) this item is flagged outstanding; versions/catalog.json still lists only v005_2026-09-26_codex as completed and describes v4 as 'Active workstream observed; completion not asserted.'",
+    "Directly connect the owner's '10 points a year, for sure' target to the sleeve's own tracking error (11.6%/yr) with the one-standard-deviation arithmetic (a +10pt year is roughly 1 SD from a zero-alpha mean). Section 1 now names '10 points' and refutes it with fund base-rates (86-93% lag over 10-20yr) -- real progress from Loop 3 -- but still doesn't use the report's own TE number to size how large a +10pt outcome would be."
+  ]
+}

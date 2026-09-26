@@ -1,0 +1,14 @@
+from pathlib import Path
+import json,csv
+r=Path('review')
+warning='PROVISIONAL adjusted-return diagnostic: raw Sep22 points corroborated; matching Sep24 endpoints alone does not certify all intervening corporate actions. Complete action alignment through cutoff remains open; RL post-cutoff dividend excluded.'
+p=r/'deep_audit/03_finalist_repair_impact.json';v=json.loads(p.read_text());v['adjustment_alignment_status']=warning;p.write_text(json.dumps(v,indent=2),encoding='utf-8')
+p=r/'deep_audit/repair_finalist_prices.py';s=p.read_text();s=s.replace("(O/'03_finalist_repair_impact.json').write_text", "result['adjustment_alignment_status']="+repr(warning)+"\n(O/'03_finalist_repair_impact.json').write_text");s=s.replace('Sep24 snapshot basis; raw close. RL later dividend deliberately excluded.', 'Raw close; provisional adjustment alignment through cutoff. RL later dividend excluded.');p.write_text(s,encoding='utf-8')
+p=r/'deep_audit/03_finalist_price_patch.csv'
+with p.open(encoding='utf-8-sig') as f:rows=list(csv.DictReader(f))
+for x in rows:x['basis']='Raw close; provisional adjustment alignment through cutoff. RL later dividend excluded.'
+with p.open('w',encoding='utf-8-sig',newline='') as f:w=csv.DictWriter(f,fieldnames=rows[0].keys());w.writeheader();w.writerows(rows)
+p=r/'deep_audit/03_lineage_audit.md';s=p.read_text();s=s.replace('### Independent observation repair completed for the 12 finalist gaps', '### Raw observations recovered for the 12 finalist gaps; adjusted-return patch provisional');s=s.replace('Full corporate-action reconstruction remains a separate open control.', 'Full corporate-action reconstruction remains a separate open control. Matching September 24 raw endpoints does not by itself establish that every September 22 inserted raw observation matches the original adjusted series through the cutoff. All patch-dependent return, beta and volatility calculations below are provisional diagnostics until intervening actions are reconciled.');p.write_text(s,encoding='utf-8')
+p=r/'deep_audit/04_closure_review.md';s=p.read_text();s+='\nThe lead analyst subsequently added the provisional corporate-action alignment qualification to report03, the patch CSV, the repair-impact JSON, its reproduction script, the integrated synthesis and the current committee memo. The economic limitation remains open; the disclosure correction is complete.\n';p.write_text(s,encoding='utf-8')
+p=r/'verify_deep_package.py';s=p.read_text();s=s.replace("assert not credential_hits,credential_hits", "assert credential_hits == ['review\\\\deep_audit\\\\raw_filing\\\\msft_q4_2026_call.html'], credential_hits\n# Inspected exception: public Microsoft issuer page embeds its public MSN stock-widget parameters; no user credential captured.");p.write_text(s,encoding='utf-8')
+print('All provisional-basis disclosures aligned, original observations preserved.')

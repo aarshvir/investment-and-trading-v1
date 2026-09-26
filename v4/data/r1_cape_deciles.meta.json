@@ -1,0 +1,27 @@
+{
+  "name": "r1_cape_deciles",
+  "agent": "r1",
+  "retrieved_utc": "2026-09-25T20:44:25Z",
+  "sources": {
+    "shiller": "https://shillerdata.com/ -> ie_data.xls (https://img1.wsimg.com/blobby/go/e5e77e0b-59d1-44d9-ab25-4763ac982e53/downloads/70fec4f5-727f-4e53-b5f1-179af109c5fa/ie_data.xls), file saved 2026-09-02"
+  },
+  "rows": 10,
+  "columns": [
+    "horizon",
+    "decile",
+    "cape_low",
+    "cape_high",
+    "n_months",
+    "avg_real_10y",
+    "worst_real_10y",
+    "best_real_10y",
+    "sd_real_10y",
+    "share_positive",
+    "first_start",
+    "last_start"
+  ],
+  "description": "Subsequent 10-year annualized REAL total return of the S&P 500 by decile of starting Shiller CAPE (monthly starts 1926-01..2016-08).",
+  "caveats": [
+    "Overlapping rolling windows are highly autocorrelated: effective independent sample sizes are far smaller than n_obs (e.g., ~9 independent 10y windows since 1926)."
+  ]
+}

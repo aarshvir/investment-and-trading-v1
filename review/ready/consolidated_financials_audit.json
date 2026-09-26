@@ -1,0 +1,8548 @@
+{
+  "timestamp_utc": "2026-09-25T21:08:46.154544+00:00",
+  "files": {
+    "decision_model.json": "999c59b2c83fc7484efd154a930eaf9c04457cd8b217fbf1c52a06cf4d0a8d77",
+    "Investment_Decision_Model.xlsx": "8ef0432955374b746be5b83d1345f3f58b4cf821796dee6039eeec3acaa21bc5"
+  },
+  "numerical_checks": 1422,
+  "failed_checks": [],
+  "workbook_formula_count": 758,
+  "missing_formula_cache": 0,
+  "excel_errors": [],
+  "cost_exceptions": [],
+  "financial_direct_weight": 0.03,
+  "checks": [
+    {
+      "check": "AMP/bear/terminal",
+      "actual": 358.38274999999993,
+      "expected": 358.38274999999993,
+      "pass": true
+    },
+    {
+      "check": "AMP/bear/irr_reference",
+      "actual": -0.08048369955898987,
+      "expected": -0.08048369955898987,
+      "pass": true
+    },
+    {
+      "check": "AMP/bear/irr_reference_withholding30",
+      "actual": -0.08514199963450614,
+      "expected": -0.08514199963450614,
+      "pass": true
+    },
+    {
+      "check": "AMP/bear/return_reference",
+      "actual": -0.21924610945068546,
+      "expected": -0.21924610945068546,
+      "pass": true
+    },
+    {
+      "check": "AMP/bear/irr_limit",
+      "actual": -0.08982314626763671,
+      "expected": -0.08982314626763671,
+      "pass": true
+    },
+    {
+      "check": "AMP/bear/irr_limit_withholding30",
+      "actual": -0.09439119634588072,
+      "expected": -0.09439119634588072,
+      "pass": true
+    },
+    {
+      "check": "AMP/bear/return_limit",
+      "actual": -0.24243450000000022,
+      "expected": -0.24243450000000022,
+      "pass": true
+    },
+    {
+      "check": "AMP/bear/pv",
+      "actual": 271.42221523095833,
+      "expected": 271.42221523095833,
+      "pass": true
+    },
+    {
+      "check": "AMP/bear/pv_withholding",
+      "actual": 266.5224794437863,
+      "expected": 266.5224794437863,
+      "pass": true
+    },
+    {
+      "check": "AMP/base/terminal",
+      "actual": 700.724596,
+      "expected": 700.724596,
+      "pass": true
+    },
+    {
+      "check": "AMP/base/irr_reference",
+      "actual": 0.14342880789676282,
+      "expected": 0.14342880789676282,
+      "pass": true
+    },
+    {
+      "check": "AMP/base/irr_reference_withholding30",
+      "actual": 0.13951208785526592,
+      "expected": 0.13951208785526592,
+      "pass": true
+    },
+    {
+      "check": "AMP/base/return_reference",
+      "actual": 0.48853261053282493,
+      "expected": 0.48853261053282493,
+      "pass": true
+    },
+    {
+      "check": "AMP/base/irr_limit",
+      "actual": 0.13185878163161247,
+      "expected": 0.13185878163161247,
+      "pass": true
+    },
+    {
+      "check": "AMP/base/irr_limit_withholding30",
+      "actual": 0.1280223003599924,
+      "expected": 0.1280223003599924,
+      "pass": true
+    },
+    {
+      "check": "AMP/base/return_limit",
+      "actual": 0.44432319200000014,
+      "expected": 0.44432319200000014,
+      "pass": true
+    },
+    {
+      "check": "AMP/base/pv",
+      "actual": 515.8615359648322,
+      "expected": 515.8615359648322,
+      "pass": true
+    },
+    {
+      "check": "AMP/base/pv_withholding",
+      "actual": 510.7316531523322,
+      "expected": 510.7316531523322,
+      "pass": true
+    },
+    {
+      "check": "AMP/bull/terminal",
+      "actual": 927.2524800000003,
+      "expected": 927.2524800000003,
+      "pass": true
+    },
+    {
+      "check": "AMP/bull/irr_reference",
+      "actual": 0.2532939523716641,
+      "expected": 0.2532939523716641,
+      "pass": true
+    },
+    {
+      "check": "AMP/bull/irr_reference_withholding30",
+      "actual": 0.2496053199032383,
+      "expected": 0.2496053199032383,
+      "pass": true
+    },
+    {
+      "check": "AMP/bull/return_reference",
+      "actual": 0.9567721323302079,
+      "expected": 0.9567721323302079,
+      "pass": true
+    },
+    {
+      "check": "AMP/bull/irr_limit",
+      "actual": 0.24062812800399092,
+      "expected": 0.24062812800399092,
+      "pass": true
+    },
+    {
+      "check": "AMP/bull/irr_limit_withholding30",
+      "actual": 0.2370165871158466,
+      "expected": 0.2370165871158466,
+      "pass": true
+    },
+    {
+      "check": "AMP/bull/return_limit",
+      "actual": 0.8986560000000006,
+      "expected": 0.8986560000000006,
+      "pass": true
+    },
+    {
+      "check": "AMP/bull/pv",
+      "actual": 677.5715196793003,
+      "expected": 677.5715196793003,
+      "pass": true
+    },
+    {
+      "check": "AMP/bull/pv_withholding",
+      "actual": 672.3000637755102,
+      "expected": 672.3000637755102,
+      "pass": true
+    },
+    {
+      "check": "AMP/limit_within_tax_ceiling",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bear/terminal",
+      "actual": 67.2,
+      "expected": 67.2,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bear/irr_reference",
+      "actual": -0.0808084456745502,
+      "expected": -0.0808084456745502,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bear/irr_reference_withholding30",
+      "actual": -0.09515496823328101,
+      "expected": -0.09515496823328101,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bear/return_reference",
+      "actual": -0.21291465695442457,
+      "expected": -0.21291465695442457,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bear/irr_limit",
+      "actual": -0.08147385701631432,
+      "expected": -0.08147385701631432,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bear/irr_limit_withholding30",
+      "actual": -0.09580040760215397,
+      "expected": -0.09580040760215397,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bear/return_limit",
+      "actual": -0.21453831041257354,
+      "expected": -0.21453831041257354,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bear/pv",
+      "actual": 58.117529154518934,
+      "expected": 58.117529154518934,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bear/pv_withholding",
+      "actual": 55.03176020408162,
+      "expected": 55.03176020408162,
+      "pass": true
+    },
+    {
+      "check": "PAYX/base/terminal",
+      "actual": 132.0,
+      "expected": 132.0,
+      "pass": true
+    },
+    {
+      "check": "PAYX/base/irr_reference",
+      "actual": 0.1363746378179066,
+      "expected": 0.1363746378179066,
+      "pass": true
+    },
+    {
+      "check": "PAYX/base/irr_reference_withholding30",
+      "actual": 0.12281506157849698,
+      "expected": 0.12281506157849698,
+      "pass": true
+    },
+    {
+      "check": "PAYX/base/return_reference",
+      "actual": 0.4470912491386947,
+      "expected": 0.4470912491386947,
+      "pass": true
+    },
+    {
+      "check": "PAYX/base/irr_limit",
+      "actual": 0.1355599897265115,
+      "expected": 0.1355599897265115,
+      "pass": true
+    },
+    {
+      "check": "PAYX/base/irr_limit_withholding30",
+      "actual": 0.12201974485265799,
+      "expected": 0.12201974485265799,
+      "pass": true
+    },
+    {
+      "check": "PAYX/base/return_limit",
+      "actual": 0.44410609037328097,
+      "expected": 0.44410609037328097,
+      "pass": true
+    },
+    {
+      "check": "PAYX/base/pv",
+      "actual": 105.92780840014575,
+      "expected": 105.92780840014575,
+      "pass": true
+    },
+    {
+      "check": "PAYX/base/pv_withholding",
+      "actual": 102.3359636935131,
+      "expected": 102.3359636935131,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bull/terminal",
+      "actual": 172.5,
+      "expected": 172.5,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bull/irr_reference",
+      "actual": 0.2376371929434239,
+      "expected": 0.2376371929434239,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bull/irr_reference_withholding30",
+      "actual": 0.22423178670457455,
+      "expected": 0.22423178670457455,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bull/return_reference",
+      "actual": 0.8574662860517765,
+      "expected": 0.8574662860517765,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bull/irr_limit",
+      "actual": 0.23675238643521357,
+      "expected": 0.23675238643521357,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bull/irr_limit_withholding30",
+      "actual": 0.22336634459045934,
+      "expected": 0.22336634459045934,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bull/return_limit",
+      "actual": 0.8536345776031433,
+      "expected": 0.8536345776031433,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bull/pv",
+      "actual": 135.66144314868802,
+      "expected": 135.66144314868802,
+      "pass": true
+    },
+    {
+      "check": "PAYX/bull/pv_withholding",
+      "actual": 131.79763802842564,
+      "expected": 131.79763802842564,
+      "pass": true
+    },
+    {
+      "check": "PAYX/limit_within_tax_ceiling",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bear/terminal",
+      "actual": 364.51358790612494,
+      "expected": 364.51358790612494,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bear/irr_reference",
+      "actual": -0.10085652393345307,
+      "expected": -0.10085652393345307,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bear/irr_reference_withholding30",
+      "actual": -0.10342360422243863,
+      "expected": -0.10342360422243863,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bear/return_reference",
+      "actual": -0.2708582736050287,
+      "expected": -0.2708582736050287,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bear/irr_limit",
+      "actual": -0.09125147944516104,
+      "expected": -0.09125147944516104,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bear/irr_limit_withholding30",
+      "actual": -0.09387144208803516,
+      "expected": -0.09387144208803516,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bear/return_limit",
+      "actual": -0.24745282418775016,
+      "expected": -0.24745282418775016,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bear/pv",
+      "actual": 268.8687505026057,
+      "expected": 268.8687505026057,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bear/pv_withholding",
+      "actual": 266.0441969311771,
+      "expected": 266.0441969311771,
+      "pass": true
+    },
+    {
+      "check": "MSFT/base/terminal",
+      "actual": 715.5106462020663,
+      "expected": 715.5106462020663,
+      "pass": true
+    },
+    {
+      "check": "MSFT/base/irr_reference",
+      "actual": 0.12225514430101081,
+      "expected": 0.12225514430101081,
+      "pass": true
+    },
+    {
+      "check": "MSFT/base/irr_reference_withholding30",
+      "actual": 0.12010382306256628,
+      "expected": 0.12010382306256628,
+      "pass": true
+    },
+    {
+      "check": "MSFT/base/return_reference",
+      "actual": 0.41048473249116624,
+      "expected": 0.41048473249116624,
+      "pass": true
+    },
+    {
+      "check": "MSFT/base/irr_limit",
+      "actual": 0.13421741030562184,
+      "expected": 0.13421741030562184,
+      "pass": true
+    },
+    {
+      "check": "MSFT/base/irr_limit_withholding30",
+      "actual": 0.13201911985441173,
+      "expected": 0.13201911985441173,
+      "pass": true
+    },
+    {
+      "check": "MSFT/base/return_limit",
+      "actual": 0.45576129240413255,
+      "expected": 0.45576129240413255,
+      "pass": true
+    },
+    {
+      "check": "MSFT/base/pv",
+      "actual": 519.1527923153827,
+      "expected": 519.1527923153827,
+      "pass": true
+    },
+    {
+      "check": "MSFT/base/pv_withholding",
+      "actual": 516.19285814082,
+      "expected": 516.19285814082,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bull/terminal",
+      "actual": 1001.0384739216777,
+      "expected": 1001.0384739216777,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bull/irr_reference",
+      "actual": 0.25388859575679035,
+      "expected": 0.25388859575679035,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bull/irr_reference_withholding30",
+      "actual": 0.2518672172498758,
+      "expected": 0.2518672172498758,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bull/return_reference",
+      "actual": 0.9649423000129402,
+      "expected": 0.9649423000129402,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bull/irr_limit",
+      "actual": 0.2672428398821395,
+      "expected": 0.2672428398821395,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bull/irr_limit_withholding30",
+      "actual": 0.2651763841696667,
+      "expected": 0.2651763841696667,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bull/return_limit",
+      "actual": 1.0280169478433554,
+      "expected": 1.0280169478433554,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bull/pv",
+      "actual": 722.8291570256108,
+      "expected": 722.8291570256108,
+      "pass": true
+    },
+    {
+      "check": "MSFT/bull/pv_withholding",
+      "actual": 719.7362338295467,
+      "expected": 719.7362338295467,
+      "pass": true
+    },
+    {
+      "check": "MSFT/limit_within_tax_ceiling",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bear/terminal",
+      "actual": 80.20948679485714,
+      "expected": 80.20948679485714,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bear/irr_reference",
+      "actual": -0.2839900075501166,
+      "expected": -0.2839900075501166,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bear/irr_reference_withholding30",
+      "actual": -0.2859406252606046,
+      "expected": -0.2859406252606046,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bear/return_reference",
+      "actual": -0.629488437105454,
+      "expected": -0.629488437105454,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bear/irr_limit",
+      "actual": -0.2734337384349036,
+      "expected": -0.2734337384349036,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bear/irr_limit_withholding30",
+      "actual": -0.27543568181176237,
+      "expected": -0.27543568181176237,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bear/return_limit",
+      "actual": -0.612979131186711,
+      "expected": -0.612979131186711,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bear/pv",
+      "actual": 55.02226467977786,
+      "expected": 55.02226467977786,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bear/pv_withholding",
+      "actual": 54.33729714464184,
+      "expected": 54.33729714464184,
+      "pass": true
+    },
+    {
+      "check": "NVDA/base/terminal",
+      "actual": 340.6226988360996,
+      "expected": 340.6226988360996,
+      "pass": true
+    },
+    {
+      "check": "NVDA/base/irr_reference",
+      "actual": 0.15285089185884282,
+      "expected": 0.15285089185884282,
+      "pass": true
+    },
+    {
+      "check": "NVDA/base/irr_reference_withholding30",
+      "actual": 0.15168013543660586,
+      "expected": 0.15168013543660586,
+      "pass": true
+    },
+    {
+      "check": "NVDA/base/return_reference",
+      "actual": 0.5300681219881538,
+      "expected": 0.5300681219881538,
+      "pass": true
+    },
+    {
+      "check": "NVDA/base/irr_limit",
+      "actual": 0.16978941623737753,
+      "expected": 0.16978941623737753,
+      "pass": true
+    },
+    {
+      "check": "NVDA/base/irr_limit_withholding30",
+      "actual": 0.1685823560852645,
+      "expected": 0.1685823560852645,
+      "pass": true
+    },
+    {
+      "check": "NVDA/base/return_limit",
+      "actual": 0.5982451108655795,
+      "expected": 0.5982451108655795,
+      "pass": true
+    },
+    {
+      "check": "NVDA/base/pv",
+      "actual": 226.24817873664807,
+      "expected": 226.24817873664807,
+      "pass": true
+    },
+    {
+      "check": "NVDA/base/pv_withholding",
+      "actual": 225.56321120151205,
+      "expected": 225.56321120151205,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bull/terminal",
+      "actual": 614.8155879831933,
+      "expected": 614.8155879831933,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bull/irr_reference",
+      "actual": 0.4024777492247661,
+      "expected": 0.4024777492247661,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bull/irr_reference_withholding30",
+      "actual": 0.40140855726899305,
+      "expected": 0.40140855726899305,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bull/return_reference",
+      "actual": 1.7523180513990257,
+      "expected": 1.7523180513990257,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bull/irr_limit",
+      "actual": 0.4230682801139999,
+      "expected": 0.4230682801139999,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bull/irr_limit_withholding30",
+      "actual": 0.42196484344689533,
+      "expected": 0.42196484344689533,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bull/return_limit",
+      "actual": 1.874956223177643,
+      "expected": 1.874956223177643,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bull/pv",
+      "actual": 406.741571781503,
+      "expected": 406.741571781503,
+      "pass": true
+    },
+    {
+      "check": "NVDA/bull/pv_withholding",
+      "actual": 405.99446896240215,
+      "expected": 405.99446896240215,
+      "pass": true
+    },
+    {
+      "check": "NVDA/limit_within_tax_ceiling",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bear/terminal",
+      "actual": 103.5,
+      "expected": 103.5,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bear/irr_reference",
+      "actual": -0.10437980060561608,
+      "expected": -0.10437980060561608,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bear/irr_reference_withholding30",
+      "actual": -0.10940857512947338,
+      "expected": -0.10940857512947338,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bear/return_reference",
+      "actual": -0.2771511017838405,
+      "expected": -0.2771511017838405,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bear/irr_limit",
+      "actual": -0.08896828777069793,
+      "expected": -0.08896828777069793,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bear/irr_limit_withholding30",
+      "actual": -0.09416321055571314,
+      "expected": -0.09416321055571314,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bear/return_limit",
+      "actual": -0.2398620689655172,
+      "expected": -0.2398620689655172,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bear/pv",
+      "actual": 79.04935768950435,
+      "expected": 79.04935768950435,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bear/pv_withholding",
+      "actual": 77.43532707725944,
+      "expected": 77.43532707725944,
+      "pass": true
+    },
+    {
+      "check": "ALLE/base/terminal",
+      "actual": 202.8,
+      "expected": 202.8,
+      "pass": true
+    },
+    {
+      "check": "ALLE/base/irr_reference",
+      "actual": 0.11492838854130605,
+      "expected": 0.11492838854130605,
+      "pass": true
+    },
+    {
+      "check": "ALLE/base/irr_reference_withholding30",
+      "actual": 0.11036702375792917,
+      "expected": 0.11036702375792917,
+      "pass": true
+    },
+    {
+      "check": "ALLE/base/return_reference",
+      "actual": 0.38018100734522586,
+      "expected": 0.38018100734522586,
+      "pass": true
+    },
+    {
+      "check": "ALLE/base/irr_limit",
+      "actual": 0.13405122987217577,
+      "expected": 0.13405122987217577,
+      "pass": true
+    },
+    {
+      "check": "ALLE/base/irr_limit_withholding30",
+      "actual": 0.12933067339889892,
+      "expected": 0.12933067339889892,
+      "pass": true
+    },
+    {
+      "check": "ALLE/base/return_limit",
+      "actual": 0.4513793103448278,
+      "expected": 0.4513793103448278,
+      "pass": true
+    },
+    {
+      "check": "ALLE/base/pv",
+      "actual": 150.4465424562682,
+      "expected": 150.4465424562682,
+      "pass": true
+    },
+    {
+      "check": "ALLE/base/pv_withholding",
+      "actual": 148.61728999635565,
+      "expected": 148.61728999635565,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bull/terminal",
+      "actual": 272.8,
+      "expected": 272.8,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bull/irr_reference",
+      "actual": 0.22909354362058731,
+      "expected": 0.22909354362058731,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bull/irr_reference_withholding30",
+      "actual": 0.2245563666750724,
+      "expected": 0.2245563666750724,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bull/return_reference",
+      "actual": 0.8441762854144805,
+      "expected": 0.8441762854144805,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bull/irr_limit",
+      "actual": 0.2501537525181806,
+      "expected": 0.2501537525181806,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bull/irr_limit_withholding30",
+      "actual": 0.24545568012356644,
+      "expected": 0.24545568012356644,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bull/return_limit",
+      "actual": 0.9393103448275861,
+      "expected": 0.9393103448275861,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bull/pv",
+      "actual": 200.84445608600578,
+      "expected": 200.84445608600578,
+      "pass": true
+    },
+    {
+      "check": "ALLE/bull/pv_withholding",
+      "actual": 198.84321474125358,
+      "expected": 198.84321474125358,
+      "pass": true
+    },
+    {
+      "check": "ALLE/limit_within_tax_ceiling",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "HIG/bear/terminal",
+      "actual": 95.55148799999999,
+      "expected": 95.55148799999999,
+      "pass": true
+    },
+    {
+      "check": "HIG/bear/irr_reference",
+      "actual": -0.06638213910102958,
+      "expected": -0.06638213910102958,
+      "pass": true
+    },
+    {
+      "check": "HIG/bear/irr_reference_withholding30",
+      "actual": -0.07266143682286058,
+      "expected": -0.07266143682286058,
+      "pass": true
+    },
+    {
+      "check": "HIG/bear/return_reference",
+      "actual": -0.18250069217917098,
+      "expected": -0.18250069217917098,
+      "pass": true
+    },
+    {
+      "check": "HIG/bear/irr_limit",
+      "actual": -0.051535864126652176,
+      "expected": -0.051535864126652176,
+      "pass": true
+    },
+    {
+      "check": "HIG/bear/irr_limit_withholding30",
+      "actual": -0.058008922485831727,
+      "expected": -0.058008922485831727,
+      "pass": true
+    },
+    {
+      "check": "HIG/bear/return_limit",
+      "actual": -0.14373760000000002,
+      "expected": -0.14373760000000002,
+      "pass": true
+    },
+    {
+      "check": "HIG/bear/pv",
+      "actual": 74.74501249688107,
+      "expected": 74.74501249688107,
+      "pass": true
+    },
+    {
+      "check": "HIG/bear/pv_withholding",
+      "actual": 73.00072653873681,
+      "expected": 73.00072653873681,
+      "pass": true
+    },
+    {
+      "check": "HIG/base/terminal",
+      "actual": 164.360208,
+      "expected": 164.360208,
+      "pass": true
+    },
+    {
+      "check": "HIG/base/irr_reference",
+      "actual": 0.11188603270936681,
+      "expected": 0.11188603270936681,
+      "pass": true
+    },
+    {
+      "check": "HIG/base/irr_reference_withholding30",
+      "actual": 0.10637846585760469,
+      "expected": 0.10637846585760469,
+      "pass": true
+    },
+    {
+      "check": "HIG/base/return_reference",
+      "actual": 0.36785908186808824,
+      "expected": 0.36785908186808824,
+      "pass": true
+    },
+    {
+      "check": "HIG/base/irr_limit",
+      "actual": 0.1294922383506799,
+      "expected": 0.1294922383506799,
+      "pass": true
+    },
+    {
+      "check": "HIG/base/irr_limit_withholding30",
+      "actual": 0.12380734692776507,
+      "expected": 0.12380734692776507,
+      "pass": true
+    },
+    {
+      "check": "HIG/base/return_limit",
+      "actual": 0.43271839999999995,
+      "expected": 0.43271839999999995,
+      "pass": true
+    },
+    {
+      "check": "HIG/base/pv",
+      "actual": 124.65752576272816,
+      "expected": 124.65752576272816,
+      "pass": true
+    },
+    {
+      "check": "HIG/base/pv_withholding",
+      "actual": 122.83104362866466,
+      "expected": 122.83104362866466,
+      "pass": true
+    },
+    {
+      "check": "HIG/bull/terminal",
+      "actual": 207.63600000000005,
+      "expected": 207.63600000000005,
+      "pass": true
+    },
+    {
+      "check": "HIG/bull/irr_reference",
+      "actual": 0.19964345877041578,
+      "expected": 0.19964345877041578,
+      "pass": true
+    },
+    {
+      "check": "HIG/bull/irr_reference_withholding30",
+      "actual": 0.19438787709094718,
+      "expected": 0.19438787709094718,
+      "pass": true
+    },
+    {
+      "check": "HIG/bull/return_reference",
+      "actual": 0.713957832763148,
+      "expected": 0.713957832763148,
+      "pass": true
+    },
+    {
+      "check": "HIG/bull/irr_limit",
+      "actual": 0.218610397255541,
+      "expected": 0.218610397255541,
+      "pass": true
+    },
+    {
+      "check": "HIG/bull/irr_limit_withholding30",
+      "actual": 0.21318295611603133,
+      "expected": 0.21318295611603133,
+      "pass": true
+    },
+    {
+      "check": "HIG/bull/return_limit",
+      "actual": 0.7952280000000005,
+      "expected": 0.7952280000000005,
+      "pass": true
+    },
+    {
+      "check": "HIG/bull/pv",
+      "actual": 156.04517651590908,
+      "expected": 156.04517651590908,
+      "pass": true
+    },
+    {
+      "check": "HIG/bull/pv_withholding",
+      "actual": 154.1681300992185,
+      "expected": 154.1681300992185,
+      "pass": true
+    },
+    {
+      "check": "HIG/limit_within_tax_ceiling",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bear/terminal",
+      "actual": 220,
+      "expected": 220,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bear/irr_reference",
+      "actual": -0.18089709861827913,
+      "expected": -0.18089709861827913,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bear/irr_reference_withholding30",
+      "actual": -0.18089709861827913,
+      "expected": -0.18089709861827913,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bear/return_reference",
+      "actual": -0.45043964828137484,
+      "expected": -0.45043964828137484,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bear/irr_limit",
+      "actual": -0.1433865703279374,
+      "expected": -0.1433865703279374,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bear/irr_limit_withholding30",
+      "actual": -0.1433865703279374,
+      "expected": -0.1433865703279374,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bear/return_limit",
+      "actual": -0.37142857142857144,
+      "expected": -0.37142857142857144,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bear/pv",
+      "actual": 154.51303155006858,
+      "expected": 154.51303155006858,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bear/pv_withholding",
+      "actual": 154.51303155006858,
+      "expected": 154.51303155006858,
+      "pass": true
+    },
+    {
+      "check": "CPAY/base/terminal",
+      "actual": 506.27677241824006,
+      "expected": 506.27677241824006,
+      "pass": true
+    },
+    {
+      "check": "CPAY/base/irr_reference",
+      "actual": 0.08141794404822955,
+      "expected": 0.08141794404822955,
+      "pass": true
+    },
+    {
+      "check": "CPAY/base/irr_reference_withholding30",
+      "actual": 0.08141794404822955,
+      "expected": 0.08141794404822955,
+      "pass": true
+    },
+    {
+      "check": "CPAY/base/return_reference",
+      "actual": 0.2646801868960833,
+      "expected": 0.2646801868960833,
+      "pass": true
+    },
+    {
+      "check": "CPAY/base/irr_limit",
+      "actual": 0.13094109714105484,
+      "expected": 0.13094109714105484,
+      "pass": true
+    },
+    {
+      "check": "CPAY/base/irr_limit_withholding30",
+      "actual": 0.13094109714105484,
+      "expected": 0.13094109714105484,
+      "pass": true
+    },
+    {
+      "check": "CPAY/base/return_limit",
+      "actual": 0.44650506405211443,
+      "expected": 0.44650506405211443,
+      "pass": true
+    },
+    {
+      "check": "CPAY/base/pv",
+      "actual": 355.5743586805746,
+      "expected": 355.5743586805746,
+      "pass": true
+    },
+    {
+      "check": "CPAY/base/pv_withholding",
+      "actual": 355.5743586805746,
+      "expected": 355.5743586805746,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bull/terminal",
+      "actual": 665,
+      "expected": 665,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bull/irr_reference",
+      "actual": 0.18432651485578633,
+      "expected": 0.18432651485578633,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bull/irr_reference_withholding30",
+      "actual": 0.18432651485578633,
+      "expected": 0.18432651485578633,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bull/return_reference",
+      "actual": 0.6611710631494805,
+      "expected": 0.6611710631494805,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bull/irr_limit",
+      "actual": 0.23856232963017077,
+      "expected": 0.23856232963017077,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bull/irr_limit_withholding30",
+      "actual": 0.23856232963017077,
+      "expected": 0.23856232963017077,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bull/return_limit",
+      "actual": 0.8999999999999999,
+      "expected": 0.8999999999999999,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bull/pv",
+      "actual": 467.05075445816186,
+      "expected": 467.05075445816186,
+      "pass": true
+    },
+    {
+      "check": "CPAY/bull/pv_withholding",
+      "actual": 467.05075445816186,
+      "expected": 467.05075445816186,
+      "pass": true
+    },
+    {
+      "check": "CPAY/limit_within_tax_ceiling",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bear/terminal",
+      "actual": 168.91496999999998,
+      "expected": 168.91496999999998,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bear/irr_reference",
+      "actual": -0.12032051186526044,
+      "expected": -0.12032051186526044,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bear/irr_reference_withholding30",
+      "actual": -0.12500718402562333,
+      "expected": -0.12500718402562333,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bear/return_reference",
+      "actual": -0.31461479416482097,
+      "expected": -0.31461479416482097,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bear/irr_limit",
+      "actual": -0.08745634187667878,
+      "expected": -0.08745634187667878,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bear/irr_limit_withholding30",
+      "actual": -0.09248147437169701,
+      "expected": -0.09248147437169701,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bear/return_limit",
+      "actual": -0.23627672340425543,
+      "expected": -0.23627672340425543,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bear/pv",
+      "actual": 128.6847852701348,
+      "expected": 128.6847852701348,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bear/pv_withholding",
+      "actual": 126.14845145089281,
+      "expected": 126.14845145089281,
+      "pass": true
+    },
+    {
+      "check": "AIZ/base/terminal",
+      "actual": 334.43673900000005,
+      "expected": 334.43673900000005,
+      "pass": true
+    },
+    {
+      "check": "AIZ/base/irr_reference",
+      "actual": 0.09810086716883026,
+      "expected": 0.09810086716883026,
+      "pass": true
+    },
+    {
+      "check": "AIZ/base/irr_reference_withholding30",
+      "actual": 0.09415900216924855,
+      "expected": 0.09415900216924855,
+      "pass": true
+    },
+    {
+      "check": "AIZ/base/return_reference",
+      "actual": 0.3199534522263807,
+      "expected": 0.3199534522263807,
+      "pass": true
+    },
+    {
+      "check": "AIZ/base/irr_limit",
+      "actual": 0.13895657224190805,
+      "expected": 0.13895657224190805,
+      "pass": true
+    },
+    {
+      "check": "AIZ/base/irr_limit_withholding30",
+      "actual": 0.13471337075763856,
+      "expected": 0.13471337075763856,
+      "pass": true
+    },
+    {
+      "check": "AIZ/base/return_limit",
+      "actual": 0.47082132340425553,
+      "expected": 0.47082132340425553,
+      "pass": true
+    },
+    {
+      "check": "AIZ/base/pv",
+      "actual": 246.97795403038444,
+      "expected": 246.97795403038444,
+      "pass": true
+    },
+    {
+      "check": "AIZ/base/pv_withholding",
+      "actual": 244.2982073102678,
+      "expected": 244.2982073102678,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bull/terminal",
+      "actual": 459.5240160000001,
+      "expected": 459.5240160000001,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bull/irr_reference",
+      "actual": 0.218276440763835,
+      "expected": 0.218276440763835,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bull/irr_reference_withholding30",
+      "actual": 0.21464639706900213,
+      "expected": 0.21464639706900213,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bull/return_reference",
+      "actual": 0.7984852363858552,
+      "expected": 0.7984852363858552,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bull/irr_limit",
+      "actual": 0.2635322176778706,
+      "expected": 0.2635322176778706,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bull/irr_limit_withholding30",
+      "actual": 0.25961670417611604,
+      "expected": 0.25961670417611604,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bull/return_limit",
+      "actual": 1.0040482723404258,
+      "expected": 1.0040482723404258,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bull/pv",
+      "actual": 336.1759634657434,
+      "expected": 336.1759634657434,
+      "pass": true
+    },
+    {
+      "check": "AIZ/bull/pv_withholding",
+      "actual": 333.44720982142854,
+      "expected": 333.44720982142854,
+      "pass": true
+    },
+    {
+      "check": "AIZ/limit_within_tax_ceiling",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "SNA/bear/terminal",
+      "actual": 204.4,
+      "expected": 204.4,
+      "pass": true
+    },
+    {
+      "check": "SNA/bear/irr_reference",
+      "actual": -0.14550753074265171,
+      "expected": -0.14550753074265171,
+      "pass": true
+    },
+    {
+      "check": "SNA/bear/irr_reference_withholding30",
+      "actual": -0.15515376303052614,
+      "expected": -0.15515376303052614,
+      "pass": true
+    },
+    {
+      "check": "SNA/bear/return_reference",
+      "actual": -0.36515188599711723,
+      "expected": -0.36515188599711723,
+      "pass": true
+    },
+    {
+      "check": "SNA/bear/irr_limit",
+      "actual": -0.09365269238853896,
+      "expected": -0.09365269238853896,
+      "pass": true
+    },
+    {
+      "check": "SNA/bear/irr_limit_withholding30",
+      "actual": -0.10441657032506307,
+      "expected": -0.10441657032506307,
+      "pass": true
+    },
+    {
+      "check": "SNA/bear/return_limit",
+      "actual": -0.24696774193548388,
+      "expected": -0.24696774193548388,
+      "pass": true
+    },
+    {
+      "check": "SNA/bear/pv",
+      "actual": 168.737609329446,
+      "expected": 168.737609329446,
+      "pass": true
+    },
+    {
+      "check": "SNA/bear/pv_withholding",
+      "actual": 161.76269132653056,
+      "expected": 161.76269132653056,
+      "pass": true
+    },
+    {
+      "check": "SNA/base/terminal",
+      "actual": 414,
+      "expected": 414,
+      "pass": true
+    },
+    {
+      "check": "SNA/base/irr_reference",
+      "actual": 0.06688492540780755,
+      "expected": 0.06688492540780755,
+      "pass": true
+    },
+    {
+      "check": "SNA/base/irr_reference_withholding30",
+      "actual": 0.05891491926057124,
+      "expected": 0.05891491926057124,
+      "pass": true
+    },
+    {
+      "check": "SNA/base/return_reference",
+      "actual": 0.20888743847053393,
+      "expected": 0.20888743847053393,
+      "pass": true
+    },
+    {
+      "check": "SNA/base/irr_limit",
+      "actual": 0.13105753189045977,
+      "expected": 0.13105753189045977,
+      "pass": true
+    },
+    {
+      "check": "SNA/base/irr_limit_withholding30",
+      "actual": 0.12210520107967315,
+      "expected": 0.12210520107967315,
+      "pass": true
+    },
+    {
+      "check": "SNA/base/return_limit",
+      "actual": 0.4339354838709677,
+      "expected": 0.4339354838709677,
+      "pass": true
+    },
+    {
+      "check": "SNA/base/pv",
+      "actual": 319.0211825801748,
+      "expected": 319.0211825801748,
+      "pass": true
+    },
+    {
+      "check": "SNA/base/pv_withholding",
+      "actual": 311.717934584548,
+      "expected": 311.717934584548,
+      "pass": true
+    },
+    {
+      "check": "SNA/bull/terminal",
+      "actual": 524.0,
+      "expected": 524.0,
+      "pass": true
+    },
+    {
+      "check": "SNA/bull/irr_reference",
+      "actual": 0.15184559190258862,
+      "expected": 0.15184559190258862,
+      "pass": true
+    },
+    {
+      "check": "SNA/bull/irr_reference_withholding30",
+      "actual": 0.1438850242236317,
+      "expected": 0.1438850242236317,
+      "pass": true
+    },
+    {
+      "check": "SNA/bull/return_reference",
+      "actual": 0.5147806695493733,
+      "expected": 0.5147806695493733,
+      "pass": true
+    },
+    {
+      "check": "SNA/bull/irr_limit",
+      "actual": 0.22103048123645863,
+      "expected": 0.22103048123645863,
+      "pass": true
+    },
+    {
+      "check": "SNA/bull/irr_limit_withholding30",
+      "actual": 0.21207705220141315,
+      "expected": 0.21207705220141315,
+      "pass": true
+    },
+    {
+      "check": "SNA/bull/return_limit",
+      "actual": 0.7967741935483872,
+      "expected": 0.7967741935483872,
+      "pass": true
+    },
+    {
+      "check": "SNA/bull/pv",
+      "actual": 399.2119169096209,
+      "expected": 399.2119169096209,
+      "pass": true
+    },
+    {
+      "check": "SNA/bull/pv_withholding",
+      "actual": 391.3401967930028,
+      "expected": 391.3401967930028,
+      "pass": true
+    },
+    {
+      "check": "SNA/limit_within_tax_ceiling",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bear/terminal",
+      "actual": 87.5,
+      "expected": 87.5,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bear/irr_reference",
+      "actual": -0.22510267025582448,
+      "expected": -0.22510267025582448,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bear/irr_reference_withholding30",
+      "actual": -0.22876308412090313,
+      "expected": -0.22876308412090313,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bear/return_reference",
+      "actual": -0.5290002027986209,
+      "expected": -0.5290002027986209,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bear/irr_limit",
+      "actual": -0.14996331323247541,
+      "expected": -0.14996331323247541,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bear/irr_limit_withholding30",
+      "actual": -0.15430322906869826,
+      "expected": -0.15430322906869826,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bear/return_limit",
+      "actual": -0.3806666666666666,
+      "expected": -0.3806666666666666,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bear/pv",
+      "actual": 66.60406796647229,
+      "expected": 66.60406796647229,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bear/pv_withholding",
+      "actual": 65.30707908163264,
+      "expected": 65.30707908163264,
+      "pass": true
+    },
+    {
+      "check": "NTAP/base/terminal",
+      "actual": 209.63250000000008,
+      "expected": 209.63250000000008,
+      "pass": true
+    },
+    {
+      "check": "NTAP/base/irr_reference",
+      "actual": 0.03124503939625589,
+      "expected": 0.03124503939625589,
+      "pass": true
+    },
+    {
+      "check": "NTAP/base/irr_reference_withholding30",
+      "actual": 0.028027568210815645,
+      "expected": 0.028027568210815645,
+      "pass": true
+    },
+    {
+      "check": "NTAP/base/return_reference",
+      "actual": 0.09568292435611458,
+      "expected": 0.09568292435611458,
+      "pass": true
+    },
+    {
+      "check": "NTAP/base/irr_limit",
+      "actual": 0.13094101082741594,
+      "expected": 0.13094101082741594,
+      "pass": true
+    },
+    {
+      "check": "NTAP/base/irr_limit_withholding30",
+      "actual": 0.12706796836503076,
+      "expected": 0.12706796836503076,
+      "pass": true
+    },
+    {
+      "check": "NTAP/base/return_limit",
+      "actual": 0.4407500000000004,
+      "expected": 0.4407500000000004,
+      "pass": true
+    },
+    {
+      "check": "NTAP/base/pv",
+      "actual": 154.3857421875,
+      "expected": 154.3857421875,
+      "pass": true
+    },
+    {
+      "check": "NTAP/base/pv_withholding",
+      "actual": 152.83370137117348,
+      "expected": 152.83370137117348,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bull/terminal",
+      "actual": 288,
+      "expected": 288,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bull/irr_reference",
+      "actual": 0.1447772523969345,
+      "expected": 0.1447772523969345,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bull/irr_reference_withholding30",
+      "actual": 0.14168957976594998,
+      "expected": 0.14168957976594998,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bull/return_reference",
+      "actual": 0.49528493206246194,
+      "expected": 0.49528493206246194,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bull/irr_limit",
+      "actual": 0.2553052352763917,
+      "expected": 0.2553052352763917,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bull/irr_limit_withholding30",
+      "actual": 0.25157958024383953,
+      "expected": 0.25157958024383953,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bull/return_limit",
+      "actual": 0.9662,
+      "expected": 0.9662,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bull/pv",
+      "actual": 210.49843977769672,
+      "expected": 210.49843977769672,
+      "pass": true
+    },
+    {
+      "check": "NTAP/bull/pv_withholding",
+      "actual": 208.8467212554664,
+      "expected": 208.8467212554664,
+      "pass": true
+    },
+    {
+      "check": "NTAP/limit_within_tax_ceiling",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bear/terminal",
+      "actual": 46.800000000000004,
+      "expected": 46.800000000000004,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bear/irr_reference",
+      "actual": -0.1904033021944032,
+      "expected": -0.1904033021944032,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bear/irr_reference_withholding30",
+      "actual": -0.19187682072604179,
+      "expected": -0.19187682072604179,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bear/return_reference",
+      "actual": -0.4672678690714762,
+      "expected": -0.4672678690714762,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bear/irr_limit",
+      "actual": -0.09769022892056128,
+      "expected": -0.09769022892056128,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bear/irr_limit_withholding30",
+      "actual": -0.09949825851876454,
+      "expected": -0.09949825851876454,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bear/return_limit",
+      "actual": -0.26384615384615384,
+      "expected": -0.26384615384615384,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bear/pv",
+      "actual": 33.26115100384852,
+      "expected": 33.26115100384852,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bear/pv_withholding",
+      "actual": 33.01322998107281,
+      "expected": 33.01322998107281,
+      "pass": true
+    },
+    {
+      "check": "IBKR/base/terminal",
+      "actual": 98.85687499999999,
+      "expected": 98.85687499999999,
+      "pass": true
+    },
+    {
+      "check": "IBKR/base/irr_reference",
+      "actual": 0.03662758720582626,
+      "expected": 0.03662758720582626,
+      "pass": true
+    },
+    {
+      "check": "IBKR/base/irr_reference_withholding30",
+      "actual": 0.03538081610032007,
+      "expected": 0.03538081610032007,
+      "pass": true
+    },
+    {
+      "check": "IBKR/base/return_reference",
+      "actual": 0.11350896236918273,
+      "expected": 0.11350896236918273,
+      "pass": true
+    },
+    {
+      "check": "IBKR/base/irr_limit",
+      "actual": 0.15515457746585792,
+      "expected": 0.15515457746585792,
+      "pass": true
+    },
+    {
+      "check": "IBKR/base/irr_limit_withholding30",
+      "actual": 0.15360806103939828,
+      "expected": 0.15360806103939828,
+      "pass": true
+    },
+    {
+      "check": "IBKR/base/return_limit",
+      "actual": 0.5386980769230767,
+      "expected": 0.5386980769230767,
+      "pass": true
+    },
+    {
+      "check": "IBKR/base/pv",
+      "actual": 69.41752599111372,
+      "expected": 69.41752599111372,
+      "pass": true
+    },
+    {
+      "check": "IBKR/base/pv_withholding",
+      "actual": 69.14610017208436,
+      "expected": 69.14610017208436,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bull/terminal",
+      "actual": 154.8241344,
+      "expected": 154.8241344,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bull/irr_reference",
+      "actual": 0.2027473237027212,
+      "expected": 0.2027473237027212,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bull/irr_reference_withholding30",
+      "actual": 0.2016252840105629,
+      "expected": 0.2016252840105629,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bull/return_reference",
+      "actual": 0.7372468203072813,
+      "expected": 0.7372468203072813,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bull/irr_limit",
+      "actual": 0.3401664332618334,
+      "expected": 0.3401664332618334,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bull/irr_limit_withholding30",
+      "actual": 0.3387642034706385,
+      "expected": 0.3387642034706385,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bull/return_limit",
+      "actual": 1.4006078369230766,
+      "expected": 1.4006078369230766,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bull/pv",
+      "actual": 108.24663811762034,
+      "expected": 108.24663811762034,
+      "pass": true
+    },
+    {
+      "check": "IBKR/bull/pv_withholding",
+      "actual": 107.96291412346137,
+      "expected": 107.96291412346137,
+      "pass": true
+    },
+    {
+      "check": "IBKR/limit_within_tax_ceiling",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bear/terminal",
+      "actual": 65.69734998360657,
+      "expected": 65.69734998360657,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bear/irr_reference",
+      "actual": -0.24290527379713972,
+      "expected": -0.24290527379713972,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bear/irr_reference_withholding30",
+      "actual": -0.24290527379713972,
+      "expected": -0.24290527379713972,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bear/return_reference",
+      "actual": -0.5660390383538769,
+      "expected": -0.5660390383538769,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bear/irr_limit",
+      "actual": -0.1819330101659828,
+      "expected": -0.1819330101659828,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bear/irr_limit_withholding30",
+      "actual": -0.1819330101659828,
+      "expected": -0.1819330101659828,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bear/return_limit",
+      "actual": -0.45252208346994527,
+      "expected": -0.45252208346994527,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bear/pv",
+      "actual": 45.5315590673531,
+      "expected": 45.5315590673531,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bear/pv_withholding",
+      "actual": 45.5315590673531,
+      "expected": 45.5315590673531,
+      "pass": true
+    },
+    {
+      "check": "ABNB/base/terminal",
+      "actual": 176.92644248275866,
+      "expected": 176.92644248275866,
+      "pass": true
+    },
+    {
+      "check": "ABNB/base/irr_reference",
+      "actual": 0.053331774958538136,
+      "expected": 0.053331774958538136,
+      "pass": true
+    },
+    {
+      "check": "ABNB/base/irr_reference_withholding30",
+      "actual": 0.053331774958538136,
+      "expected": 0.053331774958538136,
+      "pass": true
+    },
+    {
+      "check": "ABNB/base/return_reference",
+      "actual": 0.16867984994225949,
+      "expected": 0.16867984994225949,
+      "pass": true
+    },
+    {
+      "check": "ABNB/base/irr_limit",
+      "actual": 0.13816134839376237,
+      "expected": 0.13816134839376237,
+      "pass": true
+    },
+    {
+      "check": "ABNB/base/irr_limit_withholding30",
+      "actual": 0.13816134839376237,
+      "expected": 0.13816134839376237,
+      "pass": true
+    },
+    {
+      "check": "ABNB/base/return_limit",
+      "actual": 0.47438702068965544,
+      "expected": 0.47438702068965544,
+      "pass": true
+    },
+    {
+      "check": "ABNB/base/pv",
+      "actual": 122.61889967389128,
+      "expected": 122.61889967389128,
+      "pass": true
+    },
+    {
+      "check": "ABNB/base/pv_withholding",
+      "actual": 122.61889967389128,
+      "expected": 122.61889967389128,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bull/terminal",
+      "actual": 304.5813942857143,
+      "expected": 304.5813942857143,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bull/irr_reference",
+      "actual": 0.26241475089067656,
+      "expected": 0.26241475089067656,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bull/irr_reference_withholding30",
+      "actual": 0.26241475089067656,
+      "expected": 0.26241475089067656,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bull/return_reference",
+      "actual": 1.0118990308852256,
+      "expected": 1.0118990308852256,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bull/irr_limit",
+      "actual": 0.3640827223335833,
+      "expected": 0.3640827223335833,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bull/irr_limit_withholding30",
+      "actual": 0.3640827223335833,
+      "expected": 0.3640827223335833,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bull/return_limit",
+      "actual": 1.5381782857142858,
+      "expected": 1.5381782857142858,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bull/pv",
+      "actual": 211.0901847364811,
+      "expected": 211.0901847364811,
+      "pass": true
+    },
+    {
+      "check": "ABNB/bull/pv_withholding",
+      "actual": 211.0901847364811,
+      "expected": 211.0901847364811,
+      "pass": true
+    },
+    {
+      "check": "ABNB/limit_within_tax_ceiling",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "AME/bear/terminal",
+      "actual": 150.0,
+      "expected": 150.0,
+      "pass": true
+    },
+    {
+      "check": "AME/bear/irr_reference",
+      "actual": -0.14823563056649341,
+      "expected": -0.14823563056649341,
+      "pass": true
+    },
+    {
+      "check": "AME/bear/irr_reference_withholding30",
+      "actual": -0.14996713757065044,
+      "expected": -0.14996713757065044,
+      "pass": true
+    },
+    {
+      "check": "AME/bear/return_reference",
+      "actual": -0.37999515621215796,
+      "expected": -0.37999515621215796,
+      "pass": true
+    },
+    {
+      "check": "AME/bear/irr_limit",
+      "actual": -0.06055423408395727,
+      "expected": -0.06055423408395727,
+      "pass": true
+    },
+    {
+      "check": "AME/bear/irr_limit_withholding30",
+      "actual": -0.06264325360587503,
+      "expected": -0.06264325360587503,
+      "pass": true
+    },
+    {
+      "check": "AME/bear/return_limit",
+      "actual": -0.16972972972972977,
+      "expected": -0.16972972972972977,
+      "pass": true
+    },
+    {
+      "check": "AME/bear/pv",
+      "actual": 109.64923469387752,
+      "expected": 109.64923469387752,
+      "pass": true
+    },
+    {
+      "check": "AME/bear/pv_withholding",
+      "actual": 108.78457543731776,
+      "expected": 108.78457543731776,
+      "pass": true
+    },
+    {
+      "check": "AME/base/terminal",
+      "actual": 257.9697768000001,
+      "expected": 257.9697768000001,
+      "pass": true
+    },
+    {
+      "check": "AME/base/irr_reference",
+      "actual": 0.019388784629587597,
+      "expected": 0.019388784629587597,
+      "pass": true
+    },
+    {
+      "check": "AME/base/irr_reference_withholding30",
+      "actual": 0.017646077275159322,
+      "expected": 0.017646077275159322,
+      "pass": true
+    },
+    {
+      "check": "AME/base/return_reference",
+      "actual": 0.05897221603293801,
+      "expected": 0.05897221603293801,
+      "pass": true
+    },
+    {
+      "check": "AME/base/irr_limit",
+      "actual": 0.1242620516680425,
+      "expected": 0.1242620516680425,
+      "pass": true
+    },
+    {
+      "check": "AME/base/irr_limit_withholding30",
+      "actual": 0.12214428514936493,
+      "expected": 0.12214428514936493,
+      "pass": true
+    },
+    {
+      "check": "AME/base/return_limit",
+      "actual": 0.4181069016216221,
+      "expected": 0.4181069016216221,
+      "pass": true
+    },
+    {
+      "check": "AME/base/pv",
+      "actual": 187.1063576211735,
+      "expected": 187.1063576211735,
+      "pass": true
+    },
+    {
+      "check": "AME/base/pv_withholding",
+      "actual": 186.05978783254375,
+      "expected": 186.05978783254375,
+      "pass": true
+    },
+    {
+      "check": "AME/bull/terminal",
+      "actual": 336.0,
+      "expected": 336.0,
+      "pass": true
+    },
+    {
+      "check": "AME/bull/irr_reference",
+      "actual": 0.11261727079801764,
+      "expected": 0.11261727079801764,
+      "pass": true
+    },
+    {
+      "check": "AME/bull/irr_reference_withholding30",
+      "actual": 0.11090683069447371,
+      "expected": 0.11090683069447371,
+      "pass": true
+    },
+    {
+      "check": "AME/bull/return_reference",
+      "actual": 0.3753128279648019,
+      "expected": 0.3753128279648019,
+      "pass": true
+    },
+    {
+      "check": "AME/bull/irr_limit",
+      "actual": 0.22701695483169837,
+      "expected": 0.22701695483169837,
+      "pass": true
+    },
+    {
+      "check": "AME/bull/irr_limit_withholding30",
+      "actual": 0.22493628291626766,
+      "expected": 0.22493628291626766,
+      "pass": true
+    },
+    {
+      "check": "AME/bull/return_limit",
+      "actual": 0.8417297297297299,
+      "expected": 0.8417297297297299,
+      "pass": true
+    },
+    {
+      "check": "AME/bull/pv",
+      "actual": 242.8972758746355,
+      "expected": 242.8972758746355,
+      "pass": true
+    },
+    {
+      "check": "AME/bull/pv_withholding",
+      "actual": 241.77554209183666,
+      "expected": 241.77554209183666,
+      "pass": true
+    },
+    {
+      "check": "AME/limit_within_tax_ceiling",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "RL/bear/terminal",
+      "actual": 158.6,
+      "expected": 158.6,
+      "pass": true
+    },
+    {
+      "check": "RL/bear/irr_reference",
+      "actual": -0.21954533550139227,
+      "expected": -0.21954533550139227,
+      "pass": true
+    },
+    {
+      "check": "RL/bear/irr_reference_withholding30",
+      "actual": -0.22365486614908375,
+      "expected": -0.22365486614908375,
+      "pass": true
+    },
+    {
+      "check": "RL/bear/return_reference",
+      "actual": -0.5179901097027226,
+      "expected": -0.5179901097027226,
+      "pass": true
+    },
+    {
+      "check": "RL/bear/irr_limit",
+      "actual": -0.14084300760398966,
+      "expected": -0.14084300760398966,
+      "pass": true
+    },
+    {
+      "check": "RL/bear/irr_limit_withholding30",
+      "actual": -0.14576798722536527,
+      "expected": -0.14576798722536527,
+      "pass": true
+    },
+    {
+      "check": "RL/bear/return_limit",
+      "actual": -0.36,
+      "expected": -0.36,
+      "pass": true
+    },
+    {
+      "check": "RL/bear/pv",
+      "actual": 115.6147910558174,
+      "expected": 115.6147910558174,
+      "pass": true
+    },
+    {
+      "check": "RL/bear/pv_withholding",
+      "actual": 113.04549847996411,
+      "expected": 113.04549847996411,
+      "pass": true
+    },
+    {
+      "check": "RL/base/terminal",
+      "actual": 388.5,
+      "expected": 388.5,
+      "pass": true
+    },
+    {
+      "check": "RL/base/irr_reference",
+      "actual": 0.0451108386387441,
+      "expected": 0.0451108386387441,
+      "pass": true
+    },
+    {
+      "check": "RL/base/irr_reference_withholding30",
+      "actual": 0.041649191021600473,
+      "expected": 0.041649191021600473,
+      "pass": true
+    },
+    {
+      "check": "RL/base/return_reference",
+      "actual": 0.13994202239527076,
+      "expected": 0.13994202239527076,
+      "pass": true
+    },
+    {
+      "check": "RL/base/irr_limit",
+      "actual": 0.1499885594777025,
+      "expected": 0.1499885594777025,
+      "pass": true
+    },
+    {
+      "check": "RL/base/irr_limit_withholding30",
+      "actual": 0.14579274734745085,
+      "expected": 0.14579274734745085,
+      "pass": true
+    },
+    {
+      "check": "RL/base/return_limit",
+      "actual": 0.5135849056603774,
+      "expected": 0.5135849056603774,
+      "pass": true
+    },
+    {
+      "check": "RL/base/pv",
+      "actual": 271.93684426517194,
+      "expected": 271.93684426517194,
+      "pass": true
+    },
+    {
+      "check": "RL/base/pv_withholding",
+      "actual": 269.02372119896535,
+      "expected": 269.02372119896535,
+      "pass": true
+    },
+    {
+      "check": "RL/bull/terminal",
+      "actual": 556.6,
+      "expected": 556.6,
+      "pass": true
+    },
+    {
+      "check": "RL/bull/irr_reference",
+      "actual": 0.17638739428959604,
+      "expected": 0.17638739428959604,
+      "pass": true
+    },
+    {
+      "check": "RL/bull/irr_reference_withholding30",
+      "actual": 0.17302264828554315,
+      "expected": 0.17302264828554315,
+      "pass": true
+    },
+    {
+      "check": "RL/bull/return_reference",
+      "actual": 0.6210993008582957,
+      "expected": 0.6210993008582957,
+      "pass": true
+    },
+    {
+      "check": "RL/bull/irr_limit",
+      "actual": 0.29430712444864315,
+      "expected": 0.29430712444864315,
+      "pass": true
+    },
+    {
+      "check": "RL/bull/irr_limit_withholding30",
+      "actual": 0.29020853075688036,
+      "expected": 0.29020853075688036,
+      "pass": true
+    },
+    {
+      "check": "RL/bull/return_limit",
+      "actual": 1.152452830188679,
+      "expected": 1.152452830188679,
+      "pass": true
+    },
+    {
+      "check": "RL/bull/pv",
+      "actual": 386.28776465633143,
+      "expected": 386.28776465633143,
+      "pass": true
+    },
+    {
+      "check": "RL/bull/pv_withholding",
+      "actual": 383.1081790348447,
+      "expected": 383.1081790348447,
+      "pass": true
+    },
+    {
+      "check": "RL/limit_within_tax_ceiling",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "direct_initial",
+      "actual": 0.04,
+      "expected": 0.04,
+      "pass": true
+    },
+    {
+      "check": "direct_full",
+      "actual": 0.1,
+      "expected": 0.1,
+      "pass": true
+    },
+    {
+      "check": "initial_total",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "full_total",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "direct_max_cap",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "direct_financial_cap",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "MSFT/lookthrough",
+      "actual": 0.028540025,
+      "expected": 0.028540025,
+      "pass": true
+    },
+    {
+      "check": "MSFT/lookthrough_cap",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "NVDA/lookthrough",
+      "actual": 0.027118530000000002,
+      "expected": 0.027118530000000002,
+      "pass": true
+    },
+    {
+      "check": "NVDA/lookthrough_cap",
+      "actual": 1.0,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "50000/total",
+      "actual": 50000.0,
+      "expected": 50000,
+      "pass": true
+    },
+    {
+      "check": "50000/VUAA/weight",
+      "actual": 0.1490017,
+      "expected": 0.1490017,
+      "pass": true
+    },
+    {
+      "check": "50000/VUAA/cost",
+      "actual": 7450.085,
+      "expected": 7450.085,
+      "pass": true
+    },
+    {
+      "check": "50000/VUAA/floor",
+      "actual": 50,
+      "expected": 50,
+      "pass": true
+    },
+    {
+      "check": "50000/AMP/weight",
+      "actual": 0.02,
+      "expected": 0.02,
+      "pass": true
+    },
+    {
+      "check": "50000/AMP/cost",
+      "actual": 1000,
+      "expected": 1000,
+      "pass": true
+    },
+    {
+      "check": "50000/AMP/floor",
+      "actual": 2,
+      "expected": 2,
+      "pass": true
+    },
+    {
+      "check": "50000/PAYX/weight",
+      "actual": 0.018324,
+      "expected": 0.018324,
+      "pass": true
+    },
+    {
+      "check": "50000/PAYX/cost",
+      "actual": 916.1999999999999,
+      "expected": 916.1999999999999,
+      "pass": true
+    },
+    {
+      "check": "50000/PAYX/floor",
+      "actual": 9,
+      "expected": 9,
+      "pass": true
+    },
+    {
+      "check": "50000/IB01/weight",
+      "actual": 0.7994016,
+      "expected": 0.7994016,
+      "pass": true
+    },
+    {
+      "check": "50000/IB01/cost",
+      "actual": 39970.08,
+      "expected": 39970.08,
+      "pass": true
+    },
+    {
+      "check": "50000/IB01/floor",
+      "actual": 328,
+      "expected": 328,
+      "pass": true
+    },
+    {
+      "check": "50000/USD cash/weight",
+      "actual": 0.01327270000000004,
+      "expected": 0.01327270000000004,
+      "pass": true
+    },
+    {
+      "check": "100000/total",
+      "actual": 100000.0,
+      "expected": 100000,
+      "pass": true
+    },
+    {
+      "check": "100000/VUAA/weight",
+      "actual": 0.1490017,
+      "expected": 0.1490017,
+      "pass": true
+    },
+    {
+      "check": "100000/VUAA/cost",
+      "actual": 14900.17,
+      "expected": 14900.17,
+      "pass": true
+    },
+    {
+      "check": "100000/VUAA/floor",
+      "actual": 100,
+      "expected": 100,
+      "pass": true
+    },
+    {
+      "check": "100000/AMP/weight",
+      "actual": 0.02,
+      "expected": 0.02,
+      "pass": true
+    },
+    {
+      "check": "100000/AMP/cost",
+      "actual": 2000,
+      "expected": 2000,
+      "pass": true
+    },
+    {
+      "check": "100000/AMP/floor",
+      "actual": 4,
+      "expected": 4,
+      "pass": true
+    },
+    {
+      "check": "100000/PAYX/weight",
+      "actual": 0.019342,
+      "expected": 0.019342,
+      "pass": true
+    },
+    {
+      "check": "100000/PAYX/cost",
+      "actual": 1934.2,
+      "expected": 1934.2,
+      "pass": true
+    },
+    {
+      "check": "100000/PAYX/floor",
+      "actual": 19,
+      "expected": 19,
+      "pass": true
+    },
+    {
+      "check": "100000/IB01/weight",
+      "actual": 0.7994016,
+      "expected": 0.7994016,
+      "pass": true
+    },
+    {
+      "check": "100000/IB01/cost",
+      "actual": 79940.16,
+      "expected": 79940.16,
+      "pass": true
+    },
+    {
+      "check": "100000/IB01/floor",
+      "actual": 656,
+      "expected": 656,
+      "pass": true
+    },
+    {
+      "check": "100000/USD cash/weight",
+      "actual": 0.012254700000000012,
+      "expected": 0.012254700000000012,
+      "pass": true
+    },
+    {
+      "check": "Equity selloff/initial",
+      "actual": -0.061,
+      "expected": -0.061,
+      "pass": true
+    },
+    {
+      "check": "Equity selloff/full",
+      "actual": -0.085,
+      "expected": -0.085,
+      "pass": true
+    },
+    {
+      "check": "Equity selloff/50k",
+      "actual": -4250.0,
+      "expected": -4250.0,
+      "pass": true
+    },
+    {
+      "check": "Equity selloff/100k",
+      "actual": -8500.0,
+      "expected": -8500.0,
+      "pass": true
+    },
+    {
+      "check": "Severe correlated shock/initial",
+      "actual": -0.1071,
+      "expected": -0.1071,
+      "pass": true
+    },
+    {
+      "check": "Severe correlated shock/full",
+      "actual": -0.14250000000000002,
+      "expected": -0.14250000000000002,
+      "pass": true
+    },
+    {
+      "check": "Severe correlated shock/50k",
+      "actual": -7125.000000000001,
+      "expected": -7125.000000000001,
+      "pass": true
+    },
+    {
+      "check": "Severe correlated shock/100k",
+      "actual": -14250.000000000002,
+      "expected": -14250.000000000002,
+      "pass": true
+    },
+    {
+      "check": "Tail shock/initial",
+      "actual": -0.1362,
+      "expected": -0.1362,
+      "pass": true
+    },
+    {
+      "check": "Tail shock/full",
+      "actual": -0.18,
+      "expected": -0.18,
+      "pass": true
+    },
+    {
+      "check": "Tail shock/50k",
+      "actual": -9000.0,
+      "expected": -9000.0,
+      "pass": true
+    },
+    {
+      "check": "Tail shock/100k",
+      "actual": -18000.0,
+      "expected": -18000.0,
+      "pass": true
+    },
+    {
+      "check": "bear/initial/wealth",
+      "actual": 1.0189482871733788,
+      "expected": 1.0189482871733788,
+      "pass": true
+    },
+    {
+      "check": "bear/initial/cagr",
+      "actual": 0.006276617374411098,
+      "expected": 0.006276617374411098,
+      "pass": true
+    },
+    {
+      "check": "bear/full/wealth",
+      "actual": 0.9945633367655281,
+      "expected": 0.9945633367655281,
+      "pass": true
+    },
+    {
+      "check": "bear/full/cagr",
+      "actual": -0.0018155151788180612,
+      "expected": -0.0018155151788180612,
+      "pass": true
+    },
+    {
+      "check": "base/initial/wealth",
+      "actual": 1.1333405445624947,
+      "expected": 1.133340544562495,
+      "pass": true
+    },
+    {
+      "check": "base/initial/cagr",
+      "actual": 0.04260581276400566,
+      "expected": 0.04260581276400566,
+      "pass": true
+    },
+    {
+      "check": "base/full/wealth",
+      "actual": 1.1553664537379555,
+      "expected": 1.1553664537379555,
+      "pass": true
+    },
+    {
+      "check": "base/full/cagr",
+      "actual": 0.04931669941737771,
+      "expected": 0.04931669941737771,
+      "pass": true
+    },
+    {
+      "check": "bull/initial/wealth",
+      "actual": 1.2089098532025342,
+      "expected": 1.2089098532025344,
+      "pass": true
+    },
+    {
+      "check": "bull/initial/cagr",
+      "actual": 0.06528212329378436,
+      "expected": 0.06528212329378436,
+      "pass": true
+    },
+    {
+      "check": "bull/full/wealth",
+      "actual": 1.2704863197568657,
+      "expected": 1.2704863197568657,
+      "pass": true
+    },
+    {
+      "check": "bull/full/cagr",
+      "actual": 0.08307034387727441,
+      "expected": 0.08307034387727441,
+      "pass": true
+    },
+    {
+      "check": "workbook/L2",
+      "actual": 358.38274999999993,
+      "expected": 358.38274999999993,
+      "pass": true
+    },
+    {
+      "check": "workbook/M2",
+      "actual": -0.08048369955898987,
+      "expected": -0.08048369955898987,
+      "pass": true
+    },
+    {
+      "check": "workbook/N2",
+      "actual": -0.08982314626763671,
+      "expected": -0.08982314626763671,
+      "pass": true
+    },
+    {
+      "check": "workbook/O2",
+      "actual": -0.09439119634588072,
+      "expected": -0.09439119634588072,
+      "pass": true
+    },
+    {
+      "check": "workbook/P2",
+      "actual": 271.42221523095833,
+      "expected": 271.42221523095833,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q2",
+      "actual": 266.5224794437863,
+      "expected": 266.5224794437863,
+      "pass": true
+    },
+    {
+      "check": "workbook/S2",
+      "actual": -485.15,
+      "expected": -485.15,
+      "pass": true
+    },
+    {
+      "check": "workbook/T2",
+      "actual": 6.8,
+      "expected": 6.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/U2",
+      "actual": 6.8,
+      "expected": 6.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/V2",
+      "actual": 365.18274999999994,
+      "expected": 365.18274999999994,
+      "pass": true
+    },
+    {
+      "check": "workbook/W2",
+      "actual": -500.0,
+      "expected": -500,
+      "pass": true
+    },
+    {
+      "check": "workbook/X2",
+      "actual": 6.8,
+      "expected": 6.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y2",
+      "actual": 6.8,
+      "expected": 6.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z2",
+      "actual": 365.18274999999994,
+      "expected": 365.18274999999994,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA2",
+      "actual": -500.0,
+      "expected": -500,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB2",
+      "actual": 4.76,
+      "expected": 4.76,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC2",
+      "actual": 4.76,
+      "expected": 4.76,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD2",
+      "actual": 363.1427499999999,
+      "expected": 363.1427499999999,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AMP/bear/C",
+      "actual": 485.15,
+      "expected": 485.15,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AMP/bear/D",
+      "actual": 500,
+      "expected": 500.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AMP/bear/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/AMP/bear/eps",
+      "actual": 37.72449999999999,
+      "expected": 37.72449999999999,
+      "pass": true
+    },
+    {
+      "check": "workbook/AMP/bear/pe",
+      "actual": 9.5,
+      "expected": 9.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/L3",
+      "actual": 700.724596,
+      "expected": 700.7245959999999,
+      "pass": true
+    },
+    {
+      "check": "workbook/M3",
+      "actual": 0.14342880789676282,
+      "expected": 0.14342880789676282,
+      "pass": true
+    },
+    {
+      "check": "workbook/N3",
+      "actual": 0.13185878163161247,
+      "expected": 0.13185878163161247,
+      "pass": true
+    },
+    {
+      "check": "workbook/O3",
+      "actual": 0.1280223003599924,
+      "expected": 0.1280223003599924,
+      "pass": true
+    },
+    {
+      "check": "workbook/P3",
+      "actual": 515.8615359648322,
+      "expected": 515.8615359648321,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q3",
+      "actual": 510.7316531523322,
+      "expected": 510.73165315233217,
+      "pass": true
+    },
+    {
+      "check": "workbook/S3",
+      "actual": -485.15,
+      "expected": -485.15,
+      "pass": true
+    },
+    {
+      "check": "workbook/T3",
+      "actual": 6.8,
+      "expected": 6.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/U3",
+      "actual": 7.14,
+      "expected": 7.14,
+      "pass": true
+    },
+    {
+      "check": "workbook/V3",
+      "actual": 708.221596,
+      "expected": 708.2215959999999,
+      "pass": true
+    },
+    {
+      "check": "workbook/W3",
+      "actual": -500.0,
+      "expected": -500,
+      "pass": true
+    },
+    {
+      "check": "workbook/X3",
+      "actual": 6.8,
+      "expected": 6.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y3",
+      "actual": 7.14,
+      "expected": 7.14,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z3",
+      "actual": 708.221596,
+      "expected": 708.2215959999999,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA3",
+      "actual": -500.0,
+      "expected": -500,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB3",
+      "actual": 4.76,
+      "expected": 4.76,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC3",
+      "actual": 4.997999999999999,
+      "expected": 4.997999999999999,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD3",
+      "actual": 705.972496,
+      "expected": 705.9724959999999,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AMP/base/C",
+      "actual": 485.15,
+      "expected": 485.15,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AMP/base/D",
+      "actual": 500,
+      "expected": 500.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AMP/base/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/AMP/base/eps",
+      "actual": 53.901892,
+      "expected": 53.901892000000004,
+      "pass": true
+    },
+    {
+      "check": "workbook/AMP/base/pe",
+      "actual": 13,
+      "expected": 13,
+      "pass": true
+    },
+    {
+      "check": "workbook/L4",
+      "actual": 927.2524800000003,
+      "expected": 927.2524800000003,
+      "pass": true
+    },
+    {
+      "check": "workbook/M4",
+      "actual": 0.2532939523716641,
+      "expected": 0.2532939523716641,
+      "pass": true
+    },
+    {
+      "check": "workbook/N4",
+      "actual": 0.24062812800399092,
+      "expected": 0.24062812800399092,
+      "pass": true
+    },
+    {
+      "check": "workbook/O4",
+      "actual": 0.2370165871158466,
+      "expected": 0.2370165871158466,
+      "pass": true
+    },
+    {
+      "check": "workbook/P4",
+      "actual": 677.5715196793003,
+      "expected": 677.5715196793003,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q4",
+      "actual": 672.3000637755102,
+      "expected": 672.3000637755102,
+      "pass": true
+    },
+    {
+      "check": "workbook/S4",
+      "actual": -485.15,
+      "expected": -485.15,
+      "pass": true
+    },
+    {
+      "check": "workbook/T4",
+      "actual": 6.8,
+      "expected": 6.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/U4",
+      "actual": 7.344,
+      "expected": 7.344,
+      "pass": true
+    },
+    {
+      "check": "workbook/V4",
+      "actual": 935.1840000000003,
+      "expected": 935.1840000000003,
+      "pass": true
+    },
+    {
+      "check": "workbook/W4",
+      "actual": -500.0,
+      "expected": -500,
+      "pass": true
+    },
+    {
+      "check": "workbook/X4",
+      "actual": 6.8,
+      "expected": 6.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y4",
+      "actual": 7.344,
+      "expected": 7.344,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z4",
+      "actual": 935.1840000000003,
+      "expected": 935.1840000000003,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA4",
+      "actual": -500.0,
+      "expected": -500,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB4",
+      "actual": 4.76,
+      "expected": 4.76,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC4",
+      "actual": 5.1408,
+      "expected": 5.1408,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD4",
+      "actual": 932.8045440000003,
+      "expected": 932.8045440000003,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AMP/bull/C",
+      "actual": 485.15,
+      "expected": 485.15,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AMP/bull/D",
+      "actual": 500,
+      "expected": 500.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AMP/bull/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/AMP/bull/eps",
+      "actual": 61.81683200000002,
+      "expected": 61.81683200000002,
+      "pass": true
+    },
+    {
+      "check": "workbook/AMP/bull/pe",
+      "actual": 15,
+      "expected": 15,
+      "pass": true
+    },
+    {
+      "check": "workbook/L5",
+      "actual": 67.2,
+      "expected": 67.2,
+      "pass": true
+    },
+    {
+      "check": "workbook/M5",
+      "actual": -0.0808084456745502,
+      "expected": -0.0808084456745502,
+      "pass": true
+    },
+    {
+      "check": "workbook/N5",
+      "actual": -0.08147385701631432,
+      "expected": -0.08147385701631432,
+      "pass": true
+    },
+    {
+      "check": "workbook/O5",
+      "actual": -0.09580040760215397,
+      "expected": -0.09580040760215397,
+      "pass": true
+    },
+    {
+      "check": "workbook/P5",
+      "actual": 58.117529154518934,
+      "expected": 58.117529154518934,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q5",
+      "actual": 55.03176020408162,
+      "expected": 55.03176020408162,
+      "pass": true
+    },
+    {
+      "check": "workbook/S5",
+      "actual": -101.59,
+      "expected": -101.59,
+      "pass": true
+    },
+    {
+      "check": "workbook/T5",
+      "actual": 4.76,
+      "expected": 4.76,
+      "pass": true
+    },
+    {
+      "check": "workbook/U5",
+      "actual": 4,
+      "expected": 4,
+      "pass": true
+    },
+    {
+      "check": "workbook/V5",
+      "actual": 71.2,
+      "expected": 71.2,
+      "pass": true
+    },
+    {
+      "check": "workbook/W5",
+      "actual": -101.8,
+      "expected": -101.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/X5",
+      "actual": 4.76,
+      "expected": 4.76,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y5",
+      "actual": 4,
+      "expected": 4,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z5",
+      "actual": 71.2,
+      "expected": 71.2,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA5",
+      "actual": -101.8,
+      "expected": -101.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB5",
+      "actual": 3.332,
+      "expected": 3.332,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC5",
+      "actual": 2.8,
+      "expected": 2.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD5",
+      "actual": 70.0,
+      "expected": 70.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/PAYX/bear/C",
+      "actual": 101.59,
+      "expected": 101.59,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/PAYX/bear/D",
+      "actual": 101.8,
+      "expected": 101.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/PAYX/bear/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/PAYX/bear/eps",
+      "actual": 4.8,
+      "expected": 4.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/PAYX/bear/pe",
+      "actual": 14,
+      "expected": 14,
+      "pass": true
+    },
+    {
+      "check": "workbook/L6",
+      "actual": 132.0,
+      "expected": 132.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/M6",
+      "actual": 0.1363746378179066,
+      "expected": 0.1363746378179066,
+      "pass": true
+    },
+    {
+      "check": "workbook/N6",
+      "actual": 0.1355599897265115,
+      "expected": 0.1355599897265115,
+      "pass": true
+    },
+    {
+      "check": "workbook/O6",
+      "actual": 0.12201974485265799,
+      "expected": 0.12201974485265799,
+      "pass": true
+    },
+    {
+      "check": "workbook/P6",
+      "actual": 105.92780840014575,
+      "expected": 105.92780840014575,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q6",
+      "actual": 102.3359636935131,
+      "expected": 102.3359636935131,
+      "pass": true
+    },
+    {
+      "check": "workbook/S6",
+      "actual": -101.59,
+      "expected": -101.59,
+      "pass": true
+    },
+    {
+      "check": "workbook/T6",
+      "actual": 4.76,
+      "expected": 4.76,
+      "pass": true
+    },
+    {
+      "check": "workbook/U6",
+      "actual": 5,
+      "expected": 5,
+      "pass": true
+    },
+    {
+      "check": "workbook/V6",
+      "actual": 137.25,
+      "expected": 137.25,
+      "pass": true
+    },
+    {
+      "check": "workbook/W6",
+      "actual": -101.8,
+      "expected": -101.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/X6",
+      "actual": 4.76,
+      "expected": 4.76,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y6",
+      "actual": 5,
+      "expected": 5,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z6",
+      "actual": 137.25,
+      "expected": 137.25,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA6",
+      "actual": -101.8,
+      "expected": -101.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB6",
+      "actual": 3.332,
+      "expected": 3.332,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC6",
+      "actual": 3.5,
+      "expected": 3.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD6",
+      "actual": 135.675,
+      "expected": 135.675,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/PAYX/base/C",
+      "actual": 101.59,
+      "expected": 101.59,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/PAYX/base/D",
+      "actual": 101.8,
+      "expected": 101.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/PAYX/base/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/PAYX/base/eps",
+      "actual": 6.6,
+      "expected": 6.6,
+      "pass": true
+    },
+    {
+      "check": "workbook/PAYX/base/pe",
+      "actual": 20,
+      "expected": 20,
+      "pass": true
+    },
+    {
+      "check": "workbook/L7",
+      "actual": 172.5,
+      "expected": 172.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/M7",
+      "actual": 0.2376371929434239,
+      "expected": 0.2376371929434239,
+      "pass": true
+    },
+    {
+      "check": "workbook/N7",
+      "actual": 0.23675238643521357,
+      "expected": 0.23675238643521357,
+      "pass": true
+    },
+    {
+      "check": "workbook/O7",
+      "actual": 0.22336634459045934,
+      "expected": 0.22336634459045934,
+      "pass": true
+    },
+    {
+      "check": "workbook/P7",
+      "actual": 135.66144314868802,
+      "expected": 135.66144314868802,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q7",
+      "actual": 131.79763802842564,
+      "expected": 131.79763802842564,
+      "pass": true
+    },
+    {
+      "check": "workbook/S7",
+      "actual": -101.59,
+      "expected": -101.59,
+      "pass": true
+    },
+    {
+      "check": "workbook/T7",
+      "actual": 4.9,
+      "expected": 4.9,
+      "pass": true
+    },
+    {
+      "check": "workbook/U7",
+      "actual": 5.4,
+      "expected": 5.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/V7",
+      "actual": 178.4,
+      "expected": 178.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/W7",
+      "actual": -101.8,
+      "expected": -101.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/X7",
+      "actual": 4.9,
+      "expected": 4.9,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y7",
+      "actual": 5.4,
+      "expected": 5.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z7",
+      "actual": 178.4,
+      "expected": 178.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA7",
+      "actual": -101.8,
+      "expected": -101.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB7",
+      "actual": 3.43,
+      "expected": 3.43,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC7",
+      "actual": 3.78,
+      "expected": 3.78,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD7",
+      "actual": 176.63,
+      "expected": 176.63,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/PAYX/bull/C",
+      "actual": 101.59,
+      "expected": 101.59,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/PAYX/bull/D",
+      "actual": 101.8,
+      "expected": 101.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/PAYX/bull/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/PAYX/bull/eps",
+      "actual": 7.5,
+      "expected": 7.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/PAYX/bull/pe",
+      "actual": 23,
+      "expected": 23,
+      "pass": true
+    },
+    {
+      "check": "workbook/L8",
+      "actual": 364.51358790612494,
+      "expected": 364.513587906125,
+      "pass": true
+    },
+    {
+      "check": "workbook/M8",
+      "actual": -0.10085652393345307,
+      "expected": -0.10085652393345307,
+      "pass": true
+    },
+    {
+      "check": "workbook/N8",
+      "actual": -0.09125147944516104,
+      "expected": -0.09125147944516093,
+      "pass": true
+    },
+    {
+      "check": "workbook/O8",
+      "actual": -0.09387144208803516,
+      "expected": -0.09387144208803516,
+      "pass": true
+    },
+    {
+      "check": "workbook/P8",
+      "actual": 268.8687505026057,
+      "expected": 268.86875050260574,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q8",
+      "actual": 266.0441969311771,
+      "expected": 266.04419693117717,
+      "pass": true
+    },
+    {
+      "check": "workbook/S8",
+      "actual": -516.05,
+      "expected": -516.05,
+      "pass": true
+    },
+    {
+      "check": "workbook/T8",
+      "actual": 3.92,
+      "expected": 3.92,
+      "pass": true
+    },
+    {
+      "check": "workbook/U8",
+      "actual": 3.92,
+      "expected": 3.92,
+      "pass": true
+    },
+    {
+      "check": "workbook/V8",
+      "actual": 368.43358790612496,
+      "expected": 368.433587906125,
+      "pass": true
+    },
+    {
+      "check": "workbook/W8",
+      "actual": -500,
+      "expected": -500,
+      "pass": true
+    },
+    {
+      "check": "workbook/X8",
+      "actual": 3.92,
+      "expected": 3.92,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y8",
+      "actual": 3.92,
+      "expected": 3.92,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z8",
+      "actual": 368.43358790612496,
+      "expected": 368.433587906125,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA8",
+      "actual": -500,
+      "expected": -500,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB8",
+      "actual": 2.7439999999999998,
+      "expected": 2.7439999999999998,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC8",
+      "actual": 2.7439999999999998,
+      "expected": 2.7439999999999998,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD8",
+      "actual": 367.25758790612497,
+      "expected": 367.25758790612497,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/MSFT/bear/C",
+      "actual": 516.05,
+      "expected": 516.05,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/MSFT/bear/D",
+      "actual": 500,
+      "expected": 500,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/MSFT/bear/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/MSFT/bear/eps",
+      "actual": 16.56879945027841,
+      "expected": 16.568799450278405,
+      "pass": true
+    },
+    {
+      "check": "workbook/MSFT/bear/pe",
+      "actual": 22,
+      "expected": 22,
+      "pass": true
+    },
+    {
+      "check": "workbook/L9",
+      "actual": 715.5106462020663,
+      "expected": 715.5106462020664,
+      "pass": true
+    },
+    {
+      "check": "workbook/M9",
+      "actual": 0.12225514430101081,
+      "expected": 0.12225514430101081,
+      "pass": true
+    },
+    {
+      "check": "workbook/N9",
+      "actual": 0.13421741030562184,
+      "expected": 0.13421741030562206,
+      "pass": true
+    },
+    {
+      "check": "workbook/O9",
+      "actual": 0.13201911985441173,
+      "expected": 0.13201911985441173,
+      "pass": true
+    },
+    {
+      "check": "workbook/P9",
+      "actual": 519.1527923153827,
+      "expected": 519.1527923153828,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q9",
+      "actual": 516.19285814082,
+      "expected": 516.1928581408201,
+      "pass": true
+    },
+    {
+      "check": "workbook/S9",
+      "actual": -516.05,
+      "expected": -516.05,
+      "pass": true
+    },
+    {
+      "check": "workbook/T9",
+      "actual": 3.92,
+      "expected": 3.92,
+      "pass": true
+    },
+    {
+      "check": "workbook/U9",
+      "actual": 4.12,
+      "expected": 4.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/V9",
+      "actual": 719.8406462020663,
+      "expected": 719.8406462020664,
+      "pass": true
+    },
+    {
+      "check": "workbook/W9",
+      "actual": -500,
+      "expected": -500,
+      "pass": true
+    },
+    {
+      "check": "workbook/X9",
+      "actual": 3.92,
+      "expected": 3.92,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y9",
+      "actual": 4.12,
+      "expected": 4.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z9",
+      "actual": 719.8406462020663,
+      "expected": 719.8406462020664,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA9",
+      "actual": -500,
+      "expected": -500,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB9",
+      "actual": 2.7439999999999998,
+      "expected": 2.7439999999999998,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC9",
+      "actual": 2.884,
+      "expected": 2.884,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD9",
+      "actual": 718.5416462020662,
+      "expected": 718.5416462020663,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/MSFT/base/C",
+      "actual": 516.05,
+      "expected": 516.05,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/MSFT/base/D",
+      "actual": 500,
+      "expected": 500,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/MSFT/base/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/MSFT/base/eps",
+      "actual": 25.5539516500738,
+      "expected": 25.553951650073795,
+      "pass": true
+    },
+    {
+      "check": "workbook/MSFT/base/pe",
+      "actual": 28,
+      "expected": 28,
+      "pass": true
+    },
+    {
+      "check": "workbook/L10",
+      "actual": 1001.0384739216777,
+      "expected": 1001.0384739216778,
+      "pass": true
+    },
+    {
+      "check": "workbook/M10",
+      "actual": 0.25388859575679035,
+      "expected": 0.25388859575679035,
+      "pass": true
+    },
+    {
+      "check": "workbook/N10",
+      "actual": 0.2672428398821395,
+      "expected": 0.2672428398821395,
+      "pass": true
+    },
+    {
+      "check": "workbook/O10",
+      "actual": 0.2651763841696667,
+      "expected": 0.2651763841696667,
+      "pass": true
+    },
+    {
+      "check": "workbook/P10",
+      "actual": 722.8291570256108,
+      "expected": 722.8291570256109,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q10",
+      "actual": 719.7362338295467,
+      "expected": 719.7362338295468,
+      "pass": true
+    },
+    {
+      "check": "workbook/S10",
+      "actual": -516.05,
+      "expected": -516.05,
+      "pass": true
+    },
+    {
+      "check": "workbook/T10",
+      "actual": 3.92,
+      "expected": 3.92,
+      "pass": true
+    },
+    {
+      "check": "workbook/U10",
+      "actual": 4.31,
+      "expected": 4.31,
+      "pass": true
+    },
+    {
+      "check": "workbook/V10",
+      "actual": 1005.7784739216777,
+      "expected": 1005.7784739216778,
+      "pass": true
+    },
+    {
+      "check": "workbook/W10",
+      "actual": -500,
+      "expected": -500,
+      "pass": true
+    },
+    {
+      "check": "workbook/X10",
+      "actual": 3.92,
+      "expected": 3.92,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y10",
+      "actual": 4.31,
+      "expected": 4.31,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z10",
+      "actual": 1005.7784739216777,
+      "expected": 1005.7784739216778,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA10",
+      "actual": -500,
+      "expected": -500,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB10",
+      "actual": 2.7439999999999998,
+      "expected": 2.7439999999999998,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC10",
+      "actual": 3.0169999999999995,
+      "expected": 3.0169999999999995,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD10",
+      "actual": 1004.3564739216777,
+      "expected": 1004.3564739216778,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/MSFT/bull/C",
+      "actual": 516.05,
+      "expected": 516.05,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/MSFT/bull/D",
+      "actual": 500,
+      "expected": 500,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/MSFT/bull/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/MSFT/bull/eps",
+      "actual": 31.28245231005243,
+      "expected": 31.282452310052427,
+      "pass": true
+    },
+    {
+      "check": "workbook/MSFT/bull/pe",
+      "actual": 32,
+      "expected": 32,
+      "pass": true
+    },
+    {
+      "check": "workbook/L11",
+      "actual": 80.20948679485714,
+      "expected": 80.20948679485714,
+      "pass": true
+    },
+    {
+      "check": "workbook/M11",
+      "actual": -0.2839900075501166,
+      "expected": -0.2839900075501166,
+      "pass": true
+    },
+    {
+      "check": "workbook/N11",
+      "actual": -0.2734337384349036,
+      "expected": -0.2734337384349036,
+      "pass": true
+    },
+    {
+      "check": "workbook/O11",
+      "actual": -0.27543568181176237,
+      "expected": -0.27543568181176237,
+      "pass": true
+    },
+    {
+      "check": "workbook/P11",
+      "actual": 55.02226467977786,
+      "expected": 55.02226467977786,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q11",
+      "actual": 54.33729714464184,
+      "expected": 54.33729714464184,
+      "pass": true
+    },
+    {
+      "check": "workbook/S11",
+      "actual": -224.58,
+      "expected": -224.58,
+      "pass": true
+    },
+    {
+      "check": "workbook/T11",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "workbook/U11",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "workbook/V11",
+      "actual": 81.20948679485714,
+      "expected": 81.20948679485714,
+      "pass": true
+    },
+    {
+      "check": "workbook/W11",
+      "actual": -215,
+      "expected": -215,
+      "pass": true
+    },
+    {
+      "check": "workbook/X11",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y11",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z11",
+      "actual": 81.20948679485714,
+      "expected": 81.20948679485714,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA11",
+      "actual": -215,
+      "expected": -215,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB11",
+      "actual": 0.7,
+      "expected": 0.7,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC11",
+      "actual": 0.7,
+      "expected": 0.7,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD11",
+      "actual": 80.90948679485714,
+      "expected": 80.90948679485714,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NVDA/bear/C",
+      "actual": 224.58,
+      "expected": 224.58,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NVDA/bear/D",
+      "actual": 215,
+      "expected": 215,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NVDA/bear/E",
+      "actual": 0.15,
+      "expected": 0.15,
+      "pass": true
+    },
+    {
+      "check": "workbook/NVDA/bear/eps",
+      "actual": 4.456082599714286,
+      "expected": 4.456082599714286,
+      "pass": true
+    },
+    {
+      "check": "workbook/NVDA/bear/pe",
+      "actual": 18,
+      "expected": 18,
+      "pass": true
+    },
+    {
+      "check": "workbook/L12",
+      "actual": 340.6226988360996,
+      "expected": 340.6226988360995,
+      "pass": true
+    },
+    {
+      "check": "workbook/M12",
+      "actual": 0.15285089185884282,
+      "expected": 0.15285089185884282,
+      "pass": true
+    },
+    {
+      "check": "workbook/N12",
+      "actual": 0.16978941623737753,
+      "expected": 0.16978941623737753,
+      "pass": true
+    },
+    {
+      "check": "workbook/O12",
+      "actual": 0.1685823560852645,
+      "expected": 0.1685823560852645,
+      "pass": true
+    },
+    {
+      "check": "workbook/P12",
+      "actual": 226.24817873664807,
+      "expected": 226.24817873664804,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q12",
+      "actual": 225.56321120151205,
+      "expected": 225.56321120151202,
+      "pass": true
+    },
+    {
+      "check": "workbook/S12",
+      "actual": -224.58,
+      "expected": -224.58,
+      "pass": true
+    },
+    {
+      "check": "workbook/T12",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "workbook/U12",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "workbook/V12",
+      "actual": 341.6226988360996,
+      "expected": 341.6226988360995,
+      "pass": true
+    },
+    {
+      "check": "workbook/W12",
+      "actual": -215,
+      "expected": -215,
+      "pass": true
+    },
+    {
+      "check": "workbook/X12",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y12",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z12",
+      "actual": 341.6226988360996,
+      "expected": 341.6226988360995,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA12",
+      "actual": -215,
+      "expected": -215,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB12",
+      "actual": 0.7,
+      "expected": 0.7,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC12",
+      "actual": 0.7,
+      "expected": 0.7,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD12",
+      "actual": 341.32269883609956,
+      "expected": 341.3226988360995,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NVDA/base/C",
+      "actual": 224.58,
+      "expected": 224.58,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NVDA/base/D",
+      "actual": 215,
+      "expected": 215,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NVDA/base/E",
+      "actual": 0.15,
+      "expected": 0.15,
+      "pass": true
+    },
+    {
+      "check": "workbook/NVDA/base/eps",
+      "actual": 13.62490795344398,
+      "expected": 13.624907953443984,
+      "pass": true
+    },
+    {
+      "check": "workbook/NVDA/base/pe",
+      "actual": 25,
+      "expected": 25,
+      "pass": true
+    },
+    {
+      "check": "workbook/L13",
+      "actual": 614.8155879831933,
+      "expected": 614.8155879831933,
+      "pass": true
+    },
+    {
+      "check": "workbook/M13",
+      "actual": 0.4024777492247661,
+      "expected": 0.4024777492247661,
+      "pass": true
+    },
+    {
+      "check": "workbook/N13",
+      "actual": 0.4230682801139999,
+      "expected": 0.4230682801139999,
+      "pass": true
+    },
+    {
+      "check": "workbook/O13",
+      "actual": 0.42196484344689533,
+      "expected": 0.42196484344689533,
+      "pass": true
+    },
+    {
+      "check": "workbook/P13",
+      "actual": 406.741571781503,
+      "expected": 406.741571781503,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q13",
+      "actual": 405.99446896240215,
+      "expected": 405.99446896240215,
+      "pass": true
+    },
+    {
+      "check": "workbook/S13",
+      "actual": -224.58,
+      "expected": -224.58,
+      "pass": true
+    },
+    {
+      "check": "workbook/T13",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "workbook/U13",
+      "actual": 1.1,
+      "expected": 1.1,
+      "pass": true
+    },
+    {
+      "check": "workbook/V13",
+      "actual": 616.0155879831933,
+      "expected": 616.0155879831933,
+      "pass": true
+    },
+    {
+      "check": "workbook/W13",
+      "actual": -215,
+      "expected": -215,
+      "pass": true
+    },
+    {
+      "check": "workbook/X13",
+      "actual": 1,
+      "expected": 1,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y13",
+      "actual": 1.1,
+      "expected": 1.1,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z13",
+      "actual": 616.0155879831933,
+      "expected": 616.0155879831933,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA13",
+      "actual": -215,
+      "expected": -215,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB13",
+      "actual": 0.7,
+      "expected": 0.7,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC13",
+      "actual": 0.77,
+      "expected": 0.77,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD13",
+      "actual": 615.6555879831933,
+      "expected": 615.6555879831933,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NVDA/bull/C",
+      "actual": 224.58,
+      "expected": 224.58,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NVDA/bull/D",
+      "actual": 215,
+      "expected": 215,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NVDA/bull/E",
+      "actual": 0.15,
+      "expected": 0.15,
+      "pass": true
+    },
+    {
+      "check": "workbook/NVDA/bull/eps",
+      "actual": 20.49385293277311,
+      "expected": 20.49385293277311,
+      "pass": true
+    },
+    {
+      "check": "workbook/NVDA/bull/pe",
+      "actual": 30,
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "check": "workbook/L14",
+      "actual": 103.5,
+      "expected": 103.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/M14",
+      "actual": -0.10437980060561608,
+      "expected": -0.10437980060561608,
+      "pass": true
+    },
+    {
+      "check": "workbook/N14",
+      "actual": -0.08896828777069793,
+      "expected": -0.08896828777069793,
+      "pass": true
+    },
+    {
+      "check": "workbook/O14",
+      "actual": -0.09416321055571314,
+      "expected": -0.09416321055571314,
+      "pass": true
+    },
+    {
+      "check": "workbook/P14",
+      "actual": 79.04935768950435,
+      "expected": 79.04935768950435,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q14",
+      "actual": 77.43532707725944,
+      "expected": 77.43532707725944,
+      "pass": true
+    },
+    {
+      "check": "workbook/S14",
+      "actual": -152.48,
+      "expected": -152.48,
+      "pass": true
+    },
+    {
+      "check": "workbook/T14",
+      "actual": 2.24,
+      "expected": 2.24,
+      "pass": true
+    },
+    {
+      "check": "workbook/U14",
+      "actual": 2.24,
+      "expected": 2.24,
+      "pass": true
+    },
+    {
+      "check": "workbook/V14",
+      "actual": 105.74,
+      "expected": 105.74,
+      "pass": true
+    },
+    {
+      "check": "workbook/W14",
+      "actual": -145,
+      "expected": -145,
+      "pass": true
+    },
+    {
+      "check": "workbook/X14",
+      "actual": 2.24,
+      "expected": 2.24,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y14",
+      "actual": 2.24,
+      "expected": 2.24,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z14",
+      "actual": 105.74,
+      "expected": 105.74,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA14",
+      "actual": -145,
+      "expected": -145,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB14",
+      "actual": 1.568,
+      "expected": 1.568,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC14",
+      "actual": 1.568,
+      "expected": 1.568,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD14",
+      "actual": 105.068,
+      "expected": 105.068,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ALLE/bear/C",
+      "actual": 152.48,
+      "expected": 152.48,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ALLE/bear/D",
+      "actual": 145,
+      "expected": 145,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ALLE/bear/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/ALLE/bear/eps",
+      "actual": 6.9,
+      "expected": 6.9,
+      "pass": true
+    },
+    {
+      "check": "workbook/ALLE/bear/pe",
+      "actual": 15,
+      "expected": 15,
+      "pass": true
+    },
+    {
+      "check": "workbook/L15",
+      "actual": 202.8,
+      "expected": 202.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/M15",
+      "actual": 0.11492838854130605,
+      "expected": 0.11492838854130605,
+      "pass": true
+    },
+    {
+      "check": "workbook/N15",
+      "actual": 0.13405122987217577,
+      "expected": 0.13405122987217577,
+      "pass": true
+    },
+    {
+      "check": "workbook/O15",
+      "actual": 0.12933067339889892,
+      "expected": 0.12933067339889892,
+      "pass": true
+    },
+    {
+      "check": "workbook/P15",
+      "actual": 150.4465424562682,
+      "expected": 150.4465424562682,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q15",
+      "actual": 148.61728999635565,
+      "expected": 148.61728999635565,
+      "pass": true
+    },
+    {
+      "check": "workbook/S15",
+      "actual": -152.48,
+      "expected": -152.48,
+      "pass": true
+    },
+    {
+      "check": "workbook/T15",
+      "actual": 2.4,
+      "expected": 2.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/U15",
+      "actual": 2.55,
+      "expected": 2.55,
+      "pass": true
+    },
+    {
+      "check": "workbook/V15",
+      "actual": 205.5,
+      "expected": 205.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/W15",
+      "actual": -145,
+      "expected": -145,
+      "pass": true
+    },
+    {
+      "check": "workbook/X15",
+      "actual": 2.4,
+      "expected": 2.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y15",
+      "actual": 2.55,
+      "expected": 2.55,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z15",
+      "actual": 205.5,
+      "expected": 205.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA15",
+      "actual": -145,
+      "expected": -145,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB15",
+      "actual": 1.68,
+      "expected": 1.68,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC15",
+      "actual": 1.7849999999999997,
+      "expected": 1.7849999999999997,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD15",
+      "actual": 204.69,
+      "expected": 204.69,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ALLE/base/C",
+      "actual": 152.48,
+      "expected": 152.48,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ALLE/base/D",
+      "actual": 145,
+      "expected": 145,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ALLE/base/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/ALLE/base/eps",
+      "actual": 10.4,
+      "expected": 10.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/ALLE/base/pe",
+      "actual": 19.5,
+      "expected": 19.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/L16",
+      "actual": 272.8,
+      "expected": 272.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/M16",
+      "actual": 0.22909354362058731,
+      "expected": 0.22909354362058731,
+      "pass": true
+    },
+    {
+      "check": "workbook/N16",
+      "actual": 0.2501537525181806,
+      "expected": 0.2501537525181806,
+      "pass": true
+    },
+    {
+      "check": "workbook/O16",
+      "actual": 0.24545568012356644,
+      "expected": 0.24545568012356644,
+      "pass": true
+    },
+    {
+      "check": "workbook/P16",
+      "actual": 200.84445608600578,
+      "expected": 200.84445608600578,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q16",
+      "actual": 198.84321474125358,
+      "expected": 198.84321474125358,
+      "pass": true
+    },
+    {
+      "check": "workbook/S16",
+      "actual": -152.48,
+      "expected": -152.48,
+      "pass": true
+    },
+    {
+      "check": "workbook/T16",
+      "actual": 2.5,
+      "expected": 2.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/U16",
+      "actual": 2.8,
+      "expected": 2.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/V16",
+      "actual": 275.90000000000003,
+      "expected": 275.90000000000003,
+      "pass": true
+    },
+    {
+      "check": "workbook/W16",
+      "actual": -145,
+      "expected": -145,
+      "pass": true
+    },
+    {
+      "check": "workbook/X16",
+      "actual": 2.5,
+      "expected": 2.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y16",
+      "actual": 2.8,
+      "expected": 2.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z16",
+      "actual": 275.90000000000003,
+      "expected": 275.90000000000003,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA16",
+      "actual": -145,
+      "expected": -145,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB16",
+      "actual": 1.75,
+      "expected": 1.75,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC16",
+      "actual": 1.9599999999999997,
+      "expected": 1.9599999999999997,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD16",
+      "actual": 274.97,
+      "expected": 274.97,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ALLE/bull/C",
+      "actual": 152.48,
+      "expected": 152.48,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ALLE/bull/D",
+      "actual": 145,
+      "expected": 145,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ALLE/bull/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/ALLE/bull/eps",
+      "actual": 12.4,
+      "expected": 12.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/ALLE/bull/pe",
+      "actual": 22,
+      "expected": 22,
+      "pass": true
+    },
+    {
+      "check": "workbook/L17",
+      "actual": 95.55148799999999,
+      "expected": 95.551488,
+      "pass": true
+    },
+    {
+      "check": "workbook/M17",
+      "actual": -0.06638213910102958,
+      "expected": -0.06638213910102958,
+      "pass": true
+    },
+    {
+      "check": "workbook/N17",
+      "actual": -0.051535864126652176,
+      "expected": -0.051535864126652176,
+      "pass": true
+    },
+    {
+      "check": "workbook/O17",
+      "actual": -0.058008922485831727,
+      "expected": -0.058008922485831727,
+      "pass": true
+    },
+    {
+      "check": "workbook/P17",
+      "actual": 74.74501249688107,
+      "expected": 74.74501249688107,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q17",
+      "actual": 73.00072653873681,
+      "expected": 73.00072653873681,
+      "pass": true
+    },
+    {
+      "check": "workbook/S17",
+      "actual": -125.69,
+      "expected": -125.69,
+      "pass": true
+    },
+    {
+      "check": "workbook/T17",
+      "actual": 2.4,
+      "expected": 2.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/U17",
+      "actual": 2.4,
+      "expected": 2.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/V17",
+      "actual": 97.951488,
+      "expected": 97.95148800000001,
+      "pass": true
+    },
+    {
+      "check": "workbook/W17",
+      "actual": -120.0,
+      "expected": -120,
+      "pass": true
+    },
+    {
+      "check": "workbook/X17",
+      "actual": 2.4,
+      "expected": 2.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y17",
+      "actual": 2.4,
+      "expected": 2.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z17",
+      "actual": 97.951488,
+      "expected": 97.95148800000001,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA17",
+      "actual": -120.0,
+      "expected": -120,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB17",
+      "actual": 1.68,
+      "expected": 1.68,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC17",
+      "actual": 1.68,
+      "expected": 1.68,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD17",
+      "actual": 97.231488,
+      "expected": 97.23148800000001,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/HIG/bear/C",
+      "actual": 125.69,
+      "expected": 125.69,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/HIG/bear/D",
+      "actual": 120,
+      "expected": 120.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/HIG/bear/E",
+      "actual": 0.115,
+      "expected": 0.115,
+      "pass": true
+    },
+    {
+      "check": "workbook/HIG/bear/eps",
+      "actual": 10.616832,
+      "expected": 10.616831999999999,
+      "pass": true
+    },
+    {
+      "check": "workbook/HIG/bear/pe",
+      "actual": 9,
+      "expected": 9,
+      "pass": true
+    },
+    {
+      "check": "workbook/L18",
+      "actual": 164.360208,
+      "expected": 164.360208,
+      "pass": true
+    },
+    {
+      "check": "workbook/M18",
+      "actual": 0.11188603270936681,
+      "expected": 0.11188603270936681,
+      "pass": true
+    },
+    {
+      "check": "workbook/N18",
+      "actual": 0.1294922383506799,
+      "expected": 0.1294922383506799,
+      "pass": true
+    },
+    {
+      "check": "workbook/O18",
+      "actual": 0.12380734692776507,
+      "expected": 0.12380734692776507,
+      "pass": true
+    },
+    {
+      "check": "workbook/P18",
+      "actual": 124.65752576272816,
+      "expected": 124.65752576272816,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q18",
+      "actual": 122.83104362866466,
+      "expected": 122.83104362866466,
+      "pass": true
+    },
+    {
+      "check": "workbook/S18",
+      "actual": -125.69,
+      "expected": -125.69,
+      "pass": true
+    },
+    {
+      "check": "workbook/T18",
+      "actual": 2.4,
+      "expected": 2.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/U18",
+      "actual": 2.52,
+      "expected": 2.52,
+      "pass": true
+    },
+    {
+      "check": "workbook/V18",
+      "actual": 167.006208,
+      "expected": 167.006208,
+      "pass": true
+    },
+    {
+      "check": "workbook/W18",
+      "actual": -120.0,
+      "expected": -120,
+      "pass": true
+    },
+    {
+      "check": "workbook/X18",
+      "actual": 2.4,
+      "expected": 2.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y18",
+      "actual": 2.52,
+      "expected": 2.52,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z18",
+      "actual": 167.006208,
+      "expected": 167.006208,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA18",
+      "actual": -120.0,
+      "expected": -120,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB18",
+      "actual": 1.68,
+      "expected": 1.68,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC18",
+      "actual": 1.7639999999999998,
+      "expected": 1.7639999999999998,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD18",
+      "actual": 166.212408,
+      "expected": 166.212408,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/HIG/base/C",
+      "actual": 125.69,
+      "expected": 125.69,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/HIG/base/D",
+      "actual": 120,
+      "expected": 120.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/HIG/base/E",
+      "actual": 0.115,
+      "expected": 0.115,
+      "pass": true
+    },
+    {
+      "check": "workbook/HIG/base/eps",
+      "actual": 14.292192,
+      "expected": 14.292192,
+      "pass": true
+    },
+    {
+      "check": "workbook/HIG/base/pe",
+      "actual": 11.5,
+      "expected": 11.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/L19",
+      "actual": 207.63600000000005,
+      "expected": 207.636,
+      "pass": true
+    },
+    {
+      "check": "workbook/M19",
+      "actual": 0.19964345877041578,
+      "expected": 0.19964345877041556,
+      "pass": true
+    },
+    {
+      "check": "workbook/N19",
+      "actual": 0.218610397255541,
+      "expected": 0.21861039725554077,
+      "pass": true
+    },
+    {
+      "check": "workbook/O19",
+      "actual": 0.21318295611603133,
+      "expected": 0.2131829561160311,
+      "pass": true
+    },
+    {
+      "check": "workbook/P19",
+      "actual": 156.04517651590908,
+      "expected": 156.04517651590905,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q19",
+      "actual": 154.1681300992185,
+      "expected": 154.16813009921847,
+      "pass": true
+    },
+    {
+      "check": "workbook/S19",
+      "actual": -125.69,
+      "expected": -125.69,
+      "pass": true
+    },
+    {
+      "check": "workbook/T19",
+      "actual": 2.4,
+      "expected": 2.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/U19",
+      "actual": 2.592,
+      "expected": 2.592,
+      "pass": true
+    },
+    {
+      "check": "workbook/V19",
+      "actual": 210.43536000000006,
+      "expected": 210.43536,
+      "pass": true
+    },
+    {
+      "check": "workbook/W19",
+      "actual": -120.0,
+      "expected": -120,
+      "pass": true
+    },
+    {
+      "check": "workbook/X19",
+      "actual": 2.4,
+      "expected": 2.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y19",
+      "actual": 2.592,
+      "expected": 2.592,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z19",
+      "actual": 210.43536000000006,
+      "expected": 210.43536,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA19",
+      "actual": -120.0,
+      "expected": -120,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB19",
+      "actual": 1.68,
+      "expected": 1.68,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC19",
+      "actual": 1.8144,
+      "expected": 1.8144,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD19",
+      "actual": 209.59555200000005,
+      "expected": 209.595552,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/HIG/bull/C",
+      "actual": 125.69,
+      "expected": 125.69,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/HIG/bull/D",
+      "actual": 120,
+      "expected": 120.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/HIG/bull/E",
+      "actual": 0.115,
+      "expected": 0.115,
+      "pass": true
+    },
+    {
+      "check": "workbook/HIG/bull/eps",
+      "actual": 15.972,
+      "expected": 15.972000000000005,
+      "pass": true
+    },
+    {
+      "check": "workbook/HIG/bull/pe",
+      "actual": 13,
+      "expected": 13,
+      "pass": true
+    },
+    {
+      "check": "workbook/L20",
+      "actual": 220,
+      "expected": 220,
+      "pass": true
+    },
+    {
+      "check": "workbook/M20",
+      "actual": -0.18089709861827913,
+      "expected": -0.18089709861827913,
+      "pass": true
+    },
+    {
+      "check": "workbook/N20",
+      "actual": -0.1433865703279374,
+      "expected": -0.1433865703279374,
+      "pass": true
+    },
+    {
+      "check": "workbook/O20",
+      "actual": -0.1433865703279374,
+      "expected": -0.1433865703279374,
+      "pass": true
+    },
+    {
+      "check": "workbook/P20",
+      "actual": 154.51303155006858,
+      "expected": 154.51303155006858,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q20",
+      "actual": 154.51303155006858,
+      "expected": 154.51303155006858,
+      "pass": true
+    },
+    {
+      "check": "workbook/S20",
+      "actual": -400.32,
+      "expected": -400.32,
+      "pass": true
+    },
+    {
+      "check": "workbook/T20",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/U20",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/V20",
+      "actual": 220,
+      "expected": 220,
+      "pass": true
+    },
+    {
+      "check": "workbook/W20",
+      "actual": -350,
+      "expected": -350,
+      "pass": true
+    },
+    {
+      "check": "workbook/X20",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y20",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z20",
+      "actual": 220,
+      "expected": 220,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA20",
+      "actual": -350,
+      "expected": -350,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB20",
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC20",
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD20",
+      "actual": 220.0,
+      "expected": 220.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/CPAY/bear/C",
+      "actual": 400.32,
+      "expected": 400.32,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/CPAY/bear/D",
+      "actual": 350,
+      "expected": 350,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/CPAY/bear/E",
+      "actual": 0.125,
+      "expected": 0.125,
+      "pass": true
+    },
+    {
+      "check": "workbook/CPAY/bear/eps",
+      "actual": 20,
+      "expected": 20,
+      "pass": true
+    },
+    {
+      "check": "workbook/CPAY/bear/pe",
+      "actual": 11,
+      "expected": 11,
+      "pass": true
+    },
+    {
+      "check": "workbook/L21",
+      "actual": 506.27677241824006,
+      "expected": 506.27677241824,
+      "pass": true
+    },
+    {
+      "check": "workbook/M21",
+      "actual": 0.08141794404822955,
+      "expected": 0.08141794404822933,
+      "pass": true
+    },
+    {
+      "check": "workbook/N21",
+      "actual": 0.13094109714105484,
+      "expected": 0.13094109714105484,
+      "pass": true
+    },
+    {
+      "check": "workbook/O21",
+      "actual": 0.13094109714105484,
+      "expected": 0.13094109714105484,
+      "pass": true
+    },
+    {
+      "check": "workbook/P21",
+      "actual": 355.5743586805746,
+      "expected": 355.5743586805746,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q21",
+      "actual": 355.5743586805746,
+      "expected": 355.5743586805746,
+      "pass": true
+    },
+    {
+      "check": "workbook/S21",
+      "actual": -400.32,
+      "expected": -400.32,
+      "pass": true
+    },
+    {
+      "check": "workbook/T21",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/U21",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/V21",
+      "actual": 506.27677241824006,
+      "expected": 506.27677241824,
+      "pass": true
+    },
+    {
+      "check": "workbook/W21",
+      "actual": -350,
+      "expected": -350,
+      "pass": true
+    },
+    {
+      "check": "workbook/X21",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y21",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z21",
+      "actual": 506.27677241824006,
+      "expected": 506.27677241824,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA21",
+      "actual": -350,
+      "expected": -350,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB21",
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC21",
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD21",
+      "actual": 506.27677241824006,
+      "expected": 506.27677241824,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/CPAY/base/C",
+      "actual": 400.32,
+      "expected": 400.32,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/CPAY/base/D",
+      "actual": 350,
+      "expected": 350,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/CPAY/base/E",
+      "actual": 0.125,
+      "expected": 0.125,
+      "pass": true
+    },
+    {
+      "check": "workbook/CPAY/base/eps",
+      "actual": 31.64229827614,
+      "expected": 31.642298276140004,
+      "pass": true
+    },
+    {
+      "check": "workbook/CPAY/base/pe",
+      "actual": 16,
+      "expected": 16,
+      "pass": true
+    },
+    {
+      "check": "workbook/L22",
+      "actual": 665,
+      "expected": 665,
+      "pass": true
+    },
+    {
+      "check": "workbook/M22",
+      "actual": 0.18432651485578633,
+      "expected": 0.18432651485578633,
+      "pass": true
+    },
+    {
+      "check": "workbook/N22",
+      "actual": 0.23856232963017077,
+      "expected": 0.23856232963017077,
+      "pass": true
+    },
+    {
+      "check": "workbook/O22",
+      "actual": 0.23856232963017077,
+      "expected": 0.23856232963017077,
+      "pass": true
+    },
+    {
+      "check": "workbook/P22",
+      "actual": 467.05075445816186,
+      "expected": 467.05075445816186,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q22",
+      "actual": 467.05075445816186,
+      "expected": 467.05075445816186,
+      "pass": true
+    },
+    {
+      "check": "workbook/S22",
+      "actual": -400.32,
+      "expected": -400.32,
+      "pass": true
+    },
+    {
+      "check": "workbook/T22",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/U22",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/V22",
+      "actual": 665,
+      "expected": 665,
+      "pass": true
+    },
+    {
+      "check": "workbook/W22",
+      "actual": -350,
+      "expected": -350,
+      "pass": true
+    },
+    {
+      "check": "workbook/X22",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y22",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z22",
+      "actual": 665,
+      "expected": 665,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA22",
+      "actual": -350,
+      "expected": -350,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB22",
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC22",
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD22",
+      "actual": 665.0,
+      "expected": 665.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/CPAY/bull/C",
+      "actual": 400.32,
+      "expected": 400.32,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/CPAY/bull/D",
+      "actual": 350,
+      "expected": 350,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/CPAY/bull/E",
+      "actual": 0.125,
+      "expected": 0.125,
+      "pass": true
+    },
+    {
+      "check": "workbook/CPAY/bull/eps",
+      "actual": 35,
+      "expected": 35,
+      "pass": true
+    },
+    {
+      "check": "workbook/CPAY/bull/pe",
+      "actual": 19,
+      "expected": 19,
+      "pass": true
+    },
+    {
+      "check": "workbook/L23",
+      "actual": 168.91496999999998,
+      "expected": 168.91497,
+      "pass": true
+    },
+    {
+      "check": "workbook/M23",
+      "actual": -0.12032051186526044,
+      "expected": -0.12032051186526033,
+      "pass": true
+    },
+    {
+      "check": "workbook/N23",
+      "actual": -0.08745634187667878,
+      "expected": -0.08745634187667867,
+      "pass": true
+    },
+    {
+      "check": "workbook/O23",
+      "actual": -0.09248147437169701,
+      "expected": -0.0924814743716969,
+      "pass": true
+    },
+    {
+      "check": "workbook/P23",
+      "actual": 128.6847852701348,
+      "expected": 128.6847852701348,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q23",
+      "actual": 126.14845145089281,
+      "expected": 126.14845145089282,
+      "pass": true
+    },
+    {
+      "check": "workbook/S23",
+      "actual": -261.86,
+      "expected": -261.86,
+      "pass": true
+    },
+    {
+      "check": "workbook/T23",
+      "actual": 3.52,
+      "expected": 3.52,
+      "pass": true
+    },
+    {
+      "check": "workbook/U23",
+      "actual": 3.52,
+      "expected": 3.52,
+      "pass": true
+    },
+    {
+      "check": "workbook/V23",
+      "actual": 172.43497,
+      "expected": 172.43497000000002,
+      "pass": true
+    },
+    {
+      "check": "workbook/W23",
+      "actual": -235.0,
+      "expected": -235,
+      "pass": true
+    },
+    {
+      "check": "workbook/X23",
+      "actual": 3.52,
+      "expected": 3.52,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y23",
+      "actual": 3.52,
+      "expected": 3.52,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z23",
+      "actual": 172.43497,
+      "expected": 172.43497000000002,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA23",
+      "actual": -235.0,
+      "expected": -235,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB23",
+      "actual": 2.464,
+      "expected": 2.464,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC23",
+      "actual": 2.464,
+      "expected": 2.464,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD23",
+      "actual": 171.37896999999998,
+      "expected": 171.37897,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AIZ/bear/C",
+      "actual": 261.86,
+      "expected": 261.86,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AIZ/bear/D",
+      "actual": 235,
+      "expected": 235.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AIZ/bear/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/AIZ/bear/eps",
+      "actual": 16.891497,
+      "expected": 16.891496999999998,
+      "pass": true
+    },
+    {
+      "check": "workbook/AIZ/bear/pe",
+      "actual": 10,
+      "expected": 10,
+      "pass": true
+    },
+    {
+      "check": "workbook/L24",
+      "actual": 334.43673900000005,
+      "expected": 334.436739,
+      "pass": true
+    },
+    {
+      "check": "workbook/M24",
+      "actual": 0.09810086716883026,
+      "expected": 0.09810086716883004,
+      "pass": true
+    },
+    {
+      "check": "workbook/N24",
+      "actual": 0.13895657224190805,
+      "expected": 0.13895657224190805,
+      "pass": true
+    },
+    {
+      "check": "workbook/O24",
+      "actual": 0.13471337075763856,
+      "expected": 0.13471337075763856,
+      "pass": true
+    },
+    {
+      "check": "workbook/P24",
+      "actual": 246.97795403038444,
+      "expected": 246.9779540303844,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q24",
+      "actual": 244.2982073102678,
+      "expected": 244.2982073102678,
+      "pass": true
+    },
+    {
+      "check": "workbook/S24",
+      "actual": -261.86,
+      "expected": -261.86,
+      "pass": true
+    },
+    {
+      "check": "workbook/T24",
+      "actual": 3.52,
+      "expected": 3.52,
+      "pass": true
+    },
+    {
+      "check": "workbook/U24",
+      "actual": 3.7312000000000003,
+      "expected": 3.7312,
+      "pass": true
+    },
+    {
+      "check": "workbook/V24",
+      "actual": 338.391811,
+      "expected": 338.39181099999996,
+      "pass": true
+    },
+    {
+      "check": "workbook/W24",
+      "actual": -235.0,
+      "expected": -235,
+      "pass": true
+    },
+    {
+      "check": "workbook/X24",
+      "actual": 3.52,
+      "expected": 3.52,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y24",
+      "actual": 3.7312000000000003,
+      "expected": 3.7312,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z24",
+      "actual": 338.391811,
+      "expected": 338.39181099999996,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA24",
+      "actual": -235.0,
+      "expected": -235,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB24",
+      "actual": 2.464,
+      "expected": 2.464,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC24",
+      "actual": 2.61184,
+      "expected": 2.61184,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD24",
+      "actual": 337.2052894,
+      "expected": 337.20528939999997,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AIZ/base/C",
+      "actual": 261.86,
+      "expected": 261.86,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AIZ/base/D",
+      "actual": 235,
+      "expected": 235.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AIZ/base/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/AIZ/base/eps",
+      "actual": 25.725903,
+      "expected": 25.725903000000002,
+      "pass": true
+    },
+    {
+      "check": "workbook/AIZ/base/pe",
+      "actual": 13,
+      "expected": 13,
+      "pass": true
+    },
+    {
+      "check": "workbook/L25",
+      "actual": 459.5240160000001,
+      "expected": 459.524016,
+      "pass": true
+    },
+    {
+      "check": "workbook/M25",
+      "actual": 0.218276440763835,
+      "expected": 0.2182764407638348,
+      "pass": true
+    },
+    {
+      "check": "workbook/N25",
+      "actual": 0.2635322176778706,
+      "expected": 0.2635322176778704,
+      "pass": true
+    },
+    {
+      "check": "workbook/O25",
+      "actual": 0.25961670417611604,
+      "expected": 0.25961670417611604,
+      "pass": true
+    },
+    {
+      "check": "workbook/P25",
+      "actual": 336.1759634657434,
+      "expected": 336.17596346574334,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q25",
+      "actual": 333.44720982142854,
+      "expected": 333.4472098214285,
+      "pass": true
+    },
+    {
+      "check": "workbook/S25",
+      "actual": -261.86,
+      "expected": -261.86,
+      "pass": true
+    },
+    {
+      "check": "workbook/T25",
+      "actual": 3.52,
+      "expected": 3.52,
+      "pass": true
+    },
+    {
+      "check": "workbook/U25",
+      "actual": 3.8016,
+      "expected": 3.8016,
+      "pass": true
+    },
+    {
+      "check": "workbook/V25",
+      "actual": 463.6297440000001,
+      "expected": 463.629744,
+      "pass": true
+    },
+    {
+      "check": "workbook/W25",
+      "actual": -235.0,
+      "expected": -235,
+      "pass": true
+    },
+    {
+      "check": "workbook/X25",
+      "actual": 3.52,
+      "expected": 3.52,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y25",
+      "actual": 3.8016,
+      "expected": 3.8016,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z25",
+      "actual": 463.6297440000001,
+      "expected": 463.629744,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA25",
+      "actual": -235.0,
+      "expected": -235,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB25",
+      "actual": 2.464,
+      "expected": 2.464,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC25",
+      "actual": 2.66112,
+      "expected": 2.66112,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD25",
+      "actual": 462.3980256000001,
+      "expected": 462.39802560000004,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AIZ/bull/C",
+      "actual": 261.86,
+      "expected": 261.86,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AIZ/bull/D",
+      "actual": 235,
+      "expected": 235.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AIZ/bull/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/AIZ/bull/eps",
+      "actual": 28.720251,
+      "expected": 28.720251000000005,
+      "pass": true
+    },
+    {
+      "check": "workbook/AIZ/bull/pe",
+      "actual": 16,
+      "expected": 16,
+      "pass": true
+    },
+    {
+      "check": "workbook/L26",
+      "actual": 204.4,
+      "expected": 204.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/M26",
+      "actual": -0.14550753074265171,
+      "expected": -0.14550753074265171,
+      "pass": true
+    },
+    {
+      "check": "workbook/N26",
+      "actual": -0.09365269238853896,
+      "expected": -0.09365269238853896,
+      "pass": true
+    },
+    {
+      "check": "workbook/O26",
+      "actual": -0.10441657032506307,
+      "expected": -0.10441657032506307,
+      "pass": true
+    },
+    {
+      "check": "workbook/P26",
+      "actual": 168.737609329446,
+      "expected": 168.737609329446,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q26",
+      "actual": 161.76269132653056,
+      "expected": 161.76269132653056,
+      "pass": true
+    },
+    {
+      "check": "workbook/S26",
+      "actual": -367.71,
+      "expected": -367.71,
+      "pass": true
+    },
+    {
+      "check": "workbook/T26",
+      "actual": 9.68,
+      "expected": 9.68,
+      "pass": true
+    },
+    {
+      "check": "workbook/U26",
+      "actual": 9.68,
+      "expected": 9.68,
+      "pass": true
+    },
+    {
+      "check": "workbook/V26",
+      "actual": 214.08,
+      "expected": 214.08,
+      "pass": true
+    },
+    {
+      "check": "workbook/W26",
+      "actual": -310,
+      "expected": -310,
+      "pass": true
+    },
+    {
+      "check": "workbook/X26",
+      "actual": 9.68,
+      "expected": 9.68,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y26",
+      "actual": 9.68,
+      "expected": 9.68,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z26",
+      "actual": 214.08,
+      "expected": 214.08,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA26",
+      "actual": -310,
+      "expected": -310,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB26",
+      "actual": 6.776,
+      "expected": 6.776,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC26",
+      "actual": 6.776,
+      "expected": 6.776,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD26",
+      "actual": 211.17600000000002,
+      "expected": 211.17600000000002,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/SNA/bear/C",
+      "actual": 367.71,
+      "expected": 367.71,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/SNA/bear/D",
+      "actual": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/SNA/bear/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/SNA/bear/eps",
+      "actual": 14.6,
+      "expected": 14.6,
+      "pass": true
+    },
+    {
+      "check": "workbook/SNA/bear/pe",
+      "actual": 14,
+      "expected": 14,
+      "pass": true
+    },
+    {
+      "check": "workbook/L27",
+      "actual": 414,
+      "expected": 414,
+      "pass": true
+    },
+    {
+      "check": "workbook/M27",
+      "actual": 0.06688492540780755,
+      "expected": 0.06688492540780755,
+      "pass": true
+    },
+    {
+      "check": "workbook/N27",
+      "actual": 0.13105753189045977,
+      "expected": 0.13105753189045977,
+      "pass": true
+    },
+    {
+      "check": "workbook/O27",
+      "actual": 0.12210520107967315,
+      "expected": 0.12210520107967315,
+      "pass": true
+    },
+    {
+      "check": "workbook/P27",
+      "actual": 319.0211825801748,
+      "expected": 319.0211825801748,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q27",
+      "actual": 311.717934584548,
+      "expected": 311.717934584548,
+      "pass": true
+    },
+    {
+      "check": "workbook/S27",
+      "actual": -367.71,
+      "expected": -367.71,
+      "pass": true
+    },
+    {
+      "check": "workbook/T27",
+      "actual": 9.68,
+      "expected": 9.68,
+      "pass": true
+    },
+    {
+      "check": "workbook/U27",
+      "actual": 10.16,
+      "expected": 10.16,
+      "pass": true
+    },
+    {
+      "check": "workbook/V27",
+      "actual": 424.68,
+      "expected": 424.68,
+      "pass": true
+    },
+    {
+      "check": "workbook/W27",
+      "actual": -310,
+      "expected": -310,
+      "pass": true
+    },
+    {
+      "check": "workbook/X27",
+      "actual": 9.68,
+      "expected": 9.68,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y27",
+      "actual": 10.16,
+      "expected": 10.16,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z27",
+      "actual": 424.68,
+      "expected": 424.68,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA27",
+      "actual": -310,
+      "expected": -310,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB27",
+      "actual": 6.776,
+      "expected": 6.776,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC27",
+      "actual": 7.111999999999999,
+      "expected": 7.111999999999999,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD27",
+      "actual": 421.476,
+      "expected": 421.476,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/SNA/base/C",
+      "actual": 367.71,
+      "expected": 367.71,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/SNA/base/D",
+      "actual": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/SNA/base/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/SNA/base/eps",
+      "actual": 23,
+      "expected": 23,
+      "pass": true
+    },
+    {
+      "check": "workbook/SNA/base/pe",
+      "actual": 18,
+      "expected": 18,
+      "pass": true
+    },
+    {
+      "check": "workbook/L28",
+      "actual": 524.0,
+      "expected": 524.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/M28",
+      "actual": 0.15184559190258862,
+      "expected": 0.15184559190258862,
+      "pass": true
+    },
+    {
+      "check": "workbook/N28",
+      "actual": 0.22103048123645863,
+      "expected": 0.22103048123645863,
+      "pass": true
+    },
+    {
+      "check": "workbook/O28",
+      "actual": 0.21207705220141315,
+      "expected": 0.21207705220141315,
+      "pass": true
+    },
+    {
+      "check": "workbook/P28",
+      "actual": 399.2119169096209,
+      "expected": 399.2119169096209,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q28",
+      "actual": 391.3401967930028,
+      "expected": 391.3401967930028,
+      "pass": true
+    },
+    {
+      "check": "workbook/S28",
+      "actual": -367.71,
+      "expected": -367.71,
+      "pass": true
+    },
+    {
+      "check": "workbook/T28",
+      "actual": 10,
+      "expected": 10,
+      "pass": true
+    },
+    {
+      "check": "workbook/U28",
+      "actual": 11,
+      "expected": 11,
+      "pass": true
+    },
+    {
+      "check": "workbook/V28",
+      "actual": 536.0,
+      "expected": 536.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/W28",
+      "actual": -310,
+      "expected": -310,
+      "pass": true
+    },
+    {
+      "check": "workbook/X28",
+      "actual": 10,
+      "expected": 10,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y28",
+      "actual": 11,
+      "expected": 11,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z28",
+      "actual": 536.0,
+      "expected": 536.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA28",
+      "actual": -310,
+      "expected": -310,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB28",
+      "actual": 7.0,
+      "expected": 7.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC28",
+      "actual": 7.699999999999999,
+      "expected": 7.699999999999999,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD28",
+      "actual": 532.4,
+      "expected": 532.4,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/SNA/bull/C",
+      "actual": 367.71,
+      "expected": 367.71,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/SNA/bull/D",
+      "actual": 310,
+      "expected": 310,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/SNA/bull/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/SNA/bull/eps",
+      "actual": 26.2,
+      "expected": 26.2,
+      "pass": true
+    },
+    {
+      "check": "workbook/SNA/bull/pe",
+      "actual": 20,
+      "expected": 20,
+      "pass": true
+    },
+    {
+      "check": "workbook/L29",
+      "actual": 87.5,
+      "expected": 87.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/M29",
+      "actual": -0.22510267025582448,
+      "expected": -0.22510267025582448,
+      "pass": true
+    },
+    {
+      "check": "workbook/N29",
+      "actual": -0.14996331323247541,
+      "expected": -0.14996331323247541,
+      "pass": true
+    },
+    {
+      "check": "workbook/O29",
+      "actual": -0.15430322906869826,
+      "expected": -0.15430322906869826,
+      "pass": true
+    },
+    {
+      "check": "workbook/P29",
+      "actual": 66.60406796647229,
+      "expected": 66.60406796647229,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q29",
+      "actual": 65.30707908163264,
+      "expected": 65.30707908163264,
+      "pass": true
+    },
+    {
+      "check": "workbook/S29",
+      "actual": -197.24,
+      "expected": -197.24,
+      "pass": true
+    },
+    {
+      "check": "workbook/T29",
+      "actual": 1.8,
+      "expected": 1.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/U29",
+      "actual": 1.8,
+      "expected": 1.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/V29",
+      "actual": 89.3,
+      "expected": 89.3,
+      "pass": true
+    },
+    {
+      "check": "workbook/W29",
+      "actual": -150,
+      "expected": -150,
+      "pass": true
+    },
+    {
+      "check": "workbook/X29",
+      "actual": 1.8,
+      "expected": 1.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y29",
+      "actual": 1.8,
+      "expected": 1.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z29",
+      "actual": 89.3,
+      "expected": 89.3,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA29",
+      "actual": -150,
+      "expected": -150,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB29",
+      "actual": 1.26,
+      "expected": 1.26,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC29",
+      "actual": 1.26,
+      "expected": 1.26,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD29",
+      "actual": 88.76,
+      "expected": 88.76,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NTAP/bear/C",
+      "actual": 197.24,
+      "expected": 197.24,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NTAP/bear/D",
+      "actual": 150,
+      "expected": 150,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NTAP/bear/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/NTAP/bear/eps",
+      "actual": 6.25,
+      "expected": 6.25,
+      "pass": true
+    },
+    {
+      "check": "workbook/NTAP/bear/pe",
+      "actual": 14,
+      "expected": 14,
+      "pass": true
+    },
+    {
+      "check": "workbook/L30",
+      "actual": 209.63250000000008,
+      "expected": 209.63250000000008,
+      "pass": true
+    },
+    {
+      "check": "workbook/M30",
+      "actual": 0.03124503939625589,
+      "expected": 0.03124503939625589,
+      "pass": true
+    },
+    {
+      "check": "workbook/N30",
+      "actual": 0.13094101082741594,
+      "expected": 0.13094101082741594,
+      "pass": true
+    },
+    {
+      "check": "workbook/O30",
+      "actual": 0.12706796836503076,
+      "expected": 0.12706796836503076,
+      "pass": true
+    },
+    {
+      "check": "workbook/P30",
+      "actual": 154.3857421875,
+      "expected": 154.3857421875,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q30",
+      "actual": 152.83370137117348,
+      "expected": 152.83370137117348,
+      "pass": true
+    },
+    {
+      "check": "workbook/S30",
+      "actual": -197.24,
+      "expected": -197.24,
+      "pass": true
+    },
+    {
+      "check": "workbook/T30",
+      "actual": 2.08,
+      "expected": 2.08,
+      "pass": true
+    },
+    {
+      "check": "workbook/U30",
+      "actual": 2.16,
+      "expected": 2.16,
+      "pass": true
+    },
+    {
+      "check": "workbook/V30",
+      "actual": 211.8725000000001,
+      "expected": 211.8725000000001,
+      "pass": true
+    },
+    {
+      "check": "workbook/W30",
+      "actual": -150,
+      "expected": -150,
+      "pass": true
+    },
+    {
+      "check": "workbook/X30",
+      "actual": 2.08,
+      "expected": 2.08,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y30",
+      "actual": 2.16,
+      "expected": 2.16,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z30",
+      "actual": 211.8725000000001,
+      "expected": 211.8725000000001,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA30",
+      "actual": -150,
+      "expected": -150,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB30",
+      "actual": 1.456,
+      "expected": 1.456,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC30",
+      "actual": 1.512,
+      "expected": 1.512,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD30",
+      "actual": 211.2005000000001,
+      "expected": 211.2005000000001,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NTAP/base/C",
+      "actual": 197.24,
+      "expected": 197.24,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NTAP/base/D",
+      "actual": 150,
+      "expected": 150,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NTAP/base/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/NTAP/base/eps",
+      "actual": 9.982500000000003,
+      "expected": 9.982500000000003,
+      "pass": true
+    },
+    {
+      "check": "workbook/NTAP/base/pe",
+      "actual": 21,
+      "expected": 21,
+      "pass": true
+    },
+    {
+      "check": "workbook/L31",
+      "actual": 288,
+      "expected": 288,
+      "pass": true
+    },
+    {
+      "check": "workbook/M31",
+      "actual": 0.1447772523969345,
+      "expected": 0.1447772523969345,
+      "pass": true
+    },
+    {
+      "check": "workbook/N31",
+      "actual": 0.2553052352763917,
+      "expected": 0.2553052352763917,
+      "pass": true
+    },
+    {
+      "check": "workbook/O31",
+      "actual": 0.25157958024383953,
+      "expected": 0.25157958024383953,
+      "pass": true
+    },
+    {
+      "check": "workbook/P31",
+      "actual": 210.49843977769672,
+      "expected": 210.49843977769672,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q31",
+      "actual": 208.8467212554664,
+      "expected": 208.8467212554664,
+      "pass": true
+    },
+    {
+      "check": "workbook/S31",
+      "actual": -197.24,
+      "expected": -197.24,
+      "pass": true
+    },
+    {
+      "check": "workbook/T31",
+      "actual": 2.08,
+      "expected": 2.08,
+      "pass": true
+    },
+    {
+      "check": "workbook/U31",
+      "actual": 2.3,
+      "expected": 2.3,
+      "pass": true
+    },
+    {
+      "check": "workbook/V31",
+      "actual": 290.55,
+      "expected": 290.55,
+      "pass": true
+    },
+    {
+      "check": "workbook/W31",
+      "actual": -150,
+      "expected": -150,
+      "pass": true
+    },
+    {
+      "check": "workbook/X31",
+      "actual": 2.08,
+      "expected": 2.08,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y31",
+      "actual": 2.3,
+      "expected": 2.3,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z31",
+      "actual": 290.55,
+      "expected": 290.55,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA31",
+      "actual": -150,
+      "expected": -150,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB31",
+      "actual": 1.456,
+      "expected": 1.456,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC31",
+      "actual": 1.6099999999999999,
+      "expected": 1.6099999999999999,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD31",
+      "actual": 289.785,
+      "expected": 289.785,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NTAP/bull/C",
+      "actual": 197.24,
+      "expected": 197.24,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NTAP/bull/D",
+      "actual": 150,
+      "expected": 150,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/NTAP/bull/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/NTAP/bull/eps",
+      "actual": 12,
+      "expected": 12,
+      "pass": true
+    },
+    {
+      "check": "workbook/NTAP/bull/pe",
+      "actual": 24,
+      "expected": 24,
+      "pass": true
+    },
+    {
+      "check": "workbook/L32",
+      "actual": 46.800000000000004,
+      "expected": 46.800000000000004,
+      "pass": true
+    },
+    {
+      "check": "workbook/M32",
+      "actual": -0.1904033021944032,
+      "expected": -0.1904033021944032,
+      "pass": true
+    },
+    {
+      "check": "workbook/N32",
+      "actual": -0.09769022892056128,
+      "expected": -0.09769022892056128,
+      "pass": true
+    },
+    {
+      "check": "workbook/O32",
+      "actual": -0.09949825851876454,
+      "expected": -0.09949825851876454,
+      "pass": true
+    },
+    {
+      "check": "workbook/P32",
+      "actual": 33.26115100384852,
+      "expected": 33.26115100384852,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q32",
+      "actual": 33.01322998107281,
+      "expected": 33.01322998107281,
+      "pass": true
+    },
+    {
+      "check": "workbook/S32",
+      "actual": -89.82,
+      "expected": -89.82,
+      "pass": true
+    },
+    {
+      "check": "workbook/T32",
+      "actual": 0.35,
+      "expected": 0.35,
+      "pass": true
+    },
+    {
+      "check": "workbook/U32",
+      "actual": 0.35,
+      "expected": 0.35,
+      "pass": true
+    },
+    {
+      "check": "workbook/V32",
+      "actual": 47.150000000000006,
+      "expected": 47.150000000000006,
+      "pass": true
+    },
+    {
+      "check": "workbook/W32",
+      "actual": -65.0,
+      "expected": -65,
+      "pass": true
+    },
+    {
+      "check": "workbook/X32",
+      "actual": 0.35,
+      "expected": 0.35,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y32",
+      "actual": 0.35,
+      "expected": 0.35,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z32",
+      "actual": 47.150000000000006,
+      "expected": 47.150000000000006,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA32",
+      "actual": -65.0,
+      "expected": -65,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB32",
+      "actual": 0.24499999999999997,
+      "expected": 0.24499999999999997,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC32",
+      "actual": 0.24499999999999997,
+      "expected": 0.24499999999999997,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD32",
+      "actual": 47.045,
+      "expected": 47.045,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/IBKR/bear/C",
+      "actual": 89.82,
+      "expected": 89.82,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/IBKR/bear/D",
+      "actual": 65,
+      "expected": 65.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/IBKR/bear/E",
+      "actual": 0.13,
+      "expected": 0.13,
+      "pass": true
+    },
+    {
+      "check": "workbook/IBKR/bear/eps",
+      "actual": 2.6,
+      "expected": 2.6,
+      "pass": true
+    },
+    {
+      "check": "workbook/IBKR/bear/pe",
+      "actual": 18,
+      "expected": 18,
+      "pass": true
+    },
+    {
+      "check": "workbook/L33",
+      "actual": 98.85687499999999,
+      "expected": 98.856875,
+      "pass": true
+    },
+    {
+      "check": "workbook/M33",
+      "actual": 0.03662758720582626,
+      "expected": 0.036627587205826484,
+      "pass": true
+    },
+    {
+      "check": "workbook/N33",
+      "actual": 0.15515457746585792,
+      "expected": 0.15515457746585792,
+      "pass": true
+    },
+    {
+      "check": "workbook/O33",
+      "actual": 0.15360806103939828,
+      "expected": 0.15360806103939828,
+      "pass": true
+    },
+    {
+      "check": "workbook/P33",
+      "actual": 69.41752599111372,
+      "expected": 69.41752599111373,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q33",
+      "actual": 69.14610017208436,
+      "expected": 69.14610017208437,
+      "pass": true
+    },
+    {
+      "check": "workbook/S33",
+      "actual": -89.82,
+      "expected": -89.82,
+      "pass": true
+    },
+    {
+      "check": "workbook/T33",
+      "actual": 0.35,
+      "expected": 0.35,
+      "pass": true
+    },
+    {
+      "check": "workbook/U33",
+      "actual": 0.385,
+      "expected": 0.385,
+      "pass": true
+    },
+    {
+      "check": "workbook/V33",
+      "actual": 99.28037499999999,
+      "expected": 99.280375,
+      "pass": true
+    },
+    {
+      "check": "workbook/W33",
+      "actual": -65.0,
+      "expected": -65,
+      "pass": true
+    },
+    {
+      "check": "workbook/X33",
+      "actual": 0.35,
+      "expected": 0.35,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y33",
+      "actual": 0.385,
+      "expected": 0.385,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z33",
+      "actual": 99.28037499999999,
+      "expected": 99.280375,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA33",
+      "actual": -65.0,
+      "expected": -65,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB33",
+      "actual": 0.24499999999999997,
+      "expected": 0.24499999999999997,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC33",
+      "actual": 0.26949999999999996,
+      "expected": 0.26949999999999996,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD33",
+      "actual": 99.15332499999998,
+      "expected": 99.153325,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/IBKR/base/C",
+      "actual": 89.82,
+      "expected": 89.82,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/IBKR/base/D",
+      "actual": 65,
+      "expected": 65.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/IBKR/base/E",
+      "actual": 0.13,
+      "expected": 0.13,
+      "pass": true
+    },
+    {
+      "check": "workbook/IBKR/base/eps",
+      "actual": 3.954275,
+      "expected": 3.9542749999999995,
+      "pass": true
+    },
+    {
+      "check": "workbook/IBKR/base/pe",
+      "actual": 25,
+      "expected": 25,
+      "pass": true
+    },
+    {
+      "check": "workbook/L34",
+      "actual": 154.8241344,
+      "expected": 154.8241344,
+      "pass": true
+    },
+    {
+      "check": "workbook/M34",
+      "actual": 0.2027473237027212,
+      "expected": 0.2027473237027212,
+      "pass": true
+    },
+    {
+      "check": "workbook/N34",
+      "actual": 0.3401664332618334,
+      "expected": 0.3401664332618334,
+      "pass": true
+    },
+    {
+      "check": "workbook/O34",
+      "actual": 0.3387642034706385,
+      "expected": 0.3387642034706385,
+      "pass": true
+    },
+    {
+      "check": "workbook/P34",
+      "actual": 108.24663811762034,
+      "expected": 108.24663811762034,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q34",
+      "actual": 107.96291412346137,
+      "expected": 107.96291412346137,
+      "pass": true
+    },
+    {
+      "check": "workbook/S34",
+      "actual": -89.82,
+      "expected": -89.82,
+      "pass": true
+    },
+    {
+      "check": "workbook/T34",
+      "actual": 0.35,
+      "expected": 0.35,
+      "pass": true
+    },
+    {
+      "check": "workbook/U34",
+      "actual": 0.40249999999999997,
+      "expected": 0.4025,
+      "pass": true
+    },
+    {
+      "check": "workbook/V34",
+      "actual": 155.2870094,
+      "expected": 155.2870094,
+      "pass": true
+    },
+    {
+      "check": "workbook/W34",
+      "actual": -65.0,
+      "expected": -65,
+      "pass": true
+    },
+    {
+      "check": "workbook/X34",
+      "actual": 0.35,
+      "expected": 0.35,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y34",
+      "actual": 0.40249999999999997,
+      "expected": 0.4025,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z34",
+      "actual": 155.2870094,
+      "expected": 155.2870094,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA34",
+      "actual": -65.0,
+      "expected": -65,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB34",
+      "actual": 0.24499999999999997,
+      "expected": 0.24499999999999997,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC34",
+      "actual": 0.28174999999999994,
+      "expected": 0.28175,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD34",
+      "actual": 155.1481469,
+      "expected": 155.1481469,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/IBKR/bull/C",
+      "actual": 89.82,
+      "expected": 89.82,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/IBKR/bull/D",
+      "actual": 65,
+      "expected": 65.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/IBKR/bull/E",
+      "actual": 0.13,
+      "expected": 0.13,
+      "pass": true
+    },
+    {
+      "check": "workbook/IBKR/bull/eps",
+      "actual": 4.8382542,
+      "expected": 4.8382542,
+      "pass": true
+    },
+    {
+      "check": "workbook/IBKR/bull/pe",
+      "actual": 32,
+      "expected": 32,
+      "pass": true
+    },
+    {
+      "check": "workbook/L35",
+      "actual": 65.69734998360657,
+      "expected": 65.69734998360656,
+      "pass": true
+    },
+    {
+      "check": "workbook/M35",
+      "actual": -0.24290527379713972,
+      "expected": -0.24290527379713983,
+      "pass": true
+    },
+    {
+      "check": "workbook/N35",
+      "actual": -0.1819330101659828,
+      "expected": -0.1819330101659829,
+      "pass": true
+    },
+    {
+      "check": "workbook/O35",
+      "actual": -0.1819330101659828,
+      "expected": -0.1819330101659829,
+      "pass": true
+    },
+    {
+      "check": "workbook/P35",
+      "actual": 45.5315590673531,
+      "expected": 45.53155906735309,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q35",
+      "actual": 45.5315590673531,
+      "expected": 45.53155906735309,
+      "pass": true
+    },
+    {
+      "check": "workbook/S35",
+      "actual": -151.39,
+      "expected": -151.39,
+      "pass": true
+    },
+    {
+      "check": "workbook/T35",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/U35",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/V35",
+      "actual": 65.69734998360657,
+      "expected": 65.69734998360656,
+      "pass": true
+    },
+    {
+      "check": "workbook/W35",
+      "actual": -120,
+      "expected": -120,
+      "pass": true
+    },
+    {
+      "check": "workbook/X35",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y35",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z35",
+      "actual": 65.69734998360657,
+      "expected": 65.69734998360656,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA35",
+      "actual": -120,
+      "expected": -120,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB35",
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC35",
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD35",
+      "actual": 65.69734998360657,
+      "expected": 65.69734998360656,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ABNB/bear/C",
+      "actual": 151.39,
+      "expected": 151.39,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ABNB/bear/D",
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ABNB/bear/E",
+      "actual": 0.13,
+      "expected": 0.13,
+      "pass": true
+    },
+    {
+      "check": "workbook/ABNB/bear/eps",
+      "actual": 3.284867499180328,
+      "expected": 3.2848674991803284,
+      "pass": true
+    },
+    {
+      "check": "workbook/ABNB/bear/pe",
+      "actual": 20,
+      "expected": 20,
+      "pass": true
+    },
+    {
+      "check": "workbook/L36",
+      "actual": 176.92644248275866,
+      "expected": 176.92644248275863,
+      "pass": true
+    },
+    {
+      "check": "workbook/M36",
+      "actual": 0.053331774958538136,
+      "expected": 0.053331774958538136,
+      "pass": true
+    },
+    {
+      "check": "workbook/N36",
+      "actual": 0.13816134839376237,
+      "expected": 0.13816134839376215,
+      "pass": true
+    },
+    {
+      "check": "workbook/O36",
+      "actual": 0.13816134839376237,
+      "expected": 0.13816134839376215,
+      "pass": true
+    },
+    {
+      "check": "workbook/P36",
+      "actual": 122.61889967389128,
+      "expected": 122.61889967389126,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q36",
+      "actual": 122.61889967389128,
+      "expected": 122.61889967389126,
+      "pass": true
+    },
+    {
+      "check": "workbook/S36",
+      "actual": -151.39,
+      "expected": -151.39,
+      "pass": true
+    },
+    {
+      "check": "workbook/T36",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/U36",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/V36",
+      "actual": 176.92644248275866,
+      "expected": 176.92644248275863,
+      "pass": true
+    },
+    {
+      "check": "workbook/W36",
+      "actual": -120,
+      "expected": -120,
+      "pass": true
+    },
+    {
+      "check": "workbook/X36",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y36",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z36",
+      "actual": 176.92644248275866,
+      "expected": 176.92644248275863,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA36",
+      "actual": -120,
+      "expected": -120,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB36",
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC36",
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD36",
+      "actual": 176.92644248275866,
+      "expected": 176.92644248275863,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ABNB/base/C",
+      "actual": 151.39,
+      "expected": 151.39,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ABNB/base/D",
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ABNB/base/E",
+      "actual": 0.13,
+      "expected": 0.13,
+      "pass": true
+    },
+    {
+      "check": "workbook/ABNB/base/eps",
+      "actual": 7.077057699310346,
+      "expected": 7.0770576993103465,
+      "pass": true
+    },
+    {
+      "check": "workbook/ABNB/base/pe",
+      "actual": 25,
+      "expected": 25,
+      "pass": true
+    },
+    {
+      "check": "workbook/L37",
+      "actual": 304.5813942857143,
+      "expected": 304.58139428571417,
+      "pass": true
+    },
+    {
+      "check": "workbook/M37",
+      "actual": 0.26241475089067656,
+      "expected": 0.26241475089067634,
+      "pass": true
+    },
+    {
+      "check": "workbook/N37",
+      "actual": 0.3640827223335833,
+      "expected": 0.3640827223335831,
+      "pass": true
+    },
+    {
+      "check": "workbook/O37",
+      "actual": 0.3640827223335833,
+      "expected": 0.3640827223335831,
+      "pass": true
+    },
+    {
+      "check": "workbook/P37",
+      "actual": 211.0901847364811,
+      "expected": 211.090184736481,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q37",
+      "actual": 211.0901847364811,
+      "expected": 211.090184736481,
+      "pass": true
+    },
+    {
+      "check": "workbook/S37",
+      "actual": -151.39,
+      "expected": -151.39,
+      "pass": true
+    },
+    {
+      "check": "workbook/T37",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/U37",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/V37",
+      "actual": 304.5813942857143,
+      "expected": 304.58139428571417,
+      "pass": true
+    },
+    {
+      "check": "workbook/W37",
+      "actual": -120,
+      "expected": -120,
+      "pass": true
+    },
+    {
+      "check": "workbook/X37",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y37",
+      "actual": 0,
+      "expected": 0,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z37",
+      "actual": 304.5813942857143,
+      "expected": 304.58139428571417,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA37",
+      "actual": -120,
+      "expected": -120,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB37",
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC37",
+      "actual": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD37",
+      "actual": 304.5813942857143,
+      "expected": 304.58139428571417,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ABNB/bull/C",
+      "actual": 151.39,
+      "expected": 151.39,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ABNB/bull/D",
+      "actual": 120,
+      "expected": 120,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/ABNB/bull/E",
+      "actual": 0.13,
+      "expected": 0.13,
+      "pass": true
+    },
+    {
+      "check": "workbook/ABNB/bull/eps",
+      "actual": 10.15271314285714,
+      "expected": 10.152713142857143,
+      "pass": true
+    },
+    {
+      "check": "workbook/ABNB/bull/pe",
+      "actual": 30,
+      "expected": 30,
+      "pass": true
+    },
+    {
+      "check": "workbook/L38",
+      "actual": 150.0,
+      "expected": 150.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/M38",
+      "actual": -0.14823563056649341,
+      "expected": -0.14823563056649341,
+      "pass": true
+    },
+    {
+      "check": "workbook/N38",
+      "actual": -0.06055423408395727,
+      "expected": -0.06055423408395727,
+      "pass": true
+    },
+    {
+      "check": "workbook/O38",
+      "actual": -0.06264325360587503,
+      "expected": -0.06264325360587503,
+      "pass": true
+    },
+    {
+      "check": "workbook/P38",
+      "actual": 109.64923469387752,
+      "expected": 109.64923469387752,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q38",
+      "actual": 108.78457543731776,
+      "expected": 108.78457543731776,
+      "pass": true
+    },
+    {
+      "check": "workbook/S38",
+      "actual": -247.74,
+      "expected": -247.74,
+      "pass": true
+    },
+    {
+      "check": "workbook/T38",
+      "actual": 1.2,
+      "expected": 1.2,
+      "pass": true
+    },
+    {
+      "check": "workbook/U38",
+      "actual": 1.2,
+      "expected": 1.2,
+      "pass": true
+    },
+    {
+      "check": "workbook/V38",
+      "actual": 151.2,
+      "expected": 151.2,
+      "pass": true
+    },
+    {
+      "check": "workbook/W38",
+      "actual": -185,
+      "expected": -185,
+      "pass": true
+    },
+    {
+      "check": "workbook/X38",
+      "actual": 1.2,
+      "expected": 1.2,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y38",
+      "actual": 1.2,
+      "expected": 1.2,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z38",
+      "actual": 151.2,
+      "expected": 151.2,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA38",
+      "actual": -185,
+      "expected": -185,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB38",
+      "actual": 0.84,
+      "expected": 0.84,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC38",
+      "actual": 0.84,
+      "expected": 0.84,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD38",
+      "actual": 150.84,
+      "expected": 150.84,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AME/bear/C",
+      "actual": 247.74,
+      "expected": 247.74,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AME/bear/D",
+      "actual": 185,
+      "expected": 185,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AME/bear/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/AME/bear/eps",
+      "actual": 7.5,
+      "expected": 7.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/AME/bear/pe",
+      "actual": 20,
+      "expected": 20,
+      "pass": true
+    },
+    {
+      "check": "workbook/L39",
+      "actual": 257.9697768000001,
+      "expected": 257.96977680000003,
+      "pass": true
+    },
+    {
+      "check": "workbook/M39",
+      "actual": 0.019388784629587597,
+      "expected": 0.019388784629587374,
+      "pass": true
+    },
+    {
+      "check": "workbook/N39",
+      "actual": 0.1242620516680425,
+      "expected": 0.1242620516680425,
+      "pass": true
+    },
+    {
+      "check": "workbook/O39",
+      "actual": 0.12214428514936493,
+      "expected": 0.12214428514936493,
+      "pass": true
+    },
+    {
+      "check": "workbook/P39",
+      "actual": 187.1063576211735,
+      "expected": 187.10635762117346,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q39",
+      "actual": 186.05978783254375,
+      "expected": 186.05978783254372,
+      "pass": true
+    },
+    {
+      "check": "workbook/S39",
+      "actual": -247.74,
+      "expected": -247.74,
+      "pass": true
+    },
+    {
+      "check": "workbook/T39",
+      "actual": 1.36,
+      "expected": 1.36,
+      "pass": true
+    },
+    {
+      "check": "workbook/U39",
+      "actual": 1.46,
+      "expected": 1.46,
+      "pass": true
+    },
+    {
+      "check": "workbook/V39",
+      "actual": 259.5297768000001,
+      "expected": 259.52977680000004,
+      "pass": true
+    },
+    {
+      "check": "workbook/W39",
+      "actual": -185,
+      "expected": -185,
+      "pass": true
+    },
+    {
+      "check": "workbook/X39",
+      "actual": 1.36,
+      "expected": 1.36,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y39",
+      "actual": 1.46,
+      "expected": 1.46,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z39",
+      "actual": 259.5297768000001,
+      "expected": 259.52977680000004,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA39",
+      "actual": -185,
+      "expected": -185,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB39",
+      "actual": 0.952,
+      "expected": 0.952,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC39",
+      "actual": 1.022,
+      "expected": 1.022,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD39",
+      "actual": 259.0617768000001,
+      "expected": 259.0617768,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AME/base/C",
+      "actual": 247.74,
+      "expected": 247.74,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AME/base/D",
+      "actual": 185,
+      "expected": 185,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AME/base/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/AME/base/eps",
+      "actual": 10.7487407,
+      "expected": 10.748740700000003,
+      "pass": true
+    },
+    {
+      "check": "workbook/AME/base/pe",
+      "actual": 24,
+      "expected": 24,
+      "pass": true
+    },
+    {
+      "check": "workbook/L40",
+      "actual": 336.0,
+      "expected": 336,
+      "pass": true
+    },
+    {
+      "check": "workbook/M40",
+      "actual": 0.11261727079801764,
+      "expected": 0.11261727079801764,
+      "pass": true
+    },
+    {
+      "check": "workbook/N40",
+      "actual": 0.22701695483169837,
+      "expected": 0.22701695483169837,
+      "pass": true
+    },
+    {
+      "check": "workbook/O40",
+      "actual": 0.22493628291626766,
+      "expected": 0.22493628291626766,
+      "pass": true
+    },
+    {
+      "check": "workbook/P40",
+      "actual": 242.8972758746355,
+      "expected": 242.8972758746355,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q40",
+      "actual": 241.77554209183666,
+      "expected": 241.77554209183666,
+      "pass": true
+    },
+    {
+      "check": "workbook/S40",
+      "actual": -247.74,
+      "expected": -247.74,
+      "pass": true
+    },
+    {
+      "check": "workbook/T40",
+      "actual": 1.36,
+      "expected": 1.36,
+      "pass": true
+    },
+    {
+      "check": "workbook/U40",
+      "actual": 1.56,
+      "expected": 1.56,
+      "pass": true
+    },
+    {
+      "check": "workbook/V40",
+      "actual": 337.8,
+      "expected": 337.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/W40",
+      "actual": -185,
+      "expected": -185,
+      "pass": true
+    },
+    {
+      "check": "workbook/X40",
+      "actual": 1.36,
+      "expected": 1.36,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y40",
+      "actual": 1.56,
+      "expected": 1.56,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z40",
+      "actual": 337.8,
+      "expected": 337.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA40",
+      "actual": -185,
+      "expected": -185,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB40",
+      "actual": 0.952,
+      "expected": 0.952,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC40",
+      "actual": 1.0919999999999999,
+      "expected": 1.0919999999999999,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD40",
+      "actual": 337.26,
+      "expected": 337.26,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AME/bull/C",
+      "actual": 247.74,
+      "expected": 247.74,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AME/bull/D",
+      "actual": 185,
+      "expected": 185,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/AME/bull/E",
+      "actual": 0.12,
+      "expected": 0.12,
+      "pass": true
+    },
+    {
+      "check": "workbook/AME/bull/eps",
+      "actual": 12,
+      "expected": 12.0,
+      "pass": true
+    },
+    {
+      "check": "workbook/AME/bull/pe",
+      "actual": 28,
+      "expected": 28,
+      "pass": true
+    },
+    {
+      "check": "workbook/L41",
+      "actual": 158.6,
+      "expected": 158.6,
+      "pass": true
+    },
+    {
+      "check": "workbook/M41",
+      "actual": -0.21954533550139227,
+      "expected": -0.21954533550139227,
+      "pass": true
+    },
+    {
+      "check": "workbook/N41",
+      "actual": -0.14084300760398966,
+      "expected": -0.14084300760398966,
+      "pass": true
+    },
+    {
+      "check": "workbook/O41",
+      "actual": -0.14576798722536527,
+      "expected": -0.14576798722536527,
+      "pass": true
+    },
+    {
+      "check": "workbook/P41",
+      "actual": 115.6147910558174,
+      "expected": 115.6147910558174,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q41",
+      "actual": 113.04549847996411,
+      "expected": 113.04549847996411,
+      "pass": true
+    },
+    {
+      "check": "workbook/S41",
+      "actual": -351.86,
+      "expected": -351.86,
+      "pass": true
+    },
+    {
+      "check": "workbook/T41",
+      "actual": 4,
+      "expected": 4,
+      "pass": true
+    },
+    {
+      "check": "workbook/U41",
+      "actual": 3.5,
+      "expected": 3.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/V41",
+      "actual": 162.1,
+      "expected": 162.1,
+      "pass": true
+    },
+    {
+      "check": "workbook/W41",
+      "actual": -265,
+      "expected": -265,
+      "pass": true
+    },
+    {
+      "check": "workbook/X41",
+      "actual": 4,
+      "expected": 4,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y41",
+      "actual": 3.5,
+      "expected": 3.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z41",
+      "actual": 162.1,
+      "expected": 162.1,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA41",
+      "actual": -265,
+      "expected": -265,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB41",
+      "actual": 2.8,
+      "expected": 2.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC41",
+      "actual": 2.4499999999999997,
+      "expected": 2.4499999999999997,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD41",
+      "actual": 161.04999999999998,
+      "expected": 161.04999999999998,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/RL/bear/C",
+      "actual": 351.86,
+      "expected": 351.86,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/RL/bear/D",
+      "actual": 265,
+      "expected": 265,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/RL/bear/E",
+      "actual": 0.14,
+      "expected": 0.14,
+      "pass": true
+    },
+    {
+      "check": "workbook/RL/bear/eps",
+      "actual": 12.2,
+      "expected": 12.2,
+      "pass": true
+    },
+    {
+      "check": "workbook/RL/bear/pe",
+      "actual": 13,
+      "expected": 13,
+      "pass": true
+    },
+    {
+      "check": "workbook/L42",
+      "actual": 388.5,
+      "expected": 388.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/M42",
+      "actual": 0.0451108386387441,
+      "expected": 0.0451108386387441,
+      "pass": true
+    },
+    {
+      "check": "workbook/N42",
+      "actual": 0.1499885594777025,
+      "expected": 0.1499885594777025,
+      "pass": true
+    },
+    {
+      "check": "workbook/O42",
+      "actual": 0.14579274734745085,
+      "expected": 0.14579274734745085,
+      "pass": true
+    },
+    {
+      "check": "workbook/P42",
+      "actual": 271.93684426517194,
+      "expected": 271.93684426517194,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q42",
+      "actual": 269.02372119896535,
+      "expected": 269.02372119896535,
+      "pass": true
+    },
+    {
+      "check": "workbook/S42",
+      "actual": -351.86,
+      "expected": -351.86,
+      "pass": true
+    },
+    {
+      "check": "workbook/T42",
+      "actual": 4,
+      "expected": 4,
+      "pass": true
+    },
+    {
+      "check": "workbook/U42",
+      "actual": 4.2,
+      "expected": 4.2,
+      "pass": true
+    },
+    {
+      "check": "workbook/V42",
+      "actual": 392.9,
+      "expected": 392.9,
+      "pass": true
+    },
+    {
+      "check": "workbook/W42",
+      "actual": -265,
+      "expected": -265,
+      "pass": true
+    },
+    {
+      "check": "workbook/X42",
+      "actual": 4,
+      "expected": 4,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y42",
+      "actual": 4.2,
+      "expected": 4.2,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z42",
+      "actual": 392.9,
+      "expected": 392.9,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA42",
+      "actual": -265,
+      "expected": -265,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB42",
+      "actual": 2.8,
+      "expected": 2.8,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC42",
+      "actual": 2.94,
+      "expected": 2.94,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD42",
+      "actual": 391.58,
+      "expected": 391.58,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/RL/base/C",
+      "actual": 351.86,
+      "expected": 351.86,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/RL/base/D",
+      "actual": 265,
+      "expected": 265,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/RL/base/E",
+      "actual": 0.14,
+      "expected": 0.14,
+      "pass": true
+    },
+    {
+      "check": "workbook/RL/base/eps",
+      "actual": 21,
+      "expected": 21,
+      "pass": true
+    },
+    {
+      "check": "workbook/RL/base/pe",
+      "actual": 18.5,
+      "expected": 18.5,
+      "pass": true
+    },
+    {
+      "check": "workbook/L43",
+      "actual": 556.6,
+      "expected": 556.6,
+      "pass": true
+    },
+    {
+      "check": "workbook/M43",
+      "actual": 0.17638739428959604,
+      "expected": 0.17638739428959604,
+      "pass": true
+    },
+    {
+      "check": "workbook/N43",
+      "actual": 0.29430712444864315,
+      "expected": 0.29430712444864315,
+      "pass": true
+    },
+    {
+      "check": "workbook/O43",
+      "actual": 0.29020853075688036,
+      "expected": 0.29020853075688036,
+      "pass": true
+    },
+    {
+      "check": "workbook/P43",
+      "actual": 386.28776465633143,
+      "expected": 386.28776465633143,
+      "pass": true
+    },
+    {
+      "check": "workbook/Q43",
+      "actual": 383.1081790348447,
+      "expected": 383.1081790348447,
+      "pass": true
+    },
+    {
+      "check": "workbook/S43",
+      "actual": -351.86,
+      "expected": -351.86,
+      "pass": true
+    },
+    {
+      "check": "workbook/T43",
+      "actual": 4.2,
+      "expected": 4.2,
+      "pass": true
+    },
+    {
+      "check": "workbook/U43",
+      "actual": 4.6,
+      "expected": 4.6,
+      "pass": true
+    },
+    {
+      "check": "workbook/V43",
+      "actual": 561.6,
+      "expected": 561.6,
+      "pass": true
+    },
+    {
+      "check": "workbook/W43",
+      "actual": -265,
+      "expected": -265,
+      "pass": true
+    },
+    {
+      "check": "workbook/X43",
+      "actual": 4.2,
+      "expected": 4.2,
+      "pass": true
+    },
+    {
+      "check": "workbook/Y43",
+      "actual": 4.6,
+      "expected": 4.6,
+      "pass": true
+    },
+    {
+      "check": "workbook/Z43",
+      "actual": 561.6,
+      "expected": 561.6,
+      "pass": true
+    },
+    {
+      "check": "workbook/AA43",
+      "actual": -265,
+      "expected": -265,
+      "pass": true
+    },
+    {
+      "check": "workbook/AB43",
+      "actual": 2.94,
+      "expected": 2.94,
+      "pass": true
+    },
+    {
+      "check": "workbook/AC43",
+      "actual": 3.2199999999999998,
+      "expected": 3.2199999999999998,
+      "pass": true
+    },
+    {
+      "check": "workbook/AD43",
+      "actual": 560.1,
+      "expected": 560.1,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/RL/bull/C",
+      "actual": 351.86,
+      "expected": 351.86,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/RL/bull/D",
+      "actual": 265,
+      "expected": 265,
+      "pass": true
+    },
+    {
+      "check": "workbook/inputs/RL/bull/E",
+      "actual": 0.14,
+      "expected": 0.14,
+      "pass": true
+    },
+    {
+      "check": "workbook/RL/bull/eps",
+      "actual": 25.3,
+      "expected": 25.3,
+      "pass": true
+    },
+    {
+      "check": "workbook/RL/bull/pe",
+      "actual": 22,
+      "expected": 22,
+      "pass": true
+    },
+    {
+      "check": "workbook/total/50000",
+      "actual": 50000,
+      "expected": 50000,
+      "pass": true
+    },
+    {
+      "check": "workbook/total/100000",
+      "actual": 100000,
+      "expected": 100000,
+      "pass": true
+    }
+  ]
+}

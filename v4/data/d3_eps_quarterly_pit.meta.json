@@ -1,0 +1,23 @@
+{
+  "source": "v4/data/d3_xbrl_facts.parquet (SEC XBRL companyfacts, https://data.sec.gov/api/xbrl/companyfacts/)",
+  "built_utc": "2026-09-25T22:24:30Z",
+  "code": [
+    "v4/code/d3_pit_core.py",
+    "v4/code/d3_build_pit.py"
+  ],
+  "month_ends": "2009-06-30..2026-09-25 (last NYSE trading day; 2026-09 = 2026-09-25)",
+  "rows": 1353303,
+  "columns": [
+    "month_end",
+    "cik",
+    "ticker",
+    "q",
+    "period_end",
+    "eps_diluted_adj",
+    "filed",
+    "derived"
+  ],
+  "definition": "for each month_end t and CIK: latest 13 fiscal quarters (q=0 latest .. 12) of diluted EPS known at t (filed <= t), aligned by period end (q_i ends ~i*91d before q0, +-20d), split-adjusted to the share basis known at t; derived=True when from YTD differences (e.g. Q4 = FY - 9M)",
+  "agent": "d3",
+  "written_utc": "2026-09-25T22:24:30Z"
+}

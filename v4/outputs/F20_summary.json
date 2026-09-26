@@ -1,0 +1,104 @@
+{
+  "agent": "F20",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "RDDT": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Reddit's ad business is growing 60%+ a year and priced for far less, but its traffic and AI revenue depend on an unresolved Google relationship.",
+      "kill_criteria": [
+        "Core advertising revenue growth (ex \"Other\"/data-licensing) falls below 25% YoY for two consecutive quarters.",
+        "Daily active users (DAU) growth falls below 10% YoY for two consecutive quarters.",
+        "Adjusted EBITDA margin contracts YoY (not just sequentially) for two consecutive quarters.",
+        "The Google AI-training/data-licensing relationship terminates (non-renewal or Reddit-initiated cutoff) without a replacement licensing deal of comparable (~$60m+/yr) size within two quarters.",
+        "The N.D. Cal. securities class action results in a certified class and/or a settlement or judgment exceeding $150m."
+      ],
+      "key_adverse_facts": [
+        "Securities class action (N.D. Cal., filed June 2025) alleges misrepresentation of the risk that Google AI Overviews would divert referral traffic; unresolved.",
+        "CEO Steve Huffman (~$3.56m) and COO Jennifer Wong (~$7.75m) both sold stock on the same day, 15-Jul-2026.",
+        "'Other' revenue (the AI data-licensing line the bull case leans on) is growing slower (+24%) than core advertising, the opposite of the popular narrative.",
+        "The ~$60m/yr Google AI data-licensing deal is up for renewal with an uncertain outcome; Reddit is reportedly weighing cutting off Google's access itself."
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv ranks RDDT only at the ~18th composite percentile (decile 2) despite strong growth/quality metrics viewed in isolation; explained by a richly-priced Value percentile and an undefined leverage percentile for a debt-free company -- a modelling artefact, not new adverse information.",
+        "No V1 systematic valuation row exists for RDDT (IPO March 2024, insufficient 156-month own-price history for V1's percentile method); this dossier built an independent reverse DCF using the same methodology rather than leaving valuation unaddressed."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium -- the FCF-based valuation cushion is wide and growth is real and accelerating in GAAP operating margin, but the Google traffic/data-licensing dependency is litigated and unresolved, insider selling was concentrated in one day, and the public trading history (2.5 years) is too short to have been tested through a cycle.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for RDDT (recent IPO, insufficient own-price history for V1's percentile method). Built an independent reverse DCF, same method spirit as V1 (FCFF, CAPM WACC ~11.8%, 10y fade to 3% terminal): implied 10-year FCF growth priced in is ~15.5%/yr against a trailing TTM FCF that already exceeds all of FY2025, an 18% YoY DAU growth rate, and GAAP operating margin still expanding -- an evidence-based base case (high-20s/low-30s average growth decelerating to mid-teens) sits above the implied rate.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {"bear": -0.304, "base": 0.087, "bull": 0.372}
+    },
+    "EXPE": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Expedia's price implies shrinking cash flow for a decade, yet it just raised guidance twice while AI booking agents pose a fresh, unproven threat.",
+      "kill_criteria": [
+        "Gross bookings growth falls below 5% YoY for two consecutive quarters.",
+        "B2B gross bookings growth decelerates below 10% YoY for two consecutive quarters.",
+        "Full-year guidance is cut (not merely held) at any subsequent quarterly release.",
+        "Net debt/EBITDA turns net-debt-positive by more than 1.0x EBITDA without a clearly value-accretive acquisition.",
+        "A court ruling or regulatory finding materially adverse to Expedia in the Vrbo wrongful-death litigation."
+      ],
+      "key_adverse_facts": [
+        "EXPE fell ~7% on 23-Sep-2026 (two days before this valuation) on reports that Meta's 'Muse' AI agent can book directly with suppliers, bypassing OTAs industry-wide (ABNB, BKNG also fell).",
+        "A wrongful-death lawsuit tied to a Vrbo listing's smoke-detector disclosures is active and carries reputational risk to a recovering brand.",
+        "Q2-2026 GAAP net income (+166% YoY, EPS $7.16, +188%) grew far faster than adjusted net income (+29%) and adjusted EPS (+36%) because of a favorable, non-recurring tax item -- the GAAP figure should not be annualised."
+      ],
+      "data_conflicts": [
+        "Sell-side/press narrative that AI agents are already disrupting OTA bookings is not yet corroborated by a full quarter of booking-volume data; treated as a genuine, fast-moving, but still unconfirmed risk rather than a settled fact."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium -- the valuation cushion (implied negative 10-year FCF growth vs consensus +7% and delivered +22% 5y CAGR) is very wide and fundamentals just improved (guidance raised twice in 2026), but the Muse/AI-agent disintermediation risk is genuinely new, unquantified, and only two days old at the valuation date.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.0529,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "V1's reverse DCF finds the price implies FCF declining ~1.5%/yr for a decade, against a 5-year delivered FCF CAGR of +22% and sell-side consensus of +7%. I agree the multiple is cheap and add two facts V1's price-only model cannot see: guidance was raised (not just met) at the Aug-2026 release, and a fresh AI-agent disintermediation risk (Muse) hit the stock two days before this valuation snapshot. Neither changes the direction of the call, but both argue for INCLUDE-SMALL rather than full weight pending more data.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {"bear": -0.313, "base": 0.053, "bull": 0.665}
+    },
+    "LVS": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Owner of Macau's mass-market recovery and Singapore's monopoly casino, priced as if cash flow shrinks for a decade while it buys back stock.",
+      "kill_criteria": [
+        "Sands China mass-market GGR growth falls below the overall Macau market's growth rate for two consecutive quarters.",
+        "Consolidated net debt/EBITDA rises above 3.0x for two consecutive quarters.",
+        "Marina Bay Sands expansion capex guidance is revised upward again beyond the current ~$8 billion, or the 2031 opening date slips by more than two quarters.",
+        "Any formal notice or public commentary from the Macau government casting doubt on standard renewal terms ahead of the December-2032 concession expiry.",
+        "Quarterly dividend or buyback pace is cut absent a stated, value-accretive reinvestment alternative."
+      ],
+      "key_adverse_facts": [
+        "The Macau gaming concession expires 31-Dec-2032, inside this dossier's 10-year DCF horizon; VML has committed to invest at least ~$4.47bn under the concession terms.",
+        "The Marina Bay Sands (Singapore) expansion cost has already doubled to ~$8 billion versus original estimates, a live execution/cost-overrun risk.",
+        "Q2-2026 Macau EBITDA ($430m) missed management's own informal ~$700m target because of an unusually low 1.35% VIP hold; consolidated adjusted property EBITDA fell 16% YoY that quarter.",
+        "The Adelson family and related trusts control ~59.7% of voting power (a controlled company); minority-shareholder governance recourse is structurally limited.",
+        "Stockholders' equity attributable to LVS fell from $1,198m to $581m in a single quarter, mechanically from aggressive buybacks, leaving a thin book-equity cushion on a historical-cost balance sheet."
+      ],
+      "data_conflicts": [
+        "A secondary news aggregator cited Q4-2025 net income of ~$448m, which does not reconcile with primary SEC XBRL/EPS data (consolidated net income $395m, diluted EPS $0.58, which reconciles to the reported FY2025 EPS of $2.35); the filing is used as the source of record and the aggregator figure is disregarded.",
+        "V1's own base-case 3-year fair value already exceeds the Street's 12-month high price target -- V1 itself flags this as a 'street_flag' worth independent scrutiny rather than accepting silently."
+      ],
+      "next_earnings_date": "2026-10-21",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "high -- mass-market share gains in both Macau (+8% vs market +4%) and Singapore (+5% in a soft-visitation quarter) are corroborated by primary-source metrics, credit quality is improving (S&P upgrade to BBB), and the valuation cushion is the largest in this batch; the named risks (2032 concession, Singapore capex overrun) are dated and monitorable rather than immediate.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.3747,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "V1's reverse DCF finds the price implies FCF declining ~11.3%/yr for a decade, against a 5-year delivered FCF CAGR of +27% and sell-side consensus of +5.5%. I agree the multiple is cheap and flag two structural risks V1's price-only model does not explicitly capture: the 2032 Macau concession renewal sits inside the DCF horizon, and the Singapore expansion budget has already doubled to ~$8bn. Neither changes the direction of the call.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {"bear": -0.077, "base": 0.375, "bull": 0.787}
+    }
+  }
+}

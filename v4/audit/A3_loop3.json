@@ -1,0 +1,24 @@
+{
+  "total": 76,
+  "criteria": {
+    "1": 9,
+    "2": 9,
+    "3": 7,
+    "4": 7,
+    "5": 8,
+    "6": 9,
+    "7": 6,
+    "8": 7,
+    "9": 6,
+    "10": 8
+  },
+  "must_fix": [
+    "Rewrite FINAL_REPORT.md section 1 (Verdict) and the dashboard hero/next-step so the all-stock option -- what the owner explicitly asked for this loop -- is the primary answer a first-time reader sees, not an appended fifth-of-five card. Verify: a reader who reads only the hero, hero tiles, section 1 and the dashboard's 'next' instruction can correctly state, without reading further, that the deliverable is a 20-name, 100%-stock portfolio.",
+    "Fix or qualify section 5's closing sentence ('The high-confidence decision is the allocation: the broad index for the core... individual stocks only as a bounded satellite... not outperformance'), which restates Loop 2's conclusion verbatim in a build whose own lead_portfolio_build.json shows cash=0.0 and index_fill=0.0 (100% stock). Verify: no sentence in the core narrative asserts a specific allocation as 'the high-confidence decision' without noting the owner is choosing between paths this loop.",
+    "Correct the NOW (ServiceNow) dossier: it describes the $2.85bn Moveworks acquisition as 'signed but under DOJ second-request review... not yet closed' as of 26 Sep 2026 and uses this as kill criterion #3, but ServiceNow's own investor-relations release and Form 8-K (filed 2025-12-15) show the deal closed on 15 December 2025, over nine months earlier. Update the dossier and re-check whether this changes the INCLUDE-SMALL 'two live overhangs' framing. Verify: the dossier's stated deal status matches ServiceNow's own IR page as of the report's as-of date.",
+    "Add an explicit all-stock (100/0/0) row to both the per-$10,000 table and the estate-tax-at-$50k/$100k table in section 9 and the dashboard's Implementation tab, and repeat the 30% dividend-withholding fact inside the all-stock card itself (currently only in section 8). Verify: a reader following only the all-stock card and the Implementation tab can size a position in dollars and see estate-tax/withholding numbers for his own size without cross-referencing the blended-mix tables.",
+    "Add one sentence directly answering the owner's own '10 points a year, for sure' target: the sleeve's tracking error is 11.6%/yr, so a +10-point year would be roughly one standard deviation from a zero-alpha mean, and no tested process found a repeatable source of that much edge. Verify: the report names the '10 points' figure directly at least once rather than leaving the refutation only implicit in base rates.",
+    "Still outstanding from Loop 2: surface V1X's 185-check valuation re-verification, V2R's REIT-FFO rebuild, and now the whole-market triage's own pass/fail record as a reader-facing table inside FINAL_REPORT.md or the dashboard, rather than leaving the evidence trail only in STATE.md's working log.",
+    "Still outstanding from Loop 2: publish v4 through tools/publish_research_release.py as a numbered release once the audit loop concludes, with v005_2026-09-26_codex as an explicit parent, per RESEARCH_VERSIONING.md."
+  ]
+}

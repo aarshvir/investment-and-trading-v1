@@ -1,0 +1,22 @@
+{
+ "total": 76,
+ "criteria": {
+  "1": 7,
+  "2": 8,
+  "3": 7,
+  "4": 7,
+  "5": 7,
+  "6": 9,
+  "7": 8,
+  "8": 8,
+  "9": 8,
+  "10": 7
+ },
+ "must_fix": [
+  "GM.md §6/§7 misstates its own cited primary source: it claims 'Automotive-only debt of just $15.98bn against Automotive cash + marketable securities of $24.7bn -- i.e., Automotive is net-cash positive by roughly $8.7bn' from GM's Q2 2026 earnings release (accession in GM.md source #2, gmq22026pressreleaseandfin.htm). I re-fetched that exact filing: the Combining Balance Sheet shows Automotive cash and cash equivalents $15,147m + Automotive marketable debt securities $4,503m = $19,650m (not $24.7bn), against Automotive debt of $15,979m -- i.e. automotive net cash is actually about +$3.67bn (the release's own stated 'Net automotive liquidity position: $3,671 million'), not +$8.7bn. This is the load-bearing number in GM's §7 argument for overriding V1's 'excessive' valuation verdict on a full-conviction, 5.8%-weight holding. Fix: correct GM.md §6/§7 to the sourced $19.65bn/+$3.67bn figures, rebuild the EV bridge (EV rises by ~$5bn, from ~$66.5bn to ~$71.5bn) and reverse-DCF conclusion, and state explicitly whether the INCLUDE verdict and weight survive the corrected number (the qualitative case -- three guidance raises, shrinking EV losses, tariff relief -- may still hold, but the specific 'net-cash positive by $8.7bn' claim must not stand uncorrected).",
+  "Five of the twenty holdings (GM, ADP, RJF, DOV, HBAN -- 29.2% of the sleeve by weight: 5.8+7.1+4.7+7.4+4.2) are new to this loop's full-conviction list and are still marked 'not yet checked' in FINAL_REPORT.md Appendix A.5, exactly the same must-fix (#4) this audit raised last loop about a *different* set of nine new holdings (which were then covered by DA6). The pattern is now structural: every loop's newest full-conviction names enter the frozen, audited build before any independent fact-check exists, and the audit is the first check -- which is how the GM error above reached a full-weight position undetected. Fix: run a DA7 pass (mirroring DA4/DA5/DA6's method) on these five dossiers before the next freeze, and change the process so a name cannot enter the frozen sleeve at full weight without at least one independent fact-check pass completed first (not just queued for the next loop).",
+  "Loop-3 must-fix #3 (the final-size tie-break rule '(j)' has a soft pre-registration firewall -- STATE.md discloses the approximate eligible-pool size in the same log entry that states the rule) was not acted on: there is still no separately timestamped or hashed file committing rule (j) before the build script reads diligence output, in this loop or the last. The honesty disclosure in STATE.md/FINAL_REPORT §6 is good practice but does not fix the integrity gap it names. Fix: commit rule (j) (and any future final-size or tie-break rule) to a hashed/timestamped file before the eligible pool for that loop is computed, and reference that file's hash in the build's input_manifest (the same manifest mechanism already used for freshness -- see lead_build_portfolio.py's MANIFEST list -- can be extended to cover this).",
+  "Loop-3 must-fix #5 (flag which holdings entered via the quality-growth 'lane'/triage route versus the original top-70 rank gate) was not acted on at all: FINAL_REPORT.md contains zero occurrences of the word 'lane' (confirmed by direct search of the file). AMP (live_rank 113, above the top-70 threshold) is still presented in §6 and §13 identically to rank-gated holdings, with no footnote parallel to the existing ‡ footnote. Fix: add the promised footnote/dagger marking lane-entry holdings in the §6 table and the §13 v005-reconciliation table.",
+  "The three names removed from Loop-3's half-conviction list this loop (BMY, SWK unchanged; also EG, BX, NOW dropped to 'eligible but not held') are described in §6 as 'each still passes every test; it was displaced ... in the selection order' -- true for the ranking mechanics, but the report never notes that DA6 (run last loop) found two dossier FAILs in this displaced group's near-neighbours (BR's CQG deal size, DG's litigation timeline) that were fixed only via appended correction sections, not restated in the main text; a reader skimming §6 would not know two of the twenty holdings carry a live correction. Minor fix: add a one-line pointer in §6 or Appendix A.5 to 'see dated correction' for BR and DG."
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "total": 79,
+ "criteria": {
+  "1": 7,
+  "2": 9,
+  "3": 9,
+  "4": 6,
+  "5": 8,
+  "6": 9,
+  "7": 8,
+  "8": 8,
+  "9": 9,
+  "10": 6
+ },
+ "must_fix": [
+  "Independently fact-check GM, LVS, RJF and HBAN (the 4 of 6 wave-2 full-conviction additions, ~20% of sleeve weight, still checked only by their own dossier author) before the next freeze — DA6 covered BR/CMCSA/BKNG/DG/NOW/BX/EG but the newer full-conviction names from wave 2 (F19-F33) were never included in a DA-series pass; I independently confirmed ADP and DOV pass (SEC 8-Ks) this loop, closing 2 of the 6, leaving GM/LVS/RJF/HBAN.",
+  "Delete or clearly mark-superseded the stale 'risk' key in outputs/lead_risk_results.json (windows.3y/5y: degenerate Ledoit-Wolf vol 6.9%/7.3%, effective_bets_risk 14.5) that sits alongside the correct 'risk_sample_cov' object (vol 15.9%, effective_bets_risk 16.6, independently verified to 5e-7 in lead_check_risk_contrib.json) with no pointer marking the first as superseded -- this is the same must-fix A1 raised in Loop 3 and it is still unfixed two loops later.",
+  "Run the pre-committed final-20 selection (rule j) under 1-2 alternative, equally defensible tie-break orderings (e.g. base-case return before margin-of-safety) to test how sensitive the specific 20-name list is to a rule that, by the report's own admission (FINAL_REPORT section 6), was fixed after all diligence verdicts were known -- carried over unaddressed from Loop 3.",
+  "Regenerate outputs/c1_consistency.md against the current frozen build. The file is dated 2026-09-26 08:21 and its own text still describes an 11-holding portfolio ('all 11 weights') and a -61.4% GFC figure -- it predates the Loop-2 (20 names), Loop-3 (whole-index rebuild) and Loop-4 (wave-2, current 20 names) freezes entirely. FINAL_REPORT Appendix A.4 still cites it as '216 checked, 215 matched; mismatches fixed before Loop 2' in the register of independent checks, without disclosing that no full text-to-source reconciliation has been run against any build since. My own spot recomputation of 6 numbers this loop (weight sum, all 6 portfolio constraints, GFC/COVID stress figures, TE/beta/ENB) all matched the current JSON exactly, so I found no wrong current numbers, but the citation itself is misleading about what has actually been re-verified.",
+  "Carry the new-holdings' verification register (A.5) forward explicitly: as of this build, 6 of 20 holdings (GM, LVS, RJF, HBAN, plus BR/CMCSA/BKNG/DG which DA6 did cover) were added in wave 2 without ever appearing in a prior loop's per-holding verification table; make the register self-updating from a file list rather than hand-maintained so it cannot silently lag the build again."
+ ]
+}

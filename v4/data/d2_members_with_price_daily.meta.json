@@ -1,0 +1,12 @@
+{
+  "source": "derived (D2 spells x Yahoo Close)",
+  "rows": 6723,
+  "definitions": {
+    "members": "index members per D2 spells (fja05680 + Wikipedia)",
+    "with_price": "members with a Yahoo Close under the same ticker",
+    "with_price_valid": "... excluding reuse-suspect tickers",
+    "with_price_best": "... plus accepted heuristic rename successors (d2_rename_candidates.csv)"
+  },
+  "agent": "d2",
+  "written_utc": "2026-09-25T20:57:23Z"
+}

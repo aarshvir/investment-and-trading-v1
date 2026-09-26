@@ -1,0 +1,16 @@
+{
+  "agent": "r3",
+  "dataset": "r3_market_horizon_base_rates.csv",
+  "built_utc": "2026-09-25T20:52:32Z",
+  "source_urls": [
+    "https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/ftp/F-F_Research_Data_Factors_CSV.zip",
+    "https://fred.stlouisfed.org/series/CPIAUCNS"
+  ],
+  "rows": 6,
+  "sample": "1926-07..2026-07-31 monthly, overlapping rolling windows",
+  "definition": "US value-weighted CRSP market total return (Mkt-RF + RF); real = relative to CPI-U NSA",
+  "caveats": [
+    "Overlapping windows: effective independent observations ~ sample years / horizon (e.g. only ~10 non-overlapping 10-year periods since 1926).",
+    "US market is a survivor (ex-post the most successful large market); global evidence (e.g. Japan 1990-2020) shows longer losing spells."
+  ]
+}

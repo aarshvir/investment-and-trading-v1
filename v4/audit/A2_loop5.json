@@ -1,0 +1,22 @@
+{
+ "total": 81,
+ "criteria": {
+  "1": 8,
+  "2": 8,
+  "3": 8,
+  "4": 8,
+  "5": 8,
+  "6": 9,
+  "7": 9,
+  "8": 8,
+  "9": 7,
+  "10": 8
+ },
+ "must_fix": [
+  "Dashboard audit-history table shows the wrong Loop-2 A3 score (criteria 1/9/10): dashboard/d4v.json -> audits.loops[1] (\"loop\": \"2\") has \"A3\": 80.0, \"avg\": 85.7; the correct values, per audit/A3_loop2.json (\"total\": 89) and FINAL_REPORT.md's own section-10 table, are A3: 89.0, avg: 88.7. The wrong 80.0 matches Loop 1's A3 score exactly, consistent with an indexing/copy error. Fix: correct the dashboard generator (likely code/lead_assemble.py or code/lead_report_sections.py) to read Loop-2's own A3 file, republish the artifact, and add a check that diffs the dashboard's audits.loops array against audit/A*_loop*.json loop-by-loop (not just FINAL_REPORT.md's own copy), since C1's re-run checked the report's table against the audit JSONs but never checked the dashboard's separate copy of the same data -- exactly where this error lives.",
+  "CRH and PGR (6.2% and 4.3% of the sleeve, both full conviction) have had no independent multi-fact dossier check since Loop 3 (criterion 4/10): Appendix A.5 shows no DA row for either, only A1/A2/A3 loop-3 auditor sign-off. I spot-checked CRH's $8.5bn Arcosa deal size myself this loop (confirmed against CRH's own press release and independent coverage) but that is a single fact, not a systematic pass. Fix: run a DA8 fact-check pass on CRH, PGR, MTB, ADP and DOV (formalizing what this audit and Loop 4's A2 have done informally via web search) before the next freeze, and add the result to Appendix A.5 the same way DA4-DA7 are recorded there.",
+  "The failure mode that produced the GM error (a new full-conviction holding entering the frozen build before any independent fact-check exists) did not recur this loop only because the held 20 names are unchanged since Loop 4 -- wave-2's 34 newly-eligible names did not displace anyone under rule (j) -- not because the underlying process rule changed (criterion 4). Wave-3 (189 names still queued, per STATE.md) is the next real test. Fix: add an explicit, written rule alongside (a)-(j) in STATE.md that a name cannot enter the frozen sleeve at full (10%-cap) conviction without at least one completed independent fact-check pass finished before the freeze, not queued for the next loop's audit to discover.",
+  "RJF's section-8 bull case 2 (\"parent debt is under $1B\") is not struck or footnoted after the dossier's own Correction section explicitly says this point \"should be read as retracted\" (criterion 5/9): a reader who only reads section 8 (as the bull/bear summary is designed to be read standalone) would still see the retracted claim presented as a live, current bull point. Fix: edit RJF.md section 8 bull point 2 to either remove it or add an inline footnote pointing to the Correction section, consistent with how other corrected figures elsewhere in the program are handled.",
+  "The rule-(j) sensitivity file (outputs/lead_j_sensitivity.json) reports overlap and stress figures for the 4 alternative orderings but does not show, for the 66 eligible-but-not-held names, how close each came to inclusion under any ordering (criteria 6/7, minor). PAYX in particular sits at model rank 95, just outside the top 20, and the report itself flags it as a near-miss versus Codex's v005 release (section 13) without a quantified margin. Fix: extend lead_j_sensitivity.py's output to report each near-miss name's rank/score margin to the 20th name under each ordering, so a reader can judge how fragile the boundary between held and not-held really is."
+ ]
+}

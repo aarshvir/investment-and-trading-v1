@@ -1,0 +1,21 @@
+{
+ "total": 89,
+ "criteria": {
+  "1": 9,
+  "2": 9,
+  "3": 9,
+  "4": 9,
+  "5": 9,
+  "6": 9,
+  "7": 9,
+  "8": 8,
+  "9": 9,
+  "10": 9
+ },
+ "must_fix": [
+  "Add a V2R reconciliation addendum to v4/dossiers/UDR.md, matching the ones already present in HST.md and FRT.md. v4/outputs/v2r_reit_valuation.json shows UDR's own-history percentile could only be rebuilt from 14 clean months (37 of 53 reconstructed quarters dropped as an implausible XBRL D&A tag), so the 7.1st-percentile 'cheap' reading is explicitly 'NOT a true 5y/10y sample -- treat as low-confidence/directional only' in V2R's own words -- but grep of dossiers/UDR.md for 'V2R', 'low-confidence' or '14 clean months' returns nothing; the caveat never reached the document an IC reader would actually open. UDR is held at its half-conviction cap (5.0%). This is a disclosure gap, not a verdict error (V2R's corrected_verdict is unchanged at 'attractive', and the current-quarter 13.5-13.7x multiple itself is unaffected, being built from 8 quarters of reported actuals), but it is exactly the class of undisclosed-caveat gap this program was built to eliminate. Verify by grepping the dossier for the caveat text after the fix.",
+  "Complete A2's dossier coverage of the 20-name sleeve. Across Loop 1 and Loop 2 this auditor has independently fact-checked 9 of 20 current holdings against primary/secondary sources (HST, MTB, LMT, DLTR in Loop 1; FRT, DG, ABNB, EOG, BKNG in Loop 2) with zero factual errors found. The other 11 (ALL, DVA, GL, SWK, HIG, BMY, CVS, VRSN, UDR, SYF) have not yet been independently checked by this auditor. Priority: BMY, UDR and SYF carry the report's own '‡' flag (analyst valuation more cautious than V1's base case) but were not among the ones I read in full this loop -- confirm their §7 reconciliation text exists and is substantive, the way it does in the four ‡-flagged names I did check directly (HST, FRT, EOG, BKNG).",
+  "Replace or clearly re-justify the sample-covariance fallback for sleeve risk contributions (FINAL_REPORT §7, last line). B2's shrinkage estimator is disclosed as degenerate (hit its 1.0 ceiling), so risk contributions are 'mechanically proportional to every name's squared weight' -- a real number sits in the report (HST 13%, MTB 13%, DRI 9%, SWK 6%) that is currently a near-tautology of the weights rather than an independent risk read. Not decision-changing today (the weights themselves are cap-verified and diversified), but a factor-model or properly-tuned shrinkage target would make this a real, non-circular risk-contribution figure rather than a disclosed near-tautology.",
+  "Tighten the 'top 40' label on the excluded-names list in FINAL_REPORT §6. The 22 names actually shown all rank ≤32 by composite (not 40), and rank-41 HAS (correctly ineligible: own valuation base case ≈6%/yr) falls just outside the stated cutoff and is never mentioned anywhere in the report. Not misleading on the facts, but either rename the heading to match what is actually shown (e.g. 'top 32') or extend the displayed list through rank 40 (adding HAS and any other rank 33-40 names) so the caption is exactly accurate."
+ ]
+}

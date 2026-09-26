@@ -1,0 +1,22 @@
+{
+ "total": 88,
+ "criteria": {
+  "1": 8,
+  "2": 9,
+  "3": 9,
+  "4": 8,
+  "5": 9,
+  "6": 9,
+  "7": 9,
+  "8": 9,
+  "9": 9,
+  "10": 9
+ },
+ "must_fix": [
+  "Fix the D2R 'no-data list' citation and remediation (criterion 1, highest impact): FINAL_REPORT.md section 11 cites 'v4/outputs/d2r_report.md' as the re-download's validation writeup, but this file (and d2r_results.json, also named in the meta.json) does not exist on disk. Direct query of d2r_no_data_reclassified.parquet (499 re-attempted candidates) shows only 15 recovered_partial and 0 recovered_full, and 0 of 499 rows have any Stooq validation check performed despite the sidecar meta.json explicitly promising 'Stooq validation counts'. Either complete the promised Stooq validation and write the missing report honestly documenting the ~3% partial-recovery outcome, or soften section 11's 'a full re-download is in progress' framing (which overstates how promising this avenue has been) before the next loop relies on the coverage percentages.",
+  "Re-investigate CMA (Comerica) specifically (criterion 1): to the auditor's knowledge this is a live, independent, actively-traded NYSE regional bank in 2026, not delisted or acquired -- exactly DA1's original loop-1 point. The current re-download still classifies it 'genuinely_unavailable_other' with an uninformative, likely auto-generated reason string ('Market capitalization changes.') and zero cross-source (Stooq) corroboration -- no real progress versus loop 1's finding. Confirm via an alternate vendor/identifier pull before treating the 408-name no-data list's residual scope as bounded.",
+  "Independently reproduce the sample-covariance risk-contribution numbers (lead_risk_results.json -> risk_sample_cov.risk_contribution_pct_by_name) from raw daily prices as a second, from-scratch implementation, mirroring the B1/B1X dual-implementation discipline (criterion 6, lower priority): this loop's audit confirmed the metric is no longer degenerate (FRT and UDR hold identical 5.0% weight but get different risk shares, 4.58% vs 4.51%) by reading the disclosed 'note' field and testing non-degeneracy circumstantially, but a full second implementation would be stronger evidence for what is now a headline, decision-adjacent number.",
+  "Correct STATE.md's working-log claim of '9 sectors' for the final 20-name sleeve (process/minor): direct recomputation from lead_portfolio_build.json shows 8 distinct GICS sectors. This never reached FINAL_REPORT.md or the dashboard (verified by grep), so no client-facing fix is needed -- tidy the internal audit-trail log only.",
+  "Reconsider the placement of the per-stock P(12m gain)/P(beat S&P) columns in section 6 (criterion 3, low priority, carried from loop 1, still unresolved): these are decile/vol-tercile base rates, correctly footnoted as such, but their placement in a per-company row still risks a non-technical reader treating them as stock-specific forecasts."
+ ]
+}

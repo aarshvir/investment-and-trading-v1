@@ -1,0 +1,104 @@
+{
+  "agent": "F72",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "WM": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "America's largest waste hauler and landfill owner, compounding price ahead of cost, but priced richly while it digests a large medical-waste acquisition.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Core price minus WM's own cash-cost inflation turns negative for two consecutive quarters (the sector's central 'is the moat still working' test; not yet observed - Q2'26 core price +5.7% still comfortably ahead of cost).",
+        "Sector-adjusted net debt/EBITDA (reported net debt + landfill/remediation liabilities, divided by adjusted EBITDA) exceeds 3.5x for two consecutive quarters (currently ~3.2x).",
+        "FY2026 adjusted EBITDA guidance (currently $8.15-8.25bn) is cut in dollar terms (not just margin-adjusted) at the Q3'26 (Oct 27, 2026) or later release.",
+        "A material adverse development in the Stericycle DOJ deferred-prosecution matter (beyond the already-disclosed penalty) or a new SEC/DOJ inquiry tied to Healthcare Solutions.",
+        "Collection & Disposal volume decline exceeds 2% for two consecutive quarters excluding the disclosed wildfire-comparison effect (i.e., volume loss broadens beyond the flagged residential shedding)."
+      ],
+      "key_adverse_facts": [
+        "Stericycle (wholly owned since Nov 2024) entered a one-year DOJ deferred prosecution agreement in May 2026 over pre-acquisition (2015-2020) conduct at its now-divested controlled-substances business; paid penalty/settlement amounts and remains under ongoing compliance/reporting obligations.",
+        "GAAP-to-adjusted operating income gap widened sharply in Q3'25 ($989m GAAP vs $1,241m adjusted, a 25% adjustment) and stayed elevated through Q1-Q2'26, driven by Stericycle integration/restructuring costs.",
+        "Q2'26 release cut FY2026 revenue guidance ~0.6% (to $26,275-26,475m from $26,425-26,625m) on lower volume expectations, one quarter after reaffirming the original range.",
+        "Collection & Disposal volume declined 1.8% YoY in Q2'26 (partly wildfire-comparison, but also intentional shedding of low-margin residential business)."
+      ],
+      "data_conflicts": [
+        "d4 quant snapshot shows WM beta = 0.203 (vol_1y 0.203), which looks unusually low for an issuer carrying $23.4bn of total debt; not independently verified against a primary source since beta is a vendor-computed statistic, not an SEC-disclosed figure. Flagged as a possible data-quality issue affecting the b1 composite score's apparent 'quality' read."
+      ],
+      "next_earnings_date": "2026-10-27",
+      "confidence_in_thesis": "medium - the route-density/landfill-permit moat and RNG/Stericycle growth legs are real and durable, but the premium multiple (12.9x EV/EBITDA, 21.9x P/FCF) and unresolved integration-cost trajectory limit conviction to half-size.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "No V1 systematic-valuation row exists for WM in outputs/v1_valuation_table.csv or v1_valuation.json, so v1_verdict is null and no reconciliation against V1 is possible. My own reverse DCF (WACC 7.0%, terminal growth 3.0%, base FCF = FY2026-guided midpoint $3.8bn) implies ~4.0%/year FCF growth for 10 years, which sits below my own evidence-based base case of ~6-7%/year (mid-single-digit core price plus RNG/Stericycle synergy ramp plus buybacks) - i.e. implied_vs_base = below, satisfying the INCLUDE-SMALL threshold, though the multiple itself (12.9x EV/EBITDA) is not cheap in absolute terms.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {"bear": -0.0684, "base": 0.049, "bull": 0.1282},
+      "scenario_basis": "TTM adjusted diluted EPS $7.74 (sum of last 4 quarters: 1.98+1.93+1.81+2.02); current P/E ~26.7x; bear 2%/yr EPS growth + 19x exit P/E, base 7%/yr + 24x exit P/E, bull 11%/yr + 27x exit P/E; plus WM's current 1.8%/yr dividend yield added each year (not reinvested/compounded), annualised over 3 years."
+    },
+    "AMCR": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Newly merged Amcor-Berry is the world's largest consumer-packaging maker, cheap on paper, but it just missed its own (already-cut) cash-flow guidance.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Leverage (net debt / [LTM adjusted EBITDA + SBC], company's own metric) exceeds 3.8x at any quarter-end (vs the 3.5-3.6x management is itself targeting for Dec-2026).",
+        "Free cash flow for the six-month Transition Period (Jul-Dec 2026) comes in below the low end of whatever range management guides at the next release - a second consecutive FCF miss would be a much stronger signal than the first.",
+        "Quarterly dividend is cut or held flat for more than 2 consecutive quarters after being raised in FY2026 (a de facto signal management judges coverage to be tight).",
+        "Disclosed cost synergies fall below the 'upper end of expectations' pace management has claimed every quarter to date (i.e., synergy realization guidance itself is cut).",
+        "The Brazil tax litigation reasonably-possible-loss estimate (currently $27m above the $14m accrual) is revised materially upward in a future filing."
+      ],
+      "key_adverse_facts": [
+        "FY2026 free cash flow was $1,303m, below even the ALREADY-CUT guidance range of $1.5-1.6bn given at Q3 FY26 (May 2026), which itself was cut from the original $1.8-1.9bn guided at Q1/Q2 FY26 - a real, quantified, two-step-down cash-flow miss in the first full post-merger fiscal year.",
+        "Leverage (net debt / [LTM adjusted EBITDA + SBC]) is targeted by management itself to stay at 3.5x-3.6x through December 31, 2026 - i.e. no meaningful deleveraging is guided for at least another 12+ months.",
+        "FY2026 dividends paid ($1,195m) were barely covered by FY2026 free cash flow ($1,303m) in the same year FCF missed guidance - a real coverage-quality flag.",
+        "The b1 model's bullish composite score (0.685, decile 7) is driven almost entirely by earnings-momentum/SUE factors that are a mechanical artefact of merger accounting (comparing a combined entity against a much smaller pre-merger base), not organic acceleration; this signal should fade once FY2026 comparisons fully lap."
+      ],
+      "data_conflicts": [
+        "d4 quant snapshot's next_earnings_date for AMCR (2026-11-05, flagged as an estimate) is very likely stale: Amcor has publicly announced a fiscal-year-end change from June 30 to December 31, with a standalone six-month 'Transition Period' (July 1-December 31, 2026) report to follow, not a normal quarterly release around early November 2026."
+      ],
+      "next_earnings_date": "not applicable (fiscal-year transition) - next disclosure is a six-month Transition Period report (Jul-Dec 2026), expected in early 2027; see data_conflicts",
+      "confidence_in_thesis": "medium - synergy capture has beaten or matched the upper end of plan every quarter disclosed, but the FCF miss and the leverage plateau through year-end are real, unresolved risks that need at least one more clean quarter (or the Transition Period report) to verify.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No V1 systematic-valuation row exists for AMCR. My own reverse DCF (WACC 7.8%, terminal growth 2.5%) implies ~5.8%/year FCF growth for 10 years on the unadjusted FY2026 actual FCF base ($1,303m, itself depressed by ~$290m of one-off integration costs), or ~3.1%/year on a normalized FCF base (~$1.6bn, adding back those one-offs). Against a plausible 5-6%/year base case (synergy ramp plus modest volume/price growth), the normalized reading is below base case (implied_vs_base = below); the unadjusted reading would be roughly in line. I use the normalized view as primary per earnings-quality practice (one-off costs should not permanently depress the base), which supports the INCLUDE-SMALL threshold, but flag this as a genuine judgement call and the single biggest swing factor in the valuation read.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {"bear": -0.0206, "base": 0.1185, "bull": 0.2361},
+      "scenario_basis": "FY2026 adjusted diluted EPS $4.02 (post 1-for-5 reverse split); current P/E ~10.6x; bear 0%/yr EPS growth + 8x exit P/E, base 7%/yr + 10.5x exit P/E, bull 13%/yr + 12.5x exit P/E; plus AMCR's current 6.1%/yr dividend yield added each year (not reinvested/compounded), annualised over 3 years."
+    },
+    "BALL": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "A pure-play global aluminum-can maker riding the plastic-to-aluminum substitution wave, growing double-digit EPS with a credible guidance track record.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Global aluminum packaging shipment growth turns negative for two consecutive quarters (currently +4.3% in Q2'26 - a clean, quantifiable proxy for the substitution thesis losing steam).",
+        "Net debt/comparable EBITDA (company's own next disclosed figure) exceeds 3.5x at any year-end or half-year disclosure (currently ~2.8x at Dec 2025, ~3.2x on my own approximation for June 2026).",
+        "FY2026 comparable diluted EPS growth guidance (currently '10-plus percent') is cut below 10% at any quarterly update.",
+        "The U.S. CBP aluminum-tariff-classification matter (disclosed Sept 2025, unreserved) results in a quantified assessment exceeding $100 million.",
+        "Full-year free cash flow for 2026 comes in below the guided $900 million floor at year-end."
+      ],
+      "key_adverse_facts": [
+        "An unresolved, unreserved U.S. Customs and Border Protection challenge (notice received Sept 2025) to the tariff classification of certain aluminum imports; Ball states it 'is unable to develop a reasonable estimate of loss' and has recorded no reserve.",
+        "FY2026 guidance ('10-plus percent' comparable EPS growth) is a deliberate deceleration from FY2025's delivered ~14% growth; two quarters of 14-22% YoY growth in H1 2026 have not yet prompted a guidance raise.",
+        "FY2025 capital returns to shareholders ($1.54bn) exceeded FY2025 free cash flow ($956m), funded partly by balance-sheet/debt capacity."
+      ],
+      "data_conflicts": [
+        "Triage (Q13) cited net debt/EBITDA of 3.4x for Ball; my primary-source figure from the company's own disclosed leverage table (FY2025 year-end, 10-Q Note) is net debt $5,800m / comparable EBITDA $2,044m = ~2.8x - meaningfully lower than triage's 3.4x. Source of the discrepancy not identified (possibly an earlier or differently-scoped data snapshot); flagged for lead reconciliation."
+      ],
+      "next_earnings_date": "2026-11-03",
+      "confidence_in_thesis": "high - a clean FY2025 guidance-delivery track record, a structural multi-year volume tailwind visible in every reported geographic segment, and a reverse-DCF that does not require aggressive growth assumptions, tempered only by the unquantified tariff contingency.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "No V1 systematic-valuation row exists for BALL. My own reverse DCF (WACC 7.5%, terminal growth 2.5%, base FCF = FY2025 actual $956m) implies ~3.8%/year firm-level FCF growth for 10 years. A reasonable base case (2-4%/year global can-volume growth plus modest margin/mix improvement) is ~4-5%/year, so implied growth sits at or slightly below base case (implied_vs_base = below), satisfying the INCLUDE threshold, though with a thinner margin of safety than WM or AMCR's reverse-DCF reads.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {"bear": 0.0056, "base": 0.1557, "bull": 0.2536},
+      "scenario_basis": "TTM comparable diluted EPS $3.90 (sum of last 4 quarters: 1.02+0.91+0.94+1.03); current P/E ~14.6x; bear 3%/yr EPS growth + 13x exit P/E, base 11%/yr + 16x exit P/E, bull 16%/yr + 18x exit P/E; plus BALL's current 1.4%/yr dividend yield added each year (not reinvested/compounded), annualised over 3 years."
+    }
+  }
+}

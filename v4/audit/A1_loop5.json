@@ -1,0 +1,21 @@
+{
+ "total": 82,
+ "criteria": {
+  "1": 8,
+  "2": 9,
+  "3": 9,
+  "4": 7,
+  "5": 8,
+  "6": 9,
+  "7": 8,
+  "8": 8,
+  "9": 9,
+  "10": 7
+ },
+ "must_fix": [
+  "C1's own freshness is unguarded and it just lagged again: outputs/c1_consistency.md/.json state they audited a build 'built 2026-09-26T17:17:27', but the live frozen lead_portfolio_build.json this loop's report is generated from has built=2026-09-26T17:35:04 (the portfolio was rebuilt after C1 ran). I confirmed the two builds are content-identical (all 20 weights match C1's stated sequence to 4 decimals), so no wrong number currently ships, but the sha256 freshness guard (lead_guard.py) only covers lead_portfolio_build.json's own inputs, not C1's 'as of' claim -- the same failure mode as the Loop-4 must-fix on this file, recurring in milder form. Fix: add C1's output to the manifest lead_guard.py checks, or make it the last stage before lead_assemble.py in run_all.py, so a rebuild after C1 ran fails the freshness check instead of silently shipping a stale citation.",
+  "The per-holding verification register (A.5) is still partly hand-maintained, only half-fixing the Loop-4 must-fix: code/lead_report_appendix.py lines 133-137 hardcodes an AUDITED dict mapping loop number -> tickers each past auditor personally fact-checked; the DA-series counts are correctly auto-derived from da4-7_factcheck.json, but this dict is not, so this very Loop-5 audit's own checks (HBAN Veritex date independently confirmed via SEC/press release; GM and RJF corrections cross-verified against exact filing quotes) will never appear in A.5 unless someone manually edits the code. Fix: replace AUDITED with a structured append-only log (e.g. audit/fact_check_log.jsonl) that lead_report_appendix.py reads instead of hardcoding.",
+  "DA7 exposed a specific, repeatable failure mode -- entity/segment conflation in balance-sheet claims -- in 3 of 4 names checked this loop (GM automotive-vs-consolidated cash; RJF bank-vs-consolidated capital ratios AND parent debt, two separate instances), a materially worse strict-pass rate (70.4%) than DA6's prior wave-2 batch (85.7%). All are now corrected with quoted primary-source text, but the pattern went uncaught through the dossier author and two prior audit loops of these same names. Fix: before wave-3 diligence, add a mechanical pre-check (entity-scoped nouns like 'Bank'/'Automotive'/'parent'/'consolidated' next to a dollar figure must match the cited table/note's own scope) as a cheap first pass ahead of the next adversarial DA fact-check.",
+  "ADP and DOV (2 of 20 holdings, ~15% of sleeve weight) still have no dedicated DA-numbered adversarial fact-check, only a Loop-4 auditor's own spot check -- close this with a short DA8 pass alongside wave-3 diligence so every current holding has at least one independent adversarial check."
+ ]
+}

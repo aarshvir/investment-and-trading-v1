@@ -1,0 +1,299 @@
+{
+ "register": [
+  [
+   "B1X",
+   "Blind re-implementation of the whole backtest",
+   "Matches B1 within 0.04 pts/yr; live-rank correlation 0.976",
+   "outputs/b1x_report.md"
+  ],
+  [
+   "Daily drawdown check",
+   "Daily worst falls of the top 30 and the sleeve rule, without B1's code",
+   "−43.7% vs −44.4%; −41.8% vs −41.7%; same day (23 Mar 2020)",
+   "outputs/lead_check_daily_dd.json"
+  ],
+  [
+   "V1X",
+   "Valuation inputs and methods of the Loop-1 holdings, from SEC filings",
+   "261 of 297 checks pass (87.9%); no verdict or base-case sign changes",
+   "outputs/v1x_verification.md"
+  ],
+  [
+   "V2R",
+   "REIT funds from operations rebuilt from filings",
+   "HST: attractive → fair; FRT: attractive → fair; UDR: attractive → attractive; PSA: fair → fair",
+   "outputs/v2r_reit_valuation.md"
+  ],
+  [
+   "DA4",
+   "Load-bearing dossier facts (6 holdings, 4 excluded names) against SEC filings",
+   "52 facts: 50 pass, 1 minor, 0 fail, 1 unverifiable",
+   "outputs/da4_factcheck.md"
+  ],
+  [
+   "DA5",
+   "Load-bearing dossier facts of the 8 holdings no auditor had checked",
+   "40 facts: 36 pass, 1 minor, 1 fail, 2 unverifiable",
+   "outputs/da5_factcheck.md"
+  ],
+  [
+   "C1",
+   "Every number in the report traced to its source file",
+   "361 checked, 361 matched, 0 mismatch (dashboard crisis table used a different loss measure; fixed); re-run against the Loop-4 build",
+   "outputs/c1_consistency.md"
+  ],
+  [
+   "X1",
+   "Claims inherited from Codex's release v005",
+   "23 of 26 confirmed; minor difference 1, not confirmed 1, unverifiable 1",
+   "outputs/x1_v005_verification.md"
+  ],
+  [
+   "Risk re-computation",
+   "Sleeve volatility, tracking error, correlation and risk shares from raw prices",
+   "pass: True",
+   "outputs/lead_check_risk_contrib.json"
+  ],
+  [
+   "D2R",
+   "Re-download of the 408 'no price data' symbols",
+   "Root cause found (retry logic); 0 recovered because the names were acquired and purged; coverage unchanged",
+   "outputs/d2r_report.md"
+  ],
+  [
+   "R3",
+   "UAE implementation and tax facts",
+   "IBKR entity and protection confirmed; fund, withholding and estate-tax facts re-verified; open items labelled",
+   "outputs/r3_implementation_verification.md"
+  ],
+  [
+   "DA1–DA3",
+   "Prices and corporate actions; SEC fundamentals against filing documents; estimates",
+   "See each report for pass rates and fixes",
+   "audit/da1_data_audit.md, da2, da3"
+  ]
+ ],
+ "verification": [
+  {
+   "t": "HST",
+   "v1": "attractive",
+   "check": "V2R rebuilt FFO: fair (changed)",
+   "analyst": "fair (more cautious than V1)",
+   "facts": [
+    "A1 (loops 1–2)",
+    "A2 (loops 1–2)",
+    "A3 (loops 1–2)",
+    "DA4: 6 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "DVA",
+   "v1": "attractive",
+   "check": "V1X: 12/14 checks pass; verdict unchanged",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "DA5: 5 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "DG",
+   "v1": "attractive",
+   "check": "V1X: 13/14 checks pass; verdict unchanged",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A2 (loops 1–2)",
+    "DA6: 3 facts, 1 fail (corrected in dossier)"
+   ]
+  },
+  {
+   "t": "CVS",
+   "v1": "attractive",
+   "check": "V1X: 13/14 checks pass; verdict unchanged",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "DA5: 5 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "MTB",
+   "v1": "fair",
+   "check": "V1X: 13/17 checks pass; verdict unchanged",
+   "analyst": "fair (consistent)",
+   "facts": [
+    "A1 (loops 1–2)",
+    "A2 (loops 1–2)",
+    "A3 (loops 1–2)",
+    "DA4: 6 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "DRI",
+   "v1": "attractive",
+   "check": "V1X: 12/14 checks pass; verdict unchanged",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A3 (loops 1–2)",
+    "DA5: 5 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "UDR",
+   "v1": "attractive",
+   "check": "V2R rebuilt FFO: attractive (unchanged)",
+   "analyst": "cheap (differs from V1)",
+   "facts": [
+    "DA5: 5 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "SYF",
+   "v1": "attractive",
+   "check": "V1X: 14/17 checks pass; verdict unchanged",
+   "analyst": "fair (more cautious than V1)",
+   "facts": [
+    "DA4: 7 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "BKNG",
+   "v1": "attractive",
+   "check": "V1X: 13/14 checks pass; verdict unchanged",
+   "analyst": "attractive (differs from V1)",
+   "facts": [
+    "A2 (loops 1–2)",
+    "DA6: 4 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "AMP",
+   "v1": "fair",
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "fair (consistent)",
+   "facts": [
+    "A1 (loop 3)",
+    "A2 (loop 3)",
+    "A3 (loop 3)",
+    "DA8: 7 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "GM",
+   "v1": "excessive",
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (more optimistic than V1)",
+   "facts": [
+    "A1 (loop 5)",
+    "A2 (loop 4)",
+    "A2 (loop 5)",
+    "A3 (loop 4)",
+    "DA7: 7 facts, 1 fail (corrected in dossier)"
+   ]
+  },
+  {
+   "t": "ADP",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A1 (loop 4)",
+    "A2 (loop 4)",
+    "A2 (loop 5)",
+    "A3 (loop 5)",
+    "DA8: 7 facts, 1 fail (corrected in dossier)"
+   ]
+  },
+  {
+   "t": "CMCSA",
+   "v1": "attractive",
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A2 (loop 3)",
+    "DA6: 4 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "CRH",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (–)",
+   "facts": [
+    "A1 (loop 3)",
+    "A2 (loop 3)",
+    "A2 (loop 5)",
+    "A3 (loop 5)",
+    "DA8: 7 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "LVS",
+   "v1": "attractive",
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A2 (loop 3)",
+    "A2 (loop 5)",
+    "DA7: 7 facts, 1 fail (corrected in dossier)"
+   ]
+  },
+  {
+   "t": "BR",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A2 (loop 3)",
+    "DA6: 4 facts, 1 fail (corrected in dossier)"
+   ]
+  },
+  {
+   "t": "RJF",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A2 (loop 4)",
+    "A2 (loop 5)",
+    "DA7: 6 facts, 2 fail (corrected in dossier)"
+   ]
+  },
+  {
+   "t": "PGR",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (–)",
+   "facts": [
+    "A1 (loop 3)",
+    "A2 (loop 3)",
+    "A3 (loop 3)",
+    "DA8: 6 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "DOV",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A1 (loop 4)",
+    "A2 (loop 4)",
+    "A2 (loop 5)",
+    "A3 (loop 5)",
+    "DA8: 6 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "HBAN",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A1 (loop 5)",
+    "A2 (loop 4)",
+    "A2 (loop 5)",
+    "A3 (loop 4)",
+    "DA7: 6 facts, 1 fail (corrected in dossier)"
+   ]
+  }
+ ]
+}

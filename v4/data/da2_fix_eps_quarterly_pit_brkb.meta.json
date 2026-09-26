@@ -1,0 +1,14 @@
+{
+  "purpose": "Corrected BRK-B (Berkshire Hathaway Class B) diluted EPS in d3_eps_quarterly_pit.parquet.",
+  "defect": "D3 as-filed EPS for ticker BRK-B carried Berkshire's reported EarningsPerShareDiluted/Basic value unconverted. Berkshire reports EPS on a Class-A-equivalent basis only (non-dimensional XBRL fact); the 1/1500 Class-B conversion ratio is disclosed only in a footnote (e.g. 10-Q filed 2013-11-01, accn 0001193125-13-423169: \"Net earnings per Class B common share is equal to one-fifteen-hundredth (1/1,500) of such amount.\"), not as a separate structured fact, so it was not applied. Confirmed against the actual filed Statements of Earnings for BRK-B CIK 1067983 (e.g. Q3 2013: filed value ,074 for a 3-month period vs true BRK-B EPS ~.05). Root cause is systemic to BRK-B whenever ticker=BRK-B pulls the CIK-level EarningsPerShare* fact.",
+  "fix": "eps_diluted_adj divided by 1500.0 for all rows where ticker==\"BRK-B\" (all quarters/vintages in the file, since the same unconverted-Class-A-equivalent value is used throughout the CIK's history). No other ticker or column changed.",
+  "evidence_url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312513423169/R3.htm",
+  "rows": 2428,
+  "extreme_rows_before_fix": 2200,
+  "extreme_rows_after_fix": 0,
+  "source_file_fixed": "v4/data/d3_eps_quarterly_pit.parquet",
+  "how_to_apply": "Left-join this file on (month_end,cik,q) [or just ticker==BRK-B] to replace eps_diluted_adj in d3_eps_quarterly_pit.parquet; recompute sue for BRK-B afterward (sue formula uses eps_diluted_adj).",
+  "not_fixed_here": "BRK-A (if present under a separate ticker) should NOT be divided (its filed value IS the Class-A-equivalent already); this fix file only contains BRK-B rows.",
+  "agent": "da2",
+  "written_utc": "2026-09-25T22:46:44Z"
+}

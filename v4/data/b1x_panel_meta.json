@@ -1,0 +1,15 @@
+{
+  "agent": "b1x",
+  "built_utc": "2026-09-25T22:31:15.945697+00:00",
+  "membership_source": "d2_universe_spells_fallback",
+  "backtest_months": [
+    "2010-01-29",
+    "2026-08-31"
+  ],
+  "n_months": 200,
+  "n_tickers_full_universe": 640,
+  "n_current_constituents_used": 503,
+  "rows_full": 82166,
+  "rows_current": 94225,
+  "note": "market_cap = d2_close(t) * d3_pit_monthly_lag1.shares_out(t) * split_factor_after(t); split_factor_after derived by B1X from d2_splits.parquet (product of split_ratio for splits with date>t), not read from any precomputed column."
+}

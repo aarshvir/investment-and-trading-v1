@@ -1,0 +1,22 @@
+{
+ "total": 78,
+ "criteria": {
+  "1": 7,
+  "2": 9,
+  "3": 8,
+  "4": 6,
+  "5": 8,
+  "6": 9,
+  "7": 8,
+  "8": 8,
+  "9": 8,
+  "10": 7
+ },
+ "must_fix": [
+  "Independently fact-check BR, CMCSA, BKNG, DG, NOW, BX and EG (criterion 4, highest impact): these 7 current holdings, ~33% of sleeve weight, have never been checked by anyone other than the analyst who wrote the dossier. Cross-referencing da4_factcheck.json and da5_factcheck.json (tickers checked: TGT/TRV/SYF/DLTR/HST/MPC/MTB/TPR/SWK/BMY and UDR/GL/DVA/CVS/ALL/HIG/DRI/VRSN) against the current 20-name sleeve shows only 9 of 20 holdings have independent DA-series coverage; my own 3 fresh checks this loop (CRH, PGR, AMP, all pass) bring the total to 12 of 20 (~47% weight), leaving 7 holdings (~33% weight) with zero independent verification. Launch a DA6-equivalent pass before the next freeze.",
+  "Extend the 'list every excluded name with a reason' transparency mechanism to the whole-index tier (criteria 1/9/10): FINAL_REPORT.md names and explains every excluded name from the original model-rank top-45, but 21 of the 50 fully-diligenced, rule-eligible candidates from the new whole-index triage/growth-lane tier are never mentioned anywhere in the report (ES, EQIX, ADBE, NXPI, GS, ADI, FSLR, LLY, ALGN, SYK, NFLX, AVGO, APH, LDOS, RDDT, CBRE, SRE, RCL, BLK, CINF, EXPE) -- several are recognizable names (AVGO, GS, NFLX, BLK, LLY) the owner would want explained given he explicitly asked about growth names. The report's own 'how these 20 were chosen' section implies this completeness but does not deliver it.",
+  "Add the missing-data caveat to the GFC 'at today's weights: -59.7%' claim (criteria 1/3): DG, SYF and NOW (7.86% of sleeve weight) had zero valid daily prices during Oct 2007-Mar 2009 (confirmed via data/d2_adjclose.parquet: first_valid dates 2009-11-13, 2014-07-31 and 2012-06-29 respectively, none existed as public companies yet) and are excluded/renormalized among the other 17 names for that period -- matching lead_risk_results.json's worst_fall.sleeve_real_data_share=0.92144 exactly (1-0.9214=0.0786). The exclude-and-renormalize methodology is sound and disclosed in code (b2_risk.py) and in the JSON, but the report text does not carry the caveat forward next to the headline claim.",
+  "Test the final-20 selection (rule j) for tie-break sensitivity (criterion 10, lower priority): the final-size ranking rule (conviction, then margin of safety, then base-case return) was fixed at 12:38 in STATE.md, the same log entry reporting that all 50 candidates' full-diligence verdicts and valuations were already known -- unlike the top-45 selection rule and tie-break, which were fixed before any diligence result existed. The stated rationale is internally consistent with earlier amendments and AVGO (eligible under rule g) still did not make the final cut, arguing against results-chasing, but a from-scratch re-run under 1-2 alternative defensible orderings (e.g. base-case return before margin-of-safety) has not been done to confirm the specific list isn't fragile to that choice.",
+  "Clean up the stale duplicate risk-contribution object in lead_risk_results.json (criterion 6, process hygiene, low priority): the file carries two materially different risk-contribution blocks -- the degenerate B2 Ledoit-Wolf object under risk.windows.3y (e.g. HST risk share 14.4%, enb_risk 11.9) and the corrected sample-covariance object under risk_sample_cov actually used by the report and verified to 5e-7 by lead_check_risk_contrib.json (HST 11.4%, enb_risk 15.1). Nothing marks the first as superseded beyond a 'note' field on the second object; rename or drop the stale key so a future analyst cannot cite the wrong number."
+ ]
+}

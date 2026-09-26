@@ -1,0 +1,23 @@
+{
+  "source": {
+    "yahoo": "Yahoo Finance chart API via yfinance 1.7 yf.download(start=1995-01-01, end=2026-09-26, auto_adjust=False, actions=True, group_by='ticker', threads=6)",
+    "universe": "C:\\Users\\user\\OneDrive\\Documents\\Projects\\Investing and trading\\Long-term and mid-term investments\\v4\\data\\d2_universe.csv"
+  },
+  "shape": [
+    4479,
+    5
+  ],
+  "index": "LSE trading days (dates where any .L listing has a bar)",
+  "currency": {
+    "CSPX.L": null,
+    "IUSA.L": null,
+    "SPXS.L": null,
+    "SPY5.L": null,
+    "VUAA.L": null
+  },
+  "caveats": [
+    "London close timing (16:30 UK) differs from NY close; do not mix daily returns with US panel."
+  ],
+  "agent": "d2",
+  "written_utc": "2026-09-25T20:57:23Z"
+}

@@ -1,0 +1,316 @@
+{
+ "agent": "Q14",
+ "as_of": "2026-09-25",
+ "tickers": {
+  "WELL": {
+   "advance": true,
+   "quality": 5,
+   "growth": 5,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "Owns senior housing real estate operated by top platforms (SHOP), riding an accelerating 80+ demographic wave.",
+   "reason": "39% revenue growth and 43% forward EPS growth are real (occupancy recovery plus accretive deals), and the multi-year demographic runway is unusually visible; valuation is very rich (74x NTM) but not obviously disconnected from the growth path.",
+   "sources": ["data/triage_cards.csv", "Welltower investor updates on SHOP occupancy/NOI trends"]
+  },
+  "VICI": {
+   "advance": true,
+   "quality": 4,
+   "growth": 3,
+   "price_vs_growth": 5,
+   "red_flags": [],
+   "one_line": "Owns irreplaceable Las Vegas Strip and regional casino real estate under long CPI-linked triple-net leases.",
+   "reason": "8x NTM P/E with a 7.7% yield and high-teens revenue growth is a rare combination for an investment-grade landlord; main risk is tenant concentration (Caesars/MGM) rather than the real estate itself.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "PLD": {
+   "advance": true,
+   "quality": 5,
+   "growth": 3,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "Largest global logistics/warehouse REIT with infill-location scale that is very hard to replicate.",
+   "reason": "The -26% EPS print is lapping one-time development/promote gains, not a demand collapse; revenue still grew 12%, and post-2023-25 supply glut is thinning into 2026-27, supporting re-acceleration.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "CPT": {
+   "advance": false,
+   "quality": 3,
+   "growth": 2,
+   "price_vs_growth": 2,
+   "red_flags": ["Sunbelt apartment supply glut (Austin/DFW/Phoenix/Nashville) still pressuring same-store rent growth"],
+   "one_line": "Sunbelt apartment REIT hit by the 2023-26 multifamily supply wave in its core Texas/Southeast markets.",
+   "reason": "Flat revenue and a 69x optically-inflated NTM P/E (small EPS base) with no near-term catalyst; oversupply needs another 12-18 months to clear before rent growth reaccelerates.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "ESS": {
+   "advance": true,
+   "quality": 4,
+   "growth": 2,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "West Coast (CA/WA) apartment REIT protected by regulatory/geographic barriers to new supply.",
+   "reason": "Growth is modest but far steadier than Sunbelt peers because California entitlement friction caps new supply; full valuation but not stretched given the defensiveness.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "MAA": {
+   "advance": false,
+   "quality": 3,
+   "growth": 2,
+   "price_vs_growth": 3,
+   "red_flags": ["Sunbelt apartment supply glut, same as CPT"],
+   "one_line": "Sunbelt-focused apartment REIT facing the same regional oversupply overhang as Camden.",
+   "reason": "Metrics are marginally better than CPT (positive revenue growth, higher FCF yield) but the structural supply overhang is identical and there is no differentiated catalyst to prioritize it now.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "VMRK": {
+   "advance": false,
+   "quality": 2,
+   "growth": 2,
+   "price_vs_growth": 2,
+   "red_flags": ["Could not identify or verify \"Vivmark Residential\" as an existing, covered multifamily REIT; a $47.6bn market cap in this sub-industry with a 0% dividend yield is inconsistent with known players (largest peers AVB/EQR are smaller) and with REIT payout requirements"],
+   "one_line": "Data-card entry for a multifamily REIT that could not be corroborated against known public filings or coverage.",
+   "reason": "Unable to verify company identity, filings, or business description with available tools this session; treating as an unresolved data-quality flag rather than advancing on unverifiable numbers.",
+   "sources": ["data/triage_cards.csv (unverified)"]
+  },
+  "ARE": {
+   "advance": false,
+   "quality": 2,
+   "growth": 1,
+   "price_vs_growth": 2,
+   "red_flags": ["Dividend cut ~45% (from $1.32 to $0.72/share)", "reported zero public-biotech leasing in a quarter for the first time in company history", "negative margin/ROE", "7.1x leverage and 49% one-year volatility"],
+   "one_line": "Life-science lab-office REIT caught in the multi-year biotech-tenant downturn and office/lab oversupply.",
+   "reason": "Confirmed disqualifying red flags: a large dividend cut, collapsing biotech leasing demand, negative profitability, and elevated leverage into large 2026 lease expirations in Boston/Bay Area/San Diego with 6-24 month downtime risk.",
+   "sources": ["data/triage_cards.csv", "Simply Wall St / Equibles coverage of ARE dividend reset and leasing strains, 2026"]
+  },
+  "BXP": {
+   "advance": false,
+   "quality": 3,
+   "growth": 3,
+   "price_vs_growth": 3,
+   "red_flags": ["9.8x net debt/EBITDA, the highest leverage in the office subsector here"],
+   "one_line": "Premier trophy-office landlord (Boston/NYC/SF/DC) with a growing life-science conversion pipeline.",
+   "reason": "Best-in-class assets, but office demand is still recovering unevenly and leverage is elevated versus peers; not a clear enough case yet to prioritize over cleaner names.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "IRM": {
+   "advance": true,
+   "quality": 4,
+   "growth": 4,
+   "price_vs_growth": 3,
+   "red_flags": ["negative FCF yield from data-center capex ramp"],
+   "one_line": "Records-storage REIT (very sticky legacy cash flows) diversifying into data centers and asset-lifecycle management.",
+   "reason": "18.5% revenue growth with a real second growth engine (digital/data centers) layered on an annuity-like legacy business; valuation (42x NTM) is full but growth is broad-based, not a one-off.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "CBRE": {
+   "advance": true,
+   "quality": 4,
+   "growth": 5,
+   "price_vs_growth": 5,
+   "red_flags": [],
+   "one_line": "Largest global commercial real estate services firm (brokerage, outsourcing, investment management).",
+   "reason": "15% revenue growth, 16% ROE and low leverage at only 15x NTM P/E is a statistically compelling combination as commercial real estate transaction volumes recover.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "CSGP": {
+   "advance": true,
+   "quality": 4,
+   "growth": 4,
+   "price_vs_growth": 4,
+   "red_flags": ["multi-year history of Homes.com cash burn (~$3bn cumulative) with breakeven not guided until 2029-30; capital-allocation credibility still being rebuilt"],
+   "one_line": "Near-monopoly commercial real estate data/analytics platform (47% core margins) funding a residential portal war with Zillow.",
+   "reason": "After activist pressure (Third Point, D.E. Shaw) forced management to cut Homes.com spend by $300m for 2026 and guide 2026 adjusted EBITDA to $740-800m (+83% y/y), the stock is at a 7-year low pricing in the burn without much credit for the inflection; core moat is intact.",
+   "sources": ["data/triage_cards.csv", "CoStar Group FY2026/medium-term outlook press release, Jan 2026", "TIKR/Motley Fool coverage of CoStar undervaluation and Homes.com spend cuts, 2026"]
+  },
+  "KIM": {
+   "advance": false,
+   "quality": 3,
+   "growth": 2,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "Grocery-anchored shopping-center REIT with a defensive but essentially flat growth profile.",
+   "reason": "Solid, unremarkable: 26x P/E for ~2% forward EPS growth and higher leverage (6.1x) than better-positioned peers like Regency; not differentiated enough to prioritize.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "O": {
+   "advance": true,
+   "quality": 4,
+   "growth": 2,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "\"The Monthly Dividend Company\" — diversified, investment-grade triple-net retail REIT.",
+   "reason": "Growth is modest, but the quality/safety premium (36x NTM P/E, 5.8% yield, decades of dividend increases) is fairly, not excessively, priced; a legitimate income-anchor holding worth the full diligence pass.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "REG": {
+   "advance": true,
+   "quality": 4,
+   "growth": 3,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "Grocery-anchored shopping-center REIT with low leverage and resuming same-store growth.",
+   "reason": "Better-positioned than KIM on both leverage (4.6x vs 6.1x) and revenue growth (8.9% vs 4.9%); the -15% EPS print looks like a prior-period comp/gain effect rather than a demand problem.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "SPG": {
+   "advance": true,
+   "quality": 5,
+   "growth": 4,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "Premier US mall/outlet REIT with best-in-class occupancy and re-leasing spreads.",
+   "reason": "Q2 2026 results confirm real strength (real-estate FFO +7.9% y/y, 96% occupancy, raised full-year guidance, and bankrupt Saks Off Fifth space re-let at ~2.4x prior rent) — the data card's -52% EPS figure is a one-time-gain comp distortion, not a growth problem.",
+   "sources": ["data/triage_cards.csv", "Simon Property Group Q2 2026 earnings release/call, Aug 2026"]
+  },
+  "EXR": {
+   "advance": true,
+   "quality": 4,
+   "growth": 2,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "Largest US self-storage operator (post Life Storage merger) with scale-driven cost/marketing advantages.",
+   "reason": "Growth is soft in the post-2023-25 storage-rate correction, but the platform is the clear scale leader and is reasonably, not expensively, priced for a cyclical trough that should ease as housing turnover normalizes.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "INVH": {
+   "advance": false,
+   "quality": 3,
+   "growth": 3,
+   "price_vs_growth": 2,
+   "red_flags": ["prior v1 pass already flagged valuation as excessive despite a favorable model rank", "rising build-to-rent supply competition", "growing state-level political/regulatory pushback on institutional single-family-rental ownership"],
+   "one_line": "Institutional single-family-rental operator/owner facing rising supply competition and regulatory scrutiny.",
+   "reason": "36x NTM P/E on decelerating EPS is rich relative to a business now facing both new build-to-rent supply and a real (if uncertain-timing) regulatory overhang on corporate SFR ownership; agree with the prior excessive-valuation call.",
+   "sources": ["data/triage_cards.csv (v1_verdict=excessive)"]
+  },
+  "AMT": {
+   "advance": true,
+   "quality": 5,
+   "growth": 3,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "Largest global multi-tenant tower REIT, now prioritizing capital discipline over international expansion.",
+   "reason": "34% ROE and a reasonable 24x NTM P/E for a name that has been actively deleveraging and pruning lower-return international exposure (e.g., India); mild EPS deceleration looks like comp noise, not a demand problem.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "CCI": {
+   "advance": true,
+   "quality": 4,
+   "growth": 3,
+   "price_vs_growth": 4,
+   "red_flags": ["still working through a leveraged balance sheet transition; historical CEO turnover/governance churn"],
+   "one_line": "Now a pure-play US tower REIT after closing an $8.4bn sale of its fiber and small-cell businesses.",
+   "reason": "The May 2026 divestiture (proceeds funding >$7bn debt paydown plus a $1bn buyback) is a genuine, completed de-risking catalyst forced by activist pressure (Elliott); the -4.9% revenue print is divestiture noise, not organic decline, and the 6.3% yield/39% street upside look attractive post-simplification.",
+   "sources": ["data/triage_cards.csv", "Crown Castle press release on fiber/small-cell sale closing and capital allocation, May 2026", "Wireless Estimator/DCD coverage of CCI pure-play tower pivot, 2026"]
+  },
+  "SBAC": {
+   "advance": false,
+   "quality": 3,
+   "growth": 2,
+   "price_vs_growth": 3,
+   "red_flags": ["8.1x leverage, the highest among the tower names in this batch"],
+   "one_line": "Smaller US/Latin America tower REIT with a decelerating forward EPS trajectory.",
+   "reason": "Reasonably priced but weaker growth and higher leverage than AMT/CCI in the same triage batch, with no differentiated catalyst to prioritize it over those two.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "WY": {
+   "advance": false,
+   "quality": 3,
+   "growth": 2,
+   "price_vs_growth": 3,
+   "red_flags": ["near-zero FCF yield (0.1%) at the current point in the housing/lumber cycle"],
+   "one_line": "Timberland REIT and wood-products maker, earnings tied closely to housing starts and repair/remodel demand.",
+   "reason": "The highest street-target upside in the batch (55%) reflects optionality on a housing-cycle recovery, but current cash generation is very thin; better as a watch item for a rate-cut/housing inflection than an immediate full-diligence priority.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "AEP": {
+   "advance": true,
+   "quality": 4,
+   "growth": 4,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "Large multi-state regulated utility with outsized data-center/electrification load growth in Ohio/Indiana/Texas.",
+   "reason": "19% forward EPS growth is well above typical regulated-utility rates, driven by a real rate-base capex tailwind from hyperscaler data-center demand in its territory; 18x NTM P/E is fair, not excessive, for that growth rate.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "CEG": {
+   "advance": true,
+   "quality": 5,
+   "growth": 5,
+   "price_vs_growth": 4,
+   "red_flags": [],
+   "one_line": "Largest US nuclear generation fleet, now the premier merchant supplier of firm carbon-free power to AI data centers.",
+   "reason": "Confirmed 20-year PPAs with Microsoft (Three Mile Island Unit 1 restart) and Meta (Clinton plant) lock in multi-decade contracted growth at premium pricing; lowest leverage (3.0x) in the batch and a 20x NTM P/E look reasonable against that growth visibility despite a 12-month pullback.",
+   "sources": ["data/triage_cards.csv", "TechTarget/DCD/about.fb.com coverage of Constellation-Microsoft and Constellation-Meta nuclear PPAs, 2026"]
+  },
+  "DUK": {
+   "advance": true,
+   "quality": 4,
+   "growth": 2,
+   "price_vs_growth": 4,
+   "red_flags": [],
+   "one_line": "Large diversified regulated utility across the Carolinas, Florida and the Midwest.",
+   "reason": "Steady, unspectacular growth but one of the cheapest large-cap utility valuations here (16x NTM) with a growing Carolinas data-center demand pipeline; low risk, reasonable price.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "ES": {
+   "advance": true,
+   "quality": 4,
+   "growth": 3,
+   "price_vs_growth": 5,
+   "red_flags": [],
+   "one_line": "New England (CT/MA/NH) pure-play T&D utility, cleaned up after exiting offshore wind investments.",
+   "reason": "Cheapest utility valuation in the batch (13x NTM) with positive FCF yield (rare for the group) and a de-risked, simpler regulated-only story following its 2023-24 offshore-wind divestitures.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "ETR": {
+   "advance": true,
+   "quality": 4,
+   "growth": 4,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "Gulf Coast utility (LA/MS/TX/AR) with major industrial and hyperscaler data-center load growth, notably in Louisiana.",
+   "reason": "30% forward EPS growth and 17% one-year momentum reflect real, contracted capex growth tied to large data-center build announcements on its grid; valuation premium to peers (20x NTM) looks justified by that growth.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "EVRG": {
+   "advance": false,
+   "quality": 3,
+   "growth": 3,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "Kansas/Missouri regulated utility with solid but unremarkable fundamentals.",
+   "reason": "Fair value for fair growth (9.3% ROE, below the group's better names) with a less pronounced data-center demand story than AEP/ETR/DUK/LNT; nothing disqualifying but nothing that earns priority over stronger peers in this batch.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "EXC": {
+   "advance": true,
+   "quality": 4,
+   "growth": 3,
+   "price_vs_growth": 4,
+   "red_flags": [],
+   "one_line": "Pure T&D utility holding company (ComEd/PECO/BGE/Pepco) since spinning off its generation business as Constellation.",
+   "reason": "Cheapest large-cap utility P/E in the batch (13.5x NTM) for a simple, low-risk regulated-wires model with some spillover data-center demand near its Mid-Atlantic territories.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "FE": {
+   "advance": true,
+   "quality": 3,
+   "growth": 4,
+   "price_vs_growth": 4,
+   "red_flags": ["legacy 2020 HB6 bribery/corruption scandal (Ohio) — resolved via deferred prosecution agreement, fine, and management turnover several years ago, but a governance scar worth re-checking in full diligence"],
+   "one_line": "Ohio/Pennsylvania/NJ/WV regulated utility rebuilding credibility after a settled bribery scandal, with a strong forward growth print.",
+   "reason": "58% forward EPS growth and a cheap 15x NTM P/E stand out, and the governance issue is legacy/settled rather than active; still worth flagging for a fresh governance/rate-case check in full diligence.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "LNT": {
+   "advance": true,
+   "quality": 4,
+   "growth": 3,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "Iowa/Wisconsin regulated utility benefiting from heavy hyperscaler data-center buildout in Iowa.",
+   "reason": "11% ROE (best among the Midwest utility peers here) plus a genuine data-center demand tailwind (Microsoft/Meta/Google all have large Iowa data centers on its grid) supports the growth case at a fair 18x NTM P/E.",
+   "sources": ["data/triage_cards.csv"]
+  }
+ }
+}

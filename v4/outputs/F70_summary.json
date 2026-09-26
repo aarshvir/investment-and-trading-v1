@@ -1,0 +1,118 @@
+{
+  "agent": "F70",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "OTIS": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "World's largest elevator/escalator maintenance business, whose annuity-like Service book is real, but two guidance cuts and a CEO retirement in 2026 argue for a starter position, not full weight.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "FY2026 adjusted EPS guidance is cut a third time below the current $4.01-$4.05 range",
+        "Organic New Equipment sales stay negative for 4 or more consecutive quarters",
+        "Net debt / adjusted operating profit rises above 3.5x (from ~3.0x currently)",
+        "No permanent CEO successor is named by July 2027 (the outside date in the transition agreement)",
+        "Modernization order growth decelerates below 10% (constant currency) for two consecutive quarters (from +9% cc / backlog +24-26% cc in Q2 2026)"
+      ],
+      "key_adverse_facts": [
+        "Two consecutive FY2026 adjusted-EPS guidance cuts: initial guide implied ~mid-to-high-single-digit growth off FY2025's $4.05; cut to $4.20-$4.24 on 2026-04-22; cut again to $4.01-$4.05 (flat-to-down vs FY2025) on 2026-07-22",
+        "CEO Judy Marks (in role since the April-2020 spin) announced her retirement on 2026-09-15; successor search underway (Spencer Stuart retained), transition due by 2027-07-31 at the latest",
+        "Both segments' operating margin compressed YoY in Q2 2026: New Equipment 5.3%->3.1%, Service 24.9%->23.2%, despite 7% total revenue growth",
+        "Total shareholders' equity is negative (-$5.75bn at 30-Jun-2026), a legacy of spin-off accounting plus continued debt-funded buybacks/dividends"
+      ],
+      "data_conflicts": [
+        "Quant card trailing P/E (17.0x) does not cleanly reconcile with a TTM-GAAP-EPS-derived P/E of ~20.5x computed from XBRL data; likely an adjusted-EPS basis in the card, not resolved with certainty",
+        "Earnings-release qualitative framing of Service-margin strength sits alongside the primary segment table showing Service segment operating margin compressed 170bps YoY in Q2 2026 -- both are drawn from company sources, but the headline framing should not be taken at face value without checking the segment table"
+      ],
+      "next_earnings_date": "2026-10-28",
+      "confidence_in_thesis": "medium - the Service annuity moat is real and well evidenced (67-70% of sales, 23%+ segment margin even after compression), but two guidance cuts plus a CEO transition in the same year make the next 2-3 quarters genuinely uncertain",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for OTIS (outside V1's ~92-name coverage), so there is nothing to reconcile; own reverse DCF implies ~2.9%/yr 10-year FCF growth at an 8.5% discount rate, below my ~4%/yr base case, i.e. the price is below (cheap relative to) my base case, but only modestly so given genuine execution risk.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.08,
+        "base": 0.07,
+        "bull": 0.17
+      },
+      "scenario_basis": "Start FY26 adjusted EPS $4.03 (guide midpoint) vs $65.94 close (25-Sep-2026). Bear: 0%/yr EPS growth, exit P/E 12x, ~2.7% avg dividend yield. Base: 4%/yr EPS growth, exit P/E 16.4x (flat), ~2.6% avg dividend yield. Bull: 9%/yr EPS growth, exit P/E 19x, ~2.3% avg dividend yield."
+    },
+    "PEP": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Frito-Lay/Pepsi/Gatorade/Quaker global snacks-and-beverage leader, cheaper than Coca-Cola, but real core-EPS growth is only mid-single-digit and the GLP-1/health-shift headwind on snack volumes is unresolved.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Organic revenue growth falls below 2% for two consecutive quarters (from 2.4-2.6% in H1 2026)",
+        "FY2026 core EPS guidance (5-7% growth) is cut",
+        "Core operating margin falls below 16% for two consecutive quarters (from 16.8% in Q2 2026)",
+        "Net debt / EBITDA rises above 3.0x (from ~2.3x currently)",
+        "The Baltimore public-nuisance case produces an adverse ruling with quantified damages"
+      ],
+      "key_adverse_facts": [
+        "Q2 2026's 137% GAAP EPS growth is driven almost entirely by a $1,860m Q2-2025 intangible-asset impairment that did not recur, not by underlying improvement; core (non-GAAP) EPS grew only 4% in Q2 2026 and 6% year-to-date",
+        "Core operating margin compressed 40bps YoY in Q2 2026 (16.8% vs 17.2%), corroborating the triage's margin-compression flag",
+        "Baltimore, MD public-nuisance lawsuit against PepsiCo/Frito-Lay survives after most claims were dismissed with prejudice (21-Jul-2025); oral argument scheduled for the fiscal quarter ending 5-Sep-2026",
+        "Net debt of roughly $44.6bn against stockholders' equity of only $22.1bn (30-Jun-2026), funding both the dividend and a new $10bn buyback program"
+      ],
+      "data_conflicts": [
+        "Triage cited 'active activist-investor pressure (Elliott Management)' from general knowledge; a search of SEC EDGAR found no SC 13D or SC 13D/A filed against PepsiCo (CIK 77476) -- only routine passive SC 13G filings -- so this claim is unconfirmed by any primary ownership filing and should not be treated as an established activist campaign"
+      ],
+      "next_earnings_date": "2026-10-08",
+      "confidence_in_thesis": "medium - a defensive, cash-generative franchise with 54 consecutive years of dividend increases, but the GLP-1/health-shift headwind on core snacks volumes is a real structural question that two quarters of data cannot resolve either way",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for PEP (outside V1's ~92-name coverage), so there is nothing to reconcile; own reverse DCF implies ~3.5%/yr 10-year FCF growth at a 7.5% discount rate, below my ~5-6%/yr base case (matching FY2026 guidance's midpoint), i.e. the price is below (cheap relative to) my base case.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.02,
+        "base": 0.10,
+        "bull": 0.19
+      },
+      "scenario_basis": "Start FY26 core EPS ~$8.63 (guide midpoint, +6% off FY25's $8.14) vs $128.63 close (25-Sep-2026). Bear: 2%/yr core EPS growth, exit P/E 12x, ~4.2% avg dividend yield. Base: 6%/yr core EPS growth, exit P/E 14.9x (flat), ~3.9% avg dividend yield. Bull: 9%/yr core EPS growth, exit P/E 18x, ~3.3% avg dividend yield."
+    },
+    "PPG": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Global paints and coatings leader with six straight quarters of organic sales growth and guidance reaffirmed three times running, priced cheaply at about 13x forward earnings.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Consolidated organic sales growth turns negative for two consecutive quarters (the streak is currently 6 positive quarters)",
+        "FY2026 adjusted EPS guidance ($7.70-$8.10) is cut",
+        "Net debt / EBITDA rises above 3.0x (from ~2.2x currently)",
+        "Asbestos-related reserves increase by more than 2x the current $42m",
+        "Automotive OEM/refinish organic sales decline for 3 or more consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "Organic growth, while positive for 6 straight quarters, is still low-single-digit and uneven: +1% Q1 2026, +4% Q2 2026, with organic growth in only 8 of 9 underlying businesses (automotive refinish/OEM softness)",
+        "Legacy asbestos-related reserves of $42m (30-Jun-2026) and an open (though financially immaterial) environmental/Clean Water Act matter tied to a former Ford City, PA glass-manufacturing waste-disposal site",
+        "Net debt of roughly $6.05bn against $8.59bn of equity (30-Jun-2026); moderate leverage (~2.2x net debt/EBITDA per the quant card)"
+      ],
+      "data_conflicts": [
+        "Triage cited 'activist and new-CEO pressure' as a re-rating catalyst; a search of SEC EDGAR found no SC 13D or SC 13D/A filed against PPG (CIK 79879) -- no activist stake could be confirmed via a primary ownership filing. Tim Knavish is confirmed as current Chairman/CEO from being quoted in the 2026 earnings releases, but the specific appointment date and any activist campaign were not independently verified against a primary filing in the time available",
+        "FY2026 adjusted EPS guide midpoint ($7.90) implies a forward P/E of ~13.6x versus the quant card's stated NTM P/E of 12.7x; not fully reconciled (possibly a different EPS basis or timing)"
+      ],
+      "next_earnings_date": "2026-10-27",
+      "confidence_in_thesis": "medium-high - six consecutive quarters of organic growth and three consecutive quarters of guidance reaffirmed (never cut) is a meaningfully cleaner execution record than the other two names in this batch; the reservation is that growth is still low-single-digit and cyclically exposed",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for PPG (outside V1's ~92-name coverage), so there is nothing to reconcile; own reverse DCF implies ~5.6%/yr 10-year FCF growth at an 8.5% discount rate, below my ~6-7%/yr base case, i.e. the price is below (cheap relative to) my base case, though the margin of safety is modest rather than a screaming bargain.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.03,
+        "base": 0.10,
+        "bull": 0.20
+      },
+      "scenario_basis": "Start FY26 adjusted EPS $7.90 (guide midpoint) vs $107.52 close (25-Sep-2026). Bear: 1%/yr EPS growth, exit P/E 11x, ~3.0% avg dividend yield. Base: 7%/yr EPS growth, exit P/E 13.6x (flat), ~2.5% avg dividend yield. Bull: 12%/yr EPS growth, exit P/E 16x, ~2.2% avg dividend yield."
+    }
+  }
+}

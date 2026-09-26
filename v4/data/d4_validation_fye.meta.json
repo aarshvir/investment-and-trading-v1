@@ -1,0 +1,24 @@
+{
+  "dataset": "d4_validation_fye.csv",
+  "agent": "d4",
+  "written_utc": "2026-09-25T20:59:40Z",
+  "description": "Yahoo fiscal calendar vs SEC submissions (fiscalYearEnd + latest annual report period)",
+  "rows": 503,
+  "columns": [
+    "ticker",
+    "yahoo_fy0_end",
+    "yahoo_lastFiscalYearEnd",
+    "sec_fiscalYearEnd",
+    "sec_last_annual_report_period",
+    "sec_last_annual_form",
+    "lfy_vs_sec_annual_days",
+    "fye_consistent",
+    "explanation",
+    "sec_name",
+    "sec_former_names"
+  ],
+  "source_urls": [
+    "https://data.sec.gov/submissions/CIK##########.json"
+  ],
+  "generated_by": "v4/code/d4_validate.py"
+}

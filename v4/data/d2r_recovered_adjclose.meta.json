@@ -1,0 +1,21 @@
+{
+  "agent": "d2r",
+  "written_utc": "2026-09-26T04:53:16Z",
+  "source": {
+    "yahoo": "Yahoo Finance chart API via yfinance 1.7 yf.download(start=1995-01-01, end=2026-09-26, auto_adjust=False, actions=True), single-ticker fresh calls, no cache reuse from D2's earlier run, own cache C:\\Users\\user\\eqv4\\cache\\D2R\\",
+    "candidate_universe": "v4/data/d2_coverage.csv status=no_data (408) plus non-no_data rows with member_coverage<0.5 (91) = 499 candidates re-attempted"
+  },
+  "shape": [
+    7986,
+    15
+  ],
+  "index": "same NYSE trading-day calendar as d2_close.parquet/d2_adjclose.parquet (2000-2026 relevant slice used for scoring; full 1995- index kept for join compatibility)",
+  "columns": "15 recovered tickers only (0 recovered_full, 15 recovered_partial); NOT in this file: genuinely_unavailable_* and identity_reuse tickers (see d2r_no_data_reclassified.parquet). IMPORTANT: none of these columns are from D2's original 408-symbol no_data list (CMA/EA/K/etc. were NOT recovered this session, still 0 rows here) - all are from the separate 91-symbol near-zero-partial group, and their coverage duplicates what d2_close/d2_adjclose already has (confirmed: +0 new member-days in every era, see d2r_report.md coverage table).",
+  "values": "Yahoo 'Adj Close' (split+dividend adjusted, total-return proxy) from a FRESH single-ticker yf.download call per symbol; NOT re-run through D2's spin-off double-count correction step (d2_adj_corrections.csv) - if a future pass recovers a ticker with its own spin-off around its membership window, re-check that correction before use.",
+  "validation": "See v4/outputs/d2r_report.md and d2r_results.json - net result this session: no independent cross-check could be completed (Stooq bot-walled, Macrotrends/stockanalysis WebFetch 403).",
+  "caveats": [
+    "identity_reuse tickers are excluded from this file by design (must not be merged into any panel).",
+    "recovered_partial tickers only have SOME of their membership-window days covered; see covered_share in d2r_no_data_reclassified.parquet before using in a full-history calc.",
+    "Never modifies or overwrites any D2 file (d2_close.parquet, d2_adjclose.parquet, d2_coverage.csv, etc)."
+  ]
+}

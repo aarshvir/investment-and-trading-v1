@@ -1,0 +1,26 @@
+{
+  "source_urls": [
+    "https://data.sec.gov/api/xbrl/frames/us-gaap/{concept}/USD/{frame}.json",
+    "https://data.sec.gov/api/xbrl/companyfacts/CIK##########.json"
+  ],
+  "retrieval_utc": "2026-09-25T22:13:25Z",
+  "rows": 33,
+  "method": "identical comparative values (NetIncomeLoss/Assets/StockholdersEquity frames, >=2 matches across >=2 concepts, |diff|<=0.1%) between a late-starting CIK and an earlier filer",
+  "use": "PIT engine enriches successor state with predecessor facts filed before successor's first periodic filing; successor rows start at its own first filing.",
+  "agent": "d3",
+  "written_utc": "2026-09-25T22:13:25Z",
+  "columns": [
+    "successor_cik",
+    "successor_name",
+    "successor_first_filed",
+    "predecessor_cik",
+    "predecessor_name",
+    "n_matches",
+    "evidence",
+    "predecessor_first_filed",
+    "predecessor_last_filed",
+    "depth",
+    "co_registrant"
+  ],
+  "co_registrant": "True = parallel co-filer (first filings <90 days apart), ignored by the PIT engine; only the primary predecessor per successor (most matches, then earliest filer) is chained"
+}

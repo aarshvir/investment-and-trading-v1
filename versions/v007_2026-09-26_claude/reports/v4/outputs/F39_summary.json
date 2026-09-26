@@ -1,0 +1,113 @@
+{
+  "agent": "F39",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "APD": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Global industrial-gas major with an intact oligopoly business, but repeated multibillion-dollar green-hydrogen write-offs are a real capital-discipline red flag.",
+      "kill_criteria": [
+        "A third impairment/asset write-down exceeding $500M pre-tax within the next four fiscal quarters.",
+        "Adjusted EPS guidance is cut (vs. the immediately prior range) at any of the next four quarterly releases.",
+        "Core segment (ex-impairment) operating margin falls below 22% for two consecutive quarters.",
+        "Estimated net debt/adjusted EBITDA rises above ~4.25x (from ~3.7x now).",
+        "FY2027 capex guidance re-accelerates above $4.5B without a named, contracted, return-hurdle-cleared customer."
+      ],
+      "key_adverse_facts": [
+        "Two large GAAP-EPS-negative quarters in five fiscal quarters: FQ2 FY25 EPS $(7.77) (pre-tax impairment ~$2.33B) and FQ3 FY26 EPS $(6.47) (LCEC exit, pre-tax charge up to $2.9B, announced via 8-K 30 Jun 2026).",
+        "Total debt + finance leases roughly doubled in three years ($7.63B FY22 to $17.66B FY25) to fund the now-partly-abandoned hydrogen megaproject program.",
+        "Estimated net debt/adjusted EBITDA ~3.7x, above typical industrial-gas peer norms of 2.5-3.5x (my estimate, not company-disclosed)."
+      ],
+      "data_conflicts": [
+        "None identified versus the b1 quant snapshot beyond the expected distortion: the model's poor momentum/rank read (432/~500) and any GAAP-P/E-based value read are both artefacts of the two impairment quarters, not independent evidence."
+      ],
+      "next_earnings_date": "2026-11-05",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (core industrial-gas execution is well evidenced across four quarters of primary filings; the capital-allocation reservation is well evidenced too, but a full 10-K risk-factor diff and Form 4 review were not completed in this pass)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No V1 systematic-valuation row exists for APD in v1_valuation_table.csv/v1_valuation.json, so v1_verdict is null per the wave-2 instruction. My own reverse-DCF (P/E ~21x on FY26 adjusted EPS guide midpoint, rough CAPM cost of equity ~8.9%) implies ~4.1%/yr perpetual earnings growth priced in, below my evidence-based base case of ~6-7%/yr given three consecutive guidance raises this fiscal year -- hence 'below'/cheap on this lens, tempered by the capital-allocation reservation.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.06,
+        "base": 0.07,
+        "bull": 0.15
+      }
+    },
+    "AZO": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Dominant US auto-parts retailer compounding sales at 7-8% a year, but negative book equity leaves no cushion and EPS growth has decelerated sharply this year.",
+      "kill_criteria": [
+        "Domestic same-store sales turn negative for two consecutive fiscal quarters (from +1.6% to +4.8% now).",
+        "Adjusted debt/EBITDAR rises above 3.0x (from 2.5x now).",
+        "Full-year diluted EPS growth (ex-LIFO/ex-tariff one-offs) is negative for a full fiscal year.",
+        "Share-repurchase spend falls below $1.5B over a trailing four quarters without a stated capex-driven reason.",
+        "A second consecutive year of gross-margin deleverage (ex the identified one-off items)."
+      ],
+      "key_adverse_facts": [
+        "Stockholders' equity is deeply negative: $(2.78B) as of 9-May-2026 (improving from $(4.46B) a year earlier), a structural feature of decades of debt-funded buybacks that removes any equity cushion.",
+        "FY2026 diluted EPS growth was roughly +5.5% (sum of quarters $152.79 vs FY2025's $144.88), a sharp deceleration from AutoZone's historical mid-teens per-share growth pace, driven by opex deleverage in three of four quarters.",
+        "A meaningful share of this year's reported gross-margin swings (LIFO impact, tariff refunds) are company-labelled non-recurring/timing items, not underlying margin improvement."
+      ],
+      "data_conflicts": [
+        "The triage note (Q01_triage.json) asserted 'guided EPS growth of 34%' as the reason for advancing AZO; I could not verify this from the filings -- AutoZone issues no EPS guidance, and verified trailing full-year EPS growth was roughly +5.5%, with only the single strongest quarter (Q4 FY26, +15.1% YoY) approaching double digits. This looks like either a misread of one quarter's growth or an unsourced generic-knowledge claim, and is flagged as an unresolved conflict with the triage rationale."
+      ],
+      "next_earnings_date": "2026-12-08",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (revenue/margin/leverage trend well evidenced across four quarters of primary filings; used-car-age cycle sensitivity and Form 4/10-K risk-factor diff not independently verified in this pass)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No V1 systematic-valuation row exists for AZO, so v1_verdict is null per the wave-2 instruction. My own reverse-DCF (trailing P/E ~18.8x on FY2026 diluted EPS, rough CAPM cost of equity ~8.7%) implies ~3.4%/yr perpetual earnings growth priced in, below my evidence-based base case of ~8-10%/yr if same-store sales and buyback pace hold -- 'below'/cheap on this lens, though the simple P/E-based method is a weaker fit given so much per-share value creation runs through debt-funded buybacks against negative equity.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.08,
+        "base": 0.09,
+        "bull": 0.17
+      }
+    },
+    "BAC": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Second-largest US bank with accelerating earnings growth and falling credit costs, but priced at a 15-year-high book multiple with unusually low credit costs.",
+      "kill_criteria": [
+        "Net charge-off ratio rises above 0.65% for two consecutive quarters (vs. 0.47% now).",
+        "CET1 (Standardized) falls below 10.5% (vs. 11.2% now) without a clearly stated, temporary reason.",
+        "YoY diluted EPS growth turns negative for any quarter (from the current +18%/+25%/+34% accelerating trend) absent a one-off item.",
+        "NII growth decelerates to flat-or-negative YoY for two consecutive quarters (from +9-10% now).",
+        "P/B rises further into a new multi-year high (>1.45x) without a corresponding rise in delivered ROE above ~12.5%."
+      ],
+      "key_adverse_facts": [
+        "P/B of 1.374x sits at the 94.35th percentile of BAC's own 15-year history -- among the richest valuations the stock has carried in over a decade, per the V1 systematic model.",
+        "Net charge-off ratio (0.47% in 2Q26) is low in absolute and historical terms; credit costs this benign this late in a rate cycle are not obviously durable.",
+        "Much of the recent NII acceleration is explicitly attributed by the company to 'fixed-rate asset repricing' -- a one-time structural tailwind that should mechanically fade once the repricing cycle completes, independent of future rate moves.",
+        "CET1 (Standardized) has declined from 11.6% (3Q25) to 11.2% (2Q26) as ~$8B/quarter has been returned to shareholders."
+      ],
+      "data_conflicts": [
+        "V1's own valuation.json documents an inherited, unresolved data conflict: D3 TTM revenue ($121.1B) vs. Yahoo TTM revenue ($113.9B) differ 5.9%, and the D3 figure implies an implausible >100% EBIT margin; V1 substituted the Yahoo TTM revenue figure. I did not independently re-verify this vendor discrepancy in this pass.",
+        "V1's systematic model (P/B/ROE-mean-reversion method) calls BAC 'excessive' with a negative base-case 3-yr return (-1.9%/yr), while the b1 quant factor snapshot ranks BAC 19th of ~500 names on a composite that treats it as statistically cheap. Both are internally valid on their own terms; the tension is that V1's base-case ROE assumption (7.96%, the 15-year median, anchored to the 2011-2021 near-zero-rate decade) sits well below BAC's current and rising ROE run-rate (11.0% to 12.7% over the last three quarters), which is the reconciliation point addressed in the dossier."
+      ],
+      "next_earnings_date": "2026-10-14",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium-high (operating trend across four quarters of primary earnings releases is unambiguous and consistent; litigation/Form 4 review not completed in this pass, and the V1 reconciliation involves a judgement call on which ROE base-rate is more representative going forward)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": -0.0187925465296086,
+        "dossier_view": "full",
+        "consistent": false,
+        "reconciliation": "V1's justified-P/B model (COE 9.58%, implied ROE 12.03%, base case reverting to the 15-year-median ROE of 7.96%) calls BAC 'excessive' with a base-case return of -1.9%/yr, based mainly on P/B sitting at the 94th percentile of its own 15-year history. I agree BAC is fully priced, not undervalued -- but I disagree with the magnitude of V1's base case, because its median-ROE anchor is dominated by the 2011-2021 near-zero-rate decade, while primary-source evidence in this dossier shows BAC's own ROE accelerating for three straight quarters (11.0% to 12.0% to 12.7%). Using a ~12% ROE base case instead of 7.96% gives a fair P/B of roughly 1.37x -- almost exactly today's multiple -- implying a base-case return closer to flat-to-low-single-digits (dividend yield plus modest book-value growth) rather than V1's -1.9%. Net: same direction (fully priced, not cheap), less negative magnitude; verdict capped at INCLUDE-SMALL rather than a full-weight INCLUDE or a WATCH/REJECT.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.164,
+        "base": 0.02,
+        "bull": 0.117
+      }
+    }
+  }
+}

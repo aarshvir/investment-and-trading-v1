@@ -1,0 +1,7 @@
+{
+  "source": "derived from Yahoo splits/dividends",
+  "rows": 25,
+  "definition": "All same-day split + dividend events. double_count_corrected: dividend >=5% of prior close, |Close return|<10%, Adj return - Close return > 5pp -> spin-off counted twice by Yahoo; corrected in d2_adjclose/d2_ret_monthly. ambiguous_flagged: large distribution with an unreliable split encoding; NOT corrected (see CNBC evidence in d2_bad_ticks_crosscheck.csv/d2_report.md).",
+  "agent": "d2",
+  "written_utc": "2026-09-25T20:57:23Z"
+}

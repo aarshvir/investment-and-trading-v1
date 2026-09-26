@@ -1,0 +1,68 @@
+{
+  "agent_id": "f11",
+  "as_of": "2026-09-25",
+  "recency_note": "Session was time-boxed by the coordinator; toolkit scripts (verify_data.py/ratios.py/valuation.py/lint_report.py) were not run this pass. All figures in dossiers carry inline source/period/GAAP-vs-non-GAAP labels in lieu of scripted verification.",
+  "companies": {
+    "FRT": {
+      "name": "Federal Realty Investment Trust",
+      "verdict": "INCLUDE",
+      "horizon": "18-36 months",
+      "kill_criteria": [
+        "Comparable Property Operating Income (same-property NOI proxy) growth below 2% for two consecutive quarters (below the recent 2.8-4.9% band)",
+        "Net debt/EBITDAre above ~6.5x (from ~5.3x at 2026-06-30), or any senior-notes covenant cushion closing to within 25% of its minimum/maximum",
+        "A cut (not merely a tighten) to FFO or Core FFO guidance versus the immediately preceding quarter's range",
+        "Occupancy or leased rate down more than 100bp year-over-year for two consecutive quarters",
+        "The 59-consecutive-year dividend-increase streak broken, or payout ratio above ~90% of Core FFO"
+      ],
+      "key_adverse_facts": [
+        "Net debt rose 8.1% in two quarters (Dec 2025 $4,310.5M to Jun 2026 $4,660.7M net debt); net debt/EBITDAre approx 5.3x",
+        "$400M of 1.25%-coupon senior notes matured Feb 2026 and were refinanced into materially higher-cost term-loan/revolver debt - a real interest-expense headwind",
+        "Headline GAAP EPS growth in 2025-2026 was substantially driven by gains on sale of real estate and a one-off $13.0M/$0.15-per-share New Markets Tax Credit item in Q2 2025 (excluded by management from Core FFO), not organic FFO growth",
+        "FRT introduced a new non-GAAP metric ('Core FFO') at Q4 2025, a definitional break versus the prior Nareit-FFO-only track record",
+        "An 8-K filed 2026-08-11 (items 1.01/2.03/3.02/8.01/9.01, likely financing-related) postdates this dossier's research window and was not reviewed",
+        "Full FY2025 10-K critical-audit-matters, related-party-transaction and Form 4 insider-trading-pattern review was not completed this pass (time constraint)"
+      ],
+      "data_conflicts": [
+        "v1_valuation_table.csv shows a P/FFO peer median of 31.29x for FRT's retail-REIT peer set, which is inconsistent with real-world comparable multiples (quality open-air/grocery-anchored REIT peers typically trade at low-to-mid-teens P/FFO); the 'attractive' verdict is still supported independently by FRT's own 5.65th-percentile-of-own-10yr-history reading, but the stated peer discount magnitude should be re-checked by V1",
+        "b1 fam_Q (quality) percentile is only 0.331 (weak) despite FRT's own disclosed balance-sheet coverage metrics (77% fixed-rate debt, 3.9x fixed-charge coverage, comfortable covenant headroom on all four tested covenants) looking materially stronger than a 33rd-percentile read; likely reflects the generic Quality family's leverage/OCF-to-assets construction being structurally penalized for REITs even on a sector-neutral basis, rather than an independent balance-sheet weakness",
+        "v1_valuation_table.csv 'implied_growth_or_roe' of 12.3% sits far above both consensus FY1 growth (4.8%) and delivered 5y growth (8.4%); the field's precise definition was not confirmed this pass and should be reconciled by V1 before being used as a standalone valuation signal"
+      ],
+      "next_earnings_date": "on/about 2026-10-30 (unconfirmed estimate based on FRT's historical late-October Q3 reporting pattern; not yet announced in filings reviewed)",
+      "confidence_in_thesis": {
+        "level": "medium-high",
+        "reason": "Two full years (8 consecutive quarters) of primary-source evidence show accelerating leasing spreads, record occupancy, and FFO/Core FFO guidance raised or maintained in all 8 releases with no cuts - a clean, verifiable beat-and-raise record. Confidence is capped at medium-high rather than high because of rising absolute leverage into a higher refinancing-rate environment, an unreviewed subsequent 8-K, and incomplete red-flag-scan coverage (10-K critical audit matters/related-party/Form 4 not fully reviewed this pass)."
+      }
+    },
+    "LMT": {
+      "name": "Lockheed Martin Corporation",
+      "verdict": "INCLUDE-SMALL",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Any newly disclosed reach-forward or classified-program charge exceeding approximately $300M pretax in a single quarter",
+        "Aeronautics segment backlog falling below the 2026-06-30 level of $54.4B at the next 10-Q (a third consecutive quarterly decline)",
+        "Full-year 2026 F-35 deliveries pacing materially below the ~150-155 unit annual run-rate implied by FY2025's 191 units (e.g. under ~100-110 units through Q3 2026)",
+        "A guidance cut (not reaffirmation) to FY2026 sales, segment operating profit, or free cash flow at either of the next two earnings releases",
+        "A continuing resolution or government shutdown lasting beyond one quarter that management explicitly attributes a revenue or cash-flow shortfall to"
+      ],
+      "key_adverse_facts": [
+        "FY2024: $2.0 billion pretax ($1.5B / $6.16-per-share after-tax) of classified-program losses across Aeronautics ($555M cumulative) and Missiles and Fire Control ($1.4B cumulative, where the company now deems it probable that all remaining fixed-price contract options on one classified program will be exercised at a loss)",
+        "Q2 2025: an additional $950M reach-forward loss on the SAME classified Aeronautics program (issues 'continued into 2025' with greater impact than previously estimated - i.e. not resolved by the FY2024 charge), plus $570M and $95M losses on two Sikorsky/RMS international helicopter programs (CMHP, TUHP), plus a $66M NGAD-related asset write-off and a $103M tax charge - $1.6B + $169M total, ~$5.83 per share combined impact; cash from operations fell to $201M and free cash flow went negative $(150)M that quarter",
+        "Q4 2025: a further $479M ($1.63 per share after-tax) non-operational pension-settlement charge",
+        "Q1 2026: additional smaller unfavorable adjustments on F-16 ($125M, production performance/development delays) and C-130 ($55M, diminishing manufacturing sources); C-130J annual deliveries collapsed from 21 units (FY2024) to 2 units (FY2025); cash from operations fell to $220M and free cash flow was negative $(291)M",
+        "In total, the charge pattern spans two consecutive fiscal years and at least four distinct programs/business units (Aeronautics classified x2, MFC classified, RMS/Sikorsky x2), plus newly disclosed F-16/C-130J issues - a recurring pattern of program-execution and cost-estimation risk, not an isolated event, and by definition classified-program specifics cannot be independently verified from public filings",
+        "F-35 deliveries decelerated sharply in H1 2026 (51 units vs 97 units in H1 2025, -47% YoY) at the same time Aeronautics segment backlog has declined for two consecutive periods (Dec 2024 $62.8B to Dec 2025 $59.4B to Jun 2026 $54.4B)",
+        "Q2 2025 saw a single-quarter cut of approximately $1.5B to segment-operating-profit guidance and approximately $5.35 per share to EPS guidance, while sales/cash-flow guidance was held flat - a scale of in-year revision that raises a fair question about program-level visibility at the time full-year guidance is first framed",
+        "An 8-K filed 2026-08-28 (items 1.01/9.01, plausibly Ultra Maritime-related) postdates this dossier's research window and was not reviewed; full FY2025 10-K critical-audit-matters/related-party/Form 4 review and independent recomputation of whether FY2025 cash-flow guidance was actually met were not completed this pass (time constraint)"
+      ],
+      "data_conflicts": [
+        "b1 fam_S (earnings-surprise/SUE) percentile of 0.826 is very likely inflated by base effects: recent quarters (e.g. Q2 2026 EPS $7.94 vs Q2 2025 $1.46) beat prior-year comparisons mechanically because the prior-year quarter itself was depressed by the one-time classified/Sikorsky program charges detailed in key_adverse_facts, not because underlying demand accelerated by that magnitude. The durable positive signal is backlog growth (total backlog +31% in two quarters to $230.4B, MFC backlog nearly doubling), which is independent of this base-effect distortion. Flagged for the quant team: SUE construction may not adequately control for disclosed one-time items in choppy-earnings names.",
+        "v1_valuation_table.csv 'implied_growth_or_roe' of -5.15% (reverse-DCF implied growth) versus delivered 5y growth of +2.88% and consensus FY1 growth of +5.61% was taken at face value from V1's output and not independently re-derived this pass"
+      ],
+      "next_earnings_date": "on/about 2026-10-20 (unconfirmed estimate based on LMT's historical mid-to-late-October Q3 reporting pattern; not yet announced in filings reviewed)",
+      "confidence_in_thesis": {
+        "level": "medium",
+        "reason": "Backlog growth and missile-segment demand are real, large, and primary-sourced, and post-charge quarters show genuine cash-flow and earnings recovery with guidance raised twice in 2026. But confidence is held to medium (matching the quant model's own 'fair' rather than 'attractive' valuation verdict) because of a two-year, multi-program pattern of large disclosed execution charges, a sharp H1 2026 deceleration in F-35 deliveries alongside a declining Aeronautics backlog, an unreviewed subsequent 8-K, and incomplete red-flag-scan coverage this pass."
+      }
+    }
+  }
+}

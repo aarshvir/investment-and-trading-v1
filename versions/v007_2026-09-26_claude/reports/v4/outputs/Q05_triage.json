@@ -1,0 +1,316 @@
+{
+  "agent": "Q05",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "TFC": {
+      "advance": false,
+      "quality": 3,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "SE-U.S. regional bank: commercial, retail and wealth banking with a sticky low-cost deposit base.",
+      "reason": "Cheap (9.7x fwd P/E) but ROE of 9% trails super-regional peers (USB, PNC) and growth is unexceptional; nothing here clears the bar for full diligence.",
+      "sources": ["triage_cards.csv data card; general knowledge of regional bank peer set"]
+    },
+    "USB": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Diversified super-regional bank with a strong payments (Elavon) and trust/wealth franchise.",
+      "reason": "Best ROE (12.6%) among peer regionals, double-digit revenue growth, and cheap at 10.5x forward earnings; payments scale is a real moat.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "WFC": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Money-center bank now unshackled from its 2018 asset cap, growing balance sheet again.",
+      "reason": "Fed lifted the $1.95tn asset cap in June 2025; assets grew ~11% YoY in 2025 with improving revenue momentum, yet stock is only 10.6x forward earnings.",
+      "sources": ["https://www.reuters.com/sustainability/boards-policy-regulation/fed-lifts-wells-fargos-asset-cap-citing-progress-sales-scandal-2025-06-03/", "https://www.fitchratings.com/research/banks/asset-cap-removal-accelerates-wells-fargo-co-balance-sheet-growth-20-01-2026"]
+    },
+    "CBOE": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Dominant U.S. options exchange (SPX/VIX products) with high-margin, volume-driven data/derivatives business.",
+      "reason": "27% margins, 26% ROE and 23% revenue growth on a fair 17x forward multiple; options volume franchise is hard to replicate.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "CME": {
+      "advance": true,
+      "quality": 5,
+      "growth": 2,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "World's largest derivatives exchange (rates, FX, ag, energy futures) with a self-reinforcing liquidity moat.",
+      "reason": "63% margins and a near-unassailable clearing moat justify a look even though growth is soft this year (volumes/volatility subdued); fairly priced at 20.7x.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "COIN": {
+      "advance": false,
+      "quality": 3,
+      "growth": 1,
+      "price_vs_growth": 1,
+      "red_flags": ["Revenue down ~19% YoY and a $359.5M net loss in Q2 2026, the third consecutive earnings miss, as crypto spot volumes fell >20% industry-wide (BTC -14%, ETH -25%)", "Earnings highly levered to crypto price cycle, not yet proven through a full downturn"],
+      "one_line": "Largest U.S. crypto exchange, diversifying into stablecoins, derivatives and prediction markets.",
+      "reason": "Real market-share gains (10.3% of global volume) but revenue and profits are currently shrinking with the crypto cycle, and the stock is not statistically cheap; wait for the cycle to turn.",
+      "sources": ["https://investor.coinbase.com/news/news-details/2026/Coinbase-Q2-Earnings...", "https://www.coindesk.com/markets/2026/07/30/coinbase-sinks-5-after-missing-q2-revenue-estimates", "https://www.cnbc.com/2026/07/30/coinbase-coin-earnings-q2-2026.html"]
+    },
+    "FDS": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": ["Competitive pressure from Bloomberg, LSEG and AI-native research tools on organic ASV growth - worth checking in full diligence"],
+      "one_line": "Financial data/analytics platform (workstation, ESG, portfolio tools) sold on multi-year subscriptions with high switching costs.",
+      "reason": "Cheap versus its own history at 13.8x forward with EPS growth of ~30%, though durability of that growth versus organic ASV trends needs verification.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "ICE": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": ["Net debt/EBITDA of 2.9x, elevated from the Black Knight mortgage-tech acquisition - integration/deleveraging pace worth checking"],
+      "one_line": "Exchanges (ICE futures, NYSE) plus fixed-income data and a mortgage-tech platform (Black Knight/MERS).",
+      "reason": "24% EPS growth and 38% margins at a reasonable 17.9x forward multiple; leverage from the Black Knight deal is the main thing to verify.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "MCO": {
+      "advance": true,
+      "quality": 5,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Global credit-rating duopolist (with S&P) plus a fast-growing analytics/research (MA) segment.",
+      "reason": "76.9% ROE and a near-regulatory moat in ratings; growth (20% eps) is real and the 25.5x multiple looks fair for the quality on offer.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "MSCI": {
+      "advance": true,
+      "quality": 5,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Global benchmark index provider (equity/fixed income indices, ESG, analytics) embedded in trillions of AUM.",
+      "reason": "41% margins and near-universal index licensing create extreme switching costs; 25% eps growth at 25x is a fair price for a rare compounder.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "NDAQ": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": ["Net debt/EBITDA 2.6x post-Adenza deal - check deleveraging trajectory"],
+      "one_line": "Exchange operator transitioning into a market/regtech software business via the Adenza acquisition.",
+      "reason": "36% eps growth and 35% margins with the software mix shift underway; leverage from Adenza is the key diligence item.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "SPGI": {
+      "advance": true,
+      "quality": 5,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Credit ratings (with Moody's), Market Intelligence, Platts commodity data, and equity/bond indices with CME.",
+      "reason": "Duopoly ratings moat plus diversified data/indices businesses; 24% eps growth at 20.6x forward is a fair entry for this quality.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "AJG": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": ["$13.45bn AssuredPartners acquisition added ~$301M of GAAP integration costs, depressing trailing earnings and inflating the trailing P/E to 38x - normalize before comparing to peers", "Net debt/EBITDA 3.0x, elevated versus historical norms from debt-funded M&A"],
+      "one_line": "Top-3 global insurance broker growing via disciplined tuck-in M&A plus the large AssuredPartners deal.",
+      "reason": "Revenue growth of 31% (AssuredPartners plus organic) and a strong M&A track record; forward P/E of 16x looks cheap once one-time integration costs are stripped out, but leverage needs checking.",
+      "sources": ["https://s28.q4cdn.com/872121257/files/doc_financials/2025/q1/1Q-2025-Earnings-Release.pdf", "https://247wallst.com/cards/arthur-j-gallagher-co-q2-2026-earnings-ajg-01kytb8stf12rp30xz06zfzv4a", "https://www.sec.gov/Archives/edgar/data/354190/000035419025000011/ajg-20250630.htm"]
+    },
+    "AON": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Global insurance/reinsurance broker and HR/benefits consultant (one of three mega-brokers).",
+      "reason": "44.7% ROE and durable recurring commission economics at only 14-15x forward earnings; organic growth (2.2% revenue) is the softest part of the story and worth checking.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "BRO": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Fast-growing insurance broker/wholesaler expanding organically and via bolt-on M&A.",
+      "reason": "32% revenue growth and 54% eps growth at just 12.8x forward is an attractive combination for a proven broker compounder.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "ERIE": {
+      "advance": true,
+      "quality": 4,
+      "growth": 2,
+      "price_vs_growth": 4,
+      "red_flags": ["Stephenson v. Erie Indemnity: 3rd Circuit revived (Oct 14, 2025) a subscriber breach-of-fiduciary-duty suit over the 25% management fee; SCOTUS declined to review, so the case proceeds - a direct challenge to Erie's core fee-based economic model, though similar prior suits (Beltz, Ritz) were dismissed"],
+      "one_line": "Manages Erie Insurance Exchange for a capped 25% management fee, with no underwriting risk of its own.",
+      "reason": "Extraordinary ROE (24.8%) and asset-light fee moat trade at only 20.2x trailing (cheap for ERIE's history), but ongoing subscriber litigation over the fee itself is a real overhang that full diligence must size.",
+      "sources": ["https://www.insurancebusinessmag.com/us/news/risk-compliance-legal/court-reignites-battle-over-erie-insurance-fees-shaking-up-industry-553257.aspx", "https://law.justia.com/cases/federal/appellate-courts/ca3/24-1443/24-1443-2025-10-14.html"]
+    },
+    "MRSH": {
+      "advance": true,
+      "quality": 5,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "World's largest insurance broker and consulting group (Marsh, Guy Carpenter, Mercer, Oliver Wyman).",
+      "reason": "25.9% ROE, durable recurring commissions, and 39% eps growth; 15.3x forward is fair for the largest, most diversified broker platform.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "WTW": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Global broker/consultant (risk, benefits, HR) in margin-improvement turnaround after the failed Aon merger.",
+      "reason": "Post-merger-break turnaround delivering 41.5% eps growth and margin expansion, still cheap at 13.3x forward relative to peer brokers.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "GS": {
+      "advance": true,
+      "quality": 5,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Premier global investment bank: M&A/underwriting, trading, and a growing asset/wealth management arm.",
+      "reason": "42.5% revenue growth from a strong trading/banking cycle, 16.9% ROE, at just 12.9x forward - cheap for the franchise quality.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "HOOD": {
+      "advance": true,
+      "quality": 3,
+      "growth": 5,
+      "price_vs_growth": 3,
+      "red_flags": ["Crypto trading revenue fell 38% YoY in Q2 2026 as crypto markets cooled", "Prediction/event-contract markets face ongoing regulatory scrutiny (state gaming regulators, CFTC) - monitor for adverse rulings"],
+      "one_line": "Retail brokerage expanding aggressively into options, crypto, prediction markets and international wealth management.",
+      "reason": "Revenue and eps growth near 30-50% and rapidly improving profitability justify a look despite a rich 45.6x forward P/E, but the crypto/prediction-market revenue mix is volatile and regulator-dependent.",
+      "sources": ["https://www.coindesk.com/markets/2026/07/30/coinbase-sinks-5-after-missing-q2-revenue-estimates (Robinhood crypto revenue comparison)", "triage_cards.csv data card"]
+    },
+    "IBKR": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Low-cost, highly automated global electronic brokerage serving active traders and institutions.",
+      "reason": "24% ROE and 27% revenue growth with a durable low-cost/tech moat; 29x forward is a fair price for the growth on offer.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "MS": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Investment bank plus the largest wealth-management platform (E*TRADE, Morgan Stanley advisors) among peers.",
+      "reason": "28% revenue growth as the wealth-management pivot pays off, at a reasonable 14.6x forward multiple.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "RJF": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Regional wealth-management and investment-banking firm known for advisor retention and a conservative culture.",
+      "reason": "24% eps growth and 18.4% ROE at just 11.3x forward is attractively priced for a consistently well-run franchise.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "SCHW": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Largest U.S. discount brokerage/custodian, still realizing scale benefits from the TD Ameritrade integration.",
+      "reason": "43% eps growth and 38.8% margins as integration synergies flow through, at only 13.3x forward earnings.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "AFL": {
+      "advance": false,
+      "quality": 3,
+      "growth": 1,
+      "price_vs_growth": 3,
+      "red_flags": ["Aflac Japan (the bulk of earnings) is in secular decline - shrinking in-force block, FX headwinds; forward eps growth is -18.6% and revenue is -1%"],
+      "one_line": "Supplemental health/life insurer, primarily in Japan, with a U.S. voluntary-benefits business.",
+      "reason": "Fairly priced for a business with a shrinking core Japan block; not a case of an undervalued grower, so it does not clear the bar despite a reasonable multiple.",
+      "sources": ["triage_cards.csv data card; general knowledge of Aflac Japan block dynamics"]
+    },
+    "MET": {
+      "advance": false,
+      "quality": 3,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": ["FCF yield of -33.7% and volatile net margin (4.6%) typical of a large life insurer's reserve/mark-to-market accounting - needs GAAP-vs-statutory unpacking"],
+      "one_line": "Global life/group benefits/retirement insurer (MetLife, Brighthouse legacy ties) with modest structural ROE.",
+      "reason": "Cheap at 9.2x forward, but the eps rebound looks like normalization off a weak prior-year comp rather than durable acceleration, and ROE (13%) is unexceptional for the sector.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "PFG": {
+      "advance": false,
+      "quality": 3,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Retirement, group benefits and asset-management (Principal) provider serving small/mid-size businesses.",
+      "reason": "Cheap at 11.3x forward with a strong momentum print, but this looks like a steady, average-quality insurer rather than a standout on quality or durable growth.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "PRU": {
+      "advance": false,
+      "quality": 3,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Large diversified life insurer and asset manager (PGIM) with U.S. and international operations.",
+      "reason": "Very cheap at 8.1x forward, but the large eps growth figure likely reflects normalization against a soft comp rather than a genuine growth acceleration; ROE (12%) is unremarkable.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "BRK-B": {
+      "advance": true,
+      "quality": 5,
+      "growth": 3,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Diversified holding company (insurance float, railroads, energy, equities) now led by Greg Abel as CEO.",
+      "reason": "Best-in-class balance sheet and capital allocation; the Buffett-to-Abel CEO transition (completed, Buffett remains chairman) was well-telegraphed and is not a disqualifying risk.",
+      "sources": ["general knowledge: Berkshire succession announced 2025, Abel became CEO"]
+    },
+    "AIG": {
+      "advance": false,
+      "quality": 3,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Global commercial P&C insurer, post-Corebridge-spinoff, returning capital via buybacks.",
+      "reason": "Cheap at 8.6x forward, but ROE of only 7.2% is still below cost of capital, and the large eps jump looks like a rebound rather than a proven structural improvement.",
+      "sources": ["triage_cards.csv data card"]
+    },
+    "L": {
+      "advance": false,
+      "quality": 3,
+      "growth": 1,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Diversified holding company (CNA Financial insurance, Boardwalk Pipeline, Loews Hotels) trading at a discount to NAV.",
+      "reason": "Eps growth of -64% likely reflects a tough comp against a prior one-time gain; low ROE (9%) and no clear growth or quality edge keep this out of full diligence.",
+      "sources": ["triage_cards.csv data card"]
+    }
+  }
+}

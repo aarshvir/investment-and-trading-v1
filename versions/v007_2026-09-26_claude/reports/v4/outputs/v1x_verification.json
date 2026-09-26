@@ -1,0 +1,2394 @@
+{
+  "as_of": "2026-09-25",
+  "tickers": {
+    "DLTR": {
+      "classification": "operating",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 20059400000.0,
+          "v1x": 20049400000.0,
+          "diff": -0.0004985193973897524,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 2201400000.0,
+          "v1x": 2201400000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 648100000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: DepreciationDepletionAndAmortization/stale (['2026-01-31', '2025-11-01', '2025-08-02', '2025-05-03'])"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 1138900000.0,
+          "v1x": 1138900000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 68000000.0,
+          "v1x": 68000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 3117000000.0,
+          "v1x": 3117000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 1612500000.0,
+          "v1x": 1612500000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 190900000.0,
+          "v1x": 190900000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": 1875400000.0,
+          "v1x": 1875400000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "reverse-DCF implied 10y growth (mechanics check, V1's own ratios/WACC/EV)",
+          "v1": 0.04539918021425809,
+          "v1x": 0.045399187548199035,
+          "diff": 7.333940947595874e-09,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild)",
+          "v1": 14.184397163120568,
+          "v1x": 14.184397163120567,
+          "diff": -1.7763568394002505e-15,
+          "status": "PASS",
+          "note": "n_months=141, v1_n_months=141, v1x_now_value=14.475449964643653"
+        },
+        {
+          "item": "scenario bear annualised return",
+          "v1": null,
+          "v1x": NaN,
+          "diff": null,
+          "status": "FLAG",
+          "note": "NaN reproduced and explained -- see nan_explanations"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.07274753618802587,
+          "v1x": 0.07274753618802587,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.4288786969800673,
+          "v1x": 0.4288786969800673,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [
+        {
+          "scenario": "bear",
+          "value_yr3_total": -42.74194653728132,
+          "diagnosis": "scenario terminal value is NEGATIVE (implies a negative share price), so (negative)^(1/3) is undefined in real floating point -> NaN. Root cause: a P/E-style exit multiple was applied to a NEGATIVE EPS/FFO-per-share bear-case projection.",
+          "is_bug": true,
+          "recommended_fix": "Floor the scenario terminal value at $0 (or a liquidation/book-value floor) before compounding, and/or do not apply a P/E-style exit multiple when projected EPS/FFO-per-share is negative (use P/Sales or a fixed capital floor instead). Floored version implies annualised return = -100% (total loss) rather than an undefined value."
+        }
+      ],
+      "verdict_changes": false,
+      "verdict_check_reason": "[0 FAIL(s)] verdict/base-case sign UNCHANGED: no FAIL of any kind.",
+      "notes": "[0 FAIL(s)] verdict/base-case sign UNCHANGED: no FAIL of any kind.",
+      "v1_verdict": "fair",
+      "v1_verdict_score": 0.2064585726933294
+    },
+    "HST": {
+      "classification": "reit",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 6219000000.0,
+          "v1x": 6219000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 905000000.0,
+          "v1x": 905000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 787000000.0,
+          "v1x": 787000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 249000000.0,
+          "v1x": 276000000.0,
+          "diff": 0.10843373493975904,
+          "status": "FAIL"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 27000000.0,
+          "v1x": 27000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 1606000000.0,
+          "v1x": 1606000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 1027000000.0,
+          "v1x": 1027000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 687000000.0,
+          "v1x": 687000000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": 3692000256.0,
+          "v1x": 2131000000,
+          "diff": -0.4228061071943761,
+          "status": "FAIL"
+        },
+        {
+          "item": "reverse-DCF implied 10y growth (mechanics check, V1's own ratios/WACC/EV)",
+          "v1": 0.017506115540772933,
+          "v1x": 0.01750612045843225,
+          "diff": 4.917659317954515e-09,
+          "status": "PASS"
+        },
+        {
+          "item": "P/FFO (independent FFO-proxy = NI+D&A, task-specified REIT method)",
+          "v1": 8.49092613009923,
+          "v1x": 8.49092613009923,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild)",
+          "v1": 29.239766081871345,
+          "v1x": 36.986301369863014,
+          "diff": 7.746535287991669,
+          "status": "PASS",
+          "note": "n_months=146, v1_n_months=171, v1x_now_value=8.490926158993352"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": -0.27399219077668635,
+          "v1x": -0.27399219077668635,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.06192963846367938,
+          "v1x": 0.06192963846367938,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.4926410611429224,
+          "v1x": 0.4926410611429224,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [
+        "peer median with >=3 real peers (V1 peer_n=2)",
+        "peer median on a P/FFO (not NTM P/E) basis"
+      ],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[2 FAIL(s)] verdict/base-case sign UNCHANGED: net_debt/capex FAILs make V1's debt figure LARGER (my EV would be lower), which would require LESS implied growth to justify price, reinforcing 'attractive', not reversing it.",
+      "notes": "net_debt FAIL (-42.3%) and capex FLAG/FAIL: REIT debt is carried under property-level mortgage/unsecured-notes tags (e.g. SecuredDebt, SeniorNotes, or custom dimensioned concepts), not the generic industrial LongTermDebt* tags used here -- V1 hit the SAME wall (its own net_debt_source says 'D4/Yahoo (totalDebt - totalCash), D3 balance-sheet fields missing'), so this is a confirmed, mutually-acknowledged data-coverage gap for REIT debt, not a new problem. capex diff (10.8%) is a smaller, plausible real-estate-capex-tag scope difference (development vs improvements). | Per V1X task spec the appropriate intrinsic method for a REIT is P/FFO, not FCFF reverse-DCF; V1 actually applied the same reverse-DCF FCFF method used for operating companies (confirmed from v1_valuation.json's own 'method' field, read only as V1's OUTPUT, not its code). This is a method-choice deviation flagged under item 4, not a mechanics error -- the DCF math itself reproduces V1's number (see check above). | True NAREIT FFO (from the company's own 8-K supplemental, adjusting for gains/losses on property sales and impairments) was NOT retrievable within the time box -- 8-K exhibit press releases are not part of SEC XBRL companyfacts. Used FFO-proxy = NI+D&A (matches V1's own 'P/FFO(proxy)' number to within the tolerance below), consistent with V1's own disclosed flag that real peer FFO data is unavailable. | Independent GICS peer count (D1 constituents, excl. self) = 1 for sub-industry 'Hotel & Resort REITs'; V1 reported peer_n=2 (sample ['HST', 'VICI']). | REIT peer comparison uses NTM P/E as a proxy (V1-disclosed); real FFO-based peer set not available locally either -- three-method completeness for REITs is PARTIAL (own-history multiple = true P/FFO-proxy OK; peer median = NTM P/E, not P/FFO; intrinsic method = FCFF DCF, not P/FFO as specified). Flagging, not failing, since V1 disclosed the limitation rather than hiding it. || [2 FAIL(s)] verdict/base-case sign UNCHANGED: net_debt/capex FAILs make V1's debt figure LARGER (my EV would be lower), which would require LESS implied growth to justify price, reinforcing 'attractive', not reversing it.",
+      "v1_verdict": "attractive",
+      "v1_verdict_score": 0.3666931316170552
+    },
+    "JBHT": {
+      "classification": "operating",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 12701310000.0,
+          "v1x": 12701310000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 955614000.0,
+          "v1x": 955614000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 718349000.0,
+          "v1x": 718349000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 495571000.0,
+          "v1x": 495571000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 71730000.0,
+          "v1x": 71730000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 1595293000.0,
+          "v1x": 1595293000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 674505000.0,
+          "v1x": 674505000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 94944000.0,
+          "v1x": 94944000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": 1141175000.0,
+          "v1x": 1141175000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "reverse-DCF implied 10y growth (mechanics check, V1's own ratios/WACC/EV)",
+          "v1": 0.105817265387515,
+          "v1x": 0.10581726715059575,
+          "diff": 1.7630807508384194e-09,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild)",
+          "v1": 36.72316384180791,
+          "v1x": 36.72316384180791,
+          "diff": 0.0,
+          "status": "PASS",
+          "note": "n_months=177, v1_n_months=177, v1x_now_value=24.067455803001334"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": -0.10936736132798963,
+          "v1x": -0.10936736132798963,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.06376986203989721,
+          "v1x": 0.06376986203989721,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.2628246502204863,
+          "v1x": 0.2628246502204863,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[0 FAIL(s)] verdict/base-case sign UNCHANGED: no FAIL of any kind.",
+      "notes": "Independent GICS peer count (D1 constituents, excl. self) = 2 for sub-industry 'Cargo Ground Transportation'; V1 reported peer_n=3 (sample ['FDXF', 'JBHT', 'ODFL']). || [0 FAIL(s)] verdict/base-case sign UNCHANGED: no FAIL of any kind.",
+      "v1_verdict": "fair",
+      "v1_verdict_score": -0.0321097799334956
+    },
+    "ALL": {
+      "classification": "financial",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 70137000000.0,
+          "v1x": 70137000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 13546000000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: OperatingIncomeLoss not found (typical for banks/insurers -- EBIT is not a standard concept for financials)"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 410000000.0,
+          "v1x": 410000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 220000000.0,
+          "v1x": 220000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 123000000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: AllocatedShareBasedCompensationExpense/stale (['2025-12-31', '2024-12-31', '2023-12-31', '2022-12-31'])"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 12469000000.0,
+          "v1x": 12469000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 13277000000.0,
+          "v1x": 13189000000.0,
+          "diff": -0.006628003314001657,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 259100000.0,
+          "v1x": 259100000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": 6652000000.0,
+          "v1x": 1947000000,
+          "diff": -0.7073060733613951,
+          "status": "FAIL"
+        },
+        {
+          "item": "common equity (StockholdersEquity)",
+          "v1": null,
+          "v1x": 33698000000,
+          "diff": null,
+          "status": "PASS",
+          "note": "V1 json does not expose a raw equity field to diff against directly; used in P/B check below"
+        },
+        {
+          "item": "ROE TTM actual (independent NI/ending-equity vs V1 roe_actual_ttm)",
+          "v1": 0.3939996438957802,
+          "v1x": 0.39138821295032344,
+          "diff": -0.006628003314001745,
+          "status": "PASS",
+          "note": "avg-equity alternative = 0.4570230607966457 (diverges from V1 for fast-growing-equity names; V1 confirmed to use ENDING equity, not average -- exact match)"
+        },
+        {
+          "item": "justified P/B implied ROE (mechanics check)",
+          "v1": 0.1135814121524524,
+          "v1x": 0.1135814121524524,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "P/B now (independent equity vs V1)",
+          "v1": 1.749989910380438,
+          "v1x": 1.749989910380438,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild)",
+          "v1": 76.27118644067797,
+          "v1x": 76.8361581920904,
+          "diff": 0.5649717514124291,
+          "status": "PASS",
+          "note": "n_months=177, v1_n_months=177, v1x_now_value=1.7499899573096593"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": -0.010840706066264305,
+          "v1x": -0.010840706066264305,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.10494882671179617,
+          "v1x": 0.10494882671179617,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.28444298760997144,
+          "v1x": 0.28444298760997144,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[1 FAIL(s)] verdict/base-case sign UNCHANGED: net_debt FAIL does not feed the justified-P/B valuation (checked: P/B mechanics and implied-ROE both PASS exactly).",
+      "notes": "net_debt FAIL: insurer 'debt' (junior subordinated debentures, hybrid capital) is tagged inconsistently across filers and not fully captured by generic LongTermDebt* tags -- same root cause as MTB/SYF's revenue-tag ambiguity, just on the balance-sheet side. IMMATERIAL to ALL's verdict: valuation method is justified P/B (ROE/equity-driven), independent of net_debt (net_debt only feeds an EV/EBIT view that ALL's valuation_model does not use). || [1 FAIL(s)] verdict/base-case sign UNCHANGED: net_debt FAIL does not feed the justified-P/B valuation (checked: P/B mechanics and implied-ROE both PASS exactly).",
+      "v1_verdict": "fair",
+      "v1_verdict_score": 0.2875299867600132
+    },
+    "GL": {
+      "classification": "financial",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 6191958000.0,
+          "v1x": 6191958000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 1376509000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: OperatingIncomeLoss/stale (['2024-09-30', '2024-06-30', '2024-03-31', '2023-12-31'])"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": null,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: Depreciation/stale (['2025-12-31', '2024-12-31', '2023-12-31', '2022-12-31'])"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 159203000.0,
+          "v1x": 159203000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 57870000.0,
+          "v1x": 57870000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 1391578000.0,
+          "v1x": 1391578000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 1212199000.0,
+          "v1x": 1212199000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 78909152.0,
+          "v1x": 78909152,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": 2487868000.0,
+          "v1x": 2487868000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "common equity (StockholdersEquity)",
+          "v1": null,
+          "v1x": 6155815000,
+          "diff": null,
+          "status": "PASS",
+          "note": "V1 json does not expose a raw equity field to diff against directly; used in P/B check below"
+        },
+        {
+          "item": "ROE TTM actual (independent NI/ending-equity vs V1 roe_actual_ttm)",
+          "v1": 0.19691933562006006,
+          "v1x": 0.19691933562006006,
+          "diff": 0.0,
+          "status": "PASS",
+          "note": "avg-equity alternative = 0.20945403588557773 (diverges from V1 for fast-growing-equity names; V1 confirmed to use ENDING equity, not average -- exact match)"
+        },
+        {
+          "item": "justified P/B implied ROE (mechanics check)",
+          "v1": 0.13877709463061927,
+          "v1x": 0.13877709463061927,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "P/B now (independent equity vs V1)",
+          "v1": 2.141224963726168,
+          "v1x": 2.141224963726168,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild)",
+          "v1": 85.87570621468926,
+          "v1x": 84.7457627118644,
+          "diff": -1.1299435028248581,
+          "status": "PASS",
+          "note": "n_months=177, v1_n_months=177, v1x_now_value=2.141224877663548"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": -0.038435159603011804,
+          "v1x": -0.038435159603011804,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.08403083091322272,
+          "v1x": 0.08403083091322272,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.24442276542979258,
+          "v1x": 0.24442276542979258,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[0 FAIL(s)] verdict/base-case sign UNCHANGED: no FAIL of any kind.",
+      "notes": "[0 FAIL(s)] verdict/base-case sign UNCHANGED: no FAIL of any kind.",
+      "v1_verdict": "fair",
+      "v1_verdict_score": 0.13521205787126
+    },
+    "SWK": {
+      "classification": "operating",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 15247700000.0,
+          "v1x": 15247700000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 2176000000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: OperatingIncomeLoss/stale (['2024-09-28', '2024-06-29', '2024-03-30', '2023-09-30'])"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 368000000.0,
+          "v1x": 368000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 262100000.0,
+          "v1x": 262100000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 82300000.0,
+          "v1x": 82300000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 1551200000.0,
+          "v1x": 1551200000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 620500000.0,
+          "v1x": 620500000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 150648000.0,
+          "v1x": 150648000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": 4165500000.0,
+          "v1x": 4165500000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "reverse-DCF implied 10y growth (mechanics check, V1's own ratios/WACC/EV)",
+          "v1": -0.07649130490030136,
+          "v1x": -0.076491305207181,
+          "diff": -3.0687964669429135e-10,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild)",
+          "v1": 13.043478260869565,
+          "v1x": 13.043478260869565,
+          "diff": 0.0,
+          "status": "PASS",
+          "note": "n_months=161, v1_n_months=161, v1x_now_value=14.806797501099382"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": -0.10458962611835965,
+          "v1x": -0.10458962611835965,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.18108391116401368,
+          "v1x": 0.18108391116401368,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.5441752318408468,
+          "v1x": 0.5441752318408468,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[0 FAIL(s)] verdict/base-case sign UNCHANGED: no FAIL of any kind.",
+      "notes": "[0 FAIL(s)] verdict/base-case sign UNCHANGED: no FAIL of any kind.",
+      "v1_verdict": "attractive",
+      "v1_verdict_score": 0.7540861342033557
+    },
+    "HIG": {
+      "classification": "financial",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 29060000000.0,
+          "v1x": 29060000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 2264000000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: OperatingIncomeLoss/stale (['2010-12-31', '2010-09-30', '2010-06-30', '2010-03-31'])"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 220000000.0,
+          "v1x": 429000000.0,
+          "diff": 0.95,
+          "status": "FAIL"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 7000000.0,
+          "v1x": 7000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 141000000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: AllocatedShareBasedCompensationExpense/stale (['2025-12-31', '2024-12-31', '2023-12-31', '2022-12-31'])"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 5880000000.0,
+          "v1x": 5880000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 4365000000.0,
+          "v1x": 4365000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 276300000.0,
+          "v1x": 276300000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": 4171000000.0,
+          "v1x": 305000000,
+          "diff": -0.9268760489091346,
+          "status": "FAIL"
+        },
+        {
+          "item": "common equity (StockholdersEquity)",
+          "v1": null,
+          "v1x": 19633000000,
+          "diff": null,
+          "status": "PASS",
+          "note": "V1 json does not expose a raw equity field to diff against directly; used in P/B check below"
+        },
+        {
+          "item": "ROE TTM actual (independent NI/ending-equity vs V1 roe_actual_ttm)",
+          "v1": 0.22232975092955737,
+          "v1x": 0.22232975092955737,
+          "diff": 0.0,
+          "status": "PASS",
+          "note": "avg-equity alternative = 0.2349869451697128 (diverges from V1 for fast-growing-equity names; V1 confirmed to use ENDING equity, not average -- exact match)"
+        },
+        {
+          "item": "justified P/B implied ROE (mechanics check)",
+          "v1": 0.1183592761511245,
+          "v1x": 0.1183592761511245,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "P/B now (independent equity vs V1)",
+          "v1": 1.7483191055875311,
+          "v1x": 1.7483191055875311,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild)",
+          "v1": 77.40112994350282,
+          "v1x": 77.40112994350282,
+          "diff": 0.0,
+          "status": "PASS",
+          "note": "n_months=177, v1_n_months=177, v1x_now_value=1.7483191528304767"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": -0.15149370758836433,
+          "v1x": -0.15149370758836433,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.027020604424943695,
+          "v1x": 0.027020604424943695,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.2459115927639388,
+          "v1x": 0.2459115927639388,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[2 FAIL(s)] verdict/base-case sign UNCHANGED: D&A/net_debt FAILs do not feed the justified-P/B valuation (checked: P/B mechanics and implied-ROE both PASS exactly).",
+      "notes": "net_debt FAIL: insurer 'debt' (junior subordinated debentures, hybrid capital) is tagged inconsistently across filers and not fully captured by generic LongTermDebt* tags -- same root cause as MTB/SYF's revenue-tag ambiguity, just on the balance-sheet side. IMMATERIAL to HIG's verdict: valuation method is justified P/B (ROE/equity-driven), independent of net_debt (net_debt only feeds an EV/EBIT view that HIG's valuation_model does not use). | D&A FAIL (95%): generic DepreciationAmortizationAndAccretionNet for an insurer likely bundles in amortization of deferred acquisition costs (DAC) and/or value-of-business-acquired (VOBA) -- large insurance-specific non-PP&E amortization -- inflating the figure vs V1's smaller, presumably PP&E-only da_ttm. Likely a tag-choice difference, not a data error; also immaterial to HIG's P/B-based verdict. || [2 FAIL(s)] verdict/base-case sign UNCHANGED: D&A/net_debt FAILs do not feed the justified-P/B valuation (checked: P/B mechanics and implied-ROE both PASS exactly).",
+      "v1_verdict": "fair",
+      "v1_verdict_score": -0.001723119799787
+    },
+    "BMY": {
+      "classification": "operating",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 49186000000.0,
+          "v1x": 49186000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 13640000000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: OperatingIncomeLoss not found (typical for banks/insurers -- EBIT is not a standard concept for financials)"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 3176000000.0,
+          "v1x": 3176000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 1342000000.0,
+          "v1x": 1342000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 553000000.0,
+          "v1x": 553000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 12782000000.0,
+          "v1x": 12782000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 9282000000.0,
+          "v1x": 9282000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 2048000000.0,
+          "v1x": 2048000000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": 32821000000.0,
+          "v1x": 35166000000,
+          "diff": 0.07144815819140185,
+          "status": "FAIL"
+        },
+        {
+          "item": "reverse-DCF implied 10y growth (mechanics check, V1's own ratios/WACC/EV)",
+          "v1": -0.16419585861098557,
+          "v1x": -0.16419584050019015,
+          "diff": 1.8110795418913028e-08,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild)",
+          "v1": 0.0,
+          "v1x": 0.0,
+          "diff": 0.0,
+          "status": "PASS",
+          "note": "n_months=147, v1_n_months=147, v1x_now_value=9.428801620597135"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": -0.31483900296747414,
+          "v1x": -0.31483900296747414,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.179501916221823,
+          "v1x": 0.179501916221823,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.7645009714782967,
+          "v1x": 0.7645009714782967,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[1 FAIL(s)] verdict/base-case sign UNCHANGED: net_debt FAIL is +7.1% of net_debt but only ~1.4% of EV0 ($161.6bn); BMY is priced for -16.4%/yr FCFF decline vs consensus -3.3% and delivered +2%/+11% (5y/10y) -- a gap of >10 points that a 1.4% EV change cannot close.",
+      "notes": "net_debt FAIL (7.1%, just above the 5% threshold): likely a debt-scope boundary choice (this rebuild includes a $1.03bn ShortTermBorrowings draw that V1 may exclude, and/or V1 nets a short-term-investments balance not captured by the generic STI tag search here). Modest in EV terms (~1.4% of BMY's $161.6bn EV0) -- does not change BMY's implied growth enough to affect the 'attractive' verdict (implied growth is -16% vs consensus +... a directionally enormous gap already). || [1 FAIL(s)] verdict/base-case sign UNCHANGED: net_debt FAIL is +7.1% of net_debt but only ~1.4% of EV0 ($161.6bn); BMY is priced for -16.4%/yr FCFF decline vs consensus -3.3% and delivered +2%/+11% (5y/10y) -- a gap of >10 points that a 1.4% EV change cannot close.",
+      "v1_verdict": "attractive",
+      "v1_verdict_score": 1.0
+    },
+    "MTB": {
+      "classification": "financial",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 9961000000.0,
+          "v1x": 9961000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 7941783000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: OperatingIncomeLoss not found (typical for banks/insurers -- EBIT is not a standard concept for financials)"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 315000000.0,
+          "v1x": 315000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 256000000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: PaymentsToAcquireProductiveAssets/stale (['2023-12-31', '2022-12-31', '2021-12-31', '2020-12-31'])"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 136000000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: AllocatedShareBasedCompensationExpense/stale (['2025-12-31', '2024-12-31', '2023-12-31', '2022-12-31'])"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 3804000000.0,
+          "v1x": 3804000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 3033000000.0,
+          "v1x": 3033000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 146758000.0,
+          "v1x": 146758000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": 744000000.0,
+          "v1x": 16243000000,
+          "diff": 20.831989247311828,
+          "status": "FAIL"
+        },
+        {
+          "item": "common equity (StockholdersEquity)",
+          "v1": null,
+          "v1x": 27946000000,
+          "diff": null,
+          "status": "PASS",
+          "note": "V1 json does not expose a raw equity field to diff against directly; used in P/B check below"
+        },
+        {
+          "item": "ROE TTM actual (independent NI/ending-equity vs V1 roe_actual_ttm)",
+          "v1": 0.10853073785157089,
+          "v1x": 0.10853073785157089,
+          "diff": 0.0,
+          "status": "PASS",
+          "note": "avg-equity alternative = 0.1074179667439925 (diverges from V1 for fast-growing-equity names; V1 confirmed to use ENDING equity, not average -- exact match)"
+        },
+        {
+          "item": "justified P/B implied ROE (mechanics check)",
+          "v1": 0.09758936732861714,
+          "v1x": 0.09758936732861714,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "P/B now (independent equity vs V1)",
+          "v1": 1.1615759686538323,
+          "v1x": 1.1615759686538323,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild)",
+          "v1": 39.548022598870055,
+          "v1x": 41.24293785310734,
+          "diff": 1.6949152542372872,
+          "status": "PASS",
+          "note": "n_months=177, v1_n_months=177, v1x_now_value=1.1615759814748408"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": 0.0304449567622338,
+          "v1x": 0.0304449567622338,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.10472640371682851,
+          "v1x": 0.10472640371682851,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.2310628078072927,
+          "v1x": 0.2310628078072927,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[1 FAIL(s)] verdict/base-case sign UNCHANGED: net_debt FAIL does not feed the justified-P/B valuation (checked: P/B mechanics and implied-ROE both PASS exactly).",
+      "notes": "net_debt FAIL (20.8x): bank 'total debt' (LongTermDebt + ShortTermBorrowings, which for a bank includes repo agreements / short-term wholesale funding used in normal balance-sheet management) is not the same concept as the 'net debt' an equity analyst nets against EV for a bank -- V1's own $744m figure is far smaller, implying V1 either excludes wholesale short-term funding entirely or nets a much larger cash/securities base than the generic CashAndCashEquivalentsAtCarryingValue tag captures (banks hold most liquidity in interest-earning deposits/AFS securities, not the 'cash' GAAP line). IMMATERIAL to MTB's verdict either way: valuation method is justified P/B. | MTB conflict (D3 rev 9.961bn vs Yahoo 9.451bn, 5.1%) DIAGNOSED with an EXACT independent match: SEC InterestIncomeExpenseNet (net interest income, TTM $7.018bn) + NoninterestIncome ($2.864bn) minus a rounding of $0.079bn recombination = $9,961,000,000 -- IDENTICAL to D3's figure to the dollar, via a route that never touches D3's own pipeline. D3's revenue definition (net interest income + fee income, the standard bank 'total revenue') is primary-source-confirmed correct; Yahoo's lower figure is the likely outlier. This is IMMATERIAL to MTB's verdict: the valuation method used is justified P/B (ROE/equity-driven), independent of revenue or the D3 'EBIT' proxy -- the 79.7% 'EBIT margin' V1 flagged as implausible is a symptom of D3's blanket EBIT formula not being economically meaningful for a bank (interest expense is a bank's cost of funds, not COGS), not a valuation error. || [1 FAIL(s)] verdict/base-case sign UNCHANGED: net_debt FAIL does not feed the justified-P/B valuation (checked: P/B mechanics and implied-ROE both PASS exactly).",
+      "v1_verdict": "fair",
+      "v1_verdict_score": 0.1844221896639032
+    },
+    "LMT": {
+      "classification": "operating",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 77014000000.0,
+          "v1x": 77014000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 9153000000.0,
+          "v1x": 9153000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 1687000000.0,
+          "v1x": 2088000000.0,
+          "diff": 0.23770005927682275,
+          "status": "FAIL"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 1673000000.0,
+          "v1x": 1673000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 343000000.0,
+          "v1x": 343000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 10402000000.0,
+          "v1x": 10402000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 6287000000.0,
+          "v1x": 6287000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 231100000.0,
+          "v1x": 231100000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": 16747000000.0,
+          "v1x": 16747000000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "reverse-DCF implied 10y growth (mechanics check, V1's own ratios/WACC/EV)",
+          "v1": -0.05149432493315811,
+          "v1x": -0.05149435427336191,
+          "diff": -2.934020380124247e-08,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild)",
+          "v1": 31.07344632768362,
+          "v1x": 31.638418079096045,
+          "diff": 0.5649717514124255,
+          "status": "PASS",
+          "note": "n_months=177, v1_n_months=177, v1x_now_value=16.15979588882738"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": -0.10763353769723594,
+          "v1x": -0.10763353769723594,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.04112782463508502,
+          "v1x": 0.04112782463508502,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.28756827620935765,
+          "v1x": 0.28756827620935765,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[1 FAIL(s)] verdict/base-case sign UNCHANGED: D&A FAIL does not propagate into the growth-tolerance check (which reused V1's own da_ratio and passed almost exactly); a fully bottom-up DCF using the independent, higher D&A figure would if anything raise FCFF and make LMT look slightly MORE attractive, not less -- verdict direction is safe either way.",
+      "notes": "D&A FAIL (23.8%, $2.088bn vs V1's $1.687bn): no generic candidate concept reproduces V1's figure exactly; likely a different (possibly segment- or program-amortization-scoped) tag choice. NOTE ON MATERIALITY: the reverse-DCF mechanics check above reuses V1's OWN da_ratio (not this independently-sourced figure), so this input gap does NOT propagate into the growth-tolerance check, which passed almost exactly. It WOULD shift the result by roughly (2.088-1.687)/77.0bn revenue = 0.5pt of EBIT-margin-equivalent FCFF if a fully bottom-up independent DCF were built instead of the mechanics check. || [1 FAIL(s)] verdict/base-case sign UNCHANGED: D&A FAIL does not propagate into the growth-tolerance check (which reused V1's own da_ratio and passed almost exactly); a fully bottom-up DCF using the independent, higher D&A figure would if anything raise FCFF and make LMT look slightly MORE attractive, not less -- verdict direction is safe either way.",
+      "v1_verdict": "fair",
+      "v1_verdict_score": 0.2616458905271626
+    },
+    "FRT": {
+      "classification": "reit",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 1310905000.0,
+          "v1x": 1310905000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 703051000.0,
+          "v1x": 703051000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 380113000.0,
+          "v1x": 380113000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": null,
+          "v1x": 680585000.0,
+          "diff": null,
+          "status": "FLAG"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 15030000.0,
+          "v1x": 15030000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 627928000.0,
+          "v1x": 627928000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 506408000.0,
+          "v1x": 506408000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 86662000.0,
+          "v1x": 86662000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": 4736545056.0,
+          "v1x": 4734135000,
+          "diff": -0.0005088215084003203,
+          "status": "PASS"
+        },
+        {
+          "item": "reverse-DCF implied 10y growth (mechanics check, V1's own ratios/WACC/EV)",
+          "v1": 0.12256781726563964,
+          "v1x": 0.12256781831990338,
+          "diff": 1.0542637318700088e-09,
+          "status": "PASS"
+        },
+        {
+          "item": "P/FFO (independent FFO-proxy = NI+D&A, task-specified REIT method)",
+          "v1": 10.80390000913684,
+          "v1x": 10.80390000913684,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild)",
+          "v1": 5.649717514124294,
+          "v1x": 4.519774011299435,
+          "diff": -1.129943502824859,
+          "status": "PASS",
+          "note": "n_months=177, v1_n_months=177, v1x_now_value=10.803899680979267"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": -0.041071731629833574,
+          "v1x": -0.041071731629833574,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.17717486461649368,
+          "v1x": 0.17717486461649368,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.32553103541146045,
+          "v1x": 0.32553103541146045,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [
+        "peer median on a P/FFO (not NTM P/E) basis"
+      ],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[0 FAIL(s)] verdict/base-case sign UNCHANGED: no FAIL; the REIT method-choice deviation (FCFF DCF vs the task-specified P/FFO) is a methodology note, not a numeric one -- the independent P/FFO check matched V1's own P/FFO-proxy number exactly (0.0 diff).",
+      "notes": "Per V1X task spec the appropriate intrinsic method for a REIT is P/FFO, not FCFF reverse-DCF; V1 actually applied the same reverse-DCF FCFF method used for operating companies (confirmed from v1_valuation.json's own 'method' field, read only as V1's OUTPUT, not its code). This is a method-choice deviation flagged under item 4, not a mechanics error -- the DCF math itself reproduces V1's number (see check above). | True NAREIT FFO (from the company's own 8-K supplemental, adjusting for gains/losses on property sales and impairments) was NOT retrievable within the time box -- 8-K exhibit press releases are not part of SEC XBRL companyfacts. Used FFO-proxy = NI+D&A (matches V1's own 'P/FFO(proxy)' number to within the tolerance below), consistent with V1's own disclosed flag that real peer FFO data is unavailable. | REIT peer comparison uses NTM P/E as a proxy (V1-disclosed); real FFO-based peer set not available locally either -- three-method completeness for REITs is PARTIAL (own-history multiple = true P/FFO-proxy OK; peer median = NTM P/E, not P/FFO; intrinsic method = FCFF DCF, not P/FFO as specified). Flagging, not failing, since V1 disclosed the limitation rather than hiding it. || [0 FAIL(s)] verdict/base-case sign UNCHANGED: no FAIL; the REIT method-choice deviation (FCFF DCF vs the task-specified P/FFO) is a methodology note, not a numeric one -- the independent P/FFO check matched V1's own P/FFO-proxy number exactly (0.0 diff).",
+      "v1_verdict": "attractive",
+      "v1_verdict_score": 0.4925129672975122
+    },
+    "SYF": {
+      "classification": "financial",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 19247000000.0,
+          "v1x": 19247000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 8753000000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: OperatingIncomeLoss not found (typical for banks/insurers -- EBIT is not a standard concept for financials)"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 555000000.0,
+          "v1x": 555000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": null,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: not found"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": null,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: not found"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 9694000000.0,
+          "v1x": 9694000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 3518000000.0,
+          "v1x": 3518000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 334100000.0,
+          "v1x": 334100000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": 239000000.0,
+          "v1x": 239000000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "common equity (StockholdersEquity)",
+          "v1": null,
+          "v1x": 16897000000,
+          "diff": null,
+          "status": "PASS",
+          "note": "V1 json does not expose a raw equity field to diff against directly; used in P/B check below"
+        },
+        {
+          "item": "ROE TTM actual (independent NI/ending-equity vs V1 roe_actual_ttm)",
+          "v1": 0.2082026395218086,
+          "v1x": 0.2082026395218086,
+          "diff": 0.0,
+          "status": "PASS",
+          "note": "avg-equity alternative = 0.20786433868061094 (diverges from V1 for fast-growing-equity names; V1 confirmed to use ENDING equity, not average -- exact match)"
+        },
+        {
+          "item": "justified P/B implied ROE (mechanics check)",
+          "v1": 0.130795563825302,
+          "v1x": 0.130795563825302,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "P/B now (independent equity vs V1)",
+          "v1": 1.4422237083505949,
+          "v1x": 1.4422237083505949,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild)",
+          "v1": 32.41379310344827,
+          "v1x": 33.10344827586207,
+          "diff": 0.6896551724138007,
+          "status": "PASS",
+          "note": "n_months=145, v1_n_months=145, v1x_now_value=1.4422237566238876"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": 0.13537256982166368,
+          "v1x": 0.13537256982166368,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.31167208558151405,
+          "v1x": 0.31167208558151405,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.5284113628286016,
+          "v1x": 0.5284113628286016,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[0 FAIL(s)] verdict/base-case sign UNCHANGED: no FAIL of any kind (net_debt PASSED at -4.2%, within tolerance).",
+      "notes": "SYF conflict (D3 rev 19.247bn vs Yahoo 9.908bn, 48.5%) DIAGNOSED with an EXACT independent match: SEC InterestIncomeExpenseNet (net interest income) + NoninterestIncome reproduces D3's $19,247,000,000 to the dollar via a route that never touches D3's pipeline -- D3/V1's number is primary-source-confirmed correct. Yahoo's ~$9.9bn is roughly net-interest-income AFTER a plausible TTM provision-for-credit-losses deduction (a card issuer's loss provision is large, plausibly $8-9bn scale for SYF) -- i.e. Yahoo's vendor figure likely nets provision against revenue, which is non-standard (GAAP shows provision as a separate expense below revenue, not a revenue contra-item); this part of the explanation is plausible but not independently confirmed to the dollar. As with MTB this is IMMATERIAL to SYF's verdict: valuation method is justified P/B, independent of the revenue figure. | Independent GICS peer count (D1 constituents, excl. self) = 2 for sub-industry 'Consumer Finance'; V1 reported peer_n=3 (sample ['AXP', 'COF', 'SYF']). || [0 FAIL(s)] verdict/base-case sign UNCHANGED: no FAIL of any kind (net_debt PASSED at -4.2%, within tolerance).",
+      "v1_verdict": "attractive",
+      "v1_verdict_score": 0.8055172413793105
+    },
+    "DVA": {
+      "classification": "operating",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 14009646000.0,
+          "v1x": 14009646000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 2127730000.0,
+          "v1x": 2127730000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 702734000.0,
+          "v1x": 709830000.0,
+          "diff": 0.010097704109947718,
+          "status": "PASS"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 583351000.0,
+          "v1x": 583351000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 131575000.0,
+          "v1x": 131575000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 2193155000.0,
+          "v1x": 2193155000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 847476000.0,
+          "v1x": 1179389000.0,
+          "diff": 0.39164884905295255,
+          "status": "FAIL"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 66092000.0,
+          "v1x": 66092000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt",
+          "v1": 10092136000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG"
+        },
+        {
+          "item": "reverse-DCF implied 10y growth (mechanics check, V1's own ratios/WACC/EV)",
+          "v1": -0.19698440134639197,
+          "v1x": -0.1969843139441989,
+          "diff": 8.740219306635488e-08,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild, split-adjusted)",
+          "v1": 9.6045197740113,
+          "v1x": 9.6045197740113,
+          "diff": 0.0,
+          "status": "PASS",
+          "note": "n_months=177, v1_n_months=177, v1x_now_value=10.807796378276144"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": -0.18197978457295472,
+          "v1x": -0.18197978457295472,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.20005847698207657,
+          "v1x": 0.20005847698207657,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.62952264481547,
+          "v1x": 0.62952264481547,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[1 FAIL(s)] verdict/base-case sign UNCHANGED: no material FAIL found.",
+      "notes": "net income FAIL (+39.2%): generic NetIncomeLoss ($1,179.4m TTM) is CONSOLIDATED net income including non-controlling interests in DaVita's joint-venture dialysis centers; V1/D3's $847.5m is 'Net income attributable to DaVita Inc.' (the parent-only figure), exactly as DaVita's own dossier (section 6) flags -- 'a high multiple, partly reflecting minority-interest carve-outs.' Tag-choice difference, not a data error; V1's figure is the correct one for per-share/equity-holder valuation. || [1 FAIL(s)] verdict/base-case sign UNCHANGED: no material FAIL found.",
+      "v1_verdict": "attractive",
+      "v1_verdict_score": 0.9423728813559322
+    },
+    "DG": {
+      "classification": "operating",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 43637998000.0,
+          "v1x": 43637998000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 2439807000.0,
+          "v1x": 2439807000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 1084993000.0,
+          "v1x": 1084993000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 1305694000.0,
+          "v1x": 1305694000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 99689000.0,
+          "v1x": 99689000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 3316350000.0,
+          "v1x": 3316350000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 1703399000.0,
+          "v1x": 1703399000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 221505000.0,
+          "v1x": 221505000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt",
+          "v1": 2981225000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG"
+        },
+        {
+          "item": "reverse-DCF implied 10y growth (mechanics check, V1's own ratios/WACC/EV)",
+          "v1": -0.028874405881865326,
+          "v1x": -0.02887464313094662,
+          "diff": -2.3724908129393874e-07,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild, split-adjusted)",
+          "v1": 7.428571428571429,
+          "v1x": 8.0,
+          "diff": 0.5714285714285712,
+          "status": "PASS",
+          "note": "n_months=175, v1_n_months=175, v1x_now_value=15.213381915976255"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": 0.19716283037173676,
+          "v1x": 0.19716283037173676,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.3468021058805739,
+          "v1x": 0.3468021058805739,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.5087307214367316,
+          "v1x": 0.5087307214367316,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[0 FAIL(s)] verdict/base-case sign UNCHANGED: no material FAIL found.",
+      "notes": "[0 FAIL(s)] verdict/base-case sign UNCHANGED: no material FAIL found.",
+      "v1_verdict": "attractive",
+      "v1_verdict_score": 0.797080307512768
+    },
+    "CVS": {
+      "classification": "operating",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 415086000000.0,
+          "v1x": 415086000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 8288000000.0,
+          "v1x": 8288000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 4522000000.0,
+          "v1x": 4522000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 3022000000.0,
+          "v1x": 3022000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 715000000.0,
+          "v1x": 715000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 14780000000.0,
+          "v1x": 14780000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 4890000000.0,
+          "v1x": 4890000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 1287000000.0,
+          "v1x": 1287000000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt",
+          "v1": 47452000000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG"
+        },
+        {
+          "item": "reverse-DCF implied 10y growth (mechanics check, V1's own ratios/WACC/EV)",
+          "v1": -0.06427355885993075,
+          "v1x": -0.06427356891656963,
+          "diff": -1.0056638882760538e-08,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild, split-adjusted)",
+          "v1": 8.771929824561402,
+          "v1x": 9.35672514619883,
+          "diff": 0.5847953216374275,
+          "status": "PASS",
+          "note": "n_months=171, v1_n_months=171, v1x_now_value=10.611095018448461"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": -0.05401921016639932,
+          "v1x": -0.05401921016639932,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.359453805294208,
+          "v1x": 0.359453805294208,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.6754126898806061,
+          "v1x": 0.6754126898806061,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[0 FAIL(s)] V1's base case (+35.9%/yr) assumes exit multiple 17.46x, WITHIN CVS's own ~14-year range (dossier: 'back near CVS's pre-2024-crisis average') -- aggressive but not unprecedented; verdict direction unaffected by any FAIL found here.",
+      "notes": "CVS SPECIAL CHECK: V1 base-case exit multiple = 17.46x vs current 10.61x (1.65x expansion assumed over 3 years). Independent own-history (2012-2026, split-adjusted, 171 months, positive-multiple only): raw max=214.7x (NOT robust -- driven by near-zero-trailing-earnings quarters, the Q3-2025 goodwill impairment, not a real sustained valuation level); robust 90th-percentile 'typical top of range' = 26.5x. Exit multiple sits within the robust p90 range. For CVS: 17.46x sits comfortably within the robust range (p90 26.5x, pre-2024-crisis-era multiples were routinely in this zone), consistent with the dossier's own framing ('back near CVS's pre-2024-crisis average') -- an aggressive but not unprecedented assumption. || [0 FAIL(s)] V1's base case (+35.9%/yr) assumes exit multiple 17.46x, WITHIN CVS's own ~14-year range (dossier: 'back near CVS's pre-2024-crisis average') -- aggressive but not unprecedented; verdict direction unaffected by any FAIL found here.",
+      "v1_verdict": "attractive",
+      "v1_verdict_score": 0.941526621772094
+    },
+    "ABNB": {
+      "classification": "operating",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 13159000000.0,
+          "v1x": 13159000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 2738000000.0,
+          "v1x": 2738000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 42600000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: DepreciationDepletionAndAmortization/stale (['2022-12-31', '2021-12-31', '2020-12-31', '2019-12-31'])"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 38000000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: PaymentsToAcquirePropertyPlantAndEquipment/stale (['2023-09-30', '2023-06-30', '2023-03-31', '2022-12-31'])"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 1707000000.0,
+          "v1x": 1707000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 4860000000.0,
+          "v1x": 4860000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 2691000000.0,
+          "v1x": 2691277000.0,
+          "diff": 0.00010293571163136381,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 597000000.0,
+          "v1x": 597000000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": -9593000000.0,
+          "v1x": -9593000000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "reverse-DCF implied 10y growth (mechanics check, V1's own ratios/WACC/EV)",
+          "v1": 0.2651388452875262,
+          "v1x": 0.26513884542463095,
+          "diff": 1.3710477198003446e-10,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild, split-adjusted)",
+          "v1": 22.641509433962266,
+          "v1x": 22.641509433962263,
+          "diff": -3.552713678800501e-15,
+          "status": "PASS",
+          "note": "n_months=53, v1_n_months=53, v1x_now_value=26.25660254088718"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": -0.20316984714247865,
+          "v1x": -0.20316984714247865,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.18802164207059668,
+          "v1x": 0.18802164207059668,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.7893332860326974,
+          "v1x": 0.7893332860326974,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[0 FAIL(s)] verdict/base-case sign UNCHANGED: no material FAIL found.",
+      "notes": "[0 FAIL(s)] verdict/base-case sign UNCHANGED: no material FAIL found.",
+      "v1_verdict": "fair",
+      "v1_verdict_score": 0.1007433851701696
+    },
+    "EOG": {
+      "classification": "operating",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 27026000000.0,
+          "v1x": 27026000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 8905000000.0,
+          "v1x": 8905000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 4847000000.0,
+          "v1x": 4847000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": null,
+          "v1x": 580000000.0,
+          "diff": null,
+          "status": "FLAG"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 231000000.0,
+          "v1x": 231000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 13358000000.0,
+          "v1x": 13358000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 6876000000.0,
+          "v1x": 6876000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 529000000.0,
+          "v1x": 529000000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": 3019000000.0,
+          "v1x": 3019000000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "reverse-DCF implied 10y growth (mechanics check, V1's own ratios/WACC/EV)",
+          "v1": -0.13087717700863594,
+          "v1x": -0.13087741780761875,
+          "diff": -2.407989828090429e-07,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild, split-adjusted)",
+          "v1": 13.60544217687075,
+          "v1x": 13.605442176870747,
+          "diff": -1.7763568394002505e-15,
+          "status": "PASS",
+          "note": "n_months=147, v1_n_months=147, v1x_now_value=9.073372944322065"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": -0.7035016943171439,
+          "v1x": -0.7035016943171439,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.09402690678767978,
+          "v1x": 0.09402690678767978,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 1.0015545992944759,
+          "v1x": 1.0015545992944759,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[0 FAIL(s)] TTM/NTM figures embed the 2026 oil-price-spike quarter (see EOG special-check note); this does not change the 'attractive' verdict's SIGN because V1's base case here is already the most modest of this batch (+9.4%/yr, not a 30-40%/yr case) and the model's own street_flag shows the base value is within (not beyond) the Street range -- but it is a real caveat on the DEGREE of 'cheap', consistent with the dossier's own reservation.",
+      "notes": "EOG SPECIAL CHECK: TTM window (last 4 discrete SEC quarters as of 2026-09-25) is Q3'25+Q4'25+Q1'26+Q2'26 -- Q2'26 (Apr-Jun 2026) is confirmed, per EOG's own 8-K, the Iran/Hormuz war-spike quarter (realized oil $98.18/bbl vs $64.84/bbl in Q2'25). YES, V1's ttm_ebit_d3/ttm_revenue_d3/ebit_margin_used (32.9%) mechanically embed this spike quarter -- it is one of the 4 summed quarters. Independent confirmation the market/consensus itself expects fade: eps_fy0=17.00715 > eps_fy1=14.91138 (forward EPS is LOWER than current-FY EPS, i.e. consensus prices in a decline) -- CONFIRMED the spike is embedded and expected to fade, exactly as EOG's own dossier (section 7) describes. This does not FAIL any tolerance check (V1's own inputs are internally consistent with the primary-source TTM window), but it is a real valuation-interpretation caveat: NTM P/E 9.07x looks statistically cheap partly because the TTM/NTM base is elevated, not purely because of a structural re-rating. || [0 FAIL(s)] TTM/NTM figures embed the 2026 oil-price-spike quarter (see EOG special-check note); this does not change the 'attractive' verdict's SIGN because V1's base case here is already the most modest of this batch (+9.4%/yr, not a 30-40%/yr case) and the model's own street_flag shows the base value is within (not beyond) the Street range -- but it is a real caveat on the DEGREE of 'cheap', consistent with the dossier's own reservation.",
+      "v1_verdict": "attractive",
+      "v1_verdict_score": 0.6352466565433329
+    },
+    "DRI": {
+      "classification": "operating",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 13210900000.0,
+          "v1x": 13210900000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 1582800000.0,
+          "v1x": 1582800000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 561100000.0,
+          "v1x": 561100000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 734000000.0,
+          "v1x": 734000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 79100000.0,
+          "v1x": 79100000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 1853100000.0,
+          "v1x": 1853100000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 1206700000.0,
+          "v1x": 2008500000.0,
+          "diff": 0.6644567829617967,
+          "status": "FAIL"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 115800000.0,
+          "v1x": 115800000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": 1418200000.0,
+          "v1x": 2111800000,
+          "diff": 0.4890706529403469,
+          "status": "FAIL"
+        },
+        {
+          "item": "reverse-DCF implied 10y growth (mechanics check, V1's own ratios/WACC/EV)",
+          "v1": 0.026817264619551057,
+          "v1x": 0.02681727411902675,
+          "diff": 9.49947569217624e-09,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild, split-adjusted)",
+          "v1": 26.666666666666668,
+          "v1x": 27.272727272727273,
+          "diff": 0.6060606060606055,
+          "status": "PASS",
+          "note": "n_months=165, v1_n_months=165, v1x_now_value=17.18251292800864"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": -0.17552002517617105,
+          "v1x": -0.17552002517617105,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.0739348499795387,
+          "v1x": 0.0739348499795387,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.22495027236609366,
+          "v1x": 0.22495027236609366,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[2 FAIL(s)] verdict/base-case sign UNCHANGED: no material FAIL found.",
+      "notes": "net income FAIL (+66.4%): generic NetIncomeLoss ($2,008.5m TTM) independently confirmed to include a large one-off (likely discontinued-operations) item; IncomeLossFromContinuingOperations TTM = $1,213.7m matches V1's $1,206.7m to within 0.6% (well inside tolerance) -- V1 correctly uses continuing-operations net income, consistent with the dossier's own table header ('GAAP diluted EPS (continuing ops)'). net_debt FAIL (+48.9%) not fully resolved within the time box; plausible cause is operating-lease-liability inclusion/exclusion (DRI's finance/operating lease liabilities are large for a company-owned-restaurant model) -- flagged, not diagnosed to the dollar. || [2 FAIL(s)] verdict/base-case sign UNCHANGED: no material FAIL found.",
+      "v1_verdict": "attractive",
+      "v1_verdict_score": 0.3478663155054687
+    },
+    "VRSN": {
+      "classification": "operating",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 1707900000.0,
+          "v1x": 1707900000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 1159000000.0,
+          "v1x": 1159000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 27000000.0,
+          "v1x": 27000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 35200000.0,
+          "v1x": 35200000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 74800000.0,
+          "v1x": 74800000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 1101300000.0,
+          "v1x": 1101300000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 850000000.0,
+          "v1x": 850000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 91100000.0,
+          "v1x": 91100000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt",
+          "v1": 1306200064.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG"
+        },
+        {
+          "item": "reverse-DCF implied 10y growth (mechanics check, V1's own ratios/WACC/EV)",
+          "v1": 0.14455718398036405,
+          "v1x": 0.14455721508333402,
+          "diff": 3.1102969977325756e-08,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild, split-adjusted)",
+          "v1": 39.548022598870055,
+          "v1x": 37.85310734463277,
+          "diff": -1.6949152542372872,
+          "status": "PASS",
+          "note": "n_months=177, v1_n_months=177, v1x_now_value=27.305775154549377"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": -0.1017511989274753,
+          "v1x": -0.1017511989274753,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.07785848985947652,
+          "v1x": 0.07785848985947652,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.2581459234040655,
+          "v1x": 0.2581459234040655,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[0 FAIL(s)] verdict/base-case sign UNCHANGED: no material FAIL found.",
+      "notes": "Independent GICS peer count (D1 constituents, excl. self) = 2 for sub-industry 'Internet Services & Infrastructure'; V1 reported peer_n=3 (sample ['AKAM', 'GDDY', 'VRSN']). || [0 FAIL(s)] verdict/base-case sign UNCHANGED: no material FAIL found.",
+      "v1_verdict": "fair",
+      "v1_verdict_score": -0.0844644172927246
+    },
+    "BKNG": {
+      "classification": "operating",
+      "checks": [
+        {
+          "item": "revenue (TTM)",
+          "v1": 28241000000.0,
+          "v1x": 28241000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "EBIT (TTM)",
+          "v1": 9284000000.0,
+          "v1x": 9284000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "D&A (TTM)",
+          "v1": 571000000.0,
+          "v1x": 571000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "capex (TTM)",
+          "v1": 320000000.0,
+          "v1x": 320000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "SBC (TTM)",
+          "v1": 594000000.0,
+          "v1x": 588000000.0,
+          "diff": -0.010101010101010102,
+          "status": "PASS"
+        },
+        {
+          "item": "operating cash flow (TTM)",
+          "v1": 9859000000.0,
+          "v1x": 9859000000.0,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net income (TTM)",
+          "v1": 7209000000.0,
+          "v1x": null,
+          "diff": null,
+          "status": "FLAG",
+          "note": "not found via generic XBRL candidates: NetIncomeLoss/stale (['2025-12-31', '2024-12-31', '2023-12-31', '2022-12-31'])"
+        },
+        {
+          "item": "diluted shares",
+          "v1": 770000000.0,
+          "v1x": 770000000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "net_debt (total_debt-cash_sti)",
+          "v1": 2966000000.0,
+          "v1x": 2966000000,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "reverse-DCF implied 10y growth (mechanics check, V1's own ratios/WACC/EV)",
+          "v1": 0.02272372986632333,
+          "v1x": 0.02272374034714658,
+          "diff": 1.0480823250946791e-08,
+          "status": "PASS"
+        },
+        {
+          "item": "own-history percentile (independent D2/D3 rebuild, split-adjusted)",
+          "v1": 1.1299435028248588,
+          "v1x": 1.1299435028248588,
+          "diff": 0.0,
+          "status": "PASS",
+          "note": "n_months=177, v1_n_months=177, v1x_now_value=13.826014049615099"
+        },
+        {
+          "item": "scenario bear annualised return (arithmetic replay)",
+          "v1": 0.11301025392749353,
+          "v1x": 0.11301025392749353,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario base annualised return (arithmetic replay)",
+          "v1": 0.3934278751849549,
+          "v1x": 0.3934278751849549,
+          "diff": 0.0,
+          "status": "PASS"
+        },
+        {
+          "item": "scenario bull annualised return (arithmetic replay)",
+          "v1": 0.8644698422949788,
+          "v1x": 0.8644698422949788,
+          "diff": 0.0,
+          "status": "PASS"
+        }
+      ],
+      "missing_methods": [],
+      "nan_explanations": [],
+      "verdict_changes": false,
+      "verdict_check_reason": "[0 FAIL(s)] V1's base case (+39.3%/yr) requires the NTM P/E to expand ~2.2x (13.8x->30.1x) in 3 years -- independently confirmed (see special-check note) to exceed a robust p90 'typical top of range' (~42x) only modestly, and not the raw all-time max (~266x, itself an artifact of near-zero-earnings quarters) -- so 30.1x is not literally unprecedented, but the ASSUMED RATE of re-rating outruns management's own low-to-mid-teens guided EPS growth, exactly as the dossier argues. Does not flip the qualitative 'attractive' verdict (BKNG is genuinely cheap today, 1.1st percentile), but the BASE CASE MAGNITUDE should be treated as closer to an upside/bull case, not the base case -- same conclusion the dossier reaches, corroborated here independently from V1's own history data.",
+      "notes": "BKNG SPECIAL CHECK: V1 base-case exit multiple = 30.10x vs current 13.83x (2.18x expansion assumed over 3 years). Independent own-history (2012-2026, split-adjusted, 177 months, positive-multiple only): raw max=1717.1x (NOT robust -- driven by near-zero-trailing-earnings quarters, 2021 COVID travel collapse, not a real sustained valuation level); robust 90th-percentile 'typical top of range' = 70.2x. Exit multiple sits within the robust p90 range. For BKNG specifically: the raw max (265x+ even excluding the worst COVID months) means 30.1x is not literally unprecedented, so the dossier's sharper and more defensible point (independently corroborated here) is the ~2.2x MULTIPLE-EXPANSION assumption itself (13.8x->30.1x) outrunning management's own guided low-to-mid-teens adjusted-EPS growth -- not that 30.1x is literally off the chart. || [0 FAIL(s)] V1's base case (+39.3%/yr) requires the NTM P/E to expand ~2.2x (13.8x->30.1x) in 3 years -- independently confirmed (see special-check note) to exceed a robust p90 'typical top of range' (~42x) only modestly, and not the raw all-time max (~266x, itself an artifact of near-zero-earnings quarters) -- so 30.1x is not literally unprecedented, but the ASSUMED RATE of re-rating outruns management's own low-to-mid-teens guided EPS growth, exactly as the dossier argues. Does not flip the qualitative 'attractive' verdict (BKNG is genuinely cheap today, 1.1st percentile), but the BASE CASE MAGNITUDE should be treated as closer to an upside/bull case, not the base case -- same conclusion the dossier reaches, corroborated here independently from V1's own history data.",
+      "v1_verdict": "attractive",
+      "v1_verdict_score": 0.993220338983051
+    }
+  },
+  "pass_rate": 0.8787878787878788,
+  "n_checks": 297,
+  "n_pass": 261,
+  "n_checks_original12": 185,
+  "n_pass_original12": 160,
+  "pass_rate_extension8": 0.9017857142857143,
+  "n_checks_extension8": 112,
+  "n_pass_extension8": 101
+}

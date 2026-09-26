@@ -1,0 +1,32 @@
+{
+  "name": "r1_drawdown_episodes",
+  "agent": "r1",
+  "retrieved_utc": "2026-09-25T20:44:25Z",
+  "sources": {
+    "shiller": "https://shillerdata.com/ -> ie_data.xls (https://img1.wsimg.com/blobby/go/e5e77e0b-59d1-44d9-ab25-4763ac982e53/downloads/70fec4f5-727f-4e53-b5f1-179af109c5fa/ie_data.xls), file saved 2026-09-02",
+    "gspc": "Yahoo Finance ^GSPC daily (yfinance 1.7), 1927-12-30..2026-09-25",
+    "sp500tr": "Yahoo Finance ^SP500TR daily, 1988-01-04..2026-09-25",
+    "vix": "Yahoo Finance ^VIX daily, 1990-01-02..2026-09-25",
+    "damodaran": "https://pages.stern.nyu.edu/~adamodar/pc/datasets/histretSP.xls (data 1928-2025)"
+  },
+  "rows": 217,
+  "columns": [
+    "peak_date",
+    "peak_value",
+    "trough_date",
+    "trough_value",
+    "depth",
+    "recovery_date",
+    "recovered",
+    "series",
+    "months_peak_to_trough",
+    "months_trough_to_recovery",
+    "months_peak_to_recovery"
+  ],
+  "description": "All underwater episodes (between successive all-time highs) with depth <= -10% for 4 series.",
+  "caveats": [
+    "Shiller prices are monthly averages of daily closes: rolling returns are smoothed and drawdown depths understated vs daily data.",
+    "^GSPC drawdown statistics are price-only (exclude dividends); total-return recoveries are shorter.",
+    "Drawdown episodes are defined between successive all-time highs (underwater periods); nested sell-offs inside a larger episode are not counted separately."
+  ]
+}

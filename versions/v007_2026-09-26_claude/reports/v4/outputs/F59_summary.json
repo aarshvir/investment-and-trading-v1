@@ -1,0 +1,121 @@
+{
+  "agent": "F59",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "XOM": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The lowest-leverage, best-run oil major, but its recent earnings jump is mostly a war-driven oil-price spike, not a durable re-rating.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Brent crude average below $65/bbl for two consecutive quarters without a corresponding capex cut",
+        "Quarterly refining segment posts a loss for two consecutive quarters",
+        "Net debt rises above $60bn",
+        "Buyback pace cut below $15bn/yr run-rate",
+        "FTC Pioneer consent order breach or reopening"
+      ],
+      "key_adverse_facts": [
+        "Q2 2026 GAAP net income more than doubled YoY ($14,525M vs $7,082M) mainly because of the 2026 Iran-war oil-price shock, not organic growth; Q1 2026 was weak (EPS $1.00, refining posted a $1.3bn loss)",
+        "A reverse DCF off the actual H1 2026 run-rate (annualized FCF ~$38.5bn) implies close to zero further growth priced in, versus ~4.4%/yr off the normalized FY2025 FCF base ($23.6bn) -- the 'cheap 14.2x NTM' read depends heavily on which earnings base is used",
+        "XOM is suing California over SB253/261 climate-disclosure laws (E.D. Cal., filed ~Oct 2025); a separate California AG climate-deception suit continues in the background"
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv lists XOM's CIK as 2115436; the correct SEC CIK (confirmed via EDGAR company search) is 0000034088 -- vendor data-quality issue, not used for any filing lookup in this dossier",
+        "b1's momentum (pct_mom_12_1 0.98) and SUE (6.6, near-max percentile) signals are largely an artefact of the same war-driven oil-price spike documented in the dossier, not evidence of a durable business re-rating",
+        "d4's Yahoo-sourced enterprise value ($705.2bn) implies a higher net-debt figure than this dossier's own filing-based net debt (~$31.8bn, Q2 2026 10-Q balance sheet); a minor, disclosed, non-decision-relevant conflict"
+      ],
+      "next_earnings_date": "2026-10-30",
+      "confidence_in_thesis": "medium (primary-source financials and guidance are solid; the war-driven oil-price shock makes the near-term earnings base unusually hard to normalize, which is the main source of uncertainty)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "in_line",
+        "reconciliation": "No V1 row exists for XOM in v1_valuation_table.csv or v1_valuation.json, so v1_verdict is null per the wave-3 instructions. This dossier's own reverse DCF (WACC 8%, normalized FY2025 FCF base) implies ~4.4%/yr perpetual FCF growth priced in -- roughly in line with XOM's own stated production-growth plan (mid-single-digit volume CAGR plus buyback accretion), but only if the elevated war-driven earnings are excluded from the base; run off the actual (spiked) H1 2026 run-rate, the same math implies almost no growth priced in at all (would read as 'below'). Net view: fair/in_line, not cheap."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.09,
+        "base": 0.10,
+        "bull": 0.19
+      },
+      "scenario_basis": "Base: normalized FY2025 FCF $23.6bn as starting point, ~6%/yr FCF growth (Permian/Guyana volume growth to the 2030 plan plus ~4%/yr buyback-driven share shrink), NTM P/E roughly flat at ~14x, ~2.6% dividend yield. Bear: Brent reverts to $55-60/bbl post ceasefire, FCF flat-to-down, multiple compresses toward 10-11x. Bull: war premium/OPEC+ discipline persists, FCF growth ~12%/yr, multiple expands toward 16-17x. All three include the ~2.6% dividend yield."
+    },
+    "AMD": {
+      "verdict": "WATCH",
+      "thesis_one_line": "AI-chip challenger to Nvidia, growing revenue 50% a year with OpenAI as an anchor customer, but priced for a decade of that pace.",
+      "horizon": "12-36 months, revisit at the 2026-11-03 print",
+      "kill_criteria": [
+        "Any single quarter of guided revenue growth below the prior quarter's growth rate",
+        "Data Center segment gross margin falls below 50% for two consecutive quarters",
+        "OpenAI 1 GW deployment milestone missed or delayed beyond 2026",
+        "Net cash position turns negative without a corresponding step-up in disclosed capacity/capex plans",
+        "Buyback pace stays at the reduced ~$220M/half-year run-rate for more than 2 more quarters combined with rising share count from OpenAI-warrant vesting"
+      ],
+      "key_adverse_facts": [
+        "Buybacks were cut ~82% YoY (H1 2026 $221M vs H1 2025 $1,227M) with $0 repurchased in Q2 2026 itself, while cash is being retained to fund AI-GPU capacity/inventory and the OpenAI supply ramp",
+        "Analyst mean/median price targets ($618.5/$616, 50 analysts) sit 3-4% BELOW the current price ($630.63) -- the sell-side consensus, even after the run, is not on average underwriting further near-term upside",
+        "The OpenAI warrant deal grants up to 160 million AMD shares (roughly 9-10% of shares outstanding) vesting on deployment milestones and an escalating AMD share-price target up to $600/share -- real dilution risk tied to a customer (OpenAI) that is not yet GAAP-profitable",
+        "Trailing GAAP P/E of 160x is not a usable valuation anchor: it reflects a Q2 2025 inventory charge tied to China MI308 export restrictions still sitting in the trailing-12-month window"
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv shows strong momentum (mom_12_1 +191%) and strong SUE (+3.8, percentile 0.89); this dossier confirms the SUE signal is durable (three consecutive real guidance beats, see report) but flags that the momentum signal now runs ahead of what the reverse DCF shows is fundamentally supportable without a decade of ~25%/yr FCF growth",
+        "Q2 2026 GAAP diluted EPS ($1.38) is well below the levels implied by Street 'adjusted' consensus conventions used in FY0/FY1 consensus EPS figures cited in Section 7; this dossier did not independently re-derive AMD's own non-GAAP EPS bridge this pass (disclosed data gap)"
+      ],
+      "next_earnings_date": "2026-11-03",
+      "confidence_in_thesis": "medium (the growth story and guidance track record are well evidenced from primary filings; confidence is capped because the reverse DCF requires a decade of high growth that no guidance track record can validate that far out, and OpenAI counterparty risk is not fully assessable from AMD's own filings)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": null,
+        "implied_vs_base": "above",
+        "reconciliation": "No V1 row exists for AMD in v1_valuation_table.csv or v1_valuation.json, so v1_verdict is null per the wave-3 instructions. This dossier's own two-stage reverse DCF (WACC 10%, annualized H1-2026 FCF base ~$8.25bn) implies ~24-26%/yr FCF growth needed for 10 years to justify the current EV (~$1.019tn) -- an aggressive, multi-year bar that the 3-quarter guidance track record cannot itself validate that far out. Net view: expensive/above base case."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.12,
+        "base": 0.11,
+        "bull": 0.33
+      },
+      "scenario_basis": "Base: annualized H1 2026 FCF ~$8.25bn growing ~25%/yr for 3 years (consistent with guided H2 2026 acceleration and management's 2027 data-center-doubling comment) before any multiple change from the current 46.9x NTM P/E. Bear: AI-GPU demand or OpenAI deployment disappoints, growth decelerates to ~10%/yr, NTM P/E compresses toward 25-28x. Bull: OpenAI ramp plus broader hyperscaler share gains sustain >35%/yr FCF growth, multiple holds near 45-50x. No dividend in any scenario."
+    },
+    "AXON": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Dominant police-technology ecosystem (TASER, body cameras, cloud AI) growing 35% a year, but it burned cash in H1 2026 and raised $1 billion in debt.",
+      "horizon": "12-36 months, revisit at the 2026-11-03 print for cash-flow confirmation",
+      "kill_criteria": [
+        "Full-year (or two consecutive quarters') operating cash flow remains negative beyond the normal H1 seasonal pattern, i.e. FY2026 OCF prints below FY2025's $211.3M",
+        "Software/services segment margin declines for two more consecutive quarters (already down 380bps YoY in Q2 2026)",
+        "Revenue growth decelerates below 25% YoY for two consecutive quarters",
+        "A third consecutive year of eXponential Stock Plan/CEO Performance Award SBC exceeding ~8% of revenue",
+        "Any further debt or equity capital raise within 12 months of the Sept 2026 convertible note"
+      ],
+      "key_adverse_facts": [
+        "Operating cash flow was negative in H1 2026 (-$11.4M) and again in H1 2025 (-$65.9M) despite >30% revenue growth in both periods; H1 2026 free cash flow was solidly negative (approximately -$55.6M)",
+        "Axon priced a $1.0bn (upsized to ~$1.15bn) zero-coupon convertible note due 2031 on 2026-09-15, while OCF was negative -- the market read this alongside margin-quality concerns as evidence the company is not yet self-funding its growth (stock fell >20% over the prior month)",
+        "GAAP net income/EPS swung from a loss (Q3 2025, -$0.03) to $2.05 (Q1 2026) to $0.36 (Q2 2026), driven by large, volatile, stock-price-linked SBC (2024 eXponential Stock Plan / CEO Performance Award, ~$330M FY2025) rather than the underlying business -- GAAP quarterly EPS is close to uninterpretable",
+        "Adjusted gross margin fell 40bps YoY to 62.9% and software/services segment margin fell 380bps YoY to 75.1% in Q2 2026, even as revenue growth accelerated to 35.3% YoY",
+        "A Form 10-K/A filed 2025-05-07 disclosed a material weakness in internal control over financial reporting (2027 convertible-notes current/long-term balance-sheet classification); no impact on assets, liabilities, equity, net income or cash flows, but a genuine, disclosed control deficiency"
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv ranks AXON at live_rank 493/503 (composite decile 1, i.e. near the bottom of the entire universe) because of negative 12-month momentum (-21.1%) and roughly neutral SUE (-0.09); this directly conflicts with the triage read (quality 4, growth 5) and this dossier's own findings (35%+ revenue growth, two consecutive guidance raises, $15.1bn backlog). This dossier's assessment: the quant decile is a value/momentum factor-construction artefact for a recently-repriced high-multiple grower, not evidence against the fundamental thesis -- but it is flagged, not dismissed, given the genuine OCF/margin concerns documented above",
+        "Analyst target mean ($704-706, 19-21 analysts, cross-checked via two independent sources) sits ~64% above the current price ($430.11); an unusually large gap not yet reflected in a broad round of target cuts as of 2026-09-25"
+      ],
+      "next_earnings_date": "2026-11-03",
+      "confidence_in_thesis": "low-medium (the moat and growth/guidance track record are well evidenced, but the negative operating cash flow and margin-compression findings are recent, primary-source-confirmed adverse facts that directly bear on whether the growth is currently good-quality growth)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": null,
+        "implied_vs_base": "above",
+        "reconciliation": "No V1 row exists for AXON in v1_valuation_table.csv or v1_valuation.json, so v1_verdict is null per the wave-3 instructions. This dossier's own reverse DCF (WACC 10.5%, FY2025 FCF base of $75.1M, the last clean positive annual figure since H1 2026 FCF was negative) implies FCF needs to compound at roughly 30%+/yr for 10 years (a >13x increase) to justify the current EV (~$37.3bn). Given revenue is already guided to grow 32-34% in FY2026, this is not unreasonable if OCF/FCF turn durably positive, but it is a demanding bar off a small, volatile base. Net view: expensive/above base case pending cash-flow confirmation."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.15,
+        "base": 0.13,
+        "bull": 0.35
+      },
+      "scenario_basis": "Base: revenue growth moderating from ~33% (FY2026 guide) toward the mid-20s%/yr over 3 years, FCF margin normalizing toward 10-12% of revenue as SBC dilutes and working capital stabilizes (vs. negative in H1 2026), NTM P/E compressing modestly from 44x toward ~38-40x as growth moderates. Bear: OCF/FCF stay negative through FY2026, margin compression continues, multiple de-rates further toward 25-28x on self-funding concerns. Bull: OCF turns solidly positive by Q4 2026 as historically seasonal, backlog conversion accelerates, multiple holds near 44-48x. No dividend in any scenario."
+    }
+  }
+}

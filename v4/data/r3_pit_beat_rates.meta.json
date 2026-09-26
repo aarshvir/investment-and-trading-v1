@@ -1,0 +1,48 @@
+{
+  "agent": "r3",
+  "dataset": "r3_pit_beat_rates.csv",
+  "built_utc": "2026-09-25T20:52:44Z",
+  "description": "Share of S&P 500 members (point-in-time, on Jan 1 of start year) whose buy-and-hold total return beat ^SP500TR over 1/3/5 years",
+  "inputs_read_only": {
+    "d2_universe_spells.csv": {
+      "path": "C:\\Users\\user\\OneDrive\\Documents\\Projects\\Investing and trading\\Long-term and mid-term investments\\v4\\data\\d2_universe_spells.csv",
+      "mtime": "2026-09-25T20:24:28.109616280"
+    },
+    "d2_ret_monthly.parquet": {
+      "path": "C:\\Users\\user\\OneDrive\\Documents\\Projects\\Investing and trading\\Long-term and mid-term investments\\v4\\data\\d2_ret_monthly.parquet",
+      "mtime": "2026-09-25T20:51:37.029909849"
+    },
+    "d2_coverage.csv": {
+      "path": "C:\\Users\\user\\OneDrive\\Documents\\Projects\\Investing and trading\\Long-term and mid-term investments\\v4\\data\\d2_coverage.csv",
+      "mtime": "2026-09-25T20:51:43.082531214"
+    }
+  },
+  "rows": 70,
+  "columns": [
+    "horizon_years",
+    "start_year",
+    "months",
+    "end_month",
+    "partial_period",
+    "n_members_start",
+    "n_covered",
+    "n_missing_no_data",
+    "n_reuse_excluded",
+    "coverage",
+    "n_delisted_midway_cash",
+    "SP500TR_return",
+    "pct_beat_covered",
+    "pct_beat_lower_bound",
+    "pct_beat_upper_bound",
+    "pct_positive_covered",
+    "median_member_return",
+    "EW_mean_member_return"
+  ],
+  "caveats": [
+    "Membership reconstructed by D2 from fja05680 GitHub + Wikipedia (not S&P's official file); D1 owns authoritative membership.",
+    "Missing names (no Yahoo data) are disproportionately acquired or bankrupt companies; bounds reported. Coverage is lower in early years.",
+    "Yahoo Adj Close is dividend-adjusted as of retrieval; delisting returns are not captured (cash assumed after the last full month).",
+    "Beat-rate by count (equal-weight), not cap-weight; the index is cap-weighted, so beat-rates < 50% are expected when mega-caps lead.",
+    "2026 row is a partial year (Jan-Aug)."
+  ]
+}

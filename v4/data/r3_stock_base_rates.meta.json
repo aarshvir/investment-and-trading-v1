@@ -1,0 +1,34 @@
+{
+  "agent": "r3",
+  "dataset": "r3_stock_base_rates.csv",
+  "built_utc": "2026-09-25T20:52:39Z",
+  "description": "single-stock horizon base rates",
+  "source_files": [
+    "C:\\Users\\user\\OneDrive\\Documents\\Projects\\Investing and trading\\Long-term and mid-term investments\\equity_project\\close10.pkl",
+    "C:\\Users\\user\\eqv4\\cache\\r3\\yf_etf_bench_close_adj.parquet"
+  ],
+  "benchmark": "^SP500TR via yfinance (auto_adjust)",
+  "rows": 4,
+  "columns": [
+    "horizon_years",
+    "n_start_months",
+    "n_nonoverlapping",
+    "avg_n_stocks",
+    "pct_stocks_positive",
+    "pct_stocks_beat_SP500TR",
+    "pct_beat_SP500TR_min_over_starts",
+    "pct_beat_SP500TR_max_over_starts",
+    "pct_stocks_beat_GSPC_price_naive",
+    "median_stock_minus_SP500TR",
+    "EW_avg_stock_minus_SP500TR",
+    "pct_stocks_lost_50pct_plus",
+    "pct_beat_SP500TR_nonoverlapping_avg"
+  ],
+  "rng_seed": 20260926,
+  "caveats": [
+    "SURVIVORSHIP-BIASED: universe = ~497 stocks in the S&P 500 as of Sept 2026 (legacy close10.pkl); stocks that were dropped, acquired or went bankrupt 2015-2026 are missing and later entrants' pre-inclusion run-ups are included -> beat-rates and P(positive) are UPPER BOUNDS.",
+    "close10 closes are yfinance auto_adjust=True (dividend-adjusted, verified on MO and T); benchmark ^SP500TR (total return).",
+    "Overlapping windows (monthly starts) -> strongly autocorrelated; one 11-year sample dominated by mega-cap growth leadership.",
+    "Sample 2015-09..2026-08 month-ends."
+  ]
+}

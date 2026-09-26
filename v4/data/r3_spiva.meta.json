@@ -1,0 +1,24 @@
+{
+  "agent": "r3",
+  "dataset": "r3_spiva.csv",
+  "built_utc": "2026-09-25T20:52:46Z",
+  "description": "S&P Dow Jones Indices SPIVA U.S. scorecards: share of active funds underperforming; persistence",
+  "rows": 74,
+  "columns": [
+    "report",
+    "published",
+    "data_as_of",
+    "category",
+    "benchmark",
+    "measure",
+    "horizon",
+    "value_pct",
+    "source_url",
+    "verification"
+  ],
+  "retrieval": "spglobal.com blocks plain HTTP fetch; PDFs retrieved via Firecrawl scrape on 2026-09-25/26 UTC; R3 cached MY2026 and YE2025 scrapes in C:/Users/user/eqv4/cache/r3/spiva_*_firecrawl.json",
+  "caveats": [
+    "Count-based (equal-weighted) unless stated; survivorship-adjusted by S&P DJI (merged/liquidated funds count as underperformers)",
+    "Persistence random-chance benchmarks as stated by S&P DJI (25% for 3-yr top-half, 6.25% for 5-yr top-half)."
+  ]
+}

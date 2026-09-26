@@ -1,0 +1,50 @@
+{
+  "dataset": "d4_indep_prices.csv",
+  "agent": "d4",
+  "written_utc": "2026-09-25T20:49:03Z",
+  "source_urls": [
+    "https://cdn-api.cboe.com/api/global/delayed_quotes/quotes/<SYM>.json",
+    "https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol?symbols=<A|B|...>",
+    "https://stooq.com/q/d/l/?s=<sym>.us&i=d (blocked by JS bot challenge; not used)"
+  ],
+  "retrieval_utc_start": "2026-09-25T20:36:06Z",
+  "retrieval_utc_end": "2026-09-25T20:49:03Z",
+  "rows": 503,
+  "columns": [
+    "ticker",
+    "cboe_close",
+    "cboe_prev_close",
+    "cboe_last_trade_time",
+    "cboe_timestamp",
+    "cboe_http",
+    "cboe_retrieved_utc",
+    "cnbc_last",
+    "cnbc_last_time",
+    "cnbc_prev_close",
+    "cnbc_exchange",
+    "cnbc_sharesout",
+    "cnbc_mktcap",
+    "cnbc_eps_ttm",
+    "cnbc_pe",
+    "cnbc_feps",
+    "cnbc_fpe",
+    "cnbc_code",
+    "cnbc_retrieved_utc"
+  ],
+  "coverage": {
+    "cboe_close": 503,
+    "cnbc_last": 503
+  },
+  "stooq_probe": {
+    "url": "https://stooq.com/q/d/l/?s=nvda.us&i=d&d1=20260918&d2=20260926",
+    "http_status": 200,
+    "is_csv": false,
+    "bot_challenge": true,
+    "retrieved_utc": "2026-09-25T20:36:07Z"
+  },
+  "caveats": [
+    "Cboe/CNBC are delayed-quote vendor feeds, not exchange-certified official closes.",
+    "CNBC feps/fpe horizon is undocumented (vendor: LSEG); used only as a descriptive comparator.",
+    "Retrieved minutes after the 2026-09-25 close; 'close' fields checked against 16:00 ET timestamps."
+  ]
+}

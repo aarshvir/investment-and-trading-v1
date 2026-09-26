@@ -1,0 +1,94 @@
+{
+  "agent": "F33",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "CEG": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Largest US nuclear fleet plus newly acquired Calpine gas plants, selling contracted power to Microsoft and Meta data centers, but leverage tripled and pending asset sales aren't closed yet.",
+      "kill_criteria": [
+        "Any one of the three DOJ-mandated divestitures (LS Power PJM $5.0bn deal, LS Power ERCOT/Brazos Valley $860m deal, Gregory stake) fails to close by the extended internal target (\"end of this year,\" i.e. by 2026-12-31) or is renegotiated down in price.",
+        "FY2026 Adjusted Operating EPS comes in below the low end of the raised $11.50-$12.50 guidance range at year-end.",
+        "Net debt/EBITDA (on a clean, full-year-Calpine basis, once reportable) exceeds 4.0x with no credible deleveraging path.",
+        "Crane Clean Energy Center restart slips past 2027 or the NRC/FERC approvals already obtained are challenged/reversed.",
+        "Two consecutive quarters of GAAP-to-adjusted reconciling items exceeding 30% of adjusted operating earnings, signalling the \"adjusted\" framing is masking a structurally worse GAAP business."
+      ],
+      "key_adverse_facts": [
+        "Long-term debt (noncurrent) rose from $7,250m (2025-12-31) to $19,111m (2026-06-30); total debt now ~$24.70bn vs $697m cash, following the $21,835m Calpine acquisition (closed 2026-01-07).",
+        "The DOJ's mandated divestitures (5 PJM plants to LS Power for $5.0bn, one ERCOT plant for $860m, a Gregory Power Plant stake) all have signed agreements but none has closed; closing is only targeted for \"by the end of this year.\"",
+        "GAAP EPS is highly volatile across the merger boundary: Q1 2026 $4.49 vs Q2 2026 $1.42, driven by integration costs, nuclear PTC swings and financing costs.",
+        "Triage's \"lowest leverage (3.0x) in the batch\" claim does not reconcile with the post-merger balance sheet and appears to be stale/pre-merger data."
+      ],
+      "data_conflicts": [
+        "b1/triage leverage read (\"3.0x\", lowest in batch) vs the 10-Q balance sheet showing gross debt roughly tripling (from ~$8.9bn to ~$24.7bn) between 2025-12-31 and 2026-06-30 post-Calpine; not resolved within this pass, flagged as likely stale pre-merger data or a different leverage definition."
+      ],
+      "next_earnings_date": "2026-11-09",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium - the contracted-power/nuclear thesis is well evidenced, but medium not high because the Calpine integration, leverage and pending divestiture closings are unresolved within the review period",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for CEG in v1_valuation_table.csv, so there is nothing to reconcile; the analyst's own reverse-DCF (Gordon-growth off NTM P/E) implies ~4.6% perpetual growth, below the ~9-10% consensus near-term growth rate, but the ~14.7x trailing EV/EBITDA is rich versus the sector playbook's contracted/merchant generation bands (9-12x/4-7x), so the net read is fair-to-full rather than cheap."
+      }
+    },
+    "ES": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "New England's regulated electric and gas utility, now simplified after exiting offshore wind and water utilities, but a FERC rate cut and repeat exit charges make the reported earnings less clean than they look.",
+      "kill_criteria": [
+        "FERC's Section 205 replacement-ROE request (targeting 11.39%) is denied, or a further retroactive refund period is added, resulting in another quarter with a transmission-related charge exceeding $0.10/share.",
+        "FY2026 non-GAAP recurring EPS finishes below the low end of the reaffirmed $4.57-$4.72 range.",
+        "A fourth consecutive period (beyond FY2024, FY2025, Q2 2026) books an incremental offshore-wind-related charge under the GIP agreement.",
+        "Long-term debt (noncurrent) grows more than 10% year-over-year without a matching, regulator-approved rate-base increase disclosed in the same filing.",
+        "Dividend growth rate falls below the historical ~3-4%/year cadence."
+      ],
+      "key_adverse_facts": [
+        "FY2026 guidance was CUT (from $4.80-$4.95 to $4.57-$4.72 at Q1 2026), explicitly attributed to the March 2026 FERC transmission-ROE reduction (10.57% to 9.57%) and the loss of Aquarion earnings in H2 2026 - not a raise.",
+        "Q2 2026 GAAP EPS collapsed to $0.14 from $0.96 a year earlier, driven by a $0.30/share Aquarion-sale charge and a $0.43/share increase in the offshore-wind contingent liability.",
+        "The 2024 offshore-wind exit has now generated incremental after-tax charges in three straight periods (FY2024 ~$524.0m, FY2025 ~$75.0m, Q2 2026 $164.0m), a recurring pattern of understated exit costs.",
+        "Trailing ROE (~9.0%) sits in the bottom quartile of the peer batch per the quant data, consistent with the primary-source finding of regulatory pressure."
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-11-04",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - the simplification story is real and the valuation is genuinely the cheapest in the batch, but the live FERC ROE proceeding is a two-sided, unresolved risk to the largest earnings segment",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for ES in v1_valuation_table.csv. The analyst's own justified-P/B reverse-DCF ((earned ROE - g)/(Ke - g) = 1.47x) implies growth of ~3.7%, at or below the low end of management's own guided 5-7% long-term EPS CAGR, supporting a fair (not cheap, not expensive) view consistent with INCLUDE-SMALL."
+      }
+    },
+    "SRE": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "California and Texas utility owner (via SDG&E, SoCalGas and a stake in Texas grid operator Oncor) plus LNG exports, selling down infrastructure stakes to fund a huge, still-growing capital plan.",
+      "kill_criteria": [
+        "The KKR 45% Sempra Infrastructure Partners sale does not close by 2026-12-31 (three months past the company's own \"Q3 2026\" target).",
+        "The Ecogas Mexico sale does not close by 2026-10-31 (two months past the company's own \"expected in August\" target).",
+        "FY2026 adjusted EPS finishes outside the affirmed $4.80-$5.30 range.",
+        "Total debt grows faster than the approved rate base at Oncor/SDG&E/SoCalGas for two consecutive quarters, without a corresponding equity or asset-sale offset.",
+        "Any SDG&E wildfire-liability claim or CPUC disallowance is disclosed that is not fully covered by the AB 1054/SB 254 wildfire fund mechanism."
+      ],
+      "key_adverse_facts": [
+        "Trailing ROE (~6.7%) is the lowest in the peer batch per the quant data and reported free cash flow is deeply negative (-54% yield), driven by a ~$65bn five-year capex plan.",
+        "Neither the KKR Sempra Infrastructure Partners stake sale nor the Ecogas Mexico sale was confirmed closed in the primary sources reviewed as of the 2026-09-25 cutoff, despite both being \"expected\" to close within weeks of that date.",
+        "The triage note's -54% FCF yield / eye-catching cheapness read leans heavily on both pending sales closing on schedule and at the stated terms; neither was independently confirmed closed.",
+        "California wildfire liability (SDG&E, under AB 1054/SB 254) remains an open, sector-specific tail risk explicitly named in the company's own risk-factor language."
+      ],
+      "data_conflicts": [
+        "b1 quant data (ROE 1.6th percentile, FCF yield 12th percentile, composite 10th percentile - a name the model actively dislikes) vs the triage note's generous \"14.4x NTM P/E for 63% guided EPS growth looks cheap\" framing. Both are partly right: trailing ROE/FCF are genuinely weak (real capex super-cycle), but the analyst's own NTM-P/E reverse-DCF (~5.6% implied growth) sits below the company's affirmed 7-9% long-term guidance, supporting the cheap-on-a-forward-basis read once (and only once) the pending divestitures actually close."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "horizon": "24-48 months",
+      "confidence_in_thesis": "medium - guidance has been unusually stable (affirmed three quarters running) and the Oncor/ERCOT growth driver is well evidenced, but two large, thesis-critical asset sales remain unconfirmed as closed",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for SRE in v1_valuation_table.csv. The analyst's own NTM-P/E reverse-DCF implies ~5.6% perpetual growth, below the company's own consistently affirmed 7-9% long-term EPS CAGR guidance and its FY2030 outlook ($6.70-$7.50), supporting a cheap-on-forward-guidance view; held to INCLUDE-SMALL rather than full INCLUDE because the balance-sheet side of the thesis depends on two pending asset sales not yet confirmed closed."
+      }
+    }
+  }
+}

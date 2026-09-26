@@ -1,0 +1,47 @@
+{
+  "agent": "r3",
+  "dataset": "r3_factor_stats.csv",
+  "built_utc": "2026-09-25T20:52:31Z",
+  "source": "computed from r3_ff_factors_monthly.parquet",
+  "rows": 24,
+  "columns": [
+    "factor",
+    "label",
+    "window",
+    "start",
+    "end",
+    "n_months",
+    "ann_mean_arith",
+    "ann_geo",
+    "ann_vol",
+    "sharpe_or_ir",
+    "t_stat",
+    "max_drawdown",
+    "mdd_peak",
+    "mdd_trough",
+    "pct_months_pos",
+    "pct_roll12_pos",
+    "n_roll12",
+    "pct_roll36_pos",
+    "n_roll36",
+    "pct_roll60_pos",
+    "n_roll60",
+    "pct_calyears_pos",
+    "n_calyears",
+    "worst_12m",
+    "worst_36m"
+  ],
+  "definitions": {
+    "ann_mean_arith": "12 x mean monthly return",
+    "ann_vol": "sqrt(12) x monthly std (ddof=1)",
+    "sharpe_or_ir": "ann_mean_arith / ann_vol (factors are zero-cost long-short, so no RF deduction)",
+    "t_stat": "mean / (std/sqrt(n)), iid",
+    "max_drawdown": "of cumulative prod(1+r) starting at 1.0",
+    "pct_roll12_pos / 36 / 60": "share of overlapping rolling windows with compounded return > 0",
+    "pct_calyears_pos": "share of complete calendar years with compounded return > 0",
+    "combo4": "equal-weight (monthly rebalanced) average of HML, RMW, CMA, UMD"
+  },
+  "caveats": [
+    "gross of costs; long-short; all-cap; overlapping windows are highly autocorrelated (effective N small)"
+  ]
+}
