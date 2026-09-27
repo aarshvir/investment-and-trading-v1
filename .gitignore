@@ -9,3 +9,9 @@
 id_rsa
 id_ed25519
 .publish.lock
+
+# Release ZIPs over GitHub's 100 MB limit stay in OneDrive; hashes are in versions/catalog.json
+v4/release/*.zip
+versions/v00[7-9]_*/package.zip
+versions/v01*/package.zip
+v4/nul

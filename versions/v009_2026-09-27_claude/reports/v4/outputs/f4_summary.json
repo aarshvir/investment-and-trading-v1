@@ -1,0 +1,80 @@
+{
+  "agent_id": "f4",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "DECK": {
+      "verdict": "INCLUDE-SMALL",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "HOKA quarterly YoY revenue growth below 5% for two consecutive quarters (from 7.7% in Q1 FY27, down from 18.5% two quarters earlier)",
+        "GAAP operating margin below 15% for two consecutive quarters (was 15.2% in Q1 FY27, down from 17.1% YoY)",
+        "FY2027 guidance cut at any point (would break the raise-every-time streak of the last three releases)",
+        "Domestic (US) revenue growth negative for two consecutive quarters (was +2.7% to +3.2% in the last two prints)",
+        "Wholesale sell-through weakness or channel pushback evident (currently still positive, +2.2% to +7.1%)"
+      ],
+      "key_adverse_facts": [
+        "HOKA revenue growth decelerated sharply and sequentially over the three most recent quarters: 18.5% -> 14.5% -> 7.7%",
+        "GAAP operating margin compressed 190bps YoY in the most recent quarter (Q1 FY27, 15.2% vs 17.1%) as SG&A grew faster than gross profit",
+        "Stock is at its 3-year and 5-year low ($78.67 vs 3yr range $77.51-$223.11), down ~65% from its own 3-year high",
+        "Tariff cost disclosure is thin (no $ or bps bridge in the primary press releases); secondary/financial-press coverage (not independently verified against a primary transcript) reported the company's internal FY26 tariff-cost estimate rose from ~$150m to ~$185m intra-year",
+        "Company reports GAAP-only with no non-GAAP reconciliation, so the 'adjusted EPS' data point requested by the standard template is genuinely unavailable for this name"
+      ],
+      "data_conflicts": [
+        "None material. DECK's own ROE/FCF-yield/revenue figures in lead_prelim_rank.csv were independently reconciled exactly against SEC XBRL (TTM revenue $5,527.3m, ROE 44.1%, FCF yield 10.4% all matched); the only internal-dataset wrinkle is a ~2.3pt divergence between lead_prelim_rank.csv's fcfp (10.4%) and d4_live_snapshot.parquet's fcf_yield (8.1%), likely a differing TTM window/definition between the two files -- flagged, not material to the verdict."
+      ],
+      "next_earnings_date": "2026-10-22 or 2026-10-23 (Q2 FY2027; Yahoo-consensus estimate per d4_live_snapshot, not yet company-confirmed)",
+      "confidence_in_thesis": "medium -- the quality/balance-sheet/capital-return pillars are high-confidence and well-evidenced, but the central bull/bear question (is HOKA's deceleration cyclical noise or category maturation?) cannot be resolved with the two most recent quarters of evidence alone; needs 1-2 more prints to confirm direction, hence INCLUDE-SMALL rather than INCLUDE or WATCH."
+    },
+    "TPR": {
+      "verdict": "INCLUDE",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "Coach quarterly revenue growth falls below 10% for two consecutive quarters (from the mid-20s/30s currently)",
+        "Kate Spade revenue decline steepens past -15% YoY, or the brand takes a further impairment",
+        "Non-GAAP operating margin gives back more than 200bps YoY in any quarter (FY26 exit rate 19.3% adj. in Q4)",
+        "FY2027 guidance cut at any point during the year (would break the four-quarter raise streak)",
+        "Refiling or revival of the Capri-related securities litigation, or a new SEC inquiry tied to the terminated merger's disclosures"
+      ],
+      "key_adverse_facts": [
+        "Kate Spade took an $854.8m indefinite-lived-brand-intangible and goodwill impairment in FY2025 (quarter inferred as Q4 FY25, ended 2025-06-28, via a $583.5m GAAP operating loss found in XBRL and corroborated by the FY26 release's backward reference; the primary Q4-FY25 8-K itself could not be retrieved this session due to persistent SEC EDGAR 503 errors) and Kate Spade revenue kept declining through FY26 (-10% full year)",
+        "Failed $8.5bn Capri Holdings merger (blocked by FTC preliminary injunction Oct-2024, terminated Nov-2024): Tapestry paid Capri a $45.1m expense-reimbursement fee (sourced from secondary legal/news coverage only, not the primary termination 8-K, which also 503'd repeatedly this session) and had to redeem ~$6.3bn of escrowed acquisition notes",
+        "Two related securities class actions alleging misrepresentation about the Capri deal's approval prospects were filed Dec-2024/Jan-2025; dismissed without prejudice in March 2026 -- reduced but not fully extinguished (refiling remains possible)",
+        "FY2027 initial guidance implies growth decelerating from >20% (FY26 reported) to mid-single-digits -- management itself is signalling the exceptional pace will not continue",
+        "FY26 GAAP EPS ($7.27) exceeds non-GAAP EPS ($7.05) -- the reverse of the usual direction -- because 'items affecting comparability' were net favourable one-offs (incl. $98.2m of IEEPA tariff refunds) that non-GAAP strips out; investors using GAAP EPS as the 'clean' number would overstate recurring earnings power by $0.22/share",
+        "Short interest is comparatively elevated (~8.0% of shares outstanding) after a ~4.6x rally from the 2023 low"
+      ],
+      "data_conflicts": [
+        "MATERIAL: v4/outputs/lead_prelim_rank.csv's own 'rev' field for TPR ($5,972.3m) is internally inconsistent with its own 'cogs' ($1,775.2m) and 'gp' ($6,229.0m) fields in the same row -- cogs+gp = $8,004.2m, which matches TPR's actual FY2026 GAAP revenue exactly per SEC XBRL and the 8-K, while the standalone 'rev' field does not (and does not correspond to any TPR fiscal-year or clean TTM window this agent could identify). 'ni' in the same row ($1,528.0m) is correctly current. This looks like a field-level mapping bug isolated to 'rev', not a stale snapshot. It does NOT appear to corrupt TPR's Q/V/M scores, since the pre-registered model's factors (gross-profit/assets, ROE, CFO/assets, accruals, leverage, asset growth, earnings yield, FCF yield, EBIT/EV, book/price, 12-1 month momentum) do not use raw revenue as an input -- but the D3/D4 pipeline should fix this field before any revenue-based screen is built on it. For comparison, DECK's and RL's 'rev' fields were independently verified correct."
+      ],
+      "next_earnings_date": "2026-11-05 (Q1 FY2027, per d4_live_snapshot and TPR's historical early-November cadence)",
+      "confidence_in_thesis": "medium-high -- the Coach-brand momentum evidence is extensive, consistent and well-sourced across four consecutive beat-and-raise quarters; confidence is capped at medium-high rather than high because (a) the FY27 guide concedes material deceleration is coming and (b) the stock's re-rating is already large, leaving less margin for a disappointment that hasn't happened yet."
+    },
+    "RL": {
+      "verdict": "INCLUDE",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Constant-currency revenue growth falls below 5% for two consecutive quarters (from 10-14% currently)",
+        "Adjusted operating margin expansion reverses (YoY compression) for two consecutive quarters, after 8 straight quarters of expansion",
+        "FY2027 guidance cut at any point (would break the cleanest raise streak of the three names reviewed)",
+        "China/Asia growth decelerates below 10% YoY (from the current 22-40% range)",
+        "Any future quantified tariff-cost disclosure showing a materially larger drag than peers' bps-level impact"
+      ],
+      "key_adverse_facts": [
+        "Tariffs are acknowledged as a cost headwind every quarter but never quantified in dollars or basis points in any of the four releases reviewed -- a real transparency gap versus TPR's explicit bps disclosure, even though RL's margin trend shows no evidence the AUR/mix offset is failing",
+        "The lowest Value-factor percentile of the three names (51st) and the highest absolute NTM P/E (17.96x) -- already prices in a lot of the good news; FY26 GAAP EPS growth (+30%) is well above RL's own 17-year trend CAGR (~7.9%), so the multiple is paying for a cyclical high",
+        "COO Bob Ranftl is retiring effective Nov 29, 2026 (announced 2026-09-03, inside the review window) -- assessed as an orderly, internally-succeeded transition (three other executives had responsibilities expanded in the same release, no severance/dispute language found), but a C-suite change nonetheless",
+        "Single-region growth concentration risk: Q1 FY27 China growth of 'more than 40%' is spectacular but raises the bar sharply for future comparisons and concentrates geopolitical/tariff-retaliation exposure"
+      ],
+      "data_conflicts": [
+        "None found. RL's XBRL series was the cleanest of the three companies (no identity backfill or derived-Q4 residuals needed), and its lead_prelim_rank.csv 'rev' field was independently verified to be a correct, properly-computed TTM-through-Q1-FY27 figure (cross-checked via the cogs+gp identity and via FY26 annual +/- Q1 quarters, both reconciling exactly)."
+      ],
+      "next_earnings_date": "2026-11-05 (Q2 FY2027)",
+      "confidence_in_thesis": "high -- eight consecutive quarters of the same causal story (AUR/mix-led margin expansion, broad-based across every region and both DTC and wholesale simultaneously), four consecutive guidance raises, a net-cash balance sheet, and no red flags of any kind identified in this review. This is the highest-confidence name of the three in this batch."
+    }
+  },
+  "cross_ticker_notes": [
+    "All three names are Consumer Discretionary apparel/footwear/accessories brands scored under the same sector-neutral Q/V/M model; DECK screens as highest quality+value but weakest momentum (the market is pricing a real deceleration concern), TPR as high quality+strong momentum but the cheapest re-rating story already largely played out, RL as the most consistent/lowest-risk compounder despite the least statistically 'cheap' score.",
+    "FMP MCP connector tools were almost entirely gated on the current plan tier during this session (statements, quote, earningsTranscript, analyst, insiderTrades, secFilings, news, calendar all returned ACCESS DENIED or rate-limit errors; only the 'company' profile/peers endpoints worked, and even those hit a rate limit near the end of the session). All quantitative work was therefore done directly from SEC EDGAR (XBRL companyfacts + 8-K EX-99.1 press releases via WebFetch), which is consistent with the 'primary sources win' standard but took more tool calls than the brief's suggested FMP-first approach anticipated. Flagging this so the lead can request an FMP plan upgrade if future F-agents need transcripts/quotes/insider data directly.",
+    "SEC EDGAR itself returned intermittent 503 (Service Unavailable) errors throughout the session, consistent with CONVENTIONS.md's note that several agents share the same rate limits; all persistent failures (TPR's Aug-2023 Capri merger 8-K and Aug-2025 Q4-FY25 earnings 8-K) are explicitly flagged in the affected dossier rather than silently worked around."
+  ]
+}

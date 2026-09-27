@@ -61,6 +61,8 @@ def check(t, S):
             qs = [qidx(a, b) for a, b in QTR.findall(line)]
             if len(qs) == 2 and abs(qs[0] - qs[1]) != 4:
                 f.append({'type': 'period_label', 'line': i, 'text': line.strip()[:160]})
+        if re.search(r'guid|outlook|forecast', line, re.I) and re.search(r'\$\s?[\d,.]+|\d+(\.\d+)?\s?%', line) and not re.search(r'["“”]', line) and '[Corrected' not in line:
+            f.append({'type': 'guidance_unquoted', 'line': i, 'text': line.strip()[:160]})   # A1 loop-9: guidance figures need a verbatim source quote (RMD)
         if FORM.search(line) and re.search(r'filed|per |source|cited|according', line, re.I) and not ACC.search(line):
             f.append({'type': 'citation', 'line': i, 'text': line.strip()[:160]})
     return f

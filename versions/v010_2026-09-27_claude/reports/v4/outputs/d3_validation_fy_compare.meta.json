@@ -1,0 +1,23 @@
+{
+  "source": "XBRL annual values (first-reported and latest) vs legacy Yahoo statements PROJECT/equity_project/fund_all.pkl (Total Revenue, Net Income)",
+  "rows": 3968,
+  "columns": [
+    "ticker",
+    "item",
+    "fy_end_yahoo",
+    "yahoo",
+    "xbrl_first",
+    "first_filed",
+    "xbrl_latest",
+    "latest_filed",
+    "rel_err_first",
+    "rel_err_latest",
+    "match_1pct",
+    "match_5pct",
+    "missing_xbrl",
+    "named25"
+  ],
+  "tolerance": "1% (match_1pct) and 5%",
+  "agent": "d3",
+  "written_utc": "2026-09-25T22:25:50Z"
+}

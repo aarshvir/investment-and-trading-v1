@@ -1,0 +1,102 @@
+{
+  "agent": "F102",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "HCA": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The dominant U.S. for-profit hospital chain, but it just cut 2026 guidance on an ACA-subsidy payer-mix hit, and the price now demands growth in line with, not below, that weaker base case.",
+      "kill_criteria": [
+        "FY2026 diluted EPS prints below the new guided floor of $28.70 (i.e., another cut or a miss versus the July 2026 range).",
+        "Consolidated net debt/EBITDA (per 10-Q balance sheet and guided adjusted EBITDA) exceeds 3.5x.",
+        "Same-facility revenue growth < 3% for two consecutive quarters (ex. one-off flu/storm effects called out by management).",
+        "A second guidance cut at the Q3 2026 (2026-10-22-area) or Q4 2025-cycle release, evidencing the payer-mix issue is structural, not transitory.",
+        "Any new DOJ/HHS-OIG False Claims Act matter involving current (not historical/settled) billing practices."
+      ],
+      "key_adverse_facts": [
+        "FY2026 diluted EPS guidance was cut in July 2026 to $28.70-$30.50 from $29.10-$31.50 on a ~$400mn Q2 pre-tax hit from adverse payer mix tied to ACA subsidy expiration.",
+        "Q1 2026 admissions were soft (respiratory admissions -42% YoY, plus a January winter storm), per management's own letter.",
+        "An unsealed 2023 qui tam suit (ER physicians vs. HCA and TeamHealth) alleging medically unnecessary trauma-alert billing remains active.",
+        "Consolidated stockholders' equity is negative (-$6.30bn at 2026-03-31), driven by buybacks exceeding retained earnings over many years."
+      ],
+      "data_conflicts": [
+        "Triage described a stable/consistent execution narrative; the July 2026 guidance cut is a real, recent negative revision not reflected in that framing."
+      ],
+      "next_earnings_date": "2026-10-23",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium: durable density moat, but policy-driven payer-mix risk is fresh and unresolved",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for HCA; my own reverse DCF (r=8.5%) implies ~4.3-5% perpetual FCF growth is needed to justify $423.48, which is in line with my evidence-based base case once the Q2 2026 guidance cut is incorporated, leaving little margin of safety."
+      },
+      "scenario_returns_3y": {"bear": -0.06, "base": 0.06, "bull": 0.16},
+      "scenario_basis": "Base: FY2026 EPS ~$29.6 growing ~6-8%/yr on 3-4% organic revenue plus continued buybacks, exit at ~14x P/E, plus ~0.7% dividend yield; bear assumes a second guidance cut and multiple compression to ~11-12x; bull assumes payer-mix normalizes and EPS growth reaccelerates to ~10% with multiple re-rating toward 16x."
+    },
+    "HON": {
+      "verdict": "WATCH",
+      "thesis_one_line": "A newly focused automation-only Honeywell after spinning off Aerospace and Solstice, but the post-breakup financials are still messy and leverage is elevated, so it is too early to confirm the re-rating story.",
+      "kill_criteria": [
+        "Net debt/EBITDA (consolidated, per 10-Q) stays above 3.25x for two consecutive quarters post-separation.",
+        "Standalone FY2026 or FY2027 EPS guidance (ex. separation/one-time items) is cut versus the first post-spin baseline set at or after the Q2 2026 release.",
+        "Organic (like-for-like) revenue growth in Building or Industrial Automation segments falls below 2% for two consecutive quarters.",
+        "Any material weakness or restatement disclosed in the Q3 2026 or FY2026 10-K tied to the carve-out accounting.",
+        "Standalone free cash flow conversion (OCF-capex)/NI falls below 70% for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "XBRL companyfacts carries two inconsistent FY2025 net income/EPS tag sets ($4,729mn/$7.36 vs -$115mn/-$0.18) that were not fully reconciled in this pass; the underlying 10-Q/10-K should be read directly before sizing a position.",
+        "Q1 2026 operating cash flow was negative (-$650mn) even as the company continued a $1.0bn buyback in that same quarter.",
+        "Long-term debt rose from $28.69bn (2025-12-31) to $31.51bn (2026-06-30) through the separation, consistent with triage's flagged ~3.0x net debt/EBITDA.",
+        "A September 2026 DOJ False Claims Act cybersecurity settlement (~$2.04mn) involves 'Honeywell Aerospace Inc.', which is now the separately listed HONA entity, not this HON (Technologies) entity -- correctly scoped out here but worth confirming no indemnification exposure remains with HON."
+      ],
+      "data_conflicts": [
+        "XBRL FY2025 net income/EPS figures are internally inconsistent across tag families (see key_adverse_facts); unresolved within the standard time box.",
+        "Some 'Honeywell' guidance headlines in circulation (e.g., Solstice's raised FY26 outlook) belong to the spun-off Solstice Advanced Materials (SOLS) entity, not this HON entity -- a real risk of cross-entity conflation post-breakup."
+      ],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "low: thesis is plausible but the post-spin financial statements are not yet clean enough to underwrite with confidence",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for HON; reverse DCF (r=8.5%, FY2027 consensus EPS $10.20, ~85% FCF conversion) implies ~4.3-4.6% perpetual FCF growth to justify ~$226, roughly matching my base case for the automation pure-play -- the re-rating triage flagged looks largely priced in already, not still ahead."
+      },
+      "scenario_returns_3y": {"bear": -0.08, "base": 0.05, "bull": 0.14},
+      "scenario_basis": "Base: FY2027 EPS ~$10.20 growing ~5-6%/yr as carve-out costs normalize, exit at ~20-22x forward P/E, plus ~2% dividend yield; bear assumes leverage stays elevated and dis-synergy costs cut margins, multiple compresses to ~16-17x; bull assumes clean automation-pure-play re-rating toward 24-25x on margin expansion."
+    },
+    "JKHY": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "America's leading core-banking technology vendor for community banks and credit unions, with near-zero debt and record new-client wins, sized small because FY2027 guidance implies slower EPS growth than the quant screen assumed.",
+      "kill_criteria": [
+        "FY2027 GAAP diluted EPS prints below the guided floor of $7.33.",
+        "Non-GAAP operating margin expansion for FY2027 comes in below the guided 20bps floor (i.e., margin actually contracts).",
+        "Competitive core wins for FY2027 fall below ~45 (well under the FY2026 record of 58).",
+        "Cash and equivalents fall below $15mn with no corresponding increase in an undrawn credit facility.",
+        "Non-GAAP revenue growth for FY2027 comes in below the guided 6.3% floor for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "FY2027 guidance implies only 5.0-5.7% GAAP EPS growth and margin-expansion deceleration (20-40bps guided vs 92bps delivered in FY2026), versus the triage's assumed +12% forward EPS growth.",
+        "Q4 FY2026 was a real single-quarter deceleration: operating income -12.2% YoY, EPS -10.2% YoY.",
+        "Cash fell from $102.0mn (Jun 2025) to $20.6mn (Mar 2026) as buybacks jumped roughly 13x year-over-year ($35.1mn in FY2025 to $448.2mn in FY2026), a new and more aggressive capital-return posture than JKHY's historical pattern."
+      ],
+      "data_conflicts": [
+        "Triage's 'fair price at 20x for +12% forward EPS growth' does not survive the company's own FY2027 guidance, which implies +5.0-5.7% GAAP EPS growth; the multiple is unchanged but the growth support behind it is weaker than assumed."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium: durable moat and balance sheet are clear, but near-term growth is softer than the quant snapshot implied",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for JKHY; reverse DCF (r=7.5%, FY2026 FCF/share ~$9.65) implies only ~3.0-3.3% perpetual FCF growth is needed to justify $147.81 on a pure cash-flow basis, but the EPS-growth narrative embedded in the 20x multiple (per triage) requires closer to my base case of 5-7%, which the FY2027 guide only barely supports -- hence sizing small rather than full weight."
+      },
+      "scenario_returns_3y": {"bear": 0.01, "base": 0.09, "bull": 0.17},
+      "scenario_basis": "Base: FY2027 EPS ~$7.35 growing ~6-7%/yr as core-win pipeline converts and margin expansion resumes past FY2027, exit at ~20x forward P/E, plus ~1.6% dividend yield; bear assumes margin pressure persists and multiple compresses to ~16-17x; bull assumes the record win pipeline drives EPS growth back to ~10%+ with multiple expansion toward 23-24x."
+    }
+  }
+}

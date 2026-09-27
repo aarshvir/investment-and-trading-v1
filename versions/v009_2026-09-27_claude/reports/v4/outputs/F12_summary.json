@@ -1,0 +1,108 @@
+{
+  "agent": "F12",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "DG": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "America's largest small-town discount retailer, cheap versus its own history, with sales and profit genuinely recovering after a bad 2023-2024 stretch.",
+      "kill_criteria": [
+        "Same-store sales growth turns negative for two consecutive quarters (from +3.5% currently).",
+        "Full-year diluted-EPS guidance is cut versus the prior quarter's range (four straight raises to date; a cut would break the trend).",
+        "Net debt / TTM EBITDA rises above 2.5x (currently ≈0.85x).",
+        "The Board suspends or fails to execute materially against the \"up to $700 million\" FY2026 buyback authorization.",
+        "A new OSHA penalty or DOJ/regulatory safety action exceeding $5 million, or the securities class action is reinstated with an expanded class/damages theory."
+      ],
+      "key_adverse_facts": [
+        "Cumulative OSHA safety penalties exceed $15m since 2017 (incl. $12m corporate-wide settlement, July 2024) -- a recurring, structural compliance issue, not a one-off.",
+        "Shareholder securities class action (Washtenaw County Employees' Retirement System v. Dollar General Corp., M.D. Tenn.) was dismissed without prejudice in June 2025 but remains unresolved; plaintiffs sought leave to amend as of Aug 2025.",
+        "H1 FY2026 operating cash flow fell 17.5% YoY and free cash flow fell 34.1% YoY despite rising net income, driven by working-capital timing (inventory build + tax-payment timing).",
+        "Roughly 40% (about $0.25 of a ~$0.60 midpoint raise) of the FY2026 EPS guidance increase from Q1 to Q2 is attributable to a one-time tariff-refund benefit that management explicitly says will not repeat in the second half."
+      ],
+      "data_conflicts": [
+        "None material identified. Q4 FY2024/FY2025 EPS and other Q4 figures were derived by subtracting 9-month YTD XBRL facts from annual 10-K XBRL facts (a necessary technique since DG, like most filers, does not separately tag a discrete Q4); every derived figure that could be cross-checked against the company's own press release matched exactly (e.g., derived Q4/FY2025 diluted EPS of $1.93 matched the press release's $1.93 precisely)."
+      ],
+      "next_earnings_date": "2026-12-03",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": {
+        "level": "medium",
+        "reason": "The broad-based same-store-sales/traffic recovery and the rare (7th-percentile) valuation are independently verified from primary sources, but roughly 40% of the most recent guidance raise is one-off (tariff refund) or tax-assumption driven rather than organic, and a recurring workplace-safety compliance problem plus unresolved securities litigation are real, unquantified tail risks to the 'clean execution' the base case implicitly assumes."
+      },
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.3468,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "V1's base-case margin assumption (5.8% by year 3) and exit multiple (19.0x) are conservative, not aggressive, relative to what FY2026 guidance already implies (~5.6-5.7% full-year margin) and DG's own pre-2023 trading multiples; I agree the stock is statistically cheap on both an absolute and reverse-DCF-implied-growth basis, but flag that the recovery's durability beyond disclosed one-off tailwinds (tariff refunds, a lower tax-rate assumption) has not yet been tested for a full year."
+      }
+    },
+    "ABNB": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The world's largest home-rental marketplace, generating strong cash and buying back stock, priced for continued growth despite spreading rental regulation.",
+      "kill_criteria": [
+        "FY revenue-growth or Adjusted EBITDA-margin guidance is cut versus the immediately prior quarter's guidance (four straight raises/holds to date).",
+        "Take rate (revenue ÷ GBV) falls for two consecutive quarters on a YoY basis by more than 100bps, stripped of the disclosed RNPL/FX timing effects -- i.e., a genuine, explained monetisation deterioration.",
+        "Diluted weighted-average share count rises YoY for two consecutive quarters (buybacks failing to offset RSU dilution -- currently falling, -4.6% YoY at Q2 2026).",
+        "Net cash (cash + STI - total debt) falls by more than $3 billion in a rolling 12 months outside of a disclosed, board-approved acquisition.",
+        "A new city/national regulatory action (license non-renewal, platform-wide ban or a fine) is disclosed that management itself identifies as covering a \"material\" market, or cumulative disclosed regulatory fines exceed $150 million on a trailing-12-month basis (calibrated off the December-2025 Spain fine)."
+      ],
+      "key_adverse_facts": [
+        "DOJ filed an amended federal housing-discrimination complaint against Airbnb in March 2026 alleging a pattern-or-practice of discrimination, broader than the original single-host claim; unresolved.",
+        "Spain fined Airbnb EUR64 million (~$70m) in December 2025 for advertising unlicensed rentals; Barcelona will not renew any of its 10,101 tourist-apartment licenses when they expire in November 2028; Budapest, Athens and Houston added new short-term-rental restrictions in 2026.",
+        "Implied take rate (revenue/GBV) has been flat-to-down YoY in 3 of the last 4 reported quarters; margin expansion has been entirely cost/leverage-driven, not monetisation-driven.",
+        "New $2.5bn fixed-rate senior notes issued March 2026 (replacing 0% converts) introduced real cash interest expense (~$30m/quarter run-rate) for the first time in the company's history."
+      ],
+      "data_conflicts": [
+        "V1 flags ABNB's own-history percentile as based on only 53 months of trading data -- materially less statistically reliable than DG's (175 months) or DRI's (165 months) bases, and V1's historical_cagr_5y/10y fields are null for ABNB, so the 'priced-for-vs-delivered' cross-check used for DG and DRI is simply unavailable here.",
+        "The peer set used for ABNB's NTM P/E comparison (BKNG, CCL, EXPE, HLT) blends an OTA, a cruise operator and an asset-light hotel franchisor; the resulting peer median (13.1x) should not be read as a precise like-for-like valuation gap.",
+        "ABNB does not appear to tag a standard EarningsPerShareDiluted XBRL concept in the period reviewed; diluted EPS in the dossier is derived as net income / diluted weighted-average shares (both directly XBRL-tagged) and cross-checked against the company's own disclosed basic-share trend."
+      ],
+      "next_earnings_date": "2026-11-05",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": {
+        "level": "medium",
+        "reason": "Operating momentum (four straight quarterly guidance beats/raises), balance-sheet quality (net cash, 37% TTM FCF margin) and genuine share-count reduction are all independently verified, but the valuation is only 'fair' (not statistically cheap), the base case requires further multiple re-rating from an already-premium level, and short-term-rental regulation is spreading geographically rather than stabilising."
+      },
+      "valuation_view_vs_v1": {
+        "v1_verdict": "fair",
+        "v1_base_3y": 0.1880,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "Take rate has not been expanding and the peer set used for the relative-multiple comparison is heterogeneous, so I would not characterise ABNB as cheap; V1's own base case requires the multiple to re-rate further upward from an already-rich 26.3x, which is a materially weaker margin of safety than DG's or DRI's setup (both re-rating toward, not beyond, historical norms). I agree with V1's 'fair' characterisation and do not see grounds to call it cheap or expensive."
+      }
+    },
+    "DRI": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Owner of Olive Garden and LongHorn Steakhouse, growing sales in every restaurant brand at a modest discount to its own normal price.",
+      "kill_criteria": [
+        "Consolidated same-restaurant sales growth turns negative for two consecutive quarters (currently +3.1-4.6% depending on calendar basis).",
+        "Olive Garden (the largest segment, ~42% of FY26 sales) same-restaurant sales turn negative for two consecutive quarters -- it is already the slowest-growing segment (+1.0-2.4%).",
+        "Full-year diluted-EPS guidance is cut versus the prior quarter's range (no cut found in the four releases reviewed).",
+        "Net debt / TTM EBITDA rises above 2.0x (currently ≈1.0-1.1x, but rising within the most recent quarter).",
+        "Cumulative incremental Chuy's-integration or Bahama-Breeze-wind-down charges exceed $50 million beyond what is already disclosed in the FY2026 10-K/8-Ks."
+      ],
+      "key_adverse_facts": [
+        "Consolidated operating margin fell approximately 116bps YoY in the most recently reported quarter (Q1 FY2027); LongHorn's and Fine Dining's full-year FY2026 segment margins each fell 71-92bps despite strong sales growth.",
+        "Q1 FY2027 free cash flow fell 39% YoY; the company funded $405m of dividends and buybacks against only $98.9m of FCF that quarter via a $286m single-quarter increase in short-term debt.",
+        "Retained earnings are negative ($(259.5)m as of 2026-08-30); reported ROE (54.7% per the B1 factor dataset) is flattered by a buyback-shrunk equity base rather than extraordinary returns on capital.",
+        "Ongoing FLSA/tip-credit wage-and-hour litigation (One Fair Wage-affiliated), an industry-standard but unresolved legal-cost item."
+      ],
+      "data_conflicts": [
+        "V1's scenario margin_assumed values (bear 5.2% / base 7.8% / bull 9.2%) are all below V1's own stated current TTM EBIT margin input (11.98%), which I independently confirm from GAAP ($1,582.8m TTM EBIT / $13,210.9m TTM revenue). This could be an intentional conservative fade toward a mid-cycle/segment-profit-style basis, or a scenario-construction basis mismatch; flagged for the V1/lead agent to confirm rather than resolved here.",
+        "The peer set used for DRI's NTM P/E comparison (CMG, DPZ, MCD, SBUX) blends a higher-growth pure-play, two franchise/royalty-heavy global models and one company-owned peer (DRI itself is closest to none of them structurally); the ~9% discount to the blended peer median should be read directionally, not as a precise gap."
+      ],
+      "next_earnings_date": "2026-12-17",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": {
+        "level": "high",
+        "reason": "Four consecutive quarters of guidance that was met or modestly raised (never cut), same-restaurant sales positive in every segment in the two most recent quarters, and a genuine (if modest) valuation discount with no unresolved securities litigation or regulatory-fine overhang; tempered only by a newly-emerging, one-quarter margin-compression and debt-funded-buyback signal that has not yet repeated."
+      },
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.0739,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "Reverse-DCF implied growth (+2.7%/yr) is well below DRI's delivered 5-year (+12.9%) and 10-year (+6.7%) CAGRs and below FY2027's own guided growth rate; I agree DRI is modestly cheap. I flag (see data_conflicts) that V1's own scenario margin assumptions sit below its stated current EBIT margin input, which if it is an intentional conservative fade would mean the base case is, if anything, understated rather than overstated."
+      }
+    }
+  }
+}

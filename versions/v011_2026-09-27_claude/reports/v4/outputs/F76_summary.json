@@ -1,0 +1,101 @@
+{
+  "agent": "F76",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "KEY": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Regional bank whose interest income has grown for eight straight quarters since a 2024 balance-sheet reset backed by a $2.8 billion Scotiabank investment.",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "med - the eight-quarter NII uptrend and the Scotiabank capital terms are directly confirmed in primary filings, but the ~9%/yr implied growth relies on that trend continuing, which is not yet tested across a full rate/credit cycle",
+      "kill_criteria": [
+        "Net interest income (consolidated, quarterly) falls quarter-over-quarter for two consecutive quarters (vs. eight straight quarters of increases through Q2 2026)",
+        "CET1 ratio (KeyCorp, consolidated) falls below 9.5% (vs. 11.17% now and a 7.70% regulatory minimum+buffer)",
+        "Net charge-offs (consolidated, quarterly) exceed 75bps for two consecutive quarters (vs. 42bps now)",
+        "Diluted EPS growth YoY turns negative for two consecutive quarters (excluding the already-disclosed Q3 2024 repositioning loss)",
+        "Scotiabank reduces its stake below 5% or the board-representation/standstill terms are renegotiated adversely"
+      ],
+      "key_adverse_facts": [
+        "Q3 2024 net loss of $410M (EPS -$0.47) was a deliberate securities-portfolio repositioning loss taken alongside the Scotiabank capital raise - large and real, even though the resulting NII uptrend that followed is the basis for the bull case",
+        "ROE (b1, 10.3%) is only middling for a regional bank; profitability recovery is real but not yet best-in-class",
+        "$2.5bn of preferred stock (Series D-H, 5.0-6.2% coupons) sits senior to common dividends",
+        "Regional-bank commercial real estate exposure is an industry-wide risk not independently stress-tested here at standard depth"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-20",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "in_line",
+        "reconciliation": "No V1 row exists for KEY (bank valuation methodology not run by V1 at this ticker). My own reverse DCF implies ~9%/yr 10-year EPS growth at the $20.61 close, versus my evidence-based base case of 7-8%/yr (continuation of the confirmed NII-repricing trend before normalizing) - close to, and arguably marginally above, base, so this is priced as a fair, not a bargain, recovery story."
+      },
+      "scenario_returns_3y": {"bear": -0.03, "base": 0.12, "bull": 0.20},
+      "scenario_basis": "Starting point NTM consensus non-GAAP EPS ~$2.06 (d4 eps_ntm) and current dividend $0.205/qtr ($0.82/yr, ~4.0% yield) at the $20.61 close. Bear: NIM/credit cycle turns unfavorably, EPS growth stalls at 2-4%/yr, multiple compresses toward 8x forward P/E. Base: NII-repricing tailwind continues for 1-2 more years then normalizes (~7-8%/yr EPS growth), multiple holds near today's 9.65x forward, dividend continues at ~4% yield. Bull: NIM expansion and Scotiabank-partnership synergies sustain 10-12%/yr EPS growth, multiple re-rates toward 12x, buybacks continue at the current aggressive pace."
+    },
+    "MDT": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Global medical-device maker whose growth has genuinely reaccelerated and guidance has been raised twice running, clouded by two live, unresolved court-verdict overhangs.",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "high - the guidance-raise track record and both litigation overhangs are directly confirmed and dated in the same primary-source 10-Q and earnings-release exhibits",
+      "kill_criteria": [
+        "FY27 organic revenue growth guidance is cut below the current 7.25%-7.75% range (vs. two consecutive raises through Q1 FY27)",
+        "Net debt/EBITDA (consolidated) rises above 3.0x (vs. approximately 1.9x now)",
+        "The Applied Medical antitrust verdict is upheld on appeal at $500M or more (post-trebling/fees) without a stay",
+        "Hernia-mesh MDL plaintiff count exceeds 20,000 or a second bellwether verdict exceeds $50M",
+        "GAAP-to-non-GAAP EPS gap widens beyond 30% of GAAP EPS for two consecutive quarters (Q1 FY27 gap already 27%)"
+      ],
+      "key_adverse_facts": [
+        "Applied Medical antitrust jury verdict (2026-02-05): $382M in damages, automatically trebled by law (potential ~$1.15bn exposure before fees/injunctive relief sought), unaccrued, under appeal",
+        "Hernia mesh MDL: ~10,500 plaintiffs as of 2026-08-05; first bellwether verdict $88M against Medtronic (2026-08-04), unaccrued, under challenge",
+        "Ongoing, disclosed SEC/DOJ anti-corruption dialogue regarding certain international-market practices (no liability recorded, no charges disclosed)",
+        "SBC rose from $86M to $125M year-over-year in the most recent quarter (+45%), worth monitoring though still small relative to revenue"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-11-17",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "in_line",
+        "reconciliation": "No V1 row exists for MDT (not run by V1 at this ticker). My own reverse DCF implies ~6.7%/yr 10-year non-GAAP EPS growth at the $88.64 close, which sits within (at the low end of) my evidence-based base case of 6-8%/yr - the market is not paying for materially more growth than the company's own newly-raised FY27 guidance already implies."
+      },
+      "scenario_returns_3y": {"bear": 0.02, "base": 0.10, "bull": 0.16},
+      "scenario_basis": "Starting point FY27 non-GAAP diluted EPS guidance midpoint ~$5.97 and current dividend $2.88/yr (3.25% yield) at the $88.64 close, forward P/E 14.4x. Bear: growth reverts to Medtronic's pre-2026 mid-single-digit historical norm and one or both litigation overhangs cost real cash, multiple compresses toward 13x. Base: FY27 guided growth trajectory (7-8%/yr EPS) continues 2-3 more years then moderates, multiple holds near 14-15x, dividend continues at ~3.25% yield. Bull: new product cycles (cardiac ablation, Hugo, Affera/Sphere-9) sustain high-single-to-low-double-digit growth, both litigation items resolve for immaterial amounts, multiple re-rates toward 16-17x."
+    },
+    "MCHP": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Analog-chip maker in a real, confirmed cyclical recovery from a severe inventory correction, but priced for growth above even a bullish decade, on a more levered balance sheet than the headline ratio shows.",
+      "horizon": "n/a - not held; would revisit on a lower entry price or faster deleveraging",
+      "confidence_in_thesis": "high - the guidance-beat streak, gross-margin recovery and $1.485bn mandatory convertible preferred are all directly confirmed in primary-source filings; the reverse-DCF conclusion is the analyst's own model, clearly labelled as such",
+      "kill_criteria": [
+        "Quarterly net sales sequential growth turns negative for two consecutive quarters (vs. five straight quarters of sequential growth through Q1 FY27)",
+        "Net debt/EBITDA (including the mandatory convertible preferred as debt-like) fails to fall below 4.0x within four quarters (vs. approximately 4.4x now)",
+        "Gross margin (GAAP, consolidated) falls back below 58% for two consecutive quarters (vs. 63.2% now)",
+        "A guidance miss (actual net sales below the low end of the company's own guided range) for the first time in the last six quarters",
+        "The company suspends or cuts the common dividend (currently $0.455/share, unchanged through the entire review period)"
+      ],
+      "key_adverse_facts": [
+        "Net debt/EBITDA is 3.4x on the headline consolidated basis (confirming the triage's own flag) and approximately 4.4x once the $1.485bn, 7.50%-coupon mandatory convertible preferred stock (issued 2025-03-25) is counted as debt-like capital",
+        "The triage's cited red flag of a '2024 dividend cut' is not supported by any of five quarterly earnings releases reviewed (Nov 2024 - Aug 2026); the common dividend has been held flat at $0.455/share throughout, described as a 'record' dividend at points - the real capital-structure stress event was the mandatory convertible preferred raise, not a dividend cut",
+        "Beta 1.74 (high) reflects genuine cyclicality; Microchip has been through at least two severe down-cycles in the past decade",
+        "Common share buybacks have been paused/minimal since FY25 while the company prioritizes deleveraging"
+      ],
+      "data_conflicts": [
+        "Triage (Q12_triage.json) cited a '2024 dividend cut' as a red flag; primary-source earnings releases from Q2 FY25 (Nov 2024) through Q1 FY27 (Aug 2026) show the common dividend held flat at $0.455/share throughout, with no cut evidenced in any filing reviewed - the triage appears to have conflated this with the March 2025 mandatory convertible preferred stock raise, which is the real, material capital-structure event"
+      ],
+      "next_earnings_date": "2026-11-05",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": null,
+        "implied_vs_base": "above",
+        "reconciliation": "No V1 row exists for MCHP (not run by V1 at this ticker). My own reverse DCF implies ~12.5%/yr 10-year non-GAAP EPS growth at the $78.69 close, above my evidence-based base case of 8-9%/yr (a 2-3 year cyclical catch-up toward the prior FY23 peak followed by normalization to Microchip's historical structural growth rate) and near the top of my own bull case (13-15%/yr) - the price already requires close to a bull outcome sustained for a full decade, which is the basis for the WATCH verdict under the wave-4 rule that implied growth above base means WATCH, not INCLUDE."
+      },
+      "scenario_returns_3y": {"bear": -0.12, "base": 0.03, "bull": 0.18},
+      "scenario_basis": "Starting point NTM consensus non-GAAP EPS ~$4.10 (d4 eps_ntm) and current dividend $1.82/yr (~2.3% yield) at the $78.69 close, NTM P/E 19.2x. Bear: recovery stalls or a fresh semis down-cycle hits, EPS stays near $3.50 in 3 years, multiple compresses to 14x. Base: cyclical recovery continues moderately, EPS reaches ~$4.80-5.00 in 3 years, multiple normalizes toward 16x (below today's 19.2x), roughly offsetting the EPS gain. Bull: recovery fully plays out, EPS reaches ~$6.00 in 3 years, multiple holds near 20x."
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "agent": "F67",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "GDDY": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "GoDaddy sells domains and web tools to small businesses with sticky renewals, buys back stock aggressively, and trades as if cash flow will shrink.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Core segment organic revenue growth <2% for two consecutive quarters (loss of the pricing/renewal engine).",
+        "Net debt/EBITDA exceeds 3.0x (currently ~1.9x) — leverage discipline breaking down.",
+        "FY2026 free-cash-flow guidance is formally cut below the reaffirmed ~$1.8bn (would break the 3-release execute-to-plan record).",
+        "Adverse final ruling or settlement in Express Mobile, Inc. v. GoDaddy above the disclosed $170m reasonably-possible range, or an injunction affecting core product features (Note 11, 10-Q Q2-26).",
+        "NEBITDA margin guidance cut below the >33% full-year target."
+      ],
+      "key_adverse_facts": [
+        "Jury verdict (2025-11-07), upheld 2026-05-14, that GDDY infringed two Express Mobile Inc. patents; reasonably possible loss exposure $0-$170.0m excluding interest; GDDY appealed to the Federal Circuit 2026-06-15 (10-Q Note 11).",
+        "Stockholders' equity fell to $6.7m at 2026-06-30 (from $237.3m at 2026-03-31) due to buybacks exceeding retained earnings + APIC; essentially no equity cushion, though leverage itself is moderate (net debt/EBITDA ~1.9x).",
+        "Yahoo's raw forwardEps/forwardPE (11.03 / 8.8x) mixes fiscal horizons versus the calendarised NTM figure (pe_ntm 11.1x) — the known v3-audit defect (finding #7); this dossier uses pe_ntm."
+      ],
+      "data_conflicts": [
+        "None material: triage's 'cheap, ~11x NTM P/E' read is confirmed and, if anything, understated by the reverse DCF (implies -7.7%/yr FCF decline priced in)."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "confidence_in_thesis": "high - three consecutive quarters of unchanged-midpoint guidance, >100% FCF conversion, and a reverse DCF that implies a decade of FCF decline for a company whose FCF has grown every recent quarter.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "implied_vs_base": "below",
+        "consistent": true,
+        "reconciliation": "GDDY has no row in v1_valuation_table.csv or v1_valuation.json (checked directly for an exact ticker match; none found), so there is no V1 verdict to reconcile against. This dossier's own reverse DCF (WACC 8.5%, terminal growth 3%, 10-yr stage-1) finds the market pricing -7.7%/yr FCF decline against a guided FY26 FCF of $1.8bn, versus an evidence-based base case of positive mid-single-digit FCF growth (guided ~6% revenue growth, expanding margin, buyback-driven per-share compounding) - implied growth is below the base case."
+      },
+      "scenario_returns_3y": {"bear": -0.05, "base": 0.15, "bull": 0.28},
+      "scenario_basis": "Starting point: FY2026 guided FCF ~$1.8bn (~$14/share on ~126m shares outstanding). Base case: ~6% revenue growth (per guidance), NEBITDA margin holds >33%, ~7%/yr buyback-driven share-count decline, FCF/share CAGR ~13%/yr, exit multiple ~9x P/FCF (vs 8.6x EV/FCF today); no dividend. Bear case: Core segment erosion from AI-website-builder competition halts FCF growth and the multiple stays at 8-9x. Bull case: A&C attach accelerates, multiple re-rates toward 12x as the market recognizes execution consistency."
+    },
+    "GEHC": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "GE HealthCare makes scanners and diagnostics hospitals depend on, with record orders, but tariffs and a weak unit forced one guidance cut.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "A second FY2026 guidance cut (Adjusted EBIT margin below 15.4% or Adjusted EPS below $4.80) at Q3 or Q4-2026.",
+        "Full-year 2026 free cash flow prints below ~$1.4bn (a >10% miss to the already-cut ~$1.6bn guide), given H1's ~19% FCF/NI conversion.",
+        "Net debt/EBITDA rises above 3.0x (currently ~2.2x, post-Intelerad).",
+        "Patient Care Solutions strategic review results in a value-destructive divestiture (large impairment or dis-synergy loss) rather than a clean exit.",
+        "Organic revenue growth falls below 3% for two consecutive quarters (breaking the low end of the reaffirmed 3.0-4.0% guide)."
+      ],
+      "key_adverse_facts": [
+        "FY2026 guidance was cut at the Q1-26 release (2026-04-29): Adjusted EBIT margin 15.8-16.1% -> 15.4-15.7%; Adjusted EPS $4.95-$5.15 -> $4.80-$5.00; FCF ~$1.7bn -> ~$1.6bn, citing tariffs/inflation and the Intelerad acquisition; Q2-26 reaffirmed the cut guide rather than restoring it.",
+        "Q2-26 net income of $561m includes a $129m one-off IEEPA tariff-refund benefit (of which $106m relates to 2025 costs); ex this, headline 15.4% net-income growth is materially overstated. Adjusted EBIT margin was actually down 40bps YoY.",
+        "H1-2026 free cash flow was only $180m against $985m of net income (~18% conversion); cash fell from $4,512m to $2,105m and goodwill rose $1,606m, consistent with the $2.3bn Intelerad acquisition (closed 2026-03-18) funded partly by new debt (long-term borrowings $9,495m -> $10,091m).",
+        "Patient Care Solutions segment is explicitly described by the CEO as 'challenged' and under strategic review as of the Q2-26 release."
+      ],
+      "data_conflicts": [
+        "SEC's XBRL companyfacts/frames endpoint for CIK 1932393 had not ingested the Q2-2026 10-Q (filed 2026-07-29) as of retrieval (2026-09-26) - confirmed by a zero-row check across every us-gaap tag for end date 2026-06-30; the Q2-26 earnings-release exhibit (8-K Ex-99, same accession family) was used as the primary source for that quarter instead.",
+        "Triage (Q07_triage.json) called GEHC 'cheap...even with China/tariff noise' at 12.6x NTM P/E on general knowledge, without checking the guidance cut; this dossier confirms the tariff/margin concern is real and already realized, moving the valuation view from an implicit 'cheap' to 'fair'."
+      ],
+      "next_earnings_date": "2026-10-28",
+      "confidence_in_thesis": "medium - the aftermarket/backlog story is real and filing-confirmed (book-to-bill 1.15x, backlog $23.9bn), but a guidance cut plus weak FCF conversion in the same year are genuine, unresolved earnings-quality concerns.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "implied_vs_base": "in_line",
+        "consistent": true,
+        "reconciliation": "GEHC has no row in v1_valuation_table.csv or v1_valuation.json (checked directly; none found). This dossier's own reverse DCF (WACC 8.0%, terminal growth 3%, 10-yr stage-1) finds the market pricing +5.0%/yr FCF growth against the company's own ~$1.6bn FY26 FCF guide, versus an evidence-based base case of 5-7%/yr (3-4% guided organic growth plus margin recovery once tariff refunds and Intelerad integration normalize) - implied growth sits at the cautious end of, but within, the base-case range, i.e. in line rather than below."
+      },
+      "scenario_returns_3y": {"bear": -0.08, "base": 0.09, "bull": 0.22},
+      "scenario_basis": "Starting point: FY2026 Adjusted EPS guide $4.80-$5.00 (~$4.90 base), plus a ~0.2-0.3% dividend yield. Base case: ~5%/yr EPS CAGR as tariff drag fades and Intelerad integrates, exit multiple ~13x (vs 12.6x NTM today). Bear case: a second guidance cut and a costly PCS divestiture keep the multiple at ~11x. Bull case: backlog conversion accelerates, PCS turns around, multiple re-rates to ~15x closer to imaging-equipment peers."
+    },
+    "HONA": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Honeywell's aerospace parts business is high quality, but the spin-off loaded it with $16 billion in new debt paid mostly to its old parent.",
+      "horizon": "revisit after 2-3 quarters of standalone reporting",
+      "kill_criteria": [
+        "A second cut to FY2026 organic growth or adjusted-EBIT guidance at the next (Q3-2026) release.",
+        "Net debt/EBITDA (estimated) rises above ~3.75x, or a credit-rating downgrade is disclosed (no rating was located in the documents reviewed).",
+        "2H-2026 free cash flow prints below the low end of the $1.0-1.5bn guide.",
+        "Engines and Power Systems segment adjusted EBIT remains negative YoY (currently -32%) for two consecutive quarters.",
+        "Interest and other financial charges exceed $220m/quarter on a sustained basis (vs $200m in Q2-26)."
+      ],
+      "key_adverse_facts": [
+        "On 2026-03-16, in connection with the spin-off, HONA issued $16.0bn of senior unsecured notes; per the 10-Q cash-flow statement, ~$15.1bn of the ~$15.8bn proceeds ($6.0bn in notes plus $9.1bn cash) was distributed to parent Honeywell as partial consideration for contributed assets - the debt funded a payment to the parent, not growth capital retained by HONA.",
+        "Net debt is now an estimated $14.9-15.0bn against an estimated ~$4.9bn of EBITDA (~3.1x net debt/EBITDA, this analyst's estimate; the company does not publish EBITDA or a leverage ratio) - a materially levered capital structure that did not exist under the single-A-rated Honeywell parent.",
+        "At its very first standalone earnings release (2026-08-05), the company cut FY2026 organic sales growth guidance from 7-9% to 4-5% and pro forma standalone adjusted EBIT from $4.65-4.75bn to $4.35-4.45bn, citing supply-chain constraints; Engines and Power Systems segment adjusted EBIT fell 32% YoY in Q2-26.",
+        "H1-2026 operating cash flow fell 66% YoY ($346m vs $1,025m) and free cash flow was near zero (~$86m vs ~$791m), driven by the net-income drop plus working-capital consumption (AR -$365m, inventory -$165m)."
+      ],
+      "data_conflicts": [
+        "Triage (Q08_triage.json) called HONA 'cheap' at 18.8x NTM P/E versus GE/HWM/TDG peers and 'one of the highest-quality aerospace aftermarket franchises,' sourced to general knowledge and 2025 breakup-plan disclosures - not the actual spin-off debt structure or the first earnings release. This diligence's primary-source findings (the $16.0bn debt issuance funding a distribution to the parent, and the first-quarter guidance cut) are not reflected in the triage and move the call from advance-as-cheap to WATCH.",
+        "b1_live_scores.csv could not compute a composite for HONA ('insufficient_families_no_composite') given its lack of price/return history - the triage 'advance' call was not quant-corroborated."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "confidence_in_thesis": "low - only one quarterly report exists as a standalone company, guidance was already cut once, and this dossier's leverage/EBITDA figures are estimates because the company does not itself publish EBITDA or a leverage ratio.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "HONA has no row in v1_valuation_table.csv or v1_valuation.json (checked directly; none found - it is also too new for any point-in-time universe). This dossier's own reverse DCF (WACC 8.5%, terminal growth 3%, 10-yr stage-1, base FCF an estimated normalized $2.5bn/yr since actual FY26 FCF is transaction-cost- and working-capital-distorted) finds the market pricing +7.3%/yr FCF growth, versus an evidence-based base case of mid-single-digit growth consistent with the freshly cut guidance and a new ~$800m/yr interest burden - implied growth is above the base case."
+      },
+      "scenario_returns_3y": {"bear": -0.10, "base": 0.03, "bull": 0.16},
+      "scenario_basis": "Starting point: FY2026 pro forma standalone adjusted EPS guide $7.60-$7.90 (~$7.75 base); no dividend policy was confirmed in the filings reviewed. Base case: mid-single-digit EBIT growth per the cut guidance, ~$800m/yr interest expense continues with minimal debt paydown over 3 years, exit multiple holds near today's ~18-19x. Bear case: a second guidance cut plus continued Engines and Power Systems weakness compress the multiple to ~14-15x. Bull case: supply constraints ease, aftermarket mix improves, gradual deleveraging begins, and the multiple holds near 19-20x on above-plan growth."
+    }
+  }
+}

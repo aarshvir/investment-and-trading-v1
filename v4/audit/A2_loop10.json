@@ -1,0 +1,32 @@
+{
+  "total": 89,
+  "criteria": {
+    "1": 9,
+    "2": 8,
+    "3": 8,
+    "4": 9,
+    "5": 9,
+    "6": 10,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "must_fix": [
+    "RSG's unsourced '+5.2%/+4.4% related-business growth' figure was bracketed but left in the dossier body rather than corrected in place; extend the pre-check to flag any quoted percentage (not just guidance) that cannot be traced verbatim to a cited source.",
+    "RSG's 27.0x NTM P/E is the highest multiple in the portfolio outside SaaS/VEEV, with no reader-visible flag in the §6 ranked table explaining why the premium is still justified.",
+    "FINAL_REPORT §1's 'that completes the queue' phrasing risks being read as diligence being permanently finished rather than complete as of today's filings before the next earnings season; add the qualifying clause directly in that sentence."
+  ],
+  "fact_checks": [
+    {"ticker": "RSG", "claim": "Q2 2026 revenue $4,430m; net income $566m; GAAP diluted EPS $1.84", "source": "SEC XBRL companyfacts + 8-K Ex-99.1 accession 0001060391-26-000273 (via DA19)", "status": "PASS"},
+    {"ticker": "RSG", "claim": "FY2026 guidance raised at Q2'26 release: revenue $17.200-$17.300B, adjusted EBITDA $5.525-$5.550B, adjusted diluted EPS $7.23-$7.28, adjusted FCF $2.540-$2.575B", "source": "RSG Q4'25 and Q2'26 8-K Ex-99.1 releases, accessions 0001060391-26-000093 and 0001060391-26-000273 (via DA19)", "status": "PASS"},
+    {"ticker": "RSG", "claim": "Net debt/adjusted EBITDA ≈ 2.5x at 2026-06-30", "source": "SEC XBRL companyfacts, CIK0001060391 (via DA19); independently re-derived 13,962/5,537.5=2.52x", "status": "PASS"},
+    {"ticker": "RSG", "claim": "Kill criterion 1 cites +5.2%/+4.4% related-business growth in Q1/Q2'26", "source": "RSG Q1 2026 and Q2 2026 8-K Ex-99.1 releases (via DA19); figures not traceable verbatim to either release", "status": "FAIL"},
+    {"ticker": "LH", "claim": "Q2 2026 revenue $3,731.1m; GAAP diluted EPS $3.64; adjusted diluted EPS $4.99", "source": "SEC XBRL companyfacts + 8-K Ex-99.1 accession 0000920148-26-000162 (via DA19)", "status": "PASS"},
+    {"ticker": "LH", "claim": "Results table row labelled '2Q'25' (revenue $3,563.5m, op income $396.6m, GAAP EPS $3.12)", "source": "SEC XBRL companyfacts CIK0000920148 + Q3 2025 10-Q accession 0000920148-25-000096 (via DA19); figures are actually true, isolated Q3 2025 data, not Q2 2025", "status": "FAIL"},
+    {"ticker": "LH", "claim": "FY2026 guidance raised two quarters running (Q1'26 and Q2'26 releases)", "source": "8-K Ex-99.1 accessions 0000920148-26-000135 and 0000920148-26-000162 (via DA19)", "status": "PASS"},
+    {"ticker": "WEC", "claim": "§6 holding thesis is a complete sentence, not a placeholder", "source": "Direct read of FINAL_REPORT.md §6 and grep for 'pending' string (no match)", "status": "PASS"},
+    {"ticker": "PORTFOLIO", "claim": "20 weights sum to 100% and Financials sector sits exactly at the 25% cap", "source": "outputs/lead_portfolio_build.json table/weights/sector fields, independently re-summed", "status": "PASS"},
+    {"ticker": "PORTFOLIO", "claim": "n_in_every_ordering = 6 (ADP, CRH, GDDY, TJX, USB, VEEV) and GFC-replay range -54% to -47% across alternative orderings", "source": "outputs/lead_j_sensitivity.json, independently recomputed", "status": "PASS"}
+  ]
+}

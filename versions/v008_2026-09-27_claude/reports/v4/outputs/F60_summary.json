@@ -1,0 +1,116 @@
+{
+  "agent": "F60",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "DASH": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The largest US food-delivery app, now genuinely profitable and beating its own growth guidance, but facing real gig-worker regulatory risk.",
+      "kill_criteria": [
+        "Marketplace GOV YoY growth falls below 20% for two consecutive quarters",
+        "Adjusted EBITDA margin (% of GOV) declines YoY for two consecutive quarters",
+        "Any final ruling or settlement reclassifying Dashers as employees in California or another large state",
+        "Net cash (cash + investments - debt) declines by more than $1B in two consecutive quarters outside a disclosed acquisition",
+        "GAAP operating margin below 2% for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "California EDD assessment (issued Jan 2023) alleges Dashers should be classified as employees; DASH is contesting and has accrued an undisclosed amount (10-Q, Q2-2026, Item legal proceedings)",
+        "10-Q discloses ongoing multi-jurisdiction regulatory investigations/audits on Dasher classification, pay models, consumer protection, privacy/cybersecurity, tax and unemployment insurance",
+        "Large and persistent GAAP-vs-Adjusted-EBITDA gap (~$758M in Q2-2026 alone), driven mainly by stock-based compensation - GAAP operating margin (3.5-7.5%) is far below the adjusted-EBITDA framing management emphasizes",
+        "Secondary sources report a ~$131.5M multi-state worker-payment settlement (NYC/NY/IL/DC) that I could not verify against a primary SEC filing in the time available",
+        "Operating margin has been volatile quarter to quarter (3.5% to 7.5% over the last 8 quarters), not steadily improving, due to Deliveroo integration costs and Dasher-incentive/weather items called out by management"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-11-04",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (strong primary-source financial trend; regulatory outcome and durability of the recent buyback/margin trajectory are genuinely uncertain)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for DASH. My own reverse DCF (TTM FCF $1,933M, WACC ~11%, 3% terminal growth) implies the market is pricing ~19-20%/yr FCF growth over 10 years, below both trailing revenue growth (33-38%/yr) and my own base-case assumption (~22%/yr), i.e. the stock is not pricing in DASH's full demonstrated growth.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.137,
+        "base": 0.105,
+        "bull": 0.306
+      },
+      "scenario_basis": "TTM FCF $1,933M (OCF $2,830M - total capex ~$897M); FCF grown at bear 10%/base 22%/bull 30% per year for 3 years, exited at EV/FCF 20x/30x/40x respectively, plus net cash roll-forward (~$3.0B/$5.5B/$6.0B) divided by ~420-439M shares; no dividend (DASH pays none)."
+    },
+    "DELL": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A legacy PC and server maker turned major AI-server integrator with a $95 billion order backlog, priced almost exactly at its own newly raised earnings guidance.",
+      "kill_criteria": [
+        "AI-server backlog declines quarter-over-quarter (vs $95B at Q2 FY2027) for two consecutive quarters",
+        "FY2027 non-GAAP EPS guidance is cut from the current $25.50",
+        "Core debt (ex-DFS financing, currently ~$24.9B) rises above $30B without proportional ISG operating-income growth",
+        "Consolidated operating margin compresses by more than 300 bps YoY in any quarter (most recent quarter 11.5%)",
+        "Loss or pause of any single disclosed customer/contract representing more than 10% of ISG revenue (concentration not yet quantified from filings reviewed - criterion to be tightened once segment data is located)"
+      ],
+      "key_adverse_facts": [
+        "Total consolidated debt is $34.5B, of which $9.6B is DFS (captive-finance) debt tied to customer leases - a real balance-sheet risk if AI-server demand reverses and receivable credit quality deteriorates, distinct from the ~$24.9B of core corporate debt",
+        "Guidance has been raised twice within the same fiscal year by very large increments (revenue guide midpoint +15%, EPS guide +42% from Q1 to Q2 FY2027 alone), signalling AI-server order timing is genuinely lumpy and hard to forecast - the same dynamic that produced the upside surprises could produce a downside one",
+        "Revenue and backlog growth are concentrated in Nvidia-platform rack integration for a small set of hyperscale/AI customers - a customer loss or a shift to buying direct from ODMs would hit disproportionately",
+        "10-Q Item 1 (Legal Proceedings) text could not be fully retrieved in the time available; litigation status is not confirmed clean, only that no material litigation surfaced in web searches",
+        "Quarterly (as opposed to annual) operating cash flow could not be fully isolated from cumulative YTD XBRL tags for the two most recent quarters in the time available"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-12-04",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (backlog and guidance track record are strong and primary-sourced; customer concentration and DFS financing risk are real and not fully quantifiable from the disclosures reviewed)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for DELL. At $562.89 the stock trades at 22.1x its own just-raised FY2027 non-GAAP EPS guide of $25.50, matching the triage agent's independent 22x NTM P/E read almost exactly - i.e. the price already reflects the guide, with little extra multiple expansion priced in. My own 3-year scenario (base case +4.8%/yr) implies the market is pricing in growth roughly in line with a reasonable deceleration path, not clearly below it.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.152,
+        "base": 0.048,
+        "bull": 0.192
+      },
+      "scenario_basis": "EPS0 = $25.50 (FY2027 non-GAAP guide, already ~half-delivered); EPS grown at bear 5%/base 18%/bull 30% per year for 2 more years to a year-3 EPS of $28.1/$35.5/$43.1; exit P/E of 12x/18x/22x respectively; plus ~$7 cumulative dividends; ~640-660M diluted shares."
+    },
+    "FIX": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The leading mechanical/electrical contractor for data-center construction, with record backlog and margins, but priced for continued perfection with no margin of safety.",
+      "kill_criteria": [
+        "Same-store backlog growth turns negative for two consecutive quarters (vs +69% same-store at Q2-2026)",
+        "Technology/data-center segment revenue share falls below 45% of total revenue for two consecutive quarters (vs 58% at H1-2026)",
+        "Operating margin compresses by more than 200 bps YoY in any quarter (vs 17.1% at Q2-2026)",
+        "Net insider selling exceeds $100M in any rolling 6-month window with zero offsetting purchases (trailing-year run-rate already ~$152M)",
+        "Diluted EPS YoY growth falls below 15% for two consecutive quarters (vs 56-91% currently)"
+      ],
+      "key_adverse_facts": [
+        "The quant pipeline's TTM revenue ($3.96B) and TTM EBIT ($0.74B) inputs used in v4/outputs/v1_valuation.json are wrong by ~2.8x due to a filer XBRL tagging bug (FIX's Q1-2026 10-Q duplicate-tagged Q1-2025 quarterly figures with full-calendar-year-2025 date range); true TTM revenue is $11.23B and TTM EBIT is $1.85B (verified against the FY2025 10-K and each quarterly filing)",
+        "This data bug invalidates V1's FIX-specific reverse DCF (74.7% implied growth, -51.8%/yr base case, and the 'below Street target' flag are all artefacts of the bug, not real findings)",
+        "Heavy insider selling: CEO and CFO sold a combined ~$82M in Feb 2026 alone; ~$152M of insider sales over the trailing year with zero purchases (secondary-source Form 4 aggregation, not independently re-derived from each Form 4)",
+        "Revenue/backlog growth is concentrated in one end market (data-center/hyperscaler capex, now 58% of revenue vs 40% a year ago) - a genuine single-cycle dependency, not a diversified growth story",
+        "At 29.0x NTM P/E (73rd percentile of FIX's own 10-year history), even the corrected reverse DCF shows the market pricing in growth roughly at, not below, my own base case"
+      ],
+      "data_conflicts": [
+        "D3/V1 TTM revenue for FIX ($3,957,669,000) and TTM EBIT ($743,811,000) conflict with the primary-source 10-K/10-Q figures (TTM revenue $11,228,024,000 matching D4's Yahoo cross-check exactly; TTM EBIT $1,849,302,000), traced to an XBRL duplicate-context tagging bug in FIX's own Q1-2026 10-Q filing. All other V1 inputs for FIX (OCF, capex, SBC, net debt, shares, market cap, EV0, cost of capital, NTM P/E and its own-history percentile) were independently re-derived from the filings and matched V1 exactly."
+      ],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "high on the business-quality and data-conflict findings; medium on the WATCH-vs-INCLUDE-SMALL line, which is a close judgement call given a near-flat base-case return",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": -0.5183752397033714,
+        "dossier_view": "fair",
+        "consistent": false,
+        "reconciliation": "I disagree with V1's 'excessive' verdict and its deeply negative scenario returns: they are built on a TTM revenue/EBIT input that is wrong by ~2.8x due to a filer XBRL tagging bug (see data_conflicts). V1's NTM P/E (29.0x), own-history percentile (73rd) and peer comparison are correct and unaffected. Recomputing V1's own reverse-DCF method with the corrected revenue/EBIT base implies ~11.6%/yr 10-year FCF growth priced in (vs V1's 74.7%), which is roughly in line with, not clearly below, my own base-case growth path - supporting 'fair', not 'excessive' or 'cheap'.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.215,
+        "base": 0.012,
+        "bull": 0.144
+      },
+      "scenario_basis": "TTM diluted EPS $40.64 (GAAP, FIX reports no non-GAAP measure); EPS grown to ~$49/$60/$70 (base), ~$49/$51/$54 (bear) or ~$50/$65/$85 (bull) over 3 years; exit P/E of 16x (bear)/24.4x (base, V1's own calibrated multiple)/29x (bull, current); plus ~$11 cumulative dividends; ~35.25M diluted shares."
+    }
+  }
+}

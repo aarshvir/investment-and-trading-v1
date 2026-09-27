@@ -1,0 +1,81 @@
+{
+  "agent_id": "f7",
+  "role": "Fundamental diligence analyst",
+  "prepared": "2026-09-26",
+  "information_cutoff": "2026-09-25 close",
+  "note_on_inputs": "b1_live_scores.csv was not ready; used lead_prelim_rank.csv (QVM-only preliminary composite, S/earnings-momentum family not yet live) and d4_live_snapshot.parquet for quant context, per lead instruction.",
+  "tickers": {
+    "CF": {
+      "verdict": "REJECT",
+      "horizon": "n/a (rejected); would revisit as WATCH on a pullback toward mid-cycle valuation (~$85-95/share) or evidence the nitrogen supply loss is becoming structural rather than reversible",
+      "kill_criteria": [
+        "De-escalation of the Iran conflict / Strait of Hormuz reopening -> >25% pullback in benchmark urea/UAN prices within two quarters",
+        "Two consecutive quarters of GAAP operating margin below 30% (reverting toward the 24% ten-year median)",
+        "Net debt/EBITDA (mid-cycle-adjusted) > 2.5x",
+        "Yazoo City restart slips again past H1 2027, or investigation yields a materially larger fine/permanent capacity loss",
+        "Global nitrogen capacity additions (Blue Point, Dangote, others) outpace ~1.5%/yr demand growth"
+      ],
+      "key_adverse_facts": [
+        "Q2 2026 GAAP operating margin 50.5% is ABOVE the prior all-time-peak quarter (2022); 10-year median margin is ~24% - textbook low-P/E-at-peak setup (trailing P/E 8.67x)",
+        "Management explicitly attributes the spike to the Iran conflict / Strait of Hormuz disruption curtailing 50-60% of Middle East ammonia/urea capacity at points in 2026 - a named, live, geopolitical (likely transient) shock, not a structural change",
+        "Street is cutting FY2026 EPS estimates in real time even as the quarter beat: consensus fell from $17.61 (90d ago) to $15.10 (now), 6 down vs 0 up revisions in the last 30 days",
+        "Yazoo City ammonia release/explosion (2025-11-05) forced a town-wide shelter-in-place order; restart guidance slipped from 'Q4 2026 at earliest' (May 2026) to 'H1 2027' (Aug 2026); cumulative impairments ~$48M plus a separate unrelated $51M Donaldsonville electrolyzer impairment; active plaintiffs'-bar solicitation suggests pending toxic-tort litigation exposure",
+        "Quarterly dividend raised 20% (to $0.60/share) in July 2026, and buybacks were aggressive in H1 2026 - both declared right at what this dossier finds is a cyclical peak",
+        "H1 2026 GAAP EPS embeds ~$265M of pre-tax one-off gains (litigation settlement $170M, insurance recoveries, 45Q credits) on top of an already-elevated cyclical base"
+      ],
+      "data_conflicts": [
+        "None material found versus SEC filings for CF's core financials; d4/pipeline NTM and revision figures were used only as cross-checks and were consistent with the primary-source picture"
+      ],
+      "next_earnings_date": "2026-11-04",
+      "confidence_in_thesis": {"level": "high", "reason": "Multiple independent, primary-sourced lines of evidence (10+ year margin history, real-time analyst downgrades, management's own named transient catalyst, external forecaster consensus on 2027 normalisation) all point the same direction; main uncertainty is timing of the reversal, not its direction."}
+    },
+    "MPC": {
+      "verdict": "INCLUDE-SMALL",
+      "horizon": "12-24 months; revisit sizing after Q3 2026 results",
+      "kill_criteria": [
+        "Refining margin fails to revert toward the $13-19/bbl 2024-2025 band within 1-2 quarters (expected base case; a trigger to re-underwrite size, not necessarily exit)",
+        "FY2026 actual EPS materially misses the $55.73 consensus (e.g. prints below ~$35-40)",
+        "Consolidated net debt/EBITDA exceeds ~3.5x on a normalised (non-spike) EBITDA base - verify exact figure against the 10-K debt note",
+        "MPLX distribution growth is cut or its own Adjusted EBITDA becomes materially more volatile",
+        "A second consecutive quarter of guidance cuts (opex/bbl rising or throughput guided down without a stated turnaround reason)"
+      ],
+      "key_adverse_facts": [
+        "Q2 2026 refining margin $36.33/bbl is >2x the Q1 2026 and full-2025 run-rate ($16-18/bbl), jumped simultaneously across all three regions - a broad macro shock (very likely the same Iran-conflict disruption inflating CF's nitrogen margins), not company-specific improvement",
+        "Buying both CF and MPC together is a correlated bet on the same transient geopolitical driver, not two independent theses - a portfolio-construction concentration point for the lead",
+        "H1 2026 actual GAAP EPS ($19.46) implies the FY2026 consensus of $55.73 needs an H2 2026 acceleration BEYOND Q2's blowout print to be realised; 90-day estimate revisions show analysts chasing the print upward in real time (pipeline's own ntm_flags notes 'extreme dispersion') rather than a converged view - the 'cheap' 7.96x NTM P/E may not be reliable",
+        "Consolidated net debt/EBITDA has risen from ~0.7x (FY2022) to an estimated ~2.5x (FY2025) through the trough years",
+        "Capital return was cut hardest in 2025 (buybacks fell to $3.5B from $11.9B in 2022) and re-accelerated in 2026 exactly as margins spiked - the opposite of disciplined counter-cyclical buying"
+      ],
+      "data_conflicts": [
+        "Pipeline TTM revenue ($77.4B) vs COGS ($134.4B) implies a negative $57B gross profit - a clear pipeline data error; actual FY2025 revenue was $132.7B and this dossier's own TTM estimate is ~$153.6B per SEC XBRL/10-K",
+        "Pipeline 'actual/yago' EPS fields for MPC (FY2025 = $10.70) are Marathon's ADJUSTED (non-GAAP) EPS, not GAAP ($13.22 per the 10-K/earnings release) - unlabelled in the pipeline, which risks exactly the GAAP/adjusted mixing the prior audit (lead_v3_audit.md) flagged",
+        "Pipeline consolidated debt (~$5.4B) is far below the actual $32.8-32.9B (MPC $7.2B + MPLX $25.6B) as of Q2 2026; pipeline cash ($7.768B) DOES match exactly, so the error is specific to debt/revenue/COGS fields, not systemic"
+      ],
+      "next_earnings_date": "2026-11-03",
+      "confidence_in_thesis": {"level": "medium", "reason": "The cyclical-spike evidence is as strong as CF's, but MPLX provides a genuinely evidenced, non-cyclical offsetting factor CF lacks, which is why this is INCLUDE-SMALL rather than REJECT; confidence is capped at medium because several balance-sheet figures (annual debt series) were estimated rather than directly extracted this pass."}
+    },
+    "PCAR": {
+      "verdict": "INCLUDE",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Truck segment margin fails to continue improving beyond Q2 2026's 6.9% for two more consecutive quarters",
+        "NA Class 8 retail sales guidance is cut below the 230,000 floor (currently maintained at 230,000-270,000 across three releases)",
+        "PACCAR Parts segment margin drops meaningfully below its ~23-24% band",
+        "Clear evidence emerges of a 2026 emissions pre-buy followed by a 2027-2028 order air-pocket",
+        "A cut to the FY2025-established $1.40/share special dividend"
+      ],
+      "key_adverse_facts": [
+        "FY2025 GAAP EPS $4.51 was down 42.9% from FY2023's peak ($8.76) - the Truck segment (not Parts/FS) drove essentially all of the decline (FY2025 Truck margin 4.5%, Q1 2026 still only 3.9%)",
+        "This dossier could NOT independently confirm whether a 2026-2027 emissions 'pre-buy' is inflating current order activity - management's own commentary frames EPA clarity as unlocking deferred demand (constructive), but that is management's framing, not independently verified against neutral industry order/backlog data; Section 232 truck tariffs (effective ~Nov 2025) are an entangled second variable",
+        "Granular segment-level guidance (truck delivery counts, Parts margin range, FS pre-tax range) that the assignment brief expected was NOT found in the press-release exhibits reviewed - only industry-volume and capex/R&D guidance was available; the finer detail likely sits in the earnings-call transcript, which this pass could not access (FMP transcript tool required a higher plan tier)",
+        "Consolidated/PFS-only leverage and debt maturity schedule were not independently verified this pass"
+      ],
+      "data_conflicts": [
+        "None material found versus SEC filings; FY2025 EPS ($4.51) matches exactly between the pipeline, XBRL, and the earnings release - the cleanest cross-check of the three tickers",
+        "Pipeline's operating income, debt and cash fields are blank/NaN for PCAR (noted in the original task brief) - consistent with this dossier's finding that PACCAR's mixed industrial/financial-services XBRL tagging doesn't map to a single consolidated 'operating income' or leverage figure; this is a structural sector-routing issue, not necessarily a pipeline bug"
+      ],
+      "next_earnings_date": "2026-10-27",
+      "confidence_in_thesis": {"level": "medium", "reason": "The trough-not-peak evidence (multi-year margin history, segment mix, consensus not reclaiming the 2023 high) is solid and primary-sourced, but confidence is capped at medium because the pre-buy risk could not be independently ruled out, granular guidance and leverage detail were not accessed this pass, and the red-flag scan (litigation, auditor, insider Form 4) was not completed to the same depth as CF/MPC given time constraints."}
+    }
+  }
+}

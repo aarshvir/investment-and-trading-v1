@@ -136,7 +136,10 @@ for _, r in L.sort_values('live_rank').iterrows():
         reasons = []
         _iv = ''
         if bool(r.exclude_pending_deal): reasons.append('pending takeover')
-        if dl is None:
+        _SECOND_CLASS = {'GOOG': 'GOOGL', 'FOXA': 'FOX', 'NWSA': 'NWS', 'BRK-A': 'BRK-B'}   # one company, two share classes
+        if dl is None and t in _SECOND_CLASS:
+            reasons.append(f'second share class of {_SECOND_CLASS[t]}; the company is judged in the {_SECOND_CLASS[t]} dossier')
+        elif dl is None:
             reasons.append('no diligence dossier')
         else:
             if dl['verdict'] not in ('INCLUDE', 'INCLUDE-SMALL'): reasons.append(f"diligence {dl['verdict']}")
@@ -203,6 +206,10 @@ E = E.sort_values(['_conv', '_marg', '_base', 'rank'], ascending=[True, True, Fa
 #     names x 5% average = the 25% cap. Disclosed honestly: written after wave-3 verdicts showed several new
 #     full-conviction Financials, before any build or weight was computed with them.
 MAX_PER_SECTOR = 5
+# (m) release rule (process, not selection; enforced at packaging by code/lead_verify_gate.py, logged in STATE.md): no name
+#     is released as a holding until code/lead_dossier_precheck.py and code/lead_xbrl_crosstie.py have been run on its
+#     dossier AND an independent DA-series fact-check has checked >=6 load-bearing facts, with every FAIL answered by a
+#     dated Correction section and an inline "[Corrected ...]" marker on the operative sentence.
 sel, subcount, seccount = [], {}, {}
 for _, r in E.iterrows():
     if subcount.get(r['sub'], 0) >= 2:

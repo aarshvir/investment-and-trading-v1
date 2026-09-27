@@ -1,0 +1,70 @@
+{
+  "agent": "F16",
+  "as_of": "2026-09-26",
+  "tickers": {
+    "FRT": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Federal Realty's shopping centers keep raising rents and its 59-year dividend streak continues, but shares are fairly priced now, not a bargain.",
+      "kill_criteria": [
+        "Comparable POI (same-property NOI) growth below 2% for two consecutive quarters (below the recent 2.8-4.9% band).",
+        "Net debt/EBITDAre above ~6.5x, or any covenant cushion closing to within 25% of its minimum/maximum.",
+        "A cut (not merely a tighten) to FFO/Core FFO guidance vs. the immediately preceding quarter.",
+        "Occupancy or leased rate down >100bp YoY for two consecutive quarters.",
+        "The 59-year dividend-increase streak broken, or payout >90% of Core FFO."
+      ],
+      "key_adverse_facts": [
+        "Net debt rose 8.1% in the two quarters to 2026-06-30 (to $4,660.7m) and net debt/EBITDAre sits at ~5.3x; cheap legacy debt (1.25% coupon, $400m repaid 2026-02-17) was refinanced into a materially higher-cost term loan/revolver draw -- a structural, not temporary, interest-expense headwind.",
+        "Headline EPS is increasingly driven by gains on sale/asset recycling ($20.6-113.3m/quarter in Q1-Q2 2026) rather than organic FFO, raising execution/timing risk as portfolio turnover accelerates.",
+        "Corrected valuation removes the statistical-cheapness argument entirely: FRT now trades at ~14.9x P/FFO, near its own 37th(10y)/56th(5y) percentile and in line with the 15.1x REG/KIM/SPG peer median -- no margin of safety remains versus fundamentals alone.",
+        "A 2026-08-11 8-K (items 1.01/2.03/3.02/8.01/9.01) and the full FY2025 10-K critical-audit-matters/related-party/Form 4 review were not completed in the dossier's time-boxed pass -- an open coverage gap, not a clean bill."
+      ],
+      "data_conflicts": [
+        "V1's P/FFO(proxy) of 10.80x and 5.65th-percentile 'near cheapest ever' reading were artefacts of a proxy (GAAP NI + total D&A) that does not exclude realty gains-on-sale; V2R's NAREIT-FFO reconstruction corrects this to 14.94x TTM P/FFO and a 37.2/55.7 (10y/5y) percentile -- FRT is fair, not cheap.",
+        "V1's stated retail-REIT peer median of 31.29x (flagged as implausible in the dossier's own Section 7) is confirmed wrong by V2R: the real peer median (REG/KIM/SPG) is 15.07x, roughly half of V1's figure.",
+        "The b1 quant model's fam_V (value) factor score of 0.714 (Section 3) was corroborated by the same flawed V1 percentile and should likely be discounted alongside the P/FFO reading, though the factor re-score itself was not rerun this pass."
+      ],
+      "next_earnings_date": "2026-10-30",
+      "horizon": "18-36 months",
+      "confidence_in_thesis": "medium - the operating momentum (leasing spreads, occupancy, 8-for-8 guidance raises/maintains) is primary-source-verified and durable, but the corrected valuation removes the statistical margin-of-safety that supported the prior medium-high confidence, and net debt is rising into a higher-rate refinancing environment",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": "+17.7%/yr (base case, 3-year annualized, per v1_valuation_table.csv)",
+        "dossier_view": "fair",
+        "consistent": false,
+        "reconciliation": "V1's 'attractive' verdict and 5.65th-percentile 'near cheapest ever' claim were driven by a P/FFO proxy (GAAP NI + total D&A) that wrongly counted FRT's Q1-Q2 2026 realty gains-on-sale ($20.6-113.3m/quarter) as recurring FFO. V2R's NAREIT-FFO reconstruction corrects this to 14.94x TTM P/FFO (14.70x on FY26 Core FFO guidance), a 37th(10y)/56th(5y) percentile, in line with the 15.07x REG/KIM/SPG peer median. FRT is fair, not a statistical bargain; V1's verdict does not survive, and the dossier's verdict is downgraded from INCLUDE to INCLUDE-SMALL accordingly."
+      }
+    },
+    "HST": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Host owns top hotels with beating forecasts and an improved credit rating; shares trade in line with peers, but next year's comparisons will be tougher.",
+      "kill_criteria": [
+        "Comparable hotel RevPAR growth turns negative for two consecutive quarters (the core, most-watched KPI).",
+        "Adjusted FFO/share guidance is cut (not just raised more slowly) at any quarterly release -- a genuine reversal, not merely deceleration.",
+        "Net debt/EBITDAre rises above ~4.0x (current: 2.95x net debt/EBITDA on ratios.py) without an offsetting asset-sale plan.",
+        "The regular quarterly dividend ($0.20/share) is cut.",
+        "FY2027 comparable RevPAR growth guidance (first given around Feb 2027) comes in below roughly 2% -- the specific, falsifiable test of the '2026 was FIFA-flattered' bear case."
+      ],
+      "key_adverse_facts": [
+        "Corrected valuation confirms HST is priced at the median of its own 10-year P/FFO range (48.8th percentile) and essentially at the peer median (10.95x vs 10.63x) -- not statistically cheap on any basis, removing the one input (V1's 29.2nd-percentile reading) that had supported the original 'attractive' framing.",
+        "FY2026's RevPAR/AFFO acceleration is partly a one-time FIFA World Cup effect; management's own words: 'year-over-year comparisons are expected to moderate' into H2 2026 -- FY2027 is a genuinely harder comp.",
+        "Sourced FY2025 ROE (11.2%) is ~500bps below the 16.1% TTM figure feeding the preliminary quant Quality score, inflated by the Q1 2026 $242m disposition gain.",
+        "Group booking volume described as 'soft' repeatedly across FY2025 releases; Maui properties still described as 'recovering' from 2023 wildfires as of the Q4 2025 release."
+      ],
+      "data_conflicts": [
+        "V1's P/FFO(proxy) of 8.49x and 29.2nd-percentile 'attractive' reading were artefacts of the same proxy flaw: HST's Q1 2026 $242m gain on the 3-hotel sale inflated trailing GAAP net income and hence V1's FFO proxy. V2R's NAREIT-FFO reconstruction (built from 8 quarters of company-reported actuals) corrects this to 10.63x TTM P/FFO and a 48.8th(10y)/57.4th(5y) percentile -- squarely average, not cheap.",
+        "The dossier's own Section 7 peer comparison (10.4x FY26 AFFO guide, in line with PK/RHP/APLE) already anticipated the corrected reading almost exactly (10.36x) -- the correction resolves what the lead's prior reconciliation note (lead_holding_notes.json) treated as merely 'different reference points, not a contradiction' into a confirmed, non-contradictory match.",
+        "Pre-existing, unresolved conflict (dossier Section 3): preliminary quant Quality/ROE input (16.1%) vs sourced FY2025 GAAP ROE (11.2%) -- unaffected by this valuation correction, still flagged."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium-high - the beat-and-raise RevPAR/AFFO cycle, Baa2 upgrade and reverse-DCF's modest embedded growth are unaffected by the correction, and the corrected 48.8th-percentile valuation confirms rather than undermines the dossier's own peer-based 'fair, in line' framing; capped from higher confidence by the FY2027 comp-difficulty risk already flagged in Section 9",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": "+6.2%/yr (base case, 3-year annualized, per v1_valuation_table.csv)",
+        "dossier_view": "fair",
+        "consistent": false,
+        "reconciliation": "V1's 'attractive' verdict and 29.2nd-percentile reading were driven by the same proxy flaw: HST's Q1 2026 $242m gain on its 3-hotel sale inflated trailing GAAP net income and hence V1's FFO proxy. V2R's reconstruction (built from 8 quarters of company-reported NAREIT FFO) corrects this to 10.63x TTM P/FFO (10.36x on FY26 AFFO guidance), a 48.8th(10y)/57.4th(5y) percentile -- squarely average, and matching this dossier's own already-published peer read (10.4x, 'in line ... not at a premium') almost exactly. V1's specific verdict does not survive, though it was never this dossier's primary support, so the INCLUDE verdict itself is unchanged."
+      }
+    }
+  }
+}

@@ -1,0 +1,898 @@
+{
+ "stooq_probe": {
+  "probed_utc": "2026-09-25T20:41:06Z",
+  "results": {
+   "aapl.us": {
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "js_challenge": true,
+    "is_csv": false,
+    "snippet": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>This site requires JavaScript to verify y"
+   },
+   "brk-b.us": {
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "js_challenge": true,
+    "is_csv": false,
+    "snippet": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>This site requires JavaScript to verify y"
+   },
+   "msft.us": {
+    "status": 200,
+    "content_type": "text/html; charset=utf-8",
+    "js_challenge": true,
+    "is_csv": false,
+    "snippet": "<!DOCTYPE html><html><head><meta charset=\"utf-8\"><meta name=\"robots\" content=\"noindex,nofollow\"></head><body><noscript>This site requires JavaScript to verify y"
+   }
+  },
+  "decision": "Stooq CSV endpoint returns an HTML JavaScript proof-of-work browser-verification page instead of CSV; solving it would mean circumventing bot detection, so Stooq was not used. Fallback second source: CNBC public quote/bars endpoints (split-adjusted closes)."
+ },
+ "benchmarks": {
+  "run_utc": "2026-09-25T20:41:06Z",
+  "SPY_vs_SP500TR": {
+   "label": "SPY AdjClose vs ^SP500TR",
+   "base_date": "2009-12-31",
+   "end_date": "2026-09-25",
+   "years": 16.734,
+   "cagr_a": 0.14253480054604473,
+   "cagr_b": 0.1436468175858503,
+   "annualized_difference": -0.0011120170398055684,
+   "cum_a": 8.29763188186713,
+   "cum_b": 8.450225340136054,
+   "te_daily_ann": 0.009735461855251298,
+   "te_monthly_ann": 0.0028213264534583575,
+   "corr_daily": 0.9984051331420859,
+   "yearly_diff_mean": -0.0010777127381146204,
+   "yearly_diff_by_year": {
+    "2010": -7e-05,
+    "2011": -0.00217,
+    "2012": -0.00013,
+    "2013": -0.00081,
+    "2014": -0.00225,
+    "2015": -0.00149,
+    "2016": 0.00038,
+    "2017": -0.00126,
+    "2018": -0.00185,
+    "2019": -0.00263,
+    "2020": -0.00067,
+    "2021": 0.00023,
+    "2022": -0.00064,
+    "2023": -0.00112,
+    "2024": -0.00133,
+    "2025": -0.00161,
+    "2026": -0.00091
+   }
+  },
+  "IVV_vs_SP500TR": {
+   "label": "IVV AdjClose vs ^SP500TR",
+   "base_date": "2009-12-31",
+   "end_date": "2026-09-25",
+   "years": 16.734,
+   "cagr_a": 0.14276810096196946,
+   "cagr_b": 0.1436468175858503,
+   "annualized_difference": -0.0008787166238808375,
+   "cum_a": 8.329452552270105,
+   "cum_b": 8.450225340136054,
+   "te_daily_ann": 0.009598029585939295,
+   "te_monthly_ann": 0.0034543257351784327,
+   "corr_daily": 0.9984369625234257,
+   "yearly_diff_mean": -0.0008378819876649313,
+   "yearly_diff_by_year": {
+    "2010": 0.00032,
+    "2011": -0.00233,
+    "2012": 0.00054,
+    "2013": -0.00082,
+    "2014": -0.0012,
+    "2015": -0.001,
+    "2016": -0.0042,
+    "2017": -0.00078,
+    "2018": -0.00106,
+    "2019": -0.00235,
+    "2020": -1e-05,
+    "2021": 0.00053,
+    "2022": -0.0005,
+    "2023": 0.00018,
+    "2024": -0.00086,
+    "2025": -0.00033,
+    "2026": -0.00038
+   }
+  },
+  "VOO_vs_SP500TR": {
+   "label": "VOO AdjClose vs ^SP500TR (since inception)",
+   "base_date": "2010-09-09",
+   "end_date": "2026-09-25",
+   "years": 16.044,
+   "cagr_a": 0.14922746308646895,
+   "cagr_b": 0.14997154855077266,
+   "annualized_difference": -0.000744085464303712,
+   "cum_a": 8.314124829017985,
+   "cum_b": 8.411350874037057,
+   "te_daily_ann": 0.008965630175103979,
+   "te_monthly_ann": 0.003324146313186261,
+   "corr_daily": 0.998617166982673,
+   "yearly_diff_mean": -0.0008168393847023392,
+   "yearly_diff_by_year": {
+    "2011": -0.00214,
+    "2012": -0.0001,
+    "2013": -2e-05,
+    "2014": -0.0076,
+    "2015": -0.00059,
+    "2016": 0.00207,
+    "2017": -0.00058,
+    "2018": -0.00116,
+    "2019": -0.00121,
+    "2020": -0.00074,
+    "2021": 0.00089,
+    "2022": -0.00063,
+    "2023": 0.00036,
+    "2024": -0.00044,
+    "2025": -0.00057,
+    "2026": -0.0006
+   }
+  },
+  "RSP_vs_GSPC": {
+   "label": "RSP AdjClose (EW, TR) vs ^GSPC (CW, price)",
+   "base_date": "2009-12-31",
+   "end_date": "2026-09-25",
+   "years": 16.734,
+   "cagr_a": 0.12353811268011716,
+   "cagr_b": 0.12278005538014214,
+   "annualized_difference": 0.0007580572999750235,
+   "cum_a": 6.023012613098277,
+   "cum_b": 5.944139831212146,
+   "te_daily_ann": 0.05383490962110379,
+   "te_monthly_ann": 0.05071027697633028,
+   "corr_daily": 0.9532751299063043,
+   "yearly_diff_mean": -0.00013976587092492127,
+   "yearly_diff_by_year": {
+    "2010": 0.08585,
+    "2011": -0.0066,
+    "2012": 0.03756,
+    "2013": 0.05934,
+    "2014": 0.02674,
+    "2015": -0.01943,
+    "2016": 0.0497,
+    "2017": -0.00904,
+    "2018": -0.01602,
+    "2019": 0.00029,
+    "2020": -0.03601,
+    "2021": 0.02516,
+    "2022": 0.07826,
+    "2023": -0.10533,
+    "2024": -0.10518,
+    "2025": -0.05175,
+    "2026": -0.01593
+   }
+  },
+  "RSP_vs_SP500TR": {
+   "label": "RSP AdjClose (EW, TR) vs ^SP500TR (CW, TR)",
+   "base_date": "2009-12-31",
+   "end_date": "2026-09-25",
+   "years": 16.734,
+   "cagr_a": 0.12353811268011716,
+   "cagr_b": 0.1436468175858503,
+   "annualized_difference": -0.020108704905733132,
+   "cum_a": 6.023012613098277,
+   "cum_b": 8.450225340136054,
+   "te_daily_ann": 0.05386713214848813,
+   "te_monthly_ann": 0.05057919100680901,
+   "corr_daily": 0.9532193971376511,
+   "yearly_diff_mean": -0.020729533628874072,
+   "yearly_diff_by_year": {
+    "2010": 0.06305,
+    "2011": -0.02775,
+    "2012": 0.01159,
+    "2013": 0.03147,
+    "2014": 0.00376,
+    "2015": -0.04053,
+    "2016": 0.02545,
+    "2017": -0.03316,
+    "2018": -0.03455,
+    "2019": -0.0258,
+    "2020": -0.05741,
+    "2021": 0.00703,
+    "2022": 0.06494,
+    "2023": -0.1259,
+    "2024": -0.12229,
+    "2025": -0.06667,
+    "2026": -0.02565
+   }
+  },
+  "SP500TR_vs_GSPC": {
+   "label": "^SP500TR vs ^GSPC (dividend contribution)",
+   "base_date": "2009-12-31",
+   "end_date": "2026-09-25",
+   "years": 16.734,
+   "cagr_a": 0.1436468175858503,
+   "cagr_b": 0.12278005538014214,
+   "annualized_difference": 0.020866762205708156,
+   "cum_a": 8.450225340136054,
+   "cum_b": 5.944139831212146,
+   "te_daily_ann": 0.002794843778064583,
+   "te_monthly_ann": 0.0018821129759590289,
+   "corr_daily": 0.9998675573645076,
+   "yearly_diff_mean": 0.020589767757949153,
+   "yearly_diff_by_year": {
+    "2010": 0.02281,
+    "2011": 0.02115,
+    "2012": 0.02598,
+    "2013": 0.02787,
+    "2014": 0.02298,
+    "2015": 0.0211,
+    "2016": 0.02425,
+    "2017": 0.02412,
+    "2018": 0.01853,
+    "2019": 0.02608,
+    "2020": 0.0214,
+    "2021": 0.01813,
+    "2022": 0.01332,
+    "2023": 0.02057,
+    "2024": 0.01711,
+    "2025": 0.01492,
+    "2026": 0.00972
+   }
+  },
+  "SPYclose_vs_GSPC": {
+   "label": "SPY Close (price) vs ^GSPC (price)",
+   "base_date": "2009-12-31",
+   "end_date": "2026-09-25",
+   "years": 16.734,
+   "cagr_a": 0.12256253058487387,
+   "cagr_b": 0.12278005538014214,
+   "annualized_difference": -0.00021752479526826463,
+   "cum_a": 5.921661510116205,
+   "cum_b": 5.944139831212146,
+   "te_daily_ann": 0.013382659597657495,
+   "te_monthly_ann": 0.008341626954900221,
+   "corr_daily": 0.9969584133948676,
+   "yearly_diff_mean": -0.0001631659110569956,
+   "yearly_diff_by_year": {
+    "2010": 0.00058,
+    "2011": -0.00196,
+    "2012": 0.00068,
+    "2013": 0.00088,
+    "2014": -0.00101,
+    "2015": -0.00086,
+    "2016": 0.00108,
+    "2017": -0.00036,
+    "2018": -0.00111,
+    "2019": -0.00093,
+    "2020": -0.00097,
+    "2021": 0.00143,
+    "2022": -0.00039,
+    "2023": 0.00056,
+    "2024": -4e-05,
+    "2025": -0.00035,
+    "2026": -2e-05
+   }
+  },
+  "UCITS_vs_SP500TR_monthly": {
+   "CSPX.L": {
+    "window": "2010-10-31..2026-08-31 (month-ends)",
+    "cagr_ucits": 0.14273226235462122,
+    "cagr_sp500tr": 0.1463247543614139,
+    "annualized_difference": -0.00359249200679268,
+    "te_monthly_ann": 0.036783952274875055
+   },
+   "IUSA.L": {
+    "window": "2009-02-28..2026-08-31 (month-ends)",
+    "cagr_ucits": 0.14685549580637502,
+    "cagr_sp500tr": 0.1650000368456881,
+    "annualized_difference": -0.018144541039313067,
+    "te_monthly_ann": 0.09846700847661338
+   },
+   "SPXS.L": {
+    "window": "2010-06-30..2026-08-31 (month-ends)",
+    "cagr_ucits": -0.135289034224368,
+    "cagr_sp500tr": 0.15331939350581547,
+    "annualized_difference": -0.28860842773018347,
+    "te_monthly_ann": 0.23985249957203045
+   },
+   "SPY5.L": {
+    "window": "2012-04-30..2026-08-31 (month-ends)",
+    "cagr_ucits": 0.14237859441656142,
+    "cagr_sp500tr": 0.14684789659415975,
+    "annualized_difference": -0.004469302177598333,
+    "te_monthly_ann": 0.03394832371206141
+   },
+   "VUAA.L": {
+    "window": "2019-06-30..2026-08-31 (month-ends)",
+    "cagr_ucits": 0.15981083407254193,
+    "cagr_sp500tr": 0.16088733260735477,
+    "annualized_difference": -0.001076498534812842,
+    "te_monthly_ann": 0.0394349591193416
+   }
+  },
+  "^GSPC_vs_CNBC": {
+   "n_common": 7985,
+   "first": "1995-01-03",
+   "pct_within_0p01pct": 0.9979962429555417,
+   "pct_within_0p1pct": 0.9998747651847214,
+   "pct_within_0p5pct": 1.0,
+   "max_abs_diff": 0.0011893436495267196,
+   "date_of_max": "2021-08-11",
+   "n_yahoo_only_dates": 0,
+   "n_cnbc_only_dates": 1
+  },
+  "^SP500TR_vs_CNBC": {
+   "n_common": 7973,
+   "first": "1995-01-03",
+   "pct_within_0p01pct": 0.9992474601781011,
+   "pct_within_0p1pct": 0.9996237300890506,
+   "pct_within_0p5pct": 0.9998745766963502,
+   "max_abs_diff": 0.005922114573164827,
+   "date_of_max": "2019-07-03",
+   "n_yahoo_only_dates": 12,
+   "n_cnbc_only_dates": 5
+  },
+  "^VIX_vs_CNBC": {
+   "n_common": 7985,
+   "first": "1995-01-03",
+   "pct_within_0p01pct": 0.9981214777708203,
+   "pct_within_0p1pct": 0.9983719474013776,
+   "pct_within_0p5pct": 0.9987476518472135,
+   "max_abs_diff": 0.14695950671359226,
+   "date_of_max": "2026-02-06",
+   "n_yahoo_only_dates": 0,
+   "n_cnbc_only_dates": 36
+  },
+  "SPY_vs_CNBC": {
+   "n_common": 7983,
+   "first": "1995-01-03",
+   "pct_within_0p01pct": 0.9976199423775522,
+   "pct_within_0p1pct": 0.999123136665414,
+   "pct_within_0p5pct": 0.9994989352373794,
+   "max_abs_diff": 0.030017152658662116,
+   "date_of_max": "2000-04-04",
+   "n_yahoo_only_dates": 2,
+   "n_cnbc_only_dates": 0
+  },
+  "GSPC_vs_FRED_SP500": {
+   "label": "^GSPC vs FRED SP500 (S&P DJI via FRED)",
+   "n_common": 2513,
+   "first": "2016-09-26",
+   "pct_within_0p01pct": 0.9992041384799045,
+   "pct_within_0p1pct": 0.9996020692399522,
+   "max_abs_rel_diff": 0.0011893436495267196,
+   "date_of_max": "2021-08-11"
+  },
+  "VIX_vs_FRED_VIXCLS": {
+   "label": "^VIX vs FRED VIXCLS (CBOE via FRED)",
+   "n_common": 7981,
+   "first": "1995-01-03",
+   "pct_within_0p01pct": 0.9983711314371633,
+   "pct_within_0p1pct": 0.9986217266006766,
+   "max_abs_rel_diff": 0.14695950671359226,
+   "date_of_max": "2026-02-06"
+  },
+  "TNX_vs_FRED_DGS10": {
+   "label": "^TNX (CBOE) vs FRED DGS10 (Treasury CMT)",
+   "n_common": 7925,
+   "first": "1995-01-03",
+   "mean_diff_bps": -0.9818929351241055,
+   "median_abs_diff_bps": 0.9999885559082156,
+   "p95_abs_diff_bps": 3.2999942779541236,
+   "corr_daily_changes": 0.9754625485137294
+  },
+  "IRX_vs_FRED_DTB3": {
+   "label": "^IRX (CBOE 13w) vs FRED DTB3 (3m bill, discount basis)",
+   "n_common": 7925,
+   "first": "1995-01-03",
+   "mean_diff_bps": -1.3351421807624093,
+   "median_abs_diff_bps": 1.0000000894069674,
+   "p95_abs_diff_bps": 4.000010490417472,
+   "corr_daily_changes": 0.8093598587118495
+  },
+  "VIX_vs_CBOE": {
+   "label": "^VIX vs CBOE VIX_History.csv",
+   "n_common": 7982,
+   "first": "1995-01-03",
+   "pct_within_0p01pct": 0.998371335504886,
+   "pct_within_0p1pct": 0.9986218992733651,
+   "max_abs_rel_diff": 0.14695950671359226,
+   "date_of_max": "2026-02-06"
+  }
+ },
+ "sample": {
+  "run_utc": "2026-09-25T20:49:51Z",
+  "n_tickers": 60,
+  "n_obs": 1500,
+  "pct_within_0p5": 0.9673333333333334,
+  "pct_within_0p1": 0.9653333333333334,
+  "by_group": [
+   {
+    "group": "current",
+    "mean": 0.998,
+    "sum": 998,
+    "count": 1000
+   },
+   {
+    "group": "historical",
+    "mean": 0.906,
+    "sum": 453,
+    "count": 500
+   }
+  ],
+  "tickers": {
+   "current": [
+    "APH",
+    "ALLE",
+    "ADI",
+    "MCO",
+    "CSGP",
+    "TJX",
+    "JBL",
+    "TEL",
+    "CLX",
+    "MSI",
+    "AJG",
+    "BF-B",
+    "FIX",
+    "IT",
+    "RMD",
+    "DAL",
+    "TMO",
+    "CRWD",
+    "BNY",
+    "OTIS",
+    "PYPL",
+    "GNRC",
+    "PEG",
+    "AMD",
+    "PLD",
+    "ELV",
+    "PHM",
+    "LH",
+    "MPWR",
+    "TER",
+    "COF",
+    "MAS",
+    "MLM",
+    "RL",
+    "HRL",
+    "PAYX",
+    "CDW",
+    "CMI",
+    "TSN",
+    "SLB"
+   ],
+   "historical": [
+    "CSR",
+    "BBWI",
+    "M",
+    "DLX",
+    "KSS",
+    "MAT",
+    "LKQ",
+    "POOL",
+    "FTI",
+    "WEN",
+    "CLF",
+    "DDS",
+    "TKR",
+    "CE",
+    "NOV",
+    "ZION",
+    "SIG",
+    "KG",
+    "SCI",
+    "NKTR"
+   ]
+  },
+  "skipped_for_insufficient_cnbc_history": [],
+  "n_fail_obs": 49,
+  "miss_classes": {
+   "constant_adjustment_offset": 48,
+   "local_price_disagreement": 1
+  },
+  "pct_within_0p5_or_constant_offset": 0.9993333333333333,
+  "pct_daily_return_within_0p5pp": 0.998,
+  "pct_daily_return_within_0p1pp": 0.9966666666666667,
+  "return_misses": [
+   {
+    "ticker": "KG",
+    "date": "2019-04-12",
+    "yahoo_ret": "0.07792212939379128",
+    "cnbc_ret": "0.08613500130310148"
+   },
+   {
+    "ticker": "KG",
+    "date": "2019-09-25",
+    "yahoo_ret": "-0.0326087170602698",
+    "cnbc_ret": "-0.037692809037584096"
+   },
+   {
+    "ticker": "NKTR",
+    "date": "2024-01-05",
+    "yahoo_ret": "-0.035714196510051366",
+    "cnbc_ret": "-0.05256637168141587"
+   }
+  ],
+  "fail_tickers": [
+   "BBWI",
+   "CLF",
+   "FTI",
+   "MSI",
+   "NKTR",
+   "NOV"
+  ],
+  "fullseries_median_pct_within_0p5_since2010": 1.0,
+  "fullseries_mean_pct_within_0p5_since2010": 0.9689621724524269,
+  "fullseries_tickers_below_99pct": [
+   {
+    "ticker": "MSI",
+    "pct_within_0p5_since2010": 0.9398335315101071
+   },
+   {
+    "ticker": "BBWI",
+    "pct_within_0p5_since2010": 0.75298900047824
+   },
+   {
+    "ticker": "FTI",
+    "pct_within_0p5_since2010": 0.3348394768133175
+   },
+   {
+    "ticker": "CLF",
+    "pct_within_0p5_since2010": 0.4165477888730385
+   },
+   {
+    "ticker": "NOV",
+    "pct_within_0p5_since2010": 0.7363290537327627
+   },
+   {
+    "ticker": "KG",
+    "pct_within_0p5_since2010": 0.9838326200665716
+   },
+   {
+    "ticker": "NKTR",
+    "pct_within_0p5_since2010": 0.9738344433872502
+   }
+  ],
+  "seed": 20260926,
+  "ratio_steps_full_history": {
+   "n_steps": 10,
+   "n_tickers_with_steps": 7,
+   "by_class": {
+    "yahoo_recorded_split(or spin-off encoded as split)": 5,
+    "yahoo_recorded_large_dividend (Close drops, Adj Close adjusted)": 4,
+    "no_yahoo_action (possible corporate action missing in Yahoo, or CNBC-only adjustment)": 1
+   },
+   "rows": [
+    {
+     "ticker": "MSI",
+     "date": "2011-01-04",
+     "log_step": "0.013024567836317303",
+     "ratio_before": "0.9870598962672351",
+     "ratio_after": "1.0000000116208947",
+     "classification": "yahoo_recorded_split(or spin-off encoded as split)",
+     "yahoo_split": "2011-01-04:0.247372",
+     "yahoo_div": ""
+    },
+    {
+     "ticker": "BBWI",
+     "date": "1998-06-02",
+     "log_step": "0.017451549925171363",
+     "ratio_before": "1.001043313052841",
+     "ratio_after": "1.018666398216496",
+     "classification": "yahoo_recorded_split(or spin-off encoded as split)",
+     "yahoo_split": "1998-06-02:1.0176",
+     "yahoo_div": "1998-06-03:0.052546"
+    },
+    {
+     "ticker": "BBWI",
+     "date": "2014-02-19",
+     "log_step": "-0.01821894986631891",
+     "ratio_before": "1.0186685908633617",
+     "ratio_after": "1.0002775602173184",
+     "classification": "yahoo_recorded_large_dividend (Close drops, Adj Close adjusted)",
+     "yahoo_split": "",
+     "yahoo_div": "2014-02-19:1.08327"
+    },
+    {
+     "ticker": "DLX",
+     "date": "2001-01-02",
+     "log_step": "0.22376876136765764",
+     "ratio_before": "0.799499994277954",
+     "ratio_after": "1.0000000075024988",
+     "classification": "yahoo_recorded_split(or spin-off encoded as split)",
+     "yahoo_split": "2001-01-02:1.25078",
+     "yahoo_div": "2001-01-02:5.07"
+    },
+    {
+     "ticker": "FTI",
+     "date": "2008-08-01",
+     "log_step": "-0.05202566123647669",
+     "ratio_before": "0.9937028067710347",
+     "ratio_after": "0.9433265522942196",
+     "classification": "yahoo_recorded_large_dividend (Close drops, Adj Close adjusted)",
+     "yahoo_split": "",
+     "yahoo_div": "2008-08-01:1.16518"
+    },
+    {
+     "ticker": "FTI",
+     "date": "2021-02-16",
+     "log_step": "0.0583428951253215",
+     "ratio_before": "0.9433264467529509",
+     "ratio_after": "1.0000000178238215",
+     "classification": "yahoo_recorded_split(or spin-off encoded as split)",
+     "yahoo_split": "2021-02-16:1.344",
+     "yahoo_div": ""
+    },
+    {
+     "ticker": "WEN",
+     "date": "2003-09-05",
+     "log_step": "-1.2222401091804733",
+     "ratio_before": "3.3282195311509217",
+     "ratio_after": "0.980392160576647",
+     "classification": "yahoo_recorded_large_dividend (Close drops, Adj Close adjusted)",
+     "yahoo_split": "",
+     "yahoo_div": "2003-09-05:21.0784"
+    },
+    {
+     "ticker": "WEN",
+     "date": "2008-03-26",
+     "log_step": "0.019802643538655258",
+     "ratio_before": "0.9803921437255597",
+     "ratio_after": "1.0000000028425464",
+     "classification": "no_yahoo_action (possible corporate action missing in Yahoo, or CNBC-only adjustment)",
+     "yahoo_split": "",
+     "yahoo_div": ""
+    },
+    {
+     "ticker": "CLF",
+     "date": "2019-10-01",
+     "log_step": "-0.0058993224380766976",
+     "ratio_before": "1.0059167708996397",
+     "ratio_after": "1.0000000131127964",
+     "classification": "yahoo_recorded_large_dividend (Close drops, Adj Close adjusted)",
+     "yahoo_split": "",
+     "yahoo_div": "2019-10-03:0.1"
+    },
+    {
+     "ticker": "NOV",
+     "date": "2014-06-02",
+     "log_step": "0.10345868686774679",
+     "ratio_before": "0.9017132587164517",
+     "ratio_after": "0.9999999824160618",
+     "classification": "yahoo_recorded_split(or spin-off encoded as split)",
+     "yahoo_split": "2014-06-02:1.109",
+     "yahoo_div": ""
+    }
+   ]
+  }
+ },
+ "badticks_crosscheck": {
+  "run_utc": "2026-09-25T20:47:51Z",
+  "n_events_active_tickers_nonsplit": 242,
+  "n_with_cnbc_data": 209,
+  "n_confirmed_by_cnbc": 199,
+  "n_not_confirmed": 10,
+  "by_category": {
+   "persistent_move": "150/158 confirmed",
+   "spike_reversal": "49/49 confirmed",
+   "unit_100x_break": "0/2 confirmed"
+  },
+  "not_confirmed_examples": [
+   {
+    "ticker": "EHC",
+    "date": "2003-03-26",
+    "yahoo_ret": "-0.971866989941749",
+    "cnbc_ret": "0.0",
+    "category": "persistent_move",
+    "confirmed": "False"
+   },
+   {
+    "ticker": "JCI",
+    "date": "2007-07-02",
+    "yahoo_ret": "-0.6052086524494289",
+    "cnbc_ret": "3.1220450876383765",
+    "category": "persistent_move",
+    "confirmed": "False"
+   },
+   {
+    "ticker": "KDP",
+    "date": "2018-07-10",
+    "yahoo_ret": "-0.8205563652198334",
+    "cnbc_ret": "0.11451531893520839",
+    "category": "persistent_move",
+    "confirmed": "False"
+   },
+   {
+    "ticker": "MI",
+    "date": "2026-05-18",
+    "yahoo_ret": "95.4285720041994",
+    "cnbc_ret": "0.20597243491577322",
+    "category": "unit_100x_break",
+    "confirmed": "False"
+   },
+   {
+    "ticker": "MO",
+    "date": "2008-03-31",
+    "yahoo_ret": "-0.6993092210164135",
+    "cnbc_ret": "-0.025032938076416378",
+    "category": "persistent_move",
+    "confirmed": "False"
+   },
+   {
+    "ticker": "ROK",
+    "date": "2001-07-02",
+    "yahoo_ret": "-0.6143756500221307",
+    "cnbc_ret": "0.006160164271047153",
+    "category": "persistent_move",
+    "confirmed": "False"
+   },
+   {
+    "ticker": "SPXS.L",
+    "date": "2014-01-02",
+    "yahoo_ret": "-0.9900245827699088",
+    "cnbc_ret": "-0.00244184128031677",
+    "category": "unit_100x_break",
+    "confirmed": "False"
+   },
+   {
+    "ticker": "SSP",
+    "date": "2008-07-01",
+    "yahoo_ret": "-0.9275397159684254",
+    "cnbc_ret": "-0.056420265105310397",
+    "category": "persistent_move",
+    "confirmed": "False"
+   },
+   {
+    "ticker": "WEN",
+    "date": "2003-09-05",
+    "yahoo_ret": "-0.684664541249043",
+    "cnbc_ret": "0.07049891540130138",
+    "category": "persistent_move",
+    "confirmed": "False"
+   },
+   {
+    "ticker": "WY",
+    "date": "2010-07-20",
+    "yahoo_ret": "-0.6189338062961927",
+    "cnbc_ret": "-0.06889804024650248",
+    "category": "persistent_move",
+    "confirmed": "False"
+   }
+  ]
+ },
+ "confirmed_errors": {
+  "n_rows": 30,
+  "by_ticker_confirmed2": {
+   "^VIX": 8,
+   "^SP500TR": 3,
+   "^GSPC": 1,
+   "SPY": 1
+  },
+  "rows_confirmed2": [
+   {
+    "ticker": "^GSPC",
+    "date": "2021-08-11",
+    "yahoo": "4442.41015625",
+    "reference": "4447.7",
+    "ref_source": "CNBC .SPX = FRED SP500",
+    "rel_err": "-0.0011893436495267196",
+    "confirmed_by": "2",
+    "field": "Close"
+   },
+   {
+    "ticker": "^VIX",
+    "date": "2008-11-28",
+    "yahoo": "55.279998779296875",
+    "reference": "55.84",
+    "ref_source": "CBOE VIX_History = FRED VIXCLS",
+    "rel_err": "-0.010028675155858369",
+    "confirmed_by": "2",
+    "field": "Close"
+   },
+   {
+    "ticker": "^VIX",
+    "date": "2014-08-29",
+    "yahoo": "12.09000015258789",
+    "reference": "11.98",
+    "ref_source": "CBOE VIX_History = FRED VIXCLS",
+    "rel_err": "0.00918198268680226",
+    "confirmed_by": "2",
+    "field": "Close"
+   },
+   {
+    "ticker": "^VIX",
+    "date": "2014-10-15",
+    "yahoo": "25.270000457763672",
+    "reference": "26.25",
+    "ref_source": "CBOE VIX_History = FRED VIXCLS",
+    "rel_err": "-0.03733331589471722",
+    "confirmed_by": "2",
+    "field": "Close"
+   },
+   {
+    "ticker": "^VIX",
+    "date": "2014-12-01",
+    "yahoo": "14.15999984741211",
+    "reference": "14.29",
+    "ref_source": "CBOE VIX_History = FRED VIXCLS",
+    "rel_err": "-0.009097281496703302",
+    "confirmed_by": "2",
+    "field": "Close"
+   },
+   {
+    "ticker": "^VIX",
+    "date": "2014-12-05",
+    "yahoo": "11.890000343322754",
+    "reference": "11.82",
+    "ref_source": "CBOE VIX_History = FRED VIXCLS",
+    "rel_err": "0.0059221948665613144",
+    "confirmed_by": "2",
+    "field": "Close"
+   },
+   {
+    "ticker": "^VIX",
+    "date": "2014-12-09",
+    "yahoo": "15.350000381469727",
+    "reference": "14.89",
+    "ref_source": "CBOE VIX_History = FRED VIXCLS",
+    "rel_err": "0.030893242543299282",
+    "confirmed_by": "2",
+    "field": "Close"
+   },
+   {
+    "ticker": "^VIX",
+    "date": "2021-08-11",
+    "yahoo": "16.170000076293945",
+    "reference": "16.06",
+    "ref_source": "CBOE VIX_History = FRED VIXCLS",
+    "rel_err": "0.006849319819050237",
+    "confirmed_by": "2",
+    "field": "Close"
+   },
+   {
+    "ticker": "^VIX",
+    "date": "2026-02-06",
+    "yahoo": "20.3700008392334",
+    "reference": "17.76",
+    "ref_source": "CBOE VIX_History = FRED VIXCLS",
+    "rel_err": "0.14695950671359226",
+    "confirmed_by": "2",
+    "field": "Close"
+   },
+   {
+    "ticker": "^SP500TR",
+    "date": "2014-12-09",
+    "yahoo": "3758.8701171875",
+    "reference": "3766.832",
+    "ref_source": "CNBC .SPXTR; arbiter=^GSPC daily return (yahoo consistent=False, cnbc consistent=True)",
+    "rel_err": "-0.002113681420488067",
+    "confirmed_by": "2",
+    "field": "Close"
+   },
+   {
+    "ticker": "^SP500TR",
+    "date": "2019-03-12",
+    "yahoo": "5556.77001953125",
+    "reference": "5573.4359",
+    "ref_source": "CNBC .SPXTR; arbiter=^GSPC daily return (yahoo consistent=False, cnbc consistent=True)",
+    "rel_err": "-0.0029902345281750398",
+    "confirmed_by": "2",
+    "field": "Close"
+   },
+   {
+    "ticker": "^SP500TR",
+    "date": "2019-07-03",
+    "yahoo": "5982.89990234375",
+    "reference": "6018.5424",
+    "ref_source": "CNBC .SPXTR; arbiter=^GSPC daily return (yahoo consistent=False, cnbc consistent=True)",
+    "rel_err": "-0.005922114573164827",
+    "confirmed_by": "2",
+    "field": "Close"
+   },
+   {
+    "ticker": "SPY",
+    "date": "2009-07-16",
+    "yahoo": "93.11000061035156",
+    "reference": "94.15",
+    "ref_source": "CNBC SPY; arbiter=SPY/^GSPC ratio (yahoo consistent=False, cnbc consistent=True)",
+    "rel_err": "-0.011046196385007367",
+    "confirmed_by": "2",
+    "field": "Close"
+   }
+  ]
+ }
+}

@@ -1,0 +1,119 @@
+{
+  "agent": "F64",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "CRM": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The world's #1 CRM software leader, cheaply priced, but recently borrowed $25 billion to buy back stock and is increasingly growing through acquisitions.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Reported revenue growth (GAAP, total) falls below 8% YoY for two consecutive quarters.",
+        "Net debt/TTM operating cash flow rises above 2.5x (from ~1.8x currently) without a disclosed plan to delever.",
+        "The Contentful or Fin acquisition fails to close by 2026-12-31, or closes with a materially adverse regulatory condition disclosed in an 8-K.",
+        "GAAP operating margin guidance is cut a third consecutive time (below the current 20.1% FY27 guide).",
+        "cRPO growth (constant currency) falls below 8% YoY for two consecutive quarters - the earliest read on a genuine organic demand slowdown."
+      ],
+      "key_adverse_facts": [
+        "Gross debt quadrupled in six months (~$10.4bn to $39.3bn) to fund a $25bn debt-financed accelerated share repurchase; stockholders' equity fell from $59.1bn to $38.4bn over the same period.",
+        "OCF/FCF growth guidance was cut in half (from ~9-10% to ~4-5%) explicitly because of the debt-service cost of the buyback, per management's own 1Q FY27 release.",
+        "Reported revenue growth is increasingly inorganic: Informatica alone contributed ~4 points of 2Q FY27's ~11% growth, with two more cash-funded acquisitions (Contentful $1.5bn, Fin $3.6bn) pending.",
+        "GAAP operating margin guidance has been cut twice in a row this fiscal year (20.9% to 20.6% to 20.1%) even as non-GAAP margin guidance held flat at 34.3%."
+      ],
+      "data_conflicts": [
+        "This dossier's FCF-based reverse DCF (~1%/yr implied growth) differs in magnitude from V1's growth-based implied-growth figure (13.0%), though both conclude the stock is priced below a reasonable base case; the gap is attributed to TTM FCF being elevated by favorable working-capital timing in the always-large fiscal Q1.",
+        "b1_live_scores.csv's strong SUE/FCF-yield percentiles partly reflect the buyback-driven EPS surge (GAAP EPS +119% YoY in 2Q FY27) rather than pure organic momentum."
+      ],
+      "next_earnings_date": "2026-12-02",
+      "confidence_in_thesis": "medium: the core SaaS franchise, cRPO acceleration and cheap reverse-DCF valuation are well evidenced by primary sources, but confidence is capped by the very recent, large increase in leverage and the rising share of growth coming from M&A rather than organic execution.",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.0895,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "V1's growth-based reverse DCF (implied 13.0% vs consensus 9.7%) and this dossier's own FCF-based reverse DCF (implied ~1%/yr vs a base case of ~9-11%/yr) use different methods but reach the same conclusion - priced below a reasonable base case; this analyst is more cautious than V1 on the quality of that growth (increasingly M&A-driven) and the new leverage, hence INCLUDE-SMALL rather than full INCLUDE."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.042,
+        "base": 0.120,
+        "bull": 0.267
+      },
+      "scenario_basis": "Non-GAAP diluted EPS $16.69 (FY27 guided midpoint, ~NTM); NTM P/E ~14.0x start; bear = 3%/yr EPS CAGR with exit P/E 11x and 0.8% avg dividend yield; base = 10%/yr EPS CAGR with exit P/E 14.5x and 0.8% yield; bull = 16%/yr EPS CAGR with exit P/E 18x and 0.6% yield; all over a 3-year horizon."
+    },
+    "CSCO": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The dominant computer-networking company riding an AI data-center building boom, but the stock already prices in that boom lasting a decade.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "Quarterly revenue growth (GAAP, YoY) decelerates below 8% for two consecutive quarters (from +17.6% in Q4 FY26) - the clearest signal the AI-order cycle is normalizing faster than guided.",
+        "FY27 guidance (revenue $72.2-73.4bn or non-GAAP EPS $5.05-5.11) is cut at any quarterly update.",
+        "AI-infrastructure order intake (as separately disclosed by the company) declines sequentially for two consecutive quarters.",
+        "Net debt/TTM FCF rises above 2.0x (from ~1.2x currently) without a corresponding disclosed reason (e.g., a large acquisition).",
+        "Non-GAAP operating margin (currently guided 35.5-36.5% for Q1 FY27) compresses more than 200 bps YoY for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "FY27 guidance (initial) implies a large step-up to +14-16% revenue growth, predicated on AI-infrastructure revenue nearly doubling ($4bn to $7.5bn) from a concentrated, lumpy hyperscaler order book.",
+        "The forward P/E has re-rated from Cisco's historical mid-teens range to ~19-20x alongside the AI-networking narrative, leaving little room for a guidance miss.",
+        "A longstanding Brazilian import-tax dispute carries undiscounted claims of $153M tax, $969M interest and $315M penalties (disputed, believed without merit, but not yet resolved after two decades).",
+        "A restructuring plan announced May 2026 is still being executed through FY27, a recurring GAAP-vs-non-GAAP reconciling cost."
+      ],
+      "data_conflicts": [
+        "This dossier's own TTM FCF-yield calculation (~3.0%) does not exactly match d4_live_snapshot.parquet's fcf_yield field (2.66%), likely a capex/lease-capitalization definitional difference; it does not change the valuation conclusion."
+      ],
+      "next_earnings_date": "2026-11-12",
+      "confidence_in_thesis": "high: the beat-and-raise pattern (3 for 3 across FY26, with exact quoted guidance ranges) and revenue acceleration are unambiguous in primary sources; the main uncertainty is not whether the business is executing well right now but whether the AI-order cycle that is now priced in for a full decade will actually last that long.",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "above",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for CSCO in this run (not covered), so there is nothing to reconcile; this dossier's own reverse DCF (implied ~11.9%/yr FCF growth vs a base case of ~7-9%/yr, front-loaded then normalizing) independently supports an 'above base case' / not-cheap view, which is why the verdict is WATCH rather than INCLUDE despite excellent execution."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.050,
+        "base": 0.063,
+        "bull": 0.175
+      },
+      "scenario_basis": "Non-GAAP diluted EPS $5.08 (FY27 guided midpoint); FY1 P/E ~19.0x start (NTM 20.4x); bear = 4%/yr EPS CAGR with exit P/E 15x and 2.0% avg dividend yield; base = 10%/yr EPS CAGR with exit P/E 18x and 1.8% yield; bull = 16%/yr EPS CAGR with exit P/E 21x and 1.5% yield; all over a 3-year horizon."
+    },
+    "EFX": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A credit-bureau and employment-data company whose growth is reaccelerating and looks cheap, though regulators are still investigating its core data business.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Consolidated revenue growth (GAAP, YoY) falls back below 5% for two consecutive quarters (from +10.6% in Q2 2026) - a signal the re-acceleration has stalled.",
+        "The CFPB investigation into Workforce Solutions results in a public enforcement action, consent order, or disclosed monetary penalty (currently: investigation ongoing, no action disclosed).",
+        "The FCRA class-action settlement (agreement in principle, June 2026) fails court approval, or the final settled/reserved amount exceeds $200M (from the $100M gross accrual booked in 2Q 2026).",
+        "Net debt/TTM FCF rises above 4.5x (from ~3.5x currently) without a corresponding disclosed reason.",
+        "Full-year Adjusted EPS guidance (currently $8.39-8.69 for FY2026) is cut at any quarterly update - a break from the 'beat-but-hold' pattern in the opposite (negative) direction."
+      ],
+      "key_adverse_facts": [
+        "CFPB has been investigating Workforce Solutions' FCRA compliance and data accuracy since July 2023 (three CIDs through August 2024), with no resolution disclosed as of the 2026-07-21 10-Q.",
+        "A $100M accrual (net $40M after a $60M insurance receivable) was booked in 2Q 2026 for a not-yet-court-approved settlement of the 2022 FCRA coding-issue class action.",
+        "A separate antitrust class action (filed May 2024) alleges anticompetitive conduct specifically in the Workforce Solutions verification market, unresolved.",
+        "Net debt/TTM FCF is approximately 3.5x, and the cash balance ($170M) is thin relative to a $17.4bn market cap, though backstopped by an undrawn revolving credit facility."
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv shows deeply negative 12-month momentum (-25.4%, 3.8th percentile) and weak SUE despite the company beating guidance in 8 of the last 8 reported quarters per d4_live_snapshot.parquet - this dossier attributes the gap to the open regulatory/legal overhang and macro mortgage-cycle uncertainty rather than a fundamental problem, but flags it as unresolved tension between price action and fundamentals.",
+        "This dossier's own TTM FCF-yield calculation (~6.35%) does not exactly match d4_live_snapshot.parquet's fcf_yield field (5.45%), likely a capex-definition difference."
+      ],
+      "next_earnings_date": "2026-10-20",
+      "confidence_in_thesis": "medium: revenue re-acceleration and a cheap reverse-DCF valuation are well evidenced by primary sources, but confidence is capped by the unresolved CFPB investigation into the exact business unit (Workforce Solutions) that underpins the moat thesis.",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for EFX in this run (not covered), so there is nothing to reconcile; this dossier's own reverse DCF (implied ~5.3%/yr FCF growth vs a base case of ~8-10%/yr) independently supports a 'cheap' view, tempered by the CFPB/legal reservation that keeps the verdict at INCLUDE-SMALL rather than INCLUDE."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.046,
+        "base": 0.087,
+        "bull": 0.200
+      },
+      "scenario_basis": "Adjusted EPS $8.54 (FY2026 guided midpoint); FY1 P/E ~14.6x start (NTM 15.2x); bear = 3%/yr EPS CAGR with exit P/E 13x and 1.8% avg dividend yield; base = 10%/yr EPS CAGR with exit P/E 16x and 1.6% yield; bull = 15%/yr EPS CAGR with exit P/E 19x and 1.4% yield; all over a 3-year horizon."
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "agent": "F103",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "JNJ": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Best-in-class diversified pharma and medtech maker compounding steadily, but priced slightly above what its growth can deliver with an unresolved talc-lawsuit risk still hanging over it.",
+      "kill_criteria": [
+        "Reported/operational sales growth falls below 4% for two consecutive quarters",
+        "Innovative Medicine segment growth falls below 5% for two consecutive quarters",
+        "A talc bellwether verdict or aggregate reserve increase >$5B in a single quarter, or a fourth failed bankruptcy/global-settlement attempt ruled abusive by a court",
+        "Net debt/EBITDA rises above 1.5x (from ~0.5x today)",
+        "FY guidance is cut (not just held flat) at either of the next two quarterly releases"
+      ],
+      "key_adverse_facts": [
+        "J&J's third talc-bankruptcy attempt (Red River Talc Chapter 11) was rejected by the bankruptcy court and J&J will not appeal; ordinary federal MDL litigation (58,600+ cases) has resumed, contradicting the triage card's framing that talc risk is 'largely funneled through bankruptcy-trust proceedings'",
+        "GAAP EPS is materially below adjusted EPS every quarter ($2.27 vs $2.90 in Q2 2026), a ~28% gap driven by litigation reserves, intangible amortization and restructuring"
+      ],
+      "data_conflicts": [
+        "Company-reported Q2 2026 sales growth (+6.6% reported / +5.6% operational) does not exactly match this dossier's XBRL-derived +5.5% YoY calculation from filed revenue figures; likely a constant-currency/rounding difference, not investigated further within the time box",
+        "Triage card characterized talc litigation as largely resolved via bankruptcy trust; this is factually outdated as of Sept 2026 per two independent litigation trackers"
+      ],
+      "next_earnings_date": "2026-10-13",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "med — business quality and guidance track record are high-confidence; the talc-litigation tail risk and its eventual cash cost are genuinely unresolved and not modelable with precision, which caps confidence at medium",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": null,
+        "reconciliation": "No v1_valuation_table.csv row exists yet for JNJ, so there is nothing to reconcile against; this dossier's own reverse DCF implies ~7.2%/yr 10-year FCF growth is needed to justify the price at a 7.5% WACC/4% terminal growth, modestly above this dossier's 5.5-6.5% base-case estimate, i.e., priced 'above' base case.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.04,
+        "base": 0.06,
+        "bull": 0.13
+      },
+      "scenario_basis": "Starting NTM adjusted EPS ~$11.68 (FY2026 guide); base case ~6%/yr adjusted EPS growth (mid-single-digit organic + buybacks) with NTM P/E holding near 23x plus a ~3.2% dividend yield; bear case assumes multiple compression to ~19x on a talc-reserve shock or guidance cut with growth slowing to ~3%; bull case assumes multiple expansion toward 26x on continued guidance raises and pipeline delivery with growth near 9%."
+    },
+    "MCK": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "America's largest drug distributor, increasingly an oncology-and-specialty growth platform, priced by the market as if free cash flow will shrink even though guidance points to double-digit growth.",
+      "kill_criteria": [
+        "Oncology & Multispecialty segment revenue growth falls below 15% for two consecutive quarters",
+        "Consolidated gross debt/EBITDA rises above 2.5x (from ~1.4x now)",
+        "FY2027 adjusted EPS guidance is cut (not just held) at either of the next two quarterly releases",
+        "The Wellverse (Medical-Surgical Solutions) separation/IPO is abandoned, delayed beyond FY2028, or priced at a material discount to the implied $13B Apollo-transaction valuation",
+        "Cumulative opioid-related cash payments in a single year exceed $1.5B"
+      ],
+      "key_adverse_facts": [
+        "GAAP diluted EPS fell 17.6% YoY in Q1 FY2027 ($5.15 vs $6.25) even as revenue grew 7.7% and adjusted EPS grew 20% ($9.93) -- a ~48% GAAP/adjusted gap driven mainly by $3.85/share of transaction costs tied to the Medical-Surgical Solutions separation plus redeemable-noncontrolling-interest remeasurement charges, none of which the triage card flagged",
+        "Consolidated stockholders' equity is negative (-$4.240B as of 2026-06-30) and long-term debt jumped from $5.259B to $8.432B quarter-over-quarter, driven by a new $2.25B Term Loan B raised specifically to fund the separation",
+        "$5.692B of opioid-litigation liability remains on the balance sheet ($601M current + $5.091B long-term), a sized but material multi-year cash obligation"
+      ],
+      "data_conflicts": [
+        "b1 quant composite (0.180, decile 2) and a negative earnings-momentum (SUE) score do not support the fundamental INCLUDE case here; the thesis rests on valuation and segment mix, not on the quant signal, and this divergence is called out explicitly rather than resolved",
+        "ROE is unavailable in the b1/d4 snapshot because consolidated equity is negative, which is a real feature of the capital structure, not a data error"
+      ],
+      "next_earnings_date": "2026-11-04",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "med — the valuation/growth mismatch is clear, but the Medical-Surgical separation is an active, multi-quarter execution risk whose outcome is not yet known",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No v1_valuation_table.csv row exists yet for MCK. This dossier's reverse DCF, using TTM FCF/share of $58.33 at an 8% WACC and 4% terminal growth, implies the market is pricing in roughly -2.9%/yr FCF decline over 10 years, well below both the company's 13-15% adjusted EPS guidance and this dossier's 8-10% base-case FCF/share growth estimate -- i.e., priced 'below' base case, though TTM FCF is distorted downward by working-capital and separation-related cash flows this year.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.02,
+        "base": 0.11,
+        "bull": 0.22
+      },
+      "scenario_basis": "Starting FY2027 adjusted EPS guide midpoint ~$44.60; base case ~11%/yr adjusted EPS growth (North American Pharma mid-single-digit plus Oncology mix-shift) with NTM P/E re-rating modestly from 18.2x toward 19x, plus ~0.4% dividend yield and the Wellverse separation completing roughly as planned; bear case assumes separation costs and opioid cash outflows run above plan, growth slows to ~4%, multiple compresses to 15x; bull case assumes Oncology growth sustains 25%+, separation completes cleanly and unlocks value, multiple re-rates to 22x."
+    },
+    "LNT": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Iowa/Wisconsin regulated utility riding a real hyperscaler data-center demand wave, priced attractively on a dividend basis but funding a huge capital plan that risks share dilution.",
+      "kill_criteria": [
+        "Adjusted/ongoing EPS growth falls below 5% for a full fiscal year (vs. the 7%+ 2027-29 guide)",
+        "A signed data-center service agreement is cancelled or materially downsized before energization",
+        "Debt/equity ratio rises above 1.8x (from ~1.41x today) without a corresponding equity raise",
+        "A rate case in Iowa or Wisconsin is rejected or approved at less than 70% of the requested revenue increase",
+        "Guidance is cut (not just reaffirmed) at either of the next two quarterly releases"
+      ],
+      "key_adverse_facts": [
+        "The $13.4B four-year (2026-2029) capital plan against ~$7.5B of equity implies substantial external financing, very likely including further common-equity issuance that dilutes per-share growth -- not flagged in the original triage card",
+        "Q2 2026 GAAP diluted EPS fell YoY ($0.65 vs $0.68) even though full-year guidance was reaffirmed in the upper half of its range; single-quarter GAAP moves in a capex-ramp utility should not be over-read, but the divergence from the full-year narrative is worth tracking"
+      ],
+      "data_conflicts": [
+        "SEC's bulk companyfacts XBRL JSON for LNT had not refreshed past Q1 2026 (2026-03-31) at retrieval time (2026-09-27) despite a 10-Q for Q2 2026 having been filed 2026-07-31; Q2 2026 figures in this dossier were hand-extracted from the filing's own inline-XBRL tags rather than the companyfacts API, and should be re-verified once the API catches up"
+      ],
+      "next_earnings_date": "2026-11-05",
+      "horizon": "24-48 months",
+      "confidence_in_thesis": "med — the demand tailwind and regulatory track record are well evidenced, but the financing plan for the capex ramp is the swing factor and is not yet fully specified",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No v1_valuation_table.csv row exists yet for LNT. Using a simplified one-stage dividend-discount reverse DCF (price $63.60, dividend yield 3.37%, cost of equity ~7.5%), the implied perpetual dividend growth rate is ~4.1%/yr, below both management's 7%+ 2027-29 EPS-growth guide and this dossier's 5.5-6.5% base-case estimate -- i.e., priced 'below' base case, with the gap to management's own guide being the most optimistic read.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": 0.01,
+        "base": 0.08,
+        "bull": 0.14
+      },
+      "scenario_basis": "Starting 2026 ongoing EPS guide midpoint ~$3.41; base case ~6%/yr EPS growth (below management's 7%+ guide to allow for dilution) with NTM P/E holding near 17.3x, plus a ~3.4% dividend yield growing in line with EPS; bear case assumes a rate-case setback and heavier-than-planned equity issuance cut growth to ~3% with multiple compression to 15x; bull case assumes the data-center pipeline converts on schedule, growth reaches 8%, multiple expands to 19x."
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+ "total": 86,
+ "criteria": {
+  "1": 9,
+  "2": 9,
+  "3": 9,
+  "4": 8,
+  "5": 8,
+  "6": 9,
+  "7": 8,
+  "8": 8,
+  "9": 9,
+  "10": 9
+ },
+ "must_fix": [
+  "(criterion 1/4, highest impact) Extend mechanical pre-checks to catch multi-period column/entity mislabelling, not just citation format and arithmetic sums. TJX's dossier stated Q2 FY2027 net income as $1,243m; the actual figure is $1,520m -- $1,243m is the prior-year Q2 FY2026 column from the same press-release table. I independently WebFetched the same 8-K Ex-99.1 (accession 0000109198-26-000045) and confirmed both figures exactly match DA14's finding and the dossier's correction. Neither lead_dossier_precheck.py nor lead_xbrl_crosstie.py flagged this (both show empty flags for TJX). This is the fourth consecutive loop (Loop 5 GM/RJF entity conflation; Loop 6 COR guidance-checkpoint mislabel; Loop 7 PPG debt-component sum; Loop 8 this) where a load-bearing numeric error reaches a dossier and is caught only by the adversarial DA pass. Fix: add a self-check that records BOTH column values and dates for any figure cited from a two-column (current-vs-prior-period) source table, so a swap is caught before publication rather than after a new single-purpose check is retrofitted each loop.",
+  "(carried, confirmed by design, sixth consecutive loop) The verification gate correctly reads OPEN for exactly one reason: outputs/c1_consistency.json still names the pre-wave-5 build's content_sha256 while the live frozen build is 174b2544.... I ran code/lead_verify_gate.py myself and confirmed no holding is missing an independent DA-series fact-check and no FAIL is left uncorrected. This exact gap has been the sole open item in every loop from 3 through 8; recommend completing one full cycle (fix -> re-run C1 last -> gate reads PASS) before the next release so the mechanism is demonstrated to close in practice.",
+  "(minor, criterion 6) Add one explicit sentence to FINAL_REPORT section 6 prose (not just the ranking-tab JSON) stating that Financials currently binds two caps simultaneously (25% sector-weight cap and rule (l)'s 5-names-per-sector count cap): a sixth otherwise-eligible Financials name (MSCI) is excluded by the count rule alone, before the weight cap would even bind. The data already supports this (lead_j_sensitivity.json bench_near_misses); this is a wording fix, not new analysis."
+ ],
+ "fact_checks": [
+  {"ticker": "TJX", "claim": "Q2 FY2027 net income $1,520m (corrected); $1,243m in the dossier's original table cell is the prior-year Q2 FY2026 figure, not the current quarter", "source": "Independent WebFetch of TJX 8-K Ex-99.1, accession 0000109198-26-000045, filed 2026-08-19, fetched directly from SEC EDGAR", "status": "PASS"},
+  {"ticker": "TJX", "claim": "8-K Ex-99.1 accession 0000109198-26-000045 filed 19 Aug 2026, as cited by DA14 and the dossier correction", "source": "SEC EDGAR filing browser for CIK 0000109198, filing date and accession confirmed independently before fetching the exhibit", "status": "PASS"},
+  {"ticker": "TJX", "claim": "Dossier carries both an inline '[Corrected 27 Sep 2026: ...]' marker and a separate dated Correction section stating the corrected figure and reason", "source": "dossiers/TJX.md lines 35 and 148, read directly", "status": "PASS"},
+  {"ticker": "GDDY", "claim": "Total debt reconciliation now states the basis: $3,816.9m gross principal vs $3,774.4m net carrying value, difference = $42.5m unamortized discount and issuance costs", "source": "dossiers/GDDY.md lines 40 and 93, re-read to confirm the Loop-7 must-fix is genuinely closed (basis named, not just re-labelled)", "status": "PASS"},
+  {"ticker": "SO", "claim": "Q2 2026 consolidated 'Southern Company' figures ($6.98bn revenue, $1.03 GAAP EPS) are not conflated with a subsidiary (Georgia Power, Alabama Power, etc.) line in the same combined filing", "source": "Cross-read DA14's quoted 8-K Ex-99 citation (accession 0000092122-26-000056) against the dossier's results table; not independently re-fetched by me this loop (secondary confirmation)", "status": "PASS"}
+ ]
+}

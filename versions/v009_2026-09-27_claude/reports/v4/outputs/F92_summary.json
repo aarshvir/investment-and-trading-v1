@@ -1,0 +1,114 @@
+{
+  "agent": "F92",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "ROK": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Industrial-automation leader with a real order recovery, but the stock already prices in more growth than its own guidance or history supports.",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium - recovery is real (two consecutive guidance raises, no pull-forward per management) but valuation leaves no margin of safety",
+      "kill_criteria": [
+        "Organic sales growth falls below 3% for two consecutive quarters.",
+        "Adjusted operating margin drops below 19% for two consecutive quarters (reversing the current expansion).",
+        "Net debt/EBITDA rises above 2.5x (e.g., from debt-funded M&A).",
+        "FY26 or FY27 guidance is cut (not just held flat) versus the prior range.",
+        "Book-to-bill ratio falls below 1.0x for two consecutive quarters, signalling the order recovery has stalled."
+      ],
+      "key_adverse_facts": [
+        "At $415.62, price implies ~9-10% 10-yr FCF/earnings growth vs. a ~5-7% base case from Rockwell's own long-run organic growth history.",
+        "Management flagged a Q4 FY26 margin squeeze from tariff timing/mix even while raising the full-year guide.",
+        "Order recovery is partly a bounce off a 2023-24 destocking trough, a bounded not permanent tailwind."
+      ],
+      "data_conflicts": [
+        "No Form 4 insider-selling pattern independently verified in this pass - flagged as a gap, not confirmed clean."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for ROK; the dossier's own reverse DCF finds implied 10-yr growth (~9-10%) above the evidence-based base case (~6%), so the business quality is real but the price is not, hence WATCH not INCLUDE."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.06,
+        "base": 0.04,
+        "bull": 0.14
+      },
+      "scenario_basis": "Starting adj. EPS $13.15 (FY26); bear 2% growth/20x exit, base mid-single-digit organic growth+margin/26x exit, bull double-digit capex-cycle growth/30x exit; ~0.9% dividend yield added in each case."
+    },
+    "SBUX": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Starbucks' turnaround under CEO Niccol is real and accelerating, but the stock is already priced for the turnaround to keep accelerating for years.",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium - four straight quarters of comp acceleration is genuine, but the base period was depressed and the current multiple assumes no reversion",
+      "kill_criteria": [
+        "Global comparable-store sales growth decelerates below 3% for two consecutive quarters.",
+        "FY27 adjusted EPS guidance is cut versus the initial FY27 guide (once issued).",
+        "Net debt/EBITDA rises back above 3.5x (reversal of the current deleveraging).",
+        "US traffic (comparable transactions) turns negative for two consecutive quarters.",
+        "Non-GAAP operating margin fails to expand for two consecutive quarters (reversing the current trend)."
+      ],
+      "key_adverse_facts": [
+        "At $95.00, price implies ~13-14% 10-yr EPS/FCF growth vs. Starbucks' own multi-decade average of ~8-10%.",
+        "Q3 comp acceleration is partly a bounce off a depressed FY24-early FY25 comp base, not proven as a new sustainable run-rate.",
+        "Q3 GAAP EPS ($0.91) exceeded non-GAAP EPS ($0.85), an inversion likely from a China Transaction gain excluded from adjusted figures - not independently confirmed against the 10-Q footnote."
+      ],
+      "data_conflicts": [
+        "GAAP EPS > non-GAAP EPS in Q3 FY26 is unusual and its exact driver is not independently verified in this pass."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for SBUX; the dossier's reverse DCF finds implied 10-yr growth (~13-14%) above the evidence-based base case (~9%), sitting near the top of the bull case, hence WATCH not INCLUDE despite a genuine operational turnaround."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.09,
+        "base": 0.02,
+        "bull": 0.15
+      },
+      "scenario_basis": "Starting non-GAAP EPS $2.60 (FY26 guide midpoint); bear comp normalization to ~2%/22x exit, base mid-single-digit comps sustained/28x exit, bull turnaround fully delivers/36x exit; ~2.6% dividend yield added in each case."
+    },
+    "SNPS": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Near-essential chip-design software duopolist now also owns Ansys simulation software, but carries new deal debt and China policy risk that argue for a smaller position.",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium - the EDA moat is durable, but leverage and China export-control risk are real, recently-changed variables with limited post-merger track record",
+      "kill_criteria": [
+        "Organic EDA revenue growth (ex-Ansys) falls below 5% for two consecutive quarters.",
+        "Net debt/EBITDA fails to decline from ~3.5x within 18 months of deal close (stays above 3.0x through FY27).",
+        "US or China re-imposes EDA export restrictions that management quantifies as a >3% revenue headwind.",
+        "FY26 or FY27 non-GAAP EPS guidance is cut versus the prior range.",
+        "Ansys integration/restructuring charges extend beyond the originally disclosed integration timeline by more than two quarters."
+      ],
+      "key_adverse_facts": [
+        "Net debt/EBITDA ~3.5x post-Ansys, a material change from Synopsys' historically near-zero-leverage profile.",
+        "Headline 42.4% revenue growth is almost entirely the Ansys acquisition closing, not organic (organic EDA growth 8.5%).",
+        "US EDA export restrictions to China were imposed in 2025, later eased, and could recur with little notice - a disclosed, unresolved policy risk."
+      ],
+      "data_conflicts": [
+        "Market-cap figures across sources range $81-89B, likely reflecting timing of Ansys stock-consideration issuance vs. data-provider refresh dates - not reconciled to the FY26 10-Q share count in this pass."
+      ],
+      "next_earnings_date": "2026-12-09",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "implied_vs_base": "in_line",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for SNPS; the dossier's reverse DCF finds implied 10-yr growth (~11-12%) marginally above/in line with the evidence-based base case (~10-11%), leaving little margin of safety once deal leverage and China risk are weighed, hence INCLUDE-SMALL rather than full INCLUDE."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.08,
+        "base": 0.07,
+        "bull": 0.17
+      },
+      "scenario_basis": "Starting non-GAAP EPS ~$15.07 (FY26 guide midpoint); bear China restrictions return/integration drags, multiple to 20x, base organic EDA+IP+Ansys blend ~10-11% with deleveraging, multiple 26x, bull AI-chip demand plus cross-sell accelerates growth, multiple 32x; minimal dividend."
+    }
+  }
+}

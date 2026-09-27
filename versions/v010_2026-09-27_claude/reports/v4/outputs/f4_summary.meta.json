@@ -1,0 +1,26 @@
+{
+  "agent_id": "f4",
+  "produced": "2026-09-26",
+  "sources": [
+    "SEC EDGAR submissions API: https://data.sec.gov/submissions/CIK##########.json (CIK 0000910521 DECK, 0001116132 TPR, 0001037038 RL)",
+    "SEC EDGAR XBRL companyfacts API: https://data.sec.gov/api/xbrl/companyfacts/CIK##########.json (same three CIKs)",
+    "SEC EDGAR 8-K EX-99.1 earnings press releases and other exhibits, individual accession numbers cited inline in each dossier's Sources section",
+    "FMP MCP connector: company profile-symbol/peers endpoints only (all other endpoints -- statements, quote, earningsTranscript, analyst, insiderTrades, secFilings, news, calendar -- returned ACCESS DENIED or rate-limit errors on the current plan tier)",
+    "v4/outputs/lead_prelim_rank.csv and v4/data/d4_live_snapshot.parquet (internal, this program) for quant context (Q/V/M factor scores, NTM valuation, analyst targets, price history)",
+    "v4/data/d2_adjclose.parquet (internal) for multi-year price-range context",
+    "WebSearch for red-flag screening (litigation, restatements, insider selling context, CEO succession history, Capri merger termination facts) -- all such items are explicitly labelled Tier-4/secondary inline in the dossiers, never used as the sole source for a headline financial figure"
+  ],
+  "retrieval_window_utc": "2026-09-26 (single session)",
+  "coverage": {
+    "tickers": ["DECK", "TPR", "RL"],
+    "quarters_covered_per_ticker": 8,
+    "earnings_releases_read_in_full_per_ticker": 4,
+    "intake_gate_results": "all three PASS or PASS-WITH-WARNINGS via scripts/verify_data.py, 0 errors",
+    "lint_results": "all three PASS-WITH-WARNINGS via scripts/lint_report.py, 0 errors after fixes (reporting-basis and disclaimer sections added)"
+  },
+  "caveats": [
+    "FMP connector was almost entirely gated on this account's plan tier; all quantitative statement data was sourced directly from SEC XBRL instead, which is arguably more rigorous (primary source) but took materially more tool calls than the brief anticipated.",
+    "SEC EDGAR returned intermittent 503 errors during the session (shared rate limit across concurrently-running agents per CONVENTIONS.md); two TPR filings (Aug-2023 Capri merger 8-K, Aug-2025 Q4-FY25 earnings 8-K) could not be retrieved after repeated retries and are covered via secondary sources instead, flagged inline in the TPR dossier and in f4_summary.json's data_conflicts/key_adverse_facts.",
+    "A genuine data-quality bug was found in lead_prelim_rank.csv: TPR's 'rev' field does not equal its own 'cogs'+'gp' fields in the same row (the latter two are correct/current; 'rev' is not). Does not appear to affect Q/V/M scoring since the pre-registered model does not use raw revenue as a factor input. Flagged for the D3/D4 pipeline owners to fix at the source."
+  ]
+}

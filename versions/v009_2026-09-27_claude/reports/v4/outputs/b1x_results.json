@@ -1,0 +1,435 @@
+{
+  "agent": "b1x",
+  "generated_utc": "2026-09-25T22:37:09.397915+00:00",
+  "methodology": "independent implementation per STATE.md 'Pre-registered primary model'; see b1x_report.md",
+  "full_pit_universe": {
+    "tag": "full_PIT_universe",
+    "ic_full_2010_02plus": {
+      "mean_ic": 0.009181353755660409,
+      "ic_ir": 0.09754434518486449,
+      "ic_tstat": 1.3760323238322767,
+      "n_months": 199
+    },
+    "ic_headline_2012_01plus": {
+      "mean_ic": 0.0065912022255349865,
+      "ic_ir": 0.06890923606058422,
+      "ic_tstat": 0.9115835082587501,
+      "n_months": 175
+    },
+    "portfolio_perf": {
+      "top_quintile_gross_vs_ewuniverse_full": {
+        "label": "top_quintile_gross vs EW universe (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.14121132236870948,
+        "ann_vol": 0.1498502142156073,
+        "max_dd": -0.2797307719936327,
+        "bench_cagr": 0.14077165737171726,
+        "excess_cagr": 0.0004396649969922173,
+        "excess_mean_monthly": -4.073491543140249e-05,
+        "excess_tstat": -0.05555618452033461
+      },
+      "top_quintile_gross_vs_spy_full": {
+        "label": "top_quintile_gross vs SPY (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.14121132236870948,
+        "ann_vol": 0.1498502142156073,
+        "max_dd": -0.2797307719936327,
+        "bench_cagr": 0.1459151428110954,
+        "excess_cagr": -0.004703820442385931,
+        "excess_mean_monthly": -0.0002627793800111943,
+        "excess_tstat": -0.24134358544233422
+      },
+      "top_quintile_gross_vs_ewuniverse_headline": {
+        "label": "top_quintile_gross vs EW universe (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.1413360977243825,
+        "ann_vol": 0.1463577129654794,
+        "max_dd": -0.27973077199363283,
+        "bench_cagr": 0.13976044401065435,
+        "excess_cagr": 0.0015756537137281423,
+        "excess_mean_monthly": 6.139786993515529e-05,
+        "excess_tstat": 0.07716631350461443
+      },
+      "top_quintile_gross_vs_spy_headline": {
+        "label": "top_quintile_gross vs SPY (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.1413360977243825,
+        "ann_vol": 0.1463577129654794,
+        "max_dd": -0.27973077199363283,
+        "bench_cagr": 0.1510060500907615,
+        "excess_cagr": -0.00966995236637902,
+        "excess_mean_monthly": -0.0006227334951674324,
+        "excess_tstat": -0.5189400052497242
+      },
+      "top_quintile_net_vs_ewuniverse_full": {
+        "label": "top_quintile_net vs EW universe (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.1347902574282449,
+        "ann_vol": 0.14987483360827633,
+        "max_dd": -0.2810198890386748,
+        "bench_cagr": 0.14077165737171726,
+        "excess_cagr": -0.005981399943472354,
+        "excess_mean_monthly": -0.0005152034664217482,
+        "excess_tstat": -0.7025469439842952
+      },
+      "top_quintile_net_vs_spy_full": {
+        "label": "top_quintile_net vs SPY (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.1347902574282449,
+        "ann_vol": 0.14987483360827633,
+        "max_dd": -0.2810198890386748,
+        "bench_cagr": 0.1459151428110954,
+        "excess_cagr": -0.011124885382850502,
+        "excess_mean_monthly": -0.0007372479310015398,
+        "excess_tstat": -0.6773831796988816
+      },
+      "top_quintile_net_vs_ewuniverse_headline": {
+        "label": "top_quintile_net vs EW universe (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.1351192772841554,
+        "ann_vol": 0.14641619947865794,
+        "max_dd": -0.2810198890386749,
+        "bench_cagr": 0.13976044401065435,
+        "excess_cagr": -0.0046411667264989465,
+        "excess_mean_monthly": -0.00039750187695906605,
+        "excess_tstat": -0.499543825629886
+      },
+      "top_quintile_net_vs_spy_headline": {
+        "label": "top_quintile_net vs SPY (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.1351192772841554,
+        "ann_vol": 0.14641619947865794,
+        "max_dd": -0.2810198890386749,
+        "bench_cagr": 0.1510060500907615,
+        "excess_cagr": -0.01588677280660611,
+        "excess_mean_monthly": -0.0010816332420616537,
+        "excess_tstat": -0.9012703657669046
+      },
+      "top30_gross_vs_ewuniverse_full": {
+        "label": "top30_gross vs EW universe (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.13889353833390494,
+        "ann_vol": 0.1587976660856657,
+        "max_dd": -0.3721812283334158,
+        "bench_cagr": 0.14077165737171726,
+        "excess_cagr": -0.0018781190378123203,
+        "excess_mean_monthly": -8.374647064497874e-05,
+        "excess_tstat": -0.07227283739587709
+      },
+      "top30_gross_vs_spy_full": {
+        "label": "top30_gross vs SPY (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.13889353833390494,
+        "ann_vol": 0.1587976660856657,
+        "max_dd": -0.3721812283334158,
+        "bench_cagr": 0.1459151428110954,
+        "excess_cagr": -0.007021604477190468,
+        "excess_mean_monthly": -0.00030579093522477014,
+        "excess_tstat": -0.2138305214414312
+      },
+      "top30_gross_vs_ewuniverse_headline": {
+        "label": "top30_gross vs EW universe (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.13498090909763083,
+        "ann_vol": 0.15739098305752366,
+        "max_dd": -0.3721812283334158,
+        "bench_cagr": 0.13976044401065435,
+        "excess_cagr": -0.00477953491302352,
+        "excess_mean_monthly": -0.0002544860715318498,
+        "excess_tstat": -0.20168674808445064
+      },
+      "top30_gross_vs_spy_headline": {
+        "label": "top30_gross vs SPY (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.13498090909763083,
+        "ann_vol": 0.15739098305752366,
+        "max_dd": -0.3721812283334158,
+        "bench_cagr": 0.1510060500907615,
+        "excess_cagr": -0.016025140993130682,
+        "excess_mean_monthly": -0.0009386174366344373,
+        "excess_tstat": -0.5945167241704823
+      },
+      "top30_net_vs_ewuniverse_full": {
+        "label": "top30_net vs EW universe (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.1305430119643649,
+        "ann_vol": 0.15885873115122368,
+        "max_dd": -0.38014627878239504,
+        "bench_cagr": 0.14077165737171726,
+        "excess_cagr": -0.010228645407352355,
+        "excess_mean_monthly": -0.0007018369229062851,
+        "excess_tstat": -0.605170265906306
+      },
+      "top30_net_vs_spy_full": {
+        "label": "top30_net vs SPY (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.1305430119643649,
+        "ann_vol": 0.15885873115122368,
+        "max_dd": -0.38014627878239504,
+        "bench_cagr": 0.1459151428110954,
+        "excess_cagr": -0.015372130846730503,
+        "excess_mean_monthly": -0.0009238813874860766,
+        "excess_tstat": -0.6458829536263309
+      },
+      "top30_net_vs_ewuniverse_headline": {
+        "label": "top30_net vs EW universe (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.12678831949792335,
+        "ann_vol": 0.15747678547488597,
+        "max_dd": -0.38014627878239493,
+        "bench_cagr": 0.13976044401065435,
+        "excess_cagr": -0.012972124512730998,
+        "excess_mean_monthly": -0.000862440616986395,
+        "excess_tstat": -0.6828654769553744
+      },
+      "top30_net_vs_spy_headline": {
+        "label": "top30_net vs SPY (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.12678831949792335,
+        "ann_vol": 0.15747678547488597,
+        "max_dd": -0.38014627878239493,
+        "bench_cagr": 0.1510060500907615,
+        "excess_cagr": -0.02421773059283816,
+        "excess_mean_monthly": -0.0015465719820889825,
+        "excess_tstat": -0.97911271907327
+      }
+    },
+    "ew_universe": {
+      "cagr_full": 0.14077165737171726,
+      "cagr_headline": 0.13976044401065435,
+      "ann_vol_full": 0.15591580680429745,
+      "max_dd_full": -0.2701689474242768
+    },
+    "spy": {
+      "cagr_full": 0.1459151428110954,
+      "cagr_headline": 0.1510060500907615,
+      "ann_vol_full": 0.14359802512576286,
+      "max_dd_full": -0.23927186396772648
+    },
+    "avg_turnover_one_way": {
+      "top_quintile": 0.23723427549517268,
+      "top30": 0.30904522613065327
+    },
+    "avg_names": {
+      "top_quintile": 79.98994974874371,
+      "top30": 30.0
+    }
+  },
+  "current_constituents_bias_check": {
+    "tag": "current_constituents_bias_check",
+    "ic_full_2010_02plus": {
+      "mean_ic": 0.0023990351349073946,
+      "ic_ir": 0.026874502141944125,
+      "ic_tstat": 0.379111506301371,
+      "n_months": 199
+    },
+    "ic_headline_2012_01plus": {
+      "mean_ic": -0.001919469046507494,
+      "ic_ir": -0.021501126820429456,
+      "ic_tstat": -0.2844331723725864,
+      "n_months": 175
+    },
+    "portfolio_perf": {
+      "top_quintile_gross_vs_ewuniverse_full": {
+        "label": "top_quintile_gross vs EW universe (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.18410576284565217,
+        "ann_vol": 0.14763239813958887,
+        "max_dd": -0.24684760457981558,
+        "bench_cagr": 0.18502231358831223,
+        "excess_cagr": -0.0009165507426600605,
+        "excess_mean_monthly": -0.0001480241026773898,
+        "excess_tstat": -0.20199292888327935
+      },
+      "top_quintile_gross_vs_spy_full": {
+        "label": "top_quintile_gross vs SPY (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.18410576284565217,
+        "ann_vol": 0.14763239813958887,
+        "max_dd": -0.24684760457981558,
+        "bench_cagr": 0.1459151428110954,
+        "excess_cagr": 0.038190620034556755,
+        "excess_mean_monthly": 0.0028158290836140997,
+        "excess_tstat": 2.680540520736748
+      },
+      "top_quintile_gross_vs_ewuniverse_headline": {
+        "label": "top_quintile_gross vs EW universe (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.18426310385116285,
+        "ann_vol": 0.14471879451662098,
+        "max_dd": -0.2468476045798157,
+        "bench_cagr": 0.1867227841208059,
+        "excess_cagr": -0.0024596802696430498,
+        "excess_mean_monthly": -0.0002356199199567335,
+        "excess_tstat": -0.305077311463862
+      },
+      "top_quintile_gross_vs_spy_headline": {
+        "label": "top_quintile_gross vs SPY (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.18426310385116285,
+        "ann_vol": 0.14471879451662098,
+        "max_dd": -0.2468476045798157,
+        "bench_cagr": 0.1510060500907615,
+        "excess_cagr": 0.033257053760401334,
+        "excess_mean_monthly": 0.0024656057947000302,
+        "excess_tstat": 2.1361099785211093
+      },
+      "top_quintile_net_vs_ewuniverse_full": {
+        "label": "top_quintile_net vs EW universe (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.1776424240727399,
+        "ann_vol": 0.1476545832692027,
+        "max_dd": -0.24806541377949287,
+        "bench_cagr": 0.18502231358831223,
+        "excess_cagr": -0.007379889515572335,
+        "excess_mean_monthly": -0.0006097497893774222,
+        "excess_tstat": -0.8308874068589415
+      },
+      "top_quintile_net_vs_spy_full": {
+        "label": "top_quintile_net vs SPY (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.1776424240727399,
+        "ann_vol": 0.1476545832692027,
+        "max_dd": -0.24806541377949287,
+        "bench_cagr": 0.1459151428110954,
+        "excess_cagr": 0.03172728126164448,
+        "excess_mean_monthly": 0.002354103396914068,
+        "excess_tstat": 2.2406400023557507
+      },
+      "top_quintile_net_vs_ewuniverse_headline": {
+        "label": "top_quintile_net vs EW universe (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.1780303889647168,
+        "ann_vol": 0.14476646202838978,
+        "max_dd": -0.24806541377949287,
+        "bench_cagr": 0.1867227841208059,
+        "excess_cagr": -0.008692395156089106,
+        "excess_mean_monthly": -0.0006804846067068476,
+        "excess_tstat": -0.8806169660928292
+      },
+      "top_quintile_net_vs_spy_headline": {
+        "label": "top_quintile_net vs SPY (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.1780303889647168,
+        "ann_vol": 0.14476646202838978,
+        "max_dd": -0.24806541377949287,
+        "bench_cagr": 0.1510060500907615,
+        "excess_cagr": 0.027024338873955278,
+        "excess_mean_monthly": 0.002020741107949916,
+        "excess_tstat": 1.7501772625048566
+      },
+      "top30_gross_vs_ewuniverse_full": {
+        "label": "top30_gross vs EW universe (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.1970576313594321,
+        "ann_vol": 0.15607009591418305,
+        "max_dd": -0.28748966121332853,
+        "bench_cagr": 0.18502231358831223,
+        "excess_cagr": 0.01203531777111988,
+        "excess_mean_monthly": 0.0008819288108676487,
+        "excess_tstat": 0.7166032172055149
+      },
+      "top30_gross_vs_spy_full": {
+        "label": "top30_gross vs SPY (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.1970576313594321,
+        "ann_vol": 0.15607009591418305,
+        "max_dd": -0.28748966121332853,
+        "bench_cagr": 0.1459151428110954,
+        "excess_cagr": 0.051142488548336695,
+        "excess_mean_monthly": 0.0038457819971591395,
+        "excess_tstat": 2.6487891021328913
+      },
+      "top30_gross_vs_ewuniverse_headline": {
+        "label": "top30_gross vs EW universe (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.19755288177671382,
+        "ann_vol": 0.15614201817188825,
+        "max_dd": -0.28748966121332864,
+        "bench_cagr": 0.1867227841208059,
+        "excess_cagr": 0.010830097655907922,
+        "excess_mean_monthly": 0.000854691723721267,
+        "excess_tstat": 0.6390583833265226
+      },
+      "top30_gross_vs_spy_headline": {
+        "label": "top30_gross vs SPY (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.19755288177671382,
+        "ann_vol": 0.15614201817188825,
+        "max_dd": -0.28748966121332864,
+        "bench_cagr": 0.1510060500907615,
+        "excess_cagr": 0.046546831685952306,
+        "excess_mean_monthly": 0.00355591743837803,
+        "excess_tstat": 2.2137777250282524
+      },
+      "top30_net_vs_ewuniverse_full": {
+        "label": "top30_net vs EW universe (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.1882373219706499,
+        "ann_vol": 0.15616694813423915,
+        "max_dd": -0.2898501160048734,
+        "bench_cagr": 0.18502231358831223,
+        "excess_cagr": 0.0032150083823376807,
+        "excess_mean_monthly": 0.0002584782246029925,
+        "excess_tstat": 0.20980779178716716
+      },
+      "top30_net_vs_spy_full": {
+        "label": "top30_net vs SPY (2010-02+)",
+        "n_months": 199,
+        "cagr": 0.1882373219706499,
+        "ann_vol": 0.15616694813423915,
+        "max_dd": -0.2898501160048734,
+        "bench_cagr": 0.1459151428110954,
+        "excess_cagr": 0.042322179159554496,
+        "excess_mean_monthly": 0.003222331410894483,
+        "excess_tstat": 2.217468828335551
+      },
+      "top30_net_vs_ewuniverse_headline": {
+        "label": "top30_net vs EW universe (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.1888454192061284,
+        "ann_vol": 0.15627228761633705,
+        "max_dd": -0.28985011600487365,
+        "bench_cagr": 0.1867227841208059,
+        "excess_cagr": 0.0021226350853225107,
+        "excess_mean_monthly": 0.0002399189964485401,
+        "excess_tstat": 0.17927638431649087
+      },
+      "top30_net_vs_spy_headline": {
+        "label": "top30_net vs SPY (2012-01+)",
+        "n_months": 176,
+        "cagr": 0.1888454192061284,
+        "ann_vol": 0.15627228761633705,
+        "max_dd": -0.28985011600487365,
+        "bench_cagr": 0.1510060500907615,
+        "excess_cagr": 0.037839369115366894,
+        "excess_mean_monthly": 0.0029411447111053037,
+        "excess_tstat": 1.8296021194024257
+      }
+    },
+    "ew_universe": {
+      "cagr_full": 0.18502231358831223,
+      "cagr_headline": 0.1867227841208059,
+      "ann_vol_full": 0.15432274678589478,
+      "max_dd_full": -0.2391528372328503
+    },
+    "spy": {
+      "cagr_full": 0.1459151428110954,
+      "cagr_headline": 0.1510060500907615,
+      "ann_vol_full": 0.14359802512576286,
+      "max_dd_full": -0.23927186396772648
+    },
+    "avg_turnover_one_way": {
+      "top_quintile": 0.2308628433500161,
+      "top30": 0.3117252931323283
+    },
+    "avg_names": {
+      "top_quintile": 88.96984924623115,
+      "top30": 30.0
+    }
+  },
+  "bias_check_deltas": {
+    "ic_mean_diff_headline_current_minus_full": -0.00851067127204248,
+    "top30_cagr_diff_headline_current_minus_full": 0.06257197267908299
+  }
+}

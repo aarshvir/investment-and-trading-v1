@@ -1,0 +1,116 @@
+{
+  "agent": "F57",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "TDG": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Sole-source aircraft-parts monopoly with real pricing power, but growth is now heavily debt-and-acquisition-fueled and the price already assumes that keeps working for a decade.",
+      "horizon": "not held at current price; revisit if net leverage falls toward 5x EBITDA or organic growth proves durable above 7% on its own",
+      "kill_criteria": [
+        "Net debt/EBITDA As Defined (consolidated, per the company's own quarterly reconciliation table) exceeds 6.5x",
+        "GAAP net income growth is negative YoY for two consecutive fiscal quarters (already occurred once, FQ1 FY2026; a repeat would confirm a trend rather than a one-off financing-timing effect)",
+        "Organic sales growth (company's own disclosed figure, ex-acquisitions) falls below 7% for two consecutive fiscal quarters (vs. 7.4%/11.0%/13% in the last three quarters)",
+        "FY guidance is cut (not raised or maintained) at any subsequent quarterly release, versus the current $10,470-10,550M sales / $35.38-36.21 GAAP EPS range",
+        "A new DoD Inspector General report or a congressional/DoD enforcement action (refund demand, mandatory cost-data-disclosure order) is issued against TransDigm specifically (vs. the historical 2019-2022 pattern with no new action found as of this dossier)"
+      ],
+      "key_adverse_facts": [
+        "FQ1 FY2026 GAAP net income fell 9.7% YoY (to $445M) despite operating income rising ~7% YoY; the company's own release states this 'primarily reflects higher interest expense as a result of the increase in TransDigm's year-over-year debt'",
+        "Consolidated net debt ~$30.7bn vs TTM EBITDA As Defined ~$5.2-5.3bn = ~5.5-5.9x leverage, and rising: $1.5bn of incremental debt (incl. 6.125% senior subordinated notes) was raised 2026-04-17 to help fund acquisitions",
+        "Reported 22-23% headline revenue growth is materially M&A-driven: organic growth was only 13 percentage points of the 23% total in the most recent quarter",
+        "TD Group consolidated stockholders' deficit is -$9.8bn (negative book equity), a long-standing feature of the leveraged capital structure",
+        "Recurring DoD Inspector General/congressional scrutiny of TransDigm's aftermarket-parts pricing practices (2019-2022 findings; no new enforcement action found in 2025-2026 filings, but unresolved as a reputational/political tail risk)"
+      ],
+      "data_conflicts": [
+        "d4 vendor TTM free-cash-flow figure for TDG ($1.457bn) is below this dossier's own SEC-filing-derived TTM FCF ($1.927bn, from OCF minus capex per XBRL YTD tags); direction of the conflict would make TDG look even more expensive on FCF yield if the vendor figure were used"
+      ],
+      "next_earnings_date": "2026-11-05",
+      "confidence_in_thesis": "medium: the debt-service drag on net income and the organic-vs-M&A growth split are both directly evidenced in the company's own filings; the exact leverage multiple and forward FCF run-rate carry genuine estimation uncertainty given TDG's fiscal-quarter reporting and redeemable-NCI EPS mechanics",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for TDG (outside the original 69-name V1 universe). Own reverse DCF (equity-value basis, given negative book equity): implied 10-yr FCF-to-equity growth 12.5-14.75% across cost-of-equity 9.5-10.5% (equity value $62.4bn, TTM FCF-to-equity $1.927bn, terminal growth 3%) vs. an independent base-case estimate of ~9-12%/yr (blending guided EBITDA growth with the demonstrated debt-service drag) - implied_vs_base = above, and likely understated given the TTM FCF base predates a full year of the April-2026 debt raise.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.13,
+        "base": 0.08,
+        "bull": 0.21
+      },
+      "scenario_basis": "Starting TTM GAAP diluted EPS $32.96 (FQ4'25-FQ3'26); base: adjusted EPS/FCF-equivalent growth ~11%/yr (EBITDA growth mid-teens moderated by rising interest expense and integration costs), NTM P/E compresses 23.1x->21x as leverage risk gets re-priced (no dividend); bear: DoD/political scrutiny escalates or an acquisition disappoints and deleveraging stalls, EPS growth ~2%/yr, multiple compresses to 16x; bull: successful integration of JPE/VSA/Prince&Izant and intact aftermarket pricing power, EPS growth ~18%/yr, multiple holds ~25x."
+    },
+    "TT": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Top-tier commercial HVAC and data-centre-cooling franchise with record backlog and low debt, but the premium price already reflects most of that strength.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Organic bookings growth turns negative YoY for two consecutive quarters (vs. +24%/+37% in Q1/Q2 2026 - a sharp, measurable reversal of the current trend)",
+        "Book-to-bill ratio falls below 100% for two consecutive quarters (vs. 123% in Q2 2026)",
+        "Net debt/EBITDA (consolidated) exceeds 2.0x",
+        "FY2026 guidance (currently adjusted EPS $15.20-15.30) is cut vs. the immediately preceding range at either of the next two quarterly releases",
+        "Adjusted operating margin contracts more than 150bp YoY for two consecutive quarters (vs. -20bp/-60bp in Q1/Q2 2026)"
+      ],
+      "key_adverse_facts": [
+        "GAAP operating margin contracted YoY in both Q1 2026 (-190bp) and Q2 2026 (-100bp), though adjusted margin was roughly flat (-20bp/-60bp) - the gap is non-GAAP acquisition/restructuring items, not an unexplained deterioration",
+        "TTM free cash flow (~$3.54bn, differenced from XBRL YTD tags) is likely inflated by a working-capital tailwind from record bookings/customer advances that may not repeat; this dossier used the more conservative NI-conversion-based FCF (~$2.95bn) for its base-case reverse DCF",
+        "Record bookings growth is concentrated in Americas Commercial HVAC/data-centre cooling - a real but narrower demand driver than 'HVAC broadly'",
+        "26.8x NTM P/E leaves the reverse DCF with essentially no valuation cushion"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-29",
+      "confidence_in_thesis": "medium-high: the bookings/backlog acceleration and guidance track record are directly filing-sourced and consistent; the valuation reconciliation (implied approximately equal to base case) is a close, disclosed judgement call with essentially no margin of safety",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for TT (outside the original 69-name V1 universe). Own reverse DCF: implied 10-yr FCF growth 7.4% (using TTM FCF $3.54bn) to 9.7% (using the more conservative NI-conversion-based FCF $2.95bn), WACC 8.0%, terminal 3.0%, EV $103.3bn, vs. an independent base-case estimate of ~9-10%/yr (management's own high-single-digit long-term algorithm, now running ahead of that) - implied_vs_base = in_line, matching the triage's own 'premium largely earned' read.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.07,
+        "base": 0.10,
+        "bull": 0.16
+      },
+      "scenario_basis": "Starting FY2026 guided adjusted continuing EPS midpoint $15.25; base: adjusted EPS growth ~9%/yr (matches guided algorithm), NTM P/E holds ~27x, plus ~0.9% dividend yield; bear: data-centre/commercial HVAC capex pauses and bookings roll over, EPS growth slows to ~2%/yr, multiple compresses to 20x, plus dividend; bull: electrification and data-centre cooling tailwind sustains, EPS growth ~14%/yr, multiple holds ~28x, plus dividend."
+    },
+    "TXN": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Best-in-class analog chipmaker in a genuine capex-down, cash-flow-up recovery, but an unresolved Chinese anti-dumping case and a rapidly moving cash-flow base leave no real valuation cushion.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "TI's own reported TTM free-cash-flow margin (FCF/revenue) falls back below 20% for two consecutive quarterly releases",
+        "China's MOFCOM anti-dumping investigation concludes with duties or measures materially affecting TI's China unit economics (any published preliminary or final determination naming TI)",
+        "The next-quarter revenue guidance given at a release is cut (not raised or maintained) versus the immediately preceding quarter's guided range, at either of the next two earnings releases",
+        "Net debt/EBITDA (consolidated) exceeds 2.0x",
+        "Operating margin contracts more than 300bp YoY for two consecutive quarters (ex. any disclosed one-off item)"
+      ],
+      "key_adverse_facts": [
+        "China's Ministry of Commerce opened a formal anti-dumping investigation (announced Sept/Oct 2025) into US analog interface and gate-driver chips naming Texas Instruments and Analog Devices specifically; statutory conclusion date ~2026-09-13 (extendable 6 months) - unresolved as of this dossier's 2026-09-25 cutoff, against ~20% of TI revenue from China-headquartered customers and ~50% of revenue on products shipped into China",
+        "TTM buybacks fell 61% YoY (to $707M from $1.81bn) as TI prioritizes capex and the dividend over buybacks during the recovery",
+        "The reverse-DCF implied growth range (9.6-13.4%) is highly sensitive to which trailing-vs-run-rate FCF figure is used as the starting base, given TI is mid-cyclical-inflection; no normalization choice showed a comfortable margin of safety",
+        "d4 vendor TTM free-cash-flow figure ($3.545bn) materially understates the company's own reported TTM FCF ($6.534bn, 2026-07-22 release)"
+      ],
+      "data_conflicts": [
+        "d4 vendor 'freeCashflow' field for TXN ($3.545bn TTM) is well below TI's own reported TTM free cash flow ($6.534bn, per the 2026-07-22 earnings release); the vendor figure appears stale or computed on a different trailing window and should not be used for TXN valuation work"
+      ],
+      "next_earnings_date": "2026-10-27",
+      "confidence_in_thesis": "medium: the revenue/margin reacceleration and guidance beats are directly filing-sourced and consistent; the reverse-DCF valuation call and the China anti-dumping outcome are both genuinely unresolved within the time available",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for TXN (outside the original 69-name V1 universe). Own reverse DCF: implied 10-yr FCF growth 9.6% (using the Q2'26 quarterly FCF annualised) to 13.4% (using TTM FCF), WACC 9.0%, terminal 3.5%, EV $264.3bn, vs. an independent base-case estimate of ~9-10%/yr (through-cycle mid-single-digit revenue growth plus decelerating margin/FCF-conversion gains) - implied_vs_base = in_line, with no cushion on either normalization.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.10,
+        "base": 0.075,
+        "bull": 0.19
+      },
+      "scenario_basis": "Starting TTM GAAP diluted EPS $6.51 (Q3'25-Q2'26); base: EPS/FCF growth ~9%/yr as the capex-down cycle continues to normalize, NTM P/E compresses 28.7x->26x, plus ~2.1% dividend yield; bear: China MOFCOM duties hit plus a cyclical semis downturn resumes, EPS roughly flat, multiple compresses to 20x, plus dividend; bull: AI-adjacent industrial/auto content sustains high growth, EPS growth ~16%/yr, multiple holds ~30x, plus dividend."
+    }
+  }
+}

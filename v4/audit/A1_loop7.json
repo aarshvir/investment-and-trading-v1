@@ -1,0 +1,28 @@
+{
+ "total": 85,
+ "criteria": {
+  "1": 9,
+  "2": 9,
+  "3": 9,
+  "4": 8,
+  "5": 8,
+  "6": 9,
+  "7": 8,
+  "8": 8,
+  "9": 9,
+  "10": 8
+ },
+ "must_fix": [
+  "(criterion 4/10) Extend the mechanical dossier pre-check (code/lead_dossier_precheck.py) to numeric cross-ties, not just citation/entity-scope patterns. PPG's dossier stated long-term debt of $6,876m at 30-Jun-2026; the cited 10-Q's own balance sheet (accession 0000079879-26-000252) shows $6,195m -- an $681m (~11%) overstatement that flowed into an overstated total debt (~$7.57bn vs correct ~$6.89bn) and net debt ($6.05bn vs correct ~$5.37bn). The pre-check ran on this dossier (outputs/dossier_precheck.json) but only flags citation/entity-scope lines, not whether a stated 'total X' equals the sum of its own cited components. DA12 caught the error and I independently re-derived the correction's arithmetic myself (matches). This is the third consecutive loop (Loop 5: GM/RJF entity conflation; Loop 6: COR guidance-checkpoint mislabel; Loop 7: PPG debt arithmetic) where a load-bearing numeric error is caught only by the adversarial DA pass, not the authoring analyst or the mechanical pre-check built specifically to reduce reliance on that pass. Fix: add a component-sum self-check (does the stated total equal the sum of the figures cited two lines earlier?) to the diligence prompt/pre-check before the summary is finalized.",
+  "(criterion 1) Reconcile GDDY's 'gross' vs. 10-Q net-carrying-value total debt figure. The dossier states total debt '(gross, DebtInstrumentCarryingAmount) $3,816.9m'; I independently fetched the same 10-Q (accession 0001609711-26-000088) and summed current ($15.0m) + long-term net of current ($3,759.4m) = $3,774.4m -- a $42.5m (1.1%) gap. Plausibly gross principal vs. net-of-issuance-cost carrying value (both legitimate concepts), but the dossier does not state which basis it used or why the two differ, so a reader cannot distinguish this from a PPG-style data error. Zero portfolio effect (leverage kill criteria are framed wide enough that $42.5m does not move the verdict). Fix: one clause in GDDY section 6 naming the XBRL tag basis and reconciling it to the 10-Q's own net carrying-value line.",
+  "(carried, not a new defect -- confirmed by design, same as Loop 6) The verification gate correctly reads OPEN for exactly one reason: outputs/c1_consistency.json still names the pre-wave-4 build's content_sha256 (9bc2eb70...) while the live frozen build is d5c7e755.... I ran code/lead_verify_gate.py myself and confirmed no holding is missing an independent DA-series fact-check and no FAIL is left uncorrected. This is the fourth consecutive loop this exact gap has been the sole open item; recommend actually completing one full cycle (fix -> re-run C1 last -> gate reads PASS) before the next release, so the mechanism is proven to close in practice, not just in theory.",
+  "(minor, criterion 6) Note in section 6 that Financials now binds two caps simultaneously (25% sector-weight cap and rule (l)'s separate 5-names-per-sector count cap) for the first time this loop -- both recomputed by me and both correctly enforced (5 names: ADP MA AXP HBAN USB, exactly 25.00% weight), but the report does not currently say that a sixth otherwise-eligible Financials name would be excluded by the count rule alone, before the weight cap would even bind."
+ ],
+ "fact_checks": [
+  {"ticker": "GDDY", "claim": "Total stockholders' equity fell from $237.3m (2026-03-31) to $6.7m (2026-06-30), driven by continued share repurchases", "source": "GDDY 10-Q for the quarter ended 2026-06-30, accession 0001609711-26-000088, fetched directly from SEC EDGAR via WebFetch", "status": "PASS"},
+  {"ticker": "GDDY", "claim": "Total debt (gross, DebtInstrumentCarryingAmount) $3,816.9m at 2026-06-30", "source": "Same 10-Q: current portion $15.0m + long-term debt net of current $3,759.4m = $3,774.4m (independent WebFetch)", "status": "MINOR"},
+  {"ticker": "PPG", "claim": "Corrected (27 Sep 2026) long-term debt $6,195m; total debt ~$6.89bn; net debt ~$5.37bn", "source": "Re-derived arithmetic from DA12's cited 10-Q figures (accession 0000079879-26-000252): 691+6195=6886; 6886-1520=5366", "status": "PASS"},
+  {"ticker": "USB", "claim": "Q2 2026 net revenue $7,712m; NII (TE) $4,387m; net income $2,177m; diluted EPS $1.35; CET1 10.8%", "source": "Cross-read DA12's quoted 8-K Ex-99.1 citation (accession 0000036104-26-000039) against the dossier table; not independently re-fetched by me this loop", "status": "PASS"},
+  {"ticker": "EXC", "claim": "FY2026 adjusted operating EPS guidance affirmed at $2.81-$2.91 across Q4/FY2025, Q1 2026 and Q2 2026 with no cut", "source": "Cross-read DA11's quoted 8-K Ex-99.1 citations (three accessions) against the dossier guidance table; not independently re-fetched by me this loop", "status": "PASS"}
+ ]
+}

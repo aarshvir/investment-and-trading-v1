@@ -1,0 +1,30 @@
+{
+ "total": 85,
+ "criteria": {
+  "1": 9,
+  "2": 9,
+  "3": 9,
+  "4": 8,
+  "5": 8,
+  "6": 9,
+  "7": 8,
+  "8": 8,
+  "9": 9,
+  "10": 8
+ },
+ "must_fix": [
+  "(criterion 10, eighth consecutive loop) code/lead_verify_gate.py reads OPEN for exactly one reason every loop from 3 to 10: outputs/c1_consistency.json narrates an older build (wave-6/Loop-9, built 2026-09-27T03:24:13, content 174b2544/7ac48e4d-era text) than the one frozen for this audit (wave-7, built 2026-09-27T04:19:57, content cd5f38e0..., holdings WEC RSG TJX MA USB LH STE BALL DOV ADP BR PGR AXP HBAN MCK CRH LVS PTC VEEV GDDY). I confirmed via the gate's own message that no holding lacks an independent DA-series fact-check and no FAIL is left uncorrected -- the substance is fine -- but a control that is 'correct by design' yet has never been observed to read PASS in eight consecutive audits is not proven to work end-to-end. Fix: before the next auditor launch, run the full sequence once with no diligence wave in between (rebuild -> immediately re-run C1 against that exact content_sha256 -> freeze -> audit), so an outside auditor can confirm PASS on the reviewed build at least once.",
+  "(criterion 4, recurring error class) DA19 found LH's '2Q'25' results-table row actually contained isolated Q3 2025 data ($3,563.5m/$396.6m/$3.12), with an incorrectly labelled 9-month-cumulative footnote on the adjacent row -- the same class of error as PTC (Loop 9, wrong fiscal quarter by one) and TJX (Loop 8, prior-year column swap). lead_dossier_precheck.py checks citation format/entity scope and lead_xbrl_crosstie.py checks numeric tag matches; neither parses a results-table row's stated fiscal-period label and compares it to the XBRL fact's true period-end date for the value shown in that row. Fix: add exactly that mechanical check -- it would have caught 3 of the last 4 loops' quarter-mislabelling FAILs without waiting on a human DA pass each wave.",
+  "(minor, criterion 5) RSG and LH's valuation legs are single-method (reverse-DCF/V1) entries, unlike GDDY which got a second independent leg (peer EV/EBITDA and EV/FCF) in Loop 8. Add a second valuation method for RSG in particular before the next valuation-focused loop, given its 27.0x multiple is the highest in the current book."
+ ],
+ "fact_checks": [
+  {"ticker": "RSG", "claim": "Q2 2026 (three months ended 2026-06-30): revenue $4,430m (+4.6% YoY); net income $566m; GAAP diluted EPS $1.84 (vs $1.75 in Q2 2025); adjusted diluted EPS $1.85", "source": "Independent WebSearch surfacing the SEC 8-K Ex-99.1 exhibit and a trade-press (RecyclingProductNews) summary of the same release, separate from DA19's own citation chain", "status": "PASS"},
+  {"ticker": "LH", "claim": "Kill criterion 1 (full-year adjusted EPS guidance cut at either of the next two releases) has not been triggered -- guidance was raised, not cut, at both the Q1'26 and Q2'26 releases", "source": "DA19's own quoted primary-source text from both 8-Ks; not independently re-fetched by me this loop", "status": "PASS"},
+  {"ticker": "LH", "claim": "The dossier's '2Q'25' results-table row ($3,563.5m/$396.6m/$3.12) is actually isolated Q3 2025 data, not Q2 2025; the true Q2'25 figures ($3,527.3m/$394.5m/$2.84) were missing; the adjacent row's 9mo-cumulative footnote was also mislabelled; now corrected with an inline marker", "source": "outputs/da19_factcheck.json's fully worked LH finding, cross-checked for internal arithmetic consistency (3Q'25 row's $8.48 9-month EPS vs the $3.12 quarterly figure)", "status": "PASS"},
+  {"ticker": "portfolio", "claim": "Weights sum to 1.0 exactly; max single name 8.32% (WEC, cap 10%); max sector 25.00% (Financials: MA, USB, PGR, AXP, HBAN, 5 names); max sub-industry 8.32% (cap 12%); min-name floor 3.00% (GDDY)", "source": "Recomputed directly from outputs/lead_portfolio_build.json's weights/table/sectors myself in Python rather than trusting checks[]", "status": "PASS"},
+  {"ticker": "portfolio", "claim": "GFC max drawdown for the current 20-name sleeve is -47.70% (2007-12-10 to 2009-03-09) vs SPY -55.19% over the same days, matching FINAL_REPORT's -47%/-55% (S1) and -47.3% crisis-replay figure", "source": "Recomputed directly from outputs/lead_risk_results.json's worst_fall block", "status": "PASS"},
+  {"ticker": "portfolio", "claim": "Rule-(j) order sensitivity: 6 of 20 names held under every tested ordering (ADP, CRH, GDDY, TJX, USB, VEEV), down from 9 in the prior wave -- stated honestly in FINAL_REPORT S6 as rising order-dependence", "source": "outputs/lead_j_sensitivity.json's in_every_ordering array (n_in_every_ordering=6), cross-checked against FINAL_REPORT.md's S6 text", "status": "PASS"},
+  {"ticker": "backtest", "claim": "Primary top-30 EW backtest CAGR 12.5% vs SPY TR 15.1% over 176 months (2012-01 to 2026-08)", "source": "Recompounded primary_top30_ew_net and bench_SPY directly from data/b1_strategy_returns_monthly.parquet", "status": "PASS"},
+  {"ticker": "portfolio", "claim": "Diligence queue is complete: 336 companies researched in full, 0 still queued, second share classes (GOOG/FOXA/NWSA) judged with their siblings", "source": "data/full_diligence_wave7.json and STATE.md's wave-7 completion log line, cross-checked against FINAL_REPORT.md S1/S6 text", "status": "PASS"}
+ ]
+}

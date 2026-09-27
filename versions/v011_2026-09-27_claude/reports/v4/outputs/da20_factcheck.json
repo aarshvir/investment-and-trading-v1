@@ -1,0 +1,87 @@
+{
+  "as_of": "2026-09-27",
+  "scope": "DA20: independent second valuation leg (peer EV/EBITDA, EV/FCF, P/E) for RSG and LH, cross-checked against each dossier's single reverse-DCF valuation view, following the DA17/GDDY precedent. RSG peers: WM, WCN, CWST, GFL. LH peers: DGX, IQV, CRL. Prices/EV/EBITDA/FCF for RSG, LH, WM, DGX, IQV, CRL from v4/data/d4_live_snapshot.parquet (25 Sep 2026 close, Yahoo-sourced fields); WCN/CWST/GFL from stockanalysis.com (S&P Global Market Intelligence data), retrieved 2026-09-27, priced as of 25-26 Sep 2026 close with EBITDA/debt as of each company's most recently reported quarter (last refreshed by the source Jul 2026). Do not edit dossiers or any other file; read-only audit output.",
+  "facts": [
+    {
+      "ticker": "RSG",
+      "claim": "valuation cross-check",
+      "dossier_location": "RSG.md §7 Valuation & reverse DCF (\"NTM P/E 27.0x ... reverse DCF ... implied 10-year FCF growth ~7.2% p.a. ... Implied vs base: BELOW\")",
+      "source": "v4/data/d4_live_snapshot.parquet, 25 Sep 2026 close (RSG: price $212.10, EV $79.33bn, EBITDA $5.257bn, FCF $1.943bn, NTM P/E 27.02x, net debt $14.19bn); computed net debt/EBITDA 2.70x",
+      "source_value": "RSG EV/EBITDA 15.09x, EV/FCF 40.85x, net debt/EBITDA 2.70x, NTM P/E 27.02x",
+      "status": "PASS",
+      "note": "Net debt/EBITDA 2.70x matches the dossier's own recomputation (§6: ~2.5x consolidated, triage 2.7x) almost exactly, corroborating the dossier's balance-sheet figures independently of SEC filings."
+    },
+    {
+      "ticker": "RSG",
+      "claim": "valuation cross-check",
+      "dossier_location": "RSG.md §7 (implicit peer comparator: dossier frames RSG as duopolist with Waste Management)",
+      "source": "v4/data/d4_live_snapshot.parquet, 25 Sep 2026 close (WM: price $206.83, EV $105.92bn, EBITDA $7.774bn, FCF $2.348bn, NTM P/E 23.36x, net debt $22.80bn)",
+      "source_value": "WM EV/EBITDA 13.63x, EV/FCF 45.07x, net debt/EBITDA 2.93x, NTM P/E 23.36x",
+      "status": "MINOR",
+      "note": "RSG trades at a ~11% EV/EBITDA premium to WM (15.09x vs 13.63x) and a ~16% NTM P/E premium (27.0x vs 23.4x), but is actually cheaper than WM on EV/FCF (40.85x vs 45.07x) and carries slightly lower leverage. The premium exists but is modest, not extreme, versus the closest and highest-quality comparator."
+    },
+    {
+      "ticker": "RSG",
+      "claim": "valuation cross-check",
+      "dossier_location": "RSG.md §1/§7 (\"27x NTM P/E ... the highest multiple in the portfolio outside VEEV\")",
+      "source": "stockanalysis.com (S&P Global Market Intelligence data), retrieved 2026-09-27, priced 25 Sep 2026 close: WCN EV $48.75bn, EV/EBITDA 15.60x, EV/FCF 40.03x, net debt/EBITDA 3.05x, trailing P/E 37.57x, forward P/E 26.62x",
+      "source_value": "WCN EV/EBITDA 15.60x, EV/FCF 40.03x, forward P/E 26.62x",
+      "status": "FAIL",
+      "note": "On EV/EBITDA and EV/FCF, RSG (15.09x / 40.85x) is actually slightly BELOW WCN (15.60x / 40.03x, roughly a wash on EV/FCF), and RSG's forward P/E (26.32x) is essentially equal to WCN's (26.62x). This contradicts the framing that RSG carries an outsized multiple versus its closest same-industry peer: on this comparator, RSG is not expensive, it is in line."
+    },
+    {
+      "ticker": "RSG",
+      "claim": "valuation cross-check",
+      "dossier_location": "RSG.md §1/§7 (premium multiple discussion)",
+      "source": "stockanalysis.com (S&P Global Market Intelligence data), retrieved 2026-09-27, priced 25-26 Sep 2026 close: CWST EV $6.65bn, EV/EBITDA 15.88x, EV/FCF 62.96x, net debt/EBITDA 3.39x, trailing P/E 917.6x (distorted, TTM NI only $5.7m), forward P/E 66.09x; GFL EV $22.41bn, EV/EBITDA 19.00x, EV/FCF 151.0x, net debt/EBITDA 5.94x, unprofitable TTM, forward P/E 46.34x",
+      "source_value": "CWST EV/EBITDA 15.88x / EV/FCF 62.96x; GFL EV/EBITDA 19.00x / EV/FCF 151.0x, both carrying materially higher leverage (3.4x and 5.9x net debt/EBITDA) than RSG's 2.70x",
+      "status": "FAIL",
+      "note": "RSG (15.09x EV/EBITDA, 40.85x EV/FCF, 2.70x leverage) is cheaper and less levered than both smaller-cap peers CWST and GFL on every multiple checked. Combined with the WM and WCN comparisons above, RSG is at most a modest premium to, and on some metrics cheaper than, all four named peers -- it does not stand out as overvalued within this named peer set."
+    },
+    {
+      "ticker": "RSG",
+      "claim": "valuation cross-check (does the peer leg corroborate the reverse-DCF \"price implies growth below/in-line-with base case\" view)",
+      "dossier_location": "RSG.md §7 (\"Implied vs base: BELOW\")",
+      "source": "Synthesis of the four peer comparisons above (WM, WCN, CWST, GFL; v4/data/d4_live_snapshot.parquet + stockanalysis.com, both dated ~25 Sep 2026)",
+      "source_value": "RSG trades at 15.09x EV/EBITDA / 40.85x EV/FCF vs. a peer range of 13.63x-19.00x EV/EBITDA and 40.03x-151.0x EV/FCF, i.e. squarely mid-pack to cheap despite RSG's superior margin (32%+ adj. EBITDA margin vs peers not independently re-verified this pass) and lowest leverage (2.70x vs 2.93x-5.94x) in the set",
+      "status": "PASS",
+      "note": "The peer leg corroborates the dossier's reverse-DCF conclusion that RSG's price is not pricing in aggressive growth: a name with RSG's margin/leverage profile trading in-line-with or below higher-levered, lower-quality peers is consistent with \"implied growth below base case,\" not with an unjustified premium. The narrower point that 27x NTM P/E is \"the highest multiple in the portfolio outside VEEV\" is a true statement about the RSG dossier's own portfolio context, but the peer EV/EBITDA/EV/FCF leg shows this is a sector-wide multiple level (WCN, CWST also 15-20x EV/EBITDA), not an RSG-specific premium requiring separate justification beyond what §7 already provides."
+    },
+    {
+      "ticker": "LH",
+      "claim": "valuation cross-check",
+      "dossier_location": "LH.md §7 Valuation & reverse DCF (\"$304 ... implied perpetual FCF growth ~3.1% ... below my base case (~7-8%)\")",
+      "source": "v4/data/d4_live_snapshot.parquet, 25 Sep 2026 close (LH: price $309.64, EV $31.75bn, EBITDA $2.320bn, FCF $0.892bn, NTM P/E 15.92x, forward P/E 15.61x, net debt $6.68bn)",
+      "source_value": "LH EV/EBITDA 13.69x, EV/FCF 35.60x, net debt/EBITDA 2.88x, NTM P/E 15.92x, forward P/E 15.61x",
+      "status": "MINOR",
+      "note": "Dossier's own §7 used a $304 price (\"~2026-09-23, not independently confirmed\") vs. the parquet's confirmed $309.64 25-Sep-2026 close -- a ~1.9% difference, immaterial to the growth-implied conclusion but the dossier's price should be treated as approximate per its own caveat, now superseded by this confirmed close."
+    },
+    {
+      "ticker": "LH",
+      "claim": "valuation cross-check",
+      "dossier_location": "LH.md §2 (duopoly with Quest Diagnostics)",
+      "source": "v4/data/d4_live_snapshot.parquet, 25 Sep 2026 close (DGX: price $236.32, EV $32.27bn, EBITDA $2.266bn, FCF $0.910bn, NTM P/E 19.98x, forward P/E 19.60x)",
+      "source_value": "DGX EV/EBITDA 14.25x, EV/FCF 35.48x, NTM P/E 19.98x",
+      "status": "PASS",
+      "note": "LH trades at a slight EV/EBITDA discount to its direct duopoly peer DGX (13.69x vs 14.25x), essentially the same EV/FCF (35.60x vs 35.48x), and a meaningful discount on forward P/E (15.61x vs 19.60x, ~20% cheaper). LH is the cheaper of the two duopolists on every multiple checked."
+    },
+    {
+      "ticker": "LH",
+      "claim": "valuation cross-check",
+      "dossier_location": "LH.md §2/§8 (Biopharma Laboratory Services segment, CRO-adjacent)",
+      "source": "v4/data/d4_live_snapshot.parquet, 25 Sep 2026 close (IQV: price $270.37, EV $59.57bn, EBITDA $3.048bn, FCF $2.150bn, NTM P/E 19.23x; CRL: price $292.84, EV $16.95bn, EBITDA $0.849bn, FCF $0.469bn, NTM P/E 23.75x)",
+      "source_value": "IQV EV/EBITDA 19.55x / EV/FCF 27.71x / NTM P/E 19.23x; CRL EV/EBITDA 19.96x / EV/FCF 36.16x / NTM P/E 23.75x",
+      "status": "PASS",
+      "note": "Against CRO/biopharma-services comparators IQV and CRL, LH trades at a materially lower EV/EBITDA (13.69x vs 19.55x/19.96x, roughly 30% cheaper) and NTM P/E (15.92x vs 19.23x/23.75x). LH's EV/FCF (35.60x) sits between IQV's (27.71x, richer FCF conversion) and CRL's (36.16x)."
+    },
+    {
+      "ticker": "LH",
+      "claim": "valuation cross-check (does the peer leg corroborate the reverse-DCF \"implied growth below base case\" view)",
+      "dossier_location": "LH.md §7 (\"Implied growth (~3%) sits below my base case (~7-8%)\")",
+      "source": "Synthesis of DGX, IQV, CRL comparisons above (v4/data/d4_live_snapshot.parquet, 25 Sep 2026 close)",
+      "source_value": "LH is the cheapest of the four names on EV/EBITDA (13.69x vs 14.25x-19.96x) and on forward/NTM P/E (15.6x-15.9x vs 18.7x-23.8x), despite the dossier's own bull case (Biopharma backlog, margin expansion) and Q2'26 beat-and-raise",
+      "status": "PASS",
+      "note": "The peer leg strongly corroborates and reinforces the dossier's reverse-DCF conclusion: LH is not just implying low growth on an absolute (Gordon-growth) basis, it is priced at a discount to both its direct duopoly peer (DGX) and CRO-adjacent comparators (IQV, CRL) on every multiple checked. This is independent, cross-methodology support for the INCLUDE / below-base-case thesis, not merely a restatement of it."
+    }
+  ]
+}

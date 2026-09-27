@@ -1,0 +1,99 @@
+{
+  "agent": "F58",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "V": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "The world's dominant card-payment network, growing mid-teens EPS with a fortress balance sheet, priced for less growth than it is guiding to.",
+      "kill_criteria": [
+        "Net revenue growth falls below 8% YoY (constant-currency) for two consecutive fiscal quarters.",
+        "Quarterly interchange-litigation provisions exceed $500M in any single quarter (vs. $237–707M range seen FQ1–FQ3 FY26), signalling the MDL settlement is deteriorating rather than resolving.",
+        "Net debt/EBITDA rises above 1.5x (from ~0.4x today) without a offsetting acquisition-driven earnings step-up.",
+        "Non-GAAP diluted EPS growth guidance is cut (vs. today's \"low end of mid-teens\" for FY2026) at any of the next two quarterly calls.",
+        "Cross-border volume growth (ex.-intra-Europe) falls below 6% YoY for two consecutive quarters (from 11–12% today) — the highest-margin volume line decelerating structurally."
+      ],
+      "key_adverse_facts": [
+        "Interchange MDL litigation provisions totalled over $3.7B across the last five reported quarters ($2.5B FY2025 full year + $707M FQ1 FY26 + $311M FQ2 FY26 + $237M FQ3 FY26) - large, real and recurring, not a one-off.",
+        "FQ3 FY26 revenue growth (14%) decelerated from FQ2 FY26's 17%, partly attributed by management to FIFA World Cup-related value-added-services demand pulling forward into FQ2.",
+        "SEC bulk XBRL companyfacts feed for Visa had not ingested the FQ3 FY26 10-Q (filed 29-Jul-2026) as of this write-up; the most recent quarter's figures come from the earnings-release exhibit text, not aggregated XBRL, and the balance sheet used is one quarter stale (31-Mar-2026)."
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv shows V with blank mktcap/composite/live_rank despite being a >$650B constituent that should clearly be scored - a quant-pipeline coverage gap, not a fundamental red flag."
+      ],
+      "next_earnings_date": "2026-10-27",
+      "horizon": "24-48 months",
+      "confidence_in_thesis": "high - durable network moat, balance sheet and guidance track record are well documented in primary filings; the main uncertainty is the size/duration of interchange-litigation costs, which is known and bounded, not open-ended",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 systematic valuation row exists for V (checked v4/outputs/v1_valuation_table.csv and v1_valuation.json); v1_verdict and v1_base_3y set to null per instructions. This analyst's own reverse DCF implies ~8.9%/yr 10-year FCF growth is priced in, versus a 13%/yr evidence-based base case (management's own reaffirmed/raised low-teens revenue and mid-teens EPS guidance) - the stock is priced for less than its own guidance, i.e. cheap relative to base case."
+      },
+      "scenario_returns_3y": {"bear": -0.023, "base": 0.114, "bull": 0.194},
+      "scenario_basis": "Starting non-GAAP diluted EPS (TTM, FQ4FY25-FQ3FY26) $12.78; bear 6%/base 13%/bull 17% EPS growth for 3 years; exit non-GAAP P/E 22x/27x/30x; plus ~0.7% dividend yield; price0 $367.38 (25-Sep-2026 close)."
+    },
+    "VRTX": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Near-monopoly cystic-fibrosis franchise now diversifying into pain, gene therapy and (via a just-closed $10B deal) endocrinology, priced for growth this analyst thinks is achievable but not cheap.",
+      "kill_criteria": [
+        "Combined Alyftrek + Casgevy + Journavx revenue growth (the \"new pillars\") falls below 20% YoY for two consecutive quarters (from the current substitution-driven pace).",
+        "Total product revenue growth falls below 5% YoY for two consecutive quarters — signalling the CF-to-Alyftrek transition has stalled rather than merely normalized.",
+        "Term Loan A utilization plus any further debt-funded M&A pushes net debt/TTM-EBITDA above 1.0x (from a pre-deal net-cash position).",
+        "FY guidance (total revenue range) is cut at either of the next two quarterly releases (Q3 2026, ~Nov-2026, or Q4/FY2026, ~Feb-2027) — would reverse the current three-release raise/hold streak.",
+        "An adverse ruling or settlement in the ToolGen CRISPR litigation materially constrains Casgevy manufacturing or imposes a meaningful royalty."
+      ],
+      "key_adverse_facts": [
+        "The core Trikafta/Kaftrio CF franchise is already shrinking in isolation (Q2 2026 $2,497.2M vs. Q2 2025 $2,551.1M) - headline 12% revenue growth is almost entirely an Alyftrek substitution effect, not broad-based demand growth.",
+        "Vertex took on its first-ever meaningful funded debt ($4.5B senior unsecured Term Loan A, credit agreement dated 30-Jul-2026) to help fund the $10.0B all-cash Crinetics acquisition (closed 1-Sep-2026); pro forma post-close balance sheet is not yet reflected in any filed 10-Q as of this cutoff.",
+        "ToolGen has filed CRISPR-patent-infringement suits against Vertex/CRISPR Therapeutics over the Casgevy manufacturing process in the US (District of Massachusetts), UK and Netherlands; Vertex's US response was due H1 2026.",
+        "Q2 2024 GAAP net income was a loss of $3,593.6M (diluted EPS -$13.92) from a $4.4B in-process-R&D charge on the Alpine Immune Sciences acquisition, and FY2024 operating cash flow was negative (-$492.6M) - a real, large earnings-quality one-off, now lapped."
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-11-09",
+      "horizon": "24-48 months",
+      "confidence_in_thesis": "medium - the CF-franchise moat and diversification strategy are well evidenced, but the reverse DCF shows the price already captures the base case, and the just-closed Crinetics deal introduces integration and first-time-leverage risk that cannot yet be verified against a post-close balance sheet",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "implied_vs_base": "in_line",
+        "reconciliation": "No V1 systematic valuation row exists for VRTX (checked v4/outputs/v1_valuation_table.csv and v1_valuation.json); v1_verdict and v1_base_3y set to null per instructions. This analyst's own reverse DCF (on an ex-Crinetics EV) implies ~9.6%/yr 10-year FCF growth, versus a 10%/yr evidence-based base case - close enough to call the stock fairly priced for its base case, with limited margin of safety if execution disappoints."
+      },
+      "scenario_returns_3y": {"bear": -0.070, "base": 0.073, "bull": 0.177},
+      "scenario_basis": "Starting non-GAAP diluted EPS (TTM, Q3 2025-Q2 2026, one quarter interpolated from the GAAP/non-GAAP gap pattern) $18.81; bear 4%/base 10%/bull 15% EPS growth for 3 years; exit non-GAAP P/E 20x/26x/30x; no dividend; price0 $526.19 (25-Sep-2026 close)."
+    },
+    "VEEV": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "The dominant, sticky life-sciences cloud software provider to pharma, with four straight quarters of raised guidance and a debt-free balance sheet, priced for far less growth than it keeps delivering.",
+      "kill_criteria": [
+        "Total revenue growth falls below 12% YoY for two consecutive quarters (from the current steady 16–18%).",
+        "A full-year guidance range is cut (not just held or raised more slowly) at any of the next two quarterly releases (FQ3 FY27, ~Nov-2026, or FQ4/FY2027, ~Mar-2027) — would end the current four-release raise streak.",
+        "Non-GAAP operating margin falls below 40% for two consecutive quarters (from the current 44–45%).",
+        "Professional-services revenue growth turns negative YoY (a leading indicator for future subscription bookings) for two consecutive quarters.",
+        "Net cash position declines by more than $1B in a single quarter outside of a disclosed buyback/M&A program."
+      ],
+      "key_adverse_facts": [
+        "Trailing 12-month price momentum is flat-to-negative (mom_12_1 raw -4.1% per b1_live_scores.csv) despite four consecutive quarters of guidance raises - the market has not yet re-rated the stock alongside the earnings beats, which this analyst reads as supportive of the valuation thesis but flags as a fact the momentum signal does not yet confirm.",
+        "Stock-based compensation is approximately 14.7% of revenue (FQ2 FY27) - a meaningful gap between non-GAAP EPS (used in guidance) and GAAP EPS ($9.21 vs. ~$6.60-6.70 run-rate), fully disclosed but material.",
+        "Revenue growth is increasingly concentrated in re-signs/expansion within an already-large pharma customer base; a slowdown in large-pharma R&D/commercial IT budgets is a plausible industry-wide risk not yet visible in the filed numbers."
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-11-19",
+      "horizon": "24-48 months",
+      "confidence_in_thesis": "high - four consecutive primary-source guidance raises, a debt-free balance sheet, and a resolved (not pending) litigation history are all independently verifiable in filings; the main uncertainty is a pharma-budget-cycle risk that is plausible but not yet evidenced",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 systematic valuation row exists for VEEV (checked v4/outputs/v1_valuation_table.csv and v1_valuation.json); v1_verdict and v1_base_3y set to null per instructions. This analyst's own reverse DCF implies ~6.7%/yr 10-year FCF growth is priced in, versus a 16%/yr evidence-based base case (the demonstrated 16-18% revenue growth continuing) - materially below base case, i.e. cheap."
+      },
+      "scenario_returns_3y": {"bear": -0.004, "base": 0.132, "bull": 0.241},
+      "scenario_basis": "Starting non-GAAP diluted EPS (TTM, FQ3FY26-FQ2FY27) $8.69; bear 10%/base 16%/bull 22% EPS growth for 3 years; exit non-GAAP P/E 24x/30x/34x; no dividend; price0 $280.68 (25-Sep-2026 close)."
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "agent": "F23",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "GS": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Premier global investment bank riding a record trading and dealmaking cycle, cheap on headline multiples but priced for that cycle to mostly persist.",
+      "kill_criteria": [
+        "Standardized CET1 ratio below 11.5% for two consecutive quarters.",
+        "GBM (Global Banking & Markets) net revenues down >15% YoY for two consecutive quarters.",
+        "Annualised ROE below 12% for two consecutive quarters.",
+        "An adverse 1MDB/Malaysia arbitration ruling requiring a cash payment >$500M.",
+        "Quarterly common dividend cut or suspended (current $5.00/share)."
+      ],
+      "key_adverse_facts": [
+        "CET1 (Standardized) fell to 12.9% (2Q26) from 14.3% (4Q25), two consecutive quarters of decline.",
+        "GBM (trading + banking) is ~76% of net revenues; the franchise's ROE gains are concentrated in cyclical, not fee-based, businesses.",
+        "Live 1MDB/Malaysia arbitration: Government of Malaysia demanded a further ~$1bn payment (Aug 2025) under GS's 2020 settlement guarantee; unresolved.",
+        "4Q25 net revenues fell 3.0% YoY on a $2.26bn Apple Card portfolio markdown tied to exiting that partnership (largely offset by a reserve release, but a real one-off)."
+      ],
+      "data_conflicts": [
+        "Triage (Q05) cited trailing ROE of 16.9%; verified current run-rate ROE is materially higher and rising (14.2% to 23.5% over the last four quarters), so the triage's 'cheap for the quality' framing understated recent quality even as it raises the question of durability."
+      ],
+      "next_earnings_date": "2026-10-14",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (financial trend is unambiguous and well-documented; durability of ~20%+ ROE through a capital-markets downturn is the open question, and the reverse-valuation math is sensitive to the cost-of-equity assumption)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "GS has no V1 systematic valuation row (not in the 92-name V1 universe). I reverse-engineered a P/B-ROE justified-multiple view instead: current 2.5x P/B requires ~22% sustained ROE, versus consensus-implied (~20%) and my own base case (~19%) durable ROE once the capital-markets cycle normalizes some; the gap is modest and sensitive to the cost-of-equity input, so I call the stock fair/in-line rather than cheap or expensive."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.10,
+        "base": 0.05,
+        "bull": 0.20
+      }
+    },
+    "PGR": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "The largest and most data-driven US auto insurer, still growing policies 7% a year with combined ratios 7-10 points inside its own profitability ceiling.",
+      "kill_criteria": [
+        "Quarterly GAAP combined ratio above 96 (the company's own ceiling) for two consecutive quarters.",
+        "Net premiums earned growth turns negative YoY for two consecutive quarters.",
+        "Companywide policies-in-force growth turns negative YoY.",
+        "A second state imposes a profit-cap policyholder-credit resulting in a single-quarter charge >$500M.",
+        "Debt-to-total-capital ratio exceeds the company's own 30% policy ceiling."
+      ],
+      "key_adverse_facts": [
+        "A Florida statutory profit cap on personal-auto insurance forced a $950M one-time 'policyholder credit' accrual in September 2025, payable to ~2.7M Florida policyholders in early 2026; this mechanism resets each three-year window and can recur.",
+        "Premium growth has decelerated every quarter for a year (net premiums earned +14% YoY 3Q25 to +6% YoY 2Q26) as 2023-24 rate increases lap.",
+        "Open multi-state class actions (classes already certified in three states) allege improper total-loss vehicle valuation practices."
+      ],
+      "data_conflicts": [
+        "The d4 live-snapshot's pe_ntm (0.27) and eps_ntm ($747.86, implying >5,000% forward EPS growth) fields for PGR are confirmed data-pipeline errors, consistent with and extending the Q06 triage's own flag; neither was used in this valuation, which relies on trailing P/E and a from-filings combined-ratio/ROE build instead."
+      ],
+      "next_earnings_date": "2026-10-15",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "high (monthly SEC disclosure gives an unusually clean, frequent read on the combined ratio and premium trend; the main one-off this year is fully explained from a primary filing)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "PGR has no V1 systematic valuation row (not in the 92-name V1 universe). Reverse-engineered via justified P/B (P/B=(ROE-g)/(COE-g)): the current 3.5x P/B requires only ~18.7% sustained ROE against a delivered TTM ROE of ~36% and a combined ratio that has stayed 86-90 for four straight quarters; the market appears to be pricing a much larger fade in profitability than the disclosed trend supports."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.11,
+        "base": 0.14,
+        "bull": 0.26
+      }
+    },
+    "ALGN": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The dominant clear-aligner maker at its cheapest valuation in 14 years, but that trough partly reflects real, disclosed growth deceleration, not just neglect.",
+      "kill_criteria": [
+        "Quarterly Clear Aligner volume growth turns negative YoY.",
+        "FY2026 GAAP operating-margin guidance is cut again below the current 15.1%-15.6% range (excluding charges already disclosed as of this dossier).",
+        "Full-year revenue growth guidance is cut below the current 3%-4% range.",
+        "Net cash (cash minus debt) falls below $500M.",
+        "Cumulative UK VAT / Section 122 tariff cash outflows exceed $150M beyond the $37.5M already reserved."
+      ],
+      "key_adverse_facts": [
+        "FY2026 GAAP operating-margin guidance was cut from 'slightly below 18.0%' to '15.1%-15.6%' between the Q1'26 and Q2'26 releases (a ~250-290bps cut), driven by a $37.5M UK VAT contingent liability, ~$30.6M of legal settlements, and restructuring/accelerated depreciation; non-GAAP margin guidance (~23.7%) was left unchanged.",
+        "UK Upper Tribunal (2026-07-07) overturned a prior ruling that clear aligners were VAT-exempt; ALGN is now charging UK VAT from Sept 2026 and intends to appeal, with the outcome explicitly described by the company as uncertain.",
+        "ALGN is subject to Section 122 (Trade Act of 1974) tariffs following a Supreme Court ruling that its prior IEEPA tariffs were unlawful; the replacement tariffs are themselves under separate, unresolved litigation.",
+        "Two restructuring programs within twelve months (initiated 4Q24 and again 3Q25)."
+      ],
+      "data_conflicts": [
+        "V1 (systematic) rates ALGN 'attractive' with a base-case 3-year annualised return of +59.65%, built on 15.6%/yr revenue growth (4x the company's own 3-4% FY26 guide) and an exit multiple re-rating from 12.0x to 39.4x; V1's own street-target sanity check shows this base case ($597 in 3 years) exceeds even the Street's current 12-month high target ($240). I attribute the anomaly to V1's reverse-DCF using a TTM EBIT margin (13.2%) depressed by 3Q25/4Q25 one-offs, and use a materially more conservative base case instead (4-6% growth, partial multiple re-rating to 15-17x)."
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (balance sheet and buyback support are unambiguous; the multiple-cheapness and reverse-DCF signals genuinely disagree and the resolution depends on management delivering the FY27 margin-recovery commitment)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.5965295690208061,
+        "dossier_view": "fair",
+        "consistent": false,
+        "reconciliation": "I agree ALGN's 12.0x NTM P/E is genuinely at the 1st percentile of its own 14-year history, but I reject V1's base-case return and 39.4x exit multiple as not credible given the company's own 3-4% guided growth and the street-target sanity check V1 itself flags; my own base case (4-6% growth, partial re-rating to 15-17x) is materially more conservative and treats the valuation as fair/in-line rather than cheap."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.06,
+        "base": 0.12,
+        "bull": 0.28
+      }
+    }
+  }
+}

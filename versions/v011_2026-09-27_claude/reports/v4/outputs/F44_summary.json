@@ -1,0 +1,117 @@
+{
+  "agent": "F44",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "FITB": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Ohio super-regional that just merged with Comerica to become a top-10 US bank, priced almost exactly for the successful integration it hasn't fully finished yet.",
+      "kill_criteria": [
+        "CET1 ratio falls below 9.5% for two consecutive quarters without an explicit, disclosed capital plan.",
+        "Net charge-off ratio rises above 0.55% for two consecutive quarters (vs 0.30% at 2Q26).",
+        "Adjusted efficiency ratio fails to improve below 60% by 4Q26 (vs 57.1% at 2Q26, after the Labor Day systems conversion is supposed to unlock synergies).",
+        "Nonperforming asset ratio rises above 0.75% (vs 0.60% at 2Q26) for two consecutive quarters.",
+        "Share buybacks are not resumed within four quarters of deal close (by 1Q27) — a signal capital generation is weaker than modeled."
+      ],
+      "key_adverse_facts": [
+        "1Q26 GAAP EPS collapsed to $0.15 (from $1.04 in 4Q25) on $933mm of pre-tax Comerica merger-related charges.",
+        "CET1 fell from 10.81% (4Q25) to 9.96% (1Q26) at deal close and remained at 9.93% (2Q26); no share repurchases in 1H26.",
+        "Nonperforming asset ratio rose 0.57% -> 0.60% (1Q26 -> 2Q26) even as net charge-offs improved, a mild disclosed divergence.",
+        "Diluted share count rose ~37% (669.2M -> 916.0M average) from all-stock merger consideration, a durable dilution unless synergies close the gap."
+      ],
+      "data_conflicts": [
+        "Triage's cited '+67% forward EPS growth / +52% revenue growth' is merger consolidation arithmetic (driven by the 37% share-count increase and combined-entity revenue), not organic growth — could mislead if read as underlying business strength."
+      ],
+      "next_earnings_date": "2026-10-20",
+      "next_earnings_date_estimated": true,
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium: quarterly results and guidance track record are well-sourced from primary filings, but 10-Q/10-K Legal Proceedings and Form 4 insider-activity review were not completed within the time-box, and the Comerica systems conversion (the key remaining catalyst) had not yet been confirmed complete as of the reviewed filings.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for FITB. Own P/TBV excess-return reverse-DCF (2.25x TBV, ~15.5% assumed long-run adjusted ROTCE, 10% cost of equity) implies the market is pricing roughly 5-6% perpetual growth, essentially identical to the analyst's own base case -> in_line/fair.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.024,
+        "base": 0.085,
+        "bull": 0.169
+      }
+    },
+    "HBAN": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Midwest regional bank that just finished integrating two Texas/South mergers, with margins and book value already rising while the stock still prices in almost no growth.",
+      "kill_criteria": [
+        "Nonperforming-asset ratio rises above 1.00% (vs 0.85% at 2Q26) for two consecutive quarters.",
+        "CET1 ratio falls below 9.5% (reported) without a disclosed pause in buybacks.",
+        "Adjusted ROTCE fails to reach 17% by 4Q26 (management's own implied bar - full earnings power clearly evident by Q4).",
+        "Net charge-off ratio rises above 0.45% for two consecutive quarters (vs 0.25% at 2Q26).",
+        "Efficiency ratio fails to improve below 58% by 1Q27 (vs 61.5% at 2Q26, post both systems conversions)."
+      ],
+      "key_adverse_facts": [
+        "Nonperforming-asset ratio rose for two straight quarters (0.72% -> 0.85%, 1Q26 -> 2Q26) even as net charge-offs stayed low.",
+        "CET1 10.0% (adjusted 9.0%), both down sequentially, while buybacks continued ($159mm in 2Q26) - less capital cushion than FITB if credit surprises.",
+        "2Q26 GAAP EPS of $0.33 includes $152mm of pre-tax acquisition-related Notable Items; adjusted EPS was $0.39."
+      ],
+      "data_conflicts": [
+        "Triage's cited '+36% forward EPS growth / +48% revenue growth' is merger consolidation arithmetic, not organic growth.",
+        "Triage flagged 'flat momentum despite good news' as unexplained; this diligence's finding (implied growth priced at ~0-1% vs a mid-single-digit base case) offers a valuation-based explanation rather than resolving why the market hasn't re-rated the stock yet."
+      ],
+      "next_earnings_date": "2026-10-22",
+      "next_earnings_date_estimated": true,
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium-high: both underlying mergers are fully closed and systems-converted (ahead of FITB), and the valuation gap versus FITB for comparable-or-better returns is a clear, sourced anomaly; 10-Q/10-K Legal Proceedings and Form 4 review were not completed within the time-box, and the two-quarter NPA uptick needs one more quarter to confirm as noise vs. an emerging Texas-book credit issue.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for HBAN. Own P/TBV excess-return reverse-DCF (1.62x TBV, ~16% assumed long-run adjusted ROTCE, 10% cost of equity) implies the market is pricing only ~0-1% perpetual growth, well below the analyst's own mid-single-digit base case -> below/cheap.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": 0.016,
+        "base": 0.179,
+        "bull": 0.276
+      }
+    },
+    "GEV": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Power-equipment and grid leader riding the AI electricity buildout with a genuinely growing backlog, but priced for decade-long hyper-growth beyond its own guidance.",
+      "kill_criteria": [
+        "Quarterly order growth (y/y, organic) falls below 20% for two consecutive quarters (vs +71% 1Q26, +88% 2Q26).",
+        "Adjusted EBITDA margin fails to reach the 12-14% FY2026 guided range in either 3Q or 4Q2026.",
+        "FY2026 Wind segment EBITDA loss is confirmed at year-end to exceed $700 million (vs the standing ~$400mm guide), i.e. the guidance/actuals gap is never reconciled.",
+        "Free cash flow for 2H2026 comes in below $5 billion combined, i.e. the raised $11.5-12.5bn FY guide is not met, confirming the 2Q26 FCF jump was working-capital timing rather than sustainable.",
+        "EV/forward-adjusted-EBITDA multiple compresses below 25x without a corresponding fundamental deterioration (the point at which this name would become newly investable on the same fundamentals)."
+      ],
+      "key_adverse_facts": [
+        "1H2026 GAAP net income is dominated by a $4.5bn one-off Prolec GE M&A gain (1Q26) and FY2025 by a $2.9bn tax valuation-allowance release; GAAP net income/EPS are not usable as run-rate figures for this company.",
+        "Wind segment lost $657mm in 1H2026 alone, already exceeding the ~$400mm full-year FY2026 Wind loss guidance repeated unchanged in the same 2Q26 release that reported the actual loss.",
+        "FY2026 free-cash-flow guidance nearly doubled ($6.5-7.5bn -> $11.5-12.5bn) in a single quarter on a much smaller revenue/margin guidance change, consistent with a working-capital/progress-billing tailwind that could reverse if order intake decelerates."
+      ],
+      "data_conflicts": [
+        "Triage rated price_vs_growth 4/5, citing a 6.2% FCF yield and 29.2% Street upside as comfortably supporting the 36x NTM multiple. This diligence's reverse DCF finds ~41x forward EV/EBITDA implies ~20-23%/yr EBITDA growth for 10 years, above a ~14%/yr base case built from the company's own 2028 outlook -> triage's valuation comfort is not verified by primary sources; verdict overturned from an implicit INCLUDE-eligible read to WATCH.",
+        "FY2026 Wind segment guidance (~$400mm loss) is internally inconsistent with the 1H2026 actual Wind segment loss of $657mm disclosed in the same release; not reconciled by the company in the exhibit reviewed."
+      ],
+      "next_earnings_date": "2026-10-21",
+      "next_earnings_date_estimated": true,
+      "horizon": "not applicable at current price (revisit on a valuation de-rating or a confirmed multi-quarter growth deceleration)",
+      "confidence_in_thesis": "medium: the fundamental facts (orders, backlog, segment margins, guidance raises) are well-sourced from primary filings and clear; the WATCH call rests on the analyst's own growth-decomposition assumptions (10% discount rate, 14x exit multiple, ~14%/yr blended 10-year base case) which are judgment calls disclosed as such, not consensus figures.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for GEV. Own EV/EBITDA reverse-DCF (~41x forward EV/EBITDA at the 2026-09-25 close) implies ~20-23%/yr EBITDA growth needed for 10 years versus the analyst's own ~14%/yr base case (built from GEV's own 2028 outlook decelerating thereafter) -> above/expensive, despite genuinely strong and accelerating fundamentals.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.15,
+        "base": 0.059,
+        "bull": 0.276
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "agent": "F19",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "CMCSA": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Comcast's cable/broadband and NBCUniversal/Sky businesses are splitting into two companies; the stock is priced as if cash flow will keep shrinking for a decade, which is more pessimistic than the actual business has ever delivered.",
+      "kill_criteria": [
+        "The NBCUniversal/Sky spin-off is delayed beyond Q4 2027 (18+ months from announcement) or is restructured so either resulting entity is sub-investment-grade.",
+        "Residential broadband net losses exceed 250,000 in any quarter (vs. −167,000 in Q2 2026), i.e., the recent deceleration reverses.",
+        "Net debt/EBITDA rises above 3.0x ahead of the spin (from ~2.3–2.4x now), suggesting the balance sheet is being loaded to fund the separation.",
+        "Wireless net adds fall below 300,000/quarter (from 448,000 record in Q2 2026), removing the main offset to broadband erosion.",
+        "The dividend is cut or suspended in connection with the spin-off."
+      ],
+      "key_adverse_facts": [
+        "Residential broadband lost 167,000 customers in Q2 2026 (36th consecutive quarter of cord-cutting-driven losses); Residential Connectivity revenue -4.0% YoY.",
+        "Q4 2025 and Q1 2026 operating income dropped sharply (~$3.49bn and $4.14bn vs a normal $5.5-6.6bn run-rate) due to the 2-Jan-2026 Versant cable-network spin-off and associated separation costs.",
+        "Share buybacks are paused entirely after 29-Jun-2026 pending the NBCUniversal/Sky separation, removing a capital-return lever mid-transaction.",
+        "The capital structure, dividend policy for each post-spin entity, and the size/duration of Comcast's retained (up to 19.9%) NBCUniversal stake are all undecided as of this review.",
+        "Q2 2025's GAAP net income ($11.1bn) and EPS ($2.98) include a one-off ~$9.4bn pre-tax Hulu-stake sale gain, making YoY GAAP comparisons in 2026 look like large declines that are actually a comparison against a one-off."
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv shows exclude_pending_deal = False for CMCSA even though a major, dated corporate separation (NBCUniversal/Sky spin-off) was announced 29-Jun-2026 and is disclosed in the Q2 2026 10-Q; the quant pipeline's pending-deal exclusion appears scoped to M&A/buyout situations only, not self-initiated spin-offs.",
+        "V1's base and bull 3-year annualised return scenarios (+62.1%/yr and +89.5%/yr) rely on the NTM P/E re-rating from 6.2x today to 17-20x within 3 years; this analyst's own base case (low-single-digit FCF growth) agrees the stock is cheap versus the priced-in decline, but views the magnitude of V1's return as sensitive to an unresolved multiple-re-rating assumption tied to the still-unexecuted spin-off, not merely to cash-flow delivery."
+      ],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - valuation support is strong and independently re-derived (TTM FCF, EBIT match V1's D3 data to the dollar), but the spin-off's capital structure and timeline are unresolved, and broadband erosion, while decelerating, has not yet turned to growth",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.6214454736163295,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "V1's reverse DCF finds the 25-Sep-2026 price implies FCF shrinking ~24%/year for 10 years, versus 2.8%/year delivered over 5 years and 5.1%/year over 10 years; this analyst's own base case (0% to +3%/year FCF growth, reflecting a genuine offset between shrinking Residential Connectivity and growing wireless/Content & Experiences/Peacock) is far above the priced-in decline, so the direction of V1's 'attractive' verdict is confirmed, though the exact magnitude of V1's base/bull returns depends on a P/E re-rating (to 17-20x) this analyst views as plausible but contingent on the still-unexecuted NBCUniversal/Sky spin-off closing on favorable terms.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {"bear": 0.2424, "base": 0.6214, "bull": 0.8950}
+    },
+    "NFLX": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The world's largest streaming service, still growing double digits with the best margins and returns on capital in media, but the stock's price already assumes that growth continues almost exactly as guided.",
+      "kill_criteria": [
+        "Quarterly revenue growth decelerates below 10% YoY for two consecutive quarters (from 13.4% in Q2 2026 and an 11.7% Q3 2026 guide).",
+        "Full-year operating margin comes in below 30% (guided 31.5% for FY2026).",
+        "FCF/NI conversion stays below 60% for two consecutive quarters (Q2 2026 was ~45%, down from ~73% a year earlier).",
+        "Content/sports-rights cash commitments grow faster than revenue for two consecutive years (not yet quantified in company disclosure — a disclosure gap to monitor, not yet a confirmed trend).",
+        "Quarterly share buybacks fall below $2bn for two consecutive quarters without a stated reason (from a $4.7bn record in Q2 2026), suggesting management sees reduced value or emerging cash constraints."
+      ],
+      "key_adverse_facts": [
+        "Q3 2026 guidance (11.7% revenue growth) undershot Street estimates (~13%) and was below the 13.4% just delivered in Q2 2026, triggering a ~9% after-hours stock drop -- the first guided deceleration in the last four quarterly releases.",
+        "Free cash flow fell to $1.53bn in Q2 2026 from $2.27bn in Q2 2025 (-32.6% YoY) even as net income rose; FCF/NI conversion dropped from ~73% to ~45%.",
+        "Q1 2026 GAAP net income ($5.28bn) and EPS ($1.23) are far above what operating income and a normal tax rate imply, most likely reflecting non-operating FX remeasurement or investment gains rather than the operating run-rate.",
+        "New sports/live-event rights commitments (NFL games including Thanksgiving Eve/Christmas Day, Tyson Fury vs. Anthony Joshua, MLB events) are disclosed but not yet quantified in dollar terms in company filings reviewed -- a real but currently unmeasured cost tailwind.",
+        "The reverse DCF implies ~11.2%/year FCF growth for 10 years is already priced in, essentially matching this analyst's own base-case growth assumption (~12%/year) -- there is little valuation margin of safety."
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv shows a weak Momentum family score (fam_M 0.29, pct_mom_12_1 only the 29th percentile) despite strong Quality (fam_Q 0.72) and a mid-pack composite/live_rank (296) -- this is a real, current market reaction to the Q3 2026 guidance disappointment, not a data error, but it means the quality and momentum signals currently point in different directions for this name."
+      ],
+      "next_earnings_date": "2026-10-20",
+      "horizon": "24-48 months",
+      "confidence_in_thesis": "medium - business quality (45%+ ROE, 30%+ operating margins, disciplined capital allocation) is exceptional and well evidenced, but valuation offers almost no margin of safety and a leading indicator of growth deceleration (the Q3 2026 guide) has already appeared",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "No V1 systematic valuation row exists for NFLX. This analyst built a reverse-DCF and scenario valuation directly (same FCFF method and scripts/valuation.py tool V1 uses elsewhere): implied 10-year FCF growth priced in is ~11.2%/year at a 10% WACC and 3% terminal growth, versus this analyst's own evidence-based base case of ~12%/year -- close enough to call the stock roughly fairly priced (in_line) rather than clearly cheap or clearly expensive.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {"bear": -0.1066, "base": 0.1074, "bull": 0.2773}
+    },
+    "UAL": {
+      "verdict": "WATCH",
+      "thesis_one_line": "United's international premium-cabin network airline is executing well and cutting debt, but its stock price already assumes a decade of double-digit growth that airlines rarely sustain.",
+      "kill_criteria": [
+        "Full-year adjusted EPS guidance is cut again from the current $9.00–$11.00 range (a second cut within the same fiscal year).",
+        "TTM net leverage rises back above 3.0x (from 2.2x currently).",
+        "Quarterly RASM growth turns negative for two consecutive quarters.",
+        "Full fuel-cost recovery (100% guided by Q4 2026) fails to materialize and adjusted operating margin falls below 4% for two consecutive quarters.",
+        "Net debt/EBITDA-equivalent leverage metrics prevent United from reaching an investment-grade rating by end of 2027 (management's own stated 2026 target slipping by a year or more)."
+      ],
+      "key_adverse_facts": [
+        "FY2026 adjusted EPS guidance was cut from $12-$14 (Jan-2026) to $7-$11 (Apr-2026) due to a war-driven jet-fuel cost spike, then only partially restored to $9.00-$11.00 (Jul-2026) -- still below where the year started.",
+        "The reverse DCF shows the 25-Sep-2026 price implies ~12.8%/year FCF growth for 10 years, well above the 5.2% consensus FY1 growth estimate and the 5.5%/year actually delivered over the last 10 years.",
+        "V1's bear scenario for UAL produces a degenerate negative implied share price (a modeling artefact this program has documented before for other cyclical names), which this analyst treats as an approximate floor near -100% rather than a literal number.",
+        "Trailing 5-year ROE (33.9%), a key driver of the model's 'quality' score, is likely flattered by post-pandemic pricing power and industry capacity discipline that may not persist through a full cycle.",
+        "No dividend and only modest, inconsistent buybacks (just $27mn in H1 2026) -- capital return is secondary to debt paydown right now."
+      ],
+      "data_conflicts": [
+        "The quant model's quality inputs (notably the 33.9% delivered 5-year ROE) may embed a cyclically elevated, post-pandemic level of airline profitability that primary-source guidance (the fuel-driven cut from $12-$14 to $7-$11) suggests is not fully representative of normalized mid-cycle earnings power."
+      ],
+      "next_earnings_date": "2026-10-20",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium - execution (16% revenue growth, raised guidance, active deleveraging) is genuinely strong and well evidenced, but the valuation requires sustained double-digit growth this analyst does not believe a cyclical, capital-intensive airline can deliver for a full decade",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "fair",
+        "v1_base_3y": -0.03384185602322365,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "V1's reverse FCFF DCF finds the price implies 12.8%/year FCF growth for 10 years against a base-case assumption of only 3.4%/year revenue growth (base-case annualised 3-yr return -3.4%/yr); this analyst agrees with both the direction and the reasoning -- United's own guidance history (a guidance cut from $12-$14 to $7-$11 within one year) and 10-year delivered CAGR (5.5%/year) both sit far below the growth the current price requires, so the stock is fully priced (not cheap) despite genuinely strong recent execution.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {"bear": -1.0, "base": -0.0338, "bull": 0.2964}
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "agent": "F88",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "MLM": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Aggregates leader with real pricing power, but a pending $13.5B Lhoist deal adds leverage and dilution the price does not yet discount.",
+      "kill_criteria": [
+        "Lhoist deal fails to close by end-1H 2027 or closes at materially worse terms/financing cost than disclosed.",
+        "Pro forma net debt/EBITDA stays above 3.0x for more than 4 quarters post-close (vs. management's <2.5x/24-month target).",
+        "Organic aggregates shipment growth turns negative for 2 consecutive quarters.",
+        "FY2026 adjusted EBITDA guidance ($2.36-2.50B) is cut (not just reaffirmed) at Q3 or Q4 2026.",
+        "Continuing-operations ROE stays below 10% for two more fiscal years after Lhoist closes."
+      ],
+      "key_adverse_facts": [
+        "Q1 2026's $1,513M reported net income was driven by a $1.4B after-tax one-time gain on the QUIKRETE/Midlothian asset exchange, not operating strength; continuing-ops earnings were down YoY in Q1 2026 ($79M vs $104M).",
+        "$13.5B Lhoist North America acquisition (announced 29 Jun 2026, not yet closed) financed by a $6.5B senior notes offering priced 12 Aug 2026 plus ~$7B of stock, pushing pro forma net leverage toward ~3.7x at close.",
+        "ROE (8.9%) is low relative to the 36.7% operating margin, and momentum is -17.4% (b1 data), both flagged in the original triage and unresolved by this review."
+      ],
+      "data_conflicts": [
+        "Triage's only red flags were 'ROE low' and 'momentum -17.4%'; it did not mention the pending $13.5B Lhoist acquisition or the one-time divestiture gain inflating Q1 2026 net income, both of which are material to the verdict."
+      ],
+      "next_earnings_date": "2026-11-03",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - standalone aggregates fundamentals are well evidenced; the Lhoist deal's financial impact is not yet observable in reported results",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "above",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No v1 row exists for MLM; this dossier's own reverse-DCF puts implied growth above a realistic base case once Lhoist dilution/leverage risk is included, supporting WATCH."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.10,
+        "base": 0.04,
+        "bull": 0.14
+      },
+      "scenario_basis": "Base: continuing-ops FCF/share growth ~mid-single-digit net of Lhoist share issuance, NTM multiple holds ~22-23x, no dividend growth surprise; bear: integration stumble + multiple compression to ~18x; bull: clean Lhoist synergy capture and multiple re-rate to ~26x."
+    },
+    "MNST": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Global energy-drink leader with a net-cash balance sheet, but its 34x+ multiple already prices in more growth than a maturing category and a loss-making alcohol arm can deliver.",
+      "kill_criteria": [
+        "Consolidated net sales growth decelerates below 12% YoY for two consecutive quarters.",
+        "FCF conversion (FCF/NI) stays below 0.70x for two more consecutive quarters without a stated one-off explanation.",
+        "Alcohol Brands segment operating losses widen YoY for two consecutive quarters.",
+        "Gross margin compresses more than 150bps YoY in any quarter on aluminum/tariff cost pass-through failure.",
+        "Any adverse ruling or settlement in the alcohol-marketing class actions exceeding $50M."
+      ],
+      "key_adverse_facts": [
+        "FCF conversion fell YoY (from ~0.75x to ~0.65x in Q2 2026) despite accelerating revenue - an earnings-quality flag not yet explained by a one-off.",
+        "Alcohol Brands segment remains smaller and loss-making/volatile, a persistent earnings drag, with acknowledged litigation exposure over alcohol-marketing practices to minors in some states.",
+        "Company expects continued sequential increases in aluminum costs through end-2026 (tariffs/Midwest premium), only partly offset by planned Q4 2026 US pricing actions."
+      ],
+      "data_conflicts": [
+        "Triage cited a 34x NTM multiple as 'justified' by 20% growth and share gains; this review's reverse-DCF treats that multiple as pricing in mid-teens-plus growth for a decade, which is above (not in line with) a realistic base case given category normalization and the alcohol drag - hence WATCH rather than the triage's implied INCLUDE lean."
+      ],
+      "next_earnings_date": "2026-11-06",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - core energy franchise data is clean and recent, but no company guidance exists to anchor the multi-year growth assumption, and the FCF-conversion decline is not yet decomposed",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "above",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "No v1 row exists for MNST; this dossier's reverse-DCF places implied growth (mid-teens+) above a realistic base case (high-single-to-low-double-digit), supporting WATCH over INCLUDE-SMALL."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.08,
+        "base": 0.06,
+        "bull": 0.16
+      },
+      "scenario_basis": "Base: EPS growth decelerates to low-double-digit as international expansion offsets US category maturity and alcohol drag, NTM multiple compresses modestly to ~28x; bear: growth falls to high-single-digit, multiple to ~24x; bull: mid-teens growth sustained, multiple holds ~34x, alcohol turns profitable."
+    },
+    "NDAQ": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Exchange operator turning into a recurring-revenue regtech software business via Adenza, ahead of its own integration schedule, at a fair-not-cheap price.",
+      "kill_criteria": [
+        "Gross leverage ratio fails to fall below 2.3x within the next four quarters (vs. 2.6x at Q2 2026).",
+        "FCF conversion falls below 85% of net income for two consecutive quarters.",
+        "Adenza-related expense synergies actioned stall below $160M (no further progress) for two consecutive quarters.",
+        "Quarterly net revenue growth decelerates below 8% YoY for two consecutive quarters.",
+        "A material adverse regulatory or litigation ruling (>$100M) tied to Nasdaq's exchange/listing operations."
+      ],
+      "key_adverse_facts": [
+        "Gross leverage still 2.6x at Q2 2026 - the same post-Adenza deleveraging risk the original triage flagged is confirmed still present, not yet resolved.",
+        "Elevated structural regulatory/litigation risk as an exchange/SRO operator, with new SEC/Nasdaq rules (listing-denial discretion, night-session risk disclosures) adding compliance overhead in 2026.",
+        "A full independent 8-quarter GAAP revenue/NI reconciliation was not completed within the standard time box; treat the quarter-by-quarter trend as directionally, not fully, verified."
+      ],
+      "data_conflicts": [
+        "Triage cited '36% EPS growth'; consensus and TTM data found in this review point to a much lower sustainable rate (~10-12% FY26/FY27 EPS growth), suggesting the triage figure reflected an easy-comp quarter rather than a durable growth rate - reconciled here by using the lower, consensus-based figure for the reverse DCF."
+      ],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium-high - leverage, buyback and synergy figures are primary-sourced and consistent quarter over quarter; full historical income-statement reconciliation is an open item",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "in_line",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No v1 row exists for NDAQ; this dossier's reverse-DCF (~10-12% sustained EPS growth needed) is in line with sell-side consensus and the company's own synergy trajectory, supporting INCLUDE-SMALL with the leverage reservation stated."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.05,
+        "base": 0.10,
+        "bull": 0.18
+      },
+      "scenario_basis": "Base: EPS grows ~11-12%/yr in line with consensus, multiple holds ~24x, buybacks continue funded by ~97% FCF conversion; bear: market-activity slowdown and synergy stall, multiple compresses to ~18x; bull: leverage falls below 2.0x faster than planned and multiple re-rates to ~27x."
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "generated_utc": "2026-09-26T04:53:47Z",
+  "n_candidates": 499,
+  "counts_all": {
+    "genuinely_unavailable_other": 289,
+    "genuinely_unavailable_acquired": 119,
+    "identity_reuse": 76,
+    "recovered_partial": 15
+  },
+  "counts_backtest_window": {
+    "genuinely_unavailable_acquired": 96,
+    "genuinely_unavailable_other": 84,
+    "identity_reuse": 24,
+    "recovered_partial": 12
+  },
+  "n_backtest_window_candidates": 216,
+  "backtest_window_recovered_tickers_lifetime_member_days": {
+    "value": 55481,
+    "caveat": "sum of member_days_since2000 for the 12 backtest-window recovered_partial tickers - a lifetime-membership figure, NOT newly-covered days. Actual new member-days added this session is 0 in every era - see coverage_by_era.new_days_recovered."
+  },
+  "new_member_days_recovered_total_all_eras": 0,
+  "coverage_by_era": [
+    {
+      "era": "2000-2004",
+      "member_days": 620616,
+      "coverage_before_pct": 50.24,
+      "new_days_recovered": 0,
+      "coverage_after_pct": 50.24
+    },
+    {
+      "era": "2005-2009",
+      "member_days": 625982,
+      "coverage_before_pct": 58.48,
+      "new_days_recovered": 0,
+      "coverage_after_pct": 58.48
+    },
+    {
+      "era": "2010-2014",
+      "member_days": 625796,
+      "coverage_before_pct": 68.66,
+      "new_days_recovered": 0,
+      "coverage_after_pct": 68.66
+    },
+    {
+      "era": "2015-2019",
+      "member_days": 634675,
+      "coverage_before_pct": 79.17,
+      "new_days_recovered": 0,
+      "coverage_after_pct": 79.17
+    },
+    {
+      "era": "2020-2026",
+      "member_days": 852277,
+      "coverage_before_pct": 93.48,
+      "new_days_recovered": 0,
+      "coverage_after_pct": 93.48
+    }
+  ],
+  "validation": {
+    "n_tickers_checked": 0,
+    "n_checks_total": 0,
+    "n_checks_pass": 0
+  },
+  "not_yet_attempted": 0
+}

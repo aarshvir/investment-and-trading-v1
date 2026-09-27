@@ -1,0 +1,111 @@
+{
+  "agent": "F47",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "REGN": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Diversified biotech (Dupixent, Eylea HD, growing oncology pipeline) priced for far less growth than it is likely to deliver, but Dupixent's 2031 patent cliff is a real, named risk.",
+      "kill_criteria": [
+        "Legacy Eylea US net sales decline exceeds 50% YoY in any quarter through 2027",
+        "Dupixent global net sales growth falls below 15% YoY for two consecutive quarters",
+        "Any Phase 3 readout failure or negative FDA action on the Factor XI anticoagulant program or the GIP/GLP-1 obesity asset",
+        "GAAP-to-non-GAAP EPS gap exceeds 25% for two consecutive quarters without a disclosed one-time driver",
+        "Net debt turns materially positive (>$3B) to fund an acquisition without a clearly accretive, disclosed rationale"
+      ],
+      "key_adverse_facts": [
+        "Legacy Eylea US net sales down ~45% YoY in Q2 2026 on biosimilar conversion; guided to keep declining sequentially low-to-mid-teens each quarter through 2026",
+        "GAAP diluted EPS ($12.23, Q2 2026) is ~17% below non-GAAP EPS ($14.29), driven mainly by mark-to-market swings on equity holdings, not operating performance",
+        "Dupixent (~40%+ of revenue) loses US patent exclusivity around 2031, a single-product concentration risk on the scale of the Eylea situation just observed",
+        "AERIFY-2 Phase 3 trial for itepekimab (COPD) missed its primary endpoint, a partial precedent for pipeline risk"
+      ],
+      "data_conflicts": [
+        "Quant snapshot's NTM P/E (15.29x) is self-flagged 'unreliable' due to thin/split analyst FY0-vs-FY1 coverage (ntm_quality: unreliable) — not relied on at face value",
+        "Yahoo-sourced beta field (0.19) looks anomalously low for a biotech and was not used in the WACC assumption (8% assumed instead)"
+      ],
+      "next_earnings_date": "2026-10-30",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium — biosimilar/patent-cliff risk is real and quantified rather than eliminated; standard-depth pass left some gaps (FDA site-inspection database and insider Form-4 pattern not exhaustively checked)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "REGN has no row in v1_valuation_table.csv or v1_valuation.json (not in the 69-name V1 universe); v1_verdict is null and there is nothing to reconcile. This dossier's own reverse DCF (8% WACC, 2.5% terminal growth) implies ~2.6-4.8%/yr sustained 10-year growth versus an evidence-based base case of ~6-8%/yr, i.e. implied growth is below base case."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.03,
+        "base": 0.10,
+        "bull": 0.22
+      }
+    },
+    "RJF": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Well-run wealth-management and investment-banking firm delivering on a stated 20% margin target, priced for much less growth than its own recent run-rate.",
+      "kill_criteria": [
+        "Adjusted pretax margin falls below 18% for two consecutive quarters",
+        "Net income falls below $450M in any quarter for two consecutive quarters",
+        "Raymond James Bank's standalone total capital ratio (per the 10-Q Regulatory Capital note, not the RJF-consolidated ratio) falls below 15%",
+        "The consolidated cash-sweep litigation results in a certified class and/or a disclosed reserve/settlement exceeding $250M",
+        "Parent-level debt rises above $5B without a clearly disclosed, accretive acquisition rationale"
+      ],
+      "key_adverse_facts": [
+        "Q3 FY25 net income ($436M) was the weakest of the last nine quarters, reflecting softer capital-markets/investment-banking revenue that quarter",
+        "Consolidated cash-sweep class actions remain pending (partial dismissal March 2026, class-certification motion filed May 2026); financial exposure unresolved",
+        "Q3 FY26 non-compensation expense run-rate reflects 'two recent acquisitions' not named in the sources reviewed this pass",
+        "Correction (26 Sep 2026, DA7 fact-check confirmed vs the 2026-06-30 10-Q): Raymond James Bank standalone total capital ratio is 16.4% (Jun-26), up from 15.2% (Sep-25) -- only ~20bp above the 15% kill-criterion threshold nine months earlier, not the 22.5% RJF-consolidated figure originally cited; total parent-level debt is ~$4.47B (senior notes payable $3.52B + other borrowings $0.95B), not $0.7-0.95B as originally stated"
+      ],
+      "data_conflicts": [
+        "None material identified this pass; b1 quant composite (0.504, decile 6) is more moderate than the triage's framing implies, driven by a strong earnings-momentum (SUE) score offsetting weaker value/momentum family scores"
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium-high — consistent, quoted guidance track record and a conservative funding structure, but the cash-sweep litigation outcome and two unnamed acquisitions are unresolved open items",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "RJF has no row in v1_valuation_table.csv or v1_valuation.json (not in the 69-name V1 universe); v1_verdict is null and there is nothing to reconcile. This dossier's own reverse DCF (11.4% cost of equity, 3% terminal growth, earnings-based since FCF is not a meaningful signal for a broker-dealer) implies ~4.2%/yr sustained 10-year net-income growth versus an evidence-based base case of ~7-9%/yr, i.e. implied growth is below base case."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.02,
+        "base": 0.11,
+        "bull": 0.20
+      }
+    },
+    "SCHW": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Largest US discount brokerage/custodian compounding fast post-TD-Ameritrade integration, but much of the recent growth is a NIM-recovery tailwind that will not repeat every year.",
+      "kill_criteria": [
+        "Full-year net interest margin fails to reach the guided 3.00%–3.10% range for FY2026, or the guided Q4 2026 exit NIM of 3.25%–3.30% is not achieved",
+        "Accumulated AFS unrealized loss position rises back above $5B or above 10% of stockholders' equity",
+        "Long-term debt + capital lease obligations rise above $28B without a disclosed, NIM-accretive rationale",
+        "The cash-sweep litigation results in a certified class and/or a disclosed reserve/settlement exceeding $500M",
+        "Consolidated Tier 1 leverage ratio falls below 7.5%"
+      ],
+      "key_adverse_facts": [
+        "Long-term debt + capital lease obligations rose YoY ($20.2B to $22.7B) even as management describes reduced wholesale-funding use — an unreconciled tension",
+        "Active cash-sweep class action alleges sweep-cash economics helped finance the TD Ameritrade acquisition; SEC has broadened industry-wide scrutiny of cash-sweep programs (peer disclosures at Morgan Stanley and Wells Fargo)",
+        "A material share of 2026 EPS acceleration is attributed by management itself to NIM recovery and reduced wholesale-funding cost — a partly non-repeatable tailwind, not purely durable organic growth"
+      ],
+      "data_conflicts": [
+        "None material identified this pass beyond the internal debt-growth-vs-'reduced-wholesale-funding' language noted above"
+      ],
+      "next_earnings_date": "2026-10-15",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium — strong, twice-raised guidance in 2026, but an uncertain share of the growth is mean-reversion rather than durable organic compounding, and cash-sweep litigation is unresolved",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "SCHW has no row in v1_valuation_table.csv or v1_valuation.json (not in the 69-name V1 universe); v1_verdict is null and there is nothing to reconcile. This dossier's own reverse DCF (10.5% cost of equity, 3% terminal growth) implies ~5.9-7.7%/yr sustained 10-year net-income growth. An evidence-based base case straddles this range (~9-11%/yr if the near-term NIM tailwind gets partial credit; ~5-7%/yr if normalized away entirely) — implied growth is below the higher base-case estimate but roughly in line with the conservative one, hence INCLUDE-SMALL rather than INCLUDE."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.05,
+        "base": 0.12,
+        "bull": 0.24
+      }
+    }
+  }
+}

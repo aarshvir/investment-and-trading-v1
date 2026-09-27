@@ -1,0 +1,105 @@
+{
+  "agent": "F100",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "ZTS": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The world's top animal-health company, priced cheaply after two guidance cuts and a securities lawsuit over slowing US pet-medicine demand.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "U.S. companion-animal organic revenue declines for a 3rd consecutive quarter (Q3'26 report, due ~Nov 2026).",
+        "FY2026 adjusted EPS guidance is cut a third time at the Q3'26 or Q4'26 release.",
+        "Net debt/EBITDA (consolidated) rises above 2.5x (vs ~1.6x now) without a specific offsetting M&A rationale.",
+        "The securities class action survives a motion to dismiss and/or the SEC opens a formal (not preliminary) investigation.",
+        "Livestock organic growth (currently the offset) decelerates below +5% YoY for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "FY2026 guidance cut twice in six months: revenue $9.825-10.025bn -> $9.68-9.96bn -> $9.12-9.32bn; adj. EPS $7.00-7.10 -> $6.85-7.00 -> $6.15-6.25; organic growth flipped from +3-5% to -3% to -1%.",
+        "U.S. companion animal product sales -11% YoY in Q2'26; U.S. canine OA pain (Librela/Lenivia) revenue -24% YoY to $34mm.",
+        "Federal securities-fraud class action filed 2026 (S.D.N.Y., City of Ann Arbor Retiree Health Care Benefit Plan & Trust v. Zoetis Inc., No. 26-cv-04401) alleging misstatements re: Librela adoption, Simparica Trio and Apoquel/Cytopoint share loss; related shareholder derivative suits filed June 2026.",
+        "Consolidated long-term debt rose from $5,231mm (2025-06-30) to $9,042mm (2025-12-31), largely funding $3,235mm of FY2025 buybacks (incl. a $1,535mm accelerated buyback Dec 2025) plus $1,190mm more in H1'26, even as growth decelerated."
+      ],
+      "data_conflicts": [
+        "b1 composite score (0.51, decile 6/10) still rates ZTS mid-pack on stale filed fundamentals (last_filed_date 2026-08-06) that understate how large the Q2'26 guidance cut was; diligence overrides the quant score here.",
+        "Prior triage (Q08) framed the issue as temporary Librela/Solensia channel destocking; primary-source evidence (Q2'26 release, class action) shows a broader U.S. companion-animal demand problem across multiple franchises (Simparica Trio, Apoquel/Cytopoint), not just Librela channel dynamics."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "confidence_in_thesis": "medium (valuation cheap and moat intact, but two consecutive guidance cuts and active securities litigation mean one more quarter of evidence is needed before sizing up)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for ZTS yet, so there is nothing to reconcile; our own reverse DCF (required return ~7.5% vs FCF yield 6.87%) implies only ~0.6%/yr perpetual growth, below our base case of ~3%/yr, i.e. the market has already priced in most of the bad news."
+      },
+      "scenario_returns_3y": {"bear": -0.04, "base": 0.09, "bull": 0.18},
+      "scenario_basis": "Starting FY2026 adj. EPS ~$6.20 (post-cut guidance midpoint), 10y earnings growth bear -2%/base +3%/bull +7% per year, exit NTM P/E bear 10x/base 12.5x/bull 15x (vs 11.0x now), plus ~2.5-3% dividend yield each year."
+    },
+    "AEE": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Missouri-Illinois regulated utility building a huge grid-and-data-center capex program, growing steadily, priced for less growth than management promises long-term.",
+      "horizon": "24-48 months",
+      "kill_criteria": [
+        "Full-year 2026 diluted EPS comes in below $5.25 (the low end of guidance) at the Q4'26 report.",
+        "The pending Missouri rate case ($343mm requested) is settled/ordered at less than 60% of the requested revenue increase.",
+        "Consolidated debt/(debt+equity) rises above 65% (vs ~60% now) without a matching equity raise already announced.",
+        "Rate-base CAGR guidance (currently 10.6%, 2025-2030) is cut at any quarterly update.",
+        "Two consecutive quarters of EPS growth below 3% YoY."
+      ],
+      "key_adverse_facts": [
+        "FY2026 EPS guidance ($5.25-5.45) brackets, and at the low end sits below, the already-delivered FY2025 GAAP EPS of $5.35 -- the guided year implies close to zero growth despite a 6-8% long-term algorithm.",
+        "Structurally negative free cash flow by design (H1'26 OCF $1,191mm vs capex $2,653mm = FCF approx -$1,462mm); Ameren is a continuous capital-markets issuer, so financing-cost risk is unhedged.",
+        "Missouri filed a $343mm rate increase request in 2026, not yet decided -- regulatory outcome risk against an aggressive capex plan.",
+        "H1'26 EPS strength (+19.6% Q1 YoY, +11.9% Q2 YoY) was not flowed into a guidance raise, suggesting it may include weather/timing benefits rather than pure algorithm delivery; we could not obtain an explicit company reconciliation this cycle."
+      ],
+      "data_conflicts": [
+        "None identified between b1/d4 quant data and filings; b1 rates AEE top-quintile (decile 9/10) on quality and low volatility, consistent with the regulated-utility profile confirmed in filings."
+      ],
+      "next_earnings_date": "2026-11-05",
+      "confidence_in_thesis": "medium-high (regulated business model and capex visibility are strong; the main uncertainty is regulatory-outcome timing on the pending Missouri case and whether H1 EPS strength repeats)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "in_line",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for AEE yet. Our own dividend-discount reverse DCF (required return ~7.7% vs 2.94% dividend yield) implies ~4.8%/yr perpetual growth, essentially in line with our own ~5%/yr base case and below management's guided 6-8% algorithm -- undemanding if the algorithm is delivered."
+      },
+      "scenario_returns_3y": {"bear": -0.01, "base": 0.07, "bull": 0.13},
+      "scenario_basis": "Starting NTM EPS ~$5.72, 10y earnings growth bear +2%/base +5%/bull +7.5% per year, exit NTM P/E bear 15x/base 17x/bull 19x (vs 17.4x now), plus ~2.9% dividend yield each year."
+    },
+    "ALLE": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Leading door-lock and electronic-access-control maker that raised guidance twice this year, has a de-risked balance sheet, and trades cheap relative to its growth.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "FY2026 adjusted EPS guidance (currently $8.85-9.00) is cut at the Q3'26 or Q4'26 release.",
+        "Consolidated operating margin falls below 19% for two consecutive quarters.",
+        "Net debt/EBITDA rises above 2.5x (vs ~1.6x now) without a stated, offsetting M&A growth rationale.",
+        "Americas electronics revenue growth decelerates below high-single-digit YoY for two consecutive quarters.",
+        "International segment organic revenue is negative for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "Q1'26 operating margin dipped to 18.9% (vs 20.9-22.2% in adjacent quarters) alongside a reported EPS miss that the market reacted negatively to.",
+        "Management describes the international segment as 'weaker' even in the same quarter it raised full-year guidance; the drag is real but unquantified in sources reviewed this cycle.",
+        "FY2025-2026 capex is not separately XBRL-tagged in the pulled companyfacts (the company appears to have changed cash-flow-statement presentation); the >100% FCF/NI conversion figure in this dossier is a provisional estimate using the FY2024 capex run-rate as a proxy and needs direct confirmation from the FY2025 10-K cash-flow statement."
+      ],
+      "data_conflicts": [
+        "None identified between b1/d4 quant data and filings; b1's weak momentum percentile (21st) sits against improving fundamentals (guidance raised twice, equity up ~57% since 2023), consistent with our INCLUDE call that the market has not yet re-rated the improvement."
+      ],
+      "next_earnings_date": "2026-10-22",
+      "confidence_in_thesis": "medium-high (two consecutive guidance raises and a strengthening balance sheet are the core evidence; confidence is capped by the unresolved FY2025-2026 capex data gap and the unquantified international softness)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for ALLE yet. Our own reverse DCF (required return ~8.0% vs FCF yield 3.69%) implies ~4.3%/yr perpetual growth, below our own ~6%/yr base case (organic mid-single-digit plus 1-2pts of buyback accretion), i.e. the price does not require our base case to work."
+      },
+      "scenario_returns_3y": {"bear": -0.04, "base": 0.07, "bull": 0.16},
+      "scenario_basis": "Starting NTM EPS ~$9.56, 10y earnings growth bear +2%/base +6%/bull +10% per year, exit NTM P/E bear 13x/base 16x/bull 18.5x (vs 16.2x now), plus ~1.4% dividend yield each year."
+    }
+  }
+}

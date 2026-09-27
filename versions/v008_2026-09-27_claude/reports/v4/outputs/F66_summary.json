@@ -1,0 +1,105 @@
+{
+  "agent": "F66",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "FDS": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A subscription financial-data platform with sticky clients and reaccelerating growth, priced cheaply, but its internal-control weakness and leadership churn are real, unresolved problems.",
+      "kill_criteria": [
+        "Organic ASV growth falls below 5% for two consecutive quarters (vs. 7.1% at 31-May-2026).",
+        "The IT general controls material weakness, first identified in FY2024, is not remediated (per management's own effective-control conclusion) by the end of FY2026 (31-Aug-2026) — its own stated target.",
+        "Adjusted operating margin stays below 33% (vs. 34.0% in Q3 FY26, 36.8% a year earlier) for two consecutive quarters.",
+        "A further unplanned CEO or CFO departure within 12 months of this dossier (on top of the CFO change already seen in Apr-2026).",
+        "Net debt/EBITDA (consolidated) rises above 2.0x (roughly ~1.1–1.2x currently, using ~$1.09bn net debt against an adjusted-EBITDA run-rate in the ~$900M–$1.0bn range) from debt-funded buybacks or M&A."
+      ],
+      "key_adverse_facts": [
+        "GAAP operating margin fell from 33.2% to 26.7% YoY in Q3 FY26 (adjusted margin also fell, 36.8%->34.0%), driven by restructuring charges and new-CEO compensation costs (10-Q, MD&A).",
+        "A material weakness in IT general controls, first identified in FY2024, remains unremediated as of the Q3 FY26 10-Q (filed 1-Jul-2026); disclosure controls were concluded not effective as of 31-May-2026.",
+        "New CFO appointed effective 13-Apr-2026 (Joshua Warren, ex-Envestnet), alongside a CTO/Chief AI Officer reshuffle on 2-Mar-2026 -- three senior finance/technology roles turned over within about six months.",
+        ">20% of Q3 FY26 GAAP operating income is non-GAAP add-backs (restructuring/severance $19.6M, CEO compensation $4.3M, intangible amortization $19.0M on a $166.3M GAAP base)."
+      ],
+      "data_conflicts": [
+        "None found versus the b1/d4 quant data; b1's implied ~13.7-13.8x NTM P/E is consistent with the guidance-based trailing multiple estimate once the forward (not trailing) EPS base is accounted for."
+      ],
+      "next_earnings_date": "2026-10-08",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (cheap, high-quality recurring-revenue business confirmed in primary filings, but the unremediated material weakness and concentrated leadership turnover are real, current facts that could keep the multiple depressed longer than the reverse-DCF margin of safety implies)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for FDS (confirmed absent from v1_valuation_table.csv), so there is nothing to reconcile; my own reverse DCF (WACC 8.5%, 3% terminal growth) implies the market is pricing only ~1.8%/yr 10-year FCF growth, below my base case of 7-9%/yr, i.e. cheap on the numbers even after discounting for the controls/leadership risk."
+      },
+      "scenario_returns_3y": {"bear": -0.08, "base": 0.11, "bull": 0.22},
+      "scenario_basis": "Base case: FY2026 adjusted diluted EPS ~$17.50 growing ~8-9%/yr as organic ASV growth (7.1% at Q3 FY26) holds and restructuring/CEO-comp add-backs roll off by FY2027, adjusted operating margin recovering toward 35-36%, multiple stable near 15-16x adjusted P/E, plus a modest dividend; bear assumes growth decelerates to ~3-4% and the multiple compresses further on persistent margin pressure; bull assumes AI-driven ASV reacceleration into double digits and margin recovery above 37%."
+    },
+    "FDX": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The world's largest express-and-ground delivery network, cutting costs faster than promised and priced for an earnings decline that isn't happening, but mid-transition with no permanent CFO.",
+      "kill_criteria": [
+        "CY2026 continuing-operations adjusted diluted EPS guidance ($16.90–$18.10) is **cut** (not just reaffirmed) at any subsequent quarterly release.",
+        "Federal Express segment adjusted operating margin declines year-over-year for two consecutive quarters.",
+        "No permanent CFO is named within two quarters of this dossier (i.e., by the transition-year 10-K, expected ~Feb/Mar 2027).",
+        "Continuing-operations net debt/EBITDA (once disclosed post-spin) exceeds 2.5x.",
+        "Capital spending for the CY2026 transition/guidance period exceeds the guided $3.9bn by more than 10%, signaling a loss of the capex discipline that is central to the bull case."
+      ],
+      "key_adverse_facts": [
+        "FedEx is currently operating with an interim, not permanent, Chief Financial Officer (Claude Russ, per the Q4/FY26 earnings release, 23-Jun-2026).",
+        "Total debt rose from ~$19.9bn to ~$25.1bn year-over-year on the last consolidated (pre-spin) balance sheet, largely because FedEx Freight issued $3.7bn of senior notes in Feb-2026 to fund a $4.1bn cash dividend to the parent ahead of the 1-Jun-2026 spin-off.",
+        "The fiscal-year-end change (May->December, effective 1-Jun-2026) creates a one-off 7-month transition period with no like-for-like prior-year comparison for several upcoming quarters.",
+        "Recurring non-GAAP adjustment line items for 'international regulatory and legacy FedEx Ground legal matters' in both FY2025 and FY2026 (with a partial reversal of a loss accrual in FY2026) were not independently quantified or identified at standard depth -- flagged as an open item."
+      ],
+      "data_conflicts": [
+        "None found; b1's 14.28x NTM P/E and V1's identical 14.275384x metric_value match exactly, and V1's -4.22% implied growth is directionally consistent with my own independent reverse DCF (-1.8%/yr, different methodology and FCF base)."
+      ],
+      "next_earnings_date": "2027-02-15",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium-high (V1's systematic 'attractive' call and my own independent reverse DCF agree the stock is priced for decline against a business that just beat three consecutive raised guidance ranges; the reservation is entirely about near-term reporting/leadership noise, not the core thesis)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.11128623284060746,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "V1 (NTM P/E 14.28x, 23.7th percentile of own 10-year history, WACC 7.54%, implied growth -4.22%) calls FDX attractive with a base-case 3-yr annualized return of +11.1%/yr. My own independent reverse DCF (different FCF base and terminal-growth assumption) also implies negative growth (-1.8%/yr at 7.5% WACC) is priced in, versus my own base case of +6-9%/yr revenue/FCF growth from continued Network 2.0 savings and capex discipline. I agree with V1's direction and verdict."
+      },
+      "scenario_returns_3y": {"bear": -0.09, "base": 0.13, "bull": 0.32},
+      "scenario_basis": "Base case: FY2026 adjusted diluted EPS $20.24 (continuing + Freight through spin date) growing high-single-digit as Network 2.0/DRIVE transformation savings continue (already exceeded the $1bn target) and capex holds near 4% of revenue (a record low), with the 14.3x NTM P/E re-rating modestly toward the 17.4x peer median as transition-year reporting noise clears; bear assumes tariff/trade disruption persists and the FY-change causes a sustained de-rating; bull assumes faster margin recovery and a full re-rate to peer multiples, close to V1's own bull case."
+    },
+    "FOX": {
+      "verdict": "WATCH",
+      "thesis_one_line": "A cash-generative, low-debt Murdoch-controlled news/sports/streaming company that just agreed to buy Roku for roughly $23 billion funded mostly by new debt -- the deal's outcome, not the standalone business, is now the investment case.",
+      "kill_criteria": [
+        "The Roku Merger Agreement is terminated under circumstances requiring FOX to pay Roku the ~$1.2bn antitrust-related termination fee (a direct signal of regulatory rejection).",
+        "FOX Class B stockholders fail to approve the Class A share issuance needed to close the transaction on its current terms.",
+        "Pro forma net debt/Adjusted EBITDA, once disclosed post-close, exceeds **4.0x** (vs. ≈0.6x standalone today).",
+        "Cable Network Programming segment distribution (affiliate-fee) revenue declines YoY for two consecutive quarters (cord-cutting outpacing rate increases; distribution revenue grew +5% in FY2026 despite subscriber declines, so a reversal would be a real trend break).",
+        "A jury verdict or settlement in the Smartmatic defamation litigation (or a related derivative suit) exceeding $500M."
+      ],
+      "key_adverse_facts": [
+        "On 14-Jun-2026 FOX signed a definitive Merger Agreement to acquire Roku, Inc. for approximately $96.00 cash plus 0.9693 FOX Class A shares per Roku share (roughly $23bn based on Roku's own 25-Sep-2026 market cap), backed by a new $12.0bn bridge facility and $1.0bn term loan -- not yet closed, subject to HSR antitrust clearance and both companies' stockholder votes.",
+        "FOX would owe Roku an incremental termination fee of up to approximately $1.2 billion (on top of an ~$866 million mutual fee) if the deal fails specifically on antitrust/regulatory grounds.",
+        "FOX remains a defendant in the Smartmatic defamation lawsuit and related derivative suits (filed Feb-2021), on top of the ~$800 million Dominion settlement already paid in Apr-2023.",
+        "Approval of the deal's FOX-side share issuance relies significantly on the Murdoch-family-controlled LGC Holdco's ~38.8%-of-Class-B voting commitment rather than a fully independent shareholder vote."
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv records exclude_pending_deal=False for FOX as of the 2026-09-25 data cutoff, even though the Roku Merger Agreement was signed 14-Jun-2026, more than three months earlier. The quant pipeline's live_rank and factor percentiles for FOX do not appear to reflect this pending, leverage-increasing acquisition; the model's 'cheap on value factors' read is a standalone-business artefact, not a risk-adjusted view of the pending deal."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "low (not on the standalone fundamentals, which are solid and well-documented, but on the net investment case, which now hinges on an unresolved ~$23bn acquisition's financing, antitrust clearance and integration outcome)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "in_line",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for FOX. My own standalone-only reverse DCF (WACC 9%, 3% terminal growth, ~18.6x P/FCF) implies ~4.0%/yr 10-year FCF growth priced in, roughly in line with FY2026's actual revenue (+5%) and Adjusted EBITDA (+8%) growth -- i.e., fair, not cheap, before layering on the Roku transaction, whose financing and integration risk this valuation snapshot cannot yet price."
+      },
+      "scenario_returns_3y": {"bear": -0.17, "base": 0.07, "bull": 0.24},
+      "scenario_basis": "Base case: Roku deal closes broadly as structured with manageable integration costs; standalone FOX (net debt/EBITDA ~0.6x pre-deal, FY2026 Adjusted EBITDA $3.9bn +8%) continues high-single-digit EBITDA growth aided by the Nov-2026 midterm election ad cycle, with Roku modestly accretive within 2-3 years; bear assumes the deal closes at high leverage with Roku integration losses dragging free cash flow, or breaks messily despite fee receipts; bull assumes successful CTV/ad-tech integration re-rates the combined company as a scaled media-and-streaming platform, or the deal breaks cleanly and standalone FOX re-rates on its own low-leverage merits."
+    }
+  }
+}

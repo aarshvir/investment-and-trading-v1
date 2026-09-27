@@ -1,0 +1,81 @@
+{
+  "BMY": {
+    "verdict": "INCLUDE-SMALL",
+    "horizon": "12-36 months",
+    "kill_criteria": [
+      "Consolidated quarterly revenue growth negative for two consecutive quarters",
+      "H2 2026 operating cash flow still down YoY (confirming the Eliquis IRA cash impact is structural, not a one-time H1 dip)",
+      "FY2026 non-GAAP EPS misses the raised $6.75-$7.00 guidance range when reported (~Feb 2027)",
+      "Cobenfy ADEPT Alzheimer's-psychosis Phase 3 data (now expected early 2027) reads out negative or is delayed again",
+      "Net debt/EBITDA (GAAP) rises back above ~3x (from ~1.9x now)",
+      "Quarterly dividend held flat or cut, breaking the 17-year increase streak"
+    ],
+    "key_adverse_facts": [
+      "FY2025 non-GAAP EPS ($6.15) missed BMS's own Oct-2025-raised guidance range ($6.40-$6.60) once a $1.4bn Q4 Orbital Therapeutics IPR&D charge landed outside the guided range -- guidance structurally excludes future M&A/licensing charges",
+      "H1 2026 GAAP operating cash flow fell 23.4% YoY ($4.497bn vs $5.871bn); the 10-Q itself attributes this primarily to the Eliquis Medicare IRA price cut, even though GAAP Eliquis revenue grew +22% YoY in Q2 2026 -- a real revenue-vs-cash tension the headline growth number obscures",
+      "TTM ROE of 43.3% (GAAP) is substantially a leverage/intangible-base artefact: tangible book value is negative in every period tested and the equity multiplier (~4.4-5.7x) is DuPont's dominant driver, not margin or turnover",
+      "Cobenfy's Phase 3 ADEPT-2 Alzheimer's-disease-psychosis readout was delayed from H2 2026 to 'beginning early 2027' after disclosed clinical-trial-execution irregularities at a small number of sites",
+      "Q2 2026 GAAP EPS growth of +153% YoY is mostly the non-recurrence of a prior-year $1.508bn one-off Acquired IPR&D charge, per the 10-Q's own explanation, not organic improvement"
+    ],
+    "data_conflicts": [
+      "FCF yield: quant snapshot 6.3% vs primary-filing TTM-actual 7.1% (FCF/EV) to 8.9% (FCF/market cap) -- unreconciled, possibly a different (NTM vs TTM) basis on the snapshot side",
+      "Beta of 0.227 in the quant snapshot appears implausibly low for large-cap pharma (peers typically 0.4-0.7x) and was not independently recomputed this session -- flagged, not confirmed or refuted",
+      "P/E (13.85x vs 13.9x computed), dividend yield (4.1% vs 4.0%), payout ratio (~55% vs 57.7% TTM), and cash ($11.07bn vs $11.067bn) all matched closely -- no conflict"
+    ],
+    "next_earnings_date": "2026-10-29",
+    "confidence_in_thesis": {"level": "med", "reason": "financials, guidance history and litigation are primary-source-verified and internally consistent, but the Eliquis revenue-vs-cash-flow tension is genuinely unresolved and the single biggest de-risking catalyst (Cobenfy ADEPT) has been pushed out over a year"}
+  },
+  "HST": {
+    "verdict": "INCLUDE",
+    "horizon": "12-24 months",
+    "kill_criteria": [
+      "Comparable hotel RevPAR growth negative for two consecutive quarters",
+      "Adjusted FFO/share guidance CUT (not just raised more slowly) at any quarterly release",
+      "Net debt/EBITDAre rises above ~4.0x without an offsetting asset-sale plan (current: 2.95x net debt/EBITDA)",
+      "Regular quarterly dividend ($0.20/share) is cut",
+      "FY2027 comparable RevPAR growth guidance (first given ~Feb 2027) comes in below ~2% -- the falsifiable test of the '2026 was FIFA-flattered' bear case"
+    ],
+    "key_adverse_facts": [
+      "Q1 2026 GAAP net income (+99.6% YoY) and diluted EPS ($0.72, roughly double every other quarter in the trailing 8) were driven almost entirely by a $242m one-off gain on the sale of 3 hotels (St. Regis Houston + two Four Seasons properties), not operations",
+      "FY2025 GAAP net income also included a $148m 'Other gains (losses)' item (FY2024: $0m), partially offset by $86m less insurance-settlement gains than FY2024 -- GAAP earnings have been gain-inflated in both of the last two fiscal years",
+      "Sourced FY2025 ROE (11.2%, ratios.py) is ~500bps below the 16.1% ROE feeding the preliminary quant Quality score -- consistent with that model input being a TTM figure that captures the Q1 2026 gain quarter",
+      "FY2026 RevPAR/EPS acceleration is partly a one-time FIFA World Cup effect; management's own Q2 2026 release states 'year-over-year comparisons are expected to moderate' into H2 2026, implying a harder FY2027 comp",
+      "Group booking volume described as 'soft' across multiple FY2025 releases; Maui properties still described as 'recovering' from 2023 wildfires as of the Q4 2025 release"
+    ],
+    "data_conflicts": [
+      "verify_data.py flagged an 11.1% cross-source divergence on total debt: company-reported $5,082m (Q2 2026 10-Q) vs $5,645m in the d4_live_snapshot vendor field -- RESOLVED: the gap equals exactly the $563m operating lease liability, i.e. a debt-definition difference (leases in/out), not a data error",
+      "Preliminary quant ROE input (16.1%) vs sourced FY2025 GAAP ROE (11.2%, ratios.py) -- ~500bp gap, likely because the quant input is TTM and captures the Q1 2026 one-off disposition gain; the model's Quality score for HST should be discounted accordingly",
+      "The vendor avg_surprise_pct_last8 (+81.7%) is likely a REIT EPS-estimate artefact (tiny denominator) rather than a genuine quality signal -- flagged in the dossier, not treated as a positive"
+    ],
+    "next_earnings_date": "2026-11-04",
+    "confidence_in_thesis": {"level": "med", "reason": "the durable operating story (RevPAR/AFFO beat-and-raise, Baa2 upgrade, no 2026 debt maturities, valuation in line with PK/DRH peers) is well-evidenced from primary sources, but conviction is capped by the FY2027 comp-difficulty risk"}
+  },
+  "EIX": {
+    "verdict": "WATCH",
+    "horizon": "re-assess after Q3 2026 earnings (2026-10-27) and any Q4 2026 special-session outcome; full 12-36mo thesis contingent on liability clarity",
+    "kill_criteria": [
+      "CPUC issues or signals a 'conscious or willful disregard' prudency finding on the Eaton Fire -- removes the $4.3bn shareholder liability cap entirely",
+      "Credible signs the statewide $21bn Wildfire Fund is being materially depleted (by this fire or PG&E/SDG&E claims) before SCE's claims are resolved -- the second, EIX-uncontrolled way the cap disappears",
+      "Any additional Eaton-Fire GAAP charge NOT offset dollar-for-dollar by a Wildfire Fund recovery accrual (breaking the $0-net-impact pattern seen in H1 2026)",
+      "Further credit-rating downgrade at S&P (already BBB-, the lowest investment-grade notch, negative outlook), Moody's or Fitch",
+      "Management reverses its 2026-09-23 public statement that no new common equity is needed through 2030",
+      "Adverse verdict or damaging evidentiary finding at the January 2027 bellwether trial"
+    ],
+    "key_adverse_facts": [
+      "Company's own words (10-Q, Q2 2026): 'Edison International and SCE are currently unable to reasonably estimate a range of losses that may be incurred in connection with the Eaton Fire' -- the ultimate liability is explicitly unquantifiable as of the latest filing",
+      "The $4.3bn statutory shareholder liability cap can be voided two separate ways: a CPUC 'conscious or willful disregard' finding, OR simple depletion of the shared statewide $21bn Wildfire Fund (used by PG&E and SDG&E too, not just SCE)",
+      "A wildfire-liability legislative reform (SB 492) died without a vote at the end of the Aug 2026 legislative session; EIX stock fell ~23% in a single day (largest one-day decline in 25+ years) on the news; Fitch cut its outlook to negative from stable specifically citing this failure",
+      "Self-insurance recoveries for the Eaton Fire were fully exhausted as of 2026-02-11",
+      "The 10-Q separately discloses exposure to potential felony liability related to the Eaton Fire, with any resulting fines/penalties NOT recoverable from insurance, the Wildfire Fund, or rates (fully shareholder-borne)",
+      "Two of three rating agencies (S&P since Oct 2025, Fitch since Sept 2026) carry a negative outlook; S&P is already at the lowest investment-grade notch (BBB-)",
+      "Guidance track record could not be completed to the standard 4-release table: EIX's Q2 2026 earnings exhibits turned out to be image-only slide decks, not text press releases; only one data point (FY2026 core EPS guidance $5.90-$6.20, reaffirmed) was obtained, and only via secondary (news) sourcing"
+    ],
+    "data_conflicts": [
+      "The preliminary quant model's momentum score (M=0.602, weak-but-not-alarming, mom121 +3.0%) is a poor guide to this name's actual risk trajectory: the 12-1-month momentum window EXCLUDES the most recent month, so the ~23% single-day crash around 2026-08-31/09-01 (SB 492 failure) may sit substantially or entirely outside the window the M score measures, even though it is a first-order, very recent repricing event. Flagged as a genuine model blind spot.",
+      "verify_data.py flagged a 30.6% divergence on cash between the 10-Q ($242m, 2026-06-30) and the internal pipeline snapshot ($168m) -- assessed as different as-of dates rather than a real error, not independently reconciled to a specific date",
+      "The Q1 2025 GAAP EPS spike ($3.72-3.73, the highest of the trailing 8 quarters) was run to ground during this research and resolved: it is a $908m after-tax non-core regulatory-recovery gain from the TKM Settlement Agreement (2017/2018 wildfire events, unrelated to Eaton Fire), not an Eaton-Fire item and not a data error -- core EPS that quarter was an unremarkable $1.37"
+    ],
+    "next_earnings_date": "2026-10-27",
+    "confidence_in_thesis": {"level": "low", "reason": "the core regulated-utility earnings/rate-base story is well-evidenced, but the thesis as a whole is dominated by a wildfire liability that the company itself states it cannot currently size, with two live, near-term, binary catalysts (a possible special legislative session and CPUC prudency process) unresolved -- low confidence is the correct calibration, not a data gap"}
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "agent": "F17",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "NVDA": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Nvidia dominates AI chips and keeps beating expectations, but the stock already prices in a decade of strong growth that may not last.",
+      "kill_criteria": [
+        "Gross margin below 70% for two consecutive quarters (ex a disclosed one-off).",
+        "Data Center YoY growth decelerates below 40% for two consecutive quarters.",
+        "Independent trackers show combined hyperscaler custom-silicon share above 30% of AI accelerator spend.",
+        "Two-largest-customer revenue concentration exceeds 45% of total revenue (vs. 36% in FY26).",
+        "Net new long-term debt issuance beyond the Q2 FY27 $32.4B level without clear, disclosed use-of-proceeds."
+      ],
+      "key_adverse_facts": [
+        "Two direct customers were 22% and 14% (36% combined) of FY2026 revenue per the 10-K; NVIDIA is 'effectively foreclosed' from China's data-center compute market as of FY2026 year-end.",
+        "$4.5B GAAP charge in FQ1 FY26 for H20 excess inventory/purchase obligations tied to export controls, crushing that quarter's gross margin to 60.5%.",
+        "Hyperscaler custom silicon (Google TPU, AWS Trainium, Microsoft Maia, Meta MTIA) is an estimated 15-20% of AI accelerator spend and growing, concentrated among NVIDIA's largest customers.",
+        "NVIDIA's own market share has fallen from ~92% (2023) to ~80% (2026).",
+        "Long-term debt jumped from ~$7.5B to $32.4B in a single quarter (FQ2 FY27), coincident with the announced $12.9B Hugging Face acquisition; not explained in sources reviewed."
+      ],
+      "data_conflicts": [
+        "OCF fell sequentially from $50.3B (Q1 FY27) to $24.1B (Q2 FY27) despite revenue growth accelerating -- a large working-capital swing (receivables +$24.6B) not explained in the press-release-level sources used; needs full 10-Q verification.",
+        "The Q2 FY27 long-term-debt jump ($7.5B to $32.4B) has no clearly disclosed use-of-proceeds in the sources reviewed."
+      ],
+      "next_earnings_date": "2026-11-18",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium -- moat, market position and execution (4 straight quarters of YoY acceleration) are well evidenced from primary sources; the valuation call and two data conflicts (OCF swing, debt jump) are unresolved",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for NVDA (mega-cap quality-growth carve-out, per v4/STATE.md 2026-09-20); this analyst built the reverse DCF independently. On trailing FCF the price implies 15.4%/yr FCF growth for 10 years vs. a 13% evidence-based base case (above); on next-FY sell-side consensus FCF as the base, implied growth falls to 9.8% (in line) -- the valuation is a close call, not a clear overvaluation, which is why the verdict is INCLUDE-SMALL rather than WATCH/REJECT despite the 'above' label."
+      },
+      "scenario_returns_3y": {"bear": -0.25, "base": 0.11, "bull": 0.30}
+    },
+    "AAPL": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Apple's huge, loyal customer base keeps paying for more services and new phones, but the price assumes today's unusually strong growth continues for years.",
+      "kill_criteria": [
+        "China smartphone market share falls back below 15% for two consecutive quarters.",
+        "Services revenue growth decelerates below 8% YoY for two consecutive quarters.",
+        "Gross margin falls below 45% for two consecutive quarters.",
+        "A regulatory action cuts Apple's global (not just EU/China) App Store take-rate by more than 5 points.",
+        "Installed-base active-device growth decelerates below 4% YoY."
+      ],
+      "key_adverse_facts": [
+        "Huawei leads China smartphone share at 22.6% vs. Apple's 18.1% (Q2 2026); Apple's recent China growth was partly a price-hike-avoidance pull-forward of iPhone 17 demand.",
+        "48 Chinese iOS developers petitioned SAMR for an antitrust probe into App Store commissions (Jun-2026); Apple pre-emptively cut its China App Store commission from 30% to 25% (Mar-2026), a real, already-realized take-rate cut in one major market.",
+        "Apple Intelligence / a more personalized Siri was still described as 'coming' as of the cutoff -- behind several competitors' shipped generative-AI assistants.",
+        "FY2024-to-FY2025 revenue growth was only 6.4% (391.0B to 416.2B); the current acceleration to ~12% TTM growth rests on an iPhone-17 supercycle that may not repeat.",
+        "Precise current net-debt/net-cash balance-sheet figure not independently re-verified in this pass; flagged rather than asserted."
+      ],
+      "data_conflicts": [
+        "None identified between b1/d4 quant data and filings in this pass beyond the balance-sheet figure noted above, which is a gap in this analyst's own research (time-boxed), not a conflict between sources."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium -- Services and installed-base growth are well evidenced from primary sources; the durability of the current iPhone-17 supercycle and the Apple Intelligence execution timeline are open questions",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for AAPL (mega-cap quality-growth carve-out). Reverse DCF: price implies 10.7%/yr FCF growth for 10 years vs. an 8% evidence-based base case (hardware low-single-digit growth, Services 11-13%) -- above base, i.e. the market is extrapolating the current supercycle/Services re-acceleration rather than the multi-year trend (FY24-to-FY25 was only 6.4%)."
+      },
+      "scenario_returns_3y": {"bear": -0.125, "base": 0.05, "bull": 0.18}
+    },
+    "AVGO": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Broadcom builds custom AI chips for big tech firms at a fair price, but a handful of customers drive almost all its growth.",
+      "kill_criteria": [
+        "Any of the four largest XPU customers publicly cancels or materially shrinks its custom-silicon program.",
+        "AI-semiconductor revenue growth decelerates below 40% YoY for two consecutive quarters (vs. currently >100%).",
+        "Net debt/EBITDA (adjusted) rises above 2.5x (from approximately 1.1x) on further debt-funded M&A.",
+        "VMware/infrastructure-software organic growth turns negative for two consecutive quarters.",
+        "SBC exceeds 12% of revenue for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "Six core customers (reported to include Google, Meta, Anthropic, OpenAI) are expected to drive nearly all of the >$100B FY2027 AI-semiconductor revenue target; four are described as 'particularly large' -- a single large customer's pause is a company-moving risk.",
+        "The $230B FY2028 AI-revenue figure is described in sources as 'outlined' rather than firmly guided, and implies AI-segment revenue alone approaching Broadcom's entire current company-wide TTM revenue (~$89B) -- treated as bull-case, not base-case, in this dossier.",
+        "SBC ran 7-10% of revenue in FY26, materially higher than NVDA/AAPL, tied to VMware-deal equity awards -- a real, ongoing dilution driver.",
+        "FQ3 FY24 GAAP diluted EPS was negative (-$0.40) on VMware acquisition-related costs (disclosed, not recurring, but shows integration-cost volatility)."
+      ],
+      "data_conflicts": [
+        "None identified between b1/d4 quant data and filings; the b1 composite score for AVGO (0.47, mid-pack) is notably lower than the qualitative growth case in this dossier -- consistent with AVGO's inclusion via the quality-growth carve-out rather than the quantitative gate (live_rank 313)."
+      ],
+      "next_earnings_date": "2026-12-10",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium-high -- operating-margin expansion (23.7% to 53.9% over 8 quarters) and the design-win moat are well evidenced from primary sources; customer-concentration risk is the main unresolved question",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "implied_vs_base": "in_line",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for AVGO. Reverse DCF: price implies 14.1%/yr FCF growth for 10 years vs. a 15% evidence-based base case (near-term AI ramp tracking the guided $100-115B FY2027 path, decelerating thereafter) -- in line, the most defensible valuation of the four names reviewed, contingent on the customer-concentration risk not materializing."
+      },
+      "scenario_returns_3y": {"bear": -0.15, "base": 0.20, "bull": 0.43}
+    },
+    "ORCL": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Oracle's cloud-computing bookings are exploding, but it's borrowing heavily to build the data centers and just got downgraded toward junk credit status.",
+      "kill_criteria": [
+        "S&P or Moody's downgrades Oracle to junk (BB+ or below).",
+        "FCF remains negative beyond FY2028 (more than two further fiscal years of negative FCF).",
+        "RPO growth decelerates below 15% YoY for two consecutive quarters (bookings momentum breaks).",
+        "OpenAI (or any single customer) renegotiates or cancels more than 20% of its contracted RPO.",
+        "Adjusted net debt/EBITDA rises above 5x."
+      ],
+      "key_adverse_facts": [
+        "S&P downgraded Oracle to BBB- (one notch above junk) in July 2026 citing AI-infrastructure spending and OpenAI concentration risk; Moody's assigned a negative outlook.",
+        "TTM free cash flow is approximately -$28.7B; independent estimates (S&P) see the annual FCF gap potentially widening toward -$42B if the current capex pace continues.",
+        "FY2026 capex was $55.663B, roughly 2.6x the prior fiscal year's $21.2B, funded partly by a $5B mandatory convertible preferred (Feb-2026) with a further ~$20B equity issuance planned later in 2026 -- i.e. already being funded with dilutive instruments, not just debt.",
+        "OpenAI, reported to be Oracle's single largest new-bookings driver, itself carries externally-debated ability to fund the >$1 trillion of compute spend implied by its purchase commitments.",
+        "An unexplained ~$1.4B gap between FQ2 FY26 operating income ($4.731B) and net income ($6.135B) suggests a below-the-line gain, not organic operating improvement; driver not identified from sources reviewed."
+      ],
+      "data_conflicts": [
+        "The b1 quant snapshot has several blank factor fields for ORCL (accruals, book/price percentile) -- the composite score (0.61) is computed on a partial factor set for this name, a data-completeness caveat noted but not resolved in this pass.",
+        "Management states most incremental AI-contract capex is prepayment- or customer-equipment-funded (de-risking the funding gap); this analyst could not independently verify what fraction of the already-spent $55.7B FY2026 capex was prepayment-funded versus balance-sheet-funded from the sources reviewed -- this is the crux of the bull/bear disagreement and is flagged as unresolved."
+      ],
+      "next_earnings_date": "2026-12-10",
+      "horizon": "12-36 months, WATCH pending FCF/credit trajectory",
+      "confidence_in_thesis": "low-medium -- RPO bookings growth is extremely well evidenced, but the financial-quality picture (negative FCF, credit downgrade, unexplained net-income gap) is severe enough that the valuation conclusion is highly sensitive to an unverifiable margin-recovery assumption",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "implied_vs_base": "in_line",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for ORCL. Because trailing FCF is deeply negative, this analyst used a revenue-growth-plus-margin-recovery reverse DCF: implied 10-year revenue CAGR ranges from 8.2% (30% terminal FCF margin) to 16.9% (15% terminal margin), central estimate ~10-13% at a 20-25% terminal margin, vs. a 12-15% evidence-based base case -- labelled in line, but this label is fragile: at the more conservative (and, given Oracle's capital-intensive IaaS model, arguably more realistic) 15% terminal margin, implied growth would be above any reasonable base case. This fragility, combined with the credit downgrade and negative FCF, is why the verdict is WATCH rather than INCLUDE-SMALL despite the 'in line' central estimate."
+      },
+      "scenario_returns_3y": {"bear": -0.14, "base": 0.11, "bull": 0.30}
+    }
+  }
+}

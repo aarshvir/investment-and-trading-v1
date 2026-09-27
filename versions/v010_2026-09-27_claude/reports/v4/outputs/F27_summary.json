@@ -1,0 +1,98 @@
+{
+  "agent": "F27",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "ANET": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The AI-era networking leader for hyperscalers is executing brilliantly, but the stock's price already assumes that continues for a full decade.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "Revenue from the two largest customers (26%/16% of FY2025 revenue) falls below 30% combined for two consecutive quarters without an offsetting new large customer disclosed",
+        "YoY revenue growth decelerates below 15% for two consecutive quarters (vs. 27.5-37.7% over the last four)",
+        "Non-GAAP operating margin falls below 44% for two consecutive quarters (vs. 44.7-49.9% over the last four)",
+        "Company guides below the prior quarter's actual revenue (an absolute guidance cut, not just slower growth)",
+        "Net cash position falls below $8bn without a value-accretive acquisition disclosed"
+      ],
+      "key_adverse_facts": [
+        "Two end customers represented 26% and 16% of FY2025 revenue, and 20% and 15% of FY2024 revenue (10-K risk factors); large single-customer concentration drives quarter-to-quarter results",
+        "Company's own risk factors name hyperscaler in-house/custom silicon and Nvidia's networking push (e.g., Spectrum-X) as direct competitive threats to its core AI-fabric business",
+        "At the 2026-09-25 close the market is pricing in ~16.9% FCF growth for 10 years, above this analyst's evidence-based base case of ~14-15%"
+      ],
+      "data_conflicts": [
+        "Prior triage (Q11_triage.json) rated price_vs_growth 3/5 and advanced the name without a formal reverse DCF; this dossier's reverse DCF finds the price implies growth above (not in line with) an evidence-based base case, supporting WATCH over the triage's implicit advance-to-include bias"
+      ],
+      "next_earnings_date": "2026-11-03",
+      "confidence_in_thesis": "high - four consecutive quarters of primary-source SEC filings and 8-K earnings releases confirm accelerating growth, margin expansion and a net-cash balance sheet with no debt; the valuation call carries medium confidence given WACC/terminal-growth sensitivity",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for ANET in v1_valuation_table.csv or v1_valuation.json, so there is nothing to reconcile against; this dossier's own reverse DCF (WACC 9.5%, terminal growth 3.5%) finds the price implies ~16.9% 10-year FCF growth versus an evidence-based base case of ~14-15%, i.e. the stock is fully to richly priced.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {"bear": -0.12, "base": 0.10, "bull": 0.29}
+    },
+    "APH": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Diversified connector maker that tripled its debt buying CommScope's cable business; the deal is beating plan, but leverage is now real.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Net debt/EBITDA rises above 2.5x in any quarterly report (vs. an estimated ~1.4-1.5x today) without a specific deleveraging plan disclosed",
+        "Organic (non-M&A) revenue growth, as separately disclosed by management, falls below 5% for two consecutive quarters",
+        "GAAP-to-adjusted EPS gap (acquisition/integration costs plus amortization of acquired intangibles) exceeds 20% of GAAP EPS for two consecutive quarters",
+        "Company misses (rather than beats) the high end of its own quarterly revenue guidance for two consecutive quarters (vs. 4-for-4 beats over the last year)",
+        "A credit-rating downgrade is announced by Moody's or S&P specifically citing CommScope-related leverage"
+      ],
+      "key_adverse_facts": [
+        "Total debt rose from $6.89bn (FY2024) to $18.81bn (2026-06-30) to fund the Andrew (closed 2025-01-31) and CommScope ($10.5bn, closed 2026-01-09) acquisitions; net debt is now approximately $13.4bn",
+        "Q1 2026 GAAP net income fell versus Q4 2025 despite higher revenue, due to a one-time $101.1m after-tax ($0.08/share) inventory step-up amortization charge tied to CommScope purchase accounting",
+        "Reported 55% YoY revenue growth is partly an acquisition artefact, not purely organic, per management's own commentary in every one of the last four earnings releases"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-21",
+      "confidence_in_thesis": "medium-high - primary-source 10-K/10-Q and 8-K data confirm a genuine beat-and-raise pattern and a manageable (if elevated) leverage estimate, but only two quarters of post-CommScope-close data exist so integration risk is not yet fully tested"
+      ,
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for APH, so there is nothing to reconcile against; this dossier's own reverse DCF (WACC 8.5%, terminal growth 3.5%) finds the price implies ~13.9% 10-year FCF growth, in line with an evidence-based base case of ~12-14%, satisfying the growth-priced-in test for INCLUDE-SMALL.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {"bear": -0.08, "base": 0.11, "bull": 0.22}
+    },
+    "CDNS": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The EDA duopolist essential to advanced chip design pleaded guilty to a federal export-control crime, and its price assumes rapid growth for a decade.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "Any new BIS or DOJ enforcement action, or a finding of probation non-compliance, is disclosed",
+        "China-attributed revenue disclosure falls below 8% of total revenue in any 10-K/10-Q (versus 13% in FY2025)",
+        "YoY revenue growth decelerates below 12% for two consecutive quarters (vs. the ~19% FY2026 guide and 24.2% latest quarterly print)",
+        "Non-GAAP-to-GAAP operating margin gap widens above 20 percentage points for two consecutive quarters (currently ~14-17 points)",
+        "FY guidance is cut (not just grown more slowly) at any quarterly release, breaking the current two-raises-in-a-row streak"
+      ],
+      "key_adverse_facts": [
+        "Cadence pleaded guilty in July 2025 to one count of conspiracy to commit export control violations (2015-2021, ~$45.3m of China sales plus unauthorized technology transfer), paid $140.6m in penalties/forfeitures, and is under an active 3-year DOJ probation and BIS administrative settlement with ongoing compliance audit obligations",
+        "China was 13% of FY2025 revenue; BIS separately imposed (then rescinded within six weeks) an EDA-specific export-license requirement for China transactions in mid-2025, with a further interim rule referenced as effective 2025-09-29",
+        "FY2026 guidance of ~19% YoY revenue growth (as of the Q2'26 release) is below the 24.2% growth actually reported in Q2 2026, implying management expects some deceleration"
+      ],
+      "data_conflicts": [
+        "Prior triage (Q10_triage.json) sourced its 'general knowledge' of the EDA duopoly thesis without citing the FY2025 10-K and did not surface the BIS/DOJ guilty plea; this dossier treats that omission as a material gap in the triage, not a data conflict to reconcile, since the triage made no contrary factual claim"
+      ],
+      "next_earnings_date": "2026-10-26",
+      "confidence_in_thesis": "high on the business-quality/moat read (well-documented duopoly, primary-source guidance track record); high confidence the legal exposure is real and ongoing (guilty plea and probation are matters of public record in the 10-K); medium confidence on the exact multi-year revenue impact of the China export-control uncertainty",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for CDNS, so there is nothing to reconcile against; this dossier's own reverse DCF (WACC 9.5%, terminal growth 3.5%) finds the price implies ~17.3% 10-year FCF growth versus an evidence-based base case of ~14-15% (itself below management's own decelerating FY2026 guide), so the growth-priced-in test for INCLUDE/INCLUDE-SMALL is not satisfied.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {"bear": -0.13, "base": 0.10, "bull": 0.23}
+    }
+  }
+}

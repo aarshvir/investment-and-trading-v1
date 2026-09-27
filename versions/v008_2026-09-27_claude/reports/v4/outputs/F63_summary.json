@@ -1,0 +1,123 @@
+{
+  "agent": "F63",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "CAH": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "One of three dominant US drug wholesalers, raising profit guidance every quarter while its price implies almost no growth at all.",
+      "horizon": "18-36 months",
+      "kill_criteria": [
+        "Non-GAAP diluted EPS guidance is cut (vs. raised or maintained) at any quarterly release — breaks the core track record this thesis rests on.",
+        "Consolidated net debt/EBITDA rises above 2.5x (from ≈1x today) without a value-accretive reason disclosed.",
+        "A second goodwill/intangible impairment >$100m in the Other segment (Navista/ION/Solaris/GI Alliance/ADS platforms) within any four-quarter window.",
+        "The DOJ Civil Investigative Demand (Anti-Kickback/False Claims Act, opened Nov 2023) converts to a filed complaint or a settlement exceeding $250m not previously accrued.",
+        "\"Other\" segment margin falls below 8% for two consecutive quarters (loss of the diversification thesis's economics)."
+      ],
+      "key_adverse_facts": [
+        "$4.3bn opioid litigation accrual at 2026-06-30, payments expected through 2038, $417m paid in FY2026 alone including the fifth annual $366m NOSA installment",
+        "Open DOJ Civil Investigative Demand (Anti-Kickback Statute/False Claims Act) since November 2023, not yet separately accrued for as far as disclosed",
+        "$184m pre-tax goodwill impairment in the Navista & ION (oncology/urology physician-platform) reporting unit in Q3 FY2026",
+        "Stockholders' equity is negative (-$2.88bn at 2026-06-30), a structural result of cumulative buybacks exceeding retained earnings",
+        "FY2026 non-GAAP diluted EPS growth (+37%) included a one-off $100m IEEPA tariff-refund benefit recognized in GMPD; ex that benefit, growth was +33%",
+        "FY2026 OCF ($5.17bn) was flattered by working-capital timing; FY2027 adjusted FCF is guided materially lower at $3.5-4.0bn"
+      ],
+      "data_conflicts": [
+        "No numerical conflicts found between the company's own filings and the b1_live_scores.csv / d4_live_snapshot.parquet values checked (price $220.22 as of 2026-09-25, analyst mean target $270.94, NTM P/E ~17.0x all reconcile). No V1 valuation row exists for CAH in v1_valuation_table.csv, so no V1 reconciliation was possible (v1_verdict recorded as null, not a conflict)."
+      ],
+      "next_earnings_date": "2026-11-05",
+      "confidence_in_thesis": "high — a four-quarter, no-cuts guidance-raise streak, ~1x net leverage, and a reverse DCF showing a real margin of safety, tempered only by an unresolved DOJ inquiry that is not yet sized or accrued for",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for CAH (v1_valuation_table.csv / v1_valuation.json have no CAH entry), so there is nothing to reconcile against; this analyst's independent reverse DCF (WACC 7.5-9.0%, FY2027 guided non-GAAP EPS midpoint $12.50, terminal growth 2.5%) implies roughly -2.5% to +0.7% annualized 10-year growth versus a 6-8%/yr base case, i.e. the stock is cheap on the analyst's own work.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.06,
+        "base": 0.1,
+        "bull": 0.18
+      },
+      "scenario_basis": "Starting point FY2027 guided non-GAAP diluted EPS midpoint $12.50 on a $220.22 price (NTM P/E ~17.6x); base case 8-10%/yr EPS growth with the multiple held near 17x and a ~0.9% dividend yield; bull assumes 12%/yr EPS growth with re-rating to ~20x; bear assumes growth stalls to ~2%/yr (a guidance cut or opioid/DOJ escalation) with compression to ~13x."
+    },
+    "COR": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Drug wholesaler with a growing specialty-oncology business, raising profit guidance every quarter despite a real pattern of goodwill write-downs.",
+      "horizon": "18-36 months",
+      "kill_criteria": [
+        "Adjusted diluted EPS guidance is cut at any quarterly release (breaking the current raise streak).",
+        "A further goodwill/asset impairment exceeding $150m is booked in any single quarter (a fourth consecutive year of the PharmaLex-style pattern).",
+        "Consolidated net debt/EBITDA rises above 2.5x without a disclosed, value-accretive reason.",
+        "U.S. Healthcare Solutions segment revenue growth falls below 3% for two consecutive quarters (below even the cut 4-6% FY26 guide).",
+        "The \"Other\" segment strategic-alternatives review results in a divestiture loss exceeding $200m versus carrying value."
+      ],
+      "key_adverse_facts": [
+        "Three consecutive fiscal years of goodwill/asset impairments concentrated in PharmaLex/Other: $418.0m (Q4 FY2024), $723.9m (Q4 FY2025), $249.5m (FY2026-to-date)",
+        "Total debt nearly doubled in two quarters ($7.92bn at 2025-12-31 to $11.72bn at 2026-06-30) to fund the debt-financed step-up acquisition of OneOncology",
+        "FY2026 revenue-growth guidance was cut from 7-9% to 4-6% (both total company and the U.S. Healthcare Solutions segment) even as adjusted EPS guidance was raised over the same period",
+        "$4.2bn opioid litigation accrual at 2026-06-30, payments expected over the next 13 years",
+        "Q4 FY2025 GAAP diluted EPS was a loss of $(1.75)/share, driven by the $723.9m PharmaLex goodwill impairment plus a $113.5m equity-investment impairment",
+        "Q2 FY2026 GAAP diluted EPS of $8.40 was driven by a one-off $1.086bn non-cash OneOncology remeasurement gain, not operations"
+      ],
+      "data_conflicts": [
+        "No numerical conflicts found between the company's own filings and the b1_live_scores.csv / d4_live_snapshot.parquet values checked (price $306.92 as of 2026-09-25, analyst mean target $369.31, NTM P/E ~15.5-17.2x all reconcile). No V1 valuation row exists for COR in v1_valuation_table.csv, so no V1 reconciliation was possible (v1_verdict recorded as null, not a conflict)."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "confidence_in_thesis": "medium — durable adjusted-EPS momentum and a genuine specialty-mix upgrade, tempered by a real, three-year-running capital-allocation flag (recurring PharmaLex impairments) and debt taken on for the OneOncology deal",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for COR, so there is nothing to reconcile against; this analyst's independent reverse DCF (WACC 7.5-9.0%, FY2026 guided adjusted-EPS midpoint $17.85, terminal growth 2.5%) implies roughly +0.3% to +3.7% annualized 10-year growth versus a 7-9%/yr base case, i.e. the stock is cheap on the analyst's own work, though with a thinner margin of safety than CAH given the higher recent debt load and impairment pattern.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.08,
+        "base": 0.1,
+        "bull": 0.19
+      },
+      "scenario_basis": "Starting point FY2026 guided adjusted diluted EPS midpoint $17.85 on a $306.92 price (NTM P/E ~16-17x); base case 9%/yr EPS growth with the multiple held near 16x and a ~0.76% dividend yield; bull assumes 13%/yr EPS growth with re-rating to ~19x; bear assumes a further impairment/leverage scare stalls growth to ~1%/yr with compression to ~12x."
+    },
+    "CCI": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "America's largest independent cell-tower REIT, now a simplified pure-play paying a 6% yield after selling its fiber business and paying down debt.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "The quarterly dividend is cut from $1.0625/share (breaking the flat-since-at-least-Aug-2025 record and signaling AFFO coverage has failed).",
+        "Net debt/EBITDA rises above 7.0x (from ~6.4x today) without a disclosed deleveraging plan.",
+        "Organic contribution to site rental billings (ex-DISH/Sprint) falls below 2.5% for two consecutive quarters.",
+        "FY AFFO/share guidance is cut at any quarterly release (breaking the current raise/reaffirm pattern).",
+        "A second CEO or CFO departure within 24 months of Hillabrant's September 2025 appointment (a repeat of the leadership-churn pattern the triage flagged)."
+      ],
+      "key_adverse_facts": [
+        "Net debt/EBITDA is approximately 6.4x ($17.1bn net debt vs FY2026 guided Adjusted EBITDA midpoint $2.69bn), elevated for the tower REIT sector",
+        "AFFO payout ratio is approximately 93% ($4.25/share annualized dividend vs FY2026 guided AFFO/share midpoint $4.59), leaving little buffer",
+        "FY2026 AFFO guidance has been revised three separate times in seven months (Feb, May, July 2026) as the post-divestiture business is re-based",
+        "CEO turnover: Christian Hillabrant appointed President & CEO effective 2025-09-15, following a board-run search process, amid the period of activist-linked pressure the triage flagged (Elliott stake/13D itself not independently verified against a primary filing in this pass)",
+        "Organic tower growth excluding DISH terminations and Sprint cancellations is only ~3.5-4.2%, a modest underlying growth rate that must carry the leveraged balance sheet",
+        "GAAP net income/EPS are heavily distorted by depreciation and one-off divestiture-related items around the May 2026 sale and are not usable as a clean quarterly series"
+      ],
+      "data_conflicts": [
+        "The vendor-computed d4_live_snapshot 'pe_ntm' of ~24.8x for CCI is a GAAP-EPS-based multiple and is not decision-useful for this REIT per the sector playbook (GAAP EPS is depressed/distorted by depreciation and divestiture items); price/AFFO (~14.8x on the FY2026 guided AFFO/share midpoint) is the metric actually used in this dossier's valuation. This is a methodology mismatch between the generic quant snapshot and the REIT-appropriate metric, not an error in either source. No V1 or V2R (NAREIT FFO rebuild) row exists for CCI, so no V1 reconciliation was possible."
+      ],
+      "next_earnings_date": "2026-10-21",
+      "confidence_in_thesis": "medium — the divestiture and deleveraging are real and completed, but elevated leverage, a tight AFFO payout ratio, and three guidance resets in seven months make this the least confident of the three verdicts in this batch",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 or V2R (NAREIT FFO rebuild) row exists for CCI, so there is nothing to reconcile against; this analyst's independent reverse DCF (WACC 9.0-9.5% given the ~6.4x leverage, FY2026 guided AFFO/share midpoint $4.59, terminal growth 3.0%) implies roughly +1.0% to +2.1% annualized 10-year AFFO/share growth versus a 3-5%/yr base case (below, i.e. modestly cheap) — but the call is sensitive to the discount rate (a lower 8.0-8.5% WACC would imply negative growth, i.e. clearly cheap), so this is flagged as the least confident 'below' call in the batch and the dossier's qualitative view is closer to fair value than clearly cheap.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.05,
+        "base": 0.1,
+        "bull": 0.17
+      },
+      "scenario_basis": "Starting point FY2026 guided AFFO/share midpoint $4.59 on a $67.84 price (P/AFFO ~14.8x); base case 4%/yr AFFO growth with the multiple held near 14.8x and a 6.3% dividend yield held flat; bull assumes 6%/yr AFFO growth with re-rating to ~17x as churn fades and leverage falls; bear assumes AFFO growth stalls near 0%, the multiple compresses to ~12x on renewed leverage concern, and the dividend is partially cut mid-period (average effective yield ~5% over the period)."
+    }
+  }
+}

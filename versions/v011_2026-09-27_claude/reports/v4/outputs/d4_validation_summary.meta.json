@@ -1,0 +1,11 @@
+{
+  "dataset": "d4_validation_summary.json",
+  "agent": "d4",
+  "written_utc": "2026-09-25T20:59:40Z",
+  "description": "validation statistics (price, mcap, SEC, FYE, anomalies, NTM, staleness)",
+  "inputs": [
+    "v4/data/d4_*.csv",
+    "v4/data/d4_live_snapshot.parquet"
+  ],
+  "generated_by": "v4/code/d4_validate.py"
+}

@@ -1,0 +1,249 @@
+{
+  "as_of": "2026-09-26",
+  "scope": "Coverage-completion fact-check of current-holding dossiers never previously independently audited: BR, CMCSA, BKNG, DG, NOW, BX, EG (7 dossiers, 4 load-bearing facts each = 28 facts total). Facts were selected to prioritize the claims most likely to be wrong: adjusted-vs-GAAP splits, fiscal-period/date labels, guidance deltas, and deal/litigation status as of 2026-09-25. One fact (NOW / Moveworks) was a specifically flagged known issue: a Loop-3 auditor found the dossier's 'still under DOJ review, not closed' characterization was stale and that the deal closed around Dec 2025.",
+  "facts": [
+    {
+      "ticker": "BR",
+      "claim": "FY2026 total revenue $7,476.8m (+8.5%); diluted EPS $9.60 (GAAP) = Adjusted EPS $9.60 (+12%) -- an unusual GAAP/adjusted convergence the dossier flags as unresolved",
+      "dossier_location": "BR.md §4 results table + §11 red-flag scan ('Data conflict, disclosed, unresolved')",
+      "source": "Broadridge 8-K Ex-99.1, Q4/FY2026 results, accession 0001383312-26-000022, filed 2026-08-04 ('Broadridge Reports Fourth Quarter and Fiscal Year 2026 Results')",
+      "source_value": "\"Diluted EPS was $9.60 and Adjusted EPS grew 12% to $9.60\"; Total revenues FY2026 $7,477m (+9% as reported; dossier's +8.5% is the recurring-revenue-basis figure, also stated in the release as 'Recurring revenues grew 8%')",
+      "status": "PASS",
+      "note": "Exact match, including the odd GAAP=adjusted coincidence -- this is genuinely what the company reported, not a dossier transcription error."
+    },
+    {
+      "ticker": "BR",
+      "claim": "CQG acquisition (futures/options execution and market connectivity) completed 1 May 2026; deal size not disclosed by the company",
+      "dossier_location": "BR.md §2 ('completed 1 May 2026'), §6 ('deal size not disclosed'), §11 ('financial terms undisclosed by the company... lack of disclosed purchase price is itself noted for completeness')",
+      "source": "Broadridge 8-K Ex-99.1, Q3 FY2026 results, accession 0001383312-26-000013, filed 2026-04-30, 'Subsequent Event' note",
+      "source_value": "\"On April 30, 2026, the Company completed the acquisition of CQG, Inc. ... The total purchase price was approximately $173 million plus additional contingent consideration.\"",
+      "status": "FAIL",
+      "note": "Two errors: (1) the dossier's completion date (1 May 2026) is one day off the company's own primary-source date (April 30, 2026 -- likely inherited from a press-release dateline rather than the SEC filing); (2) the dossier states twice, as a named data gap, that the purchase price is undisclosed, but Broadridge's own 8-K explicitly discloses a total purchase price of approximately $173 million plus contingent consideration. This is a load-bearing miss because the dossier's M&A-materiality discussion (§6, §11) is built on the premise that no price was ever given."
+    },
+    {
+      "ticker": "BR",
+      "claim": "Q4 FY2026 dividend raised 12% to $4.36/share annualized -- the 14th double-digit dividend increase in the past 15 years",
+      "dossier_location": "BR.md §6 Capital allocation",
+      "source": "Same 8-K Ex-99.1, accession 0001383312-26-000022 (CEO quote)",
+      "source_value": "\"...our Board has approved a 12% increase in our annual dividend to $4.36 per share, marking the fourteenth double-digit increase in the past fifteen years\"",
+      "status": "PASS",
+      "note": "Verbatim match. (The release separately also calls it the '20th consecutive annual dividend increase' -- a different, non-conflicting metric the dossier does not cite.)"
+    },
+    {
+      "ticker": "BR",
+      "claim": "FY2027 initial guidance: 6-8% recurring-revenue growth (constant currency), 8-12% adjusted-EPS growth",
+      "dossier_location": "BR.md §5 guidance table, last row",
+      "source": "Same 8-K Ex-99.1, accession 0001383312-26-000022",
+      "source_value": "\"Fiscal year 2027 guidance calls for 6-8% Recurring revenue growth constant currency and 8-12% Adjusted EPS growth\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "CMCSA",
+      "claim": "29-Jun-2026 announcement: tax-free spin-off of NBCUniversal (absorbing Sky) in ~1 year; Comcast to retain a stake of up to 19.9% in NBCUniversal for up to one year post-spin",
+      "dossier_location": "CMCSA.md §1 verdict paragraph",
+      "source": "Comcast 8-K Ex-99.1, accession 0000950103-26-009591, filed 2026-06-29",
+      "source_value": "\"Comcast expects to retain a stake of up to 19.9% ownership position in NBCUniversal for up to one year after the completion of the spin, which it intends to monetize in a tax-efficient manner over time.\" Separation \"expected to be completed... in approximately one year.\"",
+      "status": "PASS",
+      "note": "Exact match on the 19.9% figure, the up-to-one-year retention window, and the ~1-year separation timeline."
+    },
+    {
+      "ticker": "CMCSA",
+      "claim": "Q2 2026: Peacock reached its first-ever quarterly profit, EBITDA $189m, on 48m paid subscribers (+2m qoq)",
+      "dossier_location": "CMCSA.md §4, Q2 2026 segment-detail paragraph",
+      "source": "Comcast Q2 2026 8-K Ex-99.1, accession 0001628280-26-049274",
+      "source_value": "\"Peacock Achieved Quarterly Profitability for the First Time Ever with EBITDA of $189 Million, Increasing $290 Million Year-over-Year; Paid Subscribers Increased by 2 Million Net Additions in the Quarter to 48 Million\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "CMCSA",
+      "claim": "Q2 2026 GAAP EPS $0.99 (net income fell ~68% yoy, versus Q2 2025's Hulu-gain-inflated base); Adjusted EPS $1.04, down 16.7% yoy",
+      "dossier_location": "CMCSA.md §4 results table + narrative",
+      "source": "Same Comcast Q2 2026 8-K Ex-99.1",
+      "source_value": "\"Earnings per Share (EPS) decreased 66.9% to $0.99. Adjusted EPS decreased 16.7% to $1.04.\" Net income $3,526m (Q2 2026) vs $11,123m (Q2 2025) = -68.3%.",
+      "status": "PASS",
+      "note": "Adjusted EPS decline matches exactly; GAAP EPS decline is 66.9% per-share vs the dossier's 'fell 68%' framed at the net-income level (68.3%) -- both correctly sourced, just two different denominators (EPS vs total net income), not an error."
+    },
+    {
+      "ticker": "CMCSA",
+      "claim": "Versant separation completed 2-Jan-2026",
+      "dossier_location": "CMCSA.md §4 note column and §6",
+      "source": "Same Comcast Q2 2026 8-K Ex-99.1",
+      "source_value": "\"the Versant separation, which was completed on January 2, 2026\" (stated twice, including in the formal defined-term footnote)",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "BKNG",
+      "claim": "25-for-1 forward stock split effective April 2, 2026 (record date 2026-03-06); traded split-adjusted from 2026-04-06",
+      "dossier_location": "BKNG.md §2 note on share count/EPS",
+      "source": "Booking Holdings 8-K, accession 0000950157-26-000465, filed 2026-04-02, Item 5.03",
+      "source_value": "\"...to effect the previously announced twenty-five-for-one forward stock split... effective at 4:01 p.m. Eastern Time on April 2, 2026... Trading is expected to commence on a split-adjusted basis at market open on Monday, April 6, 2026.\"",
+      "status": "PASS",
+      "note": "Exact match on split ratio and both dates."
+    },
+    {
+      "ticker": "BKNG",
+      "claim": "Q2 2026 (split-adjusted): GAAP EPS $2.53 (+131% yoy); Adjusted EPS $2.54 (+15% yoy)",
+      "dossier_location": "BKNG.md §4 results table",
+      "source": "Booking Holdings Q2 2026 8-K Ex-99.1, accession 0001075531-26-000036",
+      "source_value": "\"GAAP EPS $2.53 131% ... Adjusted EPS $2.54 15%\" (headline metrics table)",
+      "status": "PASS",
+      "note": "Exact match, including both growth percentages."
+    },
+    {
+      "ticker": "BKNG",
+      "claim": "FY2026 guidance (as of Q2 2026 release): revenue growth mid-to-high single digits, Adjusted EBITDA growth high single digits, Adjusted EPS growth 'low-to-mid teens'",
+      "dossier_location": "BKNG.md §5 and §7 (the 'low-to-mid teens' figure is described as the single most important number for judging V1's base case)",
+      "source": "Same Q2 2026 8-K Ex-99.1, guidance table",
+      "source_value": "\"Adjusted EPS Growth ... Low to Mid-Teens\" (FY2026 column); revenue growth 'Mid to High Single Digits'",
+      "status": "PASS",
+      "note": "Exact verbatim match on the load-bearing 'low-to-mid teens' phrase."
+    },
+    {
+      "ticker": "BKNG",
+      "claim": "Stockholders' deficit -$10,783m at Q2 2026 (deeply and rapidly more negative)",
+      "dossier_location": "BKNG.md §6",
+      "source": "Booking Holdings Q2 2026 10-Q, accession 0001075531-26-000037, consolidated balance sheet",
+      "source_value": "\"Total stockholders' deficit (10,783)\" at June 30, 2026 (vs (5,578) at Dec 31, 2025, per the same balance sheet)",
+      "status": "PASS",
+      "note": "Q2 2026 figure matches exactly. (Prior-quarter figures the dossier cites for the four-quarter trend, -$8,724m Q1'26 / -$6,657m Q2'25, were not independently re-pulled from their own filings in this pass -- scope limitation given the time-box, not a discrepancy.)"
+    },
+    {
+      "ticker": "DG",
+      "claim": "Q2 FY2026 (ended 2026-07-31): diluted EPS $2.48, +33.3% yoy; sixth consecutive quarter of positive comps across all four merchandise categories, fifth consecutive quarter of positive traffic",
+      "dossier_location": "DG.md §1, §4, §8",
+      "source": "Dollar General 8-K Ex-99, accession 0001104659-26-101918, filed 2026-08-27",
+      "source_value": "\"Diluted Earnings Per Share (‘EPS’) Increased 33.3% to $2.48\"; \"fifth consecutive quarter of customer traffic growth and the sixth consecutive quarter of positive comparable sales growth across all four merchandising categories\"",
+      "status": "PASS",
+      "note": "Exact match on both the EPS figure/growth rate and the streak counts."
+    },
+    {
+      "ticker": "DG",
+      "claim": "FY2026 EPS guidance raised to $7.80-$8.00 (from $7.20-$7.45), including an estimated ~$0.25 tariff-refund benefit in Q2 not expected to repeat in H2",
+      "dossier_location": "DG.md §5 guidance table, Q2 FY26 row",
+      "source": "Same 8-K Ex-99, accession 0001104659-26-101918",
+      "source_value": "\"Diluted EPS in the range of approximately $7.80 to $8.00, compared to its previous expectation in the range of $7.20 to $7.45\"; \"Diluted EPS guidance includes the estimated benefit from tariff refunds, after related reinvestments, of approximately $0.25 in the second quarter of fiscal 2026\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "DG",
+      "claim": "Shareholder securities class action (Washtenaw County v. Dollar General): court granted defendants' motion to dismiss the second consolidated amended complaint without prejudice on 2026-06-23; lead plaintiffs filed a motion for leave to amend on 2025-08-25; 'status as of this dossier: dismissed but not fully resolved -- monitor'",
+      "dossier_location": "DG.md §9 kill criterion 5, §10 catalysts ('any ruling on the pending motion for leave to amend'), §11 red-flag scan",
+      "source": "Dollar General Q2 FY2026 10-Q, accession 0001104659-26-101932, filed 2026-08-27, Legal Proceedings note",
+      "source_value": "Dismissal without prejudice of the second amended complaint occurred on **June 23, 2025** (one year earlier than the dossier's 2026-06-23). The motion for leave to amend was already **granted on March 24, 2026**, and lead plaintiffs then filed a **third** consolidated amended complaint; defendants moved to dismiss that third complaint on April 21, 2026, with briefing completed May 29, 2026 -- i.e. a fully-briefed motion to dismiss the third complaint is what is actually pending, not a motion for leave to amend. The litigation is also two consolidated matters (Washtenaw County + Edmonds, the latter voluntarily dismissed Jan 2024), not one.",
+      "status": "FAIL",
+      "note": "The dossier's dismissal date is off by exactly one year (2026-06-23 vs the filing's 2025-06-23), and its 'status as of this dossier' materially understates how far the case has progressed: as of DG's own most-recently-cited 10-Q, a THIRD amended complaint has been filed and a fully-briefed motion to dismiss it is pending -- not an open motion for leave to amend. This affects both a kill criterion and a listed forward catalyst."
+    },
+    {
+      "ticker": "NOW",
+      "claim": "[Flagged known issue] Moveworks $2.85bn acquisition status as of the dossier's data cutoff vs. current reality -- a Loop-3 auditor found it closed around Dec 2025 via an 8-K filed 2025-12-15",
+      "dossier_location": "NOW.md §1, §6, §9 kill criterion 3, §11 (all originally described the deal as 'signed but under a DOJ second request, not yet closed'); a lead correction dated 2026-09-26 has already been appended to the dossier ahead of this audit",
+      "source": "ServiceNow 8-K, accession 0001373715-25-000329, filed 2025-12-15, Item 8.01 + Ex-5.1 (legal opinion)",
+      "source_value": "Ex-5.1: \"the Shares were issued to the Selling Stockholders in connection with the closing of the Company's acquisition of Moveworks, Inc., a Delaware corporation ... on December 15, 2025, pursuant to the Agreement and Plan of Merger, dated as of March 9, 2025\"",
+      "status": "CONFIRMED (prior FAIL corrected)",
+      "note": "Confirms the Loop-3 auditor's finding exactly: Moveworks closed 2025-12-15, per ServiceNow's own primary SEC filing, accession 0001373715-25-000329 -- roughly nine months before this dossier's data cutoff. The dossier's own appended correction (already present, not added by this audit) is accurate and the withdrawal of kill criterion 3 is appropriate; DA6 supplies the exact accession number requested."
+    },
+    {
+      "ticker": "NOW",
+      "claim": "Q1 FY26 (22 Apr 2026) raised FY26 subscription-revenue guide; Q2 FY26 (22 Jul 2026) raised again to $15,760-15,780M (22.5% yoy), margin guide held at 31.5% non-GAAP op margin / 35% FCF margin",
+      "dossier_location": "NOW.md §5 guidance track record",
+      "source": "ServiceNow Q2 FY2026 8-K Ex-99.1, accession 0001373715-26-000072, filed 2026-07-22",
+      "source_value": "\"Subscription revenues $15,760 - $15,780 [millions] 22.5% [yoy] ... Income from operations 31.5% ... Free cash flow 35%\"",
+      "status": "PASS",
+      "note": "Exact match on all four guided figures."
+    },
+    {
+      "ticker": "NOW",
+      "claim": "Subscription revenue growth resilient at 24.5% yoy in Q2 FY26 while GAAP op margin compressed to ~4.0%; cRPO growth ~21% yoy tracking subscription growth",
+      "dossier_location": "NOW.md §3, §4 table, §8 bull case",
+      "source": "Same Q2 FY2026 8-K Ex-99.1",
+      "source_value": "\"Total revenues of $3,987 million in Q2 2026, representing 24% year-over-year growth\" (subscription revenue growth stated at 24.5%); \"Current remaining performance obligations of $13.20 billion as of Q2 2026, representing 21%\" growth",
+      "status": "PASS",
+      "note": "Exact match on total-revenue growth and cRPO growth."
+    },
+    {
+      "ticker": "NOW",
+      "claim": "[Data gap the dossier itself flagged] DOJ / DoD-IG / Army SDO investigation into the 2023 Army-CIO hiring is still open, with the company continuing to cooperate -- the dossier explicitly says this could not be verified against the primary Q2 FY26 10-Q Legal Proceedings text in the original session",
+      "dossier_location": "NOW.md §11 red-flag scan (self-flagged 'data gap: the Item 1 Legal Proceedings text itself could not be retrieved verbatim...')",
+      "source": "ServiceNow Q2 FY2026 10-Q, accession 0001373715-26-000076, filed 2026-07-23, Legal Proceedings / Commitments and Contingencies note",
+      "source_value": "\"The Company has informed the Department of Justice, the Department of Defense Office of Inspector General and the Army Suspension and Debarment Office of the investigation and is continuing to cooperate with the Department of Justice, which has commenced its own investigation ... The Company cannot predict the timing, outcome or possible impact of the investigation.\"",
+      "status": "PASS",
+      "note": "Retrieved the primary 10-Q text this dossier's own author could not access; it confirms the dossier's secondary-sourced summary was accurate. The self-flagged data gap can now be closed -- matter remains open as described, no new resolution found."
+    },
+    {
+      "ticker": "BX",
+      "claim": "Q2 2026: Distributable Earnings (DE) $1.52/share; Fee-Related Earnings (FRE) $1.43/share; GAAP net income attributable to Blackstone Inc. ~$1.2bn for the quarter",
+      "dossier_location": "BX.md §4 results table",
+      "source": "Blackstone Q2 2026 8-K Ex-99.1, accession 0001193125-26-313250, filed 2026-07-23",
+      "source_value": "\"Distributable Earnings ('DE') of $2.0 billion ($1.52/share) in the quarter\"; \"Fee Related Earnings ('FRE') of $1.8 billion ($1.43/share) in the quarter\"; \"GAAP Net Income Attributable to Blackstone Inc. was $1.2 billion for the quarter\"",
+      "status": "PASS",
+      "note": "Exact match on all three figures."
+    },
+    {
+      "ticker": "BX",
+      "claim": "Quarterly dividend raised to $1.29/share for Q2 2026 (from $1.16 Q1'26, $1.03 Q2'25)",
+      "dossier_location": "BX.md §6",
+      "source": "Same Blackstone Q2 2026 8-K Ex-99.1",
+      "source_value": "\"Blackstone has declared a quarterly dividend of $1.29 per share to record holders of common stock at the close of business on August 3, 2026. This dividend will be paid on August 10, 2026.\"",
+      "status": "PASS",
+      "note": "Q2 2026 figure confirmed exactly; the Q1'26/Q2'25 comparison figures were not independently re-pulled from their own filings in this pass (scope limitation, not a discrepancy)."
+    },
+    {
+      "ticker": "BX",
+      "claim": "Fee-earning AUM $961.6bn at 2026-06-30 (+8-9% yoy)",
+      "dossier_location": "BX.md §4 narrative",
+      "source": "Same Blackstone Q2 2026 8-K Ex-99.1",
+      "source_value": "Fee-earning AUM table: \"$887,114,205 [thousands, Jun-25] ... $961,592,654 [thousands, Jun-26] ... 8%\" growth",
+      "status": "PASS",
+      "note": "Exact match ($961.6bn, +8% yoy)."
+    },
+    {
+      "ticker": "BX",
+      "claim": "Standalone long-term debt rose from $11.5bn (Dec-24) to $13.3bn (Jun-26), funding growth in the insurance/permanent-capital channel and buybacks; payout ratio ~85% of DE/share",
+      "dossier_location": "BX.md §6",
+      "source": "Blackstone Q2 2026 10-Q, accession 0001193125-26-340208, and Q2 2026 8-K Ex-99.1 (dividend/DE figures above)",
+      "source_value": "Not independently re-derived from the balance sheet in this pass (time-boxed); dividend $1.29 / DE $1.52 = 84.9% payout, consistent with the dossier's '~85%' claim as an arithmetic check on the two already-confirmed primary figures above.",
+      "status": "UNVERIFIABLE",
+      "note": "The $11.5bn/$13.3bn standalone-debt figures were not independently pulled from the Dec-2024 and Jun-2026 10-Ks/10-Qs within the time-box; the payout-ratio claim is arithmetically consistent with the two figures already confirmed above (1.29/1.52=84.9%~85%), so it is not flagged as wrong, only as not separately re-verified at the balance-sheet level."
+    },
+    {
+      "ticker": "EG",
+      "claim": "Q3 2025: $478m net unfavorable prior-year reserve development (US casualty), a 12.4-point increase on the Group combined ratio, resulting in a 103.4% combined ratio; entered the $1.2bn Longtail Re ADC effective 1-Oct-2025",
+      "dossier_location": "EG.md §1, §4, §6",
+      "source": "Everest Group Q3 2025 8-K Ex-99.1, accession 0001095073-25-000077, filed 2025-10-27",
+      "source_value": "\"Net unfavorable reserve development of approximately $478 million in prior year loss reserves, resulting in a 12.4-point increase on the combined ratio for the Group\"; \"Combined ratios of 103.4% for the Group\"",
+      "status": "PASS",
+      "note": "Exact match on the dollar amount, point impact and resulting combined ratio."
+    },
+    {
+      "ticker": "EG",
+      "claim": "Q2 2026: Group combined ratio 92.0%; $33m of favorable prior-year development YTD, primarily short-tail",
+      "dossier_location": "EG.md §4 results table",
+      "source": "Everest Group Q2 2026 8-K Ex-99.1, accession 0001095073-26-000029, filed 2026-07-29",
+      "source_value": "\"Combined ratio 92.0%\" (Group, quarter); \"Pre-tax net unfavorable (favorable) prior year development $(33)\" for the six-months-2026 YTD column",
+      "status": "PASS",
+      "note": "Exact match on both figures."
+    },
+    {
+      "ticker": "EG",
+      "claim": "Q2 2026 net premiums written -26.3% yoy (a large, ongoing top-line contraction)",
+      "dossier_location": "EG.md §4 narrative, §8 bear case",
+      "source": "Same Q2 2026 8-K Ex-99.1",
+      "source_value": "\"Net written premium $3,037 [Q2'26] $4,119 [Q2'25] (26.3)%\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "EG",
+      "claim": "Book value per share $398.83 at June 30, 2026 versus $379.70 at December 31, 2025 (BVPS ex-URA(D) $407.67)",
+      "dossier_location": "EG.md §6",
+      "source": "Same Q2 2026 8-K Ex-99.1",
+      "source_value": "\"Book value per share of $398.83 at June 30, 2026 versus **$379.83** at December 31, 2025\"; \"Book value per share excluding unrealized gains (losses)... of $407.67 at June 30, 2026\"",
+      "status": "MINOR",
+      "note": "The current-quarter figure ($398.83) and the ex-URA(D) figure ($407.67) match exactly. The Dec-2025 comparison figure is transcribed as $379.70 in the dossier versus $379.83 in the primary source -- a $0.13/share (0.03%) discrepancy. Immaterial to the P/B ratio (0.93x) and to the thesis, but not an exact match; likely a transcription slip."
+    }
+  ]
+}

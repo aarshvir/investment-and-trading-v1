@@ -1,0 +1,117 @@
+{
+  "agent": "F95",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "CIEN": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The top independent optical-networking supplier riding the AI-datacenter-interconnect boom, but the stock already prices in a decade of today's exceptional growth rate.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Quarterly revenue growth decelerates below 20% YoY for two consecutive quarters",
+        "RPO ($2.5bn as of Aug 1 2026) declines quarter-over-quarter for two consecutive quarters",
+        "Net debt (gross LT debt minus cash) exceeds $2.5bn",
+        "Any single 'cloud provider' customer disclosed (or inferable from segment concentration commentary) at >15% of revenue",
+        "A guidance cut (vs. the immediately prior quarter's range)"
+      ],
+      "key_adverse_facts": [
+        "Management itself discloses rising customer concentration: 'a small number of those customers become a larger portion of our business' across multiple revenue segments (10-Q MD&A, Q3 FY26)",
+        "Nine-month FY26 capex was $194.9m vs $95.4m a year earlier (+104%), pressuring near-term FCF even as revenue grows",
+        "June 2026 $2.875bn 0% convertible note issuance roughly doubled reported debt and cash simultaneously; a reader of the balance sheet without the notes could misread this as distress",
+        "Trailing GAAP P/E ~79x and implied 10-year FCF CAGR of ~21-23% leave little valuation cushion for any normalization of the AI-capex cycle"
+      ],
+      "data_conflicts": [
+        "None material found between filings and the quant snapshot; the step-change in cash/debt between the Q2 and Q3 FY26 10-Qs is fully explained by the June 2026 convertible offering (Note 13), not a data error"
+      ],
+      "next_earnings_date": "2026-12-11",
+      "confidence_in_thesis": "medium (durable AI-interconnect demand is well evidenced by RPO and 3 straight guidance raises, but sustaining a ~21%+ 10-year FCF CAGR is a high bar and next_earnings_date is an estimate pending the actual Q4 FY26 8-K)",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "above",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for CIEN in v1_valuation_table.csv, so v1_verdict is null; the analyst's own reverse-FCF-DCF puts the implied 10-year growth (~21-23%) above an evidence-based base case (~15%), consistent with a 'full' valuation view and the WATCH verdict."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.18,
+        "base": 0.04,
+        "bull": 0.18
+      },
+      "scenario_basis": "Starting point NTM consensus EPS $9.93 (d4 snapshot); bear = 5%/yr EPS growth with multiple compression to 18x NTM P/E (AI-capex cycle normalizes hard); base = 20%/yr EPS growth with multiple compression to 28x (cycle moderates but persists); bull = 30%/yr EPS growth holding ~35x (current NTM multiple, cycle sustains); no dividend."
+    },
+    "COHR": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A photonics and laser leader turning around into an AI-optics transceiver supplier, with three straight quarters of beat-and-raise, but free cash flow is still negative.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "FCF stays negative (OCF minus capex < $0) for two consecutive fiscal quarters after FY26 Q4",
+        "Quarterly revenue guidance is cut (below the immediately prior quarter's stated range)",
+        "Net debt/consolidated total debt rises above $4.0bn without a corresponding step-up in FCF guidance",
+        "Non-GAAP-to-GAAP EPS gap widens beyond 50% for two consecutive quarters",
+        "Organic revenue growth decelerates below 20% YoY for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "FY26 (ended Jun 30 2026) operating cash flow was only $79.5m against $1,102.9m of capex, i.e. FCF of approximately negative $1.02 billion for the year, despite the earnings recovery",
+        "Q4 FY26 GAAP diluted EPS was $1.19 vs non-GAAP $1.74, a roughly 46% gap driven by amortization, restructuring and SBC add-backs",
+        "The business remains exposed to the same AI-optics customer-concentration and cyclicality risk as CIEN and LITE"
+      ],
+      "data_conflicts": [
+        "None material found; the FCF-based reverse DCF could not be used directly because FCF is currently negative, so a non-GAAP-EPS-based reverse DCF was substituted and flagged as a softer estimate"
+      ],
+      "next_earnings_date": "2026-11-04",
+      "confidence_in_thesis": "medium (revenue acceleration and guidance-beat pattern are well evidenced by three quarters of primary filings, but the turnaround's cash-conversion is not yet proven, which is the reason for INCLUDE-SMALL rather than INCLUDE)",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "in_line",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for COHR in v1_valuation_table.csv, so v1_verdict is null; the analyst's reverse non-GAAP-EPS DCF implies a ~19-21% 10-year EPS CAGR, which is judged in_line with (not clearly above) an evidence-based base case of similar magnitude, consistent with a 'fair' dossier view."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.146,
+        "base": 0.0705,
+        "bull": 0.204
+      },
+      "scenario_basis": "Starting point NTM consensus non-GAAP-style EPS $10.51 (d4 snapshot); bear = 8%/yr EPS growth with multiple compression to 15x (capex-heavy turnaround stalls, FCF stays negative); base = 20%/yr EPS growth with multiple compression to 24x (from current ~28x NTM P/E); bull = 28%/yr EPS growth holding ~30x (AI-optics supercycle plus successful capacity ramp); no dividend."
+    },
+    "HOOD": {
+      "verdict": "WATCH",
+      "thesis_one_line": "A fast-growing retail brokerage expanding into options, crypto and prediction markets, priced for continued hypergrowth even though a bill to ban prediction markets is already in the Senate.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Federal or state legislation materially restricting or banning prediction-market event contracts is enacted",
+        "Crypto-trading revenue declines YoY for a second consecutive quarter (already -38% YoY in Q2 2026)",
+        "Any regulated subsidiary's excess net capital falls below 2x its required minimum",
+        "Total Platform Assets or net deposits growth decelerates below 15% YoY for two consecutive quarters",
+        "The $2.2bn convertible notes' conversion feature triggers material dilution disclosure, or a second convertible/equity raise occurs within 12 months"
+      ],
+      "key_adverse_facts": [
+        "A U.S. Senate bill (the 'Prediction Markets Are Gambling Act,' introduced March 23, 2026) would prohibit certain event contracts, directly targeting the fastest-growing revenue line",
+        "Illinois enacted a 1.75%/3.5% tax on prediction-market contract value effective July 1, 2026, a live example of state-level cost/revenue erosion that could spread",
+        "Cryptocurrency revenue fell 38% YoY in Q2 2026 on lower rebate rates and a 16-24% decline in users placing crypto trades",
+        "Operating cash flow is extremely volatile for a broker-dealer (H1 2025 OCF $4,151m vs full-year 2025 OCF only $1,638m) and is not a reliable free-cash-flow proxy for valuation purposes"
+      ],
+      "data_conflicts": [
+        "The quant snapshot's Yahoo-sourced 'totalDebt' (~$22.9bn) and 'totalCash' (~$23.9bn) reflect broker-dealer balance-sheet items (customer payables, securities-lending/repurchase obligations), not corporate funded debt; actual parent-level funded debt is the $2.2bn 0% convertible notes issued June 2026, with cash of $5.36bn against it",
+        "The snapshot's insider-ownership field (y_heldPercentInsiders ~0.96%) looks implausibly low for a founder-controlled company and is flagged as a likely vendor data-classification issue, not independently confirmed"
+      ],
+      "next_earnings_date": "2026-11-04",
+      "confidence_in_thesis": "medium (the brokerage diversification and net-income growth are well evidenced by primary filings, but the regulatory risk to prediction markets is a live, dated, binary threat that could change the growth algebra quickly)",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "above",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for HOOD in v1_valuation_table.csv, so v1_verdict is null; the analyst's reverse net-income-based DCF implies a ~20-23% 10-year earnings CAGR, which is above an evidence-based base case (~15-18%), consistent with an 'expensive' dossier view and the WATCH verdict."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.228,
+        "base": 0.029,
+        "bull": 0.148
+      },
+      "scenario_basis": "Starting point NTM consensus EPS $2.62 (d4 snapshot); bear = 10%/yr EPS growth with multiple compression to 18x (prediction markets curtailed, crypto softness persists) landing near the Street's own $57 low target; base = 25%/yr EPS growth with multiple compression to 30x landing near the Street's own $130 mean target; bull = 40%/yr EPS growth at 40x landing near the Street's own $170 high target; no dividend."
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "total": 84,
+  "criteria": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 9,
+    "7": 9,
+    "8": 7,
+    "9": 7,
+    "10": 9
+  },
+  "must_fix": [
+    "FINAL_REPORT.md §6 exit-trigger column truncated mid-sentence for all 20 holdings with no ellipsis or pointer (code/lead_report_sections.py line 186: kill = re.sub(r'\\s+', ' ', str(kill))[:110]); widen/stop truncating or add '...' plus a footnote pointing to dossier §9 / dashboard for the full kill criteria.",
+    "§6 'eligible but not held' list has grown to 128 names in one unbroken sentence, not scannable for a non-technical reader; replace with a compact table or dashboard link, keep only the top few next-in-line replacements in prose.",
+    "BR dossier's '$227m full-year gain on digital-asset holdings' still not tied to a specific SEC filing exhibit/line (carried from Loop 5/6); cite the exact source line.",
+    "MSCI kill-criterion 2 inline correction interrupts the sentence mid-word; move to a cleaner position (cosmetic, substance already correct).",
+    "Re-run C1 against this build's content_sha256 and publish v008 (parent v007) so versions/catalog.json is not left one research wave stale (mechanical, already the declared next step, not scored as a current defect)."
+  ],
+  "fact_checks": [
+    {"ticker": "USB", "claim": "Q2 2026 Basel III standardized CET1 10.8%; revenue $7.712bn; net income $2.177bn", "source": "USBank Q2 2026 press release; independent earnings coverage (Motley Fool transcript, First Squawk data feed)", "status": "PASS"},
+    {"ticker": "PPG", "claim": "Corrected long-term debt at 30-Jun-2026 is $6,195m (not the original $6,876m); total debt ~$6.89bn; net debt ~$5.37bn", "source": "PPG 10-Q accession 0000079879-26-000252, R5.htm balance sheet (via DA12); verified inline correction in dossiers/PPG.md", "status": "PASS"},
+    {"ticker": "MSCI", "claim": "Kill-criterion 2 year-ago Retention Rate comparator is 94.4% (Q2 2025), not '93.4% a year ago in Q4 2025'", "source": "MSCI Q2 2026 earnings release (via DA9); verified inline correction now in the operative sentence, dossiers/MSCI.md line 122", "status": "PASS"},
+    {"ticker": "BALL", "claim": "Comparable EBITDA (TTM) $2,044m in dossier vs company-reported $2,041m", "source": "BALL 10-K/earnings release (via DA11)", "status": "MINOR"},
+    {"ticker": "STE", "claim": "Healthcare segment Q1 FY2027 revenue $1,051.4m in dossier vs filing's own segment table $1,048.3m", "source": "STE 8-K Ex-99.1 segment table (via DA11)", "status": "MINOR"},
+    {"ticker": "BR", "claim": "$227m full-year gain on digital-asset holdings (Canton tokenization initiative)", "source": "Broadridge FY2026 earnings coverage; $265m balance-sheet holdings confirmed, specific $227m P&L gain figure not independently isolated", "status": "UNVERIFIABLE"}
+  ]
+}

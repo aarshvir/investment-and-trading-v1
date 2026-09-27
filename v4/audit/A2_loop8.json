@@ -1,0 +1,31 @@
+{
+  "total": 85,
+  "criteria": {
+    "1": 8,
+    "2": 8,
+    "3": 8,
+    "4": 9,
+    "5": 8,
+    "6": 9,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "must_fix": [
+    "GDDY (3.1% weight, sole IT-sector holding) still rests on a single reverse-DCF valuation leg with no peer EV/FCF or EV/sales cross-check, despite being an explicit Loop-7 must-fix; not addressed in loop_fixes.json['7'] or GDDY.md. Fix: add a second corroborating valuation approach to GDDY.md section 7.",
+    "Rule (m) (no holding released without an independent fact-check) is documented only in STATE.md's dated log narrative, not written as a lettered rule in code/lead_build_portfolio.py's docstring alongside (a)-(f) or in a rules list next to (g)-(l), despite the Loop-7 must-fix asking for exactly that. Fix: add rule (m) verbatim where the other lettered rules actually live.",
+    "DA14 found and corrected a prior-year-column mix-up in TJX's results table (net income understated ~18%), and STATE.md confirms the new xbrl_crosstie tool does NOT catch this defect class (no dollar sign / adjacent label in table cells). No sweep of the other 19 dossiers' 'latest quarter' rows for the same defect class has been done. Fix: manually re-check the latest-quarter row of all 20 holdings' results tables against the filed period caption.",
+    "No cumulative tally (facts checked / PASS / MINOR / FAIL) across the full DA1-DA14 fact-check series exists in FINAL_REPORT or the dashboard, despite repeated FAILs (PPG, COR, TJX) showing the process catches real errors; carried unfixed from Loop 7 (minor).",
+    "Sub-industry weight cap (12%) was not independently re-verified for the two new holdings (TJX, SO) this loop; low risk given distinct sub-industries but unchecked by this audit."
+  ],
+  "fact_checks": [
+    {"ticker": "TJX", "claim": "Q2 FY2027 net income corrected to $1,520m (was $1,243m, a prior-year-column error, understating the quarter ~18%)", "source": "DA14 correction section, TJX.md, cross-checked against TJX Q2 FY2027 8-K Ex-99.1 accession 0000109198-26-000045", "status": "PASS"},
+    {"ticker": "GDDY", "claim": "Net debt/EBITDA is approximately 1.90x on carrying value (not 1.93x on gross principal as originally stated)", "source": "DA13 correction section, GDDY.md, GDDY Q2 2026 10-Q debt note, accession 0001609711-26-000088", "status": "PASS"},
+    {"ticker": "SO", "claim": "All financial figures scoped to the consolidated 'Southern' parent registrant, not a subsidiary (Georgia Power, Alabama Power etc. filed under the same combined 10-Q)", "source": "DA14 methodology note in da14_factcheck.json", "status": "PASS"},
+    {"ticker": "N/A (portfolio construction)", "claim": "Sleeve weights sum to exactly 100% and Financials sector sits at exactly the 25% cap", "source": "FINAL_REPORT.md section 6 weight table, re-summed by hand (Financials: USB 5.6 + MA 5.6 + AXP 4.6 + PGR 4.6 + HBAN 4.6 = 25.0%; all 20 weights sum to 100.0%)", "status": "PASS"},
+    {"ticker": "N/A (rule-j sensitivity)", "claim": "14 of 20 held names (ADP, BR, CAH, CRH, DOV, EXC, GDDY, LVS, MA, PPG, STE, TJX, USB, VEEV) are chosen under every alternative ordering", "source": "outputs/lead_j_sensitivity.json field n_in_every_ordering / in_every_ordering, cross-checked against FINAL_REPORT.md section 6 prose", "status": "PASS"},
+    {"ticker": "GM / DRI", "claim": "Both removed names remain eligible and are explicitly disclosed as 'displaced' by newly researched names, not silently dropped", "source": "FINAL_REPORT.md section 6 'What changed' note, cross-checked against outputs/lead_j_sensitivity.json bench_near_misses (GM position 5, DRI position 7)", "status": "PASS"},
+    {"ticker": "GDDY", "claim": "Reverse DCF: EV $14.89bn off base FCF $1.8bn implies roughly -7.7%/yr FCF decline priced in, against an evidence-based base case of positive mid-single-digit FCF growth", "source": "GDDY.md section 7, arithmetic re-derived by hand against stated WACC 8.5% / terminal growth 3% inputs (unchanged from Loop 7, re-verified)", "status": "PASS"}
+  ]
+}

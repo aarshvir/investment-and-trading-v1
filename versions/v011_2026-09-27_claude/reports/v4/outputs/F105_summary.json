@@ -1,0 +1,117 @@
+{
+  "agent": "F105",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "RMD": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Sleep-apnea device leader with a recurring-supplies business; GLP-1 fear hasn't hit volumes, and the stock is priced for less growth than it likely delivers - downgraded from full weight after a fact-check found the dossier's cited FY2027 guidance does not exist and missed a material MatrixCare divestiture.",
+      "kill_criteria": [
+        "Quarterly organic revenue growth < 5% YoY for two consecutive quarters (vs the ~9-11% run-rate of the last five quarters).",
+        "Any second FDA recall/correction notice on a ResMed device within 12 months of the Astral action (June 2026).",
+        "GAAP or non-GAAP gross margin falls below 56% for two consecutive quarters.",
+        "Net debt/EBITDA turns positive and exceeds 1.0x (currently net cash).",
+        "RMD's first actual FY2027 quarterly guidance/commentary (expected with the Q1 FY2027 print, ~29 Oct 2026) shows organic revenue growth guided below 6%/year, or the >$1.85B FY2027 capital-return target is walked back. [Corrected 27 Sep 2026: original criterion cited a $5.75-5.85B revenue / $12.00-12.25 non-GAAP EPS FY2027 guidance range that does not exist in the cited 8-K (accession 0001193125-26-337962) - verified via full-text search, zero matches.]"
+      ],
+      "key_adverse_facts": [
+        "FDA Class I recall (most serious classification) on Astral 100/150 ventilators, ~168,069 devices globally, initiated 25 Jun 2026, FDA record Z-2735-2026, due to a supercapacitor component that can leak and cause loss of therapy delivery.",
+        "[Corrected 27 Sep 2026: removed - the '$75M revenue / $0.15 EPS' Astral headwind figure does not appear anywhere in the cited 8-K; it was fabricated along with the FY2027 guidance range.] MatrixCare business divestiture (agreement to sell, closing Q1 FY2027, per the same 6 Aug 2026 8-K) removes RMD's slowest-growing segment (Residential Care Software, +5%/+4%cc in FY2026 vs +10%/+8%cc company-wide); size of MatrixCare's standalone revenue/FCF contribution is not disclosed in sources reviewed - data gap.",
+        "Insider Form 4 pattern and SBC-as-%-of-revenue not reviewed this pass (data gaps)."
+      ],
+      "data_conflicts": [
+        "b1 quant composite is only mid-quintile (decile 6, quintile 3) despite strong underlying Quality factors (gp/assets, ROE, OCF/assets all top-quartile) because trailing 12-1 month Momentum is weak (pct_mom_12_1 15%) - the composite penalizes a quality name that has underperformed on price, not a fundamental flaw."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - high confidence on recurring-revenue quality and balance sheet; medium on the Astral recall's ultimate cost and on GLP-1 tail risk given the multi-year nature of that debate",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for RMD this wave. [Corrected 27 Sep 2026: the cited $221.89 FY2027-guidance-based reconciliation was rebuilt after a fact-check found the dossier's cited FY2027 guidance ($5.75-5.85B revenue / $12.00-12.25 non-GAAP EPS) does not exist in the cited 8-K.] This agent's reverse DCF (WACC 8%, 10y explicit + 3% terminal, FCF0 = TTM actual $11.29/share, unaffected by the guidance error) implies only ~2.4%/year FCF growth is needed to justify the ~$222.00 price (25 Sep 2026 close). A guidance-free base case built from delivered organic growth (8-10% cc), normalizing Astral one-off costs, and buyback-funded per-share accretion (net of the now-disclosed MatrixCare divestiture, closing Q1 FY2027, which removes RMD's slowest-growing segment) implies ~9%/year FCF/share growth is achievable - still well above the 2.4%/year priced in, so implied_vs_base remains 'below' even after removing the invalid guidance, though confidence is lower given the unquantified MatrixCare revenue impact (data gap)."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.079,
+        "base": 0.102,
+        "bull": 0.196
+      },
+      "scenario_basis": "[Corrected 27 Sep 2026: rebuilt without the fabricated FY2027 EPS guidance.] Starting non-GAAP EPS $11.17 (FY2026 actual, confirmed), starting multiple ~19.9x (current TTM non-GAAP P/E - no forward multiple used since no forward guide exists); bear = 2%/yr EPS growth with multiple compressing to 14x (Astral costs escalate, GLP-1 risk shows up, MatrixCare divestiture proceeds disappoint) plus ~1.3% dividend yield; base = 9%/yr EPS growth (delivered organic trend net of MatrixCare drag, offset by buybacks) at a stable ~19.9x multiple plus ~1.2% dividend yield; bull = 13%/yr EPS growth with multiple re-rating to 23x (GLP-1 fear fully dissipates) plus ~1.0% dividend yield."
+    },
+    "RTX": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Aerospace/defense leader with record backlog and repeatedly-raised 2026 guidance, but valuation has already re-rated and the Pratt engine recovery isn't finished.",
+      "kill_criteria": [
+        "Organic sales growth guidance is cut (vs. the current 8-9% FY2026 guide) at any subsequent quarterly update.",
+        "PW1100 (GTF) AOG count stops declining or reverses for two consecutive quarters (baseline: down 25% YTD as of Q2 2026).",
+        "Net debt/equity rises above 0.60x (currently 0.44x) without a clearly identified, value-accretive acquisition.",
+        "FY2026 free cash flow guidance ($8.25-8.75B as of Q1 2026) is cut.",
+        "Adjusted EPS guidance ($7.10-7.25 as of Q2 2026) is cut at the Q3 2026 release (due ~27 Oct 2026)."
+      ],
+      "key_adverse_facts": [
+        "Pratt & Whitney GTF powder-metal contamination/AOG inspection program is not complete; full GTF Advantage production transition is not targeted until 2028.",
+        "RTX revenue is government-budget-dependent; continuing-resolution or allied-spending pullback risk is outside company control.",
+        "Legacy export-control/foreign-bribery matters from prior years were not independently re-verified this pass (data gap).",
+        "Dividend-per-share XBRL tag shows an implausible jump from $0.68 to $1.46 quarter-over-quarter, flagged as a likely tagging artefact and not independently resolved."
+      ],
+      "data_conflicts": [
+        "b1 quant composite is only decile 3/quintile 2 (below median) despite strong Momentum (66th pct) and SUE (66th pct), because Value factors are weak (pct_ep 28%) - consistent with a market already paying up for the guidance-raise momentum story."
+      ],
+      "next_earnings_date": "2026-10-27",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - high confidence on backlog/demand and guidance-raise track record; lower confidence on how much of the GTF recovery and demand acceleration is already priced in at the current ~26-27x NTM multiple",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for RTX this wave. NTM P/E on the raised FY2026 guide is ~26-27x, higher than the triage's 24.6x (which predates the Q2 2026 guidance raise) and looks rich in isolation, but this agent's reverse DCF (WACC 8%, 10y explicit + 3% terminal) implies only ~4.2%/year FCF growth is needed versus an 8-9% organic sales growth guide, so the dossier view is fair (not demanding) once FCF conversion and a full decade are modelled rather than just the headline P/E."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.053,
+        "base": 0.136,
+        "bull": 0.236
+      },
+      "scenario_basis": "Starting adjusted EPS ~$7.175 (FY26 guide midpoint), starting P/E ~24.6x (triage reference); bear = 3%/yr EPS growth with multiple compressing to 18x (GTF issue re-escalates, defense budget squeeze); base = 12%/yr EPS growth at a stable ~24.6x, plus ~2% dividend yield; bull = 18%/yr EPS growth with multiple expanding to 27x (GTF fully resolved, aftermarket boom), plus ~2% dividend yield."
+    },
+    "SLB": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Global oilfield-services leader riding an international upcycle on the revenue line, but GAAP and adjusted profit per share both fell YoY for two straight quarters - confirm the margin pressure is transitory before buying.",
+      "kill_criteria": [
+        "Q4 2026 revenue does not reach the guided >$10B (sequential growth from Q2's $8.97B stalls).",
+        "Adjusted EPS YoY growth stays negative for a third consecutive quarter at the Q3 2026 report (due ~16 Oct 2026).",
+        "Net debt/EBITDA (TTM EBITDA proxy ~4x Q2 2026 adjusted EBITDA) rises above 2.5x.",
+        "Buyback pace is cut below the $2.4B full-year-2026 target.",
+        "Brent/WTI oil price sustains below $60/bbl for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "GAAP net income fell 22% YoY and diluted EPS fell 30% YoY in Q2 2026 despite revenue growth of 5% YoY; adjusted EPS also fell 26% YoY and adjusted EBITDA fell 7% YoY.",
+        "Long-term debt (noncurrent) rose from $9,670M to $11,140M in a single quarter (Q1->Q2 2026), a source not independently identified this pass.",
+        "Momentum is already extended (+78% over 12 months per the triage's own red flag), and the quant model's bottom-decile composite (driven by value factors) agrees the stock is not statistically cheap.",
+        "Sanctions/jurisdictional litigation exposure typical of a large multinational oilfield-services company was not independently re-verified this pass (data gap)."
+      ],
+      "data_conflicts": [
+        "b1 quant composite is bottom-decile (decile 1, live_rank 448/~500) despite the triage's qualitative quality score of 4/5 - driven by weak Value factors (pct_ep 23%, pct_fcfp 38%, an outlier negative book/price factor) and stretched Momentum (pct_mom_12_1 73%), i.e. the systematic model disagrees with the triage's 'reasonable multiple' read.",
+        "The triage's cited '17x NTM multiple' appears to be a forward/hoped-for figure assuming H2 2026 margin recovery; this agent's trailing-four-quarter GAAP P/E is closer to 23x, materially richer, and that recovery has not yet been confirmed by results."
+      ],
+      "next_earnings_date": "2026-10-16",
+      "horizon": "not now - reassess at Q3 2026 earnings",
+      "confidence_in_thesis": "medium - high confidence on the earnings-quality divergence being real (cross-checked against SLB's own press release); lower confidence on whether it resolves by Q3/Q4 2026 as guided",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for SLB this wave. FCF yield (6.2%) and this agent's reverse DCF (WACC 9%, 10y explicit + 3% terminal, implying only ~2.2%/year FCF growth needed) both suggest the stock is not expensive, consistent with the triage - but that view conflicts with the earnings-quality deterioration (falling GAAP/adjusted EPS) and the quant model's bottom-decile value/momentum read, which is why the verdict is WATCH rather than INCLUDE despite a supportive DCF."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.153,
+        "base": 0.103,
+        "bull": 0.246
+      },
+      "scenario_basis": "Starting adjusted EPS annualized ~$2.20 (Q2 2026 x4), starting P/E ~17x (triage reference); bear = -5%/yr EPS decline with multiple compressing to 11x (oil down-cycle, margin pressure persists), plus ~2.3% dividend yield; base = 8%/yr EPS growth at a stable ~17x (international upcycle plays out as guided), plus ~2.3% dividend yield; bull = 16%/yr EPS growth with multiple expanding to 20x (OPEC+ discipline holds, offshore capex boom), plus ~2.3% dividend yield."
+    }
+  }
+}

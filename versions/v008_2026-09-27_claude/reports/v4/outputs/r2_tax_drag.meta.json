@@ -1,0 +1,38 @@
+{
+  "name": "r2_tax_drag",
+  "producer": "code/r2_implementation_calcs.py",
+  "retrieved_utc": "2026-09-25T20:50:18Z",
+  "rows": 15,
+  "columns": [
+    "vehicle",
+    "domicile",
+    "us_situs_for_estate_tax",
+    "dividend_yield_assumption",
+    "yield",
+    "wht_rate_effective",
+    "wht_drag_pct",
+    "fund_cost_pct",
+    "all_in_pct",
+    "all_in_usd_per_50k",
+    "all_in_usd_per_80k",
+    "all_in_usd_per_100k"
+  ],
+  "sources": [
+    "https://www.law.cornell.edu/uscode/text/26/2001",
+    "https://www.law.cornell.edu/uscode/text/26/2102",
+    "https://www.irs.gov/instructions/i706na",
+    "https://www.ssga.com/library-content/products/factsheets/etfs/emea/factsheet-emea-en_gb-spy5-gy.pdf",
+    "https://www.multpl.com/s-p-500-dividend-yield",
+    "https://www.irs.gov/pub/irs-lbi/tax-treaty-table-1.pdf",
+    "https://fund-docs.vanguard.com/F0968.pdf",
+    "https://www.ishares.com/uk/individual/en/literature/fact-sheet/cspx-ishares-core-s-p-500-ucits-etf-fund-fact-sheet-en-gb.pdf",
+    "https://fund-docs.vanguard.com/SandP_500_UCITS_ETF_USD_Accumulating_9694_INT_OFF_ETF_EN.pdf",
+    "https://www.invesco.com/content/dam/invesco/emea/en/product-documents/etf/share-class/factsheet/IE00B3YCGJ38_factsheet_en.pdf",
+    "https://www.law.cornell.edu/cfr/text/26/1.871-15"
+  ],
+  "caveats": [
+    "Drag = dividend yield x withholding rate borne + fund cost; excludes trading spreads, securities lending income, tracking error.",
+    "SPXS cost includes the 0.07% swap fee that Invesco says is embedded in the swap return (not charged separately).",
+    "Synthetic 0% WHT depends on the s.871(m) qualified-index exception (Treas. Reg. 1.871-15(l)); regulatory change risk."
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "JBHT": {
+    "verdict": "INCLUDE-SMALL",
+    "horizon": "12-24 months",
+    "kill_criteria": [
+      "Intermodal revenue growth ex-fuel decelerates back below ~5% YoY for two consecutive quarters",
+      "Truckload (JBT) segment operating losses persist beyond two more quarters with no clear path to breakeven",
+      "Net debt/EBITDA rises above 2.0x",
+      "OCF/NI stays below 1.0x for two consecutive quarters",
+      "Record DCS sales pipeline fails to convert to signed, revenue-generating fleet growth within the stated 12-18 month cycle"
+    ],
+    "key_adverse_facts": [
+      "FY2025 (the full prior year) was essentially flat to down; the +19.4% YoY Q2'26 revenue acceleration is one strong quarter, not a confirmed multi-quarter trend, and management explicitly declined to extrapolate it",
+      "Operating cash flow was down YoY in H1'26 ($723.3M vs $806.2M in H1'25) despite higher earnings, consistent with working-capital consumption from the volume surge; FCF only rose because capex fell 64% YoY",
+      "Truckload (JBT) segment: +35% revenue but an operating loss, as purchased-transportation cost inflation outpaced rate increases",
+      "Final Mile revenue -6% by management's own deliberate choice (walking away from unprofitable accounts)",
+      "Stock already trades at 31.4x trailing / 24.1x NTM P/E; a probability-weighted scenario analysis centers ~31% below the current price, i.e. this dossier's own base case does not support the current entry price",
+      "Recent buybacks (Q2'26, ~$250/share average) were done above today's $225.46 price"
+    ],
+    "data_conflicts": [
+      "lead_prelim_rank.csv 'rev' field ($7.1896B) is wrong vs SEC-validated FY2025 revenue $11.999B / TTM-through-Q2'26 ~$12.701B (43-57% understated); 'ni' ($674.505M), 'opinc' ($955.615M), 'ocf' ($1,595.293M) and 'capex' ($495.571M) fields all reconcile exactly to TTM-through-Q2'26 figures independently rebuilt from SEC XBRL -- the bug is specific to the revenue field only. The Q/V/M/prelim percentile scores do not appear to depend on the broken 'rev' column (they reconcile from ni/ocf/assets/equity/mcap/capex instead)."
+    ],
+    "next_earnings_date": "2026-10-15",
+    "confidence_in_thesis": "med -- balance sheet and franchise quality are high-confidence (independently verified: ROE ~16-19%, ROIC ~13.5-15%, net debt/EBITDA ~1.0x, zero union exposure), but the freight-cycle-inflection thesis rests on one quarter of data and a valuation that already prices meaningful, unconfirmed recovery"
+  },
+  "UPS": {
+    "verdict": "WATCH",
+    "horizon": "12-24 months",
+    "kill_criteria": [
+      "GAAP operating margin still >300bps below adjusted operating margin by Q4 2026",
+      "Teamsters litigation results in an injunction or settlement that reverses or materially slows the network-restructuring program",
+      "Dividend cut, or GAAP payout ratio exceeds 100% for two consecutive quarters",
+      "Full-year 2026 guidance is cut at the Q3'26 or Q4'26 release",
+      "Buybacks remain at zero through year-end 2026 with no management commentary on resumption"
+    ],
+    "key_adverse_facts": [
+      "Q2'26 GAAP operating margin was 4.1% vs 9.2% non-GAAP adjusted -- the widest GAAP/adjusted gap in the two-year window reviewed (GAAP diluted EPS $0.71 vs adjusted $1.76); a thesis that requires trusting the adjustments is exactly the failure mode this program's own v3 audit flagged",
+      "Quarterly dividend has been held flat for seven consecutive quarters; GAAP payout ratio is ~80-90% of net income vs UPS's own 50-60% long-term target",
+      "Share buybacks were $0 in both Q1 and Q2 2026 (confirmed via XBRL) after $1.0B in 2025 -- capital return capacity is visibly constrained",
+      "UPS is in active litigation with the Teamsters (filed ~Feb 2026) alleging the network-restructuring buyout program breaches the September 2023 National Master Agreement (covers ~80% of the ~460,000-person US workforce)",
+      "The July 2026 guidance 'raise' was revenue-driven; the implied operating-margin guide (~9.5%) is fractionally BELOW the January/April 9.6% figure -- not an unambiguous raise across every metric",
+      "FY2025 Supply Chain Solutions segment revenue -12.7%, US Domestic Package revenue -3.2% (offset by +8.3% revenue-per-piece from shedding low-yield Amazon volume)"
+    ],
+    "data_conflicts": [
+      "lead_prelim_rank.csv 'rev' field ($75.656B) is wrong vs SEC-validated FY2025 revenue $88.661B / TTM-through-Q2'26 ~$89.930B (~15-16% understated); 'ni' field ($4,570M) reconciles exactly to TTM-through-Q2'26 net income rebuilt from SEC XBRL. Working hypothesis (unconfirmed): $75.656B is close to US Domestic + International Package segments combined, excluding Supply Chain Solutions (~$13B gap fits). Same pattern as JBHT in this batch; Q/V/M/prelim scores do not appear to depend on the broken 'rev' column."
+    ],
+    "next_earnings_date": "2026-10-27",
+    "confidence_in_thesis": "low -- the turnaround narrative (Amazon glide-down complete, network 'leaner and more automated') is plausible and management-articulated, but is not yet demonstrated in GAAP results, and two concrete current adverse facts (dividend strain, Teamsters litigation) argue for waiting rather than including"
+  },
+  "GD": {
+    "verdict": "INCLUDE",
+    "horizon": "12-36 months",
+    "kill_criteria": [
+      "Marine Systems margin reverses below ~6.5% for two consecutive quarters, or a disclosed unfavorable EAC adjustment on Columbia/Virginia-class work exceeds a low-single-digit % of segment revenue",
+      "Book-to-bill falls below 1.0x for two consecutive quarters",
+      "FY2027 appropriations lapse into a full-year continuing resolution or shutdown that measurably delays contract funding/payment (watch the 2026-12-11 CR expiry)",
+      "Full-year guidance is cut, or fails to be raised, at the Q3'26 or Q4'26 release -- breaking the three-quarter raise streak",
+      "Gulfstream order intake or deliveries decelerate for two consecutive quarters alongside broader corporate-capex weakness"
+    ],
+    "key_adverse_facts": [
+      "Multi-decade submarine programs (Columbia/Virginia-class) carry structural, historically-real execution risk that a few good quarters does not retire; this dossier did not independently audit GD's EAC adjustment history",
+      "Government is funded only through a continuing resolution to 2026-12-11 (signed 2026-09-01); FY2027 defense appropriations are far from complete (House passed 3 of 12 bills, Senate none, as of this session) -- a live, near-term risk",
+      "Combat Systems segment growth is nearly flat (+0.3% revenue in Q2'26), the weakest of the four segments this quarter",
+      "A legacy (2015-2016) DOJ civil investigative demand / sealed False Claims Act suit against Electric Boat and a related Navy debarment show-cause letter were surfaced; this session found no evidence it is still active but did not re-confirm its current status against the FY2025 10-K's legal-proceedings section",
+      "CEO Phebe Novakovic has led the company since January 2013 (~13 years); a new President was named in December 2025, a normal-looking but real succession consideration to track"
+    ],
+    "data_conflicts": [
+      "lead_prelim_rank.csv appears to predate GD's Q2 2026 filing: 'ni' field ($4,341M) ties exactly to TTM-through-Q1-2026 (not Q2); 'rev' field ($52,550M) equals FY2025 annual revenue exactly (not TTM, unlike the TTM convention used for JBHT/UPS in this same file). This is a staleness gap, not a wrong-number bug -- recommend re-running GD once the Q2'26 filing is captured; the Momentum family score is likely to move up materially once it is."
+    ],
+    "next_earnings_date": "2026-10-28",
+    "confidence_in_thesis": "high -- three consecutive verified guidance raises with exact prior-range quotes, a record and growing backlog (1.4x book-to-bill), broad-based segment growth, the lowest leverage of the three names in this batch, and no current red flags found; main residual uncertainty is multi-decade program execution risk and near-term appropriations timing, both macro/structural rather than company-specific"
+  }
+}

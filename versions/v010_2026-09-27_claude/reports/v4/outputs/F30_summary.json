@@ -1,0 +1,103 @@
+{
+  "agent": "F30",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "NOW": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Best-in-class enterprise workflow/AI software firm, priced below what a reasonable growth case implies, but with two open DOJ matters worth a smaller position.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Subscription revenue growth decelerates below 18% YoY for two consecutive quarters.",
+        "DOJ investigation into the 2023 Army-CIO hiring results in a formal finding against the company (not just the departed executive) or any debarment/suspension action against ServiceNow's federal business.",
+        "The Moveworks acquisition is blocked, abandoned, or requires a material divestiture after the DOJ second request.",
+        "Non-GAAP FCF margin falls below 30% for two consecutive quarters (guide is 35%).",
+        "Net debt/EBITDA (GAAP) exceeds 2.0x following further debt-funded buybacks or M&A."
+      ],
+      "key_adverse_facts": [
+        "DOJ / DoD-IG / Army Suspension & Debarment Office investigation into the March 2023 hiring of the outgoing U.S. Army CIO as head of ServiceNow's Global Public Sector business; the company's President/COO resigned 24 Jul 2024 after a board finding of a policy violation; DOJ's own investigation was still open per secondary reporting (primary Legal Proceedings text not independently re-read this session).",
+        "The pending $2.85B Moveworks acquisition is under an active DOJ antitrust 'second request' review, not yet closed.",
+        "SBC is roughly mid-teens % of quarterly revenue, the main driver of a wide GAAP-vs-non-GAAP EPS gap (GAAP EPS $0.29-$0.45/qtr vs non-GAAP $0.90-$0.97/qtr in 2026).",
+        "Issued $4.0B of new senior notes in May 2026 while simultaneously buying back $2.23B of stock in H1 2026 -- a real increase in leverage, not just a capital-return story.",
+        "Non-GAAP operating margin guidance was cut from 32% to 31.5% (Q1 FY26 print) specifically due to Armis acquisition dilution, even as revenue guidance was raised the same quarter."
+      ],
+      "data_conflicts": [
+        "None found vs the b1/d4 quant files themselves, but the pre-registered quant model ranks NOW poorly (decile 1, live_rank 474) purely on value/momentum factors, while the fundamentals (steady 21-24.5% subscription growth, raised guidance three quarters running) do not support a deteriorating business -- the low rank reflects the model's factor tilts, not a fundamental red flag; NOW reached this wave via the triage/quality-growth path, not the live-rank gate."
+      ],
+      "next_earnings_date": "2026-10-28",
+      "confidence_in_thesis": "medium: fundamentals and guidance trend are well verified from primary filings, but the size/outcome of the two open DOJ matters (Army-CIO investigation, Moveworks antitrust) could not be fully resolved from public sources in this session",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "NOW has no V1 valuation row this cycle. My own reverse DCF (TTM FCF $5.15B, EV $146.2B, WACC ~9.2%, 10y fade to 3% terminal) implies ~10.1%/yr FCF growth for 10 years, below my evidence-based base case of ~14-16%/yr (subscription growth decelerating from 22-24% toward high-single-digits, FCF margin expanding toward ~40%) -- growth priced in is below my base case."
+      },
+      "scenario_returns_3y": {"bear": -0.053, "base": 0.163, "bull": 0.290}
+    },
+    "NXPI": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Auto and industrial chip leader in a confirmed three-quarter recovery, fairly priced for that recovery rather than a screaming bargain.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Quarterly revenue guidance is cut (vs the prior quarter's guide) for the first time since the Q1 FY26 recovery began.",
+        "Automotive segment revenue growth (YoY) turns negative for two consecutive quarters.",
+        "Non-GAAP gross margin falls back below 56% (below the low end of the Q3 FY26 guide range).",
+        "Net debt/EBITDA (approx.) exceeds 2.5x without an offsetting FCF acceleration.",
+        "China EV price-war commentary reappears in a quarterly earnings call as a stated headwind to bookings (it was cited as a risk, not yet a reported impact, in the most recent guide)."
+      ],
+      "key_adverse_facts": [
+        "FY2025 total revenue was down 3% YoY -- a real, recent cyclical trough, not a hypothetical risk.",
+        "A large share of the Q1 FY26 GAAP EPS beat ($4.43 vs $1.92 a year earlier) is a one-time $627M gain on the sale of the MEMS Sensors business to STMicroelectronics, not operating leverage; this also inflates the quant model's earnings-momentum (SUE) score for this name.",
+        "Gross debt is $11.04B (net debt approx. $7.8B) laddered out to 2035+, real leverage for a cyclical semiconductor business heading into an unresolved cyclical risk (China EV price war, flagged by triage, not yet resolved).",
+        "Several small, routine 10b5-1 insider sales by the CFO, COO and Chief People Officer through 2026 -- not judged a material red flag given scale, but disclosed."
+      ],
+      "data_conflicts": [
+        "None found. Note for the record: 'Nexperia' (the China/Netherlands chip-export-control and asset-freeze dispute in the news through 2025-2026) is a different, formerly-affiliated company (divested by NXP in 2017, now owned by China's Wingtech) and is not NXP Semiconductors (NXPI) -- flagged to prevent a common secondary-source conflation, not because any NXPI-specific issue was found."
+      ],
+      "next_earnings_date": "2026-10-26",
+      "confidence_in_thesis": "medium: three quarters of primary-source-verified beat-and-raise guidance is a strong pattern, but the base rate for auto/industrial semi cycles reversing quickly is real and the company's own FY2025 revenue decline is recent",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "in_line",
+        "reconciliation": "NXPI has no V1 valuation row this cycle. My own reverse DCF (TTM FCF $3.56B, EV $66.15B, WACC ~11.8%, 10y fade to 3% terminal) implies ~9.6%/yr FCF growth for 10 years, essentially equal to my evidence-based base case of ~9%/yr (mid-to-high-single-digit auto/industrial content growth plus buyback/dividend contribution) -- growth priced in is in line with my base case, a fair rather than clearly cheap valuation despite the low absolute P/E."
+      },
+      "scenario_returns_3y": {"bear": -0.174, "base": 0.121, "bull": 0.290}
+    },
+    "SNDK": {
+      "verdict": "WATCH",
+      "thesis_one_line": "NAND flash maker riding a real AI-datacenter shortage, but the stock already needs that shortage's record margins to keep compounding for a decade.",
+      "horizon": "12-36 months (re-underwrite when FY2027 guidance clarifies cycle duration)",
+      "kill_criteria": [
+        "Sequential revenue growth turns negative for two consecutive fiscal quarters (vs the +21%/+31%/+97%/+51% sequential path of the last four quarters).",
+        "Non-GAAP gross margin falls below 60% (from the current 78.4%, FQ3'26), signalling NAND pricing normalization.",
+        "Management commentary shifts from 'bits on allocation beyond 2027' to any statement of easing allocation or customer inventory correction.",
+        "Net cash position (currently ~$4.76B, zero debt) reverses into net debt without an offsetting M&A rationale.",
+        "Quarterly guidance is met or missed (rather than blown through), signalling the extreme-beat pattern of the last four quarters has ended -- itself a leading indicator the cycle is normalizing."
+      ],
+      "key_adverse_facts": [
+        "Extreme earnings volatility: a $1.9B GAAP net loss (quarter ended 28 Mar 2025) swung to $6.9B GAAP net income (quarter ended 3 Jul 2026) within four quarters -- every 'quality' metric the quant model rewards (ROE 91.6%, gross margin 56.5%+) is a cycle-peak snapshot, per the triage note's own red flag, confirmed in primary filings.",
+        "~80% of manufacturing capacity runs through the Flash Ventures joint venture with Kioxia -- a single-partner structural dependency, disclosed in the 10-K.",
+        "Under two years of independent trading history (spun off from Western Digital 24 Feb 2025); pre-2025 financials are a divisional carve-out, not standalone history.",
+        "Every one of the last four quarterly guidance ranges was beaten by a widening margin (revenue beats of +5%, +14%, +24%, +8.7% vs the high end; non-GAAP EPS beats of +36%, +82%, +67%) -- management itself cannot forecast this cycle, which is informative about downside unpredictability as much as upside momentum."
+      ],
+      "data_conflicts": [
+        "V1 (`v1_valuation_table.csv`) rates SNDK 'excessive' (implied 10-year growth 29.4% vs consensus FY1 growth 18.3%); this dossier independently corroborates that verdict via a separately-derived, lower-methodology reverse DCF (16-21%/yr implied, using reported OCF-less-capex rather than V1's FCFF-from-EBIT-without-SBC-addback) -- the methodologies disagree on the exact number but agree on the direction and the conclusion."
+      ],
+      "next_earnings_date": "2026-11-06",
+      "confidence_in_thesis": "medium: the near-term fundamentals and guidance-beat pattern are unambiguous and well-sourced, but the multi-year duration of the NAND upcycle -- the entire basis for a favorable long-run verdict -- is inherently uncertain and cannot be verified from filings alone",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "implied_vs_base": "above",
+        "reconciliation": "V1's reverse DCF implies 29.4%/yr required FCF growth for 10 years vs consensus FY1 growth of 18.3% (verdict: excessive; 3-year bear/base/bull scenario returns could not be computed by V1, 'insufficient history'). My own simplified reverse DCF using reported OCF-less-capex (rather than V1's FCFF-from-EBIT method, which does not add back SBC) implies a lower but still-demanding 16-21%/yr. Both anchor to a TTM FCF base that is itself a cycle peak, which understates the true bar even further: the price requires peak margins to persist and then compound at a double-digit rate for a decade, a materially higher bar than management's own 'multi-year, not decade-long' shortage framing. I agree with V1: implied growth priced in is above any evidence-based base case."
+      },
+      "scenario_returns_3y": {"bear": -0.35, "base": 0.08, "bull": 0.25}
+    }
+  }
+}

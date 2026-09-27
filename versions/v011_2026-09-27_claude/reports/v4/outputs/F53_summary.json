@@ -1,0 +1,117 @@
+{
+  "agent": "F53",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "IDXX": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Near-duopoly veterinary diagnostics compounder with recurring reagent revenue, but priced for the same growth it needs to deliver — no margin of safety.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "CAG Diagnostics organic recurring-revenue growth < 5% for two consecutive quarters",
+        "A guidance cut (vs. the immediately preceding range) on revenue or comparable EPS",
+        "Net debt / TTM operating income > 1.0x",
+        "GAAP-vs-comparable EPS gap widens beyond the current ~10-15% spread without a disclosed one-time driver",
+        "U.S. clinical-visit growth (management's own disclosed metric) turns negative by more than 2% for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "U.S. companion-animal clinical visits have been flat-to-down for several years; management calls this a persistent headwind every quarter",
+        "Paid an ~$80 million judgment in April 2025 to conclude a legacy 2004-2017 patent-royalty dispute",
+        "Revenue growth decelerated from +14.3% YoY (Q1 2026) to +9.7% YoY (Q2 2026), partly on a disclosed $15M FX headwind",
+        "Insider-selling summary relied on a secondary aggregator (simplywall.st), not primary Form 4s"
+      ],
+      "data_conflicts": [
+        "d4 vendor trailing FCF-yield field (2.2%) implies TTM FCF ~$909M, materially below this dossier's SEC-filing-derived TTM FCF (~$1,254M); likely a different trailing-window/capex definition in the vendor feed, not reconciled further"
+      ],
+      "next_earnings_date": "2026-11-02",
+      "confidence_in_thesis": "medium: quality and moat are well evidenced from primary filings; the valuation reconciliation (implied ~ base) is a close judgment call with limited margin of safety",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for IDXX (outside the original 69-name V1 universe). Own reverse DCF: implied 10-yr FCF growth ~9.4% (EV $41.34B, TTM FCF $1.254B, WACC 8.5%, terminal 3.5%) vs. an independent base-case estimate of ~9-10%/yr organic-plus-buyback growth — implied_vs_base = in_line.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.07,
+        "base": 0.065,
+        "bull": 0.16
+      },
+      "scenario_basis": "Starting TTM GAAP EPS $14.23 (Q3'25-Q2'26); base: EPS growth ~11%/yr decelerating from FY26 guided 13-15% comparable growth, NTM P/E compresses 32x->28x (-4.3%/yr), no dividend; bear: EPS growth ~5%/yr on persistent US visit weakness, multiple compresses to peer-level 22x (-11.9%/yr); bull: EPS growth ~16%/yr on new-instrument reacceleration, multiple holds ~32x."
+    },
+    "ISRG": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Global leader in robotic surgery with a large recurring-instrument installed base, but real antitrust-appeal risk and a rich multiple leave little room for error.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Worldwide da Vinci procedure growth < 10% YoY for two consecutive quarters (vs. guided 13.5-15.5% for FY2026)",
+        "An adverse or unfavorable-settlement outcome in the Restore Robotics 11th Circuit appeal that opens the EndoWrist repair/service market to third parties",
+        "Full-year non-GAAP gross-margin guidance cut below the current 67-68% range",
+        "Two consecutive quarters of da Vinci system placement growth (units) turning negative YoY",
+        "A debt-funded acquisition or buyback program that takes the company's net-cash position negative"
+      ],
+      "key_adverse_facts": [
+        "A federal judge found evidence a jury could conclude Intuitive engaged in tying/exclusive dealing to maintain monopoly power over EndoWrist instrument repair (Rebotix Repair case, settled 2025); a related case (Restore Robotics) was on appeal at the 11th Circuit as of December 2025",
+        "Stock declined roughly 30% during 2026 per third-party coverage, attributed to the Medtronic Hugo competitive launch and procedure-growth deceleration concerns",
+        "Management itself guided a sharp deceleration in da Vinci procedure growth, from 18% realized in 2025 to 13-15% guided for 2026, later narrowed to 13.5-15.5%",
+        "Large GAAP-vs-adjusted earnings gap driven by SBC (~7-8% of revenue): TTM GAAP P/E ~46.5x vs NTM (adjusted) P/E ~34.5x"
+      ],
+      "data_conflicts": [
+        "d4 vendor 'totalCash' field ($5.2B) is materially higher than the strict XBRL CashAndCashEquivalentsAtCarryingValue at 2026-06-30 ($2.76B); the difference is attributable to short-term marketable-securities investments included in the vendor aggregate but not the strict cash line"
+      ],
+      "next_earnings_date": "2026-10-20",
+      "confidence_in_thesis": "medium-low: business quality and recurring-revenue moat are well evidenced, but the antitrust-appeal outcome and competitive response to Medtronic Hugo are genuine unresolved uncertainties this dossier could not close out within the time-box",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for ISRG. Own reverse DCF: implied 10-yr FCF growth ~12.6% (EV $136.05B, TTM FCF $3.223B, WACC 8.5%, terminal 3.5%) vs. an independent base-case estimate of ~11-13%/yr (guided 13.5-15.5% 2026 procedure growth, decelerating further over 10 years) - implied_vs_base = in_line, but this is a thin reconciliation with little cushion, hence 'full' rather than 'fair' on the dossier's own qualitative read.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.032,
+        "base": 0.094,
+        "bull": 0.17
+      },
+      "scenario_basis": "Starting TTM GAAP EPS $8.72 (Q3'25-Q2'26); base: adjusted EPS growth ~14%/yr matching guided procedure growth, NTM (adjusted) P/E compresses 34.5x->30x (-4.6%/yr); bear: competitive share loss to Medtronic Hugo/J&J Ottava plus soft China capex slows growth to ~8%/yr, multiple compresses to peer-level 24x (-11.2%/yr); bull: da Vinci 5 and Ion upgrade cycles reaccelerate growth to ~17%/yr, multiple holds ~35x."
+    },
+    "LIN": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Largest global industrial-gas oligopoly with a record contracted backlog, but the price implies more growth than management's own guidance promises.",
+      "horizon": "not held at current price; revisit if the multiple de-rates or backlog conversion accelerates growth above the guided 8-9% range",
+      "kill_criteria": [
+        "Net debt/EBITDA > 2.25x (vs. 1.67x today) without a disclosed, value-accretive reason",
+        "Full-year adjusted-EPS guidance cut vs. the immediately preceding range",
+        "Project backlog shrinks (vs. the current $11B) for two consecutive quarterly disclosures",
+        "Underlying/organic sales growth < 2% for two consecutive quarters",
+        "GAAP net income growth negative for two consecutive quarters beyond what is explained by disclosed purchase-accounting/restructuring items"
+      ],
+      "key_adverse_facts": [
+        "Reverse DCF implies ~12.3% 10-yr FCF growth, well above management's own guided FY2026 adjusted-EPS growth of 8-9% and its stated long-term high-single-to-low-double-digit algorithm",
+        "Capex guidance raised twice in 2026 (from $5.0-5.5B to $5.5-6.0B) to fund the backlog, and TTM FCF/NI conversion has fallen to ~69% (from 74% in FY2025) as capex intensity rises",
+        "Q4 2025 GAAP net income fell 11% YoY (to $1,530M) on Linde AG merger purchase-accounting amortization and restructuring charges, versus adjusted net income up 4%",
+        "Net debt/EBITDA ~1.67x while leaning harder on the balance sheet for growth capex"
+      ],
+      "data_conflicts": [
+        "The Q1 2026 earnings-release exhibit could not be located/opened at its expected SEC accession path in this session; Q1 2026 guidance figures are corroborated via secondary coverage only, not independently re-opened from the primary document (disclosed as a data gap, not asserted as filing-verified)"
+      ],
+      "next_earnings_date": "2026-10-30",
+      "confidence_in_thesis": "medium-high: the guidance track record and backlog figures are directly filing-sourced and consistent; the valuation gap (implied vs. guided growth) is the clearest, best-evidenced finding in this batch",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for LIN. Own reverse DCF: implied 10-yr FCF growth ~12.3% (EV $240.47B, TTM FCF $4.975B, WACC 7.5%, terminal 3%) vs. an independent base-case estimate of ~8-10%/yr (management's own guided FY2026 adjusted-EPS growth of 8-9% and stated long-term algorithm) - implied_vs_base = above.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.056,
+        "base": 0.064,
+        "bull": 0.134
+      },
+      "scenario_basis": "Starting FY2026 guided adjusted EPS midpoint $17.80; base: adjusted EPS growth ~9%/yr (management's own guided algorithm), NTM P/E compresses 26x->23x (-4.0%/yr), plus ~1.4% dividend yield; bear: industrial-production slowdown and backlog delays cut growth to ~3%/yr, multiple compresses to 19x (-10.0%/yr), plus dividend; bull: AI/electronics-driven backlog conversion accelerates growth to ~12%/yr, multiple holds ~26x, plus dividend."
+    }
+  }
+}

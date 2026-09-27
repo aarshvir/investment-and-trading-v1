@@ -1,0 +1,117 @@
+{
+  "agent": "F85",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "FTNT": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Leading firewall maker riding a real hardware-refresh and SASE upgrade cycle, but the stock is priced for far more growth than that cycle can sustain.",
+      "kill_criteria": [
+        "Organic product-revenue growth decelerates to <20% YoY for two consecutive quarters",
+        "NTM P/E falls back toward its own 10-year median on flat-to-down guidance",
+        "Guidance cut versus the just-raised FY2026 revenue range of $8.02B-$8.18B",
+        "SASE billings growth decelerates sharply as Palo Alto/Zscaler/Cloudflare take share",
+        "Net debt/EBITDA rises above 1.0x (currently net-cash)"
+      ],
+      "key_adverse_facts": [
+        "V1 systematic model flags the NTM P/E (46.99x) as 'excessive' with a bear-case 3y annualised return of -44.9%",
+        "Company's own reported $966M quarterly FCF could not be independently re-derived from XBRL tags in the time available",
+        "Thin consolidated equity base ($1.55B vs $10.86B assets) reflects years of aggressive buybacks, not a solvency issue but reduces balance-sheet cushion"
+      ],
+      "data_conflicts": [
+        "Reported quarterly FCF (~$966M per company release) vs. XBRL operating-cash-flow/capex series I could reconstruct - not fully reconciled"
+      ],
+      "next_earnings_date": "2026-11-05",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium - growth and margin trend are well evidenced from primary filings, but the reverse-DCF conclusion depends on how long the refresh cycle runs, which is inherently uncertain",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": 0.005134536160727121,
+        "implied_vs_base": "above",
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "V1's implied 10-year growth (~42%) is well above even Fortinet's newly-raised FY2026 guidance (~19% revenue growth) and my own reverse-DCF sanity check (high-30s/low-40s% required FCF CAGR), so I agree the price embeds more growth than the evidence supports even though the current cycle is real."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.30,
+        "base": 0.03,
+        "bull": 0.22
+      },
+      "scenario_basis": "Starting FY2026E non-GAAP FCF ~$3.2-3.4B on ~$8.1B guided revenue; bear = refresh cycle crests within 12 months, multiple compresses to peer median (~38x) on ~10% growth; base = growth decelerates to ~16-18% into 2027 with modest multiple compression from 47x; bull = SASE mix sustains ~25%+ growth and multiple holds; no dividend."
+    },
+    "GILD": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Dominant HIV franchise plus a genuine new twice-yearly PrEP shot, sized down because a single quarter just absorbed $12.9B of one-off charges from unproven oncology bets.",
+      "kill_criteria": [
+        "A further material IPR&D impairment or discontinued-trial charge (>$500M) in either of the next two quarters",
+        "Net debt/EBITDA exceeds 3.0x on a consolidated basis once the cash-tag data gap is resolved",
+        "Yeztugo sequential sales growth decelerates below 15% Q/Q for two consecutive quarters",
+        "Biktarvy revenue growth turns negative YoY",
+        "A second Phase 3 trial failure/discontinuation in the oncology pipeline within 12 months of the Trodelvy NSCLC/EVOKE-03 discontinuation"
+      ],
+      "key_adverse_facts": [
+        "Q2 2026 GAAP net loss of $10.496B (diluted EPS -$8.45) driven by $11.2B acquired IPR&D expense (Arcellx $7.0B, Tubulis $3.1B, Ouro Medicines ~$1.0B net) plus a $1.75B Trodelvy NSCLC impairment after EVOKE-03 was discontinued",
+        "This is at least the second large one-off-charge loss quarter in the trailing 9 quarters reviewed (also Q1 2024, -$4.17B), suggesting a recurring pattern of large deal-related charges rather than a single isolated event",
+        "Long-term debt rose to $26.246B (2026-06-30) from $23.832B on a noncurrent-only basis a year earlier, while stockholders' equity fell to $11.829B, consistent with debt-funded M&A"
+      ],
+      "data_conflicts": [
+        "No V1 valuation row exists for GILD to reconcile against (checked v1_valuation_table.csv - absent)",
+        "Diluted EPS XBRL tag (EarningsPerShareDiluted) returns almost no post-2010 data for Gilead; Q2 2026 EPS figure sourced from the company release, not independently recomputed",
+        "Standard cash-and-equivalents XBRL tag is stale since 2022; current cash balance not independently confirmed, so a precise net-debt/EBITDA figure could not be computed this pass"
+      ],
+      "next_earnings_date": "2026-10-30",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - the core HIV franchise and Yeztugo ramp are well evidenced, but balance-sheet leverage and guidance-track-record could not be fully verified in the time available",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for GILD; my own reverse-DCF using normalized (ex-charge) operating income implies only mid-single-digit long-run growth is priced in, which is below my base case (Biktarvy+Yeztugo can plausibly deliver more without the oncology bets paying off), so I treat the valuation as fair-to-attractive rather than demanding."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.12,
+        "base": 0.09,
+        "bull": 0.20
+      },
+      "scenario_basis": "Starting normalized (ex-charge) quarterly operating income ~$2.4-3.3B annualized to ~$10-13B; bear = Biktarvy erosion plus a further oncology writedown and dividend held flat; base = low-to-mid-single-digit core growth plus Yeztugo ramp, dividend grows modestly, multiple stable; bull = Yeztugo becomes a multi-billion-dollar franchise and oncology bets show early proof points, modest re-rating."
+    },
+    "HUBB": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Electrical-equipment supplier to utilities and AI data centers with two straight beat-and-raise quarters, sized down because its debt load is a live, unresolved question.",
+      "kill_criteria": [
+        "Consolidated net debt (per the most current LongTermDebtNoncurrent figure) rises above $2.5B without a commensurate rise in trailing operating income",
+        "Organic sales growth decelerates below 9% (the low end of the just-raised FY2026 guidance) in either of the next two quarters",
+        "GAAP-to-adjusted diluted EPS gap widens materially beyond the current ~22% (Q2 2026: $4.52 GAAP vs $5.52 adjusted) without clear one-off justification",
+        "Utility Solutions segment organic growth turns negative YoY (was +6% in Q2 2026)",
+        "A guidance cut versus the just-raised FY2026 range ($17.25-$17.55 GAAP EPS; 16-18% total sales growth)"
+      ],
+      "key_adverse_facts": [
+        "Triage flagged leverage of 3.4x as the highest among peer machinery names; my own primary-source estimate (net debt ~$1.54B vs a pre-D&A operating-income proxy of ~$1.06-1.13B annualized) computes to roughly 1.4-1.6x, an unresolved conflict with the triage figure (likely a different EBITDA definition, peer set, or balance-sheet date)",
+        "Two SEC XBRL debt tags disagree: LongTermDebtNoncurrent = $2,037.0M (2026-03-31) vs the separate LongTermDebt element's most recent cached value of $1,444.5M (2025-09-30, a stale point)",
+        "SEC XBRL companyfacts had not yet indexed the Q2 2026 10-Q (filed 2026-07-29) as of this pass, so the most current balance sheet and cash-flow statement used here is Q1 2026, one quarter stale relative to the income-statement data"
+      ],
+      "data_conflicts": [
+        "Triage's 3.4x leverage claim vs. my own ~1.4-1.6x net-debt/operating-income estimate - unresolved, flagged rather than silently adopting either number",
+        "No V1 valuation row exists for HUBB to reconcile against"
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium-low - the growth story is well evidenced from the Q2 2026 primary-source release, but the leverage question (central to the triage's own reservation) remains unresolved pending fresher balance-sheet XBRL data",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "in_line",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for HUBB; qualitatively the stock's price-vs-growth score (3/5 in triage) alongside strong 4/5 quality/growth suggests the market is already charging close to fair value for the current growth rate, consistent with my own base case which assumes growth moderates toward high-single-digits as the capex cycle matures."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.15,
+        "base": 0.08,
+        "bull": 0.18
+      },
+      "scenario_basis": "Starting FY2026E adjusted diluted EPS ~$20.25-$20.55 guided midpoint; bear = leverage concern proves correct, debt-funded capex or M&A pushes net debt/EBITDA above 2.5x and multiple compresses; base = organic growth moderates from double digits toward high-single-digits into 2027 as data-center/grid capex normalizes, modest dividend growth continues; bull = data-center electrification demand sustains double-digit organic growth for another 2-3 years with stable leverage."
+    }
+  }
+}

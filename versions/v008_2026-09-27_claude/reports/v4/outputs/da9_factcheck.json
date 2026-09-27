@@ -1,0 +1,195 @@
+{
+  "as_of": "2026-09-26",
+  "scope": "Independent adversarial data audit (DA9) of three current-holding dossiers not previously checked by this auditor: MA, AXP, MSCI. 21 load-bearing facts checked (7/7/7 by ticker), selected for the claims most likely to break a thesis or a kill criterion if wrong: headline quarterly figures, guidance track records, capital/credit ratios, deal terms/dates, litigation status, and capital-return figures. Method: primary sources only -- SEC EDGAR 10-Q/10-K text and notes, 8-K Ex-99.1/Ex-99.2 earnings-release exhibits, and data.sec.gov XBRL companyconcept pulls -- fetched directly from www.sec.gov and data.sec.gov (User-Agent 'PersonalEquityResearch research-admin@personal-research.org') and cited by accession/URL below. Each dossier was read to its end; no appended 'Correction' sections were found on any of the three. Each ticker's one-line thesis and first kill criterion were checked for consistency with the underlying filings; results noted in the summary below.",
+  "facts": [
+    {
+      "ticker": "MA",
+      "claim": "Q2 2026: net revenue $9,277M (+14.1% YoY); operating income $5,587M; operating margin 60.2%; GAAP diluted EPS $4.97; adjusted diluted EPS $5.04",
+      "dossier_location": "MA.md §4 results table, Q2 2026 row; §6 (GAAP vs adjusted gap)",
+      "source": "MA Form 10-Q, period 2026-06-30, filed 2026-07-30 (accession 0001141391-26-000083); MA 8-K Ex-99.1 Q2 2026 earnings release, filed 2026-07-30 (accession 0001141391-26-000081)",
+      "source_value": "XBRL companyconcept (data.sec.gov, CIK0001141391): us-gaap:Revenues Q2'26 (2026-04-01 to 2026-06-30) = $9,277,000,000; us-gaap:OperatingIncomeLoss = $5,587,000,000; us-gaap:EarningsPerShareDiluted = $4.97. Earnings release: \"Second quarter net revenue of $9.3 billion, an increase of 14%\" and \"Adjusted diluted EPS $5.04 $4.15 21% 19%\" (vs GAAP diluted EPS $4.97)",
+      "status": "PASS",
+      "note": "Exact match on every figure, including the operating margin (5,587/9,277=60.2%, matching the dossier's stated 60.2%) and the small, disclosed GAAP-vs-adjusted EPS gap ($4.97 vs $5.04)."
+    },
+    {
+      "ticker": "MA",
+      "claim": "Balance sheet, consolidated (2026-06-30 vs 2025-12-31): cash and cash equivalents $11,291M (was $10,566M); long-term debt $22,184M (was $18,251M), a $3.9bn increase",
+      "dossier_location": "MA.md §6 (balance sheet)",
+      "source": "MA Form 10-Q, period 2026-06-30, Consolidated Balance Sheet; XBRL companyconcept CashAndCashEquivalentsAtCarryingValue / LongTermDebtNoncurrent, CIK0001141391",
+      "source_value": "Cash: $11,291,000,000 (2026-06-30) vs $10,566,000,000 (2025-12-31). Long-term debt: $22,184,000,000 (2026-06-30) vs $18,251,000,000 (2025-12-31); difference = $3,933,000,000",
+      "status": "PASS",
+      "note": "Exact match to the dollar on both lines; the $3.9bn long-term-debt increase the dossier cites is precisely correct ($3,933M)."
+    },
+    {
+      "ticker": "MA",
+      "claim": "Pending M&A: definitive agreement (March 2026) to acquire 100% of BVNK Holdings Limited for $1.5bn (plus up to $300m contingent consideration on performance targets), expected to close before end of Q3 2026",
+      "dossier_location": "MA.md §6 (Pending M&A), §9 kill criterion 3",
+      "source": "MA Form 10-Q, period 2026-06-30, Note 2 \"Acquisitions\"",
+      "source_value": "\"$1.5 billion, excluding customary closing adjustments\" plus \"up to $300 million if certain performance targets are met\"; \"anticipates completing the acquisition before the end of the third quarter of 2026\"",
+      "status": "PASS",
+      "note": "Exact match on price, contingent consideration, and expected-closing language."
+    },
+    {
+      "ticker": "MA",
+      "claim": "Accrued litigation reserve (consolidated balance sheet) fell from $800M (2025-12-31) to $296M (2026-06-30)",
+      "dossier_location": "MA.md §6 (balance sheet), §11 (red-flag scan)",
+      "source": "MA Form 10-Q, period 2026-06-30, Consolidated Balance Sheet, Current Liabilities",
+      "source_value": "\"$296 million\" (June 30, 2026) vs \"$800 million\" (December 31, 2025)",
+      "status": "PASS",
+      "note": "Exact match on both figures."
+    },
+    {
+      "ticker": "MA",
+      "claim": "Litigation: April-2026 U.S. merchant putative class action seeks interchange-fee damages since January 2019 and moves for summary judgment that the Damages Class Settlement release does not bar the claims; separately, a Portugal consumer collective action leveraging the 2019 EC interregional-interchange resolution seeks ≈€0.4bn (≈$0.5bn as of 2026-06-30)",
+      "dossier_location": "MA.md §8 bear case (1), §9 kill criterion 4, §11 (red-flag scan)",
+      "source": "MA Form 10-Q, period 2026-06-30, Legal Proceedings / Commitments and Contingencies note",
+      "source_value": "\"In April 2026, a putative class action was filed on behalf of U.S. merchants seeking damages related to interchange fees associated with Mastercard and Visa credit card transactions since January 2019... seeking a declaration that the release from the Damages Class Settlement Agreement... does not bar their damages claims.\" Portugal: \"claims damages of approximately €0.4 billion (approximately $0.5 billion as of June 30, 2026) for interchange fees that were allegedly passed on to consumers.\"",
+      "status": "PASS",
+      "note": "Exact match on both litigation matters, including the January-2019 claims-period language, the summary-judgment framing (fight over settlement-release scope, not a new liability theory), and the Portugal euro/dollar figures."
+    },
+    {
+      "ticker": "MA",
+      "claim": "Q2 2026 capital return: repurchased 9.8M shares for $4.9bn and paid $771M in dividends; $7.8bn remained under authorization as of 2026-07-27",
+      "dossier_location": "MA.md §6 (capital return)",
+      "source": "MA 8-K Ex-99.1 Q2 2026 earnings release; MA Form 10-Q, period 2026-06-30 (share repurchase note)",
+      "source_value": "\"Mastercard repurchased 9.8 million shares at a cost of $4.9 billion and paid $771 million in dividends... which leaves $7.8 billion remaining under approved share repurchase programs\" (10-Q: \"remaining authorization under share repurchase programs... was $7.8 billion\")",
+      "status": "PASS",
+      "note": "Exact match on all four figures."
+    },
+    {
+      "ticker": "MA",
+      "claim": "Diluted share count fell from 925M (3Q24) to 883M (2Q26), ≈−4.5% in under two years",
+      "dossier_location": "MA.md §6 (capital return)",
+      "source": "XBRL companyconcept WeightedAverageNumberOfDilutedSharesOutstanding, CIK0001141391 (data.sec.gov)",
+      "source_value": "925,000,000 (Q3 2024, 2024-07-01 to 2024-09-30) vs 883,000,000 (Q2 2026, 2026-04-01 to 2026-06-30); (925-883)/925 = 4.54%",
+      "status": "PASS",
+      "note": "Exact match on both share counts; decline rounds to the dossier's stated ≈4.5%."
+    },
+    {
+      "ticker": "AXP",
+      "claim": "Q2 2026: total revenue net of interest expense $19,637M (+10% YoY); net income $3,110M; diluted EPS $4.53",
+      "dossier_location": "AXP.md §4 results table, Q2 2026 row",
+      "source": "AXP Form 10-Q, period 2026-06-30, filed 2026-07-24 (accession 0000004962-26-000322); XBRL companyconcept, CIK0000004962",
+      "source_value": "us-gaap:RevenuesNetOfInterestExpense Q2'26 = $19,637,000,000 (vs $17,856,000,000 Q2'25, +10.0%); us-gaap:NetIncomeLoss = $3,110,000,000; us-gaap:EarningsPerShareDiluted = $4.53",
+      "status": "PASS",
+      "note": "Exact match on all three figures and the YoY revenue growth rate."
+    },
+    {
+      "ticker": "AXP",
+      "claim": "FY2025: total revenue $72,229M (+10%); GAAP net income $10,833M (+7%); diluted EPS $15.38 (+10%, or +15% excluding a prior-year Accertify transaction gain)",
+      "dossier_location": "AXP.md §4 (full-year 2025), §5 (guidance track record item 2)",
+      "source": "AXP FY2025 Form 10-K (accession 0000004962-26-000080); AXP 8-K Ex-99.1, Q4/FY2025 earnings release, filed 2026-01-30",
+      "source_value": "XBRL: RevenuesNetOfInterestExpense FY2025 = $72,229,000,000; NetIncomeLoss = $10,833,000,000; EarningsPerShareDiluted = $15.38. Release: \"diluted earnings per share was $15.38, up 10 percent from $14.01 a year ago, or 15 percent excluding the prior-year Accertify transaction gain\"",
+      "status": "PASS",
+      "note": "Exact match on all figures, including the Accertify-adjusted growth rate."
+    },
+    {
+      "ticker": "AXP",
+      "claim": "Guidance track record: Q3 2025 raised FY2025 guidance to revenue growth 9-10% and EPS $15.20-$15.50; Q4/FY2025 issued initial FY2026 guidance of revenue growth 9-10% and EPS $17.30-$17.90; Q1 2026 reaffirmed same FY2026 guidance; Q2 2026 raised revenue growth guidance to ~10% while holding EPS guidance at $17.30-$17.90",
+      "dossier_location": "AXP.md §5 (guidance track record, items 1-4)",
+      "source": "AXP 8-K Ex-99.1 releases: 2025-10-17 (Q3'25), 2026-01-30 (Q4/FY2025), 2026-04-23 (Q1'26), 2026-07-24 (Q2'26)",
+      "source_value": "Q3'25: \"COMPANY RAISES FY 2025 GUIDANCE TO REVENUE GROWTH OF 9% TO 10% AND EPS OF $15.20 TO $15.50\". Q4/FY2025: \"GUIDES FY 2026 REVENUE GROWTH OF 9% TO 10% AND EPS OF $17.30 TO $17.90\". Q1'26: \"reaffirming our full-year 2026 guidance for 9 to 10 percent revenue growth and EPS of $17.30 to $17.90\". Q2'26: \"raising our full-year revenue growth guidance to 10 percent... We continue to expect full-year EPS of $17.30 to $17.90\"",
+      "status": "PASS",
+      "note": "Exact match on all four releases' guidance language and figures; the raise/reaffirm/raise pattern the dossier describes is confirmed verbatim."
+    },
+    {
+      "ticker": "AXP",
+      "claim": "Credit quality (Q2 2026, consolidated): net write-off rate (principal, interest & fees) 2.2%, vs 2.3%/2.3%/2.2%/2.2% in the trailing four quarters",
+      "dossier_location": "AXP.md §6 (credit quality)",
+      "source": "AXP 8-K Ex-99.2, Q2 2026 statistical supplement, filed 2026-07-24",
+      "source_value": "Total-company table: \"Net write-off rate (principal, interest and fees) (G) 2.2% 2.3% 2.3% 2.2% 2.2%\" for columns Q2'26/Q1'26/Q4'25/Q3'25/Q2'25",
+      "status": "PASS",
+      "note": "Exact match on the current-quarter rate and the trailing four-quarter sequence."
+    },
+    {
+      "ticker": "AXP",
+      "claim": "Capital (Basel III, consolidated, Q2 2026): CET1/RWA 10.4%, vs 10.5%/10.5%/10.5%/10.6% in the trailing four quarters; Tier 1 11.0%; Total capital 13.1%",
+      "dossier_location": "AXP.md §6 (capital)",
+      "source": "AXP 8-K Ex-99.2, Q2 2026 statistical supplement",
+      "source_value": "\"Common Equity Tier 1/Risk Weighted Assets (RWA) 10.4% 10.5% 10.5% 10.5% 10.6% Tier 1 11.0% 11.1% 11.1% 11.1% 11.3% Total 13.1% 13.2% 13.1% 13.1% 13.2%\" (columns Q2'26/Q1'26/Q4'25/Q3'25/Q2'25)",
+      "status": "PASS",
+      "note": "Exact match on CET1/RWA, Tier 1 and Total capital ratios and the trailing four-quarter trend."
+    },
+    {
+      "ticker": "AXP",
+      "claim": "Litigation: Pizza Hazel (D. Mass., filed 2024-09-30) and 5-Star General Store/Bento LLC (D.R.I., filed 2024-03-21) merchant antitrust class actions re: OptBlue anti-steering/non-discrimination provisions; in both, the court denied Amex's motion to compel arbitration and Amex has appealed to the First Circuit",
+      "dossier_location": "AXP.md §9 kill criterion 5, §12 (red-flag scan)",
+      "source": "AXP Form 10-Q, period 2026-06-30, Note 7 \"Contingencies\"",
+      "source_value": "\"On September 30, 2024, we were named as a defendant in a case filed in the United States District Court for the District of Massachusetts, captioned Pizza Hazel, Inc., et al....The court rejected our motion to compel the case to arbitration; we have appealed the decision to the Court of Appeals for the First Circuit.\" \"On March 21, 2024, we were named as a defendant in a case filed in the United States District Court for the District of Rhode Island, captioned 5-Star General Store aka Bento LLC, et al....The court rejected our motion to compel the case to arbitration; we have appealed the decision to the Court of Appeals for the First Circuit.\"",
+      "status": "PASS",
+      "note": "Exact match on both cases' filing dates, venues, and the arbitration-denial/First-Circuit-appeal status."
+    },
+    {
+      "ticker": "AXP",
+      "claim": "Capital return: average diluted shares outstanding fell from 699m (Q2 2025) to 679m (Q2 2026), a ≈2.9% YoY reduction",
+      "dossier_location": "AXP.md §6 (capital return)",
+      "source": "XBRL companyconcept WeightedAverageNumberOfDilutedSharesOutstanding, CIK0000004962",
+      "source_value": "699,000,000 (2025-04-01 to 2025-06-30) vs 679,000,000 (2026-04-01 to 2026-06-30); (699-679)/699 = 2.86%",
+      "status": "PASS",
+      "note": "Exact match on both share counts; the decline rounds to the dossier's stated ~2.9%."
+    },
+    {
+      "ticker": "MSCI",
+      "claim": "Q2 2026: operating revenue $867.0M (+12.2% YoY, organic +12.2%); operating margin 56.2% (vs 55.0% Q2 2025); GAAP diluted EPS $4.69",
+      "dossier_location": "MSCI.md §4 results table, Q2 2026 row",
+      "source": "MSCI 8-K Ex-99.1, Q2 2026 earnings release, filed 2026-07-21 (accession 0001408198-26-000044); XBRL companyconcept, CIK0001408198",
+      "source_value": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax Q2'26 = $867,000,000; us-gaap:EarningsPerShareDiluted = $4.69. Release: \"Operating income was $487.5 million, up 14.6%. Operating income margin in second quarter 2026 was 56.2%, compared to 55.0% in second quarter 2025\"; \"recurring subscription Run Rate growth was 8.1%\"",
+      "status": "PASS",
+      "note": "Exact match on revenue, operating margin (both periods) and GAAP diluted EPS."
+    },
+    {
+      "ticker": "MSCI",
+      "claim": "Q4 2025: operating margin 56.4% (vs 54.5% Q4 2024); GAAP diluted EPS $3.81 (−2.3% YoY); Adjusted EPS $4.66 (+11.5% YoY); FY2025 free cash flow $1,458.6M vs FY2024 $1,386.5M (+5.2%)",
+      "dossier_location": "MSCI.md §4 results table (Q4 2025 row), §6 (FCF conversion)",
+      "source": "MSCI 8-K Ex-99.1, Q4/FY2025 earnings release, filed 2026-01-28 (accession 0001408198-26-000005); XBRL companyconcept EarningsPerShareDiluted, CIK0001408198",
+      "source_value": "\"Operating margin of 56.4%\"; \"Diluted EPS of $3.81, down 2.3%\"; \"Adjusted EPS of $4.66, up 11.5%\"; free cash flow table: \"1,458,585 1,386,509\" (FY2025 vs FY2024, in thousands)",
+      "status": "PASS",
+      "note": "Exact match on all figures; 1,458,585/1,386,509 = +5.24%, consistent with the dossier's stated +5.2%."
+    },
+    {
+      "ticker": "MSCI",
+      "claim": "Q1 2026 GAAP diluted EPS $5.53 includes an $88m one-off/discrete tax benefit from a multi-phase internal legal-entity restructuring completed that quarter, excluded from adjusted metrics",
+      "dossier_location": "MSCI.md §4 (Q1 2026 row and footnote)",
+      "source": "MSCI 8-K Ex-99.1, Q1 2026 earnings release, filed 2026-04-21 (accession 0001408198-26-000032); XBRL companyconcept EarningsPerShareDiluted, CIK0001408198",
+      "source_value": "us-gaap:EarningsPerShareDiluted Q1'26 = $5.53. Release: \"Because of this restructuring in the first quarter 2026, the Company recognized an $88 million discrete tax benefit which resulted in a decrease in the effective tax rate\"; \"we recognized a tax benefit of $88 million, which is excluded from applicable non-GAAP measures\"",
+      "status": "PASS",
+      "note": "Exact match on the EPS figure, the $88m amount, its one-off/discrete-tax-benefit characterization, the restructuring cause, and its exclusion from non-GAAP metrics."
+    },
+    {
+      "ticker": "MSCI",
+      "claim": "Q2 2026 release raised FY2026 guidance: operating expense $1,535-1,575M (from $1,490-1,530M); Adjusted EBITDA expense $1,340-1,370M (from $1,305-1,335M); net cash from operations $1,655-1,705M (from $1,640-1,690M); free cash flow $1,485-1,545M (from $1,470-1,530M)",
+      "dossier_location": "MSCI.md §5 guidance table (Q2 2026 row)",
+      "source": "MSCI 8-K Ex-99.1, Q2 2026 earnings release, filed 2026-07-21",
+      "source_value": "\"Operating Expense $1,535 to $1,575 million $1,490 to $1,530 million Adjusted EBITDA Expense $1,340 to $1,370 million $1,305 to $1,335 million\"; \"Net Cash Provided by Operating Activities $1,655 to $1,705 million $1,640 to $1,690 million Free Cash Flow $1,485 to $1,545 million $1,470 to $1,530 million\"",
+      "status": "PASS",
+      "note": "Exact match on both the new and prior ranges for all four guidance lines."
+    },
+    {
+      "ticker": "MSCI",
+      "claim": "Debt (consolidated, 30-Jun-2026): $6.0bn Senior Notes + $475m Revolving Credit Facility = ~$6.475bn total debt; cash $352.7m; net debt ≈$6.12bn",
+      "dossier_location": "MSCI.md §6 (debt)",
+      "source": "MSCI Form 10-Q, period 2026-06-30, filed 2026-07-21 (accession 0001408198-26-000046), Note 7 \"Debt\" and Condensed Balance Sheet",
+      "source_value": "\"As of June 30, 2026, we had an aggregate of $6.0 billion in Senior Notes outstanding. In addition,...we had as of June 30, 2026 an aggregate of $475.0 million in outstanding borrowings under the Revolving Credit Facility.\" Balance sheet: \"Cash and cash equivalents (includes restricted cash of $3.7... at June 30, 2026...) $356.4\" million",
+      "status": "PASS",
+      "note": "Total debt ($6.0bn + $475m = $6.475bn) matches exactly. The dossier's cash figure ($352.7m) is the balance-sheet cash line net of the $3.7m restricted-cash component ($356.4M - $3.7M = $352.7M) rather than the reported gross line ($356.4M) -- a reasonable, correctly-computed sub-figure, not an error. Net debt on either basis rounds to ~$6.12bn, matching the dossier."
+    },
+    {
+      "ticker": "MSCI",
+      "claim": "Company-wide Retention Rate 95.3% in Q2 2026, vs 93.4% \"a year ago in Q4 2025\"",
+      "dossier_location": "MSCI.md §9 kill criterion 2",
+      "source": "MSCI 8-K Ex-99.1, Q2 2026 earnings release; MSCI 8-K Ex-99.1, Q4/FY2025 earnings release",
+      "source_value": "Q2 2026 release: \"Retention Rate in second quarter 2026 was 95.3%, compared to 94.4% in second quarter 2025.\" Q4 2025 release: \"Retention Rate in fourth quarter 2025 was 93.4%, compared to 93.1% in fourth quarter 2024.\"",
+      "status": "MINOR",
+      "note": "Both numeric values (95.3% for Q2 2026, 93.4% for Q4 2025) are exactly correct per the primary sources. However, Q4 2025 is two quarters (six months) before Q2 2026, not \"a year ago\" as the kill-criterion text states -- the true year-ago comparator for Q2 2026 is Q2 2025's 94.4% Retention Rate (also confirmed above), which is actually closer to today's 95.3% than the cited 93.4% figure is. This is a labeling/temporal-reference error, not a fabricated number, and does not change the kill-criterion threshold (92%) or its current distance from breach either way."
+    },
+    {
+      "ticker": "MSCI",
+      "claim": "Pending M&A: First Street Technology, Inc. (physical climate-risk data) acquisition -- $120.0m cash at closing plus contingent earn-outs, expected to close Q3 2026 subject to regulatory approval; FY2026 guidance explicitly assumes this closing",
+      "dossier_location": "MSCI.md §6 (Pending M&A), §10 (catalysts)",
+      "source": "MSCI 8-K Ex-99.1, Q2 2026 earnings release; MSCI Form 10-Q, period 2026-06-30",
+      "source_value": "\"On June 24, 2026, MSCI entered into a definitive agreement to acquire First Street Technology, Inc.... Consideration consists of a cash payment of $120.0 million at closing, subject to customary closing adjustments, together with the potential for additional cash payments...\"; \"The updated guidance for full-year 2026 assumes the First Street acquisition closes in the third quarter of 2026. The transaction remains subject to regulatory approvals and other customary closing conditions.\"",
+      "status": "PASS",
+      "note": "Exact match on deal price, structure, expected closing quarter, and the guidance-conditionality caveat."
+    }
+  ]
+}

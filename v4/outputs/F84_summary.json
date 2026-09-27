@@ -1,0 +1,117 @@
+{
+  "agent": "F84",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "DXCM": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The #2 continuous glucose monitor maker is growing fast and profitably, but its stock price already assumes far faster growth than it has actually delivered.",
+      "kill_criteria": [
+        "Quarterly YoY revenue growth < 8% for two consecutive quarters (deceleration below guided range).",
+        "Net new US CGM patient adds or US revenue growth turns negative for a quarter (share loss to Abbott).",
+        "Gross margin falls >200bps YoY for two consecutive quarters (competitive pricing pressure).",
+        "Adverse ruling, certification, or material settlement in the pending securities class action exceeding $200m.",
+        "FDA safety communication or recall affecting G7/Stelo sensor accuracy."
+      ],
+      "key_adverse_facts": [
+        "Securities class action (Section 10(b)/20(a)) alleges undisclosed G6/G7 design changes reduced device reliability, class period Jan 2024-Sep 2025.",
+        "Intensifying CGM competition from Abbott Lingo/Libre Rio targets DexCom's newest (OTC/non-insulin) growth leg.",
+        "V1's implied 10-year growth (30.2%) is well above DexCom's own delivered 5-year growth (18.0%) and Street FY1 consensus (10.9%)."
+      ],
+      "data_conflicts": [
+        "V1's recorded bull_ann_return_3y for DXCM is 151% (annualised), which is implausible for a 3-year annualised return on a large, maturing device maker; treated as a likely model artefact, not a usable number.",
+        "Balance-sheet (net debt ~$0.5bn) and prior-quarter revenue/EPS figures are aggregator-sourced, not re-verified against the primary 10-Q/10-K text this pass."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - business quality is well evidenced (Q2 2026 beat-and-raise, primary source); valuation conclusion rests partly on V1's implied-growth output, which contains a flagged anomaly, and several trailing quarters were not independently re-verified.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "fair",
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "V1 tags DXCM 'fair' but its own implied growth (30.2%) exceeds both delivered 5y growth (18.0%) and consensus (10.9%); I read this as full-to-expensive rather than fair, though we agree on direction (not cheap).",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.10,
+        "base": 0.05,
+        "bull": 0.18
+      },
+      "scenario_basis": "Starting adjusted EPS ~$2.60 TTM run-rate; base case mid-teens revenue growth decelerating to ~13-15% with modest margin expansion and multiple holding near 25-27x NTM P/E; bear = growth slows to high-single-digits on Abbott OTC competition with multiple compression to ~20x; bull = Stelo/international sustain high-teens growth with margin expansion supporting 30x+."
+    },
+    "EBAY": {
+      "verdict": "WATCH",
+      "thesis_one_line": "eBay's marketplace is genuinely reaccelerating on ads and niche categories like collectibles, but the stock's own next-quarter guide points to slower growth than it just delivered.",
+      "kill_criteria": [
+        "FX-neutral GMV growth < 8% for two consecutive quarters (below the low end of the FY2026 outlook range).",
+        "Advertising revenue growth decelerates below 15% YoY for two consecutive quarters.",
+        "Consolidated net leverage (net debt/EBITDA) exceeds 3.0x on the next 10-Q.",
+        "Adverse US or EU regulatory action specifically targeting de-minimis/tariff treatment of cross-border marketplace parcels quantified by eBay as a material revenue headwind.",
+        "Non-GAAP operating margin falls below 26% for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "eBay's own Q3 2026 guide (10-12% FXN GMV growth) implies deceleration from Q2 2026's 14% FXN growth.",
+        "Consolidated Debt/Equity is elevated (~163%, aggregator-sourced), reflecting years of debt-funded buybacks against a shrinking equity base.",
+        "Tariff/de-minimis policy risk to cross-border, historically China-sourced seller categories is a live, unresolved sector-wide headwind not fully quantified in the sources reviewed."
+      ],
+      "data_conflicts": [
+        "V1's carried 'delivered_5y_or_actual_roe' of 1.5% is inconsistent with a company generating the margins eBay reports; almost certainly an artefact of low/negative book equity from buybacks rather than weak true returns on capital, not resolved this pass.",
+        "Triage (Q02) argues 16.5x NTM P/E 'no longer looks demanding' post-beat; V1 still tags EBAY 'demanding' with a wide bear/bull spread (-34.9%/+72.0% annualised) - I side with V1's caution given the guided deceleration."
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium - Q2 2026 results and Q3 guide are primary-source; prior seven quarters, SBC%, and FCF conversion were not independently re-verified, and tariff/de-minimis exposure was not quantified from eBay's own risk-factor disclosure this pass.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "demanding",
+        "v1_base_3y": 0.030047495644107025,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "Agree with V1's 'demanding' tag: implied 10-year growth (10.5%) exceeds trailing consensus (6.7%) and eBay's own Q3 guide already points to deceleration from Q2's strength, so the recent beat does not, on its own, make the stock cheap.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.25,
+        "base": 0.02,
+        "bull": 0.35
+      },
+      "scenario_basis": "Starting non-GAAP EPS run-rate ~$6.20/yr (annualised from $1.60 Q2); base case FXN GMV/revenue growth decelerating toward 8-10% (per Q3 guide) with flat ~16-17x NTM P/E; bear = growth reverts to low-single-digits (tariff/de-minimis or focus-category demand cooling) with multiple compression to ~11-12x; bull = ad take-rate and focus-category mix keep growth at 12%+ and re-rate the multiple toward the 19.4x peer median. No meaningful dividend; buybacks continue in all scenarios but excluded from these price-return figures."
+    },
+    "ETR": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A Gulf Coast power utility with a large, contracted pipeline of AI data-center customers that pay their own way, priced fairly for that growth if the deals actually get signed.",
+      "kill_criteria": [
+        "2026 adjusted EPS guidance is cut below the current $4.25-$4.45 range at any subsequent quarterly release.",
+        "Signed/contracted hyperscale data-center load pipeline falls below 5 GW (from the current 7-12 GW range) as disclosed in a future release.",
+        "Any state PSC formally rejects or materially amends the Fair Share Plus cost-allocation framework for a signed data-center deal.",
+        "Consolidated Debt/Equity exceeds 2.3x on a subsequent 10-Q.",
+        "NRC issues a 'yellow' or 'red' significance finding at any Entergy-operated nuclear unit."
+      ],
+      "key_adverse_facts": [
+        "Two NRC 'white' (low-to-moderate significance) enforcement findings in 2026, at Grand Gulf (30 Apr) and River Bend (17 Aug) nuclear stations.",
+        "Consolidated Debt/Equity (~1.96x, aggregator-sourced) is above the regulated-utility industry median (~0.975x), funding a reported $57bn capex plan.",
+        "The 7-12 GW hyperscale pipeline is largely a pipeline, not yet fully signed/rate-based; the conversion rate to firm contracted load was not quantified in the sources reviewed."
+      ],
+      "data_conflicts": [
+        "No V1 row exists for ETR; v1_verdict is null. My own reverse-DCF sense-check (implied growth ~9-10% at ~23x current-year adjusted EPS) sits close to, not clearly below, management's own >8% guided CAGR, which is why this is INCLUDE-SMALL rather than a full-weight INCLUDE.",
+        "The exact 25-Sep-2026 closing price was not confirmed against a primary exchange print; secondary-source quotes in late September clustered in the $99-102 range and this was used as an approximation, labelled as such."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "24-48 months",
+      "confidence_in_thesis": "medium - guidance and the data-center pipeline figures are primary-source (earnings release/call); the 8-quarter results table, exact closing price, and pipeline signed-contract conversion rate were not independently verified this pass.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No systematic V1 valuation exists for ETR (no row in v1_valuation_table.csv); my own reverse-DCF puts implied growth (~9-10%) at or slightly below management's own >8% long-term guided CAGR, so the reservation named for INCLUDE-SMALL is execution/regulatory risk on the pipeline, not an obvious valuation red flag.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.06,
+        "base": 0.07,
+        "bull": 0.16
+      },
+      "scenario_basis": "Starting 2026 guided adjusted EPS midpoint $4.35 plus ~3% dividend yield; base case EPS growth ~8% (per guidance) with P/E holding near 22-23x; bear = data-center pipeline conversion disappoints and/or a PSC rejects cost recovery, growth reverts to sector-typical 5-6% with multiple compression to ~18x; bull = pipeline converts faster than guided, growth accelerates toward low double digits with multiple holding at ~23-24x."
+    }
+  }
+}

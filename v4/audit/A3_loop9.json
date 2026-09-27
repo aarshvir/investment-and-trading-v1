@@ -1,0 +1,30 @@
+{
+  "total": 80,
+  "criteria": {
+    "1": 9,
+    "2": 9,
+    "3": 7,
+    "4": 8,
+    "5": 8,
+    "6": 9,
+    "7": 8,
+    "8": 7,
+    "9": 6,
+    "10": 9
+  },
+  "must_fix": [
+    "Fix the report generator so every held name's thesis is populated from its dossier before release; WEC's §6 row and dashboard/d4v.json currently show the literal fallback text 'thesis line pending; see dossier' for a real, 6.7%-weight holding. Add a pre-release check that fails the build on any placeholder thesis for a held name.",
+    "Disclose the RMD episode in the report: it was selected this wave, DA18 found its dossier cited a non-existent FY2027 guidance range and mislabelled full-year buyback/dividend figures as nine-month figures, it was downgraded to INCLUDE-SMALL on reassessment, and replaced by CAH -- currently unmentioned anywhere in FINAL_REPORT.md.",
+    "State the rule-(j) order-dependence trend across loops (12 to 14 to 9 names held under every ordering), not just this loop's figure, so the reader can see the selection has become more order-dependent as the eligible pool grew.",
+    "Note in §1 or §10 that versions/catalog.json's latest_completed (v009) is now behind the build judged in this report (carried from Loop 8, still open).",
+    "Move the MSCI kill-criterion-2 inline correction to a clean sentence boundary (cosmetic, carried four loops)."
+  ],
+  "fact_checks": [
+    {"ticker": "WEC", "claim": "Dossier verdict/thesis line is substantive and complete", "source": "dossiers/WEC.md §1", "status": "PASS"},
+    {"ticker": "WEC", "claim": "That thesis line is reproduced in FINAL_REPORT.md §6 and dashboard/d4v.json", "source": "FINAL_REPORT.md §6; dashboard/d4v.json port.rows[WEC] (no thesis key)", "status": "FAIL"},
+    {"ticker": "RMD", "claim": "FY2027 guidance $5.75-$5.85B revenue / $12.00-$12.25 non-GAAP EPS cited to the 6 Aug 2026 8-K", "source": "ResMed 8-K Ex-99.1 accession 0001193125-26-337962 (via DA18)", "status": "FAIL"},
+    {"ticker": "RMD", "claim": "9-month FY2026 buybacks $700.0M / dividends $2.40/sh cited to the Q3 FY26 10-Q", "source": "SEC XBRL companyfacts CIK0000943819 (via DA18)", "status": "FAIL"},
+    {"ticker": "PTC", "claim": "Results table one-quarter mislabelling, now corrected", "source": "PTC 8-K Ex-99.1 accession 0001193125-26-323617; XBRL CIK0000857005 (via DA18); dossiers/PTC.md line 96 Correction section", "status": "PASS"},
+    {"ticker": "MCK", "claim": "GAAP/adjusted reconciliation, guidance raise, opioid liability, leverage (6 facts)", "source": "SEC 8-K/10-K/XBRL CIK0000927653 (via DA18)", "status": "PASS"}
+  ]
+}

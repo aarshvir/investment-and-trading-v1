@@ -1,0 +1,320 @@
+{
+ "v005_release": "v005_2026-09-26_codex",
+ "v005_prepared_utc": "2026-09-25T21:16:49.916981+00:00",
+ "v005_data_cutoff": "2026-09-24 reference prices; MSFT 2026-09-25; individual filing periods disclosed",
+ "parents_for_v4_release": [
+  "v005_2026-09-26_codex",
+  "claude-v3",
+  "codex-initial-audit",
+  "codex-deep-data-audit"
+ ],
+ "findings": [
+  {
+   "topic": "A hard 15–20% loss limit needs a small equity share",
+   "status": "CONFIRMED independently",
+   "v005": "Maximum 25% equity (15% index + 10% direct, at least 75% reserve); a hypothetical tail shock (index −60%, stocks −75%, reserve −2%) loses 18.0% at full deployment.",
+   "v4": "Daily-data replay of 2007–09 with quarterly rebalancing: staying within −20% needed ≤35% in equities, within −15% ≤28%. The Defensive mix (v005's budget) fell -12.8% in that replay.",
+   "effect": "v4 adds the Defensive 15/10/75 mix to every allocation table, with simulated odds on the same engine as the other mixes."
+  },
+  {
+   "topic": "Whether 15–20% must hold in every crash",
+   "status": "UNRESOLVED (owner decision)",
+   "v005": "Treats 15–20% as the design objective for the whole portfolio, hence 75–81% reserve.",
+   "v4": "Shows the trade-off instead. Base case, median 5-year return +4.9%/yr for Defensive vs +6.0%/yr for Moderate; P(fall > 20% within 5 yrs) 0% vs 50%. The 15–20% figure comes from the earlier Codex review notes; to Claude the owner described his risk appetite as 'not very risk-averse, not extremely risk-taking'.",
+   "effect": "v4 does not override v005: the owner chooses which sentence describes his limit (the one next step)."
+  },
+  {
+   "topic": "Irish UCITS index core and a short-Treasury reserve",
+   "status": "ADOPTED",
+   "v005": "VUAA (IE00BFMXXD54) for the index; IB01 (IE00BGSF1X88, 0–1 yr Treasuries) plus cash for the reserve.",
+   "v4": "CSPX or VUAA for the core; directly held T-bills or a UCITS T-bill fund for the reserve. IB01 is such a fund; both keep the reserve outside US estate tax.",
+   "effect": "v4 names IB01 as one eligible reserve fund, alongside direct T-bills."
+  },
+  {
+   "topic": "Dividend withholding and US estate tax",
+   "status": "CONFIRMED",
+   "v005": "30% withholding on direct US dividends; Irish funds 15% internally; direct US shares are US-situs.",
+   "v4": "Same facts, re-verified against IRS and issuer pages on 26 Sep 2026 (R2, R3).",
+   "effect": "None."
+  },
+  {
+   "topic": "Which stocks are candidates",
+   "status": "CHALLENGED",
+   "v005": "Ranks only the original fourteen v3 candidates and says so ('not a claim to have found the best fourteen investments in the entire market').",
+   "v4": "v3's candidate list rested on biased evidence: its momentum result falls from 29.1%/yr to 18.1%/yr once stocks count only after joining the index, and its conviction filter failed out of sample. v4 screens all 503 point-in-time members with pre-registered rules plus primary-source diligence. The only overlap is HIG.",
+   "effect": "v4's satellite is not built from v3's list. v4 also found no stock-selection edge, so neither workstream's picks should be expected to beat the index."
+  },
+  {
+   "topic": "AMP and PAYX as first purchases",
+   "status": "AMP CONFIRMED (eligible, not held); PAYX CONFIRMED as buyable (eligible, not held)",
+   "v005": "BUY NOW at ≤ $500 (AMP) and ≤ $101.80 (PAYX), 2% slots each, base 3-yr IRRs 12.8% / 12.2% after withholding.",
+   "v4": "Once v4 extended research to every S&P 500 company, its own full diligence (F21) rated AMP INCLUDE at full conviction, fairly priced at under 10x forward earnings. AMP passes every v4 test but is not held: eligible, but outside the best 20 (conviction, margin of safety, base-case return). PAYX was researched in full in wave 2 (F37): INCLUDE-SMALL (half conviction), with the price implying about 0.7% a year of cash-flow growth against management's own guided 7–9% earnings growth, and a base-case return of about +9.8% a year. It passes every v4 test but is not held: 20 names outranked it under rule (j). Its named reservation is a slowdown in the Management Solutions unit (75% of revenue) and an April 2026 data breach.",
+   "effect": "Both names now pass v4's own full diligence, so v005's judgement that they are sound purchases at those limits is confirmed; v4 keeps both on its bench of eligible names (neither is in the current 20). PAYX closed at $101.37 on 25 Sep 2026, just under v005's $101.80 limit. X1 reproduced both v005 base cases to the cent from SEC filings. AMP's 13x exit multiple sits near its 10-year average P/E. PAYX's 20x sits below its whole 10-year P/E range (about 24–34x): conservative, but v005 does not say so. The AMP gap between v005 (13–14% IRR, cash-flow model) and v4's valuation model (+6.5%/yr, price-to-book relative to peers) is a method choice, not an error on either side."
+  },
+  {
+   "topic": "RL, AIZ, NTAP at current prices",
+   "status": "CONFIRMED",
+   "v005": "RL: avoid (reconsider at $265). AIZ: buy only ≤ $235. NTAP: buy only ≤ $150.",
+   "v4": "V1 rates RL 'demanding' (base −7.8%/yr), AIZ 'excessive' (−3.9%/yr) and NTAP 'excessive' (−17.2%/yr); none is held.",
+   "effect": "None."
+  },
+  {
+   "topic": "HIG entry price",
+   "status": "RESOLVED (HIG no longer held)",
+   "v005": "Buy only at ≤ $120 (12% hurdle).",
+   "v4": "HIG remains eligible (fair valuation, +2.7%/yr base case) but fell outside v4's best 20 once research covered the whole index.",
+   "effect": "None: the thin-margin name was displaced by stronger ideas."
+  },
+  {
+   "topic": "MSFT and NVDA",
+   "status": "CONFIRMED (not at current prices)",
+   "v005": "Buy below $500 (MSFT, price $516) and below $215 (NVDA, price $225).",
+   "v4": "Full diligence (F17, F18): MSFT WATCH, since the price implies about 12.7% a year of growth against a ~10.9% base case. NVDA INCLUDE-SMALL on quality, but on trailing cash flow its price implies more than the base case.",
+   "effect": "Both workstreams like the businesses and decline to buy at the 25 September prices."
+  },
+  {
+   "topic": "Drawdown response rules",
+   "status": "ADOPTED for the Defensive mix",
+   "v005": "Freeze additions at −8% from the high-water mark, re-underwrite at −12%, capital preservation at −15%.",
+   "v4": "Review theses at −10%, the equity/reserve mix at −15%, tolerance reached at −20% (sized for the Moderate/Cautious mixes).",
+   "effect": "v4 keeps its triggers for Moderate/Cautious; for the Defensive mix v005's tighter triggers apply."
+  },
+  {
+   "topic": "Dollar illustrations",
+   "status": "CHANGED (presentation)",
+   "v005": "Unit counts for $50,000 and $100,000.",
+   "v4": "Research-only presentation: a per-$10,000 table and the formula, no order sheet in the owner's dollars.",
+   "effect": "None on substance."
+  }
+ ],
+ "candidates": [
+  {
+   "t": "AMP",
+   "v005_rank": 1,
+   "v005_decision": "BUY NOW",
+   "v005_limit": 500.0,
+   "v005_ref": 485.15,
+   "v005_ref_date": "2026-09-24",
+   "v005_slot": 0.02,
+   "v4_price_2026_09_25": 493.0,
+   "price_vs_limit": -0.014000000000000012,
+   "v4_rank": 113,
+   "v4_V1": "fair",
+   "v4_V1_base_3y": 0.0648092876928141,
+   "v4_status": "eligible, but outside the best 20 (conviction, margin of safety, base-case return)"
+  },
+  {
+   "t": "PAYX",
+   "v005_rank": 2,
+   "v005_decision": "BUY NOW",
+   "v005_limit": 101.8,
+   "v005_ref": 101.59,
+   "v005_ref_date": "2026-09-24",
+   "v005_slot": 0.02,
+   "v4_price_2026_09_25": 101.37,
+   "price_vs_limit": -0.004223968565815306,
+   "v4_rank": 95,
+   "v4_V1": null,
+   "v4_V1_base_3y": null,
+   "v4_status": "eligible, but outside the best 20 (conviction, margin of safety, base-case return)"
+  },
+  {
+   "t": "MSFT",
+   "v005_rank": 3,
+   "v005_decision": "BUY BELOW",
+   "v005_limit": 500.0,
+   "v005_ref": 516.05,
+   "v005_ref_date": "2026-09-25",
+   "v005_slot": 0.02,
+   "v4_price_2026_09_25": 516.17,
+   "price_vs_limit": 0.03233999999999981,
+   "v4_rank": 152,
+   "v4_V1": null,
+   "v4_V1_base_3y": null,
+   "v4_status": "diligence WATCH; price implies more growth than the analyst's base case (above)"
+  },
+  {
+   "t": "NVDA",
+   "v005_rank": 4,
+   "v005_decision": "BUY BELOW",
+   "v005_limit": 215.0,
+   "v005_ref": 224.58,
+   "v005_ref_date": "2026-09-24",
+   "v005_slot": 0.015,
+   "v4_price_2026_09_25": 225.07,
+   "price_vs_limit": 0.04683720930232549,
+   "v4_rank": 103,
+   "v4_V1": null,
+   "v4_V1_base_3y": null,
+   "v4_status": "price implies more growth than the analyst's base case (above)"
+  },
+  {
+   "t": "ALLE",
+   "v005_rank": 5,
+   "v005_decision": "BUY BELOW",
+   "v005_limit": 145.0,
+   "v005_ref": 152.48,
+   "v005_ref_date": "2026-09-24",
+   "v005_slot": 0.015,
+   "v4_price_2026_09_25": 154.47,
+   "price_vs_limit": 0.06531034482758624,
+   "v4_rank": 164,
+   "v4_V1": null,
+   "v4_V1_base_3y": null,
+   "v4_status": "no diligence dossier"
+  },
+  {
+   "t": "HIG",
+   "v005_rank": 6,
+   "v005_decision": "BUY BELOW",
+   "v005_limit": 120.0,
+   "v005_ref": 125.69,
+   "v005_ref_date": "2026-09-24",
+   "v005_slot": 0.01,
+   "v4_price_2026_09_25": 124.23,
+   "price_vs_limit": 0.035250000000000004,
+   "v4_rank": 22,
+   "v4_V1": "fair",
+   "v4_V1_base_3y": 0.0270206044249436,
+   "v4_status": "eligible, but outside the best 20 (conviction, margin of safety, base-case return)"
+  },
+  {
+   "t": "CPAY",
+   "v005_rank": 7,
+   "v005_decision": "BUY BELOW",
+   "v005_limit": 350.0,
+   "v005_ref": 400.32,
+   "v005_ref_date": "2026-09-24",
+   "v005_slot": 0.0,
+   "v4_price_2026_09_25": 398.11,
+   "price_vs_limit": 0.13745714285714294,
+   "v4_rank": 339,
+   "v4_V1": null,
+   "v4_V1_base_3y": null,
+   "v4_status": "eligible, but outside the best 20 (conviction, margin of safety, base-case return)"
+  },
+  {
+   "t": "AIZ",
+   "v005_rank": 8,
+   "v005_decision": "BUY BELOW",
+   "v005_limit": 235.0,
+   "v005_ref": 261.86,
+   "v005_ref_date": "2026-09-24",
+   "v005_slot": 0.0,
+   "v4_price_2026_09_25": 265.0,
+   "price_vs_limit": 0.12765957446808507,
+   "v4_rank": 31,
+   "v4_V1": "excessive",
+   "v4_V1_base_3y": -0.038539598926816,
+   "v4_status": "valuation excessive vs own history; own valuation base case -4%/yr"
+  },
+  {
+   "t": "SNA",
+   "v005_rank": 9,
+   "v005_decision": "BUY BELOW",
+   "v005_limit": 310.0,
+   "v005_ref": 367.71,
+   "v005_ref_date": "2026-09-24",
+   "v005_slot": 0.0,
+   "v4_price_2026_09_25": 369.2,
+   "price_vs_limit": 0.19096774193548383,
+   "v4_rank": 94,
+   "v4_V1": null,
+   "v4_V1_base_3y": null,
+   "v4_status": "no diligence dossier"
+  },
+  {
+   "t": "NTAP",
+   "v005_rank": 10,
+   "v005_decision": "BUY BELOW",
+   "v005_limit": 150.0,
+   "v005_ref": 197.24,
+   "v005_ref_date": "2026-09-24",
+   "v005_slot": 0.0,
+   "v4_price_2026_09_25": 201.145,
+   "price_vs_limit": 0.34096666666666664,
+   "v4_rank": 21,
+   "v4_V1": "excessive",
+   "v4_V1_base_3y": -0.1715282830495286,
+   "v4_status": "valuation excessive vs own history; own valuation base case -17%/yr; the analyst's own valuation in dossier section 7 calls it full; diligence WATCH"
+  },
+  {
+   "t": "IBKR",
+   "v005_rank": 11,
+   "v005_decision": "BUY BELOW",
+   "v005_limit": 65.0,
+   "v005_ref": 89.82,
+   "v005_ref_date": "2026-09-24",
+   "v005_slot": 0.0,
+   "v4_price_2026_09_25": 89.24,
+   "price_vs_limit": 0.3729230769230769,
+   "v4_rank": 232,
+   "v4_V1": null,
+   "v4_V1_base_3y": null,
+   "v4_status": "eligible, but outside the best 20 (conviction, margin of safety, base-case return)"
+  },
+  {
+   "t": "ABNB",
+   "v005_rank": 12,
+   "v005_decision": "AVOID CURRENT PRICE",
+   "v005_limit": 120.0,
+   "v005_ref": 151.39,
+   "v005_ref_date": "2026-09-24",
+   "v005_slot": 0.0,
+   "v4_price_2026_09_25": 157.47,
+   "price_vs_limit": 0.3122499999999999,
+   "v4_rank": 40,
+   "v4_V1": "fair",
+   "v4_V1_base_3y": 0.1880216420705966,
+   "v4_status": "eligible, but outside the best 20 (conviction, margin of safety, base-case return)"
+  },
+  {
+   "t": "AME",
+   "v005_rank": 13,
+   "v005_decision": "AVOID CURRENT PRICE",
+   "v005_limit": 185.0,
+   "v005_ref": 247.74,
+   "v005_ref_date": "2026-09-24",
+   "v005_slot": 0.0,
+   "v4_price_2026_09_25": 250.74,
+   "price_vs_limit": 0.3553513513513513,
+   "v4_rank": 157,
+   "v4_V1": null,
+   "v4_V1_base_3y": null,
+   "v4_status": "eligible, but outside the best 20 (conviction, margin of safety, base-case return)"
+  },
+  {
+   "t": "RL",
+   "v005_rank": 14,
+   "v005_decision": "AVOID CURRENT PRICE",
+   "v005_limit": 265.0,
+   "v005_ref": 351.86,
+   "v005_ref_date": "2026-09-24",
+   "v005_slot": 0.0,
+   "v4_price_2026_09_25": 357.1,
+   "price_vs_limit": 0.34754716981132083,
+   "v4_rank": 62,
+   "v4_V1": "demanding",
+   "v4_V1_base_3y": -0.0782619650962073,
+   "v4_status": "valuation demanding vs own history; own valuation base case -8%/yr"
+  }
+ ],
+ "x1": {
+  "checked": 26,
+  "confirmed": 23,
+  "counts_by_status": {
+   "CONFIRMED": 23,
+   "MINOR DIFFERENCE": 1,
+   "NOT CONFIRMED": 1,
+   "UNVERIFIABLE": 1
+  },
+  "exceptions": [
+   "MINOR DIFFERENCE: MSFT reference close $516.05 on 2026-09-25 ('reconciled') (Both independent sources show $516.17, a $0.12 (0.02%) gap from the memo's $516.05. No disclosed header/row conflict for MSFT (unlike NVDA/AMP/HIG/AIZ/IBKR on 25-Sep), so calling it 'reconciled' is not supported by any source found. Immaterial to the BUY BELOW $500 decision either way.)",
+   "UNVERIFIABLE: IB01 effective duration 0.31 years (Duration was not displayed on any page reachable via WebFetch/WebSearch; the factsheet PDF returned as unparseable binary content. Plausible given the fund's stated 0-1yr maturity mandate, but not independently confirmed within the time available.)",
+   "NOT CONFIRMED: PAYX 20.0x terminal P/E multiple is inside PAYX's own 10-year P/E history (10-year average P/E ~28-29x; cited 10-year range ~23.6x (2020 low) to ~34.3x (2025 high). 20.0x sits below the entire cited range, i.e. NOT inside PAYX's own 10-year history. This makes the model more conservative than history (not an overstatement of value), but quality_compounders.md does not disclose that the multiple is below-range.)"
+  ],
+  "disagreements": [
+   "AMP valuation and recommendation strength: Both figures independently reproduce correctly from each workstream's own stated methodology and inputs (verified above); the gap is a methodology choice (absolute three-scenario cash-flow IRR vs. relative P/B-to-peers), not a sourcing or arithmetic error in either model. Not adjudicated by this verification -- flagged for the next release to reconcile or to explicitly justify preferring the DDM basis over the peer-relative basis for a wealth-management/asset-management hybrid like AMP."
+  ]
+ }
+}

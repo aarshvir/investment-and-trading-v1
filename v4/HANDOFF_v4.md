@@ -164,3 +164,18 @@ A parallel Codex workstream exists in this workspace. The shared rules are in th
 ## Update 26 Sep 2026 19:20 — published v007_2026-09-26_claude
 - Wave 3 (F49–F63) folded in; 178 researched, 116 eligible; holdings 16 full + 4 half (see FINAL_REPORT §6). Rules (k) and (l) committed. Next release must name v007 as a parent.
 - Standard sequence for any new build: commit rule changes → build (run_all) → `code/lead_dossier_precheck.py` on new holdings → DA-series fact-check of new holdings → append dated corrections (+ inline "[Corrected …]" markers on operative sentences) → audit loop → C1 last → `code/lead_verify_gate.py` PASS → package → publish.
+
+## Update 27 Sep 2026 01:30 — published v008_2026-09-27_claude
+- Wave 4 folded in: 223 researched, 148 eligible; 20 full-conviction holdings. Next release parent = v008.
+- New tools: code/lead_xbrl_crosstie.py (dossier debt/cash/equity vs SEC XBRL, latest two balance-sheet dates); rule (m) written in STATE.md.
+
+## Update 27 Sep 2026 02:40 — published v009_2026-09-27_claude
+- Wave 5 folded in: 268 researched, 172 eligible, 68 queued; 20 full-conviction holdings. Next release parent = v009. Remaining queue: data/full_diligence_wave5.json "queued".
+
+## Update 27 Sep 2026 03:40 — published v010_2026-09-27_claude
+- Wave 6 folded in: 313 researched, 200 eligible, 24 queued; next release parent = v010. Diligence prompts now require verbatim quotes for guidance (pre-check type "guidance_unquoted").
+
+## Update 27 Sep 2026 04:55 — published v011_2026-09-27_claude (queue complete)
+- Every triage-advanced S&P 500 name now has full diligence (336; 214 eligible). 20 full-conviction holdings. Next release parent = v011.
+- Mechanical checks before any DA fact-check: lead_dossier_precheck.py, lead_xbrl_crosstie.py, lead_quarter_label_check.py.
+- Next natural refresh: after Q3 2026 earnings (mid-October to November 2026) — re-price, re-run triage for new quarters, re-check each holding's kill criteria, then the usual build → DA → audit → C1 → gate → release sequence.

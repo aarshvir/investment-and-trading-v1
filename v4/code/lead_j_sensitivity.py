@@ -71,7 +71,13 @@ core = set.intersection(*[set(v['names']) for v in out.values()])
 _ord = E.sort_values(['_conv', '_marg', '_base', '_rank'], ascending=[True, True, False, True]).reset_index(drop=True)
 _held = set(B['selected'])
 _why = {c['t']: c.get('why') for c in B['candidates']}
-bench = [{'t': r['t'], 'position_in_j_order': int(i) + 1, 'conviction': 'full' if r['verdict'] == 'INCLUDE' else 'half',
+_pos_held = [int(i) + 1 for i, r in _ord.iterrows() if r['t'] in _held]
+_last_pos = max(_pos_held) if _pos_held else None
+_last = _ord.iloc[_last_pos - 1] if _last_pos else None
+bench = [{'t': r['t'], 'position_in_j_order': int(i) + 1,
+          'places_behind_20th_held': (int(i) + 1 - _last_pos) if _last_pos else None,
+          'same_conviction_and_margin_group_as_20th': bool(_last is not None and r['_conv'] == _last['_conv'] and r['_marg'] == _last['_marg']),
+          'base_return_gap_to_20th': (None if (_last is None or r['_base'] == -9 or _last['_base'] == -9) else round(float(r['_base'] - _last['_base']), 4)), 'conviction': 'full' if r['verdict'] == 'INCLUDE' else 'half',
           'implied_vs_base': r['implied'], 'base_return': (None if r['_base'] == -9 else round(float(r['_base']), 4)), 'why_not_held': _why.get(r['t'])}
          for i, r in _ord.iterrows() if r['t'] not in _held]
 res = {'bench_near_misses': bench, 'orderings': out, 'in_every_ordering': sorted(core), 'n_in_every_ordering': len(core),

@@ -1,0 +1,119 @@
+{
+  "agent": "F73",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "BDX": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Standalone medical-device leader for needles, IV lines and hospital dispensing, raising guidance every quarter since its spin-off but still fixing FDA quality problems.",
+      "kill_criteria": [
+        "A new FDA Warning Letter, Form 483, or consent-decree expansion covering any BD manufacturing site within the next 4 quarters.",
+        "Full-year FY26 adjusted diluted EPS guidance is cut (vs. the current $12.62-$12.72 range) at any future quarterly release.",
+        "Organic/reported revenue growth falls below the 'low single-digit' floor of guidance for two consecutive quarters.",
+        "Net debt/EBITDA (consolidated) rises above 3.0x (from ~2.1x currently), signalling debt-funded buybacks outrunning deleveraging.",
+        "Any voluntary or FDA-mandated recall of a top-5-revenue product line (e.g., BD Alaris, Pyxis, ChloraPrep, or a BioPharma Systems platform)."
+      ],
+      "key_adverse_facts": [
+        "Live, unresolved FDA quality-system issues: CareFusion 303/Pyxis Form 483 (May 2024) and Warning Letter (Nov 2024, San Diego Dispensing QMS); separate El Paso Warning Letter unresolved as of the Q2 FY26 10-Q, with BD voluntarily adjusting the ChloraPrep line pending resolution and disclosing potential recall risk.",
+        "Q2 FY26 GAAP net loss of $(311)M / $(1.11) diluted EPS, driven by a $450M non-cash asset impairment (all segments) plus a $(274)M net-of-tax loss from discontinued operations tied to the Waters spin-off close.",
+        "~6,995 pending hernia-mesh product-liability claims as of March 31, 2026, essentially flat versus 6,905 a year earlier despite a FY2024 settlement of the majority of prior claims; $52-63M pre-tax legal/product charges recorded in a single recent quarter.",
+        "Goodwill ($25.9B) exceeds total stockholders' equity ($24.4B), a legacy of the Bard/CareFusion acquisition era."
+      ],
+      "data_conflicts": [
+        "Vendor-aggregated (Yahoo/d4) TTM free cash flow of $4.48B mixes pre-spin (consolidated, including the now-divested Biosciences segment) and post-spin quarters and materially overstates New BD's standalone run-rate; this dossier uses a normalised ~$2.2-2.3B FCF run-rate (annualised from the 9-month continuing-operations cash flow disclosed in the Q3 FY26 10-Q) for valuation instead. A downstream valuation agent using the raw $4.48B figure would derive an implausible (negative) implied growth rate."
+      ],
+      "next_earnings_date": "2026-11-05",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium - the quarterly guidance-raise trend and cash-flow acceleration are well evidenced, but only two clean post-spin quarters exist and the FDA quality-system remediation outcome is genuinely unresolved",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for BDX (checked v1_valuation_table.csv and v1_valuation.json); this dossier's own reverse DCF, using a normalised New BD FCF run-rate rather than the distorted vendor TTM figure, finds the market pricing in a 5.6-7.0% 10-year FCF/EPS CAGR at a 7.5-8.0% WACC, in line with BD's own mid-single-digit-revenue-plus-margin-expansion algorithm.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": 0.01,
+        "base": 0.09,
+        "bull": 0.2
+      },
+      "scenario_basis": "Starting normalised New BD FCF run-rate ~$2.3B (annualised from 9-month continuing-ops cash flow, Q3 FY26 10-Q) and FY26 adjusted EPS guidance midpoint ~$12.67; base case assumes 6-7% FCF/EPS growth with a stable ~14x forward multiple and 2.3% dividend yield; bear assumes an FDA-driven recall/guidance cut with the multiple compressing to ~12x; bull assumes clean execution plus re-rating toward peer med-tech multiples (~17-18x)."
+    },
+    "CARR": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Global air-conditioning and refrigeration leader riding a real data-center cooling order boom, but core growth just turned positive and debt is the highest among HVAC peers.",
+      "kill_criteria": [
+        "Data-center segment orders growth decelerates below +50% YoY for two consecutive quarters (from the current +300-500% pace).",
+        "Net debt/EBITDA (consolidated, using guided adjusted operating profit as the EBITDA proxy) rises above 3.5x (from ~3.0x currently).",
+        "FY26 adjusted EPS guidance is cut from the current ~$2.90 at any future quarterly release.",
+        "Core (non-data-center) organic growth falls back below 0% for two consecutive quarters after the Q2 2026 +3% print.",
+        "Free cash flow for FY26 comes in below the guided ~$2.0 billion."
+      ],
+      "key_adverse_facts": [
+        "Net debt grew to $10.6B (Jun 30, 2026) from $10.3B (Dec 31, 2025) even as guidance was raised, driven by a 23% YoY rise in accounts receivable (vs. ~4% sales growth) consistent with data-center-ramp working-capital consumption; FY26 free-cash-flow guidance (~$2B) was left unchanged despite the sales/EPS raise.",
+        "Adjusted operating margin compressed ~190bps YoY in Q2 2026 (17.2% vs. 19.1%) in the very quarter that produced the guidance raise; EPS growth is currently driven more by lower share count/financing costs than margin expansion.",
+        "Riello divestiture closed July 1, 2026, one quarter later than the 'end of Q2 2026' target restated in the Q1 2026 release (itself already a slip from the original 'end of Q1 2026' target) - a minor management-credibility flag on disclosed timelines.",
+        "Net debt/EBITDA (consolidated) at ~3.0-3.4x depending on EBITDA basis is the highest among the named HVAC peer set (Trane Technologies, Lennox)."
+      ],
+      "data_conflicts": [
+        "Trailing TTM free cash flow (~$0.86B per d4/Yahoo) is depressed by a negative Q1 2026 FCF quarter and understates Carrier's own guided FY26 FCF of ~$2.0B; this dossier uses the company's guided figure for the reverse DCF rather than the distorted TTM figure."
+      ],
+      "next_earnings_date": "2026-10-27",
+      "horizon": "12-30 months",
+      "confidence_in_thesis": "medium - the data-center order growth and guidance raises are well verified against primary filings, but conversion of orders/backlog into recognised revenue and margin is not yet proven over multiple quarters",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for CARR (checked v1_valuation_table.csv and v1_valuation.json); this dossier's own reverse DCF, using Carrier's guided FY26 FCF (~$2.0B) rather than the distorted trailing TTM figure, finds the market pricing in roughly a 7.0% 10-year FCF CAGR at an 8.0% WACC, at or below a plausible 7-9% base case blending the data-center ramp with a slowly recovering core.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.02,
+        "base": 0.11,
+        "bull": 0.22
+      },
+      "scenario_basis": "Starting FY26 guided adjusted EPS ~$2.90 and guided FCF ~$2.0B; base case assumes high-single-digit adjusted EPS growth as data-center orders convert to revenue and core stabilises, with the multiple holding near the current ~17.6x NTM P/E; bear assumes data-center order deceleration and continued margin compression with the multiple falling toward ~13x; bull assumes sustained data-center demand and margin recovery with re-rating toward peer (TT/LII) multiples in the low-20s."
+    },
+    "CCL": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "World's largest cruise line, delivering twelve straight quarters of record demand and deleveraging to investment grade, still carrying $23 billion of debt with earnings due in days.",
+      "kill_criteria": [
+        "Net debt/adjusted EBITDA (as disclosed by the company) rises back above 3.5x (from 3.1x currently), reversing the deleveraging trend.",
+        "FY26 adjusted net income guidance is cut in dollar terms (not just a yield-metric trim) from the current ~$3.5-3.6B range at the Q3 (2026-09-29) or any subsequent release.",
+        "Constant-currency net yield growth turns negative for any full quarter (from the current guided +1.75-2.25% for FY26).",
+        "Customer deposits decline year-over-year (from the current all-time-high $9.0B).",
+        "A new material Middle East/Red Sea-style routing disruption forces redeployment of a second major itinerary region within the next four quarters."
+      ],
+      "key_adverse_facts": [
+        "FY26 constant-currency net-yield guidance was trimmed at the Q2 2026 release (to +1.75-2.25% from +2.5-3.0% guided in December 2025), driven by a forced Middle East/Arabian Gulf redeployment and loyalty-program accounting changes - a genuine guidance walk-back that a single fuel-cost-focused news article (triage's source) did not capture.",
+        "Still-unresolved DOJ/EPA Clean Water Act notice (issued March 14, 2022) for alleged vessel-discharge violations, disclosed as unresolved in the Q2 FY26 10-Q - a repeat-pattern environmental-compliance risk given Carnival's 2016-2022 environmental-crimes probation history.",
+        "Long-term debt remains $23.4 billion in absolute dollar terms even after deleveraging; gross-margin yields were down 3.9% YoY in Q2 2026 on fuel-price inflation.",
+        "Two purported COVID-era class actions (Australia, Italy) remain pending, though the company continues to expect no material impact.",
+        "Next earnings (Q3 FY26) are due 2026-09-29, three days after this dossier's cutoff, so the freshest quarter and any updated FY26 guidance are not reflected here."
+      ],
+      "data_conflicts": [
+        "d4/Yahoo forwardEps (~$2.59) sits meaningfully below the ~$3.0+ adjusted EPS a straight-line reading of management's own ~$3.5-3.6B FY26 adjusted-net-income guidance divided by shares outstanding implies; not resolved in this pass, flagged for the valuation agent.",
+        "Triage's cited net debt/EBITDA of 3.3x is stale versus the company's own Q2 2026 disclosed 3.1x (down from ~3.7x a year earlier) - deleveraging continued between triage and this diligence pass."
+      ],
+      "next_earnings_date": "2026-09-29",
+      "horizon": "24-48 months",
+      "confidence_in_thesis": "medium - the multi-year demand and deleveraging trend is well evidenced and independently confirmed by two rating agencies, but leverage remains high in absolute terms and Q3 FY26 results/guidance land after this dossier's cutoff",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for CCL (checked v1_valuation_table.csv and v1_valuation.json); this dossier's own reverse DCF at a 9.5% WACC (reflecting CCL's high beta and leverage) finds the market pricing in 7.7% (normalised FCF) to 11.4% (trailing FCF) 10-year FCF CAGR; the normalised reading sits at or below management's own PROPEL near-term target pace (~10.7%/yr through 2029), supporting an in-line read, while the trailing-FCF reading would argue the market is pricing in more than the base case.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.03,
+        "base": 0.16,
+        "bull": 0.32
+      },
+      "scenario_basis": "Starting FY26 guided adjusted net income ~$3.5-3.6B (~1.15B shares) and FY26 net-yield/cost guidance as of the Q2 2026 release; base case assumes continued deleveraging toward ~2.7x net debt/EBITDA, mid-single-digit yield growth and multiple re-rating from 8.8x toward ~10-11x NTM P/E; bear assumes a demand shock or further itinerary disruption with the multiple compressing toward ~7x; bull assumes PROPEL targets are met or exceeded with re-rating toward RCL-like multiples (~12-13x)."
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "agent": "F90",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "OXY": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Low-cost Permian oil producer that just used a $9.7bn chemicals-unit sale to slash debt, backed by Warren Buffett's 34% stake.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "WTI averages below $55/bbl for two consecutive quarters (would break the reverse-DCF base case).",
+        "Consolidated long-term debt (noncurrent, per 10-Q) rises back above $18bn (reversal of the OxyChem-proceeds paydown).",
+        "Quarterly free cash flow (OCF minus capex) negative for two consecutive quarters (Q1 2026 was already negative once).",
+        "1PointFive/DAC capex exceeds $1.5bn in any fiscal year without matching signed offtake revenue disclosed.",
+        "Berkshire Hathaway stake falls below 20% (loss of the anchor-quality signal) or files to sell down materially."
+      ],
+      "key_adverse_facts": [
+        "Q1 2026 free cash flow (OCF $1,281M minus capex $1,554M) was negative (-$273M), a real quarter-over-quarter deceleration versus Q1 2025.",
+        "GAAP net income is heavily distorted by a ~$3.1bn one-time after-tax gain on the OxyChem sale booked in Q1 2026, plus recurring mark-to-market swings on Berkshire's warrants; headline EPS is not a clean operating signal.",
+        "1PointFive direct-air-capture remains pre-commercial-scale, cash-consuming, and unproven at scale despite a $500m DOE award.",
+        "Berkshire Hathaway holds warrants for 83.5m shares at a ~$59.62 strike (temporarily reduced to $21.30 for the publicly traded warrants per a March 2025 amendment) - a structural dilution/overhang risk if exercised."
+      ],
+      "data_conflicts": [
+        "Revenue jumped from $5,230M (Q1 2026) to $8,065M (Q2 2026) partly because OxyChem was deconsolidated 2 Jan 2026, making YoY/QoQ revenue comparisons across the deconsolidation boundary not like-for-like; the quant snapshot's NTM revenue growth figures likely embed this discontinuity and should not be read as organic growth."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "confidence_in_thesis": "medium - balance sheet deleveraging is filed fact and durable; oil-price and DAC-capital risk are real and outside the company's control",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "implied_vs_base": "below",
+        "consistent": true,
+        "reconciliation": "No v1 row exists for OXY in v1_valuation_table.csv/v1_valuation.json, so v1_verdict is null and there is no conflict to reconcile. My own reverse DCF (6.7% FCF yield at ~9% E&P cost of capital) implies only ~2-2.5% perpetual FCF growth, at or below OXY's plausible base-case Permian production growth, supporting a cheap-to-fair view."
+      },
+      "scenario_returns_3y": {"bear": -0.06, "base": 0.09, "bull": 0.19},
+      "scenario_basis": "Base: FCF yield 6.7% at $56.86 close, ~3% FCF/production growth, modest multiple re-rating as leverage falls, 1.9% dividend maintained; bear: WTI sustained near $50 compresses FCF yield and multiple; bull: WTI $75+ plus DAC optionality re-rates the stock toward peer E&P multiples."
+    },
+    "P": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Fast-growing enterprise flash-storage maker winning hyperscaler AI deals, but its cash flow just turned negative and the stock is priced for a turnaround that has not shown up yet.",
+      "horizon": "6-18 months",
+      "kill_criteria": [
+        "Free cash flow (OCF minus capex) remains negative in the Q3 FY2027 10-Q (quarter ending approximately November 2026).",
+        "FY2027 full-year free cash flow comes in below $500m (versus the $600-800m guided range) when reported at the FY2027 10-K.",
+        "Any single customer/hyperscaler reappears above 10% of revenue or receivables in a 10-Q/10-K.",
+        "Cash and equivalents fall below $250m in any quarter without a corresponding revolver draw or financing disclosed.",
+        "Revenue growth decelerates below 25% YoY for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "Q2 FY2027 (quarter ended 2 Aug 2026) free cash flow was approximately -$237.6M (OCF -$136.3M, capex $101.3M), confirmed independently via both SEC XBRL differencing and earnings-call press coverage.",
+        "Cash and equivalents fell more than 50% in two quarters, from $854.9M (1 Feb 2026) to $385.7M (2 Aug 2026).",
+        "Trailing GAAP P/E is 172.6x and trailing FCF yield is negative, meaning there is essentially no valuation cushion if the promised H2 FY2027 cash-flow inflection slips.",
+        "Sizeable insider selling by CEO Charles Giancarlo (~$11m) and founder John Colgrove (~$17m) in the past year, with no offsetting insider buying reported."
+      ],
+      "data_conflicts": [
+        "The Q12 triage card's characterization of 'negative FCF yield (-0.3%)' understates the severity found in the filings: the single most recent quarter's FCF was approximately -$237.6M, not a marginal, near-zero figure."
+      ],
+      "next_earnings_date": "2026-12-09",
+      "confidence_in_thesis": "low - the bull case depends entirely on an unconfirmed H2 FY2027 free-cash-flow guidance promise that has not yet been delivered in a filed quarter",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "No v1 row exists for P (or PSTG) in v1_valuation_table.csv/v1_valuation.json, so v1_verdict is null. My own reverse-DCF read is that a negative trailing FCF yield plus a 6.3x EV/Sales multiple prices in the guided $600-800m FY2027 FCF turnaround as near-certain; that is a higher bar than my base case, which only credits the growth as proven, not yet the cash conversion, hence 'expensive' rather than 'fair'."
+      },
+      "scenario_returns_3y": {"bear": -0.15, "base": 0.07, "bull": 0.28},
+      "scenario_basis": "Base: revenue growth decelerates from ~38% to the mid-teens by year 3 as hyperscaler ramp matures, FCF margin normalizes to ~12-15%, modest de-rating from 33.9x NTM P/E; bear: FCF turnaround fails to materialize, multiple compresses toward hardware-peer levels; bull: FCF turnaround delivers as guided and hyperscaler design wins expand, supporting continued premium multiple."
+    },
+    "PANW": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Leading cybersecurity platform bundling network, cloud and identity security after a $25 billion acquisition, but priced at nearly 100 times forward earnings after a GAAP loss quarter.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "Adjusted free-cash-flow margin fails to reach at least approximately 30% by FY2028 (halfway to the 40% target) as an interim checkpoint at the FY2027 10-K.",
+        "GAAP operating income is negative for two or more quarters in the next four (versus the single Q3 FY2026 loss so far).",
+        "Next-Gen Security ARR growth decelerates below 40% YoY for two consecutive quarters.",
+        "Any disclosed goodwill impairment related to CyberArk or Chronosphere in a future 10-K/10-Q.",
+        "NTM P/E remains above 70x while GAAP net margin stays below 5% for three consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "Q3 FY2026 (quarter ended 30 Apr 2026) GAAP operating income and net income were both negative (-$183M and -$177M respectively), driven by CyberArk/Chronosphere acquisition costs and purchase-accounting amortization.",
+        "The CyberArk deal issued approximately 112 million new shares (plus $2.3bn cash), a real, permanent dilution event; stockholders' equity nearly tripled from $9.4bn to $27.5bn largely via share issuance, not retained earnings.",
+        "FY2026 full-year GAAP net income was only $307M on $11.48bn revenue (2.7% net margin), while the stock trades at 76.8-96.6x NTM P/E - an extreme GAAP-to-multiple disconnect.",
+        "Headline revenue growth (+31% in Q3 FY2026) is partly acquisition-driven ($388M of $3.0bn came directly from CyberArk/Chronosphere), overstating organic momentum versus the ~60% NGS-ARR growth figure."
+      ],
+      "data_conflicts": [
+        "Q2 FY2026 YoY revenue growth (+15%) looks anomalously low compared to the +25% (Q1 FY2026) and +31% (Q3 FY2026) figures either side of it; likely a prior-year comparative-base artifact rather than a genuine deceleration, but not fully resolved in this pass.",
+        "d4 quant snapshot shows two different NTM P/E calculations for PANW (76.8x and 96.6x) depending on method; both are cited in the dossier rather than reconciled to one number."
+      ],
+      "next_earnings_date": "2026-11-19",
+      "confidence_in_thesis": "medium - the GAAP loss and dilution are filed facts, but whether the valuation ever reconverges to fundamentals depends on multi-year integration execution not yet provable from two quarters of data",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "No v1 row exists for PANW in v1_valuation_table.csv/v1_valuation.json, so v1_verdict is null. My own reverse DCF using management's own FY2028 40% adjusted-FCF-margin target still implies roughly a 48x forward-FCF multiple at the current $318bn EV, i.e., several more years of high growth are required beyond FY2028 to earn an equity-like return - above what I can defend as a base case, hence 'full' rather than 'fair'."
+      },
+      "scenario_returns_3y": {"bear": -0.12, "base": 0.06, "bull": 0.22},
+      "scenario_basis": "Base: organic (NGS ARR) growth decelerates from 60% toward the high-20s/low-30s as CyberArk laps, adjusted FCF margin advances toward but does not fully reach the 40% FY28 target, multiple compresses from ~77-97x NTM toward the 40-50x range; bear: integration stumbles, GAAP losses persist, multiple compresses sharply; bull: integration succeeds ahead of schedule, cross-sell drives durable 30%+ growth and margin expansion, supporting a still-rich multiple."
+    }
+  }
+}

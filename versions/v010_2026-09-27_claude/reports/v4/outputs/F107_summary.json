@@ -1,0 +1,121 @@
+{
+  "agent": "F107",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "ULTA": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Largest US beauty specialty retailer, comps re-accelerating and guidance raised twice this year, but Sephora's expansion inside Kohl's is a real structural share threat.",
+      "kill_criteria": [
+        "Comparable sales growth below 2.0% for two consecutive quarters (below the low end of the raised FY26 guide range).",
+        "FY26 diluted EPS guidance cut from the current $28.70-29.00 range at any subsequent quarterly release.",
+        "Gross margin below 38.5% for two consecutive quarters (vs. 39.1-40.1% in the last four quarters shown above).",
+        "Net new Sephora-at-Kohl's door count growth re-accelerates materially (company/press disclosure) alongside a renewed comp deceleration below 3%, confirming share loss rather than a temporary lapse.",
+        "Short-term debt balance grows beyond $500M while cash stays below $200M, signalling buybacks are being funded by leverage rather than FCF."
+      ],
+      "key_adverse_facts": [
+        "Comp sales growth decelerated sequentially within FY26 from +5.3% (Q1) to +3.8% (Q2), and Sephora inside Kohl's has expanded past 1,100 doors with an estimated >$2bn annual sales run-rate, a structural not cyclical share-donor dynamic.",
+        "12-month price momentum is negative (-1.8% per b1 factor data) despite the earnings beats.",
+        "Cash fell to $158.5M (from $424.2M at FY25-end) and short-term debt rose to $339.6M, partly to fund an accelerated $1.8bn FY26 buyback plan; EPS growth (+13-16%) is running well ahead of operating-income growth (+10-12%), meaning a meaningful share of the beat is capital allocation, not organic execution.",
+        "No SBC disclosure, insider Form 4 review, or risk-factor diff vs prior-year 10-K was completed this pass (time-box limitation)."
+      ],
+      "data_conflicts": [
+        "None material this pass; b1 quant snapshot (last_filed_date 2026-08-27) is current with the dossier's primary period."
+      ],
+      "next_earnings_date": "2026-12-02",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium - comp reacceleration is only one quarter old and negative price momentum suggests the market has not yet endorsed the durability of the improvement",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists yet for ULTA (wave 6 not yet valued by the systematic model), so v1_verdict is null and there is nothing to reconcile; my own reverse-DCF sense (FCF yield ~4.6%, WACC ~8.5%) implies ~4-5% perpetual FCF/EPS growth, at or slightly below my base case of 5-7%, i.e. fairly priced with modest upside if the comp reacceleration holds.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.03,
+        "base": 0.09,
+        "bull": 0.19
+      },
+      "scenario_basis": "Starting point FY26 guided diluted EPS ~$28.85 (midpoint); base case assumes 5-7% EPS/FCF growth (3-4% comps + margin/mix + buyback accretion) with exit P/E ~18x (roughly in line with current 18.9x NTM); bear assumes comp growth stalls near 0-1% with margin pressure from Sephora competition and exit multiple compresses to ~14x; bull assumes comps sustain 5%+ as Space NK and loyalty relaunch work, exit multiple re-rates to ~22x; no meaningful dividend (buybacks are the return-of-capital vehicle, embedded in per-share growth, not added separately)."
+    },
+    "VMC": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Largest US construction-aggregates producer using pricing power and record cash margins to offset soft private-construction volumes, with a strong, under-levered balance sheet.",
+      "kill_criteria": [
+        "Aggregates segment shipment growth negative (a decline in tons shipped YoY) for two consecutive quarters.",
+        "Total debt / TTM Adjusted EBITDA rises above the top of management's own stated target range, 2.5x (from 1.9x as of 2026-06-30).",
+        "FY26 Adjusted EBITDA guidance cut below the current $2.4-2.6bn range at any subsequent quarterly release.",
+        "Freight-adjusted mix-adjusted aggregates pricing growth falls below 2% YoY for two consecutive quarters (from +5% in Q2 FY26).",
+        "Cash gross profit per ton declines YoY for two consecutive quarters (from the current record $12.02/ton)."
+      ],
+      "key_adverse_facts": [
+        "Aggregates shipment growth was only +1% YoY in Q2 FY26 (with Texas/Southeast volumes hit by weather); growth remains entirely price-led, not volume-led, and the 28.9x trailing GAAP P/E leaves limited room for volume disappointment.",
+        "12-month price momentum is sharply negative (-11.7% per b1 factor data).",
+        "The eight-year NAFTA arbitration against Mexico concluded in July 2026 with the tribunal finding Mexico in violation but awarding only 'negligible' monetary damages - a legacy legal exposure that did not pay off as hoped.",
+        "The b1/d4 quant snapshot used for factor context is one quarter stale (last_filed_date 2026-04-29) relative to the Q2 FY26 10-Q filed 2026-07-29, because the SEC XBRL companyfacts API had not yet ingested the newer filing at review time.",
+        "Insider Form 4 pattern and full risk-factor diff vs prior-year 10-K were not completed this pass (time-box limitation)."
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv factor snapshot (last_filed_date 2026-04-29, Q1 FY26) predates the Q2 FY26 earnings release (filed 2026-07-29) used for the dossier's results/valuation sections; treat momentum/quality percentiles in section 3 as one-quarter-lagged versus the fundamentals in sections 4-7."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium - pricing power and balance-sheet strength are well evidenced, but the volume-recovery leg of the thesis is unconfirmed and momentum is negative",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 row exists yet for VMC (wave 6 not yet valued by the systematic model), so v1_verdict is null and there is nothing to reconcile; my own reverse-DCF sense (FCF yield ~3.6%, WACC ~7.5%) implies ~3.5-4% perpetual FCF growth, below my base case of 5-6% (pricing above cost inflation plus bolt-on M&A), meaning modestly undervalued if the volume backdrop stabilizes, but the 28.9x trailing P/E and negative momentum keep this borderline rather than a clear buy signal.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.02,
+        "base": 0.08,
+        "bull": 0.15
+      },
+      "scenario_basis": "Starting point TTM diluted EPS $8.49 (GAAP, cont. ops) and TTM Adjusted EBITDA $2,354M; base case assumes 5-6% EPS/FCF growth (2-4% pricing above cost inflation + bolt-on M&A) with exit P/E ~24x (below current 28.9x, reflecting some multiple normalization); bear assumes volumes decline further and pricing growth fades to 1-2%, exit multiple compresses to ~19x; bull assumes public/infrastructure-driven volume recovery plus continued 4-5% pricing, exit multiple holds near 27x; modest dividend yield (~0.6-0.8%) added in all scenarios."
+    },
+    "APO": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Alternative-asset manager plus Athene annuities platform growing AUM and fee earnings 25% a year and trading cheap on core earnings, but a June 2026 private-credit fund gating event confirms real liquidity stress in its wealth-channel products.",
+      "kill_criteria": [
+        "A second fund-gating or redemption-cap event at Apollo (any vehicle) disclosed within the next four quarters, or aggregate redemption requests exceeding 20% of NAV in any Apollo semi-liquid vehicle.",
+        "Fee Related Earnings growth turns negative YoY in any quarter (from +25% YoY in Q2 2026).",
+        "A GAAP net loss in any quarter not attributable to a clearly disclosed one-time item (i.e., a loss driven by core operating or credit losses rather than a tax/accounting adjustment).",
+        "Any public disclosure of a downgrade to Athene's financial-strength ratings, or realized (not just mark-to-market) credit losses on Athene's invested-asset portfolio exceeding a materially adverse threshold disclosed in a future filing.",
+        "Total AUM growth decelerates below 10% YoY for two consecutive quarters (from +25% YoY in Q2 2026)."
+      ],
+      "key_adverse_facts": [
+        "Confirmed private-credit fund gating in June 2026 after redemption requests reached approximately 17% of NAV (offshore investors ~12.5%, US onshore ~4.3%); Apollo's own disclosure put expected ADS net outflows at roughly $400M YTD, ~3% of NAV, for Q2 2026 - a real, dated, company-specific liquidity-stress event, not just industry-wide press speculation.",
+        "Q1 2026 GAAP net loss of $(1,930)M / $(3.27) diluted EPS, driven by a one-time $1.7bn Bermuda deferred-tax valuation-allowance charge disclosed in the company's own filing; trailing GAAP EPS/P/E is therefore unreliable for valuation purposes.",
+        "GAAP net income is highly volatile from quarter to quarter due to insurance-portfolio investment mark-to-market swings (Investment related gains (losses) moved from $(2,078)M in Q1 2026 to +$2,989M in Q2 2026), a structural feature of the Athene-linked balance sheet, not an operating trend.",
+        "The pre-registered quant factor model ranks APO in the bottom decile (decile 1) on its composite score, driven by GAAP-based ROE/earnings-yield metrics; this dossier attributes most of that to GAAP noise but flags it as a signal worth respecting rather than fully explaining away.",
+        "FCF yield and EBIT/EV factors are not available (NaN) in the b1 dataset for this name, a genuine data gap for an insurance/asset-manager hybrid.",
+        "Athene's September 2026 'Asset Risk & Stress Considerations' investor-site update was referenced via a secondary source but not independently read this pass - a priority follow-up given its direct relevance to the central bear case."
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv ranks APO composite decile 1 (bottom decile) while this dossier's fundamental read (FRE +25% YoY, AUM +25% YoY, record SRE) is constructive; reconciled in section 3 as a GAAP-noise/insurance-accounting-volatility artefact affecting the quant model's ROE and earnings-yield inputs, not a reflection of weak core economics.",
+        "b1 mktcap figure ($71.86bn) appears to use a different share-count basis than the ~592-610M weighted diluted shares in the Q2 2026 10-Q; treated as approximate in the valuation section."
+      ],
+      "next_earnings_date": "2026-11-06",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "low - the core fee/AUM growth story is strong, but the confirmed liquidity-gating event and the insurance-linked earnings volatility are real, only partially quantified risks that this pass could not fully resolve",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists yet for APO (wave 6 not yet valued by the systematic model), so v1_verdict is null and there is nothing to reconcile; my own reverse-DCF sense using Adjusted Net Income (P/E ~14-15x on ANI, WACC ~10-11%) implies only ~4-6% perpetual earnings growth priced in, well below the 25% YoY FRE/AUM growth actually delivered and below my base case of 8-12% 10-year ANI/share growth, i.e. the stock looks cheap on core earnings - but this reverse-DCF does not directly price the Athene balance-sheet/duration risk or the private-credit gating event, which are the more relevant risk lenses here.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.08,
+        "base": 0.14,
+        "bull": 0.24
+      },
+      "scenario_basis": "Starting point run-rate Adjusted Net Income/share ~$2.11 (Q2 2026) annualized to ~$8.10-8.50; base case assumes 8-12% ANI/share growth (AUM compounding off $1.05tn base, decelerating but still double-digit, plus buyback accretion) with modest multiple re-rating from ~14-15x toward ~16x as gating concerns prove contained; bear assumes the private-credit gating event spreads, FRE growth stalls to low-single-digit, and the multiple compresses toward ~10x on credit-quality fears; bull assumes gating proves a one-off, FRE/AUM growth sustains near 20%+, and the multiple re-rates toward 18-19x, closer to peer (BX/KKR) levels; dividend yield (~1.5-2%) added in all scenarios."
+    }
+  }
+}

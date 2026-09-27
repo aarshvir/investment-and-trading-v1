@@ -86,7 +86,8 @@ A += ['\n### A.3 Risk model\n',
 
 # ---------------- A.4 register of independent checks
 def da_counts(d):
-    c = Counter(f.get('status') for f in d.get('facts', []))
+    # C1 loop-9: "CONFIRMED (prior FAIL corrected)" counts as a pass, as in the cumulative DA row
+    c = Counter(('PASS' if str(f.get('status', '')).upper().startswith('CONFIRMED') else f.get('status')) for f in d.get('facts', []))
     return (sum(c.values()), c.get('PASS', 0), c.get('MINOR', 0), c.get('FAIL', 0), c.get('UNVERIFIABLE', 0))
 
 
@@ -113,18 +114,26 @@ for _q in sorted(_g3.glob(str(O / 'Q[0-9][0-9]_triage.json'))):
 if _TRI:
     reg.append(('Q01–Q15 triage', 'Quick research pass on every S&P 500 company without a dossier: quality, growth, red flags, price vs growth',
                 f"{len(_TRI)} scored, {sum(1 for x in _TRI if x.get('advance'))} advanced to full-diligence queue", 'outputs/Q*_triage.json'))
-for _w in (1, 2, 3):
+for _w in sorted(int(re.findall(r'wave(\d+)', pathlib.Path(_x).name)[0]) for _x in _g3.glob(str(V4 / 'data' / 'full_diligence_wave*.json'))):   # C1 loop-7: every wave, not a fixed list
     _wf = V4 / 'data' / f'full_diligence_wave{_w}.json'
     if _wf.exists():
         _wd = json.loads(_wf.read_text(encoding='utf-8'))
         reg.append((f'Diligence wave {_w}', 'Full SEC-filing diligence of the next names in the pre-committed order (verdict, reverse DCF, kill criteria)',
                     f"{len(_wd.get('selected', []))} names researched; {len(_wd.get('queued', []))} still queued after this wave", f'data/full_diligence_wave{_w}.json'))
+_tot = {'n': 0, 'PASS': 0, 'MINOR': 0, 'FAIL': 0, 'UNVERIFIABLE': 0}
+for _nm, _dd, _w, _f in _DA_LIST:
+    for _x in _dd.get('facts', []):
+        _tot['n'] += 1; _st = str(_x.get('status', '')).split(' ')[0].upper()
+        _tot[_st if _st in _tot else 'PASS' if _st.startswith('CONFIRMED') else 'UNVERIFIABLE'] += 1
+if _DA_LIST:
+    reg.append((f"DA series total ({_DA_LIST[0][0]}–{_DA_LIST[-1][0]})", 'All independent dossier fact-checks against SEC filings, cumulative',
+                f"{_tot['n']} facts: {_tot['PASS']} pass, {_tot['MINOR']} minor, {_tot['FAIL']} fail (every fail corrected in its dossier), {_tot['UNVERIFIABLE']} unverifiable", 'outputs/da*_factcheck.json'))
 for name, d, what, f in _DA_LIST:
     if d:
         n, p_, mi, fa, un = da_counts(d)
         reg.append((name, what, f"{n} facts: {p_} pass, {mi} minor, {fa} fail, {un} unverifiable", f))
 if C1:
-    reg.append(('C1', 'Every number in the report traced to its source file', f"{C1.get('checked', '–')} checked, {C1.get('match', '–')} matched, {len(C1.get('mismatch') or [])} mismatch (dashboard crisis table used a different loss measure; fixed); re-run against the Loop-4 build", 'outputs/c1_consistency.md'))
+    reg.append(('C1', 'Every number in the report traced to its source file', f"{C1.get('checked', '–')} checked, {C1.get('match', '–')} matched, {len(C1.get('mismatch') or [])} mismatch (each fixed before release); audited build {C1.get('build_built', '–')}", 'outputs/c1_consistency.md'))
 if X1:
     reg.append(('X1', "Claims inherited from Codex's release v005", f"{X1.get('confirmed')} of {X1.get('checked')} confirmed; " + ', '.join(f"{k.lower()} {v}" for k, v in (X1.get('counts_by_status') or {}).items() if k != 'CONFIRMED'), 'outputs/x1_v005_verification.md'))
 if CHK:

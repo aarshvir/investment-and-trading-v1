@@ -1,0 +1,107 @@
+{
+  "agent": "F91",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "PKG": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Best-in-class box-and-containerboard maker whose cycle recovery is already priced in at a rich ~24x EV/EBIT.",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "med (SEC filings clear; peer EV/EBIT range is a judgment call, not a filed fact)",
+      "kill_criteria": [
+        "Containerboard price index (AF&PA / RISI) falls for two consecutive months",
+        "Net debt/EBITDA exceeds 2.5x (consolidated, per 10-Q balance sheet)",
+        "Quarterly FCF (OCF-capex, SEC-sourced) below $100M for two consecutive quarters",
+        "Q3'26 adjusted EPS misses the $2.91 guide by >10%",
+        "A domestic containerboard capacity addition (new mill announcement by IP/WestRock/Georgia-Pacific) is announced"
+      ],
+      "key_adverse_facts": [
+        "Long-term debt roughly doubled from $2.47B to $3.97B coinciding with the Greif mill acquisition financing",
+        "TTM FCF yield only 2.0-3.5% due to $840-870M FY26 capex guide",
+        "TTM EV/EBIT ~24x vs historical mid-cycle range of ~10-14x for integrated containerboard producers",
+        "Cash fell from $685M (FY24) to $442.8M (Q2'26)"
+      ],
+      "data_conflicts": [
+        "SEC-derived TTM FCF (~$742M, OCF-capex) vs Yahoo/d4 trailing freeCashflow ($432.95M) diverge by ~$310M; used SEC figure as primary, flagged gap unresolved"
+      ],
+      "next_earnings_date": "2026-10-21",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": null,
+        "reconciliation": "No V1 row exists yet for PKG; dossier's own reverse-DCF view (EV/EBIT ~24x vs ~10-14x mid-cycle norm) is that the stock is priced for continued cyclical strength, i.e. full-to-expensive.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {"bear": -0.06, "base": 0.03, "bull": 0.11},
+      "scenario_basis": "Base: TTM diluted EPS ~$7.70 normalizing toward ~$9-10 mid-cycle by yr3 on guided pricing, EV/EBIT re-rating from ~24x toward ~16x, plus ~2.2% dividend; bear assumes pricing gives back gains and EV/EBIT falls to ~11x; bull assumes pricing holds and multiple stays near 20x."
+    },
+    "PM": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Marlboro-international owner whose Zyn nicotine pouches and IQOS heated tobacco are genuinely displacing cigarettes worldwide.",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "med-high (smoke-free growth is well evidenced by filings and FDA authorizations; leverage is a real, not cosmetic, reservation)",
+      "kill_criteria": [
+        "Adjusted EPS guidance is cut versus the $8.35-$8.50 FY26 range at any subsequent release",
+        "Zyn US retail share loses more than 2 points sequentially for two quarters",
+        "Net debt/EBITDA (consolidated) rises above 3.0x",
+        "FCF yield falls below 2.5% for two consecutive quarters",
+        "A regulatory reversal (FDA marketing-denial order) hits a Zyn variant representing >10% of pouch volume"
+      ],
+      "key_adverse_facts": [
+        "Stockholders' equity is negative (-$8.58B at 2026-06-30), a structural feature since the 2008 Altria spin-off",
+        "Net debt/EBITDA approximately 2.2x (SEC XBRL-sourced total debt $45.71B), elevated for a consumer staple",
+        "Elevated Zyn/IQOS capacity capex is compressing near-term FCF yield to ~3.3%",
+        "Q1 operating cash flow is recurringly negative (-$399M Q1'26, -$350M Q1'25) from tobacco-leaf working-capital build"
+      ],
+      "data_conflicts": [
+        "September 2026 guidance-raise figures ($8.35-$8.50 adjusted EPS) sourced from secondary coverage (TipRanks) of the 8-K, not independently re-verified against the primary exhibit text this pass",
+        "d4/Yahoo-sourced total debt ($49.14B) is ~7.5% higher than SEC XBRL-derived total debt ($45.71B = LongTermDebtAndCapitalLeaseObligations + ShortTermBorrowings at 2026-06-30); SEC figure used for net debt/EBITDA in the dossier"
+      ],
+      "next_earnings_date": "2026-10-21",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "No V1 row exists yet for PM; dossier's own view is that ~21x NTM P/E plus a 3% dividend is roughly in line with the guided 10-13% adjusted EPS growth, i.e. fairly valued for the growth on offer.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {"bear": 0.01, "base": 0.10, "bull": 0.17},
+      "scenario_basis": "Base: adjusted EPS grows from ~$8.40 FY26 guide midpoint at ~10%/yr for 3 years, NTM P/E holds near 21x, plus ~3% dividend; bear assumes smoke-free growth decelerates to mid-single-digit and multiple compresses to ~17x; bull assumes low-teens growth sustains and multiple re-rates toward 24x."
+    },
+    "PWR": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Largest grid/electric-infrastructure contractor riding the utility and data-center power buildout, priced for years of continued double-digit growth.",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "med (backlog/guidance raise is filed fact; multiple-implies-growth judgment and LT-debt XBRL gap are the soft spots)",
+      "kill_criteria": [
+        "Total backlog declines quarter-over-quarter for two consecutive quarters",
+        "FY guidance is cut versus the $39.3-39.7B revenue / $16.45-16.95 adjusted EPS range at any subsequent release",
+        "Net debt/EBITDA (consolidated) exceeds 2.5x",
+        "Adjusted operating margin compresses by >150 bps YoY for two consecutive quarters",
+        "Adjusted P/E stays above 35x while backlog growth decelerates below 10% YoY"
+      ],
+      "key_adverse_facts": [
+        "Trailing GAAP P/E of 74x vs adjusted-earnings P/E of ~39x reflects large, recurring equity-method renewable-asset marks and M&A intangible amortization",
+        "Net debt/EBITDA has risen to ~2.0x on debt-funded M&A (four recent acquisitions cited in guidance commentary)",
+        "H1'26 operating cash flow of $1,487.2M (+176% YoY) is partly working-capital driven and may not repeat",
+        "Company's own LongTermDebt XBRL tags appear stale post-2019, forcing reliance on a Yahoo-sourced debt figure for leverage math"
+      ],
+      "data_conflicts": [
+        "Prior FY26 guidance range (being raised from) not independently re-quoted from the Q1'26 8-K exhibit this pass; raise is confirmed via secondary coverage only",
+        "LongTermDebtNoncurrent/LongTermDebt XBRL facts stop updating after 2019 despite ongoing 10-Q filings; total debt figure used here ($6.60B) is Yahoo/d4-sourced, not SEC-tag-sourced"
+      ],
+      "next_earnings_date": "2026-10-29",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": null,
+        "reconciliation": "No V1 row exists yet for PWR; dossier's own view is that ~39x adjusted-earnings P/E (and ~47x EV/EBIT) already prices several more years of high-teens-to-20%+ growth, above what a disciplined base case for a cyclical EPC contractor should assume.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {"bear": -0.10, "base": 0.04, "bull": 0.14},
+      "scenario_basis": "Base: adjusted EPS grows from ~$16.70 FY26 guide midpoint at ~12%/yr for 3 years as backlog converts, adjusted P/E de-rates from ~39x toward ~30x, negligible dividend; bear assumes backlog growth stalls and multiple falls to ~22x; bull assumes growth holds near 20%/yr and multiple stays near 36x."
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "as_of": "2026-09-27",
+  "scope": "Independent adversarial data audit (DA12) of three current dossiers: USB, PPG, GDDY. 21 load-bearing facts checked (7/7/7 by ticker), selected for the claims most likely to break a thesis or a kill criterion if wrong: headline quarterly figures, guidance track records, capital/credit ratios, debt/leverage and balance-sheet items, litigation exposure, and buyback/capital-return figures. Special attention paid to USB's consolidated U.S. Bancorp vs U.S. Bank N.A. subsidiary scoping for every capital ratio and to ROE vs ROTCE definitions (per task instructions), and to the dossier_precheck.json-flagged lines (period labels, entity scope, citations without accession numbers) for all three tickers. Method: primary sources only -- SEC EDGAR 8-K Ex-99.1 earnings-release exhibits, 10-Q/10-K text and XBRL rendered (R#.htm) exhibits, and data.sec.gov XBRL companyfacts/submissions -- fetched directly from www.sec.gov and data.sec.gov and cited by accession/URL below; CFPB enforcement-action status and earnings-call-date claims cross-checked via WebSearch against consumerfinance.gov, bankingdive.com and ir.usbank.com. Each dossier was read to its end (no appended Correction sections were found on any of the three). Each ticker's one-line thesis and first kill criterion were checked for consistency with the underlying filings; results noted in the summary (see da12_factcheck.md section 4).",
+  "facts": [
+    {
+      "ticker": "USB",
+      "claim": "Q2 2026: net revenue $7,712m, NII (TE) $4,387m, noninterest income $3,325m, net income $2,177m, diluted EPS $1.35, NIM 2.79%, efficiency ratio 57.1%, ROTCE 18.7%, NCO ratio 0.53%, CET1 (Basel III standardized) 10.8%; 400bps of positive operating leverage YoY; BTIG/Condor Trading acquisition (effective 1-Jun-2026) contributed ~$98m fee revenue and $84m noninterest expense",
+      "dossier_location": "USB.md §4 results table (Q2 2026 row), §6 (BTIG), §3",
+      "source": "USB Q2 2026 8-K Ex-99.1 earnings release, accession 0000036104-26-000039, filed 2026-07-16",
+      "source_value": "Net Revenue $7,712 million; NII (TE) $4,387 million; Noninterest Income $3,325 million; Net Income $2,177 million; Diluted EPS $1.35; NIM 2.79%; Efficiency Ratio 57.1%; ROTCE 18.7%; Net Charge-Off Ratio 0.53%; CET1 10.8%; \"400 basis points [of positive operating leverage] from the prior year quarter\"; BTIG/Condor Trading effective 1-Jun-2026, fee revenue \"approximately $98 million\", noninterest expense \"$84 million\"",
+      "status": "PASS",
+      "note": "Exact match on every figure, including the BTIG contribution detail."
+    },
+    {
+      "ticker": "USB",
+      "claim": "Q2 2026 ROE (return on average common equity) 14.0% is distinct from ROTCE 18.7%; the two are separate, correctly-labelled non-GAAP metrics, not interchangeable",
+      "dossier_location": "USB.md §3 (b1_live_scores.csv discussion of ROE vs ROTCE)",
+      "source": "USB Q2 2026 8-K Ex-99.1 earnings release, accession 0000036104-26-000039",
+      "source_value": "\"Return on Average Common Equity: 14.0%\"; \"Return on Tangible Common Equity: 18.7%\" -- two distinct reported line items in the same release",
+      "status": "PASS",
+      "note": "Dossier correctly distinguishes ROE 14.0% from ROTCE 18.7% and correctly flags the model's own b1 `roe` field (12.11%) as a rough XBRL-derived proxy that does not match the company's own reported ROE -- this is the precise ROE-vs-ROTCE distinction the task asked to stress-test, and it holds up."
+    },
+    {
+      "ticker": "USB",
+      "claim": "Basel III standardized CET1 ratio 10.8% (Q1 and Q2 2026) is a consolidated U.S. Bancorp (parent holding company) figure, not a U.S. Bank National Association (subsidiary bank) figure; kill criterion 1 (CET1 <9.5%) is scoped consolidated",
+      "dossier_location": "USB.md §6 (\"Capital: ... consolidated\"), §9 kill criterion 1 (\"consolidated\")",
+      "source": "USB Q2 2026 8-K Ex-99.1 earnings release, \"CAPITAL POSITION\" section, accession 0000036104-26-000039",
+      "source_value": "\"All regulatory capital ratios continue to be in excess of 'well-capitalized' requirements\"; capital ratios (incl. \"Common equity tier 1 capital ratio\" 10.8%) are presented for U.S. Bancorp on a consolidated Basel III Standardized Approach basis; the release does not separately disclose U.S. Bank N.A. (subsidiary) capital ratios",
+      "status": "PASS",
+      "note": "This is a kill-criterion-relevant fact per the task's special instruction. The dossier explicitly and consistently labels every capital-ratio reference as \"consolidated\" (§6, §9), correctly avoiding conflation with the U.S. Bank N.A. subsidiary, which is not separately disclosed in the primary source checked."
+    },
+    {
+      "ticker": "USB",
+      "claim": "Historical CFPB consent orders: sham-accounts practices $37.5m penalty terminated 21-Aug-2025; ReliaCard unemployment-benefit account freezes $20.7m penalty (originally ordered Dec-2023) terminated 22-Sep-2025",
+      "dossier_location": "USB.md §8 bear point 3, §11 red-flag scan",
+      "source": "CFPB enforcement-action pages and termination orders (consumerfinance.gov); WebSearch cross-check of bankingdive.com, americanbanker.com",
+      "source_value": "\"On August 21, 2025, the CFPB terminated an order related to sham accounts... U.S. Bank paid a civil money penalty of $37,500,000\"; \"The CFPB in December 2023 had ordered U.S. Bank to pay $20.7 million after it froze the unemployment benefits of ReliaCard holders... The Bureau terminated the order on September 22, 2025\"",
+      "status": "PASS",
+      "note": "Both penalty amounts and both termination dates match exactly. Note both actions were against U.S. Bank National Association (the operating subsidiary), which is standard for consumer-compliance enforcement and does not contradict the dossier's framing."
+    },
+    {
+      "ticker": "USB",
+      "claim": "Next earnings: Q3 2026, confirmed for Thursday, 15-Oct-2026, 8:00 a.m. CT",
+      "dossier_location": "USB.md §10 (catalysts & calendar)",
+      "source": "U.S. Bancorp investor-relations earnings-call schedule (ir.usbank.com); WebSearch cross-check",
+      "source_value": "\"U.S. Bancorp's Third Quarter 2026 earnings call is scheduled for Thursday, October 15, 2026 at 8 a.m. CT\"",
+      "status": "PASS",
+      "note": "Exact match on date and time."
+    },
+    {
+      "ticker": "USB",
+      "claim": "Net charge-off ratio improved gradually over five quarters shown: 0.59% (Q2 2025) -> 0.56% (Q3 2025) -> 0.54% (Q4 2025) -> 0.56% (Q1 2026) -> 0.53% (Q2 2026); kill criterion 2 (NCO >0.75% for two consecutive quarters, consolidated) is far from being tripped",
+      "dossier_location": "USB.md §4 results table, §6, §9 kill criterion 2",
+      "source": "USB Q2 2026 and Q4 2025/FY2025 8-K Ex-99.1 earnings releases, accessions 0000036104-26-000039 and 0000036104-26-000005",
+      "source_value": "Q2 2026 release: \"Net Charge-Off Ratio: 0.53%\"; comparative quarterly table in the same and prior releases shows the 0.59%/0.56%/0.54%/0.56%/0.53% sequence",
+      "status": "PASS",
+      "note": "Confirmed via the Q2 2026 release (current quarter) cross-checked against the prior-quarter comparative columns; consistent with the dossier's trend narrative."
+    },
+    {
+      "ticker": "USB",
+      "claim": "One-line thesis (INCLUDE, improving super-regional bank at cheap multiple) and kill criterion 1 (CET1 <9.5% consolidated) are consistent with the underlying filings",
+      "dossier_location": "USB.md §1 verdict, §9 kill criterion 1",
+      "source": "USB Q2 2026 8-K Ex-99.1 earnings release and Q2 2026 10-Q (accession 0000036104-26-000044)",
+      "source_value": "CET1 10.8% consolidated, comfortably above the 9.5% kill threshold and the ~7.0% regulatory minimum plus buffers; ROTCE 18.7%, NIM/efficiency/NCO all improving as described in §4",
+      "status": "PASS",
+      "note": "Thesis and kill criterion are internally consistent with the primary-source figures verified above; no contradiction found."
+    },
+    {
+      "ticker": "PPG",
+      "claim": "Q2 2026: net sales $4,495m (+7% YoY), organic sales +4%; GAAP diluted EPS $1.96; adjusted diluted EPS $2.23 (~0% YoY); FY2026 adjusted EPS guidance reaffirmed at $7.70-$8.10",
+      "dossier_location": "PPG.md §4 results table (Q2 2026 row), §5 guidance table",
+      "source": "PPG 8-K Ex-99, Q2 2026 results, accession 0000079879-26-000246, filed 2026-07-28",
+      "source_value": "\"Net sales: $4.495 billion\"; \"YoY change: +7%\"; \"Organic sales growth: 4%\"; \"GAAP diluted EPS: $1.96\"; \"Adjusted diluted EPS: $2.23\"; \"Adjusted EPS YoY change: Flat (0%)\"; \"reaffirming full-year 2026 adjusted EPS guidance range of $7.70 to $8.10\"",
+      "status": "PASS",
+      "note": "Exact match on every figure."
+    },
+    {
+      "ticker": "PPG",
+      "claim": "Q1 2026: net sales $3,930m (+7% YoY), organic sales +1%; GAAP diluted EPS $1.70; adjusted diluted EPS $1.83 (+6% YoY)",
+      "dossier_location": "PPG.md §4 results table (Q1 2026 row)",
+      "source": "PPG 8-K Ex-99, Q1 2026 results, accession 0000079879-26-000167, filed 2026-04-28",
+      "source_value": "\"Net Sales: $3.9 billion, an increase of 7% versus prior year\"; \"Organic Sales Growth: 1% year over year\"; \"GAAP Diluted EPS: $1.70\"; \"Adjusted Diluted EPS: $1.83, representing an increase of 6% year over year\"",
+      "status": "PASS",
+      "note": "Exact match on every figure."
+    },
+    {
+      "ticker": "PPG",
+      "claim": "FY2026 adjusted EPS guidance $7.70-$8.10 has been reaffirmed at all three releases checked: initial (2026-01-27, Q4/FY2025), Q1 2026 (2026-04-28), Q2 2026 (2026-07-28); initial guide's midpoint framed as mid-single-digit EPS growth",
+      "dossier_location": "PPG.md §5 guidance table",
+      "source": "PPG 8-K Ex-99, Q4/FY2025 results, accession 0000079879-26-000025, filed 2026-01-27",
+      "source_value": "\"Range: $7.70 to $8.10\"; \"Growth Language: at the mid-point represents EPS growth of a mid-single-digit percentage\"",
+      "status": "PASS",
+      "note": "Initial guide confirmed, plus the two subsequent reaffirmations already confirmed above via the Q1 and Q2 2026 releases -- a genuine three-release unchanged-guidance record as the dossier claims."
+    },
+    {
+      "ticker": "PPG",
+      "claim": "Balance sheet, 30-Jun-2026 (consolidated, 10-Q accession 0000079879-26-000252): cash $1,520m (down from $2,163m at 31-Dec-2025); long-term debt (carrying value) $6,876m + short-term debt/current portion $691m => total debt ~$7.57bn; net debt ~$6.05bn; total shareholders' equity $8,590m (up from $8,097m)",
+      "dossier_location": "PPG.md §6 (earnings quality & balance sheet)",
+      "source": "PPG 10-Q, quarter ended 30-Jun-2026, accession 0000079879-26-000252, R5.htm (Condensed Consolidated Balance Sheet)",
+      "source_value": "\"Cash and cash equivalents\": $1,520M (Jun-26) / $2,163M (Dec-25); \"Short-term debt and current portion of long-term debt\": $691M / $706M; \"Long-term debt\": $6,195M / $6,602M; \"Total shareholders' equity\": $8,590M / $8,097M",
+      "status": "FAIL",
+      "note": "Cash, short-term debt and total shareholders' equity all match exactly, but long-term debt is misstated: the 10-Q's own balance sheet (R5.htm) reports long-term debt of $6,195m at 30-Jun-2026, not $6,876m as the dossier states -- a $681m (~11%) overstatement. Correct total debt is 691+6,195 = $6,886m (~$6.89bn, not $7.57bn), and correct net debt is 6,886-1,520 = $5,366m (~$5.37bn, not $6.05bn). Directionally this makes PPG's leverage somewhat better than stated: net debt/EBITDA on the corrected $5.37bn net debt figure would be lower than the ~2.2x quoted from the quant card (which appears to be built off a different/consistent EBITDA base), so kill criterion 3 (net debt/EBITDA >3.0x) is not affected in direction, but the raw dollar figures feeding this kill criterion are factually wrong and should be corrected."
+    },
+    {
+      "ticker": "PPG",
+      "claim": "Asbestos-related reserves $42m at 30-Jun-2026 (down from $43m at 31-Dec-2025); company states reserves believed sufficient",
+      "dossier_location": "PPG.md §6, §9 kill criterion 4, §11 red-flag scan",
+      "source": "PPG 10-Q, accession 0000079879-26-000252, Commitments and Contingent Liabilities note",
+      "source_value": "\"June 30, 2026: $42 million\"; \"December 31, 2025: $43 million\"; \"The Company believes that, based on presently available information, the total reserves for asbestos-related claims will be sufficient to encompass all of the Company's current and estimable potential future asbestos liabilities\"",
+      "status": "PASS",
+      "note": "Exact match on both figures and the sufficiency language."
+    },
+    {
+      "ticker": "PPG",
+      "claim": "Data conflict flagged and resolved: no SC 13D or SC 13D/A on file for PPG (CIK 0000079879) -- no activist stake confirmed via a primary ownership filing, contradicting a triage-stage claim of activist involvement",
+      "dossier_location": "PPG.md §11 red-flag scan (\"Data conflict\")",
+      "source": "SEC EDGAR company filing list (SC 13D search), CIK 0000079879",
+      "source_value": "EDGAR SC 13D/SC 13D-A filing search for PPG CIK 0000079879 returns no individual filing entries",
+      "status": "PASS",
+      "note": "Confirmed no SC 13D/SC 13D-A filings are listed for PPG, consistent with the dossier's resolution of the triage-stage data conflict."
+    },
+    {
+      "ticker": "GDDY",
+      "claim": "Q2 2026: revenue $1,298.0m (+6.6% YoY), operating income $342.5m, operating margin 26.4%, net income $240.1m, diluted EPS $1.83",
+      "dossier_location": "GDDY.md §4 results table (Q2 2026 row)",
+      "source": "GDDY 8-K + Ex-99.1 (Q2-26 earnings release), accession referenced in dossier as filed 2026-07-30/08-04",
+      "source_value": "\"Total Revenue: $1,298.0 million\"; \"YoY Growth: 6.6% (reported)\"; \"Operating Income: $342.5 million\"; \"Operating Margin: 26.4%\"; \"Net Income: $240.1 million\"; \"Diluted EPS: $1.83\"",
+      "status": "PASS",
+      "note": "Exact match on every figure."
+    },
+    {
+      "ticker": "GDDY",
+      "claim": "FY2026 guidance: revenue range narrowed to $5.215-5.255bn (midpoint $5.235bn held) at Q2-26 release, from $5.195-5.275bn (same midpoint) at Q4/FY25 and Q1-26; NEBITDA margin >33% and FCF ~$1.8bn reaffirmed at all three releases; FY2025 actual revenue $4,951.1m",
+      "dossier_location": "GDDY.md §5 guidance table",
+      "source": "GDDY 8-K Ex-99.1 earnings releases (Q4/FY25, Q1-26, Q2-26)",
+      "source_value": "\"Revenue Range: $5.215 billion to $5.255 billion (6% growth at midpoint versus 2025's $4.951 billion)\"; \"the company narrowed its revenue guidance\"; \"reaffirms its NEBITDA margin target of over 33%\"; \"reaffirms its free cash flow target of approximately $1.8 billion\"",
+      "status": "PASS",
+      "note": "Exact match, including the FY2025 actual revenue figure used as the guidance base."
+    },
+    {
+      "ticker": "GDDY",
+      "claim": "Balance sheet, 30-Jun-2026 (consolidated, 10-Q): cash $1,155.5m; total debt (gross) $3,816.9m; net debt ~$2,661m; stockholders' equity fell from $237.3m (31-Mar-2026) to $6.7m (30-Jun-2026), driven by cumulative buybacks exceeding retained earnings + APIC",
+      "dossier_location": "GDDY.md §6 (earnings quality & balance sheet)",
+      "source": "GDDY 10-Q, quarter ended 2026-06-30, filed 2026-07-31",
+      "source_value": "\"Cash and cash equivalents: $1,155.5 million\"; \"Total debt (principal): $3,816.9 million\"; \"Total stockholders' equity\" $6.7 million (Jun-26) vs $237.3 million (Mar-26) vs $215.1 million (Dec-25)",
+      "status": "PASS",
+      "note": "Exact match on cash, debt and the equity roll-down sequence."
+    },
+    {
+      "ticker": "GDDY",
+      "claim": "Express Mobile, Inc. v. GoDaddy patent litigation: jury verdict of infringement 7-Nov-2025; District Court upheld verdict, reversed willfulness/denied enhanced damages 14-May-2026; notice of appeal filed 15-Jun-2026; reasonably possible loss exposure $0-$170.0m excluding interest, no liability accrued",
+      "dossier_location": "GDDY.md §9 kill criterion 4, §10 catalysts, §11 red-flag scan",
+      "source": "GDDY 10-Q, quarter ended 2026-06-30, Note 11 (Commitments and Contingencies / Legal Proceedings)",
+      "source_value": "\"Jury verdict: November 7, 2025\"; \"District Court ruling: May 14, 2026\"; \"Notice of appeal filed: June 15, 2026\"; \"reasonably possible that our loss exposure in this matter could range from zero to $170.0 million, exclusive of interest\"; ruling \"upheld infringement findings, granted prejudgment and post-judgment interest, but reversed the willfulness finding and denied enhanced damages\"",
+      "status": "PASS",
+      "note": "Exact match on every date and the loss-exposure figure."
+    },
+    {
+      "ticker": "GDDY",
+      "claim": "H1 2026: operating cash flow $914.0m, capex $9.7m => FCF $904.3m (vs H1 2025 $784.6m - $7.7m = $776.9m, +16.4% YoY); share repurchases $824.4m in H1 2026; shares outstanding fell to 126.6m (2026-07-24 cover page) from 135.1m (2025-10-24)",
+      "dossier_location": "GDDY.md §4, §6 (FCF and buybacks)",
+      "source": "GDDY 10-Q, quarter ended 2026-06-30, Condensed Consolidated Statement of Cash Flows and cover page",
+      "source_value": "\"Net cash provided by operating activities\" $914.0 million (2026) vs $784.6 million (2025); \"Purchases of property and equipment\" $9.7 million (2026) vs $7.7 million (2025); \"Repurchases of Class A common stock\" $824.4 million (2026) vs $792.5 million (2025); cover page shares outstanding as of July 24, 2026: 126,647,704",
+      "status": "PASS",
+      "note": "Exact match on every cash-flow and share-count figure checked."
+    },
+    {
+      "ticker": "GDDY",
+      "claim": "One-line thesis (durable domain/hosting franchise mispriced for FCF decline) and kill criterion 2 (net debt/EBITDA >3.0x, currently ~1.9x) are consistent with the underlying filings",
+      "dossier_location": "GDDY.md §1 verdict, §9 kill criterion 2",
+      "source": "GDDY 10-Q, quarter ended 2026-06-30 (balance sheet) and Q2-26/Q1-26/Q4-25 8-K Ex-99.1 releases (revenue/FCF trend)",
+      "source_value": "Net debt (cash $1,155.5m vs gross debt $3,816.9m) = ~$2,661m, consistent with the ~1.9x net debt/EBITDA cited; revenue and FCF confirmed growing every quarter checked (§4-6 above), consistent with the thesis that the market is pricing in FCF decline the primary-source trend does not support",
+      "status": "PASS",
+      "note": "Thesis and kill criterion are internally consistent with the primary-source figures verified above; no contradiction found."
+    }
+  ]
+}

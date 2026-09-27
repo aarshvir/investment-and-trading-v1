@@ -1,0 +1,111 @@
+{
+  "agent": "F46",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "PEG": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "New Jersey's regulated gas/electric utility plus a long-life nuclear fleet, growing ~7% a year with data-center upside not yet in the price.",
+      "kill_criteria": [
+        "Non-GAAP operating-earnings guidance for FY2026 is formally cut below the current $4.28-$4.40/share range, or the long-term 6-8% CAGR guide (through 2030) is lowered.",
+        "NDT mark-to-market losses (or other excluded items) depress GAAP net income by more than 20% YoY in two consecutive quarters with no offsetting rise in non-GAAP operating EPS.",
+        "Total debt/EBITDA (proxy) rises above 6.5x for two consecutive quarters.",
+        "No signed data-center nuclear PPA, uprate agreement, or equivalent incremental-growth contract is announced within the next 12 months.",
+        "A credit-rating agency (S&P/Moody's/Fitch) downgrades PSEG or PSE&G's senior unsecured rating, or moves the outlook to negative."
+      ],
+      "key_adverse_facts": [
+        "GAAP diluted EPS fell 43% YoY in Q2 2026 ($1.17 to $0.67) and 9% YoY for H1 2026 ($2.35 to $2.15), driven by Nuclear Decommissioning Trust mark-to-market losses, even as non-GAAP operating EPS rose (+12% Q2, H1 $2.41 vs implied prior-year track); a reader using only headline GAAP EPS would wrongly read this as a growth slowdown.",
+        "Long-term debt rose ~20% in six quarters (from $18.96bn to $22.74bn) funding a $24-28bn multi-year capital program; rating-agency FFO/Debt was not obtained in this pass (data gap).",
+        "Data-center/nuclear PPA upside cited by the prior triage is not yet contracted; it is a stated management aspiration, not a signed cash flow."
+      ],
+      "data_conflicts": [
+        "None identified versus the prior triage note (Q15_triage.json); the 6-8% guidance and 27% street-upside figures it cited were both independently reproduced from primary SEC filings and Yahoo-sourced d4 snapshot data respectively."
+      ],
+      "next_earnings_date": "2026-11-03",
+      "scenario_returns_3y": {
+        "bear": 0.01,
+        "base": 0.11,
+        "bull": 0.19
+      },
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - the regulated rate-base and reaffirmed non-GAAP guidance are well evidenced, but GAAP earnings volatility and unverified credit metrics (FFO/Debt) leave a real gap in the underwriting",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for PEG in v1_valuation_table.csv or v1_valuation.json, so there is nothing to reconcile against; this dossier's own two-stage dividend-discount reverse-DCF (COE ~6.8-8.0% via CAPM, 4% terminal growth) implies roughly -0.6% to +3.5% growth priced in, versus this dossier's own base case of ~6-8% (the company's reaffirmed guided CAGR) -- implied growth is below base, so the current price does not require aggressive growth to be justified."
+      }
+    },
+    "PNC": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A well-run super-regional bank digesting the FirstBank acquisition, with improving credit quality and expanding margins, but capital ratios still recovering from the deal.",
+      "kill_criteria": [
+        "Net charge-offs rise above 0.60% annualized of average loans for two consecutive quarters (vs 0.25% currently).",
+        "CET1 ratio falls below 9.5% (vs 9.9% currently) without a stated, credible path back above 10% within two quarters.",
+        "NIM compresses below 2.70% (vs 2.96% currently) for two consecutive quarters.",
+        "Efficiency ratio remains above 62% for three or more consecutive quarters after FirstBank integration costs were guided to roll off.",
+        "Nonperforming loans increase more than 25% quarter-over-quarter for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "CET1 capital ratio fell from 10.5% (Q2 2025) to 9.9% (Q2 2026), a 60bp decline over the year including a 20bp drop in the latest quarter alone, while the company continued share repurchases ($0.6bn in Q2 2026).",
+        "A meaningful share of the headline +25-26% YoY EPS growth is inorganic (FirstBank acquisition, full quarter benefit only since Q2 2026) and includes a net one-time item mix (a $448M Visa exchange gain largely offset by a $140M Foundation contribution, a $139M securities loss and $121M of integration costs); the clean, post-integration run rate is not yet demonstrated.",
+        "The FirstBank deal's cash/stock consideration split was not fully quantified in the documents pulled for this pass (data gap; the 2025-09-08 deal-announcement 8-K should be read directly for full terms before sizing a position)."
+      ],
+      "data_conflicts": [
+        "The prior triage note (Q04_triage.json) attributed PNC's 'completed acquisition integration' to BBVA USA, a 2021 deal. The acquisition actually driving 2026 results and the CET1 decline is FirstBank (announced 2025-09-08 for implied consideration of $4.1bn, closed 2026-01-05, systems converted 2026-06-22) -- corrected here from primary SEC filings."
+      ],
+      "next_earnings_date": "2026-10-14",
+      "scenario_returns_3y": {
+        "bear": -0.01,
+        "base": 0.11,
+        "bull": 0.20
+      },
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - credit quality and NIM trends are well evidenced and favorable, but the growth rate is inflated by M&A and one-time items this quarter, and capital-ratio trajectory needs one to two more clean quarters to confirm",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for PNC in v1_valuation_table.csv or v1_valuation.json, so there is nothing to reconcile against; this dossier's own justified-P/B reverse-engineering (CAPM COE ~8.6%, current P/B 1.55x / P/TBV 2.03x) implies roughly 0% to +2.5% sustainable growth priced in against a normalized mid-teens ROE/ROTCE, versus this dossier's own base case of high-single to low-double-digit EPS growth -- implied growth is below base, so the current price does not appear to demand aggressive growth."
+      }
+    },
+    "PPL": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Pennsylvania/Kentucky regulated utility riding a data-center-driven, customer-protected grid build-out, with EPS growth accelerating and guidance reaffirmed.",
+      "kill_criteria": [
+        "Annual ongoing EPS growth falls below 6% (bottom of the guided range) for two consecutive fiscal years.",
+        "Signed data-center service agreements (currently >11 GW PA + 1.3 GW KY) are reduced by more than 20% through cancellation or resizing within any 12-month window.",
+        "Total debt/EBITDA proxy rises above 6.5x for two consecutive quarters, or a credit-rating agency downgrades PPL/LG&E/KU or moves the outlook to negative.",
+        "Pennsylvania PUC or Kentucky PSC issues a rate order disallowing more than 10% of a requested revenue increase in the companies' next base rate case.",
+        "Invitium Energy fails to sign a single commercial ESSA by the company's own stated end-of-2026 target."
+      ],
+      "key_adverse_facts": [
+        "H1 2026 free cash flow was approximately -$1.2bn (operating cash flow $1.14bn vs capex $2.34bn), and long-term debt rose $1.8bn in the second quarter alone to fund the capex ramp; rating-agency FFO/Debt was not obtained in this pass (data gap).",
+        "A large share of the growth narrative rests on signed agreements and advanced-stage pipeline (31.8 GW 'advanced planning' vs >11 GW actually signed in Pennsylvania) rather than in-service load, and the largest single upside (Invitium Energy generation JV) is explicitly excluded from current guidance and is a 2029-2032 story.",
+        "SEC's XBRL companyfacts/companyconcept feed for PPL had not ingested the 2026-08-07 10-Q as of this review; Q2 2026 figures were sourced directly from the filing's own financial-statement exhibits instead -- a data-source lag worth noting for any downstream automated pipeline reading SEC XBRL for this name."
+      ],
+      "data_conflicts": [
+        "None identified versus the prior triage note (Q15_triage.json); its '11 GW signed, $23bn capex plan, reaffirmed 6-8% guidance' claims were independently reproduced from the Q2 2026 primary earnings release."
+      ],
+      "next_earnings_date": "2026-11-05",
+      "scenario_returns_3y": {
+        "bear": 0.015,
+        "base": 0.105,
+        "bull": 0.185
+      },
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium-high - the growth and guidance track record is strongly evidenced and results are arguably ahead of the 'reaffirmed' framing, but financing intensity (rapid debt growth against structurally negative FCF) is a real and rising risk that was not fully quantified against rating-agency metrics",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for PPL in v1_valuation_table.csv or v1_valuation.json, so there is nothing to reconcile against; this dossier's own two-stage dividend-discount reverse-DCF (COE ~7.1% via CAPM, 4% terminal growth) implies roughly -0.5% to +3.3% growth priced in, versus this dossier's own base case of ~6-8% near top-end (the company's reaffirmed guided EPS CAGR) -- implied growth is below base, so the current price does not require aggressive growth to be justified."
+      }
+    }
+  }
+}

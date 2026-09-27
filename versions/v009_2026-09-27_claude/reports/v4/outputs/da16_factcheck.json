@@ -1,0 +1,282 @@
+{
+  "as_of": "2026-09-27",
+  "scope": "DA16 targeted sweep (loop-8 must-fix): verify latest-reported-quarter revenue, GAAP net income, diluted EPS (GAAP and adjusted where stated), and period label/end date for ADP, CAH, BR, PPG, PGR, AXP, HBAN against primary sources (SEC EDGAR 8-K Ex-99.1 earnings releases, 10-Q/10-K, XBRL companyfacts). Checks whether the dossier's 'latest quarter' figures are actually the correct quarter and not a prior-period column swapped in.",
+  "facts": [
+    {
+      "ticker": "ADP",
+      "claim": "Q4 FY26 (period ended 30-Jun-2026) revenue $5,500M (dossier §4, approx.)",
+      "dossier_location": "dossiers/ADP.md §4, table row 'Q4 FY26 (Jun-26)'",
+      "source": "ADP 8-K Ex-99.1, Q4/FY2026 earnings release, filed 2026-07-29, accession 0000008670-26-000025 (q4fy26exhibit99.htm)",
+      "source_value": "Total revenues $5,473.8M (+7% YoY)",
+      "status": "MINOR",
+      "note": "Dossier's '$5,500M' is a rounded approximation of the actual $5,473.8M; direction and YoY growth rate (+7%) are correct. Not material."
+    },
+    {
+      "ticker": "ADP",
+      "claim": "Q4 FY26 GAAP net income '~$1,013-1,062M range (qtr)' (dossier §4)",
+      "dossier_location": "dossiers/ADP.md §4, table row 'Q4 FY26 (Jun-26)', Net income column",
+      "source": "ADP 8-K Ex-99.1, Q4/FY2026 earnings release, filed 2026-07-29, accession 0000008670-26-000025; cross-checked against SEC XBRL companyfacts CIK0000008670 (FY26 total net earnings $4,413.5M minus 9-month YTD Jul25-Mar26 net earnings $3,434.9M = $978.6M)",
+      "source_value": "Net earnings (GAAP), Q4 FY26 = $978.6M (+7% YoY vs $910.6M in Q4 FY25)",
+      "status": "FAIL",
+      "note": "This is the flagged bug: the dossier's Q4 FY26 net-income cell is not a real figure but a re-paste of the Q1 FY26 ($1,013.0M) and Q2 FY26 ($1,062.0M) net-income values shown two rows above in the same table. The correct Q4 FY26 GAAP net income is $978.6M, +7% YoY -- not the $1,013-1,062M range stated. FY26 full-year total ($4,413.5M) and GAAP diluted EPS ($2.45) elsewhere in the same row are correct and internally consistent with the corrected $978.6M figure (978.6+1013.0+1062.0+1359.8=4,413.4M, i.e. the annual total in the dossier is right; only the Q4 quarterly net-income cell is wrong)."
+    },
+    {
+      "ticker": "ADP",
+      "claim": "Q4 FY26 diluted EPS (GAAP) $2.45 (+10%), adjusted diluted EPS $2.64 (+17%)",
+      "dossier_location": "dossiers/ADP.md §4, table row 'Q4 FY26 (Jun-26)'",
+      "source": "ADP 8-K Ex-99.1, Q4/FY2026 earnings release, filed 2026-07-29, accession 0000008670-26-000025",
+      "source_value": "Diluted EPS (GAAP) $2.45 vs $2.23 PY (+10%); Adjusted diluted EPS (non-GAAP) $2.64 vs prior-year comparator (+17%)",
+      "status": "PASS",
+      "note": "Both EPS figures match the primary source exactly, including the YoY growth rates. Confirms the EPS cells were not affected by the net-income swap noted above."
+    },
+    {
+      "ticker": "ADP",
+      "claim": "FY26 total revenue $21,947.4M, net income $4,413.5M, diluted EPS $10.94 (fiscal year ended 30-Jun-2026)",
+      "dossier_location": "dossiers/ADP.md §4, row 'FY26 total (Jun-26)'",
+      "source": "ADP FY2026 10-K, filed 2026-08-05, accession 0000008670-26-000030; XBRL companyfacts CIK0000008670",
+      "source_value": "Revenues $21,947.4M; NetIncomeLoss $4,413.5M; EarningsPerShareDiluted $10.94 (period 2025-07-01 to 2026-06-30)",
+      "status": "PASS",
+      "note": "Full-year figures and period end date (30-Jun-2026, non-calendar FYE correctly flagged in dossier) are all correct and match XBRL exactly."
+    },
+    {
+      "ticker": "ADP",
+      "claim": "Prior-year comparative not swapped in: Q4 FY25 net income implied ~$910.6M / FY25 total $4,079.7M",
+      "dossier_location": "dossiers/ADP.md §4, row 'FY25 total (Jun-25)'",
+      "source": "SEC XBRL companyfacts CIK0000008670; ADP FY2026 10-K comparative column",
+      "source_value": "FY25 total net earnings $4,079.7M, diluted EPS $9.98 (matches dossier); Q4 FY25 GAAP net earnings $910.6M (not shown in dossier table, but consistent with FY25 total minus 9-month YTD)",
+      "status": "PASS",
+      "note": "The FY25 full-year comparative row in the dossier is correct and is not confused with the FY26 figures; the swap error identified above is confined to the Q4 FY26 quarterly net-income cell, not a full prior-year-column substitution."
+    },
+
+    {
+      "ticker": "CAH",
+      "claim": "Q4 FY26 (period ended 30-Jun-2026) revenue $63.7bn (+6% YoY)",
+      "dossier_location": "dossiers/CAH.md §4, table row 'Q4 FY26 (Apr-Jun26)'",
+      "source": "Cardinal Health 8-K Ex-99.1, Q4/FY2026 earnings release, filed 2026-08-11, accession 0000721371-26-000037",
+      "source_value": "Revenue $63.7 billion, +6% vs $60.2bn PY",
+      "status": "PASS",
+      "note": "Matches primary source exactly, including YoY growth rate."
+    },
+    {
+      "ticker": "CAH",
+      "claim": "Q4 FY26 GAAP diluted EPS $1.70 (+70% YoY)",
+      "dossier_location": "dossiers/CAH.md §4, table row 'Q4 FY26 (Apr-Jun26)'",
+      "source": "Cardinal Health 8-K Ex-99.1, Q4/FY2026 earnings release, filed 2026-08-11, accession 0000721371-26-000037",
+      "source_value": "Diluted EPS increased 70% to $1.70",
+      "status": "PASS",
+      "note": "Exact match, including the unusual +70% YoY figure, which is genuine (driven by a prior-year comparison base plus a $184M Q3 goodwill impairment lapping)."
+    },
+    {
+      "ticker": "CAH",
+      "claim": "Q4 FY26 GAAP net income (not tabulated by quarter in dossier, but FY26 total $1,714M cited in §6)",
+      "dossier_location": "dossiers/CAH.md §6 ('FY2026 OCF $5,174m vs GAAP net income $1,714m')",
+      "source": "Cardinal Health 8-K Ex-99.1, Q4/FY2026 earnings release, filed 2026-08-11, accession 0000721371-26-000037; XBRL companyfacts CIK0000721371",
+      "source_value": "Q4 FY26 net earnings attributable to Cardinal Health $398M; FY26 full-year net earnings attributable $1,714M (matches dossier)",
+      "status": "PASS",
+      "note": "FY26 total net income figure cited in the dossier is correct. The dossier does not present a per-quarter net-income column for CAH (only EPS), so there is no quarterly net-income cell to mis-swap; no error found."
+    },
+    {
+      "ticker": "CAH",
+      "claim": "Q3 FY26 GAAP diluted EPS decreased 20% to $1.69 due to a $184M pre-tax goodwill impairment",
+      "dossier_location": "dossiers/CAH.md §4, table row 'Q3 FY26 (Jan-Mar26)' and footnote 2",
+      "source": "Cardinal Health 8-K Ex-99.1, Q3 FY2026 earnings release, filed 2026-04-30, accession 0000721371-26-000017",
+      "source_value": "Diluted EPS (EPS) decreased 20% to $1.69, reflecting a $184 million pre-tax goodwill impairment in the Navista & ION reporting unit",
+      "status": "PASS",
+      "note": "Exact match including the explanatory note; the prior quarter (used as a check on comparatives) is also correctly not confused with Q4."
+    },
+    {
+      "ticker": "CAH",
+      "claim": "Most recent period incorporated is FY2026 10-K, period ended 2026-06-30, filed 2026-08-11; fiscal year ends June 30",
+      "dossier_location": "dossiers/CAH.md header and §12 (Data basis, recency and disclaimer)",
+      "source": "Cardinal Health FY2026 10-K, filed 2026-08-11, accession 0000721371-26-000038",
+      "source_value": "10-K cover page confirms fiscal year ended June 30, 2026, filed 2026-08-11",
+      "status": "PASS",
+      "note": "Period label and non-calendar FYE are correctly identified and flagged in the dossier."
+    },
+
+    {
+      "ticker": "BR",
+      "claim": "Q4 FY26 (derived, period ended 30-Jun-2026) net income $398.1M, revenue $2,219.9M, diluted EPS $3.44, adjusted EPS $3.82",
+      "dossier_location": "dossiers/BR.md §4, table row 'Q4 FY26 (2026-06-30, derived)'",
+      "source": "Broadridge 8-K Ex-99.1, Q4/FY2026 results, filed 2026-08-04, accession 0001383312-26-000022; FY2026 10-K, filed 2026-08-04, accession 0001628280-26-052243; XBRL companyfacts CIK0001383312",
+      "source_value": "FY26 total net income $1,124.3M minus 9-month YTD (Jul25-Mar26) net income $726.2M = Q4 FY26 net income $398.1M -- matches dossier exactly",
+      "status": "PASS",
+      "note": "The 'derived' Q4 figure (10-K annual total minus 10-Q nine-month YTD, since Broadridge does not report a discrete Q4 income statement) is correctly computed and matches to the dollar."
+    },
+    {
+      "ticker": "BR",
+      "claim": "FY2026 total revenue $7,476.8M (+8.5%), net income $1,124.3M, diluted EPS $9.60",
+      "dossier_location": "dossiers/BR.md §4, row 'FY2026 total'",
+      "source": "Broadridge FY2026 10-K, filed 2026-08-04, accession 0001628280-26-052243; XBRL companyfacts CIK0001383312",
+      "source_value": "RevenueFromContractWithCustomerExcludingAssessedTax FY26 = $7,476.8M; NetIncomeLoss FY26 = $1,124.3M; EarningsPerShareDiluted FY26 = $9.60",
+      "status": "PASS",
+      "note": "All three figures match XBRL exactly."
+    },
+    {
+      "ticker": "BR",
+      "claim": "Q1-Q3 FY26 quarterly net income $165.4M / $284.6M / $276.3M (used to derive Q4 by subtraction)",
+      "dossier_location": "dossiers/BR.md §4, table rows Q1-Q3 FY26",
+      "source": "XBRL companyfacts CIK0001383312 (10-Q filings for quarters ended 30-Sep-2025, 31-Dec-2025, 31-Mar-2026)",
+      "source_value": "Q1 FY26 (Jul-Sep25) net income $165.4M; Q2 FY26 (Oct-Dec25) $284.6M; Q3 FY26 (Jan-Mar26) $276.3M",
+      "status": "PASS",
+      "note": "All three prior-quarter figures used as the basis for the Q4 derivation are correct and not confused with each other or with FY25 comparatives."
+    },
+    {
+      "ticker": "BR",
+      "claim": "Period end and fiscal-year framing: fiscal year ends 30 June; most recent period incorporated is Q4/FY2026 (ended 2026-06-30, filed 2026-08-04)",
+      "dossier_location": "dossiers/BR.md header §4 and 'Data basis, recency and disclaimer'",
+      "source": "Broadridge FY2026 10-K, filed 2026-08-04, accession 0001628280-26-052243",
+      "source_value": "10-K cover confirms period ended 30-Jun-2026, filed 2026-08-04",
+      "status": "PASS",
+      "note": "Correctly identified; no non-calendar-year confusion."
+    },
+
+    {
+      "ticker": "PPG",
+      "claim": "Q2 2026 net sales $4,495M (+7% YoY), GAAP diluted EPS $1.96, adjusted diluted EPS $2.23 (Adj. EPS YoY '~0%')",
+      "dossier_location": "dossiers/PPG.md §4, table row 'Q2 2026'",
+      "source": "PPG 8-K Exhibit 99, Q2 2026 results, filed 2026-07-28, accession 0000079879-26-000246",
+      "source_value": "Net sales $4,495M (+7% vs $4,195M PY); EPS (GAAP) $1.96 vs $1.98 PY; Adjusted EPS $2.23 vs $2.22 PY (+0.5%, i.e. essentially flat)",
+      "status": "PASS",
+      "note": "Revenue and EPS figures match exactly. Minor imprecision: dossier's '~0%' adjusted-EPS YoY is a reasonable rounding of the true +0.5% (technically GAAP EPS actually declined ~1% YoY, which the dossier's table shows correctly as $1.96 vs $1.98 without mislabeling)."
+    },
+    {
+      "ticker": "PPG",
+      "claim": "Q2 2026 net income -- not tabulated by the dossier's results table (only EPS is shown)",
+      "dossier_location": "dossiers/PPG.md §4 (table has no net-income column)",
+      "source": "PPG 8-K Exhibit 99, Q2 2026 results, filed 2026-07-28, accession 0000079879-26-000246",
+      "source_value": "Net income (continuing ops) Q2 2026 = $439M, down 2% YoY from $450M in Q2 2025, even as net sales grew 7%",
+      "status": "UNVERIFIABLE",
+      "note": "Not a factual error, but a disclosure gap: the dossier never states a quarterly net-income figure for PPG (only GAAP/adjusted EPS), so there is no net-income claim to verify as PASS/FAIL. Flagging for completeness since net income actually declined YoY this quarter despite revenue growth -- a fact not surfaced anywhere in the dossier's earnings-quality discussion (§6)."
+    },
+    {
+      "ticker": "PPG",
+      "claim": "Most recent period incorporated: Q2 2026 (quarter ended 30-Jun-2026), 10-Q filed 2026-07-29",
+      "dossier_location": "dossiers/PPG.md 'Data Quality Note' (bottom of file)",
+      "source": "PPG 10-Q for quarter ended 30-Jun-2026, accession 0000079879-26-000252, filed 2026-07-29",
+      "source_value": "10-Q cover confirms period ended 30-Jun-2026, filed 2026-07-29",
+      "status": "PASS",
+      "note": "Correct; PPG uses a calendar fiscal year, so no non-calendar-FYE flag was needed and none was raised."
+    },
+    {
+      "ticker": "PPG",
+      "claim": "Q1 2026 net sales $3,930M (+7%), organic +1%; GAAP EPS $1.70, adjusted EPS $1.83 (+6%) -- used as the prior-quarter comparator",
+      "dossier_location": "dossiers/PPG.md §4, table row 'Q1 2026'",
+      "source": "PPG 8-K Exhibit 99, Q1 2026 results, filed 2026-04-28, accession 0000079879-26-000167",
+      "source_value": "Net sales $3,930M (+7%); GAAP diluted EPS $1.70; Adjusted diluted EPS $1.83 (+6%)",
+      "status": "PASS",
+      "note": "Matches exactly; confirms Q1 and Q2 2026 figures are not swapped with each other in the table."
+    },
+
+    {
+      "ticker": "PGR",
+      "claim": "2Q26 (Apr-Jun 2026) net premiums earned $21,573M, net income $3,311M, diluted EPS $5.67, combined ratio 87.3",
+      "dossier_location": "dossiers/PGR.md §4, table row '2Q26 (Apr-Jun)'",
+      "source": "Progressive 10-Q for period ended 2026-06-30, filed 2026-08-03, accession 0000080661-26-000308; XBRL companyfacts CIK0000080661",
+      "source_value": "PremiumsEarnedNet (2026-04-01 to 2026-06-30) = $21,573M; NetIncomeLoss = $3,311M; EarningsPerShareDiluted = $5.67",
+      "status": "PASS",
+      "note": "All three headline figures match XBRL exactly. Combined ratio was not independently re-derived (would require loss/expense ratio detail) but the other figures corroborate no swap occurred."
+    },
+    {
+      "ticker": "PGR",
+      "claim": "3Q25 (Jul-Sep 2025) net premiums earned $20,849M, net income $2,615M, diluted EPS $4.45 -- used as the prior-year/prior-quarter comparator",
+      "dossier_location": "dossiers/PGR.md §4, table row '3Q25 (Jul-Sep)'",
+      "source": "XBRL companyfacts CIK0000080661 (10-Q period 2025-07-01 to 2025-09-30)",
+      "source_value": "PremiumsEarnedNet (2025-07-01 to 2025-09-30) = $20,849M; NetIncomeLoss = matches",
+      "status": "PASS",
+      "note": "Confirms the four-quarter table is sequenced correctly and not shifted by a quarter."
+    },
+    {
+      "ticker": "PGR",
+      "claim": "Most recent period incorporated: 10-Q for quarter ended 2026-06-30, filed 2026-08-03; PGR reports no non-GAAP EPS",
+      "dossier_location": "dossiers/PGR.md 'Data basis, recency and disclaimer'",
+      "source": "Progressive 10-Q, period ended 2026-06-30, filed 2026-08-03, accession 0000080661-26-000308",
+      "source_value": "10-Q cover confirms period ended 2026-06-30, filed 2026-08-03",
+      "status": "PASS",
+      "note": "Correct; calendar fiscal year, no non-calendar-FYE confusion possible."
+    },
+    {
+      "ticker": "PGR",
+      "claim": "Premium growth decelerating each quarter (+14%->+10%->+8%->+6% YoY) across 3Q25-2Q26",
+      "dossier_location": "dossiers/PGR.md §4 narrative text",
+      "source": "XBRL companyfacts CIK0000080661, PremiumsEarnedNet quarterly series",
+      "source_value": "YoY growth: 3Q25 +13.9% (20,849/18,297-1), 4Q25 ~+9%, 1Q26 +8.0%, 2Q26 +6.2% -- directionally matches the stated deceleration",
+      "status": "PASS",
+      "note": "The qualitative deceleration trend is confirmed by the underlying XBRL quarterly premiums-earned series."
+    },
+
+    {
+      "ticker": "AXP",
+      "claim": "Q2 2026 total revenue net of interest expense $19.637bn (+10% YoY), net income $3.110bn, diluted EPS $4.53 (+11%)",
+      "dossier_location": "dossiers/AXP.md §4, table row 'Q2 2026'",
+      "source": "AXP 8-K Ex.99.1, 2026-07-24 (Q2 2026 results); XBRL companyfacts CIK0000004962",
+      "source_value": "RevenuesNetOfInterestExpense (2026-04-01 to 2026-06-30) = $19,637M; NetIncomeLoss = $3,110M; EarningsPerShareDiluted = $4.53",
+      "status": "PASS",
+      "note": "All three figures match XBRL exactly, and the YoY growth rates (revenue +10%, EPS +11%) are internally consistent with the Q2 2025 comparator ($17.856bn / $4.08 EPS)."
+    },
+    {
+      "ticker": "AXP",
+      "claim": "Q2 2025 comparator (prior-year quarter): revenue $17.856bn, net income $2.885bn, diluted EPS $4.08",
+      "dossier_location": "dossiers/AXP.md §4, parenthetical prior-year note below the table",
+      "source": "XBRL companyfacts CIK0000004962 (10-Q period 2025-04-01 to 2025-06-30)",
+      "source_value": "RevenuesNetOfInterestExpense = $17,856M; NetIncomeLoss = $2,885M; EarningsPerShareDiluted = $4.08",
+      "status": "PASS",
+      "note": "Confirms the prior-year comparator used to compute the Q2 2026 YoY growth rates is correct and not itself a different quarter mislabeled as Q2 2025."
+    },
+    {
+      "ticker": "AXP",
+      "claim": "Full-year 2025: revenue $72.229bn (+10%), net income $10.833bn (+7%), diluted EPS $15.38 (+10%, or +15% ex Accertify gain)",
+      "dossier_location": "dossiers/AXP.md §4, narrative paragraph below the quarterly table",
+      "source": "AXP 8-K Ex.99.1, 2026-01-30 (Q4/FY2025 results)",
+      "source_value": "Not independently re-pulled from XBRL in this pass (FY2025 annual figures fall outside the 'latest quarter' scope of this sweep); flagged as not re-verified here",
+      "status": "UNVERIFIABLE",
+      "note": "Out of scope for this targeted sweep (which focuses on the latest reported quarter, Q2 2026); no evidence of error, simply not independently re-checked in this pass."
+    },
+    {
+      "ticker": "AXP",
+      "claim": "Most recent period incorporated: Q2 2026 (period ended 2026-06-30; 10-Q filed 2026-07-24); no Q3 2026 filing exists yet",
+      "dossier_location": "dossiers/AXP.md §14 (Data Quality Note)",
+      "source": "AXP 10-Q, period 2026-06-30, filed 2026-07-24",
+      "source_value": "10-Q cover confirms period ended 2026-06-30, filed 2026-07-24; SEC EDGAR shows no AXP 10-Q filed after that date as of 2026-09-26",
+      "status": "PASS",
+      "note": "Correct; calendar fiscal year, latest-quarter framing accurate."
+    },
+
+    {
+      "ticker": "HBAN",
+      "claim": "Q2 2026 net income attributable $727M, diluted EPS $0.33 (GAAP), adjusted EPS $0.39",
+      "dossier_location": "dossiers/HBAN.md §4, table column 'Q2 2026'",
+      "source": "Huntington Bancshares 8-K Ex-99.1, Q2 2026 earnings release, filed 2026-07-23, accession 0000049196-26-000060 (hban20260630_8kex991.htm)",
+      "source_value": "Net income attributable to Huntington $727 million; Diluted earnings per common share $0.33 (GAAP); non-GAAP net income/EPS $843M / $0.39 (adjusted)",
+      "status": "PASS",
+      "note": "Exact match to the primary-source five-quarter summary table, including the GAAP-vs-adjusted EPS gap ($0.33 vs $0.39) cited in the dossier's §6."
+    },
+    {
+      "ticker": "HBAN",
+      "claim": "Prior four quarters (Q2 2025-Q1 2026) net income $536M / $629M / $519M / $523M and diluted EPS $0.34 / $0.41 / $0.30 / $0.25, used as sequential comparators",
+      "dossier_location": "dossiers/HBAN.md §4, table columns 'Q2 2025' through 'Q1 2026'",
+      "source": "Huntington Bancshares 8-K Ex-99.1, Q2 2026 earnings release, filed 2026-07-23, accession 0000049196-26-000060, five-quarter summary table",
+      "source_value": "Net income attributable: $536 / $629 / $519 / $523 (mm); Diluted EPS: $0.34 / $0.41 / $0.30 / $0.25 -- exact sequence match",
+      "status": "PASS",
+      "note": "All five quarters in the dossier's table are correctly sequenced and match the company's own five-quarter summary column-for-column; no swap or misalignment found."
+    },
+    {
+      "ticker": "HBAN",
+      "claim": "Revenue for the latest quarter is not stated as a single headline figure in the dossier's results table (only NIM, efficiency ratio, ROA/ROTCE, net income and EPS are given)",
+      "dossier_location": "dossiers/HBAN.md §4 (table has no revenue/total-revenue column)",
+      "source": "Huntington Bancshares 8-K Ex-99.1, Q2 2026 earnings release, filed 2026-07-23, accession 0000049196-26-000060",
+      "source_value": "Not independently pulled in this pass; not a claim requiring verification since the dossier makes no revenue figure claim for HBAN",
+      "status": "UNVERIFIABLE",
+      "note": "Disclosure gap, not an error: the dossier never asserts a specific revenue number for HBAN's latest quarter, so there is nothing to fact-check for that line item. Flagged for completeness only."
+    },
+    {
+      "ticker": "HBAN",
+      "claim": "Most recent period incorporated is Q2 2026 (period ended 2026-06-30), 8-K Ex-99.1 filed 2026-07-23; cross-checked against Q1 2026 (filed 2026-04-23)",
+      "dossier_location": "dossiers/HBAN.md §12 (Data basis, recency and disclaimer)",
+      "source": "HBAN 10-Q for quarter ended 2026-06-30, filed 2026-07-28, accession 0000049196-26-000066; 8-K Ex-99.1 filed 2026-07-23, accession 0000049196-26-000060",
+      "source_value": "SEC EDGAR filing index confirms 10-Q filed 2026-07-28 and 8-K Ex-99.1 filed 2026-07-23 for the quarter ended 2026-06-30; no later 10-Q/8-K earnings release found as of 2026-09-26",
+      "status": "PASS",
+      "note": "Correctly identified as the latest reported quarter; calendar fiscal year, no non-calendar-FYE issue."
+    }
+  ]
+}

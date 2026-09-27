@@ -1,0 +1,29 @@
+{
+  "total": 87,
+  "criteria": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 9,
+    "7": 9,
+    "8": 9,
+    "9": 9,
+    "10": 9
+  },
+  "must_fix": [
+    "Publish the next release (parent v008) promptly or note in the report that a newer research wave (TJX/SO in, GM/DRI out) is pending, since versions/catalog.json still shows v008 (wave-4) as latest_completed.",
+    "Note that the 1.9%/0.57% dividend-yield/withholding figures are build-specific snapshot values that move with every portfolio refresh, not fixed constants.",
+    "Move MSCI kill-criterion 2's inline correction to a clean sentence boundary instead of mid-word (cosmetic, substance already correct, carried three loops).",
+    "BR's GAAP/adjusted-EPS $9.60 coincidence remains unresolved from public disclosure; keep it flagged as open rather than implying it will self-resolve.",
+    "Extend the XBRL cross-tie/DA fact-check protocol to check results-table cells against their column headers, since the current tool cannot catch prior-year-column mix-ups (as shown by the TJX error) on its own."
+  ],
+  "fact_checks": [
+    {"ticker": "TJX", "claim": "Q2 FY2027 net income $1,520m (dossier originally showed the prior-year $1,243m figure, a fiscal-year-column mix-up)", "source": "TJX 8-K Ex-99.1 accession 0000109198-26-000045; 10-Q accession 0000109198-26-000048 (via DA14)", "status": "PASS"},
+    {"ticker": "SO", "claim": "DA14's 7 checked facts for Southern Company", "source": "SO SEC filings/earnings release via DA14", "status": "PASS"},
+    {"ticker": "BR", "claim": "$227m full-year gain on digital-asset holdings, now source-cited to 10-K Note 8 / 8-K reconciliation", "source": "Broadridge 10-K accession 0001628280-26-052243; 8-K Ex-99.1 (via DA13, carried forward, re-verified this loop)", "status": "PASS"},
+    {"ticker": "MSCI", "claim": "Kill-criterion 2 year-ago comparator correction (94.4% not 93.4%)", "source": "dossiers/MSCI.md lines 122, 171 (carried from Loop 6/7)", "status": "MINOR"},
+    {"ticker": "USB", "claim": "Q2 2026 CET1 10.8% (spot-check, unchanged from Loop 7)", "source": "dossiers/USB.md, prior-loop verification", "status": "PASS"}
+  ]
+}

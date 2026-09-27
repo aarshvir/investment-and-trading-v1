@@ -1,0 +1,104 @@
+{
+  "agent": "F38",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "ABT": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Diversified healthcare compounder (diagnostics, devices, nutrition, generics) priced for slower growth than it is guiding, but temporarily levered up from a debt-funded acquisition.",
+      "kill_criteria": [
+        "Comparable/organic sales growth guidance cut below 6.5% (current FY26 floor) for two consecutive quarters.",
+        "Nutrition segment organic sales decline exceeds -6% for two consecutive quarters (currently -3.6% to -5.6%).",
+        "Net debt/EBITDA rises above 3.5x (from ~2.3x now) without a clear deleveraging plan disclosed.",
+        "A single NEC verdict or settlement tranche (beyond the disclosed ~$670M Gill/2,000-claim settlement) exceeds $1 billion, signaling the remaining ~1,700-suit tail is materially larger than currently priced.",
+        "Adjusted diluted EPS guidance is cut (not just narrowed) for a reason other than a disclosed one-time acquisition/tax item."
+      ],
+      "key_adverse_facts": [
+        "NEC infant-formula litigation: ~$670M settlement of the Gill verdict plus ~2,000 additional infant claims (8-K filed 2026-08-20); ~1,700 suits covering ~12,700 infants remain pending.",
+        "Total debt jumped from ~$13.2bn to ~$34.0bn in Q1 2026 to fund the debt-financed Exact Sciences acquisition; net debt/EBITDA ~2.3x, up from a historically low base.",
+        "Nutrition segment organic sales declined -3.6% (Q2'26) and -5.6% (1H26), driven by volume declines and Q4-2025 pricing actions.",
+        "FY26 adjusted EPS guidance was cut in April 2026 (from $5.55-$5.80 to $5.38-$5.58) due to Exact Sciences dilution from an earlier-than-expected close (2026-03-23 vs the previously flagged Q2 2026)."
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv ranks ABT outside the top-30 (composite percentile 0.029, live_rank 482/503) largely because trailing GAAP earnings are depressed by a $7.497bn one-off Q4 2024 tax valuation-allowance item and 2026 acquisition-related interest/amortization/tax charges -- a model artefact from using trailing GAAP inputs, not a signal of weak underlying fundamentals."
+      ],
+      "next_earnings_date": "2026-10-14",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium: strong diversified franchise and an undemanding reverse-DCF read, but the NEC litigation tail (~1,700 suits still pending) and the post-Exact-Sciences leverage step-up are not yet fully resolved",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "ABT has no row in v1_valuation_table.csv (92-name coverage does not include it), so there is no systematic valuation to reconcile against; v1_verdict is null per program rules. This analyst's own reverse DCF (valuation.py, WACC 7.0%/terminal g 4.0%) implies ~1.5%/yr 10-year FCF growth, rising to ~6.4%/yr under a more conservative 8.5% WACC sensitivity -- below this analyst's evidence-based base case of 7-9%/yr adjusted FCF/EPS growth under either assumption."
+      },
+      "scenario_returns_3y": {"bear": -0.02, "base": 0.10, "bull": 0.21}
+    },
+    "ADSK": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Design-and-build software leader growing double digits at a mid-teens P/E, about to take on real integration and leverage risk from its largest-ever acquisition.",
+      "kill_criteria": [
+        "Quarterly revenue growth decelerates below 10% YoY for two consecutive quarters (from the current 16-18% run-rate).",
+        "Non-GAAP operating margin contracts more than 200bps YoY for two consecutive quarters (from ~41% now), signaling MaintainX integration costs are structural rather than one-time.",
+        "Net debt/EBITDA (post-MaintainX-close) exceeds 2.0x with no disclosed deleveraging plan.",
+        "Total RPO growth stays below 5% YoY for three consecutive quarters after the multi-year-discount wind-down should have annualized out of the comparison.",
+        "A new SEC/DOJ inquiry or restatement is announced (the 2024-25 investigation closed clean, but the underlying billing-incentive practices it examined warrant continued vigilance)."
+      ],
+      "key_adverse_facts": [
+        "MaintainX acquisition (~$3.6bn announced / ~$3.53bn final consideration, all-cash) closed 2026-08-03, funded partly by ~$1.6bn cash and new debt -- Autodesk's largest acquisition ever, and not yet reflected in any balance sheet sourced this pass.",
+        "A 2024 Audit Committee investigation found Autodesk had 'engaged in programs designed to incentivize customers to accept multiyear upfront billing, renew early, and/or pay before the end of the fiscal year' to hit free-cash-flow targets; SEC and USAO closed the matter in August 2025 with no restatement, but the historical practice is a real earnings-quality data point.",
+        "Total RPO grew only 2% YoY in Q2 FY27 vs 16% revenue growth (partly explained by a disclosed multi-year-discount wind-down, but a metric to watch).",
+        "Q1 FY26 (Apr-2025) showed a real GAAP operating-income dip ($233M vs $299-346M in the prior three quarters) coincident with a sales/go-to-market reorganization."
+      ],
+      "data_conflicts": [
+        "The Q1 FY27 press release's own year-over-year non-GAAP EPS comparison produced an internally inconsistent read when extracted programmatically ($2.99 vs an ambiguous $0.70/$1.62 prior-year figure); XBRL-sourced GAAP EPS ($0.70 for Q1 FY26) was used as the source of record instead of resolving this by picking a number, and the ambiguity is flagged rather than silently resolved."
+      ],
+      "next_earnings_date": "2026-11-27",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium: strong, consistent 8-for-8 revenue-beat operating momentum, but the MaintainX close and its financing fall entirely outside the balance-sheet data sourced this pass",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "ADSK has no row in v1_valuation_table.csv, so there is no systematic valuation to reconcile against; v1_verdict is null per program rules. This analyst's own reverse DCF (valuation.py, WACC 10.5%/terminal g 4.0%) implies ~3.0%/yr 10-year FCF growth, rising to ~5.9%/yr under a more conservative 12% WACC sensitivity (reflecting MaintainX integration/leverage risk) -- below this analyst's evidence-based base case of 11-14%/yr FCF/EPS growth under either assumption."
+      },
+      "scenario_returns_3y": {"bear": -0.02, "base": 0.15, "bull": 0.32}
+    },
+    "AJG": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Top-3 global insurance broker with a huge acquisition still digesting, where organic growth has slowed to mid-single digits behind the eye-catching headline numbers.",
+      "kill_criteria": [
+        "Total organic change (AJG's own combined Brokerage + Risk Management metric) stays below 5% for three consecutive quarters (currently 4-5% in Q1-Q2'26, below AJG's historical high-single-digit norm).",
+        "Net debt/EBITDA rises above 3.5x (from ~2.8x now) without a disclosed deleveraging plan.",
+        "Quarterly acquired-annualized-revenue run-rate stays below $100M (vs $291-354M a year ago) for three more consecutive quarters, signaling the M&A engine has not recovered capacity.",
+        "The GAAP-vs-adjusted EPS gap widens by more than $0.50/share YoY again in a quarter with no new large acquisition to explain it.",
+        "A state insurance-regulatory or E&O (errors & omissions) matter is disclosed that is not ordinary-course (none identified this pass)."
+      ],
+      "key_adverse_facts": [
+        "Organic growth (AJG's own 'total organic change' metric) was only 5% in Q1 2026 and 4% in Q2 2026, well below the >20% reported revenue growth, which is overwhelmingly driven by the AssuredPartners acquisition.",
+        "Bolt-on M&A pace has slowed materially: 6 acquisitions closed in Q2 2026 (est. $58M annualized revenue) vs 9 in Q2 2025 ($291M); 8 in Q1 2026 vs 10 in Q1 2025.",
+        "Net debt/EBITDA is approximately 2.8x (Yahoo/d4 EBITDA basis), up from a much lower base before the ~$13.45bn AssuredPartners deal (financed December 2024).",
+        "GAAP diluted EPS declined YoY in Q2 2026 ($1.25 vs $1.40) due to an intangible-amortization step-up and the loss of a one-off $144M interest-income benefit in the prior-year comp; adjusted EPS grew +23% over the same period.",
+        "AJG issues no formal numeric full-year guidance, limiting how directly guidance discipline can be assessed versus ABT/ADSK."
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv ranks AJG near the bottom of the composite (live_rank 492/503), in tension with the triage's quality=4/growth=4 read and this dossier's INCLUDE-SMALL verdict; the quant model penalizes leverage/net issuance while the fundamental read credits adjusted-EPS growth the GAAP-based quant inputs don't see.",
+        "At a WACC of 8.5% (defensible given AJG's elevated leverage), the reverse-DCF implied growth (~7.7%/yr) is roughly in line with, not clearly below, this analyst's 8-10%/yr base case -- the 'below' read depends on the central 7.0% WACC assumption, disclosed explicitly in dossier section 7."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium-low: quality franchise and a reasonable central-case valuation, but organic growth deceleration and the M&A-pace slowdown need 2-3 quarters to resolve before full conviction",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "AJG has no row in v1_valuation_table.csv, so there is no systematic valuation to reconcile against; v1_verdict is null per program rules. This analyst's own reverse DCF (valuation.py, WACC 7.0%/terminal g 4.0%) implies ~2.7%/yr 10-year FCF growth, rising to ~7.7%/yr under a more conservative 8.5% WACC sensitivity (reflecting the elevated leverage) -- below this analyst's 8-10%/yr base case at the central assumption, but only marginally so (roughly in line) at the higher, also-defensible WACC. Disclosed as the least clear-cut of this analyst's three names rather than rounded to a cleaner verdict."
+      },
+      "scenario_returns_3y": {"bear": -0.00, "base": 0.13, "bull": 0.24}
+    }
+  }
+}

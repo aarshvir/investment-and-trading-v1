@@ -1,0 +1,131 @@
+{
+  "agent": "F18",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "MSFT": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Best-in-class enterprise cloud and AI franchise, executing superbly, but priced almost exactly at fair value with little margin of safety.",
+      "kill_criteria": [
+        "Azure constant-currency growth falls below 30% for two consecutive quarters while capex commitments keep growing",
+        "Annual operating margin falls below 43% without a demonstrably attractive incremental-return explanation",
+        "SBC-adjusted cash generation (CFO minus capex minus finance leases minus SBC) fails to cover dividends plus dilution-offsetting buybacks for two consecutive annual periods",
+        "EU DMA gatekeeper designation of Azure (expected by November 2026) is finalized with material interoperability/pricing remedies attached",
+        "Do not add fresh capital above $500 (Codex ceiling) / $444 (own base-case fair value)"
+      ],
+      "key_adverse_facts": [
+        "At $516.17 the stock sits almost exactly at Codex's independently derived 12%-hurdle ceiling ($519.15) and at this dossier's own base-case fair value gap (+16% above $444) -- minimal margin of safety",
+        "EU Commission gave a preliminary view (25-Jun-2026) that Azure should be designated a DMA 'gatekeeper' service; decision due by Nov-2026, 6 months to comply if designated",
+        "A useful-life extension for buildings (15->25 years) has reduced reported depreciation and moved future leases off the capex line -- a falling capex line alone does not prove improving economics",
+        "SBC-adjusted cash figure ($51.5bn) is barely growing relative to the scale of the capex commitment"
+      ],
+      "data_conflicts": [
+        "None material: d4 snapshot close ($516.17) vs Codex reference close ($516.05) differ by 12 cents, immaterial and previously flagged MINOR by the program's X1 verification"
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "high (business execution); medium (valuation margin of safety is thin)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for this ticker; valuation performed directly in the dossier and cross-checked against Codex v005's independent 3-year model (BUY BELOW $500, base 3-yr IRR 12.23% at $516.05). This dossier's own 10-year reverse DCF requires a ~12.7% constant revenue CAGR versus an explicit decelerating base case averaging ~10.9%, implying the market is paying for slightly more growth than the evidence-based base case -- the smallest overshoot of the four names in this batch."
+      },
+      "scenario_returns_3y": {"bear": -0.092, "base": 0.122, "bull": 0.246}
+    },
+    "GOOGL": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Google Cloud's profitability inflection is the best evidence of real AI monetization in this group, but the 'cheap' P/E is a GAAP artefact and the price already bakes in a decade of near-peak growth.",
+      "kill_criteria": [
+        "Google Cloud revenue growth decelerates below 40% YoY for two consecutive quarters",
+        "Cloud operating margin fails to hold above 30% for two consecutive quarters",
+        "D.C. Circuit sets a briefing schedule that puts Chrome divestiture or Apple-agreement termination back in play as a live remedy",
+        "FY2026 capex guidance is raised a third time beyond $205bn without a corresponding upward revision to Cloud revenue guidance",
+        "Full-year buybacks fall to zero / net share count rises for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "Trailing P/E (17.3x) is inflated by a $99bn Q2 2026 one-off investment/equity gain; on the model's own value-factor percentile (fam_V 0.18) Alphabet screens as the most 'expensive' of the four names, not the cheapest",
+        "Raised $49.6bn of new equity and $20.3bn net proceeds from debt in June 2026 to help fund capex; share count rose rather than fell this quarter -- 'the buyback era' may be ending",
+        "DOJ and state AGs cross-appealed the Dec-2025 search-remedies judgment, specifically seeking Chrome divestiture and termination of the Apple default-search deal; unresolved, likely extends into 2027",
+        "FY2026 capex guidance raised twice, now $195-205bn (from an original $180-190bn)"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (cloud momentum is real and well evidenced; valuation and unresolved antitrust remedy risk are the reservations)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for this ticker; no prior Codex valuation to reconcile against. This dossier's 10-year reverse DCF requires a ~16.6% constant revenue CAGR to justify $343.92, versus an explicit decelerating base case averaging ~11.3% (base-case fair value ~$220, ~56% below the close) -- the largest valuation gap of the four names in this batch."
+      },
+      "scenario_returns_3y": {"bear": -0.205, "base": 0.011, "bull": 0.186}
+    },
+    "AMZN": {
+      "verdict": "WATCH",
+      "thesis_one_line": "AWS demand is genuinely re-accelerating with a huge backlog, but capex is so heavy that free-cash-flow and leverage metrics have deteriorated sharply, and the price still bakes in more growth than a conservative base case.",
+      "kill_criteria": [
+        "AWS revenue growth decelerates below 28% YoY for two consecutive quarters",
+        "TTM free cash flow (reconciled, company-reported basis) remains negative for three consecutive quarters after 2026 capex guidance is met",
+        "Long-term debt principal+interest exceeds $300bn without a corresponding step-up in AWS backlog",
+        "2026 capex guidance is raised a third time beyond $220bn",
+        "FTC monopoly-power case survives Amazon's motion to dismiss and proceeds toward the Feb-2027 trial with structural remedies in scope"
+      ],
+      "key_adverse_facts": [
+        "Quality factor score (fam_Q 0.136) is the weakest of the four names by a wide margin, driven by heavy asset growth, rising leverage and cash-flow deterioration from the capex program",
+        "Long-term debt principal+interest roughly doubled in six months to $220.3bn as of 30-Jun-2026; management says it will keep evaluating funding options (more debt plausible)",
+        "TTM cash capex reached $173bn (from $107bn a year earlier); on at least one credible external measure TTM free cash flow is now -$7.6bn, a 142% YoY swing",
+        "FTC v. Amazon monopoly-power bench trial now scheduled for 9-Feb-2027 (pushed back from Oct-2026), a real dated event risk to core retail-marketplace economics"
+      ],
+      "data_conflicts": [
+        "v4 quant snapshot (d4_live_snapshot.parquet) shows trailing FCF of +$3.2bn; independent Q2 2026 earnings coverage (Barchart, Investing.com) reports TTM FCF of -$7.6bn. Likely a definitional difference (Yahoo FCF field vs. Amazon's own OCF-minus-capex-and-finance-leases definition) but the ~$11bn gap is large and unreconciled -- flagged explicitly in the dossier, do not use either figure uncritically."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (growth evidence strong; earnings-quality and leverage trend are genuine reservations)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for this ticker; no prior Codex valuation to reconcile against. This dossier's 10-year reverse DCF requires a ~14.9% constant revenue CAGR to justify $249.67, versus an explicit decelerating base case averaging ~10.9% (base-case fair value ~$176, ~42% below the close). Of the four names, AMZN's base-case 3-year return (+7.2%) is the least unattractive, but weak quality/FCF signals reduce confidence in taking that as full margin of safety."
+      },
+      "scenario_returns_3y": {"bear": -0.170, "base": 0.072, "bull": 0.306}
+    },
+    "META": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Meta's AI-driven ad engine is real and growing, but it just posted its first profit decline of the AI era and the price bakes in more growth than any conservative base case in this group.",
+      "kill_criteria": [
+        "Operating margin remains below 35% for two consecutive quarters",
+        "Quarterly free cash flow remains below $5bn for two consecutive quarters",
+        "2026 AI capex guidance is raised a third time beyond $145bn",
+        "EU Commission issues a further fine or mandated product change on the 'pay or consent' advertising model",
+        "Reality Labs operating loss exceeds $20bn on a trailing-12-month basis without a disclosed monetization roadmap"
+      ],
+      "key_adverse_facts": [
+        "Q2 2026 was the first year-over-year profit decline of the AI era: operating margin fell from 38-43% to 31% in one year, including $2.4bn of legal-related charges and $1.18bn of severance",
+        "Free cash flow collapsed from $12.39bn (Q1 2026) to $0.784bn (Q2 2026); quarterly capex of $31.1bn consumed 98% of operating cash flow",
+        "Reality Labs posted a $4.619bn operating loss in Q2 2026 (vs $4.530bn a year earlier) on just $431m of revenue -- a persistent ~$18bn/year structural drag",
+        "b1 composite score (0.20) is bottom-quintile of the entire program universe, driven by weak value, momentum and earnings-momentum factors, even though the quality factor (backward-looking) is still the highest of the four names",
+        "Fined EUR200m in April 2025 for the 'pay or consent' model under the EU DMA; the same practice remains under a further non-compliance investigation despite winning the separate FTC monopoly trial"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium-low (near-term earnings trend and capex-to-cash-flow ratio are genuine, current concerns, not just valuation caution)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for this ticker; no prior Codex valuation to reconcile against. This dossier's 10-year reverse DCF requires a ~17.5% constant revenue CAGR to justify $751.66, versus an explicit decelerating base case averaging ~11.2% (base-case fair value ~$443, ~70% below the close) -- the largest percentage valuation gap of the four names, reinforced by the current-quarter margin/FCF deterioration."
+      },
+      "scenario_returns_3y": {"bear": -0.194, "base": 0.024, "bull": 0.239}
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "agent": "F111",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "KKR": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A top-3 alternative asset manager with an insurance arm, growing fees fast, priced by the market for far less growth than it is delivering.",
+      "kill_criteria": [
+        "Fee Paying AUM growth decelerates below 5% YoY for two consecutive quarters",
+        "A confirmed, material adverse regulatory finding or settlement tied to the Global Atlantic third-party-administrator litigation disclosed in the FY2025 10-K",
+        "ANI per Adjusted Share declines YoY for two consecutive quarters",
+        "Consolidated Global Atlantic statutory capital/RBC ratio falls below regulatory comfort levels",
+        "Net new capital raised (LTM) turns negative YoY"
+      ],
+      "key_adverse_facts": [
+        "Q04 triage flagged the worst statistical-model rank in the batch (495/500) and negative 12-month momentum (-15%), tied to Global Atlantic insurance/private-credit risk",
+        "Global Atlantic was, per the FY2025 10-K, the subject of policyholder and agent class action litigation and regulatory matters stemming from service disruptions caused by a third-party administrator",
+        "Could not cleanly separate parent-only leverage from consolidated (insurance-inclusive) leverage this pass; consolidated LongTermDebt XBRL tag was stale (last populated 2021)",
+        "GAAP net income swings quarter to quarter are large (1Q'26 $405.2m vs 2Q'26 $700.5m, +73% sequential) given no forward guidance is given by the company"
+      ],
+      "data_conflicts": [
+        "None identified versus v1 (no v1 row exists for KKR)"
+      ],
+      "next_earnings_date": "2026-11-06",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "med (fee-earning franchise growth is well evidenced; Global Atlantic insurance-book risk and parent-vs-consolidated leverage were not fully disaggregated this pass)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No v1_valuation_table.csv row exists for KKR (checked directly); v1_verdict is null and no reconciliation is possible. My own reverse DCF (TTM ANI/share $5.56, price $96.67, cost of equity 9.0%) implies only ~3.1% perpetual growth, well below my ~10-12% base case for AUM/fee growth, which independently reads as cheap."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.08,
+        "base": 0.13,
+        "bull": 0.24
+      },
+      "scenario_basis": "Base: TTM ANI/share $5.56 compounds at ~10-12%/yr as Fee Paying AUM grows from $638.4bn toward ~$900bn-1tn by 2028-29, exit multiple ~16-17x ANI (modest re-rating from current ~17.4x TTM as insurance-book concerns ease), plus ~0.5% dividend/buyback yield. Bear: Global Atlantic credit event or adverse litigation outcome, ANI/share growth slows to ~4%/yr, multiple compresses to ~13-14x. Bull: insurance flywheel and fundraising both accelerate, ANI/share grows ~16-18%/yr, multiple re-rates toward 19-20x."
+    },
+    "LH": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "America's leading clinical-lab duopoly player, raising guidance twice this year, priced for far less growth than it is guiding to.",
+      "kill_criteria": [
+        "Full-year adjusted EPS guidance is cut (not just maintained) at any of the next two quarterly releases",
+        "Enterprise revenue growth falls below 3% YoY for two consecutive quarters",
+        "Free cash flow conversion (FCF / adjusted net income) falls below 70% for two consecutive quarters",
+        "A material adverse ruling or settlement in the pending qui tam/DOJ matters disclosed in the FY2025 10-K",
+        "Net debt/EBITDA rises above 3.0x once independently computed from a primary filing"
+      ],
+      "key_adverse_facts": [
+        "Company is a repeat subject of qui tam False Claims Act suits and received a DOJ subpoena (served June 27, 2022) requiring production of documents related to urine drug testing, with which it is cooperating, per the FY2025 10-K",
+        "Cash fell from $981.1m (2026-03-31) to $141.8m (2026-06-30) while long-term debt rose from $5,084.6m (2025-12-31) to $5,857.6m (2026-06-30); the specific cause was not independently sourced this pass",
+        "Operating cash flow was roughly flat YoY (1H'26 $637.0m vs 1H'25 $639.1m) despite GAAP EPS growth of 28.5% YoY in the quarter, worth monitoring for a widening working-capital or one-off gap"
+      ],
+      "data_conflicts": [
+        "None identified versus v1 (no v1 row exists for LH)"
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "18-36 months",
+      "confidence_in_thesis": "high (two consecutive guidance raises with quoted prior-vs-updated ranges; open legal items are longstanding industry-typical exposures, not new)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No v1_valuation_table.csv row exists for LH (checked directly); v1_verdict is null. My own reverse DCF (guided FY2026 FCF/share ~$15.8, price ~$304, cost of equity 8.5%) implies only ~3.1% perpetual FCF growth, below my ~7-8% base case built from the company's own guided algorithm, which independently reads as cheap."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.05,
+        "base": 0.12,
+        "bull": 0.22
+      },
+      "scenario_basis": "Base: FY2026 guided adjusted EPS midpoint ~$18.33 compounds ~7-8%/yr via mid-single-digit organic revenue growth plus margin expansion and buybacks, exit P/E ~17-18x (modest re-rating from ~16.6x on guided EPS at current price), plus ~1.3% dividend yield. Bear: reimbursement cuts and litigation costs stall growth to ~1-2%/yr, multiple compresses to ~14x. Bull: Biopharma backlog ($8.73bn, book-to-bill 1.03) converts faster, EPS growth reaches ~11-13%/yr, multiple holds near 19-20x."
+    },
+    "NI": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "An Indiana/Ohio gas-and-electric utility funding a large, regulator-approved growth plan partly with Amazon and Alphabet data-center demand, priced for far less growth than it guides.",
+      "kill_criteria": [
+        "The IURC gas-meter-accuracy investigation (hearing expected July 2026) results in a disallowance, penalty, or adverse safety finding",
+        "FY2026 non-GAAP consolidated adjusted EPS guidance ($2.02-$2.07) is cut at either of the next two quarterly releases",
+        "The guided 2026-2030 consolidated capital plan ($28.6 billion) is reduced by more than 10%",
+        "Either the Amazon or Alphabet data-center agreement referenced in the 2Q'26 release is terminated, reduced, or disclosed as impaired",
+        "Consolidated long-term debt rises to a level triggering a below-investment-grade downgrade at any major credit-rating agency"
+      ],
+      "key_adverse_facts": [
+        "IURC initiated an investigation in November 2025 into the accuracy of NIPSCO's gas meters, following disclosure of a latent meter-index issue found during an AMI module rollout; a hearing was expected July 2026 and the outcome was not found in the filings reviewed",
+        "GAAP net income and EPS are currently distorted by large one-off gains tied to the Blackstone NIPSCO and GenCo minority-interest transactions (1Q'26 GAAP net income $507.1m vs a much smaller FY2025 full-year base of $929.5m); the exact gain amount was not independently verified this pass",
+        "Free cash flow is structurally negative in the current capex up-cycle (1H'26 capex $1,902.6m vs operating cash flow $1,122.7m), funded by debt and the Blackstone minority-stake proceeds rather than by internally generated cash"
+      ],
+      "data_conflicts": [
+        "Q15 triage's cited ~20% forward EPS growth appears inconsistent with management's own guided 9-10% non-GAAP consolidated adjusted EPS CAGR (2026-2033); most likely explained by the triage screen using GAAP or consensus EPS inflated by the one-off Blackstone-transaction gains, not reconciled to a specific source this pass"
+      ],
+      "next_earnings_date": "2026-11-04",
+      "horizon": "24-48 months",
+      "confidence_in_thesis": "med (guided capital plan and contracted data-center demand are well evidenced; open regulatory investigation and GAAP earnings-quality noise are unresolved as of this pass)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No v1_valuation_table.csv row exists for NI (checked directly); v1_verdict is null. My own reverse DCF (guided FY2026 adjusted EPS midpoint $2.045, price ~$39.25, cost of equity 7.5%) implies only ~2.3% perpetual EPS growth, well below both management's own guided 9-10% CAGR and my ~9-10% base case, which independently reads as cheap, tempered by the open regulatory investigation."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.04,
+        "base": 0.11,
+        "bull": 0.19
+      },
+      "scenario_basis": "Base: FY2026 guided adjusted EPS midpoint $2.045 compounds at management's guided 9-10%/yr as the $28.6bn 2026-2030 capital plan executes and data-center load contracts (Amazon, Alphabet) ramp, exit P/E ~19-20x (roughly in line with current), plus ~1.5% dividend yield with modest per-share growth. Bear: IURC investigation results in a disallowance/penalty and data-center commitments slip, adjusted EPS growth slows to ~3-4%/yr, multiple compresses to ~16x. Bull: additional large-load demand pulls forward capital investment beyond the current plan, adjusted EPS growth reaches ~12-14%/yr, multiple re-rates toward 21-22x."
+    }
+  }
+}

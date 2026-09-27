@@ -1,0 +1,31 @@
+{
+  "total": 84,
+  "criteria": {
+    "1": 8,
+    "2": 8,
+    "3": 7,
+    "4": 8,
+    "5": 9,
+    "6": 9,
+    "7": 8,
+    "8": 8,
+    "9": 7,
+    "10": 9
+  },
+  "must_fix": [
+    "WEC's holding one-liner in FINAL_REPORT §6 is a literal unfilled placeholder ('thesis line pending; see dossier'), traced to code/lead_report_sections.py:204 where r.get('thesis') returns empty for WEC despite WEC.md having a complete verdict sentence; fix the field-population bug, rebuild, and grep for 'pending' across the rebuilt report to confirm no other name is affected.",
+    "The RMD near-miss (dossier cited FY2027 guidance that does not exist in the referenced 8-K, mislabelled 9-month buyback/dividend figures as full-year, omitted a MatrixCare divestiture; caught by DA18, verdict reassessed INCLUDE to INCLUDE-SMALL, excluded from this build) is recorded only in STATE.md's internal log, not anywhere in FINAL_REPORT (not in section 6's 'what changed', not in section 3, not in section 11); add a disclosure sentence naming RMD and the error class so the owner can see the quality-control process caught a real error.",
+    "No cumulative DA1-DA18 tally (total facts checked, pass/minor/fail counts) exists in FINAL_REPORT or the dashboard, carried unfixed for the third loop running (Loop 7, 8, 9).",
+    "Rule-(j) order-dependence has widened (9 of 20 names held under every alternative ordering, down from 14 last loop) and FINAL_REPORT discloses this honestly for the return range (-59% to -46%), but does not quantify how much the sector mix itself would shift under the alternative orderings shown."
+  ],
+  "fact_checks": [
+    {"ticker": "WEC", "claim": "Q2 2026 operating revenues $2,062.1M (+2.6% YoY); GAAP diluted EPS $0.91 vs $0.76 prior year; FY2026 EPS guidance $5.51-$5.61 reaffirmed", "source": "DA18 fact record, cross-checked against WEC Energy Group Q2 2026 8-K Ex-99.1, accession 0000783325-26-000080", "status": "PASS"},
+    {"ticker": "RMD", "claim": "Dossier's FY2027 guidance range exists in the cited 8-K, and 9-month buyback/dividend figures are correctly period-labelled", "source": "DA18 correction section: guidance range not found in the cited 8-K; 9-month figures were actually full-year; MatrixCare divestiture omitted", "status": "FAIL"},
+    {"ticker": "PTC", "claim": "Latest-quarter fiscal period label matches PTC's September fiscal year-end", "source": "DA18 correction section: one fiscal quarter mislabelled early, corrected in dossier", "status": "FAIL"},
+    {"ticker": "MCK", "claim": "DA18-checked load-bearing facts (latest quarter, guidance, debt) are clean", "source": "da18_factcheck.json scope note: MCK dossier clean, no correction appended", "status": "PASS"},
+    {"ticker": "N/A (portfolio construction)", "claim": "Electric Utilities sub-industry (EXC + WEC) sits at exactly the 12% cap and does not exceed it", "source": "outputs/lead_portfolio_build.json weights/table/sub fields, independently re-grouped and summed by hand: EXC 5.29% + WEC 6.71% = 12.00%", "status": "PASS"},
+    {"ticker": "N/A (portfolio construction)", "claim": "All 20 sleeve weights sum to exactly 100% and the Financials sector sits at exactly the 25% cap", "source": "outputs/lead_portfolio_build.json weights field, hand-summed: USB+MA+AXP+PGR+HBAN = 25.0%; all 20 = 100.0%", "status": "PASS"},
+    {"ticker": "GDDY", "claim": "A second, peer-multiple valuation leg (EV/EBITDA and EV/FCF) now corroborates the reverse-DCF's 'below base case' conclusion", "source": "GDDY.md section 7 addendum (peer set WIX, VRSN, TCX, SHOP; sourced in da17_factcheck.md), arithmetic re-derived by hand", "status": "PASS"},
+    {"ticker": "N/A (rule-j sensitivity)", "claim": "9 of 20 held names (ADP, CAH, CRH, EXC, GDDY, LVS, TJX, USB, VEEV) are chosen under every alternative ordering", "source": "outputs/lead_j_sensitivity.json field n_in_every_ordering / in_every_ordering, cross-checked against FINAL_REPORT.md section 6 prose", "status": "PASS"}
+  ]
+}

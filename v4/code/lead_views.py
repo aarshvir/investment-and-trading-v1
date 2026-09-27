@@ -156,9 +156,12 @@ if B and B.get('weights'):
         txt = DOS.get(t, '')
         if txt:
             import re as _re
-            m = _re.search(r'Verdict[^\n]*\n+(.{40,400}?)(?:\n\n|\n#)', txt, _re.S)
+            m = _re.search(r'Verdict[^\n]*\n+(.{40,3000}?)(?:\n\n|\n#)', txt, _re.S)   # A2/A3 loop-9: long verdict paragraphs (WEC) had no match
             thesis = _re.sub(r'\s+', ' ', m.group(1)).strip() if m else ''
-            thesis = _re.sub(r'\*\*|__', '', thesis)[:260]
+            thesis = _re.sub(r'\*\*|__', '', thesis)
+            _sent = _re.split(r'(?<=[.!?])\s+(?=[A-Z])', thesis)   # first two sentences, or the first if two are long
+            _sent = [x for x in _sent if not _re.match(r'^(INCLUDE(-SMALL)?|WATCH|REJECT)\.?$|^Horizon\b', x.strip())] or _sent   # skip the bare verdict word and horizon
+            thesis = ' '.join(_sent[:2]) if len(' '.join(_sent[:2])) <= 420 else _sent[0]
         _pe, _pel = r.get('pe'), ('trailing P/E' if r.get('pe_basis') == 'trailing' else None)
         if t in _V2R and (_V2R[t].get('pffo_fy26_guide') or _V2R[t].get('pffo_ttm_now')):   # REITs: FFO rebuilt from filings (V2R)
             _pe = float(_V2R[t].get('pffo_fy26_guide') or _V2R[t]['pffo_ttm_now'])

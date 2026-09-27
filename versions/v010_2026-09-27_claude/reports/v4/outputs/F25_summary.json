@@ -1,0 +1,101 @@
+{
+  "agent": "F25",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "BR": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "The near-monopoly plumbing behind proxy voting and bank back-office processing, growing recurring revenue and cash flow at high-single/low-double digits, priced as if it will barely grow at all.",
+      "kill_criteria": [
+        "Recurring-revenue growth (constant currency) falls below 5% for two consecutive quarters (below the low end of every guidance range issued in FY2026/FY2027)",
+        "Adjusted EPS growth guidance is cut versus the immediately prior quarter's range (zero cuts to date across FY2026's four releases)",
+        "Net debt/EBITDA rises above 3.0x (from approximately 1.7x currently) absent a disclosed, board-approved acquisition financing plan",
+        "Full-year FCF conversion (FCF/net income) falls below 90% for a full fiscal year (FY2026: greater than 100%)",
+        "Digital-asset/tokenization mark-to-market losses exceed $50 million in any single quarter (Q4 FY26: -$11m)"
+      ],
+      "key_adverse_facts": [
+        "12-month price momentum is negative (mom_12_1 approximately -0.22) despite four straight quarters of guidance raises -- the market has not yet rewarded the beat-and-raise pattern, which is either a genuine mispricing or evidence the market sees a risk this dossier does not",
+        "FY2026 GAAP net income and free cash flow were flattered by a $227m full-year non-operating gain on digital-asset holdings (offset by an $11m Q4 non-cash loss); FY2026 GAAP diluted EPS and adjusted EPS converge to exactly $9.60 for the full year, an unresolved coincidence this dossier could not fully reconcile from public disclosure",
+        "ICS 'event-driven' revenue (M&A/reorg communications, proxy contests) is inherently market-cycle dependent and carries the bulk of BR's revenue and margin",
+        "Multi-year recurring-revenue growth has been noisy rather than a clean acceleration (FY24 +6.6%, FY25 +5.9%, FY26 +8% cc)"
+      ],
+      "data_conflicts": [
+        "FY2026 GAAP diluted EPS and adjusted (non-GAAP) diluted EPS both equal exactly $9.60 for the full year despite differing meaningfully at the quarterly level (Q4: GAAP $3.44 vs adjusted $3.82); the annual convergence appears to be a netting coincidence across quarterly adjustment items but was not independently reconciled from the public earnings release"
+      ],
+      "next_earnings_date": "2026-11-03",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "high (four-quarter beat-and-raise record is filed and verified; balance sheet and capital-allocation history are strong); medium on the exact magnitude of the digital-asset earnings contribution",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "implied_vs_base": "below",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for this ticker. This dossier's own 10-year reverse DCF (8.5% discount rate, 2.5% terminal growth) requires only a ~2.9%/year constant FCF growth rate to justify the EV of $21,663m on a $1,233m FY2026 company-reported FCF base, versus an explicit base case of ~10%/year adjusted-EPS growth (midpoint of the FY2027 8-12% guide, consistent with FY2026's delivered 12%). The implied growth is well below the base case -- the INCLUDE condition -- and the triage's own 'genuine mispricing' framing (15.2x NTM P/E, 6.3% FCF yield vs ~9% cost of capital) is corroborated."
+      },
+      "scenario_returns_3y": {"bear": -0.010, "base": 0.118, "bull": 0.215}
+    },
+    "LDOS": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A diversified US federal-government IT and defense contractor with a $48.7 billion backlog, trading cheaply, but leverage just jumped from a debt-funded acquisition and federal-budget policy risk is real, not just theoretical.",
+      "kill_criteria": [
+        "FY revenue or non-GAAP EPS guidance is cut versus the immediately prior quarter's guidance (zero cuts across the last four releases; four consecutive raises)",
+        "Net debt/EBITDA rises above 3.0x (from approximately 2.45x currently) without a disclosed deleveraging plan",
+        "Organic revenue growth (excluding ENTRUST and any further M&A) falls below 2% for two consecutive quarters",
+        "A single contract recompete loss, cancellation, or government-shutdown-driven revenue disruption exceeding $300 million of annualized revenue is disclosed",
+        "The SEC's open FCPA-related investigation (since 2021; DOJ closed with no action Dec-2024) results in a formal enforcement action, fine, or admission of wrongdoing"
+      ],
+      "key_adverse_facts": [
+        "Net debt/EBITDA rose from a comfortably lower level to approximately 2.45x in a single quarter after a $1.4bn debt-funded acquisition (ENTRUST, closed 30-Mar-2026; $600m 4.100% notes due 2029 and $800m 5.000% notes due 2036, priced 2-Mar-2026)",
+        "US federal budget/DOGE-era spending-cut policy risk to contract awards and backlog conversion is real and only partially tested: Leidos weathered DOGE cancellations better than named peers, but a March-2026 WARN notice (93 employees, Ashburn VA security-operations center) shows the risk materializing at a small scale tied to a US Customs and Border Protection contract change",
+        "A meaningful share of FY2026's guidance raise (the +$500m step-up between the initial February guide and the May Q1 guide) is explicitly acquisition- (ENTRUST-) driven, not organic acceleration; Q2 2026 organic growth was 4% against 7% total reported growth",
+        "An SEC investigation stemming from a self-reported 2021 internal FCPA-related inquiry (international operations, third-party representatives, subcontractors) remained open as of the most recent 10-K reviewed, even though the parallel DOJ investigation closed with no action in December 2024"
+      ],
+      "data_conflicts": [
+        "Q2 2026 net income ($356m) and diluted EPS ($2.81) and operating cash flow ($793m) are taken from the company's own 8-K earnings release; the raw XBRL companyfacts pull performed for this dossier did not cleanly isolate a matching 3-month figure for this specific quarter, an extraction limitation rather than a substantive conflict, disclosed rather than papered over"
+      ],
+      "next_earnings_date": "2026-11-03",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (valuation and backlog evidence are strong; leverage step-change and unresolved federal-budget/SEC-investigation risk are genuine, current-period reservations, not just caution)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "implied_vs_base": "below",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for this ticker. This dossier's own 10-year reverse DCF (8.5% discount rate, 2.5% terminal growth) requires only a ~3.6%/year constant FCF growth rate to justify the EV of $21,361m on a $1,147m TTM FCF base (quant-snapshot, likely stale by one quarter pre-ENTRUST), versus an explicit base case of ~7%/year non-GAAP EPS growth (per FY2026 guidance). The implied growth is well below the base case, consistent with the triage's own '7.4% FCF yield against a required growth of only ~1.6%' framing; INCLUDE-SMALL rather than INCLUDE reflects the leverage and policy-risk reservations, not a valuation disagreement."
+      },
+      "scenario_returns_3y": {"bear": 0.007, "base": 0.124, "bull": 0.230}
+    },
+    "VRT": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The pure-play leader in AI data-center power and cooling infrastructure is executing brilliantly, but the price already bakes in more growth durability than a conservative, deceleration-aware base case supports.",
+      "kill_criteria": [
+        "Organic net-sales growth decelerates below 15% YoY for two consecutive quarters (from 18-31% currently)",
+        "Book-to-bill ratio falls below 1.0x for two consecutive quarters (from 2.9x currently)",
+        "FY guidance (revenue or adjusted EPS) is cut versus the immediately prior quarter's guidance (zero cuts to date; every release this year has raised)",
+        "A confirmed, named hyperscaler customer publicly announces a material pause or reduction in AI-data-center capital expenditure specifically affecting Vertiv's order book",
+        "Net debt/EBITDA rises above 1.5x (from approximately 0.09x currently) absent a disclosed, board-approved acquisition"
+      ],
+      "key_adverse_facts": [
+        "Q2 2026 (reported 29-Jul-2026) net sales of $3.27bn missed sell-side consensus (~$3.38bn) by roughly 3%, and the stock fell as much as 26% that day, despite management raising full-year guidance the same day and attributing the shortfall to 'minor timing shifts'; the explanation is plausible but unverified by this review",
+        "Book-to-bill of 2.9x is extreme relative to Vertiv's own recent history (1.4x as recently as Q3 2025) and is, by construction, unsustainable at that level; a normalization would mechanically slow backlog-growth headlines even absent any change in end demand",
+        "Trailing P/E of 57x and this dossier's own reverse DCF (14.3%/year implied 10-year FCF growth) sit modestly above an explicit, evidence-weighted base case (~11-12%/year, built from a stated deceleration path from 30%+ current organic growth toward management's own 25%-margin-by-2029 trajectory) -- the definition of priced for more than the base case delivers",
+        "Multiple plaintiff law firms announced securities-law 'investigations' in August-September 2026 following the Q2 stock decline; these are solicitation announcements, not filed complaints with specific factual findings, and are flagged for tracking rather than weighted as a confirmed adverse fact",
+        "A director sold roughly 48% of his personal share count on 2026-09-01 under a pre-scheduled Rule 10b5-1 plan; the CEO's September 2026 disposition of 118,523 shares was recorded as a gift, not an open-market sale"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-21",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (operating momentum, backlog and balance-sheet evidence are strong and well corroborated; the base-case growth-deceleration assumption that drives the WATCH verdict is a genuine judgment call, not a certainty)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for this ticker. This dossier's own 10-year reverse DCF (9.5% discount rate reflecting the higher beta of 2.075, 2.5% terminal growth) requires a ~14.3%/year constant FCF growth rate to justify the EV of $94,665m on a $2,697m TTM FCF base, versus an explicit base case of ~11-12%/year (a stated decelerating path: 30% in 2027, 20% in 2028, 14% in 2029, 10% and stable thereafter, chosen to reconcile the current 30%+ organic growth rate with the unsustainable 2.9x book-to-bill and management's own margin-normalization trajectory toward 2029). The implied growth sits modestly above the base case -- the triage's own 'significant re-rating already happened' caution is corroborated by an independent DCF, so under the program's rule (INCLUDE/INCLUDE-SMALL requires implied growth at or below base case) this name is WATCH, not INCLUDE, despite excellent current fundamentals."
+      },
+      "scenario_returns_3y": {"bear": -0.176, "base": 0.145, "bull": 0.336}
+    }
+  }
+}

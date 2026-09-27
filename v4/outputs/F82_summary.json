@@ -1,0 +1,104 @@
+{
+  "agent": "F82",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "SO": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Southeast's largest regulated utility, Vogtle risk now behind it, priced fairly while real data-center demand growth is still barely in the price.",
+      "kill_criteria": [
+        "Adjusted EPS growth falls below 4% for two consecutive quarters (vs the ~5–7% long-term target)",
+        "Consolidated net debt/EBITDA rises above 6.0x without a credit-positive equity issuance offsetting it",
+        "A state commission (Georgia, Alabama or Mississippi PSC) formally disallows recovery of a material capex or fuel-cost item (>$250mn) in a rate order",
+        "Guidance is cut (not just reaffirmed) at any of the next two quarterly releases",
+        "A confirmed hyperscaler data-center load agreement in the Southeast is publicly cancelled or downsized"
+      ],
+      "key_adverse_facts": [
+        "Guidance track record not independently verified this pass (no confirmed prior-range comparison from a primary source) - treat as medium, not high, confidence",
+        "Consolidated net debt/EBITDA ~5.2x leaves limited headroom before the next rate case",
+        "1-year price momentum negative (-4.1%) versus peers that have already re-rated on confirmed hyperscaler contracts",
+        "Full Item 3 legal-proceedings read of the current 10-Q not completed this pass"
+      ],
+      "data_conflicts": [
+        "Systematic factor model (b1_live_scores.csv) ranks SO near the bottom of the scored universe (decile 2, model rank 400) on weak momentum and low trailing FCF yield, while qualitative triage and this dossier rate it INCLUDE on quality/scale and an under-priced data-center growth option - the factor model cannot see the point-in-time load-growth catalyst"
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium - core quality/valuation case is solid but guidance track record and Q2 2026 10-Q legal-proceedings detail were not independently verified this pass",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "SO has no row in v1_valuation_table.csv, so there is no systematic verdict to reconcile against. This dossier's own reverse-DCF (NTM P/E 17.1x, ~7% cost of equity) implies ~1% perpetual growth, well below SO's ~5-7% long-term guided growth (implied_vs_base = below), which is why the verdict is INCLUDE rather than WATCH despite a non-cheap 17.1x multiple."
+      },
+      "scenario_returns_3y": {"bear": -0.005, "base": 0.095, "bull": 0.16},
+      "scenario_basis": "Starting NTM P/E 17.1x on $82.88 close, 3.6% dividend yield; bear = growth slows to ~2-3% and multiple compresses to ~15x; base = ~5-6% adjusted EPS growth (per SO's long-term target) with multiple flat at ~17x; bull = data-center load converts faster than guided (8%+ EPS growth) with multiple re-rating to ~19-20x."
+    },
+    "TJX": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "TJ Maxx/Marshalls/HomeGoods off-price retailer with near-net-cash leverage and 62% ROE, priced for less growth than it has actually been delivering.",
+      "kill_criteria": [
+        "Marmaxx US comp sales below 2% for two consecutive quarters (current run-rate: +1%)",
+        "Consolidated gross margin (ex. one-time tariff items) contracts more than 100bps YoY in any quarter",
+        "Full-year adjusted EPS guidance is cut (not just reaffirmed/raised) at any of the next two quarterly releases",
+        "Net debt/EBITDA rises above 2.0x (current 0.9x) without a value-accretive acquisition explaining it",
+        "Buybacks are paused or reduced by more than 30% quarter-over-quarter without a stated capital-allocation reason"
+      ],
+      "key_adverse_facts": [
+        "Marmaxx (largest US banner) comps only +1% in Q2 FY2027 and explicitly called 'below expectations' by the CEO",
+        "Reported Q2 FY2027 GAAP EPS growth (+24%) is inflated by a one-time $331mn tariff refund and $112mn of related accruals; adjusted EPS growth (+11%) is the better run-rate figure",
+        "Prior full-year guidance range before the Q2 FY2027 raise was not independently re-pulled from the Q1 FY2027 release this pass",
+        "An 8-K item 5.02 (executive/board change) filed 2026-09-17 was not investigated this pass"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-11-18",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "high - low leverage, strong ROE and the growth-vs-price gap are all confirmed from primary filings; the main open item (Marmaxx deceleration) is disclosed by management itself, not hidden",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "TJX has no row in v1_valuation_table.csv, so there is no systematic verdict to reconcile against. This dossier's own reverse-DCF (NTM P/E 23.1x, ~8.5% cost of equity) implies ~4.2% perpetual growth, below TJX's ~8-10% guided/delivered adjusted EPS growth (implied_vs_base = below), supporting INCLUDE despite the high absolute multiple."
+      },
+      "scenario_returns_3y": {"bear": 0.03, "base": 0.105, "bull": 0.18},
+      "scenario_basis": "Starting NTM P/E 23.1x on $130.06 close, 1.4% dividend yield; bear = Marmaxx stays stuck near 1% comps and tariff costs are not fully offset, multiple compresses toward ~20x; base = mid-single-digit comps across banners with ~9-10% adjusted EPS growth (buyback + margin), multiple holds ~23x; bull = HomeGoods/International momentum broadens to Marmaxx, low-teens adjusted EPS growth, multiple re-rates to ~25-26x."
+    },
+    "AEP": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Multi-state regulated utility with a filing-confirmed, unusually strong 7-9% growth pipeline from data-center load, but leverage is rising faster than equity.",
+      "kill_criteria": [
+        "Net debt/EBITDA rises above 6.5x (current 5.9x) without a credit-rating-neutral equity raise alongside it",
+        "Any of the newly signed 6 GW (Q2 2026) or the broader 69 GW contracted-load pipeline is publicly cancelled or downsized by more than 10%",
+        "Full-year operating EPS guidance is cut (not raised/reaffirmed) at either of the next two quarterly releases",
+        "A credit-rating agency downgrades AEP or a major operating subsidiary by one notch",
+        "Operating EPS growth (ex identified one-time items) falls below 5% for two consecutive quarters against the 7-9% long-term target"
+      ],
+      "key_adverse_facts": [
+        "Consolidated long-term debt grew 21% YoY (to $46.85bn at Q1 2026) versus equity growth of only 16.5% YoY - leveraging up faster than capitalizing",
+        "Net debt/EBITDA 5.9x is the highest in this batch (SO 5.2x, TJX 0.9x)",
+        "GAAP diluted EPS fell 43% YoY in Q2 2026 ($2.29 to $1.31) versus only a 5% decline in operating EPS ($1.43 to $1.36); this dossier could not identify the specific 2025 one-time item driving the GAAP gap",
+        "V1's own base-case 3-year return is negative (-1.9%/yr) despite a 'fair' verdict",
+        "Cash and cash equivalents only $306mn at Q1 2026 - thin cushion against a financing-market disruption"
+      ],
+      "data_conflicts": [
+        "This dossier's higher WACC estimate (6.4-7.0%, given 5.9x net debt/EBITDA and debt outgrowing equity) versus V1's 5.42% WACC changes the precise implied-growth number, though not the fair/not-expensive conclusion"
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium - the load-growth pipeline and guidance raise are filing-confirmed, but rising leverage and an unexplained GAAP EPS swing are open items that argue for half weight, not full",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "fair",
+        "v1_base_3y": -0.0193,
+        "implied_vs_base": "below",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "This dossier's independent reverse-DCF (earnings yield 5.69% vs V1's 5.42% WACC) implies ~-0.27% perpetual growth, closely matching V1's -0.44%, confirming the arithmetic. I think V1's 5.42% WACC is somewhat low given AEP's 5.9x net debt/EBITDA and debt growing faster than equity; a more conventional ~6.4-7.0% WACC would raise implied growth to ~1-2%, still well below AEP's own guided 7-9% growth (implied_vs_base = below either way), so V1's 'fair, not expensive' verdict holds under my correction too. INCLUDE-SMALL rather than full INCLUDE because of the leverage trend and the unexplained GAAP EPS swing, not because of valuation."
+      },
+      "scenario_returns_3y": {"bear": -0.162, "base": -0.019, "bull": 0.132},
+      "scenario_basis": "V1 systematic model figures adopted as-is (this dossier's own WACC sense-check does not change the sign or ranking of the three cases): starting NTM P/E 17.58x on $118.35 close; bear = leverage-driven de-rating plus load-pipeline slippage; base = guidance delivered but multiple normalizes down from today's level as growth decelerates post-2030; bull = 69 GW contracted load converts on schedule and multiple re-rates toward growth-utility peers."
+    }
+  }
+}

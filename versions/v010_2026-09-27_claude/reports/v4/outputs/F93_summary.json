@@ -1,0 +1,115 @@
+{
+  "agent": "F93",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "STT": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Global custody and asset-management bank whose fee and interest-income guidance was just raised sharply, but much of that improvement is already priced in.",
+      "kill_criteria": [
+        "Fee revenue growth (consolidated, YoY) falls below 6% for two consecutive quarters",
+        "NII growth (consolidated, YoY) turns negative for one quarter",
+        "Expense growth (consolidated) exceeds revenue growth for two consecutive quarters (negative operating leverage)",
+        "Diluted share count stops declining sequentially for two consecutive quarters (buyback pace materially cut)",
+        "Any CET1/Tier-1 capital ratio breach or regulatory capital action"
+      ],
+      "key_adverse_facts": [
+        "Full-year 2026 guidance percentages (fee revenue 12-13%, NII 14-15%) were sourced from secondary earnings-call coverage, not independently re-verified against the primary 8-K/press-release exhibit in this pass",
+        "Bank 'operating cash flow' is not a usable earnings-quality metric here (swung from -$14.5bn 1H26 to +$11.9bn FY25 on trading/deposit timing), and CET1/Tier-1 capital ratios were not pulled this pass",
+        "Current (25-Sep-2026) closing price was not independently re-confirmed; b1_live_scores.csv price is stale (dated 2026-07-30) and triage cites a 69% rally, so the true current multiple could be materially richer than this dossier's reverse-DCF band"
+      ],
+      "data_conflicts": [
+        "None material beyond the guidance-source caveat above; consolidated income-statement figures reconcile cleanly across the Q2 2026 10-Q and prior-period XBRL"
+      ],
+      "next_earnings_date": "2026-10-20",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (primary income-statement data strong; capital ratios and exact current price/guidance text not independently re-verified this pass)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "in_line",
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for STT in v1_valuation_table.csv, so v1_verdict is null and no consistency check with V1 is possible; this dossier's own reverse-DCF puts trailing P/E in a 16-18x band on TTM EPS of $11.33, implying the market has priced continuation of the 2026 guidance-raise cycle rather than a material deceleration or acceleration beyond it."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.05,
+        "base": 0.09,
+        "bull": 0.18
+      },
+      "scenario_basis": "Starting TTM diluted EPS $11.33 (GAAP, consolidated); base case assumes fee+NII growth normalizes toward high-single-digit EPS CAGR and a stable ~16-17x multiple; bear assumes NII reversal (rate cuts, deposit-mix pressure) cutting EPS growth to flat and multiple compression to ~13x; bull assumes the 2026 guidance-raise cadence persists (low-teens EPS CAGR) with multiple holding near 18x; dividend yield ~1.8% added to all three."
+    },
+    "TKO": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Owner of WWE and UFC, irreplaceable live combat-sports and entertainment IP with long, contracted media deals, but public shareholders only get about a third of the profit and the stock is priced for more growth than that slice has delivered.",
+      "kill_criteria": [
+        "Consolidated revenue growth (YoY) falls below 8% for two consecutive quarters",
+        "Attributable-to-TKO diluted EPS growth (YoY) turns negative for one quarter",
+        "Consolidated noncurrent long-term debt rises above $6bn without a matching EBITDA step-up (net leverage above roughly 3.5x on a properly annualized TTM basis)",
+        "Any new UFC/WWE antitrust, wage-fixing, or media-rights litigation loss/settlement exceeding $100m not already reserved for",
+        "Loss or non-renewal of a top-3 media-rights contract (WWE-Netflix, UFC's primary US broadcast partner)"
+      ],
+      "key_adverse_facts": [
+        "Non-controlling interests took about 67% of Q2 2026 consolidated net income (NCI $202.4m of $303.9m); attributable-to-TKO diluted EPS growth (+31.6% 1H26 YoY) is materially below the roughly 64% guided EPS growth figure cited in the Q01 triage, which likely refers to a different (adjusted/segment) metric not re-verified this pass",
+        "Consolidated noncurrent long-term debt rose 23% in 1H 2026 (to $4,583.7m) while cash fell to $592.5m; equity attributable to TKO only ($3,395.9m) actually declined despite positive net income, implying distributions/buybacks favored NCI holders or reduced TKO's own retained equity",
+        "$375m UFC fighter antitrust settlement (Le v. Zuffa, final approval reported 2025-02-06) was sourced from secondary reporting only, not the court docket; a related wage-fixing case's current status was not confirmed this pass"
+      ],
+      "data_conflicts": [
+        "Triage's '4.3% reported margin' does not match this dossier's finding of ~24-28% consolidated GAAP operating margin; the low figure likely reflects attributable-net-income-to-revenue (NCI-diluted), not core operating profitability - resolved in TKO's favor on operating economics but the per-share dilution point stands",
+        "Own leverage estimate (~2.3-2.6x net debt/EBITDA, rough proxy) is broadly consistent with, not clearly better or worse than, the triage's cited 2.7x"
+      ],
+      "next_earnings_date": "2026-11-05",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (revenue/margin data strong and primary-sourced; litigation status, exact next-earnings date, and guidance percentages not independently re-verified this pass)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "above",
+        "dossier_view": "expensive",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for TKO in v1_valuation_table.csv, so v1_verdict is null. Annualizing 1H 2026 attributable diluted EPS ($2.46 x 2 = $4.92, optimistic given H2 event seasonality) against the stale px_actual of $182.67 implies a mid-to-high-30s P/E, matching the triage's cited 37.7x; sustaining that multiple requires attributable EPS growth well above the +31.6% actually delivered in 1H26 once media-rights step-ups anniversary, so implied growth sits above this dossier's base case. Condition that would move this to INCLUDE-SMALL: attributable-to-TKO diluted EPS growth re-accelerating to a sustained 40%+ YoY for two consecutive quarters (closing the gap to the priced-in growth), or the multiple compressing toward the mid-20s without a growth deceleration."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.1,
+        "base": 0.07,
+        "bull": 0.22
+      },
+      "scenario_basis": "Starting attributable diluted EPS run-rate ~$4.92 (annualized 1H26, GAAP, NCI-diluted); base case assumes attributable EPS growth decelerates to the high-teens as the NCI split stays roughly constant and a 30x multiple; bear assumes NCI take rises further and/or a litigation or leverage shock compresses the multiple to ~22x with flat EPS growth; bull assumes attributable EPS growth holds near 30%+ (NCI share stabilizes, media step-ups flow through) with the multiple holding near 37x; no meaningful dividend."
+    },
+    "URI": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Largest US equipment-rental company riding an AI-data-center and infrastructure construction boom, with guidance raised twice this year, but it is a capex-heavy cyclical already priced fully and buying back stock partly with borrowed money.",
+      "kill_criteria": [
+        "Quarterly revenue growth (YoY, consolidated) decelerates below 5% for two consecutive quarters",
+        "Net debt/EBITDA (consolidated, using guided or trailing adjusted EBITDA) rises above 2.5x",
+        "Free cash flow (OCF minus gross capex) turns negative for two consecutive quarters without a matching capex pull-back",
+        "Buybacks are suspended or cut for two consecutive quarters",
+        "FY guidance is cut (versus the prior stated range) at any quarterly release"
+      ],
+      "key_adverse_facts": [
+        "1H 2026 buybacks plus dividends ($1,064m) exceeded this dossier's own free-cash-flow definition (OCF minus gross capex, ~$420m) for the same period, funded by debt capacity rather than surplus cash; net debt rose over 1H 2026 despite flat gross debt",
+        "Guidance percentages (FY2026 revenue $17.5-17.8bn, adjusted EBITDA $7.975-8.125bn) were sourced from secondary coverage (Seeking Alpha), not independently re-verified line-by-line against the primary 8-K exhibit 99.1 press releases",
+        "Current (25-Sep-2026) closing price was not independently re-confirmed; b1_live_scores.csv price ($1,047.06) is dated 2026-04-22, pre-dating the Q2 2026 beat, so the true current multiple could be higher than this dossier's estimate"
+      ],
+      "data_conflicts": [
+        "Own net debt/EBITDA estimate (~1.75x, using FY2026 guided EBITDA midpoint and the Q2 2026 balance sheet) is materially lower than the 3.3x leverage figure the Q10 triage flagged as a red flag - resolved toward the more comfortable reading from primary sources, but the gap is large enough that it may reflect a different leverage-ratio definition (e.g., gross debt/EBITDA without netting cash, or a stale/different EBITDA base) that was not reconciled further this pass"
+      ],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (income statement, balance sheet and cash flow all primary-sourced and internally consistent; guidance text and exact current price not independently re-verified this pass)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "in_line",
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for URI in v1_valuation_table.csv, so v1_verdict is null. Own reverse view: TTM diluted EPS $41.57 at the stale $1,047 price gives ~25.2x trailing P/E and ~9.9x EV/FY2026-guided-EBITDA - a full multiple that prices in continued double-digit EBITDA growth (roughly this dossier's base case) rather than clearly more or less than that; a construction-cycle slowdown would make the current price look expensive quickly."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.12,
+        "base": 0.1,
+        "bull": 0.2
+      },
+      "scenario_basis": "Starting TTM diluted EPS $41.57 (GAAP, consolidated) and EV/EBITDA ~9.9x on FY2026-guided EBITDA; base case assumes high-single-digit revenue growth and stable ~10x EV/EBITDA as the capex tailwind moderates; bear assumes a non-residential construction downturn cuts revenue growth to flat/negative and compresses the multiple to ~7x while net leverage rises further; bull assumes the AI-data-center/infrastructure tailwind sustains low-double-digit EBITDA growth with the multiple holding near 11x; dividend yield roughly 1.5% added to all three."
+    }
+  }
+}

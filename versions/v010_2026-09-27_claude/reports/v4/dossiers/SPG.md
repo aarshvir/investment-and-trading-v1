@@ -1,0 +1,71 @@
+# Simon Property Group, Inc. (SPG) — Diligence Dossier
+Agent F56 | Wave 3 | As of 2026-09-25 close ($204.82) | Research only, not personal investment advice
+
+## 1. Verdict
+**INCLUDE-SMALL** (half weight). Thesis horizon: 24–36 months. One-sentence reason: America's premier mall/outlet REIT, still growing Real Estate FFO/share high-single-digits with occupancy at 96% and rents re-leasing higher, priced by the market for growth modestly below the analyst's own base case — but the company's founder-CEO passed away in March 2026 and leadership passed to his son after only six months in the new seat, a specific, named, still-unproven governance transition that keeps this at half weight.
+
+## 2. Business in plain English
+Simon owns and operates large, high-end shopping malls, premium outlet centers and "The Mills" value centers across the US, plus equity stakes in international operators (notably France's Klépierre) and other retail platforms. It makes money from tenant rent (base minimum rent plus a cut of tenant sales above a threshold) at properties that are, in Simon's own words, "irreplaceable" — the best physical retail real estate in most of its markets, hard to replicate given zoning, land cost and anchor-tenant relationships built over decades.
+
+## 3. Why the model likes it / durability
+Triage (Q14): quality 5, growth 4, price_vs_growth 3, no red flags, explicitly noting the triage card's headline "-52% EPS" figure was a one-time-gain comparison distortion rather than a real growth problem, cross-checked against the Q2-2026 earnings release. b1 quant: fam_Q weakest of this batch's three names on some sub-metrics (pct_gp_a missing/NaN — REIT accounting doesn't map cleanly to the "gross profit/assets" factor — pct_roe 0.98, pct_ocf_a 0.84), value percentiles mixed (pct_ep 0.35 modest, pct_fcfp 0.16 weak — REITs' GAAP earnings/FCF don't map well to standard value factors either), momentum weak (pct_mom_12_1 0.05). The quant screen's factor definitions are simply a poor fit for REIT accounting (a known, disclosed limitation of the pre-registered model for this asset class); the durable part of the thesis — occupancy, releasing spreads, tenant sales growth — is confirmed directly from primary filings below, independent of the quant score.
+
+## 4. Last two quarters (primary source: 8-K Ex-99.1 earnings release & supplemental, SEC EDGAR)
+**Entity-scope note:** Simon reports (a) its own **consolidated** GAAP balance sheet (Simon Property Group, Inc.), and (b) a REIT-industry-standard "at Simon's share"/pro-rata figure that includes its proportionate interest in unconsolidated joint ventures (including its Klépierre equity stake). These two bases differ materially (§5) and are labelled separately below, per the wave-3 entity-scope rule.
+
+| Metric (consolidated, GAAP unless noted) | Q2-2025 | Q2-2026 | Change |
+|---|---|---|---|
+| Net income attributable to common stockholders | $556.1m ($1.70/dil. sh., incl. a $0.21/sh one-time after-tax investment gain) | $483.1m ($1.49/dil. sh.) | −13.1% (comp effect of the 2025 one-off gain, confirmed in the release's own footnote) |
+| FFO (non-GAAP) | $1.189bn ($3.15/dil. sh.) | $1.185bn ($3.12/dil. sh.) | roughly flat (also comp-affected) |
+| **Real Estate FFO** (non-GAAP, excludes other-platform investments and revaluation gains — the company's preferred operating metric) | $1.154bn ($3.05/dil. sh.) | $1.249bn ($3.29/dil. sh.) | **+7.9%** |
+| Domestic property NOI growth | — | +8.5% y/y | — |
+| Occupancy (U.S. Malls & Premium Outlets) | 96.0% (30-Jun-2025) | 96.0% (30-Jun-2026) | unchanged, near-full |
+| Base minimum rent/sq ft | $58.70 | $62.42 | +6.3% |
+| Reported retailer sales/sq ft (TTM) | $736 | $838 | +13.9% |
+
+**Guidance track record (quantified from the releases themselves):** at the Q1-2026 release, FY26 guidance for Real Estate FFO/diluted share stood at $13.10–$13.25. At the **Q2-2026 release (10-Aug-2026)**, the company **raised** this to $13.20–$13.30 — "an increase of $0.08 per diluted share at the midpoint" (company's own words), the second raise of the year. The GAAP net-income-per-share guide range was, by contrast, widened (previous $6.61–$6.76 → current $6.47–$7.47), reflecting greater uncertainty around non-cash investment-portfolio gains/losses rather than the core leasing business.
+
+## 5. Balance sheet, cash conversion, capital return
+**Consolidated** (Simon Property Group, Inc., 10-Q, 30-Jun-2026): total assets $39,709.3m; mortgages and unsecured indebtedness $28,699.6m (vs $28,430.2m at 31-Dec-2025); total liabilities $33,862.7m; cash $1,019.1m; equity-method investment in unconsolidated entities $4,012.5m plus a separate $1,377.3m equity-method stake in Klépierre.
+**"Simon's share" / pro-rata** (Summary of Indebtedness, supplemental, includes JV look-through): total debt **$35,731.0m** — roughly $7bn higher than the consolidated figure because of Simon's proportionate share of unconsolidated joint-venture debt. **These two debt figures are not interchangeable and analysts should state which one they are citing** — this dossier does so explicitly, unlike some general commentary that blends them.
+Debt covenants (senior unsecured debt covenants, supplemental): Total Debt/Total Assets actual 37% vs required ≤65%; Total Secured Debt/Total Assets actual 16% vs required ≤50% — comfortable headroom on both. Credit ratings: investment grade across senior unsecured, secured and commercial paper, with a "Positive Outlook" on some tranches per the supplemental ratings table. Liquidity: ~$9.3bn (cash $1.7bn incl. JV share + $7.6bn available revolver capacity, net of outstanding CP). Q2-2026 financing activity: €500m senior notes at 3.65%/5yr, a $460m 5-year term loan at SOFR+0.70% (used to repay a revolver draw), and $1.4bn of secured loans at a 5.36% weighted-average rate — all disclosed with terms in the release. Buybacks: 793,077 common shares + 237,618 OP units repurchased in Q2-2026 at an average $205.10. Dividend: $2.25/share declared for Q3-2026, +4.7% y/y — the 15th consecutive quarterly or annual increase implied by the trend (dividend growth confirmed from the release; longer streak not independently verified at standard depth).
+
+## 6. Valuation (own reverse DCF on Real Estate FFO/share — no V1 row exists for SPG in this wave; NAREIT-FFO-based per the workspace's V2R correction to V1's flawed REIT FCFF methodology, STATE.md 08:21)
+Basis: price $204.82; forward earnings base = FY2026 guided Real Estate FFO/share midpoint $13.25; r (CAPM, rf 5.17% + beta 1.312 × ERP 4.14%) = 10.60% (REIT beta is noisier than for an operating company; treated as an approximation); terminal growth 2.5% (below the 3.0% used for the other two names, reflecting REIT rent growth typically tracking near or slightly above inflation over the very long run). Solving for the growth rate that reconciles today's price gives **implied 10-year FFO/share growth ≈ 5.7%/yr**.
+- Price/Real-Estate-FFO ≈ 15.5x (204.82/13.25) — this program's REIT peer set in the same d4 universe (REG 24.7x NTM "P/E" proxy, EXR 27.9x, O 36.0x) is dominated by non-mall property types (net lease, storage, healthcare) that are not close comps; no S&P 500 mall/outlet REIT peer exists in this dataset, a disclosed limitation. Qualitatively, 15.5x sits well below diversified-REIT multiples in the same dataset, though property type differs enough that this is a weak comparison, not a strong one.
+- My evidence-based scenarios (10-yr Real Estate FFO/share CAGR): **bear 2%** (mall traffic secular decline resumes, e-commerce share gains, releasing-spread tailwind reverses) → fair value ≈ $160; **base 6.5%** (continuation of the demonstrated 7.5–7.9% H1-2026 pace, moderating over time as the releasing-spread tailwind normalizes and occupancy has little room to rise further from 96%) → fair value ≈ $217; **bull 10%** (redevelopment pipeline, further accretive JV/international activity, sustained pricing power) → fair value ≈ $276.
+- Implied growth (5.7%) sits **below** my base case (6.5%) → `implied_vs_base = "below"`. Dossier valuation view: **fair to slightly cheap**.
+
+## 7. Bull case
+1. Real Estate FFO/share grew 7.9% y/y in Q2-2026 with occupancy already near-full (96.0%) — growth is coming from re-leasing at higher rents (+6.3% base minimum rent/sq ft) and rising tenant sales (+13.9%), not from filling empty space, which is a higher-quality, more durable growth driver than an occupancy-recovery story.
+2. Guidance has now been raised twice in 2026 on the same core metric — management is beating, not missing, its own numbers.
+3. Investment-grade balance sheet with only 37% debt/assets (well inside covenants) and $9.3bn of liquidity gives real optionality for opportunistic acquisitions or redevelopment.
+
+## 8. Bear case
+1. **Leadership transition risk, dated from the filing itself:** David Simon, the company's Chairman, CEO and President since its 1993 IPO, passed away on 22-March-2026 after a battle with cancer (8-K Ex-99.1, filed 24-Mar-2026). The Board appointed his son, Eli Simon (previously COO), as CEO and President effective the same day, with Larry Glasscock as new Non-Executive Chairman. The company describes this as long-planned succession, and results since have been strong, but a new CEO with roughly six months in the seat as of this writing has not yet been tested through a full cycle or a market downturn.
+2. Occupancy is already at 96% — most of the "easy" re-leasing upside from empty space is gone; further growth depends more narrowly on rent escalation and tenant sales holding up.
+3. "Simon's share" pro-rata debt ($35.7bn) is materially higher than the consolidated balance-sheet figure ($28.7bn); an analyst relying only on the consolidated 10-Q balance sheet would understate Simon's true look-through leverage from JV/Klépierre exposure.
+
+## 9. Key risks & kill criteria (measurable)
+1. U.S. Malls & Premium Outlets occupancy falls below 94% for two consecutive quarters (vs 96.0% in Q2-2026).
+2. Real Estate FFO/diluted share growth falls below 3% y/y for two consecutive quarters (vs +7.9% in Q2-2026).
+3. Consolidated Total Debt/Total Assets exceeds the 65% covenant threshold, or "Simon's share" pro-rata total debt grows materially faster than pro-rata NOI for two consecutive quarters.
+4. FY2026 Real Estate FFO/share guidance is cut (not merely narrowed) below the current $13.20 low end at any subsequent quarterly release.
+5. Any disclosed material disruption to executive continuity or strategy within 18 months of the March-2026 CEO transition (e.g., unplanned departure of Eli Simon or other senior named executives).
+
+## 10. Catalysts & calendar
+Next earnings: **2026-11-02** (Q3-2026, per d4 snapshot estimate; not yet filing-confirmed). No pending M&A disclosed in the reviewed filings. Quarterly dividend of $2.25 payable 30-Sep-2026 to holders of record 09-Sep-2026 (declared, per the Q2-2026 release).
+
+## 11. Red-flag scan
+No auditor change, material weakness, restatement or going-concern language found in the reviewed 10-Q. Legal proceedings (10-Q Item 1): "various legal and regulatory proceedings that arise in the ordinary course of our business... we believe that current proceedings will not have a material adverse effect" — no material litigation disclosed. Risk Factors (10-Q Item 1A): "no material changes" versus the FY2025 10-K. The one substantive, filing-sourced red flag is the CEO succession described in §8, which this dossier treats as a governance/key-person risk rather than an operating red flag, since operating results since the transition have been strong and the Board's succession planning was pre-existing (per the company's own 8-K statement).
+
+## 12. Data basis, recency and disclaimer
+Most recent period incorporated: Q2-2026 (10-Q, period end 2026-06-30, filed 2026-08-10). Guidance track record and CEO-transition dates taken directly from the Q2-2026 earnings release/supplemental (8-K Ex-99.1, filed 2026-08-10) and the 24-Mar-2026 8-K Ex-99.1 announcing David Simon's passing. Checked for events to 2026-09-25 close via the SEC EDGAR filing index (no filing after 2026-08-10 found in the submissions feed retrieved 2026-09-26). GAAP vs non-GAAP (FFO, Real Estate FFO, NOI) figures are labelled per the company's own reconciliations. Research, not personal investment advice.
+
+## 13. Sources
+1. SEC EDGAR submissions, CIK 0001063761, retrieved 2026-09-26: https://data.sec.gov/submissions/CIK0001063761.json
+2. 10-Q for the quarter ended 2026-06-30, filed 2026-08-10: https://www.sec.gov/Archives/edgar/data/1063761/000110465926093360/spg-20260630x10q.htm
+3. 8-K Ex-99.1, Q2-2026 earnings release & supplemental, filed 2026-08-10: https://www.sec.gov/Archives/edgar/data/1063761/000110465926093361/tm2620726d2_ex99-1.htm
+4. 8-K Ex-99.1, "Simon Property Group Announces the Passing of David Simon" / CEO succession, filed 2026-03-24: https://www.sec.gov/Archives/edgar/data/1063761/000110465926033931/tm269613d1_ex99-1.htm
+5. SEC XBRL companyfacts, CIK 0001063761, retrieved 2026-09-26: https://data.sec.gov/api/xbrl/companyfacts/CIK0001063761.json
+6. `v4/data/d4_live_snapshot.parquet`, `v4/data/b1_live_scores.csv`, `v4/outputs/Q14_triage.json` (workspace quant/triage context); `v4/STATE.md` (V2R REIT FFO methodology note, 08:21 log entry)

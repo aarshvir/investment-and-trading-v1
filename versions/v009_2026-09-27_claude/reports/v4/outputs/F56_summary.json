@@ -1,0 +1,114 @@
+{
+  "agent": "F56",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "SHW": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The best-run paint retailer in America, but the price assumes faster growth than management's own soft-demand guidance supports.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "Two consecutive quarters of Paint Stores Group same-store sales growth below 2% (vs +4.2% in Q2-2026).",
+        "Net debt/adjusted EBITDA (per the company's own EBITDA reconciliation) exceeds 3.0x at any quarter-end.",
+        "FY2026 adjusted diluted EPS guidance is cut below $11.50 (the current low end) at any subsequent quarterly release.",
+        "Stockholders' equity turns negative (it fell from $4.60bn to $3.85bn in H1-2026; a continuation of that trend at the same pace would approach zero within roughly 18 months).",
+        "Any adverse ruling or settlement in the pending lead-pigment/lead-based-paint litigation that results in an accrued liability being recorded (currently none is accrued)."
+      ],
+      "key_adverse_facts": [
+        "Management's own Q1/Q2-2026 language: 'no meaningful improvement in demand' and 'little to no recovery in most end markets' — FY26 EPS growth is being driven by pricing, cost control and buybacks, not volume.",
+        "Total debt rose from $10,871.3m (31-Dec-2025) to $12,072.1m (30-Jun-2026), funded partly by a $500m credit-facility draw for 'general corporate purposes' while cash sits at only $293.5m.",
+        "Stockholders' equity fell $743.6m in six months ($4,598.3m to $3,854.7m), consistent with buybacks exceeding retained earnings.",
+        "Ongoing Wisconsin lead-pigment/lead-based-paint 'risk contribution' litigation (Gibson, Valoe, Beal cases) is unaccrued; company itself warns an adverse outcome 'may have a material adverse effect'.",
+        "SHW trades at roughly 2x the NTM P/E of its closest scaled peer, PPG Industries (24.9x vs 12.7x, per d4 snapshot)."
+      ],
+      "data_conflicts": [
+        "Triage card (Q13_triage.json) cited net debt/EBITDA of 3.1x as a red flag; this dossier's own calculation from the company's two most recent 8-K EBITDA reconciliation tables and the Q2-2026 10-Q debt table gives ~2.45x. Direction of the concern (rising leverage funding buybacks) is confirmed either way; the precise multiple is not."
+      ],
+      "next_earnings_date": "2026-10-27",
+      "confidence_in_thesis": "medium - primary-source guidance and balance-sheet trend are clear and internally consistent; the main uncertainty is how quickly volume (versus price/buyback) growth needs to reaccelerate for the 11%/yr priced-in growth to be earned",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "above",
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 valuation row exists for SHW in this wave (outside the V1 92-name universe); this dossier's own reverse DCF (r=9.68%, tg=3.0%) implies the market is pricing ~11.2%/yr 10-year EPS growth against management's own near-term guide of only ~5% EPS growth and a base case of ~8%/yr, so implied growth sits above base case."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.1687,
+        "base": -0.0650,
+        "bull": 0.0541
+      },
+      "scenario_basis": "Starting point: FY2026 guided adjusted diluted EPS midpoint $12.00; 10-yr constant-growth DCF at r=9.68% (rf 5.17% + beta 1.089 x ERP 4.14%), terminal growth 3.0%; bear/base/bull 10-yr EPS CAGR of 3%/8%/13%; scenario 3y return = (DCF fair value / $329.10 price)^(1/3)-1 plus ~1.0% current dividend yield."
+    },
+    "SPG": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "America's top mall and outlet landlord, raising guidance twice this year on rising rents and near-full occupancy, half-weighted for an untested new CEO.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "U.S. Malls & Premium Outlets occupancy falls below 94% for two consecutive quarters (vs 96.0% in Q2-2026).",
+        "Real Estate FFO/diluted share growth falls below 3% y/y for two consecutive quarters (vs +7.9% in Q2-2026).",
+        "Consolidated Total Debt/Total Assets exceeds the 65% covenant threshold, or 'Simon's share' pro-rata total debt grows materially faster than pro-rata NOI for two consecutive quarters.",
+        "FY2026 Real Estate FFO/share guidance is cut (not merely narrowed) below the current $13.20 low end at any subsequent quarterly release.",
+        "Any disclosed material disruption to executive continuity or strategy within 18 months of the March-2026 CEO transition (e.g., unplanned departure of Eli Simon or other senior named executives)."
+      ],
+      "key_adverse_facts": [
+        "Founder/Chairman/CEO/President David Simon passed away on 22-March-2026 after a battle with cancer; his son Eli Simon (previously COO) was appointed CEO/President the same day, with a new Non-Executive Chairman (Larry Glasscock) - a real, still-unproven (roughly six months old) leadership transition, even though pre-planned.",
+        "Occupancy is already at 96.0%, near-full, so future growth depends more narrowly on rent escalation and tenant sales rather than easier occupancy-recovery gains.",
+        "'Simon's share' pro-rata total debt ($35.7bn, including JV/Klepierre look-through) is materially higher than the consolidated GAAP balance-sheet debt figure ($28.7bn) - an analyst using only the consolidated 10-Q would understate true look-through leverage.",
+        "GAAP net income per share declined y/y in Q2-2026 ($1.49 vs $1.70) due to a one-time investment gain in the prior-year comp, not an operating problem, but a reader of headline EPS alone could be misled (confirmed from the release's own footnote)."
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-11-02",
+      "confidence_in_thesis": "medium-high - operating metrics (occupancy, releasing spreads, NOI growth, guidance raises) are clear, consistent and filing-sourced; confidence is capped at medium-high rather than high because of the recency of the CEO transition and the lack of a directly comparable mall-REIT peer in this workspace's dataset for valuation cross-check",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 valuation row exists for SPG in this wave. Following the workspace's V2R correction (STATE.md), valuation uses NAREIT-style Real Estate FFO/share rather than a flawed FCFF DCF. This dossier's own reverse DCF (r=10.60%, tg=2.5%) implies the market is pricing ~5.7%/yr 10-year FFO growth against a base case of ~6.5%/yr built from the demonstrated 7.5-7.9% H1-2026 pace moderating over time, so implied growth sits at or slightly below base case."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.0353,
+        "base": 0.0623,
+        "bull": 0.1476
+      },
+      "scenario_basis": "Starting point: FY2026 guided Real Estate FFO/diluted share midpoint $13.25; 10-yr constant-growth DCF at r=10.60% (rf 5.17% + beta 1.312 x ERP 4.14%), terminal growth 2.5%; bear/base/bull 10-yr FFO/share CAGR of 2%/6.5%/10%; scenario 3y return = (DCF fair value / $204.82 price)^(1/3)-1 plus ~4.35% current dividend yield."
+    },
+    "SPGI": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A near-duopoly in bond ratings and the world's benchmark stock indices, priced below its likely growth, but weeks into life as a standalone company.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Two consecutive quarters of continuing-operations (ex-Mobility) organic constant-currency revenue growth below 4% (below the low end of the FY26 6.0-8.0% guided range by more than 200bps).",
+        "Ratings segment operating margin falls below 60% for two consecutive quarters (vs 68% in Q2-2026).",
+        "Continuing-operations net debt/EBITDA (once cleanly reported ex-Mobility) exceeds 3.0x - to be recomputed at Q3-2026 reporting.",
+        "Full-year 2026 adjusted diluted EPS prints below the low end of the current $17.50-$17.75 guide (a real, not basis-change, cut).",
+        "Any SEC/DOJ inquiry into ratings-conflicts-of-interest or antitrust action targeting the Ratings or Indices duopoly."
+      ],
+      "key_adverse_facts": [
+        "FY2026 is the first year of standalone continuing-operations reporting after the 1-Jul-2026 spin-off of the Mobility division (NYSE: MBGL); guidance was rebased mid-year and the company itself states the new range 'is not directly comparable to prior guidance'.",
+        "Mobility Global issued $1,981m of new senior notes on 19-May-2026 that remained on S&P Global's consolidated balance sheet through 30-Jun-2026 but became Mobility's sole responsibility after the Separation - consolidated Q2-2026 debt figures overstate continuing-operations leverage until Q3-2026 discontinued-ops reporting clarifies it.",
+        "Market Intelligence, the segment most exposed to AI-native data competition, has the lowest segment margin of the four continuing divisions (23% vs 68-70% for Ratings/Indices).",
+        "Ratings revenue is tied to cyclical bond-issuance volumes; a credit-market downturn would hit the highest-margin segment hardest."
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-29",
+      "confidence_in_thesis": "medium - the underlying franchise quality (Ratings/Indices margins, guidance raises/reaffirms through 1H-2026) is well evidenced from primary filings, but confidence is capped at medium because clean continuing-operations (ex-Mobility) financials do not yet exist; Q3-2026 reporting is the first real test",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 valuation row exists for SPGI in this wave (outside the V1 92-name universe). This dossier's own reverse DCF (r=9.63%, tg=3.0%) implies the market is pricing ~8.6%/yr 10-year adjusted EPS growth against a base case of ~10%/yr built from guided 6-8% organic growth plus buyback-driven share-count reduction, so implied growth sits below base case."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.0946,
+        "base": 0.0441,
+        "bull": 0.1778
+      },
+      "scenario_basis": "Starting point: FY2026 guided adjusted diluted EPS midpoint $17.625 (continuing operations); 10-yr constant-growth DCF at r=9.63% (rf 5.17% + beta 1.077 x ERP 4.14%), terminal growth 3.0%; bear/base/bull 10-yr EPS CAGR of 4%/10%/15%; scenario 3y return = (DCF fair value / $403.30 price)^(1/3)-1 plus ~0.96% current dividend yield."
+    }
+  }
+}

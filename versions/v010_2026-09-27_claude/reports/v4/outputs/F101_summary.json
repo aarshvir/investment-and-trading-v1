@@ -1,0 +1,108 @@
+{
+  "agent": "F101",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "BNY": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "World's largest custody bank compounding fee income faster than the market's implied growth, but already re-rated sharply so upside is more modest now.",
+      "kill_criteria": [
+        "Noninterest (fee) income growth YoY falls below 3% for two consecutive quarters",
+        "Net interest income declines >15% YoY for two consecutive quarters without an offsetting fee acceleration",
+        "CET1 ratio falls below management's stated operating target, forcing a buyback pause",
+        "Diluted EPS misses consensus (FY0 $9.26 / FY1 $10.26) by >5% for two consecutive quarters",
+        "A material operational/cyber incident affecting custody settlement is disclosed in an 8-K"
+      ],
+      "key_adverse_facts": [
+        "Fee income, not net interest income, is doing essentially all of the recent EPS growth (NII down ~10% YoY in the latest quarter) — earnings quality is market-level dependent",
+        "Stock already up ~51% over the trailing year per Q04 triage, so street consensus upside is only ~11.5% from here",
+        "CET1 ratio and AUC/A trend were not pulled this session (data gap)"
+      ],
+      "data_conflicts": [
+        "Q4-2025 (Oct-Dec) quarterly XBRL cut was not retrieved in this session's pull (gap in the 8-quarter table, not a company-side gap)",
+        "Guidance language (NII/expense ranges) was not independently re-verified against the primary earnings-call transcript this session"
+      ],
+      "next_earnings_date": "2026-10-15",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - strong franchise and valuation math support inclusion, but CET1/AUC-A data gaps and reliance on market-linked fee growth warrant a smaller position and follow-up",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for BNY; own reverse DCF (9.4% cost of equity, 3% terminal growth) implies ~4.1%/yr 10-year earnings growth versus a base case of ~8-9%/yr, so the market is pricing in less growth than a reasonable base case delivers."
+      },
+      "scenario_returns_3y": {"bear": -0.054, "base": 0.103, "bull": 0.163},
+      "scenario_basis": "Starting FY0 consensus EPS $9.26, NTM P/E ~15.0x; bear = 3%/yr EPS growth + multiple compression to 12x; base = 9%/yr EPS growth + flat 15x multiple; bull = 13%/yr EPS growth + re-rating to 17x; all cases add ~1.4-1.5%/yr dividend yield, annualized over 3 years."
+    },
+    "CL": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Global #1 in toothpaste with unmatched emerging-market reach, priced for less margin recovery than management is likely to deliver, but growth is modest and momentum is negative.",
+      "kill_criteria": [
+        "Operating margin (GAAP) stays below 20% for three consecutive quarters",
+        "Organic/constant-currency revenue growth falls below 2% for two consecutive quarters",
+        "Net debt/EBITDA rises above 2.0x",
+        "Diluted GAAP EPS declines YoY for two consecutive quarters",
+        "Dividend payout ratio (on GAAP EPS) exceeds 100% for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "Operating margin in the last two reported quarters (18.1%, 19.0%) is below the year-ago comparable quarters (21.9%, 21.1%) despite stable gross margin — cost inflation has moved into opex/SG&A",
+        "Consolidated stockholders' equity is structurally near zero ($54m-$856m range over the last two years, from decades of buybacks) - not a solvency risk but a real disclosure item limiting balance-sheet flexibility",
+        "12-month price momentum is -13.7%, the weakest of the three F101 names",
+        "Long-term debt rose from $7.0bn to $7.8bn year-over-year"
+      ],
+      "data_conflicts": [
+        "Trailing P/E of 33.9x (GAAP) vs NTM P/E of 21.3x reflects one-off charges depressing trailing EPS; the adjusted reconciliation was not independently rebuilt this session",
+        "Guidance track record was not independently re-verified against primary earnings-call transcripts this session",
+        "Q4-2024 and Q4-2025 (Oct-Dec) quarterly revenue/margin figures were gaps in this session's XBRL pull"
+      ],
+      "next_earnings_date": "2026-10-30",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium - quality and valuation support inclusion, but negative momentum, margin pressure in the last two quarters, and thin equity cushion argue for half weight rather than full",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for CL; own reverse DCF (7.5% WACC, 3% terminal growth) implies ~2.3%/yr 10-year FCF growth versus a base case of ~6-7%/yr, so the market is pricing in materially less growth than a plausible base case."
+      },
+      "scenario_returns_3y": {"bear": -0.024, "base": 0.075, "bull": 0.154},
+      "scenario_basis": "Starting FY0 consensus EPS $3.88, NTM P/E ~21.3x; bear = 2%/yr EPS growth + multiple compression to 18x; base = 7%/yr EPS growth + flat 21x multiple; bull = 10%/yr EPS growth + re-rating to 24x; all cases add ~2.5%/yr dividend yield, annualized over 3 years."
+    },
+    "EMR": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Diversified process-automation and software franchise (with AspenTech) growing steadily, but the price already reflects close to a reasonable base case and a known GAAP-vs-adjusted gap is unresolved.",
+      "kill_criteria": [
+        "Organic revenue growth (per the 10-Q's own non-GAAP reconciliation) falls below 3% for two consecutive quarters",
+        "Net debt/EBITDA rises above 2.5x",
+        "The trailing/NTM P/E gap widens further without an explicit one-off/restructuring disclosure",
+        "FY2026 guidance (given at Q4 FY2026 earnings, ~Nov 2026) is cut from the consensus-implied run-rate (FY1 EPS $7.26)",
+        "FCF/NI ratio (currently ~1.44x) collapses toward 1.0x"
+      ],
+      "key_adverse_facts": [
+        "Trailing P/E (34.2x) is ~1.6x NTM P/E (21.8x), consistent with the Q09 triage's own red flag; this session confirms the gap exists but does not resolve whether it is one-off or structural",
+        "Quarterly GAAP net income is volatile quarter-to-quarter (e.g., $329m to $996m within FY2024), consistent with unreconciled restructuring/AspenTech consolidation noise",
+        "The b1 quant composite (0.326, decile 4) is the weakest of the three F101 names - this is a triage-judgment pick, not a strong factor signal",
+        "Analyst target range is unusually wide ($104-$205), signalling real disagreement on AspenTech-adjusted earnings power"
+      ],
+      "data_conflicts": [
+        "LongTermDebtNoncurrent (quarterly, $7.53bn at Jun-26) vs the FY2025 10-K's gross LongTermDebt ($8.92bn at Sep-25) differ because of current maturities; the 10-K figure should be used for the debt stock level",
+        "Guidance track record and organic-vs-reported growth reconciliation were not independently re-verified against primary non-GAAP tables this session"
+      ],
+      "next_earnings_date": "2026-11-04",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium-low - reasonable business but the valuation gap vs base case is too thin, and the GAAP/adjusted noise flagged at triage is confirmed but not resolved",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "in_line",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for EMR; own reverse DCF (8.5% WACC, 3% terminal growth) implies ~7.5%/yr 10-year FCF growth versus a base case of ~8-9%/yr - close enough that the stock is priced near fair value rather than at a clear discount."
+      },
+      "scenario_returns_3y": {"bear": -0.078, "base": 0.056, "bull": 0.152},
+      "scenario_basis": "Starting FY0 consensus EPS $6.56, NTM P/E ~21.8x; bear = 2%/yr EPS growth + multiple compression to 17x; base = 9%/yr EPS growth + flat 21x multiple; bull = 14%/yr EPS growth + re-rating to 24x; all cases add ~1.4%/yr dividend yield, annualized over 3 years."
+    }
+  }
+}

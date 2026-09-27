@@ -1,0 +1,44 @@
+# Synopsys, Inc. (SNPS) — Diligence Dossier (Agent F92, Wave 5, standard depth)
+
+**1. Verdict: INCLUDE-SMALL** (reservation: elevated leverage plus China EDA export-control exposure from the newly closed, debt-funded Ansys deal — size below full weight until one to two quarters of clean post-merger data are in). Horizon: 24–36 months.
+
+**2. Business.** Synopsys sells electronic design automation (EDA) software (chip design tools) — a near-duopoly with Cadence — plus, since closing the Ansys acquisition, engineering simulation software. Customers are semiconductor and systems companies; the tools are mission-critical and effectively non-substitutable once a design flow is built around them, producing very high switching costs and pricing power. Design IP (reusable chip building blocks) is a third, faster-growing segment.
+
+**3. Why the model likes it / durability.** Triage (Q11) flagged quality 4/growth 4, correctly noting that headline growth is **inflated by the Ansys merger closing** (consolidated for only part of the comparison period) and margin is temporarily compressed by deal/integration costs — this is a real caveat, not durable organic growth, and must be underwritten net of the merger effect. The underlying moat (EDA duopoly, AI-driven chip-design demand) is durable; the near-term growth rate is not representative of steady state.
+
+**4. Last quarters (source: SNPS 8-K earnings exhibits on EDGAR).**
+| Qtr | Revenue | YoY | Non-GAAP EPS | GAAP EPS | Notes |
+|---|---|---|---|---|---|
+| Q3 FY26 (Q ended 31 Jul 2026) | $2.477B | +42.4% (Ansys-driven) | $3.91 (beat high end of guide) | $2.84 | EDA rev +8.5%; Design IP rev +11% to $474M |
+Source: Synopsys Q3 FY2026 8-K, accession 0001193125-26-241911, 26 Aug 2026 — sec.gov/Archives/edgar/data/0000883241/000119312526241911/d126227dex991.htm. The 42.4% headline growth is almost entirely the Ansys acquisition (closed in the quarter); organic EDA growth of 8.5% is the cleaner underlying figure.
+
+**5. Guidance track record.** FY26 full-year revenue guidance raised to ~$9.715B midpoint; non-GAAP EPS guidance raised to ~$15.07 midpoint. Ansys is now expected to contribute ~$2.98B of FY26 revenue, up $20M versus the prior guide — a small positive revision, not a step-change, suggesting the deal is tracking to plan rather than beating it materially. Q4 FY26 guide: revenue $2.530–2.580B, non-GAAP EPS $4.10–4.16.
+
+**6. Earnings quality & balance sheet.** Consolidated Synopsys Inc. (post-Ansys) carries roughly $10B of gross debt (per market data) against ~$2.5B cash/short-term investments as of 30 Apr 2026, consolidated balance sheet, Q2 FY26 10-Q accession 0000883241-26-000018 — consolidated net debt ≈ $7.5B. Triage-cited net debt/EBITDA of ~3.5x reflects debt taken on to fund the $35B cash-and-stock Ansys acquisition, which closed this fiscal year; this is elevated versus Synopsys's historical near-zero-leverage profile and is the primary balance-sheet red flag. GAAP ($2.84) vs. non-GAAP ($3.91) EPS gap is large and driven mainly by purchase-accounting amortization of acquired Ansys intangibles and deal/integration costs, not aggressive underlying-business adjustments — a normal, disclosed pattern for a large recent acquisition, but the gap should narrow over 2–3 years as amortization schedules run off.
+
+**7. China export-control exposure.** Real revenue-at-risk item: US BIS export restrictions on EDA software sales to Chinese semiconductor customers were imposed in Q3 2025 and subsequently partially rescinded; China's SAMR (antitrust regulator) separately approved the Ansys acquisition with conditions, and reporting indicates the earlier restrictions materially hit China-related Design IP revenue when in force. This is a genuine, policy-driven overhang that could recur with little notice — not resolved, only currently eased.
+
+**8. Valuation vs V1.** (Per `v4/outputs/v1_valuation_table.csv`.) No row for SNPS in that table → v1_verdict = null. At $425.76 (25 Sep 2026 close) vs. FY26 non-GAAP EPS guide midpoint $15.07, that is ~28.2x current-year non-GAAP earnings; market cap ≈ $81–89B depending on share-count source (post-Ansys stock issuance widens the range — flagged as a data conflict to reconcile against the FY26 10-Q share count, not resolved in this pass). **Reverse DCF:** using normalized (ex-Ansys-closing-distortion) organic growth as the base for a 10-yr FCF model (FCF proxy ≈ non-GAAP net income less elevated integration capex; WACC ≈ 9.5% reflecting deal leverage and China policy risk; terminal growth 3.5%), the 28x multiple implies roughly **11–12% average FCF/earnings growth for 10 years.** Combined organic EDA (~8–9%) plus Design IP (~11%) plus Ansys simulation (historically ~9–11% organic) blends to a base case of **~10–11%** once integration synergies phase in. **Bear (4%): China restrictions return in force and integration costs run longer than expected, multiple compresses to ~20x → ~ -8%/yr 3-yr return. Base (11%): organic EDA/IP/Ansys blend compounds as expected, leverage is paid down, multiple holds ~26x → ~7%/yr. Bull (15%): AI-driven chip-design demand plus cross-sell of Ansys into EDA customers accelerates growth and margin, multiple re-rates to ~32x → ~17%/yr.** Implied growth (11–12%) is **in line with, marginally above,** the base case (10–11%) — close enough that this does not fail the INCLUDE bar outright, but leaves little safety margin once leverage and China risk are weighed, supporting INCLUDE-SMALL rather than full INCLUDE.
+
+**9. Bull case:** (i) EDA is a genuine, hard-to-disrupt duopoly with rising content-per-chip as designs get more complex (AI accelerators); (ii) Ansys adds a complementary, high-margin simulation franchise with cross-sell potential into the same semiconductor/systems customer base; (iii) Design IP segment growing double-digit (+11%) is a real diversification away from pure EDA cyclicality.
+**Bear case:** (i) consolidated net debt/EBITDA ~3.5x from a debt-funded mega-deal is a real change in risk profile for a historically conservative balance sheet; (ii) China EDA export-control risk is not resolved, only currently eased, and could snap back with policy changes, directly hitting a disclosed revenue line; (iii) reported 42% growth is a merger-accounting artefact — if organic EDA growth (8.5%) decelerates further as the AI-chip design cycle normalizes, the multiple has less cushion than headline growth suggests.
+
+**10. Kill criteria (measurable):**
+1. Organic EDA revenue growth (ex-Ansys) falls below 5% for two consecutive quarters.
+2. Consolidated net debt/EBITDA fails to decline from ~3.5x within 18 months of deal close (i.e., stays above 3.0x through FY27).
+3. US or China re-imposes EDA export restrictions that management quantifies as a >3% revenue headwind.
+4. FY26 or FY27 non-GAAP EPS guidance is cut versus the prior range.
+5. Ansys integration/restructuring charges extend beyond the originally disclosed integration timeline by more than two quarters.
+
+**11. Catalysts/calendar.** Next earnings (Q4/FY26 close, fiscal year ends 31 Oct): expected early-to-mid December 2026, with initial FY27 guidance — the first full clean quarter including Ansys for the full comparison period.
+
+**12. Red-flag scan.** (Per FY26 10-Q/10-K filings reviewed above.) No auditor change, restatement or going-concern language identified. Elevated leverage from the Ansys deal and the China export-control history are the two substantive, disclosed red flags; no undisclosed litigation or SEC/DOJ action identified in this pass (not exhaustively checked against the FY26 10-Q litigation footnote — flagged as a gap). Market-cap/share-count discrepancy across sources noted above as a data conflict, likely reflecting the timing of Ansys stock-consideration issuance versus data-provider refresh dates.
+
+**13. Sources.**
+1. Synopsys Q3 FY2026 8-K earnings exhibit, 26 Aug 2026 — https://www.sec.gov/Archives/edgar/data/0000883241/000119312526241911/d126227dex991.htm
+2. Synopsys Q2 FY2026 10-Q (balance sheet, 30 Apr 2026) — https://www.sec.gov/Archives/edgar/data/0000883241/000088324126000018/snps-20260430.htm
+3. Synopsys Q3 FY2026 10-Q — https://www.sec.gov/Archives/edgar/data/0000883241/000088324126000025/snps-20260731.htm
+4. South China Morning Post, "China approves Synopsys' acquisition of Ansys after US lifts EDA ban" — https://www.scmp.com/tech/big-tech/article/3318140/tech-war-china-approves-synopsys-acquisition-ansys-after-us-lifts-eda-ban
+5. Prior triage: `v4/outputs/Q11_triage.json`.
+
+**Data basis, recency and disclaimer.** Most recent period incorporated: Q3 FY2026 (quarter ended 31 Jul 2026), reported 26 Aug 2026. Checked for events to 25 Sep 2026 close ($425.76). Non-GAAP figures are labelled as such; GAAP EPS is stated separately and is materially lower due to Ansys-related purchase-accounting amortization and deal costs. Research, not personal investment advice.

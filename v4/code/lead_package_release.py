@@ -39,7 +39,7 @@ def main():
     with zipfile.ZipFile(z, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=6) as zf:
         for p in sorted(V4.rglob('*')):
             rel = p.relative_to(V4)
-            if p.is_dir() or any(part in SKIP_DIRS for part in rel.parts) or p.suffix in SKIP_SUFFIX:
+            if p.is_dir() or any(part in SKIP_DIRS for part in rel.parts) or p.suffix in SKIP_SUFFIX or p.stem.lower() in {'nul', 'con', 'prn', 'aux'}:   # Windows device names (a stray 'nul' from a shell redirect)
                 continue
             zf.write(p, arcname=str(pathlib.PurePosixPath('v4', *rel.parts)))
             n += 1

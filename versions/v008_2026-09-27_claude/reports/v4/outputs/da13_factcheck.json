@@ -1,0 +1,33 @@
+{
+  "as_of": "2026-09-27",
+  "scope": "DA13 factcheck: BR digital-asset gain ($227m), BR total debt ($3,520.5m vs XBRL), GDDY gross vs net debt ($3,816.9m vs $3,774.4m)",
+  "facts": [
+    {
+      "ticker": "BR",
+      "claim": "FY2026 GAAP net income and free cash flow benefited from a $227m full-year gain on digital-asset holdings, offset by an $11m Q4 non-cash loss",
+      "dossier_location": "v4/dossiers/BR.md lines 15, 82",
+      "source": "Broadridge Financial Solutions 10-K for FY ended 2026-06-30, filed 2026-08-04, accession 0001628280-26-052243 (MD&A, 'Other non-operating income (expense), net' discussion, cross-referencing Note 8 'Fair Value of Financial Instruments'); corroborated by 8-K accession 0001383312-26-000022, Exhibit 99.1 earnings release (Q4/FY2026 non-GAAP reconciliation table, row 'Gains or Losses on Digital Assets': Q4-26 11.3 / Q4-25 0.0 / FY26 (227.0) / FY25 0.0, plus MD&A text 'the non-cash Gains on Digital Assets of $227.0 million' and 'a non-cash Loss on Digital Assets of $11 million')",
+      "source_value": "FY2026 pre-tax gain on digital-asset holdings = $227.0m (GAAP, included in Other non-operating income/expense, net); Q4 FY2026 non-cash loss = $11.3m (~$11m). Both amounts are explicitly excluded from Adjusted Operating Income and Adjusted EPS (non-GAAP) per the earnings-release reconciliation footnote (iv).",
+      "status": "PASS",
+      "note": "The $227m figure, the offsetting ~$11m Q4 loss, and the GAAP-included/adjusted-excluded treatment are all confirmed verbatim in the 10-K MD&A and the same-day 8-K earnings release. The figure is pre-tax and non-operating, exactly as the dossier describes; it is excluded from Adjusted EPS (not included), so the dossier's characterization is directionally correct. The dossier's separate remark about GAAP EPS and Adjusted EPS both landing at $9.60 for FY2026 is a real, disclosed coincidence in the earnings release (other adjustments plus tax effects can produce this) but is a judgment/interpretation point, not a sourcing error, and is outside this check's scope to resolve."
+    },
+    {
+      "ticker": "BR",
+      "claim": "Total debt $3,520.5m, cash $402.9m (at FYE) -> net debt ~$3.12bn; net debt/EBITDA ~1.7x",
+      "dossier_location": "v4/dossiers/BR.md line 54",
+      "source": "Broadridge 10-K FY2026 (accession 0001628280-26-052243), Consolidated Balance Sheet and Note on Debt; cross-checked against data.sec.gov companyfacts (CIK 0001383312) tags LongTermDebt / LongTermDebtCurrent / LongTermDebtNoncurrent / DebtInstrumentFaceAmount / CashAndCashEquivalentsAtCarryingValue",
+      "source_value": "At 2026-06-30 (FY2026 10-K, accn 0001628280-26-052243): LongTermDebt (total carrying value, all non-current; current portion = $0) = $3,254.6m; DebtInstrumentFaceAmount (gross principal) = $3,274.7m; cash = $402.9m (matches dossier). At 2025-06-30 (prior FYE): LongTermDebt = $3,252.3m, current portion $499.3m, non-current $2,753.0m, face amount $3,263.5m. The string '3,520.5' does not appear anywhere in the FY2026 10-K (0 matches on full-text search); nearby unrelated numbers in the filing (e.g. 'Other direct expenses' $3,514.5m/$3,633.2m, Goodwill $3,609.6m) are not debt figures.",
+      "status": "FAIL",
+      "note": "The dossier's $3,520.5m total-debt figure is not traceable to the FY2026 10-K under any basis (carrying value, gross principal, current, non-current, or any nearby quarter: Q1 FY26 $3,281.3m, Q2 FY26 $3,173.1m/Q1 face $3,294.1m, Q3 FY26 $3,227.0m). Actual FYE 2026-06-30 total debt is $3,254.6m carrying value / $3,274.7m gross principal, ~$266-270m below the dossier's number and consistent with the coordinator's XBRL cross-tie of ~$3,227-3,255m. Using the correct figures: net debt = $3,254.6m - $402.9m = $2,851.7m (carrying) or $3,274.7m - $402.9m = $2,871.8m (gross); net debt/EBITDA at TTM EBITDA $1,809m (per dossier) = ~1.58-1.59x, not ~1.7x. The kill criterion (net debt/EBITDA > 3.0x) is unaffected in substance -- corrected leverage is even lower than stated, so no thesis-breaking implication -- but the specific $3,520.5m and 1.7x figures in the dossier should be corrected to ~$3,254.6m (carrying) and ~1.6x."
+    },
+    {
+      "ticker": "GDDY",
+      "claim": "Total debt (gross, DebtInstrumentCarryingAmount) $3,816.9m; long-term debt (net of current) $3,759.4m at 2026-06-30",
+      "dossier_location": "v4/dossiers/GDDY.md line 40",
+      "source": "GoDaddy Inc. 10-Q for the quarter ended 2026-06-30, filed 2026-07-31, accession 0001609711-26-000088 (Note on Long-term Debt, debt-instrument table)",
+      "source_value": "Debt table at 2026-06-30 (prior period 2025-12-31 in parentheses): 2029 Term Loans $1,436.9m ($1,444.2m); 2031 Term Loans $980.0m ($985.0m); 2027 Senior Notes $600.0m ($600.0m); 2029 Senior Notes $800.0m ($800.0m); Revolver $0; Total (gross principal) $3,816.9m ($3,829.2m). Less: unamortized original issue discount and debt issuance costs $(42.5)m ($(48.9)m) -> Total debt, net = $3,774.4m ($3,780.3m). Less: current portion of long-term debt $(15.0)m ($(15.1)m) -> Long-term debt (non-current, net) = $3,759.4m ($3,765.2m).",
+      "status": "MINOR",
+      "note": "The $3,816.9m and $3,759.4m figures are both correct and directly from the 10-Q table, and the dossier correctly labels $3,816.9m as 'gross.' However, that XBRL-tag label (DebtInstrumentCarryingAmount) is inconsistent with GAAP usage -- $3,816.9m is gross principal, not carrying value; the true net carrying value is $3,774.4m (= $3,816.9m - $42.5m unamortized discount/issuance costs), matching the auditor's read exactly. Current portion is $15.0m and non-current portion is $3,759.4m (net), which together equal $3,774.4m, confirming internal consistency. For net debt/EBITDA, the conventionally correct 'total debt' input is the net carrying value $3,774.4m, not the gross $3,816.9m the dossier used. Recomputed: net debt = $3,774.4m - $1,155.5m cash = $2,618.9m vs. the dossier's $2,661.4m (using gross); at TTM EBITDA proxy $1,379m, net debt/EBITDA = ~1.90x (net) vs. ~1.93x (gross dossier figure) -- a ~0.03x difference. The kill criterion (net debt/EBITDA > 3.0x) is unaffected; leverage remains comfortably in the ~1.9x range either way. Recommend restating the leverage input as the $3,774.4m net carrying value and relabeling the $3,816.9m line as 'gross principal' rather than 'DebtInstrumentCarryingAmount.'"
+    }
+  ]
+}

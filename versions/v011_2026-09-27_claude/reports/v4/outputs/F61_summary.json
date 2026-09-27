@@ -1,0 +1,118 @@
+{
+  "agent": "F61",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "MRVL": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Marvell makes the AI chips that link data centers together and builds custom AI chips for Amazon-style cloud customers, but the stock already prices in years of strong growth.",
+      "kill_criteria": [
+        "Data Center segment revenue growth below 20% YoY for two consecutive quarters (vs. +46% YoY in Q2 FY27)",
+        "Public disclosure that a top-3 hyperscaler custom-silicon program (>10% of revenue) has been re-bid, cancelled, or is being in-sourced by the customer",
+        "Non-GAAP gross margin below 57% (below the low end of the current 57.5-58.5% Q3 guide) for two consecutive quarters",
+        "Consolidated net debt/EBITDA (per the 10-Q balance sheet, run-rate annualized EBITDA) rising above 2.0x (currently roughly 0.3-0.5x)",
+        "NTM P/E above 55x with no corresponding upward revision to FY28 revenue guidance"
+      ],
+      "key_adverse_facts": [
+        "Quant model (b1) ranks MRVL in the bottom decile (live_rank 450, quintile 5) on value factors despite the triage's growth-driven advance -- a real, disclosed conflict, not resolved in MRVL's favor",
+        "Revenue and customer base concentrated in a small number of hyperscaler custom-silicon design wins that can be re-bid or in-sourced",
+        "Non-GAAP gross margin guide for Q3 FY27 (57.5-58.5%) is flat-to-down versus Q2 FY27 actual (58.9%)",
+        "Stockholders' equity and share count both rose materially from a $2.0bn NVIDIA Series A Convertible Preferred Stock issuance (2026-03-31) and stock-funded M&A (Celestial AI, XConn), diluting existing holders if converted",
+        "Insider Form-4 pattern and auditor identity were not independently checked this pass"
+      ],
+      "data_conflicts": [
+        "b1 quant composite score (bottom decile, live_rank 450/~1900) directly conflicts with the Q12 triage's qualitative advance (quality 4, growth 5); triage judgment overrode the quant rank on growth durability grounds, but the value-factor weakness is real given the 44.7x NTM P/E, not a data error"
+      ],
+      "next_earnings_date": "2026-12-01",
+      "horizon": "12-36 months, contingent on a valuation reset or confirmed multi-year Custom-silicon ramp",
+      "confidence_in_thesis": "medium: growth and design-win visibility are well evidenced in filings, but the valuation call depends on assumptions about multiple compression over a 3-year horizon that cannot be verified from filings alone",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for MRVL, so there is nothing to reconcile; my own reverse-DCF (NTM EPS ~$5.86, 15%/yr growth, multiple normalizing 44.7x to 25x) implies only ~1.5%/yr base-case return, i.e. the current price already assumes results at or above this base case, which is why the verdict is WATCH rather than INCLUDE.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.151,
+        "base": 0.072,
+        "bull": 0.351
+      },
+      "scenario_basis": "Starting NTM consensus EPS $5.86 (d4 snapshot); bear: 15%/yr EPS growth, exit multiple 18x; base: 30%/yr EPS growth, exit multiple 25x; bull: 40%/yr EPS growth, exit multiple 40x; no meaningful dividend (yield 0.09%) added in any case."
+    },
+    "TER": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Teradyne makes the machines that test AI and memory chips before they ship, and business is booming, but the stock trades at a multi-year-high price for what may be cycle-peak earnings.",
+      "kill_criteria": [
+        "A quarterly revenue guidance midpoint sequentially below the prior quarter's actual revenue for two consecutive quarters",
+        "Semiconductor Test segment revenue growth turns negative YoY (vs. +100%+ currently)",
+        "Consolidated GAAP operating margin below 20% for two consecutive quarters (Q1 2026 approx 37%, Q2 2026 approx 33%)",
+        "NTM P/E stays above 30x while quarterly guidance shows sequential deceleration for two straight quarters",
+        "Management's own commentary on 2027+ WFE/AI-test capex turns cautious or is walked back"
+      ],
+      "key_adverse_facts": [
+        "Q3 2026 guidance ($1.20-1.30bn revenue, $1.79-2.09 GAAP EPS) is a sequential step-down from Q2 2026's actual ($1.329bn, $2.38) even though it is a raise versus the two prior quarters' guided range",
+        "Semiconductor test-equipment demand is structurally tied to cyclical chipmaker capex, which has historically reversed sharply after AI-style demand spikes",
+        "FCF yield is only 0.7% against a 36.3x NTM P/E, indicating the market is capitalizing potentially cycle-elevated earnings at a rich multiple",
+        "Q1 2026 GAAP EPS ($2.53) was higher than Q2 2026 ($2.38) despite higher Q2 revenue; the driver was not disclosed in the headline release and was not resolved this pass",
+        "A 2026-08-10 8-K exhibit (Exhibit 10.1, an agreement) was identified but not opened this pass"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-21",
+      "horizon": "12-24 months, on a valuation reset or confirmation that the 2027+ growth thesis is materializing quarter by quarter",
+      "confidence_in_thesis": "medium: the AI/HBM test demand and clean net-cash balance sheet are well evidenced, but the degree of cyclicality embedded in current earnings cannot be fully resolved from two years of filings alone",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for TER. My own reverse-DCF (NTM EPS ~$10.97, 15%/yr growth, multiple compressing 36.3x to 25x) implies only ~1.5%/yr base-case return, i.e. the current price already assumes results near or above this base case, consistent with a WATCH rather than INCLUDE verdict.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.331,
+        "base": 0.015,
+        "bull": 0.283
+      },
+      "scenario_basis": "Starting NTM consensus EPS $10.97 (d4 snapshot), no meaningful dividend (yield 0.13%); bear: EPS falls to ~$8 by year 3 on a WFE-cycle downturn, exit multiple 15x (trough); base: 15%/yr EPS growth, exit multiple 25x; bull: 30%/yr EPS growth (2027+ AI-capex supercycle sustained), exit multiple 35x."
+    },
+    "ACN": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The world's largest IT consulting and outsourcing firm, priced at less than half its historical multiple, even though growth has genuinely slowed and new bookings just turned negative.",
+      "kill_criteria": [
+        "Local-currency revenue growth below 3% (the bottom of the FY26 guide) for two consecutive quarters",
+        "New bookings YoY decline (USD) continuing for two more consecutive quarters (one quarter, Q3 FY26, already negative)",
+        "U.S. federal segment drag exceeding the guided approximately 1% impact on full-year local-currency growth",
+        "GAAP operating margin expansion stalling or reversing YoY (guided to 50-70bps of full-year FY26 expansion)",
+        "Consolidated net cash position falling below $2 billion (e.g. from debt-funded rather than cash-funded M&A)"
+      ],
+      "key_adverse_facts": [
+        "New bookings fell YoY in Q3 FY26 (-2% USD / -3% local currency) for the first time in this two-year window",
+        "U.S. federal government segment revenue pressure from 2025 federal budget/efficiency-driven contract reviews and terminations is an acknowledged, guided-for drag (~1% of FY26 growth)",
+        "Long-run risk that GenAI reduces demand/pricing for traditional staff-augmentation consulting, even as Accenture also sells GenAI integration work, is structural and unresolved",
+        "FY26 local-currency revenue-growth guidance was narrowed at the top end (5% cut to 4%) in the Q3 FY26 release even as EPS guidance was raised -- a mixed, not simply positive, signal",
+        "Dragos/runZero/NetRise acquisition (announced 2026-06-18) deal value was not disclosed in the release reviewed"
+      ],
+      "data_conflicts": [
+        "V1's base-case 3-year annualized return (30.2%/yr) implies a price above even the highest Street 12-month target ($275 vs $176.11 current), which V1 itself flags via street_flag; I use a more conservative base case (~11-13%/yr) given the Q3 FY26 bookings deceleration, so my dossier view is directionally consistent with V1 (both see the stock as cheap) but materially less optimistic on magnitude"
+      ],
+      "next_earnings_date": "2026-10-01",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium: the valuation discount and balance-sheet strength are well evidenced, but whether the bookings decline is a one-off (federal noise) or the start of a GenAI-driven secular trend cannot be resolved before the imminent 2026-10-01 report",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.30206910125150865,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "V1 and I agree ACN is statistically cheap (12x NTM P/E implying negative priced-in growth), but V1's base case assumes a full re-rating to historical multiples that its own street_flag notes would exceed the highest analyst price target; I use a more conservative base case (~11-13%/yr from ~6%/yr EPS growth plus a partial re-rating to 14-15x) that is still below what I believe ACN can deliver if the bookings deceleration stabilizes, keeping the INCLUDE-SMALL verdict valid under the implied-vs-base rule.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": 0.04,
+        "base": 0.12,
+        "bull": 0.215
+      },
+      "scenario_basis": "Starting NTM consensus EPS $14.66 (d4 snapshot), dividend yield 3.7% included in all cases; bear: 2-3% LC growth, no re-rating (multiple stays ~12x); base: FY26-guided ~10% EPS growth decelerating to mid-single-digit, partial re-rating to 14-15x; bull: bookings reaccelerate on net-new GenAI demand, re-rating to 17-18x."
+    }
+  }
+}

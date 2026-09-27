@@ -1,0 +1,113 @@
+{
+  "agent": "F21",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "RCL": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Best-in-class cruise operator with record bookings, but a new debt-funded resort deal and fully priced-in growth argue for a smaller position.",
+      "kill_criteria": [
+        "Net debt/EBITDA exceeds 4.0x at any quarter-end after the Sandals deal closes (vs. ~3.26x now).",
+        "FCF (OCF - capex) remains negative for two consecutive fiscal years (i.e., still negative at FY2027 year-end) - would indicate the newbuild cycle is not tapering as guided.",
+        "FY Adjusted EPS guidance is cut in two consecutive quarterly releases (it has been cut once, in Q1 2026, and then raised back - a second consecutive cut would signal a demand trend, not a one-off).",
+        "Net Yield growth (as-reported) turns negative for two consecutive quarters.",
+        "The Sandals/Beaches JV fails to close as expected in early 2027, or closes with materially different financing terms (e.g., higher-than-disclosed interest cost) than announced 2026-09-23."
+      ],
+      "key_adverse_facts": [
+        "TTM FCF is negative (-$416m: OCF $6,786m minus capex $7,202m) due to the Icon-class newbuild capex cycle.",
+        "Net debt/EBITDA is already elevated at ~3.26x before the new deal below is layered on.",
+        "2026-09-23 8-K: Royal Caribbean Group agreed to acquire a 50% stake in Sandals and Beaches Resorts for ~$3.0bn at ~10x forward EBITDA, funded entirely by committed debt financing from Morgan Stanley, closing early 2027 - unproven diversification into land-based resorts with no independent fairness opinion or financing-cost detail disclosed yet.",
+        "FY2026 Adjusted EPS guidance was cut in April 2026 (Q1 2026 release) citing a $0.62/share fuel-cost increase and softer Mediterranean/West-Coast-Mexico demand from 'prolonged geopolitical activity', before being raised back above the initial guide in July 2026."
+      ],
+      "data_conflicts": [
+        "Raw quant b1 Value-family scores (earnings yield and book/price are both negative in the raw factor panel) do not flag RCL as statistically cheap, even though the triage's 12.4x NTM P/E framing reads as 'cheap' - the two should not be conflated; the model's overall composite rank for RCL is only mid-pack (460/~1,172), driven by momentum/SUE, not value."
+      ],
+      "next_earnings_date": "2026-10-27",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - strong, consistent primary-source momentum evidence (bookings, margins, buybacks), but the reverse-DCF conclusion is sensitive to WACC/beta assumptions, and the Sandals JV is very recent (2 days before cutoff) and not yet reflected in any quant score or independently audited",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "No V1 systematic valuation row exists for RCL in v1_valuation_table.csv (v1_verdict set to null per instructions). This dossier built its own reverse DCF (two-stage, 10yr + 3% terminal growth) using TTM Adjusted Net Income as an owner-earnings proxy for FCF (FCF itself is temporarily negative from newbuild capex). Implied 10-year growth at a sourced-beta (1.75) WACC of ~10.4% is ~8.0%, roughly in line with (not comfortably below) this dossier's independent base case of ~7%/yr - hence INCLUDE-SMALL rather than full INCLUDE, and 'in_line' rather than 'below'.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.28,
+        "base": 0.09,
+        "bull": 0.33
+      }
+    },
+    "EL": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Prestige beauty turnaround is real and accelerating, but the price already assumes more margin recovery than one clean year can prove.",
+      "kill_criteria": [
+        "Organic net sales growth falls back below 3% for two consecutive quarters (it has ranged 3-5% for the last four quarters; a reversal would break the accelerating trend).",
+        "Adjusted operating margin fails to reach at least 12.0% for FY2027 (vs. the guided 12.7-13.5%).",
+        "Any new goodwill/intangible impairment or litigation settlement charge exceeding $100m is recorded in FY2027.",
+        "Net debt/EBITDA rises above 3.0x (vs. ~2.4x now).",
+        "GAAP operating income is negative for two consecutive quarters in FY2027 (it was negative in Q4 FY2026 alone due to restructuring cash costs - a repeat pattern would suggest the restructuring is not on the disclosed timeline)."
+      ],
+      "key_adverse_facts": [
+        "FY2025 GAAP diluted EPS was $(3.15), driven by a $911m Americas goodwill impairment, a $375m Asia/Pacific intangible impairment, and $159m of Talcum-litigation settlement charges.",
+        "An $84m loss contingency (net of insurance recoveries) for a pending securities class-action settlement was recorded in FY2026 - the underlying allegations were not detailed in the sources reviewed this pass and should be read directly in the FY2026 10-K's legal-proceedings item before sizing any position.",
+        "Q4 FY2026 GAAP operating income was still negative ($(39)m) due to continued restructuring cash charges, even as the turnaround narrative strengthened.",
+        "Triage itself flagged the highest one-year volatility in its batch (49%) and noted the China/travel-retail recovery must prove durable beyond one quarter - genuine, not manufactured, uncertainty."
+      ],
+      "data_conflicts": [
+        "Triage framed the 27x NTM P/E as 'reasonable against that growth'; this dossier's reverse DCF finds the 2026-09-25 price implies ~11.7% sustained 10-year FCF growth at a sourced-beta (1.274) WACC of ~9.8%, above this dossier's independent evidence-based base case of ~7-8% - the triage's optimism does not survive a formal reverse-DCF check, which is the basis for overturning triage's implicit 'advance' framing to WATCH."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "12-36 months (if the WATCH condition is met)",
+      "confidence_in_thesis": "medium - the operating turnaround evidence (accelerating organic growth, FCF nearly doubled) is strong and consistent across four straight quarterly releases, but it is only one fiscal year old, sits alongside a real recent litigation/impairment history, and the reverse DCF shows the price is already ahead of a conservative base case",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": null,
+        "reconciliation": "No V1 systematic valuation row exists for EL in v1_valuation_table.csv (v1_verdict set to null per instructions). This dossier built its own reverse DCF (two-stage, 10yr + 3% terminal growth) on FY2026 as-reported FCF ($1,316m, no restructuring add-back). Implied 10-year FCF growth at a sourced-beta (1.274) WACC of ~9.8% is ~11.7%, clearly above this dossier's independent base case of ~7-8%/yr even at the low end of the WACC sensitivity range (8.6% implied at WACC 8.5%) - hence WATCH and 'above', per the rule that INCLUDE/INCLUDE-SMALL require implied growth at or below the base case.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.42,
+        "base": -0.02,
+        "bull": 0.24
+      }
+    },
+    "AMP": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Capital-light wealth and asset manager growing assets under management double-digits, returning most earnings to shareholders, priced under 10 times earnings.",
+      "kill_criteria": [
+        "TTM ROE falls below 40% (vs. ~62% now) for two consecutive quarters - would indicate faster-than-expected mean reversion.",
+        "Total AUM+AUA growth (YoY) falls below 5% for two consecutive quarters (vs. 13-19% segment growth now).",
+        "Capital returned to shareholders falls below 60% of operating earnings for two consecutive quarters (vs. ~91% in Q2 2026) - would signal a capital-return policy change.",
+        "Any named, material litigation or regulatory enforcement matter (e.g. a cash-sweep-program-style industry action) is disclosed in a future 10-Q's Legal Proceedings item.",
+        "Adjusted operating EPS YoY growth turns negative for any quarter (it has been +16% to +22% in each of the last four)."
+      ],
+      "key_adverse_facts": [
+        "ROE (62% TTM) sits at roughly the 80th percentile of AMP's own 10-year history per V1's own dataset - a real, sourced mean-reversion risk, not a remote one.",
+        "GAAP diluted EPS is materially more volatile quarter to quarter than Adjusted operating EPS (e.g. $5.00 to $10.57 in consecutive quarters) due to insurance/annuity mark-to-market effects in the legacy Retirement & Protection Solutions block.",
+        "AMP's LongTermDebt/LongTermDebtNoncurrent XBRL tags returned no recent instances in this pass's company-facts pull; this dossier's net-debt figure is sourced from V1/D4 rather than independently re-derived from primary filings this pass - a disclosed data-availability limitation."
+      ],
+      "data_conflicts": [
+        "V1's bull-case scenario (+67.7%/yr annualised, 3yr) compounds an 80th-percentile ROE assumption with 8.3%/yr assumed share-count shrinkage for three straight years; this dossier flags the resulting >3x price outcome as a likely modeling artefact of compounding two aggressive assumptions together rather than a plausible upper bound - this does not change V1's verdict or base case, only flags the bull case specifically as overstated."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "high - consistent, multi-quarter primary-source evidence of AUM and adjusted-EPS growth in every one of the last four quarters, a clean red-flag scan, and independent agreement with the systematic V1 valuation model",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "fair",
+        "v1_base_3y": 0.0648,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "This dossier's primary-source read agrees with V1's 'fair' verdict and treats V1's base case (implied ROE mean-reverting toward the 50th percentile of AMP's own 10-year history, ~30% ROE) as the operative base case here. One reservation flagged (not a disagreement with the verdict): V1's bull-case compounding looks overstated (see data_conflicts).",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.1266,
+        "base": 0.0648,
+        "bull": 0.6765
+      }
+    }
+  }
+}

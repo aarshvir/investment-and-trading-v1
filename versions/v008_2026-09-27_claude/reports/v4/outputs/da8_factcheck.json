@@ -1,0 +1,303 @@
+{
+  "as_of": "2026-09-26",
+  "scope": "Independent adversarial data audit (DA8) of five current-holding dossiers not previously checked by this auditor: AMP, ADP, CRH, PGR, DOV. 33 load-bearing facts checked (7/7/7/6/6 by ticker), selected for the claims most likely to break a thesis or a kill criterion if wrong: headline quarterly figures, guidance track records, leverage/capital ratios, deal terms/dates, litigation status, and capital-return figures. Method: primary sources only -- SEC EDGAR 8-K Ex-99.1 earnings-release exhibits, 10-Q/10-K text and notes, and data.sec.gov XBRL companyfacts/companyconcept pulls -- fetched directly from www.sec.gov and data.sec.gov and cited by accession/URL below. Each dossier was read to its end (no appended Correction sections were found on any of the five). Each ticker's one-line thesis and first kill criterion were checked for consistency with the underlying filings; results noted in the relevant fact or in the summary below (see da8_factcheck.md section 4 for the explicit per-ticker kill-criterion-1 consistency check).",
+  "facts": [
+    {
+      "ticker": "AMP",
+      "claim": "Q2 2026: total revenues $5,013m; GAAP diluted EPS $11.98; Adjusted operating EPS $11.07 (+21.5% YoY)",
+      "dossier_location": "AMP.md §4 results table, Q2 2026 row",
+      "source": "AMP 8-K Ex-99.1, Q2 2026 earnings release, accession embedded in URL 000082002726000038, filed 2026-07-23",
+      "source_value": "\"Total revenues 5,013 ... GAAP net income per diluted share $11.98 ... Adjusted operating earnings per diluted share $11.07 $9.11 22%\" (company rounds to 22%; exact = (11.07-9.11)/9.11 = 21.5%)",
+      "status": "PASS",
+      "note": "Exact match on all figures."
+    },
+    {
+      "ticker": "AMP",
+      "claim": "Q2 2026 AUM/AUA: AWM AUM $727.7bn (+19%); Asset Management AUM $714.8bn (+9%); total AUM $1,396bn (+14%); AUA $374.6bn (+13%); combined AUM+AUA record $1.8 trillion (+14% YoY)",
+      "dossier_location": "AMP.md §4 narrative (segment detail)",
+      "source": "AMP 8-K Ex-99.1, Q2 2026 earnings release",
+      "source_value": "\"Advice & Wealth Management AUM $727,679 ... 19% ... Asset Management AUM 714,809 ... 9% ... Assets Under Management 1,396,012 ... 14% ... Assets Under Administration 374,615 ... 13% ... Total Assets Under Management, Administration and Advisement $1,812,618 ... 14%\"; headline: \"grew to a record $1.8 trillion, up 14 percent\"",
+      "status": "PASS",
+      "note": "Exact match on every figure."
+    },
+    {
+      "ticker": "AMP",
+      "claim": "\"AWM segment pretax adjusted operating margin was 28.9% in Q2 2026 (up from prior year)\"",
+      "dossier_location": "AMP.md §4 narrative",
+      "source": "AMP 8-K Ex-99.1, Q2 2026 earnings release, AWM segment table",
+      "source_value": "\"Pretax adjusted operating margin 28.9% 28.9% —\" (Q2 2026 vs Q2 2025, with \"—\" = no change indicator)",
+      "status": "MINOR",
+      "note": "The 28.9% figure itself is exact, but the margin was flat year-over-year, not \"up from prior year\" as the dossier states -- the release's own %-better/worse column shows — (unchanged). A small mischaracterization, not a numeric error; does not affect any downstream conclusion."
+    },
+    {
+      "ticker": "AMP",
+      "claim": "Q2 2026 capital return: $932m returned to shareholders, or 91% of operating earnings",
+      "dossier_location": "AMP.md §6 (capital return)",
+      "source": "AMP 8-K Ex-99.1, Q2 2026 earnings release",
+      "source_value": "\"$932 million, or 91 percent of operating earnings, returned in the quarter\"; capital summary table: dividends paid $158m + common stock repurchases $774m = $932m",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "AMP",
+      "claim": "Buybacks were $2,907m in FY2025 and already $1,653m through H1 2026",
+      "dossier_location": "AMP.md §6 (capital return)",
+      "source": "SEC EDGAR XBRL companyconcept, us-gaap:PaymentsForRepurchaseOfCommonStock, CIK0000820027 (data.sec.gov)",
+      "source_value": "2025-01-01 to 2025-12-31: $2,907,000,000 (10-K); 2026-01-01 to 2026-06-30: $1,653,000,000 (10-Q, cumulative cash-flow-statement basis)",
+      "status": "PASS",
+      "note": "Both figures match exactly on a cash-flow-statement (cash paid) basis. (Note: these differ from the sum of the earnings release's own quarterly \"Common stock share repurchases\" table line, which nets to ~$1,558m for H1 2026 on a trade-date/accrual basis -- the two bases are both legitimate and reconcilable; the dossier's cited figure is the cash-flow-statement figure and is correct.)"
+    },
+    {
+      "ticker": "AMP",
+      "claim": "Q4 2025 GAAP diluted EPS $10.39 (footnoted as \"derived as the 10-K annual figure minus the sum of the three preceding 10-Qs, standard convention\")",
+      "dossier_location": "AMP.md §4 results table, Q4 2025 row and footnote 1",
+      "source": "AMP 8-K Ex-99.1, Q4/FY2025 earnings release, accession embedded in URL 000082002726000004, filed 2026-01-29",
+      "source_value": "\"GAAP net income per diluted share was $10.47 compared to $10.58 a year ago\" (directly reported Q4 2025 figure, not derived)",
+      "status": "MINOR",
+      "note": "Actual, directly-reported Q4 2025 GAAP diluted EPS is $10.47, not the $10.39 the dossier derives by subtracting Q1-Q3 2025 EPS from the FY2025 total. This subtraction method is unsound for diluted EPS because weighted-average share counts differ by quarter (a fully-diluted quarterly EPS is not the simple residual of the annual figure). The ~0.8% gap is immaterial to any conclusion in this dossier, but the same derivation-method risk that DA7 flagged for GM's Q1/Q4 2025/2026 cells recurs here."
+    },
+    {
+      "ticker": "AMP",
+      "claim": "TTM ROE ~62% (net income ~$3.9-4.0bn / stockholders' equity $6.37bn); thesis and kill criterion 1 (\"TTM ROE falls below 40%\") consistency",
+      "dossier_location": "AMP.md §6 (ROE), §9 kill criterion 1",
+      "source": "AMP 8-K Ex-99.1, Q2 2026 earnings release, Consolidated GAAP Results and Balance Sheet",
+      "source_value": "Twelve-months-ended net income $3,948m; Total Equity (balance sheet, 30-Jun-2026) $6,366m → 3,948/6,366 = 62.0%",
+      "status": "PASS",
+      "note": "The dossier's raw TTM-NI/period-end-equity calculation (62.0%) matches exactly and is internally consistent with kill criterion 1's 40% threshold. Note for context: this differs methodologically from AMP's own primary disclosed metric, \"Return on Equity, ex. AOCI\" (53.0% GAAP / 55.0% Adjusted Operating, calculated on a 5-point-average-equity-excluding-AOCI basis) -- both are legitimate, differently-defined ROE figures, and the dossier is transparent that its 62% figure is its own/V1's calculation, not the company's own headline ROE metric."
+    },
+    {
+      "ticker": "ADP",
+      "claim": "FY2026 (ended 30-Jun-2026): total revenue $21,947.4M (+7.0%); GAAP net earnings $4,413.5M (+8%); GAAP diluted EPS $10.94 (+10%); adjusted diluted EPS $11.12 (+11%)",
+      "dossier_location": "ADP.md §4 results table, FY26 total row",
+      "source": "ADP Q4/FY2026 8-K Ex-99.1 earnings release, filed 2026-07-29; ADP FY2026 10-K, filed 2026-08-05",
+      "source_value": "\"Total revenues 21,947.4 ... Net earnings $4,413.5 ... Diluted earnings per share $10.94\"; \"adjusted diluted EPS increased 11% to $11.12\"",
+      "status": "PASS",
+      "note": "Exact match on all figures. (Dossier's own table shows an estimated adjusted diluted EPS of \"~$?\"; the source confirms $11.12.)"
+    },
+    {
+      "ticker": "ADP",
+      "claim": "FY2025 (ended 30-Jun-2025): total revenue $20,560.9M (+7.1%); GAAP net earnings $4,079.7M; GAAP diluted EPS $9.98",
+      "dossier_location": "ADP.md §4 results table, FY25 total row",
+      "source": "ADP Q4/FY2026 8-K Ex-99.1 earnings release (prior-year comparative column)",
+      "source_value": "\"Total revenues ... 20,560.9 ... Net earnings ... $4,079.7 ... Diluted earnings per share ... $9.98\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "ADP",
+      "claim": "FYE26 balance sheet: corporate cash (ex-client funds) $4.23B; long-term debt $4.96B; net debt ≈$0.73B",
+      "dossier_location": "ADP.md §6 (balance sheet)",
+      "source": "ADP Q4/FY2026 8-K Ex-99.1, Consolidated Balance Sheets, 30-Jun-2026",
+      "source_value": "\"Cash and cash equivalents $4,230.1 ... Long-term debt $4,964.1\"; 4,964.1-4,230.1 = 734.0",
+      "status": "PASS",
+      "note": "Exact match; net debt computes to $0.734bn, consistent with the dossier's ≈$0.73B."
+    },
+    {
+      "ticker": "ADP",
+      "claim": "FY26 FCF: OCF $5,441.2M; capex (PP&E) $196.6M → FCF ≈$5,244.6M vs net income $4,413.5M → FCF/NI ≈119%",
+      "dossier_location": "ADP.md §6 (earnings quality)",
+      "source": "ADP Q4/FY2026 8-K Ex-99.1, Statements of Consolidated Cash Flows",
+      "source_value": "\"Net cash flows provided by operating activities 5,441.2 ... Capital expenditures (196.6)\"; 5,441.2-196.6=5,244.6; 5,244.6/4,413.5=118.8%",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "ADP",
+      "claim": "FY26 repurchases $2,083.3M, dividends $2,626.3M; diluted share count fell from 408.7M (FY25) to 403.3M (FY26)",
+      "dossier_location": "ADP.md §6 (buybacks/dividends)",
+      "source": "ADP Q4/FY2026 8-K Ex-99.1, Statements of Consolidated Cash Flows and Other Selected Financial Data",
+      "source_value": "\"Repurchases of common stock (2,083.3) ... Dividends paid (2,626.3)\"; \"Diluted weighted average shares outstanding ... 403.3 ... 408.7\"",
+      "status": "PASS",
+      "note": "Exact match on all figures."
+    },
+    {
+      "ticker": "ADP",
+      "claim": "FY27 initial guidance (issued Aug-26): revenue growth 5-6%; adjusted EBIT margin expansion 70-90bps; adjusted diluted EPS growth 9-11%",
+      "dossier_location": "ADP.md §5 guidance table (FY27 row), §10 catalysts",
+      "source": "ADP Q4/FY2026 8-K Ex-99.1, \"Fiscal 2027 Outlook\" section",
+      "source_value": "\"Revenue growth of 5% to 6% ... Adjusted EBIT margin expansion of 70 to 90 basis points ... Adjusted diluted EPS growth of 9% to 11%\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "ADP",
+      "claim": "\"$48M settlement (Aug-2026, preliminary approval pending) in a 401(k)/TotalSource retirement-plan fee ERISA class action ... A separate ERISA suit re: the ADP TotalSource Retirement Savings Plan (filed 2020, New Jersey) remains open; ADP states it cannot estimate a reasonably possible loss\"",
+      "dossier_location": "ADP.md §11 red-flag scan (litigation)",
+      "source": "ADP FY2026 10-K (filed 2026-08-05), Note 13 Commitments and Contingencies",
+      "source_value": "\"In May 2020, a putative class action complaint was filed against ADP, TotalSource and related defendants in the U.S. District Court, District of New Jersey. The complaint asserts violations of [ERISA] in connection with the ADP TotalSource Retirement Savings Plan's fiduciary administrative and investment decision-making. The Company reached a settlement of all outstanding claims for $48 million, subject to the court's approval.\" No other ERISA/TotalSource retirement-plan matter appears in the note.",
+      "status": "FAIL",
+      "note": "The 10-K describes only ONE matter -- the May-2020, New Jersey, TotalSource Retirement Savings Plan ERISA suit -- and it is the SAME suit that reached the $48M settlement (subject to court approval). The dossier's litigation paragraph describes this as two separate items: a settled $48M matter, plus \"a separate\" still-open ERISA suit with an identical description (filed 2020, New Jersey, TotalSource Retirement Savings Plan). No such second, open matter exists in the current 10-K; this appears to be stale language (describing the pre-settlement status of the same case) mistakenly presented as a distinct, currently-open second case in the red-flag scan."
+    },
+    {
+      "ticker": "CRH",
+      "claim": "Q2 2026: total revenues $10.8bn ($10,777M); net income $1.5bn ($1,486M, +13%); diluted EPS $2.21 (+14%)",
+      "dossier_location": "CRH.md §4 results table, Q2 2026 row",
+      "source": "CRH 8-K Ex-99.1, Q2 2026 results announcement, filed 2026-07-30",
+      "source_value": "\"Total revenues $10.8 billion ... Net income of $1.5 billion ... 13% higher ... Diluted Earnings Per Share $2.21 +14%\"",
+      "status": "PASS",
+      "note": "Exact match on all figures."
+    },
+    {
+      "ticker": "CRH",
+      "claim": "FY2025: revenue $37,447M (+5.3%); operating income $5,440M (+10.5%); net income $3,753M (+7.5%); diluted EPS $5.51",
+      "dossier_location": "CRH.md §4 narrative (FY2025 full year)",
+      "source": "SEC EDGAR XBRL companyfacts, CIK0000849395 (RevenueFromContractWithCustomerExcludingAssessedTax, OperatingIncomeLoss, NetIncomeLoss, EarningsPerShareDiluted, FY2025 10-K)",
+      "source_value": "Revenue $37,447,000,000; Operating income $5,440,000,000; Net income $3,753,000,000; Diluted EPS $5.51 (all tagged FY2025, form 10-K)",
+      "status": "PASS",
+      "note": "Exact match on all four figures."
+    },
+    {
+      "ticker": "CRH",
+      "claim": "Q2 2026 release: FY2026 guidance reaffirmed -- Net income $3.9-4.1bn; Adjusted EBITDA $8.1-8.5bn; Diluted EPS $5.60-$6.05 (new, unchanged range)",
+      "dossier_location": "CRH.md §5 guidance table, Q2 2026 row",
+      "source": "CRH 8-K Ex-99.1, Q2 2026 results announcement",
+      "source_value": "\"Reaffirming FY26 guidance for Net income ($3.9bn-$4.1bn), Adj. EBITDA* ($8.1bn-$8.5bn) and Diluted EPS ($5.60-$6.05)\"",
+      "status": "PASS",
+      "note": "Exact match; correctly characterized as reaffirmed, not raised."
+    },
+    {
+      "ticker": "CRH",
+      "claim": "Arcosa acquisition: $8.5bn all-cash, announced 22-Jun-2026, $150/share, 11.5x 2026E EBITDA, ~35mt of 2025 aggregates shipments, $175m run-rate synergies by year 3, pro forma FY2026E Net Debt/Adjusted EBITDA 2.4x, expected close Q1 2027",
+      "dossier_location": "CRH.md §8 bull case (1), §9 kill criterion 1-2",
+      "source": "CRH 8-K Ex-99.1 (Item 7.01/8.01), Arcosa acquisition announcement, filed 2026-06-22",
+      "source_value": "\"$150 per share ... total enterprise value of approximately $8.5 billion, representing an acquisition multiple of 11.5x 2026E Adjusted EBITDA, including estimated annual run-rate cost synergies of $175 million by year three ... approximately 35 million tons (mt) of 2025 aggregates shipments ... pro forma FY 2026E Net Debt / Adjusted EBITDA of 2.4x ... expected to close in Q1 2027\"",
+      "status": "PASS",
+      "note": "Exact match on every deal term checked."
+    },
+    {
+      "ticker": "CRH",
+      "claim": "Net debt at 30-Jun-2026 ≈$14.9bn (own calculation: total debt ≈$17.93bn less cash $3.025bn), used for the ≈1.8x net debt/EBITDA leverage figure",
+      "dossier_location": "CRH.md §6 (leverage)",
+      "source": "CRH 8-K Ex-99.1, Q2 2026 results announcement, Balance Sheet and Liquidity section",
+      "source_value": "\"Total short and long-term debt was $17.9 billion at June 30, 2026 ... Net Debt* at June 30, 2026, was $15.4 billion, compared to $14.2 billion at December 31, 2025 ... $3.1 billion of cash and cash equivalents and restricted cash on hand\"",
+      "status": "MINOR",
+      "note": "CRH itself discloses a non-GAAP \"Net Debt*\" of $15.4bn at 30-Jun-2026 (up from $14.2bn at FY2025-end), not the $14.9bn the dossier derives by subtracting cash from total debt -- CRH's own Net Debt definition evidently nets against a narrower cash base or includes items (e.g., lease liabilities) the dossier's simple subtraction omits. Using the company's own $15.4bn figure, net debt/EBITDA is ≈1.86x (vs the dossier's stated ≈1.8x) -- the conclusion (moderate, investment-grade-consistent leverage, well under the 3.0x kill-criterion threshold) is unaffected, but the specific $14.9bn net-debt figure does not match CRH's own reported metric."
+    },
+    {
+      "ticker": "CRH",
+      "claim": "Total debt (segment note, FY 10-K): $17,653M (FY2025) vs $13,968M (FY2024) vs $11,642M (FY2023)",
+      "dossier_location": "CRH.md §6 (leverage trend)",
+      "source": "SEC EDGAR XBRL companyfacts, CIK0000849395, us-gaap:LongTermDebt (current+noncurrent combined tag)",
+      "source_value": "2023-12-31: $11,535,000,000; 2024-12-31: $13,851,000,000; 2025-12-31: $17,533,000,000 (all tagged form 10-K)",
+      "status": "MINOR",
+      "note": "The dossier's three figures are each $107-120M (≈0.7-0.9%) higher than the standard consolidated-balance-sheet LongTermDebt XBRL tag for the same three fiscal year-ends. The gap is small and consistent across all three years (suggesting a different, but internally consistent, \"segment note\" debt definition was used, e.g. including finance leases/overdrafts), not a substantive error -- the trend and growth-rate conclusion (debt up ~20-26% per year) is unaffected."
+    },
+    {
+      "ticker": "CRH",
+      "claim": "Quarterly dividend $0.39/share (+5% YoY)",
+      "dossier_location": "CRH.md §6 (capital return)",
+      "source": "CRH 8-K Ex-99.1, Q2 2026 results announcement, Dividends and Share Buybacks section",
+      "source_value": "\"CRH announced a quarterly dividend of $0.39 per share, representing a 5% increase on the prior year\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "PGR",
+      "claim": "Q2 2026 (June Quarter): net premiums earned $21,573M (+6%); net income $3,311M; diluted EPS $5.67; combined ratio 87.3",
+      "dossier_location": "PGR.md §4 results table, 2Q26 row",
+      "source": "PGR \"June Results\" 8-K Ex-99, accession 0000080661-26-000262, filed 2026-07-15",
+      "source_value": "\"Net premiums earned $7,100 $6,954 2% $21,573 $20,310 6% ... Net income ... $3,311 ... Per share available to common shareholders ... $5.67 ... Combined ratio 90.0 86.6 3.4 pts. 87.3 86.2 1.1 pts.\" (year-to-date/quarterly columns)",
+      "status": "PASS",
+      "note": "Exact match on all four figures."
+    },
+    {
+      "ticker": "PGR",
+      "claim": "Q3 2025 (Sept Quarter): net premiums earned $20,849M; net income $2,615M; diluted EPS $4.45; combined ratio 89.5; September 2025 single-month combined ratio spiked to 100.4 (from 93.4 prior year), driven by a $950M Florida policyholder-credit accrual",
+      "dossier_location": "PGR.md §4 results table (3Q25 row), §6 (Florida policyholder credit)",
+      "source": "PGR \"September Results\" 8-K Ex-99, accession 0000080661-25-000126, filed 2025-10-15",
+      "source_value": "\"Net premiums earned $6,827 $6,263 9% $20,849 $18,297 14% ... Net income $305 ... $2,615 ... Per share ... $4.45 ... Combined ratio 100.4 93.4 7.0 pts. 89.5 89.0 0.5 pts.\"; monthly income statement: \"Policyholder credit expense 950\"",
+      "status": "PASS",
+      "note": "Exact match on every figure, including the $950M accrual and both the single-month and quarterly combined ratios."
+    },
+    {
+      "ticker": "PGR",
+      "claim": "Policies in force (companywide): 38.08M (3Q25) → 40.09M (2Q26), +7% YoY",
+      "dossier_location": "PGR.md §4 narrative",
+      "source": "PGR \"September Results\" and \"June Results\" 8-K Ex-99 releases",
+      "source_value": "\"Companywide 38,078\" (thousands, Sept-2025); \"Total 40,086\" (thousands, Jun-2026), +7% vs Jun-2025 (37,315)",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "PGR",
+      "claim": "Capital structure: total capital $42.7bn (2Q26) vs $37.2bn (4Q25); debt-to-total-capital 19.6% (2Q26) up from 17.5% (2Q25); $1.5bn senior-notes issuance in 1Q26",
+      "dossier_location": "PGR.md §6 (capital structure)",
+      "source": "PGR 10-Q, period ended 2026-06-30, accession 0000080661-26-000308, filed 2026-08-03",
+      "source_value": "\"Our total capital (debt plus shareholders' equity) was $42.7 billion at June 30, 2026 ... $37.2 billion at December 31, 2025 ... the issuance of $1.5 billion of senior notes in the first quarter 2026 ... Our debt-to-total capital ratio was 19.6% at June 30, 2026, compared to 17.5% at June 30, 2025\"",
+      "status": "PASS",
+      "note": "Exact match on every figure."
+    },
+    {
+      "ticker": "PGR",
+      "claim": "Equity: $34.33bn (2Q26) vs $30.32bn (4Q25)",
+      "dossier_location": "PGR.md §6 (capital structure)",
+      "source": "PGR 10-Q, period ended 2026-06-30, Condensed Consolidated Balance Sheets",
+      "source_value": "\"Total shareholders' equity 34,333 32,604 30,323\" (columns: Jun-30-2026, Jun-30-2025, Dec-31-2025)",
+      "status": "PASS",
+      "note": "The 2Q26 ($34.33bn) and 4Q25 ($30.32bn) figures both match exactly. (The dossier's third comparison point, $28.95bn at 1Q25, was not independently re-verified this pass -- a scope limitation, not a discrepancy.)"
+    },
+    {
+      "ticker": "PGR",
+      "claim": "Litigation: multi-state class actions alleging improper total-loss-vehicle valuation via a \"negotiation adjustment,\" with classes already certified in three states",
+      "dossier_location": "PGR.md §6 (litigation), §8 bear case (3), §11 red-flag scan",
+      "source": "PGR 10-Q, period ended 2026-06-30, Commitments and Contingencies / Litigation note",
+      "source_value": "\"As of June 30, 2026, lawsuits have been certified or conditionally certified as class/collective actions in cases alleging that: we improperly value total loss claims by applying a negotiation adjustment in Colorado, North Carolina, and Ohio ... and lawsuits styled as putative class actions pending in additional states\"",
+      "status": "PASS",
+      "note": "Exact match -- three states (Colorado, North Carolina, Ohio) confirmed as having certified classes on this claim, with additional states pending."
+    },
+    {
+      "ticker": "DOV",
+      "claim": "Q1 2026 / Q2 2026: revenue $2,053.6m / $2,190.0m; operating income $305.9m / $391.8m; net income (GAAP) $238.4m / $312.2m; diluted EPS (GAAP) $1.75 / $2.30; adjusted diluted EPS $2.28 / $2.74",
+      "dossier_location": "DOV.md §4 results table",
+      "source": "DOV 10-Q Q2 2026, filed 2026-07-23 (accession 0000029905-26-000027), Statements of Consolidated Earnings and Performance Measures exhibit",
+      "source_value": "\"Operating earnings 391,787 354,597 697,696 650,906\" (Q2'26/Q2'25/6mo'26/6mo'25, implying Q1'26 = 697,696-391,787 = 305,909); \"Net earnings $238,433 $312,246\" (Q1'26, Q2'26, thousands); \"Net earnings [diluted EPS, incl. discontinued ops] $1.75 $2.30\"",
+      "status": "PASS",
+      "note": "Exact match on every figure, including the GAAP diluted EPS figures ($1.75/$2.30), which reflect total net earnings (continuing + discontinued operations) rather than the earnings release headline's \"continuing operations only\" EPS ($1.76/$2.31) -- the dossier correctly used the bottom-line, all-in figure."
+    },
+    {
+      "ticker": "DOV",
+      "claim": "Bookings/book-to-bill: Q1 2026 +24% YoY / 1.2x; Q2 2026 +16% YoY / 1.06x (positive across all five segments)",
+      "dossier_location": "DOV.md §4 results table, §8 bull case (1)",
+      "source": "DOV Q2 2026 8-K Ex-99.1, Performance Measures exhibit",
+      "source_value": "\"Total consolidated bookings $2,463,676 [Q1'26] $2,331,353 [Q2'26] ... $1,989,584 [Q1'25] $2,008,591 [Q2'25]\"; YoY: Q1'26 +23.8%, Q2'26 +16.1%; book-to-bill Q1'26 = 2,463.7/2,053.6=1.20x, Q2'26 = 2,331.4/2,190.0=1.06x",
+      "status": "PASS",
+      "note": "Exact match on both quarters' growth rates and book-to-bill ratios."
+    },
+    {
+      "ticker": "DOV",
+      "claim": "Q2 2026 release: FY26 guidance raised -- GAAP EPS $8.94-$9.14 (adjusted $10.55-$10.75), revenue growth 6-8% (organic 4-6%)",
+      "dossier_location": "DOV.md §5 guidance track record",
+      "source": "DOV Q2 2026 8-K Ex-99.1 earnings release, filed 2026-07-23",
+      "source_value": "\"In 2026, Dover expects to generate GAAP EPS in the range of $8.94 to $9.14 (adjusted EPS of $10.55 to $10.75), based on full year revenue growth of 6% to 8% (organic growth of 4% to 6%)\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "DOV",
+      "claim": "Leverage at Q2 2026-end: total debt $3,260m; cash $1,756m; net debt $1,504m; net debt/EBITDA ≈0.8x",
+      "dossier_location": "DOV.md §6 (leverage)",
+      "source": "DOV 10-Q Q2 2026, Net Debt to Net Capitalization Ratio note",
+      "source_value": "\"Total debt 3,259,988 ... Less: Cash and cash equivalents (1,755,971) ... Net debt 1,504,017\" (30-Jun-2026, dollars in thousands)",
+      "status": "PASS",
+      "note": "Exact match to the dollar on total debt, cash, and net debt."
+    },
+    {
+      "ticker": "DOV",
+      "claim": "Litigation: ~$58.9m jury verdict (June 2025) against the divested Environmental Solutions Group business for breach of contract and inducement of breach of fiduciary duty; post-trial motions filed, possible Seventh Circuit appeal",
+      "dossier_location": "DOV.md §8 bear case (2), §9 kill criterion 5, §11 red-flag scan",
+      "source": "DOV 10-Q Q2 2026, Discontinued Operations note",
+      "source_value": "\"In June 2025, a jury returned a verdict against the ESG business for approximately $58.9 million in connection with litigation involving alleged breach of contract and inducement of breach of fiduciary duty claims arising from certain product development efforts. ESG has filed post-trial motions and, if necessary, will file an appeal with the U.S. Court of Appeals for the Seventh Circuit.\"",
+      "status": "PASS",
+      "note": "Exact match, including that the Company has not recognized an expense because it does not currently believe a loss is probable (additional detail consistent with the dossier's framing as a bounded, contingent liability)."
+    },
+    {
+      "ticker": "DOV",
+      "claim": "October 2024 sale of the Environmental Solutions Group (ESG) to Terex for $2.0bn, causing a discontinuity between FY2024 and FY2025/26 reported figures",
+      "dossier_location": "DOV.md §6 (one-off note), §11 (divestiture/comparability)",
+      "source": "DOV 10-Q Q2 2026, Discontinued Operations note",
+      "source_value": "\"On October 8, 2024, the Company completed the sale of the ESG business ... to Terex Corporation for total consideration, net of cash transferred, of $2.0 billion. The ESG sale qualifies for discontinued operations reporting.\"",
+      "status": "PASS",
+      "note": "Exact match, including the precise closing date (8-Oct-2024)."
+    }
+  ]
+}

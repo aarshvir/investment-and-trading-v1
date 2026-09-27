@@ -1,0 +1,34 @@
+{
+  "total": 86,
+  "criteria": {
+    "1": 9,
+    "2": 9,
+    "3": 8,
+    "4": 9,
+    "5": 8,
+    "6": 9,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "must_fix": [
+    "Extend §6's order-dependence disclosure from a single step-back comparison ('6 ... against 9 in release v010') to the full multi-loop trajectory the process itself has been tracking (12 in v006/Loop-4 wording -> 14 in v008/Loop-8 -> 9 in v009/v010/Loop-9 -> 6 now), so a returning reader can see the selection's fragility is accelerating, not just that it moved once. This is the same ask as Loop-9 must-fix 3; it was answered for the one-step case but not generalised to the trend line.",
+    "Publish this wave-7 build (content_sha256 cd5f38e0..., 336 researched / 0 queued, complete diligence queue) as the next numbered release promptly once C1 is re-run last; until then versions/catalog.json's latest_completed (v010) is one build behind what this report judges, and the gap will read as stale again if this build sits unpublished for long, as v009 did across Loops 8-9.",
+    "RSG and LH's DA19 corrections are good (inline markers, originals kept) but neither dossier's Correction section states whether the corrected figures change the exit-trigger math shown in FINAL_REPORT §6 (RSG's kill criterion 1, LH's Q2'25 comparators) -- add one sentence per correction confirming the published §6 exit-trigger wording already reflects the corrected (not the original) figures, so a reviewer does not have to re-derive that themselves.",
+    "BR's unresolved FY2026 GAAP/adjusted EPS $9.60 convergence (dossiers/BR.md §4/§8/§12) has now been carried, undisclosed-cause, across six-plus loops; either commission a targeted primary-source pass to resolve the reconciling items or state explicitly in FINAL_REPORT §6/§11 that it remains open by design (a data limitation, not a diligence gap) so it stops reading as an oversight to a repeat auditor.",
+    "MSCI's kill-criterion-2 relabelling fix (dossiers/MSCI.md line 171) is now correct and MSCI itself is no longer held, but the sentence is still worth a final proofread pass next time any bench-name dossier is touched, since it is the kind of cosmetic residue that erodes trust in the pages a non-technical reader does check."
+  ],
+  "fact_checks": [
+    {"ticker": "RSG", "claim": "Q2 2026 consolidated revenue $4,430m, net income $566m, GAAP diluted EPS $1.84 vs $1.75 YoY", "source": "SEC XBRL companyfacts CIK0001060391 (10-Q accession 0001060391-26-000275); RSG 8-K Ex-99.1 accession 0001060391-26-000273 (via DA19)", "status": "PASS"},
+    {"ticker": "RSG", "claim": "FY2026 guidance raised at the Q2 2026 release (revenue, adjusted EBITDA, adjusted diluted EPS, adjusted FCF ranges all moved up from the Q4 2025 initial guide)", "source": "RSG 8-K Ex-99.1 accessions 0001060391-26-000093 and 0001060391-26-000273 (via DA19)", "status": "PASS"},
+    {"ticker": "RSG", "claim": "Kill criterion 1 (organic related-business revenue growth <2% for two consecutive quarters) not triggered; +5.2%/+4.4% related-business figures cited in the dossier", "source": "RSG Q1/Q2 2026 earnings releases (via DA19)", "status": "MINOR, corrected"},
+    {"ticker": "RSG", "claim": "No Item 103 environmental proceeding disclosed at the materiality threshold", "source": "RSG FY2025 10-K / Q2 2026 10-Q (via DA19)", "status": "PASS"},
+    {"ticker": "LH", "claim": "Q2 2026 consolidated revenue $3,731.1m (+5.8% YoY), GAAP diluted EPS $3.64 vs $2.84", "source": "SEC XBRL companyfacts CIK0000920148; Labcorp 8-K Ex-99.1 accession 0000920148-26-000162 (via DA19)", "status": "PASS"},
+    {"ticker": "LH", "claim": "Results table row labelled '2Q'25' reports revenue $3,563.5m / GAAP EPS $3.12 (9mo cumulative)", "source": "Labcorp 8-K Ex-99.1 filings; XBRL companyfacts (via DA19) — true Q2 2025 was revenue $3,527.3m, EPS $2.84; the labelled figures are Q3 2025", "status": "FAIL, corrected"},
+    {"ticker": "LH", "claim": "FY2026 guidance raised twice running (Q1'26 and Q2'26 releases), consolidated balance sheet cash/equity/debt figures at 2026-06-30 vs 2025-12-31", "source": "Labcorp 8-K Ex-99.1 accessions 0000920148-26-000135 and -000162; XBRL companyfacts (via DA19)", "status": "PASS"},
+    {"ticker": "WEC", "claim": "Holdings-table thesis one-liner is populated (not the Loop-9 placeholder 'thesis line pending; see dossier')", "source": "FINAL_REPORT.md §6 row 15; dashboard/d4v.json port.rows[WEC].thesis", "status": "PASS"},
+    {"ticker": "Portfolio", "claim": "Weights sum to 100%; caps (10% name, 25% sector, 12% sub-industry) hold after solving", "source": "outputs/lead_portfolio_build.json .checks and .sectors", "status": "PASS"},
+    {"ticker": "Portfolio", "claim": "6 names held under every rule-(j) ordering: ADP, CRH, GDDY, TJX, USB, VEEV", "source": "outputs/lead_j_sensitivity.json", "status": "PASS"}
+  ]
+}

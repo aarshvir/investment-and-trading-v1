@@ -319,3 +319,101 @@ tie-breakers/red flags only because no point-in-time history exists for them.
   data/full_diligence_wave3.json "queued"), run code/lead_dossier_precheck.py on new holdings before DA checks.
 - 19:25 WAVE 4 launched (F64–F78, prompts/F_standard_wave4.md, data/full_diligence_wave4.json; FOXA dropped as the same
   company as FOX, replaced by the next queued name APP). 115 triage-passed names queued after wave 4.
+- 27 Sep: WAVE 4 DONE (F64–F78, 45 names, all fields complete). WAVE-4 BUILD: 223 researched, 148 eligible; 20 held, all
+  full conviction: EXC STE BALL MA DOV USB DRI ADP CAH BR PPG CRH COR PGR AXP HBAN GM LVS VEEV GDDY. Out vs v007: HST
+  MSCI CVS CMCSA DG BKNG (all still eligible). GFC −51.2% (S&P −55.2%; GDDY VEEV GM no price = 11% of weight), COVID
+  −38.7%, 2022 −18.8%; TE 11.6%, beta 0.64, ENB 18.5; 16 names in every (j) ordering. Pending-deal notes from F66/F69:
+  FOX (Roku) and MKC (Unilever Foods) have signed deals but exclude_pending_deal=False; both are WATCH so ineligible
+  regardless — to fix in the pending-deal list at the next data refresh. Pre-check run on the 6 new holdings;
+  DA11 (EXC STE BALL) and DA12 (USB PPG GDDY) launched.
+- 27 Sep 00:56: DA11 (EXC STE BALL: 21 facts, 0 FAIL, 2 MINOR) and DA12 (USB PPG GDDY: 21 facts, 1 FAIL PPG long-term
+  debt $6,195m not $6,876m → net debt ~$5.37bn) corrected in dossiers. All 20 holdings independently fact-checked.
+  Build 00:56:27 (content d5c7e755). Loop-7 auditors launched; then fixes → C1 last → release v008 (parent v007).
+- LOOP-7 AUDIT: A1 85, A2 84, A3 84 (avg 84.3). RULE (m) (written, process; enforced in code by lead_verify_gate.py at
+  packaging): no name is released as a holding until (1) code/lead_dossier_precheck.py and code/lead_xbrl_crosstie.py
+  have been run on its dossier, and (2) an independent DA-series fact-check has checked ≥6 load-bearing facts with every
+  FAIL answered by a dated correction and an inline "[Corrected …]" marker on the operative sentence.
+  LOOP-7 FIXES: §6 exit triggers no longer truncated (were cut at 110 characters, mid-sentence, for all 20 holdings);
+  bench shown as a table of the next 20 (full list in lead_j_sensitivity.json with places-behind-20th and base-return
+  gap); lead_assemble.py fails the run if any dashboard audit score differs from the auditor's JSON total; NEW
+  code/lead_xbrl_crosstie.py compares dossier debt/cash/equity figures with SEC XBRL at the two latest balance-sheet
+  dates (tested: it flags the pre-correction PPG debt line; it points to lines, it does not prove errors). DA13 sourcing
+  BR's $227m digital-asset gain and GDDY's gross-vs-net debt basis.
+- Correction to the 27 Sep wave-4 launch entry: 114 (not 115) triage-passed names are queued after wave 4 (C1 count of
+  data/full_diligence_wave4.json "queued"). C1 (loop-7 build, content d5c7e755): 297 checked, 296 match, 1 mismatch
+  (A.4 lacked a wave-4 row: the wave list was hard-coded) — fixed by globbing every wave file; the A.4 C1 row is now
+  generated from the C1 JSON instead of fixed text.
+- 27 Sep 01:30 PUBLISHED v008_2026-09-27_claude (package sha256 cc43eedd…, 869 files; parents v007, v006, v005,
+  claude-v3, codex-initial-audit, codex-deep-data-audit; notes release/RELEASE_NOTES_v4_wave4.md). Build 01:24:52,
+  content d5c7e755, gate PASS. Packager now skips Windows device-name files (a stray v4/nul from a shell redirect broke
+  zipping). v007's local zip renamed …_v007.zip. NEXT: wave 5 (next 45 of 114 queued, data/full_diligence_wave4.json).
+- 27 Sep 01:35 WAVE 5 launched (F79–F93 via one background workflow, prompts/F_standard_wave5.md; analysts must run
+  the pre-check and XBRL cross-tie on their own dossiers before finishing; NWSA dropped as the same company as NWS).
+  69 triage-passed names queued after wave 5.
+- WAVE 5 workflow done: 13 of 15 batches wrote files; F81 (ODFL PG PLD) and F90 (OXY P=Everpure PANW) misread "research
+  only" and wrote nothing → re-launched with explicit file instructions (prompt amended, item 5). F79 lacked
+  implied_vs_base → recorded from its report (AMT below, BRK-B in_line, CB above).
+- WAVE 5 DONE (F79–F93 incl. F81/F90 re-runs). WAVE-5 BUILD: 268 researched, 172 eligible; 20 full conviction: TJX SO
+  MA STE USB EXC BALL DOV ADP CAH BR PPG PGR AXP HBAN CRH COR LVS VEEV GDDY. Out vs v008: GM, DRI (eligible, outranked).
+  GFC −48.7% (S&P −55.2%; GDDY VEEV no price = 6.6%), COVID −36.9%, 2022 −16.9%; TE 11.8%, beta 0.59, ENB 18.4; 14
+  names in every (j) ordering. New holdings TJX, SO → pre-check, cross-tie, DA14.
+- DA14 (TJX SO: 14 facts, 1 FAIL — TJX Q2 FY2027 net income $1,520m, not the prior-year $1,243m; neither mechanical check
+  caught a prior-year-column mix-up) corrected. Build 02:10:44 (content 174b2544). Loop-8 auditors launched.
+- Cross-tie extended to quarterly net income (latest ~13-week XBRL period). Tested on the uncorrected TJX line: NOT caught,
+  because table cells carry no "$" and no adjacent label; the tool reads labelled dollar figures in prose only. Known
+  limitation, recorded: prior-year-column mix-ups in results tables still depend on the DA fact-check.
+- LOOP-8 AUDIT: A1 86, A2 85, A3 87 (avg 86.0). FIXES: rule (m) text placed in the build script's rule block (commit
+  9c2125ac, comment only); §6 states when Financials binds both the five-name and 25% limits and names who is left out;
+  dividend yield labelled a snapshot; MSCI marker moved to the end of its criterion. Latest-quarter sweep of all 20
+  holdings for prior-period/column mix-ups (DA15–DA17) + GDDY second valuation leg running.
+- Latest-quarter sweep DA15–DA17 (69 facts across all 20 holdings): 1 FAIL (ADP Q4 FY26 net earnings $978.6m; the dossier
+  repeated the Q1/Q2 figures) corrected; EXC n/a cells filled from the 8-K; no other prior-period swaps. GDDY peer
+  EV/EBITDA–EV/FCF cross-check corroborates "below base case".
+- 27 Sep 02:40 PUBLISHED v009_2026-09-27_claude (package sha256 10b4e326…, 945 files; parents v008, v007, v005,
+  claude-v3, codex-initial-audit, codex-deep-data-audit; notes release/RELEASE_NOTES_v4_wave5.md). Build 02:34:17,
+  content 174b2544, gate PASS, C1 312/312 (first zero-mismatch run). NEXT: wave 6 (remaining 68 queued).
+- 27 Sep 02:45 WAVE 6 launched (F94–F108, workflow; prompts/F_standard_wave6.md; data/full_diligence_wave6.json). 23 names queued after it.
+- WAVE 6 DONE (F94–F108; all files written). WAVE-6 BUILD: 313 researched, 200 eligible; 20 full conviction: TJX WEC STE
+  MA USB BALL DOV EXC ADP RMD BR MCK PGR AXP HBAN CRH LVS PTC VEEV GDDY. Out vs v009: SO CAH PPG COR (eligible,
+  outranked). GFC −46.4%, COVID −37.1%, 2022 −17.2%; TE 11.7%, beta 0.61, ENB 18.7. Only 8 names in every (j)
+  ordering (was 14): the larger eligible pool makes the exact list more order-dependent — to be stated in §6.
+  New holdings WEC RMD MCK PTC → pre-check, cross-tie, DA18.
+- DA18 (WEC RMD MCK PTC: 24 facts, 3 FAIL, 1 MINOR). PTC table labels one fiscal quarter early (Sept year-end) —
+  corrected; WEC arithmetic slip — corrected; MCK clean. RMD: dossier's FY2027 guidance range does not exist in the
+  cited 8-K, 9-month buyback/dividend figures were full-year, and a MatrixCare divestiture was omitted → sent back for
+  a full re-assessment (verdict may change) before any rebuild.
+- RMD re-assessed (FY2027 guidance in the dossier did not exist; 9-month buyback/dividend figures were full-year;
+  MatrixCare divestiture omitted): implied_vs_base still "below" on a guidance-free base case, verdict INCLUDE →
+  INCLUDE-SMALL. Rebuild: RMD out, CAH back in (CAH already checked by DA10 and DA16). Holdings: TJX WEC STE MA USB BALL
+  DOV EXC ADP CAH BR MCK PGR AXP HBAN CRH LVS PTC VEEV GDDY. Build content 7ac48e4d. Loop-9 auditors launched.
+- LOOP-9 AUDIT: A1 84, A2 84, A3 80 (avg 82.7; down on a missing WEC thesis line and the undisclosed RMD episode).
+  FIXES: thesis extraction handles long verdict paragraphs and skips the bare verdict/horizon sentences; the build now
+  fails on any placeholder thesis; §6 lists every diligence error that changed a verdict (outputs/lead_verdict_changes.json)
+  and states rising order-dependence (9 vs 14 in v009); A.4 cumulative DA tally (DA4–DA18: 374 facts, 17 fails, all
+  corrected); new pre-check "guidance_unquoted" (flags the RMD lines) and the wave prompts now require verbatim quotes for
+  guidance. Correction to an earlier log line: 9 (not 8) names are chosen under every ordering in the wave-6 build.
+  C1 for v010 launched.
+- 27 Sep 03:40 PUBLISHED v010_2026-09-27_claude (package sha256 ccc7360b…, 1016 files; parents v009, v008, v005,
+  claude-v3, codex-initial-audit, codex-deep-data-audit; notes release/RELEASE_NOTES_v4_wave6.md). Build 03:34:07,
+  content 7ac48e4d, gate PASS (C1 320/319, the one A.4 count mismatch fixed). Artifact v17. NEXT: final wave 7 (last 24
+  queued names, data/full_diligence_wave6.json "queued").
+- 27 Sep 03:45 WAVE 7 (final) launched: F109–F116, the last 23 queued names (data/full_diligence_wave7.json). After it, every triage-advanced name has full diligence.
+- WAVE 7 DONE (F109–F116, last 23 names; all files written). Queue complete: every triage-advanced name has full
+  diligence (GOOG, FOXA, NWSA labelled as second share classes, commit e1d06355). WAVE-7 BUILD: 336 researched, 214
+  eligible; 20 full conviction: WEC RSG TJX MA USB LH STE BALL DOV ADP BR PGR AXP HBAN MCK CRH LVS PTC VEEV GDDY. Out vs
+  v010: EXC, CAH (eligible, outranked). GFC −47.3%, COVID −37.4%, 2022 −17.3%; TE 11.8%, beta 0.59, ENB 19.0; 6 names
+  in every (j) ordering (was 9). New holdings RSG, LH → pre-check, cross-tie, DA19. §1 wording for a complete queue and
+  an all-full-conviction list.
+- DA19 (RSG LH: 14 facts, 1 FAIL — LH table row labelled Q2'25 was Q3'25; 2 MINOR incl. RSG untraceable "+5.2%/+4.4%")
+  corrected with inline markers. All 20 holdings independently fact-checked. Loop-10 auditors next.
+- LOOP-10 AUDIT: A1 85, A2 89, A3 86 (avg 86.7). FIXES: NEW code/lead_quarter_label_check.py — maps each results-table
+  revenue figure to its SEC XBRL calendar-quarter frame and flags a label that disagrees with the labelled quarter's own
+  filed figure (catches the uncorrected LH row; 0 flags on all 20 current dossiers; covers the 12 December-year-end
+  holdings, the other 8 still rely on DA checks; USB near-duplicate quarters were a false positive before tightening).
+  §1 says the queue is complete as of the data cutoff, not for good; §6 shows the full order-dependence history
+  (12→12→16→14→9→6, outputs/order_dependence_history.json) and flags holdings above 25x earnings (VEEV, RSG, MA).
+  DA20 (second valuation leg for RSG, LH) running.
+- 27 Sep 04:55 PUBLISHED v011_2026-09-27_claude (package sha256 9b803425…, 1062 files; parents v010, v009, v005,
+  claude-v3, codex-initial-audit, codex-deep-data-audit; notes release/RELEASE_NOTES_v4_wave7.md). Build 04:50:23,
+  content cd5f38e0, gate PASS, C1 331/331. Artifact v18. The full-diligence queue is complete as of the 25 Sep 2026
+  cutoff. Remaining work is maintenance: weekly review, quarterly earnings refresh, next audit loop on the next change.

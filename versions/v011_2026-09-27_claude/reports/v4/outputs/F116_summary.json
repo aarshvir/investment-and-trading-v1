@@ -1,0 +1,78 @@
+{
+  "agent": "F116",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "WRB": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Specialty commercial insurer that keeps compounding book value through underwriting discipline, priced by the market for less growth than it is currently delivering.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Quoted average rate increase (ex-workers' comp) turns negative for two consecutive quarterly releases (currently +7.1-7.2%, down from +7.6%).",
+        "Reported combined ratio exceeds 95% for any single quarter (currently 89.0-90.9% range over the last 8 quarters).",
+        "Consolidated debt/equity rises above 0.40x (currently ~0.29x) without a stated strategic rationale (e.g., large M&A).",
+        "TTM net investment income growth turns negative for two consecutive quarters (currently +10-12% YoY).",
+        "Quarterly net premiums written growth turns negative for two consecutive quarters (currently positive every quarter shown above)."
+      ],
+      "key_adverse_facts": [
+        "Quoted average rate increases (ex-workers' comp) decelerated from ~7.6% (Q3 2025 release) to ~7.1-7.2% (Q4 2025 and Q1 2026 releases), a genuine sign the specialty/E&S hard market is turning.",
+        "Q3 2025 alone disclosed $78.5 million of current-accident-year catastrophe losses, showing meaningful single-quarter cat exposure.",
+        "Q4 2024 GAAP EPS ($1.44) was well above operating EPS ($1.02) due to realized investment gains not present at that scale in later quarters, so single-quarter GAAP comparisons can mislead."
+      ],
+      "data_conflicts": [
+        "Triage (Q06_triage.json) stated revenue growth had 'stalled to +1%' and EPS was 'flat'; primary-source press releases show FY2025 net premiums written +6.2% YoY and TTM (Q3'25-Q2'26) diluted EPS +10.9% YoY vs the prior TTM -- the triage read is stale relative to filings through Q2 2026."
+      ],
+      "next_earnings_date": "2026-10-20",
+      "confidence_in_thesis": "medium (primary quarterly filings are strong and consistent; no numeric company guidance exists to test against, and insider-trading/short-seller data was not checked in this pass)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for WRB in v1_valuation_table.csv, so there is nothing to reconcile; the dossier's own reverse DCF (implied ~2.6% perpetual growth) is below the base case (mid-to-high-single-digit growth, vs ~10.9% TTM delivered EPS growth), independently supporting a 'cheap for the quality' view."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.03,
+        "base": 0.09,
+        "bull": 0.17
+      },
+      "scenario_basis": "Starting point: TTM operating EPS $4.80, price $66.82 (13.9x), BVPS $26.51 (2.52x P/B), dividend yield ~2.8%. Base: mid-to-high-single-digit EPS/BVPS growth (rate increases moderate to ~mid-single digits, investment income keeps compounding) with multiple held near 14x plus dividend. Bear: combined ratio deteriorates toward 95%+ on a cat year and/or a hard rate cycle turn, multiple compresses toward 11x. Bull: hard market re-accelerates, investment income keeps growing double digits, multiple re-rates toward 16x."
+    },
+    "YUM": {
+      "verdict": "WATCH",
+      "thesis_one_line": "KFC/Taco Bell franchisor selling off slower-growing Pizza Hut to focus and fund buybacks, but carries negative equity and an unresolved July food-safety event.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "Taco Bell U.S. same-store sales growth turns negative in the Q3 2026 release (last reported +7% same-store sales growth per the Q2 2026 release).",
+        "The Pizza Hut sale to LongRange Capital and/or Yum China fails to close by year-end 2026 or closes at materially reduced proceeds versus the disclosed $2.7 billion aggregate.",
+        "Consolidated total debt (short-term borrowings + long-term debt) exceeds $13.5bn (from $12.275bn at 2026-06-30) without a corresponding increase in adjusted EBITDA, or short-term borrowings are not repaid/refinanced within two quarters of the 2026-06-30 spike to $2,813m.",
+        "TTM adjusted-EPS growth decelerates below 8% (the company's own algorithm floor) for two consecutive quarterly releases (currently 12.4%).",
+        "Core Operating Profit growth ex-Pizza Hut, ex-F/X falls below the stated 'at least 8%' algorithm for two consecutive quarters (Q2 2026 reported +8% ex-Pizza Hut)."
+      ],
+      "key_adverse_facts": [
+        "10-Q for the period ended 2026-06-30 discloses that in July 2026 there was a multistate outbreak of Cyclospora and Taco Bell U.S. removed certain lettuce from its nationwide supply chain that was later recalled by its vendor -- an unresolved risk with no reported sales impact yet because it occurred after the Q2 2026 quarter closed.",
+        "Shareholders' deficit of $(7,107) million and total debt of $12,275 million against only $674 million of cash at 2026-06-30; short-term borrowings jumped from $38 million to $2,813 million in one quarter.",
+        "Q2 2026 GAAP EPS ($3.08) diverges sharply from adjusted EPS ($1.62), driven by a large, only partly itemized special item likely tied to the pending Pizza Hut sale -- GAAP growth headlines (e.g., '+131%') are not organic."
+      ],
+      "data_conflicts": [
+        "Triage (Q02_triage.json) flagged a data card showing 'forward EPS growth of -12% vs. trailing, inconsistent with reported margin/revenue strength.' No evidence for a -12% forward EPS figure was found in any of the four quarterly earnings releases reviewed (GAAP and adjusted EPS are both growing); this looks like a data-card artefact, most likely from mixing GAAP EPS across periods with very different special-item mix, rather than a real forward deceleration."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "confidence_in_thesis": "medium (core KFC/Taco Bell trends and the Pizza Hut deal terms are well documented in primary filings; confidence is capped because the Cyclospora sales impact and the Pizza Hut closing status are both unresolved as of the review date, and insider-trading/short-seller data was not checked)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for YUM in v1_valuation_table.csv, so there is nothing to reconcile; the dossier's own reverse DCF (implied ~4.2% perpetual growth) is below the base case (the company's own 8%+ long-term algorithm and 12.4% TTM delivered adjusted-EPS growth), which mechanically would support 'cheap,' but two unresolved near-term events (food-safety impact, Pizza Hut close) argue for treating the valuation as fair rather than a clean bargain until they clear -- hence WATCH, not INCLUDE, despite the below-base implied growth."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.05,
+        "base": 0.08,
+        "bull": 0.16
+      },
+      "scenario_basis": "Starting point: TTM adjusted EPS $6.43, price $138.63 (21.6x), dividend yield ~2.2% (per stockanalysis.com). Base: algorithm-consistent ~8-10% adjusted-EPS growth (ex-Pizza Hut core growth plus buyback funded by ~$2.3bn net divestiture proceeds and the incremental $4bn authorization) with multiple held near 21-22x. Bear: Cyclospora outbreak dents Taco Bell same-store sales for 1-2 quarters and/or Pizza Hut sale terms slip, multiple compresses toward 17-18x. Bull: outbreak proves transient, Pizza Hut sale closes on schedule, buyback accelerates EPS growth toward low teens, multiple holds near 22-23x."
+    }
+  }
+}

@@ -1,0 +1,59 @@
+# A2 audit — Loop 7 (investment-committee lens)
+
+**Persona:** former portfolio manager and investment-committee member at a top-tier fundamental long-only fund — specialist in company diligence, valuation and portfolio construction.
+**Build audited:** wave-4 build, content hash `d5c7e755` (00:56:27, 27 Sep 2026), 20 full-conviction holdings: EXC STE BALL MA DOV USB DRI ADP CAH BR PPG CRH COR PGR AXP HBAN GM LVS VEEV GDDY. Parent release: v007_2026-09-26_claude.
+
+## 1. Total score and verdict
+
+**84 / 100.** Real, disciplined progress since Loop 6 (82): every Loop-6 must-fix that touched company diligence (RJF's stale "parent debt under $1B" bull point, MSCI's mislabeled retention comparator, COR's guidance-track-record wording) is now fixed at the sentence level with the original text kept and dated. The new wave-4 holdings (EXC, STE, BALL, USB, PPG, GDDY) were independently fact-checked before the build froze (DA11, DA12), and the one FAIL found (PPG long-term debt/net debt) is corrected inline with the arithmetic re-derived. Portfolio construction is mechanically clean: weights sum to 100.0%, the Financials sector sits exactly at the stated 25% cap, not over it. I would not yet stake my reputation on it unchanged — the near-miss-margin gap and the informal (code-only, not STATE.md-documented) fact-check gate are the same two items I flagged last loop and they are still open.
+
+## 2. Criterion table
+
+| # | Criterion | Score | Evidence | Gap(s) |
+|---|---|---|---|---|
+| 1 | Data integrity & lineage | 8 | Every dossier fact I checked cites an accession number or XBRL tag; PPG's DA12 FAIL (long-term debt $6,876m vs true $6,195m, net debt overstated by ~$0.68bn) was caught before the freeze and corrected with the exact source line quoted (`dossiers/PPG.md` §6 and Correction section). | The error still happened once; second-source validation pass rate isn't summarized anywhere as a single number across all 228 dossiers. |
+| 2 | Backtest & validation rigour | 8 | Not A2's primary focus; unchanged from prior loops (point-in-time membership, B1X replication). | Same open items A1 would score. |
+| 3 | Calibration & honesty | 8 | §1's "10 points cannot be promised" language is blunt and quantified (3% chance of averaging +10pts/yr over 5 years); prior errors (RJF, MSCI, COR, GM, PPG) are conceded in dated Correction sections, not buried. | `outputs/lead_j_sensitivity.json`'s `bench_near_misses` still reports only `position_in_j_order` and `base_return`, not a computed rank/score margin to the 20th name — the same gap flagged in Loops 5 and 6, still not closed. |
+| 4 | Company-level diligence | 9 | DA11 (EXC, STE, BALL: 21 facts, 0 FAIL, 2 MINOR) and DA12 (USB, PPG, GDDY: 21 facts, 1 FAIL, corrected) are both primary-source-only (SEC EDGAR 8-K Ex-99.1, 10-Q, XBRL companyconcept), cite accession numbers, and explicitly stress-test the claim most likely to break each kill criterion (EXC's multi-registrant entity scope, USB's ROE-vs-ROTCE distinction, USB's consolidated-vs-subsidiary CET1 scoping). All 20 holdings now carry an independent fact-check completed before the freeze. Loop-6's RJF/MSCI carry-overs are fixed at the operative sentence (not just in a Correction footnote). | GDDY's thesis rests on a single reverse-DCF (no V1 systematic row, disclosed) — a smaller, more speculative name held at only 3.1% but with a single analytical leg. |
+| 5 | Valuation rigour | 8 | Consistent NTM-P/E horizon across the table (§6); GDDY's reverse-DCF is method-appropriate (2-stage FCFF) and its own bear case (aggressive buyback, thin equity cushion) is stated in §8. PPG's corrected net debt (~$5.37bn vs ~$6.05bn originally) moves its leverage kill-criterion distance further from firing, and the report states this rather than silently absorbing it. | 19 of 20 holdings are "analyst route" (§ marker) rather than the systematic V1 model; the FINAL_REPORT is transparent about this but a reader has to track down each dossier to see the valuation method actually used. |
+| 6 | Portfolio construction & risk | 9 | Recomputed: weights sum to 99.999996 ≈ 100.0%; sector sums — Financials 25.0% (exactly at the stated cap, not over), Health Care 19.1%, Industrials 16.2%, Materials 15.2%, Consumer Discretionary 13.9%, Utilities 7.5% (EXC alone), IT 3.1% (GDDY alone). Rule (l)'s 5-per-sector cap is respected exactly (5 Financials: USB, MA, AXP, PGR, HBAN). | EXC and GDDY are each their sector's sole holding — no within-sector diversification for those two sleeves, though the sector-weight cap limits the damage. |
+| 7 | Strategy coherence & mandate fit | 9 | §1 answers the owner's actual question first (20-stock all-equity list) before the secondary allocation view, and states honestly why NVIDIA/Microsoft/Apple/Alphabet/Meta/Amazon are excluded (price already assumes more growth than the evidence supports). | — |
+| 8 | Implementation & monitoring | 8 | Every held name has a specific, numeric exit trigger (§6 table); dividend-withholding drag recomputed independently: 30% × 1.7% = 0.51% of the portfolio/yr, matches §1 and §9 exactly. | Same UAE-implementation caveats as prior loops (A3's lane), not A2's focus. |
+| 9 | Communication for the owner | 9 | §6's "what each holding is for" one-liners are answer-first and jargon-explained (e.g., GDDY: "sells domains and web tools... trades as if cash flow will shrink"); the § marker and its footnote are used consistently. | — |
+| 10 | Reproducibility & auditability | 8 | `content_sha256`/`build_history.jsonl` track every build; DA11/DA12 and the pre-check (`dossier_precheck.json`) are all named, dated artefacts. | `c1_consistency` is still generated as "throwaway Python... not committed" per its own scope note — the Loop-6 ask for a permanent, committed loop-by-loop dashboard/audit-JSON diff check (to prevent a repeat of the Loop-5 mismatch) has not been turned into a script under `code/`. |
+
+## 3. Must-fix to reach ≥95 (ranked by score impact)
+
+1. **(criteria 3, 6, 7 — carried unresolved from Loops 5 and 6.)** `outputs/lead_j_sensitivity.json`'s `bench_near_misses` entries still report only `position_in_j_order`, `conviction`, `implied_vs_base` and `base_return` — no computed rank/score margin to the 20th held name under any of the four orderings. FINAL_REPORT §6 names near-misses (e.g., MSCI, "sixth name in sector") but a reader cannot see *how close* any bench name came without doing the arithmetic themselves. Fix: extend `lead_j_sensitivity.py`'s output with a `margin_to_20th` field (score/rank distance under each ordering) for every one of the 128 eligible-but-not-held names, and surface the closest 3–5 in §6's prose.
+2. **(criterion 4/10.)** The rule that blocks a name from reaching the 10%-cap (full-conviction) tier without a completed independent fact-check is enforced only in code (`code/lead_verify_gate.py`), not written as a lettered policy alongside rules (a)–(l) in STATE.md. This loop's discipline held (DA11/DA12 both ran before the 00:56:27 freeze) but nothing stops a future loop from skipping it if the gate script is ever bypassed or modified. Fix: add rule (m) to STATE.md stating the requirement explicitly, with the gate script cited as its enforcement mechanism.
+3. **(criterion 10.)** No committed regression test exists for the Loop-5 dashboard/audit-JSON mismatch class of bug. `outputs/c1_consistency.json`'s own scope note says every formula was "independently re-implemented in throwaway Python," meaning the check is redone by hand each loop rather than run automatically. Fix: commit a `code/c1_dashboard_diff.py` (or equivalent) that asserts, on every future build, that `dashboard/d4v.json`'s `audits.loops` matches `audit/A*_loop*.json` loop-by-loop, and wire it into `lead_verify_gate.py`.
+4. **(criterion 4, minor.)** GDDY (3.1% weight, IT sector's sole holding) rests on a single reverse-DCF leg with no systematic V1 cross-check (disclosed as outside V1's ~92-name coverage). Fix: note in GDDY.md §7 what a second, independent valuation approach (e.g., peer EV/FCF multiple) would need to show to corroborate the −7.7%/yr implied-decline reading, so the thesis isn't resting on one model alone.
+5. **(criterion 1, minor, process note not a live defect.)** The PPG long-term-debt error (DA12 FAIL) shows the DA-series catch process working, but there is still no single reported pass-rate statistic across all fact-checks to date (DA1–DA12) that would let a reader judge the base error rate of the dossier-writing process itself. Fix: add a running tally (facts checked / PASS / MINOR / FAIL) to STATE.md or a dashboard tile.
+
+## 4. Numbers re-computed
+
+| # | Item | Value in report | My re-computation | Pass/fail |
+|---|---|---|---|---|
+| 1 | Sleeve weights sum | "sum to 100% of the sleeve" (§6) | 5.4+5.6+7.5+5.1+3.1+3.6+4.3+5.4+5.7+4.6+4.9+4.2+5.1+5.8+4.6+4.6+5.7+5.7+4.6+4.5 = 99.99999996 ≈ 100.0% | PASS |
+| 2 | Financials sector cap | "no sector exceeds 25%" (§6) | USB 5.6 + MA 5.7 + AXP 4.6 + PGR 4.6 + HBAN 4.5 = 25.0% exactly | PASS (at, not over, the cap) |
+| 3 | Sector count — 5-per-sector rule (l) | Financials held at 5 names | Counted: USB, MA, AXP, PGR, HBAN = 5 | PASS |
+| 4 | Dividend withholding drag | "0.51% of the portfolio a year" on a 1.7% weight-averaged yield (§1, §9) | 30% × 1.7% = 0.51% | PASS |
+| 5 | PPG net debt after DA12 correction | Dossier corrected text: total debt ~$6.89bn, net debt ~$5.37bn | $691m (current) + $6,195m (corrected LT debt) = $6,886m ≈ $6.89bn; $6.89bn − $1.52bn cash = $5.37bn | PASS |
+| 6 | COR revenue-guidance walk (post-correction) | "5–7% → 7–9% → 4–6%" (§13 correction note, `dossiers/COR.md` line 101–102) | Matches each cited 8-K Ex-99.1 release's own guidance table as quoted in the correction; net move is ~1pt below the original 5–7% floor, not the larger gap the uncorrected "7–9% → 4–6%" framing implied | PASS |
+
+## 5. Facts checked in dossiers
+
+| Ticker | Claim | Source checked | Pass/fail |
+|---|---|---|---|
+| RJF | Section 8 bull point 2 ("parent debt is under $1B") | RJF.md's own Correction section (DA7, Loop 4) — now struck inline with a bold correction note in place, original kept | PASS (fixed since Loop 6) |
+| MSCI | Kill-criterion-2 comparator now cites Q4 2025 93.4% with an inline correction giving the true year-ago Q2 2025 figure (94.4%) | MSCI.md §9 and Correction section, per DA9 | PASS (fixed since Loop 6) |
+| COR | Guidance-track-record table wording (initial guide 5–7%, not 7–9%; Q1 FY26 raised, not reaffirmed) | COR.md §5 and its correction note, cross-checked against the cited 8-K Ex-99.1 releases | PASS (fixed since Loop 6) |
+| PPG | Long-term debt at 30-Jun-2026 ($6,195m corrected vs $6,876m original) | PPG.md Correction section (DA12), accession 0000079879-26-000252 | PASS — FAIL properly disclosed and corrected |
+| EXC | FY2026 adjusted operating EPS guidance track record ($2.81–$2.91, affirmed at both Q1 and Q2 2026, never cut) | DA11 fact-check against three separate 8-K Ex-99.1 releases (accessions 0001109357-26-000014/000063/000077) | PASS |
+| USB | CET1 10.8% (Q2 2026) explicitly scoped as consolidated U.S. Bancorp, not U.S. Bank N.A. subsidiary | DA12 fact-check against USB 8-K Ex-99.1, accession 0000036104-26-000039 | PASS |
+| USB | ROE 14.0% vs ROTCE 18.7% correctly distinguished; dossier flags the model's own `roe` field (12.11%) as a rough proxy that doesn't match the company's reported ROE | DA12 fact-check, same source | PASS |
+| GDDY | Reverse-DCF: EV $14.89bn off base FCF $1.8bn (FY26 guide) implies −7.7%/yr FCF decline priced in; analyst base case is positive mid-single-digit FCF growth | GDDY.md §7, cross-checked arithmetic against the stated WACC (8.5%) and terminal growth (3%) inputs | PASS (method-appropriate, consistent with the stated inputs) |
+
+## Fact_checks (structured, per Loop-6 note)
+
+See `A2_loop7.json` → `fact_checks`.

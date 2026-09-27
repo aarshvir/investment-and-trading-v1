@@ -1,0 +1,33 @@
+{
+  "agent": "C1",
+  "role": "numeric consistency checker",
+  "as_of": "2026-09-26",
+  "scope_note": "Checked every number in the static sections (§2,§3,§4,§5,§8,§11,§12) against its named source file, and spot-checked >100 numbers in the generated sections (§1,§6,§7,§9,§10) by independently recomputing the same formulas lead_report_sections.py uses against the current outputs/*.json (read-only; script not executed, so FINAL_REPORT.md and dashboard JSONs were not touched).",
+  "checked": 216,
+  "match": 215,
+  "mismatch": [
+    {
+      "section": "§5 (Evidence, backtest table)",
+      "text_in_report": "Model top quintile (~100 names)",
+      "source": "outputs/b1_results.json: strategies.primary_topquintile_ew.avg_names; corroborated by outputs/b1_report.md (every top-quintile row, e.g. lines 23, 186, 226, all state 85 or 85.x names)",
+      "source_value": "85.386364 (average monthly holding count), consistently reported as \"85\" throughout b1_report.md. The point-in-time S&P 500 universe itself only averages 433 members (not 500), so a real quintile is ~85-87 names, not ~100.",
+      "fix": "Model top quintile (~85 names)"
+    }
+  ],
+  "unsourced": [],
+  "overstatements": [
+    {
+      "section": "§1 (Verdict)",
+      "text_in_report": "exactly two of the combinations shown clear 90% odds of a gain",
+      "source": "outputs/lead_risk_results.json: sims[] where mix=\"Cautious (35/10/55)\", scenario=\"Base\", horizon=\"10y\" -> result.horizons.10y.p_total_return_gt_0 (the same field powering the §7 table this sentence points readers to)",
+      "source_value": "0.99 (99%). The Cautious mix at 10 years also clears 90%, alongside the two the sentence names (Moderate/10y = 94%, Cautious/5y = 94%). So at least three of the eight model×horizon cells in the §7 allocation table clear 90%, not exactly two; the text never mentions Cautious's 10-year figure at all.",
+      "fix": "Reword to remove the false precision, e.g.: \"...three of the combinations shown clear 90% odds of a gain: the Moderate mix held 10 years (94%), and the Cautious mix held either 5 years (94%) or 10 years (99%).\" (Growth and Index do not clear 90% at either horizon, so this is the complete set.)"
+    }
+  ],
+  "notes_not_scored": [
+    "dashboard/d4v.json bt.lede sentence ('the top 30 returned 12.6% a year against 15.1% for the index (t = −0.96)') cites the wrong t-stat: t=-0.96776 belongs to 'Model bottom quintile' in the same file's bt.stats[]; top-30's own t-stat there is -1.11733, matching FINAL_REPORT.md's -1.12. This is an error in the dashboard copy, not in FINAL_REPORT.md — FINAL_REPORT.md's §5 table correctly shows -1.12 sourced from b1_results.json. Flagging for the next loop since d4v.json feeds the same release.",
+    "dashboard/d4v.json bt.stats top-30 'mdd' = -0.33746 is the MONTHLY-return max drawdown (b1_results.json strategies.primary_top30_ew.net.mdd_monthly = -0.337463), a different, equally legitimate figure from the DAILY-path worst fall (-44.4%) that FINAL_REPORT.md §5 explicitly labels 'Worst fall (daily)'. Checked per task item 3; no mismatch — the two numbers measure different things and the report's column header is accurate.",
+    "outputs/da4_factcheck.json contains a high-severity process_finding (not a number-traceability issue): it records that FINAL_REPORT.md §6 was edited in place mid-session (RL/HAS/MPC-era 15-name satellite -> a 12-name+30%-index version DA4 audited -> the current 11-name+35%-index version I verified here), without an entry in versions/catalog.json visible to that session. All §6 figures in the CURRENT FINAL_REPORT.md do trace correctly to the current lead_portfolio.json / lead_portfolio_build.json / v1_valuation_table.csv (verified in full, including the HST/FRT P/FFO multiples DA4 flagged as untraceable — they trace exactly to v1_valuation_table.csv's metric_value column, DA4 just hadn't found that file). Surfacing per CLAUDE.md's versioning requirement, for the lead/orchestrator to confirm this release was logged.",
+    "outputs/da4_factcheck.json's own pass_rate_definition text says '51 PASS / 53 checked facts' but its structured facts[] array has 52 entries (50 PASS/1 MINOR/1 UNVERIFIABLE). FINAL_REPORT.md §10's '53 dossier facts ... (DA4: 0 fails)' matches DA4's narrative text verbatim and 'fails: []' is correct either way; the 52-vs-53 wobble is internal to DA4's own file, not something FINAL_REPORT.md introduced."
+  ]
+}

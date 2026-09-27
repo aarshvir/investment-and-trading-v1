@@ -207,6 +207,15 @@ for f in sorted(glob.glob(str(V4 / 'audit' / 'A[123]_loop*.*'))):
     # (sorted() reads A3_loop2.json before A3_loop2.md, and the .md regex had overwritten 89 with an earlier '80/100' mention).
     if score is not None and (ext == 'json' or aid not in loops.get(lp, {})):
         loops.setdefault(lp, {})[aid] = score
+# regression check (A2 loop-7): every score shown must equal the auditor's JSON total when that JSON exists
+for _f in glob.glob(str(V4 / 'audit' / 'A[123]_loop*.json')):
+    _mm = re.match(r'(A[123])_loop(\d+)\.json', pathlib.Path(_f).name)
+    try:
+        _tot = float(json.loads(pathlib.Path(_f).read_text(encoding='utf-8')).get('total'))
+    except Exception:
+        continue
+    if loops.get(int(_mm.group(2)), {}).get(_mm.group(1)) != _tot:
+        raise SystemExit(f'AUDIT SCORE MISMATCH: {_mm.group(1)} loop {_mm.group(2)} dashboard={loops.get(int(_mm.group(2)), {}).get(_mm.group(1))} json={_tot}')
 fixes = json.loads(rd('audit/loop_fixes.json') or '{}')
 D['audits'] = {'lede': 'Each loop: three independent auditors (quant & data; investment committee; client & compliance) score the whole deliverable on the same 100-point rubric, and every must-fix item is implemented before the next loop. Loop 0 scores the original v3 deliverable as the baseline.',
                'loops': []}

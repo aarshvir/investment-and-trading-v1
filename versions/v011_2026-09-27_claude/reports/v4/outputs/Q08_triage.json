@@ -1,0 +1,316 @@
+{
+ "agent": "Q08",
+ "as_of": "2026-09-25",
+ "tickers": {
+  "MTD": {
+   "advance": false,
+   "quality": 4,
+   "growth": 2,
+   "price_vs_growth": 2,
+   "red_flags": [],
+   "one_line": "Precision lab/industrial weighing instruments with a sticky service/consumables model and pricing power.",
+   "reason": "High-quality franchise but revenue growth is only mid-single-digit as lab/biopharma capex stays soft, and 30x NTM P/E already prices a stronger recovery than guidance supports.",
+   "sources": ["data/triage_cards.csv", "MTD quarterly earnings releases/guidance"]
+  },
+  "TECH": {
+   "advance": false,
+   "quality": 3,
+   "growth": 2,
+   "price_vs_growth": 1,
+   "red_flags": [],
+   "one_line": "Protein/reagent tools maker for biopharma R&D; good margins but growth has stalled.",
+   "reason": "Revenue growth of ~1% does not justify a mid-30s P/E; price implies a reacceleration that is not yet visible in bookings.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "TMO": {
+   "advance": true,
+   "quality": 4,
+   "growth": 3,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "Largest life-science tools/services scale player (instruments, consumables, CDMO, distribution) with deep customer lock-in.",
+   "reason": "Bioprocessing/academic funding cycle is inflecting positive (10.5% revenue growth) and a 25x NTM P/E is reasonable for the best-in-class moat; worth full diligence on margin trajectory.",
+   "sources": ["data/triage_cards.csv", "TMO Q2/Q3 2026 earnings commentary on bioproduction recovery"]
+  },
+  "WAT": {
+   "advance": false,
+   "quality": 4,
+   "growth": 3,
+   "price_vs_growth": 2,
+   "red_flags": ["large debt-funded BD Biosciences merger still integrating; reported revenue growth (+113%) is inorganic and margins compressed to ~3.6%"],
+   "one_line": "Analytical instruments leader now digesting a transformative, leveraged merger with BD's Biosciences/Diagnostic Solutions unit.",
+   "reason": "Real underlying franchise but the headline growth/margin numbers are merger noise, not organic strength, and integration/leverage risk make the current valuation hard to underwrite yet.",
+   "sources": ["data/triage_cards.csv", "Waters-BD Biosciences merger disclosures (2025)"]
+  },
+  "CNC": {
+   "advance": false,
+   "quality": 1,
+   "growth": 2,
+   "price_vs_growth": 4,
+   "red_flags": ["negative margin/ROE", "Medicaid redetermination and ACA marketplace subsidy uncertainty", "history of guidance withdrawals and medical-cost-ratio misses"],
+   "one_line": "Medicaid/ACA-marketplace focused insurer whose core books are running structurally underpriced.",
+   "reason": "Cheap on paper but negative margins and repeated guidance resets signal the business, not just the stock, is impaired; disagree with the model's 'attractive' tag.",
+   "sources": ["data/triage_cards.csv", "CNC 2025-2026 guidance cuts/earnings calls"]
+  },
+  "ELV": {
+   "advance": false,
+   "quality": 3,
+   "growth": 2,
+   "price_vs_growth": 4,
+   "red_flags": ["industry-wide medical cost trend pressure in ACA/Medicaid books"],
+   "one_line": "Blue Cross-affiliated managed care insurer, better capitalized than peers but still facing cost-trend headwinds.",
+   "reason": "Cheap at 13.7x NTM, but neither quality nor growth clears the bar while the sector's medical-cost cycle is unresolved.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "HUM": {
+   "advance": false,
+   "quality": 2,
+   "growth": 2,
+   "price_vs_growth": 3,
+   "red_flags": ["Medicare Advantage Star ratings losses cutting CMS bonus payments", "thin ~1% margin"],
+   "one_line": "Medicare Advantage pure-play still absorbing Star-rating downgrades and utilization pressure.",
+   "reason": "Margin has been squeezed to almost nothing and Star-rating recovery is unproven, so the 27x NTM multiple is not obviously cheap.",
+   "sources": ["data/triage_cards.csv", "HUM CMS Star ratings disclosures"]
+  },
+  "UNH": {
+   "advance": false,
+   "quality": 3,
+   "growth": 3,
+   "price_vs_growth": 4,
+   "red_flags": ["ongoing DOJ investigation into Medicare Advantage billing/risk-adjustment practices", "2025 leadership turnover and suspended-then-reset guidance"],
+   "one_line": "Largest US health insurer/Optum platform, cheap versus history but still under a legal/governance cloud.",
+   "reason": "Scale moat and 17x NTM P/E are tempting, but an unresolved DOJ probe into core MA billing practices is a real tail risk that should be cleared before committing capital.",
+   "sources": ["data/triage_cards.csv", "UNH 8-K DOJ investigation disclosures (2025)"]
+  },
+  "JNJ": {
+   "advance": true,
+   "quality": 4,
+   "growth": 3,
+   "price_vs_growth": 3,
+   "red_flags": ["residual talc litigation overhang (largely funneled through bankruptcy-trust proceedings)"],
+   "one_line": "Diversified pharma (oncology/immunology) plus market-leading MedTech, both compounding at a steady mid-single-digit clip.",
+   "reason": "Best-in-class quality and balance sheet at a fair 23x NTM P/E for 6-7% growth; talc risk is largely legacy and priced in.",
+   "sources": ["data/triage_cards.csv", "JNJ 10-K litigation disclosures"]
+  },
+  "LLY": {
+   "advance": true,
+   "quality": 5,
+   "growth": 5,
+   "price_vs_growth": 4,
+   "red_flags": [],
+   "one_line": "GLP-1 leader (Mounjaro/Zepbound) with the industry's fastest revenue growth and expanding indications.",
+   "reason": "47.7% revenue growth and >30% margins at a 26.5x NTM P/E is a reasonable PEG for the strongest growth story in large-cap pharma; capacity buildout is the main watch item.",
+   "sources": ["data/triage_cards.csv", "LLY quarterly incretin sales disclosures"]
+  },
+  "MRK": {
+   "advance": false,
+   "quality": 3,
+   "growth": 2,
+   "price_vs_growth": 4,
+   "red_flags": ["Keytruda loss of exclusivity beginning 2028 (~45%+ of revenue concentrated in one drug)"],
+   "one_line": "Oncology/vaccines major facing a major, well-flagged patent cliff on its core growth driver.",
+   "reason": "Cheap at 19x NTM P/E, but growth beyond Keytruda (subcutaneous formulation, Winrevair, Gardasil recovery) is not yet visible enough to call this a quality- or growth-lean advance.",
+   "sources": ["data/triage_cards.csv", "MRK 10-K Keytruda LOE disclosures"]
+  },
+  "PFE": {
+   "advance": false,
+   "quality": 2,
+   "growth": 1,
+   "price_vs_growth": 4,
+   "red_flags": ["weak organic pipeline productivity track record", "high leverage from Seagen deal", "6%+ dividend yield raises payout-sustainability questions"],
+   "one_line": "Post-COVID pharma conglomerate with a very cheap multiple but limited visible organic growth.",
+   "reason": "9.8x NTM P/E looks cheap, but quality and growth both score low and the dividend carries real coverage risk if EPS growth disappoints again.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "VTRS": {
+   "advance": false,
+   "quality": 1,
+   "growth": 1,
+   "price_vs_growth": 3,
+   "red_flags": ["negative margin/ROE", "structurally declining generics business", "elevated leverage"],
+   "one_line": "Global generics/off-patent drug maker in secular volume and price decline.",
+   "reason": "Cheap for a reason: core business economics are deteriorating and neither quality nor growth clears the bar for a full look.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "ZTS": {
+   "advance": true,
+   "quality": 5,
+   "growth": 2,
+   "price_vs_growth": 3,
+   "red_flags": ["Librela/Solensia channel destocking has turned revenue growth slightly negative"],
+   "one_line": "Dominant animal-health franchise (pet and livestock) with the best margins/ROE in the health care batch, now mid-cycle-pause.",
+   "reason": "Growth has stalled and momentum is down 46%, but the moat and profitability are intact and the multiple has compressed to 11x NTM P/E — worth full diligence on whether the destocking is temporary.",
+   "sources": ["data/triage_cards.csv", "ZTS Librela/Solensia commentary"]
+  },
+  "AXON": {
+   "advance": true,
+   "quality": 4,
+   "growth": 5,
+   "price_vs_growth": 3,
+   "red_flags": ["large GAAP/non-GAAP earnings gap (stock comp) inflates trailing P/E"],
+   "one_line": "Law-enforcement ecosystem (TASER, body cameras, Axon cloud/AI evidence software) with very high switching costs.",
+   "reason": "35% revenue growth and an expanding recurring-software mix roughly justify the 44x NTM P/E even after the recent pullback; a genuine growth compounder.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "BA": {
+   "advance": false,
+   "quality": 2,
+   "growth": 3,
+   "price_vs_growth": 2,
+   "red_flags": ["recurring quality-control/safety incidents (2024 door-plug blowout) and FAA production-rate caps", "weak balance sheet/negative tangible equity"],
+   "one_line": "Commercial aircraft duopoly recovering from years of safety, quality and production-rate problems.",
+   "reason": "Genuine multi-year recovery story, but 71x P/E on still-depressed earnings and an unresolved production-quality track record argue for waiting rather than advancing now.",
+   "sources": ["data/triage_cards.csv", "FAA 737 MAX production cap disclosures"]
+  },
+  "GE": {
+   "advance": true,
+   "quality": 5,
+   "growth": 4,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "Commercial jet-engine duopoly (with Rolls-Royce/CFM) riding a multi-decade high-margin aftermarket annuity.",
+   "reason": "21% revenue growth on the LEAP ramp and a widening services backlog justify a 35x NTM P/E for what is arguably the best moat in the batch.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "HII": {
+   "advance": false,
+   "quality": 3,
+   "growth": 2,
+   "price_vs_growth": 4,
+   "red_flags": ["history of cost overruns on fixed-price Navy shipbuilding programs"],
+   "one_line": "Sole-source US Navy shipbuilder (carriers, submarines) with a durable but low-margin, execution-heavy backlog.",
+   "reason": "Cheap at 13x NTM P/E, but thin margins and program execution risk keep both quality and growth below the bar.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "HONA": {
+   "advance": true,
+   "quality": 4,
+   "growth": 3,
+   "price_vs_growth": 4,
+   "red_flags": ["newly spun off from legacy Honeywell (2026); limited standalone trading/financial history, most ratios not yet computable"],
+   "one_line": "Newly independent Honeywell Aerospace: avionics, APUs and engines with a large, high-margin aftermarket revenue base.",
+   "reason": "One of the highest-quality aerospace aftermarket franchises, trading cheaper (18.8x NTM) than peers like GE, HWM or TDG; standalone cost structure and leverage need verification in full diligence.",
+   "sources": ["data/triage_cards.csv", "Honeywell three-way breakup plan disclosures (2025)"]
+  },
+  "HWM": {
+   "advance": false,
+   "quality": 4,
+   "growth": 4,
+   "price_vs_growth": 2,
+   "red_flags": [],
+   "one_line": "Aerospace structural parts/fasteners maker (jet engine forgings) with real few-supplier moat and strong margins.",
+   "reason": "Quality and growth are both strong, but the stock has already re-rated to 37.7x NTM P/E and +45% momentum, leaving little margin of safety today.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "LHX": {
+   "advance": false,
+   "quality": 3,
+   "growth": 2,
+   "price_vs_growth": 4,
+   "red_flags": [],
+   "one_line": "Defense electronics/communications integrator (post-Harris merger) with a diversified but lower-margin program mix.",
+   "reason": "Cheap at 18x NTM P/E, but modest growth and average execution quality keep it below the advance bar this round.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "NOC": {
+   "advance": false,
+   "quality": 3,
+   "growth": 1,
+   "price_vs_growth": 4,
+   "red_flags": ["Sentinel ICBM program Nunn-McCurdy cost-overrun breach driving forward EPS declines"],
+   "one_line": "B-21 bomber and strategic-missiles prime contractor weighed down by a major fixed-price cost overrun on Sentinel.",
+   "reason": "Cheap at 17x NTM P/E, but negative forward EPS growth from the Sentinel overrun is a real, currently unresolved drag.",
+   "sources": ["data/triage_cards.csv", "NOC Nunn-McCurdy Sentinel disclosures"]
+  },
+  "RTX": {
+   "advance": true,
+   "quality": 4,
+   "growth": 3,
+   "price_vs_growth": 3,
+   "red_flags": ["Pratt & Whitney GTF powder-metal inspection/AOG costs (largely being worked through)"],
+   "one_line": "Diversified aerospace/defense leader (Pratt engines, Collins avionics, Raytheon missiles) with a growing recurring-aftermarket base.",
+   "reason": "14.5% revenue growth at a fair 24.6x NTM P/E, with the GTF inspection overhang mostly a known, quantifiable cost rather than an open-ended risk.",
+   "sources": ["data/triage_cards.csv", "RTX GTF fleet management plan disclosures"]
+  },
+  "TDG": {
+   "advance": true,
+   "quality": 5,
+   "growth": 4,
+   "price_vs_growth": 3,
+   "red_flags": ["recurring DoD Inspector General scrutiny of aftermarket parts pricing practices (no enforcement action to date)"],
+   "one_line": "Sole-source proprietary aerospace aftermarket parts monopoly with the best margins in industrials.",
+   "reason": "22.5% revenue growth and unmatched pricing power justify a premium multiple even after the recent pullback; pricing-practice scrutiny is a recurring but so-far non-disqualifying watch item.",
+   "sources": ["data/triage_cards.csv", "DoD IG reports on TransDigm pricing"]
+  },
+  "TXT": {
+   "advance": false,
+   "quality": 2,
+   "growth": 2,
+   "price_vs_growth": 4,
+   "red_flags": [],
+   "one_line": "Bell helicopters, Cessna/Beechcraft business aviation and Textron Systems, a lower-margin industrial conglomerate.",
+   "reason": "Cheap at 10.9x NTM P/E, but margins and growth are both middling, so it does not clear the quality/growth bar.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "DE": {
+   "advance": false,
+   "quality": 4,
+   "growth": 4,
+   "price_vs_growth": 2,
+   "red_flags": [],
+   "one_line": "Dominant agricultural/construction equipment maker with a strong dealer network and precision-ag technology moat.",
+   "reason": "Genuine quality and cyclical growth recovery, but the stock has already re-rated to 30.9x NTM P/E with the Street target implying essentially zero further upside.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "CHRW": {
+   "advance": false,
+   "quality": 3,
+   "growth": 3,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "Asset-light freight brokerage benefiting from a firming truckload freight cycle.",
+   "reason": "Reasonably priced and improving, but neither quality nor growth is strong enough on its own to clear the advance bar this round.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "EXPD": {
+   "advance": false,
+   "quality": 4,
+   "growth": 2,
+   "price_vs_growth": 1,
+   "red_flags": [],
+   "one_line": "Best-in-class asset-light freight forwarder with unusually high ROE (43%) and disciplined capital allocation.",
+   "reason": "High quality but the model already flags this as 'excessive' and the Street target implies negative upside after a 56% run — priced well ahead of modest growth.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "FDX": {
+   "advance": true,
+   "quality": 4,
+   "growth": 3,
+   "price_vs_growth": 4,
+   "red_flags": [],
+   "one_line": "Global express/ground parcel network mid-way through a self-help cost and network-consolidation program (DRIVE/Network 2.0).",
+   "reason": "Hard-to-replicate global network moat, improving margins and an 8.4% FCF yield at 14.3x NTM P/E make this a legitimate value/turnaround candidate for full diligence.",
+   "sources": ["data/triage_cards.csv", "FDX DRIVE/Network 2.0 program updates"]
+  },
+  "ALLE": {
+   "advance": true,
+   "quality": 4,
+   "growth": 3,
+   "price_vs_growth": 3,
+   "red_flags": [],
+   "one_line": "Leading door hardware/security brand (locks, electronic access) with high margins and recurring commercial replacement demand.",
+   "reason": "Strong brand moat and ROE (33.7%) at a reasonable 16.2x NTM P/E for double-digit growth is a solid quality-at-a-fair-price setup.",
+   "sources": ["data/triage_cards.csv"]
+  },
+  "AOS": {
+   "advance": true,
+   "quality": 4,
+   "growth": 2,
+   "price_vs_growth": 4,
+   "red_flags": ["China water-heater business in structural decline, dragging consolidated revenue growth negative"],
+   "one_line": "North American water heater/boiler duopoly (with Rheem) whose China segment is masking a still-strong core business.",
+   "reason": "Core NA moat and 27% ROE remain intact while the stock has been marked down 17.7% on China weakness to a cheap 14.7x NTM P/E — a quality name worth revisiting once China stabilizes or is written down further.",
+   "sources": ["data/triage_cards.csv"]
+  }
+ }
+}

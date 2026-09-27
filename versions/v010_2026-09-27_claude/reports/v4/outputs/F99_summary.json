@@ -1,0 +1,115 @@
+{
+  "agent": "F99",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "ATO": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A-rated Texas gas utility with steady, regulator-approved earnings growth, priced for less growth than management itself is guiding to, but facing a fatal explosion lawsuit.",
+      "kill_criteria": [
+        "Diluted EPS growth (consolidated, YoY) falls below 4% for two consecutive fiscal quarters",
+        "Consolidated long-term debt + capital-lease obligations (noncurrent) rises above $11.5bn without a matching, regulator-approved rate-base step-up",
+        "Any regulatory finding, fine, or settlement tied to the May 2026 Dallas/NTSB investigation exceeding $150m not already reserved for",
+        "FY2027 EPS guidance initiated below the previously flagged 6-8% range",
+        "Diluted share count grows more than 6% in any rolling 12 months"
+      ],
+      "key_adverse_facts": [
+        "A wrongful-death lawsuit (reportedly seeking ~$1bn) was filed following a 28-May-2026 Dallas apartment explosion that killed three people, with an NTSB investigation ongoing and a final report pending; quantum and venue not independently verified against the underlying complaint this pass",
+        "Diluted share count rose 2.2% in two quarters (roughly 4-5%/yr annualized) via continuous ATM equity issuance to fund a capex plan just raised from ~$3.1bn to ~$4.2bn, mechanically capping per-share growth below rate-base growth",
+        "Current-portion long-term debt jumped from $2.4m to $502.5m in one quarter (2026-06-30), a maturity due within 12 months"
+      ],
+      "data_conflicts": [
+        "None material; consolidated income-statement and balance-sheet figures reconcile across the FQ1-FQ3 FY2026 10-Qs and the FY2025 10-K"
+      ],
+      "next_earnings_date": "2026-11-04",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (income-statement and capex/guidance data strong and primary-sourced; litigation quantum and NTSB timeline sourced from secondary news coverage, not the court docket)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for ATO in v1_valuation_table.csv, so v1_verdict is null. This dossier's own reverse-DCF (Gordon growth, forward P/E 17.4x, payout ~46%, 8.2% cost of equity) implies perpetual growth of about 5.3-5.5%, below both management's own FY2027 EPS growth guide (6-8%) and this dossier's base case (~6.5%) -- the stock is priced for less growth than the company is guiding to."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.01,
+        "base": 0.09,
+        "bull": 0.135
+      },
+      "scenario_basis": "Starting TTM diluted EPS $8.38 (GAAP, consolidated), FY2026 guidance midpoint $8.45, dividend $3.87/share (yield 2.5%). Base: EPS/dividend growth ~6.5% (guided FY2027 range midpoint), stable ~17.4x forward multiple, +2.5% dividend = ~9%/yr. Bear: growth slows to ~3% (regulatory lag, explosion-litigation overhang, safety capex), multiple compresses to ~15x over 3 years (~-4.9%/yr), +2.5% dividend = ~-1%/yr. Bull: growth reaches 8% (top of guided range), multiple expands to ~19x (~+3%/yr), +2.5% dividend = ~13.5%/yr."
+    },
+    "CME": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "World's largest derivatives exchange with a near-unassailable liquidity and clearing moat, priced for far less growth than its own recent trend, but facing live antitrust and CFTC litigation.",
+      "kill_criteria": [
+        "Consolidated revenue growth (YoY) below 5% for two consecutive quarters",
+        "Average daily volume down YoY for two consecutive quarters outside a clearly identified low-volatility regime",
+        "An adverse antitrust judgment, CFTC enforcement action, or settlement against CME exceeding $500m or requiring a structural remedy",
+        "Loss of competitive exclusivity in a top-3 product line (rates, equity index, or FX futures) to a rival venue, including a CFTC-approved prediction-market competitor such as Kalshi",
+        "Market-data revenue growth turns negative for one quarter (breaking the current 33-quarter growth streak) without a clearly identified one-off cause"
+      ],
+      "key_adverse_facts": [
+        "Active civil antitrust litigation alleges CME abused its dominant market position to fix data fees and manipulate market-access costs, reportedly alongside a CFTC-adjacent inquiry; the underlying complaint/docket was not independently opened this pass",
+        "CME itself sued the CFTC in 2026 over its approval of Kalshi's bitcoin perpetual futures contract -- signals a genuine, not just legal-footnote, competitive threat from a CFTC-regulated prediction-market venue",
+        "Revenue growth decelerated sharply from +26.4% YoY (Q1 2026) to +11.3% YoY (Q2 2026); management characterizes this as volatility-driven lumpiness (Q3-to-date volumes +18% YoY per the July call) but that characterization was not independently re-verified this pass",
+        "The commonly quoted ~1.9% dividend yield excludes CME's historical large annual variable dividend, understating true cash return to shareholders; this was not independently re-quantified this pass"
+      ],
+      "data_conflicts": [
+        "Consolidated assets/liabilities (~$195-202bn) are overwhelmingly clearing-house performance-bond/guaranty-fund cash and securities held for members, not CME's own economic balance sheet -- flagged so this figure is not mistaken for corporate leverage"
+      ],
+      "next_earnings_date": "2026-10-21",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (income-statement and balance-sheet data strong and primary-sourced; both litigation items sourced from secondary legal-news coverage, not the underlying court dockets)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for CME in v1_valuation_table.csv, so v1_verdict is null. This dossier's reverse-DCF (Gordon growth, forward P/E 20.46x, ~85% total shareholder payout including variable dividend and buybacks, 8.0% cost of equity) implies perpetual growth of only about 3.5-4%, well below both CME's recent multi-year EPS trend (high-single to low-double-digit) and this dossier's base case (~7%) -- the market is pricing in materially less growth than the recent trajectory implies."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.01,
+        "base": 0.105,
+        "bull": 0.165
+      },
+      "scenario_basis": "Starting TTM diluted EPS $11.78 (GAAP, consolidated), forward consensus EPS $12.93, total cash yield (regular + variable dividend) approximated at ~3.5%. Base: EPS growth ~7%/yr (volume/open-interest + market-data trend), stable ~20.5x multiple, +3.5% cash yield = ~10.5%/yr. Bear: growth stalls to ~2% (volume growth breaks, adverse litigation outcome), multiple compresses to ~17x over 3 years (~-6%/yr), +3% cash yield = ~-1%/yr. Bull: growth reaches ~10% (volatility regime persists, Q3-to-date +18% trend holds), multiple holds/expands to ~22x (~+3%/yr), +3.5% cash yield = ~16.5%/yr."
+    },
+    "NVR": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Zero-parent-debt homebuilder with the best returns on capital in its industry, but revenue and EPS are still falling double digits with no confirmed trough yet.",
+      "kill_criteria": [
+        "Consolidated revenue declines more than 10% YoY for a third consecutive quarter",
+        "Consolidated diluted EPS declines more than 25% YoY for a third consecutive quarter",
+        "Consolidated stockholders' equity falls for a third consecutive quarter while net income stays positive",
+        "New-order or backlog dollar value turns negative YoY for two consecutive quarters (not independently confirmed this pass; a required follow-up check)",
+        "NVRM's non-recourse mortgage repurchase facility is not renewed or is materially downsized at its 2027-07-08 maturity"
+      ],
+      "key_adverse_facts": [
+        "Consolidated revenue fell 19.4% YoY in Q1 2026 and 10.9% YoY in Q2 2026; diluted EPS fell 41.8% and 30.4% YoY respectively in the same quarters -- two consecutive severe declines with only a modest deceleration in the rate of decline, not a confirmed bottom",
+        "Consolidated stockholders' equity fell for two consecutive quarters ($3,864.9m to $3,494.0m to $3,391.2m) even though the company remained profitable, because buybacks are currently outrunning retained earnings",
+        "New-order/backlog data (the best leading indicator of demand) was not independently pulled this pass -- reported revenue lags orders by several months, so the true demand trend is not yet confirmed either way"
+      ],
+      "data_conflicts": [
+        "A generic data feed shows ~$1.09bn of 'total debt' for NVR; this is not parent-level homebuilding debt but NVR Mortgage Finance's (NVRM, a wholly owned subsidiary) non-recourse mortgage repurchase facility, explicitly non-recourse to the parent per the Q2 2026 10-Q -- the parent homebuilding entity itself carries no long-term debt, consistent with the triage's 'zero-debt' characterization once the entity scope is corrected"
+      ],
+      "next_earnings_date": "2026-10-21",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (income-statement and balance-sheet data strong and primary-sourced; leading demand indicators such as backlog/new orders not pulled this pass, which is the key missing piece for calling a trough)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for NVR in v1_valuation_table.csv, so v1_verdict is null. This dossier's reverse-DCF (Gordon growth on an FCF yield of ~5.5%, i.e. ~18.3x P/FCF, assuming buybacks return nearly all FCF, 9.0% cost of equity) implies perpetual FCF/EPS growth of only about 3.0-3.5% -- modest and not a demand for a quick housing recovery, so valuation itself is not the constraint; the verdict is WATCH because the underlying business is still actively deteriorating with no confirmed trough, not because the price is rich."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.08,
+        "base": 0.08,
+        "bull": 0.2
+      },
+      "scenario_basis": "Starting TTM diluted EPS $384.73 (GAAP, consolidated), no dividend, capital return entirely via buybacks (implied in the ~5.5% FCF yield). Base: FCF/EPS growth stabilizes near the ~3-4% through-cycle normalized rate as the downturn matures, stable ~15.7x multiple = ~8%/yr (buyback-driven per-share growth plus flat multiple). Bear: revenue/EPS declines persist a third consecutive severe quarter, multiple compresses toward ~12x on demand-trough fears = ~-8%/yr. Bull: mortgage-rate relief drives a housing-demand recovery, EPS growth resumes double digits, multiple re-rates toward ~18x = ~20%/yr."
+    }
+  }
+}

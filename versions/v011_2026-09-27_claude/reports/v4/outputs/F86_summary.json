@@ -1,0 +1,118 @@
+{
+  "agent": "F86",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "IBKR": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The low-cost global electronic broker still taking market share, but earnings are unusually levered to today's high trading volumes and interest rates.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Net interest income falls >15% YoY for two consecutive quarters (rate-cut driven, not offset by balance growth)",
+        "DART growth decelerates below 10% YoY for two consecutive quarters",
+        "Pre-tax margin falls below 70% for two consecutive quarters",
+        "Any new SEC/FINRA/CFTC enforcement action with a fine >$25m",
+        "Diluted EPS to common growth turns negative YoY in any quarter"
+      ],
+      "key_adverse_facts": [
+        "~40-50% of revenue is net interest income, mechanically exposed to a Fed easing cycle",
+        "Elevated DART growth (+36% YoY) is partly cyclical volatility, not purely structural share gain",
+        "Public shareholders own only a minority (~15-16%) economic interest in the operating entity (IBG LLC); consolidated financials are not directly comparable to per-share metrics",
+        "History of AML/SAR/OFAC regulatory settlements ($38m 2020; ~$11.5-11.8m OFAC 2025) shows recurring compliance friction",
+        "A 2022 SEC information request on off-channel communications was disclosed; resolution status not independently confirmed in this pass"
+      ],
+      "data_conflicts": [
+        "None material found versus b1/d4 quant context; b1 ROE/momentum percentiles are corroborated by the primary-source account/DART/margin figures in the Q2 2026 release"
+      ],
+      "next_earnings_date": "2026-10-21",
+      "confidence_in_thesis": "medium (business quality and growth are well evidenced; timing/magnitude of rate-cycle and volume normalization is the main uncertainty)",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "IBKR has no row in v1_valuation_table.csv/v1_valuation.json, so v1_verdict is null; my own reverse DCF (10.8% implied 10-yr EPS growth) sits below my 12-15% base case, supporting INCLUDE-SMALL rather than a full INCLUDE given cyclicality risk."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.08,
+        "base": 0.10,
+        "bull": 0.24
+      },
+      "scenario_basis": "Starting TTM diluted EPS to common $2.51 (Q3'25-Q2'26); base case ~13%/yr EPS growth (account growth decelerating from 30%+ toward mid-teens, partial offset from rate normalization) with modest multiple compression from 35.6x to ~28x by year 3, no dividend of note; bear assumes a rate-cut-driven NII drop plus volume mean-reversion cutting EPS growth to ~3%/yr with multiple compression to ~20x; bull assumes sustained 20%+ EPS growth with multiple holding near 33x."
+    },
+    "ICE": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Exchanges, market data and mortgage-tech platform with growing recurring revenue, but stacking a second big debt-funded acquisition (MarketAxess) on top of Black Knight leverage.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Net debt/EBITDA (consolidated) rises above 3.5x following the MarketAxess close",
+        "Fixed Income & Data Services recurring revenue growth falls below 5% for two consecutive quarters (vs the 7-8% FY26 guide)",
+        "MarketAxess deal fails to close, is renegotiated at worse terms, or faces a material regulatory objection within 12 months of announcement",
+        "GAAP diluted EPS ex-one-offs declines YoY for two consecutive quarters",
+        "Mortgage-tech (Black Knight) segment net revenue growth turns negative for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "Long-term debt $18.63bn (Jun-30-26) vs $17.36bn a year earlier, and net debt/EBITDA already ~2.9x before the newly announced $5.7bn MarketAxess acquisition",
+        "MarketAxess is a pending, regulatory-approval-dependent deal announced at the Q2 2026 release, not yet reflected in the balance sheet",
+        "Q1 2026 net income ($1.41bn, diluted EPS $2.48) is far above the trend of surrounding quarters and its composition (likely a one-time gain) was not confirmed from primary text in this pass",
+        "GAAP vs adjusted EPS gap is large and must always be labelled (Q2'26: $1.69 GAAP vs $1.90 adjusted)"
+      ],
+      "data_conflicts": [
+        "Prior triage cited '24% EPS growth' for ICE; verified GAAP diluted EPS growth Q2'26 vs Q2'25 was +14.2% and verified adjusted EPS growth was +4.97% ($1.81 to $1.90) - neither matches 24%. Possible explanation is FY2025 vs FY2024 GAAP EPS growth (+20.7%), but this was not confirmed as the triage's source; flagged as unresolved."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "confidence_in_thesis": "medium (recurring-revenue growth and franchise quality are solid; leverage stacking from two large deals and the unexplained Q1'26 EPS spike are the open items)",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "ICE has no row in v1_valuation_table.csv/v1_valuation.json, so v1_verdict is null; my own reverse DCF (5.3% implied 10-yr EPS growth) sits below my 8-9% base case, supporting INCLUDE-SMALL, tempered by leverage/integration risk from Black Knight plus the pending MarketAxess deal."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.05,
+        "base": 0.09,
+        "bull": 0.19
+      },
+      "scenario_basis": "Starting normalized TTM diluted EPS ~$6.87 (TTM $7.12 less roughly half of the unconfirmed Q1'26 spike); base case ~8.5%/yr EPS growth (high-single-digit recurring data/fixed income, cyclical transaction revenue flat, MarketAxess modestly accretive) with multiple steady near 22x; bear assumes leverage-driven de-rating to ~16x plus a mortgage-tech/transaction-volume downturn cutting growth to ~2%/yr; bull assumes successful integration of both deals lifting growth to ~13%/yr with multiple holding near 24x."
+    },
+    "INCY": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Profitable biotech (Jakafi, Opzelura, new oncology drugs) whose reported growth this quarter is inflated by a one-off benefit, priced already for a cautious view of Jakafi's 2028-29 patent cliff.",
+      "horizon": "12-36 months (revisit sizing once ex-one-off run-rate is confirmed over 2-3 quarters)",
+      "kill_criteria": [
+        "Jakafi net sales growth turns negative YoY for two consecutive quarters",
+        "Opzelura net sales, excluding any further one-time items, decelerate below 15% YoY for two consecutive quarters",
+        "Any additional generic-manufacturer ANDA litigation loss or settlement that moves the earliest generic entry date materially earlier than March 2029",
+        "Heme/onc portfolio growth falls below 30% YoY for two consecutive quarters",
+        "Full-year net sales guidance is cut versus the raised $5.13-5.26bn range"
+      ],
+      "key_adverse_facts": [
+        "Jakafi (~63% of FY2026 guided net sales) faces active ANDA Paragraph IV challenges from multiple generic manufacturers; estimated earliest generic launch March 2029; patents expire mid/Dec-2028",
+        "Q2 2026 reported growth (+38% revenue, +45% net income, Opzelura +173%) is substantially inflated by a one-time non-cash CMS-settlement benefit; ex-benefit Opzelura growth was +24%, not +173%",
+        "Jakafi itself grew only +7% YoY in Q2 2026, already showing the deceleration expected of a maturing, soon-to-be-off-patent franchise",
+        "FCF conversion and SBC-as-%-of-revenue were not independently re-derived from the cash-flow statement in this pass - a coverage gap to close next cycle"
+      ],
+      "data_conflicts": [
+        "None found versus b1/d4 quant scores directly, but the underlying revenue-growth input to the composite score appears to embed the one-time CMS benefit, overstating durable growth versus the ex-benefit +17% total net sales growth Incyte itself disclosed"
+      ],
+      "next_earnings_date": "2026-10-27",
+      "confidence_in_thesis": "medium (near-term growth drivers are real and confirmed; the patent-cliff base case and its offsetting pipeline growth are inherently uncertain 3+ years out)",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "in_line",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "INCY has no row in v1_valuation_table.csv/v1_valuation.json, so v1_verdict is null; my own reverse DCF (4.6% implied 10-yr growth) is roughly in line with a 4-6% base case that already discounts the Jakafi patent cliff, so there is no clear valuation margin of safety - hence WATCH rather than INCLUDE despite decent business quality."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.14,
+        "base": 0.05,
+        "bull": 0.18
+      },
+      "scenario_basis": "Starting normalized TTM diluted EPS ~$6.0-6.1 (TTM reported $7.85 less the after-tax equivalent of the Q2'26 CMS one-off); base case ~5%/yr blended EPS growth through the forecast window (continued Opzelura/heme-onc growth roughly offsetting Jakafi's deceleration) with multiple compressing modestly from ~20x to ~17x as the patent cliff approaches; bear assumes an earlier-than-expected generic entry or Jakafi decline accelerating, with multiple compressing to ~12x; bull assumes heme-onc and Opzelura growth more than offsets Jakafi's decline, holding the multiple near 20x."
+    }
+  }
+}

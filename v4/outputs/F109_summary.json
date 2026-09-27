@@ -1,0 +1,112 @@
+{
+  "agent": "F109",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "CNP": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Houston's regulated power-delivery utility, building toward huge new electricity demand at a lower price than its own long-term growth promise implies.",
+      "kill_criteria": [
+        "Consolidated net debt/EBITDA rises above 6.5x for two consecutive quarters (vs. ~5.5x now).",
+        "FFO/debt falls below 11% (vs. ~13% now) on a trailing-twelve-month basis, per company or rating-agency-reported figures.",
+        "Full-year non-GAAP EPS guidance is cut from the current $1.89-$1.91 range (any downward revision, not just a miss).",
+        "The 4.25% convertible notes due 2026 are confirmed to have required a distressed or unfavourable refinancing (materially above the ~2.9% coupon on the 2029 tranche priced in Feb 2026).",
+        "ERCOT Batch Zero 'qualified' large-load capacity (currently ~14 GW) falls by more than 30% in a subsequent quarterly update, signalling the demand pipeline is not converting."
+      ],
+      "key_adverse_facts": [
+        "Consolidated FFO/debt ~13.0-13.4% and net debt/EBITDA ~5.5x are elevated for a T&D utility and have risen, not fallen, alongside the accelerating capital plan (secondary-source aggregation, cross-check only).",
+        "A $1.0bn 4.25% convertible note matured/converted 15 Aug 2026; this diligence window could not confirm how it was settled (open data gap).",
+        "FCF has been structurally and materially negative for two years running (e.g., -$1,677m 9-month 2025) as capex outruns operating cash flow."
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv's high fcfp (FCF-yield) percentile appears to be computed pre-capex-netting; on an actual FCF basis (OCF minus capex) CNP is deeply cash-flow-negative, so the model's 'value/cheap' signal partly reflects a metric-definition artefact for a heavy-capex utility, not cash-rich cheapness."
+      ],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (guidance and rate-base growth are well-documented; leverage direction and the convertible-note settlement are open items that could change the picture)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "implied_vs_base": "below",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for CNP, so v1_verdict is null; the dossier's own simplified dividend/earnings-growth reverse model implies ~6.2%/yr long-run growth priced in, below management's guided 7-9%/yr long-term EPS growth range, i.e. the stock appears to price in less growth than the company is guiding to."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.04,
+        "base": 0.09,
+        "bull": 0.16
+      },
+      "scenario_basis": "Starting point: $1.90 2026 non-GAAP EPS guidance midpoint at a 19.4x NTM P/E ($36.84 close); base case assumes the guided 7-9% EPS growth persists with a stable ~19-20x multiple and a modest dividend yield; bear assumes a leverage-driven credit event compresses the multiple to ~15x with growth stalling near 3-4%; bull assumes the ERCOT large-load pipeline converts faster than guided, EPS growth runs at the high end of 9%, and the multiple re-rates toward 21-22x."
+    },
+    "D": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Virginia's data-center-powering utility is being acquired by NextEra Energy; the stock now trades on deal-completion odds, not on its own growth story.",
+      "kill_criteria": [
+        "Any regulator (Virginia SCC, North Carolina, South Carolina, FERC, or NRC) formally denies or imposes conditions materially impairing deal economics.",
+        "The merger agreement is terminated by either party, or the expected close date is pushed beyond 2028 (vs. 'late 2027' guided now).",
+        "The arb spread (deal value implied by NEE's price and the 0.8138 exchange ratio, minus D's price) widens beyond 8% annualised, signalling the market has repriced completion risk upward.",
+        "CVOW's cost estimate rises by a further $500m or more from the current $11.7bn, or the completion date slips beyond mid-2028.",
+        "Dominion's consolidated long-term debt grows more than 10% in a single year again (matching or exceeding the 2024-to-2025 pace of ~18%) without a matching rating-agency reaffirmation."
+      ],
+      "key_adverse_facts": [
+        "A signed, pending all-stock-plus-cash merger with NextEra Energy (15 May 2026; 0.8138 NEE shares + ~$360m aggregate cash) was not surfaced by the Q15 triage at all; b1_live_scores.csv's own exclude_pending_deal flag is already True for D.",
+        "CVOW (Coastal Virginia Offshore Wind) cost has risen twice in the history reviewed, now to ~$11.7bn, with 19% of construction remaining and turbine-installation risk explicitly cited by management.",
+        "Consolidated long-term debt rose ~18% in one year (2024-12-31 to 2025-12-31: $39,320m to $46,332m), the largest single-year jump in the multi-year series reviewed."
+      ],
+      "data_conflicts": [
+        "The Q15 triage's one-line thesis and reason describe D as a standalone growth-utility story ('finishing the largest US offshore wind project'); it omits the pending NextEra merger entirely, which this dossier treats as the dominant fact for D's valuation and eligibility."
+      ],
+      "next_earnings_date": "2026-10-30",
+      "horizon": "14-18 months (tied to expected merger close, 'late 2027' per NextEra management)",
+      "confidence_in_thesis": "medium (merger terms and regulatory-filing dates are documented in SEC filings; the ultimate closing timeline, NEE's price path, and CVOW's final cost are all open)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "implied_vs_base": "in_line",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for D, so v1_verdict is null; on a deal-arb basis the $60.68 close is a thin ~1.9%/yr annualised discount to the ~$62.31 implied deal value; on a standalone 'if the deal breaks' basis, the simplified reverse model implies ~5.85%/yr long-run growth, roughly in line with Dominion's historical mid-single-digit guided growth, i.e. not obviously mispriced either way."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.12,
+        "base": 0.02,
+        "bull": 0.06
+      },
+      "scenario_basis": "Starting point: $60.68 close vs. ~$62.31 implied deal value (0.8138 x NEE's $76.08 close plus ~$0.41/share cash); base case assumes the deal closes roughly on the 'late 2027' schedule, delivering the thin arb spread annualised over the sleeve's 3-year window plus D's ~4-5% dividend yield while pending; bear assumes a regulatory denial or termination, D reverts toward a standalone value near $50-55 (multiple compression on rising leverage and CVOW risk) before recovering some; bull assumes an accelerated, on-terms close plus NEE share-price appreciation between now and closing (D holders receive NEE stock)."
+    },
+    "EW": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Structural-heart device leader growing TAVR and its faster mitral/tricuspid franchise, but priced for more 10-year growth than the evidence supports.",
+      "kill_criteria": [
+        "TAVR constant-currency sales growth falls below 7%/yr for two consecutive quarters (below even the low end of the pre-raise guidance range).",
+        "TMTT sales growth decelerates below 25%/yr year-over-year for two consecutive quarters (roughly half its current ~45% pace).",
+        "Adjusted EPS guidance is cut from the current $2.95-$3.05 range (any downward revision).",
+        "FCF/net-income conversion falls back below 70% on a trailing-two-quarter basis (vs. ~91% now).",
+        "A major TAVR or TMTT clinical trial results in a materially adverse label change or safety signal for an Edwards device."
+      ],
+      "key_adverse_facts": [
+        "Reverse DCF implies ~12.5%/yr 10-year FCF growth priced into the $86.29 close, above the analyst's evidence-based base case of ~9-10%/yr.",
+        "ROE (~9% per b1 factor data) is modest for a ~28.8x NTM P/E.",
+        "Q2 2026 GAAP net income fell ~27% y/y ($241.9m vs. $333.2m) even as adjusted EPS grew, driven partly by a California R&D tax-credit change; Medtronic's Evolut, Abbott's Navitor (seeking label expansion), and Boston Scientific's planned Acurate Neo2 re-entry are all named, active TAVR competitive threats."
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "high (guidance quotes, XBRL financials and the competitive landscape are all well-documented and mutually consistent)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for EW, so v1_verdict is null; the dossier's own reverse FCF-DCF (WACC 8%, terminal growth 3%) implies ~12.5%/yr 10-year FCF growth priced into the $86.29 close, above a ~9-10%/yr evidence-based base case blending TAVR's guided 8-9% and TMTT's faster but smaller-base growth, so the stock is priced above what the base case supports."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.09,
+        "base": 0.05,
+        "bull": 0.15
+      },
+      "scenario_basis": "Starting point: FCF/share ~$1.96 (H1 2026 annualised) at $86.29 (~44x FCF); base case assumes ~9-10%/yr FCF growth with the multiple compressing modestly toward a more normal ~35-38x as growth normalises post the TMTT ramp; bear assumes TAVR competitive share loss (Boston Scientific re-entry, Abbott label expansion) drags growth to mid-single digits with multiple compression to ~28-30x; bull assumes TMTT continues compounding near 40%+ and TAVR holds 8-9%, supporting the current premium multiple."
+    }
+  }
+}

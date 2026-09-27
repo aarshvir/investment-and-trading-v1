@@ -1,0 +1,102 @@
+{
+  "agent": "F83",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "CAT": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The world's biggest construction/mining-equipment maker had a record quarter selling backup generators to data centers, but the stock already prices in growth far above what history or consensus support.",
+      "kill_criteria": [
+        "Two consecutive quarters of Energy & Transportation (or total) revenue growth decelerating below the FY guidance's low end (currently \"mid-teens\").",
+        "Adjusted operating margin falls back below 19% (vs 21.9% in Q2'26) for two consecutive quarters.",
+        "Consolidated net debt (excl. Financial Products captive funding) rises materially -- i.e., MP&E-segment debt increases >$1B in a half-year, unlike H1'26's ~flat MP&E debt.",
+        "Backlog ($72B at Q2'26) declines >10% quarter-over-quarter.",
+        "NTM P/E falls below its own 5-year median."
+      ],
+      "key_adverse_facts": [
+        "V1 systematic model labels CAT valuation \"excessive\": implied 10-year growth 29.6% vs consensus FY1 growth 11.2%, base-case 3y annualised return -29.7%, bear case -49.8%.",
+        "Financial Products (captive finance) debt rose $1.839B in H1 2026 while MP&E operating-segment debt was essentially flat, i.e. most of the debt increase funds receivables, not operations.",
+        "12-month price momentum +69% (Q09 triage's own red flag) -- much of the AI-power-genset re-rating is plausibly already in the price."
+      ],
+      "data_conflicts": [
+        "None found between b1/d4 quant inputs and filings this pass; the only tension is between V1's valuation verdict (\"excessive\") and the triage's bullish framing, and this dossier resolves it by agreeing with V1."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (filing-sourced Q2'26 operating results are solid; full 8-quarter table, FCF conversion and insider/litigation scan were not rebuilt this pass under the standard time-box, so confidence in the WATCH call is medium, not high)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": -0.29726837110964255,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "implied_vs_base": "above",
+        "reconciliation": "V1's reverse DCF implies ~29.6% 10-year growth versus 11.2% consensus; we find no primary-source evidence (backlog is 1-2yr visibility, not 10yr) that supports sustaining that growth rate, so we agree the price is expensive rather than earned."
+      },
+      "scenario_returns_3y": {"bear": -0.498, "base": -0.297, "bull": 0.178},
+      "scenario_basis": "Adopted V1's own reverse-DCF scenario set directly (starting NTM EPS ~$31.0, WACC 9.34%, implied growth 29.6% vs consensus 11.2%); not independently re-derived this pass."
+    },
+    "CBOE": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Dominant U.S. options exchange with a hard-to-copy SPX/VIX franchise, but 2027 growth estimates cool sharply from 2026's volatility-driven pace, so size it small.",
+      "kill_criteria": [
+        "Organic net-revenue growth guidance cut versus the raised mid-to-high-teens FY2026 range.",
+        "Two consecutive quarters of Derivatives segment net-revenue growth below 10% YoY.",
+        "Consolidated leverage ratio approaches the covenant ceiling (3.50x, or 4.00-4.25x under the step-up); any move above ~2.5x warrants review.",
+        "Data Vantage organic growth falls back below \"low double digits\" for two consecutive quarters.",
+        "Forward P/E re-rates above 25x without a corresponding upgrade to multi-year growth guidance."
+      ],
+      "key_adverse_facts": [
+        "2027 consensus EPS growth is only ~5.5% versus ~25% in 2026 (aggregator cross-check), suggesting 2026's growth is largely a volatility/volume cycle rather than a new sustained run-rate.",
+        "Stock reportedly down ~28% from a recent high over the trailing month (aggregator), i.e. the market may already be pricing the 2027 deceleration in.",
+        "Balance-sheet debt figure sourced this pass is Q1 2026 ($1,443.4m), not Q2 2026 -- a data gap, not a confirmed adverse fact."
+      ],
+      "data_conflicts": [
+        "No v4 b1/d4 quant data independently cross-checked against filings this pass for CBOE -- flagged as a data gap rather than a resolved conflict."
+      ],
+      "next_earnings_date": "2026-10-30",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "low-medium (no V1 valuation anchor exists for CBOE; the reverse-DCF read here is qualitative and several balance-sheet/insider items are aggregator cross-checks, not primary filings, under the standard time-box)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "implied_vs_base": "in_line",
+        "reconciliation": "No V1 row exists for CBOE (v1_verdict null). Independently, a ~19x forward multiple against 2026 growth of ~25% cooling to ~5.5% in 2027 looks roughly in line with a high-single-digit-to-low-teens normalized growth base case, not obviously above it."
+      },
+      "scenario_returns_3y": {"bear": -0.20, "base": 0.08, "bull": 0.22},
+      "scenario_basis": "Qualitative estimate (no V1 anchor, no independently rebuilt DCF): starting adj. EPS run-rate ~$3.56/quarter annualised, base case assumes growth decelerates toward high-single-digits per the 2027 consensus signal, forward multiple mean-reverts modestly from ~19x; bear assumes low-volatility regime compresses Derivatives revenue and multiple derates to ~14x; bull assumes Data Vantage re-accelerates and multiple holds ~22x. Low confidence given the missing systematic anchor."
+    },
+    "CVX": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Low-leverage oil major whose newly closed Hess deal is delivering Guyana production growth ahead of plan, priced at a reasonable multiple but still fully exposed to the oil price.",
+      "kill_criteria": [
+        "Net debt/CFFO (or net debt/EBITDA) rises above 1.5x for two consecutive quarters (vs 0.6x now).",
+        "Quarterly production growth YoY falls below 5% for two consecutive quarters (vs +20% in Q2'26).",
+        "Quarterly dividend is cut or frozen (breaking the 38-year consecutive-increase streak).",
+        "Share buybacks fall below the low end of the $10bn/year guided range for two consecutive quarters without a stated commodity-price rationale.",
+        "WTI sustained below ~$55/bbl for a full quarter (placeholder breakeven trigger pending primary-source Guyana/Permian breakeven data)."
+      ],
+      "key_adverse_facts": [
+        "Thesis is fundamentally oil-price dependent; Q2'26's beat is partly commodity-price driven and a downside oil shock overwhelms the production-growth story (the triage's own red flag).",
+        "Hess integration is 'still early' per triage despite ahead-of-schedule synergy capture -- full operational integration risk remains multi-year.",
+        "Post-close status of the pre-close Exxon/Guyana pre-emption arbitration was not independently re-verified this pass -- a data gap on a material, previously contested item."
+      ],
+      "data_conflicts": [
+        "None found between triage framing and filings this pass; leverage cross-check (net debt/CFFO 0.6x) confirms rather than contradicts the triage's 'net debt/EBITDA'-style characterization, though the two ratios use different denominators."
+      ],
+      "next_earnings_date": "2026-10-23",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (Q2'26 production/earnings figures are filing-sourced; leverage ratios, buyback/dividend YTD detail, and Hess-arbitration status are aggregator cross-checks or data gaps under the standard time-box)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for CVX (v1_verdict null). Independently, a ~13-13.5x forward multiple against high-single-digit-to-low-teens underlying (ex-commodity) production growth once Hess is absorbed implies less growth than our evidence-based base case, so we call it slightly cheap rather than fair or expensive -- supporting INCLUDE-SMALL, with oil-price risk as the main unhedged variable."
+      },
+      "scenario_returns_3y": {"bear": -0.30, "base": 0.09, "bull": 0.24},
+      "scenario_basis": "Qualitative estimate (no V1 anchor): base case assumes ~$70-75/bbl average Brent, Hess synergies fully realized, dividend growth continues at ~5%/yr, multiple holds ~13x; bear assumes a sustained sub-$55 oil price with dividend frozen and multiple compressing; bull assumes oil >$85/bbl average and continued buyback pace at the top of the $10-20bn range. Low-medium confidence given the missing systematic anchor and un-rebuilt full DCF."
+    }
+  }
+}

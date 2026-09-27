@@ -1,0 +1,114 @@
+{
+  "agent": "F34",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "VICI": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Owns irreplaceable Las Vegas Strip and regional casino real estate on long, CPI-linked leases, priced far below what its steady growth and diversification deals justify.",
+      "kill_criteria": [
+        "Combined Caesars + MGM share of total contractual rent stops declining and rises back above 75% for two consecutive quarters (from ~70% currently), signalling the diversification trend has reversed.",
+        "AFFO/share guidance is cut (any reduction to the low end of the then-current full-year range) at a subsequent release -- track record is currently four-for-four raises/holds.",
+        "Net debt/adjusted EBITDA rises above 5.5x (from ~4.9x currently) without a stated deleveraging plan.",
+        "A monetary default, lease restructuring, or sub-investment-grade credit-rating downgrade (below B1/B+) at either Caesars or MGM.",
+        "Realized rent growth trails CPI by more than 100bps for two consecutive years, i.e. the escalator caps bind and erode real rental income (VICI's own disclosed risk)."
+      ],
+      "key_adverse_facts": [
+        "Caesars and MGM combined still supply ~70% of VICI's total contractual rent (Q2'26: Caesars 36%, MGM 34%; Q1'26: Caesars 37%, MGM 36%) -- an unusually concentrated two-tenant credit exposure for a REIT this size.",
+        "GAAP net income and EPS are highly volatile quarter to quarter (Q2'26 diluted EPS $0.48, down 39% YoY) on non-cash fair-value/credit-loss items in VICI's financing-receivable and preferred-equity book; the Q2'26 print was widely reported as an 'EPS miss' despite AFFO growing 7.8%.",
+        "Generic vendor free-cash-flow fields (Yahoo/d4) show only a ~1% FCF yield for VICI because REIT growth-capex ('PaymentsToAcquireRealEstate') is misclassified as a cash outflow against earnings -- AFFO, not FCF, is the correct metric, consistent with the program's known REIT-metric flaw already disclosed for HST/FRT.",
+        "Short interest rose ~22% between roughly year-start and end-April 2026 (to ~3.0% of float) -- still a low absolute level but a directionally more cautious positioning shift."
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium-high -- the value/income case is independently confirmed from primary filings and the guidance record is clean (4-for-4 raises), but tenant concentration is a real, unresolved structural risk that caps conviction below full weight",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for VICI (v1_valuation_table.csv has no VICI row; VICI appears only as a peer-comparison sample inside FRT's V1 detail JSON), so v1_verdict is null and no reconciliation is possible. This dossier's own reverse DCF (Gordon-growth on AFFO/share, price $23.51, AFFO guide $2.46/sh, required return 8.5-9.5%) implies perpetual AFFO/share growth of roughly -0.9% to -1.8% -- i.e. the market prices VICI as if AFFO per share will shrink forever -- versus an evidence-based base case of +3-4%/yr from CPI-linked escalators and demonstrated accretive acquisitions. Implied growth is clearly below base case: cheap, not merely fair."
+      },
+      "scenario_returns_3y": {
+        "bear": 0.04,
+        "base": 0.11,
+        "bull": 0.185
+      }
+    },
+    "APTV": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Auto electrical/software supplier just cut its first post-spinoff full-year guidance; cheap and better-capitalized, but not yet proven stable.",
+      "kill_criteria": [
+        "FY2026 guidance is cut again at the Q3'26 or Q4'26 release (any further reduction to the low end of the current $12.6-12.8bn revenue / $5.60-5.80 adjusted-EPS range).",
+        "Non-automotive (software/AV/enterprise) segment revenue growth decelerates below 8% YoY for two consecutive quarters (from +12% in Q2'26).",
+        "Net debt/adjusted EBITDA rises above 3.0x (from ~2.0x post-spin) without a stated value-accretive reason.",
+        "Free cash flow for two consecutive quarters comes in below the low end of the then-current full-year FCF guidance range (currently $625-725M).",
+        "Top-5 customer concentration rises above 45% of net sales (from ~42%), or GM/Stellantis/Ford cuts North American production schedules by more than 5% for a full year."
+      ],
+      "key_adverse_facts": [
+        "FY2026 guidance was cut on revenue, adjusted EBITDA, adjusted EPS AND free cash flow simultaneously at the Q2'26 release (2026-08-04) -- just one quarter after 'New Aptiv' first issued post-spin guidance at Q1'26 -- for itemized reasons (China production-schedule changes ~$150m, delayed launches/ramps ~$100m, enterprise-software timing ~$50m).",
+        "Free cash flow was negative in Q1'26 (-$362m) and only $12m in Q2'26 (vs $219m a year earlier) even as adjusted EPS beat the prior-year figure -- a real, current gap between adjusted-earnings optics and cash delivery during the separation year.",
+        "The pre-registered quant composite shows APTV's 12-month price momentum in the 1st percentile (worst in the S&P 500 coverage) and earnings-momentum (SUE) in the 21st percentile, corroborating that the market has not yet decided the guidance cut was a one-off.",
+        "Customer concentration (~42% of net sales from the top 5 customers, historically led by GM/Stellantis/Ford/VW) is real in a soft, uneven global auto-production environment (China down, EMEA down 7% in Q1'26); this figure is a secondary-source citation not independently re-verified against the primary 10-K footnote in this pass."
+      ],
+      "data_conflicts": [
+        "Triage's cited '17% FCF yield' (from Yahoo/d4's trailing freeCashflow field) is stale and still includes the now-divested Electrical Distribution Systems (Versigent) business; on the post-spin, continuing-operations FY2026 guide (FCF $625-725m midpoint on a $9.48bn market cap) the real FCF yield is approximately 7.1%, well below the cited figure.",
+        "SEC XBRL quarterly revenue tags mix an 'as-originally-reported' (consolidated, including EDS) and a 'restated for discontinued operations' (continuing-ops only) basis depending on which filing last touched that period (e.g. Q2'25 shown at $3,199m restated vs Q3'25 at $5,212m not-yet-restated) -- resolved in the dossier by using only like-for-like, company-disclosed continuing-operations figures and flagging the mixed-basis trap explicitly."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "low-medium -- the statistical cheapness and improved balance sheet are real, but a same-quarter guidance cut across every metric plus bottom-percentile momentum mean the thesis has not yet been confirmed by a clean quarter",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "in_line",
+        "reconciliation": "No V1 row exists for APTV (v1_valuation_table.csv has no APTV row), so v1_verdict is null and no reconciliation is possible. This dossier's own reverse DCF (EV $14.1bn, FCF0 $675m guide midpoint, WACC ~9%) implies perpetual FCF growth of ~4.0%/yr, roughly in line with an evidence-based base case of ~4-5%/yr from structural content-per-vehicle growth -- but FY2026 guided near-term revenue growth is only ~2%, below even that base case, which is why the verdict is WATCH rather than INCLUDE despite a 'fair'/in-line perpetual-growth reading."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.03,
+        "base": 0.135,
+        "bull": 0.28
+      }
+    },
+    "FIS": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Bank core-processing giant swapped a non-cash-generating Worldpay stake for a big, high-margin issuer-processing business -- cheap, but now more levered and integrating.",
+      "kill_criteria": [
+        "Adjusted-EPS guidance is cut again at the Q3'26 or Q4'26 release (any reduction to the low end of the current $6.15-6.24 range).",
+        "Gross leverage fails to decline toward the 2.8x target -- stays at or above 3.5x for two consecutive quarters after Q2'26.",
+        "Client attrition (UBS/Credit-Suisse-style losses) widens beyond the currently disclosed ~1-point drag on 2026 revenue growth.",
+        "Capital Markets segment professional-services revenue declines for a third consecutive quarter (currently -17% in the most recent disclosed quarter).",
+        "Share buybacks remain fully paused beyond FY2027 -- i.e. management fails to resume 'meaningful' repurchases once leverage nears its own 2.8x target, contradicting its own stated plan."
+      ],
+      "key_adverse_facts": [
+        "Gross leverage was 3.5x at June 30, 2026 (company-stated), above its own 2.8x target, and management has 'temporarily curtailed share repurchases and paused tuck-in M&A activity to accelerate deleveraging' -- a real, current capital-allocation constraint.",
+        "Adjusted-EPS guidance was cut at the Q2'26 release (to $6.15-6.24 / 7.0-8.5% growth, from $6.22-6.32 / 8-10% growth given at Q4/FY'25), alongside cuts to pro forma revenue growth (5.1-5.7% to 4.5-5.0%) and pro forma EBITDA growth (7.2-8.4% to 5.9-6.9%) -- a mixed, net-negative revision even though free-cash-flow guidance was simultaneously raised $100m.",
+        "Q1'26 GAAP diluted EPS of $4.58 is dominated by a ~$2.2bn one-time pre-tax gain on the Worldpay stake sale and is not a run-rate figure; Q2'25 GAAP EPS was a loss of -$0.90/share -- the GAAP-to-adjusted gap here is wide and must never be blended with adjusted EPS.",
+        "A $210m securities class-action settlement (In re FIS Securities Litigation, alleging misleading statements about the PRIOR Worldpay acquisition's integration/synergies, 2020-2023) received final court approval on 2026-07-09 -- resolved and largely insurance-covered, but directly relevant precedent given the current deal's own integration/synergy claims are similarly central to the thesis.",
+        "Capital Markets segment sales are running behind plan (slower backlog-to-revenue conversion, professional-services revenue -17%) and UBS/Credit-Suisse-related client attrition is cutting ~1 percentage point off 2026 revenue growth -- current-quarter operational softness, not a distant risk."
+      ],
+      "data_conflicts": [
+        "Triage cited 'net debt/EBITDA of 5.8x is elevated' as the main red flag; the company's own Q2'26 earnings call states gross leverage was 3.5x at June 30, 2026 (target 2.8x). This dossier uses the primary-source 3.5x figure; the triage number appears to be either a stale pre-close estimate or a different leverage definition and was not independently reconciled to 5.8x in this pass."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium -- the strategic and valuation case is well evidenced from primary filings, but elevated leverage, a fresh guidance cut and real segment-level softness (Capital Markets, client attrition) are current, unresolved risks that argue for a starter position",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for FIS (v1_valuation_table.csv has no FIS row), so v1_verdict is null and no reconciliation is possible. This dossier's own reverse DCF (EV $38.6bn, FCF0 $2.2bn guide midpoint, WACC ~8.5%, judgmentally raised above the CAPM-mechanical figure to reflect the post-deal leverage step-up) implies perpetual FCF growth of only ~2.6-2.7%/yr, well below an evidence-based base case of ~8-10%/yr (synergy capture toward management's own disclosed 2028 targets) and further below management's own implied ~15%/yr path to '$3bn+ FCF by 2028'. Implied growth is below base case: cheap even after discounting management's own target for optimism."
+      },
+      "scenario_returns_3y": {
+        "bear": 0.02,
+        "base": 0.20,
+        "bull": 0.34
+      }
+    }
+  }
+}

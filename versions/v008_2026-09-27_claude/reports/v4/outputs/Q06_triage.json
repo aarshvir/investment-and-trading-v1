@@ -1,0 +1,434 @@
+{
+  "agent": "Q06",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "ACGL": {
+      "advance": true,
+      "quality": 4,
+      "growth": 2,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Diversified specialty P&C, reinsurance and mortgage insurer known for elite underwriting discipline and capital allocation.",
+      "reason": "Forward EPS/revenue are declining because property-cat pricing is turning down industry-wide, not because Arch is losing share; ROE (~20%) and FCF yield (13%) stay excellent and the stock already prices in the cycle turn.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)",
+        "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ACGL&type=8-K"
+      ]
+    },
+    "CB": {
+      "advance": true,
+      "quality": 5,
+      "growth": 3,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Global P&C leader (commercial, specialty, high-net-worth personal lines, Asia life) with best-in-class combined ratios.",
+      "reason": "Growth is modest but durable and underwriting quality is top of the industry; 11.6x NTM P/E is fair, not a bargain, for a wide-moat compounder.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "PGR": {
+      "advance": true,
+      "quality": 5,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Largest direct/independent-agent US auto insurer; telematics and data-driven pricing give it a structural cost/loss-ratio edge.",
+      "reason": "NTM P/E of 0.3x and +4,978% EPS growth in the card are clearly data artifacts from a distorted consensus base; on the reliable trailing P/E (10.3x) and 34.9% ROE this remains a phenomenal, reasonably priced compounder gaining share in a hard-but-easing auto pricing cycle.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close) - note: pe_ntm/eps_growth_fwd fields look like data errors, verify in full diligence"
+      ]
+    },
+    "WRB": {
+      "advance": true,
+      "quality": 4,
+      "growth": 2,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Specialty P&C insurer (E&S, casualty) with a 20+ year record of double-digit book-value growth through cycles.",
+      "reason": "Revenue growth has stalled to +1% and EPS is flat, signaling the specialty market is softening faster than peers; quality/track record still justifies a closer look but growth deceleration is the key diligence question.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "CFG": {
+      "advance": true,
+      "quality": 3,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Super-regional bank rebuilding via private-bank/wealth build-out (ex-Citizens Private Bank, hired from First Republic).",
+      "reason": "EPS growth is accelerating (+42% fwd) and revenue +15%, but ROE of only 8.3% is still below best-in-class peers and the model flags the stock as already 'excessive' after a +33% run; worth full diligence to see if the private-bank investment is inflecting returns.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close, v1_verdict=excessive)"
+      ]
+    },
+    "FITB": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "Comerica merger integration risk (closed Feb 2, 2026)"
+      ],
+      "one_line": "Ohio super-regional that closed its all-stock Comerica merger in Feb 2026, becoming the 9th-largest US bank (~$294B assets).",
+      "reason": "The deal is fully closed with all approvals received and management cites record standalone profitability entering it; +67% fwd EPS growth and +52% revenue growth reflect real, accretive scale, and 11.8x NTM P/E doesn't yet fully price the combined franchise. Integration execution is the main open question for full diligence.",
+      "sources": [
+        "https://ir.53.com/news/news-details/2026/Fifth-Third-Completes-Merger-with-Comerica-to-Become-9th-Largest-U-S--Bank/default.aspx",
+        "https://www.wsj.com/business/earnings/fifth-third-profit-boosted-by-comerica-acquisition-bae8e106"
+      ]
+    },
+    "HBAN": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "Two acquisitions (Veritex, Cadence) closed within weeks of each other in early 2026 - integration risk"
+      ],
+      "one_line": "Midwest regional bank that closed back-to-back Veritex (Jan 2026) and Cadence Bank (Feb 2026) mergers to build a Texas/South franchise.",
+      "reason": "Both deals are completed and disclosed as ~10% EPS accretive; +36% fwd EPS growth and +48% revenue growth are real scale gains, not data noise, and 9.2x NTM P/E is cheap for a bank moving up in scale. Flat momentum despite good news suggests the market hasn't yet re-rated it.",
+      "sources": [
+        "https://ir.huntington.com/news-presentations/press-releases/detail/967/huntington-bank-completes-merger-with-cadence-bank-expanding-presence-across-texas-and-the-south",
+        "https://www.sec.gov/Archives/edgar/data/49196/000004919626000032/hban20260331_8kex991.htm"
+      ]
+    },
+    "KEY": {
+      "advance": true,
+      "quality": 3,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Regional bank recovering profitability with a large strategic capital injection/partnership from Scotiabank strengthening its balance sheet.",
+      "reason": "EPS growth of +25% fwd and 10x NTM P/E look attractive for a bank still in the early innings of a margin recovery; ROE (10.3%) is only middling so full diligence should confirm the recovery is durable, not just rate-cycle driven.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "RF": {
+      "advance": true,
+      "quality": 4,
+      "growth": 2,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Conservatively run Southeastern regional bank with the best margin (31%) among peer regionals in this batch.",
+      "reason": "Growth is the slowest of the regional-bank group (+3% revenue) since it hasn't done the scale M&A its peers have, but underwriting/expense discipline is genuinely best-in-class; model flags valuation as 'demanding' so full diligence should test whether quality justifies the premium to slower-growing peers.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close, v1_verdict=demanding)"
+      ]
+    },
+    "EG": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 5,
+      "red_flags": [
+        "History of North American casualty reserve strengthening in 2023-2025 that damaged market confidence"
+      ],
+      "one_line": "Global reinsurer/insurer rebuilding credibility after prior casualty reserve charges, now de-risking legacy years via a $1.2bn ADC with Longtail Re.",
+      "reason": "Management says no further adjustment was needed to 2026 casualty loss picks and reported favorable prior-year development in Q2 2026; at 6.4x NTM P/E and 14.5% FCF yield the stock is priced for continued reserve problems, so the key diligence task is verifying whether the Longtail Re transaction and new leadership have actually fixed the reserving issue.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1095073/000109507326000029/everest2q26earningsrelease.htm",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-everest-group-posts-solid-q2-2026-results-shares-slip-93CH-4824606"
+      ]
+    },
+    "CPAY": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "Legacy history of FTC/consumer complaints over fee disclosure practices (largely settled pre-2024 rebrand from FLEETCOR)"
+      ],
+      "one_line": "B2B payments/fleet-card and cross-border payments specialist (rebranded from FLEETCOR) with high recurring-fee margins.",
+      "reason": "Revenue +22%, margin 23%, ROE 29% and 13.1x NTM P/E is a rare combination of real growth and reasonable price; legacy fee-disclosure complaints are largely resolved but full diligence should confirm no new regulatory action.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "FIS": {
+      "advance": true,
+      "quality": 3,
+      "growth": 4,
+      "price_vs_growth": 5,
+      "red_flags": [
+        "Net debt/EBITDA of 5.8x is elevated following the Issuer Solutions acquisition, funded partly by the Worldpay-stake sale proceeds"
+      ],
+      "one_line": "Bank core-processing/payments tech provider that just completed a major portfolio swap: bought GPN's Issuer Solutions business, sold its Worldpay stake.",
+      "reason": "The Jan 2026 transactions simplify FIS into a more focused banking-tech platform and generated a $2.2bn pre-tax gain; FY26 guidance of $6.15-6.24 EPS against a $35 share price implies ~5.7x forward earnings, very cheap if the deleveraging path (FCF yield 14.5%) plays out as guided. Elevated leverage post-deal is the main risk to check.",
+      "sources": [
+        "https://www.fisglobal.com/about-us/media-room/press-release/2026/fis-completes-strategic-acquisition-of-global-payments-issuer-solutions-business",
+        "https://www.investor.fisglobal.com/news-releases/news-release-details/fis-reports-full-year-2025-results-and-introduces-2026-outlook"
+      ]
+    },
+    "FISV": {
+      "advance": false,
+      "quality": 2,
+      "growth": 1,
+      "price_vs_growth": 2,
+      "red_flags": [
+        "FY26 organic revenue guidance cut from +1%/+3% to (1%)/0% and adjusted EPS guidance cut from $8.00-8.30 to $7.20-7.40 within a single year",
+        "Adjusted operating margin compressed sharply in both Merchant Solutions and Financial Solutions segments in Q1 2026 vs prior year",
+        "Free cash flow down (~$259mm vs $371mm Q1 y/y); 2025 short-seller allegations (Bleecker Street) of aggressive/premature revenue recognition in the Clover merchant business remain unresolved reputational overhang"
+      ],
+      "one_line": "Bank core-processing and merchant-acquiring (Clover) technology company mid-way through a severe guidance reset.",
+      "reason": "This is not a normal cyclical dip: guidance was cut twice within 2026 with organic revenue now negative, margins compressing in both segments, and cash flow declining, layered on top of unresolved 2025 accounting-practice allegations about the Clover unit. Cheap 5.9x NTM P/E looks like a value trap until at least one clean quarter confirms stabilization; do not advance yet, revisit after Q3/Q4 2026 results.",
+      "sources": [
+        "https://investors.fiserv.com/news-releases/news-release-details/fiserv-reports-first-quarter-2026-results",
+        "https://www.sec.gov/Archives/edgar/data/0000798354/000079835426000028/fisvq226earningsrelease.htm"
+      ]
+    },
+    "GPN": {
+      "advance": false,
+      "quality": 3,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "Net debt/EBITDA of 4.0x and negative reported operating margin (-9.2%) immediately post the transformative Worldpay acquisition/Issuer Solutions divestiture (closed Jan 9, 2026)"
+      ],
+      "one_line": "Newly reshaped pure-play merchant/commerce company after simultaneously acquiring Worldpay and divesting its Issuer Solutions business.",
+      "reason": "The deal makes strategic sense (focuses the company on merchant acquiring at much greater scale) and 5.6x NTM P/E plus a 34% FCF yield look statistically cheap, but the negative GAAP margin and 4.0x leverage make it impossible to separate real organic trends from deal accounting this early; hold as a watch item and revisit once 2-3 clean post-merger quarters are reported.",
+      "sources": [
+        "https://investors.globalpayments.com/news-events/press-releases/detail/498/global-payments-completes-acquisition-of-worldpay-and",
+        "https://www.sec.gov/Archives/edgar/data/1123360/000112336026000008/gpn-20251231.htm"
+      ]
+    },
+    "JKHY": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Core banking/credit-union technology provider (recurring, high-switching-cost software contracts) with a multi-decade track record.",
+      "reason": "Revenue growth is modest (+5%) reflecting slow community-bank IT spending cycles, but 20x NTM P/E against +12% forward EPS growth, near-zero net debt and 24% ROE is a fair price for a very sticky recurring-revenue business; 29% street upside supports a closer look.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "MA": {
+      "advance": true,
+      "quality": 5,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "Ongoing/recurring interchange-fee and merchant-litigation exposure (long-running, largely provisioned)"
+      ],
+      "one_line": "Global card-payment network duopolist (with Visa) with structural double-digit growth from consumer spending and cash displacement.",
+      "reason": "25.6x NTM P/E against +27% forward EPS growth and a 46% margin is a fair, not excessive, price for one of the highest-quality franchises in the market; interchange litigation is a known, long-standing risk, not a new one.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "PYPL": {
+      "advance": true,
+      "quality": 4,
+      "growth": 2,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Two-sided digital checkout/wallet network (PayPal, Venmo, Braintree) undergoing a turnaround under a new CEO amid share loss at checkout.",
+      "reason": "Growth has decelerated to mid-single digits and Street sees only 3.4% upside after a rough 12 months (-21% momentum), but a 9.7x NTM P/E, 24.5% ROE and durable two-sided network moat make it worth checking whether the turnaround (branded checkout share, Venmo monetization) is working before writing it off.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "V": {
+      "advance": true,
+      "quality": 5,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "Ongoing/recurring interchange-fee and merchant-litigation exposure (long-running, largely provisioned)"
+      ],
+      "one_line": "Largest global card-payment network; extremely high incremental margins and durable double-digit EPS growth from secular cash displacement.",
+      "reason": "24.5x NTM P/E against +28% forward EPS growth and a 51% margin is fair value for the highest-quality network business in the batch; litigation risk is well known and long-standing, not new.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "XYZ": {
+      "advance": false,
+      "quality": 2,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "$80mm multistate (48-state) BSA/AML enforcement action against Cash App, Jan 2025",
+        "$40mm NY DFS settlement for AML/virtual-currency compliance failures, Apr 2025",
+        "CFPB order requiring at least $75mm (up to $120mm) consumer redress plus a $175mm-referenced fraud-protection failure case on Cash App"
+      ],
+      "one_line": "Block, Inc. (Square seller ecosystem + Cash App consumer fintech) with thin GAAP profitability and a recent pattern of compliance failures.",
+      "reason": "Multiple 2025 regulatory actions (state AML, NY DFS, CFPB) point to real, recent control weaknesses at Cash App, on top of a 1.4% margin and 136x trailing P/E that make the earnings quality hard to trust; cheap NTM multiple (15.6x) and 29% street upside aren't enough to outweigh the governance/compliance pattern without deeper review, so hold off for now.",
+      "sources": [
+        "https://www.csbs.org/newsroom/state-regulators-issue-80-million-penalty-block-inc-cash-app-bsaaml-violations",
+        "https://www.dfs.ny.gov/reports_and_publications/press_releases/pr202504101",
+        "https://www.consumerfinance.gov/enforcement/actions/block-inc/"
+      ]
+    },
+    "ABBV": {
+      "advance": true,
+      "quality": 5,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Diversified biopharma that has replaced Humira (now facing full biosimilar erosion) with a larger Skyrizi/Rinvoq immunology franchise.",
+      "reason": "The Humira patent cliff, once the biggest risk in large-cap pharma, is largely behind it and already replaced by faster-growing assets; 16.9x NTM P/E is reasonable for a business with a real multi-year growth runway (Skyrizi/Rinvoq, neuroscience, obesity pipeline).",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "AMGN": {
+      "advance": false,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 2,
+      "red_flags": [],
+      "one_line": "Mature large-cap biotech with an improving margin profile and optionality from the MariTide obesity program.",
+      "reason": "Fundamentals are solid (strong ROE, +52% forward EPS growth from cost discipline and easier comps) but the stock is already up +57% over the past year and Street price targets imply -6% downside from here, meaning the market has already priced in more than the visible growth path supports; wait for a better entry rather than chase.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "BIIB": {
+      "advance": true,
+      "quality": 3,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "Legacy MS (multiple sclerosis) franchise in secular decline, being offset by Leqembi ramp and cost cuts"
+      ],
+      "one_line": "Neuroscience biotech turnaround: Leqembi (Alzheimer's) ramping and cost discipline improving margins, while legacy MS drugs decline.",
+      "reason": "Forward EPS inflection (+194%) is real (Leqembi ramp plus restructuring), but after a +55% run the Street only sees ~5% further upside, so full diligence should size how much of the good news is already in the 14.7x NTM multiple.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close, v1_verdict=attractive)"
+      ]
+    },
+    "GILD": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "Negative trailing margin/ROE in the data card suggests a one-time charge (litigation, impairment or IPR&D write-off) whose cause needs confirming"
+      ],
+      "one_line": "Dominant HIV franchise (Biktarvy) plus a newly launched twice-yearly PrEP drug (Yeztugo/lenacapavir) with blockbuster potential.",
+      "reason": "Yeztugo is a genuine new-growth catalyst (first long-acting HIV prevention shot) layered on a durable Biktarvy franchise; the negative trailing margin/ROE looks like a one-off charge rather than a core business problem, but the specific cause should be confirmed in full diligence given a 21.1x forward multiple assumes continued execution.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "INCY": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "Jakafi (largest product) faces patent expiry around 2028 - a known, longer-dated overhang"
+      ],
+      "one_line": "Profitable growth biotech (Jakafi, Opzelura, Niktimvo) with newly launched drugs driving accelerating revenue.",
+      "reason": "Revenue growth of +38% and 31% ROE reflect real new-launch momentum, not just cost cuts; after a +45% run the Street sees only modest further upside, so full diligence should weigh the durable growth against the looming Jakafi patent cliff.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "MRNA": {
+      "advance": false,
+      "quality": 2,
+      "growth": 2,
+      "price_vs_growth": 1,
+      "red_flags": [
+        "Deeply negative GAAP margin (-141%) and ROE (-39%), with cash burn still ongoing (cash target ~$4-5bn by YE2026, breakeven not targeted until 2028)",
+        "Core COVID/RSV vaccine franchise in secular decline; revenue growth near flat (+2%) despite huge prior-year comparisons",
+        "Street price targets imply roughly -40% downside from the current price even after a multi-year decline, per the data card"
+      ],
+      "one_line": "mRNA vaccine/therapeutics company still burning significant cash with a declining core COVID/RSV franchise and unproven pipeline optionality.",
+      "reason": "Analysts see meaningfully more downside than upside from here despite the stock already being far off its highs, and the fundamentals (deep unprofitability, flat revenue, cash burn through 2028) don't support a near-term re-rating; this looks like the price assumes more pipeline success (flu, RSV, personalized cancer vaccines with Merck) than is currently visible.",
+      "sources": [
+        "https://finance.yahoo.com/healthcare/articles/moderna-inc-mrna-q2-2026-190054476.html",
+        "https://www.sec.gov/Archives/edgar/data/0001682852/000168285226000150/mrna-20260630.htm"
+      ]
+    },
+    "REGN": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "Eylea/Eylea HD US net sales down ~45% y/y in Q2 2026 as multiple biosimilars (Sandoz, Alvotech/Teva, Biocon, Celltrion) launch through end-2026"
+      ],
+      "one_line": "Diversified biotech (Dupixent, Eylea HD, growing oncology/immunology pipeline) absorbing a real but well-flagged Eylea biosimilar wave.",
+      "reason": "Even with Eylea's steep biosimilar-driven decline, aggregate revenue is still growing +17% and forward EPS +51% because Dupixent and other franchises are more than offsetting it; 15.3x NTM P/E for that growth profile looks cheap, and the Eylea risk is already visible and quantifiable rather than a surprise.",
+      "sources": [
+        "https://www.fiercepharma.com/pharma/partners-alvotech-teva-eye-2026-eylea-biosimilar-launch-us-regeneron-settlement",
+        "https://www.sec.gov/Archives/edgar/data/0000872589/000087258926000025/regn-20260630.htm"
+      ]
+    },
+    "VRTX": {
+      "advance": true,
+      "quality": 5,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Near-monopoly cystic fibrosis franchise expanding into non-opioid pain (Journavx), gene therapy (Casgevy) and Type 1 diabetes.",
+      "reason": "27.6x NTM P/E is full but justified by one of the most durable moats and diversified pipelines in biotech; net cash balance sheet and 35% margins support continued reinvestment without financial risk.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "CAH": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "Historical opioid-distribution litigation, now under multi-year settlement payment plans already reflected in financials"
+      ],
+      "one_line": "One of the three dominant US drug wholesalers, diversifying into higher-margin nuclear/precision-health and at-home care segments.",
+      "reason": "Thin distributor margins (0.7%) are structural to the model, not a red flag; steady volume growth, buyback-driven EPS growth and 23% street upside make this worth a full look, especially the higher-margin diversification businesses.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "COR": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "Historical opioid-distribution litigation, now under multi-year settlement payment plans already reflected in financials"
+      ],
+      "one_line": "Drug wholesaler (formerly AmerisourceBergen) plus a growing specialty distribution and animal-health business.",
+      "reason": "Same oligopoly economics as its two large peers with a slightly better specialty mix; weak recent momentum (+4%) despite 20% street upside makes it worth a closer valuation look.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "HSIC": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "Long-running Dental Supply Antitrust Litigation (price-fixing allegations against Henry Schein, Patterson, Benco) - largely settled with other defendants but exposure history worth confirming is closed",
+        "2023 ransomware/cyber incident (resolved) shows some historical control weakness"
+      ],
+      "one_line": "Leading dental/medical products distributor (duopoly with Patterson in dental) with better margins than the pure drug wholesalers.",
+      "reason": "3% margin is meaningfully better than the drug distributors' sub-1% margins, and 8.9% ROE with 13.7% street upside is reasonable; higher leverage (3.4x net debt/EBITDA) and the legacy antitrust litigation are the two things full diligence should close out.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    },
+    "MCK": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "Historical opioid-distribution litigation, now under multi-year settlement payment plans already reflected in financials"
+      ],
+      "one_line": "Largest US drug distributor, increasingly also an oncology/biopharma services platform via US Oncology Network and specialty distribution.",
+      "reason": "The oncology/specialty platform gives McKesson a better growth and margin mix than a pure wholesaler, justifying a small premium (18.2x NTM P/E) to peers; steady mid-teens upside supports a full look.",
+      "sources": [
+        "data/triage_cards.csv (25 Sep 2026 close)"
+      ]
+    }
+  }
+}

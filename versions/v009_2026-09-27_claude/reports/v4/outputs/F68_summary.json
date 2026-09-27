@@ -1,0 +1,131 @@
+{
+  "agent": "F68",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "HSIC": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The largest US dental/medical distributor, raising guidance twice this year on a self-funded cost program, but carrying more debt than it looks at first glance.",
+      "kill_criteria": [
+        "Consolidated net debt/EBITDA (total debt incl. short-term borrowings ÷ TTM EBITDA) rises above 4.0x without a specific, disclosed deleveraging plan.",
+        "FY2026 guidance (non-GAAP EPS $5.29–$5.39, sales growth 4.5–5.5%, given 2026-08-04) is cut at the Q3 2026 or Q4 2026 release.",
+        "Consolidated gross margin falls below 30.5% for two consecutive quarters (versus the ~31–32% range held since 2024).",
+        "The value-creation program's disclosed run-rate savings fall short of the $125M by year-end 2026 target by more than 20% when next reported.",
+        "A new, material legal proceeding (antitrust, regulatory, or a fresh cyber incident) is disclosed in a subsequent 10-Q/10-K Legal Proceedings note."
+      ],
+      "key_adverse_facts": [
+        "Consolidated total debt (long-term debt/capital leases $2,438M plus short-term borrowings $1,024M at 2026-06-27) is materially larger than long-term debt alone; net debt/EBITDA ≈ 3.3x, matching the triage's own 3.4x figure -- confirmed, not overturned.",
+        "Short-term borrowings roughly doubled from $913M (Q3 2025) to over $1.0bn (Q1–Q2 2026), coinciding with continued open-market and accelerated share buybacks.",
+        "GAAP vs. non-GAAP gap is wide (FY2025 GAAP EPS $3.27 vs. non-GAAP $4.97, a 34% gap), driven mainly by acquisition intangible amortization and restructuring costs.",
+        "CEO Frederick M. Lowery has been in the role only since 2026-03-02 (succeeding Stanley M. Bergman after 35 years), so the value-creation program's execution has only two quarters of track record.",
+        "Q1 2026 operating cash flow was negative (-$97M, quarter-alone), a working-capital swing that reversed in Q2 2026 ($242M) -- not a trend, but a data point worth watching."
+      ],
+      "data_conflicts": [
+        "The triage flagged the legacy Dental Supply Antitrust Litigation and the 2023 ransomware/cyber incident as open red flags to close out; this dossier finds neither is disclosed as a pending/material matter in the FY2025 10-K's Note 17 (Commitments and Contingencies) -- only an immaterial opioid-supply-chain MDL (<0.4% of sales) is disclosed, and the cyber incident's insurance-recovery process itself concluded in Q1 2025. This dossier treats both triage-flagged items as closed, a confirmation/resolution rather than a conflict.",
+        "b1_live_scores.csv shows only a middling leverage percentile (pct_leverage 0.395) for HSIC; this dossier's own build of total debt (including short-term borrowings, which the model's leverage factor may not fully capture) puts net debt/EBITDA at ~3.3x, elevated for the sector -- worth flagging as a possible gap between the model's leverage read and the fuller balance-sheet picture."
+      ],
+      "next_earnings_date": "2026-11-03",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": {
+        "level": "med",
+        "reason": "the guidance-raise track record and the closed status of the triage's two named litigation/cyber red flags are strong and primary-source-verified, but the ~3.3x leverage (funded partly by fast-growing short-term borrowings) and the new CEO's short track record are genuine, unresolved sources of uncertainty this pass could not close out"
+      },
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for HSIC in v1_valuation_table.csv/v1_valuation.json (92 names, HSIC not among them), so there is nothing to reconcile. This dossier's own reverse DCF (10-year FCF growth solved against EV $12,931M, TTM FCF ~$569M, WACC 7.5%) implies only ~3.8%/year FCF growth for a decade -- below this dossier's base case (mid-to-high-single-digit FCF growth once the $200M+ value-creation program layers in atop the newly-raised 4.5-5.5% sales-growth guide) -- hence 'below', i.e., statistically cheap. INCLUDE-SMALL rather than INCLUDE reflects the ~3.3x leverage and the new CEO's short track record as specific, named reservations, not a valuation disagreement."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.04,
+        "base": 0.10,
+        "bull": 0.18,
+        "scenario_basis": "Starting point: $86.37 close, FY2025 non-GAAP diluted EPS $4.97, FY2026 guided non-GAAP EPS $5.29-$5.39 (midpoint $5.34), NTM non-GAAP P/E ~16.2x, no dividend. Bear: the value-creation program stalls, distributor margin pressure returns, leverage rises further; multiple compresses toward 13-14x on flat-to-low-single-digit adjusted EPS growth. Base: guidance is delivered, adjusted EPS grows at a high-single-digit pace (~8%/yr) as the $200M+ cost program layers in atop mid-single-digit organic growth; multiple re-rates modestly toward the historical ~17-18x range. Bull: cost-program savings exceed the disclosed target and organic growth accelerates further, adjusted EPS grows low-double-digit, multiple re-rates to the historical ~20x high. All annualised over 3 years; no dividend to add."
+      }
+    },
+    "HSY": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "One of America's two big chocolate makers, recovering fast from a cocoa-cost shock, but much of 2026's growth is a snapback off a low base.",
+      "kill_criteria": [
+        "FY2026 guidance (adjusted EPS growth 32.5-35%, net sales growth 4.5-5%, given 2026-07-30) is cut at the Q3 2026 release.",
+        "Cocoa or other key commodity costs re-accelerate materially, evidenced by adjusted gross margin declining for two consecutive quarters from the H1 2026 level.",
+        "Net debt/EBITDA (consolidated) rises above 2.5x without a specific, disclosed acquisition or buyback rationale.",
+        "The common-stock dividend ($1.370/quarter, $5.480/yr) is cut or suspended.",
+        "Organic constant-currency net sales growth falls below 2% for two consecutive quarters (versus the 3-3.5% FY2026 guided floor)."
+      ],
+      "key_adverse_facts": [
+        "The FY2025 collapse (GAAP EPS -60.3%, adjusted EPS -32.7%, operating profit -50.3%) was driven by record cocoa costs; the entire FY2026 recovery narrative (guided adjusted EPS growth of 32.5-35%) is substantially a snapback off that artificially depressed base, not yet proven as a durable multi-year re-rate.",
+        "Trailing-twelve-month free cash flow (~$2,228M) is running above both FY2024 ($1,926M) and FY2025 ($1,823M) actuals -- this dossier treats it as likely inflated by a temporary working-capital/cocoa-cost-timing tailwind and uses a normalized ~$1,874M base for valuation instead.",
+        "Consolidated total debt has grown to ~$5,611M (net debt ~$4,820M, net debt/EBITDA ~1.8x), up from a materially lower base in 2024, funding continued buybacks, a flat (not grown) dividend through the crisis year, and the 2025 LesserEvil acquisition.",
+        "Cocoa is a volatile, weather- and geopolitically-sensitive commodity; a renewed price spike would directly reverse the current margin-recovery tailwind that the whole 2026 thesis depends on.",
+        "Q2 2026's GAAP EPS ($2.26) exceeded adjusted EPS ($1.90) -- an inverted gap this dossier did not fully decompose this pass, flagged as an open item."
+      ],
+      "data_conflicts": [
+        "None identified between b1 quant data and filings; the model's moderate composite (0.488, decile 5) and weak momentum score (fam_M 0.184) are consistent with this dossier's own read that the market has not yet fully re-rated the stock for the confirmed 2026 recovery."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": {
+        "level": "med",
+        "reason": "the guidance-raise track record and the FCF resilience through the FY2025 shock are strong and primary-source-verified, but the durability of the 32-35% adjusted-EPS-growth guide beyond 2026 (once the depressed base normalizes) is unproven, and cocoa-cost volatility is a structural, unhedgeable-in-full risk to the whole thesis"
+      },
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for HSY in v1_valuation_table.csv/v1_valuation.json (92 names, HSY not among them), so there is nothing to reconcile. This dossier's own reverse DCF (10-year FCF growth solved against EV $38,566M, normalized FCF ~$1,874M (FY2024-25 average, preferred over the likely-inflated TTM figure of $2,228M), WACC 7.0%) implies only ~1.25%/year FCF growth for a decade -- below this dossier's base case (mid-single-digit long-run FCF growth, ~4-6%, once the cocoa-cost tailwind normalizes into 2027-28) -- hence 'below'. INCLUDE-SMALL rather than INCLUDE reflects cocoa-price-reversal risk and rising leverage as specific, named reservations, not a valuation disagreement."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.02,
+        "base": 0.11,
+        "bull": 0.19,
+        "scenario_basis": "Starting point: $166.37 close, FY2025 adjusted EPS $6.31, FY2026 guided adjusted EPS $8.20-$8.52 (midpoint $8.36), NTM adjusted P/E ~19.9x, dividend $5.480/yr (~3.3% yield, held flat through FY2025). Bear: cocoa costs spike again or organic growth disappoints, adjusted EPS growth reverts to low-single-digit off this higher base, multiple compresses toward 16x (the trough seen during the cocoa crisis). Base: EPS growth normalizes to mid-to-high single digit (~7%/yr) after the 2026 snapback, multiple holds near 20x, dividend continues at ~3.3% yield. Bull: cocoa costs stay favorable and innovation/pricing sustain double-digit-plus EPS growth, multiple re-rates toward Hershey's historical 22-25x premium. All annualised over 3 years, dividends added undiscounted."
+      }
+    },
+    "LII": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A best-in-class HVAC compounder, cheap versus peers, but the July 2026 guidance cut shows its growth is turning more acquisition-driven and less organic.",
+      "kill_criteria": [
+        "FY2026 adjusted EPS guidance ($23.00-$24.00, given 2026-07-29) is cut again at the Q3 2026 or Q4 2026 release.",
+        "Home Comfort Solutions revenue does not show sequential stabilization (i.e., a second consecutive quarter of YoY decline worse than -7%) by Q1 2027.",
+        "Consolidated net debt/EBITDA rises above 2.5x as commercial paper continues to fund acquisitions, without a disclosed deleveraging plan.",
+        "Building Climate Solutions organic growth decelerates below 8% for two consecutive quarters (versus the 15-26% pace of the last two quarters).",
+        "Free cash flow for FY2026 comes in below the low end of the company's own guided $750M-$850M range."
+      ],
+      "key_adverse_facts": [
+        "FY2026 adjusted EPS guidance was cut at the Q2 2026 release (to $23.00-$24.00 from $23.50-$25.00, top end down 4%) even as revenue guidance was simultaneously raised (to ~8% growth from 6-7%, driven by a bigger acquisition contribution) -- the incremental growth on offer is increasingly acquisition-funded and margin-diluting, not pure organic operating leverage. The triage's own red-flag list did not capture this cut.",
+        "Home Comfort Solutions, still the larger segment (~61% of Q2 2026 revenue), fell 7% YoY in Q2 2026 and 10% in Q1 2026, with new-construction-driven softness management itself calls a 'meaningful headwind'.",
+        "Commercial paper (the funding source for a string of recent bolt-on acquisitions -- Duro Dyne, Supco, Comfort-Aire, Century, Heat Controller) rose 82% in six months, from $226.0M (2025-12-31) to $412.0M (2026-06-30).",
+        "The company runs on a very thin equity base (~$1.3bn stockholders' equity against a ~$13bn market cap) -- the headline ~72% ROE the model reads is in large part a capital-structure artefact of aggressive historical buybacks, not solely an operating-margin phenomenon; the model's own Quality family score (0.117) is well below what the ROE alone would suggest and this dossier does not overturn that lower read.",
+        "The company changed its inventory accounting method from LIFO to FIFO effective Q4 2025; all 2025 comparatives in company releases (and this dossier) are on the restated FIFO basis, which should be kept in mind for any YoY comparison to pre-2025 figures."
+      ],
+      "data_conflicts": [
+        "The triage flagged 'R454B refrigerant transition cost/complexity' as a red flag; this dossier finds the FY2025 10-K states the transition to GWP<=700 refrigerants 'became effective January 1, 2025', i.e., it is a completed, already-lapped transition being reported on, not a forward risk -- a correction versus the triage's forward-looking framing.",
+        "b1_live_scores.csv shows a very high pct_roe (0.94) but a low overall Quality family score (fam_Q 0.117, dragged down by pct_leverage 0.30 and pct_asset_growth 0.14); this dossier confirms the model's lower Quality read is the more calibrated one given the thin equity base and the rising commercial-paper-funded leverage, rather than treating the headline ROE as straightforwardly bullish."
+      ],
+      "next_earnings_date": "2026-10-21",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": {
+        "level": "med",
+        "reason": "Building Climate Solutions' growth and margin trajectory are strong and primary-source-verified, and the R454B risk the triage flagged is confirmed resolved, but the July 2026 guidance cut and the rising commercial-paper-funded leverage for M&A are genuine, unresolved sources of uncertainty this pass could not close out"
+      },
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for LII in v1_valuation_table.csv/v1_valuation.json (92 names, LII not among them), so there is nothing to reconcile. This dossier's own reverse DCF (10-year FCF growth solved against EV $14,518M, TTM FCF ~$741M, WACC 8.5%) implies ~4.3%/year FCF growth for a decade -- below this dossier's base case (high-single-digit long-run FCF growth: Building Climate Solutions compounding at mid-teens organic plus bolt-on M&A, Home Comfort Solutions returning to low-single-digit growth once the residential destock cycle turns) -- hence 'below', though this is a closer call than usual given the recent guidance cut is a genuine near-term negative."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.07,
+        "base": 0.10,
+        "bull": 0.20,
+        "scenario_basis": "Starting point: $373.77 close, FY2025 GAAP diluted EPS $22.79 (FIFO-restated), FY2026 guided adjusted EPS $23.00-$24.00 (midpoint $23.50), NTM P/E ~15.9x, dividend ~$5.20/yr estimated (~1.4% yield). Bear: Home Comfort Solutions stays weak into 2027, further guidance cuts follow, multiple compresses toward 12-13x on roughly flat adjusted EPS. Base: Home Comfort Solutions stabilizes by 2027 as guided, Building Climate Solutions continues its mid-teens-plus organic pace, adjusted EPS resumes high-single-to-low-double-digit growth off the depressed 2026 base, multiple holds near 16x. Bull: residential demand recovers strongly (e.g., on rate cuts), Building Climate Solutions sustains outsized growth, multiple re-rates toward the historical ~20x premium. All annualised over 3 years, dividends added undiscounted."
+      }
+    }
+  }
+}

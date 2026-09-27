@@ -1,0 +1,106 @@
+{
+  "agent": "F94",
+  "as_of": "2026-09-27",
+  "market_cutoff": "2026-09-25 close",
+  "tickers": {
+    "VTR": {
+      "verdict": "INCLUDE-SMALL",
+      "horizon": "24-36 months",
+      "v1_verdict": null,
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "note": "No V1 valuation row exists for VTR in v4/outputs/v1_valuation_table.csv; v1_verdict set to null per instructions. Comparison below is F94's own reverse-DCF implied growth vs. F94's own base-case growth assumption."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.055,
+        "base": 0.054,
+        "bull": 0.137
+      },
+      "scenario_basis": "Starting normalized FFO/sh $3.875 (2026 guide midpoint); bear FFO growth 3%/yr + P/FFO compresses to 16x + 2.3% dividend; base FFO growth 7%/yr + P/FFO 20x + 2.3% dividend; bull FFO growth 12%/yr + P/FFO holds 22x + 2.3% dividend.",
+      "kill_criteria": [
+        "Same-store SHOP NOI YoY growth < 8% for two consecutive quarters (vs. 16% now)",
+        "Consolidated net debt/EBITDA > 6.0x without rating affirmation (vs. 5.3x now)",
+        "Normalized FFO guidance cut (not just held) at any quarterly release",
+        "Dividend payout ratio (div/normalized FFO) > 75% (vs. ~50% now)",
+        "Material weakness, restatement, or going-concern language in a 10-Q/10-K"
+      ],
+      "key_adverse_facts": [
+        "Consolidated net debt/EBITDA ~5.3x, above typical REIT comfort zone and arguably too high given RIDEA/SHOP NOI is less bond-like than triple-net rent",
+        "Shares outstanding grew ~13.7% from Q1 2025 to Q2 2026 funding the stepped-up $4.5B 2026 investment program, diluting per-share metrics",
+        "GAAP EPS/P/E (headline 124x) is not a usable valuation metric for this business; normalized FFO is required",
+        "SHOP same-store NOI growth of 16-18% YoY cannot mathematically persist long-term; deceleration is the base case for 2027+ and may not be fully priced"
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv leaves the leverage percentile field blank/missing for VTR, so the quant quality score does not penalize the 5.3x leverage flagged in triage and confirmed here"
+      ],
+      "next_earnings_date": "~2026-10-30 (estimated, based on prior-year cadence; not yet confirmed via company IR calendar)",
+      "confidence_in_thesis": "medium (guidance and same-store NOI figures for this pass were sourced via reputable secondary aggregation of the Q2 2026 earnings call rather than the raw 8-K exhibit; core GAAP financials and balance-sheet figures are primary-sourced from SEC XBRL/10-Q filings)"
+    },
+    "WAB": {
+      "verdict": "WATCH",
+      "horizon": "12-24 months",
+      "v1_verdict": null,
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "in_line",
+        "note": "No V1 valuation row exists for WAB in v4/outputs/v1_valuation_table.csv; v1_verdict set to null per instructions."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.135,
+        "base": 0.036,
+        "bull": 0.170
+      },
+      "scenario_basis": "Starting 2026 adjusted EPS guide midpoint $10.75; bear EPS growth 2%/yr + P/E compresses to 16x + ~0.6% dividend; base EPS growth 10%/yr + P/E compresses to 22x (from 26.8x now) + ~0.6% dividend; bull EPS growth 16%/yr + P/E holds ~27x + ~0.6% dividend.",
+      "kill_criteria": [
+        "12-month backlog growth turns negative YoY for two consecutive quarters (vs. +11.3% now)",
+        "Adjusted EPS guidance cut (not just held) at any quarterly release",
+        "Consolidated net debt/EBITDA > 3.5x (vs. ~2.6x approx. now)",
+        "Freight-services (recurring) revenue growth decelerates below 5% YoY for two consecutive quarters",
+        "Any reopened antitrust/competitive-conduct litigation or regulatory inquiry involving the Progress Rail duopoly"
+      ],
+      "key_adverse_facts": [
+        "Reverse-DCF implied 10-year adjusted-EPS growth (~8.8%/yr) is within ~1.2pp of the base-case growth assumption (~10%/yr) -- essentially no margin of safety at the current 26.8x adjusted P/E",
+        "Total debt (LongTermDebt tag) grew ~64% in five quarters (Q1 2025 to Q2 2026, $4.0B to $6.6B) while share buybacks slowed sharply (from $1,097M in FY2024 to $223M in FY2025)",
+        "GAAP-vs-adjusted EPS gap is material (Q2 2026: GAAP $2.33 vs. adjusted $2.76, ~18% gap), driven mainly by acquisition-intangible amortization and restructuring -- flagged, not blended, per instructions",
+        "Stock is +43% over the trailing 12 months per triage, meaning most of the original value-vs-growth gap identified at triage has already closed"
+      ],
+      "data_conflicts": [
+        "None material identified vs. b1/d4 quant data this pass; the model's own composite score (decile 6, mid-pack) is directionally consistent with this dossier's WATCH call despite strong fundamentals, because value/momentum/SUE sub-scores are all only moderate-to-weak"
+      ],
+      "next_earnings_date": "~2026-10-22 (estimated, based on prior-year cadence; not yet confirmed via company IR calendar)",
+      "confidence_in_thesis": "medium-high (GAAP financials, backlog, and guidance figures are primary-sourced from the SEC 10-Q and the 8-K press-release exhibit; the Progress Rail settlement terms and the Integration 3.0 cost-out program's delivery-to-date were not independently re-verified against primary filings this pass)"
+    },
+    "WEC": {
+      "verdict": "INCLUDE",
+      "horizon": "24-36 months",
+      "v1_verdict": null,
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "note": "No V1 valuation row exists for WEC in v4/outputs/v1_valuation_table.csv; v1_verdict set to null per instructions."
+      },
+      "scenario_returns_3y": {
+        "bear": 0.000,
+        "base": 0.105,
+        "bull": 0.159
+      },
+      "scenario_basis": "Starting 2026 EPS guide midpoint $5.56; bear EPS growth 3%/yr (equity-issuance dilution drag, regulatory lag) + P/E compresses to 15x + 3.5% dividend; base EPS growth 7.5%/yr (per management's guided 7-8% through 2030) + P/E holds ~18x + 3.5% dividend; bull EPS growth 9%/yr (large-load upside beyond plan) + P/E expands to 20x + 3.5% dividend.",
+      "kill_criteria": [
+        "Full-year EPS guidance cut (vs. maintained/raised) at any quarterly release",
+        "Announced large-load (data-center) capacity commitments reduced or cancelled by a named large customer (e.g. Microsoft, Vantage)",
+        "Rating-agency downgrade below the current A-/Baa1-area profile, or FFO/debt below stated 15% (S&P) / 16% (Moody's) targets for two consecutive periods",
+        "Common-equity issuance in a given year exceeds the guided $5.3-5.7B five-year pace by >25%",
+        "Adverse rate-case order in WI/IL/MI/MN reducing authorized ROE below ~9.5% or disallowing material planned capex"
+      ],
+      "key_adverse_facts": [
+        "Financing the $37.5B five-year capital plan requires ~$1.1B/year of common-equity issuance (2026), a real, ongoing per-share dilution offset to the guided 7-8% EPS growth",
+        "Approximate net debt/EBITDA ~6.1x (not the ideal metric for a regulated utility, but directionally high); the more sector-appropriate FFO/debt targets (S&P >15%, Moody's CFO-pre-WC >16%) and the A-/Baa1 rating were sourced via secondary aggregation this pass, not independently confirmed against the rating agencies' own releases",
+        "Large-load demand figures (2.6 GW, 3.5 GW through 2030) are company investor-material planning figures, not fully in-service, signed load -- data-center buildout plans have seen delays/cancellations industry-wide",
+        "Q2 2026 guidance was maintained, not raised -- the addendum's raise/maintain/cut framework should record this honestly rather than spun as a beat"
+      ],
+      "data_conflicts": [
+        "None material identified vs. b1/d4 quant data this pass; the model's own composite (decile 5, mid-pack, driven by very high quality fam_Q 0.91 but low momentum/SUE) is consistent with a steady, undramatic regulated compounder rather than a hot momentum name, matching this dossier's read"
+      ],
+      "next_earnings_date": "~2026-10-31 (estimated, based on prior-year cadence; not yet confirmed via company IR calendar)",
+      "confidence_in_thesis": "medium (core GAAP financials and balance-sheet figures are primary-sourced from SEC XBRL/10-Q filings; the credit-rating, FFO/debt-target, and large-load-pipeline figures driving the bull case were sourced via reputable secondary aggregation of the Q2 2026 earnings call and investor materials, not the raw 8-K/investor-day deck -- should be firmed up before increasing conviction further)"
+    }
+  }
+}

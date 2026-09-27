@@ -1,0 +1,33 @@
+{
+  "total": 84,
+  "criteria": {
+    "1": 8,
+    "2": 8,
+    "3": 8,
+    "4": 9,
+    "5": 8,
+    "6": 9,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "must_fix": [
+    "outputs/lead_j_sensitivity.json's bench_near_misses still reports only position_in_j_order/conviction/implied_vs_base/base_return, with no computed rank/score margin to the 20th held name under any ordering (criteria 3/6/7, carried unresolved from Loops 5 and 6). Fix: add a margin_to_20th field per ordering for all 128 eligible-but-not-held names and surface the closest few in FINAL_REPORT §6.",
+    "The requirement that a name must pass an independent fact-check before entering the full-conviction (10%-cap) tier is enforced only in code/lead_verify_gate.py, not written as a lettered rule alongside (a)-(l) in STATE.md (criterion 4/10, carried from Loop 6). Fix: add rule (m) to STATE.md documenting this explicitly, citing the gate script as its enforcement.",
+    "No committed regression test exists for the Loop-5 class of dashboard/audit-JSON mismatch bug; outputs/c1_consistency.json's own scope note says its checks are 'throwaway Python' re-derived by hand each loop (criterion 10, carried from Loop 6). Fix: commit a script that asserts dashboard/d4v.json's audits.loops matches audit/A*_loop*.json loop-by-loop on every build, wired into lead_verify_gate.py.",
+    "GDDY (3.1% weight, sole IT-sector holding) rests on a single reverse-DCF valuation leg with no systematic V1 cross-check (disclosed as outside V1's ~92-name coverage) (criterion 4/5, minor). Fix: add a second corroborating valuation approach (e.g., peer EV/FCF multiple) to GDDY.md section 7.",
+    "There is no running summary statistic (facts checked / PASS / MINOR / FAIL) across the full DA1-DA12 fact-check series, despite the PPG (DA12) and COR (DA10) FAILs showing the checking process is catching real errors (criterion 1, minor). Fix: add a cumulative tally to STATE.md or a dashboard tile."
+  ],
+  "fact_checks": [
+    {"ticker": "RJF", "claim": "Section 8 bull point 2 ('parent debt is under $1B') is no longer presented as a live, unqualified bull-case point", "source": "RJF.md section 8 (inline corrected sentence) and Correction section, per DA7", "status": "PASS"},
+    {"ticker": "MSCI", "claim": "Kill-criterion-2 comparator now correctly labels the true year-ago figure (Q2 2025, 94.4%) alongside the originally-cited Q4 2025 93.4%", "source": "MSCI.md section 9 inline correction and Correction section, per DA9", "status": "PASS"},
+    {"ticker": "COR", "claim": "Guidance-track-record wording corrected: initial FY2026 revenue guide was 5-7% (not 7-9%); Q1 FY2026 raised it to 7-9% (not 'reaffirmed unchanged')", "source": "COR.md section 5 correction note, cross-checked against cited 8-K Ex-99.1 releases", "status": "PASS"},
+    {"ticker": "PPG", "claim": "Long-term debt at 30-Jun-2026 is $6,195m (corrected), not the originally stated $6,876m; net debt corrected to ~$5.37bn from ~$6.05bn", "source": "PPG.md Correction section (DA12), accession 0000079879-26-000252", "status": "PASS (FAIL properly disclosed and corrected)"},
+    {"ticker": "EXC", "claim": "FY2026 adjusted operating EPS guidance ($2.81-$2.91) affirmed unchanged at both Q1 2026 and Q2 2026 checkpoints, never cut", "source": "DA11 fact-check against Exelon 8-K Ex-99.1 releases, accessions 0001109357-26-000014/000063/000077", "status": "PASS"},
+    {"ticker": "USB", "claim": "Basel III standardized CET1 ratio 10.8% (Q2 2026) is explicitly scoped as consolidated U.S. Bancorp, not the U.S. Bank N.A. subsidiary", "source": "DA12 fact-check against USB 8-K Ex-99.1, accession 0000036104-26-000039", "status": "PASS"},
+    {"ticker": "USB", "claim": "ROE 14.0% and ROTCE 18.7% correctly distinguished as separate reported metrics; the model's own roe field (12.11%) flagged as a non-matching proxy", "source": "DA12 fact-check, same USB 8-K Ex-99.1", "status": "PASS"},
+    {"ticker": "GDDY", "claim": "Reverse DCF: EV $14.89bn off base FCF $1.8bn (FY26 guide) implies roughly -7.7%/yr FCF decline priced in, against an evidence-based base case of positive mid-single-digit FCF growth", "source": "GDDY.md section 7, arithmetic re-derived by hand against stated WACC 8.5% / terminal growth 3% inputs", "status": "PASS"},
+    {"ticker": "N/A (portfolio construction)", "claim": "Sleeve weights sum to 100% and Financials sector sits at exactly the 25% cap, not over it", "source": "FINAL_REPORT.md section 6 weight table, re-summed by hand (Financials: USB 5.6 + MA 5.7 + AXP 4.6 + PGR 4.6 + HBAN 4.5 = 25.0%)", "status": "PASS"}
+  ]
+}

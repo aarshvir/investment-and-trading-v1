@@ -1,0 +1,105 @@
+{
+  "agent": "F98",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "PTC": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "PLM/CAD software maker whose reported revenue drop is just a divested-unit accounting artifact, while real ARR growth is 9%+ and beating raised guidance.",
+      "kill_criteria": [
+        "Constant-currency ARR growth (ex-divested businesses) falls below 6% YoY for two consecutive quarters.",
+        "Consolidated net debt (LT debt less cash, per 10-Q balance sheet) rises above $2.0B without a corresponding step-up in FY run-rate FCF guidance.",
+        "FY guidance is cut (not just reaffirmed/raised) in any quarterly release.",
+        "Non-GAAP operating margin (currently guided ~41%) compresses below 36% for two consecutive quarters.",
+        "Any 8-K disclosure of a material cybersecurity incident, restatement, or auditor change (none identified as of this review)."
+      ],
+      "key_adverse_facts": [
+        "Q1'26 GAAP EPS of $4.98 includes a one-time $463M pre-tax gain on the Kepware/ThingWorx sale; GAAP EPS is not comparable across quarters this fiscal year.",
+        "As-reported revenue is guided down 2% to flat for FY26 due to lapping the divested businesses, which will keep creating headline optics that look like decline even though ARR is growing.",
+        "Long-term debt rose from $1,172.7M (2025-12-31) to $1,398.2M (2026-06-30), partly to fund an outsized $525M Q3'26 buyback.",
+        "Share-based compensation and Form 4 insider-selling patterns were not reviewed this pass (time-boxed gap)."
+      ],
+      "data_conflicts": [
+        "b1 composite ranks PTC only decile 5/10 (live_rank 290) because GAAP-based momentum/ebit_ev sub-factors are depressed by the Q2'26 divestiture accounting; the underlying ARR/quality trend is stronger than the composite implies."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (guidance has been raised twice consecutively and ARR growth beat its own range, but the FY26 GAAP EPS is contaminated by a one-time gain and revenue optics will remain confusing for a few more quarters, which could delay re-rating)",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No PTC row exists in v1_valuation_table.csv, so there is no systematic model to reconcile against; this agent's own reverse-DCF implies ~3.3%/yr perpetual growth priced in at $138.12, versus a base case of 7-8%/yr ARR/FCF growth, so implied growth is below base case, supporting a cheap view."
+      },
+      "scenario_returns_3y": {"bear": -0.06, "base": 0.12, "bull": 0.24},
+      "scenario_basis": "Starting point: FY26 non-GAAP EPS guide midpoint ~$8.15 and FY26 FCF guide midpoint $850M on a $14.99B market cap (16.9x P/E, 5.7% FCF yield); bear = ARR growth decelerates to 3-4% and multiple compresses to 13x; base = ARR/FCF growth normalizes to 7-8%/yr with multiple flat to slightly higher toward 18x; bull = ARR growth holds near 9% and multiple re-rates toward 22x on lapping the divestiture-driven revenue optics; no dividend, buyback-supported share count assumed roughly flat to down modestly in all cases."
+    },
+    "ROP": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Diversified vertical-market software conglomerate at a rare discount to its own history, but now funding buybacks with a lot more debt than before.",
+      "kill_criteria": [
+        "Consolidated net debt / annualized adjusted EBITDA rises above 3.5x (currently ~3.1x) without a corresponding acceleration in adjusted FCF growth.",
+        "Adjusted DEPS guidance is cut (not just reaffirmed/raised) in any quarterly release.",
+        "Organic revenue growth falls below 3% YoY for two consecutive quarters (currently guided ~6%).",
+        "Any credit-rating downgrade action tied to the debt-funded buyback program.",
+        "A material adverse resolution or write-down of the residual Indicor minority stake."
+      ],
+      "key_adverse_facts": [
+        "Consolidated long-term debt grew from $6,457.0M (2025-03-31) to $10,601.1M (2026-06-30), a 64% increase in five quarters, largely to fund buybacks.",
+        "Net debt / annualized adjusted EBITDA is now approximately 3.1x, up materially from Roper's historically much lower leverage.",
+        "GAAP EPS ($11.62 in Q2'26) is dominated by a volatile, non-cash fair-value gain on the Indicor minority investment and is not usable for trend analysis; only adjusted DEPS ($5.38 in Q2'26) is comparable.",
+        "Indicor's pending divestiture of its instrumentation businesses is an unresolved complexity whose proceeds/timing are explicitly excluded from Roper's own guidance."
+      ],
+      "data_conflicts": [
+        "b1's momentum and SUE percentiles for ROP are weak (~0.20 each) partly because they are computed on GAAP EPS, which has become highly noisy since the Indicor minority stake began being marked to fair value; this understates the underlying adjusted-earnings trend."
+      ],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (valuation discount and recurring-revenue quality are genuine and durable, but the sharp rise in debt-funded buybacks is a real change in capital-allocation character that this dossier could not fully resolve in one pass)",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No ROP row exists in v1_valuation_table.csv, so there is no systematic model to reconcile against; this agent's own reverse-DCF implies ~2.3%/yr perpetual growth priced in at $358.56 (16.1x NTM adjusted P/E), versus a base case of 7-9%/yr adjusted FCF-per-share growth, so implied growth is below base case, supporting a cheap view, tempered by the leverage reservation."
+      },
+      "scenario_returns_3y": {"bear": -0.04, "base": 0.11, "bull": 0.19},
+      "scenario_basis": "Starting point: FY26 adjusted DEPS guide midpoint $22.225 on $358.56 price (16.1x P/E); bear = leverage concerns cause multiple compression to 13x alongside organic growth slowing to ~3%; base = adjusted DEPS compounds ~8%/yr (organic ~5-6% plus bolt-on M&A) with multiple flat to modestly higher toward 17-18x; bull = deleveraging post-Indicor-instrumentation-sale plus continued 8%+ adjusted DEPS growth re-rates the multiple toward 20x; no meaningful dividend yield in any case."
+    },
+    "STZ": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "America's top-selling imported-beer maker (Modelo, Corona) at a cheap multiple as depletions stabilize, clouded by an unresolved securities lawsuit and a CEO transition.",
+      "kill_criteria": [
+        "Beer depletions turn negative by more than -2% YoY for two consecutive quarters, reopening the FY26-style demand shock.",
+        "An adverse ruling or settlement in the Meza securities class action that results in a disclosed material liability or admission.",
+        "Consolidated net debt/comparable EBITDA rises above 3.5x (target/current ~3.0x).",
+        "FY2027 comparable EPS guidance ($11.20-$11.90) is cut in any subsequent quarterly release.",
+        "The disclosed CEO transition results in a strategy change materially deviating from the current beer-first capital-allocation priorities."
+      ],
+      "key_adverse_facts": [
+        "Active federal securities class action (Meza v. Constellation Brands, W.D.N.Y. 6:25-cv-6107) alleging misleading statements about the beer business; motion to dismiss argued July 22, 2026 with no ruling found in filings reviewed.",
+        "Related derivative suits (Silva, Mason, Wasserman) consolidated/stayed pending the Meza outcome.",
+        "10-Q explicitly lists a President/CEO transition as a named forward-looking risk factor; current signer of the Q1 FY2028 release is a different CEO than the one named as a Meza defendant, and this dossier could not fully verify the current governance status this pass.",
+        "Beer depletions, while much improved (-0.3% in the latest quarter vs -4% to -2% a year earlier), are still negative, and remain exposed to Hispanic-consumer-spending and immigration-enforcement dynamics outside management's control."
+      ],
+      "data_conflicts": [
+        "b1's factor row for STZ is marked insufficient_families_no_composite (Value/Momentum/SUE families are blank), so the pre-registered quant model has no real opinion on this name; its advancement rested on qualitative triage and price data, not a cross-validated composite."
+      ],
+      "next_earnings_date": "2026-10-06",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "low-medium (the beer-demand stabilization and cheap valuation are real and evidence-based, but the unresolved securities litigation and CEO-transition risk factor are genuine, unquantifiable overhangs that were not fully resolved in this pass)",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No STZ row exists in v1_valuation_table.csv, so there is no systematic model to reconcile against; this agent's own reverse-DCF implies roughly -0.4%/yr perpetual growth priced in at $113.63 (9.8x NTM comparable P/E), below this agent's 0-2%/yr base case (which itself is close to management's own FY2027 guide of -1% to +1% organic growth), so implied growth is at/below base case even though the litigation and CEO-transition overhangs keep the verdict at INCLUDE-SMALL rather than full INCLUDE."
+      },
+      "scenario_returns_3y": {"bear": -0.10, "base": 0.09, "bull": 0.18},
+      "scenario_basis": "Starting point: FY2027 comparable EPS guide midpoint $11.55 on ~$19.6B approximate market cap (9.8x P/E, ~8.4% approximate FCF yield); bear = adverse Meza ruling plus renewed beer-depletion declines (back toward -3%/yr) and multiple compression to ~7x; base = depletions stabilize near flat (0-2%/yr) with multiple holding near 10x plus the ~3.7% dividend yield; bull = beer share gains resume, wine-and-spirits turnaround adds growth, and litigation is dismissed, re-rating the multiple toward 12-13x."
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "agent": "F79",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "AMT": {
+      "verdict": "INCLUDE-SMALL",
+      "horizon": "12-36 months",
+      "thesis_one_line": "The world's largest cell-tower landlord, raising guidance twice this year even as management calls 2026 the growth trough before data-center demand reaccelerates it.",
+      "kill_criteria": [
+        "2027 AFFO/share growth guidance issued below +5% at the Q4 2026 call",
+        "net debt/EBITDA rises above 5.0x for two consecutive quarters",
+        "CoreSite revenue growth falls below 8% y/y for two consecutive quarters",
+        "organic tenant billings growth (ex-DISH) falls below 5% for two consecutive quarters",
+        "a further guidance cut (not raise) at any 2026 quarterly release"
+      ],
+      "key_adverse_facts": [
+        "Management itself frames 2026 as the AFFO/share growth trough (~3% guided growth) - the Q14 triage's 'comp noise, not a demand problem' framing understates a real, disclosed deceleration",
+        "Net leverage 4.9x, at the top of AMT's own 3-5x target band",
+        "International (ex-US, ex-India) tower economics remain lower-return than the US book"
+      ],
+      "data_conflicts": [
+        "Q14_triage.json calls the EPS deceleration 'comp noise, not a demand problem'; the Q2 2026 release instead explicitly attributes it to DISH-related churn and elevated refinancing costs, calling 2026 a trough year - a real, management-acknowledged growth slowdown, not noise"
+      ],
+      "next_earnings_date": "2026-10-29",
+      "confidence_in_thesis": "medium - guidance raise and reverse-DCF support inclusion, but 2027 reacceleration is a forecast, not yet delivered",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for AMT; at ~15.4x 2026E AFFO/share (below AMT's own 18-24x historical band), the price implies roughly flat-to-low-single-digit AFFO growth, at or below my base case of mid-single-digit 2026 growth reaccelerating toward high-single-digit in 2027."
+      },
+      "scenario_returns_3y": {"bear": -0.03, "base": 0.09, "bull": 0.17},
+      "scenario_basis": "Base: ~$11.00 2026E AFFO/share growing ~7%/yr as DISH churn laps and CoreSite sustains ~15% growth, exit multiple ~17x AFFO (below own 10y median) plus ~3.2% dividend yield; bear assumes multiple compression to 14x on stalled reacceleration; bull assumes multiple re-rates to 20x on delivered reacceleration."
+    },
+    "BRK-B": {
+      "verdict": "INCLUDE",
+      "horizon": "36+ months",
+      "thesis_one_line": "Warren Buffett's conglomerate, now run by Greg Abel, who just flipped from 14 straight quarters of net stock-selling to roughly $20 billion of net buying.",
+      "kill_criteria": [
+        "net equity buying reverses to net selling for two consecutive quarters without a stated reason",
+        "buybacks drop back below $1B/quarter while cash exceeds $350B",
+        "BNSF or Berkshire Hathaway Energy operating earnings decline y/y for two consecutive quarters",
+        "an insurance reserve strengthening (adverse development) exceeding $1B in a single quarter",
+        "Abel or another key successor departs"
+      ],
+      "key_adverse_facts": [
+        "Cash pile still $365.5B - even after this quarter's acceleration, capital deployment has only just begun to normalize",
+        "Succession/capital-allocation judgment is now concentrated in one CEO with far less track record than Buffett's six decades",
+        "Conglomerate discount can persist regardless of underlying earnings quality"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-11-07",
+      "confidence_in_thesis": "high - balance sheet quality and this quarter's capital-allocation signal are both primary-sourced and unambiguous",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for BRK-B; Berkshire is not a clean single-multiple story, so I use management's own capital-allocation signal (buybacks +19x sequentially, ~$20B net equity buying after 14 quarters of net selling) as evidence price is at or below intrinsic value - implied growth at/below my base case of high-single-digit operating-earnings compounding."
+      },
+      "scenario_returns_3y": {"bear": 0.02, "base": 0.09, "bull": 0.15},
+      "scenario_basis": "Base: operating earnings compounding ~8-9%/yr (float growth, BHE capex build-out, BNSF pricing) with continued buybacks at current pace, no material multiple change on ~1.3-1.4x book; bear assumes capital-allocation paralysis and a market drawdown compressing the multiple; bull assumes sustained aggressive deployment plus multiple re-rating toward 1.5x book."
+    },
+    "CB": {
+      "verdict": "WATCH",
+      "horizon": "12-36 months",
+      "thesis_one_line": "A top-tier global insurer with an 83.8% combined ratio and record investment income, but priced near the top of its own 10-year valuation range just as management flags softening pricing.",
+      "kill_criteria": [
+        "P&C combined ratio deteriorates above 88% for two consecutive quarters",
+        "net premiums written growth falls below 1% y/y for two consecutive quarters",
+        "a catastrophe-loss quarter exceeding 5 points of combined ratio",
+        "adjusted net investment income growth turns negative y/y",
+        "P/B multiple re-rates below the 50th percentile of its own 10-year history without a corresponding earnings miss (would flip toward INCLUDE)"
+      ],
+      "key_adverse_facts": [
+        "Management explicitly flagged 'softening market conditions and pricing pressure in some lines' on the Q2 2026 call - the tailwind behind 18.2% EPS growth is fading",
+        "P/B at the 88.7th percentile of CB's own 10-year history, leaving little room for multiple expansion",
+        "Q2 2026 revenue of $15.77B missed consensus by ~0.8% despite the EPS beat"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-21",
+      "confidence_in_thesis": "medium - underwriting quality is not in question; the disagreement is entirely about how much of it is already in the price",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "demanding",
+        "v1_base_3y": -0.0004,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "I agree with V1. P/B (1.78x) sits at the 88.7th percentile of CB's own history versus a peer median of 1.79x; V1's bear/base/bull 3yr annualised returns (-6.5%/0.0%/+13.4%) already price continued strong execution. Management's own disclosed pricing softness is the disconfirming signal the near-zero base case is capturing - implied growth is above my base case of mid-single-digit organic growth with a modestly rising combined ratio."
+      },
+      "scenario_returns_3y": {"bear": -0.06, "base": 0.00, "bull": 0.13},
+      "scenario_basis": "Base: ~$29 2026E core operating EPS growing ~5-6%/yr as pricing softens back toward mid-cycle, combined ratio drifting from 83.8% toward ~87%, exit P/B near current 1.78x plus ~1.2% dividend yield; taken from V1's own bear/base/bull framework (v1_valuation_table.csv, CB row) which I endorse rather than override."
+    }
+  }
+}

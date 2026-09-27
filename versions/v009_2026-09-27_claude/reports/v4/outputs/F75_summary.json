@@ -1,0 +1,121 @@
+{
+  "agent": "F75",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "FE": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Ohio-area regulated electric utility rebuilding trust after a settled bribery scandal, priced for far less growth than its own guidance.",
+      "kill_criteria": [
+        "FY2026 Core EPS guidance cut below the current $2.62 low end in any quarterly release.",
+        "Consolidated net debt/EBITDA rises above 5.5x (per the 10-Q debt schedule) without a disclosed, credible deleveraging plan tied to Energize365 financing.",
+        "An adverse verdict, or new DOJ/SEC action, arising from the January 2027 criminal trial of former executives.",
+        "A single unplanned equity issuance diluting shares outstanding by more than 5% versus the financing plan disclosed at the time of the $36bn capital-plan announcement.",
+        "Two additional consecutive quarters of GAAP operating losses (as derived for Q4 2025) without a primary-source explanation in the 10-K/10-Q reconciliation."
+      ],
+      "key_adverse_facts": [
+        "TTM free cash flow is approximately -$2.01bn; the 5-year capital plan was just raised ~30% to $36bn, and financing is not yet fully disclosed.",
+        "Derived Q4 2025 GAAP operating loss (~-$24M) and net loss (~-$49M), despite a positive full-year Core (non-GAAP) EPS of $2.55.",
+        "Guidance was not raised at either Q1 or Q2 2026 despite ~10%+ revenue growth in both quarters.",
+        "A criminal trial of two former executives (Chuck Jones, Mike Dowling) is set for jury selection 21 January 2027, and the current 10-Q references an ongoing securities class action without a stated resolution."
+      ],
+      "data_conflicts": [
+        "The Q4 2025 GAAP operating/net loss is derived by subtracting nine-month YTD results from the audited FY2025 10-K total (FirstEnergy does not separately tag a discrete Q4 in XBRL); the exact driver is unconfirmed from a primary source in this session.",
+        "SEC XBRL companyfacts is one quarter stale (data current only through the 10-Q filed 2026-04-28) versus the actual latest 10-Q (filed 2026-07-28); Q2 2026 operating/net income were not available in machine-readable form and EPS was taken from the earnings-release exhibit instead."
+      ],
+      "next_earnings_date": "2026-10-21",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium — reverse-DCF margin of safety and resolved corporate-level HB6 items are solid, but negative free cash flow and the newly enlarged capital plan create real dilution risk that is not yet resolved",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for FE (outside V1's 69-name universe). The analyst's own reverse DCF implies only a ~3.3%/yr 10-year Core EPS CAGR to justify the price, well below management's own guided 6-8%/yr.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": 0.0316,
+        "base": 0.1131,
+        "bull": 0.1539
+      },
+      "scenario_basis": "FY2026 guided Core EPS midpoint $2.72; bear 3%/base 7%/bull 9% EPS CAGR; exit P/E 14x/16x/17x; dividend (~68% payout, currently $1.86/sh, 4.3% yield) added as cash return each year; 7.8% discount rate."
+    },
+    "GNRC": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Backup-generator maker with a real, SEC-filed Amazon data-center supply deal, but the stock jumped 40% on the news and now prices in more than a fair base case.",
+      "kill_criteria": [
+        "Residential segment net sales decline resumes or deepens for two consecutive quarters.",
+        "The disclosed data-center/hyperscale order backlog (currently $1.6bn per the Q2 2026 release) fails to grow, or is reduced/cancelled, in a subsequent 10-Q or 8-K.",
+        "FY2026 adjusted EBITDA margin guidance is cut below the current 20.0%-21.0% range.",
+        "Net debt/adjusted EBITDA rises above 3.0x (from ~1.4x currently) without a clearly disclosed link to funding confirmed hyperscale capacity.",
+        "A future filing shows Amazon's cumulative gross payments materially missing the disclosed $2.4bn 2027-2028 initial-delivery plan (the warrant-vesting disclosure is the natural tripwire)."
+      ],
+      "key_adverse_facts": [
+        "The core Residential segment is still shrinking year-over-year (-2% in Q2 2026, +1% in Q1 2026) — the home-standby recovery the triage flagged for verification has not materialized.",
+        "Only $2.4bn of the headline '$8bn' Amazon framework is delivery-dated (2027-2028); the remainder is unproven optionality.",
+        "Approximately 150bps of the FY2026 adjusted EBITDA margin guidance raise is an explicitly one-time Section 301 tariff refund, not organic operating leverage.",
+        "Share buybacks were paused (zero repurchases in Q1 and Q2 2026) despite a new $500M, 24-month authorization approved in February 2026."
+      ],
+      "data_conflicts": [
+        "Adjusted EPS was only available from primary sources for the two most recent quarters plus Q4 2025; older quarters in the 8-quarter table are GAAP-only from SEC XBRL.",
+        "The Q2 2026 10-Q references Zawaski et al. v. General Power Systems, Inc. litigation without a visible exposure amount in the excerpt reviewed."
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "low-medium — the Amazon catalyst is verified and economically real (warrant vesting is tied to actual payments), but only a fraction of the disclosed framework is delivery-dated and the reverse DCF shows limited margin of safety after the 40% single-day re-rating",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for GNRC (outside V1's 69-name universe). The analyst's reverse DCF implies a ~13.5%/yr 10-year adjusted-EPS CAGR to justify the price, above an honest base case of ~10.5%/yr built from the confirmed 2027-2028 delivery schedule plus a flattish Residential segment.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.1669,
+        "base": -0.0186,
+        "bull": 0.1584
+      },
+      "scenario_basis": "FY2026E adjusted EPS ~$8.10; bear 2%/base 10.5%/bull 22% EPS CAGR; exit P/E 14x/18x/22x; no dividend; 9.5% discount rate reflecting beta 1.91."
+    },
+    "HPE": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Server and networking OEM whose AI-server and Juniper-networking businesses keep beating raised guidance, at a valuation still below a fair base case.",
+      "kill_criteria": [
+        "Non-GAAP EPS guidance cut from the current FY2026 $3.75-$3.85 range in any subsequent quarterly release.",
+        "Networking segment (Juniper) growth decelerates sharply (e.g., below 20% YoY) once the Juniper base is fully in both comparison periods.",
+        "Consolidated net debt/EBITDA (per the 10-Q's own debt schedule) rises above ~2.5x without a disclosed deleveraging path.",
+        "Disclosed evidence of AI-server order/backlog growth stalling, or loss of a major hyperscale customer.",
+        "Reopening of the Juniper merger review (e.g., a successful appeal of the August 2026 Tunney Act approval) that reimposes conditions beyond the already-completed Instant On divestiture."
+      ],
+      "key_adverse_facts": [
+        "FY2025 GAAP net income was only $57M on $34.3bn of revenue, with a full-year GAAP operating loss of -$437M; the FY2025 fiscal-Q2 GAAP net loss of $1.05bn (-$0.82/share) is not fully explained from primary sources reviewed in this session.",
+        "Net debt/EBITDA is approximately 2.0x from the debt-funded $14bn Juniper acquisition.",
+        "Actual Q3 FY2026 non-GAAP EPS beat the top of the company's own prior-quarter guidance by roughly 19%, suggesting guidance-setting is struggling to keep pace with demand — strong momentum but weaker predictability.",
+        "The DOJ-required Instant On WLAN divestiture drew reported bids as low as $1-15 million, and the presiding judge questioned whether the remedy was a genuine structural fix before approving the settlement in August 2026."
+      ],
+      "data_conflicts": [
+        "Organic (ex-Juniper) revenue growth cannot be cleanly separated from the primary sources reviewed; Networking's +74.9% YoY growth conflates organic demand with the Juniper acquisition entering the comparison base.",
+        "The FY2025 fiscal-Q2 non-GAAP EPS of $0.44 used in the dossier's table is implied algebraically from the FY2026 Q3 release's stated YoY change, not independently confirmed from the FY2025 10-Q.",
+        "next_earnings_date below is an estimate based on the prior year's reporting pattern; it is not yet confirmed by the company, and the d4 live snapshot carries no confirmed date for HPE."
+      ],
+      "next_earnings_date": "2026-12-03",
+      "horizon": "18-36 months",
+      "confidence_in_thesis": "medium — execution and guidance momentum are exceptional and verified across four consecutive releases, but the FY2025 fiscal-Q2 GAAP loss driver and the full debt-maturity schedule were not fully confirmed from primary sources this session",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for HPE (outside V1's 69-name universe). The analyst's reverse DCF implies a ~9.6%/yr 10-year EPS CAGR, below an honest ~13%/yr base case built from HPE's own newly issued FY2027 framework (16-20% EPS growth) decelerating over time — a modest, not steep, margin of safety.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.1254,
+        "base": 0.0785,
+        "bull": 0.1955
+      },
+      "scenario_basis": "FY2026 guided non-GAAP EPS midpoint $3.80; bear 2%/base 13%/bull 20% EPS CAGR; exit P/E 10x/14x/16x; dividend (~15% payout, currently $0.57/sh annualized) added as cash return each year; 8.8% discount rate reflecting beta 1.44."
+    }
+  }
+}

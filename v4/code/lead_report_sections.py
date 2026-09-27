@@ -145,14 +145,17 @@ _p10_1 = 1 - _ND().cdf(0.10 / TE); _p10_5 = 1 - _ND().cdf(0.10 / (TE / 5 ** 0.5)
 _nohist = list(_gf.get('no_price_tickers') or [])   # holdings with no price at the episode start (b2 'exclude' renormalises them out)
 L.append(f"**You asked for an all-stock portfolio of 5–20 US companies, researched across the whole S&P 500, with no index fund or T-bills for now. The answer is the {N} stocks in §6.**\n\n"
          f"- **How they were chosen.** Every S&P 500 company got at least a quick research pass. So far {_n_dil} of the strongest, including the eight largest AI and cloud companies, have been researched in full from SEC filings. "
-         f"Another {_n_queue} passed the quick pass and are queued for full research, so a later round may still displace some holdings. "
-         f"The {N} held are the best of the {_n_elig} that passed every test: {len(_full)} at full conviction, together {pct(sum(r['w'] for r in _full))} of the portfolio ({', '.join(r['t'] for r in sorted(_full, key=lambda r: -r['w']))}), and {N - len(_full)} at half conviction.\n"
+         + (f"Another {_n_queue} passed the quick pass and are queued for full research, so a later round may still displace some holdings. " if _n_queue else "As of the 25 Sep 2026 data cutoff that completes the queue: every company that passed the quick pass has full research (three second share classes are judged with their sibling). Research is not finished for good: each new quarter of results and each weekly review can change a verdict or the list. ")
+         + f""
+         + (f"The {N} held are the best of the {_n_elig} that passed every test: {len(_full)} at full conviction, together {pct(sum(r['w'] for r in _full))} of the portfolio ({', '.join(r['t'] for r in sorted(_full, key=lambda r: -r['w']))}), and {N - len(_full)} at half conviction.\n"
+            if len(_full) < N else f"The {N} held are the best of the {_n_elig} that passed every test, and all {N} are at full conviction.\n")
+         + f""
          f"- **What is excluded, and why.** Great companies whose price already assumes more growth than the evidence supports stay out, including Microsoft, Alphabet, Amazon, Meta, NVIDIA and Apple. §6 names every eligible stock not held and every top-45 name that failed, with the reason.\n"
          f"- **Honest odds.** In the base-case market (6% a year), with no assumed stock-picking edge: a {ppct(_ss5['p_total_return_gt_0'])} chance of a gain over 5 years, a {ppct(_ss5.get('p_beat_benchmark'))} chance of beating the S&P 500, and a {ppct(_ss5['p_drawdown_worse_than']['-20%'])} chance of a fall worse than 20% at some point along the way.\n"
          f"- **In past crises** (today's holdings on daily prices): {spct(_gf.get('sleeve'), 0)} in 2007–09 (S&P 500 {spct(_gf.get('spy'), 0)}); {spct(_cv.get('sleeve'), 0)} in the 2020 COVID crash ({spct(_cv.get('spy'), 0)}); {spct(_22.get('sleeve'), 0)} in 2022 ({spct(_22.get('spy'), 0)}). {', '.join(_nohist)} had no share price in 2007–09 ({pct(1 - (_gf.get('sleeve_real_data_share') or 1))} of the weight); that replay spreads their weight across the other holdings, so it measures {pct(_gf.get('sleeve_real_data_share'))} of today's portfolio{'. The old General Motors went bankrupt in 2009 (today’s GM listed in 2010), so the real 2007–09 loss for this portfolio would likely have been worse' if 'GM' in _nohist else ''}.\n"
          f"- **Beating the index by 10 points a year cannot be promised.** No rule tested here beat the S&P 500 over 2012–2026, and 86–93% of professional large-cap funds trail it over 10–20 years. The portfolio's own numbers size the gap: it strays from the index by about {TE_R}% a year, so with no real edge a single year 10 points ahead happens about {ppct(_p10_1)} of the time, but averaging 10 points ahead over 5 years has about a {ppct(_p10_5)} chance. "
          f"The edge on offer is depth and discipline: every company screened, prices checked against realistic growth, written exit triggers. That guards against overpaying and unexamined risks; whether it adds return is unproven.\n"
-         f"- **Before investing directly:** directly held US shares count toward the ~$60,000 US estate-tax threshold for non-US persons (at $100,000 all in stock you would be above it), and 30% of every US dividend is withheld: on this portfolio's {100 * DY:.1f}% yield (weight-averaged trailing dividend yield of the 20 holdings, 25 Sep 2026 snapshot `data/d4_live_snapshot.parquet`; recorded in `outputs/lead_params.json`) that costs about {0.30 * DY * 100:.2f}% of the portfolio a year (§8, §9).\n\n"
+         f"- **Before investing directly:** directly held US shares count toward the ~$60,000 US estate-tax threshold for non-US persons (at $100,000 all in stock you would be above it), and 30% of every US dividend is withheld: on this portfolio's {100 * DY:.1f}% yield (weight-averaged trailing dividend yield of the 20 holdings, a snapshot that moves with prices and payouts at every refresh; 25 Sep 2026 snapshot `data/d4_live_snapshot.parquet`; recorded in `outputs/lead_params.json`) that costs about {0.30 * DY * 100:.2f}% of the portfolio a year (§8, §9).\n\n"
          f"### If you later want less risk: the allocation view\n\n"
          f"The rest of this section keeps the earlier analysis. It holds the same stocks as a bounded satellite next to an S&P 500 index fund (Irish-domiciled UCITS) and a T-bill reserve sized to the loss you can tolerate. "
          f"Measured by certainty rather than return, that allocation choice matters more than the stock picks.\n\n"
@@ -183,7 +186,7 @@ L.append('|---|---|---|---|---|---|---|---|---|')
 _miss, _disputed = [], []
 for r in rows:
     kill = (r.get('kill') or [kill_from_dossier(r['t']) or 'see dossier'])[0]
-    kill = re.sub(r'\s+', ' ', str(kill))[:110]
+    kill = re.sub(r'\s+', ' ', str(kill)).replace('|', '/')   # full text (A3 loop-7: a truncated trigger cannot be checked weekly)
     pe = mult_str(r)
     if any(r.get(k) is None for k in ('bear', 'base', 'bull')):
         _miss.append(r['t'])
@@ -201,7 +204,9 @@ L.append(f"\nWeights are rounded to 0.1 point; " + ("including the index-fund ro
          + (f"\n\n‡ The analyst's own valuation is more cautious than V1's base case ({', '.join(_disputed)}): treat that base case as optimistic; each dossier's section 7 ends with a written reconciliation.\n" if _disputed else "\n"))
 L.append('**What each holding is for** (one line each, from its dossier; full dossiers in `v4/dossiers/`):\n')
 for r in rows:
-    _th = (r.get('thesis') or '').strip() or 'thesis line pending; see dossier'
+    _th = (r.get('thesis') or '').strip()
+    if not _th or 'pending' in _th.lower():   # A2/A3 loop-9: never ship a placeholder thesis for a held name
+        raise SystemExit(f"THESIS MISSING for held name {r['t']}: fix the dossier verdict paragraph or the summary thesis_one_line before building")
     L.append(f"- **{r['t']}** ({r['verdict']}): {_th}")
 L.append('')
 _prev = load('lead_previous_sleeve.json') or {}
@@ -218,6 +223,17 @@ if _prev.get('names'):
         L.append(f"- **Conviction lowered:** {', '.join(_conv)}, from full to half weight (see each dossier's latest correction).")
     L.append('')
 excl = [c for c in BLD['candidates'] if c['rank'] <= 45 and not c['eligible']]
+_fin_n = sum(1 for r in rows if r['s'] == 'Financials'); _fin_w = sum(r['w'] for r in rows if r['s'] == 'Financials')
+_fin_out = [c['t'] for c in BLD['candidates'] if str(c.get('why', '')).startswith('sixth name in sector (Financials)')]
+if _fin_n >= 5 and _fin_w >= 0.2499:
+    L.append(f"**Financials binds two limits at once:** it holds the maximum five names and sits at the 25% sector cap ({pct(_fin_w, 1)}). "
+             f"Eligible full-conviction Financials left out by the five-name limit: {', '.join(_fin_out[:8]) or 'none'}{' and others' if len(_fin_out) > 8 else ''}. "
+             "The cap also trims the weights of the five held, so each sits below what its volatility alone would give it.\n")
+_rich = [r for r in rows if isinstance(r.get('pe'), (int, float)) and r['pe'] == r['pe'] and float(r['pe']) > 25]
+if _rich:
+    L.append("**Holdings priced above 25x earnings:** " + '; '.join(f"{r['t']} ({float(r['pe']):.1f}x)" for r in sorted(_rich, key=lambda r: -float(r['pe'])))
+             + ". Each still qualifies only because its analyst's reverse DCF finds the price implies growth at or below the evidence-based base case; a high multiple is not by itself a reason to exclude, but these names have the least room for a disappointment. "
+             "Where an independent peer-multiple cross-check exists it is recorded in Appendix A.4 (DA17, DA20).\n")
 _lane_n = sum(1 for r in rows if r.get('lane') is True)
 L.append(f"§ Entered through the analyst route ({_lane_n} of {N}): outside the model's top 70, so eligibility rests on the full diligence verdict and the analyst's own valuation (price-implied growth at or below the evidence-based base case). The other {N - _lane_n} are in the model's top 70 and also had to pass the systematic valuation (fair or attractive against their own history).\n")
 _JS = load('lead_j_sensitivity.json') or {}
@@ -228,11 +244,31 @@ if _JS.get('orderings'):
              f"Each keeps {min(v['overlap_with_actual'] for v in _o.values())}–{max(v['overlap_with_actual'] for k, v in _o.items() if not k.startswith('actual'))} of the 20 names; "
              f"{_JS['n_in_every_ordering']} are chosen under every ordering ({', '.join(_JS['in_every_ordering'])}). "
              f"The risk barely moves: the 2007–09 replay ranges from {spct(min(_gfcs), 0)} to {spct(max(_gfcs), 0)}. The exact list is a judgement at the margin; the character of the portfolio is not (outputs/lead_j_sensitivity.json).\n")
+_VC = (load('lead_verdict_changes.json') or {}).get('changes') or []
+if _VC:
+    L.append("**Diligence errors that changed a verdict or a holding** (caught by the independent fact-checks before release; each dossier carries a dated correction):\n")
+    for _c in _VC:
+        L.append(f"- **{_c['ticker']}** ({_c['date']}, {_c['check']}): {_c['finding']} {_c['effect']}")
+    L.append('')
+_ODH = (load('order_dependence_history.json') or {}).get('history') or []
+if _JS.get('orderings') and _ODH:
+    _seq = ' → '.join(f"{h['n_in_every_ordering']} ({h['release'].split(' ')[0]})" for h in _ODH) + f" → {_JS['n_in_every_ordering']} (this build)"
+    L.append(f"**Order-dependence over time** (names chosen under every ordering tested): {_seq}. The count has fallen as the eligible pool grew; the tie-breaker now decides much of the list, while the 2007–09 replay stays within the range shown above.\n")
+_prevN = (_prev or {}).get('n_in_every_ordering')
+if _JS.get('orderings') and _prevN is not None and _prevN != _JS.get('n_in_every_ordering') and not _ODH:
+    L.append(f"**Order-dependence is {'rising' if _JS['n_in_every_ordering'] < _prevN else 'falling'}:** {_JS['n_in_every_ordering']} names are chosen under every ordering tested, against {_prevN} in {_prev.get('label', 'the previous release')}. "
+             "As more companies pass every test, more of them tie on conviction and margin of safety, so the final tie-breaker decides more of the list. The risk profile moves much less than the names (see the range above).\n")
 _bench = [c for c in BLD['candidates'] if c['eligible'] and c['t'] not in {r['t'] for r in rows}]
 _bench.sort(key=lambda c: (c.get('verdict') != 'INCLUDE', {'below': 0, 'in_line': 1}.get(c.get('implied'), 2), -(c['base'] if isinstance(c.get('base'), (int, float)) and c['base'] == c['base'] else -9), c['rank']))   # mirrors the build's (j) order
 if _bench:
-    L.append(f"**Eligible but not held ({len(_bench)} names, next in line first).** Each passed every test; they lost only on the selection order above or the two-per-industry limit, and are the first replacements if a holding's exit trigger fires: "
-             + '; '.join(f"{c['t']} ({'full' if c.get('verdict') == 'INCLUDE' else 'half'} conviction, price implies growth {'below' if c.get('implied') == 'below' else 'in line with'} the base case)" for c in _bench) + '.\n')
+    _why_short = lambda w: ('five-per-sector limit' if str(w).startswith('sixth name in sector') else 'two-per-industry limit' if 'sub-industry' in str(w) else 'outranked in the selection order')
+    L.append(f"**Eligible but not held: {len(_bench)} names.** Each passed every test and is a candidate replacement if a holding's exit trigger fires. The first 20, in the order they would be picked:\n")
+    L.append('| Next in line | Stock | Sector | Conviction | Price implies growth … the base case | Base-case return a year | Why not held |')
+    L.append('|---|---|---|---|---|---|---|')
+    for _k, c in enumerate(_bench[:20], 1):
+        _b = c.get('base') if isinstance(c.get('base'), (int, float)) and c.get('base') == c.get('base') else None
+        L.append(f"| {_k} | **{c['t']}** {c.get('n', '')} | {c.get('s', '')} | {'full' if c.get('verdict') == 'INCLUDE' else 'half'} | {'below' if c.get('implied') == 'below' else 'in line with'} | {spct(_b, 0) if _b is not None else 'n/a'} | {_why_short(c.get('why'))} |")
+    L.append(f"\nThe other {max(len(_bench) - 20, 0)} are listed, with their position in the selection order and the reason they missed, in `outputs/lead_j_sensitivity.json` (bench_near_misses) and in the dashboard's ranking tab.\n")
 L.append('**Every name ranked in the top 45 by the model that the process excluded, with the reason:** ' + '; '.join(f"{c['t']} (rank {c['rank']}: {c['why']})" for c in excl) + '.\n')
 L.append('## 7. Risk\n')
 L.append('**Historical stress replays** (daily data; the sleeve at today\'s weights, buy-and-hold through each episode; the mixes combine the S&P 500, the sleeve and 4% T-bills, rebalanced quarterly as the operating rules say):\n')

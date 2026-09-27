@@ -1,0 +1,116 @@
+{
+  "agent": "F74",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "COF": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Capital One now owns its card network after buying Discover, but the stock already prices in more profitability than it has delivered.",
+      "kill_criteria": [
+        "Credit Card segment net charge-off rate rises above 5.5% for two consecutive quarters (vs. 4.71% today).",
+        "CET1 ratio (Basel III standardized, consolidated) falls below 12.0% in any quarter without a stated, credible capital-plan explanation (vs. 13.7% today).",
+        "Consumer Banking (auto) NCO rate exceeds 2.0% for two consecutive quarters (vs. 1.48% today).",
+        "Any new, material CFPB or DOJ enforcement action against the combined entity (distinct from the two inherited, already-reserved matters in dossier section 12).",
+        "Quarterly buyback pace falls below $1bn for two consecutive quarters with no stated reason, reversing the current $2.7bn/quarter run-rate."
+      ],
+      "key_adverse_facts": [
+        "Trailing TTM ROE (9.24%) sits at/below the ~10.1% cost of equity, and P/B is at the 88th percentile of its own 10-year history per V1.",
+        "Auto-loan NCO rate rose 18bps YoY to 1.48%; Commercial Banking NCO rate rose 20bps YoY to 0.53% and segment net income fell 15% YoY -- credit is not improving everywhere.",
+        "$1.2bn Discover Card Product Misclassification merchant-settlement reserve (inherited) and a $425m Savings Account Litigation settlement (preliminary court approval only, 2026-06-09, not yet final) are both real, quantified litigation exposures.",
+        "No Discover merger synergy targets or delivery track record found stated anywhere in the Q2 2026 10-Q -- a disclosed data gap, not a broken promise."
+      ],
+      "data_conflicts": [
+        "Triage flagged an apparent data-card revenue-growth anomaly (11.11); this dossier attributes it to the Q2 2025 GAAP loss (Day-2 CECL provision build on acquired Discover loans) distorting YoY comparisons, not a separate data error.",
+        "V1 tags COF 'excessive' (base 3yr return +4.15%/yr); this dossier's own reverse DCF broadly agrees directionally but weights the P/B-vs-own-history percentile more heavily than V1's peer-P/B comparison in reaching the same cautious conclusion."
+      ],
+      "next_earnings_date": "2026-10-21",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium (credit trends and capital return are well-evidenced primary-source facts, but the P/B-vs-own-history percentile creates real valuation-risk uncertainty that the recent improving quarters have not yet resolved)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": 0.0415,
+        "dossier_view": "fair",
+        "consistent": true,
+        "implied_vs_base": "in_line",
+        "reconciliation": "V1's excess-return model finds implied required ROE (10.78%) above delivered actual ROE (9.24%) at a cost of equity of 10.12%; this dossier agrees directionally on caution but notes the most recent quarter's annualized ROE (~10.6%) is already close to the implied requirement, so the disagreement is one of timing/confidence, not direction."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.08,
+        "base": 0.05,
+        "bull": 0.15
+      },
+      "scenario_basis": "TTM diluted EPS distorted by the Q2 2025 Discover Day-2 CECL charge; base case assumes ROE normalizes to ~10.5-11% (COE ~10.1%) with the P/B multiple (currently ~1.09x, 88th percentile of own history) roughly flat, funded by the current ~$2.7bn/quarter buyback pace and no dividend-growth assumption beyond that."
+    },
+    "DOC": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A healthcare landlord raising its cash-flow guidance and buying back its own stock cheaply, but a third of its buildings (lab space) are shrinking.",
+      "kill_criteria": [
+        "Lab (life-science) same-store NOI growth stays negative for 4 consecutive quarters (currently 1 quarter, Q2 2026 at -3.2%).",
+        "Net Debt to Adjusted EBITDAre rises above 6.0x (vs. 4.7x today).",
+        "Full-year FFO as Adjusted guidance is cut at any subsequent quarterly release (two consecutive raises so far).",
+        "Healthpeak's economic ownership of Janus Living falls below 60% (loss of majority-economics claim on the best-performing segment; currently 73.6%).",
+        "The monthly common dividend is cut from the current $0.10167/share rate."
+      ],
+      "key_adverse_facts": [
+        "Life-science/lab same-store NOI was -3.2% in Q2 2026 (34% of the same-store pool), confirming a sector-wide oversupply flagged in triage with no confirmed end date found in primary sources.",
+        "Healthpeak's economic ownership of Janus Living (its March 2026 senior-housing IPO spin-off) fell from 81.6% at the IPO to 73.6% by Q2 2026, one quarter later -- an ongoing dilution of its claim on the fastest-growing segment.",
+        "Total revenue grew 9-11% YoY in the two most recent quarters but diluted FFO as Adjusted per share was flat to slightly down over the same period, an unresolved earnings-quality question."
+      ],
+      "data_conflicts": [
+        "None beyond triage's own flagged items, both independently confirmed: the ~160x headline GAAP P/E is a REIT straight-line-depreciation accounting artefact (confirmed), and life-science segment softness is confirmed by the Q2 2026 same-store NOI table."
+      ],
+      "next_earnings_date": "2026-10-23",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (the guidance raise and April 2026 buyback at $16.81/share are solid, verifiable evidence, but the FFO-per-share/revenue growth divergence and the ongoing Janus Living dilution are open questions this review could not fully resolve)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for DOC (confirmed absent from v1_valuation_table.csv), so there is nothing to reconcile; this dossier's own reverse DCF (dividend yield ~6.0% vs an ~8-8.5% REIT cost of equity) finds the price implies only ~2-2.5%/yr per-share FFO growth, at or slightly below this dossier's independent 2-3%/yr base case."
+      },
+      "scenario_returns_3y": {
+        "bear": 0.01,
+        "base": 0.085,
+        "bull": 0.17
+      },
+      "scenario_basis": "FY2026 FFO-as-Adjusted guidance midpoint $1.75/share; base case assumes 2-3%/yr per-share FFO growth once lab-segment drag fades, dividend held at $1.22/share annualized (~6.0% yield at the $20.31 close), and the P/FFO multiple (currently ~11.6x) roughly stable near 11-12x."
+    },
+    "DTE": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A Michigan utility with real, contracted data-center demand growth, but its regulator keeps approving less than half of what it asks for.",
+      "kill_criteria": [
+        "The pending 2026 DTE Electric rate case (filed 2026-02-19, requesting $474m / ROE 10.25%) is approved at less than 50% of the requested revenue increase, repeating the 2025 pattern (42% approved).",
+        "FY operating EPS guidance ($7.59-$7.73 currently) is cut at any subsequent quarterly release.",
+        "The Oracle/Google data-center supply agreements are vacated, materially reduced, or delayed beyond 2028 on appeal.",
+        "Consolidated long-term debt (ex-DTE Electric) grows faster than consolidated EBITDA for two consecutive years, i.e., non-utility leverage keeps rising as a share of the whole (current split: approximately $12.2bn of $25.9bn).",
+        "A credit-rating downgrade below the current BBB/Baa2-equivalent tier by any of the three main agencies."
+      ],
+      "key_adverse_facts": [
+        "DTE Electric (the core regulated segment) posted operating EPS of $1.30 in Q2 2026 vs $1.53 a year earlier (-15% YoY), the direct result of the MPSC approving only 42% of the requested 2025 rate increase and holding ROE flat at 9.9% against a 10.75% ask.",
+        "Roughly $12.2bn of $25.9bn consolidated long-term debt sits outside DTE Electric, at the non-utility/parent level -- a materially more leveraged capital structure than the regulated utility alone would suggest, corroborating triage's flagged high consolidated leverage.",
+        "The Oracle/Google data-center power-supply contracts underpinning the primary growth catalyst are under appeal per press coverage (Engineering News-Record, Planet Detroit), not yet fully de-risked."
+      ],
+      "data_conflicts": [
+        "Triage's '32% forward EPS growth' figure is not corroborated by DTE's own FY2026 guidance ($7.59-$7.73, confirmed flat quarter to quarter) or its reaffirmed 6-8%/yr long-term framework; likely a data-card/consensus artefact rather than a company-stated number."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (the executed, take-or-pay-protected data-center contracts and reaffirmed guidance are solid primary-source evidence, but two consecutive below-ask rate-case outcomes and contested appeals on the core growth catalyst are real, unresolved execution risks)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for DTE (confirmed absent from v1_valuation_table.csv), so there is nothing to reconcile; this dossier's own reverse DCF (dividend yield ~3.85% vs an ~8.5% utility cost of equity) finds the price implies only ~4.5-4.7%/yr long-run growth, below DTE's own reaffirmed 6-8%/yr framework and this dossier's 6-7%/yr base case."
+      },
+      "scenario_returns_3y": {
+        "bear": 0.01,
+        "base": 0.095,
+        "bull": 0.17
+      },
+      "scenario_basis": "FY2026 operating EPS guidance midpoint $7.66/share; base case assumes 6-7%/yr EPS/dividend growth (low end of DTE's reaffirmed 6-8% long-term framework, discounted for rate-case execution risk), dividend yield held near 3.85%, and the P/E multiple (currently ~15.85x) roughly stable near 15-16x."
+    }
+  }
+}

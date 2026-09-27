@@ -1,0 +1,120 @@
+{
+  "agent": "F80",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "HD": {
+      "verdict": "WATCH",
+      "thesis_one_line": "America's #1 home-improvement retailer with a growing pro-contractor supply arm, but the price already assumes a housing recovery that hasn't shown up in sales yet.",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "med (business quality is high-confidence; valuation timing call is lower-confidence given decelerating comps)",
+      "kill_criteria": [
+        "US comparable sales below 1.0% for two consecutive quarters (vs the FY26 guided range of flat-to-+2.0%).",
+        "Consolidated `DebtAndCapitalLeaseObligations` (XBRL) does not decline toward the ~2.0x adjusted debt/EBITDA target by Q4 FY26 (period ending ~Jan/Feb 2027).",
+        "FY26 diluted EPS guidance cut below the initial $14.23-flat floor at any of the remaining FY26 releases.",
+        "GMS acquisition fails to close as expected in early 2026 or closes at materially worse terms/financing cost.",
+        "Gross margin falls below 32.5% (vs ~33.1% FY26 guide) for a full quarter, signalling tariff pass-through failure."
+      ],
+      "key_adverse_facts": [
+        "Comp sales have been near-zero for three straight quarters (0.4%, 0.6%, 1.7%) even as headline revenue growth (+5.7% Q2 FY26) is flattered by the SRS/GMS roll-up, not organic recovery.",
+        "Guidance was reaffirmed, not raised, at both Q1 and Q2 FY26 despite beats.",
+        "Consolidated debt/capital-lease obligations rose to $51.3B post SRS/GMS with management itself targeting delevering to ~2.0x adjusted debt/EBITDA by FY26 year-end, i.e. leverage is elevated by the company's own admission.",
+        "Tariff policy risk is explicitly named by the company with no valuation cushion at ~20x forward P/E."
+      ],
+      "data_conflicts": [
+        "SBC as % of revenue and a full buyback-dollar trend were not independently pulled in this pass (time-boxed limitation, not a contradiction of any source).",
+        "No V1 systematic valuation row exists for HD in this wave, so the 'in_line' call below is this dossier's own reverse-DCF sense, not a cross-check against a second model."
+      ],
+      "next_earnings_date": "2026-11-17",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "implied_vs_base": "in_line",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for HD; this dossier's own reverse-DCF (FCF yield ~4.3%, WACC ~8%) implies ~3.5-4% durable growth priced in, which is close to what comp deceleration and Pro/SRS contribution can plausibly deliver -- fair, not cheap."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.06,
+        "base": 0.065,
+        "bull": 0.13
+      },
+      "scenario_basis": "Starting FY25 EPS $14.23, FY26 guide flat-to-+4%; base assumes ~4-5%/yr EPS growth (Pro/SRS offsetting soft DIY) plus ~2.4% dividend yield at a roughly flat ~20x multiple; bull assumes housing-turnover recovery lifts EPS growth to ~9-10%/yr with slight multiple support; bear assumes comps stay negative/flat, multiple compresses toward 17x on tariff/margin pressure."
+    },
+    "JPM": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The best-capitalized big US bank, but this quarter's blockbuster profit is inflated by one-time gains -- size the position on the real ~13% growth rate, not the 41% headline.",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "med-high (capital and deposit franchise are high-confidence; near-term earnings comparisons are noisy from one-off items)",
+      "kill_criteria": [
+        "Standardized CET1 ratio falls below 13.0% (from 14.1% at Q2 2026) for two consecutive quarters.",
+        "Card Services net charge-off rate rises above 4.0% (from 3.34% at Q2 2026) for two consecutive quarters.",
+        "Adjusted (excluding-significant-items) EPS growth YoY turns negative for two consecutive quarters.",
+        "Any of the four active 2025-26 class actions results in a disclosed reserve/settlement exceeding $1B.",
+        "Deposit base (Deposits, consolidated XBRL) declines more than 5% from the 2026-06-30 level of $2.7137T over two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "Q2 2026 headline net income (+41% YoY, $21.2B) and EPS ($7.70) include $5.6B pretax ($4.2B after-tax) of one-off Visa-share and equity-investment gains; excluding significant items, net income was $16.9B / EPS $6.14, i.e. ~13% adjusted growth.",
+        "CET1 ratio fell 20bp quarter-over-quarter (to 14.1% Standardized) on higher risk-weighted assets and capital distributions.",
+        "Multiple active class actions (credit-card fee practices, alleged rate-fixing conspiracy, employment discrimination, ERISA/tobacco-surcharge) were filed against JPM in the Oct 2025-Jan 2026 window."
+      ],
+      "data_conflicts": [
+        "The litigation items in key_adverse_facts are media-reported and were not independently cross-checked against the 10-Q's own Legal Proceedings note text in this time-boxed pass.",
+        "No formal quarterly guidance is given by JPM (large-bank convention), so the addendum's 'guidance track record' section is not applicable in the usual sense; NII/expense outlook commentary was not independently re-verified against prior-quarter figures in this pass.",
+        "No V1 systematic valuation row exists for JPM in this wave."
+      ],
+      "next_earnings_date": "2026-10-14",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "implied_vs_base": "below",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for JPM; using adjusted (not headline) EPS, the stock trades around 14-16x, implying mid-to-high single-digit durable growth -- close to or slightly below the ~13% adjusted growth actually delivered this quarter, so 'below' on the implied-vs-base test (price does not demand more growth than the evidence supports)."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.05,
+        "base": 0.085,
+        "bull": 0.145
+      },
+      "scenario_basis": "Starting point: Q2 2026 adjusted EPS $6.14 (excluding significant items) as the cleaner run-rate proxy vs headline $7.70; base assumes ~8-9%/yr adjusted EPS growth from NII normalization, fee growth and buybacks, ~1.7% dividend yield, roughly stable ~14-16x multiple; bull assumes stronger trading/IB fee growth and continued buybacks lift growth into the mid-teens with multiple holding; bear assumes credit costs rise and CET1 pressure forces slower buybacks, EPS growth stalls and the multiple compresses."
+    },
+    "MSI": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Near-monopoly supplier of US police/fire radio and 911 dispatch systems, with record order backlog and two straight guidance raises, priced at a full but not unreasonable multiple.",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "med-high (moat and backlog trend are high-confidence; GAAP/non-GAAP earnings-quality gap tempers full conviction)",
+      "kill_criteria": [
+        "Total backlog growth turns negative YoY (from +11%/$15.6B at Q2 2026) for two consecutive quarters.",
+        "Non-GAAP EPS guidance cut below the current $17.62-$17.72 FY2026 range at any remaining 2026 release.",
+        "GAAP-to-non-GAAP EPS gap widens beyond the current ~2.5x ratio (9.5% GAAP vs 24% non-GAAP growth, Q2 2026) for two consecutive quarters, signalling deteriorating underlying earnings quality.",
+        "Consolidated long-term debt (LongTermDebtNoncurrent, XBRL) rises more than 20% above the 2026-07-04 level of $8.417B without a matching backlog/revenue increase.",
+        "Revenue growth falls below 8% YoY for two consecutive quarters (from 13.3% at Q2 2026), below the low end of what the raised FY26 guide implies."
+      ],
+      "key_adverse_facts": [
+        "GAAP diluted EPS grew only 9.5% YoY in Q2 2026 versus the 24% non-GAAP EPS growth the company promotes -- a wide GAAP/non-GAAP gap driven by intangible amortization and SBC add-backs.",
+        "Stockholders' equity is unusually thin ($2.672B at 2026-07-04) on a buyback-heavy capital structure, which mechanically inflates the ROE the quant model rewards -- part of the 'high ROE' signal is a capital-structure artefact, not pure operating outperformance.",
+        "Valuation (~24-26x forward non-GAAP earnings) already assumes smooth backlog conversion; government contract timing risk has no valuation cushion."
+      ],
+      "data_conflicts": [
+        "SBC as % of revenue was not separately quantified in this pass despite being directly relevant to the GAAP/non-GAAP gap flagged above -- follow-up needed.",
+        "Net debt/EBITDA was not computed from a single-quarter cash snapshot because cash moved from $3.206B to $710M across the trailing four quarters on working-capital/debt-paydown timing; a full-year-average figure is needed before drawing a leverage conclusion.",
+        "No V1 systematic valuation row exists for MSI in this wave."
+      ],
+      "next_earnings_date": "2026-11-05",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "implied_vs_base": "in_line",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for MSI; at ~24-26x forward non-GAAP earnings, the price implies low-to-mid-teens sustained EPS growth, which is in line with (not below) the raised FY26 guide and record backlog -- a good business priced for continued execution, not for a re-rating, hence INCLUDE-SMALL rather than full INCLUDE."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.09,
+        "base": 0.095,
+        "bull": 0.15
+      },
+      "scenario_basis": "Starting FY2026 non-GAAP EPS guide midpoint ~$17.67 (raised from $16.87-16.99); base assumes ~11-12%/yr non-GAAP EPS growth as record backlog ($15.6B, +11% YoY) converts, ~1% dividend yield, gradual multiple normalization from ~25x toward ~23x; bull assumes backlog conversion accelerates and margin expands, EPS growth mid-teens with multiple holding near 25x; bear assumes government-budget timing slips, backlog growth stalls, and the multiple compresses toward 18x."
+    }
+  }
+}

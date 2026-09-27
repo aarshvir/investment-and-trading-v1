@@ -1,0 +1,118 @@
+{
+  "agent": "F45",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "INTU": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Tax and small-business software platform still growing double digits, priced as if growth stalls forever, despite a costly recent restructuring.",
+      "kill_criteria": [
+        "TurboTax or Credit Karma segment revenue growth turns negative for 2 consecutive quarters",
+        "Non-GAAP operating margin compresses >300bps YoY for 2 consecutive quarters",
+        "A third major workforce restructuring (>5% of headcount) announced within 24 months of the May-2026 cut",
+        "Full-year revenue or non-GAAP EPS guidance is cut (vs. the prior range) at any of the next 4 quarterly releases",
+        "Net debt/EBITDA rises above 1.5x via debt-funded M&A"
+      ],
+      "key_adverse_facts": [
+        "Second major workforce restructuring in 24 months (Jul-2024 ~1,800; May-2026 ~3,000, 17% of staff), with $300-340M restructuring charge",
+        "CEO gave contradictory public rationale for the May-2026 cut: told employees it was to become 'leaner, more focused', told CNBC 'none of it had to do with AI', while investor materials tout AI as the growth driver",
+        "FTC consent order (since Jan-2024) permanently bars TurboTax 'free' advertising claims without disclosing the ~1/3 qualification rate; company did not renew IRS Free File Program participation for 2026",
+        "SBC is 9.6% of FY26 revenue, the largest GAAP-vs-non-GAAP reconciling item; non-GAAP EPS growth (+20%) overstates cash return before this dilution cost",
+        "Long-run AI/free-filing disintermediation risk to TurboTax/Credit Karma is unconfirmed but not resolved (triage-flagged, monitored not verified this quarter)"
+      ],
+      "data_conflicts": [
+        "None material vs V1 (no V1 row exists for INTU). Triage's cited 11.3x NTM P/E is broadly consistent with this dossier's own 12.0x non-GAAP / 13.6x GAAP forward multiples (small difference from EPS-base timing)."
+      ],
+      "next_earnings_date": "2026-11-19",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium - strong fundamentals and a reverse DCF implying near-zero perpetual growth support the valuation case, but the AI-disintermediation risk to the core tax franchise and the restructuring/credibility issue are genuine unresolved unknowns, not yet falsified either way",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "implied_vs_base": "below",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for INTU, so there is nothing to reconcile against; this is the analyst's own reverse DCF. A simplified single-stage FCFF model implies the price only requires roughly flat-to-slightly-negative perpetual FCF growth, well below both the FY27 guide (revenue +9-10%, non-GAAP EPS +23-24%) and Intuit's own historical growth, so implied growth is below the analyst's base case."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.09,
+        "base": 0.18,
+        "bull": 0.41,
+        "scenario_basis": "3yr exit-multiple model off non-GAAP EPS ($24.27 TTM): bear = ~0%/yr EPS growth, multiple compresses to 8x (AI-disintermediation case); base = ~15%/yr EPS growth (below the FY27 guide's 23-24%), multiple holds ~12x (no re-rating); bull = ~22%/yr EPS growth, multiple re-rates to 17x (partial recovery toward historical premium); all include ~3yrs of cumulative dividends."
+      }
+    },
+    "MS": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Wall Street's top wealth manager and investment bank just posted record profits, but the price already assumes today's boom-time returns last indefinitely.",
+      "kill_criteria": [
+        "Standardized CET1 ratio falls below 13.0%",
+        "ROTCE falls below 18% for 2 consecutive quarters",
+        "Wealth Management net new assets fall below $50B/quarter for 2 consecutive quarters",
+        "A new SEC/DOJ/FINRA enforcement action or fine >$100M is announced",
+        "Provision for credit losses in Institutional Securities exceeds $300M in a single quarter without a matching one-off disclosed cause"
+      ],
+      "key_adverse_facts": [
+        "Q2 2026 record results were driven heavily by trading (Equity net revenues +69% YoY), which the company itself attributes to favorable market conditions rather than structural share gain - inherently cyclical",
+        "Standardized CET1 (14.8% vs 15.0% YoY) and Tier 1 leverage (6.0% vs 6.8% YoY) are both declining while quarterly buybacks accelerated from $1.0B to $1.5B",
+        "Provision for credit losses driven partly by growth in corporate loans and commercial real estate lending - a credit-quality watch item, not yet a deterioration signal",
+        "Pattern of recent regulatory settlements: $249.4M DOJ/SEC block-trading settlement (Jan-2024) and $15M SEC fine for failing to monitor advisor account transfers that enabled misappropriation (Dec-2024)"
+      ],
+      "data_conflicts": [
+        "None vs V1 (no V1 row exists for MS). Triage's ~14.6x forward multiple is broadly consistent with this dossier's own 15.9x TTM P/E."
+      ],
+      "next_earnings_date": "2026-10-14",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium - the wealth-management re-mix and capital return are real and well-documented, but the reverse-ROTCE valuation math showing the price requires sustaining a just-posted cyclical-peak ROTCE is a clear, quantified reservation",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for MS, so there is nothing to reconcile against; this is the analyst's own reverse valuation. Solving P/TBV=(ROTCE-g)/(COE-g) at the current 3.69x P/TBV implies the market needs Morgan Stanley to sustain roughly the 26% ROTCE it just posted this quarter in perpetuity, above a more conservative normalized through-cycle base case (historically discussed nearer 20%), so implied growth/return is above the analyst's base case."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.094,
+        "base": 0.033,
+        "bull": 0.135,
+        "scenario_basis": "3yr exit-P/E model off TTM EPS ($12.37): bear = trading/IB normalizes, EPS reverts to ~$11/yr, P/E compresses to 12x; base = EPS grows modestly to ~$13.5/yr (partial trading normalization offset by WM growth), P/E ~15x (near current); bull = cycle stays hot, EPS ~$16/yr, P/E re-rates to 17x on sustained >25% ROTCE; all include ~3yrs of cumulative dividends."
+      }
+    },
+    "NUE": {
+      "verdict": "WATCH",
+      "thesis_one_line": "America's largest steelmaker is riding record tariff-boosted prices and shipments, but the stock is priced as if today's unusually high profits are permanent.",
+      "kill_criteria": [
+        "Steel-mill average selling price falls below $800/ton for 2 consecutive quarters",
+        "Quarterly diluted EPS falls back below $2.00 for 2 consecutive quarters",
+        "Section 232 steel tariffs are repealed or substantially weakened",
+        "Net debt/TTM EBITDA rises above 1.5x",
+        "The 213-consecutive-quarter dividend streak is broken or a previously-declared increase is skipped"
+      ],
+      "key_adverse_facts": [
+        "Quarterly diluted EPS swung from a $0.67 trough (Q1 2025) to $5.04 (Q2 2026), a >7x move in five quarters - a textbook commodity-cycle profile, not a compounding growth trajectory",
+        "FCF yield on EV is only ~2.6% (TTM FCF $1.583B) despite the earnings surge, because Nucor is mid-way through a large multi-year capacity-expansion capex program (~$1.1-1.3B/quarter)",
+        "Tariff-dependent pricing is a policy moat, not a competitive one; a trade-policy reversal is a named, real risk to the current pricing premium",
+        "Nucor's own press releases give only qualitative directional guidance (no point EPS/revenue range); the $5.55-5.65 Q3 2026 EPS figure circulating in the press was not found in the primary 8-K exhibit and is sourced to secondary/analyst commentary"
+      ],
+      "data_conflicts": [
+        "V1's reverse-DCF sub-model for NUE was explicitly suppressed because D&A was unavailable and treated as 0. The primary 10-Q cash-flow statement reports TTM Depreciation of $1,261M (~3.5% of TTM revenue), which is readily available and not zero - a real data gap in V1's pipeline, now sourced and used in this dossier's own reverse DCF (Section 7). Using the corrected D&A, a single-stage FCFF reverse DCF implies ~+6.2%/yr perpetual growth, which taken at face value looks less alarming than V1's -10.5%/yr base-case return; the dossier reconciles this by noting the FCFF calc takes a cyclically elevated TTM EBIT margin as the sustainable base, which is not appropriate for a commodity steelmaker, and adopts V1's margin-mean-reversion framework as the more credible lens."
+      ],
+      "next_earnings_date": "2026-10-27",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium - balance sheet and capital-return discipline are unambiguously strong, but whether current steel pricing/shipment levels are a durable plateau or a cyclical peak is genuinely uncertain and policy-dependent",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": -0.10477853419683902,
+        "dossier_view": "expensive",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "Agrees directionally with V1's excessive verdict. V1's own reverse-DCF sub-model was suppressed due to a missing D&A input; this dossier sourced the real TTM D&A (~$1.26B) from the 10-Q and found a corrected single-stage FCFF reverse DCF implies only ~+6.2%/yr perpetual growth, which looks less demanding than V1's EPS-scenario base case. The reconciliation is that the FCFF calc uses TTM EBIT margin (~11.8%) as the sustainable base, but that margin is itself a tariff/pricing-cycle high for a commodity steelmaker; V1's margin-mean-reversion framework is the more appropriate lens, so the final conclusion (price is priced for more than a prudent normalized-margin base case delivers) is unchanged."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.5028,
+        "base": -0.1048,
+        "bull": 0.6527,
+        "scenario_basis": "Adopted directly from V1's own EPS-scenario/exit-multiple model (v1_valuation.json NUE.scenarios), not re-derived, since this dossier's disagreement with V1 is about the FCFF sub-model only (Section 7) and it independently agrees with V1's margin-mean-reversion-based bear/base/bull framework for this cyclical commodity producer."
+      }
+    }
+  }
+}

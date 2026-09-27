@@ -1,0 +1,100 @@
+{
+  "agent": "F24",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "BSX": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Boston Scientific's device growth engine (Watchman, Farapulse) has cracked and is now mid-recovery from an August 2026 cyberattack of unknown financial size.",
+      "horizon": "12 months (re-underwrite after the 2026-10-28 Q3 print and revised guidance)",
+      "kill_criteria": [
+        "FY2026 adjusted EPS (reported ~Feb 2027) comes in below $3.00 -- a down year versus FY2025's $3.06.",
+        "Watchman US procedure volume growth is negative for two consecutive quarters.",
+        "Electrophysiology/Farapulse organic growth stays below 5% for two consecutive quarters.",
+        "Net debt/EBITDA rises above 3.0x (from ~2.4x today).",
+        "The BSX securities-fraud class action is certified and/or the company discloses a material litigation reserve or settlement."
+      ],
+      "key_adverse_facts": [
+        "Two consecutive FY2026 guidance cuts before any cyberattack: adjusted EPS guide cut from $3.43-3.49 (Feb 2026) to $3.34-3.41 (Apr 2026) to $3.28-3.32 (Jul 2026), driven by real competitive share loss in electrophysiology (Medtronic/J&J/Abbott) and a Watchman growth collapse (~30% in 2025 to 4.3% in Q2 2026).",
+        "August 2026 cybersecurity incident disrupted global manufacturing/order processing/shipping; company stated on 2026-09-08 it is unlikely to meet even the already-cut Q3/FY26 guidance, and the financial magnitude is undisclosed pending the 2026-10-28 print.",
+        "Active securities-fraud class action (D. Mass., filed 2026-03-05) alleging management misrepresented electrophysiology competitive durability ahead of the Feb 2026 ~17.6% stock-price correction.",
+        "Q1 2026 GAAP net income of $1,339m / EPS $0.90 includes a $384m one-off discrete tax benefit; adjusted net income grew only 6.1% that quarter -- the headline GAAP jump is not representative of underlying earnings power.",
+        "$2.0bn of share buybacks executed in Q2 2026 and a pending ~$1.26bn all-cash Silk Road Medical acquisition, both mid-disruption -- an aggressive capital-allocation stance while the core growth story is unresolved."
+      ],
+      "data_conflicts": [
+        "Triage (Q07_triage.json) framed BSX as 'best-in-class... broad-based double-digit growth' at 'quality 5 / growth 5'; this pass finds FY2026 organic growth guided at only 5.5%-6.5% even before the cyberattack shortfall, and both Watchman and electrophysiology -- the triage's named growth drivers -- are the specific segments that decelerated. The triage's 13x NTM P/E and ~50% 12-month drawdown claims are, however, confirmed accurate by primary price data (v4/data/d2_close.parquet) and the company's own guidance."
+      ],
+      "next_earnings_date": "2026-10-28",
+      "confidence_in_thesis": "low -- the near-term (Q3/FY26) financial trajectory is genuinely unknown pending the 2026-10-28 cyberattack-adjusted guidance reset; valuation math alone cannot resolve this",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for BSX in v4/outputs/v1_valuation_table.csv. On my own reverse DCF (scripts/valuation.py; TTM FCF $3,625m, WACC 9.0%, terminal growth 4.0%) the market prices in only ~4.1%/yr FCF growth for 10 years -- modestly below my own base-case EPS growth estimate (~5.1%/yr) -- so the stock screens statistically cheap. The WATCH verdict is driven by unresolved operational/event risk (cyberattack magnitude, active litigation), not by valuation."
+      },
+      "scenario_returns_3y": {"bear": -0.054, "base": 0.066, "bull": 0.196}
+    },
+    "LLY": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The world's fastest-growing large pharma, riding Mounjaro and Zepbound, but priced for a decade of mid-teens compounding growth that leaves little room for a stumble.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Combined Mounjaro + Zepbound quarterly revenue growth decelerates below 25% YoY for two consecutive quarters.",
+        "FY guidance (revenue or non-GAAP EPS) is cut versus the prior range -- would be the first cut since the current GLP-1 ramp began.",
+        "A US government pricing action (MFN/IRA-related) cuts realized US GLP-1 net pricing by more than 15% beyond what is already embedded in guidance.",
+        "Net debt / TTM net income rises above 1.75x (from ~1.46x) without a clearly disclosed capacity-linked justification.",
+        "Orforglipron fails to win FDA approval, or a pivotal readout shows a material efficacy/safety setback."
+      ],
+      "key_adverse_facts": [
+        "At ~33x forward earnings (on the company's own just-raised FY26 guidance midpoint), the reverse DCF shows the market already pricing in ~13.2%/yr FCF growth for a full decade -- a demanding, historically rare assumption for a company this large.",
+        "Active drug-pricing legal/regulatory overhang: a $220m False Claims Act judgment (Medicaid rebate misreporting) was left standing by the Supreme Court in June 2026, and Lilly faces an active 340B-pricing suit from Tampa General Hospital (filed July 2026).",
+        "FCF conversion is only ~68% of GAAP net income, driven by an extraordinary ~$10bn/yr capacity capex programme -- a deliberate, disclosed choice, but it means a demand disappointment after this much capacity is committed would hit margins harder than at a less capital-intensive peer.",
+        "Long-term debt has grown from ~$34bn to ~$48bn over the past year to help fund the capex programme -- a leverage direction worth tracking."
+      ],
+      "data_conflicts": [
+        "Triage (Q08_triage.json) cited '26.5x NTM P/E'. This pass computes ~32.9-33x forward P/E directly from the 2026-09-25 close and the company's own raised FY26 non-GAAP EPS guidance midpoint ($36.00); even the initial Feb-2026 guide midpoint ($34.25) gives ~34.6x. Could not reconcile the triage figure to any guidance vintage checked -- flagged as an unresolved conflict, not corrected by assumption.",
+        "The Q2 2026 earnings release states 'underlying' non-GAAP EPS guidance was raised by $2.78 at the midpoint versus Q1, but the headline guidance range midpoint actually fell slightly ($36.25 to $36.00) because the top end of the range was trimmed even as the bottom end and revenue guidance rose. The two figures were not reconciled in this pass; the headline range is used as the more conservative, verifiable figure."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "confidence_in_thesis": "medium-high -- the growth trend is confirmed by three consecutive quarters of accelerating, filing-sourced results and two consecutive guidance raises, but the valuation leaves little margin for error over the full 10-year horizon the reverse DCF prices in",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for LLY in v4/outputs/v1_valuation_table.csv. My own reverse DCF (TTM FCF $18,190m, WACC 7.5%, terminal growth 4.0%) implies ~13.2%/yr FCF growth priced in for 10 years -- below my own base-case 10-year assumption of ~15%/yr (a front-loaded GLP-1 ramp fading to high-single-digit by the mid-2030s), so growth priced in is at or below my base case per the INCLUDE-SMALL threshold, but the multiple (32.9x forward) is full/demanding in absolute terms, which is why this is sized INCLUDE-SMALL rather than INCLUDE."
+      },
+      "scenario_returns_3y": {"bear": -0.080, "base": 0.071, "bull": 0.175}
+    },
+    "SYK": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Stryker's Mako-driven orthopaedics franchise kept its guidance through a cyberattack and a supply-chain shock, but the supply constraint is unresolved into Q4 2026.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Full-year 2026 organic sales growth guidance (currently 8.3%-9.3%) is cut below 7%.",
+        "The peripheral-vascular/joint-replacement supply disruption is not resolved by Q1 2027 (a fourth consecutive quarter of disclosed drag).",
+        "Adjusted diluted EPS guidance (currently $14.95-$15.10) is cut.",
+        "Net debt/EBITDA rises above 2.5x (from ~1.8x today).",
+        "A second disclosed cybersecurity incident or a Mako/ortho product-safety recall."
+      ],
+      "key_adverse_facts": [
+        "A peripheral-vascular and joint-replacement manufacturing/supply constraint, traced to the March 2026 cyberattack, has now been disclosed as persisting for three consecutive quarters (Q2, Q3, guided into Q4 2026); management stated in September 2026 it is 'not allowing us to reach a full supply of inventory' and is costing new-business wins, not just revenue timing -- the stock fell ~7-9% on that September disclosure.",
+        "Q2 2026 reported GAAP EPS growth of +44% is partly a one-off illusion: it includes a $0.34/share tariff-reversal gain and a $0.11/share tax-matters benefit, both excluded from the company's own adjusted EPS ($3.69, +17.9%) -- the honest underlying growth rate is the smaller adjusted figure.",
+        "March 2026 cybersecurity incident (Iranian hacktivist group claimed responsibility; ~200,000 systems / ~50TB claimed exfiltrated) disrupted order processing, manufacturing and shipping, including patient-specific implant cases."
+      ],
+      "data_conflicts": [
+        "None material. Triage (Q07_triage.json) cited 16.7x NTM P/E and 35% street upside; this pass computes ~18.1x forward P/E off the company's own FY26 adjusted EPS guidance midpoint, a small variance consistent with the ~$5 price move since the triage was written. The triage's 'consistent above-market growth' framing omitted the March 2026 cyberattack and the September 2026 supply-chain guidance risk, which this pass surfaces as adverse facts."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "confidence_in_thesis": "medium -- guidance resilience through two shocks is a genuine positive signal, but the supply-chain resolution timeline is the open question and has already slipped once",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for SYK in v4/outputs/v1_valuation_table.csv. My own reverse DCF (TTM FCF $4,702m, WACC 8.5%, terminal growth 4.0%) implies ~4.8%/yr FCF growth priced in for 10 years, well below my own base-case estimate (~10.1%/yr, in line with the company's own guided pace) -- growth priced in is below my base case, supporting INCLUDE-SMALL; sized small rather than full weight because of the unresolved supply-chain overhang stated above."
+      },
+      "scenario_returns_3y": {"bear": -0.031, "base": 0.083, "bull": 0.181}
+    }
+  }
+}

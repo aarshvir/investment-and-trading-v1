@@ -1,0 +1,103 @@
+{
+  "agent": "F81",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "ODFL": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The best-run US trucking company, debt-free and just turning a corner, but priced for growth its own capex spending doesn't support yet.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Revenue/day growth (company-published monthly metric) turns negative again for two consecutive months.",
+        "Operating ratio deteriorates >100bps YoY for a full quarter (reversing the Q2 FY26 improvement).",
+        "Quarterly capex resumes above a $180M/quarter run-rate without a corresponding reacceleration in revenue growth (confirms the FCF-optical-cheapness thesis breaking).",
+        "Net debt/EBITDA (currently net cash) turns >0.3x (loss of the debt-free position that anchors the quality score).",
+        "NTM P/E stays >25x while trailing-4-quarter revenue growth is <5% (valuation and fundamentals re-diverging)."
+      ],
+      "key_adverse_facts": [
+        "TTM capex ($279.3M) is roughly one-third of the FY2023-24 run-rate ($750-770M/yr); this suppresses TTM FCF and makes the stock look cheaper on FCF yield than a normalized capex base would show.",
+        "Revenue declined YoY in four of the last five quarters before Q2 FY26's +10.4% print; the inflection is one quarter old.",
+        "ODFL gives no formal numeric guidance, so 'raised/cut vs prior range' cannot be assessed the way the addendum asks; only monthly revenue/day commentary exists.",
+        "5-year delivered growth is only ~4.1% (v1 data) versus a market-implied growth rate of roughly 20% on a normalized-capex FCF basis."
+      ],
+      "data_conflicts": [
+        "My independent reverse DCF on TTM-reported FCF implies ~12-13% embedded growth, materially below V1's 20.1%; reconciled by capex-normalization (Section 7 of dossier) rather than treated as a true conflict."
+      ],
+      "next_earnings_date": "2026-10-28",
+      "confidence_in_thesis": "medium (business quality is high-confidence; the freight-cycle inflection is one-quarter-old evidence, so timing/durability of the turn is lower-confidence)",
+      "scenario_returns_3y": {"bear": -0.337, "base": -0.059, "bull": 0.256},
+      "scenario_basis": "V1 model, adopted as-is: starting NTM P/E 27.1x normalized-capex FCF base; base case reverts NTM P/E toward the 24.1x peer median as the ~20% embedded growth rate proves unsustainable once capex normalizes off its current suppressed run-rate; no separate dividend layer disclosed in the V1 output.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": -0.0588,
+        "implied_vs_base": "above",
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "V1's reverse DCF implies ~20% 10-year growth is priced in at a 27.1x NTM P/E; my own DCF on TTM FCF understates this only because TTM capex is temporarily suppressed versus ODFL's historical mid-cycle run-rate, and on a normalized-capex basis the two converge. I agree with V1's 'excessive' read and its negative base-case 3-year return: implied growth (~20% normalized) is above a defensible base case (high-single-digit freight-cycle recovery growth), which is why this is WATCH, not INCLUDE."
+      }
+    },
+    "PG": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The world's top household-products company, still growing and still cash-generative, but sales growth has slowed to almost nothing and margins are shrinking.",
+      "horizon": "24-48 months",
+      "kill_criteria": [
+        "Organic sales growth is negative for any full quarter (currently 0%, i.e. one step from this trigger).",
+        "Operating margin compression exceeds -200bps YoY for two consecutive quarters (it already has, in FY26 Q2 and Q4).",
+        "Core EPS growth guidance for FY2027 is issued below 'in-line to +4%' at the next annual guidance-setting release.",
+        "Long-term debt rises above $26bn without a corresponding accretive acquisition.",
+        "FCF/NI conversion falls below 85% for a full fiscal year (currently 94%)."
+      ],
+      "key_adverse_facts": [
+        "FY2026 organic sales growth was +1% for the full year and flat (0%) in the most recent quarter (Q4 FY26), a real deceleration from the 'in-line to 4%' guided range.",
+        "Operating margin compressed YoY in every one of the last four fiscal quarters, worsening to -220bps YoY in FY26 Q4.",
+        "Core EPS growth (+1% for FY26) landed at the very bottom of the guided range, and Q4 core EPS specifically fell 3% YoY.",
+        "FY2026 capital returned to shareholders ($15.26bn buybacks+dividends) slightly exceeded FCF generated ($15.15bn), leaving no spare cushion."
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-23",
+      "confidence_in_thesis": "medium (quality and capital-return durability are high-confidence; near-term growth/margin trajectory is genuinely uncertain given the cost headwind's persistence)",
+      "scenario_returns_3y": {"bear": -0.03, "base": 0.075, "bull": 0.12},
+      "scenario_basis": "Starting FY2026 core EPS $6.89 and FCF/share ~$6.52 (94% FCF/NI conversion); base case assumes ~3% aggregate FCF growth plus ~1.5%/yr buyback-driven per-share uplift (~4.5% per-share growth), a flat ~21x core P/E, and a ~3.0% dividend yield; bear assumes growth stalls to 0% and the multiple derates to ~18x; bull assumes organic growth reaccelerates to 4%+ and the multiple re-rates to ~23x.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "in_line",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "PG has no row in v1_valuation_table.csv, so v1_verdict is null. My own reverse DCF implies the market is pricing only ~2-3% aggregate FCF growth (plus buyback-driven per-share uplift to ~3.5-4.5% per share), which is close to my own base-case per-share growth assumption (~4.5%) and to what PG is currently delivering (organic sales +1%, core EPS +1%) -- i.e. fairly priced with little cushion, implied growth roughly in line with base case, supporting INCLUDE-SMALL rather than full INCLUDE given the named growth/margin reservation."
+      }
+    },
+    "PLD": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The world's largest warehouse landlord, raising its own growth guidance three quarters running as the industrial supply glut clears, priced for almost no growth at all.",
+      "horizon": "24-48 months",
+      "kill_criteria": [
+        "Full-year Core FFO/share guidance is cut (vs. the current $6.22-$6.30 range) at the next quarterly update.",
+        "Period-end occupancy falls below 95.0% for two consecutive quarters (currently 95.5%, trending up).",
+        "Same-store cash NOI growth decelerates below 5% YoY (currently 8.5%).",
+        "Net debt rises above $40bn without a commensurate increase in stabilized NOI.",
+        "Development stabilizations fall materially below the guided $2.25-2.75bn range for the full year."
+      ],
+      "key_adverse_facts": [
+        "Net debt of approximately $34.7bn against $53.7bn of Prologis-attributable equity (net debt/equity ~65%); a full net-debt/EBITDA cross-check was not completed within the time-box.",
+        "Q2 FY26 GAAP net earnings included $291.6M of combined real-estate disposition gains (vs $57.5M a year earlier), meaning ~40% of the 85% YoY EPS jump was gain-driven, not operating.",
+        "Development pipeline is expanding (starts guidance raised to $4.5-5.5bn) at the same time as the demand recovery is still unconfirmed beyond a few quarters of data, a classic REIT-cycle risk if the recovery stalls.",
+        "SEC's bulk companyfacts API was stale (last ingested Q1 2026) at the time of research; Q2 2026 figures were pulled directly from the 10-Q's own financial-statement exhibits rather than the standard XBRL API."
+      ],
+      "data_conflicts": [
+        "The triage's claim of 'a -26% EPS print' lapping one-time gains could not be reproduced from any primary filing reviewed; every quarter checked from Q1 FY25 onward showed positive YoY EPS growth. The triage's underlying point (GAAP prints are gain-distorted) is independently corroborated even though the specific -26% figure is not."
+      ],
+      "next_earnings_date": "2026-10-15",
+      "confidence_in_thesis": "medium-high (three consecutive quarterly guidance raises on Core FFO, occupancy and same-store NOI are strong, verifiable evidence; leverage and pipeline risk keep this from high confidence)",
+      "scenario_returns_3y": {"bear": -0.04, "base": 0.085, "bull": 0.14},
+      "scenario_basis": "Starting FY2026 Core FFO/share guidance midpoint $6.26; base case assumes FFO/share growth decelerating from 2026's high-single-digit guided pace toward ~5-6%/yr, a flat ~21.3x P/FFO, and a ~3.2% dividend yield; bear assumes growth stalls (supply glut returns, cap rates rise) and the multiple compresses to ~17x; bull assumes the current high-single-digit pace persists and the multiple expands to ~23x.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "PLD has no row in v1_valuation_table.csv, so v1_verdict is null. My own reverse DCF implies the market is pricing only ~3% long-run FFO growth, below my own base-case assumption of ~5-6%/yr and well below the high-single-to-low-double-digit Core FFO/share growth the company is currently guiding to and delivering -- i.e. cheap relative to its own near-term trajectory (implied growth below base case), with the risk that the trajectory itself is partly cyclical, which is why this is INCLUDE-SMALL rather than full INCLUDE."
+      }
+    }
+  }
+}

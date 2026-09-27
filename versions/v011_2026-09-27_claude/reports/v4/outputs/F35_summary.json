@@ -1,0 +1,121 @@
+{
+  "agent": "F35",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "GM": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "America's #2 automaker, priced by the market for stagnation while its own guidance keeps rising and its core auto business is net-cash, not net-debt.",
+      "kill_criteria": [
+        "Adjusted EBIT-adjusted guidance cut (vs the current $14.0–16.0bn FY26 range) at any of the next two quarterly releases.",
+        "Automotive segment swings from net-cash to net-debt positive (i.e., Automotive debt exceeds Automotive cash+securities) for two consecutive quarters.",
+        "Gross tariff-cost estimate re-raised above the current $2.5–3.5bn 2026 range.",
+        "Two consecutive quarters of GAAP-to-adjusted EBIT gap driven by *new* (not previously disclosed) restructuring/impairment charges exceeding $1bn/quarter.",
+        "China equity income (currently modestly positive, $83M in Q2 2026) turns negative for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "FY2025 GAAP diluted EPS was $3.27 vs the original guidance range of $8.30-9.05, due to a $7.2bn Q4 2025 EV-realignment charge.",
+        "China JV restructuring charges are recurring ($99M six-month 2026).",
+        "Cruise robotaxi business was wound down after >$10bn cumulative spend (Dec 2024) - a past capital-allocation miss.",
+        "Automotive-only balance sheet split and TTM adjusted-EBIT reconstruction were derived via automated summarization of primary SEC documents, not a full manual read of every table."
+      ],
+      "data_conflicts": [
+        "V1 rates GM 'excessive' using TTM GAAP EBIT ($1.815bn, 0.98% margin, depressed by one-off EV/China charges) and consolidated net debt ($104bn, ~90% GM Financial captive debt). On GM's own adjusted EBIT ($14.42bn TTM, 7.8% margin) and automotive-only net cash (~$8.7bn net cash per the Q2 2026 10-Q balance sheet, not net debt), GM's EV/adjusted-EBIT is ~4.6x, implying a near-zero-to-negative perpetual growth rate priced in - i.e. cheap, not excessive."
+      ],
+      "next_earnings_date": "2026-10-20",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": {
+        "level": "medium",
+        "reason": "Primary-source SEC filings were cross-checked (TTM revenue independently matches the D3 dataset's figure); the automotive/GM Financial debt split is taken directly from the 10-Q balance sheet. Some figures were extracted via automated document summarization rather than a full manual read, and the sum-of-parts EV used to challenge V1 is a simplification, not a full independent valuation model."
+      },
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": -0.0164,
+        "dossier_view": "cheap",
+        "consistent": false,
+        "reconciliation": "V1's reverse DCF used TTM GAAP EBIT depressed by one-off EV/China restructuring charges and a consolidated net-debt figure dominated by GM Financial's self-funding captive-finance debt. On GM's own adjusted EBIT and an automotive-only (net-cash) balance-sheet view, GM's EV/adjusted-EBIT is roughly 4.6x, implying priced-in growth near zero to negative - the opposite of 'excessive'."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.15,
+        "base": 0.09,
+        "bull": 0.20
+      }
+    },
+    "OMC": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Now the world's largest ad holding company after merging with Interpublic; cheap on depressed post-merger earnings, but integration is only 10 months old.",
+      "kill_criteria": [
+        "Organic growth (Core Ops) falls below 3% for two consecutive quarters.",
+        "Net debt / adjusted EBITDA rises above 3.0x (from an estimated ~2x currently) at any quarter-end.",
+        "Cumulative disclosed 2026 cost synergies come in below $600M (vs the $900M 2026 target) by year-end.",
+        "A second consecutive year of full-year GAAP net income below FY2024's $1.48bn level (i.e., integration costs fail to taper as promised).",
+        "Any adverse ruling or expanded damages exposure in the A.A. et al v. Omnicom Group Qatar World Cup migrant-labor 'sportswashing' litigation (S.D.N.Y., 1:25-cv-03389; motions to dismiss for lack of jurisdiction denied in 2026) that a reasonable analyst would judge reputationally or financially material."
+      ],
+      "key_adverse_facts": [
+        "FY2025 GAAP net loss of $54.5M (EPS -$0.27) driven by merger/integration costs.",
+        "Long-term debt roughly doubled to $9.27bn post-merger (from $6.07bn a year earlier).",
+        "H1 2026 integration/severance costs exceeded $150M.",
+        "A.A. v. Omnicom Qatar World Cup migrant-labor litigation is proceeding; motions to dismiss for lack of jurisdiction were denied in 2026.",
+        "FTC consent order imposes ongoing ad-placement documentation and annual-reporting obligations."
+      ],
+      "data_conflicts": [
+        "No V1 row exists for OMC, so no V1 conflict. The triage's extreme trailing P/E (205.8x) and 3,074% EPS-growth figures are confirmed here to be merger-accounting/comp-base noise (FY2025 was a GAAP loss year), not real underlying economics."
+      ],
+      "next_earnings_date": "2026-10-20",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": {
+        "level": "medium",
+        "reason": "The merger closed only 10 months ago, so no full clean annual comparison exists yet. Net debt/EBITDA and a formal three-closest-peer valuation comp were not independently reconstructed at this depth (disclosed as data gaps in the dossier)."
+      },
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 valuation row exists for OMC; not applicable. Using a secondary consensus cross-check only (forward P/E ~7x on FY26 adjusted EPS), the market is pricing in flat-to-low-single-digit growth versus organic growth already running at 6.1% (Q2 2026) plus a disclosed $1.5bn three-year synergy target - i.e., growth priced in looks at or below what is being delivered."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.10,
+        "base": 0.12,
+        "bull": 0.25
+      }
+    },
+    "WYNN": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Macau/Las Vegas luxury casino operator riding a genuine mass-market Macau recovery, but carrying elevated, just-repriced-higher debt into an unproven UAE project.",
+      "kill_criteria": [
+        "Net debt / adjusted EBITDAR rises above 4.5x at any quarter-end (from ~3.7-3.9x currently).",
+        "Wynn Al Marjan Island opening slips beyond March 2028 (6+ months past the reaffirmed September 2027 date) or total project cost is disclosed at a level requiring new external financing beyond the existing revolvers.",
+        "Las Vegas or Encore Boston Harbor adjusted EBITDAR declines YoY for three consecutive quarters (two already logged in Q2 2026).",
+        "Macau mass-market table win percentage at either Wynn Palace or Wynn Macau falls below 20% for two consecutive quarters (Wynn Macau was already 15.1-17.1% in the last two quarters - watch closely).",
+        "Any credit-rating downgrade following the September 2026 refinancing, or a covenant-headroom disclosure in the next 10-Q."
+      ],
+      "key_adverse_facts": [
+        "September 2026 refinancing raised the coupon on $900M of notes from 5.250% to 6.875%, increasing run-rate interest expense.",
+        "Las Vegas and Encore Boston Harbor adjusted EBITDAR both declined YoY in Q2 2026.",
+        "Wynn Al Marjan Island (UAE) total project cost is undisclosed; cumulative cash contributions were $1.06bn as of Q2 2026 and rising.",
+        "Wynn Macau mass-market table win percentage declined YoY in both of the last two quarters (17.1% vs 17.4%; 15.1% vs 18.7%)."
+      ],
+      "data_conflicts": [
+        "No V1 row exists for WYNN, so no V1 conflict. The triage's cited 5.7x net debt/EBITDA vs our ~3.7-3.9x EBITDAR-basis estimate is most likely a definitional difference (EBITDAR, pre-rent add-back, vs EBITDA, post-rent), not a factual conflict; not independently reconciled at this depth."
+      ],
+      "next_earnings_date": "2026-11-05",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": {
+        "level": "medium",
+        "reason": "TTM adjusted EBITDAR and net-leverage figures are estimated from a partial (not full 8-quarter) reconstruction, and Wynn Al Marjan Island's total project cost is an undisclosed material unknown that directly affects the leverage/liquidity outlook."
+      },
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 valuation row exists for WYNN; not applicable. Secondary consensus price targets (~$135, ~66% above the $81.12 close) suggest the market is pricing in more caution than sell-side models - consistent with 'cheap', though the reservation (leverage, undisclosed UAE cost) is why this is INCLUDE-SMALL rather than full INCLUDE."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.20,
+        "base": 0.10,
+        "bull": 0.30
+      }
+    }
+  }
+}

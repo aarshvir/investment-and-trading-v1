@@ -1,0 +1,440 @@
+{
+  "agent": "Q09",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "CARR": {
+      "advance": true,
+      "quality": 3,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "net debt/EBITDA ~3.6x, highest among HVAC peers",
+        "GAAP margins compressed (17.2% adj. op margin) despite raised guidance"
+      ],
+      "one_line": "Global HVAC/refrigeration leader riding a fast-doubling data-center cooling business alongside a slower core.",
+      "reason": "Q2'26: data-center orders +300%, cooling sales outlook raised to ~$2B, FY26 guidance raised (sales ~$23B, EPS ~$2.90), but core organic growth is only ~3% and leverage/ROE are weaker than TT/LII. NTM P/E 17.6x vs 37.7% Street upside leaves room even if core stays sluggish.",
+      "sources": [
+        "https://www.investing.com/news/company-news/carrier-q2-2026-slides-data-center-boom-lifts-outlook-amid-margin-pressure-93CH-4816815",
+        "data/triage_cards.csv"
+      ]
+    },
+    "JCI": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Building-systems/HVAC leader whose data-center thermal-management backlog is compounding into a third of revenue.",
+      "reason": "Q3'26: orders +27%, backlog record ~$20-21B, adjusted EPS growth mid-30s%, guidance raised three straight quarters; management sees data centers reaching ~1/3 of revenue in 3-5 years and margin-accretive. Fairly priced at 24.8x NTM given the growth, though Street upside (10%) is now thin.",
+      "sources": [
+        "https://investors.johnsoncontrols.com/news/news-details/2026/Johnson-Controls-Reports-Strong-Q3-Results-Raises-FY26-Guidance/default.aspx",
+        "https://www.reuters.com/business/johnson-controls-lifts-annual-profit-forecast-data-center-demand-2026-07-29/"
+      ]
+    },
+    "LII": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "residential HVAC demand soft amid high rates/housing",
+        "R454B refrigerant transition cost/complexity"
+      ],
+      "one_line": "Best-in-class residential/commercial HVAC compounder with unmatched capital efficiency, priced cheaper than HVAC peers.",
+      "reason": "ROE 72% and 14.9% margin reflect a genuinely superior operating model; growth is modest (revenue +3%) on soft resi demand, but at 14.7x NTM P/E (cheapest of the HVAC group) with 30.5% Street upside the market is not paying for even a normal cyclical recovery.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "TT": {
+      "advance": true,
+      "quality": 5,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Top-tier commercial HVAC franchise (Trane) with genuine double-digit growth and the industry's best execution record.",
+      "reason": "Revenue +10.6%, margin 13.3%, ROE 36.6%, leverage only 0.8x \u2014 best balance sheet and consistency in HVAC peer set, with real commercial/data-center cooling backlog. Premium 26.8x NTM multiple is largely earned, but Street upside is only 16% since the story is well recognized.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "FDXF": {
+      "advance": false,
+      "quality": 2,
+      "growth": 2,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "net debt/EBITDA 6.2x \u2014 highest leverage in the batch",
+        "negative FCF yield (-3%)",
+        "freshly spun off from FedEx (mid-2026) with no trading history/model rank",
+        "soft industry-wide LTL freight volumes"
+      ],
+      "one_line": "Newly spun-off FedEx LTL trucking unit, competing with ODFL/XPO in a still-soft freight market while overlevered.",
+      "reason": "Disqualifying red flag: 6.2x net debt/EBITDA plus negative free cash flow right out of the spin is a genuine leverage-stress combination, and there is no post-spin track record (no momentum/vol/model_rank data) to validate the turnaround the 44% Street upside implies. Revisit once a few quarters of standalone results exist.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "ODFL": {
+      "advance": true,
+      "quality": 5,
+      "growth": 3,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "12-month momentum +43% and NTM P/E 27x are rich for a trucker mid-freight-cycle (source of the model's 'excessive' flag)"
+      ],
+      "one_line": "Best-in-class LTL carrier using pricing power to offset a soft freight cycle, with an unmatched service/network moat and no net debt.",
+      "reason": "Q2'26 revenue/cwt +15.2% offset a 4.1% volume decline, operating ratio improved 450bps; August data show revenue/day +12.4%, a sign the freight cycle may be inflecting. Quality (debt-free, industry-best OR) and a plausible cycle upturn support the 27x NTM multiple and 32% Street upside despite the model's momentum-driven flag.",
+      "sources": [
+        "https://www.ccjdigital.com/business/article/15825127/old-dominion-posts-lower-revenue-as-ltl-demand-shows-signs-of-recovery",
+        "https://247wallst.com/cards/old-dominion-freight-line-q2-2026-earnings-odfl-01kyq0cpsx1x5qb2p28cstkwj5"
+      ]
+    },
+    "EME": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "thinner analyst coverage (7 analysts) than peers, limiting model reliability"
+      ],
+      "one_line": "Electrical/mechanical construction contractor riding the same data-center and grid buildout as Quanta/Comfort Systems.",
+      "reason": "Revenue +19.8%, ROE 40%, net cash balance sheet, and a genuine multi-year data-center/electrification construction tailwind. At 21.3x NTM P/E vs peers like FIX/PWR at 29-34x, and 35.6% Street upside, EMCOR looks underappreciated for a similar growth profile.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "FIX": {
+      "advance": true,
+      "quality": 4,
+      "growth": 5,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "12-month momentum +88% and trailing P/E 41x \u2014 priced for continued perfection; a data-center capex pause would hit hard"
+      ],
+      "one_line": "Mechanical/electrical contractor whose backlog has become majority data-center construction, with record margins.",
+      "reason": "Q2'26 revenue topped $3B (some quarters +50%+ organically), backlog at an all-time high ~$12.4-14B, margins at records, and modular capacity still expanding 30%+. Genuine structural growth, not just multiple expansion, but valuation (29x NTM, 88% 12-month run) leaves little room for a demand air-pocket \u2014 the single biggest concentration risk in the batch.",
+      "sources": [
+        "https://www.investing.com/news/company-news/comfort-systems-q2-2026-slides-revenue-tops-3b-backlog-hits-14b-93CH-4812234",
+        "https://finance.biggo.com/news/US_FIX_2026-04-24"
+      ]
+    },
+    "J": {
+      "advance": false,
+      "quality": 3,
+      "growth": 3,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "fundamentals badly distorted by 2024 Critical Mission Solutions/Cyber divestiture (spun to Amentum) \u2014 YoY EPS (+176%) and revenue (+35%) growth figures are not comparable, net margin only 2.4%"
+      ],
+      "one_line": "Infrastructure/water/life-sciences consultancy whose screening data is too distorted by its 2024 defense-unit divestiture to trust.",
+      "reason": "Cannot honestly assign quality/growth conviction from this data card \u2014 the divestiture makes YoY comparisons meaningless and trailing profitability (2.4% margin, 8% ROE) looks weak versus peers like EME/PWR. Needs a clean pro-forma read of continuing operations before advancing rather than screening it out or in on noisy numbers.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "PWR": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "trailing P/E 74x vs NTM 34x \u2014 large gap from Quanta's recurring GAAP noise (renewable-infrastructure equity-method marks, M&A intangible amortization); use adjusted EPS, not GAAP, when diligencing"
+      ],
+      "one_line": "Largest pure-play grid/electric infrastructure contractor, now the prime beneficiary of utility, transmission and hyperscaler large-load buildout.",
+      "reason": "Backlog hit a record $53.4B (from $48.5B last quarter), FY26 guidance raised to $34.7-35.2B revenue and $13.55-14.25 EPS \u2014 genuine multi-year visibility, not hype. 34.2x NTM P/E is not cheap but is supported by durable double-digit EPS growth; 18.6% Street upside is fair, not excessive.",
+      "sources": [
+        "https://finance.yahoo.com/markets/stocks/articles/quanta-services-pwr-does-record-161728510.html"
+      ]
+    },
+    "CAT": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "12-month momentum +69% \u2014 much of the AI-power-demand re-rating is already reflected in the price"
+      ],
+      "one_line": "Construction/mining/engine giant now also selling backup power gensets into the data-center buildout, posting its first-ever $20B quarter.",
+      "reason": "Q2'26: first $20B quarter, Construction Industries sales +30% with margin +160bps, tariff costs came in well below guidance (~$400M vs $700M expected), backlog $72B, FY26 sales guidance raised to mid-to-high-teens growth. Genuine incremental TAM (data-center backup power) beyond the normal machinery cycle; 26.5x NTM P/E and 18.7% Street upside are reasonable, not stretched, despite the model's 'excessive' flag.",
+      "sources": [
+        "https://www.cnbc.com/2026/08/04/caterpillar-cat-q2-2026-earnings.html",
+        "https://finance.biggo.com/news/US_CAT_2026-08-04"
+      ]
+    },
+    "CMI": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Diesel/power-generation engine maker whose Power Systems segment is booking record data-center backup-power demand.",
+      "reason": "Raised FY26 revenue growth guidance to 10-13% (from 8-11%) and EBITDA margin guidance to 18.0-18.5%; global power-generation revenue guided +15-25% on data-center demand; leverage only 0.9x. At 16.2x NTM P/E with 42.1% Street upside, this looks like the most clearly mispriced quality name in the batch \u2014 the model's 'excessive' flag appears driven by momentum (+36%), not valuation.",
+      "sources": [
+        "https://investor.cummins.com/news/detail/701/cummins-reports-strong-second-quarter-2026-results-raises",
+        "https://finance.yahoo.com/markets/stocks/articles/cmi-q2-earnings-call-points-140000006.html"
+      ]
+    },
+    "WAB": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Duopoly rail-equipment and services provider (with recurring ~60%+ services revenue) benefiting from freight-rail modernization and electrification.",
+      "reason": "Revenue +17.5%, high recurring-revenue mix, moderate leverage (2.4x). 23.9x NTM P/E is fair for mid-teens growth, though the 12-month run (+43%) has already closed most of the value gap (14% Street upside).",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "BR": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 5,
+      "red_flags": [],
+      "one_line": "Mission-critical proxy/governance and fintech infrastructure processor with ~90%+ recurring revenue and a wide moat.",
+      "reason": "6.3% FCF yield against ~9% cost of capital implies the market is pricing in almost no growth, yet the business compounds EPS at high-single/low-double digits with high switching costs. At 15.2x NTM P/E after a 22% pullback and 30% Street upside, this is a genuine mispricing of a durable compounder.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "CPRT": {
+      "advance": true,
+      "quality": 5,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "revenue growth has decelerated to ~2.4% as total-loss frequency/used-car values normalize post-COVID"
+      ],
+      "one_line": "Salvage-vehicle auction duopoly with an exceptional land-bank/network moat and industry-leading 32% margins.",
+      "reason": "Near-monopoly economics (31.8% margin, minimal competition with IAA/RBA) remain intact even as near-term growth has slowed; the market has already re-rated the stock down 27% over 12 months for that deceleration. 40% Street upside suggests the pullback has more than priced in the growth slowdown.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "CTAS": {
+      "advance": false,
+      "quality": 5,
+      "growth": 3,
+      "price_vs_growth": 2,
+      "red_flags": [],
+      "one_line": "Best-in-class recurring-revenue uniform/facility-services compounder, but priced with no margin of safety.",
+      "reason": "Excellent business (41% ROE, 18% margin, minimal leverage) but at 35x NTM P/E, only 9.2% Street upside and 2% FCF yield against a ~7% required-growth hurdle, the price already assumes flawless execution continues indefinitely \u2014 quality alone isn't enough to advance a name priced this rich with no visible upside catalyst.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "LDOS": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 5,
+      "red_flags": [
+        "US federal budget/DOGE-era spending-cut policy risk to government-services contract awards and backlog conversion \u2014 verify FY26/27 appropriations before sizing"
+      ],
+      "one_line": "Diversified defense/intel/health/civil IT contractor trading at a cheap multiple despite solid execution.",
+      "reason": "7.4% FCF yield against a required growth of only ~1.6% is a large margin of safety even before crediting the ~7% revenue growth and 27.8% ROE; the 25% 12-month decline looks driven by generic government-spending-cut fears rather than a company-specific issue, but that policy risk should be checked in full diligence.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "AME": {
+      "advance": true,
+      "quality": 5,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Diversified premium instrumentation/automation compounder with a best-in-class capital-allocation (serial M&A) track record.",
+      "reason": "20% margins, minimal leverage (0.7x), mid-teens revenue growth combining organic + disciplined M&A. 27x NTM P/E is a fair price for the quality/growth combination even though Street upside is thin (11%) since the stock is already well followed and appropriately valued.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "BE": {
+      "advance": false,
+      "quality": 3,
+      "growth": 5,
+      "price_vs_growth": 2,
+      "red_flags": [
+        "Street's own average price target implies -2.9% downside from the current price \u2014 even bulls think the stock has outrun estimates",
+        "thin FCF yield (0.6%) despite the blowout quarter",
+        "customer concentration in hyperscalers and manufacturing scale-up execution risk"
+      ],
+      "one_line": "Fuel-cell maker riding a genuine AI-data-center power boom, but the stock has already outrun even sell-side targets.",
+      "reason": "Q2'26 was a real, not hyped, beat: revenue +166% to $1.065B, non-GAAP EPS beat by 95%, FY26 guidance raised to $3.9-4.2B revenue. But at 66.6x NTM / 375x trailing P/E, with Street's own average target below the current price, there's no margin of safety left \u2014 this is the clearest 'don't chase' case in the batch despite excellent fundamentals.",
+      "sources": [
+        "https://www.businesswire.com/news/home/20260728460825/en/Bloom-Energy-Reports-Record-Second-Quarter-2026-Financial-Results-and-Raises-Full-Year-2026-Guidance",
+        "https://fuelcellsworks.com/2026/07/29/electrolyzer/bloom-energy-reports-record-second-quarter-2026-financial-results-and-raises-full-year-2026-guidance"
+      ]
+    },
+    "EMR": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "large trailing/NTM P/E gap (34.2x vs 21.8x) likely reflects AspenTech consolidation/restructuring noise \u2014 confirm which is the cleaner run-rate"
+      ],
+      "one_line": "Diversified process-automation franchise (including AspenTech) with steady mid-single-digit organic growth.",
+      "reason": "4.2% FCF yield against ~4.8% required growth is roughly break-even to slightly attractive; growth is solid but not standout (7% revenue growth), and Street upside is thin (9.7%) \u2014 a reasonable, not compelling, quality-driven advance.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "ETN": {
+      "advance": false,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 2,
+      "red_flags": [
+        "worst quant model_rank in the batch (487/500) despite genuine fundamentals \u2014 a crowding/valuation warning",
+        "FCF yield only 1.8% against heavy capacity-expansion capex",
+        "Street upside only 9.2% despite a rich 44.9x trailing / 28.5x NTM P/E"
+      ],
+      "one_line": "Best-in-class electrical-equipment franchise and direct data-center power beneficiary, but priced with the least margin of safety of any name in the batch.",
+      "reason": "Revenue growth (+21%) and the electrification story are genuine, but valuation (44.9x trailing, 28.5x NTM), thin FCF yield, and a bottom-decile quant rank all point the same direction: the market has already paid up fully for Eaton's data-center exposure. Quality doesn't offset the lack of price support here.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "ROK": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "12-month momentum +23% \u2014 some of the recovery is already priced in (Street upside only 9.8%)"
+      ],
+      "one_line": "Dominant industrial-automation franchise in the midst of a genuine, broad-based order recovery (e-commerce, data center, semis, energy).",
+      "reason": "FY26 guidance has been raised repeatedly through 2026 (sales growth guide moved from 5-9% to 7.5-9.5%, EPS midpoint to $13.15) on real order strength management says shows 'no signs of pull-forward' \u2014 this is a durable multi-quarter recovery, not a one-off beat, supporting the 29x NTM multiple even with thin near-term Street upside.",
+      "sources": [
+        "https://seekingalpha.com/news/4625065-rockwell-outlines-7_5-percentminus-9_5-percent-fy2026-sales-growth-and-13-13_30-adjusted-eps",
+        "https://www.rockwellautomation.com/en-us/company/news/press-releases/Rockwell-Automation-Reports-Second-Quarter-2026-Results.html"
+      ]
+    },
+    "VRT": {
+      "advance": true,
+      "quality": 4,
+      "growth": 5,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "12-month momentum +72% and 57x trailing P/E \u2014 significant re-rating already happened; a hyperscaler capex pause is the key risk"
+      ],
+      "one_line": "Pure-play data-center power/liquid-cooling infrastructure leader with a record backlog and accelerating margins.",
+      "reason": "Backlog $15B (+109% YoY), FY26 guidance calls for ~30% organic growth and ~51% EPS growth with margins expanding toward 25% by 2029; Street upside remains a healthy 33.5% even after the huge 12-month run, implying analysts still see room despite the rich multiple.",
+      "sources": [
+        "https://www.investing.com/news/company-news/bull-case-vertiv-holdings-co-vrt-could-change-following-raised-2026-ai-data-center-outlook",
+        "https://letsdatascience.com/news/vertiv-captures-15-billion-ai-infrastructure-backlog-b11141a4"
+      ]
+    },
+    "ROL": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "12-month momentum -38% is unusually steep for a defensive pest-control compounder \u2014 confirm no guidance cut or integration-cost issue behind the decline before sizing"
+      ],
+      "one_line": "Recession-resistant pest-control roll-up (Orkin) with strong recurring revenue, currently out of favor with the market.",
+      "reason": "37% ROE and steady high-single-digit growth are intact; the unusually large 12-month price decline against a 48% Street upside suggests a sentiment-driven de-rating rather than a fundamental break, but this should be verified against the latest quarter before committing capital.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "RSG": {
+      "advance": true,
+      "quality": 4,
+      "growth": 2,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "growth is genuinely slow (4.6% revenue) \u2014 advancing on quality/pricing-power moat, not a growth story"
+      ],
+      "one_line": "Essential-service waste-management oligopolist with durable pricing power but modest top-line growth.",
+      "reason": "27x NTM P/E is a premium multiple justified by the recurring, non-discretionary nature of waste collection and consistent pricing power (14% forward EPS growth despite slow revenue growth); 15.9% Street upside is a fair, unspectacular margin of safety.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "VLTO": {
+      "advance": true,
+      "quality": 5,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Danaher-spinoff water-quality/product-ID franchise with recurring consumables/service revenue and high margins.",
+      "reason": "17.3% margin, 34% ROE, low leverage (1.1x), and steady high-single-digit growth in essential end markets (water testing, packaging/product ID). At 20.8x NTM with 18.2% Street upside, valuation is reasonable for the quality of the recurring-revenue base.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "WM": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Waste-management leader with an essential-service pricing-power moat plus a growing renewable-natural-gas optionality on top.",
+      "reason": "Steady 4% revenue growth understates the story \u2014 RNG/sustainability investment buildout adds an incremental growth vector beyond base waste collection. 25.7% Street upside at 23.4x NTM is attractive for this quality tier.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "GEV": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "card shows forward EPS growth of -28% vs trailing \u2014 almost certainly a one-time-item base-year distortion, not an earnings decline; verify against reported guidance before relying on this metric"
+      ],
+      "one_line": "Power-equipment and grid-electrification leader whose backlog has become the best visibility into the AI power buildout in the market.",
+      "reason": "Total backlog reached $176B (headed to $200B in FY27), gas-turbine equipment backlog growing from 100 to 116+ GW, Electrification segment booked more data-center orders in Q1'26 alone than all of 2025, and guidance has been raised each of the last two quarters. FCF yield 6.2% and 29.2% Street upside comfortably support the elevated 36x NTM multiple given this growth trajectory.",
+      "sources": [
+        "https://www.investing.com/news/company-news/ge-vernova-q2-2026-slides-backlog-hits-176b-guidance-raised-93CH-4805961",
+        "https://www.gevernova.com/news/press-releases/ge-vernova-reports-first-quarter-2026-financial"
+      ]
+    },
+    "GNRC": {
+      "advance": true,
+      "quality": 3,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "thin core margin (5.8%) reflecting a still-soft home-standby-generator cycle after the post-2021 demand hangover",
+        "past channel/distribution controversies (historical, not current) worth a quick sanity check"
+      ],
+      "one_line": "Home-standby-generator maker diversifying into commercial/industrial and data-center backup power alongside a recovering core business.",
+      "reason": "Huge trailing/NTM P/E gap (47.8x vs 17.8x) reflects a depressed trailing-earnings base post-pandemic demand normalization; the 41.2% Street upside and forward EPS growth suggest the market expects a real snap-back plus new C&I/data-center genset demand, but conviction here is moderate \u2014 verify the latest quarter's home-standby order trends before sizing.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "ADP": {
+      "advance": true,
+      "quality": 5,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Dominant, mission-critical payroll/HR-outsourcing platform with an unusually durable moat (switching costs plus float income).",
+      "reason": "5% FCF yield against only ~4% required growth is comfortably covered by ADP's steady high-single-digit growth; thin Street upside (9.1%) reflects how well-known the quality is, not overvaluation given the FCF math.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "PAYX": {
+      "advance": true,
+      "quality": 5,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "Paycor (2025) integration execution risk \u2014 confirm cross-sell/synergy progress in latest quarter"
+      ],
+      "one_line": "SMB-focused payroll/HR leader with excellent margins and a growing mid-market push via the Paycor acquisition.",
+      "reason": "27.4% margin and 5.2% FCF yield against only ~3.8% required growth is an attractive entry point at 16.6x NTM P/E with a 4.5% dividend yield on top; 15.7% Street upside is a reasonable margin of safety for a business of this quality.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    }
+  }
+}

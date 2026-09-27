@@ -1,0 +1,111 @@
+{
+  "agent": "F78",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "APP": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "AI ad-matching platform for mobile and web advertisers, growing fast and cash-rich, but under active lawsuits and short-seller fire that haven't been resolved.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "Net debt/TTM Adjusted EBITDA (currently ~0.1x) rises above 1.0x",
+        "A U.S. court denies the motion to dismiss the Brownback Action securities class action (fully briefed since Feb-2026), allowing discovery to proceed",
+        "Quarterly revenue growth decelerates below 25% YoY for two consecutive quarters (from the current 53-59% range)",
+        "The SEC, DOJ or FTC opens or reopens a formal investigation/enforcement action into AXON's data or ad-fraud practices",
+        "Adjusted EBITDA margin guidance for a future quarter is set below 80% (from 83-85% currently)"
+      ],
+      "key_adverse_facts": [
+        "Two distinct securities class actions are live: the 'Brownback Action' (class period 7-Nov-2024 to 27-Mar-2025, motion to dismiss fully briefed as of Feb-2026, no ruling yet) and a newer one (class period 12-Feb-2026 to 5-Aug-2026, lead-plaintiff deadline 16-Nov-2026, not yet in a company filing)",
+        "Recurring short-seller reports alleging ad fraud, minors targeting and (CapitalWatch, Jan-2026) money-laundering-adjacent conduct; CapitalWatch partially retracted in Feb-2026 but core ad-practice allegations remain open",
+        "Stock reportedly fell as much as ~28% intraday after the Q2'26 print, which was in-range on revenue and $1m below the guided EBITDA floor -- the first quarter in a year not to beat the high end of its own guidance",
+        "Q3'26 Adjusted EBITDA margin guide (83%) stepped down from 84-85% in prior quarters",
+        "FCF fell q/q in Q2'26 ($863m vs $1,300m in Q1'26) on working-capital/buyback-tax-withholding timing"
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv shows an extreme ROE figure (>300%) for APP; this is a post-buyback/post-2022-losses small-equity-base accounting artefact, not evidence of unsustainable returns -- do not use it as a Quality signal without adjustment",
+        "Reported SEC AXON probe closure (Aug-2026, secondary press only) contradicts a Feb-2026 Bloomberg report that the probe was 'still active and ongoing'; not reconciled against a primary SEC statement within this diligence window"
+      ],
+      "next_earnings_date": "2026-11-06",
+      "confidence_in_thesis": "medium - business execution is well evidenced across 8 quarters of primary-source data, but the litigation/regulatory outcome that could invalidate the cheap-valuation thesis is genuinely unknowable from public filings",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for APP (ticker absent from v1_valuation_table.csv), so v1_verdict is null and there is nothing to reconcile; this dossier's own reverse DCF implies only ~9.1%/yr required 10-year FCF growth, below this analyst's own base-case growth path (~26% avg over 3yrs decelerating from >50%), supporting a 'cheap' view conditional on the litigation/regulatory overhang not crystallising."
+      },
+      "scenario_returns_3y": {"bear": -0.15, "base": 0.20, "bull": 0.33},
+      "scenario_basis": "Starting TTM FCF $4.52bn, EV $104.65bn (EV/FCF 23.1x). Bear: FCF growth decays to ~5%/yr avg as allegations/regulatory risk materialize, multiple compresses to 12x FCF. Base: FCF growth decelerates from current >50% pace to a ~26% avg over 3yrs, multiple roughly flat (~22x). Bull: allegations fully dissipate, FCF growth ~30%/yr avg, multiple re-rates to 25x. No dividend in any scenario."
+    },
+    "SW": {
+      "verdict": "WATCH",
+      "thesis_one_line": "World's largest cardboard-box and paper-packaging maker, paying a solid dividend, but this year's profit guidance just got cut on rising freight costs.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "FY2026 Adjusted EBITDA guidance is cut again below the current $4.9-5.1bn range (already cut once, from $5.0-5.3bn, in Jul-2026)",
+        "Net debt/Adjusted EBITDA (company-guide-midpoint basis) rises above 3.5x",
+        "Same-entity organic net sales growth is negative for two consecutive quarters (vs the current ~+1-4% range)",
+        "The quarterly dividend ($0.4523/share) is cut or suspended",
+        "The Brazil CARF tax dispute (~$156m) or an adverse appellate ruling produces a cash outflow of more than $100m in a single reporting period"
+      ],
+      "key_adverse_facts": [
+        "FY2026 Adjusted EBITDA guidance was cut from $5.0-5.3bn (Feb-2026, reaffirmed Apr-2026) to $4.9-5.1bn (Jul-2026), citing 'significantly higher input costs, particularly freight'",
+        "Same-entity YoY net sales growth is roughly flat (+0.7% Q1'26, +1.1% Q2'26) two years after the merger closed",
+        "Adjusted EBITDA margin declined YoY in both of the last two quarters (16.4%->14.0% Q1; 15.3%->14.2% Q2)",
+        "Net debt/Adjusted EBITDA is ~2.5x on the current guide midpoint, limiting room for further cuts before covenant/rating relevance",
+        "FY2026 capex guide ($2.4-2.5bn) is roughly half of Adjusted EBITDA, meaning FCF conversion is structurally low (~30% in FY2025) -- makes the EV/FCF read (24.6x) far richer than the EV/EBITDA read (7.4x)"
+      ],
+      "data_conflicts": [
+        "2024 quarterly revenue in raw XBRL is not like-for-like: Q1-Q2 2024 (~$2.9-3.0bn/quarter) is legacy Smurfit Kappa standalone (pre-merger), Q3 2024 onward (~$7.5-8.0bn/quarter) is the combined entity -- any naive YoY calculation across this boundary is invalid and this dossier uses only same-entity comparisons",
+        "Secondary press (not a primary filing reviewed in this diligence window) reports an '$800m+ synergies by 2027' management ambition beyond the $400m target the Company itself confirms it exceeded in its Feb-2026 primary release; the larger figure is flagged as unverified and excluded from the base case"
+      ],
+      "next_earnings_date": "2026-10-29",
+      "confidence_in_thesis": "medium - the business and cost dynamics are well evidenced from four consecutive primary-source earnings releases, but whether H2-2026 pricing actions actually recover the input-cost inflation (management's own stated condition) is not yet observable",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "implied_vs_base": "above",
+        "reconciliation": "No V1 row exists for SW (ticker absent from v1_valuation_table.csv), so v1_verdict is null. This dossier's own reverse DCF implies ~7.2%/yr required 10-year FCF growth, which is above this analyst's own base case (~5%/yr Adjusted EBITDA growth) -- the price is asking for more synergy/pricing delivery than the current flat-organic-growth, just-cut-guidance trajectory supports, even though the EV/EBITDA multiple (7.4x) looks reasonable for the sector."
+      },
+      "scenario_returns_3y": {"bear": -0.07, "base": 0.12, "bull": 0.28},
+      "scenario_basis": "Starting Adj EBITDA guide-midpoint $5.0bn, EV $36.90bn, net debt $12.56bn, shares 524.6m, dividend yield ~3.9%. Bear: EBITDA -2%/yr, multiple compresses to 6.5x, dividend flat. Base: EBITDA +5%/yr (synergy completion net of cost pressure), multiple flat ~7.4x, modest net debt paydown. Bull: EBITDA +12%/yr (full medium-term-plan delivery), multiple re-rates to 8.5x, faster deleveraging. All scenarios include the dividend yield in total return."
+    },
+    "Q": {
+      "verdict": "WATCH",
+      "thesis_one_line": "DuPont's former electronics-materials arm, now independent, sells the chemicals chipmakers need for every new AI chip -- growing fast but priced for a decade of continued boom.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "Net debt/trailing-4-quarter Adjusted Operating EBITDA rises above 3.0x (from ~1.8-2.0x currently)",
+        "FY2026 guidance (raised twice: Adj EBITDA to $1.675-1.725bn, Adj EPS to $4.40-4.60) is cut in a future release",
+        "GAAP net income declines YoY for a third consecutive standalone quarter (two consecutive already: Q1'26 -19%, Q2'26 -31%)",
+        "Semiconductor Technologies or Interconnect Solutions segment revenue growth decelerates below 10% YoY for two consecutive quarters (from the current 15-30% range)",
+        "A major customer publicly cuts capex/capacity guidance materially, given Qnity's short standalone credit history and thin (~8-analyst) coverage"
+      ],
+      "key_adverse_facts": [
+        "GAAP net income fell YoY in both quarters since the 1-Nov-2025 spin-off (-19% Q1'26, -31% Q2'26), driven chiefly by new interest expense (~$61m/quarter, ~6.1% effective rate on ~$4.0bn debt that did not exist pre-spin)",
+        "Adjusted Earnings rose 33% (Q1'26) and 53% (Q2'26) YoY even as GAAP net income fell -- a large and widening GAAP-vs-adjusted gap that was not independently re-derived line-by-line within this diligence window",
+        "Standalone track record is under 12 months; b1 quant model could not fully score the name (coverage_flag = insufficient_families_no_composite, blank Momentum/SUE) -- the triage advance was a qualitative growth call, not a validated quant signal",
+        "Two most recent 8-Ks (21-Aug-2026, 10-Sep-2026) were identified but not opened within this diligence window",
+        "Valuation (27.7x forward P/E, 17.1x forward EV/EBITDA) is priced like a growth semicap-equipment name despite Qnity being a materials supplier exposed to the same historically cyclical AI/semiconductor capex cycle the triage flags as a risk for AMAT/KLAC/LRCX/STX/WDC"
+      ],
+      "data_conflicts": [
+        "Q3'25 quarterly profit shows 211 (NetIncomeLoss tag) vs 223 (ProfitLoss tag) in XBRL -- likely a noncontrolling-interest or carve-out presentation difference, immaterial to the thesis but not reconciled to a specific filing footnote within this diligence window",
+        "Triage cites net debt/EBITDA of 2.3x; this dossier calculates ~1.8-2.0x depending on whether trailing-4-quarter or FY2026-guide-midpoint Adjusted EBITDA is used as the denominator -- reconciled as a methodology difference, not a genuine conflict"
+      ],
+      "next_earnings_date": "2026-11-10",
+      "confidence_in_thesis": "low - only two standalone quarters of data exist; the guidance-raise execution signal is genuinely positive but the valuation, leverage and GAAP-earnings-decline questions cannot be answered with confidence from under a year of filings",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "implied_vs_base": "above",
+        "reconciliation": "No V1 row exists for Q (ticker absent from v1_valuation_table.csv, unsurprising given the sub-12-month listing history), so v1_verdict is null. This dossier's own reverse DCF implies ~16.8%/yr required 10-year FCF growth (using the FY2026 guidance midpoint, already a forward-looking, generous FCF0 base), which is above this analyst's base case (~10-12%/yr) for a materials supplier exposed to a cyclical end market -- implied growth exceeds base case, which under this program's rule disqualifies INCLUDE/INCLUDE-SMALL regardless of the genuinely strong near-term execution."
+      },
+      "scenario_returns_3y": {"bear": -0.22, "base": 0.07, "bull": 0.20},
+      "scenario_basis": "Starting FY2026 Adj EPS guide-midpoint $4.50, price $124.69 (27.7x forward P/E), no dividend. Bear: AI/semi capex cycle turns down, EPS growth -5%/yr, multiple de-rates to 15x. Base: growth decelerates from current >20% pace to ~12%/yr avg, multiple roughly flat (~24x) -- compression from the already-full starting multiple caps the base-case return. Bull: AI/HPC materials supercycle persists at ~20%/yr for 3yrs, multiple expands to 28x (semicap-equipment-like premium)."
+    }
+  }
+}
