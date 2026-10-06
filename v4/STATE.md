@@ -472,3 +472,11 @@ tie-breakers/red flags only because no point-in-time history exists for them.
 - 6 Oct: gate extended to accept the dv/DV*_factcheck.json series (same standard). RTX entered the build unchecked → DVH3. APP dropped out after DVH2 moved it to in_line.
 - 6 Oct: after DVH3 RTX dropped (in_line) and FSLR entered; DVH4 checks FSLR plus 9 likely bench names (EXPE CRM LMT ABNB FRT EOG DECK ULTA ZBRA) so the next rebuild converges. ~1.7M tokens used today.
 - 6 Oct: Loop 11 scores A1 76, A2 79, A3 77. Rule (p) committed (analyst re-assessed implied/base override V1 mapping; cdcf7e70). Rebuild entered FIS PCG FDX LDOS F; CVS DG DVA SYF UDR out. DVH5 (PCG F LDOS FIS) and RA15 (SNA at 9.2% WACC) running. Codex has published v012-v016 (v016: owner's drawdown tolerance now 40%, 100% stocks); our next release must be v017 with parents v016, v015, v014, v013, v012, v011, v010, v005_codex, claude-v3, codex-initial-audit, codex-deep-data-audit. ~3.5M of the 5M token window used.
+
+## 6 Oct 2026: v017_2026-10-06_claude PUBLISHED (parents: v016 codex … v011 claude, v010, v005 codex, claude-v3, codex-initial-audit, codex-deep-data-audit)
+- 20 holdings: BR WTW GDDY V CAH ACGL WFC COR FIS INTU ADSK BIIB FSLR BKNG FDX ACN OMC AMCR CVS VZ. Tech 29.3% (IT only 20.9%). Gate PASS; C1 1,216 checked, 2 mismatches fixed afterwards.
+- Loop 11 scores: 76/79/77, a fall from Loop 10 (86.7). The auditors found real problems, only partly fixed. No second audit loop after the fixes.
+- NOT DONE (budget): independent checks of the other 391 dossiers (DV batches DV01, DV03–DV08, DV10–DV45 are still pending in data/dv_batches.json); WACC table for all 20; risk figures by sub-period; order-dependence by conviction group; portfolio-level dollar scenarios; second audit loop.
+- NEXT release parent: v017_2026-10-06_claude. The artifact is redeployed (version 19). Git pushed (6e58dbb). The release ZIP stays in OneDrive.
+- Rebuild whack-a-mole lesson: every rebuild pulls in unchecked names, so check the whole bench ahead of time before the next release.
+- Tooling gotcha: double backslashes in Bash tool commands collapse to single; use chr(92) in Python patches.
