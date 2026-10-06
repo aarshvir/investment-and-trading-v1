@@ -1,0 +1,128 @@
+{
+  "agent": "F117",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "AES": {
+      "verdict": "REJECT",
+      "thesis_one_line": "Power and utility company being bought for $15 cash a share; the price is already $14.87, so little upside remains and a failed deal would hurt.",
+      "horizon": "Until merger closing (expected late 2026 to early 2027); not a 12-36 month equity candidate",
+      "kill_criteria": [
+        "Termination of the merger agreement or an amended price below $15.00 (any 8-K Item 1.02 or amended Item 1.01).",
+        "Any required approval (NY PSC, FERC, foreign) denied, or granted with a Burdensome Condition as defined in the Merger Agreement.",
+        "Closing not completed by 2027-03-31 (two quarters after the \"late 2026 or early 2027\" expectation), evidencing delay.",
+        "Share price below $13.50 (about 10% under $15.00; implies ~35% break probability using the ~$10.70 reference).",
+        "Parent Company Liquidity below $1.0B on any 10-Q (Jun 30 2026: $1,834M, Parent-level non-GAAP measure)."
+      ],
+      "key_adverse_facts": [
+        "Price $14.87 vs $15.00 cash merger consideration: +0.87% upside versus roughly -28% if the deal breaks (reference ~$10.69 = $15.00 / 1.403, the 40.3% premium to the pre-Jul-8-2025 30-day VWAP).",
+        "NY Public Service Commission, FERC and certain foreign approvals were still outstanding per the Q2'26 10-Q; only HSR (2026-06-22), stockholder vote (2026-06-26), CFIUS (2026-08-27) and PUCO (2026-09-17) are confirmed in filings; Burdensome Condition language gives buyers an exit route; outside date 2027-06-01 extendable to 2027-12-01.",
+        "Standalone FCF is negative (TTM OCF $5,032M minus capex $6,752M = -$1,720M consolidated) and the board said the company would likely need to cut or eliminate the dividend and/or issue significant equity without the deal.",
+        "Consolidated debt $32.1B (recourse $6.1B, non-recourse $26.0B carrying value, Jun 30 2026) plus $4.8B noncontrolling interests and $3.1B redeemable subsidiary stock.",
+        "2024 ICFR adverse opinion (AES Brasil disposition material weakness); EY dismissed 2026-07-21 for post-closing independence; Fluence securities class action and Delaware derivative suit name AES."
+      ],
+      "data_conflicts": [
+        "b1 ROE 37.9% and live_rank 11 reflect deal-driven momentum and thin book equity, not durable quality.",
+        "d4 freeCashflow -$3.09B vs -$1.72B from the consolidated cash-flow statement (OCF minus capital expenditures); basis not reconciled.",
+        "Company-defined consolidated net debt $27,561M (Dec 31 2025, press release) vs carrying debt less cash of about $28.5B; definition differences not reconciled.",
+        "Triage called the price ~99% of deal value; filings confirm (14.87/15.00 = 99.1%) and add that remaining approvals are NY PSC, FERC and foreign, not yet evidenced."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "confidence_in_thesis": "high for the REJECT call (fixed cash deal with capped upside, verified in 8-Ks and 10-Q); medium on closing timing because NY PSC/FERC/foreign approval status was not confirmed",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "above",
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 row exists (V1 excludes pending takeover targets). A ten-year reverse DCF is not meaningful with negative FCF; the price is pinned to the $15.00 deal, which is above standalone fundamental value, and the market-implied closing probability is about 97%."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.094,
+        "base": 0.049,
+        "bull": 0.074
+      },
+      "scenario_basis": "No EPS basis (price is deal-driven). Base: closes ~Jan 2027, receive $15.00 + two $0.176 dividends, cash earns 4.2% thereafter; bear: deal fails, ~$10.70 + ~$0.35 dividends; bull: deal fails or re-bid, standalone ~$17 + four $0.35 dividends; start price $14.87."
+    },
+    "EXPD": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Asset-light global freight forwarder with no debt and strong cash flow, but the stock price already assumes far more growth than it can likely deliver.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Airfreight tonnage growth below +5% year on year for two consecutive quarters (Q2'26: +14%; Q1'26: +5%; release tables).",
+        "Diluted EPS below $1.50 in two consecutive quarters (8-quarter range $1.34–$2.03; Q2'26 $2.03).",
+        "TTM FCF (OCF less capex, consolidated) divided by TTM net earnings below 0.75x (currently 1.01x).",
+        "Net revenue operating efficiency (operating income / net revenue, company-disclosed) below 27% in any quarter ex-restructuring (Q2'26 32.2%; 30% is the company's historical target).",
+        "Trigger: consolidated liquidity falls to a cash balance under six hundred million dollars at any quarter-end, or any funded borrowing above $250M (reported balance Jun 30 2026: $1,031M cash, no debt, condensed consolidated balance sheet)."
+      ],
+      "key_adverse_facts": [
+        "Q2'26 revenue +32% but net revenue (revenue less directly related transport cost) only +20.8%; much of the gain is pass-through air rates tied to Middle East capacity loss that management expects to normalise.",
+        "Reverse DCF implies ~14.2% 10-year FCF growth at the $187.46 close versus my base case of 5%; EPS has ranged $1.34-$2.03 over eight quarters and the stock trades at 27x TTM GAAP EPS.",
+        "Working capital absorbed cash in Q2'26: receivables $2,631M vs $2,022M at Dec 31 2025; Q2 OCF $178.6M flat YoY despite net earnings +45%.",
+        "First formal layoff in company history (Global Technology, $25M charge); ocean still in a capacity glut with some Q2 volume described as pull-forward; IEEPA filing surge described as temporary.",
+        "Buybacks executed at an average $148.87 in H1'26, well below the current price."
+      ],
+      "data_conflicts": [
+        "d4 totalDebt $567M equals operating lease liabilities ($116.2M current + $451.1M noncurrent, consolidated); Expeditors has no funded debt, so V1's net debt of -$464M understates net cash ($1,031M).",
+        "V1 bull case assumes +17%/yr revenue growth for three years; I cannot support that beyond a rate spike (my bull is +12.2%/yr).",
+        "V1 peer median NTM P/E 17.4x includes EXPD itself in the sample (n=4); peer multiples not independently verified."
+      ],
+      "next_earnings_date": "2026-11-03",
+      "confidence_in_thesis": "medium (business quality and balance sheet verified in the 10-Q; the valuation conclusion depends on cyclical normalisation judgments and no company guidance exists to test against)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": 0.012,
+        "implied_vs_base": "above",
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "Agree with V1: my reverse DCF gives the same ~14.2% implied 10-year growth versus a 5% base case. I differ on the bull case (+12.2% vs V1 +21.5%) and on V1's net-debt input (leases counted as debt), neither of which changes the verdict."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.162,
+        "base": 0.004,
+        "bull": 0.122
+      },
+      "scenario_basis": "Start TTM GAAP EPS $6.87 (FY26E ~$7.7), price $187.46; NTM EPS at Sep 2029 of $6.2/$8.8/$10.8, exit P/E 17x/21x/24x, dividends $1.62/yr growing ~5% (about $5 over 3 years)."
+    },
+    "WSM": {
+      "verdict": "WATCH",
+      "thesis_one_line": "High-margin home-furnishings retailer with no debt and rising sales, but the stock price already assumes far more growth than looks realistic.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Comparable brand revenue growth below 0% for two consecutive quarters (FQ2'26 +6.2%; FQ1'26 +4.8%).",
+        "TTM non-GAAP operating margin below 16.0% (consolidated; now 17.8% = ($1,415.7M + $630.2M - $618.8M) / $8,005.2M).",
+        "Any cut to the low end of the \"operating margin, on a non-GAAP basis, between 17.8% to 18.2%\" range in an earnings release.",
+        "Non-GAAP gross margin below 42.0% in any quarter (FQ2'26 45.5%; FQ1'26 43.9%).",
+        "Trigger: revolver drawn while consolidated liquidity is under five hundred million dollars of cash (reported balance Aug 2 2026: $1,028.9M, no borrowings)."
+      ],
+      "key_adverse_facts": [
+        "FQ2'26 GAAP EPS $2.84 includes a one-time tariff refund (net pretax +$116.6M, $0.74 of H1 EPS); non-GAAP EPS was $2.10, +5% YoY, with non-GAAP operating income +3.2% and non-GAAP gross margin -160 bps on tariff costs.",
+        "Reverse DCF implies ~18.8% 10-year FCF growth at a 10.5% cost of equity (14.9% at 9.5%) versus my base of 7%; stock at the 89th percentile of its own 15-year NTM P/E history.",
+        "Guidance assumes all current tariffs, including new Section 301 tariffs announced Jul 23 2026, stay in place and assumes no refund benefit; a further $29.3M of refund income lands in FQ3.",
+        "Zero share repurchases in FQ2'26 (vs $199.1M a year earlier).",
+        "FQ1'24 out-of-period $49M freight-expense correction (FY2021-2023) judged immaterial."
+      ],
+      "data_conflicts": [
+        "V1 base-case margin of 6.4% (year-3 EPS $5.75, base return -22.4%/yr) conflicts with FY2025 net margin 13.9%, operating margin 18.1% and eight straight quarters above 16% operating margin; my base is -0.9%/yr.",
+        "d4 totalDebt $1,528M equals operating lease liabilities ($217.0M + $1,310.9M, consolidated); WSM has no borrowings, so V1 net debt of +$499M should be net cash $1,029M.",
+        "V1 TTM EBIT $1,537M and SBC-adjusted FCF yield 4.4% include the tariff refund (about $110M net to EBIT, $200.2M refund cash); d4 trailing EPS $9.74 is GAAP including the refund.",
+        "V1 peer set n=1 (no peer median available)."
+      ],
+      "next_earnings_date": "2026-11-18",
+      "confidence_in_thesis": "medium (operating facts verified in the 10-Q and releases; valuation view is sensitive to cost of equity, and the refund/tariff treatment complicates the run-rate)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": -0.224,
+        "implied_vs_base": "above",
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "Agree with V1's verdict and that the price exceeds what fundamentals can deliver (implied 18.8% vs V1 18.05%). Disagree with V1's 6.4% margin assumption and leases-as-debt net debt, which make its -22.4% base return too low; my base is -0.9%/yr and is still not attractive."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.177,
+        "base": -0.009,
+        "bull": 0.117
+      },
+      "scenario_basis": "Start TTM non-GAAP EPS $9.01 (FY26E ~$9.4 from guidance), price $231.90; NTM EPS at Sep 2029 of $8.6/$12.0/$14.2, exit P/E 14x/18x/22x, dividends $3.04/yr growing ~8% (about $9-10.5 over 3 years)."
+    }
+  }
+}

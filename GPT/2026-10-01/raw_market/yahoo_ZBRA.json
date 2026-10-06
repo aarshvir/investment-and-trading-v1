@@ -1,0 +1,193 @@
+{
+  "ticker": "ZBRA",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ZBRA?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:44.881295+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "ZBRA",
+            "exchangeName": "NMS",
+            "fullExchangeName": "NasdaqGS",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 682263000,
+            "regularMarketTime": 1790798401,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 373.31,
+            "regularMarketChangePercent": -0.708,
+            "fulldayPrice": 373.31,
+            "fulldayChange": -2.66,
+            "fulldayChangePercent": -0.708,
+            "fiftyTwoWeekHigh": 386.23,
+            "fiftyTwoWeekLow": 199.05,
+            "regularMarketDayHigh": 380.0,
+            "regularMarketDayLow": 373.14,
+            "regularMarketVolume": 326858,
+            "longName": "Zebra Technologies Corporation",
+            "shortName": "Zebra Technologies Corporation",
+            "chartPreviousClose": 371.02,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "start": 1790755200,
+                "end": 1790775000,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "start": 1790775000,
+                "end": 1790798400,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "start": 1790798400,
+                "end": 1790812800,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "volume": [
+                  547500,
+                  552300,
+                  638500,
+                  594500,
+                  326858
+                ],
+                "low": [
+                  362.760009765625,
+                  365.0199890136719,
+                  363.94000244140625,
+                  366.5,
+                  373.1400146484375
+                ],
+                "close": [
+                  365.1000061035156,
+                  370.0400085449219,
+                  371.8699951171875,
+                  375.9700012207031,
+                  373.30999755859375
+                ],
+                "high": [
+                  370.6400146484375,
+                  374.010009765625,
+                  374.7200012207031,
+                  380.8500061035156,
+                  380.0
+                ],
+                "open": [
+                  368.1199951171875,
+                  366.2099914550781,
+                  370.30999755859375,
+                  376.1499938964844,
+                  376.2300109863281
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  365.1000061035156,
+                  370.0400085449219,
+                  371.8699951171875,
+                  375.9700012207031,
+                  373.30999755859375
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 365.1000061035156,
+      "adjclose": 365.1000061035156,
+      "open": 368.1199951171875,
+      "high": 370.6400146484375,
+      "low": 362.760009765625,
+      "volume": 547500
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 370.0400085449219,
+      "adjclose": 370.0400085449219,
+      "open": 366.2099914550781,
+      "high": 374.010009765625,
+      "low": 365.0199890136719,
+      "volume": 552300
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 371.8699951171875,
+      "adjclose": 371.8699951171875,
+      "open": 370.30999755859375,
+      "high": 374.7200012207031,
+      "low": 363.94000244140625,
+      "volume": 638500
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 375.9700012207031,
+      "adjclose": 375.9700012207031,
+      "open": 376.1499938964844,
+      "high": 380.8500061035156,
+      "low": 366.5,
+      "volume": 594500
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 373.30999755859375,
+      "adjclose": 373.30999755859375,
+      "open": 376.2300109863281,
+      "high": 380.0,
+      "low": 373.1400146484375,
+      "volume": 326858
+    }
+  ],
+  "currency": "USD",
+  "symbol": "ZBRA",
+  "regular_market_time": 1790798401,
+  "close_sep30": 373.30999755859375,
+  "session_match": true
+}

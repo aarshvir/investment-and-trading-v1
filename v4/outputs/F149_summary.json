@@ -1,0 +1,127 @@
+{
+ "agent": "F149",
+ "as_of": "2026-09-25",
+ "tickers": {
+  "HII": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "America's only maker of nuclear aircraft carriers, priced cheaply against a huge Navy order book, but its cash flow is lumpy and thin-margin.",
+   "horizon": "24-36 months",
+   "kill_criteria": [
+    "FY26 free cash flow guidance (\"FY26 free cash flow between $500 and $600 million\") cut below $500m, or H2'26 FCF (Q3+Q4) under $700m.",
+    "FY26 shipbuilding operating margin guide (current range 6.0%-6.5%) cut below the 6.0% low end, or shipbuilding segment margin under 5.0% in two consecutive quarters.",
+    "Net unfavourable cumulative catch-up adjustments above $100m operating income in any single quarter (Q2'26: net +$10m).",
+    "Total backlog below $50bn at any quarter-end (30 Jun 2026: $57.3bn).",
+    "Consolidated net debt/EBITDA (operating income plus D&A, from the 10-Q/10-K) above 3.5x (about 2.6x now)."
+   ],
+   "key_adverse_facts": [
+    "H1 2026 free cash flow about -$611m against a full-year guide of $500-600m (needs $1.1-1.2bn in H2); cash $12m at 30 Jun 2026",
+    "Q2 2026 net +$10m cumulative catch-up helped EPS by $0.20 (vs -$0.20 a year ago) despite a -$48m unfavourable adjustment on USS George Washington RCOH",
+    "EPS includes $213m non-operating pension benefit (about $4.4/share after tax)",
+    "2024 Newport News welding-quality investigation unresolved; COVID reinsurance claim lost at summary judgment in Apr 2026 (appealed)",
+    "FY24 FCF only $40m; thin 5-6% margins on fixed-price work"
+   ],
+   "data_conflicts": [
+    "yfinance/d4 EBITDA $1.17bn and TTM FCF -$300m differ from my filing-based TTM FCF about -$79m (Q3'25 16 + Q4'25 516 + Q1'26 -461 + Q2'26 -150) and EBITDA about $1.03bn (operating income + D&A)",
+    "Q4'25 FCF of $516m is derived (FY25 $800m less first nine months), not quoted",
+    "d4 next earnings 2026-10-29 is an estimate"
+   ],
+   "next_earnings_date": "2026-10-29",
+   "confidence_in_thesis": "medium: backlog and demand are verifiable; FCF delivery and estimate changes are not yet proven",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "fair",
+    "consistent": true,
+    "reconciliation": "No V1 row exists for HII, so v1_verdict and v1_base_3y are null; dossier base case (+9.6%/yr) is from my own EPS/multiple build and reverse DCF (implied 5.4% FCFF CAGR at 9% WACC vs 7% base).",
+    "implied_vs_base": "below"
+   },
+   "scenario_returns_3y": {
+    "bear": -0.035,
+    "base": 0.096,
+    "bull": 0.22
+   },
+   "scenario_basis": "Start FY26E EPS $18.5 (consensus; H1 $9.06), base NTM EPS about $24.5 at Sep 2029 x 13.5 exit P/E = $331 plus about $17 dividends vs $264.02; bear EPS $20 x 11; bull EPS $29 x 16."
+  },
+  "DDOG": {
+   "verdict": "WATCH",
+   "thesis_one_line": "Fast-growing software that monitors company computer systems, but its price assumes growth even better than our best case while its biggest customer is cutting back.",
+   "horizon": "24-36 months",
+   "kill_criteria": [
+    "Q3'26 revenue below $1.135bn (low end of the guided \"Revenue between $1.135 billion and $1.145 billion.\") or FY26 revenue guidance cut below $4.45bn.",
+    "Reported YoY revenue growth below 20% in two consecutive quarters before end-2027 (Q3'26 guide implies about 28-29% and Q4'26 about 25%, derived).",
+    "Trailing-12-month dollar-based net retention falls below 115% (currently \"low-120%'s\").",
+    "Non-GAAP operating margin below 20% in two consecutive quarters, or equity SBC above 25% of revenue (FY25 21.9%).",
+    "Diluted weighted share count growth above 4% YoY (Q2'26: +3.4%)."
+   ],
+   "key_adverse_facts": [
+    "10-Q: 'We saw a reduction in usage from our largest customer starting in the third quarter of 2026, which may cause a deceleration in revenue growth.'",
+    "Q3 2026 revenue guide $1.135-1.145bn implies +28-29% YoY vs +36% in Q2; implied Q4 about +25%",
+    "SBC about $0.75bn FY25 (21.9% of revenue); SBC-burdened TTM FCF about $240m (0.2% yield) vs reported FCF $1,073m",
+    "Diluted shares +3.4% YoY; $1.0bn converts due 2029 with $217.60 conversion price, in the money",
+    "Heavy insider selling (503 sale transactions in 90 Form 4s since 26 Mar 2026; no purchases); reincorporated Delaware to Nevada 21 Apr 2026"
+   ],
+   "data_conflicts": [
+    "d4/yfinance market cap $96.3bn uses 334.9m Class A shares; I use 371.0m diluted (Q2'26 weighted) = $99.5bn",
+    "d4 trailing EPS $0.49 (GAAP) vs non-GAAP guidance $2.50-2.54: different bases, labelled",
+    "Largest customer is unnamed in filings; OpenAI attribution comes only from press/analyst reports"
+   ],
+   "next_earnings_date": "2026-11-05",
+   "confidence_in_thesis": "medium on the business, high that the price is demanding; thesis cannot be sized until Q3/Q4 show the impact of the largest-customer cut",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "expensive",
+    "consistent": true,
+    "reconciliation": "No V1 row exists for DDOG, so v1_verdict and v1_base_3y are null; reverse DCF implies 25-29% FY26-35 revenue CAGR (20% only at an 8% discount rate) vs my base 13% and bull 20%.",
+    "implied_vs_base": "above"
+   },
+   "scenario_returns_3y": {
+    "bear": -0.23,
+    "base": -0.006,
+    "bull": 0.11
+   },
+   "scenario_basis": "Start FY26E revenue $4.46bn (guide $4.45-4.47bn), non-GAAP EPS $2.52; base revenue FY30 $8.9bn (NTM $8.6bn) x 11x EV/sales + $8.6bn net cash over 394m shares = about $263 vs $268.13; bear 6x on $6.75bn; bull 14x on $9.75bn; no dividend."
+  },
+  "KMB": {
+   "verdict": "WATCH",
+   "thesis_one_line": "Kleenex and Huggies maker, cheap with a 5% dividend, but it cut its 2026 outlook and is buying Tylenol-maker Kenvue with debt.",
+   "horizon": "24-36 months",
+   "kill_criteria": [
+    "Kenvue acquisition not closed by 31 Mar 2027 or terminated (either side owes a $1.1bn fee in specified cases).",
+    "FY26 organic sales growth guide cut again (currently \"approximately 100 basis points below its weighted average category growth\") or adjusted operating profit growth guide cut below mid-single digits.",
+    "Pro forma consolidated net debt/adjusted EBITDA at close above 3.25x (my estimate 2.6-2.9x) or a credit-rating downgrade below BBB.",
+    "Dividend cut, or trailing-12-month free cash flow below dividends paid for two consecutive quarters after closing.",
+    "Any acetaminophen judgment, settlement or accrual above $1bn, or a trial date set in the remanded MDL."
+   ],
+   "key_adverse_facts": [
+    "4 Aug 2026 outlook cut: organic growth now about 100 bps below category growth (prior in line to ahead); adjusted EPS attributable now low-single-digit decline (prior flat); adjusted EPS continuing ops high single digits (prior double digit)",
+    "China diaper social-media disruption (about 100 bps organic drag) expected to further hit sales and profits",
+    "Kenvue: Second Circuit vacated dismissal of acetaminophen autism/ADHD MDL in July 2026; Kenvue cannot estimate liability; Texas AG suit on appeal",
+    "Kenvue deal adds about 280m shares (current holders about 54%) and about $6.7bn cash consideration; my est. pro forma net debt about $18.3bn (2.6-2.9x EBITDA); no pro forma guidance yet",
+    "Dividend about $1.7bn a year roughly equals TTM FCF (about $1.9bn including IFP and a one-off insurance recovery); Q2 adjusted margin helped by one-time tariff refunds"
+   ],
+   "data_conflicts": [
+    "d4/yfinance FCF $941m and forward EPS $7.48 differ from my TTM FCF about $1.9bn (includes discontinued IFP and insurance recovery) and company bases (continuing vs attributable EPS)",
+    "b1 ROE 112% is an artefact of $1.75bn book equity",
+    "d4 next earnings 2026-11-03 not verified against company IR",
+    "Pro forma leverage and EPS are my estimates from KMB and Kenvue filings; the company has not published a pro forma leverage target"
+   ],
+   "next_earnings_date": "2026-11-03",
+   "confidence_in_thesis": "low: pro forma company, leverage and litigation exposure are not yet observable",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "fair",
+    "consistent": true,
+    "reconciliation": "No V1 row exists for KMB, so v1_verdict and v1_base_3y are null; standalone reverse DCF implies 2.3-4.4% FCF CAGR vs my 3-4% standalone and about 6% pro forma base, so price is in line; the WATCH verdict reflects deal/litigation risk, not price.",
+    "implied_vs_base": "in_line"
+   },
+   "scenario_returns_3y": {
+    "bear": -0.035,
+    "base": 0.089,
+    "bull": 0.189
+   },
+   "scenario_basis": "Start price $98.43; base pro forma NTM adjusted EPS $8.6 (612m shares post-Kenvue, my estimate) x 13.0 = $112 plus $15.4 dividends ($5.12 x 3); bear EPS $6.5 x 11.5 with dividend cut in year 3; bull EPS $10.0 x 15."
+  }
+ }
+}

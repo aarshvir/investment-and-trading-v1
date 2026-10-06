@@ -1,0 +1,118 @@
+{
+  "agent": "F54",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "MA": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Global card-payment duopolist with mid-teens revenue growth and low debt, priced for only about 7% a year of future growth.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Net revenue growth falls below 8% YoY (reported) for two consecutive quarters.",
+        "Adjusted operating margin compresses more than 300 bps YoY for two consecutive quarters.",
+        "The BVNK acquisition fails to close by 2026-12-31, or closes with a materially adverse regulatory condition disclosed in an 8-K.",
+        "A U.S. court ruling narrows or voids the Damages Class Settlement release (the April-2026 merchant suit), with an accrued or disclosed potential loss exceeding $1bn.",
+        "Consolidated net debt/TTM EBITDA exceeds 1.5x (from ~0.6x currently) without a corresponding buyback pause disclosed by management."
+      ],
+      "key_adverse_facts": [
+        "New putative U.S. merchant class action (filed April 2026) is trying to void the scope of the 2023 Damages Class Settlement release, potentially reopening pre-2019 interchange claims at larger scale than the $296M currently reserved.",
+        "Portuguese consumer class action seeking ~$0.5bn (as of 2026-06-30) tied to the 2019 EU interchange resolution, unresolved.",
+        "Consolidated long-term debt rose $3.9bn in six months (2025-12-31 to 2026-06-30); the specific new note issuance was not identified in the 10-Q text reviewed (data gap, not confirmed benign).",
+        "Accrued litigation reserve fell from $800M to $296M in six months with the resolved matter not identified in the text reviewed (data conflict, flagged not resolved)."
+      ],
+      "data_conflicts": [
+        "MA gives no formal numeric quarterly/annual guidance in its earnings releases, unlike triage's implicit framing of a specific forward growth number; this dossier relies on consensus (d4) and realized growth instead.",
+        "b1_live_scores.csv's ROE (289.7%) is a share-count/equity-base artefact of buybacks, not comparable across the sector; this dossier weights gross-profit/assets and OCF/assets instead."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "confidence_in_thesis": "high: duopoly structure, 8-quarter primary-source revenue/margin trend, and a conservative reverse DCF all point the same direction (priced below base case); main uncertainty is quantifying the reopened-litigation tail risk.",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for MA in this run (not covered), so there is nothing to reconcile; the dossier's own reverse DCF (~6.8%/yr implied FCF growth vs a base case of ~13%/yr) independently supports a 'cheap, not full' view."
+      },
+      "scenario_returns_3y": {
+        "bear": 0.002,
+        "base": 0.127,
+        "bull": 0.210
+      },
+      "scenario_basis": "FCF/share $19.36 (TTM); NTM P/E 25.6x start; bear = 8%/yr EPS CAGR with exit P/E 20x and 0.7% avg dividend yield; base = 13%/yr EPS CAGR with exit P/E 25x (flat) and 0.6% yield; bull = 17%/yr EPS CAGR with exit P/E 28x and 0.5% yield; all over a 3-year horizon."
+    },
+    "MCO": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Near-duopoly credit-rating agency plus a growing data/analytics arm, but the price already needs the beat-and-raise streak to continue.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "FY2026 adjusted diluted EPS guidance is cut below the $16.50-$17.00 range reaffirmed/narrowed as of the 2026-07-22 release.",
+        "Consolidated revenue growth falls below the guided high-single-digit range (below 7% YoY) for two consecutive quarters.",
+        "MIS (ratings) transactional revenue declines YoY for two consecutive quarters.",
+        "Consolidated net debt/TTM EBITDA exceeds 3.0x (from ~1.35x currently).",
+        "Total Moody's shareholders' equity turns negative on the consolidated balance sheet (from $3,025M currently)."
+      ],
+      "key_adverse_facts": [
+        "Total Moody's shareholders' equity fell from $4,054M to $3,025M in six months (buybacks/dividends running ahead of retained earnings) - a thin cushion if a credit-cycle downturn coincided with a legal or refinancing shock.",
+        "2Q26 GAAP diluted EPS growth (+57% YoY) was inflated by a $181M one-time gain on business divestitures; adjusted EPS growth (+31% YoY) is the more representative figure and the GAAP headline should not be read as sustainable run-rate growth.",
+        "MIS transactional revenue (34% YoY growth in 2Q26) is a leveraged bet on global debt-issuance volumes and would fall quickly in a credit-market slowdown, with limited advance warning."
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv's ROE (76.9%, cited by triage) is partly an artefact of the shrinking equity base described above, not pure operating economics; this dossier relies on operating cash flow and the guidance track record instead."
+      ],
+      "next_earnings_date": "2026-10-21",
+      "confidence_in_thesis": "medium: guidance track record (4/4 releases raised or narrowed upward, with exact quoted numbers) is strong evidence of execution, but the reverse DCF shows the price already assumes that execution continues, leaving little margin of safety if the credit cycle turns.",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "in_line",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for MCO in this run (not covered), so there is nothing to reconcile; the dossier's own reverse DCF (~11.7%/yr implied FCF growth) is close to the company's own guided/realized ~12-13%/yr trajectory, i.e. fairly priced rather than cheap."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.003,
+        "base": 0.122,
+        "bull": 0.205
+      },
+      "scenario_basis": "FCF/share $14.89 (TTM); NTM P/E 25.5x start; bear = 7%/yr EPS CAGR with exit P/E 20x and 1.0% avg dividend yield; base = 12%/yr EPS CAGR with exit P/E 25x (flat) and 0.9% yield; bull = 16%/yr EPS CAGR with exit P/E 28x and 0.8% yield; all over a 3-year horizon."
+    },
+    "MRSH": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "World's largest insurance broker, priced cheaply on a reverse DCF, but a $2 billion Greensill lawsuit against two subsidiaries is still unresolved.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "The Credit Suisse Greensill claim (or any related Australian-proceedings claim) results in an incremental charge exceeding $500M in any single quarter, beyond the $425M already reserved.",
+        "GAAP diluted EPS declines YoY for a third consecutive quarter while adjusted diluted EPS growth also decelerates below 5% YoY.",
+        "Risk and Insurance Services segment underlying (organic) revenue growth turns negative for two consecutive quarters.",
+        "Consolidated net debt (excluding fiduciary funds)/TTM EBITDA exceeds 3.0x (from ~2.43x currently).",
+        "The quarterly dividend is cut or held flat for four consecutive quarters after the 2026-07-08 increase."
+      ],
+      "key_adverse_facts": [
+        "The Company recorded a $425 million gross liability in Q1 2026 for the Greensill litigation (entity: Marsh Ltd. and Marsh Pty Ltd., subsidiaries); the Credit Suisse portion of the claim (~$2bn claimed) remains unresolved and management states additional charges are possible.",
+        "GAAP diluted EPS fell 5% YoY in H1 2026 ($4.99 vs $5.23) even though adjusted diluted EPS rose 8%; this is a real earnings-quality issue, not just a one-off optics problem, because the underlying liability is still developing.",
+        "Underlying (organic) revenue growth has decelerated over the last several quarters as commercial P&C insurance pricing has softened industry-wide.",
+        "An aviation/reinsurance information-sharing investigation and a long-running Brazil antitrust proceeding are both disclosed but under-specified in the filings reviewed (open items, not dismissed)."
+      ],
+      "data_conflicts": [
+        "d4_live_snapshot.parquet flags its own NTM P/E for MRSH as ntm_quality='caution' (15.3x); this dossier does not rely on that figure, using FCF-based multiples and a reverse DCF instead, consistent with the wave-3 lesson on not trusting an un-sanity-checked vendor NTM field.",
+        "Triage (Q05) cited 39% EPS growth and called 15.3x forward P/E fair; this dossier finds that figure is likely distorted by the Q1 2026 Greensill charge depressing the trailing EPS base used in a naive forward-growth calculation."
+      ],
+      "next_earnings_date": "2026-10-15",
+      "confidence_in_thesis": "medium: the underlying franchise quality and cheap reverse-DCF implied growth are well evidenced, but confidence is capped by the genuinely unresolved size of the Credit Suisse Greensill claim, which primary sources confirm could still grow.",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for MRSH in this run (not covered), so there is nothing to reconcile; the dossier's own reverse DCF (~0.8%/yr implied FCF growth vs a base case of ~8%/yr) independently supports a 'cheap' view, tempered by the litigation reservation that keeps the verdict at INCLUDE-SMALL rather than INCLUDE."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.035,
+        "base": 0.068,
+        "bull": 0.132
+      },
+      "scenario_basis": "FCF/share $10.03 (TTM); trailing P/E 20.9x start; bear = 3%/yr EPS CAGR (further Greensill charges) with exit P/E 16x and 2.3% avg dividend yield; base = 8%/yr EPS CAGR with exit P/E 19x and 2.2% yield; bull = 11%/yr EPS CAGR with exit P/E 21x and 2.0% yield; all over a 3-year horizon."
+    }
+  }
+}

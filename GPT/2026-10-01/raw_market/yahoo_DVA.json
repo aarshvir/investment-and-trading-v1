@@ -1,0 +1,193 @@
+{
+  "ticker": "DVA",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/DVA?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:42.508819+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "DVA",
+            "exchangeName": "NYQ",
+            "fullExchangeName": "NYSE",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 815149800,
+            "regularMarketTime": 1790798403,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 174.92,
+            "regularMarketChangePercent": -0.154,
+            "fulldayPrice": 174.92,
+            "fulldayChange": -0.27,
+            "fulldayChangePercent": -0.154,
+            "fiftyTwoWeekHigh": 247.49,
+            "fiftyTwoWeekLow": 101.0,
+            "regularMarketDayHigh": 178.33,
+            "regularMarketDayLow": 174.92,
+            "regularMarketVolume": 533214,
+            "longName": "DaVita Inc.",
+            "shortName": "DaVita Inc.",
+            "chartPreviousClose": 183.14,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "end": 1790775000,
+                "start": 1790755200,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "end": 1790798400,
+                "start": 1790775000,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "end": 1790812800,
+                "start": 1790798400,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "open": [
+                  183.10000610351562,
+                  175.3800048828125,
+                  178.7100067138672,
+                  176.9199981689453,
+                  176.0800018310547
+                ],
+                "close": [
+                  174.6699981689453,
+                  178.47000122070312,
+                  178.07000732421875,
+                  175.19000244140625,
+                  174.9199981689453
+                ],
+                "high": [
+                  183.77999877929688,
+                  179.10000610351562,
+                  182.36000061035156,
+                  176.97999572753906,
+                  178.3300018310547
+                ],
+                "low": [
+                  174.32000732421875,
+                  174.6699981689453,
+                  177.50999450683594,
+                  174.0800018310547,
+                  174.9199981689453
+                ],
+                "volume": [
+                  812400,
+                  519800,
+                  439400,
+                  637000,
+                  533214
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  174.6699981689453,
+                  178.47000122070312,
+                  178.07000732421875,
+                  175.19000244140625,
+                  174.9199981689453
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 174.6699981689453,
+      "adjclose": 174.6699981689453,
+      "open": 183.10000610351562,
+      "high": 183.77999877929688,
+      "low": 174.32000732421875,
+      "volume": 812400
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 178.47000122070312,
+      "adjclose": 178.47000122070312,
+      "open": 175.3800048828125,
+      "high": 179.10000610351562,
+      "low": 174.6699981689453,
+      "volume": 519800
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 178.07000732421875,
+      "adjclose": 178.07000732421875,
+      "open": 178.7100067138672,
+      "high": 182.36000061035156,
+      "low": 177.50999450683594,
+      "volume": 439400
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 175.19000244140625,
+      "adjclose": 175.19000244140625,
+      "open": 176.9199981689453,
+      "high": 176.97999572753906,
+      "low": 174.0800018310547,
+      "volume": 637000
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 174.9199981689453,
+      "adjclose": 174.9199981689453,
+      "open": 176.0800018310547,
+      "high": 178.3300018310547,
+      "low": 174.9199981689453,
+      "volume": 533214
+    }
+  ],
+  "currency": "USD",
+  "symbol": "DVA",
+  "regular_market_time": 1790798403,
+  "close_sep30": 174.9199981689453,
+  "session_match": true
+}

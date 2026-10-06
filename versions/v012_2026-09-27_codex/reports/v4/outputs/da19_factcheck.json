@@ -1,0 +1,132 @@
+{
+  "as_of": "2026-09-27",
+  "scope": "Independent adversarial data audit (DA19) of two current dossiers: RSG, LH. 14 load-bearing facts checked (7/7 by ticker), selected per instructions for the claims most likely to break a thesis or a kill criterion if wrong: latest-quarter revenue/GAAP net income/diluted EPS with correct period labels, guidance figures verified verbatim against the cited release, consolidated vs segment figures, debt/leverage on the correct basis and date, litigation/regulatory items, and thesis/kill-criterion-1 consistency. Special attention paid to the four known error patterns named in the task: (1) latest-quarter figures actually being a prior-year or different-quarter column -- tested explicitly for both tickers' quarterly results tables; (2) guidance figures verified to appear verbatim in the cited release; (3) consolidated vs segment figures -- tested for RSG (multi-segment waste company) and LH (Diagnostics vs Biopharma segments); (4) debt on the wrong basis/date -- tested for both. v4/outputs/dossier_precheck.json (RSG: empty array; LH: 8 citation/guidance-unquoted/entity-scope flags, none numeric) and v4/outputs/xbrl_crosstie.json (RSG and LH both: empty flags array) were read in full for both tickers; no numeric crosstie flags existed for either ticker this pass. Method: primary sources only -- SEC EDGAR 8-K Ex-99.1 earnings-release exhibits, 10-Q/10-K full-text filings, and data.sec.gov/api/xbrl/companyfacts structured data -- fetched directly with User-Agent 'PersonalEquityResearch research-admin@personal-research.org' at <=2 requests/second and cached locally under C:\\Users\\user\\eqv4\\cache\\DA19\\. Both dossiers were read to their end (no appended Correction sections found on either). Each ticker's one-line thesis and first kill criterion were checked for consistency with the underlying filings.",
+  "facts": [
+    {
+      "ticker": "RSG",
+      "claim": "Q2 2026 (three months ended 2026-06-30) headline, consolidated: revenue $4,430m (+4.6% YoY); net income $566m; GAAP diluted EPS $1.84 (vs $1.75 in Q2 2025); adjusted diluted EPS $1.85",
+      "dossier_location": "RSG.md \u00a74 (results table, Q2'26 row)",
+      "source": "SEC XBRL companyfacts, CIK0001060391 (RevenueFromContractWithCustomerExcludingAssessedTax, NetIncomeLoss, EarningsPerShareDiluted tags, period 2026-04-01->2026-06-30, 10-Q accession 0001060391-26-000275); cross-checked to RSG Q2 2026 earnings release, 8-K Ex-99.1, accession 0001060391-26-000273, filed 2026-08-06",
+      "source_value": "Revenues ->2026-04-01->2026-06-30 val=4,430,000,000; NetIncomeLoss val=566,077,000; EarningsPerShareDiluted val=1.84. Press release: \"Republic Services, Inc. (NYSE: RSG) today reported net income of $566 million, or $1.84 per diluted share, for the three months ended June 30, 2026, versus $550 million, or $1.75 per diluted share, for the comparable 2025 period.\"",
+      "status": "PASS",
+      "note": "Exact match on revenue, net income, GAAP diluted EPS and the YoY comparison figure across both XBRL and the primary press release."
+    },
+    {
+      "ticker": "RSG",
+      "claim": "FY2026 guidance track: initial (Q4 2025 release) revenue $17.050-$17.150B / adjusted EBITDA $5.475-$5.525B / adjusted diluted EPS $7.20-$7.28 / adjusted FCF $2.520-$2.560B; genuinely RAISED at the Q2 2026 release to revenue $17.200-$17.300B / adjusted EBITDA $5.525-$5.550B / adjusted diluted EPS $7.23-$7.28 / adjusted FCF $2.540-$2.575B",
+      "dossier_location": "RSG.md \u00a75 (guidance track record, items 1 and 3)",
+      "source": "RSG Q4/FY2025 earnings release, 8-K Ex-99.1, accession 0001060391-26-000093, filed 2026-02-17; RSG Q2 2026 earnings release, 8-K Ex-99.1, accession 0001060391-26-000273, filed 2026-08-06",
+      "source_value": "Q4'25 release: \"Republic expects revenue to be in the range of $17.050 billion to $17.150 billion... adjusted EBITDA to be in the range of $5.475 billion to $5.525 billion... adjusted diluted earnings per share to be in the range of $7.20 to $7.28... adjusted free cash flow to be in the range of $2.520 billion to $2.560 billion.\" Q2'26 release: \"Revenue: Increased original guidance to a range of $17.200 billion to $17.300 billion... Adjusted EBITDA: Increased original guidance to a range of $5.525 billion to $5.550 billion... Adjusted Diluted Earnings per Share: Updated original guidance to a range of $7.23 to $7.28 per share... Adjusted Free Cash Flow: Increased original guidance to a range of $2.540 billion to $2.575 billion.\"",
+      "status": "PASS",
+      "note": "Every figure in both guidance rows matches the respective primary-source press release verbatim, word-for-word and number-for-number; the raise framing is confirmed genuine (each range moved up, not merely reiterated)."
+    },
+    {
+      "ticker": "RSG",
+      "claim": "Consolidated net debt at 2026-06-30: long-term debt $13,521m + current maturities $548m \u2212 cash $107m = $13,962m; net debt/adjusted EBITDA \u2248 2.5x vs guided FY26 adjusted EBITDA midpoint $5,537.5m",
+      "dossier_location": "RSG.md \u00a76 (earnings quality & balance sheet, net debt bullet)",
+      "source": "SEC XBRL companyfacts, CIK0001060391: LongTermDebtAndCapitalLeaseObligations, LongTermDebtAndCapitalLeaseObligationsCurrent, CashAndCashEquivalentsAtCarryingValue tags, 2026-06-30 (10-Q accession 0001060391-26-000275)",
+      "source_value": "LongTermDebtAndCapitalLeaseObligations ->2026-06-30 val=13,521,000,000; LongTermDebtAndCapitalLeaseObligationsCurrent val=548,000,000; CashAndCashEquivalentsAtCarryingValue val=107,000,000 (sum: 13,521+548-107=13,962). 13,962/5,537.5=2.52\u22482.5x",
+      "status": "PASS",
+      "note": "Exact match on all three balance-sheet components, the summed net-debt total and the resulting leverage ratio."
+    },
+    {
+      "ticker": "RSG",
+      "claim": "No Regulation S-K Item 103 environmental proceeding disclosed at the $1,000,000-or-more threshold as of the Q2'26 10-Q",
+      "dossier_location": "RSG.md \u00a79 kill criterion 5 and \u00a711 (red-flag scan)",
+      "source": "RSG 10-Q for period ended 2026-06-30, filed 2026-08-07, accession 0001060391-26-000275, Item 1 Legal Proceedings / Item 103 disclosure",
+      "source_value": "\"Item 103 of the SEC's Regulation S-K requires disclosure of certain environmental matters when a governmental authority is a party to the proceedings and the proceedings involve potential monetary sanctions... we have determined such disclosure threshold to be $1,000,000. We have no matters to disclose in accordance with that requirement.\"",
+      "status": "PASS",
+      "note": "Exact match, word for word; kill criterion 5 (any such proceeding disclosed at >=$1,000,000) is confirmed not triggered."
+    },
+    {
+      "ticker": "RSG",
+      "claim": "Q1'26 and Q2'26 core price on total revenue was 5.7% and 5.3% respectively; core price on related-business revenue was 6.8% and 6.4%; quarterly dividend raised ~7% (4.5-cent increase) to $0.670/qtr, record 2 Oct 2026, paid 15 Oct 2026",
+      "dossier_location": "RSG.md \u00a73 (durability paragraph) and \u00a76 (dividend bullet)",
+      "source": "RSG Q1 2026 earnings release, 8-K Ex-99.1, accession 0001060391-26-000210, filed 2026-05-07; RSG Q2 2026 earnings release, 8-K Ex-99.1, accession 0001060391-26-000273, filed 2026-08-06",
+      "source_value": "Q1'26: \"Core price on total revenue increased revenue by 5.7 percent. Core price on related business revenue increased revenue by 6.8 percent.\" Q2'26: \"Core price on total revenue increased revenue by 5.3 percent. Core price on related business revenue increased revenue by 6.4 percent.\" Dividend: \"its Board of Directors approved a 4.5-cent increase in the quarterly dividend. The quarterly dividend of $0.670 per share for shareholders of record on October 2, 2026, will be paid on October 15, 2026.\" (Increase from $0.625/qtr = +7.2%, matches \"Increased Quarterly Dividend by Approximately 7 Percent\" headline.)",
+      "status": "PASS",
+      "note": "All core-price and dividend figures confirmed exactly against both cited primary releases."
+    },
+    {
+      "ticker": "RSG",
+      "claim": "Q4 2025 (three months ended 2025-12-31): revenue $4,136m (+2.2% YoY); operating income $800m (19.3% margin); GAAP diluted EPS $1.76",
+      "dossier_location": "RSG.md \u00a74 (results table, Q4'25 row)",
+      "source": "RSG Q4/FY2025 earnings release, 8-K Ex-99.1, accession 0001060391-26-000093, filed 2026-02-17; cross-checked to XBRL companyfacts, CIK0001060391",
+      "source_value": "Press release consolidated income statement, quarter column: \"Total revenue $4,136... 100.0%\"; \"Operating income 800\"; net income $545m, \"$1.76 per diluted share, for the three months ended December 31, 2025.\" These are the company's own directly-reported quarterly figures (not derived by FY-minus-9mo subtraction, which yields $4,135m due to independent quarterly rounding \u2014 a benign $1m/0.02% rounding artifact between the quarterly-reported and derived figures, not a dossier error).",
+      "status": "PASS",
+      "note": "The dossier's Q4'25 row is correctly sourced to the company's own directly-reported quarterly figures and matches them exactly; op. margin 800/4,136=19.35%\u224819.3% also confirmed. (Note: the dossier's footnote correctly and separately flags/discards an unrelated legacy XBRL 'Revenues' tag that returns a mismatched $19,027m FY2025 figure -- independently confirmed to exist in the same 10-K under a different, non-comparable tag; the dossier's handling of this data-quality issue is correct.)"
+    },
+    {
+      "ticker": "RSG",
+      "claim": "Thesis/kill-criterion-1 consistency: verdict rests on genuine pricing power sustaining margin expansion; kill criterion 1 (organic related-business revenue growth <2% for two consecutive quarters) has not been triggered -- total-business organic growth (total revenue growth net of the ~1.1pp M&A contribution) was 1.5% (Q1'26: 2.6%-1.1%) and 3.5% (Q2'26: 4.6%-1.1%), both above the 2% floor",
+      "dossier_location": "RSG.md \u00a71 (verdict), \u00a79 kill criterion 1",
+      "source": "RSG Q1 2026 and Q2 2026 earnings releases, 8-K Ex-99.1, accessions 0001060391-26-000210 and 0001060391-26-000273",
+      "source_value": "Q1'26: \"Total revenue growth of 2.6 percent includes 2.8 percent organic growth from our recycling and waste business, 1.3 percent organic decline from our environmental solutions business, and 1.1 percent growth from acquisitions.\" Q2'26: \"Total revenue growth of 4.6 percent includes 3.7 percent organic growth from our recycling and waste business, 0.2 percent decline from our environmental solutions business, and 1.1 percent growth from acquisitions.\" (2.6-1.1=1.5; 4.6-1.1=3.5, matching the dossier's stated 1.5%/3.5% total-business-organic derivation exactly.)",
+      "status": "MINOR",
+      "note": "The dossier's own '1.5%/3.5% total-business organic' figure is correctly derived from the primary source and the kill criterion is confirmed not triggered. However, the parenthetical '+5.2%/+4.4% related-business growth in Q1/Q26' figures immediately preceding it in the same sentence could not be traced to any verbatim line in either cited release -- the only related-business-revenue growth-component figures found in the primary sources are core price 6.8%/6.4%, average yield 4.1%/4.0%, and volume -1.0%/-1.9% (Q1/Q2'26 respectively), none of which combine to 5.2% or 4.4%. This does not affect the kill-criterion conclusion (not triggered) but the specific 5.2%/4.4% figures are unverifiable against the cited sources and should be re-sourced or removed."
+    },
+    {
+      "ticker": "LH",
+      "claim": "Q2 2026 (three months ended 2026-06-30) headline: revenue $3,731.1m (+5.8% YoY vs $3,527.3m/$3.53bn); GAAP diluted EPS $3.64 (vs $2.84, +28.5% YoY); adjusted diluted EPS $4.99 (vs $4.35, +14.9% YoY)",
+      "dossier_location": "LH.md \u00a74 (results table, 2Q'26 row) and \u00a73",
+      "source": "SEC XBRL companyfacts, CIK0000920148 (Revenues, NetIncomeLoss, EarningsPerShareDiluted tags, period 2026-04-01->2026-06-30, 10-Q accession 0000920148-26-000175); cross-checked to Labcorp Q2 2026 earnings release, 8-K Ex-99.1, accession 0000920148-26-000162, filed 2026-07-30",
+      "source_value": "Revenues ->2026-04-01->2026-06-30 val=3,731,100,000; EarningsPerShareDiluted val=3.64. Prior-year comparators: Revenues ->2025-04-01->2025-06-30 val=3,527,300,000; EPS val=2.84. Press release: \"Revenue: $3.73 billion vs. $3.53 billion, up 5.8% ... Diluted EPS: $3.64 vs. $2.84, up 28.5% ... Adjusted EPS: $4.99 vs. $4.35, up 14.9%.\"",
+      "status": "PASS",
+      "note": "Exact match on every figure across both XBRL and the primary press release, including the true Q2 2025 comparators."
+    },
+    {
+      "ticker": "LH",
+      "claim": "FY2026 guidance raised twice running: Q1'26 release raised guidance to Adjusted EPS $17.70-$18.35 (from $17.55-$18.25); Q2'26 release raised again to Adjusted EPS $18.10-$18.55 (from $17.70-$18.35), Enterprise revenue $14,710-$14,827m (from $14,649-$14,803m), FCF unchanged at $1,240-$1,360m",
+      "dossier_location": "LH.md \u00a75 (guidance track record) and \u00a73 (\"raised guidance two quarters running\")",
+      "source": "Labcorp Q1 2026 earnings release, 8-K Ex-99.1, accession 0000920148-26-000135, filed 2026-04-30; Labcorp Q2 2026 earnings release, 8-K Ex-99.1, accession 0000920148-26-000162, filed 2026-07-30",
+      "source_value": "Q1'26 release, titled \"Labcorp Announces 2026 First Quarter Results; Raises Full Year 2026 Guidance\": \"Adjusted EPS $17.55 $18.25 [Previous] -> $17.70 $18.35 [Updated]\". Q2'26 release, titled \"...Raises Full Year 2026 Guidance\": \"Adjusted EPS $17.70 $18.35 [Previous] -> $18.10 $18.55 [Updated]\"; \"Revenue Labcorp Enterprise $14,649 $14,803 [Previous] -> $14,710 $14,827 [Updated]\"; \"Free Cash Flow $1,240 $1,360 [Previous] -> $1,240 $1,360 [Updated]\" (unchanged).",
+      "status": "PASS",
+      "note": "Every guidance figure in both cited releases matches verbatim, including the exact previous/updated pairing; the dossier's thesis claim of guidance raised 'two quarters running' is independently confirmed true (the Q1'26 raise was not separately checked by the dossier itself, but is confirmed here as a supporting primary-source fact)."
+    },
+    {
+      "ticker": "LH",
+      "claim": "Consolidated balance sheet: cash fell from $981.1m (2026-03-31) to $141.8m (2026-06-30), having been $532.3m at 2025-12-31; stockholders' equity $8,606.8m at 2026-06-30 vs $8,619.8m at 2025-12-31 (roughly flat); long-term debt (noncurrent) rose to $5,857.6m from $5,084.6m at 2025-12-31 (a ~$773m increase)",
+      "dossier_location": "LH.md \u00a76 (earnings quality & balance sheet)",
+      "source": "SEC XBRL companyfacts, CIK0000920148: CashAndCashEquivalentsAtCarryingValue, StockholdersEquity, LongTermDebtNoncurrent tags",
+      "source_value": "Cash ->2025-12-31 val=532,300,000; ->2026-03-31 val=981,100,000; ->2026-06-30 val=141,800,000. StockholdersEquity ->2025-12-31 val=8,619,800,000; ->2026-06-30 val=8,606,800,000. LongTermDebtNoncurrent ->2025-12-31 val=5,084,600,000; ->2026-06-30 val=5,857,600,000 (delta = 773.0m).",
+      "status": "PASS",
+      "note": "Exact match on all figures across all three dates, and the ~$773m debt-increase arithmetic is confirmed precisely (5,857.6-5,084.6=773.0)."
+    },
+    {
+      "ticker": "LH",
+      "claim": "Qui tam/False Claims Act suits are a recurring, named legal exposure; a DOJ Subpoena Duces Tecum was served 27 June 2022 (Boston office) requiring production of documents related to urine drug testing, with which the Company is cooperating -- both per the FY2025 10-K",
+      "dossier_location": "LH.md \u00a79 bear case 1 and \u00a712 (red-flag scan)",
+      "source": "Labcorp FY2025 10-K, filed 2026-02-24, accession 0000920148-26-000111, Legal Proceedings note",
+      "source_value": "\"The Company also is named from time to time in suits brought under the qui tam provisions of the False Claims Act and comparable state laws.\"; \"On June 27, 2022, the Company was served with a Subpoena Duces Tecum issued by the DOJ in Boston, Massachusetts requiring the production of documents related to urine drug testing. The Company is cooperating with the DOJ.\"",
+      "status": "PASS",
+      "note": "Exact match, word for word, on both the qui tam characterization and the DOJ subpoena date/location/subject/cooperation status."
+    },
+    {
+      "ticker": "LH",
+      "claim": "1H 2026 operating cash flow $637.0m vs $639.1m in 1H 2025 (roughly flat); capex $252.6m (1H'26) vs $203.9m (1H'25), rising capex intensity",
+      "dossier_location": "LH.md \u00a74 (narrative below results table)",
+      "source": "SEC XBRL companyfacts, CIK0000920148: NetCashProvidedByUsedInOperatingActivities and PaymentsToAcquirePropertyPlantAndEquipment tags",
+      "source_value": "NetCashProvidedByUsedInOperatingActivities 2025-01-01->2025-06-30 val=639,100,000; 2026-01-01->2026-06-30 val=637,000,000. PaymentsToAcquirePropertyPlantAndEquipment 2025-01-01->2025-06-30 val=203,900,000; 2026-01-01->2026-06-30 val=252,600,000.",
+      "status": "PASS",
+      "note": "Exact match on both figures for both periods."
+    },
+    {
+      "ticker": "LH",
+      "claim": "Results table row labelled \"2Q'25\" reports revenue $3,563.5m, operating income $396.6m, GAAP diluted EPS $3.12 (footnoted \"9mo cum., not isolated\"), and adjusted EPS $4.35",
+      "dossier_location": "LH.md \u00a74 (results table, 2Q'25 row and footnote)",
+      "source": "SEC XBRL companyfacts, CIK0000920148 (RevenueFromContractWithCustomerExcludingAssessedTax/Revenues, OperatingIncomeLoss, EarningsPerShareDiluted tags); cross-checked to Labcorp Q3 2025 10-Q, accession 0000920148-25-000096, and Q2 2025 10-Q, accession 0000920148-25-000081",
+      "source_value": "True Q2 2025 (2025-04-01->2025-06-30, per the Q2'25 10-Q): revenue $3,527,300,000; op. income $394,500,000; diluted EPS $2.84 -- this is what the 2Q'26 release itself uses as the correct prior-year comparator ('$3.64 vs. $2.84... $4.99 vs. $4.35'), and is absent from the dossier's '2Q'25' row entirely. True Q3 2025 (2025-07-01->2025-09-30, per the Q3'25 10-Q): revenue $3,563,500,000; op. income $396,600,000; diluted EPS $3.12 (isolated quarterly figure, NOT a 9-month cumulative number) -- this is exactly the data the dossier's table places in the row labelled '2Q'25'.",
+      "status": "FAIL",
+      "note": "Wrong-quarter mislabeling, exactly the error pattern the task asked to test explicitly: the dossier's '2Q'25' row's revenue/op.income/EPS ($3,563.5m/$396.6m/$3.12) are the true, isolated Q3 2025 figures, not Q2 2025. The true Q2 2025 figures ($3,527.3m/$394.5m/$2.84) are missing from the table -- though they are, inconsistently, correctly used elsewhere in the dossier's own prose (\u00a73, \u00a74 narrative: '$3.64\u2192$2.84... +28.5%'). Compounding the error, the footnote calling the $3.12 EPS figure '9mo cum., not isolated' is itself incorrect -- $3.12 is the true isolated Q3'25 quarterly EPS; the actual 9-month-cumulative EPS through Q3'25 is $8.48 (shown, correctly, in the dossier's adjacent '3Q'25' row). The adjusted EPS $4.35 in the same '2Q'25' row is, separately, the correct true-Q2'25 comparator (matching the 2Q'26 release's own YoY quote) -- meaning the row mixes data from two different quarters under one label. This does not change the headline 2Q'26 YoY growth narrative (independently verified correct above) but the table row and its footnote should be corrected before reuse: relabel the $3,563.5m/$396.6m/$3.12 data as '3Q'25 (isolated)', add the true Q2'25 row ($3,527.3m/$394.5m/$2.84), and fix the mislabeled 9mo-cumulative footnote."
+    },
+    {
+      "ticker": "LH",
+      "claim": "Thesis/kill-criterion-1 consistency: verdict rests on a duopoly franchise compounding revenue with margin expansion and guidance raised two quarters running; kill criterion 1 (full-year adjusted EPS guidance cut at either of the next two releases) has not been triggered -- guidance was raised, not cut, at both the Q1'26 and Q2'26 releases",
+      "dossier_location": "LH.md \u00a71 (verdict), \u00a73, \u00a75 (guidance), \u00a710 kill criterion 1",
+      "source": "Labcorp Q1 2026 and Q2 2026 earnings releases, 8-K Ex-99.1, accessions 0000920148-26-000135 and 0000920148-26-000162",
+      "source_value": "Both releases titled \"...Raises Full Year 2026 Guidance\"; both show an increase (not a decrease or hold) in the adjusted-EPS 'Previous -> Updated' comparison -- no cut language found in either.",
+      "status": "PASS",
+      "note": "Thesis and kill criterion 1 are consistent with both primary sources; no contradiction found."
+    }
+  ]
+}

@@ -1,0 +1,1124 @@
+{
+  "method": "Quarterly rebalance at target weights, Yahoo adjusted daily closes; missing original names omitted with remaining weights renormalized. SPY-missing proxy separately shown for GFC/2011, diagnostic only.",
+  "manifest": {
+    "PEP": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/PEP?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "e1cc066cd142e4260d6401b891ecc22d9a27e9d112610dac697798f5cb6a7054",
+      "currency": "USD",
+      "symbol": "PEP",
+      "points": 5470
+    },
+    "PG": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/PG?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "2a736ec1f918d19a0c08b345fd13b8d9a77244588818a1d25cc48c074a40682a",
+      "currency": "USD",
+      "symbol": "PG",
+      "points": 5470
+    },
+    "PEG": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/PEG?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "d9b4f960f1909417b07e7987ad35889369f797cc24b8fbaafd2d8e05f0744023",
+      "currency": "USD",
+      "symbol": "PEG",
+      "points": 5470
+    },
+    "SO": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SO?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "df273990449b9efec14f01c4366dbb443489bee494bf13a5d4a5bef9390e6712",
+      "currency": "USD",
+      "symbol": "SO",
+      "points": 5470
+    },
+    "PM": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/PM?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "6e585d9091bc318b62722a7df8b1a0b0f0d782fae6c8dffb9f06e8e9862be9a5",
+      "currency": "USD",
+      "symbol": "PM",
+      "points": 4665
+    }
+  },
+  "variants": {
+    "baseline": {
+      "weights": {
+        "MSFT": 8,
+        "AMP": 6,
+        "NVDA": 4,
+        "ADP": 6,
+        "TJX": 6,
+        "RSG": 5,
+        "MA": 5,
+        "MCK": 6,
+        "STE": 5,
+        "BALL": 4,
+        "DOV": 5,
+        "BR": 4,
+        "AXP": 5,
+        "USB": 4,
+        "CRH": 5,
+        "PTC": 4,
+        "VEEV": 4,
+        "GDDY": 4,
+        "ALLE": 5,
+        "HIG": 5
+      },
+      "episodes": {
+        "Global financial crisis": {
+          "return": -0.5237074592409982,
+          "max_drawdown": -0.5305993728258228,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.5274135005215594,
+            "max_drawdown": -0.5326725080516657,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "US downgrade / euro crisis": {
+          "return": -0.20736025615332376,
+          "max_drawdown": -0.20736025615332387,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.20428021423240772,
+            "max_drawdown": -0.20428021423240816,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "China devaluation sell-off": {
+          "return": -0.11727282527493021,
+          "max_drawdown": -0.1618112029937423,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "Q4 2018 rate scare": {
+          "return": -0.2148919938667393,
+          "max_drawdown": -0.21509335913488847,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "COVID crash": {
+          "return": -0.38744042769272447,
+          "max_drawdown": -0.3874404276927247,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "2022 inflation bear market": {
+          "return": -0.2123261193924263,
+          "max_drawdown": -0.2181754973224561,
+          "missing": {},
+          "coverage_weight_pct": 100
+        }
+      }
+    },
+    "HIG_to_PG": {
+      "weights": {
+        "MSFT": 8,
+        "AMP": 6,
+        "NVDA": 4,
+        "ADP": 6,
+        "TJX": 6,
+        "RSG": 5,
+        "MA": 5,
+        "MCK": 6,
+        "STE": 5,
+        "BALL": 4,
+        "DOV": 5,
+        "BR": 4,
+        "AXP": 5,
+        "USB": 4,
+        "CRH": 5,
+        "PTC": 4,
+        "VEEV": 4,
+        "GDDY": 4,
+        "ALLE": 5,
+        "PG": 5
+      },
+      "episodes": {
+        "Global financial crisis": {
+          "return": -0.465632981090099,
+          "max_drawdown": -0.4757464377547094,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.4775292533966117,
+            "max_drawdown": -0.48429933887739585,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "US downgrade / euro crisis": {
+          "return": -0.1831876256018261,
+          "max_drawdown": -0.183187625601826,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.18325002565260484,
+            "max_drawdown": -0.18325002565260495,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "China devaluation sell-off": {
+          "return": -0.10962992670133553,
+          "max_drawdown": -0.15550982903855715,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "Q4 2018 rate scare": {
+          "return": -0.20348027310489814,
+          "max_drawdown": -0.20395502472930715,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "COVID crash": {
+          "return": -0.37509700039183214,
+          "max_drawdown": -0.37509700039183236,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "2022 inflation bear market": {
+          "return": -0.21939919846808276,
+          "max_drawdown": -0.2245999352618906,
+          "missing": {},
+          "coverage_weight_pct": 100
+        }
+      }
+    },
+    "HIG_to_PEP": {
+      "weights": {
+        "MSFT": 8,
+        "AMP": 6,
+        "NVDA": 4,
+        "ADP": 6,
+        "TJX": 6,
+        "RSG": 5,
+        "MA": 5,
+        "MCK": 6,
+        "STE": 5,
+        "BALL": 4,
+        "DOV": 5,
+        "BR": 4,
+        "AXP": 5,
+        "USB": 4,
+        "CRH": 5,
+        "PTC": 4,
+        "VEEV": 4,
+        "GDDY": 4,
+        "ALLE": 5,
+        "PEP": 5
+      },
+      "episodes": {
+        "Global financial crisis": {
+          "return": -0.46570111645478085,
+          "max_drawdown": -0.476404008143841,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.47756763150324555,
+            "max_drawdown": -0.48458818073491217,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "US downgrade / euro crisis": {
+          "return": -0.18971787316732935,
+          "max_drawdown": -0.18971787316732935,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.18893134103459253,
+            "max_drawdown": -0.18893134103459297,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "China devaluation sell-off": {
+          "return": -0.10940601228170965,
+          "max_drawdown": -0.15788045135615214,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "Q4 2018 rate scare": {
+          "return": -0.20864836202803594,
+          "max_drawdown": -0.20864836202803627,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "COVID crash": {
+          "return": -0.3776590455413096,
+          "max_drawdown": -0.3776590455413098,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "2022 inflation bear market": {
+          "return": -0.209343495161192,
+          "max_drawdown": -0.21453109302950002,
+          "missing": {},
+          "coverage_weight_pct": 100
+        }
+      }
+    },
+    "HIG_to_SO": {
+      "weights": {
+        "MSFT": 8,
+        "AMP": 6,
+        "NVDA": 4,
+        "ADP": 6,
+        "TJX": 6,
+        "RSG": 5,
+        "MA": 5,
+        "MCK": 6,
+        "STE": 5,
+        "BALL": 4,
+        "DOV": 5,
+        "BR": 4,
+        "AXP": 5,
+        "USB": 4,
+        "CRH": 5,
+        "PTC": 4,
+        "VEEV": 4,
+        "GDDY": 4,
+        "ALLE": 5,
+        "SO": 5
+      },
+      "episodes": {
+        "Global financial crisis": {
+          "return": -0.4599164948231965,
+          "max_drawdown": -0.47054884228851424,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.47266184752953233,
+            "max_drawdown": -0.4798481729202645,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "US downgrade / euro crisis": {
+          "return": -0.17889377225926462,
+          "max_drawdown": -0.1788937722592645,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.1795143732445762,
+            "max_drawdown": -0.17951437324457653,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "China devaluation sell-off": {
+          "return": -0.10316675001216569,
+          "max_drawdown": -0.15446203735042596,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "Q4 2018 rate scare": {
+          "return": -0.20500658920635517,
+          "max_drawdown": -0.2061650159452123,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "COVID crash": {
+          "return": -0.3825357699844222,
+          "max_drawdown": -0.3825357699844224,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "2022 inflation bear market": {
+          "return": -0.21181062198027367,
+          "max_drawdown": -0.21692582066908184,
+          "missing": {},
+          "coverage_weight_pct": 100
+        }
+      }
+    },
+    "HIG_to_PEG": {
+      "weights": {
+        "MSFT": 8,
+        "AMP": 6,
+        "NVDA": 4,
+        "ADP": 6,
+        "TJX": 6,
+        "RSG": 5,
+        "MA": 5,
+        "MCK": 6,
+        "STE": 5,
+        "BALL": 4,
+        "DOV": 5,
+        "BR": 4,
+        "AXP": 5,
+        "USB": 4,
+        "CRH": 5,
+        "PTC": 4,
+        "VEEV": 4,
+        "GDDY": 4,
+        "ALLE": 5,
+        "PEG": 5
+      },
+      "episodes": {
+        "Global financial crisis": {
+          "return": -0.46930895840707987,
+          "max_drawdown": -0.48105312043346005,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.48065489507033565,
+            "max_drawdown": -0.48838491169438936,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "US downgrade / euro crisis": {
+          "return": -0.1820549561588667,
+          "max_drawdown": -0.1820549561588668,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.18226460323723004,
+            "max_drawdown": -0.1822646032372306,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "China devaluation sell-off": {
+          "return": -0.10711668638740635,
+          "max_drawdown": -0.15236567604780837,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "Q4 2018 rate scare": {
+          "return": -0.20725971324388548,
+          "max_drawdown": -0.20889364037192637,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "COVID crash": {
+          "return": -0.382466938225568,
+          "max_drawdown": -0.3824669382255682,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "2022 inflation bear market": {
+          "return": -0.21668199949977085,
+          "max_drawdown": -0.2216662377669375,
+          "missing": {},
+          "coverage_weight_pct": 100
+        }
+      }
+    },
+    "HIG_to_PM": {
+      "weights": {
+        "MSFT": 8,
+        "AMP": 6,
+        "NVDA": 4,
+        "ADP": 6,
+        "TJX": 6,
+        "RSG": 5,
+        "MA": 5,
+        "MCK": 6,
+        "STE": 5,
+        "BALL": 4,
+        "DOV": 5,
+        "BR": 4,
+        "AXP": 5,
+        "USB": 4,
+        "CRH": 5,
+        "PTC": 4,
+        "VEEV": 4,
+        "GDDY": 4,
+        "ALLE": 5,
+        "PM": 5
+      },
+      "episodes": {
+        "Global financial crisis": {
+          "return": -0.47284827364827475,
+          "max_drawdown": -0.4846820108391069,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5,
+            "PM": 5
+          },
+          "coverage_weight_pct": 82,
+          "missing_as_spy_sensitivity": {
+            "return": -0.48781316347954806,
+            "max_drawdown": -0.4934018718760821,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5,
+              "PM": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "US downgrade / euro crisis": {
+          "return": -0.1872948062427816,
+          "max_drawdown": -0.1872948062427815,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.18682327281023625,
+            "max_drawdown": -0.18682327281023636,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "China devaluation sell-off": {
+          "return": -0.10719513778795786,
+          "max_drawdown": -0.15620739205690104,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "Q4 2018 rate scare": {
+          "return": -0.21423847245329264,
+          "max_drawdown": -0.21568650344578033,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "COVID crash": {
+          "return": -0.37930202107736566,
+          "max_drawdown": -0.3793020210773659,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "2022 inflation bear market": {
+          "return": -0.21158037629207205,
+          "max_drawdown": -0.21694493202978293,
+          "missing": {},
+          "coverage_weight_pct": 100
+        }
+      }
+    },
+    "AMP_to_PG": {
+      "weights": {
+        "MSFT": 8,
+        "NVDA": 4,
+        "ADP": 6,
+        "TJX": 6,
+        "RSG": 5,
+        "MA": 5,
+        "MCK": 6,
+        "STE": 5,
+        "BALL": 4,
+        "DOV": 5,
+        "BR": 4,
+        "AXP": 5,
+        "USB": 4,
+        "CRH": 5,
+        "PTC": 4,
+        "VEEV": 4,
+        "GDDY": 4,
+        "ALLE": 5,
+        "HIG": 5,
+        "PG": 6
+      },
+      "episodes": {
+        "Global financial crisis": {
+          "return": -0.48776099250874805,
+          "max_drawdown": -0.49983338872257177,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.49647821584356133,
+            "max_drawdown": -0.5050622205647197,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "US downgrade / euro crisis": {
+          "return": -0.18377033221285455,
+          "max_drawdown": -0.18377033221285444,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.1837569804041994,
+            "max_drawdown": -0.18375698040419952,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "China devaluation sell-off": {
+          "return": -0.0910495968902062,
+          "max_drawdown": -0.1442003342400916,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "Q4 2018 rate scare": {
+          "return": -0.19206863227672888,
+          "max_drawdown": -0.1920686322767291,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "COVID crash": {
+          "return": -0.3684837258140403,
+          "max_drawdown": -0.36848372581404043,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "2022 inflation bear market": {
+          "return": -0.21841747691996838,
+          "max_drawdown": -0.22227992613362568,
+          "missing": {},
+          "coverage_weight_pct": 100
+        }
+      }
+    },
+    "AMP_to_PEP": {
+      "weights": {
+        "MSFT": 8,
+        "NVDA": 4,
+        "ADP": 6,
+        "TJX": 6,
+        "RSG": 5,
+        "MA": 5,
+        "MCK": 6,
+        "STE": 5,
+        "BALL": 4,
+        "DOV": 5,
+        "BR": 4,
+        "AXP": 5,
+        "USB": 4,
+        "CRH": 5,
+        "PTC": 4,
+        "VEEV": 4,
+        "GDDY": 4,
+        "ALLE": 5,
+        "HIG": 5,
+        "PEP": 6
+      },
+      "episodes": {
+        "Global financial crisis": {
+          "return": -0.48778737812987694,
+          "max_drawdown": -0.500191218299763,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.49648307292232696,
+            "max_drawdown": -0.5053548165893686,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "US downgrade / euro crisis": {
+          "return": -0.19160662929145866,
+          "max_drawdown": -0.19160662929145844,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.19057455886258512,
+            "max_drawdown": -0.19057455886258523,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "China devaluation sell-off": {
+          "return": -0.09078025709671023,
+          "max_drawdown": -0.14704686581510507,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "Q4 2018 rate scare": {
+          "return": -0.19827694972459176,
+          "max_drawdown": -0.19827694972459198,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "COVID crash": {
+          "return": -0.37155817999341323,
+          "max_drawdown": -0.37155817999341334,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "2022 inflation bear market": {
+          "return": -0.20630691383023791,
+          "max_drawdown": -0.21013234357235577,
+          "missing": {},
+          "coverage_weight_pct": 100
+        }
+      }
+    },
+    "USB_to_PEG": {
+      "weights": {
+        "MSFT": 8,
+        "AMP": 6,
+        "NVDA": 4,
+        "ADP": 6,
+        "TJX": 6,
+        "RSG": 5,
+        "MA": 5,
+        "MCK": 6,
+        "STE": 5,
+        "BALL": 4,
+        "DOV": 5,
+        "BR": 4,
+        "AXP": 5,
+        "CRH": 5,
+        "PTC": 4,
+        "VEEV": 4,
+        "GDDY": 4,
+        "ALLE": 5,
+        "HIG": 5,
+        "PEG": 4
+      },
+      "episodes": {
+        "Global financial crisis": {
+          "return": -0.5164694606169409,
+          "max_drawdown": -0.5292966690675611,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.5211050440214654,
+            "max_drawdown": -0.5274961923836187,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "US downgrade / euro crisis": {
+          "return": -0.20246561981443156,
+          "max_drawdown": -0.20246561981443167,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.20002188061757153,
+            "max_drawdown": -0.20002188061757198,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "China devaluation sell-off": {
+          "return": -0.10818079579522011,
+          "max_drawdown": -0.15368860591731015,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "Q4 2018 rate scare": {
+          "return": -0.2083094116084957,
+          "max_drawdown": -0.21004381879468714,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "COVID crash": {
+          "return": -0.3833181051991914,
+          "max_drawdown": -0.3833181051991916,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "2022 inflation bear market": {
+          "return": -0.2068748946496768,
+          "max_drawdown": -0.2118647837013411,
+          "missing": {},
+          "coverage_weight_pct": 100
+        }
+      }
+    },
+    "HIG_AMP_to_PG_PEP": {
+      "weights": {
+        "MSFT": 8,
+        "NVDA": 4,
+        "ADP": 6,
+        "TJX": 6,
+        "RSG": 5,
+        "MA": 5,
+        "MCK": 6,
+        "STE": 5,
+        "BALL": 4,
+        "DOV": 5,
+        "BR": 4,
+        "AXP": 5,
+        "USB": 4,
+        "CRH": 5,
+        "PTC": 4,
+        "VEEV": 4,
+        "GDDY": 4,
+        "ALLE": 5,
+        "PG": 5,
+        "PEP": 6
+      },
+      "episodes": {
+        "Global financial crisis": {
+          "return": -0.42636307722039846,
+          "max_drawdown": -0.4430955435586815,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.4440951911120481,
+            "max_drawdown": -0.4563194175915173,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "US downgrade / euro crisis": {
+          "return": -0.16743399873996068,
+          "max_drawdown": -0.16743399873996068,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.1695443702827817,
+            "max_drawdown": -0.16954437028278202,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "China devaluation sell-off": {
+          "return": -0.08301470632530339,
+          "max_drawdown": -0.1407417467887525,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "Q4 2018 rate scare": {
+          "return": -0.18688252797503757,
+          "max_drawdown": -0.1868825279750378,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "COVID crash": {
+          "return": -0.3592147526925209,
+          "max_drawdown": -0.359214752692521,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "2022 inflation bear market": {
+          "return": -0.2134740442993105,
+          "max_drawdown": -0.2166611299984712,
+          "missing": {},
+          "coverage_weight_pct": 100
+        }
+      }
+    },
+    "HIG_USB_to_PG_PEG": {
+      "weights": {
+        "MSFT": 8,
+        "AMP": 6,
+        "NVDA": 4,
+        "ADP": 6,
+        "TJX": 6,
+        "RSG": 5,
+        "MA": 5,
+        "MCK": 6,
+        "STE": 5,
+        "BALL": 4,
+        "DOV": 5,
+        "BR": 4,
+        "AXP": 5,
+        "CRH": 5,
+        "PTC": 4,
+        "VEEV": 4,
+        "GDDY": 4,
+        "ALLE": 5,
+        "PG": 5,
+        "PEG": 4
+      },
+      "episodes": {
+        "Global financial crisis": {
+          "return": -0.4576350710369982,
+          "max_drawdown": -0.47508069074165127,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.47064968428265097,
+            "max_drawdown": -0.4793026577594568,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "US downgrade / euro crisis": {
+          "return": -0.1782929892629339,
+          "max_drawdown": -0.1782929892629338,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.17899169203776832,
+            "max_drawdown": -0.17899169203776877,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "China devaluation sell-off": {
+          "return": -0.10046874197311295,
+          "max_drawdown": -0.1473834806642088,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "Q4 2018 rate scare": {
+          "return": -0.19687437727227142,
+          "max_drawdown": -0.1989054843891056,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "COVID crash": {
+          "return": -0.3709746778982991,
+          "max_drawdown": -0.3709746778982994,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "2022 inflation bear market": {
+          "return": -0.21397544569089388,
+          "max_drawdown": -0.2183190310301879,
+          "missing": {},
+          "coverage_weight_pct": 100
+        }
+      }
+    },
+    "HIG_AMP_USB_to_PG_PEP_PEG": {
+      "weights": {
+        "MSFT": 8,
+        "NVDA": 4,
+        "ADP": 6,
+        "TJX": 6,
+        "RSG": 5,
+        "MA": 5,
+        "MCK": 6,
+        "STE": 5,
+        "BALL": 4,
+        "DOV": 5,
+        "BR": 4,
+        "AXP": 5,
+        "CRH": 5,
+        "PTC": 4,
+        "VEEV": 4,
+        "GDDY": 4,
+        "ALLE": 5,
+        "PG": 5,
+        "PEP": 6,
+        "PEG": 4
+      },
+      "episodes": {
+        "Global financial crisis": {
+          "return": -0.4180851083925283,
+          "max_drawdown": -0.4407771742408133,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.4370049667257081,
+            "max_drawdown": -0.4512581618321009,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "US downgrade / euro crisis": {
+          "return": -0.16253936240106837,
+          "max_drawdown": -0.1625393624010686,
+          "missing": {
+            "VEEV": 4,
+            "GDDY": 4,
+            "ALLE": 5
+          },
+          "coverage_weight_pct": 87,
+          "missing_as_spy_sensitivity": {
+            "return": -0.1652860366679455,
+            "max_drawdown": -0.16528603666794572,
+            "missing": {
+              "VEEV": 4,
+              "GDDY": 4,
+              "ALLE": 5
+            },
+            "coverage_weight_pct": 100
+          }
+        },
+        "China devaluation sell-off": {
+          "return": -0.07372101883225135,
+          "max_drawdown": -0.1325937623437573,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "Q4 2018 rate scare": {
+          "return": -0.18025179830694749,
+          "max_drawdown": -0.1805990292140779,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "COVID crash": {
+          "return": -0.35509243019898784,
+          "max_drawdown": -0.35509243019898795,
+          "missing": {},
+          "coverage_weight_pct": 100
+        },
+        "2022 inflation bear market": {
+          "return": -0.208024161222628,
+          "max_drawdown": -0.21032854052468397,
+          "missing": {},
+          "coverage_weight_pct": 100
+        }
+      }
+    }
+  }
+}

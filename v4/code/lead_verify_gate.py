@@ -8,7 +8,7 @@ V4 = pathlib.Path(__file__).resolve().parents[1]
 
 def coverage():
     cov = {}
-    for f in sorted(glob.glob(str(V4 / 'outputs' / 'da[0-9]*_factcheck.json'))):
+    for f in sorted(glob.glob(str(V4 / 'outputs' / 'da[0-9]*_factcheck.json')) + glob.glob(str(V4 / 'outputs' / 'dv' / 'DV*_factcheck.json'))):   # 6 Oct 2026: the DV series meets the same standard (independent primary-source check, every FAIL corrected in the dossier)
         src = pathlib.Path(f).name.split('_')[0].upper()
         for x in json.loads(pathlib.Path(f).read_text(encoding='utf-8')).get('facts', []):
             e = cov.setdefault(x.get('ticker'), {}).setdefault(src, {'n': 0, 'fail': 0})

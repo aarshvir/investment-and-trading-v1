@@ -1,0 +1,115 @@
+{
+  "agent": "F110",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "FLEX": {
+      "verdict": "WATCH",
+      "thesis_one_line": "AI-datacenter cooling and power gear maker that is spinning off exactly that business into a separate company within about two quarters.",
+      "kill_criteria": [
+        "RemainCo (post-spin) FY28 adjusted operating margin guidance, once disclosed, comes in below 6.0% (vs. 7.0-7.2% consolidated FY27 guide)",
+        "Consolidated net debt/EBITDA (EBITDA proxy: adjusted operating income + D&A) exceeds 2.0x at any quarter-end before the spin closes",
+        "Free cash flow conversion (FCF/adjusted net income) stays below 40% for two consecutive quarters",
+        "FY27 guidance is cut (not raised) at any of the next two quarterly releases",
+        "The CPI spin-off is delayed beyond Q2 calendar 2027 or restructured to retain more than 19.9% Flex ownership"
+      ],
+      "key_adverse_facts": [
+        "The Cloud and Power Infrastructure segment (JetCool liquid cooling, Anord Mardix, Crown Technical Systems) that drives the model's growth/margin-mix score is being spun off into an independent company (SpinCo) by Q1 CY2027, with Flex retaining at most 19.9% of SpinCo",
+        "Long-term debt nearly doubled in one quarter (Mar-26 $3,751M to Jun-26 $5,219M) to fund the $1,134M Electrical Power Products acquisition",
+        "Free cash flow fell to $41M in Q1 FY27 from $268M a year earlier (FCF/adjusted net income ~11%)",
+        "August 2025 missile strike on the Mukachevo, Ukraine facility caused $51M of FY26 asset impairments/write-downs"
+      ],
+      "data_conflicts": [
+        "Triage's stated rationale (durable margin-mix shift toward datacenter power/cooling) does not account for the fact that this exact segment is contractually scheduled to leave the FLEX ticker via spin-off; the triage's own red flag ('monitor whether the mix shift is durable') understates the issue, which is structural/corporate-action risk, not just cyclical durability"
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "med (guidance momentum and revenue growth are well documented in primary filings; next-earnings date is an estimate based on the prior-year Q2 FY26 release date of Oct 29, 2025, not yet confirmed by an official Flex announcement, and exact FY28 RemainCo economics were not disclosed in the sources reviewed)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for FLEX; my own reverse DCF implies a 10-year FCF CAGR of about 10.6% at the 2026-09-25 close, slightly above my 9% base case, so the stock is priced at the full end of fair value even before the spin-off structural risk is weighed in.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.12,
+        "base": 0.06,
+        "bull": 0.19
+      },
+      "scenario_basis": "Base: FY26 FCF $1,060M run-rate growing ~9%/yr, exit at ~14x FCF (below current ~29x EV/FCF, reflecting post-spin RemainCo de-rating toward historical EMS multiples), no dividend; bear: FCF stagnant near $1.0-1.1B and multiple compresses to ~10x on spin execution risk; bull: RemainCo content plus SpinCo stake value both compound, multiple holds near 18x."
+    },
+    "INTC": {
+      "verdict": "WATCH",
+      "thesis_one_line": "x86 and AI-chip maker with a real revenue inflection and government-backed funding, but its foundry still loses billions and the stock's price implies a turnaround far beyond any case the filings support.",
+      "kill_criteria": [
+        "Intel Foundry quarterly operating loss exceeds $2.5 billion for two consecutive quarters (vs. $2.089B in Q2 2026)",
+        "Consolidated net debt exceeds $30 billion at any quarter-end (vs. approximately $20.8B at Jun-26)",
+        "Q3 2026 revenue comes in below the guided $15.8 billion low end",
+        "The escrowed-share derivative liability produces a further single-quarter loss exceeding $5 billion",
+        "External (non-Intel) 18A/14A foundry customer revenue fails to appear as a disclosed, named line item within the next four quarters"
+      ],
+      "key_adverse_facts": [
+        "Intel Foundry lost $2,089 million in Q2 2026 despite 31% segment revenue growth, confirming the triage's own red flag",
+        "The $(11.0) billion GAAP net loss in Q2 2026 was driven by a $12.5 billion non-cash loss on the fair-value change of Escrowed Shares owed to the U.S. Department of Commerce under the Secure Enclave/CHIPS Act agreement -- a mechanism that worsens as Intel's own stock price rises",
+        "Total Intel stockholders' equity fell by $26.7 billion in six months (Dec-25 to Jun-26), driven mainly by this escrow-related loss",
+        "A Delaware Court of Chancery shareholder derivative suit (filed March 5, 2026) alleges the board breached fiduciary duty in approving the $11 billion U.S. government equity stake",
+        "The U.S. government holds warrants for 241 million shares at $20.00 that become exercisable if Intel's ownership of its foundry business falls below 51%, constraining future foundry-divestiture options"
+      ],
+      "data_conflicts": [
+        "The triage's cited news sources (CNBC, JonPeddie) do not explain that the headline GAAP net loss is a non-operating, non-cash escrow-derivative revaluation rather than an operating deterioration; read in isolation the GAAP loss looks far worse than the underlying Products-segment performance"
+      ],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "low (the Products-segment growth is well documented, but the escrow-liability mechanism, litigation accrual figures, and the true normalized FCF base are not fully verified from primary sources in this pass, the reverse DCF could not be bracketed within a 30% 10-year FCF CAGR ceiling, and the Oct 22, 2026 earnings date is an unconfirmed estimate, not an official Intel announcement)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for INTC; my reverse DCF at the 2026-09-25 close and a ~$620B market cap could not find a 10-year FCF CAGR under 30% that would justify the EV against a generous $3B/yr normalized FCF base, so the price requires a materially more optimistic outcome than my base case.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.30,
+        "base": -0.05,
+        "bull": 0.15
+      },
+      "scenario_basis": "Base: Foundry losses persist near current run-rate, Products segment grows high-single-digits, normalized FCF stays near $2-4B/yr against a ~$620B market cap, multiple compresses as the turnaround story matures without a foundry breakeven; bear: 18A external yield/ramp disappoints, Foundry losses widen, further escrow-liability volatility; bull: 18A/14A ramp succeeds, external foundry customers materialize, Foundry approaches breakeven by 2028."
+    },
+    "JBL": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Electronics manufacturer riding real AI-datacenter demand with guidance raised twice running, but its equity cushion has been run thin by buybacks funding a highly leveraged balance sheet.",
+      "kill_criteria": [
+        "Core operating margin (Non-GAAP) falls below 5.0% for two consecutive quarters (vs. 5.8% FQ3 FY26 actual and 5.8% FY26 full-year guide)",
+        "Total Jabil Inc. stockholders' equity (consolidated) falls below $1.0 billion at any quarter-end",
+        "Net debt (notes payable and long-term debt, less cash) exceeds $3.5 billion at any quarter-end (vs. approximately $2.0B at May-26)",
+        "FY26 or FY27 guidance is cut (not raised) versus the immediately prior range at any quarterly release",
+        "Adjusted free cash flow conversion (adjusted FCF divided by core earnings) falls below 70% for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "Total Jabil Inc. stockholders' equity fell from $1,513M (Aug-25) to $1,323M (May-26) even as total assets grew from $18.5B to $23.8B, pushing assets/equity leverage from about 12.2x to 18.0x in nine months",
+        "Nine-month cash paid for acquisitions was $852 million (including the Hanley Energy Group deal), funded mostly by new borrowings of $2,144 million, roughly doubling goodwill and intangible assets in nine months",
+        "Core EMS margins remain thin in absolute terms (GAAP operating margin 5.1% in FQ3 FY26) despite the improving trend"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-09-30",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "med (revenue, margin and guidance trends are well documented from two consecutive primary-source earnings releases; the FQ4 FY26/full-year release is officially confirmed for Sept 30, 2026 per Jabil's own investor-relations announcement, just after the 2026-09-25 cutoff, and was not yet available to review in this pass)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for JBL; my reverse DCF implies a 10-year FCF CAGR of about 10.3% at the 2026-09-25 close (secondary-source price cross-check), roughly in line with my 11% base case, supporting a small-weight include rather than a full-weight one given the balance-sheet reservation.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.15,
+        "base": 0.10,
+        "bull": 0.22
+      },
+      "scenario_basis": "Base: adjusted FCF run-rate ~$1.32B/yr (nine-month $991M annualized) growing ~11%/yr as AI-infrastructure content keeps expanding, exit multiple near current ~18x NTM P/E, no meaningful dividend (nine-month dividends paid only $27M); bear: AI-capex cycle cools, core margin reverts toward 2.6% as triage flagged, multiple compresses toward 12x; bull: core margin sustains above 6.5% and multiple holds near 22x on continued guidance raises."
+    }
+  }
+}

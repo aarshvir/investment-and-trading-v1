@@ -1,0 +1,117 @@
+{
+  "agent": "F119",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "VLO": {
+      "verdict": "WATCH",
+      "thesis_one_line": "America's largest independent oil refiner, run very well, but the share price assumes this year's unusually high fuel profit margins last.",
+      "horizon": "12-36 months",
+      "key_adverse_facts": [
+        "Refining margin per barrel jumped to $23.62 in Q2 2026 from $13.14-$14.90 in the prior three quarters (release tables); the price of $387.18 is 54% above the $251.08 average paid for Q2 buybacks.",
+        "Reverse DCF: market cap equals TTM FCF of about $9.3bn held flat for ten years, about 2.4x FY2025 FCF of $3.9bn.",
+        "Port Arthur refinery fire on 2026-03-23 led to lawsuits including a proposed class action; capex guidance rose from $1,725m (10-K) to about $2.0bn (10-Q), including $250m for the incident."
+      ],
+      "data_conflicts": [
+        "V1 labels VLO 'fair' while its own base 3y return is -28.6%/yr and its street flag says base value is below the Street low target; dossier treats the price as expensive on normalised earnings.",
+        "Triage Q04 cited 'general knowledge' as a source; primary filings show Q2 2026 EPS of $12.62 GAAP, far above anything the triage card reflected."
+      ],
+      "next_earnings_date": "2026-10-22",
+      "confidence_in_thesis": "medium (primary filings complete; Q3 2026 margin environment and mid-cycle level are judgement calls; no numeric company guidance exists to test)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "fair",
+        "v1_base_3y": -0.2855627346031757,
+        "implied_vs_base": "above",
+        "dossier_view": "expensive",
+        "consistent": false,
+        "reconciliation": "V1 base case of -28.6%/yr and this dossier's -11%/yr agree in direction, but V1's 'fair' label contradicts its own numbers; the price needs spike-level refining margins to persist."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.35,
+        "base": -0.115,
+        "bull": 0.085
+      },
+      "scenario_basis": "Start $387.18; adj. net income about $1.0bn per $1/bbl margin above $8.7; 2029 margin $10.5/$14/$20; EPS $6.8/$19.9/$42.5 on 266m shares; exit P/E 13x/11.5x/10x; dividends about $15/share; retained cash $5/$25/$55 per share.",
+      "kill_criteria": [
+        "Quarterly consolidated refining margin per barrel of throughput below $14.00 for two consecutive quarters (Q2 2026: $23.62; FY2025: $12.29).",
+        "Consolidated debt-to-capitalization ratio, net of cash, above 25% (30 Jun 2026: 11%, release).",
+        "Port Arthur incident leads to a formal regulatory enforcement action or class-action loss accrual above $500m (none commenced per 10-Q acc. 0001628280-26-050937).",
+        "St. Charles FCC project slips beyond Q4 2026 or cost rises above $300m (currently $230m, Q3 2026 start).",
+        "Diluted share count fails to fall year-over-year for two quarters while Valero buys back above $350/share (Q2 2026 diluted 294m)."
+      ]
+    },
+    "ED": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "New York City's electric, gas and steam utility with regulator-approved price rises, guided to 6-7% yearly profit growth, priced for less.",
+      "horizon": "24-36 months",
+      "key_adverse_facts": [
+        "Free cash flow is negative (1H26 OCF $1,971m vs utility capex $2,473m, consolidated); new equity of $1.1bn planned for 2026, $1.2bn for 2027 and up to $3.3bn for 2028-2030; shares outstanding rose to 370m from 361m in six months.",
+        "1H26 adjusted EPS grew only 3.1% ($3.00 vs $2.91) so the reaffirmed $6.00-$6.20 guide needs H2 growth of 8% to 15%.",
+        "Open NYSDPS investigation of non-conforming gas and steam main welds (contractor employees indicted August 2025) and a $1,016m CECONY income-tax regulatory asset earning no return."
+      ],
+      "data_conflicts": [
+        "V1 implied_growth_or_roe = 0.687 cannot be reconciled to ED's filings (ROE about 8.6%); V1 verdict 'excessive' with base +0.9%/yr vs dossier base +6.8%/yr on the guided EPS path.",
+        "Yahoo totalDebt $28.32bn includes leases; consolidated balance-sheet debt is $27,814m (long-term $26,843m + current $250m + notes payable $721m) at 2026-06-30."
+      ],
+      "next_earnings_date": "2026-11-05",
+      "confidence_in_thesis": "medium (regulatory visibility through 2028 is high; equity dilution and New York affordability politics are the swing factors; next date is an estimate from the 2025 pattern)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": 0.009419113143793956,
+        "implied_vs_base": "below",
+        "dossier_view": "full",
+        "consistent": false,
+        "reconciliation": "V1's utility method shows a 68.7% implied ROE that no filing supports; using the guided EPS path, the price implies about 4.7% EPS growth versus a 5.5% base and 6-7% guidance, so the price is full but not excessive."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.03,
+        "base": 0.068,
+        "bull": 0.117
+      },
+      "scenario_basis": "Start $103.10; 2026 adj. EPS guide midpoint $6.10; EPS CAGR 3.0%/5.5%/7.5%; exit P/E on 2029 EPS 12.5x/16x/17.5x; dividends $3.56/yr growing about 3% (about $11 over three years).",
+      "kill_criteria": [
+        "Adjusted EPS for full-year 2026 below $5.95 or a guidance cut (guide $6.00-$6.20; 1H26 $3.00).",
+        "Consolidated debt (long-term + current + notes payable) above 55% of total capitalisation (30 Jun 2026: about 52%, derived from 10-Q acc. 0001047862-26-000142).",
+        "NYSPSC order in the steam, gas-weld or income-tax audit matters that disallows more than $250m of recoverable costs, or a cut of authorised ROE below 9.0% in any new rate order.",
+        "Diluted share count rising more than 3.0% year-over-year for two consecutive quarters (Q2 2026: +2.3%).",
+        "Adjusted EPS growth below 3% year-over-year for the full 2026 year, which would signal the 6-7% CAGR is out of reach."
+      ]
+    },
+    "ADM": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Global crop processor recovering after its accounting scandal was settled, but the share price already assumes this year's biofuel-driven profit surge holds.",
+      "horizon": "12-24 months",
+      "key_adverse_facts": [
+        "2026 adjusted EPS guide rose from $3.60-$4.25 to $5.15-$5.60 in two steps, largely on crush and ethanol margins tied to biofuel policy (RVO) and energy prices; Q2 2026 included about $100m of favourable mark-to-market and timing effects.",
+        "1H26 operating cash flow $1,299m vs $3,956m in 1H25; TTM FCF about $1.7bn (4.3% yield); adjusted ROIC 7.8% is roughly the cost of capital.",
+        "SEC settlement ($40m, announced 2026-01-27; DOJ closed its probe) resolved the intersegment-reporting matter but a securities class action (motion to dismiss denied 2025-03-12), derivative suits and the AOT ethanol class action ($500m-$2.0bn alleged) remain; Wilmar carrying value $4.1bn vs market $3.9bn."
+      ],
+      "data_conflicts": [
+        "Triage Q02 rated growth 3 and quality 2 on 'thin 2.2% margins' and the scandal; filings show the SEC/DOJ matters closed, the material weakness remediated as of 2025-06-30, and 2026 guidance raised twice.",
+        "Q2 release 'cash and cash equivalents' $1,060m vs cash-flow statement $5,457m including restricted and segregated customer cash; only the former is corporate liquidity."
+      ],
+      "next_earnings_date": "2026-11-03",
+      "confidence_in_thesis": "medium (company execution and disclosure now look sound; earnings durability depends on biofuel policy and margins; next date is an estimate from the 2025 pattern)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "demanding",
+        "v1_base_3y": -0.041449646734406875,
+        "implied_vs_base": "above",
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "Both say the price leaves no margin of safety; V1 base -4.1%/yr vs dossier +0.6%/yr because the dossier credits the raised guide, but both sit well below a mid-single-digit-plus hurdle."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.142,
+        "base": 0.006,
+        "bull": 0.111
+      },
+      "scenario_basis": "Start $81.12; 2026 adj. EPS guide midpoint $5.375; 2029 adj. EPS $3.60/$5.25/$6.75; exit P/E 12.5x/14.5x/15.5x; dividends $2.08/yr (about $6.5 over three years).",
+      "kill_criteria": [
+        "2026 adjusted EPS guidance cut, or low end below $5.15, at any quarterly release (current $5.15-$5.60).",
+        "Total segment operating profit below $800m in two consecutive quarters (Q1 2026 $764m, Q2 2026 $1,450m).",
+        "Consolidated net debt / TTM adjusted EBITDA above 2.5x (30 Jun 2026: about 1.65x).",
+        "Any new SEC/DOJ action, restatement or repeat material weakness in internal control over financial reporting.",
+        "An other-than-temporary impairment of the Wilmar investment above $500m (carrying $4.1bn vs market $3.9bn at 30 Jun 2026)."
+      ]
+    }
+  }
+}

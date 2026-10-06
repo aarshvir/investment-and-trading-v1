@@ -42,7 +42,7 @@ while i<len(lines):
         if n==9:widths=[25,33,61,56,42,65,77,94,57];widths=[w*510/sum(widths) for w in widths]
         t=Table(rows,colWidths=widths,repeatRows=1,hAlign='LEFT')
         t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),colors.HexColor('#E4EDF3')),('VALIGN',(0,0),(-1,-1),'TOP'),('LINEBELOW',(0,0),(-1,0),.8,colors.HexColor('#667F92')),('LINEBELOW',(0,1),(-1,-1),.25,colors.HexColor('#CFD8DF')),('LEFTPADDING',(0,0),(-1,-1),4),('RIGHTPADDING',(0,0),(-1,-1),4),('TOPPADDING',(0,0),(-1,-1),6),('BOTTOMPADDING',(0,0),(-1,-1),6)]))
-        story.extend([KeepTogether([t]),Spacer(1,10)]);continue
+        story.extend([t,Spacer(1,10)]);continue
     heading=re.match(r'^(#{1,3}) (.*)',l)
     if heading:
         style=['Title','Heading1','Heading2'][len(heading[1])-1];story.append(Paragraph(inline(heading[2]),styles[style]));i+=1;continue
@@ -50,7 +50,7 @@ while i<len(lines):
     while i<len(lines) and lines[i].strip() and not lines[i].startswith(('#','|')):para.append(lines[i].strip());i+=1
     story.append(Paragraph(inline(' '.join(para)),styles['BodyText']))
 def footer(c,d):
-    c.setFont('Report',8);c.setFillColor(colors.HexColor('#677B8A'));c.drawString(42,25,'Investment decision memorandum · 26 September 2026 · Conditional research');c.drawRightString(552,25,str(d.page))
-doc=SimpleDocTemplate(str(P/'Investment_Decision_Memo.pdf'),pagesize=(594,842),rightMargin=42,leftMargin=42,topMargin=38,bottomMargin=42,title='Investment decision memorandum — 26 September 2026',author='Independent multi-agent research')
+    c.setFont('Report',8);c.setFillColor(colors.HexColor('#677B8A'));c.drawString(42,25,'Investment decision memorandum · 27 September 2026 · Conditional research');c.drawRightString(552,25,str(d.page))
+doc=SimpleDocTemplate(str(P/'Investment_Decision_Memo.pdf'),pagesize=(594,842),rightMargin=42,leftMargin=42,topMargin=38,bottomMargin=42,title='Investment decision memorandum — 27 September 2026',author='Independent multi-agent research')
 doc.build(story,onFirstPage=footer,onLaterPages=footer)
 print('PDF created', (P/'Investment_Decision_Memo.pdf').stat().st_size)

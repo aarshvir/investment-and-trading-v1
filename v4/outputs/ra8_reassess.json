@@ -1,0 +1,240 @@
+{
+  "analyst": "RA8",
+  "date": "2026-10-06",
+  "data_cutoff": "2026-09-25 close; rf = 10-yr Treasury 5.17% (FRED DGS10, 25 Sep 2026); EDGAR checked to 2026-10-06",
+  "note": "Research only; not personal advice. CAPM: rf 5.17%, ERP 4.14% (programme V1), Blume beta from 5y/10y monthly returns vs SPY in d2_adjclose.parquet. Reverse DCFs use ten years of constant growth then 3.0% terminal (RA4 convention). Status labels: CONFIRMED / WRONG / NOT FOUND / CHANGED.",
+  "tickers": {
+    "EXC": {
+      "claims": [
+        {
+          "claim": "No EXC 8-K between 30 Jul and 25 Sep 2026 (dossier)",
+          "status": "WRONG",
+          "source": "8-K filed 2026-08-25, Items 5.02/7.01/9.01, acc. 0001109357-26-000084: COO Innocenzo to depart in 2027; CFO change effective 5 Oct 2026; guidance $2.81-$2.91 and 5-7% growth near top end reaffirmed"
+        },
+        {
+          "claim": "No rating downgrade yet (kill criterion 3 unfired)",
+          "status": "WRONG",
+          "source": "Q2 2026 deck Ex-99.2 acc. 0001109357-26-000077 slide 8: Moody's cut PECO Aa3 to A1 on 15 Jul 2026; S&P cut BGE A to A- on 30 Apr 2026; Exelon Corp Baa2/BBB+ stable"
+        },
+        {
+          "claim": "Cost of equity 7.3% (rf ~4.2%)",
+          "status": "WRONG",
+          "source": "FRED DGS10 5.17% on 25 Sep 2026 (4.56% on 22 May when BGE issued 6.05% 2056 notes, Q2 8-K Ex-99.1); CAPM 7.35-7.55%; central 8.0%"
+        },
+        {
+          "claim": "Implied 10-yr growth ~4.0% (7.3%, terminal 2.5%) is below guided ~6.5%",
+          "status": "CHANGED",
+          "source": "Reproduced exactly (3.96%). Recomputed at 8.0% and 3.0% terminal: 4.9% vs guided dividend growth 5% (Q2 deck: 'Growing dividend at 5%, approximating 60% payout, through 2029') = in_line"
+        },
+        {
+          "claim": "EPS growth base is 2025 actual $2.77",
+          "status": "WRONG",
+          "source": "Q2 deck footnote 2: CAGR measured from midpoint of 2025 guidance range $2.64-$2.74; 2026 guide midpoint $2.86 is +3.2% on $2.77"
+        },
+        {
+          "claim": "Company states no adjustments between 2026 GAAP and adjusted",
+          "status": "WRONG",
+          "source": "Q2 8-K Ex-99.1 acc. 0001109357-26-000077: cost management charge $0.04/share ($42m after tax) excluded; GAAP $0.39 vs adjusted $0.43"
+        },
+        {
+          "claim": "Scenario returns -2% / 10% / 14%",
+          "status": "CHANGED",
+          "source": "Recomputed on a single NTM EPS base: +0.7% / +10.4% / +15.4% (dossier bear and bull used stale FY2025 EPS)"
+        },
+        {
+          "claim": "Guidance FY2026 $2.81-$2.91 intact; 2026 financing ~86% done; $41.7bn plan; $3.4bn equity ~37% priced",
+          "status": "CONFIRMED",
+          "source": "Q2 2026 Ex-99.1 and deck, acc. 0001109357-26-000077; 8-K 2026-08-25"
+        },
+        {
+          "claim": "BGE ask $156M at 10.40% ROE; decision Q1 2027",
+          "status": "CONFIRMED",
+          "source": "Q2 2026 Ex-99.1; deck lists Jan 2027; 10-Q Note 2 shows last approved ROEs 9.45% (BGE) and 9.50% (Pepco)"
+        },
+        {
+          "claim": "Balance sheet: LT debt $49.4bn FY2025; equity $29.3bn, 1,023m shares at 31 Mar 2026; FY2025 OCF $6,254m vs capex $8,529m",
+          "status": "CONFIRMED",
+          "source": "SEC XBRL companyfacts CIK 1109357 (10-K acc. 0001109357-26-000018; 10-Q acc. 0001109357-26-000063)"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "discount_rate_and_inputs": "Dividend basis: price $40.34, D0 $1.68, 10 yrs constant growth then 3.0%; CoE 8.0% (CAPM 7.35-7.55% = rf 5.17% + Blume beta 0.53-0.58 x ERP 4.14%, floored by marginal debt cost ~6.7% and P/B-ROE 7.8-8.3%); implied 4.9% (3.2% at 7.35%, 3.7% at 7.55%, 6.2% at 8.5%, 7.4% at 9.0%) vs base 5.0%",
+      "scenario_returns_3y": {
+        "bear": 0.007,
+        "base": 0.104,
+        "bull": 0.154
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria",
+        "key_adverse_facts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis",
+        "next_earnings_date"
+      ],
+      "files_updated": [
+        "v4/dossiers/EXC.md",
+        "v4/outputs/F65_summary.json"
+      ],
+      "note": "Valuation gap was an artefact of a stale risk-free rate and a mismatched growth comparator; rating criterion already fired at BGE and PECO; management turnover; no guidance cut."
+    },
+    "CAH": {
+      "claims": [
+        {
+          "claim": "No filing after 2026-08-11 (dossier)",
+          "status": "WRONG",
+          "source": "EDGAR: 8-K 2026-08-05 (Item 5.02 CAO), 8-K filed 2026-08-11 acc. 0000721371-26-000036 ($4.0bn revolver replaces three facilities), DEF 14A 2026-09-21, 8-K 2026-10-01 acc. 0000721371-26-000041 (CVS LOI to 30 Jun 2032, FY2027 EPS $12.40-$12.60 and long-term 12-14% reaffirmed)"
+        },
+        {
+          "claim": "Reverse DCF implies -2.5% to +0.7% growth at WACC 7.5-9.0% on non-GAAP EPS $12.50",
+          "status": "WRONG",
+          "source": "Same inputs give +0.7% at 7.5% and +4.6% at 9.0%; non-GAAP EPS is not cash (excludes $1.16/share acquisition-related comp, $0.34 restructuring, litigation). FCF-based: 2.8% central at 8.6% (1.2-4.6%)"
+        },
+        {
+          "claim": "FCF yield ~9.3% TTM is a usable run rate",
+          "status": "WRONG",
+          "source": "10-K acc. 0000721371-26-000038: OCF $5,174m includes ~$2.6bn working-capital inflow (AP +$3,463m) and $367m SBC added back; FY2027 adjusted FCF guided $3.5-4.0bn (Q4 release acc. 0000721371-26-000037)"
+        },
+        {
+          "claim": "Insider Form 4 pattern not checked",
+          "status": "CHANGED",
+          "source": "Forms 4 filed 2026-08-20: CFO Alt, CLO Mayer, CEOs Weitzman and Mason, CIO Greene sold ~100,000 shares at $234.55-$237.44 on 2026-08-18; CEO Hollar did not sell"
+        },
+        {
+          "claim": "Customer concentration not discussed",
+          "status": "CHANGED",
+          "source": "10-K: CVS 28% of FY2026 revenue, 22% of gross receivables; five largest customers 43%"
+        },
+        {
+          "claim": "FY2026: revenue $254.2bn, non-GAAP EPS $11.26, GAAP EPS $7.23, OCF $5,174m, capex $649m, net debt ~$4.0bn, opioid accrual $4.3bn with $417m paid",
+          "status": "CONFIRMED",
+          "source": "Q4 FY2026 release Ex-99.1 and 10-K (acc. 0000721371-26-000037/-000038); balance sheet debt $8,886m, cash $4,856m"
+        },
+        {
+          "claim": "FY2027 guide $12.40-$12.60, long-term EPS growth 12-14%, no guidance cut",
+          "status": "CONFIRMED",
+          "source": "8-K 2026-10-01 acc. 0000721371-26-000041: 'reaffirmed its fiscal year 2027 non-GAAP EPS guidance ... ($12.40 to $12.60) and its long-term non-GAAP EPS growth rate guidance of 12% to 14%'"
+        },
+        {
+          "claim": "DOJ CID (Nov 2023) still open; no filed complaint",
+          "status": "CONFIRMED",
+          "source": "10-K acc. 0000721371-26-000038 risk factors and legal note"
+        },
+        {
+          "claim": "Scenario returns -6% / 10% / 18%",
+          "status": "CHANGED",
+          "source": "Recomputed -6.7% / +9.5% / +17.5% (rounding only)"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE",
+      "old_implied": "below",
+      "new_implied": "below",
+      "discount_rate_and_inputs": "Equity FCF after SBC before M&A: central $3.05bn (guide $3.75bn less SBC $0.35bn = $3.4bn; bottom-up $2.7bn); opioid payments valued separately (PV $2.7bn at 8.6%, $374m a year to 2038); market cap $51.2bn (232.58m shares x $220.22); CoE 8.6% = 5.17% + Blume beta 0.828 (10y) x 4.14%; terminal 3.0%; implied 2.8% (1.2-4.6%) vs 5% organic base",
+      "scenario_returns_3y": {
+        "bear": -0.067,
+        "base": 0.095,
+        "bull": 0.175
+      },
+      "changed_fields": [
+        "kill_criteria",
+        "key_adverse_facts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "files_updated": [
+        "v4/dossiers/CAH.md",
+        "v4/outputs/F63_summary.json"
+      ],
+      "note": "Margin of safety survives the corrected cash-flow method (+17% at base, +3% on the conservative cash flow, -8% only at a 10% cost of equity); no kill criterion fired; CVS extension removes the main contract overhang. Confidence cut from high to medium-high."
+    },
+    "PPG": {
+      "claims": [
+        {
+          "claim": "Discount rate 8.5%",
+          "status": "WRONG",
+          "source": "FRED DGS10 5.17% (25 Sep 2026); CAPM with ERP 4.14% and Blume beta 1.03-1.07 = 9.45-9.6%"
+        },
+        {
+          "claim": "FCF0 $1.10bn = 4.6% x $23.9bn",
+          "status": "CHANGED",
+          "source": "Equals FY2025: OCF continuing ops $1,936m - capex $778m - SBC $46m = $1,112m (10-K acc. 0000079879-26-000046 XBRL). TTM to Q2 2026: $2,159m - $757m - $37m = $1,365m (10-Q acc. 0000079879-26-000252 cash flow statement)"
+        },
+        {
+          "claim": "Implied growth 5.6% below base 6-7%",
+          "status": "WRONG",
+          "source": "Dossier inputs reproduce 5.5%; at 9.6%, $1.25bn, 3.0% terminal: 5.75% vs evidence-based 5% base (FY26 guide midpoint $7.90 = +4.2% on FY2025 adjusted EPS $7.58, acc. 0000079879-26-000025) = in_line"
+        },
+        {
+          "claim": "FY2026 adjusted EPS guidance $7.70-$8.10 reaffirmed",
+          "status": "CONFIRMED",
+          "source": "Q2 2026 Ex-99 acc. 0000079879-26-000246: 'Reaffirming full-year 2026 adjusted EPS guidance range of $7.70 to $8.10'; no later 8-K"
+        },
+        {
+          "claim": "Nothing after 28-29 Jul on EDGAR",
+          "status": "CONFIRMED",
+          "source": "Submissions index CIK 79879 to 2026-10-06: only Schedule 13G (2026-08-07, acc. 0000093751-26-000525) and Forms 4 (accruals, a ~13-share DRIP purchase, CFO award); no 8-K, 13D, S-4"
+        },
+        {
+          "claim": "Net debt ~$5.37bn after DA12 correction",
+          "status": "CONFIRMED",
+          "source": "10-Q balance sheet: debt $691m + $6,195m, cash $1,520m; company states net debt $5.3bn (Q2 release)"
+        },
+        {
+          "claim": "Q3 report ~27 Oct (estimate)",
+          "status": "CONFIRMED",
+          "source": "Company release 2026-09-28: Q3 results 27 Oct, call 28 Oct"
+        },
+        {
+          "claim": "No activist SC 13D",
+          "status": "CONFIRMED",
+          "source": "No 13D in EDGAR submissions through 2026-10-06"
+        },
+        {
+          "claim": "Scenario returns -3% / 10% / 20%",
+          "status": "CHANGED",
+          "source": "Recomputed -3.0% / +7.5% (5% growth; 9.4% at the old 7%) / +20.2%"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "discount_rate_and_inputs": "Owner FCF $1.25bn after SBC (FY2025 $1.11bn, TTM $1.37bn); market cap $23.97bn; CoE 9.6% (rf 5.17% + Blume 1.069 x 4.14%); terminal 3.0%; implied 5.75% (4.6-7.3%) vs 5% base",
+      "scenario_returns_3y": {
+        "bear": -0.03,
+        "base": 0.075,
+        "bull": 0.2
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria",
+        "key_adverse_facts",
+        "data_conflicts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis",
+        "next_earnings_date"
+      ],
+      "files_updated": [
+        "v4/dossiers/PPG.md",
+        "v4/outputs/F70_summary.json"
+      ],
+      "note": "No kill criterion fired and quality stands, but the margin of safety that carried INCLUDE vanishes at a Treasury-consistent cost of equity; falls to WATCH if the 27 Oct report cuts guidance."
+    }
+  }
+}

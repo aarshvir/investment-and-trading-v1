@@ -1,0 +1,128 @@
+{
+ "agent": "F140",
+ "as_of": "2026-09-25",
+ "tickers": {
+  "LHX": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "Builds radios, sensors, space and missile systems for the US military; record orders and cheap cash flow, but the CEO was just removed and a government preferred stake sits in its missile unit.",
+   "horizon": "24-36 months",
+   "key_adverse_facts": [
+    "CEO Christopher Kubasik's employment ended 17 Aug 2026 after a Board investigation into conduct inconsistent with the Code of Conduct (8-K 0000202058-26-000066); Board says no impact on financial reporting; new CEO Sam Mehta; $25M special retention awards to CFO and two segment presidents on 23 Jul 2026 (8-K 0000202058-26-000047).",
+    "$1.0B DoW Series A preferred in subsidiary Aerojet Rocketdyne Holdings (Missile Solutions): 7% compounding liquidation preference, converts at a 20% discount to an IPO price (investor about 10%) or fair-value redemption from 17 Apr 2031 (10-Q Note B, 0000202058-26-000058).",
+    "H1 2026 free cash flow $584M vs $3.0B FY guide; consolidated total debt $10,999M with $1,815M current; 10-K critical audit matter is cost-at-completion estimates on development contracts."
+   ],
+   "data_conflicts": [
+    "Triage 'modest growth' understated Q2 2026 revenue +8% and Q1 2026 +12% (+15% organic); triage did not mention the CEO removal.",
+    "b1 composite ranks LHX on value (0.88) with weak quality (0.30) and momentum (0.20); filings show margins and cash flow improving, but EPS is helped by pension income and investment gains.",
+    "Missile Solutions revenue guide is '$4,100' in the Q2 2026 table vs '$4.4B' in the Q4 2025 guide with no explanation in the release; Yahoo EBITDA $4.14B used only as a labelled cross-check.",
+    "Aggregator Street target $338.5 (42% above price) not relied on."
+   ],
+   "next_earnings_date": "2026-10-29",
+   "next_earnings_note": "estimate from 30 Oct 2025 pattern; not confirmed",
+   "confidence_in_thesis": "medium: strong backlog, cash and three raises, but unexplained CEO removal and untested new-CEO guidance; Form 4 shows no insider distress",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "implied_vs_base": "below",
+    "dossier_view": "cheap",
+    "consistent": true,
+    "reconciliation": "No V1 row for LHX. Reverse DCF (9%, 3% terminal) implies about 1.8% a year free-cash-flow growth for ten years vs my base of about 6.5%."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.06,
+    "base": 0.078,
+    "bull": 0.165
+   },
+   "scenario_basis": "Start price 237.69, NTM EPS about 13.15 (aggregator consensus blend), dividend 5.00 a year (about $16 over 3 years); bear EPS +2%/yr to 13.95 at 13x; base +8%/yr to 16.57 at 17x; bull +11%/yr to 17.98 at 20x.",
+   "kill_criteria": [
+    "Full-year 2026 free cash flow guidance cut below $2.8B (currently \"$3.0B\", Q2 2026 release), or H2 2026 free cash flow below $2.0B.",
+    "Segment operating margin below 15.5% in two consecutive quarters (16.0% in Q2 2026; guide \"low 16%\").",
+    "Book-to-bill below 1.0x in two consecutive quarters (1.2x in Q2 2026; backlog $42.0B).",
+    "Any Board or SEC/DOJ disclosure that the CEO investigation touched financial reporting, government-contract compliance or a restatement, or the CFO or a segment president leaves within 12 months.",
+    "Missile Solutions Qualified IPO not completed by 31 Dec 2027 (non-IPO redemption terms then apply to the $1.0B preferred), or consolidated total long-term debt (carrying value, including current portion) above $12.0B at any quarter-end ($10.999B at 3 Jul 2026)."
+   ]
+  },
+  "PSX": {
+   "verdict": "WATCH",
+   "thesis_one_line": "A large US oil refiner, pipeline and chemicals group earning record profits from a temporary fuel-price spike; the share price already assumes it lasts.",
+   "horizon": "12-36 months",
+   "key_adverse_facts": [
+    "Q2 2026 net income $3,847M on a 3:2:1 crack spread of $41.63 a barrel vs $21.65 in Q2 2025; Q1 2026 net income was only $207M and operating cash flow -$2,264M (8-K 0001534701-26-000030, 0001534701-26-000020).",
+    "Consolidated debt peaked at $27.1B at 31 Mar 2026 and was $20.6B at 30 Jun 2026; debt target is $17B by end-2027; Q2 return of capital was only 21% of operating cash flow excluding working capital vs a stated >50% target.",
+    "Propel Fuels trade-secret judgment of $833M (5 Aug 2025) accruing 10% interest; consolidated accrual $928M; appeal pending (10-Q 0001534701-26-000032).",
+    "Insider sales since 25 Mar 2026: two EVPs and the CFO each sold about $10-13M of stock."
+   ],
+   "data_conflicts": [
+    "Triage said 'fully in the price after an 87% rally' and street upside -1.5%; aggregator mean target is $251.9 (below price) but its low target $173 and the V1 flag agree with a negative base return.",
+    "b1 ranks PSX on momentum (0.88) and earnings surprise (2.26), not value (0.26): an artefact of the commodity spike.",
+    "Company does not give numeric earnings or margin guidance, so no prior range exists to compare.",
+    "V1 bear (-46.8% a year) implies a price near $40, harsher than any filing-based scenario; my bear is -25.4%."
+   ],
+   "next_earnings_date": "2026-10-28",
+   "next_earnings_note": "estimate from 29 Oct 2025 pattern; not confirmed",
+   "confidence_in_thesis": "medium: clear that price embeds peak margins; timing of any mean reversion is unknowable",
+   "valuation_view_vs_v1": {
+    "v1_verdict": "excessive",
+    "v1_base_3y": -0.2,
+    "implied_vs_base": "above",
+    "dossier_view": "expensive",
+    "consistent": true,
+    "reconciliation": "V1 says excessive with base -20.0% a year; I agree on direction (my base -12.7%). Reverse DCF needs about $8.5B of free cash flow to hold flat for ten years; my base is $4.5B steady state, and the price equals my bull PV."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.254,
+    "base": -0.127,
+    "bull": 0.054
+   },
+   "scenario_basis": "Start price 255.75, NTM EPS 24.90 (aggregator); dividend 5.08 a year (about $16 over 3 years); bear 2029 NTM EPS 9.0 at 10x; base 14.0 at 11x; bull 27.0 at 10.5x.",
+   "kill_criteria": [
+    "Realized refining margin below $12 a barrel in two consecutive quarters ($24.08 in Q2 2026, $10.11 in Q1 2026).",
+    "Consolidated total debt (short-term plus long-term, carrying value) above $22B at any quarter-end before 2027 ($20.565B at 30 Jun 2026), or the $17B target withdrawn.",
+    "Consolidated net debt-to-capital ratio above 40% at any quarter-end (33% at 30 Jun 2026).",
+    "Propel Fuels accrual raised above $1.2B or an appellate ruling affirming the $833M judgment (accrual $928M).",
+    "Return of capital below 35% of operating cash flow excluding working capital for two consecutive quarters, other than when debt reduction targets are still unmet (Q2 2026: 21%)."
+   ]
+  },
+  "WDAY": {
+   "verdict": "WATCH",
+   "thesis_one_line": "Runs payroll, HR and finance software for big companies; steady growth and big buybacks, but growth is slowing and the price already assumes it keeps compounding.",
+   "horizon": "12-36 months",
+   "key_adverse_facts": [
+    "Total subscription backlog growth fell from 17.0% (FQ3 2026) to 8.0% (FQ2 2027); 12-month backlog growth 14.2%; FQ3 2027 subscription growth guided to 12% (8-K 0001327811-26-000042).",
+    "Stock compensation $462M in FQ2 2027 (17.4% of revenue); TTM about $1.65B vs TTM free cash flow $2.84B, leaving about $1.2B after stock compensation.",
+    "Buybacks $2.9B in H1 FY2027 (2.7x free cash flow) cut consolidated cash and securities to $3.4B vs consolidated debt $3.0B; repeated restructuring (Feb 2026 2%, Sep 2026 about 2.5%).",
+    "CEO replaced by co-founder Aneel Bhusri on 6 Feb 2026 (8-K 0001327811-26-000007); founders hold about 68% of votes; co-founder Duffield sold about $322M of stock since March 2026."
+   ],
+   "data_conflicts": [
+    "Triage 'growth slowed to 12.8%' is correct for total revenue; subscription growth is 13.9% and guided to 12% next quarter.",
+    "FQ2 2027 GAAP EPS $2.57 includes a $1.52 tax benefit; aggregator TTM GAAP EPS $4.91 is similarly flattered.",
+    "Company free cash flow before stock compensation implies only 2% growth; after stock compensation it implies 13.3%. I use the latter.",
+    "FQ3 2025 to FQ1 2026 revenue derived from later-year comparisons, not opened releases; prior FY2026 guidance range not opened."
+   ],
+   "next_earnings_date": "2026-11-24",
+   "next_earnings_note": "estimate from 25 Nov 2025 pattern; not confirmed",
+   "confidence_in_thesis": "medium-low: durable franchise and cash flow, but price is in line with base and lead indicators are decelerating; AI effect on seats unresolved",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "implied_vs_base": "in_line",
+    "dossier_view": "fair",
+    "consistent": true,
+    "reconciliation": "No V1 row for WDAY. Reverse DCF on free cash flow after stock compensation (9%, 3% terminal) implies about 13.3% a year for ten years vs my base 13.5%."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.059,
+    "base": 0.068,
+    "bull": 0.215
+   },
+   "scenario_basis": "Start price 189.45, no dividend; NTM non-GAAP EPS about 12.4 (aggregator consensus blend); bear +5%/yr to 14.35 at 11x; base +10%/yr to 16.5 at 14x; bull +15%/yr to 18.86 at 18x; non-GAAP EPS excludes stock compensation.",
+   "kill_criteria": [
+    "Total subscription revenue backlog growth below 5% year on year at any quarter-end (8.0% at 31 Jul 2026).",
+    "Full-year FY2027 subscription revenue guidance cut below $9.90B (current \"$9.940 billion to $9.950 billion\") or quarterly subscription growth guided below 10%.",
+    "Free cash flow after stock compensation below $900M on a trailing-four-quarter basis (about $1.2B at 31 Jul 2026).",
+    "Stock compensation above 17% of revenue for four consecutive quarters (17.4% in FQ2 2027, 16.2% TTM).",
+    "Consolidated cash and marketable securities below $2.0B while debt principal of $3.0B remains (cash $3.4B at 31 Jul 2026), which would signal buybacks outrunning cash generation."
+   ]
+  }
+ }
+}

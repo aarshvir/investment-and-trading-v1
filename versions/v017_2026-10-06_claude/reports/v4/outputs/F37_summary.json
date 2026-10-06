@@ -1,0 +1,113 @@
+{
+  "agent": "F37",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "PAYX": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Payroll, HR and PEO leader for small businesses, priced as if it can barely grow, even though the core Management Solutions segment needs to reaccelerate to hit its own guidance.",
+      "kill_criteria": [
+        "Management Solutions organic (ex-Paycor) revenue growth stays below 4% for two consecutive quarters",
+        "FY27 adjusted diluted EPS growth finishes below the guided 7-9% range at year-end",
+        "Net debt/EBITDA rises above 2.0x (currently ~1.29x) without a clear deleveraging path",
+        "The 2026 data-breach litigation, or a further cybersecurity incident, results in a material fine/judgment or documented client attrition",
+        "Dividend payout ratio is forced above 100% of GAAP EPS for two consecutive quarters (currently ~90%)"
+      ],
+      "key_adverse_facts": [
+        "Management Solutions (~75% of revenue) has decelerated to the point that FY27 guidance requires >100bp of second-half reacceleration in both major segments (Stifel, 24-Sep-2026, PT cut to $112 from $130); stock fell ~9% on the Q1 FY27 print",
+        "April-2026 data breach exposing employee names/SSNs, with reportedly delayed notification, drew a negligence class action (W.D.N.Y., filed 11-Jul-2026)",
+        "Dividend payout ratio ~90% of GAAP EPS leaves little room to keep raising the dividend if EPS growth disappoints while buybacks continue",
+        "Q1 FY27 guidance update raised only the PEO & Insurance segment (6-7% to 7-8%); Management Solutions growth was not reaffirmed as on-track"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-12-18",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium - the valuation margin of safety is unusually wide (reverse DCF implies near-zero growth priced in) and Paycor integration is ahead of plan, but the Management Solutions deceleration is a real, company-specific, evidenced concern that could widen if H2 FY27 does not reaccelerate as guidance requires",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "implied_vs_base": "below",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for PAYX in v1_valuation_table.csv. The analyst's own reverse DCF (10-year fade to 4% terminal growth, WACC 8.0%) implies only ~0.7%/yr FCF growth priced in, versus management's own guided FY27 adjusted EPS growth of 7-9% and a plausible base case of high-single-digit FCF/EPS growth (organic growth + margin + buybacks) - implied growth sits well below the base case, supporting a cheap read and the INCLUDE-SMALL verdict."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.0546,
+        "base": 0.0983,
+        "bull": 0.2137
+      },
+      "scenario_basis": "Analyst scenario table (Section 7): 3yr forward EPS x exit P/E (Bear $4.90@15x, Base $6.20@19x, Bull $7.00@23x) vs $101.37 price, annualised, plus ~4.7% average dividend yield."
+    },
+    "TYL": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Dominant public-sector court and government software vendor with 22 straight quarters of 20%+ SaaS growth, priced for far less growth than it is delivering, but newly leveraged and with a recurring litigation risk pattern.",
+      "kill_criteria": [
+        "SaaS revenue growth falls below 15% YoY for two consecutive quarters (vs. 20%+ sustained for 22 straight quarters through Q2 2026)",
+        "FY2026 non-GAAP diluted EPS finishes below the guided $12.95-13.20 range at year-end",
+        "Net debt/EBITDA rises above 2.5x (currently ~1.06x) without a corresponding FCF acceleration",
+        "A material software-failure incident tied to Tyler's Odyssey/Enterprise Justice or related courts products results in a contract termination, new material litigation, or regulatory action",
+        "Non-GAAP operating margin contracts more than 100bp YoY for two consecutive quarters (it contracted 80bp in Q2 2026)"
+      ],
+      "key_adverse_facts": [
+        "Shifted from near-zero leverage to a new $1.4375bn 0.50% convertible note (closed 14-May-2026) used mostly to fund buybacks (~$320.7m) and a bolt-on acquisition (~$212.5m For The Record), not organic growth; net debt/EBITDA now ~1.06x versus roughly nil a year earlier",
+        "Non-GAAP operating margin contracted 80bp YoY in Q2 2026 (25.7% vs 26.5%) even as revenue and FCF hit records",
+        "Recurring, sector-specific litigation pattern: courts/justice software implementation failures tied to wrongful arrests/detentions recur roughly every 2-3 years (Alameda County 2016, Lubbock County 2021, North Carolina class action 2023)",
+        "GAAP diluted EPS growth (+10.5% in Q2 2026) and non-GAAP diluted EPS growth (+0.9%) moved in different directions this quarter, an unusual divergence worth watching next quarter"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium - the SaaS growth and recurring-revenue evidence is unusually strong and durable, but the newly-added leverage and the recurring litigation pattern are real, evidenced risks that were not present (or not weighed) in the original quick triage",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "implied_vs_base": "below",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for TYL in v1_valuation_table.csv. The analyst's own reverse DCF (10-year fade to 4% terminal growth, WACC 8.5%) implies only ~1.9%/yr FCF growth priced in, versus a base case supported by 22 consecutive quarters of 20%+ SaaS growth and guided FY2026 non-GAAP EPS growth of ~14-17% - implied growth sits well below the base case. The trailing GAAP P/E (39.2x) looks rich in isolation, which is why the it-saas playbook's FCF-based read (not the GAAP P/E) is used for this call."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.0406,
+        "base": 0.109,
+        "bull": 0.2345
+      },
+      "scenario_basis": "Analyst scenario table (Section 7): 3yr forward EPS x exit P/E (Bear $11.50@25x, Base $14.80@30x, Bull $17.50@35x) vs $325.57 price, annualised; no dividend."
+    },
+    "VLTO": {
+      "verdict": "WATCH",
+      "thesis_one_line": "High-quality Danaher-spinoff instrumentation and consumables business (water testing, packaging/product ID) that is good, but priced for roughly the growth it can plausibly deliver, not for a bargain.",
+      "kill_criteria": [
+        "PQI segment core sales growth falls back below 0% for two consecutive quarters (it was -1.0% in Q1 2026, +2.0% in Q2 2026)",
+        "Water Quality core sales growth decelerates below 3% for two consecutive quarters (vs. 5.7% in Q2 2026)",
+        "FY2026 adjusted diluted EPS finishes below the guided $4.35-4.43 range, stripped of the disclosed $0.05 tariff-refund one-off",
+        "Net debt/EBITDA rises above 2.0x (currently ~1.06x) without a clear, disclosed strategic rationale",
+        "Total shareholder return over any rolling 3-year period trails the analyst base case (+3.4%/yr) by more than 5 points with no segment-level explanation"
+      ],
+      "key_adverse_facts": [
+        "Reverse DCF implies ~3.0%/yr FCF growth priced in, close to (not comfortably below) a plausible ~4-5%/yr base case, leaving a thin margin of safety; base-case scenario return is only ~+3.4%/yr, below a reasonable equity cost of capital",
+        "Product Quality & Innovation segment (~43% of revenue) core sales growth was -1.0% in Q1 2026, recovering to only +2.0% in Q2 2026 - one data point, not yet a trend",
+        "Part of the FY2026 guidance raise is explicitly a one-off $0.05/share IEEPA tariff refund in Q2 2026, not organic reacceleration",
+        "New $725m senior notes offering (closed 01-Jun-2026) modestly increases fixed obligations, framed as refinancing but not independently confirmed against a specific use"
+      ],
+      "data_conflicts": [
+        "The quant snapshot (d4) estimates next earnings 21-Oct-2026 while a separate web search estimate said 26-Oct-2026; the company's own investor-relations events page showed no confirmed date as of this review - unresolved, flagged rather than picked arbitrarily"
+      ],
+      "next_earnings_date": "2026-10-21",
+      "horizon": "12-24 months (watch window)",
+      "confidence_in_thesis": "medium - the quality (low leverage, low SBC, recurring revenue, accelerating Water Quality segment) is well evidenced, but the valuation offers little margin of safety and the PQI segment recovery is only one quarter old, so the case for WATCH rather than INCLUDE rests on a real but reversible near-term condition",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "implied_vs_base": "in_line",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for VLTO in v1_valuation_table.csv. The analyst's own reverse DCF (10-year fade to 4% terminal growth, WACC 8.0%) implies ~3.0%/yr FCF growth priced in, against a base case of roughly 4-5%/yr FCF growth (accelerating Water Quality, recovering but unproven PQI, modest margin expansion, buybacks). Implied growth is close enough to the base case to call this fairly, not cheaply, priced - per the mandate's explicit instruction, a great business priced for what it can deliver is WATCH, not INCLUDE, so no verdict upgrade is made despite the strong quality profile."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.0896,
+        "base": 0.0336,
+        "bull": 0.1498
+      },
+      "scenario_basis": "Analyst scenario table (Section 7): 3yr forward EPS x exit P/E (Bear $4.00@18x, Base $4.80@22x, Bull $5.60@26x) vs $97.14 price, annualised, plus ~0.5% average dividend yield."
+    }
+  }
+}

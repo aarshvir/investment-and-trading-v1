@@ -1,0 +1,213 @@
+{
+  "analyst": "RA5",
+  "date": "2026-10-06",
+  "data_cutoff": "2026-09-25 close (dossier price and share count); EDGAR checked to 2026-10-06; rf = 10-yr Treasury 5.17% (FRED DGS10, 25 Sep 2026)",
+  "note": "Research only; not personal advice. Status labels: CONFIRMED / WRONG / STALE / NOT FOUND. Betas and ERP (5.0%) are assumptions; equity FCF is after SBC, capex and (for GDDY) normalised tax.",
+  "tickers": {
+    "GDDY": {
+      "claims": [
+        {
+          "claim": "No merger agreement, guidance change, rating action, 13D or S-4 after the Q2-26 10-Q (31 Jul 2026)",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 1609711 queried 6 Oct 2026: only 8-K 2026-08-04 (Items 1.01, 2.03, 9.01, acc. 0001609711-26-000092), S-8, 13G/13G-A, Forms 4/144"
+        },
+        {
+          "claim": "8-K 4 Aug 2026: revolver upsized to $1,200m, maturity 31 Jul 2031",
+          "status": "CONFIRMED",
+          "source": "Thirteenth Amendment per 8-K acc. 0001609711-26-000092: 'new revolving credit facility of $1,200 million ... replaced the Borrowers' existing $1,000 million revolving credit facility'; not in dossier; routine"
+        },
+        {
+          "claim": "FY26 FCF guide about $1.8bn reaffirmed; revenue $5.215-5.255bn; NEBITDA margin over 33%",
+          "status": "CONFIRMED",
+          "source": "Ex-99.1 acc. 0001609711-26-000087: 'reaffirms its free cash flow target of approximately $1.8 billion, versus the $1.6 billion of free cash flow generated in 2025'; 'narrowing its revenue guidance to a range of $5.215 billion to $5.255 billion'"
+        },
+        {
+          "claim": "Net debt $2,661m (consolidated)",
+          "status": "CONFIRMED",
+          "source": "Ex-99.1 net debt table: total debt $3,816.9m, cash $1,155.5m, net debt $2,661.4m"
+        },
+        {
+          "claim": "FCF (9.8% / 14.6% yield, >100% conversion) is a clean valuation base",
+          "status": "WRONG",
+          "source": "10-Q acc. 0001609711-26-000088 cash-flow statement: SBC $145.5m, deferred taxes $130.8m, cash taxes paid $16.5m in H1 2026; tax expense $144.2m (XBRL), effective rate 24.1% (Note 12). FY25 SBC $317.8m, deferred taxes $157.6m"
+        },
+        {
+          "claim": "Reverse DCF -7.7% a year at WACC 8.5%",
+          "status": "WRONG",
+          "source": "Own recomputation on normalised levered equity FCF $1,222m at cost of equity 10.7%: -2.1% (range -4.2% to -0.8%); FRED DGS10 5.17% on 2026-09-25"
+        },
+        {
+          "claim": "Maintenance capex not understated versus D&A",
+          "status": "CONFIRMED",
+          "source": "XBRL: capex $23.9m FY25 vs D&A $116.6m; asset-light, no capitalised software line"
+        },
+        {
+          "claim": "Net deferred tax asset of about $1.05bn supports low cash taxes for about 4 years",
+          "status": "CONFIRMED",
+          "source": "XBRL DeferredTaxAssetsLiabilitiesNet $1,047.9m at 2025-12-31; duration is own estimate ($262m a year)"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE",
+      "old_implied": "below",
+      "new_implied": "below",
+      "scenario_returns_3y": {
+        "bear": -0.068,
+        "base": 0.117,
+        "bull": 0.223
+      },
+      "changed_fields": [
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis",
+        "key_adverse_facts",
+        "confidence_in_thesis"
+      ],
+      "note": "Margin of safety survives: normalised equity FCF $1.22bn (10.0x, 10.0% yield) vs implied growth about -2.1% a year at 10.7% cost of equity against base +5%. Verdict INCLUDE kept; confidence cut to medium-high; earlier -7.7% superseded."
+    },
+    "MA": {
+      "claims": [
+        {
+          "claim": "No 8-K, 13D, S-4, guidance change or rating action after 30 Jul 2026",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 1141391 queried 6 Oct 2026: last 8-K 2026-07-30 (acc. 0001141391-26-000081); only Forms 3/4/144 since"
+        },
+        {
+          "claim": "MA publishes no numeric guidance in the earnings release",
+          "status": "CONFIRMED",
+          "source": "Ex-99.1 acc. 0001141391-26-000081: no outlook section; 'net revenue of $9.3 billion, an increase of 14%, or 12% on a currency-neutral basis'"
+        },
+        {
+          "claim": "BVNK acquisition pending, close expected before end of Q3",
+          "status": "WRONG",
+          "source": "Completed 3 Aug 2026 (The Block 2026-08-03, Mastercard press release headline 'Mastercard completes acquisition of BVNK'; Mastercard page returned 403; up to $1.8bn: $1.5bn upfront + up to $300m contingent); no 8-K filed"
+        },
+        {
+          "claim": "Cost of equity 7.9% from rf 4.2%, beta 0.735, ERP 5%",
+          "status": "WRONG",
+          "source": "FRED DGS10 = 5.17% on 2026-09-25 (4.44% on 2026-06-30); corrected cost of equity 9.7% (beta 0.9 assumed)"
+        },
+        {
+          "claim": "FCF $16.96bn (TTM)",
+          "status": "WRONG",
+          "source": "companyfacts CIK 1141391: OCF TTM $17,437m (FY25 17,648 - H1-25 6,983 + H1-26 6,772); PP&E $735m; PaymentsToAcquireSoftware $727m; SBC $615m; equity FCF $15,360m"
+        },
+        {
+          "claim": "Total debt about $22.46bn; net debt/EBITDA about 0.6x",
+          "status": "WRONG",
+          "source": "10-Q acc. 0001141391-26-000083 balance sheet: LT debt $22,184m + current $2,459m = $24,643m; cash $11,291m; net debt $13.35bn; ratio about 0.6x before BVNK cash"
+        },
+        {
+          "claim": "Accrued litigation reserve fell $800m to $296m, matter not identified",
+          "status": "CONFIRMED",
+          "source": "10-Q legal note: U.S. MDL accrual $637m (YE25) to $149m (30 Jun 2026) 'as a result of payments made during 2026'"
+        },
+        {
+          "claim": "April 2026 merchant class action challenges scope of 2023 Damages Class release",
+          "status": "CONFIRMED",
+          "source": "10-Q legal note: putative class action filed April 2026, summary judgment motion, Mastercard and Visa oppose and move for an injunction"
+        },
+        {
+          "claim": "Rules Relief Class settlement (omitted by dossier)",
+          "status": "NOT FOUND in dossier",
+          "source": "10-Q: 'The district court granted preliminary approval of the settlement in June 2026. A hearing on final approval is scheduled for November 2026'; Payments Dive 2026-06-09: 10 bp cut for 5 years, 1.25% standard-card rate for 8 years; Walmart objects (secondary)"
+        },
+        {
+          "claim": "Capex not understated versus D&A",
+          "status": "CONFIRMED",
+          "source": "XBRL FY25: PP&E $489m + software $726m = $1,215m vs D&A $1,143m"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "scenario_returns_3y": {
+        "bear": -0.024,
+        "base": 0.087,
+        "bull": 0.176
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria",
+        "key_adverse_facts",
+        "data_conflicts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "note": "Equity FCF $15.36bn on $499.5bn (3.1%); cost of equity 9.7%, terminal 4%: implied 11.5% a year (8.7-14.2%) vs base 10.5% average. Margin of safety gone at central inputs; quality intact so INCLUDE-SMALL."
+    },
+    "USB": {
+      "claims": [
+        {
+          "claim": "No 8-K, 13D, S-4, rating or management action after 16 Jul 2026",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 36104 queried 6 Oct 2026: 10-Q 2026-08-06 (acc. 0000036104-26-000044), 13F-HR, N-PX, FWPs and about 100 424B2/424B3 prospectus supplements; no 8-K after 2026-07-16"
+        },
+        {
+          "claim": "ROTCE 18.7%, ROA 1.26%, efficiency 57.1%, NIM 2.79%, NCO 0.53%, CET1 10.8%, TBV $30.04",
+          "status": "CONFIRMED",
+          "source": "Ex-99.1 and Ex-99.3 acc. 0000036104-26-000039 (presentation slide 3, 20; release balance sheet tables)"
+        },
+        {
+          "claim": "USB gives no formal guidance beyond medium-term targets",
+          "status": "WRONG",
+          "source": "Ex-99.3 slide 19: FY26 total net revenue '+7% to 9% vs. FY25 of $28.7B'; 3Q26 NII '+4% to 6% vs. 3Q25 of $4,251M'; fee revenue +12% to 14%; expense +~8%; operating leverage ~200 bps"
+        },
+        {
+          "claim": "Dividend flat at $0.52",
+          "status": "STALE",
+          "source": "Ex-99.3 slide 18: 'Planned capital actions included a ~4% increase to the quarterly common stock dividend in the third quarter (subject to Board approval)'"
+        },
+        {
+          "claim": "Reverse valuation cost of equity 9.5-10.0%, base TBV growth 6-9%",
+          "status": "WRONG",
+          "source": "FRED DGS10 5.17% (2026-09-25); corrected r 10.4% (beta 1.05 assumed); implied g 1.9% at ROTCE 18.7%, 3.1% at 17.5%; base g 4%"
+        },
+        {
+          "claim": "CET1 10.8% stable",
+          "status": "CONFIRMED, qualified",
+          "source": "Ex-99.3 slide 18: CET1 including AOCI 9.4%; Ex-99.1 AOCI -$7,111m at 30 Jun; XBRL AFS securities $89.1bn"
+        },
+        {
+          "claim": "NII approximately rate-neutral",
+          "status": "CONFIRMED",
+          "source": "10-Q: net interest income sensitivity +0.29% for +200 bp immediate, 0.00% for +50 bp"
+        },
+        {
+          "claim": "Next earnings 15 Oct 2026",
+          "status": "CONFIRMED (dossier source)",
+          "source": "Business Wire 2026-10-01 announcement; page returned 403 and was not re-read"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "scenario_returns_3y": {
+        "bear": -0.036,
+        "base": 0.102,
+        "bull": 0.194
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria",
+        "key_adverse_facts",
+        "data_conflicts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "note": "P/TBV 1.975x; r 10.4%; implied g 3.1% at ROTCE 17.5% vs base 4%; fair P/TBV 2.11x (+7%, 1.93x at r 11%). Added kill criterion 6 (FY26 revenue guide cut or 3Q NII below +4%)."
+    }
+  }
+}

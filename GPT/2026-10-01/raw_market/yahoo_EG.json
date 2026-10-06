@@ -1,0 +1,193 @@
+{
+  "ticker": "EG",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/EG?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:46.396625+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "EG",
+            "exchangeName": "NYQ",
+            "fullExchangeName": "NYSE",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 812727000,
+            "regularMarketTime": 1790798402,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 365.17,
+            "regularMarketChangePercent": -0.987,
+            "fulldayPrice": 365.17,
+            "fulldayChange": -3.64,
+            "fulldayChangePercent": -0.987,
+            "fiftyTwoWeekHigh": 401.07,
+            "fiftyTwoWeekLow": 302.44,
+            "regularMarketDayHigh": 370.755,
+            "regularMarketDayLow": 364.69,
+            "regularMarketVolume": 443008,
+            "longName": "Everest Group, Ltd.",
+            "shortName": "Everest Group, Ltd.",
+            "chartPreviousClose": 372.36,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "end": 1790775000,
+                "start": 1790755200,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "end": 1790798400,
+                "start": 1790775000,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "end": 1790812800,
+                "start": 1790798400,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "high": [
+                  376.989990234375,
+                  376.95001220703125,
+                  371.760009765625,
+                  370.2699890136719,
+                  370.7550048828125
+                ],
+                "close": [
+                  371.9599914550781,
+                  370.42999267578125,
+                  369.79998779296875,
+                  368.80999755859375,
+                  365.1700134277344
+                ],
+                "volume": [
+                  285000,
+                  282200,
+                  270100,
+                  342000,
+                  443008
+                ],
+                "low": [
+                  371.9200134277344,
+                  367.6700134277344,
+                  368.69000244140625,
+                  364.4100036621094,
+                  364.69000244140625
+                ],
+                "open": [
+                  374.29998779296875,
+                  373.5,
+                  369.7799987792969,
+                  367.32000732421875,
+                  369.0199890136719
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  371.9599914550781,
+                  370.42999267578125,
+                  369.79998779296875,
+                  368.80999755859375,
+                  365.1700134277344
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 371.9599914550781,
+      "adjclose": 371.9599914550781,
+      "open": 374.29998779296875,
+      "high": 376.989990234375,
+      "low": 371.9200134277344,
+      "volume": 285000
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 370.42999267578125,
+      "adjclose": 370.42999267578125,
+      "open": 373.5,
+      "high": 376.95001220703125,
+      "low": 367.6700134277344,
+      "volume": 282200
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 369.79998779296875,
+      "adjclose": 369.79998779296875,
+      "open": 369.7799987792969,
+      "high": 371.760009765625,
+      "low": 368.69000244140625,
+      "volume": 270100
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 368.80999755859375,
+      "adjclose": 368.80999755859375,
+      "open": 367.32000732421875,
+      "high": 370.2699890136719,
+      "low": 364.4100036621094,
+      "volume": 342000
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 365.1700134277344,
+      "adjclose": 365.1700134277344,
+      "open": 369.0199890136719,
+      "high": 370.7550048828125,
+      "low": 364.69000244140625,
+      "volume": 443008
+    }
+  ],
+  "currency": "USD",
+  "symbol": "EG",
+  "regular_market_time": 1790798402,
+  "close_sep30": 365.1700134277344,
+  "session_match": true
+}

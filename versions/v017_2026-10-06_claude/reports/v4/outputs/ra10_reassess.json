@@ -1,0 +1,292 @@
+{
+  "analyst": "RA10",
+  "date": "2026-10-06",
+  "data_cutoff": "2026-09-25 close (prices, shares); 10-year Treasury 5.17% (FRED DGS10, 25 Sep 2026); EDGAR submissions checked to 2026-10-06",
+  "tickers": {
+    "ALL": {
+      "claims": [
+        {
+          "claim": "P-L catastrophe losses Q2 $1.408bn / 1H $2.454bn",
+          "status": "WRONG (homeowners only; total $1,722m / $2,962m)",
+          "source": "Q2 2026 release Ex-99.1, acc 0000899051-26-000117"
+        },
+        {
+          "claim": "Debt $7.49bn, buybacks $1.0bn in Q2, OCF $10.11bn FY2025, SBC $123m",
+          "status": "CONFIRMED",
+          "source": "XBRL companyfacts; Q2 release"
+        },
+        {
+          "claim": "Q3 catastrophe run",
+          "status": "NEW: July $682m + August $748m = $1.43bn vs $397m a year earlier",
+          "source": "8-K 20 Aug acc 0000899051-26-000127; 8-K 17 Sep acc 0000899051-26-000135"
+        },
+        {
+          "claim": "CFO change",
+          "status": "NEW: Christian M. Lown CFO from 3 Aug 2026",
+          "source": "8-K 14 Jul 2026 acc 0000899051-26-000109, Item 5.02"
+        },
+        {
+          "claim": "Price needs 12-15% ROE with no stated COE",
+          "status": "RESTATED: 14.1% at COE 9.0% (5.17% + 0.8 x 4.8%), g 3%, 1.84x book; own 2016-25 median ROE 12.6%",
+          "source": "XBRL equity and net income; FRED DGS10"
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "not stated",
+      "new_implied": "in_line",
+      "scenario_returns_3y": {
+        "bear": -0.115,
+        "base": 0.081,
+        "bull": 0.184
+      },
+      "changed_fields": [
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "kill_criteria",
+        "key_adverse_facts",
+        "dossier corrections"
+      ],
+      "note": "Kept: implied ROE 14.1% in line with 13.5% base, 8.2x FY2027 EPS; no kill criterion fired; added underlying combined ratio >85 kill criterion."
+    },
+    "AMP": {
+      "claims": [
+        {
+          "claim": "AUM $1,396bn (+14%), adjusted EPS $11.07 (+22%), 91% of operating earnings returned",
+          "status": "CONFIRMED",
+          "source": "Q2 release Ex-99.1, acc 0000820027-26-000038"
+        },
+        {
+          "claim": "Net debt -$6.0bn, parent net cash",
+          "status": "WRONG: parent LT debt $3,823m, debt/capital 37.5%",
+          "source": "Q2 release; 8-K 9 Jun 2026 acc 0001104659-26-071727"
+        },
+        {
+          "claim": "Dividend $1.35 a quarter",
+          "status": "WRONG (stale): about $1.72 a share in Q2 2026",
+          "source": "Q2 release, $158m dividends"
+        },
+        {
+          "claim": "AUM growth is structural",
+          "status": "WEAKENED: AWM net flows $3.1bn (-28%), Asset Management net flows -$6.5bn",
+          "source": "Q2 release"
+        },
+        {
+          "claim": "V1 base ROE reversion to 30%; COE 9.87%",
+          "status": "WRONG basis: COE 10.6%, implied ROE 55% (46% ex-AOCI) vs adjusted ROE ex-AOCI 55%",
+          "source": "FRED DGS10; Q2 release; XBRL"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "in_line",
+      "new_implied": "in_line",
+      "scenario_returns_3y": {
+        "bear": -0.096,
+        "base": 0.111,
+        "bull": 0.216
+      },
+      "changed_fields": [
+        "verdict",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "kill_criteria",
+        "key_adverse_facts",
+        "data_conflicts",
+        "confidence_in_thesis",
+        "dossier corrections"
+      ],
+      "note": "Demoted: on the instructed P/B test with a corrected COE there is no margin of safety; flows weak, leverage rising; earnings cross-check favourable."
+    },
+    "BKNG": {
+      "claims": [
+        {
+          "claim": "Q2 2026 room nights +5%, gross bookings +9%, adjusted EPS $2.54 (+15%), FY2026 guidance raised",
+          "status": "CONFIRMED",
+          "source": "Q2 release Ex-99.1, acc 0001075531-26-000036"
+        },
+        {
+          "claim": "Q1-Q2 2025 GAAP NI dip unresolved",
+          "status": "RESOLVED: non-cash Euro-debt FX remeasurement $1,350m H1 2025 plus convertible-note items",
+          "source": "Q2 2026 release reconciliation"
+        },
+        {
+          "claim": "Equity deteriorated $4.67bn in four quarters; TTM EBITDA $9.86bn",
+          "status": "WRONG: $4.13bn over four quarters; $9.86bn is TTM OCF, adjusted EBITDA about $10.3bn",
+          "source": "XBRL StockholdersEquity; release"
+        },
+        {
+          "claim": "Net debt $2.97bn, 0.30x",
+          "status": "WRONG basis: $10.1bn of cash is deferred merchant bookings; gross debt/EBITDA 1.95x",
+          "source": "Q2 2026 release balance sheet"
+        },
+        {
+          "claim": "Realistic base high-teens to low-20s % a year",
+          "status": "WRONG (not derived): +13.4% a year on corrected inputs",
+          "source": "own arithmetic, COE 10.6%"
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "not stated",
+      "new_implied": "below",
+      "scenario_returns_3y": {
+        "bear": -0.058,
+        "base": 0.134,
+        "bull": 0.261
+      },
+      "changed_fields": [
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "kill_criteria",
+        "key_adverse_facts",
+        "data_conflicts",
+        "confidence_in_thesis",
+        "dossier corrections"
+      ],
+      "note": "Kept: implied growth 2.7-5.0% vs 8% base supports more than half weight but bookings are decelerating, buybacks exceed FCF and EU exposure is unquantified."
+    },
+    "BMY": {
+      "claims": [
+        {
+          "claim": "FY2026 non-GAAP EPS guidance $6.75-7.00, revenue ~$49-50bn",
+          "status": "CONFIRMED (verbatim from 30 Jul 2026 release)",
+          "source": "8-K Ex-99.1 acc 0000014272-26-000018"
+        },
+        {
+          "claim": "TTM OCF $12,782m, capex $1,342m, FCF $11,440m; H1 OCF -23.4%",
+          "status": "CONFIRMED",
+          "source": "XBRL companyfacts"
+        },
+        {
+          "claim": "Reverse DCF: -0.3% implied growth at 7.5% WACC",
+          "status": "WRONG method: levered FCF with EV and enterprise WACC; SBC added back; business-development cash ($3,944m FY2025) excluded",
+          "source": "XBRL PaymentsToAcquireBusinessesNetOfCashAcquired"
+        },
+        {
+          "claim": "Fair value $64.30, \"fair, not a bargain\"",
+          "status": "WRONG: rested on 7.5%; at 9.0% COE base-path value $50.5 (FCF less SBC less BD) vs $62.86",
+          "source": "own arithmetic; FRED DGS10"
+        },
+        {
+          "claim": "FCF yield conflict 6.3% vs 8.9%",
+          "status": "RECONCILED: Yahoo FCF $8.1bn already reflects acquisition cash",
+          "source": "d4 snapshot"
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "WATCH",
+      "old_implied": "fair (not stated)",
+      "new_implied": "above",
+      "scenario_returns_3y": {
+        "bear": -0.078,
+        "base": 0.038,
+        "bull": 0.15
+      },
+      "changed_fields": [
+        "verdict",
+        "valuation_view_vs_v1",
+        "scenario_returns_3y",
+        "key_adverse_facts",
+        "confidence_in_thesis",
+        "dossier corrections"
+      ],
+      "note": "WATCH: price above corrected base-case value and base 3-year return below the risk-free yield; quality unchanged; re-test below about $50 or after Q3 shows H2 OCF flat/up."
+    },
+    "BX": {
+      "claims": [
+        {
+          "claim": "Q2 DE per share $1.52, dividend $1.29, LTM dividends $5.23, AUM $1,346.3bn, inflows $262.5bn LTM",
+          "status": "CONFIRMED",
+          "source": "Q2 release Ex-99.1, acc 0001193125-26-313250"
+        },
+        {
+          "claim": "Reverse DCF r = 11.5% with rf 4.2%",
+          "status": "WRONG: 10-year 5.17%, COE 11.8%",
+          "source": "FRED DGS10"
+        },
+        {
+          "claim": "NTM DE $7.09 is a full earnings measure",
+          "status": "WRONG: excludes equity comp (TTM $1,578m, $1.27/share); $5.70 after SBC",
+          "source": "release note (h); XBRL"
+        },
+        {
+          "claim": "Standalone debt $13.3bn funded buybacks",
+          "status": "PARTLY WRONG: $13,192m at par vs $12.2bn cash and investments; buybacks 0.8m shares LTM",
+          "source": "Q2 release"
+        },
+        {
+          "claim": "No missed events",
+          "status": "WRONG: 22 Sep 8-K Q3-to-date realizations >$350m vs >$525m a year earlier",
+          "source": "8-K acc 0001193125-26-398100"
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "cheap-to-fair (not stated)",
+      "new_implied": "in_line",
+      "scenario_returns_3y": {
+        "bear": -0.016,
+        "base": 0.117,
+        "bull": 0.219
+      },
+      "changed_fields": [
+        "valuation_view_vs_v1",
+        "scenario_returns_3y",
+        "thesis_one_line",
+        "key_adverse_facts",
+        "confidence_in_thesis",
+        "dossier corrections"
+      ],
+      "note": "Kept at half weight: implied 10.6% vs 11% base, base return equals cost of equity, Q3 carry realizations about a third lower; watch 22 Oct print."
+    },
+    "CMCSA": {
+      "claims": [
+        {
+          "claim": "Spin-off of NBCUniversal and Sky announced 29 Jun 2026",
+          "status": "CONFIRMED",
+          "source": "8-K acc 0000950103-26-009591"
+        },
+        {
+          "claim": "TTM CFO $32.52bn, capex $12.07bn",
+          "status": "CONFIRMED",
+          "source": "XBRL companyfacts"
+        },
+        {
+          "claim": "TTM FCF $20.44bn",
+          "status": "WRONG basis: omits $2,627m cash paid for intangibles (company FCF definition); $17.82bn, $16.45bn after SBC",
+          "source": "Q2 release: FCF $4.6bn = 8,092 - 2,902 - 587"
+        },
+        {
+          "claim": "Reverse DCF -24%/yr at WACC 6.05%",
+          "status": "WRONG method: levered FCF vs EV; recomputed -14.1% on equity value at COE 9.0% (-9.6% to -15.3%)",
+          "source": "own arithmetic; FRED DGS10"
+        },
+        {
+          "claim": "Events",
+          "status": "NEW: CEO succession (Angelakis to lead Comcast), June debt tender $4.14bn cap, 5.168% 2037 exchange S-4",
+          "source": "8-K acc 0000950103-26-009591; S-4 acc 0001193125-26-326101"
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "below",
+      "scenario_returns_3y": {
+        "bear": -0.058,
+        "base": 0.087,
+        "bull": 0.224
+      },
+      "changed_fields": [
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "key_adverse_facts",
+        "confidence_in_thesis",
+        "dossier corrections"
+      ],
+      "note": "Kept: margin of safety survives (priced-in decline about 10-14% a year vs 0-3% base); spin unexecuted and buybacks paused, so half weight."
+    }
+  }
+}

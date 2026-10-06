@@ -1,0 +1,193 @@
+{
+  "ticker": "TMUS",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/TMUS?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:45.143384+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "TMUS",
+            "exchangeName": "NMS",
+            "fullExchangeName": "NasdaqGS",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 1176989400,
+            "regularMarketTime": 1790798400,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 163.08,
+            "regularMarketChangePercent": 0.061,
+            "fulldayPrice": 163.08,
+            "fulldayChange": 0.1,
+            "fulldayChangePercent": 0.061,
+            "fiftyTwoWeekHigh": 240.95,
+            "fiftyTwoWeekLow": 161.14,
+            "regularMarketDayHigh": 164.62,
+            "regularMarketDayLow": 162.41,
+            "regularMarketVolume": 3899091,
+            "longName": "T-Mobile US, Inc.",
+            "shortName": "T-Mobile US, Inc.",
+            "chartPreviousClose": 165.66,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "end": 1790775000,
+                "start": 1790755200,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "end": 1790798400,
+                "start": 1790775000,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "end": 1790812800,
+                "start": 1790798400,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "open": [
+                  165.5800018310547,
+                  165.47000122070312,
+                  165.6300048828125,
+                  164.47000122070312,
+                  162.72000122070312
+                ],
+                "close": [
+                  165.35000610351562,
+                  165.42999267578125,
+                  166.4499969482422,
+                  162.97999572753906,
+                  163.0800018310547
+                ],
+                "high": [
+                  167.74000549316406,
+                  166.5800018310547,
+                  167.5,
+                  165.4600067138672,
+                  164.6199951171875
+                ],
+                "low": [
+                  164.64999389648438,
+                  164.61000061035156,
+                  164.52000427246094,
+                  162.75999450683594,
+                  162.41000366210938
+                ],
+                "volume": [
+                  4985900,
+                  3850700,
+                  4792300,
+                  4310300,
+                  3899091
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  165.35000610351562,
+                  165.42999267578125,
+                  166.4499969482422,
+                  162.97999572753906,
+                  163.0800018310547
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 165.35000610351562,
+      "adjclose": 165.35000610351562,
+      "open": 165.5800018310547,
+      "high": 167.74000549316406,
+      "low": 164.64999389648438,
+      "volume": 4985900
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 165.42999267578125,
+      "adjclose": 165.42999267578125,
+      "open": 165.47000122070312,
+      "high": 166.5800018310547,
+      "low": 164.61000061035156,
+      "volume": 3850700
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 166.4499969482422,
+      "adjclose": 166.4499969482422,
+      "open": 165.6300048828125,
+      "high": 167.5,
+      "low": 164.52000427246094,
+      "volume": 4792300
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 162.97999572753906,
+      "adjclose": 162.97999572753906,
+      "open": 164.47000122070312,
+      "high": 165.4600067138672,
+      "low": 162.75999450683594,
+      "volume": 4310300
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 163.0800018310547,
+      "adjclose": 163.0800018310547,
+      "open": 162.72000122070312,
+      "high": 164.6199951171875,
+      "low": 162.41000366210938,
+      "volume": 3899091
+    }
+  ],
+  "currency": "USD",
+  "symbol": "TMUS",
+  "regular_market_time": 1790798400,
+  "close_sep30": 163.0800018310547,
+  "session_match": true
+}

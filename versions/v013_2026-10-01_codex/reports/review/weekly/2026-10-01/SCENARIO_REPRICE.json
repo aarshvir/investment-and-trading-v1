@@ -1,0 +1,737 @@
+{
+  "prepared_utc": "2026-09-30T20:31:12.716198+00:00",
+  "source_model": "versions/v012_2026-09-27_codex/reports/review/ready/decision_model.json",
+  "source_model_sha256": "3437f17cb5c57ebd4ea162d6513169386b40d731096f5b21186d37d2fb670dcb",
+  "quote_date_et": "2026-09-30",
+  "method": "Four annual cash-flow dates; 30% dividend withholding; 25bp entry and 25bp exit; 12% hurdle; personal capital-gains tax, FX and fixed fees excluded.",
+  "results": [
+    {
+      "ticker": "AMP",
+      "prior_action": "BUY",
+      "prior_limit": 500.0,
+      "prior_close": 493.0,
+      "close_sep30": 492.35,
+      "quote_status": "two_public_feeds_agree_within_0.1pct",
+      "price_passes_prior_limit": true,
+      "base_12pct_ceiling_same_assumptions": 508.2142128038481,
+      "cases": [
+        {
+          "case": "bear",
+          "terminal_eps": 37.72449999999999,
+          "exit_pe": 9.5,
+          "terminal_price": 358.38274999999993,
+          "annual_dividends": [
+            6.8,
+            6.8,
+            6.8
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": -0.09117906837256479,
+          "12pct_hurdle_ceiling_same_assumptions": 265.2217007853054
+        },
+        {
+          "case": "base",
+          "terminal_eps": 53.901892000000004,
+          "exit_pe": 13,
+          "terminal_price": 700.724596,
+          "annual_dividends": [
+            6.8,
+            7.14,
+            7.497
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.1320018162070099,
+          "12pct_hurdle_ceiling_same_assumptions": 508.2142128038481
+        },
+        {
+          "case": "bull",
+          "terminal_eps": 61.81683200000002,
+          "exit_pe": 15,
+          "terminal_price": 927.2524800000003,
+          "annual_dividends": [
+            6.8,
+            7.344,
+            7.931520000000001
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.24137327320949742,
+          "12pct_hurdle_ceiling_same_assumptions": 668.9776197261949
+        }
+      ],
+      "scenario_vintage": "v012 parent unchanged; earnings, growth, exit P/E and dividends NOT refreshed"
+    },
+    {
+      "ticker": "PAYX",
+      "prior_action": "BUY",
+      "prior_limit": 101.8,
+      "prior_close": 101.37,
+      "close_sep30": 98.5,
+      "quote_status": "two_public_feeds_agree_within_0.1pct",
+      "price_passes_prior_limit": true,
+      "base_12pct_ceiling_same_assumptions": 101.84646006158073,
+      "cases": [
+        {
+          "case": "bear",
+          "terminal_eps": 4.8,
+          "exit_pe": 14,
+          "terminal_price": 67.2,
+          "annual_dividends": [
+            4.76,
+            4,
+            4
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": -0.08693629237549966,
+          "12pct_hurdle_ceiling_same_assumptions": 54.775243014911695
+        },
+        {
+          "case": "base",
+          "terminal_eps": 6.6,
+          "exit_pe": 20,
+          "terminal_price": 132.0,
+          "annual_dividends": [
+            4.76,
+            5,
+            5.25
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.13291675705702366,
+          "12pct_hurdle_ceiling_same_assumptions": 101.84646006158073
+        },
+        {
+          "case": "bull",
+          "terminal_eps": 7.5,
+          "exit_pe": 23,
+          "terminal_price": 172.5,
+          "annual_dividends": [
+            4.9,
+            5.4,
+            5.9
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.23521588207422817,
+          "12pct_hurdle_ceiling_same_assumptions": 131.1627758569138
+        }
+      ],
+      "scenario_vintage": "v012 parent unchanged; earnings, growth, exit P/E and dividends NOT refreshed"
+    },
+    {
+      "ticker": "MSFT",
+      "prior_action": "WAIT",
+      "prior_limit": 500,
+      "prior_close": 516.17,
+      "close_sep30": 512.9,
+      "quote_status": "two_public_feeds_agree_within_0.1pct",
+      "price_passes_prior_limit": false,
+      "base_12pct_ceiling_same_assumptions": 513.6355533946663,
+      "cases": [
+        {
+          "case": "bear",
+          "terminal_eps": 16.568799450278405,
+          "exit_pe": 22,
+          "terminal_price": 364.51358790612494,
+          "annual_dividends": [
+            3.92,
+            3.92,
+            3.92
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": -0.10307088909559153,
+          "12pct_hurdle_ceiling_same_assumptions": 264.7337286796501
+        },
+        {
+          "case": "base",
+          "terminal_eps": 25.553951650073795,
+          "exit_pe": 28,
+          "terminal_price": 715.5106462020663,
+          "annual_dividends": [
+            3.92,
+            4.12,
+            4.33
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.1205376513891151,
+          "12pct_hurdle_ceiling_same_assumptions": 513.6355533946663
+        },
+        {
+          "case": "bull",
+          "terminal_eps": 31.282452310052427,
+          "exit_pe": 32,
+          "terminal_price": 1001.0384739216777,
+          "annual_dividends": [
+            3.92,
+            4.31,
+            4.74
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.2523495654104041,
+          "12pct_hurdle_ceiling_same_assumptions": 716.1645239869824
+        }
+      ],
+      "scenario_vintage": "v012 parent unchanged; earnings, growth, exit P/E and dividends NOT refreshed"
+    },
+    {
+      "ticker": "NVDA",
+      "prior_action": "WAIT",
+      "prior_limit": 215,
+      "prior_close": 225.07,
+      "close_sep30": 228.38,
+      "quote_status": "two_public_feeds_agree_within_0.1pct",
+      "price_passes_prior_limit": false,
+      "base_12pct_ceiling_same_assumptions": 242.91637865707312,
+      "cases": [
+        {
+          "case": "bear",
+          "terminal_eps": 4.456082599714286,
+          "exit_pe": 18,
+          "terminal_price": 80.20948679485714,
+          "annual_dividends": [
+            1,
+            1,
+            1
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": -0.2911198444388773,
+          "12pct_hurdle_ceiling_same_assumptions": 58.48387177517751
+        },
+        {
+          "case": "base",
+          "terminal_eps": 13.624907953443984,
+          "exit_pe": 25,
+          "terminal_price": 340.6226988360996,
+          "annual_dividends": [
+            1,
+            1,
+            1
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.14333496557195036,
+          "12pct_hurdle_ceiling_same_assumptions": 242.91637865707312
+        },
+        {
+          "case": "bull",
+          "terminal_eps": 20.49385293277311,
+          "exit_pe": 30,
+          "terminal_price": 614.8155879831933,
+          "annual_dividends": [
+            1,
+            1.1,
+            1.2
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.3912570593987351,
+          "12pct_hurdle_ceiling_same_assumptions": 437.26313445303464
+        }
+      ],
+      "scenario_vintage": "v012 parent unchanged; earnings, growth, exit P/E and dividends NOT refreshed"
+    },
+    {
+      "ticker": "ALLE",
+      "prior_action": "WAIT",
+      "prior_limit": 145,
+      "prior_close": 154.47,
+      "close_sep30": 153.77,
+      "quote_status": "two_public_feeds_agree_within_0.1pct",
+      "price_passes_prior_limit": false,
+      "base_12pct_ceiling_same_assumptions": 147.88670065906658,
+      "cases": [
+        {
+          "case": "bear",
+          "terminal_eps": 6.9,
+          "exit_pe": 15,
+          "terminal_price": 103.5,
+          "annual_dividends": [
+            2.24,
+            2.24,
+            2.24
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": -0.11340385398897973,
+          "12pct_hurdle_ceiling_same_assumptions": 77.05850766896532
+        },
+        {
+          "case": "base",
+          "terminal_eps": 10.4,
+          "exit_pe": 19.5,
+          "terminal_price": 202.8,
+          "annual_dividends": [
+            2.4,
+            2.55,
+            2.7
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.1053871572613424,
+          "12pct_hurdle_ceiling_same_assumptions": 147.88670065906658
+        },
+        {
+          "case": "bull",
+          "terminal_eps": 12.4,
+          "exit_pe": 22,
+          "terminal_price": 272.8,
+          "annual_dividends": [
+            2.5,
+            2.8,
+            3.1
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.21906524653541404,
+          "12pct_hurdle_ceiling_same_assumptions": 197.86312280523182
+        }
+      ],
+      "scenario_vintage": "v012 parent unchanged; earnings, growth, exit P/E and dividends NOT refreshed"
+    },
+    {
+      "ticker": "HIG",
+      "prior_action": "WAIT",
+      "prior_limit": 120.0,
+      "prior_close": 124.23,
+      "close_sep30": 122.36,
+      "quote_status": "two_public_feeds_agree_within_0.1pct",
+      "price_passes_prior_limit": false,
+      "base_12pct_ceiling_same_assumptions": 120.6189407301262,
+      "cases": [
+        {
+          "case": "bear",
+          "terminal_eps": 10.616831999999999,
+          "exit_pe": 9,
+          "terminal_price": 95.55148799999999,
+          "annual_dividends": [
+            2.4,
+            2.4,
+            2.4
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": -0.06574231790276602,
+          "12pct_hurdle_ceiling_same_assumptions": 71.69746551987377
+        },
+        {
+          "case": "base",
+          "terminal_eps": 14.292192,
+          "exit_pe": 11.5,
+          "terminal_price": 164.360208,
+          "annual_dividends": [
+            2.4,
+            2.52,
+            2.646
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.11459723897242913,
+          "12pct_hurdle_ceiling_same_assumptions": 120.6189407301262
+        },
+        {
+          "case": "bull",
+          "terminal_eps": 15.972000000000005,
+          "exit_pe": 13,
+          "terminal_price": 207.63600000000005,
+          "annual_dividends": [
+            2.4,
+            2.592,
+            2.79936
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.2032469398862492,
+          "12pct_hurdle_ceiling_same_assumptions": 151.3844633473714
+        }
+      ],
+      "scenario_vintage": "v012 parent unchanged; earnings, growth, exit P/E and dividends NOT refreshed"
+    },
+    {
+      "ticker": "CPAY",
+      "prior_action": "WAIT",
+      "prior_limit": 350,
+      "prior_close": 398.11,
+      "close_sep30": 388.6,
+      "quote_status": "two_public_feeds_agree_within_0.1pct",
+      "price_passes_prior_limit": false,
+      "base_12pct_ceiling_same_assumptions": 358.5605107408416,
+      "cases": [
+        {
+          "case": "bear",
+          "terminal_eps": 20,
+          "exit_pe": 11,
+          "terminal_price": 220,
+          "annual_dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": -0.17412154648949457,
+          "12pct_hurdle_ceiling_same_assumptions": 155.81064876075115
+        },
+        {
+          "case": "base",
+          "terminal_eps": 31.642298276140004,
+          "exit_pe": 16,
+          "terminal_price": 506.27677241824006,
+          "annual_dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.09036334473053909,
+          "12pct_hurdle_ceiling_same_assumptions": 358.5605107408416
+        },
+        {
+          "case": "bull",
+          "terminal_eps": 35,
+          "exit_pe": 19,
+          "terminal_price": 665,
+          "annual_dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.19412316680924768,
+          "12pct_hurdle_ceiling_same_assumptions": 470.9730973904524
+        }
+      ],
+      "scenario_vintage": "v012 parent unchanged; earnings, growth, exit P/E and dividends NOT refreshed"
+    },
+    {
+      "ticker": "AIZ",
+      "prior_action": "WAIT",
+      "prior_limit": 235.0,
+      "prior_close": 265.0,
+      "close_sep30": 263.5,
+      "quote_status": "two_public_feeds_agree_within_0.1pct",
+      "price_passes_prior_limit": false,
+      "base_12pct_ceiling_same_assumptions": 243.09535525971026,
+      "cases": [
+        {
+          "case": "bear",
+          "terminal_eps": 16.891496999999998,
+          "exit_pe": 10,
+          "terminal_price": 168.91496999999998,
+          "annual_dividends": [
+            3.52,
+            3.52,
+            3.52
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": -0.12829022121629857,
+          "12pct_hurdle_ceiling_same_assumptions": 125.53404050162378
+        },
+        {
+          "case": "base",
+          "terminal_eps": 25.725903000000002,
+          "exit_pe": 13,
+          "terminal_price": 334.43673900000005,
+          "annual_dividends": [
+            3.52,
+            3.7312000000000003,
+            3.9550720000000004
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.09005391974806842,
+          "12pct_hurdle_ceiling_same_assumptions": 243.09535525971026
+        },
+        {
+          "case": "bull",
+          "terminal_eps": 28.720251000000005,
+          "exit_pe": 16,
+          "terminal_price": 459.5240160000001,
+          "annual_dividends": [
+            3.52,
+            3.8016,
+            4.105728
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.21008975556867748,
+          "12pct_hurdle_ceiling_same_assumptions": 331.80000950271005
+        }
+      ],
+      "scenario_vintage": "v012 parent unchanged; earnings, growth, exit P/E and dividends NOT refreshed"
+    },
+    {
+      "ticker": "SNA",
+      "prior_action": "WAIT",
+      "prior_limit": 310,
+      "prior_close": 369.2,
+      "close_sep30": 363.35,
+      "quote_status": "two_public_feeds_agree_within_0.1pct",
+      "price_passes_prior_limit": false,
+      "base_12pct_ceiling_same_assumptions": 310.2057277087892,
+      "cases": [
+        {
+          "case": "bear",
+          "terminal_eps": 14.6,
+          "exit_pe": 14,
+          "terminal_price": 204.4,
+          "annual_dividends": [
+            9.68,
+            9.68,
+            9.68
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": -0.1530973050666677,
+          "12pct_hurdle_ceiling_same_assumptions": 160.99648041885078
+        },
+        {
+          "case": "base",
+          "terminal_eps": 23,
+          "exit_pe": 18,
+          "terminal_price": 414,
+          "annual_dividends": [
+            9.68,
+            10.16,
+            10.68
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.061453330795250394,
+          "12pct_hurdle_ceiling_same_assumptions": 310.2057277087892
+        },
+        {
+          "case": "bull",
+          "terminal_eps": 26.2,
+          "exit_pe": 20,
+          "terminal_price": 524.0,
+          "annual_dividends": [
+            10,
+            11,
+            12
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.14662077600227208,
+          "12pct_hurdle_ceiling_same_assumptions": 389.4341792203165
+        }
+      ],
+      "scenario_vintage": "v012 parent unchanged; earnings, growth, exit P/E and dividends NOT refreshed"
+    },
+    {
+      "ticker": "NTAP",
+      "prior_action": "WAIT",
+      "prior_limit": 150,
+      "prior_close": 201.15,
+      "close_sep30": 210.08,
+      "quote_status": "two_public_feeds_agree_within_0.1pct",
+      "price_passes_prior_limit": false,
+      "base_12pct_ceiling_same_assumptions": 152.08046951538566,
+      "cases": [
+        {
+          "case": "bear",
+          "terminal_eps": 6.25,
+          "exit_pe": 14,
+          "terminal_price": 87.5,
+          "annual_dividends": [
+            1.8,
+            1.8,
+            1.8
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": -0.24619842775496242,
+          "12pct_hurdle_ceiling_same_assumptions": 64.98890489019796
+        },
+        {
+          "case": "base",
+          "terminal_eps": 9.982500000000003,
+          "exit_pe": 21,
+          "terminal_price": 209.63250000000008,
+          "annual_dividends": [
+            2.08,
+            2.16,
+            2.24
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.0048208254169995746,
+          "12pct_hurdle_ceiling_same_assumptions": 152.08046951538566
+        },
+        {
+          "case": "bull",
+          "terminal_eps": 12,
+          "exit_pe": 24,
+          "terminal_price": 288,
+          "annual_dividends": [
+            2.08,
+            2.3,
+            2.55
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.11593464237121698,
+          "12pct_hurdle_ceiling_same_assumptions": 207.81470272024018
+        }
+      ],
+      "scenario_vintage": "v012 parent unchanged; earnings, growth, exit P/E and dividends NOT refreshed"
+    },
+    {
+      "ticker": "IBKR",
+      "prior_action": "WAIT",
+      "prior_limit": 65.0,
+      "prior_close": 89.24,
+      "close_sep30": 85.42,
+      "quote_status": "two_public_feeds_agree_within_0.1pct",
+      "price_passes_prior_limit": false,
+      "base_12pct_ceiling_same_assumptions": 70.65642001252846,
+      "cases": [
+        {
+          "case": "bear",
+          "terminal_eps": 2.6,
+          "exit_pe": 18,
+          "terminal_price": 46.800000000000004,
+          "annual_dividends": [
+            0.35,
+            0.35,
+            0.35
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": -0.17954678292449772,
+          "12pct_hurdle_ceiling_same_assumptions": 33.73215558043666
+        },
+        {
+          "case": "base",
+          "terminal_eps": 3.9542749999999995,
+          "exit_pe": 25,
+          "terminal_price": 98.85687499999999,
+          "annual_dividends": [
+            0.35,
+            0.385,
+            0.42350000000000004
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.051159040600565864,
+          "12pct_hurdle_ceiling_same_assumptions": 70.65642001252846
+        },
+        {
+          "case": "bull",
+          "terminal_eps": 4.8382542,
+          "exit_pe": 32,
+          "terminal_price": 154.8241344,
+          "annual_dividends": [
+            0.35,
+            0.40249999999999997,
+            0.46287499999999987
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.2199265183198832,
+          "12pct_hurdle_ceiling_same_assumptions": 110.323435333064
+        }
+      ],
+      "scenario_vintage": "v012 parent unchanged; earnings, growth, exit P/E and dividends NOT refreshed"
+    },
+    {
+      "ticker": "ABNB",
+      "prior_action": "WAIT",
+      "prior_limit": 120,
+      "prior_close": 157.47,
+      "close_sep30": 160.65,
+      "quote_status": "two_public_feeds_agree_within_0.1pct",
+      "price_passes_prior_limit": false,
+      "base_12pct_ceiling_same_assumptions": 125.30465357350161,
+      "cases": [
+        {
+          "case": "bear",
+          "terminal_eps": 3.2848674991803284,
+          "exit_pe": 20,
+          "terminal_price": 65.69734998360657,
+          "annual_dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": -0.2589766693337413,
+          "12pct_hurdle_ceiling_same_assumptions": 46.52884874003574
+        },
+        {
+          "case": "base",
+          "terminal_eps": 7.0770576993103465,
+          "exit_pe": 25,
+          "terminal_price": 176.92644248275866,
+          "annual_dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.030971942033096167,
+          "12pct_hurdle_ceiling_same_assumptions": 125.30465357350161
+        },
+        {
+          "case": "bull",
+          "terminal_eps": 10.152713142857143,
+          "exit_pe": 30,
+          "terminal_price": 304.5813942857143,
+          "annual_dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.235616562908889,
+          "12pct_hurdle_ceiling_same_assumptions": 215.71374838232404
+        }
+      ],
+      "scenario_vintage": "v012 parent unchanged; earnings, growth, exit P/E and dividends NOT refreshed"
+    },
+    {
+      "ticker": "AME",
+      "prior_action": "WAIT",
+      "prior_limit": 185,
+      "prior_close": 250.74,
+      "close_sep30": 247.73,
+      "quote_status": "single_public_feed_cboe_rate_limited",
+      "price_passes_prior_limit": false,
+      "base_12pct_ceiling_same_assumptions": 185.13789860687888,
+      "cases": [
+        {
+          "case": "bear",
+          "terminal_eps": 7.5,
+          "exit_pe": 20,
+          "terminal_price": 150.0,
+          "annual_dividends": [
+            1.2,
+            1.2,
+            1.2
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": -0.15136710962102246,
+          "12pct_hurdle_ceiling_same_assumptions": 108.24704024377827
+        },
+        {
+          "case": "base",
+          "terminal_eps": 10.748740700000003,
+          "exit_pe": 24,
+          "terminal_price": 257.9697768000001,
+          "annual_dividends": [
+            1.36,
+            1.46,
+            1.56
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.01596876380978529,
+          "12pct_hurdle_ceiling_same_assumptions": 185.13789860687888
+        },
+        {
+          "case": "bull",
+          "terminal_eps": 12.0,
+          "exit_pe": 28,
+          "terminal_price": 336.0,
+          "annual_dividends": [
+            1.36,
+            1.56,
+            1.8
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.10907532572416867,
+          "12pct_hurdle_ceiling_same_assumptions": 240.57620616825278
+        }
+      ],
+      "scenario_vintage": "v012 parent unchanged; earnings, growth, exit P/E and dividends NOT refreshed"
+    },
+    {
+      "ticker": "RL",
+      "prior_action": "WAIT",
+      "prior_limit": 265,
+      "prior_close": 357.1,
+      "close_sep30": 355.07,
+      "quote_status": "single_public_feed_cboe_rate_limited",
+      "price_passes_prior_limit": false,
+      "base_12pct_ceiling_same_assumptions": 282.16592805295426,
+      "cases": [
+        {
+          "case": "bear",
+          "terminal_eps": 12.2,
+          "exit_pe": 13,
+          "terminal_price": 158.6,
+          "annual_dividends": [
+            4,
+            3.5,
+            3.5
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": -0.2273055673043653,
+          "12pct_hurdle_ceiling_same_assumptions": 118.50684592727363
+        },
+        {
+          "case": "base",
+          "terminal_eps": 21,
+          "exit_pe": 18.5,
+          "terminal_price": 388.5,
+          "annual_dividends": [
+            4,
+            4.2,
+            4.4
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.0367539254524053,
+          "12pct_hurdle_ceiling_same_assumptions": 282.16592805295426
+        },
+        {
+          "case": "bull",
+          "terminal_eps": 25.3,
+          "exit_pe": 22,
+          "terminal_price": 556.6,
+          "annual_dividends": [
+            4.2,
+            4.6,
+            5
+          ],
+          "irr_after_30pct_withholding_25bp_entry_exit_at_sep30": 0.16751073735815603,
+          "12pct_hurdle_ceiling_same_assumptions": 401.8649764300982
+        }
+      ],
+      "scenario_vintage": "v012 parent unchanged; earnings, growth, exit P/E and dividends NOT refreshed"
+    }
+  ]
+}

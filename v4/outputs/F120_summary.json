@@ -1,0 +1,129 @@
+{
+ "agent": "F120",
+ "as_of": "2026-09-25",
+ "tickers": {
+  "INVH": {
+   "verdict": "WATCH",
+   "horizon": "12-36 months",
+   "thesis_one_line": "Large landlord of about 85,500 rented family houses, buying back stock and selling homes above its share-price value, but fairly priced for modest rent growth.",
+   "kill_criteria": [
+    "Net debt / TTM adjusted EBITDAre above 6.0x (8-K Ex. 99.1 Schedule 2(b); 5.4x at 30 Jun 2026).",
+    "Same Store NOI growth at or below 0.0% for two consecutive quarters (Q1-26 was -0.3%, Q2-26 +1.5%).",
+    "Same Store average occupancy below 95.5% in any quarter (Q4-25 low was 95.9%).",
+    "Full-year Core FFO per share guidance midpoint cut below $1.90 (current $1.95).",
+    "Enacted federal or state law that forces divestiture or caps rents on existing wholly owned homes (the ROAD Act has no divestiture requirement)."
+   ],
+   "key_adverse_facts": [
+    "Same-store NOI growth fell from +4.7% (Q4-24) to -0.3% (Q1-26); Q2-26 +1.5%; 2026 guide +0.4% to +1.9%",
+    "ROAD to Housing Act (law 11 Jul 2026) bars 350+-home investors from buying existing homes from 7 Jan 2027; build-to-rent exempt; 10-Q says institutional buyers are deferring BTR/fee-build purchases",
+    "Refinancing: new 4.950% notes vs 3.9% book average; $988M 2027 secured debt (now partly prepaid)",
+    "Buybacks funded by asset sales and leverage, not free cash flow; FY25 Core FFO $1.91 finished one cent below the raised $1.92 midpoint"
+   ],
+   "data_conflicts": [
+    "V1 'excessive' verdict and 36x NTM P/E use GAAP EPS/EBIT with D&A set to zero; on AFFO the multiple is 16.1x (Core FFO 13.7x)",
+    "d4/d3 FCF yield 7.4-7.6% deducts about $4M capex; INVH spends about $165M a year recurring capex (AFFO deduction)"
+   ],
+   "next_earnings_date": "2026-10-28",
+   "confidence_in_thesis": "medium: primary filings fully opened; NAV and ROAD Act effects not quantified from filings",
+   "valuation_view_vs_v1": {
+    "v1_verdict": "excessive",
+    "v1_base_3y": null,
+    "dossier_view": "fair",
+    "consistent": false,
+    "implied_vs_base": "above",
+    "implied_growth_10y": 0.044,
+    "base_growth": 0.03,
+    "reconciliation": "V1 excessive rests on GAAP EPS/EBIT reverse DCF with D&A=0 (40% implied growth), inapplicable to a REIT; on AFFO the implied growth is 4.4%/yr vs my 3.0% base, so fair-to-slightly-rich, not excessive."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.039,
+    "base": 0.059,
+    "bull": 0.137
+   },
+   "scenario_basis": "Start 2026 AFFO/share $1.65 (guidance midpoint), dividend $1.20; bear AFFO -1%/yr exit 12.5x; base +3%/yr exit 15.5x, dividend +3%; bull +6%/yr exit 18x; price $26.62."
+  },
+  "UNP": {
+   "verdict": "WATCH",
+   "horizon": "12-36 months",
+   "thesis_one_line": "Western US freight railroad with strong pricing and record results, buying Norfolk Southern; good business, but the price already assumes high-single-digit earnings growth.",
+   "kill_criteria": [
+    "Reported operating ratio at or above 61.5% for two consecutive quarters (Q2-26 59.7%; 8-K Ex. 99.1 income statement).",
+    "Freight revenue excluding fuel surcharge growth below 1% y/y for two consecutive quarters (Q2-26 +4%).",
+    "Adjusted debt / adjusted EBITDA above 3.0x on a standalone basis (10-Q MD&A table; 2.5x at 30 Jun 2026), or management-stated pro forma leverage above 3.5x at closing.",
+    "STB denies the application, or UPC/NSC terminate (the $2.5B fee applies in certain cases).",
+    "Guidance cut: 2026 reported EPS growth outlook reduced below \"mid-single digit\" (currently \"high-single digit\")."
+   ],
+   "key_adverse_facts": [
+    "Q2-26 reported operating ratio worsened 70 bp y/y to 59.7% on fuel; effective tax rate 22.0% vs 18.9%",
+    "H1-26 cash taxes $236M vs $785M: about $550M of OCF improvement is timing",
+    "NSC deal: about 225M new shares (+38%), about $20B cash consideration, $2.5B termination fee in certain cases; STB review, close guided 2027",
+    "Buybacks paused ($26M H1-26 vs $2,679M H1-25); debt fair value $24.7B vs carrying $30.3B"
+   ],
+   "data_conflicts": [
+    "Triage cited 29% margin and 40% ROE; filings show Q2-26 operating margin 40.3% and b1 ROE 35.5%",
+    "V1 reverse DCF suppressed (D&A missing); own EPS-based reverse DCF gives 7.7%/yr",
+    "d4 FCF yield 2.9% (after dividends) vs TTM OCF less capex 4.0%"
+   ],
+   "next_earnings_date": "2026-10-22",
+   "confidence_in_thesis": "medium: standalone numbers solid; merger terms and timeline from 10-Q but synergy and pro forma leverage not verified",
+   "valuation_view_vs_v1": {
+    "v1_verdict": "demanding",
+    "v1_base_3y": 0.0293,
+    "dossier_view": "full",
+    "consistent": true,
+    "implied_vs_base": "above",
+    "implied_growth_10y": 0.077,
+    "base_growth": 0.065,
+    "reconciliation": "Agree with V1 demanding: implied 10-year EPS growth 7.7% vs my 6.5% base; my base 3y return 5.0% vs V1 2.9% differs only through dividends and exit multiple."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.08,
+    "base": 0.05,
+    "bull": 0.118
+   },
+   "scenario_basis": "Start 2026E GAAP EPS $13.06 (consensus FY0), dividend $5.60 growing 4%; bear EPS -2%/yr exit 16x; base +6.5%/yr exit 19x; bull +10%/yr exit 21x; price $273.79; merger excluded."
+  },
+  "COO": {
+   "verdict": "WATCH",
+   "horizon": "12-36 months",
+   "thesis_one_line": "Maker of contact lenses and fertility products, cheap after two guidance cuts and a failed sale process, with heavy buybacks but stalled lens growth.",
+   "kill_criteria": [
+    "CooperVision organic revenue growth below -1% in fiscal Q1-27 (quarter ending 31 Jan 2027), after the Q4-26 guide of \"-2% to 0%\" (8-K Ex. 99.1 segment table).",
+    "FY27 non-GAAP EPS guidance midpoint below $4.40, or FY26 actual non-GAAP EPS below $4.51 (bottom of the Q3-26 range).",
+    "Free cash flow (OCF less capex) for fiscal 2027 below $600M on the company's definition, or cumulative FY26-28 objective of \"exceeding $2.2 billion\" withdrawn.",
+    "Total debt to non-GAAP EBITDA above 2.5x (10-Q Note 4 debt $2,544.2M today; about 1.8x derived), or covenant waiver.",
+    "Any new litigation charge above $100M (recall or HMRC: the HMRC range is £0 to £71.7M plus interest)."
+   ],
+   "key_adverse_facts": [
+    "FY26 guidance cut twice: revenue midpoint $4.326B -> $4.303B -> $4.2405B; EPS midpoint $4.62 -> $4.53 (new top below old bottom)",
+    "CooperVision organic 0% in Q3-26, guided -2% to 0% for Q4; US channel inventory reduction",
+    "Fertility recall claims: $272.0M net charge in nine months; $306.8M paid Aug 2026 (about $263M net cash)",
+    "HMRC Sauflon payroll-tax dispute: FTT sided largely with HMRC; exposure GBP 0 to 71.7M plus interest, no liability recorded",
+    "Board rejected offers for CooperSurgical; non-hormonal IUD entrant named as a valuation factor"
+   ],
+   "data_conflicts": [
+    "Triage said revenue growth +0.6% flatlined (latest quarter only); nine-month growth is +4.8%",
+    "GAAP EPS $2.24 in Q3-26 includes a $307.2M discrete UK tax benefit; non-GAAP $1.15",
+    "TTM FCF $678M includes $111M working-capital inflow and excludes the August settlement cash"
+   ],
+   "next_earnings_date": "2026-12-03",
+   "confidence_in_thesis": "medium-low: filings opened, but guidance credibility is falling and the December date is an estimate",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "cheap",
+    "consistent": true,
+    "implied_vs_base": "in_line",
+    "implied_growth_10y": 0.056,
+    "base_growth": 0.06,
+    "reconciliation": "No V1 row exists. My reverse DCF on normalized free cash flow ($600M) at a 10% cost of equity implies 5.6%/yr vs a 6% base; base return 6.8%/yr is below the 10% required return, hence WATCH."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.074,
+    "base": 0.068,
+    "bull": 0.178
+   },
+   "scenario_basis": "Start FY26 non-GAAP EPS $4.53 (guide midpoint), no dividend; bear EPS -1%/yr exit 10x; base +6%/yr (organic 2-3% plus buyback shrink) exit 12.5x; bull +10%/yr exit 15x; price $55.38."
+  }
+ }
+}

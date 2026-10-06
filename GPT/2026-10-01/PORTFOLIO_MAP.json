@@ -1,0 +1,197 @@
+{
+  "prepared_utc": "2026-09-30T20:37:12.172587+00:00",
+  "quote_cutoff": "2026-09-30 US regular session",
+  "basis": "v012 company scenarios unchanged, repriced to Yahoo September 30 public closes; 30% dividend withholding and 25bp stock entry/exit; dividends held as cash; index and reserve annual assumptions from v012; fund fees, FX, capital-gains tax and fixed fees excluded.",
+  "warning": "Illustrative assumptions, not calibrated probabilities, account-return forecast or a loss bound. Several conditional positions exceed entry limits at the September 30 close.",
+  "recommended_allocation_id": "full_equity_budget_all_index",
+  "allocations": [
+    {
+      "name": "reserve_only",
+      "weights": {
+        "index": 0,
+        "direct": {},
+        "reserve": 1
+      },
+      "total_equity": 0,
+      "cases": {
+        "bear": {
+          "ending_wealth_per_dollar": 1.0768906249999997,
+          "3yr_cagr": 0.02499999999999991
+        },
+        "base": {
+          "ending_wealth_per_dollar": 1.1087178749999997,
+          "3yr_cagr": 0.03499999999999992
+        },
+        "bull": {
+          "ending_wealth_per_dollar": 1.1411661249999998,
+          "3yr_cagr": 0.04499999999999993
+        }
+      },
+      "stress": {
+        "equity_selloff_pct": -0.0,
+        "severe_correlated_pct": -1.0,
+        "tail_constructed_pct": -2.0
+      },
+      "status": "allocation_reference"
+    },
+    {
+      "name": "fifteen_index_no_direct_reference",
+      "weights": {
+        "index": 0.15,
+        "direct": {},
+        "reserve": 0.85
+      },
+      "total_equity": 0.15,
+      "cases": {
+        "bear": {
+          "ending_wealth_per_dollar": 1.0321602312499998,
+          "3yr_cagr": 0.010607167274550022
+        },
+        "base": {
+          "ending_wealth_per_dollar": 1.1210625937499998,
+          "3yr_cagr": 0.038827139881876915
+        },
+        "bull": {
+          "ending_wealth_per_dollar": 1.18073040625,
+          "3yr_cagr": 0.05693979311557795
+        }
+      },
+      "stress": {
+        "equity_selloff_pct": -4.5,
+        "severe_correlated_pct": -8.35,
+        "tail_constructed_pct": -10.7
+      },
+      "status": "allocation_reference"
+    },
+    {
+      "name": "prior_starter_if_all_gates_pass",
+      "weights": {
+        "index": 0.15,
+        "direct": {
+          "AMP": 0.02,
+          "PAYX": 0.02
+        },
+        "reserve": 0.81
+      },
+      "total_equity": 0.19,
+      "cases": {
+        "bear": {
+          "ending_wealth_per_dollar": 1.0195343724370192,
+          "3yr_cagr": 0.00646951262578388
+        },
+        "base": {
+          "ending_wealth_per_dollar": 1.1344408792668668,
+          "3yr_cagr": 0.042943117762021865
+        },
+        "bull": {
+          "ending_wealth_per_dollar": 1.2103359338604167,
+          "3yr_cagr": 0.06570084248289443
+        },
+        "base_no_stock_rerating": {
+          "ending_wealth_per_dollar": 1.1262802263571423,
+          "3yr_cagr": 0.040436277249767505
+        }
+      },
+      "stress": {
+        "equity_selloff_pct": -6.1,
+        "severe_correlated_pct": -10.71,
+        "tail_constructed_pct": -13.62
+      },
+      "status": "funded only if conditions pass"
+    },
+    {
+      "name": "index_only_same_19pct_equity",
+      "weights": {
+        "index": 0.19,
+        "direct": {},
+        "reserve": 0.81
+      },
+      "total_equity": 0.19,
+      "cases": {
+        "bear": {
+          "ending_wealth_per_dollar": 1.0202321262499998,
+          "3yr_cagr": 0.006699064407062805
+        },
+        "base": {
+          "ending_wealth_per_dollar": 1.12435451875,
+          "3yr_cagr": 0.039842961603603344
+        },
+        "bull": {
+          "ending_wealth_per_dollar": 1.19128088125,
+          "3yr_cagr": 0.06007857529843008
+        }
+      },
+      "stress": {
+        "equity_selloff_pct": -5.699999999999999,
+        "severe_correlated_pct": -10.31,
+        "tail_constructed_pct": -13.019999999999998
+      },
+      "status": "allocation_reference"
+    },
+    {
+      "name": "full_equity_budget_all_index",
+      "weights": {
+        "index": 0.25,
+        "direct": {},
+        "reserve": 0.75
+      },
+      "total_equity": 0.25,
+      "cases": {
+        "bear": {
+          "ending_wealth_per_dollar": 1.0023399687499996,
+          "3yr_cagr": 0.0007793819892396581
+        },
+        "base": {
+          "ending_wealth_per_dollar": 1.1292924062499998,
+          "3yr_cagr": 0.041362983118298446
+        },
+        "bull": {
+          "ending_wealth_per_dollar": 1.2071065937499998,
+          "3yr_cagr": 0.06475218689883966
+        }
+      },
+      "stress": {
+        "equity_selloff_pct": -7.5,
+        "severe_correlated_pct": -13.25,
+        "tail_constructed_pct": -16.499999999999996
+      },
+      "status": "allocation_reference"
+    },
+    {
+      "name": "prior_full_direct_hypothetical_at_sep30",
+      "weights": {
+        "index": 0.15,
+        "direct": {
+          "AMP": 0.02,
+          "PAYX": 0.02,
+          "MSFT": 0.02,
+          "NVDA": 0.015,
+          "ALLE": 0.015,
+          "HIG": 0.01
+        },
+        "reserve": 0.75
+      },
+      "total_equity": 0.25,
+      "cases": {
+        "bear": {
+          "ending_wealth_per_dollar": 0.9934481216583836,
+          "3yr_cagr": -0.002188746563580257
+        },
+        "base": {
+          "ending_wealth_per_dollar": 1.1524166206413164,
+          "3yr_cagr": 0.04842291455436354
+        },
+        "bull": {
+          "ending_wealth_per_dollar": 1.2657697635494536,
+          "3yr_cagr": 0.08172841767270822
+        }
+      },
+      "stress": {
+        "equity_selloff_pct": -8.5,
+        "severe_correlated_pct": -14.249999999999998,
+        "tail_constructed_pct": -18.0
+      },
+      "status": "non_executable_shadow"
+    }
+  ]
+}

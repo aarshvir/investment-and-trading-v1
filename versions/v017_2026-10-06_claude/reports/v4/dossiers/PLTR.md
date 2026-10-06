@@ -1,0 +1,57 @@
+# PLTR - Palantir Technologies (F150, STANDARD depth)
+
+**1. VERDICT: WATCH** - an exceptional business (revenue +93% y/y, 62% adjusted operating margin, no debt, $9.4bn cash and Treasuries) priced for about 34% a year of free-cash-flow growth for ten years, against my base of 25%. Horizon 12-36 months. Condition that would change it: a price at which the implied 10-year growth falls to 25% or less (about $99 a share on the same model, see section 7), or evidence that growth is durably above my base (for example a fourth straight quarter of guided-beat with commercial growth still above 100%). Triage (Q11: advance = No, "valuation priced for perfection", 88.8x NTM P/E) is confirmed on valuation; the triage understated the quality and is not a fundamental rejection.
+
+**2. Business in plain English.** Palantir sells data-integration and AI software (Gotham, Foundry, Apollo, AIP) that sits on top of a customer's own data so governments and large companies can make operational decisions with AI. Customers: US and allied governments (US government $809M in Q2-26) and commercial firms (US commercial $764M). It earns subscription and usage revenue plus services; contracts are multi-year but the 10-Q states many "allow customers to terminate for convenience" on less than twelve months' notice. The moat is deep installation in defence and intelligence workflows and the "ontology" layer; competitors include hyperscalers, Databricks/Snowflake stacks and in-house builds. Top three customers were 16% of H1-26 revenue (10-Q, risk factors).
+
+**3. Why the model likes it.** It mostly does not: b1 composite_qvm is 0.09 (live_rank 361, decile 3). Families: Sentiment 0.80 (SUE 3.03, 80th pct), Quality 0.51 (gross profit/assets 79th pct, ROE 63rd, OCF/assets 88th), Momentum 0.35 (12-1 month return only +2.2%), Value 0.02 (FCF/price 9th pct, earnings yield 12th pct). The shortlist reason is the earnings surprise; the durable part is real (TTM revenue $6.16bn, GAAP operating margin 47%), but the quant model correctly flags that the price already capitalises it.
+
+**4. Last six quarters (CONSOLIDATED; GAAP unless labelled; $M)**
+
+| Qtr | Revenue | y/y | GAAP op inc (margin) | GAAP net inc | GAAP EPS dil. | Adj. EPS | Op cash flow | Company adj. FCF |
+|---|---|---|---|---|---|---|---|---|
+| Q1-25 | 884 | - | 176 (19.9%) | 214 | 0.08 | - | 310 | - |
+| Q2-25 | 1,004 | 48% | 269 (26.8%) | 327 | 0.13 | 0.16 | 539 | 569 |
+| Q3-25 | 1,181 | 63% | 393 (33%) | 476 | 0.18 | 0.21 | 508 | 540 |
+| Q4-25 | 1,407 | 70% | 575 (41%) | 609 | 0.24 | 0.25 | 777 | 791 |
+| Q1-26 | 1,633 | 85% | 754 (46%) | 871 | 0.34 | 0.33 | 899 | 925 |
+| Q2-26 | 1,935 | 93% | 912 (47%) | 1,062 | 0.41 | 0.41 | 1,216 | 1,220 |
+
+Growth accelerated six quarters running (48% to 93%). Q2-26 vs Q2-25 variance: revenue +92.8%; GAAP operating income +239% ($912.0M vs $269.3M), margin +2,030 bps; GAAP net income +225%; OCF +126%. SBC $265.2M in Q2-26 (13.7% of revenue; H1-26 $466.8M vs $315.3M). Net income includes other non-operating income (line 'Other income (expense), net') of $91.8M in Q2-26 (10-Q: "net unrealized gains from publicly-traded equity securities... were $66 million" in the quarter), about $0.03 a share of non-operating gain. Adjusted EPS $0.41 equals GAAP $0.41 only because the non-operating gain offsets the SBC add-back; underlying GAAP earnings power is nearer $0.38. Sources: releases 8-K acc. 0001321655-25-000105, -25-000130, -26-000004, -26-000026, -26-000039; 10-Q acc. 0001321655-26-000041.
+
+**5. Guidance track record (verbatim; company guides revenue, US commercial revenue, adjusted operating income, adjusted FCF)**
+- Feb 2026 (8-K acc. 0001321655-26-000004): "For full year 2026, we expect: Revenue of between $7.182 - $7.198 billion." and "Adjusted free cash flow of between $3.925 - $4.125 billion."
+- May 2026 (acc. ...-26-000026): "We are raising our revenue guidance to between $7.650 - $7.662 billion." and "We are raising our adjusted free cash flow guidance to between $4.2 - $4.4 billion." Raised (revenue midpoint +$466M).
+- Aug 2026 (acc. ...-26-000039): "We are raising our revenue guidance to between $8.150 - $8.158 billion." "We are raising our adjusted free cash flow guidance to between $4.5 - $4.7 billion." "We are raising our adjusted income from operations guidance to between $4.889 - $4.897 billion." Q3-26: "Revenue of between $2.160 - $2.164 billion." Raised again (revenue midpoint +$492M; FY midpoint now 13.4% above the February initial guide).
+- Earlier: Nov 2025 (acc. ...-25-000130) "raising our revenue guidance to between $4.396 - $4.400 billion" for FY25; actual FY25 revenue $4,475M (XBRL, 10-K acc. 0001321655-26-000011), a beat of about 1.7%. Each quarterly guide has been beaten: Q1-26 guide "$1.532 - $1.536 billion" vs actual $1,633M; Q2-26 guide "$1.797 - $1.801 billion" vs $1,935M. Raised at every release for six consecutive quarters.
+
+**6. Earnings quality and balance sheet (CONSOLIDATED, 10-Q acc. 0001321655-26-000041, balance sheet at 30 Jun 2026)**
+- Cash and cash equivalents $2,030M plus marketable securities $7,379M (consolidated; Treasuries plus equity stakes in public companies, some restricted) = $9,409M. No debt: the $500M secured revolver (matures 31 Mar 2027) has "no outstanding debt balances". Total liabilities $1,794M; total equity $9,885M (of which noncontrolling $111M). Net cash about 2% of market cap.
+- TTM (derived from 10-K acc. ...-26-000011 and the two 10-Qs): revenue $6,156M; operating cash flow $3,400M; capex $42M; FCF (OCF less capex) $3,358M (54% margin); SBC $836M (13.6% of revenue). FCF less SBC $2,523M. The gap between company "adjusted FCF" ($3,476M TTM) and OCF-less-capex is small; the gap that matters is SBC.
+- Cash conversion is partly billing timing: receivables $1,485M (up $443M from $1,042M at Dec-25; H1 change in receivables -$434M), offset by contract liabilities +$257M. Customer deposits $452M.
+- RPO $4.9bn, "approximately 43%" to be recognised in 12 months (10-Q). Note RPO is well below the company's TCV/RDV figures because most contracts are cancellable.
+- Share count: Class A 2,300.5M + Class B 101.4M + Class F 1.0M = 2,402.9M outstanding; diluted weighted average 2,568.7M (Q2-26). Basic count +0.4% in H1. No buyback in the H1 cash-flow statement.
+- Purchase commitment: amended cloud-hosting agreement "committed to spend at least $5.6 billion... through February 29, 2036" (10-Q Note 7).
+- Tax: provision $27.6M on $1,970M pre-tax (1.4%), helped by NOLs under a full valuation allowance; the 10-Q warns about Section 382 limits. A tax normalisation would cut GAAP EPS.
+
+**7. Valuation and reconciliation with V1.** V1 row: none in v1_valuation_table.csv; v1_verdict = null. Price $189.67 (25 Sep 2026 close, b1/d4), market cap $455.8bn on 2,402.9M shares (b1; Yahoo in d4 counts only Class A, 2,300.7M; I use all classes), EV $446.3bn. NTM P/E 81.6x (d4 forward EPS $2.32); trailing FCF yield 0.74% (0.55% after SBC); EV/TTM revenue 72x; EV/FY26 guided revenue midpoint 55x. Street mean target $195.6 (range $80-$255, 26 analysts) is only 3% above the price.
+Reverse DCF (equity-holder view; FCF after SBC, TTM $2,523M; discount 9%, terminal growth 3%, 10 years): the price implies **34% a year** FCF-after-SBC growth for ten years (31% at an 8% discount rate, 37% at 10%; 30% on FCF before SBC at 9%). That means about $49bn of annual FCF after SBC in year 10 (roughly 19x today).
+Cases (10-year FCF-after-SBC CAGR): bear 12% (growth fades as AI demand normalises; about $40 a share, EV $86bn); **base 25%** (about $99 a share; FY26 guided adjusted FCF of $4.6bn less about $1.0bn SBC is +43% vs TTM, then growth decays 40% to 20%; year-10 FCF about $23bn, equal to a business with about $55-60bn of revenue); bull 35% (about $198 a share, i.e. today's price; sustained 60-90% growth through 2028). Implied 34% is above base 25% = **"above"**; INCLUDE or INCLUDE-SMALL is therefore not permitted. I agree with triage on price; I disagree with its implication that quality is moderate (quality 4/5 in triage is fair).
+
+**8. Bull (3):** (1) US commercial revenue +149% y/y to $764M with US commercial RDV $6.24bn (+124% y/y) and 220 deals above $1M in the quarter (release). (2) Operating leverage: GAAP operating margin 27% to 47% in four quarters with SBC at 13.7% of sales. (3) Every guide beaten and raised for six quarters; FY26 revenue guide raised 13.4% since February.
+**Bear (3):** (1) Price needs about 34% FCF growth for a decade; a growth slowdown to even 30% a year makes the shares fair at best. (2) Concentration and cancellability: top three customers 16% of revenue; most contracts terminable for convenience; RPO only $4.9bn. (3) SBC $836M TTM, dilution (2,569M diluted vs 2,403M basic), a 1.4% tax rate that will normalise, and non-operating equity gains inside GAAP net income; "strategic commercial contracts" with investees total $326M and some investees "filed for bankruptcy or terminated their contracts" (10-Q acc. 0001321655-26-000041, risk factors; guidance quotes in section 5).
+
+**9. Key risks and kill criteria (CONSOLIDATED, company-reported)**
+1. Revenue growth below 60% y/y in any quarter (Q2-26: 93%).
+2. FY26 revenue guidance midpoint cut below $8.0 billion (Aug-26 midpoint: $8.154 billion).
+3. GAAP income from operations margin below 35% in any quarter (Q2-26: 47%).
+4. Trailing-twelve-month operating cash flow less capex below $2.5 billion (Q2-26: $3.36 billion).
+5. Top three customers above 25% of revenue for any six-month period (H1-26: 16%).
+
+**10. Catalysts and calendar.** Q3-26 results expected about 2 Nov 2026 (d4 flags the date as an estimate; prior releases were 3 Nov 2025 and 3 Aug 2026); Q3 guide: revenue $2.160-$2.164bn, adjusted operating income $1.292-$1.296bn. FY27 guide with the Q4 release (early Feb 2027). Revolver matures 31 Mar 2027 (undrawn). Annual CEO letter with each release.
+
+**11. Red-flag scan.** Auditor Ernst & Young LLP since 2008, unqualified opinion in the FY25 10-K (acc. ...-26-000011). No material weakness or restatement language found in the Q2-26 10-Q (acc. 0001321655-26-000041); no going-concern language. Litigation (10-Q Note 7): putative securities class actions filed Sept-Nov 2022 in D. Colo. (Cupat, Allegheny County, Liu) and related matters; no accrual stated as material. Short interest 60.2M shares (d4, 2.6% of Class A). Insiders hold 3.5% (d4); 18 Form 4 filings since 1 Jun 2026 exist on EDGAR; sizes and sale/tax-withholding split not reviewed. 8-K of 3 Aug 2026 is the only 8-K since the July quarter end through 25 Sep 2026.
+
+**12. Sources.** SEC EDGAR, CIK 1321655, https://www.sec.gov/Archives/edgar/data/1321655/: 8-K Ex.99.1 acc. 0001321655-26-000039 (3 Aug 2026), -26-000026 (4 May 2026), -26-000004 (2 Feb 2026), -25-000130 (3 Nov 2025), -25-000105 (4 Aug 2025); 10-Q acc. 0001321655-26-000041 (4 Aug 2026), -26-000028 (5 May 2026); 10-K acc. 0001321655-26-000011 (17 Feb 2026); XBRL companyfacts; d4_live_snapshot.parquet and b1_live_scores.csv; Q11_triage.json.
+
+**Data basis, recency and disclaimer.** Most recent period incorporated: quarter ended 30 Jun 2026 (10-Q filed 4 Aug 2026); EDGAR checked to 25 Sep 2026. Company "adjusted" measures exclude SBC and related payroll tax and are labelled; GAAP shown alongside. Balance-sheet items are consolidated. Research, not personal investment advice.

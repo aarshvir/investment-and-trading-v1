@@ -1,0 +1,316 @@
+{
+  "agent": "Q12",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "GDDY": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Domain registration and SMB web/commerce tools; high switching costs and brand keep customers renewing.",
+      "reason": "Modest ~7% revenue growth but 9.8% FCF yield and heavy buybacks mean the ~11x NTM P/E prices in almost no growth, which is too cheap for a durable cash machine.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of GoDaddy business model"]
+    },
+    "AMAT": {
+      "advance": true,
+      "quality": 5,
+      "growth": 5,
+      "price_vs_growth": 3,
+      "red_flags": ["China export-control exposure to WFE sales"],
+      "one_line": "Dominant semiconductor deposition/etch/inspection toolmaker riding the AI leading-edge and packaging capex wave.",
+      "reason": "Revenue +25% and EPS +60% justify the 27x NTM P/E even after a 125% 12-month run; export-control risk to China is real but already well known and partly mitigated by non-China demand.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of semicap cycle and China export controls"]
+    },
+    "KLAC": {
+      "advance": true,
+      "quality": 5,
+      "growth": 5,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Near-monopoly in process-control/inspection tools that every advanced fab must buy from.",
+      "reason": "Best moat in semicap (highest share, highest margins); 33x NTM P/E is a fair price for 15% revenue and 83% EPS growth in an AI-driven up-cycle, not a bubble multiple.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of KLA competitive position"]
+    },
+    "LRCX": {
+      "advance": true,
+      "quality": 5,
+      "growth": 5,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Leading etch/deposition tool supplier, especially levered to AI memory (HBM/DRAM/NAND) capex.",
+      "reason": "v1 flagged this as 'excessive' on headline multiple alone, but 30% revenue growth and >100% EPS growth support the 31x NTM P/E; net-cash balance sheet and net-cash-implied required growth (~8%) is easily cleared by current trajectory, so we override to advance.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of memory capex supercycle"]
+    },
+    "Q": {
+      "advance": true,
+      "quality": 3,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": ["Newly standalone (spun off Nov 2025) with thin trading/coverage history (8 analysts)", "Spin-related net debt (2.3x EBITDA)"],
+      "one_line": "DuPont's former electronics materials arm (photoresists, CMP slurries, thermal/power materials) for semiconductor fabs.",
+      "reason": "Consumable, qualified-into-the-process products should carry real switching-cost moats, and 22% revenue growth at a 24x NTM P/E (PEG well under 1) with 42% Street upside looks cheap for the AI-materials tailwind, but standalone execution and thin coverage warrant real diligence before sizing.",
+      "sources": ["https://www.qnityelectronics.com/news/qnity-to-join-s-and-p-500.html", "https://seekingalpha.com/article/4929060-qnity-electronics-good-business-but-valuation-isnt-compelling-here", "data/triage_cards.csv"]
+    },
+    "TER": {
+      "advance": true,
+      "quality": 4,
+      "growth": 5,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Leading semiconductor test-equipment and robotics (Universal Robots/MiR) supplier, a bottleneck for AI-chip volume ramps.",
+      "reason": "Revenue growth of ~104% (AI/HBM test demand) with EPS +61% supports the 36x NTM P/E even after a 155% run; Street upside is modest (12%) suggesting the easy money is made but the business quality is intact.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of test-equipment demand cycle"]
+    },
+    "ADI": {
+      "advance": true,
+      "quality": 5,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Diversified analog/mixed-signal leader (industrial, auto, comms) with long product cycles and sticky designs.",
+      "reason": "Coming off an analog-cycle trough, +40% revenue and +94% EPS growth against a 25x NTM P/E is attractively priced for a high-quality analog franchise still mid-recovery.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of analog semiconductor cycle 2023-2026"]
+    },
+    "AMD": {
+      "advance": true,
+      "quality": 4,
+      "growth": 5,
+      "price_vs_growth": 3,
+      "red_flags": ["Intense competitive risk from Nvidia and hyperscaler custom ASICs; consensus price target roughly at spot after a +191% run"],
+      "one_line": "Second-largest AI GPU/accelerator supplier (MI300/MI350 family) plus continued x86 server-CPU share gains from Intel.",
+      "reason": "Real, accelerating AI-GPU and EPYC share-gain story (revenue +50%) argues against dismissing this purely for the high headline multiple, but the stock has run so far that consensus targets show almost no further upside, so treat as full-diligence, not automatic buy.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of AMD MI-series roadmap and hyperscaler deals"]
+    },
+    "FSLR": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 5,
+      "red_flags": ["Utility-scale demand/bookings sensitive to ITC phase-down timing under OBBBA; revenue growth currently negative (-3.7%)"],
+      "one_line": "Only scaled non-Chinese thin-film solar panel maker, protected by 45X manufacturing credits and anti-dumping tariffs on Asian imports.",
+      "reason": "Domestic-manufacturing policy tailwinds (45X credit preserved, tariffs on Southeast Asian panels) are a real moat, and an 8x NTM P/E with an 8.4% FCF yield and 53% Street upside is priced for far less than the backlog-supported growth path, despite a soft current-year revenue print.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of IRA 45X credit and solar antidumping tariffs"]
+    },
+    "INTC": {
+      "advance": true,
+      "quality": 3,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": ["Still GAAP loss-making (profit margin -20%, ROE -11%)", "Foundry still losing money ($2.1B in Q2'26) despite 31% foundry revenue growth", "18A/14A yield and external-customer ramp remain unproven"],
+      "one_line": "x86 CPU incumbent turning around its foundry under new leadership, now backstopped by US government, Nvidia and SoftBank equity stakes.",
+      "reason": "Q2'26 showed the fastest revenue growth in 15 years and AI/data-center revenue +59%, a real inflection worth full diligence, but the business is still lossmaking and foundry execution risk is high, so this is a turnaround call, not a screen-and-buy.",
+      "sources": ["https://www.cnbc.com/2026/07/23/intel-intc-earnings-report-q2-2026.html", "https://www.jonpeddie.com/news/intels-q126-financial-results/", "data/triage_cards.csv"]
+    },
+    "MCHP": {
+      "advance": true,
+      "quality": 3,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": ["Elevated leverage (3.4x net debt/EBITDA)", "2024 dividend cut during inventory-correction cash crunch"],
+      "one_line": "Analog/MCU maker recovering from a severe 2023-24 channel-inventory correction that forced a dividend cut.",
+      "reason": "Deep cyclical recovery (revenue +38%, EPS off a depressed base) at a 19x NTM P/E with 37% Street upside is attractive, but the balance sheet is more levered than peers and deserves a closer look at deleveraging pace.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of Microchip 2024 inventory correction and dividend cut"]
+    },
+    "MPWR": {
+      "advance": true,
+      "quality": 4,
+      "growth": 5,
+      "price_vs_growth": 4,
+      "red_flags": ["Customer concentration risk (large exposure to a single AI-GPU power-delivery customer)"],
+      "one_line": "Power-management semiconductor leader supplying voltage-regulation modules for AI GPU/data-center racks.",
+      "reason": "Revenue +48% and EPS +112% against a 42x NTM P/E is a sub-1 PEG for a high-margin, high-ROE business, though the 2024 design-loss scare shows customer concentration is a real diligence item.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of MPWR Nvidia power-stage exposure"]
+    },
+    "MRVL": {
+      "advance": true,
+      "quality": 4,
+      "growth": 5,
+      "price_vs_growth": 3,
+      "red_flags": ["Concentration in a small number of hyperscaler custom-silicon design wins that could be re-bid or in-sourced"],
+      "one_line": "Custom AI ASIC and networking silicon partner to hyperscalers (Amazon Trainium-style programs) plus data-center interconnect.",
+      "reason": "36% revenue growth and multi-year design-in visibility support the 45x NTM P/E, but after a 152% run Street upside is only ~10%, so treat as fairly priced rather than cheap.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of Marvell custom silicon program"]
+    },
+    "MU": {
+      "advance": true,
+      "quality": 4,
+      "growth": 5,
+      "price_vs_growth": 4,
+      "red_flags": ["Memory is structurally cyclical; current 56% margin and 7x NTM P/E reflect a pricing peak that could mean-revert"],
+      "one_line": "Leading HBM/DRAM/NAND memory maker at the center of the 2026 AI-driven memory shortage and pricing supercycle.",
+      "reason": "A 7x NTM P/E against +261% forward EPS growth and 40% Street upside is extremely cheap even after a huge run, but memory earnings are notoriously peak-cyclical, so full diligence should stress-test what happens when DRAM/HBM pricing normalizes.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of 2026 AI memory/HBM shortage"]
+    },
+    "NXPI": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 5,
+      "red_flags": ["Auto/industrial end-market softness (China EV price wars) has kept the stock flat despite recovery in fundamentals"],
+      "one_line": "Diversified automotive and industrial analog/MCU leader with sticky, multi-year design-in relationships.",
+      "reason": "A 14x NTM P/E, 5.9% FCF yield (best among peers) and 31% Street upside on +20%/+54% growth is a mispriced-by-momentum case: the model rank likely underweights it because auto-sector sentiment, not company fundamentals, has kept the stock flat.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of NXP auto-semi positioning"]
+    },
+    "ON": {
+      "advance": true,
+      "quality": 3,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": ["Chinese SiC entrants pressuring pricing/share in EV power semis"],
+      "one_line": "Silicon-carbide power semiconductor leader for EVs and industrial, recovering from a cyclical/pricing trough.",
+      "reason": "18.5x NTM P/E against a sharp EPS recovery (+196% off trough) and 34% Street upside is reasonable, but intensifying Chinese SiC competition is a genuine structural risk to monitor in full diligence.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of SiC competitive dynamics"]
+    },
+    "QCOM": {
+      "advance": false,
+      "quality": 3,
+      "growth": 2,
+      "price_vs_growth": 3,
+      "red_flags": ["Apple's multi-year transition to in-house (C1) modems is structurally shrinking Qualcomm's highest-margin revenue stream"],
+      "one_line": "Mobile chipset and modem leader facing its largest customer (Apple) progressively in-sourcing modems.",
+      "reason": "Revenue is already declining (-4%) and forward EPS growth is only 17%; the ~20x NTM P/E is not expensive but the core growth engine is impaired, so this does not clear the bar despite reasonable diversification into auto/IoT.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of Apple C1 modem rollout"]
+    },
+    "SWKS": {
+      "advance": false,
+      "quality": 2,
+      "growth": 2,
+      "price_vs_growth": 2,
+      "red_flags": ["Heavy revenue concentration in Apple with continued share/content loss", "Revenue declining -3%, Street target implies -24% downside from current price"],
+      "one_line": "RF front-end chip supplier for smartphones, heavily dependent on Apple content share that has been eroding.",
+      "reason": "Declining revenue, weak forward growth, and a Street consensus that sees the stock as overvalued today are three consistent negative signals; no case for advancing.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of Skyworks Apple content-share erosion"]
+    },
+    "TXN": {
+      "advance": true,
+      "quality": 5,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Best-in-class analog/embedded semiconductor franchise with a 300mm cost advantage and decades-long dividend growth.",
+      "reason": "+23% revenue and +62% EPS growth mid-recovery justify the 29x NTM P/E for the highest-quality analog moat in the batch; fairly priced rather than cheap, but a name worth owning through full diligence given the quality premium is earned.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of TI capital allocation and moat"]
+    },
+    "CRWD": {
+      "advance": false,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 1,
+      "red_flags": ["Ongoing litigation/reputational exposure from the July 2024 global Falcon-update outage (airline and enterprise customer lawsuits)", "Extreme valuation: 170x forward and ~8,400x trailing GAAP earnings"],
+      "one_line": "Leading cloud-native endpoint/XDR security platform with the highest net-retention in cybersecurity SaaS.",
+      "reason": "Genuinely high-quality platform, but growth has decelerated to the mid-20s% and the stock trades at an extreme multiple with Street targets already below spot; too expensive for the growth on offer today.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of July 2024 CrowdStrike outage and litigation"]
+    },
+    "FTNT": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Network security/SASE convergence leader (FortiGate) with a large recurring firewall-refresh installed base.",
+      "reason": "v1 flagged 'excessive' on headline multiple, but +26% revenue and +34% EPS growth against a 47x NTM P/E (PEG modestly above 1) is a fair, not extreme, price for a durable moat business; override to advance, noting Street upside is slightly negative so size cautiously.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of Fortinet firewall-refresh cycle"]
+    },
+    "GEN": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 5,
+      "red_flags": ["Elevated leverage (3.2x net debt/EBITDA) from the Avast acquisition", "Past FTC settlement over Avast's historical data-selling practices (resolved)"],
+      "one_line": "Consumer cybersecurity/identity-protection subscription cash cow (Norton, Avast, LifeLock, AVG brands).",
+      "reason": "A 7x NTM P/E and 12% FCF yield on a stable, high-margin subscription base with 51% Street upside is priced for outright decline; slow organic growth and OS-bundled free-security competition are real but don't offset how cheap this is for the cash it throws off.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of Gen Digital/Avast FTC settlement"]
+    },
+    "NOW": {
+      "advance": true,
+      "quality": 5,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Enterprise workflow/AI-agent platform (Now Assist) with best-in-class net revenue retention in software.",
+      "reason": "24% revenue growth at a 29x NTM P/E is reasonable for one of the highest-quality SaaS franchises, and the stock has actually pulled back 20% over 12 months, offering a better entry than most large-cap software peers.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of ServiceNow platform quality and Now Assist AI monetization"]
+    },
+    "PANW": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": ["GAAP earnings near breakeven due to heavy stock-based comp/acquisition amortization, obscuring true profitability"],
+      "one_line": "Cybersecurity platform-consolidation leader bundling network, cloud and SecOps security into one contract.",
+      "reason": "+35% revenue growth supports continued platformization success, but a 97x forward P/E after an 88% run leaves little room for error; fair rather than cheap, worth full diligence on margin trajectory as stock comp normalizes.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of Palo Alto platformization strategy"]
+    },
+    "CDW": {
+      "advance": false,
+      "quality": 3,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "IT hardware/services value-added reseller and distributor riding a PC/AI-infrastructure refresh cycle.",
+      "reason": "Cheap (11.5x NTM P/E) and cash-generative, but the moat is modest (competes with several similar-scale VARs) and growth is only mid-single-digit; cheap-but-unexceptional, not a priority for full diligence this round.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of IT distribution/VAR competitive structure"]
+    },
+    "DELL": {
+      "advance": true,
+      "quality": 4,
+      "growth": 5,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Scaled PC/server/storage OEM and one of the largest AI-server integrators for Nvidia-based racks.",
+      "reason": "+58% revenue growth (AI server backlog) at a 22x NTM P/E is not unreasonable, but the stock is up 226% over 12 months and Street upside has compressed to ~3%, so treat as fairly priced rather than a bargain.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of Dell AI server backlog/ISG business"]
+    },
+    "HPE": {
+      "advance": true,
+      "quality": 3,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": ["Integration risk from the large, largely debt-funded Juniper Networks acquisition (elevated 2.0x net debt/EBITDA)"],
+      "one_line": "Server/networking OEM now larger in networking after closing the Juniper acquisition, also an AI-server beneficiary.",
+      "reason": "+34% revenue growth (Juniper consolidation plus AI servers) at a 14x NTM P/E and 5.7% FCF yield is cheap, but historically thinner execution/margins than Dell and fresh acquisition-integration risk warrant real diligence.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of HPE-Juniper acquisition close in 2025"]
+    },
+    "HPQ": {
+      "advance": false,
+      "quality": 3,
+      "growth": 2,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Legacy PC and printing hardware maker with a secularly declining, high-margin printing-supplies business.",
+      "reason": "Cheap and cash-generative (12% FCF yield, 3.8% dividend) but growth is low-single-digit and Street sees modest downside from here; not a priority for full diligence.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of HP Inc. printing secular decline"]
+    },
+    "NTAP": {
+      "advance": true,
+      "quality": 3,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": ["30% revenue growth is unusually high for NetApp's history; confirm how much is a one-time AI-storage/refresh pop versus durable acceleration"],
+      "one_line": "Enterprise/cloud unified data-storage vendor benefiting from AI training and inference data-pipeline demand.",
+      "reason": "v1 flagged 'excessive,' but a 19x NTM P/E against +30% revenue and +57% EPS growth is not rich if the AI-storage acceleration holds; override to advance, with diligence focused on growth durability given storage is a competitive, commoditizing market.",
+      "sources": ["data/triage_cards.csv", "trained knowledge of NetApp AI/cloud storage positioning"]
+    },
+    "P": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": ["Negative FCF yield (-0.3%) despite reported profitability — needs diligence on whether this is hyperscaler-ramp capex/working-capital or a real cash-conversion problem"],
+      "one_line": "Everpure (formerly Pure Storage): differentiated all-flash/DirectFlash enterprise storage, recently promoted into the S&P 500 (Sept 2026, replacing The Trade Desk), adopted by 2 of the 5 largest hyperscalers.",
+      "reason": "+38% revenue growth and genuine hyperscaler design wins support the technology moat thesis at a 34x NTM P/E, but the negative FCF yield despite reported profit is the key item to unpack before sizing.",
+      "sources": ["https://vestedfinance.com/us-stocks/p/everpure-inc-share-price/", "https://stockstotrade.com/news/everpure-inc-p-news-2026_09_23/", "data/triage_cards.csv"]
+    },
+    "SMCI": {
+      "advance": false,
+      "quality": 2,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": ["2024 auditor resignation (EY) and delayed 10-K/8-K filings amid related-party-transaction allegations (Hindenburg report); replaced by BDO", "Deeply negative FCF yield (-29.5%) despite reported profitability, an earnings-quality concern consistent with the prior governance issues"],
+      "one_line": "AI-server builder ($36B FY26 revenue guide) with a documented history of accounting-control and governance failures.",
+      "reason": "Real AI-server demand (+93% revenue) makes this cheap-looking (9.5x NTM P/E), but the 2024 auditor resignation/delayed-filing episode plus current extreme negative free cash flow are exactly the accounting/earnings-quality red flags this triage is meant to screen out; do not advance without a dedicated forensic review.",
+      "sources": ["https://ir.supermicro.com/news/news-details/2026/Supermicro-Provides-Fourth-Quarter-of-Fiscal-Year-2026-Preliminary-Business-Update/default.aspx", "data/triage_cards.csv", "trained knowledge of 2024 SMCI EY resignation/Hindenburg allegations"]
+    }
+  }
+}

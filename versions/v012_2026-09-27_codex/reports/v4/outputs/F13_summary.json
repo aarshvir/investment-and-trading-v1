@@ -1,0 +1,100 @@
+{
+  "agent": "F13",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "MAS": {
+      "verdict": "WATCH",
+      "thesis_one_line": "A cash-generative faucets-and-cabinets maker trading cheaply while U.S. home-repair spending stays weak, propped up this quarter by a one-time tariff refund.",
+      "kill_criteria": [
+        "Organic net sales growth negative year-over-year for three consecutive quarters (already 2 of the last 3: Q4'25 -2%, Q2'26 -2.9%).",
+        "TTM operating cash flow declines for a fourth consecutive fiscal year (would mean FY2026 OCF below ~$1,000M).",
+        "Net debt/EBITDA rises above 2.5x (currently ~1.79x).",
+        "FY2026 adjusted EPS guidance is cut from the current $4.40-$4.60.",
+        "Incremental China-tariff exposure escalates materially above the ~$625-675M scenario management has already flagged."
+      ],
+      "key_adverse_facts": [
+        "FY2025 revenue -3%, operating profit -8%; operating cash flow down for a third straight year (FY2023 $1,413M -> FY2024 $1,075M -> FY2025 $1,022M, -27.7% cumulative).",
+        "GAAP net income has declined in each of the last two fiscal years (FY2023 $908M -> FY2024 $822M -> FY2025 $810M) even as EPS has been supported by a 13.4% share-count reduction since mid-2022.",
+        "The Q2 2026 guidance raise (to $4.40-$4.60 adjusted EPS) is substantially explained by a one-time $95M net IEEPA tariff refund, not a demand recovery; FY2026 sales guidance remains only 'low single digits'.",
+        "Stockholders' equity is negative (-$242M at Q1 2026) and long-term debt has been flat at $2,945M for years with no deleveraging.",
+        "Direct China tariff exposure is material: ~$450M of sourced goods, with a management-cited scenario implying up to ~$625M of annualised incremental exposure in a worst case."
+      ],
+      "data_conflicts": [
+        "Q2 2026 (period ended 2026-06-30) balance-sheet XBRL data was not yet available in SEC's bulk companyfacts API at time of review; balance-sheet figures used are as of Q1 2026 (2026-03-31) while income-statement figures for Q2 2026 are sourced directly from the 8-K earnings release. Not a substantive conflict, but a recency gap to disclose."
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium (the multi-year OCF and operating-profit deterioration is clearly evidenced across primary filings, but two more quarters are needed to confirm whether repair/remodel demand has troughed or is still declining)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "fair",
+        "v1_base_3y": "+2.4%/yr (bear -29.3%/yr, bull +29.8%/yr)",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "V1's near-neutral 'fair' verdict and near-zero implied growth (+0.44%/yr over 10 years) are consistent with what MAS has actually delivered (5-year CAGR -0.8%, OCF down 3 straight years); I do not see a valuation mispricing here in either direction, only a fairly-priced, currently-deteriorating business whose Q2 2026 guidance raise is largely a one-off tariff refund rather than a fundamental inflection."
+      }
+    },
+    "VRSN": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The sole gatekeeper for .com and .net web addresses, raising prices every year and buying back stock, priced for more growth than history supports.",
+      "kill_criteria": [
+        "ICANN/.com pricing authority is capped, revoked or renegotiated below the current '7%/yr in years 3-6' framework before the Nov 2030 expiry.",
+        "Domain-base growth falls back below 3% YoY for two consecutive quarters (current guide 5.2%-6.0%).",
+        "Net debt/EBITDA rises above 2.0x (currently ~1.1x).",
+        "Quarterly revenue growth decelerates below 4% YoY for two consecutive quarters (currently +6.0% Q2'26, +6.6% Q1'26).",
+        "A materially adverse outcome in any future .com/.net registry-agreement renewal or a DOJ/ICANN antitrust or regulatory action against the arrangement."
+      ],
+      "key_adverse_facts": [
+        "V1's reverse-DCF implies the current 27.3x NTM P/E is pricing in ~14.5%/yr growth for a decade, well above the delivered 5-year CAGR of 5.8% and 10-year CAGR of 4.4%.",
+        "The peer set used for relative valuation (AKAM, GDDY) is thin (2 names) and an imperfect business-model match for a sole-source registry monopoly.",
+        "Stockholders' equity is negative and deepening (-$2,254.1M at Q2 2026, from -$1,977.0M at Q1 2025); buybacks have exceeded net income in most recent years (FY2025 107% of NI, FY2024 156% of NI).",
+        "A new $550M 5.10% senior notes issuance (June 2026, redeeming $550M 4.75% notes due 2027) modestly raises the cost of debt.",
+        "H1 2026 operating cash flow growth (+2.1% YoY) decelerated sharply from the FY2025 pace (+20.9% YoY) - direction not yet clear (timing/working-capital vs. genuine moderation)."
+      ],
+      "data_conflicts": [
+        "V1 flagged VRSN's ~68% TTM EBIT margin as 'implausible' and substituted an alternate revenue source for its reverse-DCF; this review independently confirms via primary SEC filings and the Q2 2026 earnings release (68.2% GAAP operating margin) that the margin is real and structural to the registry business, not a data error. V1's conflict flag appears to be a false positive, though it does not appear to have materially changed V1's output values."
+      ],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (business durability and pricing power are high-confidence, primary-source-verified facts; the valuation call - fair, not cheap - is a medium-confidence judgment given the thin peer set and the gap between implied and delivered growth)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "fair",
+        "v1_base_3y": "+7.8%/yr (bear -10.2%/yr, bull +25.8%/yr)",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "I agree with V1's 'fair' verdict and do not dispute the +7.8%/yr base case. I would only soften the 'implied 14.5%/yr growth' framing: exercised pricing power (+7%/yr in years 3-6 of each ICANN cycle, just taken) combined with 5-6% domain-base growth and buyback-driven share shrinkage can plausibly support low-to-mid-teens EPS growth in good years, which is closer to (if still short of) the reverse-DCF's implied rate than a naive read suggests. The +25.8%/yr bull case, requiring a 34.9x exit multiple, is the scenario I would treat with the most scepticism."
+      }
+    },
+    "BKNG": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The world's largest online travel agent, cheaper than almost any point in its history, buying back massive amounts of stock while EU regulators circle.",
+      "kill_criteria": [
+        "Room-night or gross-bookings growth falls below 3% YoY for two consecutive quarters (currently +5% / +9%).",
+        "Net debt/EBITDA rises above 1.5x (currently ~0.30x).",
+        "FY2026 guidance (high-single-digit volume/bookings/revenue, low-to-mid-teens adjusted EPS growth) is cut.",
+        "The European Commission opens a formal DMA non-compliance proceeding against Booking.com, or the EU hotel class action produces a disclosed material damages award/settlement.",
+        "Quarterly buyback spend falls by more than 50% quarter-over-quarter without a stated capital-return-policy reason."
+      ],
+      "key_adverse_facts": [
+        "V1's +39.3%/yr base-case 3-year return depends on the NTM P/E more than doubling (13.8x to 30.1x); management's own FY2026 guidance (low-to-mid-teens adjusted EPS growth) does not support this without substantial multiple re-rating, and the model's base-case fair value already exceeds the Street's highest 12-month price target by 47%.",
+        "Shareholders' equity is deeply and rapidly more negative: -$10,783M at Q2 2026, a $4.67bn deterioration in the last four quarters alone, funded partly by ~$2.975bn of new debt raised in H1 2026 (total debt +9.2% YoY).",
+        "GAAP net income fell sharply YoY in both Q1 2025 (-57%) and Q2 2025 (-41%) despite operating income growing in both quarters; the driver was not isolated in this review, making 2026's headline GAAP EPS growth rates (e.g. +131% YoY in Q2 2026) substantially a base-effect artefact rather than organic strength.",
+        "Booking.com was designated an EU Digital Markets Act 'gatekeeper' (obligations effective Nov 2024); as of April 2026 the European Parliament has pushed for a formal Commission non-compliance investigation over parity clauses, Italy's AGCM opened a related probe, and a hotel-industry class action (potentially ~18,000 European hotels) seeks damages for 2004-2024 conduct.",
+        "The GICS peer set used for relative valuation (incl. cruise operator CCL) is an imperfect business-model match."
+      ],
+      "data_conflicts": [
+        "GAAP net income vs. operating income diverge sharply in Q1-Q2 2025 (NI down double digits while operating income up double digits); root cause not confirmed within this review's time-box - recommend the audit/valuation team check the FY2025 10-K 'other income (expense)' note before relying on 2026 GAAP YoY EPS comparisons.",
+        "All EPS/share-count figures required manual restatement for the April 2026 25-for-1 stock split, since SEC XBRL only retroactively restates comparative periods shown within post-split filings; older discrete quarters (e.g. Q3 2025 as originally tagged) remain on a pre-split basis in the raw data and were divided by 25 for this dossier."
+      ],
+      "next_earnings_date": "2026-10-27",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (statistical cheapness and low cash-basis leverage are high-confidence, verified facts; confidence in the magnitude of return is only medium given the unresolved GAAP earnings-quality question and the unquantified EU regulatory/litigation tail risk)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": "+39.3%/yr (bear +11.3%/yr, bull +86.4%/yr)",
+        "dossier_view": "attractive",
+        "consistent": false,
+        "reconciliation": "I agree with V1's directional 'attractive' verdict (13.8x NTM P/E is genuinely near the 1st percentile of BKNG's own ~15-year history, and operating income has grown every comparable quarter for 4 years) but I do not accept +39.3%/yr as a realistic base case. That figure requires the exit multiple to expand from 13.8x to 30.1x, an assumption not supported by management's own low-to-mid-teens adjusted-EPS guidance or by the Street's highest 12-month price target ($301, 47% below V1's base-case fair value). I would reframe V1's 'base' as this model's bull case and underwrite a realistic base nearer high-teens-to-low-20s%/yr."
+      }
+    }
+  }
+}

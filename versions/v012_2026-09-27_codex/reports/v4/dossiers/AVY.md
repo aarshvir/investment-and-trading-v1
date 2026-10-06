@@ -1,0 +1,91 @@
+# Avery Dennison Corporation (NYSE: AVY) — Fundamental Diligence Dossier
+
+**Prepared by:** F62 (fundamental diligence analyst, wave 3) | **Data cutoff:** 2026-09-25 close | **Most recent period incorporated:** Q2 2026 10-Q (filed 2026-08-04, period ended 2026-06-30). Checked for events to 2026-09-25. Next scheduled report: 2026-10-21 (Q3 2026 results, per `d4_live_snapshot`). **Basis:** consolidated Avery Dennison Corporation GAAP unless labeled "adjusted" (the company's own non-GAAP reconciliation, quoted from its Ex-99.1 releases). **Entity scope:** every balance-sheet and debt figure below is from Avery Dennison Corporation's own Condensed Consolidated Balance Sheet / Debt note (10-Q, filed 2026-08-04) — fully consolidated, not a segment carve-out.
+
+**Data-quality note:** every number is sourced to SEC EDGAR primary filings (10-Q, 8-K Ex-99.1 earnings releases) or SEC XBRL company facts (`data.sec.gov/api/xbrl/companyfacts/CIK0000008818.json`, current through the Q2 2026 10-Q), cited in §12 with filing dates. Quant context is from `v4/data/b1_live_scores.csv` and `v4/data/d4_live_snapshot.parquet`; no V1 valuation row exists for AVY (`v1_valuation_table.csv` — 92 names, AVY not among them), so `v1_verdict` is null. Research output for internal process use, not personalized investment advice.
+
+## 1. Verdict: INCLUDE-SMALL — thesis horizon: 24–36 months
+Avery Dennison is the global leader in pressure-sensitive labeling and packaging materials, with a genuinely strong ROE (31.2% per the triage), a clean balance sheet (net debt/EBITDA ≈2.4x), no material litigation identified, and — most importantly — a real, primary-source-confirmed **organic growth re-acceleration** in Q2 2026 (+7.6% organic, its best quarter in several years) that beat the company's own guidance by a wide margin on both a GAAP and adjusted basis. The reverse DCF below shows the market pricing in roughly the same mid-single-digit FCF growth the company itself is now guiding to — a fair, not obviously mispriced, valuation. The **specific, named reservation** for INCLUDE-SMALL rather than full INCLUDE: the growth re-acceleration is only **two quarters old** (Q1 2026 organic growth was a much softer +1.1%), and the trailing-twelve-month free-cash-flow figure this dossier would otherwise use for valuation is distorted upward by a large, one-off working-capital reversal (H1 2025 FCF was unusually depressed by a $370M working-capital outflow) — meaning the "cheap" read one gets from a naive TTM-FCF-yield calculation is not fully trustworthy yet, and this dossier instead uses the more conservative, normalized FY2025 FCF base for its valuation view.
+
+## 2. Business in plain English
+Avery Dennison makes pressure-sensitive materials and solutions sold in two segments: **Materials Group** (adhesive-backed labeling and packaging materials — the base label stock sold to converters/printers globally) and **Solutions Group** (apparel/RFID-based "intelligent label" tags and graphics, and reflective/other specialty solutions). It sells to converters, brand owners, retailers and apparel manufacturers worldwide, competing on materials science (adhesive/coating technology), global manufacturing scale and, increasingly, RFID/digital-identification ("intelligent label") capability that lets brands track individual items through a supply chain.
+
+## 3. Why the model likes it — durable or artefact?
+Quant snapshot (`b1_live_scores.csv`, 2026-09-25): composite **0.804** (decile 9, quintile 5, live_rank 98/503 — near the top of the index, though outside `live_top30`). Family scores: Q 0.824 (very high — pct_gp_a 0.891, pct_roe 0.854, pct_ocf_a 0.771), V 0.664 (above median — pct_ep 0.729, pct_fcfp 0.848), M 0.315 (below-median momentum), S 0.686 (solid earnings-surprise score).
+- **The Quality score is genuine and durable**: high gross-profit/assets and ROE reflect real materials-science differentiation (the triage's "high-value categories," ~45% of revenue per the FY2025 release) and consistent productivity-driven margin expansion, confirmed in every quarter's segment commentary reviewed (§4).
+- **The Value score (fcfp/ep in the 73rd–85th percentile) needs the caveat above**: it is partly inflated by the same TTM-FCF distortion (a favorable working-capital reversal in H1 2026 against a depressed H1 2025 comp) discussed in §6/§7 — this dossier treats the Value score as directionally right (AVY is not expensive) but not as precisely as the raw percentile suggests.
+- Momentum (31st percentile) understates the very recent (Q2 2026) acceleration, since the 12-1-month window is dominated by the softer growth of late 2025/early 2026 — plausibly an area where the model will catch up with the fundamentals over the next few months if the acceleration holds.
+
+## 4. Last 8 quarters (GAAP unless noted; sourced to Ex-99.1 earnings releases and 10-Qs, §12)
+| Quarter | Revenue ($M) | YoY growth (reported / organic) | Op. margin (reported/adj.) | GAAP diluted EPS | Adj. EPS (non-GAAP) |
+|---|---|---|---|---|---|
+| Q3 2025 | 2,215.5 | — | — | $2.13 | — |
+| Q4 2025 | ~2,300 (per release) | +4% / ~0% | — | $2.15 | $2.45 |
+| **FY2025** | **~8,900** | **+1% / ~0%** | — | **$8.79** | **$9.53** |
+| Q1 2026 | 2,298.5 | +7.0% / +1.1% | — | $2.18 | $2.47 |
+| **Q2 2026** | **2,462.9** | **+10.9% / +7.6%** | **13.6%*/15.8%*(Materials)** | **$2.67** | **$2.89** |
+
+\*Segment-level margins shown (Materials Group adjusted operating margin 15.8%, up 20bps; adjusted EBITDA margin 18.0%, up 20bps); a single consolidated GAAP operating-margin figure was not isolated from the press-release text this pass — flagged as a minor gap, cross-checked instead via segment detail. **Q2 2026 by segment:** Materials Group reported sales +15.9% (organic +9.7%: volume/mix high-single-digit, price low-single-digit, high-value categories mid-single-digit, base categories low-double-digit); Solutions Group reported sales −0.5% (organic +2.6%, apparel categories +high-single-digit, adjusted operating margin +150bps to 11.5%). The gap between Materials' +15.9% reported and +9.7% organic growth is FX (+4.4pts) plus a small M&A contribution (~+1.8pts), per the company's own reconciliation table.
+
+## 5. Guidance track record (last three releases; guided range vs. actual, each dated)
+| Guidance date (release) | Guided EPS (next quarter) | Actual (release date) | Result |
+|---|---|---|---|
+| 2026-02-04 (Q4/FY25 release) | Q1'26: GAAP $2.27–$2.33 / adj. $2.40–$2.46 | Q1'26 actual: GAAP **$2.18** / adj. **$2.47** (2026-04-28) | GAAP **missed** the low end by $0.09; adjusted **beat** the high end by $0.01 |
+| 2026-04-28 (Q1'26 release) | Q2'26: GAAP $2.21–$2.31 / adj. $2.43–$2.53 | Q2'26 actual: GAAP **$2.67** / adj. **$2.89** (2026-07-30) | GAAP **beat** the high end by $0.36 (+16%); adjusted **beat** the high end by $0.36 (+14%) — a large, clean beat on both bases |
+| 2026-07-30 (Q2'26 release) | **FY2026 (first full-year guide of the year):** GAAP $9.40–$9.70 / adj. $10.00–$10.30 | Not yet due (FY) | Pending — implies **+7–10% GAAP** / **+5–8% adjusted** growth vs. FY2025 actuals ($8.79/$9.53) |
+
+**AVY discloses only next-quarter EPS guidance in its earnings-release text** (full-year guidance detail, when given, appears to live mainly in the supplemental investor-presentation deck, not fetched this pass — flagged as a source-coverage gap); the Q2 2026 release is the first point in 2026 where a **full-year** guide was quoted directly in the release text reviewed. The Q1→Q2 pattern (a modest GAAP miss followed by a large beat on both bases) is consistent with the organic-growth re-acceleration story, not a red flag on its own, but the single data point makes it too early to call this a "guidance-beat" pattern in the way STLD's four-quarter record supports that framing for a different name in this program.
+
+## 6. Earnings quality & balance sheet
+**Entity scope: consolidated Avery Dennison Corporation, per the 10-Q's Condensed Consolidated Balance Sheet / Statement of Cash Flows / Debt note (filed 2026-08-04, period 2026-06-30).**
+- **FCF conversion — the key earnings-quality caveat for this name:** FY2025 OCF $881.4M − capex $169.0M = **FY2025 FCF $712.4M** (GAAP; matches the company's own "over $700 million" adjusted-FCF characterization in its FY2025 release). H1 2025 OCF was only $192.5M (capex $66.0M, FCF $126.5M) because of a **$370.3M working-capital outflow** that quarter (per the cash-flow statement's "changes in assets and liabilities" line); H1 2026 OCF rebounded to $544.7M (capex $67.5M, FCF $477.2M) as that working-capital swing reversed (only a $50.1M outflow in H1 2026). **A naive TTM-FCF calculation (FY2025 $712.4M − H1 2025 $126.5M + H1 2026 $477.2M ≈ $1,063M) is therefore inflated by a comparison-period distortion, not a genuine near-doubling of run-rate cash generation** — this dossier uses the FY2025 $712.4M figure as the more reliable base for valuation (§7).
+- **SBC:** $12.2M in H1 2026 (down from $14.7M H1 2025) on ~$4.76bn H1 revenue ≈ 0.3% of revenue — immaterial.
+- **GAAP vs. adjusted gap:** Q2 2026 GAAP EPS $2.67 vs adjusted $2.89 (an 8% gap) — the smallest, cleanest gap of the three names in this diligence batch, per the company's own reconciliation (restructuring charges and other discrete items).
+- **Balance sheet (2026-06-30 vs 2025-12-31):** cash $227.3M (up from $202.8M); total debt (current + long-term) **$3,678.2M** (down slightly from $3,732.9M); total equity ≈$6,145M (implied from total assets $9,212.3M less total liabilities); total assets $9,212.3M. **Net debt ≈ $3,450.9M**; using the FY2025-disclosed adjusted EBITDA margin (16.4%) on ~$8.9bn FY2025 sales (≈$1.46bn EBITDA), **net debt/EBITDA ≈ 2.4x** — a comfortable, unremarkable leverage level. The $1.20bn revolving credit facility's financial covenant was in compliance at both 2026-06-30 and 2025-12-31, with no balance drawn.
+- **M&A:** $75.5M paid for acquisitions/venture investments in H1 2026 (vs $10.7M H1 2025) — modest bolt-on activity, not a large, leverage-changing transaction (unlike the other two names in this batch).
+- **Capital return:** $347M returned to shareholders in H1 2026 (share repurchases + dividends); 1.2M shares repurchased for $198M in H1 2026 (down from $360M in H1 2025 — a slower buyback pace, consistent with the modestly higher share price and the smaller net-share-count reduction visible in the balance sheet's share count).
+
+## 7. Valuation snapshot and reverse DCF (no V1 row exists for AVY — this dossier's own build)
+At the 2026-09-25 close of $170.34 (market cap ≈ $13.03bn; EV ≈ **$16.22bn**, `d4_live_snapshot`), trailing GAAP P/E ≈18.6x, adjusted NTM P/E ≈15.6x (consistent with the triage's cited 15.6x). Using the **normalized FY2025 FCF base of $712.4M** (not the distorted TTM figure — see §6), EV/FCF yield ≈ **4.4%**.
+**Reverse DCF (two-stage, 10-year explicit FCF growth at rate g + Gordon-growth terminal value at 2.5%, WACC sensitivity shown):** at WACC 8.0%, implied g ≈ **+4.9%/year**; at WACC 8.5%, implied g ≈ +6.1%. (For comparison, using the distorted TTM FCF figure of ~$1,063M instead would imply a much lower, even slightly negative g at the same WACC range — the gap between these two reverse-DCF reads is itself the clearest illustration of why the FCF-normalization caveat in §6 matters.) **This dossier's base case is mid-single-digit organic growth (5–7%) sustained from the Q2 2026 re-acceleration, plus continued margin expansion from the productivity playbook and mix-shift toward high-value/RFID categories** — i.e., the implied growth from the normalized FCF base is **roughly in line with this dossier's base case ("in_line")**, neither obviously cheap nor obviously expensive, with the key open question being whether the Q2 2026 acceleration (organic +7.6%, vs. only +1.1% in Q1) is sustained or partly a comp/timing effect — not yet resolved with only one strong quarter of evidence.
+
+## 8. Bull case and bear case
+**Bull (3 points):**
+1. Q2 2026 organic growth of +7.6% (best in several years) beat the company's own Q2 guidance by a wide margin on both a GAAP ($2.67 vs. $2.21–$2.31 guided) and adjusted ($2.89 vs. $2.43–$2.53 guided) basis — a genuine, primary-source-confirmed acceleration, not promotional framing.
+2. High-value categories (~45% of revenue, including RFID/intelligent labels) are growing faster than base categories and carry structurally better margins — a real, multi-year mix-shift tailwind the company has been executing for several years.
+3. Balance sheet is clean (net debt/EBITDA ≈2.4x, undrawn $1.2bn revolver, covenant compliance) with no material litigation identified — the least balance-sheet/legal risk of the three names in this diligence batch.
+
+**Bear (3 points):**
+1. The growth re-acceleration is only two quarters old, and Q1 2026 organic growth (+1.1%) was much softer — one strong quarter is not yet enough evidence to confirm the acceleration is durable rather than partly timing/comp-driven.
+2. The TTM free-cash-flow figure a naive analysis would use is inflated by a working-capital reversal against an unusually weak H1 2025 comparison base; the real, normalized FCF run-rate is meaningfully lower than the headline TTM number would suggest.
+3. AVY, like the broader packaging/labeling sector, has tariff and consumer-volume exposure (the FY2025 release explicitly cites "tariff-related impacts and softer consumer volumes" as 2025 headwinds); the February 2026 Supreme Court IEEPA ruling reduces one specific tariff-authority risk but broader trade-policy instability is explicitly flagged by external counsel commentary as an ongoing, unresolved area.
+
+## 9. Key risks & kill criteria (measurable) — what would break this thesis
+1. **Organic revenue growth falls back below 3% for two consecutive quarters** (i.e., the Q2 2026 acceleration to +7.6% proves to be a one-quarter comp/timing effect rather than a durable re-acceleration).
+2. **Net debt/EBITDA (consolidated) rises above 3.0x** without a specific, disclosed M&A or buyback driver explaining the increase.
+3. **FY2026 guidance (GAAP $9.40–$9.70 / adjusted $10.00–$10.30, given 2026-07-30) is cut at the Q3 2026 release** — would be the first guidance cut of the year and directly contradict the re-acceleration thesis.
+4. **Materials Group adjusted operating margin declines for two consecutive quarters** (currently expanding — +20bps in Q2 2026) — margin compression would signal the productivity playbook is losing effectiveness against raw-material or wage inflation.
+5. **A new tariff or trade-policy action materially increases direct input-cost tariff exposure** beyond the "relatively small portion of global materials purchases" the company currently discloses as exposed.
+
+## 10. Catalysts & calendar
+- **Q3 2026 earnings: 2026-10-21** (`d4_live_snapshot` next_earnings_date).
+- FY2026 full-year guidance ($9.40–$9.70 GAAP / $10.00–$10.30 adjusted, given 2026-07-30) — first test at Q3 2026 of whether the re-acceleration holds.
+- Ongoing integration of small bolt-on M&A ($75.5M H1 2026 spend) — no single large, leverage-changing deal pending as of 2026-09-25 (unlike PNR's Taco deal or AON's USI deal in this same batch).
+
+## 11. Red-flag scan
+- **Litigation:** the 10-Q's Commitments and Contingencies note describes only routine lawsuits/claims/regulatory matters "most of which are routine to the nature of our business," with no individually material amounts accrued or disclosed; no securities class action, SEC/DOJ investigation, restatement or going-concern language was identified in the filings reviewed or in web search (searched 2026-09-26) — the cleanest red-flag scan of the three names in this batch.
+- **Tariffs:** the FY2025 release and external legal commentary (Duane Morris, Arnold & Porter, both retrieved 2026-09-26) confirm AVY has real but modest tariff exposure (low-single-digit sales-rate impact on apparel categories cited for 2025) and that the broader IEEPA tariff framework was struck down by the U.S. Supreme Court on 2026-02-20 — a mild net positive for input-cost risk, though trade-policy instability is flagged as ongoing by outside counsel.
+- **Auditor/material weakness/going concern/insider selling:** none identified in the filings reviewed this pass; insider Form 4 pattern not independently pulled — flagged as a gap.
+
+## 12. Sources (numbered, all retrieved 2026-09-26 unless noted)
+1. Avery Dennison Corporation 10-Q, period 2026-06-30, filed 2026-08-04 (SEC EDGAR accession 0000008818-26-000131) — balance sheet, cash flow, debt note, commitments and contingencies.
+2. Avery Dennison Q2 2026 earnings press release (Ex-99.1 to 8-K filed 2026-07-30, accession 0000008818-26-000127).
+3. Avery Dennison Q1 2026 earnings press release (Ex-99.1 to 8-K filed 2026-04-28, accession 0000008818-26-000075).
+4. Avery Dennison Q4/FY2025 earnings press release (Ex-99.1 to 8-K filed 2026-02-04, accession 0000008818-26-000004).
+5. SEC XBRL companyfacts, CIK 0000008818 (`data.sec.gov/api/xbrl/companyfacts/CIK0000008818.json`) — current through the Q2 2026 10-Q; quarterly revenue/net income/EPS series.
+6. `v4/data/b1_live_scores.csv`, `v4/data/d4_live_snapshot.parquet` (as of 2026-09-25) — quant composite/factor context, EV, next-earnings-date.
+7. `v4/outputs/Q13_triage.json` (agent Q13, triage note for AVY) and `v4/outputs/v1_valuation_table.csv` (confirmed: no AVY row).
+8. Duane Morris LLP, "New Section 301 Investigations, IEEPA Tariff Refund Developments…"; Arnold & Porter, "The Next Wave of Tariff Litigation: Consumer Class Actions" — both retrieved 2026-09-26, general tariff/trade-policy context, not AVY-specific litigation.
+
+## 13. Data basis, recency and disclaimer
+Most recent period incorporated: Q2 2026 (quarter ended 2026-06-30), per the 10-Q filed 2026-08-04. Events checked to 2026-09-25 close. All figures are GAAP/consolidated (Avery Dennison Corporation) unless explicitly labeled "adjusted" (the company's own non-GAAP reconciliation). This is research for an internal, multi-agent process — not personal investment advice.

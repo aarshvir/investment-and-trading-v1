@@ -1,0 +1,193 @@
+{
+  "ticker": "CINF",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CINF?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:44.327266+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "CINF",
+            "exchangeName": "NMS",
+            "fullExchangeName": "NasdaqGS",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 322151400,
+            "regularMarketTime": 1790798401,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 159.37,
+            "regularMarketChangePercent": -1.092,
+            "fulldayPrice": 159.37,
+            "fulldayChange": -1.76,
+            "fulldayChangePercent": -1.092,
+            "fiftyTwoWeekHigh": 194.81,
+            "fiftyTwoWeekLow": 150.0,
+            "regularMarketDayHigh": 161.83,
+            "regularMarketDayLow": 159.202,
+            "regularMarketVolume": 909498,
+            "longName": "Cincinnati Financial Corporation",
+            "shortName": "Cincinnati Financial Corporatio",
+            "chartPreviousClose": 162.57,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "end": 1790775000,
+                "start": 1790755200,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "end": 1790798400,
+                "start": 1790775000,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "end": 1790812800,
+                "start": 1790798400,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "open": [
+                  163.08999633789062,
+                  162.99000549316406,
+                  162.44000244140625,
+                  161.5,
+                  161.47999572753906
+                ],
+                "low": [
+                  162.27000427246094,
+                  161.1699981689453,
+                  161.5800018310547,
+                  160.27999877929688,
+                  159.20249938964844
+                ],
+                "volume": [
+                  606300,
+                  409500,
+                  395800,
+                  1403000,
+                  909498
+                ],
+                "high": [
+                  164.7899932861328,
+                  163.3300018310547,
+                  163.14999389648438,
+                  162.42999267578125,
+                  161.8300018310547
+                ],
+                "close": [
+                  162.3300018310547,
+                  162.5399932861328,
+                  161.9199981689453,
+                  161.1300048828125,
+                  159.3699951171875
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  162.3300018310547,
+                  162.5399932861328,
+                  161.9199981689453,
+                  161.1300048828125,
+                  159.3699951171875
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 162.3300018310547,
+      "adjclose": 162.3300018310547,
+      "open": 163.08999633789062,
+      "high": 164.7899932861328,
+      "low": 162.27000427246094,
+      "volume": 606300
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 162.5399932861328,
+      "adjclose": 162.5399932861328,
+      "open": 162.99000549316406,
+      "high": 163.3300018310547,
+      "low": 161.1699981689453,
+      "volume": 409500
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 161.9199981689453,
+      "adjclose": 161.9199981689453,
+      "open": 162.44000244140625,
+      "high": 163.14999389648438,
+      "low": 161.5800018310547,
+      "volume": 395800
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 161.1300048828125,
+      "adjclose": 161.1300048828125,
+      "open": 161.5,
+      "high": 162.42999267578125,
+      "low": 160.27999877929688,
+      "volume": 1403000
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 159.3699951171875,
+      "adjclose": 159.3699951171875,
+      "open": 161.47999572753906,
+      "high": 161.8300018310547,
+      "low": 159.20249938964844,
+      "volume": 909498
+    }
+  ],
+  "currency": "USD",
+  "symbol": "CINF",
+  "regular_market_time": 1790798401,
+  "close_sep30": 159.3699951171875,
+  "session_match": true
+}

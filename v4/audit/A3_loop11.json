@@ -1,0 +1,25 @@
+{
+  "total": 77,
+  "criteria": {"1": 8, "2": 9, "3": 7, "4": 8, "5": 7, "6": 9, "7": 6, "8": 7, "9": 7, "10": 8},
+  "must_fix": [
+    "Reconcile Codex releases v012-v016 and the owner's 5 Oct 40% drawdown / stock-only mandate in FINAL_REPORT section 13, section 1, section 7 and the dashboard Reconciliation tab (adopted/changed/rejected/unresolved for v014, v015, v016 and its brief); restate risk text against 40% (sleeve worst fall -42.7%); set explicit parents v016..v011 and a free release number (not v012).",
+    "State rule (o) and the technology figures in section 1, section 6 and the dashboard hero (26.2% including Visa/Payments, 19.3% IT-only; owner request, committed before build) and make the coverage text consistent: section 6 intro (triage of 455), hero (quick pass; 500 so far) and A.4 (DV02, DV09, DVH1-4, wave 8 count) currently contradict section 1.",
+    "Disclose independent-verification coverage (all 500 have dossiers; N have an independent check; all 20 holdings do; six rely on 26 Sep checks pre-dating re-assessment) and add portfolio-level bear/base/bull (-3/+16/+33 a year bottom-up) beside the 6% zero-alpha case with $50k and $100k ending values; put the -43% tail in the Verdict.",
+    "Headline the 18-of-20 turnover versus v011 with causes and what a v011 follower should do; collapse the ~50 repeated re-assessment bullets into a table.",
+    "Independently re-check DVA, DG, CVS, UDR, SYF, BKNG after their re-assessments; correct WTW section 6 trigger comparator (Q1'26 organic 3%, Q2 5%); fix section 13 'only overlap is HIG' (now SNA, 10% at $369 vs Codex $310 entry limit).",
+    "All-stock implementation gaps: actions at -20% and -40%, estate-tax mitigation above ~$60k, refresh before each tranche through Q3 earnings, one single next step; plain-English line for SNA; fix 'a 86%' typo."
+  ],
+  "fact_checks": [
+    {"ticker": "DVA", "claim": "Shareholders' deficit $(651,082)K at 2025-12-31", "source": "SEC XBRL companyfacts CIK0000927066 10-K", "status": "PASS"},
+    {"ticker": "DVA", "claim": "Q1'26 revenue $3.416bn EPS $2.87; Q2'26 revenue $3.554bn EPS $4.02", "source": "SEC XBRL 10-Q filed 2026-05-05 / 2026-08-04", "status": "PASS"},
+    {"ticker": "SNA", "claim": "Q2'26 diluted EPS $4.96; H1 OCF $640.2m; cash $1,644.7m; LTD $887.0m", "source": "SEC XBRL CIK0000091440 10-Q", "status": "PASS"},
+    {"ticker": "SNA", "claim": "Quarterly net-sales table mixes XBRL contract-revenue and release net-sales bases", "source": "DVH1", "status": "MINOR"},
+    {"ticker": "WFC", "claim": "Q2'26 net income $6,407m, EPS $2.00, non-interest expense $13,661m; Q1'26 EPS $1.60", "source": "SEC XBRL CIK0000072971 10-Q", "status": "PASS"},
+    {"ticker": "SYF", "claim": "Q1'26 NI $805m EPS $2.27; Q2'26 NI $885m EPS $2.59", "source": "SEC XBRL CIK0001601712 10-Q", "status": "PASS"},
+    {"ticker": "UDR", "claim": "Q1'26 revenue $425.8m, EPS $0.57", "source": "SEC XBRL CIK0000074208 10-Q", "status": "PASS"},
+    {"ticker": "UDR", "claim": "Q2'26 revenue $425.4m, EPS $0.21", "source": "not in companyfacts feed (latest filed 2026-04-30)", "status": "UNVERIFIABLE"},
+    {"ticker": "WTW", "claim": "Kill criterion 1 comparator 'vs 4-6% in the last four quarters' (section 6 text)", "source": "DVH1: Q1'26 organic growth 3%", "status": "FAIL"},
+    {"ticker": "V", "claim": "Reverse DCF rf 4.2% with SBC added back", "source": "DVH1", "status": "FAIL"},
+    {"ticker": "Portfolio", "claim": "Weights sum 100%, caps hold, worst fall -42.7%, vol 13.8%, TE 12.8%, beta 0.56, yield 1.5%", "source": "recomputed from d2_adjclose and lead_portfolio_build.json", "status": "PASS"}
+  ]
+}

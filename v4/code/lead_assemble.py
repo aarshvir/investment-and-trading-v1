@@ -226,7 +226,7 @@ for lp in sorted(loops):
 
 # ---------- optional blocks produced by later phases (json files written by lead scripts) ----------
 for key, fn in [('hero', 'outputs/lead_hero.json'), ('answer', 'outputs/lead_answer.json'), ('port', 'outputs/lead_portfolio.json'),
-                ('bt', 'outputs/lead_bt_view.json'), ('risk', 'outputs/lead_risk_view.json'), ('rank', 'outputs/lead_rank.json'), ('next', 'outputs/lead_next.json'), ('v005', 'outputs/lead_v005_reconciliation.json'), ('appendix', 'outputs/lead_appendix.json')]:
+                ('bt', 'outputs/lead_bt_view.json'), ('risk', 'outputs/lead_risk_view.json'), ('rank', 'outputs/lead_rank.json'), ('next', 'outputs/lead_next.json'), ('v005', 'outputs/lead_v005_reconciliation.json'), ('appendix', 'outputs/lead_appendix.json'), ('all500', 'outputs/all500_register.json')]:
     t_ = rd(fn)
     if t_: D[key] = json.loads(t_)
 if 'hero' not in D:

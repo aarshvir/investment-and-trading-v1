@@ -1,0 +1,123 @@
+{
+  "agent": "F163",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "ARES": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Alternative-investment manager (mostly private credit and real assets) earning recurring fees on $671 billion of client money, growing management fees about 15% a year.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Fee-paying AUM growth below 10% YoY in two consecutive quarterly releases (Q2-26: $409.9bn, +17%).",
+        "FRE margin below 40.0% in any quarter (Q2-26: 42.2%).",
+        "After-tax realized income per share below the year-earlier quarter in two consecutive quarters (Q2-26: $1.29 vs $1.03).",
+        "Quarterly common dividend cut below $1.35 per share (declared for 30 Sep 2026).",
+        "Corporate net debt (Debt obligations less corporate cash, consolidated balance sheet, excluding consolidated funds) above 3.0x trailing four-quarter FRE (30 Jun 2026: about 2.1x)."
+      ],
+      "key_adverse_facts": [
+        "Management fee growth slowed to +15% in Q2-26 from +25% in Q1-26; effective fee rate 0.97% vs 1.00%",
+        "Dividend $1.35/quarter equals 100% of trailing four-quarter after-tax realized income per share ($5.17) and 106.7% of H1-26",
+        "Section 36(b) derivative suit filed 26 May 2026 in S.D.N.Y. alleging excessive advisory fees paid by ARCC",
+        "Q3-26 realized net performance income preliminarily about $10m vs $9m, no carry tailwind (8-K 2026-09-30)",
+        "Consensus FY26 $5.84 requires H2 $3.31 vs H1 $2.53 (+31%)"
+      ],
+      "data_conflicts": [
+        "Yahoo total debt $14.9bn and triage 9.1x leverage include non-recourse consolidated-fund debt (CLO $6,951.7m, fund borrowings $2,531.2m); corporate debt is $4,577.2m, about 2.1x trailing FRE",
+        "Yahoo trailing P/E 55.7x uses GAAP EPS $2.19; after-tax realized income trailing is $5.17 (23.6x)"
+      ],
+      "next_earnings_date": "2026-11-02",
+      "confidence_in_thesis": "medium: fee base is recurring and well disclosed, but the valuation margin of safety is thin and depends on fundraising and private-credit sentiment",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for ARES. Own reverse DCF implies 8.1% a year of 10-year growth versus my 10% base (implied below base, thin margin: 8.8% at NTM $5.40).",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.066,
+        "base": 0.098,
+        "bull": 0.215
+      },
+      "scenario_basis": "NTM after-tax realized income $5.70/share; growth 4%/12%/17% a year; exit 13x/18x/22x NTM; dividend $5.40 flat/+8%/+12%; start price $122.01"
+    },
+    "CLX": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Maker of Clorox, Glad, Brita, Hidden Valley and Purell with slipping underlying sales and heavy new debt; cheap, but proof of recovery is still missing.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "FY27 adjusted EPS guidance low end cut below $5.70 at any quarterly release (current \"between $5.70 and $6.00\").",
+        "Organic sales growth below 0% in each of Q2 FY27 and Q3 FY27 (quarters free of the ERP lap).",
+        "Consolidated net debt (notes and loans payable + current maturities + long-term debt - cash) above 4.0x GAAP EBITDA at 30 Jun 2027 (30 Jun 2026: 4.2x).",
+        "Full-year FY27 gross margin below 41.0% (guide about 42%; FY26 42.3%).",
+        "FY27 reported free cash flow (operating cash flow less capex) below total dividends paid ($602m in FY26), or any dividend cut."
+      ],
+      "key_adverse_facts": [
+        "FY26 adjusted EPS guidance cut on 30 Apr 2026 from $5.95-$6.30 to $5.45-$5.65; actual $5.53",
+        "Net debt $4,925m (consolidated, 30 Jun 2026), about 4.2x GAAP EBITDA after GOJO ($2.15bn, debt-funded) and $476m Glad stake purchase",
+        "Reported FY26 free cash flow $405m vs dividends $602m; company adjusted FCF $881m adds back the $476m payment",
+        "FY27 organic sales guide +3.5% to +4.5% includes more than 3.5 points from lapping ERP drawdown, so underlying about 0% to +1%",
+        "S&P long-term rating BBB at 30 Jun 2026 vs BBB+ a year earlier"
+      ],
+      "data_conflicts": [
+        "Yahoo free cash flow $110m vs filing OCF $612m less capex $207m = $405m",
+        "Yahoo total debt $5,598m includes about $452m operating leases; balance-sheet debt is $5,068m; triage 4.8x vs 4.2x GAAP / 3.9x adjusted"
+      ],
+      "next_earnings_date": "2026-11-03",
+      "confidence_in_thesis": "low: FY27 rebound is partly mechanical (ERP lap, GOJO), leverage high, normalised cash flow is my estimate",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for CLX. Own reverse DCF implies -0.5% a year versus +3% base (implied below base), but WATCH because leverage, uncovered dividend and unproven underlying growth outweigh the cheap multiple.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.034,
+        "base": 0.09,
+        "bull": 0.167
+      },
+      "scenario_basis": "FY27 adjusted EPS $5.85 (guide midpoint); growth -2%/+4.5%/+8% a year; exit 11x/14x/16x; dividend $5.00 flat/+1%/+2%; start price $83.80"
+    },
+    "HRL": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Maker of Spam, Planters and Jennie-O turkey, priced at 13 times earnings with a 5.9% dividend while new leadership restarts steady profit growth.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "FY26 adjusted diluted EPS reported below $1.45 (the low end of current guidance), or FY27 guidance midpoint below FY26 actual adjusted EPS.",
+        "Net debt / adjusted EBITDA (consolidated debt carrying value less cash and marketable securities, over TTM adjusted operating income plus D&A) above 2.75x at any quarter end (26 Jul 2026: about 1.5x).",
+        "Organic net sales growth negative in each of Q4 FY26 and Q1 FY27 (Q3 FY26: -2%).",
+        "Any further non-cash impairment or divestiture loss above $100m in a single quarter (Q4 FY25 $234m).",
+        "Annual dividend not increased in fiscal 2027 (current annualised $1.17, 60 years of increases), or free cash flow below dividends paid."
+      ],
+      "key_adverse_facts": [
+        "Aug 2026 'raise' lifted only the adjusted EPS low end ($1.43 to $1.45); net sales guide cut to $12.1-$12.2bn and GAAP EPS cut to $1.06-$1.12",
+        "Organic net sales -2% in Q3 FY26; Retail volume -9%",
+        "Recurring write-downs: $234m impairments Q4 FY25, $48m Indonesia and $56m Brazil loss plus $38m litigation settlement in Q3 FY26",
+        "Interim CEO, CEO-elect, new CFO from 8 Sep 2026",
+        "Brakebush acquisition for $1.055bn cash signed 29 Sep 2026 (after price date); pro forma net debt/adj. EBITDA about 2.3x"
+      ],
+      "data_conflicts": [
+        "Yahoo free cash flow $622m vs own TTM $781m (OCF $1,091m less capex $311m)",
+        "Triage net margin 2.8% and ROE 4.3% are GAAP, depressed by non-cash impairments; TTM adjusted EPS is $1.43"
+      ],
+      "next_earnings_date": "2026-12-03",
+      "confidence_in_thesis": "medium: cash flow and leverage support the dividend, but leadership change, impairments and the new deal add execution risk",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for HRL. Own reverse DCF implies -1.7% a year versus +4% base (implied below base); price after the 30 Sep Brakebush news is not incorporated.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.027,
+        "base": 0.09,
+        "bull": 0.17
+      },
+      "scenario_basis": "FY26 adjusted EPS $1.48; growth -2%/+4.5%/+8% a year; exit 10.5x/13x/15x; dividend $1.17 flat/+1%/+2%; start price $19.71"
+    }
+  }
+}

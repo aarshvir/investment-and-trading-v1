@@ -1,0 +1,96 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "check": "immutable parent hash v011_2026-09-27_claude",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "catalog parent identity v011_2026-09-27_claude",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "immutable parent hash v012_2026-09-27_codex",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "catalog parent identity v012_2026-09-27_codex",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "user audit input hash",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "market 90 unique",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "ledger 90 same identities",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "shadow 20 unique",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "dual source 32",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "all dual feed gaps below .1pct",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "all dates USD",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "no unmodeled numeric scenarios",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "14 scenario cases",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "AMP/PAYX prices and wait decisions",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "selected 25/0/75",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "selected risk arithmetic",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "method validation document",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "method module tests",
+      "pass": true,
+      "detail": "test_causal_prefix_unchanged_by_future_input (__main__.MethodologyV2Tests.test_causal_prefix_unchanged_by_future_input) ... ok\ntest_causal_share_repair_archived_scope (__main__.MethodologyV2Tests.test_causal_share_repair_archived_scope) ... ok\ntest_scaled_identity_archived_20_stock_window (__main__.MethodologyV2Tests.test_scaled_identity_archived_20_stock_window) ... ok\ntest_scaled_identity_input_and_scalar_case (__main__.MethodologyV2Tests.test_scaled_identity_input_and_scalar_case) ... ok\ntest_verdict_parallel_branches_rejected (__main__.MethodologyV2Tests.test_verdict_parallel_branches_rejected) ... ok\ntest_verdict_precedence_is_explicit (__main__.MethodologyV2Tests.test_verdict_precedence_is_explicit) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 21.961s\n\nOK\n"
+    }
+  ],
+  "note": "Arithmetic, lineage and bounded evidence gates; not a proof of forecast accuracy, future returns or maximum loss."
+}

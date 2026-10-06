@@ -1,0 +1,119 @@
+{
+  "agent": "F69",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "NKE": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "World's largest sportswear brand, mid-turnaround and over 50% off its highs, but the latest 'beat' was mostly a one-time tariff-refund windfall.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Underlying gross margin (excluding any tariff-refund benefit) fails to expand YoY in FQ2 FY2027 (quarter ending ~2026-11-30) as management explicitly guided.",
+        "Greater China segment revenue or EBIT (as reported each quarter) declines by more than 15% YoY for two more consecutive quarters (vs. -20% for FY2026 overall).",
+        "Full-year free cash flow (OCF minus capex) for FY2027 comes in below FY2026's approximately $2.18bn (the multi-year FCF decline continues into year three).",
+        "Net debt/EBITDA rises above 1.0x (from approximately net-debt-neutral today) without a specific, disclosed strategic rationale.",
+        "The pending consumer class action (Portland, OR, filed 2026-05-08) or the securities-related investigation results in a material adverse ruling, settlement, or confirmed SEC enforcement action."
+      ],
+      "key_adverse_facts": [
+        "FQ4 FY2026's headline 890bps gross-margin gain and $0.72 diluted EPS were overwhelmingly a one-time, non-recurring $986M IEEPA tariff-refund benefit (~900bps of the margin gain, $0.52 of the $0.72 EPS); ex-benefit gross margin was 40.2%, essentially flat YoY.",
+        "Full-year free cash flow fell 33% YoY (FY2026 ~$2.18bn vs FY2025 ~$3.27bn); buybacks were cut 95% (to $146M from $2.99bn) to preserve cash.",
+        "Greater China segment EBIT down 20% for the full fiscal year (second consecutive year of decline); management guides continued marketplace cleanup through FY2027 with no near-term stabilization promised.",
+        "A proposed consumer class action (filed 2026-05-08, Portland OR) alleges Nike is retaining IEEPA tariff refunds after passing the original tariff cost to consumers via price increases; law-firm-led securities investigations (e.g., Johnson Fistel) are also circling the March 2026 stock decline (investigation stage only, not a confirmed SEC action)."
+      ],
+      "data_conflicts": [
+        "Q01 triage flagged Nike as 'advance' citing the stock's post-selloff dividend yield and a management claim of a coming gross-margin inflection, but did not identify that the most recent quarter's reported margin/EPS beat was overwhelmingly a one-time IEEPA tariff-refund item rather than organic improvement; this dossier corrects that framing without changing the 'advance' conclusion."
+      ],
+      "next_earnings_date": "2026-10-01",
+      "confidence_in_thesis": "medium: primary-source filings clearly separate the one-off from the underlying run rate, but the underlying turnaround (China stabilization, organic margin recovery) has not yet shown up in the reported numbers and the next print (2026-10-01) is a near-term binary test.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for NKE (confirmed absent from v1_valuation_table.csv), so v1_verdict is null and there is nothing to reconcile against; the dossier's own reverse DCF (implied 10-yr FCF growth ~5-9%/yr) sits inside the analyst's evidence-based base case (~6-8%/yr), so the view is fair, not clearly cheap or expensive.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.12,
+        "base": 0.08,
+        "bull": 0.20
+      },
+      "scenario_basis": "Starting FY2026 GAAP diluted EPS $2.10 (tariff-benefit-inflated; normalized ~$1.58); bear assumes FCF stagnates/declines further and the multiple compresses toward ~15x normalized earnings; base assumes ~7%/yr FCF growth (turnaround completes on management's own timetable) at a stable ~20x normalized multiple; bull assumes ~12%/yr FCF growth with re-rating toward ~25x as China stabilizes and margin recovery broadens; a ~1.6% dividend yield is added in each case."
+    },
+    "LOW": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "America's #2 home-improvement retailer, priced for almost no growth, but its comp-sales streak is decelerating and recent growth is mostly acquisition-driven.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Comparable sales turn negative (below 0.0%) for two consecutive quarters (trend has already gone +1.3% to +0.6% to +0.2%).",
+        "FY2026 adjusted diluted EPS guidance is cut below the current $12.25 (already the low end of the original $12.25-12.75 range) at any subsequent quarterly release.",
+        "Estimated net debt/EBITDA (consolidated) rises above 3.5x (from an estimated ~2.7-2.8x currently).",
+        "Share repurchases remain at or near zero ($211M FY2025 run-rate) for four more consecutive quarters while GAAP stockholders' equity fails to improve from the 2026-07-31 level of -$7.4bn.",
+        "Free cash flow (OCF minus capex) for fiscal year 2026 comes in below fiscal 2025's approximately $7.65bn."
+      ],
+      "key_adverse_facts": [
+        "Comparable sales growth has decelerated for three straight quarters (+1.3% to +0.6% to +0.2%), even as the company calls it a 'fifth consecutive quarter of positive comps.'",
+        "FY2026 guidance has been trimmed to the low end of every metric (sales, comps, margin, EPS) at the Q2 FY2026 release, six months after the year began, despite an 'affirm' in between.",
+        "Headline sales growth of +8-10% YoY in the last two quarters is substantially acquisition-driven (Foundation Building Materials, $8.8bn cash at a rich 13.4x EBITDA, closed 2025-10-09; Artisan Design Group), not organic.",
+        "Net debt rose to an estimated ~$34.4bn and stockholders' equity remains deeply negative (-$7.4bn to -$9.9bn across recent quarters) as buybacks were paused to help fund the FBM deal; free cash flow was flat YoY (~$7.65bn) despite +3.1% sales growth."
+      ],
+      "data_conflicts": [
+        "The b1 quant snapshot's raw sales-growth-adjacent signals do not distinguish that recent headline revenue growth is acquisition-driven (FBM/ADG) rather than organic; the pct_bp (book/price) percentile of 0.09 looks like a quality problem but is mechanically an artefact of Lowe's structurally negative equity from historical buybacks, not distress."
+      ],
+      "next_earnings_date": "2026-11-18",
+      "confidence_in_thesis": "medium-high: the valuation margin of safety (implied growth ~2.3%/yr vs. a 4-6%/yr base case) is large and the balance-sheet/M&A facts are confirmed from primary filings, but the comp-deceleration trend is real and should be watched closely at the next print.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for LOW (confirmed absent from v1_valuation_table.csv), so v1_verdict is null and there is nothing to reconcile against; the dossier's own reverse DCF implies only ~2.3%/yr 10-year FCF growth, clearly below even the bear case (0-1%/yr) let alone the 4-6%/yr base case, so the view is cheap.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": 0.02,
+        "base": 0.09,
+        "bull": 0.18
+      },
+      "scenario_basis": "Starting FY2026 guided adjusted EPS ~$12.25 (low end of range); bear assumes comparable sales turn negative and the multiple holds near today's ~15.5x; base assumes 4-6%/yr FCF growth (continued Pro/online/home-services mix shift, gradual buyback resumption) at a stable ~15.5x multiple; bull assumes a housing-turnover recovery driving 8-10%/yr FCF growth and re-rating toward 18-19x; a ~2% dividend yield is added in each case."
+    },
+    "MKC": {
+      "verdict": "WATCH",
+      "thesis_one_line": "High-quality spice and flavor leader, but the stock is really a bet on a pending, dilutive $45bn Unilever Foods merger needing antitrust and shareholder approval.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "The U.K. CMA's Phase 1 decision (due 2026-11-11) refers the deal to a Phase 2 in-depth investigation, or the U.S./E.U. authorities impose material forced divestitures beyond the already-announced Colman's mustard sale.",
+        "McCormick's shareholder vote on the transaction (once scheduled) fails, or is postponed beyond calendar 2027.",
+        "Organic sales growth (ex-acquisitions/FX, as reported each quarter) falls below 1% for two consecutive quarters (vs. the 1-3% guided for FY2026 and +1.7% delivered in Q2 FY2026).",
+        "FY2026 adjusted EPS guidance ($3.05-3.13) is cut below $3.00 at any subsequent quarterly release.",
+        "Disclosed pro forma net debt/adjusted EBITDA for the combined company exceeds 4.5x, or MKC's own standalone net debt/adjusted EBITDA rises materially above its current low-single-digit level as bridge financing is arranged ahead of close."
+      ],
+      "key_adverse_facts": [
+        "McCormick agreed (2026-03-31) to combine with the majority of Unilever's Foods business in a ~$44.8bn deal ($15.7bn cash + $29.1bn stock); Unilever's own shareholders will receive 55.1% of the combined company and Unilever itself retains 9.9%, implying legacy McCormick shareholders are diluted to roughly 35% ownership of the combined entity.",
+        "The $15.7bn cash portion of the deal dwarfs McCormick's current balance-sheet capacity (total debt currently ~$4.9bn); a major new debt raise is required before close, and pro forma combined leverage has not been disclosed in sources reviewed.",
+        "The deal faces multiple live regulatory gates: the U.K. CMA opened a Phase 1 antitrust investigation with a decision due 2026-11-11 (Unilever is already preemptively divesting the Colman's mustard brand to address U.K. concerns), plus separate, unresolved U.S. and E.U. reviews and a McCormick shareholder vote whose scheduling was not confirmed in sources reviewed.",
+        "Trailing GAAP TTM P/E of ~8.0x (cited in the triage as evidence of cheapness) is a mechanical artefact of a one-time ~$850-900M non-cash gain from remeasuring McCormick's previously-held equity stake in McCormick de Mexico to fair value upon obtaining control (2026-01-02); it is not a usable valuation signal.",
+        "Underlying organic sales growth is only 1.7% (Q2 FY2026, guided 1-3% for the full year); the +16.7% headline reported growth in the last two quarters is ~11-13 points de Mexico consolidation plus ~2.7 points FX."
+      ],
+      "data_conflicts": [
+        "b1's exclude_pending_deal flag is False for MKC, but the pending $45bn Unilever Foods combination is exactly the kind of pending-deal risk the v4 program has excluded other names for (WBD, KVUE, TECH, AES, NSC, D per v4/STATE.md); flagged for the lead to consider re-flagging this name.",
+        "Q03 triage's flagged conflict (trailing P/E 8.0x vs. NTM P/E 14.7x with a headline -45% forward EPS growth figure) is now fully resolved: it is caused by the one-time McCormick de Mexico remeasurement gain inflating trailing GAAP EPS (see key_adverse_facts); adjusted EPS, not trailing GAAP EPS, is the reliable base."
+      ],
+      "next_earnings_date": "2026-10-01",
+      "confidence_in_thesis": "low: the standalone business is executing to plan, but the investment outcome for a holder today is dominated by an unresolved, multi-jurisdiction regulatory process and a shareholder vote whose date and outcome could not be confirmed in sources reviewed.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for MKC (confirmed absent from v1_valuation_table.csv), so v1_verdict is null and there is nothing to reconcile against; the dossier's own standalone reverse DCF implies ~4.1%/yr 10-year FCF growth, at the top of the analyst's standalone base case (4-5%/yr), so the standalone view is fair -- but this label is secondary to the pending-deal risk that drives the WATCH verdict and is not captured by the standalone DCF at all.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.05,
+        "base": 0.06,
+        "bull": 0.15
+      },
+      "scenario_basis": "Starting FY2026 guided adjusted EPS midpoint $3.09; bear assumes the Unilever Foods deal is blocked, abandoned, or closes on worse-than-disclosed dilution/leverage terms, keeping the multiple depressed near 13-14x; base assumes the deal closes around mid-2027 near disclosed terms with standalone organic growth continuing at 1-3%/yr and a stable ~15.5x multiple; bull assumes successful integration and the claimed EPS accretion materialize, driving re-rating toward ~18x; a ~1.9% dividend yield is added throughout."
+    }
+  }
+}

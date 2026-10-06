@@ -1,0 +1,136 @@
+{
+ "agent": "F143",
+ "as_of": "2026-09-25",
+ "tickers": {
+  "HPQ": {
+   "verdict": "WATCH",
+   "horizon": "12-36 months",
+   "thesis_one_line": "Big PC and printer maker, cheap and cash-rich, but printing profits are shrinking and this year's raised outlook leans on one-off tariff refunds.",
+   "kill_criteria": [
+    "Initial FY27 non-GAAP EPS guidance midpoint below $2.90 (ex tariff refunds), expected with the Q4 FY26 release in late Nov 2026.",
+    "Printing segment operating margin below 16.0% in any quarter (Q3 FY26 18.1%; segment table in the earnings release / 10-Q segment note).",
+    "Personal Systems operating margin below 4.0% for two consecutive quarters (Q3 FY26 4.6%).",
+    "Consolidated total debt above $10.0B or gross cash below $3.0B at any quarter end (10-Q liquidity table; currently $9,160M and $4.2B).",
+    "FY26 free cash flow reported below $2.8B (the original low end; guide is $3.0-3.2B)."
+   ],
+   "key_adverse_facts": [
+    "FY26 non-GAAP EPS guide raised to $3.19-$3.29 but includes $0.19 of tariff refunds; ex-refund $3.00-$3.10 is inside the May range of $2.90-$3.10",
+    "Q3 FY26 PC units down 16% while PC revenue up 18% on price increases; memory and storage costs rising",
+    "8-K 21 Sep 2026: planning assumption of industry PC units down roughly mid-single-digits in calendar 2027; no FY27 guidance",
+    "Interim CEO since 3 Feb 2026 after Enrique Lores left; no permanent CEO",
+    "Implied Q4 FY26 FCF of roughly $0.4-0.6B versus $1.5B a year earlier; FCF helped by payables at 151 days",
+    "India customs claim about $370M plus penalties still open"
+   ],
+   "data_conflicts": [
+    "Quick triage said growth low-single-digit; filings show 12.5% Q3 revenue growth driven by pricing, not volume",
+    "Triage card cited trained knowledge for print decline; replaced with Q3 FY26 segment data (Printing revenue -2%, supplies -3%)"
+   ],
+   "next_earnings_date": "2026-11-24",
+   "next_earnings_date_basis": "estimated from 25 Nov 2025 prior-year release; not confirmed by company",
+   "confidence_in_thesis": "med: verdict is well supported by filings; valuation view depends on normalized FCF of $2.7B (my estimate)",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "implied_vs_base": "above",
+    "dossier_view": "fair",
+    "consistent": true,
+    "reconciliation": "No V1 row exists. Reverse DCF at 9.5% cost of equity implies -0.1% 10-year FCF CAGR versus my base of -1.5%, so price asks slightly more than my base.",
+    "implied_growth_10y_fcf_cagr": -0.001,
+    "base_growth_10y_fcf_cagr": -0.015
+   },
+   "scenario_returns_3y": {
+    "bear": -0.1,
+    "base": 0.04,
+    "bull": 0.13
+   },
+   "scenario_basis": "Start non-GAAP EPS $3.05 ex-refund at $31.30; base flat EPS, 10.3x exit, $1.20 dividend a year; bear EPS $2.40 at 8x; bull EPS $3.70 at 11x."
+  },
+  "ECHO": {
+   "verdict": "WATCH",
+   "horizon": "12-36 months",
+   "thesis_one_line": "Sold its wireless spectrum for about $40B; now holds about $14B cash plus a fixed-price stake of 262 million SpaceX shares due in late 2027, while two subsidiaries are in bankruptcy.",
+   "kill_criteria": [
+    "Cash taxes disclosed for the AT&T plus SpaceX transactions above $6B in total (10-Q/10-K tax note, consolidated).",
+    "SpaceX acquisition closing not completed by 31 Mar 2028, or the $11B equity amount cut by amendment (8-K under Item 1.01/8.01).",
+    "Bankruptcy court orders or a Special Committee finding that shifts more than $1B of HSSC or DBS claims to the EchoStar parent (docket / 8-K).",
+    "Consolidated unrestricted cash plus marketable securities below $12B on the 31 Dec 2026 balance sheet (10-K consolidated balance sheet).",
+    "Wireless segment operating loss above $1.0B on an annualised basis after the hybrid transition (10-Q segment table)."
+   ],
+   "key_adverse_facts": [
+    "Hughes Satellite Systems and 11 subsidiaries filed Chapter 11 on 2 Aug 2026; $1.38B notes due 1 Aug 2026 accelerated/unpaid",
+    "DISH DBS and DISH Wireless in prepackaged Chapter 11 since 30 Jun 2026; retained equity valued at $0; net liabilities $11.4B deconsolidated",
+    "Cash taxes on AT&T and SpaceX gains not quantified in the 10-Q; deferred tax liability $3.4B",
+    "SpaceX closing targeted 30 Nov 2027; SpaceX shares priced at fixed $42.40, value per share is private and not in filings",
+    "Q2 2026 net income of $8.46B is a non-cash $9.73B deconsolidation gain; revenue down 4% y/y",
+    "Special Committee reviewing related-party transactions between Hughes and EchoStar"
+   ],
+   "data_conflicts": [
+    "Triage and b1 data card show legacy net debt/EBITDA 8.6x and negative margins; pre-closing and pre-deconsolidation, so superseded by the 30 Jun 2026 10-Q and 28 Jul 2026 8-K",
+    "b1 market cap $31.7B uses diluted shares of about 351.6M times price; basic shares are 290.5M",
+    "Web analyst commentary values the SpaceX stake at $39-55B; not a primary source and not used in base case"
+   ],
+   "next_earnings_date": "2026-11-05",
+   "next_earnings_date_basis": "estimated from 6 Nov 2025 prior-year 10-Q; not confirmed by company",
+   "confidence_in_thesis": "low: equity value depends on undisclosed taxes, unobservable SpaceX price and unresolved subsidiary bankruptcies",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "implied_vs_base": "below",
+    "dossier_view": "fair",
+    "consistent": true,
+    "reconciliation": "No V1 row exists. Reverse sum-of-parts: market cap implies SpaceX at about $87 a share versus my base $100 and contract $42.40; margin of error (taxes, burn) is about +/- $8 a share so kept at WATCH.",
+    "implied_spacex_price": 87,
+    "base_spacex_price": 100
+   },
+   "scenario_returns_3y": {
+    "bear": -0.14,
+    "base": 0.035,
+    "bull": 0.15
+   },
+   "scenario_basis": "Equity = $8.6B (post-tax cash and SpaceX-leg adjustments, my estimates) + 261.8M SpaceX shares x $42.40/$100/$149, over 348.6M diluted shares; start $90.11; no dividend."
+  },
+  "GLW": {
+   "verdict": "WATCH",
+   "horizon": "12-36 months",
+   "thesis_one_line": "Makes the optical fibre and glass behind AI data centres; sales and profit are growing fast and beating its own forecasts, but the share price already assumes years of that.",
+   "kill_criteria": [
+    "Core sales guidance midpoint for any coming quarter below $4.9B (Q3 26 guide $4.9-5.0B) or core EPS growth below 20% y/y for two consecutive quarters (Q2 26: +30%).",
+    "Optical Communications segment sales growth below 20% y/y in any quarter (Q2 26: +32%; segment table in the earnings release).",
+    "Core operating margin below 19.0% (Q2 26: 20.9%).",
+    "Total debt above $9.5B or cumulative ATM/warrant share issuance above 30M shares (10-Q debt table; currently $8.4B).",
+    "TTM adjusted FCF excluding customer deposits below $1.5B at the Q4 26 report."
+   ],
+   "key_adverse_facts": [
+    "Q2 2026 adjusted free cash flow of $1.42B includes a $1.0B upfront customer deposit; H1 ex-deposit about $0.6B",
+    "Price $156.74 is about 42x my NTM core EPS and 1.4-2.1% FCF yield",
+    "Share-based comp $250M in H1 26 versus $117M; employee withholding payments $279M versus $70M",
+    "Opened $2.0B at-the-market equity programme 11 Sep 2026 and sold a $180-strike warrant for 15M shares plus 3M pre-funded warrant for $500M to a customer",
+    "Heavy insider selling: CEO 100,000 shares at $186.46 on 9 Jun 2026; seven insiders sold since May",
+    "Solar wafer plant had an extended shutdown in Q2; profitability only expected to improve from Q3"
+   ],
+   "data_conflicts": [
+    "Triage said stock up 83% in a year and 0.5% FCF yield; filings-based ex-deposit TTM FCF yield is 1.4%; stock has since fallen from about $207 (May) to $157",
+    "b1 fcfp is missing; computed from release adjusted FCF instead"
+   ],
+   "next_earnings_date": "2026-10-27",
+   "next_earnings_date_basis": "estimated from 28 Oct 2025 and 28 Jul 2026 cadence; not confirmed by company",
+   "confidence_in_thesis": "med-high on business quality (guidance beaten four quarters in a row); med on valuation because the bull case depends on internal Springboard targets",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "implied_vs_base": "above",
+    "dossier_view": "expensive",
+    "consistent": true,
+    "reconciliation": "No V1 row exists. Reverse DCF at 9% WACC and 3.5% terminal growth implies 18.9% 10-year FCF CAGR versus my base 14% and bull 20%.",
+    "implied_growth_10y_fcf_cagr": 0.189,
+    "base_growth_10y_fcf_cagr": 0.14
+   },
+   "scenario_returns_3y": {
+    "bear": -0.2,
+    "base": 0.03,
+    "bull": 0.16
+   },
+   "scenario_basis": "Start NTM core EPS $3.77 (my estimate) at $156.74; Sep 2029 NTM core EPS $4.3/$6.0/$7.6 at 18x/28x/32x; dividends about $1.15 a year."
+  }
+ }
+}

@@ -1,0 +1,113 @@
+{
+  "agent": "F87",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "IRM": {
+      "verdict": "WATCH",
+      "thesis_one_line": "A very sticky records-storage business funding a data-center buildout that currently burns more cash than it brings in.",
+      "kill_criteria": [
+        "FCF (OCF minus capex) remains negative for four consecutive quarters with no improving trend in the quarterly deficit.",
+        "Net debt exceeds $19B without a corresponding step-up in disclosed data-center run-rate revenue.",
+        "Data-center segment revenue growth decelerates below +15% YoY for two consecutive quarters.",
+        "Weighted-average diluted share count grows >3% YoY (signals equity-funded capex diluting the legacy annuity holders).",
+        "Any dividend cut or dividend-coverage disclosure showing AFFO payout ratio above 100% for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "6-month 2026 FCF is negative (~-$218.4M): OCF $887.8M vs capex $1,106.2M, confirming the triage's negative-FCF red flag with real filed numbers.",
+        "Consolidated total debt rose from ~$16.2B (2025-09-30) to ~$17.35B (2026-06-30) as capex outpaced internally generated cash.",
+        "TTM GAAP diluted EPS of only $1.40 implies an ~80x P/E at the $111.38 close, though REIT depreciation makes this multiple less meaningful than AFFO would be.",
+        "AFFO figure and the guided-vs-delivered range for the last 4 releases were not independently re-verified this round (primary press-release exhibit was cover-page only in this dataset)."
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv shows blank/NA quality factors (gp_a, roe) for IRM even though momentum and SUE are very high (pct_mom_12_1 0.84, pct_sue 0.84) -- the quant score is effectively scoring this name on momentum/SUE alone without a clean quality read, which understates how capital-intensive the current growth is."
+      ],
+      "next_earnings_date": "2026-11-05",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - filed revenue/EPS/cash-flow figures are solid and directly verified, but AFFO, exact guidance letters and Form 4 insider activity were not checked this round",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "above",
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for IRM in v1_valuation_table.csv, so there is nothing to reconcile against; my own EV/EBITDA-based reverse DCF implies ~13-15%/year EBITDA growth for a decade, which is above my base case (~9-10%/year once execution risk on the still-cash-burning data-center build is discounted)."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.15,
+        "base": 0.02,
+        "bull": 0.14
+      },
+      "scenario_basis": "Starting TTM revenue ~$7.56B, GAAP diluted EPS $1.40 (not the primary valuation anchor for a REIT); base case assumes data-center segment inflects toward FCF breakeven over 2-3 years with revenue growth decelerating from 18.5% toward low-teens, EV/EBITDA multiple compressing from ~19.6x toward ~15x; bear assumes FCF stays negative and leverage keeps rising, forcing multiple compression toward ~11x; bull assumes data-center leasing accelerates and the segment turns FCF-positive faster, sustaining a ~19-20x multiple; dividend continuation assumed in base/bull, at risk in bear."
+    },
+    "JCI": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Buildings-equipment leader whose HVAC/cooling backlog is being pulled forward by AI data centers, with a clean balance sheet and strong cash conversion.",
+      "kill_criteria": [
+        "Quarterly net sales growth decelerates below +5% YoY for two consecutive quarters.",
+        "Backlog growth turns negative YoY (vs. the current record ~$20-21B level) for two consecutive quarters.",
+        "Net debt/EBITDA rises above 3.0x (current estimate ~2.2x).",
+        "Continuing-operations diluted EPS growth YoY falls below +15% for two consecutive quarters.",
+        "FCF/NI (continuing operations) conversion falls below 90% for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "FY25's reported EPS growth was flattered by a large one-time gain on the residential/fire-and-security divestiture in fiscal Q4 2025, so headline trailing EPS growth overstates organic momentum; I used continuing-operations, YTD figures instead (9mo FY26 diluted EPS continuing $3.12 vs $2.20, +41.8%).",
+        "TTM FCF (~$3.1-3.2B) is partly estimated because fiscal Q4 FY25 capex was not captured from a primary source this round -- flagged as a data gap, not asserted as fact.",
+        "Guidance-letter wording for the last four releases (raised/maintained/cut vs. prior range) was not independently re-verified from primary press-release exhibits this round."
+      ],
+      "data_conflicts": [
+        "The XBRL companyfacts cache (data.sec.gov) lagged behind the actual filing: it stopped at the 10-Q filed 2026-05-06, missing the most recent 10-Q filed 2026-07-29 (period ended 2026-06-30). I pulled the FQ3 FY26 income statement, balance sheet and cash-flow figures directly from the filing document instead of the companyfacts API."
+      ],
+      "next_earnings_date": "2026-11-10",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium-high - core revenue, EPS and balance-sheet figures verified directly from the primary 10-Q filing; guidance track record and exact TTM capex remain data gaps",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for JCI in v1_valuation_table.csv. My own reverse DCF implies ~7.5%/year 10-year FCF growth at an 8% WACC, which sits at or slightly below my evidence-based base case of 8-10%/year -- consistent with an INCLUDE-SMALL rather than a full INCLUDE given the partial-estimate FCF base."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.08,
+        "base": 0.07,
+        "bull": 0.18
+      },
+      "scenario_basis": "Starting TTM FCF ~$3.15B (partly estimated) and continuing-ops diluted EPS run-rate ~$4.92 (Q3 FY26 $1.23 annualized); base case assumes ~9%/year FCF growth for 3 years with the multiple holding near current EV/FCF (~29x); bear assumes data-center order growth cracks alongside a broader capex-cycle slowdown, growth decelerating to ~3%/year with multiple compression; bull assumes the data-center backlog keeps converting at current pace with margin expansion, ~15%/year FCF growth sustained; dividend assumed continued/growing in all cases given net debt/EBITDA ~2.2x."
+    },
+    "KEYS": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Test-and-measurement equipment leader riding a real AI/6G capex upswing, but priced for that cycle to keep compounding rather than to mean-revert.",
+      "kill_criteria": [
+        "Quarterly revenue growth decelerates below +15% YoY for two consecutive quarters.",
+        "Order backlog or book-to-bill ratio falls below 1.0x for two consecutive quarters.",
+        "Diluted EPS growth YoY drops below +15% for two consecutive quarters.",
+        "Net cash position turns negative (debt-funded buyback/M&A changing the balance-sheet risk profile).",
+        "Forward P/E stays above 45x TTM EPS while revenue growth decelerates below 15%."
+      ],
+      "key_adverse_facts": [
+        "TTM P/E is roughly 50x GAAP diluted EPS ($362.15 / ~$7.30) even after the current cyclical earnings surge, leaving little room for the AI/semiconductor test-capex cycle to disappoint.",
+        "36.5% Q3 FY26 revenue growth and the +109% YoY EPS growth are both real (confirmed in filed XBRL data) but are explicitly cyclical per the original triage red flag, not a structural step-change.",
+        "Exact FY26 guidance-letter wording (raised/maintained/cut vs. prior range) and non-GAAP EPS/SBC detail were not independently re-verified this round."
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-11-25",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium - revenue, EPS, cash-flow and balance-sheet figures are directly verified from XBRL/filed 10-Qs; guidance track record and non-GAAP detail are data gaps",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "above",
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for KEYS in v1_valuation_table.csv. My own reverse DCF (8.5% WACC, 3% terminal) implies ~13%/year 10-year FCF growth, above my base case of ~8-9%/year (high-single-digit through-cycle growth lifted temporarily by the AI/6G capex upswing, then reverting) -- implied growth is above base case, consistent with WATCH rather than INCLUDE per the mandate."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.20,
+        "base": -0.02,
+        "bull": 0.11
+      },
+      "scenario_basis": "Starting TTM FCF ~$1.47B and TTM diluted EPS ~$7.30; base case assumes growth decelerates toward ~10%/year as the capex cycle normalizes with the multiple compressing from ~50x toward ~35x TTM EPS; bear assumes a semiconductor-capex air pocket cuts orders/revenue 15-20% with multiple compression toward ~25x; bull assumes the AI/6G test-capex upswing extends multiple years with EPS compounding >20%/year and the multiple holding near ~40x; no dividend in any case (KEYS pays none)."
+    }
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "analyst": "RA4",
+  "date": "2026-10-05",
+  "data_cutoff": "2026-09-25 close; rf = 10-yr Treasury 5.17% (Treasury/FRED, 25 Sep 2026)",
+  "note": "Research only; not personal advice. Claim sources are primary where stated; third-party sources are labelled. Status labels: CONFIRMED / NOT FOUND / WRONG.",
+  "tickers": {
+    "WEC": {
+      "claims": [
+        {
+          "claim": "No WEC filing on EDGAR after 4 Sep 2026 as of 5 Oct (no 8-K, 13D, S-4 or rating 8-K)",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions API CIK 0000783325, queried 5 Oct 2026: latest 8-K 2026-09-04 (Items 7.01, 9.01, acc. 0000783325-26-000099); Forms 3/4 on 9/2-9/3"
+        },
+        {
+          "claim": "8-K 7.01 of 4 Sep: EPS guide $5.51-$5.61; 7-8% EPS growth; $37.5B 2026-30 plan",
+          "status": "CONFIRMED",
+          "source": "WEC investor deck exhibit to 8-K acc. 0000783325-26-000099: '$5.51-$5.61'; 'Capital Plan Supports 7.0% to 8.0% Long-Term EPS Growth'; '$37.5 Billion Projected Capital Spend From 2026-2030'"
+        },
+        {
+          "claim": "Financing: CFO $20.5-21.5B, common equity $5.3-5.7B, incremental debt $14.2-14.8B including $5-6B of junior subordinated notes",
+          "status": "CONFIRMED",
+          "source": "Same deck, slide 26: 'Includes $5.0B - $6.0B of junior subordinated notes or other securities with equity content'"
+        },
+        {
+          "claim": "Ratings A-/Baa1 and FFO/debt targets >15% (S&P), >16% (Moody's CFO pre-WC)",
+          "status": "CONFIRMED",
+          "source": "Same deck, slide 27: WEC Energy Group A- / Baa1; 'Target S&P FFO to Debt >15% Moody's CFO Pre-WC/Debt >16%'"
+        },
+        {
+          "claim": "Annual dividend is $3.81, not the dossier's ~$3.53; yield 3.75%; payout ~68.5%",
+          "status": "CONFIRMED",
+          "source": "Same deck, slide 7: 'dividend was raised by 6.7% to a new annual rate of $3.81 per share'; target payout 65-70%; 3.81/5.56 = 68.5%; stockanalysis.com 5 Oct yield 3.75%"
+        },
+        {
+          "claim": "Wisconsin rate cases: ask ROE 9.9% vs 9.8% current; orders Q4 2026 effective 1 Jan 2027; Peoples Gas current ROE 9.38% (asks 10.10%); VLC tariff 10.48-10.98%",
+          "status": "CONFIRMED",
+          "source": "Same deck, slides 10-15: 'Current ROE 9.8% ... Proposed ROE 9.9%'; 'Order expected in Q4 2026 for new rates effective January 1, 2027'; Peoples Gas 'Current ROE 9.38% ... Proposed ROE 10.10%'; VLC 'Return on Equity range of 10.48% to 10.98%'"
+        },
+        {
+          "claim": "Consumer advocate (CUB) proposes 9.1% ROE; PSC staff recommended 9.65% in the prior case",
+          "status": "CONFIRMED",
+          "source": "cubwi.org 'We Energies Rate Hike for 2027 and 2028' (search summary): CUB proposes 9.1% vs 9.9% requested; prior-case 9.65% staff figure appears in the same CUB material (secondary)"
+        },
+        {
+          "claim": "8-K Item 1.01 (18 Aug): 20-year Point Beach PPA extension, 86% of each unit, PSCW approval by 1 Jan 2028 (extendable to 1 Jul 2028)",
+          "status": "CONFIRMED",
+          "source": "WEC 8-K acc. 0000783325-26-000095 filed 2026-08-18: PPA dated 14 Aug 2026, 'purchase 86% of the capacity... of each of Unit 1 and Unit 2'; terms to 5 Oct 2050 and 8 Mar 2053; terminable if PSCW approval not obtained 'prior to January 1, 2028... automatically extended to July 1, 2028'"
+        },
+        {
+          "claim": "2 Oct: Oracle to subscribe 10-20% of Point Beach output; ~$300M fuel savings over five years; PSCW approval needed",
+          "status": "CONFIRMED",
+          "source": "We Energies release 2 Oct 2026 ('approximately $300 million'; 'Full details will be submitted to the Public Service Commission of Wisconsin'); Wisconsin Watch 2 Oct 2026: 'between 10% and 20%', 'over the next five years'. The 125-250 MW figure is a derived number, not stated"
+        },
+        {
+          "claim": "Port Washington interconnection delayed: PSC withdrew completeness finding, ATC refiled in Sept; Aterio base case partial power Dec 2027, full Oct 2028 vs Oracle H2 2027",
+          "status": "CONFIRMED",
+          "source": "The Register 2 Oct 2026 (third-party report quoting Aterio); the Aterio Business Wire release returned HTTP 403. Not confirmed by WEC or ATC; the 4 Sep deck still says Oracle is committed"
+        },
+        {
+          "claim": "Ladenburg Thalmann cut WEC to Neutral, PT $110.50, citing bipartisan Wisconsin opposition to data centres",
+          "status": "CONFIRMED",
+          "source": "Investing.com 4 Aug 2026: downgrade Buy -> Neutral, PT $110.50 (stock $109.28)"
+        },
+        {
+          "claim": "1 Oct 2026: stock closed $99.95 after a 12-month low of $99.80; BMO 120->117, KeyBanc 126->117, Truist 122->114, JPMorgan to 124",
+          "status": "WRONG",
+          "source": "MarketBeat 1 Oct 2026: close $100.78 (not $99.95); 12-month low $99.80, 50-day $107.00, 200-day $111.76 and the four target changes are correct; stockanalysis.com 5 Oct: 52-week low $99.80"
+        },
+        {
+          "claim": "Reverse DCF in the dossier discounts EPS as if it were distributable cash",
+          "status": "CONFIRMED",
+          "source": "Recomputed: EPS $5.56, 7.5%, 3.5% terminal gives -0.76% (reproduces the dossier); WEC retains most cash flow (deck: capex $33.3B vs CFO $20.5-21.5B, dividends $7.6-7.8B). Dividend-basis implied growth 4.9% / 5.7% / 6.2% / 7.5% / 8.7% at CoE 7.5 / 7.8 / 8.0 / 8.5 / 9.0% (red-team 4.9/6.3/7.55/8.8 reproduced to within 0.1)"
+        },
+        {
+          "claim": "Share count +2.1% in five quarters; ~$1.1B a year of equity issuance",
+          "status": "CONFIRMED",
+          "source": "XBRL dei EntityCommonStockSharesOutstanding: 319,133,501 (31 Mar 2025) -> 325,849,383 (30 Jun 2026) = +2.1%. But 2026 H1 stock proceeds were only $23.8M (FY2025 $761.9M) and the deck notes ~$720M of forward ATM contracts: issuance is back-loaded, so the $1.1B a year is a plan average not a realised pace"
+        },
+        {
+          "claim": "Q3 results 29 Oct 2026",
+          "status": "NOT FOUND",
+          "source": "Third-party calendar only (MarketBeat 29 Oct, call 2:00 pm ET); no WEC announcement found; dossier's 'early November' estimate was superseded"
+        },
+        {
+          "claim": "Fed raised the target range 25 bp to 3.75-4.00% on 16 Sep 2026 (12-0 vote)",
+          "status": "CONFIRMED",
+          "source": "federalreserve.gov FOMC statement, 16 Sep 2026: 'The Committee decided to raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent' (12-0 vote); FRED DFEDTARU upper bound 3.75 -> 4.00 on 17 Sep 2026"
+        },
+        {
+          "claim": "First Fed hike since July 2023",
+          "status": "CONFIRMED",
+          "source": "FRED DFEDTARU: last increase 27 Jul 2023 (5.25 -> 5.50), then cuts 2024-25, then 17 Sep 2026 (3.75 -> 4.00)"
+        },
+        {
+          "claim": "Chair Warsh hawkish; 16 of 19 participants expect at least one more hike this year",
+          "status": "NOT FOUND",
+          "source": "Not in the FOMC statement or the 16 Sep SEP table text; the SEP median fed funds rate for end-2026 is 4.1 (vs 3.75-4.00 now), consistent with about one more hike but the 16-of-19 count was not verified"
+        },
+        {
+          "claim": "10-yr Treasury 5.016% on 16 Sep 2026",
+          "status": "CONFIRMED",
+          "source": "US Treasury daily par yield curve (home.treasury.gov) 16 Sep 2026: 10-yr 5.01%; FRED DGS10 5.01"
+        },
+        {
+          "claim": "10-yr Treasury hit 5.34% on 1 Oct 2026",
+          "status": "WRONG",
+          "source": "Treasury par yield curve 1 Oct 2026: 10-yr 5.24% (2 Oct 5.28%); FRED DGS10 1 Oct 5.24. 5.34% might be an intraday print; not found in any official series"
+        },
+        {
+          "claim": "10-yr about 5.25% on 5 Oct 2026",
+          "status": "NOT FOUND",
+          "source": "Treasury had published only to 2 Oct (5.28%) at the time of the check; FRED last point 1 Oct 5.24%. Data-cutoff value used in the work: 5.17% on 25 Sep 2026 (Treasury and FRED DGS10)"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "discount_rate_and_inputs": "Dividend-basis reverse DCF: price $101.45 (25 Sep 2026), D0 $3.81, 10 yrs constant growth then 3.0% terminal; CoE 7.8% = rf 5.17% (10-yr Treasury 25 Sep 2026) + 0.63 Blume beta x ERP 4.14% (programme V1 parameters); implied 5.7% (4.9% at 7.5%, 6.2% at 8.0%, 7.5% at 8.5%) vs ten-year base 5.6%",
+      "scenario_returns_3y": {
+        "bear": -0.004,
+        "base": 0.082,
+        "bull": 0.125
+      },
+      "changed_fields": [
+        "verdict",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.note",
+        "scenario_returns_3y",
+        "scenario_basis",
+        "kill_criteria",
+        "key_adverse_facts",
+        "next_earnings_date",
+        "confidence_in_thesis"
+      ],
+      "files_updated": [
+        "v4/dossiers/WEC.md",
+        "v4/outputs/F94_summary.json"
+      ]
+    },
+    "RSG": {
+      "claims": [
+        {
+          "claim": "No RSG 8-K/10-Q/proxy after the 7 Aug 10-Q; only Forms 4 (to 14 Sep) and a 13D/A on 9 Sep",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions API CIK 0001060391, 5 Oct 2026: 10-Q 2026-08-07, 8-K 2026-08-06, Forms 4 through 2026-09-14, SCHEDULE 13D/A 2026-09-09"
+        },
+        {
+          "claim": "Schedule 13D/A No. 29 (event 4 Sep): Cascade 116,166,330 shares = 37.9%, up from 112,403,625 = 36.7% (No. 28, event 18 Aug), funded from working capital",
+          "status": "CONFIRMED",
+          "source": "SEC acc. 0001104659-26-106327 (rows 11/13: 116,166,330, 37.9%) and 0001104659-26-099242 ('Cascade purchased the Common Stock with working capital', 112,403,625, 36.7%)"
+        },
+        {
+          "claim": "Q2 2026: volume -1.6% total / -1.9% related; fuel-recovery fees added 1.8% to revenue",
+          "status": "CONFIRMED",
+          "source": "RSG 8-K Ex. 99.1 acc. 0001060391-26-000273: 'volume decreased revenue by 1.6 percent'; related business 'volume decreased ... by 1.9 percent'; table 'Fuel recovery fees 1.8'"
+        },
+        {
+          "claim": "Ex-fuel organic growth was about 1.7% in Q2 (already below the 2% line)",
+          "status": "CONFIRMED",
+          "source": "Arithmetic from the release: total internal growth 3.5 - fuel 1.8 = 1.7% (Q1: 1.5 - 0.2 = 1.3%, acc. 0001060391-26-000210). Recycling-and-waste organic ex-fuel: 3.7 - 1.8 = 1.9% (Q2), 2.6% (Q1)"
+        },
+        {
+          "claim": "Q2 adjusted EBITDA margin 32.1%, flat year on year; Q3 guided 'relatively flattish'",
+          "status": "CONFIRMED",
+          "source": "Release: 'Adjusted EBITDA margin... was 32.1 percent of revenue, which remained consistent with the prior year'; Q2 call (stockanalysis.com transcript, CFO): 'Q3, think of it relatively flattish with the prior year with margin expansion in the fourth quarter'"
+        },
+        {
+          "claim": "Residential volume -3 to -3.5% in H2 and ~-2% in 2027; ES integration 'underestimated'; >$1.2B M&A in 2026; leverage ~2.6x; narrow open-market vs restricted spread",
+          "status": "CONFIRMED",
+          "source": "Q2 2026 call transcript (stockanalysis.com): '3%-3.5% range', 'circa 2%', 'We probably underestimated the challenge of integration of some legacy assets', 'more than $1.2 billion', leverage 'approximately 2.6x', spread 'one of the smallest we have seen'. No call text is on EDGAR"
+        },
+        {
+          "claim": "Dividend raised 4.5c to $0.670, record 2 Oct, paid 15 Oct",
+          "status": "CONFIRMED",
+          "source": "RSG Q2 release: 'quarterly dividend of $0.670 per share for shareholders of record on October 2, 2026, will be paid on October 15, 2026'"
+        },
+        {
+          "claim": "Q3 results confirmed for 29 Oct 2026 after close",
+          "status": "CONFIRMED",
+          "source": "Company release 'Republic Services, Inc. Sets Date for Third Quarter 2026 Earnings Release and Conference Call' (newswire copies, stocktitan.net): 29 Oct 2026 after market close, call 5 p.m. ET"
+        },
+        {
+          "claim": "Price $212.59 on 5 Oct; 52-week $196.41-233.42; forward P/E 27.5x; consensus PT ~$246",
+          "status": "CONFIRMED",
+          "source": "stockanalysis.com 5 Oct 2026 2:23 pm EDT: $212.67, 52-week $196.41-$233.42, forward P/E 27.48, average target $245.92"
+        },
+        {
+          "claim": "Wolfe Research initiated at Peer Perform around 15 Sep; PT changes UBS 235, MS 232, Barclays 240, Baird 235",
+          "status": "NOT FOUND",
+          "source": "Not checked beyond the consensus PT; no primary source for individual broker notes was found. No effect on the case"
+        },
+        {
+          "claim": "Reverse DCF reproduced: 7.19% at WACC 7.3%; 7.7% at 7.5%, 8.5% at 7.8%, 9.0% at 8.0%, 10.3% at 8.5%",
+          "status": "CONFIRMED",
+          "source": "Recomputed from the dossier inputs (EV $79.5B, FCF $2.5575B, 10 years then 2.5% terminal): 7.19, 7.74, 8.54, 9.05, 10.29 at WACC 7.3, 7.5, 7.8, 8.0, 8.5%"
+        },
+        {
+          "claim": "The 7.3% WACC reflects a 4.2-4.3% Treasury and 7.8-8.0% is the defensible WACC (10-yr 5.25%)",
+          "status": "NOT FOUND",
+          "source": "Dossier states no risk-free rate. On the programme's own CAPM (V1: rf 5.17% on 25 Sep, ERP 4.14%, Blume beta 0.59-0.70, after-tax debt ~5.0%) WACC is 7.1-7.5%; 7.8-8.0% needs an ERP of about 5% or more. Central 7.5% used; 8.0% shown as sensitivity"
+        },
+        {
+          "claim": "Breakeven WACC vs the 8% base is 7.6%; kill criterion 1 is satisfied by a pass-through item",
+          "status": "CONFIRMED",
+          "source": "Breakeven reproduced on the original (levered-FCF) basis; plus a new finding: the dossier divided FCF after interest by EV. Unlevered base $3.03B gives 5.0 / 5.5 / 6.3 / 6.8 / 8.0% at WACC 7.3 / 7.5 / 7.8 / 8.0 / 8.5%. Kill 1 literally unmet (reported 1.5%, 3.5%) but met on a total ex-fuel basis (1.3%, 1.7%); restated on R&W organic ex-fuel (2.6%, 1.9%): AMBER"
+        },
+        {
+          "claim": "Fed raised the target range 25 bp to 3.75-4.00% on 16 Sep 2026 (12-0 vote)",
+          "status": "CONFIRMED",
+          "source": "federalreserve.gov FOMC statement, 16 Sep 2026: 'The Committee decided to raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent' (12-0 vote); FRED DFEDTARU upper bound 3.75 -> 4.00 on 17 Sep 2026"
+        },
+        {
+          "claim": "First Fed hike since July 2023",
+          "status": "CONFIRMED",
+          "source": "FRED DFEDTARU: last increase 27 Jul 2023 (5.25 -> 5.50), then cuts 2024-25, then 17 Sep 2026 (3.75 -> 4.00)"
+        },
+        {
+          "claim": "Chair Warsh hawkish; 16 of 19 participants expect at least one more hike this year",
+          "status": "NOT FOUND",
+          "source": "Not in the FOMC statement or the 16 Sep SEP table text; the SEP median fed funds rate for end-2026 is 4.1 (vs 3.75-4.00 now), consistent with about one more hike but the 16-of-19 count was not verified"
+        },
+        {
+          "claim": "10-yr Treasury 5.016% on 16 Sep 2026",
+          "status": "CONFIRMED",
+          "source": "US Treasury daily par yield curve (home.treasury.gov) 16 Sep 2026: 10-yr 5.01%; FRED DGS10 5.01"
+        },
+        {
+          "claim": "10-yr Treasury hit 5.34% on 1 Oct 2026",
+          "status": "WRONG",
+          "source": "Treasury par yield curve 1 Oct 2026: 10-yr 5.24% (2 Oct 5.28%); FRED DGS10 1 Oct 5.24. 5.34% might be an intraday print; not found in any official series"
+        },
+        {
+          "claim": "10-yr about 5.25% on 5 Oct 2026",
+          "status": "NOT FOUND",
+          "source": "Treasury had published only to 2 Oct (5.28%) at the time of the check; FRED last point 1 Oct 5.24%. Data-cutoff value used in the work: 5.17% on 25 Sep 2026 (Treasury and FRED DGS10)"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "discount_rate_and_inputs": "EV $79.2B (market cap $65.2B + net debt $13.96B), 10 yrs constant growth then 2.5% terminal; WACC 7.5% (rf 5.17%, ERP 4.14%, Blume beta 0.59-0.70); original levered adj-FCF base $2.5575B -> 7.7% (vs ~8% base); unlevered base $3.03B -> 5.5% (vs ~6.5% aggregate base); 9.0% / 6.8% at WACC 8.0%",
+      "scenario_returns_3y": {
+        "bear": -0.014,
+        "base": 0.072,
+        "bull": 0.147
+      },
+      "changed_fields": [
+        "verdict",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.note",
+        "scenario_returns_3y",
+        "scenario_basis",
+        "kill_criteria",
+        "key_adverse_facts",
+        "next_earnings_date"
+      ],
+      "files_updated": [
+        "v4/dossiers/RSG.md",
+        "v4/outputs/F115_summary.json"
+      ]
+    },
+    "LVS": {
+      "claims": [
+        {
+          "claim": "No LVS 8-K, 10-Q, proxy or 13D item on EDGAR between 26 Sep and 5 Oct",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions API CIK 0001300514, 5 Oct 2026: latest items 13D/A 2026-08-11, 10-Q 2026-07-24, 8-K 2026-07-22, Form 4 2026-09-02 (Section 16 forms were not reviewed in detail)"
+        },
+        {
+          "claim": "Macau September GGR MOP18.06bn (US$2.24bn), -1.2% YoY, lowest month of 2026, fourth straight YoY decline; 9M +3.2%",
+          "status": "CONFIRMED",
+          "source": "DICJ data as reported 1 Oct 2026 by GGRAsia, Intergame, casino.org (DICJ web pages are dynamic and could not be read): MOP18.06bn, -1.2%, '17.5-per-cent below August', 9M MOP187.12bn +3.2%"
+        },
+        {
+          "claim": "July MOP20.26bn (-8.4%), August MOP21.89bn (-1.2%)",
+          "status": "CONFIRMED",
+          "source": "DICJ via asgam.com 1 Aug and 1 Sep 2026, agbrief, macaubusiness.com: July MOP20.26bn -8.4%; August MOP21.89bn -1.2%"
+        },
+        {
+          "claim": "Q3 market GGR about -3.8% YoY; MOP60.21bn",
+          "status": "CONFIRMED",
+          "source": "Arithmetic: 20.26 + 21.89 + 18.06 = 60.21; Q3 2025 implied by the reported growth rates = 22.12 + 22.16 + 18.28 = 62.56; 60.21/62.56 - 1 = -3.76%. The 'Q3 -1.3% vs Q2' figure was not independently checked"
+        },
+        {
+          "claim": "Citigroup cut its September forecast to MOP18bn from +12% / MOP20.5bn on 1 Oct",
+          "status": "WRONG",
+          "source": "Citi cut on 21 Sep 2026 (macaubusiness.com, focusgn.com), from MOP19-20bn to MOP18bn after a survey with premium-mass wagers -45% YoY (HK$6.8M vs HK$12.3M); Citi kept MOP18bn on 1 Oct. Direction right, date and prior figure wrong"
+        },
+        {
+          "claim": "CLSA warned the risk of earnings forecast cuts had escalated; CreditSights did not rule out tighter VIP scrutiny",
+          "status": "CONFIRMED",
+          "source": "Search summary of casino.com 1 Oct 2026: CLSA 29 Sep note 'risk of a downward revision to consensus Macau earnings estimates had escalated'; the CreditSights remark was not verified"
+        },
+        {
+          "claim": "Morgan Stanley expects Q3 Macau GGR about -1% and calls reinvestment pressure 'structural'",
+          "status": "NOT FOUND",
+          "source": "Not verified (publisher pages returned 403/connection resets); no effect on the recomputation"
+        },
+        {
+          "claim": "Schedule 13D/A Amendment 16 (event 7 Aug 2026): Adelson/Chafetz group 59.7% of 647.7M shares, passive rise from buybacks; ESBT S Trust and Annabelle Sivan Dumont added",
+          "status": "CONFIRMED",
+          "source": "SEC acc. 0001193125-26-345232: 'collectively beneficially owns approximately 386,728,789 shares of Common Stock, or 59.7%, of the Issuer's 647,701,184 shares... as of July 22, 2026'; 'passive increases... solely due to the Issuer's repurchases'; 'addition of E[SBT S Trust and Ms. Dumont]'"
+        },
+        {
+          "claim": "H1 2026 buybacks $1,541M plus dividends $530M = $2,071M vs operating cash flow less capex of $887M (2.3x FCF)",
+          "status": "CONFIRMED",
+          "source": "10-Q acc. 0001300514-26-000085 and XBRL: repurchases $1,541M; OCF $1,413M; capex $526M; 'Dividends paid and noncontrolling interest payments (530)'. Nuance: $400M is LVS dividends and $130M noncontrolling-interest payments, so LVS-shareholder returns are $1,941M = 2.2x; the excess was funded by a one-off $1.26B early loan repayment (May 2026)"
+        },
+        {
+          "claim": "Parent equity fell from $1,590M (Dec-25) to $581M (Jun-26)",
+          "status": "CONFIRMED",
+          "source": "XBRL StockholdersEquity: 1,590,000,000 (31 Dec 2025), 1,198,000,000 (31 Mar 2026), 581,000,000 (30 Jun 2026)"
+        },
+        {
+          "claim": "Dossier footnote error: XBRL ProfitLoss for Q4-25 is exactly $448M and NetIncomeLoss ($395M) is parent-attributable",
+          "status": "CONFIRMED",
+          "source": "XBRL 10-K filed 2026-02-06: ProfitLoss 2025-10-01..2025-12-31 = 448,000,000; NetIncomeLoss = 395,000,000; FY2025 ProfitLoss 1,866M, NetIncomeLoss 1,627M, NCI 239M"
+        },
+        {
+          "claim": "Net debt about $11.9B; net debt/EBITDA ~2.3x (dossier 2.4-2.7x); FY25 adjusted property EBITDA $5.23bn",
+          "status": "CONFIRMED",
+          "source": "Dossier/V1 net debt $11,886M (10-Q: debt $15.11B gross per Q2 release, cash $3,376M XBRL). Ratio on TTM adjusted EBITDA of about $5.2-5.3B is ~2.3x; the 2.4-2.7x was on a more conservative EBITDA. Not near the 3.0x line"
+        },
+        {
+          "claim": "V1's -11.3%/yr implied FCF decline looks overstated; consistent bases give about -1% to +4.6%",
+          "status": "CONFIRMED",
+          "source": "V1's figure could not be reproduced. My recompute at V1's WACC 7.10% (rf 5.17%): EV $40.45B; FCFF $3.29B TTM -> -5.8%; $2.8B -> -3.8%; FY25 $2.45B -> -2.1%; the red team's -1% to +4.6% needs an FCFF of $2.0-2.4B, below FY25 and TTM actuals. So 'overstated' is right, but the supportable range is about -6% to 0%, not -1% to +4.6%"
+        },
+        {
+          "claim": "Q3 earnings expected about 21 Oct (aggregator estimate)",
+          "status": "NOT FOUND",
+          "source": "Aggregators (stockanalysis.com, MarketBeat) list 21 Oct 2026; no LVS announcement found"
+        },
+        {
+          "claim": "Sands China Q1 2026 share 26.2%; Q2 mass GGR +8% vs market +4%",
+          "status": "CONFIRMED",
+          "source": "Q1 share 26.2% (JPMorgan via asgam.com 18 May 2026). The Q2 +8% vs +4% comparison comes from the original dossier and was not re-verified"
+        },
+        {
+          "claim": "Fed raised the target range 25 bp to 3.75-4.00% on 16 Sep 2026 (12-0 vote)",
+          "status": "CONFIRMED",
+          "source": "federalreserve.gov FOMC statement, 16 Sep 2026: 'The Committee decided to raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent' (12-0 vote); FRED DFEDTARU upper bound 3.75 -> 4.00 on 17 Sep 2026"
+        },
+        {
+          "claim": "First Fed hike since July 2023",
+          "status": "CONFIRMED",
+          "source": "FRED DFEDTARU: last increase 27 Jul 2023 (5.25 -> 5.50), then cuts 2024-25, then 17 Sep 2026 (3.75 -> 4.00)"
+        },
+        {
+          "claim": "Chair Warsh hawkish; 16 of 19 participants expect at least one more hike this year",
+          "status": "NOT FOUND",
+          "source": "Not in the FOMC statement or the 16 Sep SEP table text; the SEP median fed funds rate for end-2026 is 4.1 (vs 3.75-4.00 now), consistent with about one more hike but the 16-of-19 count was not verified"
+        },
+        {
+          "claim": "10-yr Treasury 5.016% on 16 Sep 2026",
+          "status": "CONFIRMED",
+          "source": "US Treasury daily par yield curve (home.treasury.gov) 16 Sep 2026: 10-yr 5.01%; FRED DGS10 5.01"
+        },
+        {
+          "claim": "10-yr Treasury hit 5.34% on 1 Oct 2026",
+          "status": "WRONG",
+          "source": "Treasury par yield curve 1 Oct 2026: 10-yr 5.24% (2 Oct 5.28%); FRED DGS10 1 Oct 5.24. 5.34% might be an intraday print; not found in any official series"
+        },
+        {
+          "claim": "10-yr about 5.25% on 5 Oct 2026",
+          "status": "NOT FOUND",
+          "source": "Treasury had published only to 2 Oct (5.28%) at the time of the check; FRED last point 1 Oct 5.24%. Data-cutoff value used in the work: 5.17% on 25 Sep 2026 (Treasury and FRED DGS10)"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "below",
+      "discount_rate_and_inputs": "EV $40.45B (market cap $25.25B + net debt $11.886B + NCI ~$3.3B), 10 yrs constant growth then 3% terminal, WACC 7.10% (V1; already on rf 5.17%); FCFF $2.8B -> -3.8% (TTM $3.29B -> -5.8%; FY25 $2.45B -> -2.1%); 8.0% WACC -1.5%; vs base about +3%. V1's -11.3% not reproduced",
+      "scenario_returns_3y": {
+        "bear": -0.084,
+        "base": 0.088,
+        "bull": 0.218
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.consistent",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis",
+        "kill_criteria",
+        "key_adverse_facts",
+        "data_conflicts",
+        "confidence_in_thesis"
+      ],
+      "files_updated": [
+        "v4/dossiers/LVS.md",
+        "v4/outputs/F20_summary.json"
+      ]
+    }
+  }
+}

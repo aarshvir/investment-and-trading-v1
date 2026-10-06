@@ -1,0 +1,427 @@
+{
+  "analyst": "RA12",
+  "date": "2026-10-06",
+  "data_cutoff": "2026-09-25 close (prices and share counts from d4 snapshot); EDGAR checked to 2026-10-06; rf = 10-yr Treasury 5.17% (FRED DGS10, 25 Sep 2026)",
+  "tickers": {
+    "EG": {
+      "claims": [
+        {
+          "claim": "Valuation: implied 10-year growth -11.9% (EPS capitalised at r 9.5%, rf 4.2%)",
+          "status": "WRONG",
+          "source": "EPS is not distributable cash for a reinsurer and rf was 4.2% vs 5.17%; P/B 0.929x ($370.43/$398.83) at Ke 9.9% (5.17% + 0.9x4.14% + 1.0), g 3% implies sustainable ROE 9.4%"
+        },
+        {
+          "claim": "Book value per share $398.83, P/B 0.93x; equity $15,430m",
+          "status": "CONFIRMED",
+          "source": "Q2 2026 8-K Ex-99.1 and 10-Q XBRL, accession 0001095073-26-000032"
+        },
+        {
+          "claim": "14.5% FCF yield",
+          "status": "WRONG",
+          "source": "OCF/market cap; insurer OCF is float-driven (H1-26 OCF $939m); not owner earnings"
+        },
+        {
+          "claim": "NPW kill test: 2 of last 2 quarters worse than -15% (-14.7%, -26.3%)",
+          "status": "WRONG",
+          "source": "-14.7% is not worse than -15%; only Q2-26 qualifies (dossier table)"
+        },
+        {
+          "claim": "8-K of 31 Aug 2026 (Global Loss Triangles) not reviewed",
+          "status": "CONFIRMED",
+          "source": "Accession 0001095073-26-000035, Items 7.01/9.01: Ex-99.1 is a notice that the triangles are on the website; contains no figures"
+        },
+        {
+          "claim": "No filing after 3 Aug other than S-8 (7 Aug), the 31 Aug 8-K and six Form 4s (5 Oct)",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 0001095073 pulled 2026-10-06; Form 4 codes A/F (e.g. 0001628280-26-064978)"
+        },
+        {
+          "claim": "TTM net income/ROE (new check)",
+          "status": "CONFIRMED",
+          "source": "FY25 $1,591m - H1-25 $890m + H1-26 $1,213m = $1,914m; 12.4% of $15,430m equity (XBRL)"
+        },
+        {
+          "claim": "Payout: H1-26 buybacks $725m + dividends $158m",
+          "status": "CONFIRMED",
+          "source": "10-Q XBRL accession 0001095073-26-000032 (73% of H1 net income)"
+        },
+        {
+          "claim": "Property catastrophe reinsurance rates -16% at July 2026 renewal; five benign quarters",
+          "status": "CONFIRMED",
+          "source": "Insurance Business (Guy Carpenter ROL index), secondary; Everest not mentioned in the article"
+        },
+        {
+          "claim": "10-year Treasury 5.17% on 25 Sep 2026 used for all discount rates",
+          "status": "CONFIRMED",
+          "source": "FRED DGS10 5.17% on 2026-09-25 (as used by RA1-RA4); ERP 4.14% from V1"
+        },
+        {
+          "claim": "Fed raised the target range to 3.75-4.00% on 16 Sep 2026",
+          "status": "CONFIRMED",
+          "source": "FOMC statement 2026-09-16 as verified by RA1/RA3/RA4 (federalreserve.gov); not re-pulled"
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below (dossier: cheap, -11.9% implied growth)",
+      "new_implied": "in_line",
+      "discount_rate_and_inputs": "P/B vs ROE: Ke 9.9% (rf 5.17%, beta 0.9, ERP 4.14%, +1.0 reserve premium), g 3%; implied ROE 9.4% (8.6% at Ke 9.0%, 10.4% at Ke 11%); base ROE 10-11% (assumption; TTM 12.4%); justified P/B 1.01x at 10% ROE, 1.16x at 11%",
+      "scenario_returns_3y": {
+        "bear": -0.091,
+        "base": 0.131,
+        "bull": 0.252
+      },
+      "changed_fields": [
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.reconciliation",
+        "valuation_view_vs_v1.implied_vs_base",
+        "scenario_returns_3y",
+        "scenario_basis",
+        "kill_criteria (3 reworded, 6 added)",
+        "key_adverse_facts",
+        "data_conflicts",
+        "confidence_in_thesis"
+      ],
+      "files_updated": [
+        "v4/dossiers/EG.md",
+        "v4/outputs/F22_summary.json"
+      ],
+      "note": "Verdict unchanged at INCLUDE-SMALL; the cheapness is thinner than the -12% implied growth suggested (about one ROE point of margin)."
+    },
+    "GL": {
+      "claims": [
+        {
+          "claim": "FY2026 guidance $15.55-15.95, +$0.10 at the midpoint",
+          "status": "CONFIRMED",
+          "source": "Q2 2026 release 8-K Ex-99.1 accession 0000320335-26-000203: 'increased full-year 2026 earnings guidance to a range of $15.55 to $15.95, an increase of $0.10 at the midpoint'"
+        },
+        {
+          "claim": "Book value per share ex-AOCI $100.04; net operating ROE ex-AOCI 14.3% (H1-26)",
+          "status": "CONFIRMED",
+          "source": "Same release; equity ex-AOCI $7,877.5m"
+        },
+        {
+          "claim": "'1.67x tangible book'",
+          "status": "WRONG",
+          "source": "1.67x is price to book ex-AOCI ($167.04/$100.04), not tangible book"
+        },
+        {
+          "claim": "Class-certification motion pending 'with no ruling date disclosed'",
+          "status": "WRONG",
+          "source": "Q2 10-Q Note 5 (accession 0000320335-26-000216): motion filed 15 May 2026, 'scheduled to be fully briefed by October 30, 2026'"
+        },
+        {
+          "claim": "No DOJ/SEC investigation mentioned in the Q2 10-Q",
+          "status": "CONFIRMED",
+          "source": "Re-searched the 10-Q text: zero hits for subpoena, Department of Justice, DOJ, SEC investigation, Division of Enforcement"
+        },
+        {
+          "claim": "Buybacks ~50-60% of net income",
+          "status": "WRONG",
+          "source": "Cash-flow buybacks $881m FY25 and $515m H1-26 (XBRL) vs release totals $685m / $378m (not reconciled); with dividends about 100% of H1-26 net operating income on the cash basis, 77% on release totals"
+        },
+        {
+          "claim": "Filings after 5 Aug: 8-K 7 Aug (director D. Rodriguez retired 4 Aug 'for personal reasons'), Forms 4/144, no merger/13D/S-4",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 0000320335; 8-K accession 0000320335-26-000218"
+        },
+        {
+          "claim": "Valuation implied vs base (new test, not in dossier)",
+          "status": "CONFIRMED",
+          "source": "P/B ex-AOCI 1.67x, Ke 9.0%, g 3% -> implied ROE 13.0% vs 14.3% delivered: in_line"
+        },
+        {
+          "claim": "10-year Treasury 5.17% on 25 Sep 2026 used for all discount rates",
+          "status": "CONFIRMED",
+          "source": "FRED DGS10 5.17% on 2026-09-25 (as used by RA1-RA4); ERP 4.14% from V1"
+        },
+        {
+          "claim": "Fed raised the target range to 3.75-4.00% on 16 Sep 2026",
+          "status": "CONFIRMED",
+          "source": "FOMC statement 2026-09-16 as verified by RA1/RA3/RA4 (federalreserve.gov); not re-pulled"
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "not stated (dossier: reasonable-to-slightly-cheap; V1 fair)",
+      "new_implied": "in_line",
+      "discount_rate_and_inputs": "P/B vs ROE (ex-AOCI): Ke 9.0% (V1 8.08% at Blume beta 0.70; 9.5% sensitivity), g 3%; implied ROE 13.0% (11.5% / 13.9%); base 14.3%",
+      "scenario_returns_3y": {
+        "bear": -0.072,
+        "base": 0.077,
+        "bull": 0.182
+      },
+      "changed_fields": [
+        "valuation_view_vs_v1 (added)",
+        "scenario_returns_3y (added)",
+        "scenario_basis (added)",
+        "key_adverse_facts (added item)"
+      ],
+      "files_updated": [
+        "v4/dossiers/GL.md",
+        "v4/outputs/f1_summary.json"
+      ],
+      "note": "Fairly priced; litigation cannot resolve before 30 Oct 2026; payout near 100% of earnings with RBC at the low end of the band."
+    },
+    "GM": {
+      "claims": [
+        {
+          "claim": "Guidance 'raised again' to EBIT-adjusted $14.0-16.0bn, adj. EPS $12.00-14.00, adj. auto FCF $9.5-11.5bn",
+          "status": "CONFIRMED",
+          "source": "Q2 2026 release accession 0001467858-26-000049: 'raising its full-year 2026 EBIT-adjusted guidance for the second time this year'"
+        },
+        {
+          "claim": "Guidance 'keeps rising'",
+          "status": "WRONG",
+          "source": "Same release: net income guide cut to $8.4-9.8bn (from $9.9-11.4bn), EPS-diluted $8.98-10.98 (from $10.62-12.62), automotive operating cash flow $15.4-19.4bn (from $16.8-20.8bn); FCF adjustments $4.1bn (from $2.2bn)"
+        },
+        {
+          "claim": "EV/China charges 'shrinking sequentially'",
+          "status": "WRONG",
+          "source": "EV realignment Q1 $1,077m (H1 $3,356m less Q2 $2,279m) then Q2 $2,279m; China $177m in Q2; full-year adjustments guide $1.0bn -> $3.5bn"
+        },
+        {
+          "claim": "Automotive net cash $3,671m (corrected figure)",
+          "status": "CONFIRMED",
+          "source": "Q2 release combining balance sheet: cash $15,147m + securities $4,503m vs debt $15,979m (10-Q accession 0001467858-26-000051)"
+        },
+        {
+          "claim": "TTM FCF ~$14.4bn",
+          "status": "WRONG",
+          "source": "Consolidated OCF $23.2bn less capex $8.8bn includes GM Financial; adjusted automotive FCF guide $9.5-11.5bn, reported mid-point about $6.4bn"
+        },
+        {
+          "claim": "EV/adjusted-EBIT 5.0x and -4.6% perpetuity growth",
+          "status": "WRONG",
+          "source": "EBIT used as cash; includes GM Financial EBT and China equity income; no capex or restructuring cash; FCF DCF gives -0.7% to -7.7%"
+        },
+        {
+          "claim": "Kill criterion 4 (two quarters of >$1bn restructuring charges)",
+          "status": "WRONG",
+          "source": "Fired on plain reading: Q1 $1,077m, Q2 $2,279m (+$177m China); dossier called them shrinking"
+        },
+        {
+          "claim": "No pending M&A / no new financing events",
+          "status": "WRONG",
+          "source": "8-K filed 2026-08-11 (event 7 Aug) accession 0001193125-26-344698: Master IPU Agreement, up to $4.5bn, unsecured debt, SOFR+1.55%, due by 6 Aug 2029; excluded from adjusted automotive FCF until inventory purchased"
+        },
+        {
+          "claim": "Pension/OPEB ignored",
+          "status": "NOT FOUND in dossier",
+          "source": "Q2 balance sheet: automotive pensions $4,528m + OPEB $3,939m"
+        },
+        {
+          "claim": "Q1 2026 EBIT-adjusted $4,300m",
+          "status": "WRONG",
+          "source": "$4,253m (DA7); TTM effect under 0.5%"
+        },
+        {
+          "claim": "10-year Treasury 5.17% on 25 Sep 2026 used for all discount rates",
+          "status": "CONFIRMED",
+          "source": "FRED DGS10 5.17% on 2026-09-25 (as used by RA1-RA4); ERP 4.14% from V1"
+        },
+        {
+          "claim": "Fed raised the target range to 3.75-4.00% on 16 Sep 2026",
+          "status": "CONFIRMED",
+          "source": "FOMC statement 2026-09-16 as verified by RA1/RA3/RA4 (federalreserve.gov); not re-pulled"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "below",
+      "discount_rate_and_inputs": "FCF reverse DCF, WACC 10.0% (V1 Ke 10.05%: rf 5.17% + Blume beta 1.18 x 4.14%), 10 years constant growth then 3%; EV $72.2bn (mkt cap $75.19bn - auto net cash $3.67bn + auto NCI $0.63bn), $78.6bn incl. after-tax pension/OPEB $6.4bn; FCF $10.5bn -7.7%, $9.0bn -5.4%, $8.0bn -3.8%, $6.4bn -0.7% (with pension -6.4/-4.2/-2.6/+0.5); central about -3% vs base 0-2%",
+      "scenario_returns_3y": {
+        "bear": -0.141,
+        "base": 0.096,
+        "bull": 0.234
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria (#4 flagged fired, 2 added)",
+        "key_adverse_facts",
+        "data_conflicts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.reconciliation",
+        "valuation_view_vs_v1.implied_vs_base",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "files_updated": [
+        "v4/dossiers/GM.md",
+        "v4/outputs/F35_summary.json"
+      ],
+      "note": "Still cheap on cash (implied growth below zero) but kill criterion 4 fired, guidance quality weaker than headline, new $4.5bn IPU debt and $8.5bn pension/OPEB; half weight."
+    },
+    "HIG": {
+      "claims": [
+        {
+          "claim": "Core earnings ROE TTM 20.3%",
+          "status": "WRONG",
+          "source": "Q2 2026 release accession 0000874766-26-000059: core earnings ROE 18.7% (16.0% a year earlier), net income ROE 23.8%; 20.3% was the Q1 figure"
+        },
+        {
+          "claim": "Book value per diluted share ex-AOCI $78.91",
+          "status": "CONFIRMED",
+          "source": "Q2 release"
+        },
+        {
+          "claim": "$497m pre-tax gain, +$393m net income, $1.12bn cash, no core impact (National Indemnity commutation)",
+          "status": "CONFIRMED",
+          "source": "8-K 2026-09-25 accession 0000874766-26-000064: 'received a cash payment of $1.12 billion'; 'before tax net gain of $497 million, an increase in net income of $393 million, and no impact on core earnings'"
+        },
+        {
+          "claim": "CEO change (not in dossier)",
+          "status": "NEW EVENT",
+          "source": "8-K 2026-09-30 accession 0000874766-26-000067: Swift to resign as CEO effective 1 Mar 2027 (Executive Chair); A. Morris Tooker CEO from 1 Mar 2027, director from 1 Oct 2026"
+        },
+        {
+          "claim": "Hartford Funds closing timing not disclosed",
+          "status": "WRONG",
+          "source": "8-K 2026-06-03 accession 0000874766-26-000043: expected to close in the first quarter of 2027"
+        },
+        {
+          "claim": "Funds sale brings ~$1.1bn+ cash; buyback 'explicitly part-funded' by Funds proceeds",
+          "status": "NOT FOUND",
+          "source": "$1.12bn is the NICO cash; Funds deal is $300m at closing plus 95% of after-tax available cash for about 7 years, company-estimated NPV $1.9bn at 11%; no funding statement in the Q2 release or 8-Ks"
+        },
+        {
+          "claim": "New $4.2bn repurchase authorisation Aug 2026 to 2028; $450m repurchased and $165m dividends in Q2",
+          "status": "CONFIRMED",
+          "source": "Q2 release"
+        },
+        {
+          "claim": "Q2-26 core EPS $3.42, core earnings $945m (+1%), BI underlying CR 89.3, PI 86.3",
+          "status": "CONFIRMED",
+          "source": "Q2 release"
+        },
+        {
+          "claim": "No quantitative guidance",
+          "status": "CONFIRMED",
+          "source": "Q2 release contains none"
+        },
+        {
+          "claim": "Other filings after 25 Sep: none besides the 30 Sep 8-K; 15 Jul/11 Aug 8-Ks are director appointments",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 0000874766 pulled 2026-10-06"
+        },
+        {
+          "claim": "10-year Treasury 5.17% on 25 Sep 2026 used for all discount rates",
+          "status": "CONFIRMED",
+          "source": "FRED DGS10 5.17% on 2026-09-25 (as used by RA1-RA4); ERP 4.14% from V1"
+        },
+        {
+          "claim": "Fed raised the target range to 3.75-4.00% on 16 Sep 2026",
+          "status": "CONFIRMED",
+          "source": "FOMC statement 2026-09-16 as verified by RA1/RA3/RA4 (federalreserve.gov); not re-pulled"
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "not stated (V1 fair; implied ROE 11.8% GAAP basis)",
+      "new_implied": "below",
+      "discount_rate_and_inputs": "P/B vs ROE, ex-AOCI basis: P/B 1.574x, Ke 8.5% (rf 5.17% + 0.8 x 4.14%; V1 8.05%), g 3%; implied ROE 11.7% (11.0% at 8.05%, 12.4% at 9.0%); base 14.5% (assumption; TTM core 18.7% near cycle high)",
+      "scenario_returns_3y": {
+        "bear": -0.064,
+        "base": 0.082,
+        "bull": 0.178
+      },
+      "changed_fields": [
+        "kill_criteria (#4 text)",
+        "key_adverse_facts (2 added)",
+        "data_conflicts (added)",
+        "valuation_view_vs_v1 (added)",
+        "scenario_returns_3y (added)",
+        "scenario_basis (added)"
+      ],
+      "files_updated": [
+        "v4/dossiers/HIG.md",
+        "v4/outputs/f8_summary.json"
+      ],
+      "note": "Verdict unchanged; thin margin because the cycle is turning; CEO succession orderly; Funds earn-out NPV $1.9bn sits outside core ROE."
+    },
+    "HST": {
+      "claims": [
+        {
+          "claim": "Guidance: RevPAR growth 4.75-5.25%, AFFO/share $2.15-2.18, Adj. EBITDAre $1,820-1,840m, capex $550-630m",
+          "status": "CONFIRMED",
+          "source": "Q2 2026 release accession 0001070750-26-000122: 'increasing our 2026 comparable hotel Total RevPAR and RevPAR growth guidance ranges to 4.75% to 5.25% over 2025'; 'approximately $550 million to $630 million on capital expenditures'"
+        },
+        {
+          "claim": "FY2026 Adj. EBITDAre midpoint $1,785m",
+          "status": "WRONG",
+          "source": "Q2 release: $1,820-1,840m (midpoint $1,830m); EV/EBITDA 10.6x unchanged"
+        },
+        {
+          "claim": "FY2025 OCF $1,607m, FCF $990m",
+          "status": "WRONG",
+          "source": "$1,607m is TTM to Q2 2026; FY2025 OCF $1,510m (10-K XBRL accession 0001070750-26-000054), FCF $893m with capex $617m"
+        },
+        {
+          "claim": "Reverse DCF +1.7%/yr at WACC 7.5%",
+          "status": "WRONG",
+          "source": "V1's 1.75% uses WACC 9.27% and capex $249m; real TTM capex about $562m; corrected at WACC 9.0%: 3.4% (FY26E FCFF $1,089m), 1.3% (TTM $1,278m)"
+        },
+        {
+          "claim": "Special dividend $0.72 paid 15 Jul 2026, cash down $630m; debt $5,082m; no 2026 maturities",
+          "status": "CONFIRMED",
+          "source": "Q2 release and 10-Q balance sheet; net debt after dividend $3.76bn"
+        },
+        {
+          "claim": "AFFO is clean of one-offs",
+          "status": "WRONG",
+          "source": "FY26 AFFO includes $16-20m condo contribution, $7m business-interruption gain and adds back $26m stock compensation (Q2 release forecast notes)"
+        },
+        {
+          "claim": "No 8-K after 5 Aug; no merger/13D/S-4",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 0001070750 pulled 2026-10-06 (Forms 4/144, SC 13G/A 0001284812-26-000179 only)"
+        },
+        {
+          "claim": "Peer P/FFO median 10.95x (V2R)",
+          "status": "NOT RE-VERIFIED",
+          "source": "Taken from v2r_reit_valuation; peer primary filings not opened"
+        },
+        {
+          "claim": "10-year Treasury 5.17% on 25 Sep 2026 used for all discount rates",
+          "status": "CONFIRMED",
+          "source": "FRED DGS10 5.17% on 2026-09-25 (as used by RA1-RA4); ERP 4.14% from V1"
+        },
+        {
+          "claim": "Fed raised the target range to 3.75-4.00% on 16 Sep 2026",
+          "status": "CONFIRMED",
+          "source": "FOMC statement 2026-09-16 as verified by RA1/RA3/RA4 (federalreserve.gov); not re-pulled"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "not stated (dossier view fair; 1.7% priced in)",
+      "new_implied": "in_line",
+      "discount_rate_and_inputs": "FCFF reverse DCF: EV $19.34bn (15.58bn equity incl. OP units + debt 5.08bn - cash 1.95bn + 0.63bn dividend payable); WACC 9.0% (Ke 9.7% = 5.17% + 1.10x4.14%; Kd 6.6%; 75/25); 10 years then 3%; FCFF $1,089m (AFFO - SBC - one-offs - capex + interest) -> 3.4% (1.1% at 8%, 5.6% at 10%); TTM $1,278m -> 1.3%; base 2.5%",
+      "scenario_returns_3y": {
+        "bear": -0.068,
+        "base": 0.055,
+        "bull": 0.127
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria (6th added)",
+        "key_adverse_facts",
+        "data_conflicts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.reconciliation",
+        "valuation_view_vs_v1.implied_vs_base",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "files_updated": [
+        "v4/dossiers/HST.md",
+        "v4/outputs/F16_summary.json"
+      ],
+      "note": "Fair value, no margin of safety, FIFA-flattered 2026; operating cycle and credit rating remain real; half weight."
+    }
+  }
+}

@@ -102,10 +102,10 @@ import glob as _g3
 _DA_WHAT = {'DA4': 'Load-bearing dossier facts (6 holdings, 4 excluded names) against SEC filings',
             'DA5': 'Load-bearing dossier facts of the 8 holdings no auditor had checked'}
 _DA_LIST = []
-for _f in sorted(_g3.glob(str(O / 'da[0-9]*_factcheck.json')), key=lambda f: int(re.findall(r'da(\d+)_', pathlib.Path(f).name)[0])):
+for _f in sorted(_g3.glob(str(O / 'da[0-9]*_factcheck.json')) + _g3.glob(str(O / 'dv' / 'DV*_factcheck.json')), key=lambda f: (pathlib.Path(f).name[:2].lower() == 'dv', re.sub(r'\D', '', pathlib.Path(f).name.split('_')[0]).zfill(3), pathlib.Path(f).name.lower())):
     _nm = pathlib.Path(_f).name.split('_')[0].upper(); _dd = json.loads(pathlib.Path(_f).read_text(encoding='utf-8'))
     _tk = sorted({x.get('ticker') for x in _dd.get('facts', []) if x.get('ticker')})
-    _DA_LIST.append((_nm, _dd, _DA_WHAT.get(_nm, 'Load-bearing dossier facts of ' + ', '.join(_tk) + ' against SEC filings'), f'outputs/{_nm.lower()}_factcheck.md'))
+    _DA_LIST.append((_nm, _dd, _DA_WHAT.get(_nm, 'Load-bearing dossier facts of ' + ', '.join(_tk) + ' against SEC filings'), ('outputs/dv/' if _nm.startswith('DV') else 'outputs/') + f'{_nm.lower() if not _nm.startswith("DV") else _nm}_factcheck.md'))
 # whole-market triage and full-diligence waves
 _TRI = []
 for _q in sorted(_g3.glob(str(O / 'Q[0-9][0-9]_triage.json'))):
@@ -168,7 +168,7 @@ AUDITED = {  # dossiers whose facts each independent auditor checked against sou
     'A1 (loop 5)': ['HBAN', 'GM'], 'A2 (loop 5)': ['GM', 'RJF', 'LVS', 'HBAN', 'ADP', 'DOV', 'CRH'], 'A3 (loop 5)': ['ADP', 'DOV', 'CRH']}
 fc = {}
 import glob as _g2
-_DAS = [(pathlib.Path(f).name.split('_')[0].upper(), json.loads(pathlib.Path(f).read_text(encoding='utf-8'))) for f in sorted(_g2.glob(str(O / 'da[0-9]*_factcheck.json')), key=lambda f: int(re.findall(r'da(\d+)_', pathlib.Path(f).name)[0]))]
+_DAS = [(pathlib.Path(f).name.split('_')[0].upper(), json.loads(pathlib.Path(f).read_text(encoding='utf-8'))) for f in sorted(_g2.glob(str(O / 'da[0-9]*_factcheck.json')) + _g2.glob(str(O / 'dv' / 'DV*_factcheck.json')), key=lambda f: (pathlib.Path(f).name[:2].lower() == 'dv', re.sub(r'\D', '', pathlib.Path(f).name.split('_')[0]).zfill(3), pathlib.Path(f).name.lower()))]
 for src, d in _DAS:
     for f in d.get('facts', []):
         e = fc.setdefault(f.get('ticker'), {}); e.setdefault(src, Counter())[f.get('status')] += 1

@@ -1,0 +1,118 @@
+{
+  "agent": "F65",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "EQT": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "America's largest low-cost Appalachian gas producer, raising output and cutting debt fast while signing new LNG and power-demand contracts; most 2026 gas is unhedged.",
+      "kill_criteria": [
+        "FY2026 total sales-volume guidance is cut below the current 2,375–2,450 Bcfe range (a reversal of the Q2 2026 raise).",
+        "Realized price differential widens beyond the guided ($0.55)–($0.35)/Mcf full-year range for two consecutive quarters (signals a basis/egress problem, not just a price-level issue).",
+        "Consolidated net debt rises back above $7.0bn (i.e., gives back more than half of the 2026 deleveraging) without a specific, disclosed growth-capex reason.",
+        "Hedged percentage of the following year's production falls below 15% by the Q4 earnings release (i.e., EQT becomes less hedged than the 25% level disclosed for 2026, raising cash-flow-at-risk into an unhedged down-cycle).",
+        "MVP Southgate or the LNG offtake SPA volumes are delayed past their disclosed 2026 (Southgate) / 2028 (LNG) start dates by more than two quarters, without a replacement demand contract."
+      ],
+      "key_adverse_facts": [
+        "75% of 2026 production volumes remain unhedged (hedge percentage raised from 7% to 25% for 2026 per the Q4/FY2025 8-K).",
+        "GAAP EPS/net income swings of $500M+ per quarter are driven by unrealized derivative marks, not operations — Q3 2025 GAAP EPS was -$0.54 despite a profitable underlying business.",
+        "FY2024 FCF attributable to EQT was only $684M vs FY2025's $2,503M (3.7x) — high sensitivity to the gas-price cycle; the FY2025 base used in the reverse DCF is itself an elevated year.",
+        "MVP Mainline/Boost ownership increase (49%→53%) was transacted with Blackstone Credit & Insurance, the Midstream JV's noncontrolling partner — related-party-adjacent, though option-priced and fully disclosed."
+      ],
+      "data_conflicts": [
+        "b1 SUE (earnings-surprise) factor score is strongly negative (-1.08, the weakest of the three F65 names) because of GAAP EPS volatility driven by derivative mark-to-market, not deteriorating operations — a quant-vs-primary-source disagreement.",
+        "d4 NTM P/E is internally inconsistent (12.4x `pe_ntm` vs 15.2x `pe_ntm_qaware`, flagged `ntm_quality=\"caution\"`, ~18% timeweighted-vs-quarteraware gap) — consensus EPS estimates disagree materially for the same hedge-driven-volatility reason."
+      ],
+      "next_earnings_date": "2026-10-20",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium — strong primary-source evidence on the guidance raise and the deleveraging, but the reverse-DCF base case depends on an analyst judgment call about a sustainable through-cycle FCF level, and 75% of 2026 volumes are unhedged",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "implied_vs_base": "below",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for EQT (not in v1_valuation_table.csv/v1_valuation.json). This dossier's own two-stage reverse DCF (WACC 9.0%, terminal growth 2.5%, FY2025 FCF-attributable-to-EQT base of $2,503M) implies market-implied 10-year FCF growth of roughly -0.4% (sensitivity -1.4% to +1.5%) off an already-elevated base — below the analyst base case of ~6%/yr. Dossier view: cheap."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.20,
+        "base": 0.07,
+        "bull": 0.20
+      },
+      "scenario_basis": "Base: FY2025 FCF/share ~$4.00 (attributable to EQT) growing ~6%/yr for 3 years (production growth + LNG/power contracts, partly offset by price normalization), exit FCF yield ~8% (unchanged), +1.3% dividend yield. Bear: gas prices revert toward the 2024 realized level (~$2.74/Mcfe), FCF/share falls to ~$1.75 by yr3, exit FCF yield rises to ~9% (de-rating). Bull: LNG/power demand accelerates, FCF/share grows to ~$6 by yr3, exit FCF yield compresses to ~7% (re-rating), +1.3% dividend."
+    },
+    "EXC": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "America's cheapest large regulated power-and-gas utility, guided to grow earnings 5-7% a year through 2029 while the market prices in less.",
+      "kill_criteria": [
+        "FY2026 adjusted operating EPS guidance is cut below the current $2.81–$2.91 range.",
+        "The BGE rate case (decision expected Q1 2027) is settled/decided at less than 70% of the requested $156M revenue increase, or with an authorized ROE more than 100bp below the 10.40% ask.",
+        "Any of Exelon's or its utility subsidiaries' senior unsecured/first-mortgage-bond credit ratings is downgraded by Moody's, S&P or Fitch.",
+        "Consolidated long-term debt grows more than 10% beyond the disclosed $41.7bn four-year capital plan without a commensurate, disclosed increase in the rate-base growth guidance.",
+        "Adjusted operating EPS growth (year-over-year) falls below 4% for two consecutive fiscal years (well below the guided 5–7% \"near top end\" range)."
+      ],
+      "key_adverse_facts": [
+        "Consolidated long-term debt grew from $41.3bn (2023) to $49.4bn (2025) to fund the capital plan, with ~$3.4bn of further equity dilution planned through 2029.",
+        "BGE filed a $156M Maryland electric distribution rate case (10.40% ROE ask) in July 2026; the decision, due Q1 2027, is a real, dated regulatory risk event.",
+        "Consensus analyst rating is 'hold' despite a ~21% gap to the mean target price ($48.71 vs $40.34) — the sell-side is not enthusiastic despite acknowledging valuation support (reason not resolved in this pass)."
+      ],
+      "data_conflicts": [
+        "SEC's bulk XBRL companyfacts feed had not yet incorporated the 2026-07-30-filed 10-Q as of this research pass (2026-09-26); Q2 2026 figures in the dossier were sourced directly from the 8-K exhibit instead of XBRL, and are marked as such rather than estimated."
+      ],
+      "next_earnings_date": "2026-11-03",
+      "horizon": "24-48 months",
+      "confidence_in_thesis": "medium-high — regulated, revenue-decoupled earnings with two consecutive quarters of guidance reaffirmation and a clean GAAP/adjusted gap, but the full Note 11 litigation/contingencies text and a Form 4 insider-pattern check were not completed in this standard-depth pass",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "implied_vs_base": "below",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for EXC (not in v1_valuation_table.csv/v1_valuation.json). This dossier's own two-stage dividend/EPS reverse DCF (cost of equity 7.3%, terminal growth 2.5%, D0=$1.68) implies market-implied 10-year growth of roughly 4.0% (sensitivity 2.6% to 6.5%) — below management's own guided 5–7% (near top end, ~6.5%) EPS/dividend growth through 2029. Dossier view: cheap."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.02,
+        "base": 0.10,
+        "bull": 0.14
+      },
+      "scenario_basis": "Base: FY2025 adjusted EPS $2.77 growing ~6%/yr (per guidance) for 3 years, flat 13.5x NTM multiple, +4.1% dividend yield. Bear: rate-case setbacks (e.g. a disappointing BGE decision) cut growth to ~3%/yr and the multiple de-rates to ~11x. Bull: EPS grows ~8%/yr (data-center-adjacent demand upside) and the multiple re-rates to ~15x."
+    },
+    "EXE": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The largest US natural-gas producer has a strong, low-debt balance sheet and buybacks, but just fired its CEO and CFO within months.",
+      "kill_criteria": [
+        "No permanent CEO is named within 12 months of the February 6, 2026 departure (i.e., by February 6, 2027).",
+        "A third C-suite or principal-officer-level departure (beyond the CEO and CFO changes already disclosed) within the next 12 months.",
+        "Consolidated net debt/adjusted EBITDAX rises above 1.5x for two consecutive quarters (vs. the current ~0.5x).",
+        "FY2026 production guidance is cut below the current 7.4–7.6 Bcfe/d range.",
+        "The Twin Eagle-linked $750M/year incremental marketing/commercial free-cash-flow target is not on a credible trajectory within 18 months of the September 16, 2026 close (i.e., by March 2028)."
+      ],
+      "key_adverse_facts": [
+        "CEO Domenic (Nick) Dell'Osso, Jr. was terminated without cause on February 6, 2026; the role is still filled on an interim basis as of September 25, 2026 (>7 months).",
+        "The CFO appointed April 6, 2026 replaced a person who was herself serving as 'Interim CFO' — an earlier, unexplained permanent-CFO departure is not identified in the filings reviewed.",
+        "VP–Controller Gregory M. Larson resigned June 23, 2026, concurrent with the CEO/CFO transitions and the pending $1.25bn Twin Eagle acquisition.",
+        "FY2025's adjusted FCF base ($1,910M) is elevated by both a strong gas-price year and peak post-merger synergy capture simultaneously, making forward comparisons structurally harder."
+      ],
+      "data_conflicts": [
+        "b1 SUE (earnings-surprise) factor score is negative (-0.39), reflecting GAAP EPS volatility from hedge mark-to-market (e.g. Q1 2026 GAAP EPS $4.81 vs Q2 2026 $2.19), not deteriorating operations.",
+        "d4 NTM P/E is flagged `ntm_quality=\"caution\"`/`fy1_dispersion_extreme` — analyst EPS estimates disagree materially for the same hedge-driven-volatility reason."
+      ],
+      "next_earnings_date": "2026-10-27",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium — strong, primary-source-confirmed balance-sheet and guidance evidence, but the leadership-turnover pattern (CEO, CFO, Controller all changed within 8 months) is a genuine, unresolved execution risk that a reverse DCF cannot price",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "implied_vs_base": "below",
+        "consistent": true,
+        "reconciliation": "No V1 systematic valuation row exists for EXE (not in v1_valuation_table.csv/v1_valuation.json). This dossier's own two-stage reverse DCF (WACC 9.5%, terminal growth 2.5%, FY2025 adjusted FCF base of $1,910M) implies market-implied 10-year FCF growth of roughly -1.6% (sensitivity -2.5% to +0.2%) off an already-elevated base — below the analyst base case of ~0-2%/yr. Dossier view: cheap, but capped at INCLUDE-SMALL by the leadership-turnover finding, not by valuation."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.27,
+        "base": 0.06,
+        "bull": 0.20
+      },
+      "scenario_basis": "Base: FY2025 adjusted FCF/share ~$7.99 roughly flat (~0-2%/yr, buybacks of ~4%/yr offsetting gas-price normalization), exit FCF yield ~9% (unchanged), +2.6% dividend yield. Bear: gas prices revert sharply and the leadership-turnover/Twin Eagle-integration risk bites, FCF/share falls to ~$4 by yr3, exit yield de-rates to ~12%. Bull: Twin Eagle synergies land early and gas prices stay firm, FCF/share grows to ~$10+, exit yield compresses to ~7%, +2.6% dividend."
+    }
+  }
+}

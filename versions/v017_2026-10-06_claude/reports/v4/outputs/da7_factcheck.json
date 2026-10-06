@@ -1,0 +1,240 @@
+{
+  "as_of": "2026-09-26",
+  "scope": "Independent adversarial data audit (DA7) of four current-holding dossiers not previously checked by this auditor: GM, LVS, RJF, HBAN. 6-8 load-bearing facts per ticker (27 total) selected for the claims most likely to move the thesis or a kill criterion if wrong: headline quarterly figures, guidance/margin track records, leverage/capital ratios, deal/merger dates and terms, litigation status, and beneficial-ownership/control disclosures. Method: primary sources only -- SEC EDGAR 8-K Ex-99.1 earnings-release exhibits, 10-Q/10-K text (including the 'Combining Balance Sheet/Income Statement Information' supplemental schedules GM files with its earnings releases), and DEF 14A proxy beneficial-ownership tables -- fetched directly from www.sec.gov and cited by accession number below. Each ticker's one-line thesis and first kill criterion were checked for consistency with the filings; results noted in the relevant fact.",
+  "facts": [
+    {
+      "ticker": "GM",
+      "claim": "Q2 2026: revenue $48,026m; GAAP operating margin 3.0%; GAAP diluted EPS $1.41; EBIT-adjusted diluted EPS $3.57; EBIT-adjusted $3.943bn",
+      "dossier_location": "GM.md §4 results table, Q2 2026 row",
+      "source": "GM 8-K Ex-99.1, Q2 2026 earnings release, accession 0001467858-26-000049, filed 2026-07-21",
+      "source_value": "\"Revenue $48,026 ... Net income (loss) attributable to stockholders $1,305 ... EBIT-adjusted $3,943 ... EPS-diluted $1.41 ... EPS-diluted-adjusted $3.57\"; Operating income $1,459m / Revenue $48,026m = 3.04% operating margin",
+      "status": "PASS",
+      "note": "Exact match on every figure in the row."
+    },
+    {
+      "ticker": "GM",
+      "claim": "Three consecutive FY2026-related guidance raises: Q3 2025 raised FY25 EBIT-adj to $12.0-13.0bn (from $10.0-12.5bn); Q1 2026 raised FY26 to $13.5-15.5bn EBIT-adj / $11.50-13.50 adj. EPS (tariff cut to $2.5-3.5bn); Q2 2026 raised again to $14.0-16.0bn EBIT-adj / $12.00-14.00 adj. EPS / $9.5-11.5bn adj. auto FCF",
+      "dossier_location": "GM.md §5 guidance track record",
+      "source": "GM 8-K Ex-99.1 releases: Q3 2025 (accession 0001467858-25-000141, filed 2025-10-21), Q1 2026 (accession 0001467858-26-000033, filed 2026-04-28), Q2 2026 (accession 0001467858-26-000049, filed 2026-07-21)",
+      "source_value": "Q3'25: \"EBIT-adjusted $12.0 billion - $13.0 billion [updated] / $10.0 billion - $12.5 billion [previous]\"; Q1'26 release: \"EBIT-adjusted $13.5B-$15.5B ... EPS-diluted-adjusted $11.50-$13.50 ... gross tariff costs $2.5B-$3.5B (lowered from $3.0B-$4.0B)\"; Q2'26: \"EBIT-adjusted $14.0 billion - $16.0 billion / $13.5 billion - $15.5 billion [previous]\"",
+      "status": "PASS",
+      "note": "All three raises confirmed exactly, including the tariff-estimate cut tied to the Supreme Court ruling."
+    },
+    {
+      "ticker": "GM",
+      "claim": "\"GM's 10-Q ... shows Automotive-only debt of just $15.98bn against Automotive cash + marketable securities of $24.7bn -- i.e., Automotive is net-cash positive by roughly $8.7bn\" (used as the central rebuttal to V1's 'excessive' valuation flag and echoed in the thesis paragraph and kill criterion 2)",
+      "dossier_location": "GM.md §6 (balance-sheet nuance), §7 (valuation reconciliation), §1 (verdict paragraph, 'automotive-net-cash economics'), §9 kill criterion 2",
+      "source": "GM Q2 2026 8-K Ex-99.1 'Combining Balance Sheet Information' supplemental schedule, accession 0001467858-26-000049, as of June 30, 2026",
+      "source_value": "Automotive column: Cash and cash equivalents $15,147m; Marketable debt securities $4,503m (Automotive-only cash+securities = $19,650m, not $24,719m). The $24.7bn figure in the dossier is the CONSOLIDATED total (Automotive $15,147m + GM Financial $4,987m cash, and $4,503m + $82m securities = $20,134m + $4,585m = $24,719m) -- it includes GM Financial's own cash, which is matched by GM Financial's own $111.7bn of captive-finance debt, not available to the Automotive segment.",
+      "status": "FAIL",
+      "note": "Automotive-only debt of $15.98bn (Automotive LT debt $15,465m + combined ST debt $514m) is correctly stated, but Automotive-only cash+securities is $19.65bn, not $24.7bn -- true automotive net cash is approximately $3.67bn, not the ~$8.7bn the dossier states in three places (verdict paragraph, §6, §7 valuation rebuttal) and uses as its central counter-argument to V1's 'excessive' tag. The consolidated figure was mistakenly used in place of the automotive-segment figure GM discloses in the same exhibit."
+    },
+    {
+      "ticker": "GM",
+      "claim": "Q1 2026 EBIT-adjusted $4.300bn (used in the TTM adjusted-EBIT sum of $14.42bn / 7.8% margin supporting the reverse-DCF rebuttal)",
+      "dossier_location": "GM.md §4 results table (Q1 2026 row) and §7 (TTM adjusted-EBIT reconciliation)",
+      "source": "GM Q1 2026 8-K Ex-99.1, accession 0001467858-26-000033, 'reconciles Net income ... to EBIT-adjusted' table",
+      "source_value": "\"EBIT-adjusted $4,253\" (three months ended March 31, 2026)",
+      "status": "MINOR",
+      "note": "Actual Q1 2026 EBIT-adjusted is $4,253m, not $4,300m as tabulated (a $47m / 1.1% overstatement). The dossier's Q4 2025 cell ($2.797bn, described as 'implied') is also off versus the actual reported figure ($2,843m, directly disclosed in the Q4/FY2025 release, not merely implied) -- but the two individual errors happen to roughly cancel (correct TTM sum: 3,376+2,843+4,253+3,943=$14,415m vs the dossier's stated $14.42bn), so the headline TTM/margin conclusion in §7 is not materially affected even though two of its four input cells are individually wrong."
+    },
+    {
+      "ticker": "GM",
+      "claim": "EV strategic-realignment and China-restructuring charges: Q4 2025 >$7.2bn; Q1 2026 $1.077bn EV strategic realignment; Q2 2026 $2.279bn EV strategic realignment; China equity income $83m in Q2 2026 (referenced in kill criterion 5)",
+      "dossier_location": "GM.md §6 (charges), §9 kill criterion 5",
+      "source": "GM Q4/FY2025 8-K Ex-99.1 (accession 0001467858-26-000011) and Q2 2026 8-K Ex-99.1 (accession 0001467858-26-000049) reconciliation tables",
+      "source_value": "Q4'25 release: \"net income was reduced by more than $7.2 billion in special charges\"; Q2'26 reconciliation table: \"EV strategic realignment 2,279 [Q2'26] ... 3,356 [six months 2026]\" (implying Q1'26 = $1,077m by subtraction, matching the six-months-2026 total exactly); \"China equity income (loss) $83\" (three months ended June 30, 2026)",
+      "status": "PASS",
+      "note": "All four figures match exactly, including the derived Q1 2026 EV-charge figure."
+    },
+    {
+      "ticker": "GM",
+      "claim": "Buybacks ~$2.8bn in H1 2026 under a $6bn authorization approved January 2026; dividend $0.18/share/quarter, raised from $0.15",
+      "dossier_location": "GM.md §6 (share count/capital return)",
+      "source": "GM Q4/FY2025 8-K Ex-99.1, accession 0001467858-26-000011, filed 2026-01-27, and Q2 2026 8-K Ex-99.1 cash-flow schedule",
+      "source_value": "Jan-2026 release: \"Board of Directors has approved a $0.03 per share increase in the quarterly common stock dividend rate to $0.18 per share ... Board has approved a new $6.0 billion share repurchase authorization\"; Q2'26 combining cash-flow statement, Automotive column, six months ended June 30 2026: \"Payment to purchase common stock (2,800)\"",
+      "status": "PASS",
+      "note": "Exact match on all figures, including the $0.03 (i.e., $0.15→$0.18) increase and the new $6.0bn authorization date."
+    },
+    {
+      "ticker": "GM",
+      "claim": "Automotive-only diluted share count 910m (Q2 2026), down from 995m at Dec-2024; 904m shares outstanding at Dec 31, 2025 also disclosed",
+      "dossier_location": "GM.md §6",
+      "source": "GM Q2 2026 8-K Ex-99.1 EPS table (accession 0001467858-26-000049) and Q4/FY2025 8-K Ex-99.1 (accession 0001467858-26-000011)",
+      "source_value": "\"Weighted-average common shares outstanding – diluted 910\" (Q2 2026); \"As of December 31, 2025, the company had 904 million shares outstanding, down from 995 million at the end of 2024\"",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "LVS",
+      "claim": "Q2 2026: net revenue $3,154m; operating income $618m (19.6% margin); net income attributable to LVS $346m; diluted EPS $0.53",
+      "dossier_location": "LVS.md §4 results table, Q2-26 row",
+      "source": "LVS 10-Q, Q2 2026, accession 0001300514-26-000085, filed 2026-07-24, Condensed Consolidated Statements of Operations",
+      "source_value": "\"Net revenues $3,154 ... Operating income 618 ... Net income attributable to Las Vegas Sands Corp. $346 ... Diluted $0.53\" (three months ended June 30, 2026)",
+      "status": "PASS",
+      "note": "Exact match on all four figures. Note: the dossier's §4 footnote describes this net-income figure as 'tagged in the consolidated XBRL NetIncomeLoss concept (includes the ~30% Sands China minority interest)' -- this description is actually backwards: the tabulated $346m (and the other quarters in the table) is the LVS-attributable figure (net of NCI), not the $373m total-consolidated NetIncomeLoss-with-NCI figure. The numbers used are correct and reconcile exactly to the company's own reported EPS; only the footnote's methodology description is wrong. Flagged as a data-description error, not a numeric one."
+    },
+    {
+      "ticker": "LVS",
+      "claim": "Q1 2026: net revenue $3,585m; operating income $904m (25.2% margin); net income attributable to LVS $567m; diluted EPS $0.85",
+      "dossier_location": "LVS.md §4 results table, Q1-26 row",
+      "source": "LVS 10-Q, Q1 2026, accession 0001300514-26-000046, filed 2026-04-24, Condensed Consolidated Statements of Operations",
+      "source_value": "\"Net revenues $3,585 ... Operating income 904 ... Net income attributable to Las Vegas Sands Corp. $567 ... Diluted $0.85\" (three months ended March 31, 2026)",
+      "status": "PASS",
+      "note": "Exact match on all four figures."
+    },
+    {
+      "ticker": "LVS",
+      "claim": "Net debt at 30-Jun-2026: long-term debt & capital leases $13,694m + current portion $1,568m - cash $3,376m = $11,886m",
+      "dossier_location": "LVS.md §6 (earnings quality & balance sheet)",
+      "source": "LVS 10-Q, Q2 2026, accession 0001300514-26-000085, Condensed Consolidated Balance Sheets",
+      "source_value": "\"Cash and cash equivalents $3,376 ... Current maturities of debt 1,568 ... Debt 13,694\" (June 30, 2026); 13,694+1,568-3,376=11,886",
+      "status": "PASS",
+      "note": "Exact match to the dollar; also confirms stockholders' equity attributable to LVS of $581m and common shares outstanding of 648m at June 30, 2026, both cited elsewhere in the dossier."
+    },
+    {
+      "ticker": "LVS",
+      "claim": "Macau concession expires 31-Dec-2032; VML has committed to invest at least 35.84bn patacas (~$4.47bn) under the current concession, of which the non-gaming portion must be invested by December 2032",
+      "dossier_location": "LVS.md §9 bear case, §10 catalysts, §12 red-flag scan",
+      "source": "LVS 10-Q, Q2 2026, accession 0001300514-26-000085, Commitments and Contingencies note",
+      "source_value": "\"a 10-year concession agreement ... which expires on December 31, 2032\"; \"VML has committed to invest, or cause to be invested, at least 35.84 billion patacas (approximately $4.44 billion at exchange rates in effect on June 30, 2026). Of this total, 33.39 billion patacas (approximately $4.13 billion) must be invested in non-gaming projects. These investments must be accomplished by December 2032.\"",
+      "status": "MINOR",
+      "note": "Concession expiry date and the 35.84bn-patacas commitment figure are exact matches. The USD conversion is $4.44bn per the 10-Q's own June-2026 exchange rate, versus the dossier's ~$4.47bn -- an immaterial ($30m, <1%) FX-rate/rounding difference, not a substantive error."
+    },
+    {
+      "ticker": "LVS",
+      "claim": "Macau litigation matter reached a final judgment in LVS/Sands China's favour on 13-Mar-2026",
+      "dossier_location": "LVS.md §11 catalysts ('resolved, not a forward catalyst'), §12 red-flag scan",
+      "source": "LVS 10-Q, Q2 2026, accession 0001300514-26-000085, Commitments and Contingencies note (AAEC litigation)",
+      "source_value": "\"a judgment in favor of the Defendants became final on March 4, 2026, and the Macao Second Instance Court certified that final judgment on March 13, 2026. ... The final judgment resolves all issues concerning the merits of Plaintiff's claim.\"",
+      "status": "MINOR",
+      "note": "The judgment itself 'became final' on March 4, 2026; March 13, 2026 is the date the appellate court 'certified' that final judgment, per the filing's own wording. The dossier collapses these into a single '13-Mar-2026 final judgment' date. The substance (resolved, in the company's favor, no ongoing exposure) is correct; only the precise date attribution is imprecise."
+    },
+    {
+      "ticker": "LVS",
+      "claim": "H1 2026 buybacks $740m Q1 + $787m Q2 (H1 total $1,542m); dividend payments $400m YTD",
+      "dossier_location": "LVS.md §6 (capital return)",
+      "source": "LVS 10-Q, Q2 2026, accession 0001300514-26-000085, cash-flow statement and share-repurchase note, and MD&A",
+      "source_value": "Cash-flow statement: \"Repurchase of common stock (1,541)\" (six months ended June 30, 2026); Share Repurchase note table: \"Total cost of shares repurchased $1,542\" (six months 2026); MD&A: \"the repurchase of $1.53 billion (exclusive of commissions and excise tax) of our common stock and dividend payments totaling $400 million\"",
+      "status": "PASS",
+      "note": "H1 total ($1,542m) and dividends ($400m YTD) both match exactly; the Q1/Q2 split was not separately broken out in the primary source in this pass but the aggregate reconciles."
+    },
+    {
+      "ticker": "LVS",
+      "claim": "The Adelson family (Dr. Miriam Adelson, Irwin Chafetz and related trusts) beneficially owns/controls approximately 59.7% of voting power, per a Schedule 13D/A filed July 2026",
+      "dossier_location": "LVS.md §6 (governance/control), §9 bear case, §12 red-flag scan, §13 source 6",
+      "source": "LVS DEF 14A (2026 Proxy Statement), accession 0001300514-26-000031, filed 2026-04-01, 'Security Ownership of Certain Beneficial Owners and Management'; EDGAR SC 13D/A filing history for CIK 0001300514",
+      "source_value": "\"the Adelson family members beneficially owning 386,657,840 shares representing approximately 58.2% of the Company's outstanding Common Stock as of March 16, 2026\"; the 'group' of Dr. Adelson, Mr. Chafetz and the two Sheldon G. Adelson 2007 trusts \"collectively beneficially owned 386,728,789 shares\"; no Schedule 13D/A for LVS was filed in 2026 -- EDGAR's most recent SC 13D/A for CIK 0001300514 is dated 2023-12-05.",
+      "status": "FAIL",
+      "note": "The dossier's cited source (a 'July 2026 Schedule 13D/A') does not exist in EDGAR's filing history for this CIK. The correct, current primary source is the 2026 DEF 14A (filed 2026-04-01, ownership as of 2026-03-16), which discloses Adelson-family beneficial ownership of approximately 58.2% of outstanding common stock (~1.5 points below the dossier's stated 59.7%). The qualitative conclusion -- LVS is a controlled company with the Adelson family holding 'more than 50 percent of the voting power,' per the proxy's own language -- is unaffected, but the specific percentage and its cited source are both wrong."
+    },
+    {
+      "ticker": "RJF",
+      "claim": "Balance sheet at 2026-06-30: total assets $94.24B, stockholders' equity $12.70B, cash $9.98B",
+      "dossier_location": "RJF.md §6 (balance sheet)",
+      "source": "RJF 10-Q, Q3 FY2026, accession 0000720005-26-000070, filed 2026-08-05, Condensed Consolidated Statements of Financial Condition",
+      "source_value": "\"Total assets $94,237\"; \"Total equity attributable to Raymond James Financial, Inc. 12,699\"; \"Cash and cash equivalents $9,977\" (June 30, 2026)",
+      "status": "PASS",
+      "note": "Exact match on all three figures (total liabilities also confirmed at $81,454m, consistent with the dossier's $81.45B)."
+    },
+    {
+      "ticker": "RJF",
+      "claim": "Q3 FY26 (three months ended 2026-06-30): GAAP diluted EPS $3.01, adjusted diluted EPS $3.14, adjusted pre-tax margin 19.9% (\"in line with\" the ~20% target); total revenues $4,362m, net revenues ~$3.93B; revenue/pretax income growth vs prior year",
+      "dossier_location": "RJF.md §4 (Q3 FY26 narrative), §5 (guidance/margin track record)",
+      "source": "RJF 10-Q, Q3 FY2026, accession 0000720005-26-000070, Consolidated Statements of Income and non-GAAP reconciliation tables",
+      "source_value": "\"Diluted $3.01 $2.12 42%\"; \"Adjusted earnings per diluted share were $3.14, an increase of 44%\"; \"Adjusted pre-tax margin 19.9% 17.1%\"; \"Total revenues 4,362 3,842\"; \"Net revenues 3,928 3,398\"",
+      "status": "PASS",
+      "note": "All figures match; adjusted pre-tax margin of 19.9% for Q3 FY26 confirms the dossier's guidance-track-record table (20.0% Q1 / 19.7% Q2 / 19.9% Q3 -- Q1/Q2 not independently re-pulled from their own 10-Qs this pass, flagged as a scope limitation, not a discrepancy)."
+    },
+    {
+      "ticker": "RJF",
+      "claim": "Consolidated cash-sweep class-action litigation: a March 2026 order dismissed some claims; a class-certification motion was filed 2026-05-21; the case remains pending with two named plaintiffs after a July 2026 partial voluntary dismissal",
+      "dossier_location": "RJF.md §8 bear case (2), §9 kill criterion 4, §10 catalysts, §11 red-flag scan",
+      "source": "RJF 10-Q, Q3 FY2026, accession 0000720005-26-000070, Legal Proceedings note",
+      "source_value": "\"On March 27, 2026, the federal district court entered an order dismissing some of the claims asserted in the consolidated case. On May 21, 2026, the plaintiffs filed a motion for class certification. On July 16, 2026, the federal district court granted a motion filed by two named plaintiffs to voluntarily dismiss their claims without prejudice. As a result, the case remains pending with two named plaintiffs.\"",
+      "status": "PASS",
+      "note": "Exact match on every date and procedural detail, including the class-certification filing date (2026-05-21) the dossier separately cites in §10."
+    },
+    {
+      "ticker": "RJF",
+      "claim": "Dividend $2.16/share annualized",
+      "dossier_location": "RJF.md §6 (capital return)",
+      "source": "RJF 10-Q, Q3 FY2026, accession 0000720005-26-000070, Common stock dividends table",
+      "source_value": "\"Dividends per common share - declared $0.54\" (three months ended June 30, 2026); $0.54 x 4 = $2.16",
+      "status": "PASS",
+      "note": "Exact match on the annualized figure."
+    },
+    {
+      "ticker": "RJF",
+      "claim": "\"Raymond James Bank capital (per company disclosures)... total capital ratio ~22.5-24.3% and Tier 1 leverage ratio ~11.7-12.7% through FY2026 quarters\"",
+      "dossier_location": "RJF.md §6 (earnings quality & balance sheet), feeding kill criterion 3",
+      "source": "RJF 10-Q, Q3 FY2026, accession 0000720005-26-000070, Regulatory Capital Requirements note (two separate tables: 'RJF' and 'Raymond James Bank')",
+      "source_value": "RJF (consolidated holding company) table: \"Tier 1 leverage ... 11.7% $10,651 [Jun-26] 13.1% $11,156 [Sep-25] ... Total capital 22.5% ...\"; Raymond James Bank (the FDIC-insured subsidiary) table, separately: \"Tier 1 leverage 8.0% $3,612 [Jun-26] 8.0% $3,434 [Sep-25] ... Total capital 16.4% $3,911 [Jun-26] 15.2% [Sep-25]\"",
+      "status": "FAIL",
+      "note": "The 11.7-12.7% Tier-1-leverage and 22.5-24.3% total-capital figures the dossier attributes to 'Raymond James Bank' are actually RJF's CONSOLIDATED holding-company ratios. Raymond James Bank's own standalone capital ratios are materially lower: total capital 16.4% (Jun-26) / 15.2% (Sep-25), Tier 1 leverage 8.0% (both periods). This directly affects kill criterion 3 ('Raymond James Bank's total capital ratio falls below 15%'): the dossier describes '22.5%+, a large buffer,' when the bank's actual standalone total capital ratio (16.4%, up from 15.2% a year ago) sits only about 1.4-1.2 points above the stated 15% kill threshold -- a much thinner margin of safety than represented."
+    },
+    {
+      "ticker": "RJF",
+      "claim": "\"Parent-level long-term debt is small (the DebtLongtermAndShorttermCombinedAmount XBRL tag shows only $0.7-0.95B across the last two quarters)\" -- cited as evidence of a conservative funding structure (bull case 2) and underpinning kill criterion 5 ('Parent-level debt rises above $5B... current ~$0.7-0.95B')",
+      "dossier_location": "RJF.md §6 (balance sheet), §8 bull case (2), §9 kill criterion 5",
+      "source": "RJF 10-Q, Q3 FY2026, accession 0000720005-26-000070, Condensed Consolidated Statements of Financial Condition and Senior Notes Payable note",
+      "source_value": "Balance sheet: \"Other borrowings 950 700\" AND, on the same statement, a separate line \"Senior notes payable 3,522 3,520\"; Senior Notes Payable note: \"At June 30, 2026, we had aggregate outstanding senior notes payable of $3.52 billion\"",
+      "status": "FAIL",
+      "note": "The dossier's $0.7-0.95B figure only captures the 'Other borrowings' balance-sheet line and omits 'Senior notes payable' ($3.52bn at Jun-2026, $3.52bn at Sep-2025) entirely. Actual total parent-level debt (Other borrowings + Senior notes payable) is approximately $4.47bn, not $0.7-0.95B -- more than 4x the stated figure, and materially closer to the $5B kill-criterion 5 threshold than the dossier's 'conservative funding structure' bull-case point represents."
+    },
+    {
+      "ticker": "HBAN",
+      "claim": "Five-quarter GAAP results table (Q2'25-Q2'26): net income $536/629/519/523/727m; diluted EPS $0.34/0.41/0.30/0.25/0.33; ROA 1.04/1.19/0.93/0.81/1.02%; ROTCE 16.1/17.8/12.7/11.6/15.1%; NIM 3.11/3.13/3.15/3.24/3.21%; efficiency ratio 59.0/57.4/64.2/67.2/61.5%; TBVPS $9.13/9.54/9.89/9.55/9.65",
+      "dossier_location": "HBAN.md §4 results table",
+      "source": "HBAN 8-K Ex-99.1, Q2 2026 earnings release, accession 0000049196-26-000060, filed 2026-07-23, five-quarter summary table",
+      "source_value": "\"Net income attributable to Huntington $727 $523 $519 $629 $536 ... Diluted earnings per common share 0.33 0.25 0.30 0.41 0.34 ... Return on average assets 1.02% 0.81% 0.93% 1.19% 1.04% ... Return on average tangible common equity 15.1 11.6 12.7 17.8 16.1 ... Net interest margin 3.21 3.24 3.15 3.13 3.11 ... Efficiency ratio 61.5 67.2 64.2 57.4 59.0 ... Tangible book value per common share $9.65 $9.55 $9.89 $9.54 $9.13\"",
+      "status": "PASS",
+      "note": "Exact match on every figure in the entire five-quarter table -- this is the cleanest, most precisely transcribed table found across all four dossiers in this audit."
+    },
+    {
+      "ticker": "HBAN",
+      "claim": "Q2 2026 adjusted EPS $0.39 (GAAP $0.33 plus $152mm pre-tax acquisition-related Notable Items); Q1 2026 adjusted EPS $0.37 (i.e., adjusted EPS up $0.02 sequentially)",
+      "dossier_location": "HBAN.md §4 narrative, §6 (GAAP vs adjusted)",
+      "source": "HBAN 8-K Ex-99.1, Q2 2026, accession 0000049196-26-000060, non-GAAP reconciliation table",
+      "source_value": "\"Net income and EPS (GAAP) $727 $0.33 • Acquisition-related expenses $(152) (116) (0.06) Adjusted net income and EPS (non-GAAP) $843 $0.39\" (Q2 2026); prior-quarter reconciliation shows \"Adjusted net income and EPS (non-GAAP) $739 $0.37\" (Q1 2026)",
+      "status": "PASS",
+      "note": "Exact match on all figures, including the $152mm Notable Items amount and the $0.02 sequential adjusted-EPS increase."
+    },
+    {
+      "ticker": "HBAN",
+      "claim": "CET1 10.0% (Q2 2026) vs 10.2% (Q1 2026); Adjusted CET1 (incl. AOCI ex cash-flow hedges) 9.0%, down from 9.2%",
+      "dossier_location": "HBAN.md §6 (capital)",
+      "source": "HBAN 8-K Ex-99.1, Q2 2026, accession 0000049196-26-000060",
+      "source_value": "\"Common Equity Tier 1 (CET1) risk-based capital ratio was 10.0%, at June 30, 2026, compared to 10.2% at the prior quarter end. Adjusted Common Equity Tier 1, including the impact of AOCI, excluding cash flow hedges, was 9.0%, compared to 9.2% at the prior quarter end.\"",
+      "status": "PASS",
+      "note": "Exact match on all four figures."
+    },
+    {
+      "ticker": "HBAN",
+      "claim": "Buybacks resumed at scale: $159mm in Q2 2026, $309mm year-to-date, ~19mm shares",
+      "dossier_location": "HBAN.md §3 (durability), §6 (share count & capital returns), §8 bull case",
+      "source": "HBAN 8-K Ex-99.1, Q2 2026, accession 0000049196-26-000060",
+      "source_value": "\"Repurchased $159 million of common shares in the second quarter, and $309 million of common shares year-to-date, representing approximately 19 million shares repurchased year-to-date\"",
+      "status": "PASS",
+      "note": "Exact match on all three figures."
+    },
+    {
+      "ticker": "HBAN",
+      "claim": "Nonperforming-asset ratio rose for two straight quarters (0.72%→0.85%) even as net charge-offs stayed low (0.26%→0.25%); allowance for credit losses $3.4bn / 1.78% of loans",
+      "dossier_location": "HBAN.md §4 (table note), §6 (credit), §9 kill criterion 1 and 4",
+      "source": "HBAN 8-K Ex-99.1, Q2 2026, accession 0000049196-26-000060",
+      "source_value": "\"Nonperforming asset ratio of 0.85% at quarter end, 13 basis points higher than the prior quarter\" (i.e., Q1 2026 = 0.72%); \"Net charge-offs of 0.25% ... 1 basis point lower than the prior quarter\" (i.e., Q1 2026 = 0.26%); \"Allowance for credit losses (ACL) of $3.4 billion, or 1.78% of [loans]\"",
+      "status": "PASS",
+      "note": "Exact match on all figures, confirming both the NPA-drift pattern and the ACL coverage ratio cited."
+    },
+    {
+      "ticker": "HBAN",
+      "claim": "\"Huntington ... closed two acquisitions within weeks of each other in early 2026 -- Veritex Holdings (Texas, systems converted mid-January 2026) and Cadence Bank (Texas/South, closed 1 Feb 2026, systems converted mid-June 2026)\"",
+      "dossier_location": "HBAN.md §2 (business description), §3 (durability/bull thesis vs FITB), §8 bull case (1)",
+      "source": "HBAN 8-K Ex-99.1, Q2 2026, accession 0000049196-26-000060, MD&A",
+      "source_value": "\"include the impact from the Cadence acquisition, which was completed on February 1, 2026, and the Veritex acquisition, which was completed on October 20, 2025\"",
+      "status": "FAIL",
+      "note": "The Veritex acquisition closed October 20, 2025 -- roughly 3.5 months before Cadence closed (February 1, 2026) -- not 'within weeks of each other in early 2026' as the dossier's business-description paragraph states. The dossier does correctly cite Veritex's systems-conversion date (mid-January 2026) separately, but conflates that operational milestone with the deal's actual closing date in its framing sentence, overstating how tightly clustered the two acquisitions were. Does not change the (correct) claim that both systems conversions are now complete."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "agent_id": "f10",
+  "as_of": "2026-09-25",
+  "generated_utc": "2026-09-26",
+  "companies": {
+    "SWK": {
+      "verdict": "INCLUDE-SMALL",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "Tools & Outdoor organic volume negative for two more consecutive quarters",
+        "Net debt/adjusted EBITDA fails to decline from FY2025 level despite CAM divestiture proceeds",
+        "Adjusted gross margin excluding the tariff-refund benefit contracts YoY",
+        "Dividend increase paused (63-year streak at risk) or payout > 90% of adjusted EPS",
+        "Another full-year guidance cut"
+      ],
+      "key_adverse_facts": [
+        "Confirmed: ~250bp of Q2 FY26 gross/adjusted-gross-margin gain and ~$0.17 of adjusted EPS is a one-off IEEPA tariff refund, not operating improvement (verifies prior v2 note)",
+        "Q2 FY26 GAAP EPS ($2.33) exceeds Adjusted EPS ($1.57) due to a $273.7m one-off gain on the CAM divestiture sitting inside GAAP only",
+        "FY2025 guidance was CUT mid-year (GAAP EPS base case $3.45+/-0.10 -> $2.55-$2.70) on a $169m Q3 non-cash impairment; three subsequent raises are traceable mainly to the CAM divestiture (GAAP) and the tariff refund (both GAAP and adjusted), not organic acceleration",
+        "Organic volume still negative in recent quarters (Q4 FY25 volume -7%; Q1 FY26 Tools & Outdoor organic -2%)",
+        "Dividend payout ratio ~81% of GAAP EPS (D4 snapshot); FY2025 dividends (~$500m) were 73% of FCF",
+        "Global Cost Reduction Program reached its $2.1bn run-rate savings target in Q4 FY25 and is being wound down into 'continuous improvement' -- the easy one-time cost-out phase is ending"
+      ],
+      "data_conflicts": [
+        "V1 verdict 'attractive' (score 0.75) is built on a peer set (DOV/FTV/HUBB/IEX/ITW) that is an imperfect match for a branded tools/retail business (true peer Techtronic Industries is not in the set)",
+        "V1's revenue/EBIT-anchored reverse DCF implies -7.6%/10y growth priced in; an independent FCF-anchored re-run via scripts/valuation.py implies only +0.7%/10y -- the two methods disagree materially on how pessimistic the price actually is",
+        "V1 itself flags that the base-case 3y annualised return (+18.1%) exceeds the Street's own 12-month high target ($110), a modelling caution rather than a confirmation"
+      ],
+      "next_earnings_date": "2026-11-04",
+      "confidence_in_thesis": "medium (durable cost-out and a genuine valuation trough are real, but the most recent quarter's headline improvement is disproportionately one-off-driven, and organic volume has not yet turned)"
+    },
+    "HAS": {
+      "verdict": "INCLUDE",
+      "horizon": "18-36 months",
+      "kill_criteria": [
+        "Wizards of the Coast & Digital Gaming revenue growth decelerates below ~10% YoY for two consecutive quarters",
+        "Consumer Products operating margin fails to turn positive in the seasonally strong Q4",
+        "Cumulative unauthorized-network-access costs or a disclosed regulatory/privacy penalty exceed ~$50m",
+        "Full-year guidance is cut (breaking the current positive streak)",
+        "Any goodwill/intangible impairment inside Wizards of the Coast itself (as opposed to Consumer Products or Digital Games)"
+      ],
+      "key_adverse_facts": [
+        "FY2025 GAAP net loss of $2.30/share (vs Adjusted EPS +$5.54) driven by a $1,021.9m non-cash Consumer Products goodwill impairment 'triggered by the implementation of tariffs' -- confirms real, balance-sheet-level tariff damage, not just a margin headwind",
+        "Consumer Products posted a Q2 FY26 GAAP operating loss of $15m (adjusted -$8m) citing incremental tariff expense -- the toy segment is structurally weak even in a good quarter",
+        "A second impairment recurred in Q2 FY26: $56m against the Digital Games portfolio, inside the otherwise-strong Wizards segment",
+        "Unresolved cybersecurity incident (unauthorized network access, identified late March 2026): ~$25m revenue impact + $11m direct cost in Q2 FY26 alone, 'additional costs' expected in future periods, no insurance recovery recognized yet -- open-ended, unquantified",
+        "Profit growth is concentrated in a single IP (Magic: The Gathering)"
+      ],
+      "data_conflicts": [
+        "b1's GICS sub-industry peer bucket ('Leisure Products') contains only HAS itself (peer_n=1) -- V1's peer-relative valuation read is not meaningful; no true GICS peer (e.g. Mattel) was pulled",
+        "b1 momentum (15.9th pct) and earnings-momentum/SUE (10.8th pct) factor scores are weak, likely distorted by the FY2025 GAAP-loss swing corrupting trailing-return/surprise inputs, rather than reflecting deteriorating fundamentals",
+        "Price ($88.09) sits below the Street's own 12-month low target ($90), which V1 flags explicitly as a caution"
+      ],
+      "next_earnings_date": "2026-10-22",
+      "confidence_in_thesis": "medium-high (guidance raised or held in 3 of the last 4 releases including through an active cyberattack, and WotC's growth/margin trend is well evidenced; tempered by the open-ended cyber cost and single-IP concentration)"
+    },
+    "MGM": {
+      "verdict": "WATCH",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "Consolidated Adjusted EBITDA declines YoY for a third consecutive quarter (Q3 FY26)",
+        "MGM China Segment Adjusted EBITDAR declines further or Macau GGR trends turn negative for two more quarters",
+        "Rent coverage (EBITDAR/triple-net rent) falls below ~1.8x",
+        "Las Vegas Strip Resorts YoY growth breaks (the one clearly improving segment rolls over)",
+        "Any further goodwill/asset impairment in Regional Operations following the Northfield Park disposition precedent"
+      ],
+      "key_adverse_facts": [
+        "Confirmed via MGM's own Q2 FY26 8-K (not just the D4 headline file): the $48.30/share unsolicited proposal from 'People Incorporated' (2026-06-01) and its withdrawal (2026-09-24) are both real, primary-source-verified events",
+        "Event-study on daily closes: MGM +16.1% on the bid-report day and -11.0% on the withdrawal day (both idiosyncratic vs LVS/WYNN/CZR/SPY) -- the deal round-tripped roughly 10-13 points and nets close to a wash; ~20-23 of the cumulative -25.4% four-month decline is shared with Macau-exposed peers LVS (-22.9%) and WYNN (-19.9%), while Vegas/regional-only peer CZR is UP 1.9% over the same window -- points to a Macau-sector re-rating as the dominant driver, not primarily the failed deal",
+        "Consolidated Adjusted EBITDA fell YoY in both Q1 FY26 (-9%) and Q2 FY26 (-6%) even as GAAP net income improved sharply (Q2 FY26 $292.4m vs $49.0m PY) -- GAAP headline is flattered by one-off disposition/property gains while the operating trend is negative",
+        "MGM China Segment Adjusted EBITDAR fell 15% YoY in Q2 FY26 despite flat revenue and management's 'market share gains' framing",
+        "Operating lease liabilities of $23.8bn (triple-net master leases, principally VICI) dwarf conventional net debt of $3.5bn; rent coverage (EBITDAR+rent)/rent is only ~2.1x -- lease-adjusted leverage (~5.9x EBITDAR) is roughly 4 turns higher than the conventional net-debt/EBITDA read (~1.5x)",
+        "MGM issues no formal quantitative EPS/revenue/EBITDA guidance in any of the last five releases reviewed"
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv shows gp_a (gross-profit/assets) blank for MGM and n_Q=6 vs 7 for SWK/HAS -- the Quality family score rests on incomplete inputs, plausibly because the lease-heavy balance sheet does not map onto a gross-profit/assets construct",
+        "V1's EV ($11.92bn) excludes the $23.8bn operating lease liability, overstating cheapness on a lease-adjusted basis",
+        "V1's Street-target-based 'attractive' framing (target range $40-57) very likely predates the 2026-09-24 deal withdrawal and the Q2 FY26 Macau/regional EBITDAR miss and should be treated as stale",
+        "GAAP EPS trend (improving) directly contradicts the Adjusted-EBITDA trend (declining for two quarters)",
+        "b1's momentum/SUE inputs are likely stale relative to the -11% single-day move on 2026-09-24 and will not update until the next rebalance"
+      ],
+      "next_earnings_date": "2026-10-28",
+      "confidence_in_thesis": "low-medium (Las Vegas Strip is genuinely improving, but Regional Operations and Macau are both shrinking on a profit basis, deal speculation has fully unwound, and lease-adjusted leverage is materially higher than the naive ratio suggests)"
+    }
+  },
+  "methodology_notes": {
+    "primary_sources": "SEC EDGAR (data.sec.gov submissions + XBRL companyfacts APIs; 10-Q/10-K and 8-K Item 2.02 Ex-99.1/99.2 press releases, cited by accession number in each dossier). Quant context: v4/data/b1_live_scores.csv, v4/data/d4_live_snapshot.parquet, v4/data/d4_corporate_events.csv, v4/outputs/v1_valuation_table.csv and v1_valuation.json. MGM event study used v4/data/d2_close.parquet (MGM/LVS/WYNN/CZR/SPY daily closes).",
+    "scripts_run": "scripts/valuation.py run successfully for all three tickers (EV bridge reproduced V1 exactly for all three; independent FCF-anchored reverse DCF computed and compared to V1's revenue/EBIT-anchored figure in each dossier). scripts/lint_report.py run on all three finished dossiers; all three now PASS-WITH-WARNINGS (0 errors after adding a disclaimer + data-quality note; remaining warnings are non-mandatory: a formal thesis-invalidation keyword and, for MGM, four intentionally-blank not-disclosed table cells).",
+    "scripts_not_completed": "scripts/verify_data.py and scripts/ratios.py were not run to completion in this pass given the ~30-minute recovery time-box; sourcing/GAAP-vs-adjusted verification was instead done manually against primary filings (cross-checks noted explicitly in each dossier, e.g. MGM net debt reconciling exactly to D3/V1). This is disclosed rather than silently skipped.",
+    "not_reviewed_this_pass": "Insider Form 4 selling patterns, full litigation dockets, and a line-by-line auditor's-report/CARO-equivalent read were not completed for any of the three names in the available time; flagged as open items in each dossier rather than asserted clean."
+  }
+}

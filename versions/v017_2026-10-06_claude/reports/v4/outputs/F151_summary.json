@@ -1,0 +1,123 @@
+{
+ "agent": "F151",
+ "as_of": "2026-09-25",
+ "tickers": {
+  "NOC": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "America's B-21 bomber and Sentinel missile builder, with record orders and steady cash, priced fairly but hurt by repeat cost overruns on fixed-price work.",
+   "horizon": "12-36 months",
+   "kill_criteria": [
+    "Segment operating margin (consolidated, press-release \"Segment operating margin rate\") below 9.5% in any quarter of H2 2026, versus 10.6% in Q2'26.",
+    "FY2026 adjusted free cash flow guidance cut below the $3,100m low end, or FY2026 actual below $3,000m.",
+    "A new reach-forward loss or aggregate unfavorable EAC charge of $250m or more on a single program in any quarter (B-21, Sentinel, SiAW, GEM 63XL).",
+    "Resolution of the DCMA/DOJ CAS-pension matter with a disclosed charge above $500m, or cost-disallowance applied to future billings.",
+    "Net debt/EBITDA (consolidated) above 3.0x, or no share repurchases by Q2 2027 despite positive FCF."
+   ],
+   "key_adverse_facts": [
+    "Q2'26 segment operating margin 10.6% vs 11.8%; unfavorable EAC charges of $91m (GEM 63XL) and $68m (SiAW) in Q2'26, GEM 63XL $162m in H1'26; B-21 remaining loss accrual $1.0bn (10-Q 0001133421-26-000034).",
+    "2026 MTM-adjusted EPS guide raised $1.20 while segment operating income guidance unchanged at $4,850-$5,000m: raise is tax/other-income driven (Q2'26 tax rate 6.3% vs 17.7%).",
+    "DOJ criminal inquiry closed 2026-05-20 but DOJ civil investigative demand and DCMA CAS-pension inquiry remain open; 10-Q says outcome could have a material adverse effect, range not estimable.",
+    "Share buybacks paused: $68m in H1'26 vs $1,624m in FY2025; H1 free cash flow negative $(845)m."
+   ],
+   "data_conflicts": [
+    "d4 beta -0.11 is unusable for cost of equity.",
+    "d4 TTM FCF yield 3.4% vs 2026 guide-midpoint FCF $3.3bn = 4.6% of market cap (seasonality: Q4'25 FCF $3,235m of FY $3,307m).",
+    "Next earnings 2026-10-20 from d4 calendar, not confirmed by a filing I opened."
+   ],
+   "next_earnings_date": "2026-10-20",
+   "confidence_in_thesis": "medium: backlog and budget demand are documented, but fixed-price execution and a tax-driven EPS raise cap conviction",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "fair",
+    "consistent": true,
+    "implied_vs_base": "below",
+    "reconciliation": "No V1 row exists for NOC. Reverse DCF at 8% cost of equity implies ~3.8% 10-year FCF growth vs my 6.5% base."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.0436,
+    "base": 0.0644,
+    "bull": 0.1326
+   },
+   "scenario_basis": "Start MTM-adj EPS $28.85 (2026 guide midpoint), growth 1%/6%/9%, exit P/E 14x/17x/19x, dividends $9.88 growing 3%/6%/7%; px $510.52."
+  },
+  "MET": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "America's largest employer-benefits and pension insurer, growing in every segment and buying back about 4% of its shares a year at under ten times earnings.",
+   "horizon": "12-36 months",
+   "kill_criteria": [
+    "Adjusted ROE (MetLife, Inc. consolidated, earnings release) below 14.0% for two consecutive quarters (vs 17.0% in Q1 and Q2'26).",
+    "Holding-company cash and liquid assets below $3.0bn at any quarter-end, or the combined NAIC RBC ratio below 360%.",
+    "Adjusted EPS (ex-notables) growth below +5% YoY for two consecutive quarters, or FY2026 direct expense ratio above 12.1%.",
+    "Group Benefits adjusted earnings below $400m in any quarter (vs $503m Q2'26; $401m Q2'25).",
+    "Aggregate reasonably possible litigation loss above accrual exceeding $500m (vs $0-$125m at 2026-06-30)."
+   ],
+   "key_adverse_facts": [
+    "TTM GAAP EPS $5.22 vs adjusted ~$9.71 (54%); adjusted earnings exclude FY2025 net derivative losses $(1,939)m and investment losses $(1,145)m pre-tax.",
+    "Q2'26 variable investment income ~$231m pre-tax vs $400m quarterly target (pre-announced in 8-K 0001099219-26-000045); Group Benefits adjusted earnings +25% leans on favorable underwriting.",
+    "Unrealized investment losses $(18,677)m net of tax in equity; commercial mortgages $39.6bn (office $14.7bn at 83% LTV); US statutory adjusted capital ~$16.4bn at 6/30/26 vs ~$17.2bn at 12/31/25.",
+    "NY False Claims Act qui tam (Total Asset Recovery Services) survived motion to dismiss on 2024-10-13; aggregate reasonably possible loss $0-$125m over accruals."
+   ],
+   "data_conflicts": [
+    "d4/triage FCF yield -33.7% and FCF -$21.0bn, total debt $50.3bn are not meaningful; 10-Q consolidated debt ~$20.1bn (short-term 460 + long-term 14,244 + collateral financing 286 + subordinated 5,144).",
+    "d4 next earnings 2026-11-09 vs company 8-K 0001099219-26-000055: 2026-11-04.",
+    "b1 FCF/price input is not an insurer metric."
+   ],
+   "next_earnings_date": "2026-11-04",
+   "confidence_in_thesis": "medium: cheap on adjusted earnings with documented buybacks, but adjusted-vs-GAAP gap and VII/underwriting volatility limit conviction",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "cheap",
+    "consistent": true,
+    "implied_vs_base": "below",
+    "reconciliation": "No V1 row exists for MET. Reverse DCF on distributable earnings (70-80% of adjusted earnings) at 9.5% cost of equity implies -0.4% to +1.4% growth vs my 6% base."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.0586,
+    "base": 0.0787,
+    "bull": 0.17
+   },
+   "scenario_basis": "Start FY26E adjusted EPS $9.89 (consensus), growth 0%/7%/11%, exit P/E 7.5x/9.5x/11x, dividends $2.37 growing 3%/6%/8%; px $97.70."
+  },
+  "BEN": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "A global fund manager with record assets, returning to net client inflows and expanding in private markets, trading at about ten times adjusted earnings with a 4% dividend.",
+   "horizon": "12-36 months",
+   "kill_criteria": [
+    "Long-term net flows excluding reinvested distributions (release lines) negative for two consecutive quarters (Jun-26: +$14.3bn = 18.4 less 4.1).",
+    "Adjusted operating margin (non-GAAP, release) below 24.0% for two consecutive quarters (vs 28.0% Jun-26).",
+    "Investment management fee rate (annualised investment management fees / average AUM) below 40.0 bp (vs ~42.7 bp).",
+    "Franklin corporate debt (excluding CIPs) above $3.5bn without an acquisition, or breach of the 3.25x consolidated net leverage covenant.",
+    "Western Asset class-action or SEC v. Leech outcome producing a charge above $250m, or Western long-term net outflows above $10bn in a quarter (vs $1.1bn Jun-26)."
+   ],
+   "key_adverse_facts": [
+    "FY2026 YTD long-term net inflows $63.3bn include $28.9bn, $3.2bn and $4.1bn of reinvested distributions (~$27.1bn excluding them) and, from FY2026, uncalled commitments; FY2025 outflows were $(97.4)bn.",
+    "Nine-month FY26 GAAP EPS $1.26 vs adjusted $2.13; add-backs include recurring special termination benefits ($123.4m) and a $100.0m SEC penalty (Western Asset).",
+    "Western Asset: class action (amended 2026-03-16, more executives named) and SEC v. Leech pending; Western long-term net outflow $1.1bn in Jun-26 quarter.",
+    "AUM growth in Q3 FY26 was $98.0bn market-driven of $109.5bn total; beta 1.57; one-time retention equity and carry awards to top executives (8-K 0000038777-26-000194)."
+   ],
+   "data_conflicts": [
+    "d4 FCF -$3.0bn (yield -17.8%) and totalDebt $3.57bn conflict with the 10-Q: consolidated OCF is distorted by consolidated investment products (CIP debt $13.3bn non-recourse); corporate debt $2.40bn.",
+    "Triage claim of persistent outflows is contradicted by FY2026 flow data (with the reinvestment and definition caveats).",
+    "Next earnings ~2026-11-06 from d4, not confirmed by a filing."
+   ],
+   "next_earnings_date": "2026-11-06",
+   "confidence_in_thesis": "medium-low: low implied growth and improving margins, but earnings quality and market beta are material",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "cheap",
+    "consistent": true,
+    "implied_vs_base": "below",
+    "reconciliation": "No V1 row exists for BEN. Reverse DCF on 85-90% of adjusted earnings at 10% cost of equity implies ~1.4-2.2% growth vs my 6% base."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.0838,
+    "base": 0.0785,
+    "bull": 0.1839
+   },
+   "scenario_basis": "Start FY26E adjusted EPS $2.85 (nine-month actual $2.13 + Q3 run-rate), growth -4%/6%/11%, exit P/E 8.5x/11x/13x, dividends $1.32 growing 0%/3%/4%; px $33.02."
+  }
+ }
+}

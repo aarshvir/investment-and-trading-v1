@@ -1,0 +1,419 @@
+{
+  "tickers": {
+    "TJX": {
+      "claims": [
+        {
+          "claim": "Fed decision 16 Sep 2026",
+          "status": "CONFIRMED",
+          "source": "federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm: 'The Committee decided to raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent', vote 12-0, 16 Sep 2026"
+        },
+        {
+          "claim": "10-year Treasury ~5.0% on 16 Sep, 5.25% on 5 Oct, 5.34% on 1 Oct (red-team)",
+          "status": "CONFIRMED (16 Sep, 25 Sep) / WRONG (1 Oct 5.34%) / NOT FOUND (5 Oct)",
+          "source": "FRED DGS10 (fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10): 16 Sep 5.01; 25 Sep 5.17 (cutoff day); 30 Sep 5.29; 1 Oct 5.24 (the 5.34% is not a daily close); 5 Oct not yet published. 5.17% used"
+        },
+        {
+          "claim": "No TJX SEC filing 26 Sep - 5 Oct; latest is the 8-K Item 5.02 filed 17 Sep",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions API CIK 0000109198: 2026-09-17 8-K Item 5.02 acc 0000109198-26-000051 and Forms 3/4; nothing later (checked 5 Oct 2026)"
+        },
+        {
+          "claim": "Item 5.02: Craig Pintoff elected to the board and Audit & Finance Committee, benign",
+          "status": "CONFIRMED",
+          "source": "tjx-20260916.htm: 'On September 16, 2026, the Board ... elected Craig A. Pintoff as a member of the Company's Board and of its Audit and Finance Committee'; independent per NYSE"
+        },
+        {
+          "claim": "Marmaxx comp +1% in Q2 FY27 (first sub-2% quarter; Q1 was +6%)",
+          "status": "CONFIRMED",
+          "source": "8-K Ex-99.1 19 Aug 2026 acc 0000109198-26-000045 comp table: Marmaxx +1% (FY26 +3%); Q1 release acc 0000109198-26-000023: Marmaxx +6%"
+        },
+        {
+          "claim": "Q3 plan: consolidated comp +2% to +3%, adjusted EPS $1.30-1.32; Q3 started better at Marmaxx",
+          "status": "CONFIRMED",
+          "source": "Q2 release: 'planning consolidated comparable sales to be up 2% to 3%'; 'we are seeing improvement at our Marmaxx division to start the quarter'"
+        },
+        {
+          "claim": "FY27 adjusted EPS guide $5.15-5.20, raised from $5.08-5.15",
+          "status": "CONFIRMED",
+          "source": "Q2 release: adjusted $5.15-$5.20 (GAAP $5.31-$5.36 incl. $0.16 tariff benefit); Q1 release: $5.08-$5.15"
+        },
+        {
+          "claim": "Adjusted EPS growth is ~7-8%, bottom of the 8-10% base",
+          "status": "WRONG",
+          "source": "Q4 FY26 release acc 0000109198-26-000004: FY26 adjusted EPS $4.73 (GAAP $4.87); $5.15-5.20 = +8.9% to +9.9%, midpoint +9.4%"
+        },
+        {
+          "claim": "TJX converts ~75-80% of earnings to FCF; FCF yield ~3.0%, P/FCF ~33x",
+          "status": "WRONG",
+          "source": "XBRL companyfacts: FY26 OCF $6,874m - capex $1,957m = $4,917m = 89.5% of NI $5,494m; FY25 $4,198m = 86%; TTM to 1 Aug 2026 $5,876m; P/FCF 24.3x at $130.06 (normalised yield ~3.5%)"
+        },
+        {
+          "claim": "FCF reverse DCF implies 10.5% / 11.7% / 13% growth at 8.5% / 9% / 9.5% CoE",
+          "status": "WRONG (inputs)",
+          "source": "Recomputed 10-year two-stage, terminal 3%, normalised FCF $5,078m, price $130.06: 8.3% / 9.5% / 10.6% (TTM FCF: 6.4 / 7.6 / 8.7%); direction right (price implies growth at/above the earnings-yield 4.2%), magnitude overstated"
+        },
+        {
+          "claim": "Dossier 4.2% earnings-yield shortcut understates implied growth at higher CoE (5.4% at 9.5%)",
+          "status": "CONFIRMED (method)",
+          "source": "Arithmetic on FY27 adjusted EPS $5.175: EY 3.98%; 8.5% - 3.98% = 4.5%; 9.5% - 3.98% = 5.5%. The shortcut is a perpetual rate, not comparable with the 8-10% 10-year base"
+        },
+        {
+          "claim": "Marmaxx >60% of sales and ~70% of EBIT",
+          "status": "WRONG (EBIT share)",
+          "source": "Q2 release segment table: Marmaxx sales $9,109m of $15,180m = 60.0%; segment profit $1,424m of $2,229m = 63.9% (H1 $2,693m of $4,058m = 66.4%)"
+        },
+        {
+          "claim": "Kill criterion 1 is one print from firing (Q3 FY27 on 18 Nov)",
+          "status": "CONFIRMED",
+          "source": "Q2 +1% < 2%; tjx.com/investors/financial-information/reporting-calendar: 'Third Quarter Fiscal 2027 - November 18, 2026'. The red-team's Marmaxx plan of 0-2% is NOT FOUND in disclosures (inference)"
+        },
+        {
+          "claim": "Citi cut to Neutral 20 Aug ('priced for flawless execution'); Jefferies to Hold PT $145 from $180 on 26 Aug; stock -15% in August",
+          "status": "CONFIRMED (secondary); Citi PT $154 NOT FOUND",
+          "source": "Investing.com 20 Aug 2026 (Citi: 'The 2Q Marmaxx comp of +1% was weak and disappointing'); Investing.com/MarketScreener 26 Aug (Jefferies); Motley Fool 4 Sep (-15%)"
+        },
+        {
+          "claim": "Q2 buyback $798m; net debt/EBITDA 0.9x",
+          "status": "CONFIRMED",
+          "source": "Q2 release: repurchased 5.1m shares for $798m; dividends $529m; cash $6.0bn"
+        },
+        {
+          "claim": "Price $135.10 on 5 Oct (+3.9% vs $130.06)",
+          "status": "CONFIRMED (approx, third party)",
+          "source": "stockanalysis.com 5 Oct 2026 2:25pm EDT: $135.04, previous close $132.68"
+        },
+        {
+          "claim": "FY27 EPS includes ~$0.16 tariff-refund benefit of uncertain size; refunds may not equal tariffs paid",
+          "status": "CONFIRMED",
+          "source": "Q2 release: 'Excluding an expected net benefit of $.16 from tariff refunds'; 'total amount of refunds received may not equal the full amount of IEEPA related tariffs paid'"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria",
+        "key_adverse_facts",
+        "data_conflicts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "reverse_dcf": {
+        "method": "10-year two-stage equity model, terminal growth 3%",
+        "price": "$130.06 (25 Sep close); $135.04 (5 Oct intraday)",
+        "market_cap_usd_bn": 143.1,
+        "fcf_base_usd_m": "5,078 normalised (88% x FY27 adj EPS 5.175 x 1,115m sh); 5,876 TTM",
+        "risk_free": "5.17% (10-yr, FRED 25 Sep 2026)",
+        "cost_of_equity": "9.5% central (rf + 4.3%, the premium implied by the dossier's 8.5% at ~4.2%); sensitivities 8.5-10%",
+        "implied_10y_growth": {
+          "8.5%": 8.3,
+          "9.0%": 9.5,
+          "9.5%": 10.6,
+          "10.0%": 11.8
+        },
+        "implied_at_5Oct_price": {
+          "8.5%": 8.7,
+          "9.0%": 10.0,
+          "9.5%": 11.1,
+          "10.0%": 12.3
+        },
+        "base_case": "8-10%",
+        "price_for_implied_10pct": 124,
+        "price_for_implied_9pct": 115
+      },
+      "kill_criteria_status": "None fired; #1 fires if Marmaxx Q3 comp < 2% on 18 Nov 2026"
+    },
+    "LH": {
+      "claims": [
+        {
+          "claim": "Fed decision 16 Sep 2026",
+          "status": "CONFIRMED",
+          "source": "federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm: 'The Committee decided to raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent', vote 12-0, 16 Sep 2026"
+        },
+        {
+          "claim": "10-year Treasury ~5.0% on 16 Sep, 5.25% on 5 Oct, 5.34% on 1 Oct (red-team)",
+          "status": "CONFIRMED (16 Sep, 25 Sep) / WRONG (1 Oct 5.34%) / NOT FOUND (5 Oct)",
+          "source": "FRED DGS10 (fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10): 16 Sep 5.01; 25 Sep 5.17 (cutoff day); 30 Sep 5.29; 1 Oct 5.24 (the 5.34% is not a daily close); 5 Oct not yet published. 5.17% used"
+        },
+        {
+          "claim": "CMS released preliminary 2027-2029 CLFS (PAMA) rates on 21 Sep 2026; ~16% above private payers; ~$1bn/yr savings; cuts capped 15%/yr to 2029; final rates Nov 2026",
+          "status": "CONFIRMED",
+          "source": "cms.gov/newsroom/press-releases/cms-announces-new-preliminary-medicare-payment-rates-laboratory-services-saving-taxpayers-estimated (21 Sep 2026): 'Medicare has been paying about 16% more for laboratory services than private payors'; savings ~$1 billion annually; 30-day comments; finalised November 2026"
+        },
+        {
+          "claim": "~1,170 of 1,528 codes cut; ~775 tests at the 15% maximum; average ~-16%",
+          "status": "CONFIRMED (secondary)",
+          "source": "MedTech Dive 22 Sep 2026 quoting ACLA: 'almost 1,200 tests', '775 tests that would face the maximum 15% cut'; AHA 22 Sep: 'almost 1,200'. Exact 1,170/1,528 count not on the CMS page"
+        },
+        {
+          "claim": "Labcorp 8-K reaffirmed 2026-29 outlook (rev CAGR 5-8%, adj EPS CAGR 8.5-11.5%, FCF in line) and will quantify 2027 only in Feb 2027",
+          "status": "CONFIRMED",
+          "source": "8-K Item 7.01 22 Sep 2026 acc 0000920148-26-000205: 'previously considered the anticipated continuation of PAMA-related reimbursement pressure ... is now reaffirming that outlook'; 'additional information ... when that guidance is announced in February 2027'"
+        },
+        {
+          "claim": "Investor Day 10 Sep 2026: FY26 guidance reaffirmed (adj EPS $18.10-18.55, FCF $1,240-1,360m), no raise",
+          "status": "CONFIRMED",
+          "source": "8-K acc 0000920148-26-000201 Ex-99.1: 'Reaffirms full-year 2026 guidance'; table adjusted EPS $18.10-$18.55, FCF $1,240-$1,360"
+        },
+        {
+          "claim": "Q3 results 28 Oct 2026 before the open",
+          "status": "CONFIRMED",
+          "source": "8-K Item 7.01 30 Sep 2026 acc 0000920148-26-000207"
+        },
+        {
+          "claim": "Mizuho ~$100m year-one hit",
+          "status": "CONFIRMED (third party)",
+          "source": "Investing.com 22 Sep 2026: 'approximately $100 million headwind ... in the first year', 'significant offsets' in year two; Mizuho 'would not be surprised if PAMA cuts are delayed again for 2027'"
+        },
+        {
+          "claim": "One broker note sizes a 3-6% first-year EPS drag; UBS PT $380",
+          "status": "NOT FOUND",
+          "source": "No source located; not used"
+        },
+        {
+          "claim": "TD Cowen expects Congress to punt; House out until after midterms",
+          "status": "CONFIRMED (secondary)",
+          "source": "MedTech Dive 25 Sep 2026: 'most likely that Congress will punt the 2027 PAMA cuts'; House in recess until after November midterms"
+        },
+        {
+          "claim": "LH fell >3% on 22 Sep",
+          "status": "CONFIRMED (secondary)",
+          "source": "MedTech Dive: 'Labcorp down more than 3% in Tuesday morning trading'"
+        },
+        {
+          "claim": "1H26 FCF $384m (-12%); Q2 $314m vs $543m (-42%)",
+          "status": "CONFIRMED",
+          "source": "XBRL companyfacts CIK 920148: OCF 1H26 $637.0m, capex $252.6m; 1H25 $639.1m / $203.9m; Q1'26 OCF $191.5m, capex $121.0m; Q1'25 $18.5m / $126.0m"
+        },
+        {
+          "claim": "2H26 needs ~$916m vs ~$771m in 2H25 (+19%) to hit the guide midpoint",
+          "status": "CONFIRMED",
+          "source": "FY25 FCF $1,206m (OCF $1,640.5m - capex $434.5m) less 1H25 $435.2m = $771m; $1,300m - $384.4m = $916m"
+        },
+        {
+          "claim": "1H26 buybacks $451.8m + acquisitions $427.9m",
+          "status": "CONFIRMED",
+          "source": "XBRL PaymentsForRepurchaseOfCommonStock $451.8m; PaymentsToAcquireBusinessesNetOfCashAcquired $427.9m (10-Q 5 Aug 2026)"
+        },
+        {
+          "claim": "Net debt up ~$1.2bn in six months",
+          "status": "WRONG",
+          "source": "XBRL: debt (current+noncurrent) $5,584.7m (31 Dec 2025) -> $5,858.5m (30 Jun 2026); cash $532.3m -> $141.8m; net debt $5,052m -> $5,717m = +$664m (the $1.2bn ignores the $500m current maturity)"
+        },
+        {
+          "claim": "MLM Medical Labs acquisition (8 Sep) largely explains the Q2 cash drop",
+          "status": "WRONG (timing)",
+          "source": "Deal reported 8 Sep 2026, after the 30 Jun balance sheet; Q2 drivers per XBRL are buybacks $353.8m and acquisitions $225.7m"
+        },
+        {
+          "claim": "Price ~$307.53 on 5 Oct; consensus ~$345",
+          "status": "CONFIRMED (approx, third party)",
+          "source": "stockanalysis.com 5 Oct 2026: $308.32 intraday; average target $344.81"
+        },
+        {
+          "claim": "44-state AG settlement over the 2019 AMCA breach, ~$2.29m",
+          "status": "NOT FOUND",
+          "source": "Immaterial and not traced to a primary source; not used"
+        },
+        {
+          "claim": "Reverse DCF 3.2% at 8.5% CoE; 3.5% with FCF/share $14.8",
+          "status": "CONFIRMED (reproduced) but method not like-for-like",
+          "source": "Gordon perpetual at 8.5%: 3.16% (F0 $1,300m, 81.1m sh); a 10-year two-stage with 3% terminal gives 3.4% at 8.5% and 5.6% at 9.5%"
+        },
+        {
+          "claim": "FCF/adjusted NI ~77% in Q2 2026, near the 70% kill line",
+          "status": "CONFIRMED (arithmetic)",
+          "source": "Q2 FCF $313.9m / (adj EPS $4.99 x 82.0m diluted sh = ~$409m) = 77%; Q1 is seasonally ~20%, so the quarterly test is unreliable"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria",
+        "key_adverse_facts",
+        "data_conflicts",
+        "next_earnings_date",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "reverse_dcf": {
+        "method": "10-year two-stage equity model, terminal growth 3%",
+        "price": "$309.64 (25 Sep close); $308.32 (5 Oct intraday)",
+        "market_cap_usd_bn": 25.1,
+        "fcf_base_usd_m": "1,300 (FY26 guide midpoint); 1,225 after $75m after-tax PAMA hit",
+        "risk_free": "5.17% (10-yr, FRED 25 Sep 2026)",
+        "cost_of_equity": "9.5% central; sensitivities 8.5-10%",
+        "implied_10y_growth": {
+          "8.5%": 3.4,
+          "9.0%": 4.6,
+          "9.5%": 5.6,
+          "10.0%": 6.7
+        },
+        "implied_with_pama_haircut": {
+          "8.5%": 4.2,
+          "9.0%": 5.3,
+          "9.5%": 6.4,
+          "10.0%": 7.5
+        },
+        "base_case": "6.5-7.5% (dossier 7-8% less PAMA)",
+        "price_for_implied_5pct": 295,
+        "price_for_implied_4_5pct": 284
+      },
+      "kill_criteria_status": "None fired; guide reaffirmed 10 and 22 Sep; next tests 28 Oct (Q3), Nov (final CMS rates), Feb 2027 (FY27 guide)"
+    },
+    "VEEV": {
+      "claims": [
+        {
+          "claim": "Fed decision 16 Sep 2026",
+          "status": "CONFIRMED",
+          "source": "federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm: 'The Committee decided to raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent', vote 12-0, 16 Sep 2026"
+        },
+        {
+          "claim": "10-year Treasury ~5.0% on 16 Sep, 5.25% on 5 Oct, 5.34% on 1 Oct (red-team)",
+          "status": "CONFIRMED (16 Sep, 25 Sep) / WRONG (1 Oct 5.34%) / NOT FOUND (5 Oct)",
+          "source": "FRED DGS10 (fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10): 16 Sep 5.01; 25 Sep 5.17 (cutoff day); 30 Sep 5.29; 1 Oct 5.24 (the 5.34% is not a daily close); 5 Oct not yet published. 5.17% used"
+        },
+        {
+          "claim": "Q3 FY27 guide $932-935m = +14.9% to +15.3%; implied FQ4 $936-944m = +12.0% to +12.9% vs $836.0m",
+          "status": "CONFIRMED (arithmetic)",
+          "source": "8-K Ex-99.1 26 Aug 2026 acc 0001393052-26-000032: Q3 guide $932-$935m; FY27 $3,682-$3,687m; 1H revenue $1,810.9m; Q3 FY26 $811.2m; Q4 FY26 $836.0m"
+        },
+        {
+          "claim": "The guided FQ4 ~12.5% is evidence of real deceleration toward the 12% kill line",
+          "status": "WRONG (interpretation)",
+          "source": "Veeva beat the guide high end by $23-26m each of the last 3 quarters (Q4 FY26 $836.0m vs $807-810m, Q3 FY26 release; Q1 FY27 $882.9m vs $855-858m, Q4 release; Q2 FY27 $928.0m vs $902-905m, Q1 release); last year's FQ4 guide implied +11.9% to +12.4% vs actual +16.0%. Kill criterion 1 needs two reported quarters < 12%"
+        },
+        {
+          "claim": "SBC ~14.7% of revenue, ~$0.55bn a year",
+          "status": "CONFIRMED (approx)",
+          "source": "Q2 release SBC $136.8m / $928.0m = 14.7%; XBRL TTM SBC $494.6m (FY26 $472.7m - 1H FY26 $234.2m + 1H FY27 $256.1m)"
+        },
+        {
+          "claim": "Dossier reverse DCF reproduces: 6.7% at 9.2% WACC, 3.5% terminal, EV $38.2bn",
+          "status": "CONFIRMED",
+          "source": "Recomputed 6.70% with FCF $1,645m, EV $45,445m - $7,242.9m"
+        },
+        {
+          "claim": "On SBC-burdened FCF (~$1.1bn) the price implies ~11.9% 10-year growth",
+          "status": "CONFIRMED (in substance)",
+          "source": "FCF $1,150m: 11.4% at 9.2%; 13.3% at 10.0% (rf 5.17% + 0.974 x 5.0%)"
+        },
+        {
+          "claim": "Goldman Sell (PT $215) 13 Jan 2026 citing Salesforce Life Sciences Cloud wins",
+          "status": "CONFIRMED (secondary)",
+          "source": "Investing.com 13 Jan 2026: PT $215, stock $233.21; '16 of the top 20 ... have made commitments, with more choosing Salesforce than initially expected'"
+        },
+        {
+          "claim": "Citi cut target to $176 on 10 Apr 2026",
+          "status": "NOT FOUND",
+          "source": "Not retrieved; not used"
+        },
+        {
+          "claim": "Veeva expected ~14 of the top 20 on Vault CRM but the Aug release counts 12 (shortfall)",
+          "status": "WRONG (stale)",
+          "source": "8-K Ex-99.1 26 Aug: 'total top 20 commitments to 12 globally' (CONFIRMED); Veeva press release 23 Sep 2026 and Investing.com 23 Sep: another top-20 commitment, '14 of the top 20', 190 live customers"
+        },
+        {
+          "claim": "Form 144 for 4,841 shares (~$1.34m, ~$276.5) by officer Daniel Rizzo on 2 Oct",
+          "status": "CONFIRMED",
+          "source": "EDGAR acc 0001950047-26-009996 primary_doc.xml: Daniel Rizzo, Officer, 4,841 shares, $1,338,578.34, 10/02/2026"
+        },
+        {
+          "claim": "VEEV fell ~3% to ~$273.33 on 2 Oct; consensus target ~$278",
+          "status": "CONFIRMED (price) / NOT FOUND (target)",
+          "source": "stockanalysis.com 5 Oct: previous close $273.33, price $278.26 (third party)"
+        },
+        {
+          "claim": "No VEEV 8-K/10-Q/proxy item 26 Sep - 5 Oct",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 1393052: latest 8-K 26 Aug (Item 2.02), 10-Q 27 Aug, later items only Forms 3/4/144"
+        },
+        {
+          "claim": "Professional services +24% and Copli acquisition in Q2",
+          "status": "CONFIRMED",
+          "source": "Q2 release: professional services $161.2m vs $129.9m; 'acquired Copli'; 1H acquisitions net $81.8m"
+        },
+        {
+          "claim": "Non-GAAP operating margin guided ~44.5-44.7%",
+          "status": "CONFIRMED",
+          "source": "FY27 non-GAAP operating income ~$1,640m / revenue $3,682-3,687m = 44.5%"
+        },
+        {
+          "claim": "28.4x NTM earnings, highest in the batch",
+          "status": "CONFIRMED (approx, third party)",
+          "source": "stockanalysis.com 5 Oct: forward P/E 28.82; 280.68/9.21 = 30.5x on FY27 non-GAAP EPS guide"
+        },
+        {
+          "claim": "NEW: President & Chief Customer Officer Schwenger resigned effective 2 Oct 2026",
+          "status": "CONFIRMED",
+          "source": "8-K Item 5.02 filed 20 Aug 2026 acc 0001213900-26-092096; successor Dan Rizzo (EVP Sales, Consulting and Services)"
+        },
+        {
+          "claim": "NEW: buybacks $472.7m in 1H FY27 vs $0; $2bn authorisation in Jan 2026",
+          "status": "CONFIRMED (buybacks, XBRL) / secondary (authorisation)",
+          "source": "10-Q XBRL PaymentsForRepurchaseOfCommonStock $472.7m; Investing.com 17 Feb 2026 'first $2 billion share buyback program in January'"
+        },
+        {
+          "claim": "NEW: interest income on $7.2bn cash (~$292m pretax TTM) is in the FCF that the dossier also nets against EV",
+          "status": "CONFIRMED",
+          "source": "XBRL OtherNonoperatingIncomeExpense FY26 $278.1m, 1H FY27 $148.9m, 1H FY26 $134.5m; tax rate ~21.8% (1H FY27 $162.7m/$697.1m)"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "WATCH",
+      "old_implied": "below",
+      "new_implied": "above",
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria",
+        "key_adverse_facts",
+        "data_conflicts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "reverse_dcf": {
+        "method": "10-year two-stage EV model, terminal growth 3.5% (dossier setup)",
+        "price": "$280.68 (25 Sep close); $278.26 (5 Oct intraday)",
+        "ev_usd_bn": 38.2,
+        "fcf_base_usd_m": "1,645 reported TTM; 1,150 SBC-burdened; 922 SBC-burdened and ex-interest (clean)",
+        "risk_free": "5.17% (10-yr, FRED 25 Sep 2026)",
+        "cost_of_equity": "10.0% (5.17% + 0.974 x 5.0%); dossier 9.2%",
+        "implied_10y_growth": {
+          "reported FCF @9.2%": 6.7,
+          "reported FCF @10.0%": 8.5,
+          "SBC-burdened @9.2%": 11.4,
+          "SBC-burdened @10.0%": 13.3,
+          "clean @9.2%": 14.2,
+          "clean @10.0% (central)": 16.3
+        },
+        "base_case": "12-14% (dossier 16% unsupported)",
+        "price_for_clean_implied_13pct": 230,
+        "price_for_clean_implied_14pct": 244
+      },
+      "kill_criteria_status": "None fired; earliest firing of #1 is FQ1 FY28 on reported growth; FQ3 print ~19 Nov 2026"
+    }
+  },
+  "asof": "2026-10-05",
+  "analyst": "RA2",
+  "data_cutoff": "2026-09-25 (10-year Treasury 5.17%, FRED)",
+  "notes": "Research only; not personal investment advice. Secondary/third-party sources are labelled; claims that could not be traced are NOT FOUND and changed nothing. Verdict rule: implied below if < base low - 1pt, above if > base high + 1pt, else in_line."
+}

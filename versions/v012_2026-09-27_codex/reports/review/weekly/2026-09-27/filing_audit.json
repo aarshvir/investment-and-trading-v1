@@ -1,0 +1,568 @@
+{
+  "prepared_utc": "2026-09-27T14:13:35.251023+00:00",
+  "author": "Codex filing-audit agent",
+  "parents": [
+    "v005_2026-09-26_codex",
+    "v011_2026-09-27_claude"
+  ],
+  "status": "bounded audit, not trade authorization",
+  "cutoffs": {
+    "strict_old_price_information": "2026-09-24T20:00:00Z",
+    "last_market_close": "2026-09-25T20:00:00Z",
+    "next_five_trading_days": [
+      "2026-09-28",
+      "2026-09-29",
+      "2026-09-30",
+      "2026-10-01",
+      "2026-10-02"
+    ]
+  },
+  "findings": [
+    {
+      "id": "HIG-SETTLEMENT",
+      "ticker": "HIG",
+      "status": "new_after_price_cutoff",
+      "source": "HIG_20260925_8K.html",
+      "locator": "Items 1.02 and 7.01",
+      "accepted_utc": "2026-09-25T20:18:34Z",
+      "period": "Expected three and nine months ending 2026-09-30",
+      "units": "USD millions",
+      "facts": {
+        "cash_received": 1120,
+        "expected_pretax_gain": 497,
+        "expected_gaap_net_income_gain": 393,
+        "core_earnings_effect": 0
+      },
+      "basis": "One-time GAAP gain, excluded from non-GAAP core earnings",
+      "action": "No normalized-EPS uplift. Entry120 provisional only; wait for settlement receivable/deferred gain/tax/statutory-capital bridge."
+    },
+    {
+      "id": "HIG-EXHAUSTED-COVER",
+      "ticker": "HIG",
+      "status": "context_corrects_initial_risk_inference",
+      "source": "HIG_Q22026_10Q.html",
+      "locator": "MD&A Reinsurance for Asbestos and Environmental Reserve Development, pp90-91",
+      "period": "As of2025-12-31 and2026-06-30",
+      "units": "USD millions",
+      "facts": {
+        "original_aggregate_limit": 1500,
+        "attachment": 1700,
+        "unused_limit_at_dec2025": 0,
+        "deferred_gain_jun2026": 814,
+        "deferred_gain_dec2025": 850
+      },
+      "action": "Do not characterize settlement as giving up1500 of unused protection. Residual reserve risk pre-existed. Disputed recoveries were suspended afterQ1."
+    },
+    {
+      "id": "PAYX-CFO",
+      "ticker": "PAYX",
+      "status": "already_in_codex_v005_not_new_economic_discovery",
+      "source": "PAYX_Q1FY27_10Q.html",
+      "locator": "Cash-flow statement p4; MD&A pp26-27",
+      "accepted_utc": "2026-09-24T20:06:01Z",
+      "period": "Three months ended2026-08-31 vs2025-08-31",
+      "units": "USD millions",
+      "facts": {
+        "cfo_current": 413.5,
+        "cfo_prior": 718.4,
+        "capex_current": 56.1,
+        "capex_prior": 55.9,
+        "fcf_current": 357.4,
+        "fcf_prior": 662.5,
+        "dividends_current": 424.1
+      },
+      "formula": "FCF=CFO-cash PPE; year-on-year delta=current-prior",
+      "cfo_delta_bridge": {
+        "net_income": 45.9,
+        "noncash_net": -57.3,
+        "receivables": -54.4,
+        "prepayments": -49.3,
+        "payables_current_liabilities": -181.6,
+        "deferred_costs": -17.6,
+        "other": 9.4
+      },
+      "definition_warning": "PEO payroll settlements affect CFO; ordinary client-fund obligations financing. Qualitative explanation does not prove reversal.",
+      "inherited_diagnostic": {
+        "ttm_fcf": 2016.7,
+        "owner_cash": 1711.5,
+        "failure_threshold": 1700,
+        "threshold_cushion": 11.5
+      },
+      "action": "Keep small conditional starter limit101.80 and FY2027 normalizedEPS5.85; do not add before cash recovery evidence. Correct strict Sep24 close cutoff labeling."
+    },
+    {
+      "id": "RSG-FCF-DEFINITION",
+      "ticker": "RSG",
+      "status": "inherited_full_conviction_not_validated",
+      "source": "RSG_Q22026_release.html",
+      "locator": "Cash-flow statement p7 and adjusted-FCF reconciliation p12",
+      "period": "Six months ended2026-06-30",
+      "units": "USD millions",
+      "facts": {
+        "cfo": 2380,
+        "cash_ppe": 868,
+        "ppe_received": 809,
+        "asset_proceeds": 7,
+        "restructuring_addback": 5,
+        "conventional_fcf": 1512,
+        "cash_fcf_including_disposals": 1519,
+        "company_adjusted_fcf": 1583
+      },
+      "formula": "2380-868=1512;2380-868+7=1519;2380-809+7+5=1583",
+      "action": "Correct64 difference. Need unleveredFCF/EV/WACC or equitycash/equityvalue/CoE; do not use levered CFO-capex directly with EV/WACC.7% sizing not adopted."
+    },
+    {
+      "id": "LH-PERIOD-DEBT",
+      "ticker": "LH",
+      "status": "correct_claude_v011_period_and_classification",
+      "source": "LH_Q22026_10Q.html",
+      "locator": "Condensed balance sheet; cash-flow statement p7; Note3 p11 and debt note",
+      "period": "2026-06-30 vs2025-12-31; six months not one quarter",
+      "units": "USD millions",
+      "facts": {
+        "longterm_debt_jun": 5857.6,
+        "longterm_debt_dec": 5084.6,
+        "current_debt_jun": 0.9,
+        "current_debt_dec": 500.1,
+        "total_borrowing_change": 273.8,
+        "h1_cash_acquisitions": 427.9,
+        "h1_buybacks": 451.8,
+        "term_loan_mar20": 750,
+        "notes_repaid_jun1": 500
+      },
+      "formula": "(5857.6+0.9)-(5084.6+500.1)=273.8",
+      "action": "Replace one-quarter773m debt-increase claim. Require finite-growth/fade valuation; perpetual3.1% versus finite7-8% is not sufficient.5.6% sizing not adopted."
+    },
+    {
+      "id": "LH-PAMA",
+      "ticker": "LH",
+      "status": "pre_cutoff_material_risk_missing_from_thesis_detail",
+      "source": "LH_20260922_8K.html",
+      "locator": "Item7.01",
+      "period": "2027-2029 preliminary reimbursement rates;2026-2029 company outlook",
+      "units": "percent",
+      "facts": {
+        "reaffirmed_revenue_cagr": [
+          5,
+          8
+        ],
+        "reaffirmed_adjusted_eps_cagr": [
+          8.5,
+          11.5
+        ]
+      },
+      "action": "Model reimbursement sensitivity. Reaffirmation is management forecast, not proof proposed cuts are immaterial; impact guidance expectedFebruary2027."
+    },
+    {
+      "id": "NTAP-144",
+      "ticker": "NTAP",
+      "status": "new_filing_no_fundamental_revision",
+      "source": "NTAP_20260924_144.xml",
+      "locator": "securitiesInformation and noticeSignature",
+      "accepted_utc": "2026-09-24T20:24:29Z",
+      "period": "Proposed sale2026-09-24, plan2026-06-15",
+      "units": "shares",
+      "facts": {
+        "proposed_shares": 37000
+      },
+      "action": "No EPS or entry change; proposed sale is not execution confirmation."
+    }
+  ],
+  "documents": [
+    {
+      "file": "HIG_20260925_8K.html",
+      "url": "https://www.sec.gov/Archives/edgar/data/874766/000087476626000064/hig-20260923.htm",
+      "retrieved_utc": "2026-09-27T14:06:01.115451+00:00",
+      "sha256": "7c8957adc1e18a39d06f8d82106cc4261d07b1daa531e97527545a5227cd449b",
+      "bytes": 30425,
+      "console_warning": "'charmap' codec can't encode character '\\u2610' in position 1120: character maps to <undefined>"
+    },
+    {
+      "file": "PAYX_Q1FY27_10Q.html",
+      "url": "https://www.sec.gov/Archives/edgar/data/723531/000072353126000006/payx-20260831.htm",
+      "retrieved_utc": "2026-09-27T14:06:01.294402+00:00",
+      "sha256": "098d4a54bcce49f3f9ef26f05565133336a5b2254d2f0ebcdcfc92929c8cb9fa",
+      "bytes": 3401279
+    },
+    {
+      "file": "LH_20260922_8K.html",
+      "url": "https://www.sec.gov/Archives/edgar/data/920148/000092014826000205/lh-20260922.htm",
+      "retrieved_utc": "2026-09-27T14:06:02.004647+00:00",
+      "sha256": "0944a5d03b5000a4abd25d543c3f4861b5c53ae134d94c7c68184e3ddcd66a7f",
+      "bytes": 33671,
+      "console_warning": "'charmap' codec can't encode character '\\u2610' in position 864: character maps to <undefined>"
+    },
+    {
+      "file": "LH_Q22026_10Q.html",
+      "url": "https://www.sec.gov/Archives/edgar/data/920148/000092014826000175/lh-20260630.htm",
+      "retrieved_utc": "2026-09-27T14:06:02.147724+00:00",
+      "sha256": "c02b4b8d18d2a830dc84c52bace44ffb079aff81566dd4fa36f7f3aadff12552",
+      "bytes": 1534922
+    },
+    {
+      "file": "RSG_Q22026_release.html",
+      "url": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000273/exhibit991q22026.htm",
+      "retrieved_utc": "2026-09-27T14:06:02.724113+00:00",
+      "sha256": "62ac6668745738644938f17293dbd52212c5a246b8308ee3575ea176178637e2",
+      "bytes": 613694
+    },
+    {
+      "file": "NTAP_20260924_144.xml",
+      "url": "https://www.sec.gov/Archives/edgar/data/1002047/000195004726009789/primary_doc.xml",
+      "retrieved_utc": "2026-09-27T14:06:03.022216+00:00",
+      "sha256": "16a9b50f0eea4d914a7413996c8fd8e74fc66295c88b5d7b152e9cfb022028fc",
+      "bytes": 4750
+    },
+    {
+      "file": "HIG_Q22026_10Q.html",
+      "url": "https://www.sec.gov/Archives/edgar/data/874766/000087476626000060/hig-20260630.htm",
+      "retrieved_utc": "2026-09-27T14:10:15.677605+00:00",
+      "sha256": "307c6535b9cee5f1c7dc308b9b9453c10b734de87ac2d7c4cabd36585574f6d5",
+      "bytes": 5737026
+    }
+  ],
+  "submission_index_manifest": [
+    {
+      "ticker": "NVDA",
+      "url": "https://data.sec.gov/submissions/CIK0001045810.json",
+      "retrieved_utc": "2026-09-27T14:04:39.737670+00:00",
+      "sha256": "e220b9939d680e34f3a59655b5134a8f1a44e6a4d9292426093c8a899d3020a8",
+      "bytes": 159785,
+      "file": "NVDA_submissions.json"
+    },
+    {
+      "ticker": "CPAY",
+      "url": "https://data.sec.gov/submissions/CIK0001175454.json",
+      "retrieved_utc": "2026-09-27T14:04:40.435540+00:00",
+      "sha256": "fef79296c53b9ae69b55cf6f00090ee636595874dc8b4e0dd4fff152a370bf64",
+      "bytes": 158004,
+      "file": "CPAY_submissions.json"
+    },
+    {
+      "ticker": "AMP",
+      "url": "https://data.sec.gov/submissions/CIK0000820027.json",
+      "retrieved_utc": "2026-09-27T14:04:41.079786+00:00",
+      "sha256": "ec25dd55aba8ddeb9b6501145642c66233eea5e7d56ee3bae7e63d690e5a78c3",
+      "bytes": 157195,
+      "file": "AMP_submissions.json"
+    },
+    {
+      "ticker": "RL",
+      "url": "https://data.sec.gov/submissions/CIK0001037038.json",
+      "retrieved_utc": "2026-09-27T14:04:41.621647+00:00",
+      "sha256": "fa0b1736bb7d3d6529f3d4b742259223eb2cb58a4619a13d83c811bcb68a44ea",
+      "bytes": 167990,
+      "file": "RL_submissions.json"
+    },
+    {
+      "ticker": "AME",
+      "url": "https://data.sec.gov/submissions/CIK0001037868.json",
+      "retrieved_utc": "2026-09-27T14:04:42.240970+00:00",
+      "sha256": "c37fe320517d95f31b60cbf10d16a068547ccef7fae94ecc29b67c25d79437ad",
+      "bytes": 159641,
+      "file": "AME_submissions.json"
+    },
+    {
+      "ticker": "SNA",
+      "url": "https://data.sec.gov/submissions/CIK0000091440.json",
+      "retrieved_utc": "2026-09-27T14:04:43.181378+00:00",
+      "sha256": "ea52285648396bb60a53cf6fd1365e49bab09b09a385d99b05206e321bdb4c1a",
+      "bytes": 158532,
+      "file": "SNA_submissions.json"
+    },
+    {
+      "ticker": "ABNB",
+      "url": "https://data.sec.gov/submissions/CIK0001559720.json",
+      "retrieved_utc": "2026-09-27T14:04:43.794660+00:00",
+      "sha256": "98f62749bbbb2e6df67049cc6254a875259d97e3df58212a445c4236b580fd1e",
+      "bytes": 151044,
+      "file": "ABNB_submissions.json"
+    },
+    {
+      "ticker": "NTAP",
+      "url": "https://data.sec.gov/submissions/CIK0001002047.json",
+      "retrieved_utc": "2026-09-27T14:04:44.284185+00:00",
+      "sha256": "49c4d56288898dec69e0179c4917c795bb0473fe3b87c0ecf35c7e90a5b10062",
+      "bytes": 156836,
+      "file": "NTAP_submissions.json"
+    },
+    {
+      "ticker": "PAYX",
+      "url": "https://data.sec.gov/submissions/CIK0000723531.json",
+      "retrieved_utc": "2026-09-27T14:04:44.909263+00:00",
+      "sha256": "3b3e94d86ff517af1915d51344ba7b8dbcd9c9c45dd489dc615c8ba529ed66a4",
+      "bytes": 157270,
+      "file": "PAYX_submissions.json"
+    },
+    {
+      "ticker": "MSFT",
+      "url": "https://data.sec.gov/submissions/CIK0000789019.json",
+      "retrieved_utc": "2026-09-27T14:04:45.481374+00:00",
+      "sha256": "551ff75d16e89942b05b48835f3548be1276d59159bf86f009468b99542a94b9",
+      "bytes": 185250,
+      "file": "MSFT_submissions.json"
+    },
+    {
+      "ticker": "IBKR",
+      "url": "https://data.sec.gov/submissions/CIK0001381197.json",
+      "retrieved_utc": "2026-09-27T14:04:46.019899+00:00",
+      "sha256": "0abd1be5a425b3ed96abcc04c6e8e90cef9dd68ae26782a6ecf6710297e02f6d",
+      "bytes": 149607,
+      "file": "IBKR_submissions.json"
+    },
+    {
+      "ticker": "HIG",
+      "url": "https://data.sec.gov/submissions/CIK0000874766.json",
+      "retrieved_utc": "2026-09-27T14:04:46.737217+00:00",
+      "sha256": "0148b5c7d326634f4082f739911e6950812707e282dbd04fc510fa1cce37d22e",
+      "bytes": 149193,
+      "file": "HIG_submissions.json"
+    },
+    {
+      "ticker": "ALLE",
+      "url": "https://data.sec.gov/submissions/CIK0001579241.json",
+      "retrieved_utc": "2026-09-27T14:04:47.263381+00:00",
+      "sha256": "0ca78f20b4f2983d49c222414da2c6bdd7593f1a0386001af66cbdb4b0931f76",
+      "bytes": 159678,
+      "file": "ALLE_submissions.json"
+    },
+    {
+      "ticker": "AIZ",
+      "url": "https://data.sec.gov/submissions/CIK0001267238.json",
+      "retrieved_utc": "2026-09-27T14:04:47.857286+00:00",
+      "sha256": "a19d5f5466a117884f4fad768a569369e5dce27028191417ef72dff65cdf7c55",
+      "bytes": 158711,
+      "file": "AIZ_submissions.json"
+    },
+    {
+      "ticker": "RSG",
+      "url": "https://data.sec.gov/submissions/CIK0001060391.json",
+      "retrieved_utc": "2026-09-27T14:04:48.398322+00:00",
+      "sha256": "0649fc84515fa9e030df9e8037a8560bfe2f568b0cb14d5a1c631419ccc7a7d0",
+      "bytes": 157903,
+      "file": "RSG_submissions.json"
+    },
+    {
+      "ticker": "LH",
+      "url": "https://data.sec.gov/submissions/CIK0000920148.json",
+      "retrieved_utc": "2026-09-27T14:04:48.885499+00:00",
+      "sha256": "ead4c51ef1b33bfb1809a51d113b358df6912a676e6cdd37092376d0563e60e2",
+      "bytes": 159404,
+      "file": "LH_submissions.json"
+    }
+  ],
+  "submission_index_observations": [
+    {
+      "ticker": "NVDA",
+      "recent_since_sep20": [
+        {
+          "filingDate": "2026-09-23",
+          "acceptanceDateTime": "2026-09-23T20:56:28.000Z",
+          "form": "4",
+          "accessionNumber": "0001696841-26-000014",
+          "primaryDocument": "xslF345X06/wk-form4_1790196985.xml",
+          "reportDate": "2026-09-21"
+        },
+        {
+          "filingDate": "2026-09-22",
+          "acceptanceDateTime": "2026-09-22T20:56:23.000Z",
+          "form": "4",
+          "accessionNumber": "0001199039-26-000016",
+          "primaryDocument": "xslF345X06/wk-form4_1790110579.xml",
+          "reportDate": "2026-09-18"
+        },
+        {
+          "filingDate": "2026-09-21",
+          "acceptanceDateTime": "2026-09-21T20:22:56.000Z",
+          "form": "144",
+          "accessionNumber": "0001921094-26-001040",
+          "primaryDocument": "xsl144X01/primary_doc.xml",
+          "reportDate": ""
+        }
+      ],
+      "latest_filing": "2026-09-23"
+    },
+    {
+      "ticker": "CPAY",
+      "recent_since_sep20": [],
+      "latest_filing": "2026-08-25"
+    },
+    {
+      "ticker": "AMP",
+      "recent_since_sep20": [],
+      "latest_filing": "2026-09-04"
+    },
+    {
+      "ticker": "RL",
+      "recent_since_sep20": [],
+      "latest_filing": "2026-09-03"
+    },
+    {
+      "ticker": "AME",
+      "recent_since_sep20": [],
+      "latest_filing": "2026-08-26"
+    },
+    {
+      "ticker": "SNA",
+      "recent_since_sep20": [],
+      "latest_filing": "2026-09-01"
+    },
+    {
+      "ticker": "ABNB",
+      "recent_since_sep20": [],
+      "latest_filing": "2026-09-17"
+    },
+    {
+      "ticker": "NTAP",
+      "recent_since_sep20": [
+        {
+          "filingDate": "2026-09-24",
+          "acceptanceDateTime": "2026-09-24T20:24:29.000Z",
+          "form": "144",
+          "accessionNumber": "0001950047-26-009789",
+          "primaryDocument": "xsl144X01/primary_doc.xml",
+          "reportDate": ""
+        },
+        {
+          "filingDate": "2026-09-23",
+          "acceptanceDateTime": "2026-09-23T20:30:07.000Z",
+          "form": "4",
+          "accessionNumber": "0001193125-26-399475",
+          "primaryDocument": "xslF345X06/ownership.xml",
+          "reportDate": "2026-09-21"
+        },
+        {
+          "filingDate": "2026-09-23",
+          "acceptanceDateTime": "2026-09-23T20:30:04.000Z",
+          "form": "4",
+          "accessionNumber": "0001193125-26-399472",
+          "primaryDocument": "xslF345X06/ownership.xml",
+          "reportDate": "2026-09-21"
+        },
+        {
+          "filingDate": "2026-09-21",
+          "acceptanceDateTime": "2026-09-21T20:51:22.000Z",
+          "form": "144",
+          "accessionNumber": "0001950047-26-009724",
+          "primaryDocument": "xsl144X01/primary_doc.xml",
+          "reportDate": ""
+        },
+        {
+          "filingDate": "2026-09-21",
+          "acceptanceDateTime": "2026-09-21T20:02:43.000Z",
+          "form": "144",
+          "accessionNumber": "0001950047-26-009688",
+          "primaryDocument": "xsl144X01/primary_doc.xml",
+          "reportDate": ""
+        }
+      ],
+      "latest_filing": "2026-09-24"
+    },
+    {
+      "ticker": "PAYX",
+      "recent_since_sep20": [
+        {
+          "filingDate": "2026-09-24",
+          "acceptanceDateTime": "2026-09-24T20:06:01.000Z",
+          "form": "10-Q",
+          "accessionNumber": "0000723531-26-000006",
+          "primaryDocument": "payx-20260831.htm",
+          "reportDate": "2026-08-31"
+        },
+        {
+          "filingDate": "2026-09-23",
+          "acceptanceDateTime": "2026-09-23T12:41:28.000Z",
+          "form": "8-K",
+          "accessionNumber": "0000723531-26-000004",
+          "primaryDocument": "payx-20260923.htm",
+          "reportDate": "2026-09-23"
+        }
+      ],
+      "latest_filing": "2026-09-24"
+    },
+    {
+      "ticker": "MSFT",
+      "recent_since_sep20": [],
+      "latest_filing": "2026-09-17"
+    },
+    {
+      "ticker": "IBKR",
+      "recent_since_sep20": [],
+      "latest_filing": "2026-09-02"
+    },
+    {
+      "ticker": "HIG",
+      "recent_since_sep20": [
+        {
+          "filingDate": "2026-09-25",
+          "acceptanceDateTime": "2026-09-25T20:18:34.000Z",
+          "form": "8-K",
+          "accessionNumber": "0000874766-26-000064",
+          "primaryDocument": "hig-20260923.htm",
+          "reportDate": "2026-09-23"
+        }
+      ],
+      "latest_filing": "2026-09-25"
+    },
+    {
+      "ticker": "ALLE",
+      "recent_since_sep20": [],
+      "latest_filing": "2026-09-08"
+    },
+    {
+      "ticker": "AIZ",
+      "recent_since_sep20": [],
+      "latest_filing": "2026-09-15"
+    },
+    {
+      "ticker": "RSG",
+      "recent_since_sep20": [],
+      "latest_filing": "2026-09-14"
+    },
+    {
+      "ticker": "LH",
+      "recent_since_sep20": [
+        {
+          "filingDate": "2026-09-22",
+          "acceptanceDateTime": "2026-09-22T20:43:38.000Z",
+          "form": "8-K",
+          "accessionNumber": "0000920148-26-000205",
+          "primaryDocument": "lh-20260922.htm",
+          "reportDate": "2026-09-22"
+        }
+      ],
+      "latest_filing": "2026-09-22"
+    }
+  ],
+  "calendar_gate": {
+    "confirmed_event_next5_found": false,
+    "all_names_cleared": false,
+    "status": "Not found is not verified no event. MSFT date unannounced; ALLE no upcomingdetails; AMP/HIG/NVDA dynamiccalendar incomplete; others requirecomplete refresh."
+  },
+  "verification_review": {
+    "x1_v005_verification": "No demonstrated normalizedEPS arithmetic error for AMP/PAYX. PAYX20x historical-range concern is judgment with secondaryvendor support. Priceconflicts delegated.",
+    "adopt": [
+      "Primarytable facts",
+      "PAYX cash recovery gate",
+      "AMP/PAYX disclosed normalizedEPS assumptions"
+    ],
+    "change": [
+      "Cutoff timestamps",
+      "HIG one-time settlement watch",
+      "LH debtperiod/totaldebt comparison",
+      "RSG cashdefinition"
+    ],
+    "reject": [
+      "Automatic inheritance of RSG7%/LH5.6% conviction weights",
+      "LeveredFCF against EV/WACC withoutbridge",
+      "Perpetualgrowth vs finitegrowth as valuation proof"
+    ]
+  },
+  "limitations": [
+    "SEC index absence does not prove no news",
+    "No broad re-underwriting of all14",
+    "No verified future cash recovery",
+    "Calendar not fully cleared",
+    "No trades performed"
+  ]
+}

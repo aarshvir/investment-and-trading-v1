@@ -1,0 +1,287 @@
+{
+  "analyst": "RA6",
+  "date": "2026-10-06",
+  "data_cutoff": "EDGAR submissions queried 2026-10-06; prices and share counts as of 2026-09-25 close (AXP $308.89, MSCI $551.36, BR $163.77); rf = 10-yr Treasury 5.17% (FRED DGS10, 2026-09-25); Fed funds target 3.75-4.00% after 2026-09-16.",
+  "note": "Research only; not personal advice. Status labels: CONFIRMED / NOT FOUND / WRONG. Model files: C:\\Users\\user\\eqv4\\cache\\RA6\\ (axp_dcf.py, msci_dcf.py, br_dcf.py).",
+  "tickers": {
+    "AXP": {
+      "claims": [
+        {
+          "claim": "FY2026 EPS guidance $17.30-$17.90 held at Q2 2026 (24 Jul 2026)",
+          "status": "CONFIRMED",
+          "source": "AXP 8-K Ex.99.1 acc. 0000004962-26-000318: 'We continue to expect full-year EPS of $17.30 to $17.90.'; revenue growth guide raised to 10 percent"
+        },
+        {
+          "claim": "Risk-free rate about 4.2% in the reverse DCF",
+          "status": "WRONG",
+          "source": "FRED DGS10 = 5.17% on 2026-09-25; cost of equity restated to 9.9% (5.17% + beta 1.048 x ERP 4.5%)"
+        },
+        {
+          "claim": "Net income treated as distributable earnings (all earnings paid out) in the reverse DCF",
+          "status": "WRONG",
+          "source": "10-Q 30 Jun 2026: CET1 managed to a 10 to 11 percent target range, so growth requires retained capital; corrected model = EPS less growth in book value per share (BVPS $48.41 = ($34,280m - $1,600m preferred) / 675m)"
+        },
+        {
+          "claim": "Implied 10-yr EPS growth about 5.1%, well below base",
+          "status": "WRONG",
+          "source": "Own model: 7.3% at 9.9% (6.2% at ERP 4.14%, 8.6% at ERP 5.0%) vs evidence-based base 9%; value at base $344 (+11%), IRR 10.6% vs 9.9% required"
+        },
+        {
+          "claim": "Management 'mid-teens EPS growth' aspiration as base",
+          "status": "NOT FOUND",
+          "source": "Not tied to a filed number in the 10-Q or Q2 release read (release only refers to a 'growth aspiration'); excluded from the base"
+        },
+        {
+          "claim": "Dividend yield 1.15% (lastDividend $3.54)",
+          "status": "WRONG",
+          "source": "10-Q 30 Jun 2026: $0.95 declared per quarter in 2026 ($1.90 H1) = $3.80 a year = 1.23%"
+        },
+        {
+          "claim": "Q2 2026 net write-off rate 2.2% (principal, interest, fees); CET1 10.4%; diluted shares 679m vs 699m",
+          "status": "CONFIRMED",
+          "source": "10-Q 30 Jun 2026 key metrics table (CET1 10.4%, ROE 36.4%); income statement diluted 679 and 699"
+        },
+        {
+          "claim": "Credit stable; June 2026 principal write-offs clean",
+          "status": "WRONG",
+          "source": "8-K 7.01 acc. 0000004962-26-000353 footnote (b): June 2026 included a sale of previously written-off balances, lowering rates about 0.3 pt (consumer) and 0.1 pt (small business); Aug consumer principal 1.7%, 30+ days 1.1%"
+        },
+        {
+          "claim": "Preferred: $1.6bn 3.550% Series D replaced by $1.6bn 6.450% Series E",
+          "status": "CONFIRMED",
+          "source": "8-Ks acc. 0000004962-26-000338 (issued 12 Aug; Series D redeemed in full 15 Sep) and 0000004962-26-000327; extra preferred dividend about $46m a year, about $0.07 a share"
+        },
+        {
+          "claim": "Exit of the roughly 30% GBTG stake",
+          "status": "CONFIRMED",
+          "source": "SC 13D/A No.4 acc. 0000004962-26-000356: merger closed 29 Sep 2026, 157,786,199 shares cancelled for $9.50 each (about $1.5bn); 10-Q: 'sizable pre-tax gain ... reflected in Other expense'"
+        },
+        {
+          "claim": "No merger, guidance change, rating action or management change after the data cutoff",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions: only 8-Ks of 5 Aug, 12 Aug, 17 Aug and 15 Sep 2026 and Forms 4 (8 director DSU grants at $312.25 on 2 Oct, one officer sale of 8,811 shares at $337.41 on 19 Aug)"
+        },
+        {
+          "claim": "Next earnings 16 Oct 2026",
+          "status": "WRONG",
+          "source": "d4_live_snapshot next_earnings_date = 2026-10-23, not flagged as an estimate (company IR calendar not checked)"
+        },
+        {
+          "claim": "3-year scenario arithmetic (bear -4.8% / base 12.0% / bull 21.3%)",
+          "status": "CONFIRMED",
+          "source": "Recomputed with $3.80 dividend: -4.4% / +12.1% / +21.3%; stress case (EPS -15% in 2027, 13x) about -7.2% a year"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "discount_rate_and_inputs": "Equity-based reverse DCF: year-0 EPS $17.60 (FY26 guide midpoint), BVPS $48.41, ROE 36% for 10 years, growth capital retained, terminal 3.0% (ROE 25%); Ke = 5.17% + 1.048 x 4.5% = 9.9%. Implied 10-yr EPS CAGR 7.3% (6.2% at 9.4%, 8.6% at 10.4%) vs base 9%. P/B 6.4x = justified multiple at 36% ROE and 5% perpetual growth.",
+      "scenario_returns_3y": {
+        "bear": -0.044,
+        "base": 0.121,
+        "bull": 0.213
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria",
+        "key_adverse_facts",
+        "next_earnings_date",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.reconciliation",
+        "valuation_view_vs_v1.note",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "files_updated": [
+        "v4/dossiers/AXP.md",
+        "v4/outputs/F51_summary.json"
+      ],
+      "note": "Margin of safety shrinks from 'well below' to a 0.7-pt return cushion once the risk-free rate and capital retention are corrected; no kill criterion has fired."
+    },
+    "MSCI": {
+      "claims": [
+        {
+          "claim": "FY2026 guidance: FCF $1,485-1,545m, OCF $1,655-1,705m, opex $1,535-1,575m, interest $282-286m, capex $160-170m",
+          "status": "CONFIRMED",
+          "source": "MSCI 8-K Ex.99.1 acc. 0001408198-26-000044, 'Full-Year 2026 Guidance' table (21 Jul 2026)"
+        },
+        {
+          "claim": "Retention Rate 95.3% vs 94.4% a year ago; organic subscription Run Rate +8.1%; Index Run Rate +17.4%; operating margin 56.2%",
+          "status": "CONFIRMED",
+          "source": "Q2 2026 release (Run Rate and Retention Rate section, Table 8)"
+        },
+        {
+          "claim": "Q2 2025 operating margin 56.2%",
+          "status": "WRONG",
+          "source": "Q2 release: operating margin 56.2% (Q2 2026) vs 55.0% (Q2 2025)"
+        },
+        {
+          "claim": "Asset-based fees are about 1/3 of Run Rate",
+          "status": "WRONG",
+          "source": "Q2 release: $948.2m of $3,479.7m = 27.3%, but $190.9m of the $373.0m Run Rate increase (51%); subscriptions +7.8%"
+        },
+        {
+          "claim": "Debt $6.475bn, cash $352.7m, net debt $6.12bn",
+          "status": "WRONG",
+          "source": "10-Q Note 7: principal $6,425.0m ($5.95bn notes + $475.0m revolver), carrying $6,380.4m; cash $356.4m (Q2 release Table 3); net debt about $6.07bn"
+        },
+        {
+          "claim": "Reverse DCF on guided FCF $1,515m over EV at 9.0%/3.5% implies 9.7%",
+          "status": "WRONG",
+          "source": "Reproduced (9.73%) but FCF is levered (after $284m interest) and adds back SBC (FY25 $111.3m, H1-26 $73.1m); rate pre-dates rf 5.17%. Corrected: unlevered SBC-burdened FCF $1,616m, WACC 9.5%, implied 10.1%"
+        },
+        {
+          "claim": "Evidence-based base 10-11%",
+          "status": "WRONG",
+          "source": "Mixes per-share buyback uplift and +25% market-linked asset-based fees into an enterprise-level comparison; base restated to 9% (8-10%)"
+        },
+        {
+          "claim": "FY25 FCF $1,458.6m (+5.2%)",
+          "status": "CONFIRMED",
+          "source": "FY25 10-K: OCF $1,588.4m - software $90.5m - capex $39.3m"
+        },
+        {
+          "claim": "No management change or material event after 21 Jul 2026",
+          "status": "WRONG",
+          "source": "8-K 7 Aug 2026 Item 5.02 acc. 0001408198-26-000049: CFO interim principal accounting officer from 10 Aug, interim Global Controller; follows 8-K 31 Mar 2026 acc. 0001408198-26-000027 (CAO resigned, 'not the result of any disagreement')"
+        },
+        {
+          "claim": "First Street acquisition closes in Q3 2026",
+          "status": "NOT FOUND",
+          "source": "No closing 8-K on EDGAR through 6 Oct 2026; guidance assumes a Q3 close"
+        },
+        {
+          "claim": "Insider activity",
+          "status": "CONFIRMED",
+          "source": "Form 4 4 Sep 2026: director Rajat Taneja open-market purchase of 1,786 shares at $560"
+        },
+        {
+          "claim": "3-year scenario arithmetic (-2.2% / +11.9% / +19.7%)",
+          "status": "CONFIRMED",
+          "source": "Recomputed -2.2% / +12.0% / +19.9%; exit multiples then restated to 18x / 22.5x / 26x (-5.4% / +8.3% / +18.5%)"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "WATCH",
+      "old_implied": "below",
+      "new_implied": "above",
+      "discount_rate_and_inputs": "Unlevered SBC-burdened FCF $1,616m; EV $46.15bn; WACC 9.5% (rf 5.17% + Blume beta 1.147 x ERP 4.5% = Ke 10.3%; Kd after tax 4.5%; 9.2% to 10.0% over ERP 4.14-5.0%); terminal 3.5%. Implied 10-yr FCF CAGR 10.1% (9.4%-11.3%; equity cross-check 8.6%-10.3%) vs base 9%. Value at base $500 (-9%).",
+      "scenario_returns_3y": {
+        "bear": -0.054,
+        "base": 0.083,
+        "bull": 0.185
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria",
+        "key_adverse_facts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.reconciliation",
+        "valuation_view_vs_v1.note",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "files_updated": [
+        "v4/dossiers/MSCI.md",
+        "v4/outputs/F55_summary.json"
+      ],
+      "note": "Base-case return (about 8%) is below the 10.3% cost of equity; upgrade trigger is a price of about $470 or an FY27 FCF guide midpoint of at least $1.70bn."
+    },
+    "BR": {
+      "claims": [
+        {
+          "claim": "FY2026 free cash flow $1,233m",
+          "status": "CONFIRMED",
+          "source": "Q4 FY2026 release (8-K Ex.99.1, 4 Aug 2026) cash-flow statement: OCF $1,345.6m - capex $67.2m - software $45.4m = $1,233.0m; conversion 110% of adjusted net earnings"
+        },
+        {
+          "claim": "FY2027 guidance 6-8% recurring revenue cc, 8-12% adjusted EPS growth",
+          "status": "CONFIRMED",
+          "source": "Same release: 'Recurring revenue growth constant currency 6 - 8%; Adjusted Operating income margin ~21%; Adjusted Earnings per share growth 8 - 12%; Free cash flow conversion 100%+; Closed sales $290 - $330 million.'"
+        },
+        {
+          "claim": "Digital-asset gain inflated FY2026 free cash flow",
+          "status": "WRONG",
+          "source": "Cash-flow statement: 'Digital assets change in fair market value (231.4)' removed from OCF; the $227m gain is non-cash"
+        },
+        {
+          "claim": "GAAP and adjusted EPS both exactly $9.60 is an unresolved conflict",
+          "status": "CONFIRMED",
+          "source": "Release: diluted EPS $9.60 (FY25 $7.10, +35%), Adjusted EPS $9.60 (FY25 $8.55, +12%); adjusted net earnings $1,124m = GAAP net earnings; conflict closed"
+        },
+        {
+          "claim": "EV $21,663m for the DCF",
+          "status": "WRONG",
+          "source": "FY2026 balance sheet: debt $3,254.6m, cash $402.9m; EV = $18,941m + $3,254.6m - $402.9m = $21,793m"
+        },
+        {
+          "claim": "Original reverse DCF gives 2.9%",
+          "status": "CONFIRMED",
+          "source": "Reproduced at 2.87% with the dossier's own inputs (8.5%, terminal 2.5%, FCF $1,233m, EV $21,663m)"
+        },
+        {
+          "claim": "Corrected reverse DCF on SBC-burdened unlevered FY27E cash flow",
+          "status": "CONFIRMED",
+          "source": "WACC 8.6%, terminal 3.0%, $1,208m: 3.2% (2.4%-4.2%); with acquisitions charged 6.1%; vs like-for-like FCF base 6% (7% total growth)"
+        },
+        {
+          "claim": "Net debt/EBITDA about 1.7x",
+          "status": "WRONG",
+          "source": "Already corrected by DA13 to about 1.6x on debt of $3,254.6m"
+        },
+        {
+          "claim": "SBC modest at $13.5-27.2m per quarter",
+          "status": "CONFIRMED",
+          "source": "FY2026 SBC $93.9m (FY2025 $73.4m) in the cash-flow reconciliation; added back inside company-defined FCF"
+        },
+        {
+          "claim": "Q4 OCF $677.4m out of about $720m full-year run level",
+          "status": "WRONG",
+          "source": "FY2026 OCF $1,345.6m; FY2025 $1,171.3m"
+        },
+        {
+          "claim": "No 8-K, 13D or merger filing after 4 Aug 2026; insider activity unreviewed",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions: DEF 14A, DEFA14A, ARS (29 Sep), 20 Form 3/4/5 filings; grants (A), tax withholding (F), officer sale 2,501 sh at $159.76, director sale 253 sh at $192.60; no adverse pattern"
+        },
+        {
+          "claim": "3-year scenario arithmetic (-1.0% / +11.8% / +21.5%)",
+          "status": "CONFIRMED",
+          "source": "Recomputed from NTM EPS $10.80 with dividend $4.36: -0.9% / +12.0% / +21.7%; kept"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE",
+      "old_implied": "below",
+      "new_implied": "below",
+      "discount_rate_and_inputs": "EV $21,793m; unlevered SBC-burdened FY27E cash flow $1,208m; WACC 8.6% (rf 5.17% + Blume beta 0.94 x ERP 4.5% = Ke 9.4%; Kd pre-tax 5.3%); terminal 3.0%. Implied 10-yr FCF CAGR 3.2% (2.4%-4.2%) vs like-for-like base 6%; value at base $204 (+25%).",
+      "scenario_returns_3y": {
+        "bear": -0.01,
+        "base": 0.118,
+        "bull": 0.215
+      },
+      "changed_fields": [
+        "thesis_one_line",
+        "kill_criteria",
+        "key_adverse_facts",
+        "data_conflicts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.reconciliation",
+        "valuation_view_vs_v1.note"
+      ],
+      "files_updated": [
+        "v4/dossiers/BR.md",
+        "v4/outputs/F25_summary.json"
+      ],
+      "note": "Verdict survives the corrected method; confidence trimmed because the original compared FCF growth with a 10% adjusted-EPS base. With acquisitions charged to cash flow the cushion falls to about +7%."
+    }
+  }
+}

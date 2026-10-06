@@ -37,3 +37,5 @@ wrapt==2.4.1
 typing_extensions==4.16.0
 cffi==2.1.1
 pycparser==3.0
+
+fastparquet==2026.9.0  # fallback parquet engine (pyarrow DLL blocked by Windows Application Control, 5 Oct 2026); installed to eqv4/pylib_fp

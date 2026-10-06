@@ -1,0 +1,120 @@
+{
+  "agent": "F124",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "PCG": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "California power and gas utility growing earnings about 8% a year, priced cheaply because one big wildfire could wreck it.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "A wildfire attributed to PG&E equipment with estimated claims above $1.0B (the Wildfire Fund threshold per 10-Q) in any coverage year, or any Cal Fire report naming Utility equipment for a fire exceeding 100,000 acres.",
+        "Annual non-GAAP core EPS guidance cut below the low end of the prior range in any release (2026 range $1.64-$1.66), or 2027 guidance implying less than 7% growth.",
+        "Any announced PG&E Corporation common equity issuance before 2030 (contradicts the 10-Q statement) or dilution above 5% of diluted shares.",
+        "Any downgrade of the Utility to below its current unsecured rating by the agency that rates it below investment grade, or loss of investment grade at the other agencies.",
+        "CPUC decision disallowing more than $500M of the $1.59B Kincade/Dixie AB 1054 cost-recovery application (filed 14 Nov 2025)."
+      ],
+      "key_adverse_facts": [
+        "Consolidated debt about $64.2B (carrying, 30 Jun 2026) against equity $33.9B; TTM free cash flow about -$4.3B",
+        "Utility unsecured rating below investment grade at one agency (10-Q 0001004980-26-000048)",
+        "Dixie fire: about 190 complaints for at least 9,062 plaintiffs; $1.59B Kincade/Dixie cost-recovery application pending, $674M drawn from Wildfire Fund",
+        "Wildfire Fund asset being amortised faster ($126M expense in Q2 2026 vs $109M)",
+        "2027-2030 at-least-9% EPS growth last stated in the Q3 2025 release, not repeated in 2026 releases opened"
+      ],
+      "data_conflicts": [
+        "d4 implied shares 3.0B / market cap $37.0B vs 10-Q 2,202M basic, 2,285M diluted shares",
+        "d4 free cash flow -$6.15B vs filing-derived TTM about -$4.3B"
+      ],
+      "next_earnings_date": "2026-10-22",
+      "confidence_in_thesis": "low-to-med: earnings path is well guided, but the wildfire tail cannot be bounded from filings",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "in line",
+        "reconciliation": "No V1 row exists for PCG. Price at $12.34 implies about 4-6% core EPS growth from $1.65, but from a GAAP-adjusted $1.43 (recurring non-core costs about $0.22 a year) it implies about 5.6-7.6% versus my 7% base and management's at-least-9% target (Oct 2025). Restated below -> in line by DVH5, 2026-10-06; verdict unchanged."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.076,
+        "base": 0.131,
+        "bull": 0.262
+      },
+      "scenario_basis": "Start core EPS $1.65 (2026 guide midpoint), EPS growth 0/7/10%, exit P/E 5.5/8.5/11x, dividend $0.20 growing 5%; from $12.34; excludes a separate catastrophic-fire scenario."
+    },
+    "AWK": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Largest US water utility with steady 7-9% earnings growth, but the price already reflects that and a merger is pending.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "2026 adjusted EPS guidance cut below $6.02, or H2 2026 adjusted EPS growth below 5% year on year.",
+        "Essential Utilities merger terminated, or any final PUC order adding conditions that the company calls a \"Burdensome Effect\", or closing slipping past 30 Jun 2027.",
+        "Long-term EPS/dividend growth target lowered below 7% (current 7-9%).",
+        "Consolidated net debt / EBITDA above 6.0x or either Moody's/S&P downgrade of American Water Capital Corp. senior notes.",
+        "Any adverse final judgment over $200M in the Chattanooga or other class actions (10-Q legal note)."
+      ],
+      "key_adverse_facts": [
+        "Consolidated net debt about $15.8B; TTM free cash flow about -$1.0B; equity forward shares (4.69M) still to settle",
+        "Essential Utilities all-stock merger (0.305 AWK share per Essential share) not yet approved in Pennsylvania; non-unanimous settlement filed 15 Sep 2026",
+        "H1 2026 adjusted EPS growth only 4.4% versus 7.6% needed for guidance midpoint",
+        "New $500M 5.550% notes due 2033 priced 14 Sep 2026, showing higher funding costs"
+      ],
+      "data_conflicts": [
+        "d4 free cash flow -$1.79B vs filing-derived TTM about -$1.0B"
+      ],
+      "next_earnings_date": "2026-10-28",
+      "confidence_in_thesis": "med: business quality is high and guidance reliable; limited margin of safety at 21.6x",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "implied_vs_base": "in_line",
+        "reconciliation": "No V1 row exists for AWK. Price implies about 5.3% EPS growth (4.4-6.3% across assumptions) against a 7% base; the gap is small and merger dilution is not in guidance."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.024,
+        "base": 0.072,
+        "bull": 0.139
+      },
+      "scenario_basis": "Start adjusted EPS $6.07 (2026 guide midpoint), EPS growth 4/7/9%, exit P/E 16/20/23x, dividend $3.58 growing 8%; from $130.91."
+    },
+    "FFIV": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Sells and secures the traffic layer of big company applications; excellent cash flow, but price assumes growth a hardware upgrade cycle may not sustain.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Fiscal-year guidance cut: any release lowering FY non-GAAP EPS or revenue growth below the prior range (current FY26 range $17.21-$17.33, revenue +9% to +10%).",
+        "Product revenue growth below 5% year on year in two consecutive quarters (Q3 FY26 +19%).",
+        "Non-GAAP operating margin below 33% in any quarter (Q3 FY26 35.0%).",
+        "A quantified loss or regulatory action from the Cyber Incident above $100M, or a customer-notified BIG-IP vulnerability causing named enterprise churn disclosed in a 10-Q/8-K.",
+        "Inventory above $200M without corresponding product revenue growth above 15%, or consolidated cash below $1.0B."
+      ],
+      "key_adverse_facts": [
+        "October 2025 security incident with long-term persistent access and exfiltrated files; securities class action (Smith v. F5) and two derivative suits",
+        "Systems revenue +32% in Q3 FY26 is cycle-driven; inventory $126.9M vs $77.2M at 30 Sep 2025",
+        "Stock-based compensation about 7.6% of revenue; non-GAAP EPS excludes it; Q3 tax rate 8%",
+        "Software revenue growth lumpy: -8% Q1, +17% Q2, +7% Q3 FY26"
+      ],
+      "data_conflicts": [
+        "d4 free cash flow $717M vs filing-derived TTM about $970M (OCF $1,049M less capex about $80M)",
+        "d4/Yahoo total debt $252M is operating lease liabilities; no borrowings per 10-Q"
+      ],
+      "next_earnings_date": "2026-10-26",
+      "confidence_in_thesis": "med: execution and guidance record strong; valuation leaves little margin",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "implied_vs_base": "above",
+        "reconciliation": "No V1 row exists for FFIV. Price implies about 14% annual growth in SBC-adjusted FCF per share (about 10.7% on non-GAAP EPS) versus my 8% base."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.146,
+        "base": 0.026,
+        "bull": 0.135
+      },
+      "scenario_basis": "Start FY26 non-GAAP EPS $17.27 (guide midpoint), EPS growth 0/8/13%, exit P/E 16/22/26x, no dividend; from $443.06."
+    }
+  }
+}

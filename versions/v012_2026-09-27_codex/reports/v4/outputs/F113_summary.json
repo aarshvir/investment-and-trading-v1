@@ -1,0 +1,117 @@
+{
+  "agent": "F113",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "DHI": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "America's largest homebuilder, priced for flat-to-low growth, with a strong balance sheet but two straight quarters of cut guidance and shrinking margins.",
+      "kill_criteria": [
+        "Full-year FY2026 consolidated revenue guidance cut a third consecutive time (below the current $32.5-33.0bn range at the Q4 FY26 release, due 2026-10-29)",
+        "Home sales gross margin falls below 18.0% for two consecutive quarters (from 20.7% in Q3 FY26)",
+        "Homebuilding-segment debt-to-capital exceeds 25% (from 15.4% at 6/30/26), on the homebuilding-only entity basis, not consolidated",
+        "Consolidated operating cash flow negative for two consecutive quarters",
+        "Homes closed or revenue fall below the low end of the Q3 FY26 guide for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "Fiscal 2026 consolidated revenue guidance cut from $33.5-34.5bn (Q2 FY26 release, 2026-04-21) to $32.5-33.0bn (Q3 FY26 release, 2026-07-21), a 3.7% cut at the midpoint in one quarter",
+        "Company states it expects sales incentives to 'remain elevated during the fourth quarter' (Q3 FY26 release, verbatim), a second consecutive quarter of margin caution",
+        "TTM diluted EPS $10.49 is down from FY2025 full-year EPS $11.57 and well below the FY2024 peak of $14.34",
+        "Roughly half of consolidated debt ($7,112.6m) sits outside the homebuilding segment ($3,685.3m), mostly at the captive mortgage-finance arm; a consolidated-only leverage read would overstate homebuilding risk"
+      ],
+      "data_conflicts": [
+        "None material; b1_live_scores' negative earnings-momentum (SUE) reading is consistent with, not contradicted by, the primary-source guidance cuts found in the filings"
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (low leverage and strong buyback capacity are well evidenced; near-term margin/volume trajectory is still deteriorating and the reverse DCF reads close to fair value rather than clearly cheap)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "in_line",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for DHI (confirmed absent from v1_valuation_table.csv and v1_valuation.json); the analyst's own reverse DCF (implied 10-yr FCF CAGR ~0.9-1.8% at 9.0-9.5% WACC) is read as in_line with a 2-4%/yr base case, not clearly below it, given TTM FCF sits above a full-cycle trough."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.06,
+        "base": 0.09,
+        "bull": 0.20,
+        "scenario_basis": "TTM EPS $10.49, 13.5x trailing P/E; bear = further margin/volume decline to ~11x on flat-to-down EPS; base = EPS stabilizes and P/E holds ~13-14x with ~7.5% combined buyback/dividend yield; bull = housing recovery lifts EPS and re-rates to ~16x."
+      }
+    },
+    "ESS": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A West Coast apartment landlord in supply-constrained markets, raising its full-year cash-earnings guidance while trading for almost no priced-in growth.",
+      "kill_criteria": [
+        "Full-year 2026 Core FFO/share guidance cut below the current $16.03-$16.25 range at the Q3 2026 release (estimated late October 2026)",
+        "Same-property revenue growth falls below 2.0% for two consecutive quarters (from 2.7-2.9% currently)",
+        "Estimated net debt/EBITDA rises above 6.5x (analyst estimate; company does not disclose an exact ratio)",
+        "California or Washington state/local rent-control legislation caps annual same-property revenue growth below 2% system-wide",
+        "Dividend increase streak broken (would end the 32-consecutive-year record cited by the company)"
+      ],
+      "key_adverse_facts": [
+        "Full-year 2026 GAAP net income per diluted share guidance midpoint was cut $0.29 (to $5.58) in the same Q2 2026 release that raised Core FFO guidance +$0.20 (to $16.14) -- a real GAAP-vs-adjusted divergence, not simply reconciled line-by-line at this depth",
+        "GAAP diluted EPS fell sharply quarter over quarter ($1.65 in Q1 2026 to $0.97 in Q2 2026) even as Core FFO and same-property NOI both grew",
+        "Concentrated in three states (California, Washington) with above-average rent-regulation risk",
+        "Estimated net debt/EBITDA of ~5.4-5.8x is an analyst estimate, not a company-disclosed figure; no exact ratio was found in the two releases reviewed"
+      ],
+      "data_conflicts": [
+        "b1_live_scores' weak earnings-momentum (SUE) score for ESS looks like a REIT-specific artefact: GAAP EPS is lumpy from non-cash items and disposition-gain timing that the SUE calculation is not built to normalize for a REIT whose targeted metric is Core FFO, not GAAP EPS"
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (Core FFO raise and same-property re-acceleration are well evidenced from primary sources; leverage estimate and GAAP-vs-Core-FFO gap were not fully decomposed within the time box)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for ESS (confirmed absent from v1_valuation_table.csv and v1_valuation.json); the analyst's own reverse DCF (implied 10-yr Core FFO/share CAGR ~0% to +1.2% at 7.5-8.0% cost of equity) is below a 3-4%/yr base case for a supply-constrained coastal apartment REIT with a 32-year dividend-growth record."
+      },
+      "scenario_returns_3y": {
+        "bear": 0.02,
+        "base": 0.09,
+        "bull": 0.15,
+        "scenario_basis": "FY26 guided Core FFO/share midpoint $16.14, ~16.8x P/Core FFO plus ~3.5-4% dividend yield; bear = same-property growth stalls near 0%, multiple compresses to ~15x; base = 2-3%/yr Core FFO growth at a steady ~16-17x multiple plus the dividend; bull = supply tightens further, Core FFO growth accelerates to 4-5%/yr with modest re-rating."
+      }
+    },
+    "EXR": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The second-largest US self-storage operator, just turning same-store growth positive after a multi-year supply glut, priced for almost no further growth.",
+      "kill_criteria": [
+        "Full-year 2026 Core FFO/share guidance cut below the current $8.25-$8.40 range at the Q3 2026 release (estimated late October 2026)",
+        "Same-store NOI growth guidance reversed back to negative territory (from the current 0.50%-2.50% full-year range)",
+        "Same-store occupancy falls below 93.0% for two consecutive quarters (from 94.2% at 6/30/26)",
+        "Estimated net debt/EBITDA rises above 6.5x (analyst estimate; company does not disclose a single total-debt figure)",
+        "Third-party-managed store count declines quarter over quarter (from +67 gross / +48 net stores added in Q2 2026)"
+      ],
+      "key_adverse_facts": [
+        "Same-store occupancy of 94.2% (Q2 2026) is down 20bps year over year even as revenue/NOI improved -- the recovery is being driven by rate, not volume",
+        "EXR discontinued the standard XBRL 'NotesPayable' total-debt tag after Q3 2021; total consolidated debt (~$13.65bn at 6/30/26) had to be hand-assembled from the balance sheet's secured/unsecured/revolver line items rather than read from one machine-readable figure -- a disclosure-quality flag",
+        "Estimated net debt/EBITDA of ~5.2-5.4x is an analyst estimate, not a company-disclosed figure",
+        "Weighted-average one-month SOFR guidance assumption of 3.73% means the FY26 Core FFO guide has embedded floating-rate sensitivity that a rate spike would work against"
+      ],
+      "data_conflicts": [
+        "b1_live_scores shows a missing (NaN) leverage percentile for EXR; the model's quality score should not be read as having cleared a leverage screen for this name"
+      ],
+      "next_earnings_date": "2026-10-30",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (the guidance raise and same-store inflection are well evidenced from primary sources; the fundamental recovery is recent and unconfirmed over multiple quarters, and leverage is an analyst estimate)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for EXR (confirmed absent from v1_valuation_table.csv and v1_valuation.json); the analyst's own reverse DCF (implied 10-yr Core FFO/share CAGR ~ -0.6% to +0.6% at 7.5-8.0% cost of equity) is at or modestly below a 2-4%/yr base case tied to the just-turned-positive same-store outlook and continued third-party management growth."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.02,
+        "base": 0.10,
+        "bull": 0.18,
+        "scenario_basis": "FY26 guided Core FFO/share midpoint $8.325, ~16.0x P/Core FFO plus a $1.62/quarter dividend; bear = same-store recovery stalls/reverses, multiple compresses to ~14x; base = same-store NOI growth continues in the 1-3%/yr range plus third-party management fee growth at a steady ~16x multiple plus the dividend; bull = supply glut clears faster than expected, Core FFO growth reaches 4-5%/yr with re-rating toward ~18x."
+      }
+    }
+  }
+}

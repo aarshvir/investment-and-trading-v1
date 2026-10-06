@@ -1,0 +1,568 @@
+{
+  "asof": "2026-09-26",
+  "decision_price_cutoff": "2026-09-24",
+  "holding_period_years": 3,
+  "exit_date": "2029-09-24",
+  "currency": "USD",
+  "scope": "Independentfundamentalunderwriting4names;notpersonalizedorders. Pricesfrozen; use limitsandrefreshbeforeexecution.",
+  "method": "IRR solvesprice=sum(dividendyear_i/(1+r)^i)+terminalEPS*terminalPE/(1+r)^3. Taxandfeesexcluded except explicitdividendwithholdingstress. No probabilityweights, buybackyield, excesscashadd-on, or price-basedtargetformula.",
+  "companies": [
+    {
+      "ticker": "PAYX",
+      "rank": 1,
+      "price": 101.59,
+      "decision": "BUY NOW",
+      "limit_price": 101.8,
+      "hurdle": 0.12,
+      "baseline_eps": 5.9508,
+      "baseline_period": "FY2027 ending May31 2027",
+      "baseline_definition": "Management FY2026 adjusted EPS5.51 multiplied by midpoint FY2027 guidance growth8%; company-adjusted, not GAAP. Our FY2027 economic anchor5.85 retains0.10/share recurring integration allowance.",
+      "terminal_period": "FY2029 ending May31 2029; trailing completed fiscal year at Sep2029 exit",
+      "source_ids": [
+        "payx_fy26",
+        "payx_q127",
+        "payx_fy26_10k",
+        "payx_q127_10q"
+      ],
+      "scenarios": {
+        "bear": {
+          "terminal_eps": 4.8,
+          "terminal_pe": 14,
+          "dividends_by_holding_year": [
+            4.76,
+            4,
+            4
+          ],
+          "terminal_price": 67.2,
+          "driver_assumptions": {
+            "revenue_m": 6600,
+            "economic_operating_margin": 0.38,
+            "interest_expense_m": 280,
+            "other_income_m": 20,
+            "tax_rate": 0.24,
+            "diluted_shares_m": 357,
+            "calculated_eps": 4.785658263305322
+          },
+          "irr": -0.0808084456745502,
+          "irr_dividend_withholding_30pct": -0.09515496823328101,
+          "terminal_wealth_cagr": -0.07670473493511976,
+          "present_value_at_hurdle": 58.117529154518934
+        },
+        "base": {
+          "terminal_eps": 6.6,
+          "terminal_pe": 20,
+          "dividends_by_holding_year": [
+            4.76,
+            5,
+            5.25
+          ],
+          "terminal_price": 132.0,
+          "driver_assumptions": {
+            "revenue_m": 7600,
+            "economic_operating_margin": 0.438,
+            "interest_expense_m": 270,
+            "other_income_m": 30,
+            "tax_rate": 0.24,
+            "diluted_shares_m": 356,
+            "calculated_eps": 6.594067415730338
+          },
+          "irr": 0.1363746378179066,
+          "irr_dividend_withholding_30pct": 0.12281506157849698,
+          "terminal_wealth_cagr": 0.1310938449124508,
+          "present_value_at_hurdle": 105.92780840014575
+        },
+        "bull": {
+          "terminal_eps": 7.5,
+          "terminal_pe": 23,
+          "dividends_by_holding_year": [
+            4.9,
+            5.4,
+            5.9
+          ],
+          "terminal_price": 172.5,
+          "driver_assumptions": {
+            "revenue_m": 8200,
+            "economic_operating_margin": 0.45,
+            "interest_expense_m": 230,
+            "other_income_m": 30,
+            "tax_rate": 0.24,
+            "diluted_shares_m": 355,
+            "calculated_eps": 7.471549295774648
+          },
+          "irr": 0.2376371929434239,
+          "irr_dividend_withholding_30pct": 0.22423178670457455,
+          "terminal_wealth_cagr": 0.2292502726236343,
+          "present_value_at_hurdle": 135.66144314868802
+        }
+      },
+      "thesis": "Sticky compliance and payroll workflows plus PEO growth; post-acquisition margins improve without assuming a return to historic premium multiples. The quote provides a dividend-supported entry while EBIT, actual interest and dilution remain charged.",
+      "accounting": [
+        "FY2026 revenue6512.0m vs5571.7m; GAAPEPS4.89 vs4.58, adjusted5.51 vs4.98. Acquisition comparisons not organic growth.",
+        "FY2026 CFO2556.7m\u2212capex234.9m=2321.8m versus FY2025 CFO1900.9\u2212191.8=1709.1m. TTM throughAug31 2026 CFO2251.8\u2212capex235.1=2016.7m.",
+        "A conservative cash cross-check also deducts TTM SBC88.6m, net purchasedreceivables182.3m and otherassetpurchases34.3m:1711.5m, or4.80/share using356.6m dilutedshares. This is a conservative ownercash diagnostic, not GAAPFCF. It is not subtracted again in EPSvaluation.",
+        "Q127CFO413.5m vs718.4m: PEO taxsettlementtiming, CARESclientrefunds, bonuses and taxpayments account for major changes; do not annualize this quarter or FY26 workingcapital.",
+        "Aug31 corporatecash600.9m+investments333.3m=934.2m; exclude restrictedcash55m and clientassets4348.4m. Debtcarryingvalue4558.0m gives corporate netdebt3623.8m beforeleases.",
+        "Q127 interest65.1m is charged in earnings; FY26Paycor intangibleamortization242.0m is companyadjusted away, while normalSBC remains. Our margin includes recurringcostallowance and 270mFY29interest. No free debtfinancing.",
+        "10Kinterest sensitivity25bp implies4.5\u20135m aftertaxannualearnings (~1.3\u20131.4cEPS); 100bp mechanicalscale~.05EPS, not fullstructural/reinvestment prediction."
+      ],
+      "catalysts": [
+        "Nextquarter evidence of ManagementSolutions acceleration from4% toward5\u20136% guidance",
+        "Cash conversion recovers as documented payrolltax/clientrefund timing reverses",
+        "Paycor cross-selling and recurring integration costs taper"
+      ],
+      "failure_rules": [
+        "Two consecutive quarters ManagementSolutions organic growth below3% with reduced EPS guidance: remove BUY and revalue.",
+        "FY2027 normalized EPS below5.5 or annual conservative ownercash below1.7bn without reversible documentedtiming: cut basecase.",
+        "Dividend funded by additional borrowing, corporate netdebt rising despite no new acquisition, or material data/security failure: immediate review."
+      ],
+      "position_judgment": "Starter only at or below101.80; valuation permits purchase but workingcapital and integration justify modest sizing. Do not mechanically average down after a thesis failure.",
+      "price_date": "2026-09-24",
+      "price_basis": "Regular-session unadjusted close, frozen previously externallycorroborated; notlive executablequote.",
+      "sources": [
+        {
+          "id": "payx_fy26",
+          "url": "https://www.sec.gov/Archives/edgar/data/723531/000119312526280314/payx-ex99_1.htm"
+        },
+        {
+          "id": "payx_q127",
+          "url": "https://www.sec.gov/Archives/edgar/data/723531/000072353126000004/payx-ex99_1.htm"
+        },
+        {
+          "id": "payx_fy26_10k",
+          "url": "https://investor.paychex.com/sec-filings/all-sec-filings/content/0001193125-26-307785/0001193125-26-307785.pdf"
+        },
+        {
+          "id": "payx_q127_10q",
+          "url": "https://investor.paychex.com/sec-filings/all-sec-filings/content/0000723531-26-000006/payx-20260831.htm"
+        }
+      ],
+      "hurdle_justification": "12% nominalUSDgross hurdle reflects concentration, cyclicality and imperfectnormalization; 14% for discretionaryfashion/brand risk. Analystrequiredreturn, not riskfreerate or empiricallyestimatedcostofequity.",
+      "maximum_entry_model": 105.92780840014575,
+      "base_irr_at_limit": 0.1355599897265115,
+      "valuation_range_at_hurdle": [
+        58.117529154518934,
+        135.66144314868802
+      ],
+      "original_gross_practical_limit": 105,
+      "maximum_entry_with_30pct_dividend_withholding": 102.3359636935131,
+      "base_irr_at_limit_with_30pct_dividend_withholding": 0.12201974485265799,
+      "limit_note": "Final $101.80 limit clears the 12% hurdle after illustrative 30% dividend withholding and 25 basis points of entry and exit costs. Gross model present value is unchanged. These are sensitivity assumptions, not an investor tax determination.",
+      "maximum_entry_with_30pct_dividend_withholding_and_25bp_each_way_costs": 101.84646006158073,
+      "base_irr_at_limit_after_withholding_and_costs": 0.12017536295310982
+    },
+    {
+      "ticker": "ALLE",
+      "rank": 2,
+      "price": 152.48,
+      "decision": "BUY BELOW",
+      "limit_price": 145,
+      "hurdle": 0.12,
+      "baseline_eps": 8.625,
+      "baseline_period": "Calendar FY2026 ending Dec31 2026",
+      "baseline_definition": "MidpointGAAPguidance8.025 +0.60acquisitionamortization =8.625; retain0.30 restructuring/M&A/othercharges rather than company adjusted8.925.",
+      "terminal_period": "Calendar FY2029 ending Dec31 2029; current fiscal year at Sep2029 exit",
+      "source_ids": [
+        "alle_fy25",
+        "alle_q226",
+        "alle_fy25_10k"
+      ],
+      "scenarios": {
+        "bear": {
+          "terminal_eps": 6.9,
+          "terminal_pe": 15,
+          "dividends_by_holding_year": [
+            2.24,
+            2.24,
+            2.24
+          ],
+          "terminal_price": 103.5,
+          "driver_assumptions": {
+            "revenue_m": 4200,
+            "economic_operating_margin": 0.205,
+            "interest_expense_m": 110,
+            "tax_rate": 0.21,
+            "diluted_shares_m": 86,
+            "calculated_eps": 6.898720930232559
+          },
+          "irr": -0.10437980060561608,
+          "irr_dividend_withholding_30pct": -0.10940857512947338,
+          "terminal_wealth_cagr": -0.10253847068998223,
+          "present_value_at_hurdle": 79.04935768950435
+        },
+        "base": {
+          "terminal_eps": 10.4,
+          "terminal_pe": 19.5,
+          "dividends_by_holding_year": [
+            2.4,
+            2.55,
+            2.7
+          ],
+          "terminal_price": 202.8,
+          "driver_assumptions": {
+            "revenue_m": 5050,
+            "economic_operating_margin": 0.238,
+            "interest_expense_m": 100,
+            "tax_rate": 0.195,
+            "diluted_shares_m": 85,
+            "calculated_eps": 10.435641176470588
+          },
+          "irr": 0.11492838854130605,
+          "irr_dividend_withholding_30pct": 0.11036702375792917,
+          "terminal_wealth_cagr": 0.11338495621526135,
+          "present_value_at_hurdle": 150.4465424562682
+        },
+        "bull": {
+          "terminal_eps": 12.4,
+          "terminal_pe": 22,
+          "dividends_by_holding_year": [
+            2.5,
+            2.8,
+            3.1
+          ],
+          "terminal_price": 272.8,
+          "driver_assumptions": {
+            "revenue_m": 5500,
+            "economic_operating_margin": 0.25,
+            "interest_expense_m": 90,
+            "tax_rate": 0.19,
+            "diluted_shares_m": 84,
+            "calculated_eps": 12.391071428571431
+          },
+          "irr": 0.22909354362058731,
+          "irr_dividend_withholding_30pct": 0.2245563666750724,
+          "terminal_wealth_cagr": 0.22631152836685753,
+          "present_value_at_hurdle": 200.84445608600578
+        }
+      },
+      "thesis": "Accesssecurity installedbase, specification relationships and nonresidentialAmericas demand support returns; electronics and repair demand help. A lower entry compensates for construction and integration cycles.",
+      "accounting": [
+        "FY2025revenue4067.3m vs3772.2m; GAAPEPS7.44 vs6.82; adjusted8.14 vs7.53.",
+        "CFO783.8m\u2212capex98.1m=685.7m in2025;675.0\u221292.1=582.9m in2024. FY2025cash afterSBC29.8m=655.9m; EPSmodel retainsSBC.",
+        "H12026CFO299.7m\u2212capex38.9m=260.8m vs275.4m; TTM conventionalFCF671.1m. Receivables timing is managementexplanation, not proven subsequentcollection.",
+        "June30cash320.6m;debt2031.1m; netdebt1710.5m beforeleases. FY2025acquisitioncash592.2m mustnot be erased when evaluating capitalallocation.",
+        "ManagementFY2026adjustedEPS8.85\u20139.00 vsGAAP7.95\u20138.10;0.60amortization,0.20restructuring,0.10M&A/other. We retainrestructuring/M&Acosts in economicbase.",
+        "Companycashoutlook85\u201395%adjustednetincome \u00d785.9mshares \u00d78.925 midpoint implies651.7\u2013728.3m; this is managementoutlook derivedrange, not auditedcash."
+      ],
+      "catalysts": [
+        "Americas nonresidential demand and electronicaccessmix",
+        "International ERPdisruption recovery improves cashconversion",
+        "Postacquisitionintegration translates into organicreturns"
+      ],
+      "failure_rules": [
+        "Americas organicgrowth negative for twoquarters and margin deterioration>200bp absent reversiblecause: lower EPS/base and cancelentry.",
+        "Full-year cashconversionbelow80% adjustednetincome with receivable/inventory deterioration: reassessquality.",
+        "Netdebt/EBITDA materiallyabove3x afternewdeal without crediblefunded deleveraging: reduce multiple and suspendadds."
+      ],
+      "position_judgment": "At152.48 businessquality is attractive but return is below12%hurdle under normalizedcosts. Limit145 buys a valuationmargin; no needto chase.",
+      "price_date": "2026-09-24",
+      "price_basis": "Regular-session unadjusted close, frozen previously externallycorroborated; notlive executablequote.",
+      "sources": [
+        {
+          "id": "alle_fy25",
+          "url": "https://investor.allegion.com/news-and-events/news-releases/2026/02-17-2026-110034304"
+        },
+        {
+          "id": "alle_q226",
+          "url": "https://investor.allegion.com/news-and-events/news-releases/2026/07-23-2026-110034749"
+        },
+        {
+          "id": "alle_fy25_10k",
+          "url": "https://www.sec.gov/Archives/edgar/data/1579241/000157924126000007/alle-20251231.htm"
+        }
+      ],
+      "hurdle_justification": "12% nominalUSDgross hurdle reflects concentration, cyclicality and imperfectnormalization; 14% for discretionaryfashion/brand risk. Analystrequiredreturn, not riskfreerate or empiricallyestimatedcostofequity.",
+      "maximum_entry_model": 150.4465424562682,
+      "base_irr_at_limit": 0.13405122987217577,
+      "valuation_range_at_hurdle": [
+        79.04935768950435,
+        200.84445608600578
+      ],
+      "original_gross_practical_limit": 145,
+      "maximum_entry_with_30pct_dividend_withholding": 148.61728999635565,
+      "base_irr_at_limit_with_30pct_dividend_withholding": 0.12933067339889892,
+      "limit_note": "Final practical limit also clears the stated hurdle under an illustrative 30% dividend-withholding sensitivity. This is not a determination of the investor actual tax status."
+    },
+    {
+      "ticker": "SNA",
+      "rank": 3,
+      "price": 367.71,
+      "decision": "BUY BELOW",
+      "limit_price": 310,
+      "hurdle": 0.12,
+      "baseline_eps": 19.8,
+      "baseline_period": "FY2026 approximatelycalendar2026",
+      "baseline_definition": "Analystnormalizedestimate anchoredtoFY2025 GAAP19.19 less0.31legalbenefit=18.88 and H12026 EPSgrowth; not vendorconsensus.",
+      "terminal_period": "FY2029 approximatelycalendar2029; current fiscalyear atSep2029 exit",
+      "source_ids": [
+        "sna_fy25",
+        "sna_q226",
+        "sna_fy25_10k",
+        "sna_q226_10q"
+      ],
+      "scenarios": {
+        "bear": {
+          "terminal_eps": 14.6,
+          "terminal_pe": 14,
+          "dividends_by_holding_year": [
+            9.68,
+            9.68,
+            9.68
+          ],
+          "terminal_price": 204.4,
+          "driver_assumptions": {
+            "industrial_revenue_m": 4600,
+            "industrial_operating_margin": 0.185,
+            "financial_services_operating_profit_m": 200,
+            "interest_expense_m": 55,
+            "other_income_m": 20,
+            "tax_rate": 0.22,
+            "minority_income_m": 25,
+            "diluted_shares_m": 52.5,
+            "calculated_eps": 14.618666666666668
+          },
+          "irr": -0.14550753074265171,
+          "irr_dividend_withholding_30pct": -0.15515376303052614,
+          "terminal_wealth_cagr": -0.14054473202025863,
+          "present_value_at_hurdle": 168.737609329446
+        },
+        "base": {
+          "terminal_eps": 23,
+          "terminal_pe": 18,
+          "dividends_by_holding_year": [
+            9.68,
+            10.16,
+            10.68
+          ],
+          "terminal_price": 414,
+          "driver_assumptions": {
+            "industrial_revenue_m": 5550,
+            "industrial_operating_margin": 0.23,
+            "financial_services_operating_profit_m": 265,
+            "interest_expense_m": 50,
+            "other_income_m": 45,
+            "tax_rate": 0.22,
+            "minority_income_m": 25,
+            "diluted_shares_m": 51,
+            "calculated_eps": 23.009215686274512
+          },
+          "irr": 0.06688492540780755,
+          "irr_dividend_withholding_30pct": 0.05891491926057124,
+          "terminal_wealth_cagr": 0.06527553935624941,
+          "present_value_at_hurdle": 319.0211825801748
+        },
+        "bull": {
+          "terminal_eps": 26.2,
+          "terminal_pe": 20,
+          "dividends_by_holding_year": [
+            10,
+            11,
+            12
+          ],
+          "terminal_price": 524.0,
+          "driver_assumptions": {
+            "industrial_revenue_m": 6000,
+            "industrial_operating_margin": 0.24,
+            "financial_services_operating_profit_m": 290,
+            "interest_expense_m": 50,
+            "other_income_m": 50,
+            "tax_rate": 0.22,
+            "minority_income_m": 25,
+            "diluted_shares_m": 50.5,
+            "calculated_eps": 26.225742574257428
+          },
+          "irr": 0.15184559190258862,
+          "irr_dividend_withholding_30pct": 0.1438850242236317,
+          "terminal_wealth_cagr": 0.14846188056432252,
+          "present_value_at_hurdle": 399.2119169096209
+        }
+      },
+      "thesis": "Franchise distribution, diagnostic information and professionaltools support durableprofit. Pricingalready assumes resilience; lowgrowth and customerfinancing demand a lower entry.",
+      "accounting": [
+        "FY2025 GAAPEPS19.19 vs19.51 in2024; removing legalbenefits0.31 and0.32 produces18.88 vs19.19, beforeothernormalization. Do not addback recurringpensionexpense automatically.",
+        "FY2025CFO1081.7\u2212capex76.0=1005.7m vs2024FCF1134.0m. H12026FCF640.2\u221244.3=595.9m vs493.1m. TTMFCF1108.5m.",
+        "DeductTTMfinanceorigination netcash11.0m andSBC32.1m as ownercashcross-check=1065.4m; finance-loan originations sit ininvesting, notCFO. Do not countloanreceivables asfreecash.",
+        "Q226finance-servicesprofit67.5m vs68.2m; H12026financialservicesNI76.1m is includedinconsolidatedNI507.6m. No separatefinancevalueaddedon top ofEPSmultiple.",
+        "July4financepastdue61.0m/1945.7m=3.14%, downfrom69.2/1962.5=3.53% atyearend; >90daystillaccruing18.7m. Creditproblemnot currentlyvisibleinthisaging, but monitorlosses and vintages."
+      ],
+      "catalysts": [
+        "Technicianlarge-ticketspendingnormalizes",
+        "Diagnostic/softwaremix and criticalindustries improve organicgrowth",
+        "Strongcashconversionfundsmodestshareshrink without separatebuybackyield"
+      ],
+      "failure_rules": [
+        "Financepastdue>5% or provisionrate rising whiletoolssalesdecline: lower financialservicesprofit andterminalmultiple.",
+        "Twoquarters negativeorganictoolsales plusmargincompression>200bp: noentrypendingrerating.",
+        "Sustainedearningsgrowthbelow3%: requiredentryfalls; cheapmultiplealoneinsufficient."
+      ],
+      "position_judgment": "Durablebusiness but basecashflows support~310entry at12%hurdle, not367.71. Existingholders requiretax/costbasisreview; thisisnot anautomaticSELL.",
+      "price_date": "2026-09-24",
+      "price_basis": "Regular-session unadjusted close, frozen previously externallycorroborated; notlive executablequote.",
+      "sources": [
+        {
+          "id": "sna_fy25",
+          "url": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000008/q42025pressreleaseforpress.htm"
+        },
+        {
+          "id": "sna_q226",
+          "url": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000141/q22026pressreleaseforpress.htm"
+        },
+        {
+          "id": "sna_fy25_10k",
+          "url": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000045/sna-20260103.htm"
+        },
+        {
+          "id": "sna_q226_10q",
+          "url": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000144/sna-20260704.htm"
+        }
+      ],
+      "hurdle_justification": "12% nominalUSDgross hurdle reflects concentration, cyclicality and imperfectnormalization; 14% for discretionaryfashion/brand risk. Analystrequiredreturn, not riskfreerate or empiricallyestimatedcostofequity.",
+      "maximum_entry_model": 319.0211825801748,
+      "base_irr_at_limit": 0.13105753189045977,
+      "valuation_range_at_hurdle": [
+        168.737609329446,
+        399.2119169096209
+      ],
+      "original_gross_practical_limit": 315,
+      "maximum_entry_with_30pct_dividend_withholding": 311.717934584548,
+      "base_irr_at_limit_with_30pct_dividend_withholding": 0.12210520107967315,
+      "limit_note": "Final practical limit also clears the stated hurdle under an illustrative 30% dividend-withholding sensitivity. This is not a determination of the investor actual tax status."
+    },
+    {
+      "ticker": "RL",
+      "rank": 4,
+      "price": 351.86,
+      "decision": "AVOID NEW PURCHASE AT CURRENT PRICE",
+      "limit_price": 265,
+      "hurdle": 0.14,
+      "baseline_eps": 17.5,
+      "baseline_period": "FY2027 endingApr3 2027 (53weeks)",
+      "baseline_definition": "AnalysteconomicEPS17.5 anchoredtoFY2026adjusted16.59, latestguidance andQ127; ongoingtransformationcosts charged. Do notextrapolate22%quarterEPSgrowth or53rdweek.",
+      "terminal_period": "FY2029 endingapproximatelyMar2029; trailingcompletedfiscalyear atSep2029exit",
+      "source_ids": [
+        "rl_fy26",
+        "rl_q127_release",
+        "rl_fy26_10k",
+        "rl_q127_10q"
+      ],
+      "scenarios": {
+        "bear": {
+          "terminal_eps": 12.2,
+          "terminal_pe": 13,
+          "dividends_by_holding_year": [
+            4,
+            3.5,
+            3.5
+          ],
+          "terminal_price": 158.6,
+          "driver_assumptions": {
+            "revenue_m": 8000,
+            "economic_operating_margin": 0.12,
+            "net_interest_expense_m": 10,
+            "tax_rate": 0.23,
+            "diluted_shares_m": 60,
+            "calculated_eps": 12.191666666666666
+          },
+          "irr": -0.21954533550139227,
+          "irr_dividend_withholding_30pct": -0.22365486614908375,
+          "terminal_wealth_cagr": -0.21593515266727548,
+          "present_value_at_hurdle": 115.6147910558174
+        },
+        "base": {
+          "terminal_eps": 21,
+          "terminal_pe": 18.5,
+          "dividends_by_holding_year": [
+            4,
+            4.2,
+            4.4
+          ],
+          "terminal_price": 388.5,
+          "driver_assumptions": {
+            "revenue_m": 9250,
+            "economic_operating_margin": 0.166,
+            "net_interest_expense_m": 0,
+            "tax_rate": 0.21,
+            "diluted_shares_m": 58,
+            "calculated_eps": 20.914568965517244
+          },
+          "irr": 0.0451108386387441,
+          "irr_dividend_withholding_30pct": 0.041649191021600473,
+          "terminal_wealth_cagr": 0.044626217179205785,
+          "present_value_at_hurdle": 271.93684426517194
+        },
+        "bull": {
+          "terminal_eps": 25.3,
+          "terminal_pe": 22,
+          "dividends_by_holding_year": [
+            4.2,
+            4.6,
+            5
+          ],
+          "terminal_price": 556.6,
+          "driver_assumptions": {
+            "revenue_m": 10000,
+            "economic_operating_margin": 0.18,
+            "net_interest_expense_m": 0,
+            "tax_rate": 0.2,
+            "diluted_shares_m": 57,
+            "calculated_eps": 25.263157894736842
+          },
+          "irr": 0.17638739428959604,
+          "irr_dividend_withholding_30pct": 0.17302264828554315,
+          "terminal_wealth_cagr": 0.17472588767622677,
+          "present_value_at_hurdle": 386.28776465633143
+        }
+      },
+      "thesis": "Premiumization and Asianconsumerdemand are working, but todayprice paysahead for sustainablehighmargins. Cyclicality,brandfashionrisk and leases make valuationdiscipline essential.",
+      "accounting": [
+        "FY2026revenue8114.5m vs7079.0m;GAAPEPS15.11vs11.61;adjusted16.59vs12.33. FY2026ongoingtransformation/restructuringaftertaxaddbacks92.1m(1.48EPS) are notautomaticallycostless.",
+        "FY2026CFO1154.2\u2212capex408.1=746.1m vsFY2025 1235.1\u2212216.2=1018.9m. FY2026capexincludesrealestate; it isinvestmentcash, not operatingcollapse.",
+        "LatestquarterFCF339.3\u221253.4=285.9m vs176.1\u2212187.3=\u221211.2m. TTMFCF1043.2m; lessTTMSBC114.6 andfinanceleaseprincipal24.3=904.3mownerdiagnostic, no secondSBCcharge in EPSmodel.",
+        "June27cash+shortterminvestments1941.6m; debt/leasesmustbedistinguished. FY26operatingleaseliabilities1537.5m +financeleases233m, financingcash23.2m. Operatingrent isalreadycharged in modeledmargins.",
+        "FY2027is53weeks. Management5\u20136%constantcurrencyrevenue on52weekbasis,FX\u22120.5to\u22121point,extraweek+1point. NoEPSannualizationfromQ1. Juneinventories1163.7m vs1222.2m prioryear, down4.8%; compareto correctyear, notMarch1014.3."
+      ],
+      "catalysts": [
+        "Internationalretailgrowth and full-price sellthrough",
+        "Handbags/footwear and directdistributionexpandprofitpool",
+        "Demonstratedcashconversion afterrealestateinvestment"
+      ],
+      "failure_rules": [
+        "Inventorygrowth exceedssalesgrowth by>10points for twoquarters with markdowns: cutbaseEPS andcancelentry.",
+        "Constantcurrencygrowthbelow2% or normalizedmarginbelow14%: re-underwritebeforebuying.",
+        "Brand/channel deterioration or unusuallyaggressivebuyback-fundeddebt: increasehurdle andlowerterminalmultiple."
+      ],
+      "position_judgment": "Passat351.86. Reconsiderlimit265 onlyifbusinessfacts remainintact. Thisisavaluationrejection,notaforecastofimmediatepricedrop.",
+      "price_date": "2026-09-24",
+      "price_basis": "Regular-session unadjusted close, frozen previously externallycorroborated; notlive executablequote.",
+      "sources": [
+        {
+          "id": "rl_fy26",
+          "url": "https://corporate.ralphlauren.com/pr_260521_Q4FY26_EarningsResults.html"
+        },
+        {
+          "id": "rl_q127_release",
+          "url": "https://www.sec.gov/Archives/edgar/data/1037038/000162828026053896/rl-20260627ex991xpressrele.htm"
+        },
+        {
+          "id": "rl_fy26_10k",
+          "url": "https://www.sec.gov/Archives/edgar/data/1037038/000162828026037074/rl-20260328.htm"
+        },
+        {
+          "id": "rl_q127_10q",
+          "url": "https://www.sec.gov/Archives/edgar/data/1037038/000162828026053992/rl-20260627.htm"
+        }
+      ],
+      "hurdle_justification": "12% nominalUSDgross hurdle reflects concentration, cyclicality and imperfectnormalization; 14% for discretionaryfashion/brand risk. Analystrequiredreturn, not riskfreerate or empiricallyestimatedcostofequity.",
+      "maximum_entry_model": 271.93684426517194,
+      "base_irr_at_limit": 0.1499885594777025,
+      "valuation_range_at_hurdle": [
+        115.6147910558174,
+        386.28776465633143
+      ],
+      "original_gross_practical_limit": 270,
+      "maximum_entry_with_30pct_dividend_withholding": 269.02372119896535,
+      "base_irr_at_limit_with_30pct_dividend_withholding": 0.14579274734745085,
+      "limit_note": "Final practical limit also clears the stated hurdle under an illustrative 30% dividend-withholding sensitivity. This is not a determination of the investor actual tax status."
+    }
+  ],
+  "price_warning": "Sep25StockAnalysisRLhistoricalclose354.82 exceeded displayedhigh354.40; header357.10 differed. ALLEheader154.47 vsrow154.71; PAYXheader101.37 vsrow101.35. AllSep25dataquarantinedforconsistentcutoff; frozenSep24doesnotpreventlimitrecommendations."
+}

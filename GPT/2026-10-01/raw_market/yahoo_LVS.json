@@ -1,0 +1,193 @@
+{
+  "ticker": "LVS",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/LVS?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:39.362898+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "LVS",
+            "exchangeName": "NYQ",
+            "fullExchangeName": "NYSE",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 1103121000,
+            "regularMarketTime": 1790798402,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 37.81,
+            "regularMarketChangePercent": -1.331,
+            "fulldayPrice": 37.71,
+            "fulldayChange": -0.61,
+            "fulldayChangePercent": -1.592,
+            "fiftyTwoWeekHigh": 70.45,
+            "fiftyTwoWeekLow": 37.785,
+            "regularMarketDayHigh": 38.67,
+            "regularMarketDayLow": 37.785,
+            "regularMarketVolume": 6230463,
+            "longName": "Las Vegas Sands Corp.",
+            "shortName": "Las Vegas Sands Corp.",
+            "chartPreviousClose": 39.19,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "start": 1790755200,
+                "end": 1790775000,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "start": 1790775000,
+                "end": 1790798400,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "start": 1790798400,
+                "end": 1790812800,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "open": [
+                  39.0,
+                  38.790000915527344,
+                  38.869998931884766,
+                  38.83000183105469,
+                  38.45000076293945
+                ],
+                "close": [
+                  38.650001525878906,
+                  38.9900016784668,
+                  38.779998779296875,
+                  38.31999969482422,
+                  37.810001373291016
+                ],
+                "volume": [
+                  7210000,
+                  3886700,
+                  3766000,
+                  5308500,
+                  6230463
+                ],
+                "high": [
+                  39.22999954223633,
+                  39.16999816894531,
+                  39.290000915527344,
+                  38.83000183105469,
+                  38.66999816894531
+                ],
+                "low": [
+                  38.060001373291016,
+                  38.52000045776367,
+                  38.41999816894531,
+                  38.150001525878906,
+                  37.78499984741211
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  38.650001525878906,
+                  38.9900016784668,
+                  38.779998779296875,
+                  38.31999969482422,
+                  37.810001373291016
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 38.650001525878906,
+      "adjclose": 38.650001525878906,
+      "open": 39.0,
+      "high": 39.22999954223633,
+      "low": 38.060001373291016,
+      "volume": 7210000
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 38.9900016784668,
+      "adjclose": 38.9900016784668,
+      "open": 38.790000915527344,
+      "high": 39.16999816894531,
+      "low": 38.52000045776367,
+      "volume": 3886700
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 38.779998779296875,
+      "adjclose": 38.779998779296875,
+      "open": 38.869998931884766,
+      "high": 39.290000915527344,
+      "low": 38.41999816894531,
+      "volume": 3766000
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 38.31999969482422,
+      "adjclose": 38.31999969482422,
+      "open": 38.83000183105469,
+      "high": 38.83000183105469,
+      "low": 38.150001525878906,
+      "volume": 5308500
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 37.810001373291016,
+      "adjclose": 37.810001373291016,
+      "open": 38.45000076293945,
+      "high": 38.66999816894531,
+      "low": 37.78499984741211,
+      "volume": 6230463
+    }
+  ],
+  "currency": "USD",
+  "symbol": "LVS",
+  "regular_market_time": 1790798402,
+  "close_sep30": 37.810001373291016,
+  "session_match": true
+}

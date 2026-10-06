@@ -1,0 +1,46 @@
+# WMT - Walmart Inc. (consolidated; FY ends 31 Jan) - Dossier F154, wave 8
+
+**1. Verdict: WATCH** (12-36 months). Excellent, widening-moat retailer, but the 25 Sep 2026 close ($107.98; market cap about $857B, Yahoo/d4) implies about 22% a year of free-cash-flow growth for five years at an 8% discount rate (17.8% at 7%) against my base of 9%. Condition that would change it: a price near $75-80, or evidence that capex-heavy FCF is converting back toward net income. Triage (Q02, advance=false on price) is **confirmed**; V1 row: none (v1_verdict null).
+
+**2. Business in plain English.** The world's largest retailer: Walmart U.S. ($125.2B Q2 sales), Walmart International ($35.2B, includes Flipkart) and Sam's Club U.S. ($25.7B). It sells groceries and general merchandise at low prices and is layering higher-margin income on top: advertising (+38% globally in Q2), Walmart+ and Sam's memberships (membership fee revenue +17%), marketplace and eCommerce (+23%). Scale in grocery and store-fulfilled delivery is the moat. Source: 8-K EX-99.1 filed 2026-08-20, accession 0000104169-26-000145.
+
+**3. Why the model likes it.** b1 composite 0.356, decile 3 / quintile 2: quality families (gross profit/assets 0.90 percentile, accruals 0.73, ROE 0.63) and low volatility; value is poor (earnings yield 0.026, FCF yield 0.016). The quality is durable; the cheapness is not there.
+
+**4. Results (consolidated, GAAP unless stated; $M; 10-Q/8-K EX-99.1).**
+
+| Quarter (ended) | Revenue | Op. income | Op. margin | GAAP EPS | Adj. EPS (non-GAAP) |
+|---|---|---|---|---|---|
+| Q2 FY26 (31 Jul 2025) | 177,402 | 7,286 | 4.1% | 0.88 | 0.68 |
+| Q3 FY26 (31 Oct 2025) | 179,496 | 6,696 | 3.7% | 0.77 | 0.62 |
+| Q4 FY26 (31 Jan 2026) | 190,656 | 8,708 | 4.6% | 0.53 | 0.74 |
+| Q1 FY27 (30 Apr 2026) | 177,751 | 7,493 | 4.2% | 0.67 | 0.66 |
+| Q2 FY27 (31 Jul 2026) | 187,937 (+5.9%) | 9,383 (+28.8%) | 5.0% | 0.80 | 0.81 |
+
+Earlier quarters (Q3 FY25 and before) not opened; Q3 FY26 adjusted EPS taken from the Q2 FY27 release (8-K acc. 0000104169-26-000145) guidance base. Variance flags (>10% or >200 bps): Q2 operating income +$2.1B, of which the 10-Q states "the Company received approximately $2.9 billion in tariff refunds ... recorded as a reduction to cost of sales"; adjusted operating income growth was +17.4% cc, and the release says underlying growth "was at the top end of our guidance" (Q2 guide: operating income +7% to +10% cc). Walmart U.S. comp 2.6% (125 bps pharmacy deflation headwind from maximum-fair-price rules), eCommerce contribution about 510 bps. Q2 GAAP EPS 0.80 includes $1.2B of other losses on equity investments (net loss $0.12/share) and a $0.11/share tax-matter benefit that adjusted EPS removes. Debt interest was $137M vs $651M a year earlier (the tax matter included an interest benefit; GAAP interest, net $0.2B vs adjusted $0.6B per the release's own footnote).
+
+**5. Guidance track record (non-GAAP, constant currency; every row quoted from the release named).**
+- 19 Feb 2026 (acc. 0000104169-26-000032): "Adjusted EPS $2.75 to $2.85" for FY27; Q1 "Adjusted EPS $0.63 to $0.65". Q1 actual 0.66: beat.
+- 21 May 2026 (acc. 0000104169-26-000095): FY27 "Adjusted EPS $2.75 to $2.85 Unchanged"; Q2 "Adjusted EPS $0.72 to $0.74". Q2 actual 0.81: beat, helped by tariff refunds the guide excluded ("does not assume any impact from IEEPA tariff refunds").
+- 20 Aug 2026 (acc. 0000104169-26-000145): "Adjusted EPS is expected to be $0.62 to $0.64 for Q3 and $2.80 to $2.87 for FY27." Raised vs prior $2.75-$2.85 (midpoint +$0.035). Net sales "Increase 4.0% to 5.0%" (prior 3.5%-4.5%); adjusted operating income "Increase 7.0% to 8.5%" (prior 6.0%-8.0%); capex "Approximately 4.0% of net sales" (prior 3.5%).
+- Read-through: H1 adjusted EPS is 1.47; FY midpoint 2.835 implies H2 of about 1.365 vs H2 FY26 of 1.36 (0.62 + 0.74), i.e. flat. The Q2 beat of about $0.08 above the guide midpoint was passed through as only a $0.035 raise: the CFO's statement in the same release reads "continued prioritization of tariff refunds received in Q2 into customer experience and price investments in the second half".
+
+**6. Earnings quality and balance sheet (consolidated Walmart Inc., 31 Jul 2026, release balance sheet).** Cash $11,529M. Total debt $57.2B per release (8-K acc. 0000104169-26-000145; gross carrying amounts, consolidated, 31 Jul 2026, including finance leases; the 10-Q fair-value note shows only long-term debt incl. current portion, carrying $39,932M = $3,470M + $36,462M; the XBRL figure of $38,166M is the 31 Jan 2026 carrying amount) (short-term borrowings $10,479M + long-term debt due within one year $3,470M + long-term debt $36,462M + finance lease obligations $880M and $5,952M; carrying basis; operating leases $1,714M + $14,798M excluded). Net debt about $45.7B; about 1.0x on Yahoo EBITDA $44.1B (aggregator cross-check only). Total Walmart shareholders' equity $98,238M. Short-term borrowings rose from $3,837M a year ago to $10,479M. Cash conversion: FY26 FCF $14.9B vs net income $21.9B (68%); H1 FY27 FCF $5.5B vs $6.9B (operating cash flow $19.7B, capex $14.2B vs $11.4B, +24%). Buybacks $5.1B YTD (42.3M shares), $25.1B left of the $30B authorization approved February 2026; diluted shares 7,978M vs 8,016M (-0.5%). Dividend $0.99 declared for H1.
+
+**7. Valuation and reverse DCF.** d4: NTM P/E 34.7x, FCF yield 0.83%, FY27 consensus EPS $2.89, FY28 $3.23; mean target $127. V1 verdict: none (no row). Reverse DCF (equity-level FCF base $14B normalised from FY26 $14.9B and the capex guide, quoted "Approximately 4.0% of net sales"; 10-year path, growth held for 5 years then fading to 3%; 8% discount): **implied 22.3% a year (17.8% at 7%, 26.2% at 9%)**. Generous cross-check treating FCF as equal to adjusted net income ($22.7B): 13.5% (9.4% at 7%). Evidence-based cases (value/price at 8%): bear 5% = 0.38, base 9% = 0.48, bull 12% = 0.57. Implied growth is above even the bull case. I did not open a 5-10 year own-history series or peer filings; peer context is d4 only (COST NTM P/E 40.2x).
+
+**8. Bull / bear.** Bull: (1) advertising +38% and membership +17% lift margin mix, supporting operating income growing faster than sales (FY27 guide 7.0-8.5% vs sales 4-5%); (2) eCommerce profitability improving (release: "improved eCommerce economics"); (3) buybacks plus 5-6% EPS growth with very low beta (0.6). Bear: (1) price discounts about 22% FCF growth; (2) capex stepping to 4% of sales while FCF falls; (3) Q2 profit flattered by a one-off $2.9B refund that is being competed away, H2 EPS flat.
+
+**9. Kill criteria (measurable; entity = consolidated Walmart Inc., release/10-Q tables).**
+1. Walmart U.S. comp sales (ex fuel) below 2.0% for two consecutive quarters (release "Walmart U.S." table).
+2. FY27 adjusted EPS guidance cut below its current low end, quoted "$2.80 to $2.87" (guidance table, any quarter).
+3. Free cash flow (operating cash flow less capex, release) below $10B for FY27 (FY26: $14.9B).
+4. Consolidated total debt (release footnote 2 definition) above $65B at any quarter-end (31 Jul 2026: $57.2B).
+5. Adjusted operating income growth (cc) below 2.0% in Q4 FY27 (Q3 guide, quoted: "adjusted operating income to grow 2.0% to 4.0%").
+
+**10. Catalysts.** Q3 FY27 results 2026-11-19 (d4, not an estimate); Asda equal-value claims third-phase hearing set to begin 2026-11-23 (10-Q Note 5); fuel and tariff-refund price reinvestment in H2.
+
+**11. Red-flag scan (10-Q Note 5, filed 2026-08-28, acc. 0000104169-26-000154).** Opioid MDL: DOJ civil case and False Claims Act case "settled ... for an immaterial amount, which was accrued"; remaining bellwether case and a Florida appeal pending. Spark Driver FTC order (3 Mar 2026): $100M judgment, about $63M suspended, about $37M accrued; further driver-classification suits and government inquiries open. Money-transfer grand-jury subpoenas (latest August 2020) open. Asda equal-value claims (about 77,000 claimants; Walmart indemnifies up to a contractual amount; loss not estimable). Disclosure controls concluded effective (Item 4). Form 4s (2 Sep, 9 Sep, 18 Sep 2026) and Form 144s appear in the SEC index; contents not opened, no pattern asserted. Auditor, short-seller reports not checked.
+
+**12. Sources.** (1) 8-K acc. 0000104169-26-000145 EX-99.1, 2026-08-20, https://www.sec.gov/Archives/edgar/data/104169/000010416926000145/ (2) 8-K acc. 0000104169-26-000095 EX-99.1, 2026-05-21, https://www.sec.gov/Archives/edgar/data/104169/000010416926000095/ (3) 8-K acc. 0000104169-26-000032 EX-99.1, 2026-02-19, https://www.sec.gov/Archives/edgar/data/104169/000010416926000032/ (4) 10-Q acc. 0000104169-26-000154 for 31 Jul 2026, filed 2026-08-28, https://www.sec.gov/Archives/edgar/data/104169/000010416926000154/wmt-20260731.htm (5) EDGAR submissions JSON CIK 0000104169. (6) v4 d4 snapshot (2026-09-25 close) and b1 live scores (labelled quant context, not primary).
+
+**Data basis, recency and disclaimer.** Most recent period incorporated: quarter ended 31 Jul 2026 (10-Q acc. 0000104169-26-000154 filed 2026-08-28); events checked to 2026-09-25 via the SEC submissions index. Figures are GAAP unless labelled adjusted/non-GAAP/cc. Research, not personal investment advice.

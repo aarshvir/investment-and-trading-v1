@@ -1,0 +1,121 @@
+{
+  "agent": "F49",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "WDC": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Nearline hard-drive maker beating its own guidance every quarter for a year on AI storage demand, but the stock already prices in growth beyond even a bullish decade.",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "high - guidance-vs-actual track record and debt paydown are directly confirmed in five consecutive primary-source filings",
+      "kill_criteria": [
+        "Non-GAAP diluted EPS guidance for any quarter is cut versus the prior quarter's high-end guide (trend has been beat-and-raise every quarter for a year)",
+        "Non-GAAP gross margin falls below 45% for two consecutive quarters (Q4 FY26 was 54.4%)",
+        "LongTermDebtNoncurrent + LongTermDebtCurrent (WDC consolidated) rises back above $3bn, indicating re-leveraging",
+        "SPEX Technologies appeal is decided against WDC and a liability >$100M is accrued",
+        "Diluted share count grows past 400M without a commensurate buyback offset"
+      ],
+      "key_adverse_facts": [
+        "FY26 GAAP net income ($9,424M) and GAAP EPS ($24.28) are dominated by a one-time non-cash gain on WDC's retained SanDisk equity interest ($2,050M in Q3 FY26 alone, $4,448M nine-month cash-flow-statement add-back) plus a $545M debt-for-equity exchange cost - non-GAAP EPS ($10.22 FY26) is the representative figure, roughly 2.4x lower than headline GAAP",
+        "SPEX Technologies won a $316M jury verdict (Oct 2024) plus $237M prejudgment interest against WDC; post-trial motions cut this to nominal $1 damages but both sides have appealed - exposure not fully extinguished",
+        "MR Technologies patent judgment already cost WDC $384M, recognized in FY2024",
+        "Diluted share count rose from 323M to 387M over the last two years despite buybacks, due to convertible-note and spin-off-related dilution",
+        "HDD is a proven boom-bust commodity industry: WDC posted operating losses as recently as the quarter ended 2023-09-29 (-$596M)"
+      ],
+      "data_conflicts": [
+        "My own reverse DCF (FCF-per-share based, cost of equity 11.5%, 10yr + terminal) implies ~22.8%/yr growth priced in at the $456.81 close, materially below V1's stated implied_growth_or_roe of 42.3% for the same ticker - could not independently verify the NTM consensus EPS (~$22.9/share) that would reconcile V1's higher figure; Street 12-month price targets found via WebSearch are unusually dispersed ($400-$1,050), consistent with genuine estimate uncertainty rather than a data error on either side",
+        "b1/d4 NTM P/E (19.95x) sits almost exactly at both WDC's own-history median (62nd percentile) and the peer median (19.6x) - i.e. looks unremarkable on a simple P/E basis even though V1 and my own DCF both flag the valuation as excessive once peak-cycle earnings are normalized; this is a cyclical-value-trap pattern worth flagging explicitly rather than a genuine conflict"
+      ],
+      "next_earnings_date": "2026-10-22",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": -0.21088329650363324,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "implied_vs_base": "above",
+        "reconciliation": "V1 and my own independent reverse DCF both conclude the price requires 10-year growth well above any defensible bear/base/bull case (my base case ~8-10%/yr vs an implied ~23%/yr on my own model, ~42%/yr on V1's); we differ on the exact magnitude of the implied growth (likely a different EPS/multiple base) but agree on the conclusion and the verdict."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.53,
+        "base": -0.34,
+        "bull": -0.06
+      },
+      "scenario_basis": "Starting point FY26 non-GAAP diluted EPS $10.22 (actual) and Q1FY27 guide $4.00/qtr (~$15-16/yr run-rate if sustained); bear reverts EPS to ~$4.50 by FY29 at 10x exit P/E (cyclical trough, as seen in FY24); base settles at ~$9.50 at 14x; bull holds ~$19 at 20x; no meaningful dividend (yield <0.2%) added to any case; discounted against the $456.81 2026-09-25 close."
+    },
+    "WFC": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Money-center bank freed from a seven-year Fed asset cap, growing deposits and profits again, priced as if it will barely grow at all.",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "high - deposit growth, CET1 trend and capital-return figures are all directly confirmed in the primary 10-Q, not just the triage's news sourcing",
+      "kill_criteria": [
+        "CET1 ratio (Standardized Approach, consolidated) falls below 9.0% (vs 10.26% now and an 8.50% regulatory minimum+buffer)",
+        "Provision for credit losses (consolidated, quarterly) exceeds $1.5bn for two consecutive quarters (vs $914-1,135M in the last two quarters)",
+        "Efficiency ratio (consolidated) rises back above 65% for two consecutive quarters (vs 60% now)",
+        "Diluted EPS growth YoY turns negative for two consecutive quarters (vs +25% and +21% in the last two)",
+        "A new formal enforcement action or growth restriction is imposed by the OCC/Federal Reserve, distinct from the AML agreement already disclosed"
+      ],
+      "key_adverse_facts": [
+        "CET1 ratio has declined for four consecutive quarters (11.13% to 10.29% to 10.26%) as capital is deployed into growth and buybacks",
+        "An OCC formal agreement on AML/sanctions risk management (entered 2024-09-12) remains open per the 2026-06-30 10-Q",
+        "Government 'fair access to banking' inquiries tied to a 2026 executive order are ongoing",
+        "A securities-fraud class action tied to hiring-practices disclosures received final court approval for an $85 million settlement on 2026-05-21",
+        "No formal quarterly EPS/revenue guidance is given by the company, limiting forward-visibility verification"
+      ],
+      "data_conflicts": [
+        "No V1 systematic valuation row exists for WFC (bank methodology not run by V1) - v1_verdict is null by design, not a missing-data error"
+      ],
+      "next_earnings_date": "2026-10-13",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for this bank. My own reverse DCF (EPS-based, cost of equity 10.5%, 10yr + terminal) implies roughly -1%/yr growth priced in at the $82.97 close - well below even my bear case (-2% to 0%/yr) let alone my base case (5-7%/yr), so the stock looks cheap on its own fundamentals independent of any V1 comparison."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.0804,
+        "base": 0.0873,
+        "bull": 0.1778
+      },
+      "scenario_basis": "Starting point annualized Q2 2026 run-rate EPS $8.00 ($2.00x4); bear EPS ~$7.50 at 8x exit P/E (bank de-rates in a downturn); base EPS ~$9.55 (6%/yr for 3yr) at 10.5x; bull EPS ~$10.67 (10%/yr for 3yr) at 12x; ~2.2% trailing dividend yield added to all cases; discounted against the $82.97 2026-09-25 close."
+    },
+    "WTW": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Global insurance broker turning around post-Aon-merger-collapse, expanding margins and buying back stock, priced for almost no growth at all.",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium-high - margin expansion and buyback figures are primary-source-confirmed across five quarters, but the Q2 2026 GAAP-vs-adjusted EPS divergence and the Newfront deal terms were not fully resolved at standard depth",
+      "kill_criteria": [
+        "Consolidated organic revenue growth (as reported, quarterly) falls below 3% for two consecutive quarters (vs 4-6% in the last four quarters)",
+        "Adjusted EBITDA margin (consolidated, quarterly) fails to expand YoY for two consecutive quarters",
+        "Net debt/EBITDA (consolidated) rises above 3.0x (vs ~2.2x now) without a specific, disclosed acquisition rationale",
+        "Propel cumulative cash cost exceeds the original ~$625M budget by more than 25% before FY2027 without a commensurate upgrade to the $350M net-savings target",
+        "GAAP-vs-adjusted diluted EPS gap (quarterly) widens for two more consecutive quarters beyond the -27%/+17% divergence seen in Q2 2026, without clear one-time-item disclosure"
+      ],
+      "key_adverse_facts": [
+        "Q2 2026 GAAP diluted EPS fell 27% YoY ($3.32 to $2.43) even as adjusted EPS rose 17% ($2.86 to $3.35 est.) - the specific GAAP-only charge driving the gap was not isolated at standard depth",
+        "Total debt rose from ~$4.76bn (Sep 2025) to ~$6.53bn (Jun 2026), concentrated in a Q4 2025 bond issuance not yet fully explained",
+        "Propel (2026-2028 AI/automation program) is a ~$625M cash commitment with the execution risk typical of transformation programs; a prior 'multi-year operational transformation program' is referenced as 'recently-completed,' raising the question of whether promised savings from the first program fully materialized",
+        "Newfront acquisition referenced as completed and feeding into Propel/segment changes, but deal size and financing were not disclosed in the sections reviewed"
+      ],
+      "data_conflicts": [
+        "The Q05 triage card's '41.5% eps growth' claim could not be replicated from any primary source reviewed (Q4 FY25, Q1 FY26, Q2 FY26 press releases); actual adjusted diluted EPS growth found was +5% FY2025 (full year), +19% Q1 2026, +17% Q2 2026 - still strong but materially different from the triage figure",
+        "No V1 systematic valuation row exists for WTW - v1_verdict is null by design"
+      ],
+      "next_earnings_date": "2026-10-29",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for this broker. My own reverse DCF (EPS-based, cost of equity 9.5%, 10yr + terminal) implies roughly 4.1%/yr growth priced in at the $293.99 close - below even my bear case (2-4%/yr) and well below my base case (8-10%/yr), so the stock looks cheap on its own fundamentals independent of any V1 comparison."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.0576,
+        "base": 0.1176,
+        "bull": 0.2526
+      },
+      "scenario_basis": "Starting point FY2025 actual adjusted diluted EPS $17.08 (~$18.00 assumed TTM); bear EPS ~$19.67 (3%/yr for 3yr) at 12x exit P/E; base EPS ~$23.31 (9%/yr for 3yr) at 17x; bull EPS ~$26.67 (14%/yr for 3yr) at 21x; ~1.3% trailing dividend yield added to all cases; discounted against the $293.99 2026-09-25 close."
+    }
+  }
+}

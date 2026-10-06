@@ -1,0 +1,50 @@
+{
+  "total_score": 60,
+  "verdict": "Refine",
+  "dimensions": [
+    {
+      "name": "Sample Size",
+      "score": 20,
+      "max_score": 20
+    },
+    {
+      "name": "Expectancy",
+      "score": 0,
+      "max_score": 20
+    },
+    {
+      "name": "Risk Management",
+      "score": 2,
+      "max_score": 20
+    },
+    {
+      "name": "Robustness",
+      "score": 18,
+      "max_score": 20
+    },
+    {
+      "name": "Execution Realism",
+      "score": 20,
+      "max_score": 20
+    }
+  ],
+  "red_flags": [
+    {
+      "id": "negative_expectancy",
+      "severity": "high",
+      "message": "Negative expectancy (-0.222%) — strategy loses money on average."
+    }
+  ],
+  "profit_factor": 0.9531643783055594,
+  "expectancy": -0.2216699999999987,
+  "inputs": {
+    "total_trades": 1597,
+    "win_rate": 46.46,
+    "avg_win_pct": 9.71,
+    "avg_loss_pct": 8.84,
+    "max_drawdown_pct": 43.46,
+    "years_tested": 14,
+    "num_parameters": 6,
+    "slippage_tested": true
+  }
+}

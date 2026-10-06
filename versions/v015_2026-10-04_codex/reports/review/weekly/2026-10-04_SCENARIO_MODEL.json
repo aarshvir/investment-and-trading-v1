@@ -1,0 +1,99 @@
+{
+  "prepared_utc": "2026-10-04T14:21:30.627423+00:00",
+  "parents": [
+    "v014_2026-10-01_codex",
+    "v013_2026-10-01_codex",
+    "v012_2026-09-27_codex",
+    "v011_2026-09-27_claude"
+  ],
+  "price_cutoff_et": "2026-10-02",
+  "portfolio": "v014 100% individual stocks, weights unchanged",
+  "status": "judgmental conditional illustrations; no probabilities",
+  "basis": "nominal USD total return before investor-specific tax, FX and dealing costs",
+  "formula": "terminal wealth = initial capital*(1+annualized rate)^3",
+  "scenarios": [
+    {
+      "state": "Demand shock / sticky inflation",
+      "one_year_total_return_pct": [
+        -40,
+        -25
+      ],
+      "three_year_cagr_pct": [
+        -8,
+        1
+      ],
+      "three_year_total_return_pct": [
+        -22.1312,
+        3.0301
+      ],
+      "usd_50000_after_three_years": [
+        38934.4,
+        51515.05
+      ],
+      "usd_100000_after_three_years": [
+        77868.8,
+        103030.1
+      ]
+    },
+    {
+      "state": "Continuing growth / valuation normalization",
+      "one_year_total_return_pct": [
+        -5,
+        15
+      ],
+      "three_year_cagr_pct": [
+        4,
+        8
+      ],
+      "three_year_total_return_pct": [
+        12.4864,
+        25.9712
+      ],
+      "usd_50000_after_three_years": [
+        56243.2,
+        62985.6
+      ],
+      "usd_100000_after_three_years": [
+        112486.4,
+        125971.2
+      ]
+    },
+    {
+      "state": "Strong productivity / AI cash payback",
+      "one_year_total_return_pct": [
+        15,
+        30
+      ],
+      "three_year_cagr_pct": [
+        10,
+        16
+      ],
+      "three_year_total_return_pct": [
+        33.1,
+        56.0896
+      ],
+      "usd_50000_after_three_years": [
+        66550.0,
+        78044.8
+      ],
+      "usd_100000_after_three_years": [
+        133100.0,
+        156089.6
+      ]
+    }
+  ],
+  "illustrative_tax_cost_only": {
+    "assumed_gross_dividend_yield_pct": 1.5,
+    "assumption_is_audited_portfolio_yield": false,
+    "dividend_withholding_pct": 30,
+    "dividend_drag_pct_points_per_year": 0.45,
+    "purchase_and_sale_bps_each": 25,
+    "rough_annual_three_year_dealing_drag_pct_points": 0.17,
+    "middle_band_after_these_hypothetical_drags_pct": [
+      3.4,
+      7.4
+    ]
+  },
+  "v014_historical_gfc_path_drawdown_pct": -44.08,
+  "price_only_mark_sep30_to_oct2_pct": 0.4141
+}

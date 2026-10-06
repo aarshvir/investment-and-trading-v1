@@ -1,0 +1,193 @@
+{
+  "ticker": "CRM",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CRM?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:43.079178+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "CRM",
+            "exchangeName": "NYQ",
+            "fullExchangeName": "NYSE",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 1087997400,
+            "regularMarketTime": 1790798403,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 229.57,
+            "regularMarketChangePercent": 1.891,
+            "fulldayPrice": 229.5,
+            "fulldayChange": 4.26,
+            "fulldayChangePercent": 1.891,
+            "fiftyTwoWeekHigh": 269.11,
+            "fiftyTwoWeekLow": 146.32,
+            "regularMarketDayHigh": 233.73,
+            "regularMarketDayLow": 224.43,
+            "regularMarketVolume": 9697752,
+            "longName": "Salesforce, Inc.",
+            "shortName": "Salesforce, Inc.",
+            "chartPreviousClose": 237.58,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "end": 1790775000,
+                "start": 1790755200,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "end": 1790798400,
+                "start": 1790775000,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "end": 1790812800,
+                "start": 1790798400,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "high": [
+                  242.08999633789062,
+                  239.3699951171875,
+                  230.57000732421875,
+                  228.97999572753906,
+                  233.7299041748047
+                ],
+                "low": [
+                  237.0,
+                  233.3800048828125,
+                  221.17999267578125,
+                  223.42999267578125,
+                  224.4300994873047
+                ],
+                "close": [
+                  238.22000122070312,
+                  234.02000427246094,
+                  227.27000427246094,
+                  225.30999755859375,
+                  229.57000732421875
+                ],
+                "volume": [
+                  11074000,
+                  8735500,
+                  10327500,
+                  13506300,
+                  9697752
+                ],
+                "open": [
+                  240.63999938964844,
+                  237.02999877929688,
+                  224.97000122070312,
+                  227.27000427246094,
+                  225.39999389648438
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  238.22000122070312,
+                  234.02000427246094,
+                  227.27000427246094,
+                  225.30999755859375,
+                  229.57000732421875
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 238.22000122070312,
+      "adjclose": 238.22000122070312,
+      "open": 240.63999938964844,
+      "high": 242.08999633789062,
+      "low": 237.0,
+      "volume": 11074000
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 234.02000427246094,
+      "adjclose": 234.02000427246094,
+      "open": 237.02999877929688,
+      "high": 239.3699951171875,
+      "low": 233.3800048828125,
+      "volume": 8735500
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 227.27000427246094,
+      "adjclose": 227.27000427246094,
+      "open": 224.97000122070312,
+      "high": 230.57000732421875,
+      "low": 221.17999267578125,
+      "volume": 10327500
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 225.30999755859375,
+      "adjclose": 225.30999755859375,
+      "open": 227.27000427246094,
+      "high": 228.97999572753906,
+      "low": 223.42999267578125,
+      "volume": 13506300
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 229.57000732421875,
+      "adjclose": 229.57000732421875,
+      "open": 225.39999389648438,
+      "high": 233.7299041748047,
+      "low": 224.4300994873047,
+      "volume": 9697752
+    }
+  ],
+  "currency": "USD",
+  "symbol": "CRM",
+  "regular_market_time": 1790798403,
+  "close_sep30": 229.57000732421875,
+  "session_match": true
+}

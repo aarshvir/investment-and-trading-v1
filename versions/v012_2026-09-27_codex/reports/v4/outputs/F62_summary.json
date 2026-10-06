@@ -1,0 +1,120 @@
+{
+  "agent": "F62",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "PNR": {
+      "verdict": "WATCH",
+      "thesis_one_line": "A well-run water-equipment maker, cheap after a pool-inventory crash, but a live securities-fraud suit and a big debt-funded deal argue against full conviction now.",
+      "kill_criteria": [
+        "The securities-fraud class action is not dismissed and/or a subsequent restatement or SEC/DOJ inquiry is disclosed",
+        "Pro forma net debt/EBITDA (consolidated, post-Taco close) exceeds 3.5x at or after the Q4 2026/Q1 2027 10-K/10-Q, without a credible, dated deleveraging path",
+        "Q3 2026 or Q4 2026 results miss the company's own just-issued guidance range (Q3: GAAP EPS $0.97-$1.00; sales -4% to -6%)",
+        "Pool segment organic/core sales do not show sequential stabilization by Q2 2027",
+        "A second unplanned CFO or CEO departure before the newly-hired permanent CFO (effective 2026-11-01) completes at least one full guidance cycle"
+      ],
+      "key_adverse_facts": [
+        "A securities-fraud class action (expanded class period 11 Mar 2025-14 Jul 2026) alleges Pentair and named executives made materially false/misleading statements about channel inventory and internal controls -- unresolved, lead-plaintiff deadline 2 Oct 2026 (plaintiff-firm sources; underlying filing/timing facts independently confirmed via Pentair's own 8-Ks)",
+        "CFO Nicholas J. Brazis resigned 10 Jul 2026 (after roughly four months in the role) four days before the Q2 2026 pre-announcement of a large guidance cut; a permanent replacement (Robert W. Hau) was not named until 21 Sep 2026, effective 1 Nov 2026",
+        "FY2026 GAAP EPS guidance was cut twice in five months: $4.94-$5.09 (3 Feb 2026) -> $4.83-$4.93 (28 Apr 2026) -> $3.86-$4.06 (28 Jul 2026, pre-announced 14 Jul), each time attributed to the same Pool-channel destock",
+        "On 27 Jul 2026 (the same day as the Q2 miss) Pentair signed a $1.425bn acquisition of Taco Group Holdings, financed via cash plus a $1.4bn senior unsecured bridge facility; this dossier estimates pro forma net debt/EBITDA rises from ~1.6x today toward the high-2x/low-3x range at the expected Q4 2026 close",
+        "Q2 2026 GAAP-vs-adjusted EPS gap widened to 42% ($0.80 vs $1.14), wider than the ~25-30% gap in prior quarters, because the same fixed amortization/restructuring load is now spread over a much smaller earnings base"
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv shows PNR with an extreme Value percentile (fam_V 0.971, pct_ep/pct_fcfp/pct_ebit_ev/pct_bp all >85th percentile) but a below-median Quality score (fam_Q 0.385); this dossier confirms the Value read is largely a post-miss price-collapse artefact (per the triage's own note) rather than newly-discovered fundamental cheapness, and agrees with the model's lower Quality read given the leverage-raising Taco deal and unresolved litigation"
+      ],
+      "next_earnings_date": "2026-10-20",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": {"level": "med", "reason": "the operating/segment evidence (Flow and Water Solutions healthy, Pool destock company-confirmed) is strong and primary-source-verified, but the unresolved securities litigation and the pending debt-funded acquisition are genuine, unresolved sources of uncertainty this pass could not close out"},
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for PNR in v1_valuation_table.csv/v1_valuation.json (92 names, PNR not among them), so there is nothing to reconcile. This dossier's own reverse DCF (10-year FCF growth solved against EV $10.19bn, TTM FCF ~$675M, WACC 8.5%) implies only ~+0.9%/year FCF growth for a decade -- below this dossier's base case (mid-single-digit growth once the Pool channel reset completes, per management's own 2027-recovery guidance and the still-healthy Flow/Water Solutions trajectory) -- hence 'below', i.e. statistically cheap. The WATCH verdict (rather than INCLUDE, which the valuation alone would support) reflects unresolved litigation and leverage risk, not a valuation disagreement."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.05,
+        "base": 0.12,
+        "bull": 0.22,
+        "scenario_basis": "Starting point: $53.66 close, FY2025 GAAP EPS $3.93, FY2026 guided GAAP EPS $3.86-$4.06 / adjusted $4.60-$4.80, ~2.0% dividend yield ($1.08/yr), trailing NTM P/E ~10.4x. Bear: securities litigation drags on and/or is substantiated, Pool weakness persists into 2027, Taco leverage exceeds plan, multiple stays compressed near 8-10x, EPS flat near $4/share. Base: Pool destock completes as guided by early 2027, Flow/Water Solutions continue mid-single-digit growth, Taco closes Q4 2026 and is modestly accretive by 2027-28, adjusted EPS resumes high-single-digit growth off the depressed 2026 base, multiple re-rates modestly to ~13-14x (below the historical premium). Bull: Pool demand snaps back faster than guided, Taco synergies exceed expectations, multiple re-rates to the 16-18x historical range. All annualised over 3 years, dividends added undiscounted."
+      }
+    },
+    "AON": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A top-three insurance broker compounding cash flow at double digits, priced for less growth than it delivers, but a new $17bn all-debt deal paused buybacks.",
+      "kill_criteria": [
+        "The USI acquisition fails to close (regulatory or other block) or closes with materially worse financing terms (e.g. a ratings downgrade below Baa2/A-) than disclosed on 30 Aug 2026",
+        "Pro forma net debt/EBITDA (consolidated, post-USI close) exceeds 4.5x without a credible, dated deleveraging path disclosed within two quarters of close",
+        "Organic revenue growth falls below the 'mid-single-digit or greater' guided floor for two consecutive quarters (a guidance cut, not just a reaffirmation)",
+        "H2 2026 free cash flow growth (H2 2026 vs H2 2025) remains below +10% YoY, confirming the H1 2026 deceleration is structural rather than one-off",
+        "Share buybacks are not resumed within 12 months of the USI close"
+      ],
+      "key_adverse_facts": [
+        "On 30 Aug 2026 Aon signed a definitive agreement to acquire USI for $17.0bn, financed entirely with new debt across a range of maturities; the company explicitly says it does not expect to repurchase shares near-term, prioritizing debt repayment instead",
+        "This dossier's own pro forma estimate (purchase price / disclosed ~14.5x EBITDA multiple, combined with Aon's own ~$5.9bn TTM EBITDA and the announced $395M run-rate synergy target before phase-in) implies day-one pro forma net debt/EBITDA in the low-4x range, versus ~2.3x today",
+        "b1_live_scores.csv already places AON in the bottom ~9th percentile on the model's sector-relative leverage factor (pct_leverage 0.085) even before the USI debt is added",
+        "H1 2026 free cash flow grew only +4% YoY ($846M vs $816M), a sharp deceleration from FY2025's +14% (full year) / Q4 2025's +16% (quarter); the company attributes this to the NFP Wealth divestiture and working-capital timing, not independently verified beyond that one-line explanation",
+        "Q2 2026 reported Wealth Solutions segment revenue fell 18% (organic still +5%) due to the 2025-26 divestitures of the NFP Wealth business and Stroz Friedberg -- a real portfolio-reshaping effect that makes headline segment growth numbers misleading without the organic reconciliation"
+      ],
+      "data_conflicts": [
+        "None identified between b1 quant data and filings; the model's very low composite (0.163, live_rank 416/503) mainly reflects low Value/Momentum/Earnings-surprise percentiles (fair-not-cheap multiple, weak recent stock momentum) rather than a fundamentals disagreement with this dossier's Quality read (fam_Q 0.935), which this dossier confirms as durable"
+      ],
+      "next_earnings_date": "2026-10-30",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": {"level": "med", "reason": "the recurring-revenue quality and guidance-reaffirmation record are strong and primary-source-verified, but the USI deal's leverage impact is this dossier's own pro forma estimate (not yet a company-disclosed number) and the H1 2026 FCF deceleration is not yet independently resolved"},
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists for AON in v1_valuation_table.csv/v1_valuation.json (92 names, AON not among them), so there is nothing to reconcile. This dossier's own reverse DCF (10-year FCF growth solved against EV $73.45bn, TTM FCF ~$3,248M, WACC 8.0%) implies ~+4.2%/year FCF growth for a decade -- below this dossier's base case (high-single to low-double-digit FCF growth, consistent with FY2025's delivered 14% and the reaffirmed 'double-digit FCF growth' guidance) -- hence 'below'. INCLUDE-SMALL rather than INCLUDE reflects the USI-driven leverage step-up and paused buybacks as a specific, named reservation, not a valuation disagreement."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.03,
+        "base": 0.12,
+        "bull": 0.19,
+        "scenario_basis": "Starting point: $277.99 close, FY2025 adjusted EPS $17.07, adjusted NTM P/E ~14.8x, ~1.1% dividend yield ($3.055/yr trailing). Bear: USI integration disappoints, leverage stays elevated for longer causing rating pressure and continued buyback pause, organic growth decelerates below mid-single-digit, multiple compresses toward 11x. Base: USI closes Q4 2026 as planned and is accretive to EPS from 2028 per the company's own disclosure, mid-single-digit-plus organic growth continues, debt paydown proceeds on schedule, adjusted EPS growth continues at a high-single to low-double-digit pace, multiple broadly stable. Bull: USI synergies exceed the disclosed $395M target and deleveraging is faster than guided, multiple re-rates toward the historical 16-17x premium. All annualised over 3 years, dividends added undiscounted."
+      }
+    },
+    "AVY": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The world's leading labeling materials maker just posted its best growth quarter in years, fairly priced, but the acceleration is only two quarters old.",
+      "kill_criteria": [
+        "Organic revenue growth falls back below 3% for two consecutive quarters",
+        "Net debt/EBITDA (consolidated) rises above 3.0x without a specific, disclosed M&A or buyback driver explaining the increase",
+        "FY2026 guidance (GAAP $9.40-$9.70 / adjusted $10.00-$10.30, given 30 Jul 2026) is cut at the Q3 2026 release",
+        "Materials Group adjusted operating margin declines for two consecutive quarters",
+        "A new tariff or trade-policy action materially increases direct input-cost tariff exposure beyond the currently disclosed 'relatively small portion' of global materials purchases"
+      ],
+      "key_adverse_facts": [
+        "Q2 2026 organic growth of +7.6% followed Q1 2026 organic growth of only +1.1% -- one strong quarter is not yet enough evidence the re-acceleration is durable rather than partly a comp/timing effect",
+        "The naive trailing-twelve-month free-cash-flow figure (~$1,063M) is inflated by a working-capital reversal against an unusually weak H1 2025 comparison base (which itself absorbed a $370.3M working-capital outflow); the normalized FY2025 FCF base ($712.4M) is meaningfully lower and is what this dossier's valuation actually uses",
+        "Q1 2026 GAAP EPS ($2.18) missed the company's own guided range ($2.27-$2.33) by $0.09, even though adjusted EPS beat",
+        "The FY2025 release explicitly cites 'tariff-related impacts and softer consumer volumes' as 2025 headwinds; the February 2026 Supreme Court IEEPA ruling removes one specific tariff-authority risk but broader trade-policy instability remains, per external counsel commentary",
+        "AVY's press releases disclose only next-quarter EPS guidance in the text reviewed; full-year guidance detail (when given) appears to live mainly in a supplemental investor deck not fetched this pass -- a source-coverage gap, not a company red flag"
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv shows a high Value percentile (fam_V 0.664, pct_fcfp 0.848) that is partly inflated by the same TTM-FCF working-capital distortion discussed in the dossier; this dossier treats the Value score as directionally right (AVY is not expensive) but not as precisely cheap as the raw percentile implies"
+      ],
+      "next_earnings_date": "2026-10-21",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": {"level": "med", "reason": "the balance sheet and red-flag scan are clean and primary-source-verified, and Q2 2026 results and guidance beats are strong, but the growth re-acceleration has only one full quarter of confirming evidence"},
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "in_line",
+        "reconciliation": "No V1 row exists for AVY in v1_valuation_table.csv/v1_valuation.json (92 names, AVY not among them), so there is nothing to reconcile. This dossier's own reverse DCF, using the normalized FY2025 FCF base of $712.4M (not the working-capital-distorted TTM figure -- see key_adverse_facts) against EV $16.22bn at WACC 8.0%, implies ~+4.9%/year FCF growth for a decade -- roughly in line with this dossier's base case of mid-single-digit (5-7%) organic growth sustained from the Q2 2026 re-acceleration plus continued margin expansion -- hence 'in_line'."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.04,
+        "base": 0.105,
+        "bull": 0.18,
+        "scenario_basis": "Starting point: $170.34 close, FY2025 adjusted EPS $9.53, FY2026 guided adjusted EPS $10.00-$10.30, adjusted NTM P/E ~15.6x, ~2.3% dividend yield ($4.00/yr). Bear: the Q2 2026 organic re-acceleration proves temporary (reverting toward Q1 2026's +1.1%), tariff/consumer-volume pressure returns, margin gains stall, multiple compresses toward 12x. Base: organic growth sustains mid-single-digit (5-7%) as the high-value/RFID mix shift continues, adjusted EPS grows high-single-digit per FY2026 guidance, multiple broadly stable near 15-16x. Bull: high-value categories (RFID/intelligent labels, digital ID) accelerate further and margin expansion beats the productivity-playbook target, multiple re-rates toward the historical ~18-19x premium. All annualised over 3 years, dividends added undiscounted."
+      }
+    }
+  }
+}

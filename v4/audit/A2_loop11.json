@@ -1,0 +1,28 @@
+{
+  "total": 79,
+  "criteria": {"1": 8, "2": 8, "3": 8, "4": 8, "5": 7, "6": 9, "7": 7, "8": 8, "9": 7, "10": 8},
+  "must_fix": [
+    "Ranking mixes V1 scripted scenarios (top-70 names: BKNG +39%, CVS +36%, DG +35%, SYF +31%, ACN +30%, UDR +22%, DVA +20%) with analyst scenarios for the rest; the analyst's own figures for those names are +8% to +17%, and UDR's re-assessment (RA14) says implied is in_line, base +8.3%, yet the build still uses 'below' and +21.9%. On analyst bases DVA, DG and UDR (12.6% of weight) rank 58, 73 and 212 of 244 and drop out. Fix lead_build_portfolio.py to use the latest F-summary scenario_returns_3y and implied_vs_base for every name, re-run, show analyst scenarios in section 6, and add this ordering to lead_j_sensitivity.json.",
+    "Rule (o) (owner-set technology 20-30%) is not stated anywhere in FINAL_REPORT. State it in sections 1 and 6 and the dashboard with both figures (26.2% including Visa/payments; IT-only 19.3%, below the band), say it forced no swap, and rewrite the stale section 6 'How these 20 were chosen' paragraph (455-name triage, 40 earlier dossiers) to the 500-name process.",
+    "Verification record overstated by omission: A.4 omits the DV series (43 names, 408 facts, 99 FAIL, 9 verdict changes) and never says only about 97 of 500 dossiers are independently checked; A.5 prints 'not yet checked' for ACN, SNA, BIIB, ACGL, ADSK, WFC, FSLR, INTU, WTW and V although DV02/DVH1/DVH2/DVH4 checked them. Add DV rows and the coverage statement; make A.5 read DV results.",
+    "Stale post-cutoff content: ACN section 6 line says new bookings just turned negative but Q4 FY26 (1 Oct 2026) bookings were +4% USD/+5% LC; ACN next-earnings date shows 2026-10-01 (past); SYF and ALL have blank thesis/exit cells in the All-500 register; section 6 table is called ranked but is not in rank order."
+  ],
+  "fact_checks": [
+    {"ticker": "ACN", "claim": "Q4 FY26 revenue $18.7bn (+6% USD, +7% LC), above the guided range", "source": "Accenture 8-K Ex-99.1 acc 0001467373-26-000037 (via web search of SEC page)", "status": "PASS"},
+    {"ticker": "ACN", "claim": "Q4 FY26 new bookings $22.2bn (+4% USD, +5% LC), so the Q3 decline did not continue", "source": "Same 8-K Ex-99.1", "status": "PASS"},
+    {"ticker": "ACN", "claim": "FINAL_REPORT section 6 one-liner: 'new bookings just turned negative'", "source": "Same 8-K; contradicts the dossier's own recency note", "status": "MINOR"},
+    {"ticker": "UDR", "claim": "FY2026 FFOA guidance $2.49-$2.57 (mid $2.53); same-store NOI 0%-1.25%", "source": "UDR 8-K Ex-99.1 acc 0000074208-26-000070", "status": "PASS"},
+    {"ticker": "UDR", "claim": "Q2 2026 FFOA per share $0.64", "source": "UDR 8-K Ex-99.1 acc 0000074208-26-000070", "status": "PASS"},
+    {"ticker": "UDR", "claim": "Section 6 table 3-yr base +22% (V1 scripted)", "source": "outputs/F14_summary.json and ra14_reassess.json: restated base +8.3%, implied in_line; V1 figure called an artefact", "status": "FAIL"},
+    {"ticker": "DG", "claim": "Q2 FY26 same-store sales +3.5%; diluted EPS $2.48 (+33.3%)", "source": "DG 8-K Ex-99.1 acc 0001104659-26-101918", "status": "PASS"},
+    {"ticker": "DG", "claim": "FY26 guidance: net sales +4.0-4.3%, same-store +2.5-2.9%, EPS $7.80-$8.00", "source": "DG 8-K Ex-99.1 acc 0001104659-26-101918", "status": "PASS"},
+    {"ticker": "DG", "claim": "Section 6 table 3-yr base +35%", "source": "DG dossier correction: margin of safety is 2-5 points, not the 35% a year V1 implied; F12_summary base +9.7%", "status": "FAIL"},
+    {"ticker": "CVS", "claim": "FY26 adjusted EPS guidance raised to $7.90-$8.10 from $7.30-$7.50; Q2 adjusted EPS $2.58", "source": "CVS 8-K Ex-99.1 acc 0000064803-26-000097", "status": "PASS"},
+    {"ticker": "CVS", "claim": "Aetna MBR 87.4% in Q2 2026 (vs 89.9% prior year)", "source": "CVS Q2 2026 release", "status": "PASS"},
+    {"ticker": "CVS", "claim": "Section 6 table 3-yr base +36%", "source": "F15_summary base +11.4%; dossier says V1's implied margin is overstated", "status": "FAIL"},
+    {"ticker": "WFC", "claim": "CET1 (Standardized) 10.26% vs 8.50% regulatory minimum plus buffer", "source": "WFC 8-K Ex-99.1 acc 0000072971-26-000288", "status": "PASS"},
+    {"ticker": "PORTFOLIO", "claim": "20 weights sum to 100%; Financials 25.00%; CAH+COR sub-industry 12.00%; SNA 10.00%", "source": "Recomputed from outputs/lead_portfolio_build.json", "status": "PASS"},
+    {"ticker": "PORTFOLIO", "claim": "Technology share (rule (o)) stated in report", "source": "grep of FINAL_REPORT.md: no mention; recomputed 26.19% incl. Visa, 19.34% IT-only", "status": "FAIL"},
+    {"ticker": "PORTFOLIO", "claim": "GFC replay -37.4%, worst fall -42.7%, order-dependence 12 names and -45% to -37%", "source": "lead_risk_results.json; lead_j_sensitivity.json", "status": "PASS"}
+  ]
+}

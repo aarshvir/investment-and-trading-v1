@@ -1,0 +1,102 @@
+{
+  "agent": "F97",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "DUK": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "Regulated Carolinas/Florida/Midwest utility growing rate base off data-center demand, priced for less growth than it is guiding to.",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "med (guidance reaffirmed and cross-checked against filed Q2 2026 10-Q, but no consolidated net-debt/EBITDA disclosed and a 2026-09-25 8-K was not opened)",
+      "kill_criteria": [
+        "FY adjusted EPS guidance ($6.55-$6.80) is cut at any quarterly release (vs. reaffirmed/raised).",
+        "Consolidated long-term debt grows >8% in a single fiscal year without a matching equity/NCI raise (i.e., leverage build accelerates beyond the current run-rate - Jun-26 LT debt +2.7% in one quarter alone).",
+        "Two consecutive quarters of YoY adjusted EPS growth below 3% (below the low end of the long-term algorithm).",
+        "A credit-rating downgrade to BBB or equivalent (from current investment-grade BBB+/A- tier) by S&P or Moody's.",
+        "A major adverse rate-case order (disallowed capex >$500M in a single jurisdiction) in the Carolinas or Florida."
+      ],
+      "key_adverse_facts": [
+        "H1 2026 free cash flow was negative (~-$3,968M): operating cash flow $4,272M vs capex $8,240M, financed by debt/NCI/asset sales.",
+        "Consolidated long-term debt rose from $80,108M (Dec-25) to $82,242M (Jun-26).",
+        "No consolidated net-debt/EBITDA figure is disclosed in the 10-Q; not independently reconstructed this cycle."
+      ],
+      "data_conflicts": [
+        "None material vs the Q14 triage; quant snapshot's ~16x NTM P/E is consistent with this dossier's ~17.0x calc off guided FY2026 midpoint EPS."
+      ],
+      "next_earnings_date": "2026-11-05",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for DUK (checked v1_valuation_table.csv, absent). This dossier's own reverse dividend-growth DCF implies ~4.0% perpetual growth at an assumed 7.8% cost of equity, below the company's guided 5-7% long-term adjusted-EPS growth range, i.e. priced for less than management's own guidance."
+      },
+      "scenario_returns_3y": {"bear": -0.01, "base": 0.08, "bull": 0.15},
+      "scenario_basis": "Base: FY2026 guided adjusted EPS midpoint $6.675, ~6%/yr guided growth, ~3.8% dividend yield, roughly flat 17x multiple. Bear: growth slows to ~3% (regulatory lag/rate-case friction) with multiple compression to ~14x. Bull: data-center load growth pushes growth to ~8% with multiple expansion to ~19x. Cost-of-equity assumption 7.8% throughout (analyst estimate, not filed)."
+    },
+    "ERIE": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Manages Erie Insurance Exchange for a capped, debt-free management fee with excellent ROE, but the fee itself is under an escalating legal challenge.",
+      "horizon": "24-36 months, contingent on litigation resolution",
+      "confidence_in_thesis": "med (financials cross-checked to the filed 10-Q; litigation timeline read directly from the 10-Q's own Legal Proceedings note, but the current Allegheny County docket status was not independently pulled)",
+      "kill_criteria": [
+        "Any court order or settlement that reduces the effective management fee rate below the current ~25% cap, retroactively or prospectively.",
+        "Management-fee revenue growth (policy issuance + renewal + administrative) falls below 2% YoY for two consecutive quarters (vs. +4.5-4.7% in H1 2026).",
+        "Commission + non-commission cost of operations grows faster than management-fee revenue for three consecutive quarters.",
+        "A verdict or settlement in Stephenson (or the amended June 2026 complaint) that establishes actual damages or a refund obligation, of any size.",
+        "Dividend payout ratio rises above 60% without a corresponding acceleration in fee growth (vs. ~41% currently)."
+      ],
+      "key_adverse_facts": [
+        "Amended Complaint filed 2026-06-11 in the Court of Common Pleas of Allegheny County expands the challenged management-fee period to calendar years 2020-to-present (previously just 2019-2020), after Erie lost at the Third Circuit (2025-10-14) and the Supreme Court declined cert (2026-03-23).",
+        "Commission expense grew faster than management-fee revenue in Q2 2026 (+$44.7M vs +$39.0M fee growth), a margin item to watch.",
+        "Revenue base is fully dependent on a separate legal entity (Erie Insurance Exchange) that ERIE does not own - a structural concentration."
+      ],
+      "data_conflicts": [
+        "The Q05 triage described the litigation as SCOTUS having 'declined to review, so the case proceeds' at the Third Circuit stage; this dossier finds the case has since moved to state court and the plaintiffs' scope has grown (June 2026 amendment) - an update, not a contradiction, but materially more adverse than the triage's framing."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "in_line",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for ERIE (checked v1_valuation_table.csv, absent). Reverse dividend-growth DCF implies ~5.7% perpetual growth at an assumed 8.0% cost of equity, in line with the ~5-6% fee/EPS growth actually delivered in H1 2026 - fairly priced, not cheap, with little cushion against an adverse litigation outcome."
+      },
+      "scenario_returns_3y": {"bear": -0.10, "base": 0.08, "bull": 0.18},
+      "scenario_basis": "Base: ~5-6% fee/EPS growth, ~2.3% dividend yield, stable ~20x multiple. Bear: adverse litigation development (fee reduction risk or growth deceleration) derates multiple to ~16x. Bull: litigation dismissed/settled favorably and Exchange premium growth stays strong, multiple expands to ~23x. Cost-of-equity assumption 8.0% throughout (analyst estimate, not filed)."
+    },
+    "PHM": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Move-up and active-adult homebuilder at a trough-cycle P/E, but it funded buybacks partly with new debt this half while cash flow fell.",
+      "horizon": "12-24 months, housing-cycle dependent",
+      "confidence_in_thesis": "med (financials cross-checked to the filed 10-Q; no formal company guidance exists to track, and Form 4 insider-selling pattern was not reviewed this cycle)",
+      "kill_criteria": [
+        "Home sale gross margin falls below 22% for two consecutive quarters (vs. 25.0% in Q2 2026).",
+        "Notes payable (consolidated) rises above $2.2B (vs. $1.82B Jun-26) without a matching reduction in buyback pace.",
+        "Operating cash flow is negative for a full fiscal year (vs. +$176.8M H1 2026).",
+        "Net new order units decline YoY for two consecutive quarters (vs. +6% in Q2 2026).",
+        "Debt-to-capital ratio (company-reported) exceeds 20% (vs. 12.3% at Jun-26)."
+      ],
+      "key_adverse_facts": [
+        "Notes payable rose from $1,631.1M (Dec-25) to $1,820.3M (Jun-26); the company issued $794.8M of new debt in H1 2026.",
+        "Operating cash flow fell to $176.8M (H1 2026) from $421.7M (H1 2025), a 58% decline, while the company still repurchased $681.2M of stock and paid $101.8M of dividends.",
+        "Home sale gross margin compressed 200bp YoY to 25.0% in Q2 2026."
+      ],
+      "data_conflicts": [
+        "The Q02 triage cited 'low leverage (0.4x)' as a mitigant to the revenue downturn; this dossier finds leverage moved in the wrong direction this half (new debt issuance funding buybacks amid falling OCF) - the snapshot ratio may still be low in absolute terms, but the trend is adverse and was not visible in the triage's point-in-time framing."
+      ],
+      "next_earnings_date": "2026-10-21",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for PHM (checked v1_valuation_table.csv, absent). Reverse earnings-yield Gordon-growth DCF implies ~2.3% perpetual growth at an assumed 10.5% cost of equity, below a ~4-5% base-case mid-cycle recovery growth assumption - priced for the downturn to persist near current depressed levels, not for full recovery."
+      },
+      "scenario_returns_3y": {"bear": -0.08, "base": 0.09, "bull": 0.22},
+      "scenario_basis": "Base: TTM EPS $9.79, modest mid-cycle recovery plus buyback-driven share-count reduction, multiple re-rates from 12.2x to ~13x, dividend yield ~0.9%. Bear: downturn deepens, margins compress further, multiple stays ~10x. Bull: rate relief reaccelerates closings/ASP, margins recover toward 27%, multiple re-rates to ~14-15x. Cost-of-equity assumption 10.5% throughout (analyst estimate, not filed)."
+    }
+  }
+}

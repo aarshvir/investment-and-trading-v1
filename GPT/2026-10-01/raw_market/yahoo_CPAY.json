@@ -1,0 +1,193 @@
+{
+  "ticker": "CPAY",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CPAY?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:41.253587+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "CPAY",
+            "exchangeName": "NYQ",
+            "fullExchangeName": "NYSE",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 1292423400,
+            "regularMarketTime": 1790798403,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 388.6,
+            "regularMarketChangePercent": -1.044,
+            "fulldayPrice": 388.6,
+            "fulldayChange": -4.1,
+            "fulldayChangePercent": -1.044,
+            "fiftyTwoWeekHigh": 427.46,
+            "fiftyTwoWeekLow": 252.84,
+            "regularMarketDayHigh": 393.475,
+            "regularMarketDayLow": 386.23,
+            "regularMarketVolume": 797802,
+            "longName": "Corpay, Inc.",
+            "shortName": "Corpay, Inc.",
+            "chartPreviousClose": 395.16,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "end": 1790775000,
+                "start": 1790755200,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "end": 1790798400,
+                "start": 1790775000,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "end": 1790812800,
+                "start": 1790798400,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "low": [
+                  394.9200134277344,
+                  397.8900146484375,
+                  391.8500061035156,
+                  388.6099853515625,
+                  386.2300109863281
+                ],
+                "open": [
+                  396.30999755859375,
+                  400.6099853515625,
+                  395.4100036621094,
+                  394.0400085449219,
+                  392.4200134277344
+                ],
+                "high": [
+                  400.4200134277344,
+                  402.04998779296875,
+                  399.32000732421875,
+                  394.2699890136719,
+                  393.4750061035156
+                ],
+                "close": [
+                  400.32000732421875,
+                  398.1099853515625,
+                  396.2300109863281,
+                  392.70001220703125,
+                  388.6000061035156
+                ],
+                "volume": [
+                  457900,
+                  432700,
+                  492400,
+                  592800,
+                  797802
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  400.32000732421875,
+                  398.1099853515625,
+                  396.2300109863281,
+                  392.70001220703125,
+                  388.6000061035156
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 400.32000732421875,
+      "adjclose": 400.32000732421875,
+      "open": 396.30999755859375,
+      "high": 400.4200134277344,
+      "low": 394.9200134277344,
+      "volume": 457900
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 398.1099853515625,
+      "adjclose": 398.1099853515625,
+      "open": 400.6099853515625,
+      "high": 402.04998779296875,
+      "low": 397.8900146484375,
+      "volume": 432700
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 396.2300109863281,
+      "adjclose": 396.2300109863281,
+      "open": 395.4100036621094,
+      "high": 399.32000732421875,
+      "low": 391.8500061035156,
+      "volume": 492400
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 392.70001220703125,
+      "adjclose": 392.70001220703125,
+      "open": 394.0400085449219,
+      "high": 394.2699890136719,
+      "low": 388.6099853515625,
+      "volume": 592800
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 388.6000061035156,
+      "adjclose": 388.6000061035156,
+      "open": 392.4200134277344,
+      "high": 393.4750061035156,
+      "low": 386.2300109863281,
+      "volume": 797802
+    }
+  ],
+  "currency": "USD",
+  "symbol": "CPAY",
+  "regular_market_time": 1790798403,
+  "close_sep30": 388.6000061035156,
+  "session_match": true
+}

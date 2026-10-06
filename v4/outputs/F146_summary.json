@@ -1,0 +1,126 @@
+{
+  "agent": "F146",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "ELV": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A large US health insurer whose profits fell on rising medical costs; the price assumes no recovery, though management targets 12% growth in 2027.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Full-year adjusted EPS guidance cut below $26.00 (now \"at least $27.00\", acc. 0001156039-26-000063), or Q3/Q4 adjusted EPS below $3.00 in either quarter (Q4'25 was $3.33).",
+        "Consolidated benefit expense ratio above 91.0% for FY26 (guidance \"90.2% plus or minus 50 basis points\", acc. 0001156039-26-000063; Q2'26 89.7%).",
+        "Prior-year reserve redundancies in H1'27 below $700m (H1'26 $1,195m; release table \"Prior years redundancies\").",
+        "Debt-to-capital (credit-agreement definition, consolidated, 10-Q MD&A) above 45% (now 40.8%; covenant 60%).",
+        "Any DOJ settlement, judgment or new accrual above $1.0bn in the Medicare risk-adjustment litigation."
+      ],
+      "key_adverse_facts": [
+        "Adjusted EPS fell from ~$33.0 (2024) to $30.29 (2025) and is guided at least $27.00 for 2026; 2025 guidance was cut ~13% mid-year (from $34.15-$34.85 to ~$30.00)",
+        "H1'26 adjusted EPS of $20.03 includes ~$1.80 of non-recurring or below-the-line benefit; implied H2 only ~$7.00",
+        "Medicare Advantage membership -15.9% and Medicaid -4.3% y/y; benefit ratio up 80 bps in Q2'26 on government-business cost trend",
+        "DOJ False Claims Act suit on Medicare risk adjustment (filed March 2020) in discovery through 10 May 2027, unquantified; CMS notice accrual $935m (closed 13 Jul 2026, no sanctions)",
+        "Prior-year reserve redundancies shrinking (FY25 $1,290m = 1.0% of prior-year incurred vs $1,731m = 1.4% in FY24)"
+      ],
+      "data_conflicts": [
+        "Yahoo totalCash $37.5bn is consolidated cash plus investments, not parent liquidity (parent cash and investments ~$2.1bn)",
+        "b1 TTM FCF yield 7.3% vs ~5.8% on guided 2026 OCF less capex (working-capital timing)",
+        "b1 flags ELV as financial so GP/A and leverage factors are blank"
+      ],
+      "next_earnings_date": "2026-10-21",
+      "confidence_in_thesis": "medium: valuation gap is wide (implied 3.1% vs base 6.5%), but earnings recovery depends on Medicaid/ACA/MA cost trend and is unproven",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for ELV, so v1_verdict is null and there is nothing to reconcile; dossier view is based on the reverse DCF only.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.0827,
+        "base": 0.0723,
+        "bull": 0.1418
+      },
+      "scenario_basis": "Start 2026E adjusted EPS $27.00 (guidance floor); EPS growth -4/0/0% (bear), +10/+8/+8% (base), +13/+12/+11% (bull) a year to 2029E; exit P/E 11x/13.5x/15x; dividend $6.88 a year. Reverse DCF: owner cash earnings $22.95/share, CoE 9.0%, terminal 3%, implied 10y growth 3.1% vs base 6.5%"
+    },
+    "DHR": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Leading maker of tools and tests for drug making and diagnostics, now more indebted after buying Masimo; good business, priced for too much growth.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Core sales growth excluding respiratory testing below 3.0% in two consecutive quarters (Q2'26 +4.5%, Q1'26 +3.0%).",
+        "Consolidated net debt (debt carrying $26,558m less cash $4,348m, Note 10 and balance sheet) / (TTM GAAP operating profit plus D&A) above 3.25x at any fiscal year-end (now ~2.9x).",
+        "Full-year 2026 adjusted EPS guidance cut below $8.35 (now \"$8.45 to $8.60\", acc. 0000313616-26-000163).",
+        "Biotechnology segment core sales growth below 2.0% for two consecutive quarters while bioprocessing orders growth falls below 5% (Q2'26: +2.5% and mid-teens).",
+        "A Masimo-related criminal charge, or cumulative Masimo litigation payments and accruals above $500m (Apple, DOJ, Kiani matters, 10-Q Note 12)."
+      ],
+      "key_adverse_facts": [
+        "FY26 core revenue growth guidance top-end cut from 3%-6% to 3.0%-4.0% in July 2026; Q2'26 core growth +3.0% (+4.5% ex-respiratory)",
+        "Masimo acquired 10 Jun 2026 for ~$9.8bn cash (goodwill $4,960m, intangibles $4,844m); debt $26,558m vs cash $4,348m, net debt/EBITDA ~2.9x (derived)",
+        "Masimo legacy matters: Apple patent litigation, DOJ civil investigative demand and supplemental grand jury subpoena (27 Feb 2026), Kiani litigation",
+        "CEO transition effective 1 Oct 2026 (Blair to Sawyer Montgomery); special option and RSU grants to Steven and Mitchell Rales approved 31 Jul 2026",
+        "Goodwill and intangibles are 74% of total assets; Mitchell Rales sold ~1.08m shares (~$234.6m) Oct-Nov 2025 and CEO Blair sold ~$12.7m on 2026-08-21"
+      ],
+      "data_conflicts": [
+        "Yahoo total debt $27.9bn (includes leases) vs $26,558m carrying debt in the 10-Q",
+        "b1 classifies DHR under Information Technology (SIC 3823)",
+        "FY25 XBRL diluted EPS $5.05 vs release $5.03 (continuing operations labelling)"
+      ],
+      "next_earnings_date": "2026-10-21",
+      "confidence_in_thesis": "medium: franchise quality high; the verdict turns on price (implied 9.3% vs base 7.0%), with Masimo integration and bioprocessing conversion the swing factors",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for DHR, so v1_verdict is null and there is nothing to reconcile; triage also said not to advance, for price-versus-growth reasons that the reverse DCF now quantifies.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.0403,
+        "base": 0.071,
+        "bull": 0.1452
+      },
+      "scenario_basis": "Start 2026E adjusted EPS $8.525 (guidance mid-point $8.45-$8.60); growth 5/4/4% (bear), 9/8/8% (base), 12/12/11% (bull) a year to 2029E; exit P/E 20x/25x/28x; dividend $1.60 a year. Reverse DCF: FCF/share $7.35, CoE 8.5%, terminal 3%, implied 10y growth 9.3% vs base 7.0%"
+    },
+    "HWM": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Makes critical metal parts inside jet engines and aircraft, growing fast on record backlogs; excellent business, but the price assumes far more growth than likely.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "FY26 adjusted EPS guidance cut below $5.00 (now \"$5.23 $5.27 $5.31\" low/baseline/high, acc. 0001104659-26-091610), or Q3'26 revenue below $2,565m (low end of \"$2,565 $2,575 $2,585\").",
+        "Adjusted EBITDA margin below 30.0% for two consecutive quarters (Q2'26 32.1%; Q3 guide \"32.2%\" baseline, acc. 0001104659-26-091610).",
+        "Consolidated net debt (debt carrying $4,501m less cash $563m) / TTM adjusted EBITDA above 2.0x after Q4'26 (now ~1.4x).",
+        "FY26 free cash flow guidance cut below $1.75bn (now \"$1,850 $1,900 $1,950\" in $m, acc. 0001104659-26-091610).",
+        "Engine Products third-party sales growth below 15% y/y for two consecutive quarters (Q2'26 +32%)."
+      ],
+      "key_adverse_facts": [
+        "Price $232.48 = 44.1x FY26 adjusted EPS guide baseline $5.27 and ~2.0% FCF yield; reverse DCF needs ~17.5% 10y FCF growth vs base 11% and bull 14%",
+        "RTX and GE Aerospace each ~11% of FY25 third-party sales; aerospace ~70% of revenue (cyclical and concentrated)",
+        "H1'26 working capital absorbed ~$360m (receivables -$196m, inventory -$165m); H1 FCF/net income 0.75x; capex to rise further in 2027",
+        "CAM acquisition ($1.8bn, closed 6 Apr 2026) lifted debt to $4,501m (net debt/adjusted EBITDA ~1.4x, derived); Q1'26 GAAP EPS inflated by a $93m credit",
+        "Grenfell Tower claims (indemnified by Arconic Corporation) with trial anticipated Oct 2028 to Jul 2029; CAO sold ~$22.7m of stock Feb-May 2026 at $251-$270"
+      ],
+      "data_conflicts": [
+        "b1 GP/A -0.67 is an artefact of cost-of-goods presentation (GAAP gross margin ~34%)",
+        "b1 tags HWM as Materials (SIC 3350)",
+        "Yahoo total debt $4.66bn includes leases vs $4,501m carrying debt"
+      ],
+      "next_earnings_date": "2026-11-05",
+      "confidence_in_thesis": "high on business quality and guidance record, low on valuation: the verdict rests on price (implied 17.5% vs base 11%); next_earnings_date is a Yahoo estimate (Q3 2025 was reported 2025-10-30)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for HWM, so v1_verdict is null and there is nothing to reconcile; triage also said not to advance (re-rated to 37.7x NTM), confirmed here by the reverse DCF.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.0917,
+        "base": 0.0983,
+        "bull": 0.1983
+      },
+      "scenario_basis": "Start FY26 adjusted EPS $5.27 (guidance baseline $5.23-$5.31); growth 10/8/6% (bear), 20/17/15% (base), 25/22/18% (bull) a year to 2029E; exit P/E 26x/36x/42x; dividend $0.56 a year. Reverse DCF: FCF/share $4.47, CoE 9.0%, terminal 3%, implied 10y growth 17.5% vs base 11%"
+    }
+  }
+}

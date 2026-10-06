@@ -1,0 +1,132 @@
+{
+  "as_of": "2026-09-27",
+  "scope": "Independent adversarial data audit (DA14) of two current dossiers: TJX, SO. 14 load-bearing facts checked (7/7 by ticker), selected for the claims most likely to break a thesis or a kill criterion if wrong: headline quarterly figures, guidance track record, debt/leverage and balance-sheet items, capital returns, litigation/red-flag scan, and multi-entity/period scoping. Special attention paid to TJX's late-January fiscal year-end (every period label re-derived from the primary source's own 13/26-week fiscal captions, not assumed from the dossier's labels) and to SO's status as a multi-registrant filer (Southern Company parent plus Georgia Power, Alabama Power, Mississippi Power, Southern Power and Southern Company Gas all filed under one combined 10-Q/10-K/8-K) -- every SO figure below was cross-checked against the 'Southern' (consolidated parent), not a subsidiary, financial-statement tab of the combined filing. v4/outputs/dossier_precheck.json and v4/outputs/xbrl_crosstie.json were read for both tickers: both list empty flags arrays for TJX and SO (no pre-flagged lines to carry forward). Method: primary sources only -- SEC EDGAR 8-K Ex-99/Ex-99.1 earnings-release exhibits, 10-Q full text and R-file XBRL-rendered exhibits -- fetched directly from www.sec.gov with a compliant User-Agent header at <=2 requests/second and cached locally. Both dossiers were read to their end (no appended Correction sections were found on either). Each ticker's one-line thesis and first kill criterion were checked for consistency with the underlying filings.",
+  "facts": [
+    {
+      "ticker": "TJX",
+      "claim": "Q2 FY2027 (13 weeks ended 2026-08-01) headline: net sales $15.2bn (+5% YoY); consolidated comparable sales +4%; gross profit margin 33.4% (+2.7pts YoY), adjusted gross margin 31.4% (+0.7pt ex tariff-refund benefit); GAAP diluted EPS $1.36 (+24% YoY); adjusted diluted EPS $1.22 (+11% YoY, excluding a $0.14 net tariff-refund benefit)",
+      "dossier_location": "TJX.md §4 (narrative paragraph and results table, Q2 FY27 row)",
+      "source": "TJX Q2 FY2027 earnings press release, 8-K Ex-99.1, accession 0000109198-26-000045, filed 2026-08-19",
+      "source_value": "\"Net sales for the second quarter of Fiscal 2027 were $15.2 billion, an increase of 5%\"; \"Second quarter Fiscal 2027 consolidated comparable sales increased 4%\"; \"Gross profit margin ... was 33.4%, up 2.7 percentage points versus last year's 30.7%\"; \"adjusted gross profit margin was 31.4%, up 0.7 percentage points\"; \"diluted earnings per share were $1.36, up 24% versus $1.10\"; \"adjusted diluted earnings per share were $1.22, up 11% versus the prior year\"",
+      "status": "PASS",
+      "note": "Exact match on every figure in this fact."
+    },
+    {
+      "ticker": "TJX",
+      "claim": "Net income for Q2 FY2027 (quarter ended 2026-08-01) was $1,243mn, per the dossier's own results table (§4, 'Q2 FY27 (Aug '26 q, press release)' row, labelled '1,243 (NI, XBRL)')",
+      "dossier_location": "TJX.md §4 results table, Q2 FY27 row",
+      "source": "TJX Q2 FY2027 earnings press release, 8-K Ex-99.1, Financial Summary table, accession 0000109198-26-000045; and TJX Q2 FY2027 10-Q, accession 0000109198-26-000048, Consolidated Statements of Income",
+      "source_value": "\"Net income $1,520\" for the Thirteen Weeks Ended August 1, 2026 (i.e., Q2 FY2027); \"$1,243\" in the same table is the comparative Thirteen Weeks Ended August 2, 2025 figure -- i.e., Q2 FY2026 (the PRIOR-year quarter), not Q2 FY2027",
+      "status": "FAIL",
+      "note": "TJX's fiscal-year labelling trap: the dossier's results table mislabels the prior-year (Q2 FY2026, quarter ended 2026-08-02-2025) net income of $1,243mn as if it were the current Q2 FY2027 net income. The correct Q2 FY2027 (quarter ended 2026-08-01) net income is $1,520mn -- a $277mn (~18%) understatement. This does not affect the dossier's EPS figures, guidance table, or verdict (which correctly use $1.36 GAAP / $1.22 adjusted EPS and other Q2 FY27 metrics elsewhere), but the standalone net-income cell in the results table is wrong and should be corrected to $1,520mn."
+    },
+    {
+      "ticker": "TJX",
+      "claim": "Q2 FY2027 comparable sales by division: Marmaxx (U.S.) +1% (\"below expectations\" per CEO), HomeGoods +7%, TJX Canada +6%, TJX International +7%, TJX consolidated +4%",
+      "dossier_location": "TJX.md §4 (narrative), §8 bull point 3, §9 bear point 1",
+      "source": "TJX Q2 FY2027 earnings press release, 8-K Ex-99.1, \"Comparable Sales by Division\" table, accession 0000109198-26-000045",
+      "source_value": "Second Quarter Comparable Sales FY2027: Marmaxx (U.S.) +1%; HomeGoods (U.S.) +7%; TJX Canada +6%; TJX International (Europe & Australia) +7%; TJX +4%. CEO quote: \"While sales at Marmaxx were below our expectations, HomeGoods, TJX Canada, and TJX International all delivered terrific comp sales increases of 6% to 7%\"",
+      "status": "PASS",
+      "note": "Exact match on every segment figure and the CEO characterization."
+    },
+    {
+      "ticker": "TJX",
+      "claim": "Full-year FY2027 guidance raised at the Q2 FY2027 release: adjusted diluted EPS $5.15-$5.20 (excluding an expected $0.16 net tariff-refund benefit); GAAP diluted EPS $5.31-$5.36",
+      "dossier_location": "TJX.md §5 (guidance track record)",
+      "source": "TJX Q2 FY2027 earnings press release, 8-K Ex-99.1, \"Third Quarter, Full Year Fiscal 2027, and Store Growth Outlook\" section, accession 0000109198-26-000045",
+      "source_value": "\"The Company is increasing its full-year diluted earnings per share outlook to be in the range of $5.31 to $5.36. Excluding an expected net benefit of $.16 from tariff refunds, the Company is increasing its full year outlook for adjusted diluted earnings per share to be in the range of $5.15 to $5.20.\"",
+      "status": "PASS",
+      "note": "Exact match, including the framing as an increase (raise) versus the prior outlook."
+    },
+    {
+      "ticker": "TJX",
+      "claim": "Balance sheet, consolidated TJX, 2026-08-01: long-term debt $1.87bn (down from $2.87bn a year earlier); cash and cash equivalents $6.00bn (up from $4.64bn); shareholders' equity $10.65bn (up from $8.87bn)",
+      "dossier_location": "TJX.md §6 (earnings quality & balance sheet)",
+      "source": "TJX Q2 FY2027 earnings press release, 8-K Ex-99.1, \"Condensed Balance Sheets\" exhibit, accession 0000109198-26-000045 (identical figures also in the Q2 FY2027 10-Q, accession 0000109198-26-000048)",
+      "source_value": "\"Long-term debt $1,871\" (Aug 1, 2026) vs \"$2,867\" (Aug 2, 2025); \"Cash and cash equivalents $6,004\" vs \"$4,639\"; \"Shareholders' equity $10,651\" vs \"$8,866\" (all in millions)",
+      "status": "PASS",
+      "note": "Exact match on all three balance-sheet figures and both periods. Note the balance sheet also shows a separate $1,000mn 'Current portion of long-term debt' line not mentioned in the dossier's long-term-debt figure -- this is a completeness gap, not an error (the dossier's $1.87bn figure correctly matches the 'Long-term debt' line item as labelled), but total consolidated debt including the current portion is $2.87bn, not $1.87bn."
+    },
+    {
+      "ticker": "TJX",
+      "claim": "Q2 FY2027 shareholder returns: $798mn of buybacks (5.1mn shares) plus $529mn of dividends in the quarter, funded from operating cash flow",
+      "dossier_location": "TJX.md §6 (earnings quality & balance sheet)",
+      "source": "TJX Q2 FY2027 earnings press release, 8-K Ex-99.1, \"Cash and Shareholder Distributions\" section and Note 2, accession 0000109198-26-000045",
+      "source_value": "\"The Company repurchased 5.1 million shares of TJX stock for a total of $798 million and paid $529 million in shareholder dividends\"; \"the Company generated $2.2 billion of operating cash flow and ended the quarter with $6.0 billion of cash\"",
+      "status": "PASS",
+      "note": "Exact match on shares repurchased, dollar amount and dividends paid."
+    },
+    {
+      "ticker": "TJX",
+      "claim": "Red-flag scan / kill-criterion-1 consistency: no material 2026 litigation identified (Item 1 Legal Proceedings refers only to immaterial ordinary-course matters); the 8-K Item 5.02 filed 2026-09-17 (accession 0000109198-26-000051) is a benign board addition, not an executive departure; Marmaxx comp sales (+1% in Q2 FY27) have been below the 2%-comp kill-criterion threshold for only one quarter, not the two consecutive quarters needed to trip kill criterion 1 (Marmaxx was +6% in Q1 FY27)",
+      "dossier_location": "TJX.md §9 kill criterion 1, §11 (catalysts), §12 (red-flag scan)",
+      "source": "TJX Q2 FY2027 10-Q, Item 1 Legal Proceedings and Note K, accession 0000109198-26-000048; 8-K Item 5.02, accession 0000109198-26-000051, filed 2026-09-17; TJX Q1 FY2027 earnings press release, 8-K Ex-99.1, accession 0000109198-26-000023, filed 2026-05-20",
+      "source_value": "10-Q: \"TJX is subject to certain legal proceedings ... TJX has accrued immaterial amounts\"; no going-concern, restatement or material-weakness language found. 8-K: \"the Board of Directors ... elected Craig A. Pintoff as a member of the Company's Board and of its Audit and Finance Committee, effective immediately\" -- an addition, not a departure. Q1 FY2027 release: \"Marmaxx (U.S.) +6%\" (comparable sales), versus +3% in Q1 FY2026",
+      "status": "PASS",
+      "note": "The dossier's kill criterion 1 and its own stated 'current run-rate: +1%' framing (singular quarter, not 'two consecutive') are consistent with the primary sources: Marmaxx was +6% in Q1 FY2027, so only Q2 FY2027 (+1%) is currently below the 2% threshold. The 8-K item 5.02 the dossier flagged as a gap resolves as a routine, non-adverse independent-director addition (Craig Pintoff, EVP/CAO of United Rentals) with no related-party disclosures -- no departure, compensatory dispute or governance red flag found."
+    },
+    {
+      "ticker": "SO",
+      "claim": "Q2 2026 (three months ended 2026-06-30) headline, consolidated Southern Company: operating revenues $6.98bn (+0.1% YoY, essentially flat); GAAP EPS $1.03 vs $0.80 a year earlier (+29%); adjusted (\"excluding items\") EPS $1.13 vs $0.92 a year earlier (+23%)",
+      "dossier_location": "SO.md §4 (results table, Q2 2026 row and narrative)",
+      "source": "SO Q2 2026 earnings press release, 8-K Ex-99, accession 0000092122-26-000056, filed 2026-07-30",
+      "source_value": "\"Southern Company today reported second-quarter earnings of $1.2 billion, or $1.03 per share, in 2026 compared with earnings of $0.9 billion, or $0.80 per share, in the second quarter of 2025\"; \"Southern Company earned $1.3 billion, or $1.13 per share ... compared with ... $0.92 per share\"; \"Second-quarter 2026 operating revenues were $6.98 billion, compared with $6.97 billion for the second quarter of 2025, an increase of 0.1%\". Financial Highlights page: Southern Company Operating Revenues $6,977 vs $6,973 -- distinct from the same page's Alabama Power ($1,963), Georgia Power ($3,133) and Mississippi Power ($403) subsidiary revenue lines in the same release",
+      "status": "PASS",
+      "note": "Exact match on every headline figure. Entity scoping confirmed correct: the dossier's Q2 2026 figures are the consolidated 'Southern Company' line of the earnings release, not any of the Alabama Power/Georgia Power/Mississippi Power/Southern Power/Southern Company Gas segment or subsidiary lines shown separately on the same Financial Overview page -- no conflation found."
+    },
+    {
+      "ticker": "SO",
+      "claim": "Six-month (H1) 2026 revenue $15.4bn vs $14.7bn in H1 2025, +4.2% YoY, consistent with weather-normal customer growth plus rate-base recovery rather than a step-change from data centers yet",
+      "dossier_location": "SO.md §4 (narrative)",
+      "source": "SO Q2 2026 earnings press release, 8-K Ex-99, accession 0000092122-26-000056",
+      "source_value": "\"For the six months ended June 30, 2026, operating revenues were $15.4 billion, compared with $14.7 billion for the corresponding period in 2025, an increase of 4.2%\" (Financial Overview page: $15,374mn vs $14,748mn)",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "SO",
+      "claim": "Balance sheet, consolidated Southern Company, 2026-03-31 (Q1 2026 10-Q, the latest quarter with structured XBRL available at diligence date): long-term debt $67.15bn plus current portion (\"Securities due within one year\") $5.70bn ≈ total $72.8bn; cash and cash equivalents $981mn (down from $1.64bn at 2025-12-31)",
+      "dossier_location": "SO.md §6 (earnings quality & balance sheet)",
+      "source": "SO Q1 2026 10-Q, \"Condensed Consolidated Balance Sheets (Unaudited) - Southern\" exhibit (R8.htm), accession 0000092122-26-000034, filed 2026-04-30",
+      "source_value": "\"Long-term Debt 67,148\" (Mar 31, 2026); \"Securities due within one year 5,701\"; \"Cash and cash equivalents $981\" (Mar 31, 2026) vs \"$1,639\" (Dec 31, 2025)",
+      "status": "PASS",
+      "note": "Exact match on long-term debt ($67,148mn ≈ $67.15bn), current portion ($5,701mn ≈ $5.70bn, total ≈$72.8bn) and cash. Confirmed pulled from the 'Southern' (consolidated parent) tab of the combined multi-registrant filing, not a subsidiary (Alabama Power / Georgia Power / Mississippi Power / Southern Power / Southern Company Gas) balance sheet, which are filed as separate tabs in the same document."
+    },
+    {
+      "ticker": "SO",
+      "claim": "Stockholders' equity (consolidated): $36.0bn at 2025-12-31 (10-K), up from $33.2bn a year earlier",
+      "dossier_location": "SO.md §6 (earnings quality & balance sheet)",
+      "source": "SO FY2025 10-K, \"Consolidated Balance Sheets - Southern\" exhibit (R8.htm), accession 0000092122-26-000006, filed 2026-02-19",
+      "source_value": "\"Total common stockholders' equity 36,016\" (Dec 31, 2025) vs \"33,208\" (Dec 31, 2024)",
+      "status": "PASS",
+      "note": "Exact match, correctly labelled as common stockholders' equity. Note this excludes noncontrolling interests ($2,851mn at Dec-25): the 10-K's broader 'Total stockholders' equity' line (common equity + NCI) is $38,867mn at Dec-25 and $36,674mn at Dec-24 -- a different, larger figure than the dossier's $36.0bn/$33.2bn. The dossier's own label ('stockholders' equity,' without specifying 'common') is slightly loose given SO discloses both a common-only and an all-in total, but the numbers it cites are the common-equity figures and match that line exactly, so this is not scored as an error."
+    },
+    {
+      "ticker": "SO",
+      "claim": "SO's Q2 2026 press release does not restate a full-year 2026 EPS guidance range; confirmed content is management's reference to continuing data-center demand and to a tax remeasurement tied to the resolved Vogtle 3/4 loss estimate (not new construction overruns)",
+      "dossier_location": "SO.md §5 (guidance track record), §8 bull point 1",
+      "source": "SO Q2 2026 earnings press release, 8-K Ex-99, accession 0000092122-26-000056",
+      "source_value": "No FY2026 EPS guidance range appears anywhere in the release. CEO quote: \"Across the Southeast, extraordinary economic development momentum and demand for power continue to create meaningful opportunities\". Footnote (5): \"Earnings include income tax charges of $4 million ... related to the remeasuring of deferred tax assets associated with the previously recognized estimated probable loss on Plant Vogtle Units 3 and 4 due to changes in the State of Georgia corporate tax rate\"",
+      "status": "PASS",
+      "note": "Confirmed: the primary source contains no FY2026 point EPS guidance range (consistent with the dossier's own flagged gap/medium-confidence framing on the guidance track record) and the only Vogtle-related item in the release is the described tax remeasurement, not a new cost overrun -- exactly as the dossier states."
+    },
+    {
+      "ticker": "SO",
+      "claim": "Red-flag scan: no new 2026 SEC or DOJ investigation found; no going-concern language, material-weakness disclosure or restatement identified in the Q2 2026 10-Q; historical Kemper-related SEC investigation/class action and 2022 Deloitte class action are legacy matters unrelated to Vogtle or current operating segments",
+      "dossier_location": "SO.md §12 (red-flag scan)",
+      "source": "SO Q2 2026 10-Q (combined multi-registrant filing), Item 1/Item 1A, accession 0000092122-26-000054, filed 2026-07-30",
+      "source_value": "Item 1: \"See the Notes to the Condensed Financial Statements herein for information regarding certain legal and administrative proceedings\"; Item 1A: \"There have been no material changes to these risk factors\". Full-text search of the 10-Q for \"Kemper\", \"material weakness\", \"going concern\" and \"restat[ement]\" returned zero matches",
+      "status": "PASS",
+      "note": "Confirmed: the current Q2 2026 10-Q discloses no new SEC/DOJ matter, no going-concern language, no material weakness and no restatement, and does not even mention Kemper -- consistent with the dossier's characterization of Kemper as a resolved, legacy matter outside the current filing's disclosures."
+    },
+    {
+      "ticker": "SO",
+      "claim": "Thesis/kill-criterion-1 consistency: adjusted EPS growth of +23% (Q2 2026) / +14.4% (H1 2026 YTD) is far above the kill criterion 1 threshold (adjusted EPS growth falling below 4% for two consecutive quarters, vs the ~5-7% long-term target)",
+      "dossier_location": "SO.md §1 verdict, §10 kill criterion 1",
+      "source": "SO Q2 2026 earnings press release, 8-K Ex-99, accession 0000092122-26-000056",
+      "source_value": "\"Southern Company earned $1.3 billion, or $1.13 per share ... compared with ... $0.92 per share\" (+22.8%); \"$2.8 billion ... $2.46 per share\" YTD vs \"$2.4 billion ... $2.15 per share\" (+14.4%)",
+      "status": "PASS",
+      "note": "Thesis (Vogtle risk resolved, data-center upside not yet priced) and kill criterion 1 are internally consistent with the primary-source figures verified above; adjusted EPS growth is running well above both the long-term 5-7% target and the <4% kill threshold, and no contradiction was found."
+    }
+  ]
+}

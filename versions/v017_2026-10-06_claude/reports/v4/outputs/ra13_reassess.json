@@ -1,0 +1,390 @@
+{
+ "analyst": "RA13",
+ "date": "2026-10-06",
+ "data_cutoff": "EDGAR filings to 2026-10-06; prices and share counts as of 2026-09-25 close; 10-year Treasury 5.17% on 2026-09-25 (FRED DGS10); Fed funds target 3.75-4.00% from 2026-09-16",
+ "tickers": {
+  "MPC": {
+   "claims": [
+    {
+     "claim": "Q2 2026 R&M margin $36.33/bbl, R&M adjusted EBITDA $6,655m, EPS $17.73",
+     "status": "CONFIRMED",
+     "source": "MPC 8-K Ex-99.1 acc. 0001510295-26-000060 (4 Aug 2026)"
+    },
+    {
+     "claim": "Q3 2026 guide: opex $5.60/bbl, distribution $1,650m, turnaround $290m, throughput 3,005 mbpd; 2026 MPC capex $1.5bn, MPLX growth capex $2.9bn",
+     "status": "CONFIRMED",
+     "source": "same release, Third-Quarter 2026 Outlook and Strategic Update"
+    },
+    {
+     "claim": "TTM FCF of $12.9bn (OCF 17.1 - capex 4.2) is a usable base year for the V1 reverse DCF (implied -11.2% a year = in_line)",
+     "status": "WRONG",
+     "source": "Base year contains the $36/bbl quarter; comparison is circular. 10-Q acc. 0001510295-26-000061: H1 OCF $11,448m, capex $2,099m"
+    },
+    {
+     "claim": "V1 EV $139.2bn (net debt $25.0bn) is the right claim on cash flow",
+     "status": "WRONG",
+     "source": "Omits MPLX noncontrolling interest (book $6,643m; distributions to NCI $813m in H1 2026, 10-Q cash-flow statement); MPC-attributable FCF needed"
+    },
+    {
+     "claim": "SBC immaterial and FCF needs no deduction",
+     "status": "CORRECTED",
+     "source": "SBC $160m TTM (V1 inputs; 10-Q); deducted in the RA13 FCF"
+    },
+    {
+     "claim": "Normalised NTM P/E mid-teens to ~20x at a $17-20/bbl margin",
+     "status": "WRONG",
+     "source": "At $393.52, EPS at a $17-20 margin is $14-21 -> 19-28x (RA13 model: 3.5bn + 0.84bn per $1/bbl)"
+    },
+    {
+     "claim": "No filing, merger agreement, guidance change or management change after 4 Aug 2026",
+     "status": "CONFIRMED",
+     "source": "EDGAR submissions CIK 1510295 retrieved 2026-10-06: latest filings 10-Q and 8-K of 4 Aug 2026"
+    },
+    {
+     "claim": "Equity DCF on attributable FCF: price implies 4.6% (CoE 7.95%) / 7.1% (9.0%) 10-year growth at a $19/bbl base margin vs about 3% base; equals flat-3% only at $19.7-21.1/bbl sustained",
+     "status": "NEW",
+     "source": "RA13 model, dossier Re-assessment (RA13); rf 5.17% FRED DGS10 25 Sep 2026, ERP 4.14%, beta 0.67-1.2"
+    }
+   ],
+   "old_verdict": "INCLUDE-SMALL",
+   "new_verdict": "WATCH",
+   "old_implied": "in_line",
+   "new_implied": "above",
+   "scenario_returns_3y": {
+    "bear": -0.295,
+    "base": -0.082,
+    "bull": 0.113
+   },
+   "changed_fields": [
+    "verdict",
+    "thesis_one_line",
+    "valuation_view_vs_v1.v1_verdict",
+    "valuation_view_vs_v1.v1_base_3y",
+    "valuation_view_vs_v1.dossier_view",
+    "valuation_view_vs_v1.consistent",
+    "valuation_view_vs_v1.implied_vs_base",
+    "valuation_view_vs_v1.reconciliation",
+    "scenario_returns_3y",
+    "scenario_basis",
+    "kill_criteria",
+    "confidence_in_thesis",
+    "key_adverse_facts"
+   ],
+   "note": "Price needs a sustained $20-22/bbl refining margin; the Q2 spike is in the price and the base case returns -8% a year. Back to a small position only near $290 or if a $22+ margin proves durable."
+  },
+  "MTB": {
+   "claims": [
+    {
+     "claim": "P/B 1.16x, 40th percentile of own history, fair/modestly cheap",
+     "status": "CORRECTED",
+     "source": "8-K Ex-99.1 acc. 0000036270-26-000046: common BVPS $176.03 -> 1.26x; TBVPS $117.41 -> 1.88x. V1 divided by total equity incl. preferred"
+    },
+    {
+     "claim": "Justified P/B implies 9.8% ROE vs 10.9% TTM ROE",
+     "status": "CORRECTED",
+     "source": "Like-for-like: P/TBV 1.88x implies ROTCE 14.0% at CoE 8.82% (15.2% at 9.5%); ROTCE 16.5% 1H26, 18.57% Q2 (deck acc. 0000036270-26-000052 slide 7)"
+    },
+    {
+     "claim": "FY2026 guide: NII $7.2-7.35bn bottom half, NIM high 3.60s, fees $2.8-2.85bn high end, expenses $5.5-5.6bn high end, NCO ~37bp, CET1 10.0-10.5%",
+     "status": "CONFIRMED",
+     "source": "8-K 14 Sep 2026 investor deck, acc. 0000036270-26-000052, slide 2026 Outlook"
+    },
+    {
+     "claim": "Management expects 17% ROTCE in 2027",
+     "status": "NEW",
+     "source": "same deck, slide 7: Expect to reach 17% ROTCE in 2027 as CET1 trends to 10%"
+    },
+    {
+     "claim": "Item 5.02 8-K of 16 Jun 2026 uninvestigated",
+     "status": "CONFIRMED",
+     "source": "Routine election of director Jeremy M. Jacobs Jr., acc. 0000036270-26-000039"
+    },
+    {
+     "claim": "Series L preferred issued Jul 2026; MTN refresh 22 Sep; 28 Sep reclassification of other income and loans held for sale",
+     "status": "NEW",
+     "source": "8-K acc. 0001193125-26-310413 (24m depositary shares, 6.625%); acc. 0001193125-26-398138; acc. 0000036270-26-000054 (no change to totals)"
+    },
+    {
+     "claim": "No merger agreement, rating action, 13D or S-4 after the Q2 release",
+     "status": "CONFIRMED",
+     "source": "EDGAR submissions CIK 36270 to 2026-10-06 (Q3 results due 16 Oct)"
+    }
+   ],
+   "old_verdict": "INCLUDE",
+   "new_verdict": "INCLUDE-SMALL",
+   "old_implied": "in_line",
+   "new_implied": "in_line",
+   "scenario_returns_3y": {
+    "bear": -0.001,
+    "base": 0.107,
+    "bull": 0.179
+   },
+   "changed_fields": [
+    "verdict",
+    "thesis_one_line",
+    "valuation_view_vs_v1.v1_verdict",
+    "valuation_view_vs_v1.v1_base_3y",
+    "valuation_view_vs_v1.dossier_view",
+    "valuation_view_vs_v1.consistent",
+    "valuation_view_vs_v1.implied_vs_base",
+    "valuation_view_vs_v1.reconciliation",
+    "scenario_returns_3y",
+    "scenario_basis",
+    "kill_criteria",
+    "confidence_in_thesis",
+    "key_adverse_facts"
+   ],
+   "note": "Base return +10.7% vs 8.8% CoE and justified P/TBV 1.9-2.2x vs 1.88x paid: thin margin; CET1 at the bottom of the guided band. Half conviction."
+  },
+  "RJF": {
+   "claims": [
+    {
+     "claim": "Q3 FY26: EPS $3.01 (adj $3.14), net revenues $3.93bn, adj pretax margin 19.9%, ROE 18.8%, adj ROTCE 23.5% (22.0% nine months), TBVPS $53.74, BVPS $66.11",
+     "status": "CONFIRMED",
+     "source": "8-K Ex-99.1 acc. 0000720005-26-000066 (22 Jul 2026)"
+    },
+    {
+     "claim": "Reverse DCF at 11.4% CoE (rf 4.2%, ERP 5.5%) on net income implies 4.2% growth vs 7-9% base = below",
+     "status": "WRONG",
+     "source": "Earnings treated as cash; stale rf (5.17% on 25 Sep 2026). Same model at 9.3% gives 0.3%. Replaced by P/TBV 2.97x vs ROTCE: implied 21.7% vs 20% base = in_line"
+    },
+    {
+     "claim": "13.3x P/E vs 18.4% ROE and ~13% CoE means market not paying for the ROE spread",
+     "status": "WRONG",
+     "source": "P/B 2.42x vs justified 2.40x at ROE 18.1%, CoE 9.3%, g 3%"
+    },
+    {
+     "claim": "Parent debt $4.47bn and bank capital 16.4% / 8.0% (26 Sep correction)",
+     "status": "CONFIRMED",
+     "source": "10-Q acc. 0000720005-26-000070; consolidated total capital 22.5%, tier 1 leverage 11.7% per release"
+    },
+    {
+     "claim": "Q3 net income lifted by tax rate",
+     "status": "NEW",
+     "source": "Release: effective tax rate 20.7% vs 26.0% in Q2 and 23.1% nine months (COLI gains)"
+    },
+    {
+     "claim": "Unnamed two recent acquisitions",
+     "status": "PARTLY CLOSED",
+     "source": "Release names Clark Capital Management Group (closed 30 Apr 2026); second not named"
+    },
+    {
+     "claim": "Events after 5 Aug: 8-Ks 19 Aug, 1 Sep (director Weatherford, dividend $0.54), 23 Sep (August AUA $1.97tn, fee-based $1.18tn)",
+     "status": "NEW",
+     "source": "acc. 0000720005-26-000073, -000075, -000077; no merger, guidance change, 13D or S-4"
+    }
+   ],
+   "old_verdict": "INCLUDE",
+   "new_verdict": "INCLUDE-SMALL",
+   "old_implied": "below",
+   "new_implied": "in_line",
+   "scenario_returns_3y": {
+    "bear": -0.047,
+    "base": 0.065,
+    "bull": 0.127
+   },
+   "changed_fields": [
+    "verdict",
+    "thesis_one_line",
+    "valuation_view_vs_v1.dossier_view",
+    "valuation_view_vs_v1.implied_vs_base",
+    "valuation_view_vs_v1.consistent",
+    "valuation_view_vs_v1.reconciliation",
+    "scenario_returns_3y",
+    "scenario_basis",
+    "kill_criteria",
+    "confidence_in_thesis",
+    "key_adverse_facts"
+   ],
+   "note": "Price already pays for 22% ROTCE at record client assets; base return 6.5% is below the 9.3% CoE. Kept at half conviction."
+  },
+  "RMD": {
+   "claims": [
+    {
+     "claim": "Reverse DCF implies 2.4% 10-year growth (WACC 8.0%, FCF $11.29/share)",
+     "status": "CORRECTED",
+     "source": "FY2026 10-K acc. 0000943819-26-000047: FCFF $1,485m after SBC $104.3m, patents $20.9m and ex after-tax interest $39.7m; CoE 8.4% (rf 5.17% + 0.77 x 4.14%) -> 4.3% (6.6% at 9.4%)"
+    },
+    {
+     "claim": "9%/yr EPS/FCF growth base",
+     "status": "CORRECTED",
+     "source": "3-year figure; 10-year evidence-based base about 7% (revenue +8% cc fading to 4%)"
+    },
+    {
+     "claim": "FY2027 revenue/EPS guidance exists",
+     "status": "NOT FOUND",
+     "source": "Ex-99.1 acc. 0001193125-26-337962 has only: more than $1.85 billion in capital to be returned during FY 2027, and dividend to $0.66 a quarter; 8-K 0001193125-26-378487 says the ASR was contemplated in the guidance issued on the Q4 FY26 call"
+    },
+    {
+     "claim": "MatrixCare divestiture price",
+     "status": "NEW",
+     "source": "10-K: definitive agreement to sell MatrixCare for $490 million all-cash (30 Jun 2026); close Q1 FY2027; 1.5% of EV"
+    },
+    {
+     "claim": "No auditor change",
+     "status": "WRONG",
+     "source": "8-K Item 4.01 acc. 0001193125-26-354154 (17 Aug 2026): KPMG dismissed 13 Aug, PwC appointed for FY2027; no disagreements"
+    },
+    {
+     "claim": "$450m ASR (31 Aug), final settlement December 2026",
+     "status": "CONFIRMED",
+     "source": "8-K acc. 0001193125-26-378487"
+    },
+    {
+     "claim": "Scenario arithmetic (EPS $11.17, 19.9x; bear 2% / 14x, base 9% / 19.9x, bull 13% / 23x)",
+     "status": "CONFIRMED",
+     "source": "Recomputed: -7.8% / +10.1% / +19.6% vs file -7.9% / +10.2% / +19.6%"
+    },
+    {
+     "claim": "No merger, 13D (13G only), S-4 or rating action; DEF 14A filed 1 Oct (meeting 18 Nov)",
+     "status": "CONFIRMED",
+     "source": "EDGAR submissions CIK 943819 to 2026-10-06"
+    }
+   ],
+   "old_verdict": "INCLUDE-SMALL",
+   "new_verdict": "INCLUDE-SMALL",
+   "old_implied": "below",
+   "new_implied": "below",
+   "scenario_returns_3y": {
+    "bear": -0.079,
+    "base": 0.102,
+    "bull": 0.196
+   },
+   "changed_fields": [
+    "valuation_view_vs_v1.dossier_view",
+    "valuation_view_vs_v1.implied_vs_base",
+    "valuation_view_vs_v1.reconciliation",
+    "kill_criteria",
+    "next_earnings_date",
+    "confidence_in_thesis",
+    "key_adverse_facts"
+   ],
+   "note": "Margin of safety survives but implied growth is 4.3% not 2.4% vs about 7% base; auditor change disclosed. No verdict change."
+  },
+  "SWK": {
+   "claims": [
+    {
+     "claim": "FY2026 guidance: adjusted EPS $5.20-5.80 incl ~$0.17 tariff refund; FCF $600-800m incl refund and CAM taxes",
+     "status": "CONFIRMED",
+     "source": "8-K Ex-99.1 acc. 0000093556-26-000028 (29 Jul 2026), 2026 Guidance"
+    },
+    {
+     "claim": "V1 reverse DCF implies -7.6% a year (below base)",
+     "status": "WRONG",
+     "source": "TTM EBIT $2,176m includes $273.7m CAM gain and refund; TTM dNWC +$1,348m. Guided FCF basis: 7.4% implied vs ~4.5% base = above"
+    },
+    {
+     "claim": "FCF-anchored re-run +0.7%",
+     "status": "WRONG",
+     "source": "Used TTM FCF $1,289m with SBC added back; guided $600-800m gives 5.8-9.3% at WACC 9.2%"
+    },
+    {
+     "claim": "V1 base-case +18.1% a year",
+     "status": "WRONG",
+     "source": "Exit multiple 20.7x vs 14.8x NTM; with a 16x exit the base is +7.8%"
+    },
+    {
+     "claim": "Net debt $4,165.5m",
+     "status": "CORRECTED",
+     "source": "10-Q acc. 0000093556-26-000031: debt $4,803.7m - cash $592.4m = $4,211m"
+    },
+    {
+     "claim": "Sale of Excel Industries (Hustler) to Bad Boy Mowers, ~$300m revenue, not dilutive to adjusted EPS",
+     "status": "NEW",
+     "source": "8-K Item 7.01 acc. 0001193125-26-383511 (4 Sep 2026)"
+    },
+    {
+     "claim": "No guidance change, 13D, S-4 or management change after the Q2 release",
+     "status": "CONFIRMED",
+     "source": "EDGAR submissions CIK 93556 to 2026-10-06"
+    }
+   ],
+   "old_verdict": "INCLUDE-SMALL",
+   "new_verdict": "WATCH",
+   "old_implied": "below",
+   "new_implied": "above",
+   "scenario_returns_3y": {
+    "bear": -0.0855,
+    "base": 0.0782,
+    "bull": 0.166
+   },
+   "changed_fields": [
+    "verdict",
+    "thesis_one_line",
+    "valuation_view_vs_v1.v1_verdict",
+    "valuation_view_vs_v1.v1_base_3y",
+    "valuation_view_vs_v1.dossier_view",
+    "valuation_view_vs_v1.consistent",
+    "valuation_view_vs_v1.implied_vs_base",
+    "valuation_view_vs_v1.reconciliation",
+    "scenario_returns_3y",
+    "scenario_basis",
+    "kill_criteria",
+    "confidence_in_thesis",
+    "key_adverse_facts"
+   ],
+   "note": "Price needs ~7% a year of FCFF growth for a decade from a flat-sales base with one-offs in the numbers; base return 7.8% < 9.9% CoE. Back to INCLUDE-SMALL near $68."
+  },
+  "SYF": {
+   "claims": [
+    {
+     "claim": "P/TBV 1.74x, TBVPS $42.01, ROTCE 25.2% Q2 (23.9% YTD), CET1 13.2%",
+     "status": "CONFIRMED",
+     "source": "8-K Ex-99.1/99.2 acc. 0001601712-26-000030 (21 Jul 2026)"
+    },
+    {
+     "claim": "Justified P/TBV from ROE 21.3% at COE 11%, g 4% -> 2.47x; normalised 1.86-2.00x so market prices in most of the normalisation",
+     "status": "WRONG",
+     "source": "Metric mismatch (ROE on total equity vs P/TBV) and non-programme COE/g. ROTCE basis at CoE 9.99%, g 3%: implied 15.1% vs ~20% normalised base; justified 2.43x -> below"
+    },
+    {
+     "claim": "Fair read better supported than V1 attractive",
+     "status": "WRONG",
+     "source": "Reversed: cheap on ROTCE; V1 base +31% still overstated (P/B on total equity)"
+    },
+    {
+     "claim": "No material events since period end",
+     "status": "CORRECTED",
+     "source": "$1.1bn senior notes priced 28 Jul (8-K acc. 0001193125-26-328719); Aug credit stats NCO 4.9%, 30+ DQ 4.2% (8-K acc. 0001601712-26-000037, 14 Sep)"
+    },
+    {
+     "claim": "FY2026 guidance EPS $9.25-9.50, NCO below 5.5%, RSA 4.0-4.5%",
+     "status": "NOT FOUND",
+     "source": "Not in the EDGAR release read (call-sourced via web in the dossier); unchanged"
+    },
+    {
+     "claim": "No merger, management change, 13D or S-4 since Q2 10-Q",
+     "status": "CONFIRMED",
+     "source": "EDGAR submissions CIK 1601712 to 2026-10-06"
+    },
+    {
+     "claim": "SYF has no F*/f*_summary.json entry",
+     "status": "CONFIRMED",
+     "source": "Created outputs/f2_summary.json with corrected fields only"
+    }
+   ],
+   "old_verdict": "INCLUDE-SMALL",
+   "new_verdict": "INCLUDE-SMALL",
+   "old_implied": "below",
+   "new_implied": "below",
+   "scenario_returns_3y": {
+    "bear": -0.05,
+    "base": 0.169,
+    "bull": 0.259
+   },
+   "changed_fields": [
+    "verdict",
+    "valuation_view_vs_v1",
+    "scenario_returns_3y",
+    "scenario_basis",
+    "confidence_in_thesis"
+   ],
+   "note": "Valuation margin larger than the dossier said (dossier view fair -> cheap); verdict held at half conviction because the thesis is a credit-cycle bet with partner concentration."
+  }
+ },
+ "method_notes": {
+  "cost_of_equity": "programme CAPM: rf 5.17% + Blume beta x ERP 4.14%; sensitivities +1 point; terminal g 3%",
+  "banks": "P/TBV vs ROTCE (P/B vs ROE as cross-check); implied ROTCE = g + P/TBV x (CoE - g); in_line = within +/-2 points of the evidence base",
+  "cash_flow_names": "FCF after SBC, interest income removed, net debt and noncontrolling interest on the right entity; 10 explicit years then 3% terminal"
+ }
+}

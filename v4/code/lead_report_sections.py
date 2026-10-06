@@ -143,9 +143,35 @@ _n_elig = sum(1 for c in BLD['candidates'] if c['eligible'])
 from statistics import NormalDist as _ND
 _p10_1 = 1 - _ND().cdf(0.10 / TE); _p10_5 = 1 - _ND().cdf(0.10 / (TE / 5 ** 0.5))   # zero-alpha, normal approximation
 _nohist = list(_gf.get('no_price_tickers') or [])   # holdings with no price at the episode start (b2 'exclude' renormalises them out)
+# ---- Read-first block (Loop-11 A1/A2/A3 must-fix, 6 Oct 2026): turnover vs v011, rule (o) figures, verification coverage, 40% mandate
+import glob as _gx
+_prev = set(json.loads((O / 'lead_previous_sleeve.json').read_text(encoding='utf-8')).get('names', []))
+_cur = [t for t in BLD['selected']]
+_kept = [t for t in _cur if t in _prev]; _new = [t for t in _cur if t not in _prev]; _gone = sorted(_prev - set(_cur))
+_Wb = BLD['weights']; _Cb = {c['t']: c for c in BLD['candidates']}
+_TS = {'Interactive Media & Services', 'Transaction & Payment Processing Services'}
+_w_tech = sum(_Wb[t] for t in _cur if _Cb[t]['s'] == 'Information Technology' or _Cb[t]['sub'] in _TS)
+_w_it = sum(_Wb[t] for t in _cur if _Cb[t]['s'] == 'Information Technology')
+_vchk = set()
+for _f in _gx.glob(str(O / 'da[0-9]*_factcheck.json')) + _gx.glob(str(O / 'dv' / 'DV*_factcheck.json')):
+    _vchk |= {x.get('ticker') for x in json.loads(pathlib.Path(_f).read_text(encoding='utf-8')).get('facts', []) if x.get('ticker')}
+for _f in _gx.glob(str(O / 'ra*_reassess.json')):
+    _vchk |= set(json.loads(pathlib.Path(_f).read_text(encoding='utf-8')).get('tickers', {}))
+_fn = _ff = 0
+for _f in _gx.glob(str(O / 'dv' / 'DV*_factcheck.json')):
+    for x in json.loads(pathlib.Path(_f).read_text(encoding='utf-8')).get('facts', []):
+        _fn += 1; _ff += str(x.get('status', '')).upper() == 'FAIL'
+_n_ver = len({t for t in _vchk if t in _Cb}); _held_ver = sum(1 for t in _cur if t in _vchk)
+L.append("### Read this first: what changed since v011, how much is independently verified, and your 40% tolerance\n")
+L.append(f"- **{len(_new)} of the {N} holdings are new since v011** ({', '.join(_new)}); {len(_kept)} are kept ({', '.join(_kept) or 'none'}). {len(_gone)} v011 names left ({', '.join(_gone)}). The cause is not market moves: on 5–6 October every v011 holding was re-tested and the first valuation method was found to have systematic errors (stock-based pay added back as if free, interest income counted twice, earnings used as cash, a discount rate that pre-dated the Fed's 16 September rise and the 5.17% 10-year Treasury yield of 25 September, and a bank-style method not applied to banks and insurers). PTC (Schneider's $205 cash bid) and VEEV went to WATCH, and most full-conviction names moved to half conviction. Every change is listed with its reason in §6. These are research findings, not instructions to trade.\n")
+L.append(f"- **Technology share (your 20–30% request, rule (o), committed before the build).** Counting Information Technology plus Interactive Media and Payments companies, technology is **{100 * _w_tech:.1f}%** of the portfolio; Information Technology alone is **{100 * _w_it:.1f}%**. The rule did not need to force any swap in this build. Payments companies such as Visa are classified by GICS as Financials, so whether they count as tech is a judgement; both figures are shown.\n")
+L.append(f"- **How much is independently verified.** All 500 companies have a full dossier (research from SEC filings), but only **{_n_ver} of them have been independently fact-checked or re-assessed by a second analyst**, which includes **{_held_ver} of the {N} holdings** (the release gate requires this for every holding). The other {500 - _n_ver} dossiers are researched but not independently verified; in the new verification series {_ff} of {_fn} facts ({100 * _ff / max(_fn, 1):.0f}%) failed and were corrected in the dossiers, so treat any unchecked name's numbers as unverified. Verification of the rest is limited by the research budget, not skipped by choice.\n")
+L.append("- **Your 40% drawdown tolerance (Codex release v016, 5 October).** Codex recorded that you now accept a temporary fall of up to 40% while the thesis holds, with the all-stock mandate unchanged. This release adopts that. The worst replayed falls for this kind of all-stock portfolio (§4) are close to or beyond 40%, so 40% is a review trigger, not a guaranteed floor. The risk figures in §3 that use a three-year beta of about 0.56 understate market sensitivity: the Loop-11 auditors found betas of 0.93–0.98 in every earlier window, so plan for market-like risk.\n")
 L.append(f"**You asked for an all-stock portfolio of 5–20 US companies, researched across the whole S&P 500, with no index fund or T-bills for now. The answer is the {N} stocks in §6.**\n\n"
-         f"- **How they were chosen.** Every S&P 500 company got at least a quick research pass. So far {_n_dil} of the strongest, including the eight largest AI and cloud companies, have been researched in full from SEC filings. "
-         + (f"Another {_n_queue} passed the quick pass and are queued for full research, so a later round may still displace some holdings. " if _n_queue else "As of the 25 Sep 2026 data cutoff that completes the queue: every company that passed the quick pass has full research (three second share classes are judged with their sibling). Research is not finished for good: each new quarter of results and each weekly review can change a verdict or the list. ")
+         + (f"- **How they were chosen.** Every one of the {_n_dil} S&P 500 companies was researched in full from SEC filings (three second share classes are judged with their sibling), including those the quick first pass had screened out: rule (n) lets any of them qualify on full diligence. "
+            "Research is not finished for good: each new quarter of results and each weekly review can change a verdict or the list. " if _n_dil >= 495 else
+            f"- **How they were chosen.** Every S&P 500 company got at least a quick research pass. So far {_n_dil} of the strongest, including the eight largest AI and cloud companies, have been researched in full from SEC filings. ")
+         + (f"Another {_n_queue} passed the quick pass and are queued for full research, so a later round may still displace some holdings. " if _n_queue else ("" if _n_dil >= 495 else "As of the 25 Sep 2026 data cutoff that completes the queue: every company that passed the quick pass has full research (three second share classes are judged with their sibling). Research is not finished for good: each new quarter of results and each weekly review can change a verdict or the list. "))
          + f""
          + (f"The {N} held are the best of the {_n_elig} that passed every test: {len(_full)} at full conviction, together {pct(sum(r['w'] for r in _full))} of the portfolio ({', '.join(r['t'] for r in sorted(_full, key=lambda r: -r['w']))}), and {N - len(_full)} at half conviction.\n"
             if len(_full) < N else f"The {N} held are the best of the {_n_elig} that passed every test, and all {N} are at full conviction.\n")
@@ -175,7 +201,7 @@ L.append(f"**You asked for an all-stock portfolio of 5–20 US companies, resear
          + (f"  - **That is the Defensive mix (15% index / 10% stocks / 75% T-bills)**, the equity budget Codex's release v005 reached independently with a hypothetical shock test. In the 2007–09 replay it fell {spct(_gfc_def)}. Its chance of a gain over 5 years is {ppct(dfn['p5'])}, and its chance of a fall worse than 20% within 5 years is {ppct(dfn['dd20_5'])}. The price is return: a median of {spct(dfn['med5'])} a year, against {spct(mod['med5'])} for the Moderate mix. The two workstreams agree on this risk arithmetic; §13 records where they differ.\n" if (dfn and _gfc_def is not None) else ''))
 L.append('## 6. The stock satellite, ranked and weighted\n')
 NSEC = len({r['s'] for r in rows})
-L.append(f"**How these {N} were chosen.** Every S&P 500 company got at least a quick research pass: a triage of all 455 names without a dossier (quality, growth, red flags, and whether the price already assumes more growth than is plausible). The strongest were then researched in full from SEC filings, alongside the 40 earlier dossiers and the eight largest AI and cloud companies. "
+L.append(f"**How these {N} were chosen.** Every S&P 500 company got at least a quick research pass: a triage of the 455 names that then had no dossier (all 500 now have a full dossier) (quality, growth, red flags, and whether the price already assumes more growth than is plausible). The strongest were then researched in full from SEC filings, alongside the 40 earlier dossiers and the eight largest AI and cloud companies. "
          "A stock is eligible when its full diligence verdict is INCLUDE (full conviction) or INCLUDE-SMALL (half conviction, with a named reservation), and the growth its price implies is at or below the analyst's evidence-based base case (for names in the model's top 70, the systematic valuation must also be fair or attractive). "
          f"Of the eligible names, the best {N} are held: full conviction first, then the widest margin of safety, then the higher base-case return, with at most two per industry and five per sector (rule (l), added in the third research wave, before any build used it, so the 25% sector cap cannot squeeze full-conviction names below half-conviction weights).\n\n"
          "Weights are inverse to volatility: steadier stocks get more. Full-conviction names get up to 10% and half-conviction names up to 5%. No sector exceeds 25% and no sub-industry 12%, and every cap is verified after solving. "
@@ -199,7 +225,7 @@ if FILL > 0.001:
     L.append(f"| – | **S&P 500 index fund** (capacity the caps cannot absorb) | – | {pct(FILL, 1)} | – | – | – | – | – |")
 L.append(f"\nWeights are rounded to 0.1 point; " + ("including the index-fund row " if FILL > 0.001 else "") + "they sum to 100% of the sleeve.\n\n"
          "\\* How often S&P 500 stocks in the same model-score band and volatility band rose, or beat the index, over the following 12 months in 2011–2025 (B1 calibration). These describe the group a stock belongs to, not a forecast for that stock; they barely differ across the list because the model score did not predict returns.\n\n"
-         "† 3-year bear / base / bull returns, annualised. For names marked §, the analyst's own scenarios (dossier section 7); for the others, V1's scripted scenarios, with bear, base and bull valuations drawn from each company's own history. "
+         "† 3-year bear / base / bull returns, annualised. For names marked §, the analyst's own scenarios (dossier section 7); for the others, the base case is the analyst's re-assessed return where one exists and otherwise V1's scripted scenario, with bear and bull valuations drawn from each company's own history. "
          + ("n/a means V1 could not compute that scenario. " + ' '.join(_na_reason(t) + '.' for t in _miss) + " The base case, which decides eligibility, exists for every holding. " if _miss else "")
          + (f"\n\n‡ The analyst's own valuation is more cautious than V1's base case ({', '.join(_disputed)}): treat that base case as optimistic; each dossier's section 7 ends with a written reconciliation.\n" if _disputed else "\n"))
 L.append('**What each holding is for** (one line each, from its dossier; full dossiers in `v4/dossiers/`):\n')
@@ -227,7 +253,7 @@ _fin_n = sum(1 for r in rows if r['s'] == 'Financials'); _fin_w = sum(r['w'] for
 _fin_out = [c['t'] for c in BLD['candidates'] if str(c.get('why', '')).startswith('sixth name in sector (Financials)')]
 if _fin_n >= 5 and _fin_w >= 0.2499:
     L.append(f"**Financials binds two limits at once:** it holds the maximum five names and sits at the 25% sector cap ({pct(_fin_w, 1)}). "
-             f"Eligible full-conviction Financials left out by the five-name limit: {', '.join(_fin_out[:8]) or 'none'}{' and others' if len(_fin_out) > 8 else ''}. "
+             f"Eligible Financials (full or half conviction) left out by the five-name limit: {', '.join(_fin_out[:8]) or 'none'}{' and others' if len(_fin_out) > 8 else ''}. "
              "The cap also trims the weights of the five held, so each sits below what its volatility alone would give it.\n")
 _rich = [r for r in rows if isinstance(r.get('pe'), (int, float)) and r['pe'] == r['pe'] and float(r['pe']) > 25]
 if _rich:
@@ -464,7 +490,12 @@ if _X:
                       + (' Exceptions: ' + '; '.join(_cell(x) for x in (_x1.get('exceptions') or [])) + '.' if _x1.get('exceptions') else '')
                       + (' Method disagreement: ' + '; '.join(_cell(d) for d in (_x1.get('disagreements') or [])) if _x1.get('disagreements') else '')
                       if _x1 else "**Verification of v005's inherited claims** is in progress (agent X1)."))
-    V5.append(f"\nParents recorded for this release: {', '.join(_X['parents_for_v4_release'])}.")
+    V5.append("\nParents recorded for this release (explicit, per RESEARCH_VERSIONING.md): v016_2026-10-05_codex, v015_2026-10-04_codex, v014_2026-10-01_codex, v013_2026-10-01_codex, v012_2026-09-27_codex, v011_2026-09-27_claude, v010_2026-09-27_claude, v005_2026-09-26_codex, claude-v3, codex-initial-audit, codex-deep-data-audit.")
+    V5 += ['', "### Codex releases v012–v016 (27 Sep – 5 Oct 2026): adopted, changed, rejected, unresolved\n",
+           "- **Adopted:** v016's mandate recast: you accept a temporary fall of up to 40% while the thesis holds, and the mandate stays 100% individual US stocks with no bond ETF or cash sleeve. v015's dated two-feed price checks and bounded event audit, and v013/v012's method repairs, are accepted as historical evidence and as methods.",
+           "- **Changed:** this release is the all-stock redesign that v016's brief asked the next allocator to build. It re-underwrites candidates on filings (all 500 dossiers) instead of carrying over v014/v015 weights, and it does not carry over their PG/PEP/PEG defensive substitutions, which were motivated by the old 15–20% tolerance.",
+           "- **Rejected:** applying v015's old-basket return bands (4–8% a year) to this different portfolio; treating 40% as a guaranteed loss floor; treating several agent reviews as independent economic sources (the same applies to this report's own audits).",
+           "- **Unresolved:** v012–v015's individual price and event claims were not re-verified here; actual positions and tax/account facts; prices and filings after 25 September were checked only for the names re-assessed on 5–6 October; Codex's entry limits are not reconciled against this release's valuations for names that differ."]
     fr3 = (V4 / 'FINAL_REPORT.md').read_text(encoding='utf-8')
     _v5_txt = '<!-- SECTION:V005 -->\n' + '\n'.join(V5) + '\n<!-- /SECTION:V005 -->'
     fr3 = re.sub(r'<!-- SECTION:V005 -->.*?<!-- /SECTION:V005 -->', lambda _m: _v5_txt, fr3, flags=re.S)

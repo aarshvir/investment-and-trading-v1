@@ -1,0 +1,98 @@
+{
+  "agent": "F26",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "ADBE": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Creative-software leader at its cheapest-ever multiple, still growing double digits, hurt by AI-disruption fear and a CEO/CFO changeover.",
+      "kill_criteria": [
+        "Digital Media (Creative + Document Cloud) segment ARR growth falls below 8% y/y for two consecutive quarters",
+        "Firefly/AI-first ending ARR quarter-over-quarter growth falls below 15% for two consecutive quarters",
+        "A second senior-leadership departure (CEO, CFO, or a business-unit president) is announced within 12 months of the Dec-2026 CEO handover",
+        "Net debt/EBITDA rises above 1.0x",
+        "A quarterly revenue guide is cut (not just in-line) versus the prior quarter's stated range"
+      ],
+      "key_adverse_facts": [
+        "CEO Narayen (18-year tenure) and CFO Dan Durn both departing within the same six months (CEO effective 1 Dec 2026)",
+        "$150M DOJ/FTC settlement (Mar 2026) for 'dark pattern' subscription-cancellation practices ($75M penalty + $75M customer remediation)",
+        "Q4 FY26 revenue guide ($6.80-6.85B) landed fractionally below Street consensus (~$6.84B), and the stock sold off on it despite a Q3 beat-and-raise",
+        "CEO Narayen sold ~34% of his direct/indirect position ($31.3M) on 16-17 Sep 2026, one week after the successor-CEO announcement",
+        "Momentum and sentiment/SUE factor scores are in the bottom quintile (17th and 33rd percentile) even though quality and value are top-decile"
+      ],
+      "data_conflicts": [
+        "V1's bear/base/bull 3-year annualized returns (19.1%/72.4%/114.6%) are directionally right (cheap) but the magnitudes, especially the 72%/yr base case, are not credible and are self-flagged by V1's own street_flag ('base 3y value exceeds Street 12m high target')",
+        "Vendor feed (d4_live_snapshot.parquet) shows total debt $6.79B and TTM FCF $9.35B; SEC-filed figures used here are debt $4.77B and FCF ~$10.6B -- the vendor figures likely include lease liabilities and a different FCF window"
+      ],
+      "next_earnings_date": "2026-12-10",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium -- the quantitative cheapness and growth track record are solid, but the core bear case (generative-AI substitution for paid Creative Cloud seats) is a genuine multi-year unresolved risk, not yet disproven by the data",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.724299,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "Agree with V1's direction: NTM P/E of 8.7x is the 0th percentile of ADBE's own history, and my independent 10-year reverse DCF (EV $94.0B, TTM FCF $10.6B) implies the market is pricing in a 4-8% per-year FCF decline for a decade, well below my evidence-based base case of high-single to low-double-digit FCF growth. I disagree with the magnitude of V1's base-case return (72%/yr for 3 years is not credible and is self-flagged by V1); my own base case is roughly +22%/yr and bull +38%/yr."
+      }
+    },
+    "ADI": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Analog-chip maker riding a genuine AI-data-center growth wave on top of an industrial/auto recovery, already at a fresh record, fairly rather than cheaply priced.",
+      "kill_criteria": [
+        "Sequential revenue turns negative for two consecutive quarters after the current record run",
+        "Communications (AI data-center) segment growth decelerates to below 20% y/y for two consecutive quarters",
+        "Net debt/EBITDA rises above 2.0x",
+        "Either 2026 cybersecurity incident is confirmed to have caused a quantified customer, contractual, or regulatory financial impact",
+        "Adjusted operating margin falls below 48% for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "TTM revenue (~$13.88B) is already ~13% above the prior cyclical peak (FY23: $12.31B) -- this is a fresh record, not merely a recovery to the old ceiling, which raises rather than lowers cyclical-top risk",
+        "Two disclosed 2026 cybersecurity incidents (confirmed data exfiltration 23 Jun 2026; a second unrelated matter under assessment from 26 Jul 2026), with a plaintiffs'-side firm already soliciting potential breach litigants",
+        "Q3 FY25 GAAP EPS was depressed by a discrete tax item (effective rate spiked versus the following quarter), underscoring that GAAP EPS needs quarter-by-quarter tax-rate scrutiny",
+        "Quality and value factor percentiles are middling (29th and 40th percentile); the re-rating is being driven almost entirely by momentum and earnings-surprise factors (69th and 72nd percentile), which will fade mechanically once FY24's trough laps out of the comparison"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-11-24",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium-high on execution quality, medium on valuation -- the beat-and-raise streak and multi-end-market breadth are well evidenced, but the reverse-DCF-implied growth (9-14%/yr over 10 years depending on WACC) straddles rather than sits clearly below my base case",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for ADI in v1_valuation_table.csv (confirmed by direct filter); v1_verdict and v1_base_3y are null as instructed. My own 10-year reverse DCF (EV ~$196.7B, TTM FCF $4.9B) implies 9-14%/yr FCF growth depending on WACC (7.5-9.0%), which straddles my evidence-based base case of ~9-11%/yr -- classified as in-line, not clearly cheap, hence INCLUDE-SMALL rather than full INCLUDE."
+      }
+    },
+    "AMAT": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Dominant chip-equipment maker executing superbly, but the price already bakes in two decades' worth of AI-capex growth that this cyclical industry has never sustained.",
+      "kill_criteria": [
+        "Quarterly sequential revenue declines for two consecutive quarters",
+        "China export-control revenue headwind exceeds $1B annualized (vs. the current $600M FY26 guide)",
+        "Gross margin falls below 46-47% for two consecutive quarters",
+        "A second BIS/export-control enforcement action or a new DOJ/Commerce investigation is disclosed",
+        "Capex/revenue stays above ~10% for four or more consecutive quarters while OCF growth stalls"
+      ],
+      "key_adverse_facts": [
+        "10-year reverse DCF implies ~18-24%/yr FCF growth priced in across every reasonable WACC/terminal-growth assumption -- robustly far above a through-cycle base case of ~8-10%/yr for a capital-equipment franchise",
+        "Stock round-tripped +176% over the trailing 12 months to an all-time high of $739.67 (30 Jun 2026), then fell 34-42% to the current $424-485 range -- the market itself is actively repricing cyclical-peak risk",
+        "AMAT paid the U.S. Commerce Department's BIS $253M on 11 Feb 2026 to settle a China export-control compliance inquiry, and separately guides to an active, growing $600M FY26 revenue headwind from ongoing export restrictions",
+        "Q2 FY26 net income ($2.806B) exceeded Q3 FY26 net income ($2.538B) despite Q3 having higher revenue and operating income -- an unreconciled below-the-line swing that could not be traced to the MD&A within the time box",
+        "CEO Gary Dickerson's insider stock sales over the past year cluster near the eventual all-time high ($590-700/share in Jun 2026, vs. $485 now)",
+        "The v4 factor model's own value/FCF-yield score for AMAT is in the bottom quintile of the entire universe (19th percentile), agreeing with, not contradicting, the fundamental reverse-DCF finding"
+      ],
+      "data_conflicts": [
+        "The initial triage scored AMAT quality 5 / growth 5 / price_vs_growth 3 and advanced it on an NTM-P/E basis (~27x, not obviously expensive); this dossier overturns that framing once FCF yield and a 10-year reverse DCF are computed -- the two views are not in conflict on the facts, only on which valuation lens is decision-relevant for a capital-intensive, highly cyclical business"
+      ],
+      "next_earnings_date": "2026-11-13",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium -- the WATCH call rests on a cyclical-peak judgment (that AI-driven WFE demand will eventually normalize like every prior capex cycle) which could prove wrong if this cycle is structurally different, but both the fundamental reverse DCF and the independent factor data point the same direction",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for AMAT in v1_valuation_table.csv (confirmed by direct filter); v1_verdict and v1_base_3y are null as instructed. My own 10-year reverse DCF (EV ~$384.3B, TTM FCF $5.62B) implies ~18-24%/yr FCF growth across every WACC/terminal-growth combination tested, well above my evidence-based base case of ~8-10%/yr for a full-cycle capital-equipment franchise -- implied growth is above base case, so per the program's own eligibility rule this must be WATCH, not INCLUDE or INCLUDE-SMALL, despite genuinely excellent near-term execution."
+      }
+    }
+  }
+}

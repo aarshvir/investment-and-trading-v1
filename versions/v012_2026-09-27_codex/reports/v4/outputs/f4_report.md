@@ -1,0 +1,33 @@
+# f4 diligence report — DECK, TPR, RL
+
+**Answer first:** DECK = INCLUDE-SMALL (12–24mo, medium confidence — cheap and high-quality but HOKA growth is decelerating sharply and margin just compressed); TPR = INCLUDE (12–24mo, medium-high confidence — Coach is genuinely excellent but Kate Spade is still a drag and FY27 guidance concedes a big deceleration); RL = INCLUDE (24–36mo, high confidence — the cleanest, most consistent story of the three, and yes, v4 should keep this v3 holdover). Full detail in `v4/dossiers/DECK.md`, `TPR.md`, `RL.md`; machine-readable verdicts/kill-criteria/adverse-facts in `v4/outputs/f4_summary.json`.
+
+## What I did
+Read CONVENTIONS.md, STATE.md and lead_v3_audit.md first, per instructions. Used `lead_prelim_rank.csv` (Q/V/M families) and `d4_live_snapshot.parquet` for quant context in lieu of the not-yet-ready `b1_live_scores.csv`. Applied the finance-skills `stock-analysis` skill's Deep-dive workflow and the `retail-ecommerce.md` sector playbook (wholesale/DTC split, brand-level revenue, gross margin incl. tariffs, inventory). Built a per-company intake JSON and ran `scripts/verify_data.py` (all three passed, 0 errors) before writing; ran `scripts/lint_report.py` on each finished dossier and fixed the two error-level findings it caught (missing reporting-basis statement, missing not-investment-advice disclaimer) — all three now PASS-WITH-WARNINGS, 0 errors, 1 residual warning each (a heuristic that didn't recognize my numbered kill-criteria lists as "thesis-invalidation triggers" even though they are specific and measurable).
+
+**Data sourcing, in practice:** the brief suggested leaning on the FMP MCP connector for statements/transcripts. In this session, every FMP endpoint except `company` (profile/peers) returned ACCESS DENIED (plan-tier gating) or a rate limit; `earningsTranscript`, `insiderTrades`, `news`, `calendar`, `analyst`, `secFilings` and `statements` were all unavailable for the whole session. I pivoted to SEC EDGAR directly: downloaded XBRL companyfacts and submissions JSON for all three CIKs, wrote a small parser (`parse_facts.py`, in my scratchpad, not committed to the repo) to reconstruct 8-quarter GAAP tables with fiscal-Q4 derived as (annual 10-K − sum of three 10-Qs) where needed, and fetched the last four 8-K EX-99.1 earnings press releases per company directly via WebFetch for guidance tracking, brand-level detail, and non-GAAP reconciliation. SEC EDGAR itself 503'd intermittently (shared rate limit across the program's concurrent agents); two TPR filings never came through after repeated retries and are covered via labelled secondary sources instead (flagged inline).
+
+## Key numbers
+- **DECK:** price $78.67 = 3yr AND 5yr low (down ~65% from 3yr high $223.11); NTM P/E 9.9x; TTM ROE 44.1%, TTM FCF yield ~10.4% (independently reconciled to XBRL); HOKA growth decelerated 18.5%→14.5%→7.7% over the last 3 quarters; op margin compressed 190bps YoY last quarter; zero funded debt.
+- **TPR:** FY26 revenue $8.00bn (+20%), Coach +24% FY/+15% Q4, Kate Spade −10% FY (after an $854.8m brand impairment in FY25); guidance raised 4-for-4 releases then beaten; NTM P/E 13.9x; stock up ~4.6x from its 2023 low ($24.90→$113.88).
+- **RL:** FY26 revenue $8.11bn (+15%), GAAP EPS $15.11 (+30%), 8 consecutive quarters of AUR-led margin expansion, China +40% YoY latest quarter, guidance raised 4-for-4 releases; NTM P/E 18.0x (richest of the three, also the least "cheap" on the Value factor).
+
+## Validation checks performed
+- Cross-checked every headline P&L/balance-sheet figure between SEC XBRL companyfacts and the corresponding 8-K EX-99.1 press release — no discrepancies found for DECK or RL; TPR's Q4-FY25 anomaly (a $583.5m derived operating loss) was traced to and explained by the Kate Spade impairment.
+- Reconciled all three tickers' `lead_prelim_rank.csv` `rev`/`cogs`/`gp` fields against the cogs+gp=rev identity and against independently-derived TTM figures: **DECK and RL reconciled exactly; TPR's `rev` field failed the identity check** (cogs+gp = $8,004.2m = actual FY26 revenue, but the `rev` field shows $5,972.3m) — reported as a data-quality finding in both the TPR dossier and f4_summary.json's `data_conflicts`, with an assessment that it does not appear to affect Q/V/M scoring (revenue is not a direct input to the pre-registered model's factors).
+- Ran `scripts/verify_data.py` on all three intake files (0 errors each) and `scripts/lint_report.py` on all three finished dossiers (0 errors after fixes).
+- Checked every 8-K filed by each company in the trailing ~2 years for items 4.01/4.02/5.02 (auditor changes, restatements, officer/director changes) and investigated every hit found: DECK's Sept-2024 8-K was a 6-for-1 stock split (not a leadership change, ruling out an initial hypothesis); DECK's Aug-2026 8-K was a routine revolver extension; a cluster of DECK Form 4s was confirmed via search to be routine RSU-vesting tax withholding, not discretionary selling; TPR's Sept-2025 8-K was a routine director not standing for re-election; RL's Sept-2026 8-K was an orderly, internally-succeeded COO retirement.
+- WebSearched all three tickers for material weakness / restatement / SEC investigation / class-action / short-seller reports: none found for DECK or RL; TPR's Capri-merger securities class actions were found, and their dismissal (March 2026) was confirmed.
+
+## Known limitations
+- Non-GAAP/adjusted EPS is `not available` for DECK (company reports GAAP-only).
+- Exact per-quarter tariff dollar/bps impact is not disclosed by DECK or RL in their press releases (TPR does disclose it, every quarter).
+- Two TPR filings (Aug-2023 Capri merger 8-K; Aug-2025 Q4-FY25 earnings 8-K) could not be retrieved from SEC EDGAR after repeated retries this session (persistent 503s) — covered via secondary sources, flagged inline, not fabricated.
+- Peer-set multiples (ONON, BIRK, CPRI, PVH) were not independently pulled (FMP rate-limited mid-session); peer positioning is qualitative only where exact current multiples were unavailable.
+- Insider Form-4 trading patterns were only spot-checked for DECK (via search, given the notable filing cluster); not systematically pulled for TPR/RL since FMP's insiderTrades tool was gated all session — flagged `not available` rather than assumed clean.
+
+## Files produced
+- `v4/dossiers/DECK.md`, `v4/dossiers/TPR.md`, `v4/dossiers/RL.md` (1 row each = 1 company dossier; ~73-74 lines / 1.5-2.5 pages each)
+- `v4/outputs/f4_summary.json` (3 ticker entries + cross_ticker_notes)
+- `v4/outputs/f4_summary.meta.json` (sourcing/coverage/caveats sidecar)
+- `v4/outputs/f4_report.md` (this file)

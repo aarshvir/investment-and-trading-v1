@@ -1,0 +1,1156 @@
+{
+  "prepared_utc": "2026-09-27T14:22:17.419238+00:00",
+  "parent": "v005_2026-09-26_codex",
+  "operating_scenarios_retained": 42,
+  "holding_horizon": "Three annual periods ending September2029; fiscal terminal conventions retained per stock",
+  "company_models": [
+    {
+      "ticker": "AMP",
+      "reference_price": 493.0,
+      "reference_date": "2026-09-25",
+      "baseline": {
+        "reported_H1_adjusted_eps": 22.33,
+        "H1_diluted_shares_m": 93.7,
+        "Q1_nonrecurring_pretax_earnings_benefit_m": 25,
+        "assumed_tax": 0.21,
+        "annualized_normalized_eps_calculated": 44.23844183564567,
+        "selected_eps": 44,
+        "notes": "Q1 adjusted earnings benefit is $25m, distinct from $28m gross revenue in 10-Q. Rounded down. No separate capital addition."
+      },
+      "terminal_period": "FY2029-equivalent annual earning power; three growth steps from normalized FY2026",
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 37.72449999999999,
+          "terminal_pe": 9.5,
+          "terminal_price": 358.38274999999993,
+          "dividends": [
+            6.8,
+            6.8,
+            6.8
+          ],
+          "irr_reference": -0.08546794147107856,
+          "irr_limit": -0.08982314626763671,
+          "irr_reference_withholding30": -0.09007793468615505,
+          "irr_limit_withholding30": -0.09439119634588072,
+          "pv_hurdle": 271.42221523095833,
+          "pv_hurdle_withholding30": 266.5224794437863,
+          "total_return_reference": -0.23167799188640992,
+          "total_return_limit": -0.24243450000000022,
+          "irr_reference_after_30pct_withholding_25bp_costs": -0.09158308622360095,
+          "irr_limit_after_30pct_withholding_25bp_costs": -0.09588920108302862,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 265.2217007853054
+        },
+        {
+          "name": "base",
+          "terminal_eps": 53.901892000000004,
+          "terminal_pe": 13,
+          "terminal_price": 700.724596,
+          "dividends": [
+            6.8,
+            7.14,
+            7.497
+          ],
+          "irr_reference": 0.13725429676637046,
+          "irr_limit": 0.13185878163161247,
+          "irr_reference_withholding30": 0.13338053415213624,
+          "irr_limit_withholding30": 0.1280223003599924,
+          "pv_hurdle": 515.8615359648322,
+          "pv_hurdle_withholding30": 510.7316531523322,
+          "total_return_reference": 0.46483082352941185,
+          "total_return_limit": 0.44432319200000014,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.13149992827920454,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.1261505991225843,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 508.2142128038481
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 61.81683200000002,
+          "terminal_pe": 15,
+          "terminal_price": 927.2524800000003,
+          "dividends": [
+            6.8,
+            7.344,
+            7.931520000000001
+          ],
+          "irr_reference": 0.2465347040788758,
+          "irr_limit": 0.24062812800399092,
+          "irr_reference_withholding30": 0.24288734721806515,
+          "irr_limit_withholding30": 0.2370165871158466,
+          "pv_hurdle": 677.5715196793003,
+          "pv_hurdle_withholding30": 672.3000637755102,
+          "total_return_reference": 0.9256146044624753,
+          "total_return_limit": 0.8986560000000006,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.24082338252687963,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.23496238593001173,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 668.9776197261949
+        }
+      ],
+      "change": "Price refresh; normalized EPS44 and13x terminal multiple retained. Reject repurchase/book-value double count in competing model.",
+      "limit": 500.0,
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. "
+    },
+    {
+      "ticker": "PAYX",
+      "reference_price": 101.37,
+      "reference_date": "2026-09-25",
+      "baseline": "Management FY2026 adjusted EPS5.51 multiplied by midpoint FY2027 guidance growth8%; company-adjusted, not GAAP. Our FY2027 economic anchor5.85 retains0.10/share recurring integration allowance.",
+      "terminal_period": "FY2029 ending May 2029; completed fiscal year at September 2029 exit",
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 4.8,
+          "terminal_pe": 14,
+          "terminal_price": 67.2,
+          "dividends": [
+            4.76,
+            4,
+            4
+          ],
+          "irr_reference": -0.08010931087650847,
+          "irr_limit": -0.08147385701631432,
+          "irr_reference_withholding30": -0.09447683660910261,
+          "irr_limit_withholding30": -0.09580040760215397,
+          "pv_hurdle": 58.117529154518934,
+          "pv_hurdle_withholding30": 55.03176020408162,
+          "total_return_reference": -0.21120647134260628,
+          "total_return_limit": -0.21453831041257354,
+          "irr_reference_after_30pct_withholding_25bp_costs": -0.09595626659171802,
+          "irr_limit_after_30pct_withholding_25bp_costs": -0.0972776585431811,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 54.775243014911695
+        },
+        {
+          "name": "base",
+          "terminal_eps": 6.6,
+          "terminal_pe": 20,
+          "terminal_price": 132.0,
+          "dividends": [
+            4.76,
+            5,
+            5.25
+          ],
+          "irr_reference": 0.1372305568957416,
+          "irr_limit": 0.1355599897265115,
+          "irr_reference_withholding30": 0.12365065088380545,
+          "irr_limit_withholding30": 0.12201974485265799,
+          "pv_hurdle": 105.92780840014575,
+          "pv_hurdle_withholding30": 102.3359636935131,
+          "total_return_reference": 0.45023182401104855,
+          "total_return_limit": 0.44410609037328097,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.12180357241078832,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.12017536295310982,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 101.84646006158073
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 7.5,
+          "terminal_pe": 23,
+          "terminal_price": 172.5,
+          "dividends": [
+            4.9,
+            5.4,
+            5.9
+          ],
+          "irr_reference": 0.23856682011764263,
+          "irr_limit": 0.23675238643521357,
+          "irr_reference_withholding30": 0.22514104910037058,
+          "irr_limit_withholding30": 0.22336634459045934,
+          "pv_hurdle": 135.66144314868802,
+          "pv_hurdle_withholding30": 131.79763802842564,
+          "total_return_reference": 0.8614974844628587,
+          "total_return_limit": 0.8536345776031433,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.22312321027358906,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.22135144506837323,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 131.1627758569138
+        }
+      ],
+      "change": "Rechecked Q1FY27 cash-flow decline already incorporated in v005. Keep recurring integration allowance and cash-recovery trigger.",
+      "limit": 101.8,
+      "condition": "Conditional starter BUY only at or below101.80, within2% of total capital after existing holdings. Confirm issuer event calendar and live all-in price. Require demonstrated cumulative cash recovery before any subsequent ADD; owner-cash diagnostic1711.5m is only11.5m above the1700m thesis threshold."
+    },
+    {
+      "ticker": "MSFT",
+      "reference_price": 516.17,
+      "reference_date": "2026-09-25",
+      "baseline": {
+        "period": "FY2026ended2026-06-30",
+        "reported_gaap_eps": 17.95,
+        "company_adjusted_eps_excludes_only_OpenAI": 17.28,
+        "analyst_core_eps_at_20pct_tax_zero_nonoperating": 16.66303501945525,
+        "definition": "GAAPoperatingincomeafterSBCtimes(1-20pcttax),zeronormalizednonoperatingincome,dilutedshares;removesotherinvestmentgainsincludingAnthropic"
+      },
+      "terminal_period": "FY2029 ending June 2029; completed fiscal year at September 2029 exit",
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 16.568799450278405,
+          "terminal_pe": 22,
+          "terminal_price": 364.51358790612494,
+          "dividends": [
+            3.92,
+            3.92,
+            3.92
+          ],
+          "irr_reference": -0.10092682347179166,
+          "irr_limit": -0.09125147944516104,
+          "irr_reference_withholding30": -0.10349351930729206,
+          "irr_limit_withholding30": -0.09387144208803516,
+          "pv_hurdle": 268.8687505026057,
+          "pv_hurdle_withholding30": 266.0441969311771,
+          "total_return_reference": -0.27102778560140073,
+          "total_return_limit": -0.24745282418775016,
+          "irr_reference_after_30pct_withholding_25bp_costs": -0.1049807204372209,
+          "irr_limit_after_30pct_withholding_25bp_costs": -0.09537461985802437,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 264.7337286796501
+        },
+        {
+          "name": "base",
+          "terminal_eps": 25.553951650073795,
+          "terminal_pe": 28,
+          "terminal_price": 715.5106462020663,
+          "dividends": [
+            3.92,
+            4.12,
+            4.33
+          ],
+          "irr_reference": 0.12216758966150387,
+          "irr_limit": 0.13421741030562184,
+          "irr_reference_withholding30": 0.12001660971644601,
+          "irr_limit_withholding30": 0.13201911985441173,
+          "pv_hurdle": 519.1527923153827,
+          "pv_hurdle_withholding30": 516.19285814082,
+          "total_return_reference": 0.4101568208188511,
+          "total_return_limit": 0.45576129240413255,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.11815530928479212,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.13013785578091197,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 513.6355533946663
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 31.282452310052427,
+          "terminal_pe": 32,
+          "terminal_price": 1001.0384739216777,
+          "dividends": [
+            3.92,
+            4.31,
+            4.74
+          ],
+          "irr_reference": 0.2537908517950117,
+          "irr_limit": 0.2672428398821395,
+          "irr_reference_withholding30": 0.25176980077465017,
+          "irr_limit_withholding30": 0.2651763841696667,
+          "pv_hurdle": 722.8291570256108,
+          "pv_hurdle_withholding30": 719.7362338295467,
+          "total_return_reference": 0.9644854871877051,
+          "total_return_limit": 1.0280169478433554,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.24968851803264258,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.2630727925352877,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 716.1645239869824
+        }
+      ],
+      "change": "Correct v005 Sep25 close516.05 to516.17. No scenario or limit change.",
+      "limit": 500,
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. "
+    },
+    {
+      "ticker": "NVDA",
+      "reference_price": 225.07,
+      "reference_date": "2026-09-25",
+      "baseline": {
+        "period": "Q2FY2027ended2026-07-26",
+        "reported_gaap_eps": 2.46,
+        "company_adjusted_eps_includes_sbc": 2.22,
+        "analyst_core_quarter_eps_at_17pct_tax_zero_nonoperating": 2.1782672431542105,
+        "definition": "GAAPoperatingincomeafterSBCtimes(1-tax),zeronormalizednonoperatingincome,dilutedshares;FY2030forecastuses18pcttax"
+      },
+      "terminal_period": "FY2030 ending January 2030; four months forward at September 2029 exit",
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 4.456082599714286,
+          "terminal_pe": 18,
+          "terminal_price": 80.20948679485714,
+          "dividends": [
+            1,
+            1,
+            1
+          ],
+          "irr_reference": -0.28451367737421973,
+          "irr_limit": -0.2734337384349036,
+          "irr_reference_withholding30": -0.28646177084322055,
+          "irr_limit_withholding30": -0.27543568181176237,
+          "pv_hurdle": 55.02226467977786,
+          "pv_hurdle_withholding30": 54.33729714464184,
+          "total_return_reference": -0.630295077998591,
+          "total_return_limit": -0.612979131186711,
+          "irr_reference_after_30pct_withholding_25bp_costs": -0.28764453650059363,
+          "irr_limit_after_30pct_withholding_25bp_costs": -0.2766367331477769,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 54.0702738610825
+        },
+        {
+          "name": "base",
+          "terminal_eps": 13.624907953443984,
+          "terminal_pe": 25,
+          "terminal_price": 340.6226988360996,
+          "dividends": [
+            1,
+            1,
+            1
+          ],
+          "irr_reference": 0.15201056070885166,
+          "irr_limit": 0.16978941623737753,
+          "irr_reference_withholding30": 0.1508415860182083,
+          "irr_limit_withholding30": 0.1685823560852645,
+          "pv_hurdle": 226.24817873664807,
+          "pv_hurdle_withholding30": 225.56321120151205,
+          "total_return_reference": 0.5267370099795601,
+          "total_return_limit": 0.5982451108655795,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.14892696722077747,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.16663820707545296,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 224.44219333412795
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 20.49385293277311,
+          "terminal_pe": 30,
+          "terminal_price": 614.8155879831933,
+          "dividends": [
+            1,
+            1.1,
+            1.2
+          ],
+          "irr_reference": 0.40145622427915983,
+          "irr_limit": 0.4230682801139999,
+          "irr_reference_withholding30": 0.40038871234700457,
+          "irr_limit_withholding30": 0.42196484344689533,
+          "pv_hurdle": 406.741571781503,
+          "pv_hurdle_withholding30": 405.99446896240215,
+          "total_return_reference": 1.7463259785097671,
+          "total_return_limit": 1.874956223177643,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.39805808178039104,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.419598287755354,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 403.97390612446316
+        }
+      ],
+      "change": "Price and reference IRRs refreshed; normalized operating cases unchanged.",
+      "limit": 215,
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. "
+    },
+    {
+      "ticker": "ALLE",
+      "reference_price": 154.47,
+      "reference_date": "2026-09-25",
+      "baseline": "MidpointGAAPguidance8.025 +0.60acquisitionamortization =8.625; retain0.30 restructuring/M&A/othercharges rather than company adjusted8.925.",
+      "terminal_period": "FY2029 ending December 2029; three months forward at September 2029 exit",
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 6.9,
+          "terminal_pe": 15,
+          "terminal_price": 103.5,
+          "dividends": [
+            2.24,
+            2.24,
+            2.24
+          ],
+          "irr_reference": -0.10830903126865182,
+          "irr_limit": -0.08896828777069793,
+          "irr_reference_withholding30": -0.11329600267214907,
+          "irr_limit_withholding30": -0.09416321055571314,
+          "pv_hurdle": 79.04935768950435,
+          "pv_hurdle_withholding30": 77.43532707725944,
+          "total_return_reference": -0.28646339094969897,
+          "total_return_limit": -0.2398620689655172,
+          "irr_reference_after_30pct_withholding_25bp_costs": -0.11476132792614607,
+          "irr_limit_after_30pct_withholding_25bp_costs": -0.0956602131573196,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 77.05850766896532
+        },
+        {
+          "name": "base",
+          "terminal_eps": 10.4,
+          "terminal_pe": 19.5,
+          "terminal_price": 202.8,
+          "dividends": [
+            2.4,
+            2.55,
+            2.7
+          ],
+          "irr_reference": 0.1100525280960779,
+          "irr_limit": 0.13405122987217577,
+          "irr_reference_withholding30": 0.10553117887388141,
+          "irr_limit_withholding30": 0.12933067339889892,
+          "pv_hurdle": 150.4465424562682,
+          "pv_hurdle_withholding30": 148.61728999635565,
+          "total_return_reference": 0.36240046610992427,
+          "total_return_limit": 0.4513793103448278,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.1036984952516472,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.1274584638269941,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 147.88670065906658
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 12.4,
+          "terminal_pe": 22,
+          "terminal_price": 272.8,
+          "dividends": [
+            2.5,
+            2.8,
+            3.1
+          ],
+          "irr_reference": 0.22372356137984328,
+          "irr_limit": 0.2501537525181806,
+          "irr_reference_withholding30": 0.21922681767521202,
+          "irr_limit_withholding30": 0.24545568012356644,
+          "pv_hurdle": 200.84445608600578,
+          "pv_hurdle_withholding30": 198.84321474125358,
+          "total_return_reference": 0.8204182041820418,
+          "total_return_limit": 0.9393103448275861,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.21720418219333892,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.24338945427567749,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 197.86312280523182
+        }
+      ],
+      "change": "Price and reference IRRs refreshed; normalized operating cases unchanged.",
+      "limit": 145,
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. "
+    },
+    {
+      "ticker": "HIG",
+      "reference_price": 124.23,
+      "reference_date": "2026-09-25",
+      "baseline": {
+        "reported_Q2_core_eps": 3.42,
+        "reported_Q2_core_earnings_m": 945,
+        "implied_diluted_shares_m": 276.3157894736842,
+        "Q2_favorable_PYD_m": 111,
+        "Q2_LP_income_m": 114,
+        "reported_LP_annualized_yield": 0.076,
+        "assumed_normal_LP_yield": 0.05,
+        "assumed_tax": 0.21,
+        "annualized_normalized_eps_calculated": 11.964571428571428,
+        "selected_eps": 12,
+        "notes": "Remove all favorable Q2 PYD and LP yield above 5%; retain actual Q2 CAT charge. Do not add Q1 core EPS without removing discontinued Hartford Funds. Annualizing a quarter is a starting point, not annual guidance."
+      },
+      "terminal_period": "FY2029-equivalent annual earning power; three growth steps from normalized FY2026",
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 10.616831999999999,
+          "terminal_pe": 9,
+          "terminal_price": 95.55148799999999,
+          "dividends": [
+            2.4,
+            2.4,
+            2.4
+          ],
+          "irr_reference": -0.06266064287973444,
+          "irr_limit": -0.051535864126652176,
+          "irr_reference_withholding30": -0.06898815299036337,
+          "irr_limit_withholding30": -0.058008922485831727,
+          "pv_hurdle": 74.74501249688107,
+          "pv_hurdle_withholding30": 73.00072653873681,
+          "total_return_reference": -0.17289311760444348,
+          "total_return_limit": -0.14373760000000002,
+          "irr_reference_after_30pct_withholding_25bp_costs": -0.07052502661948862,
+          "irr_limit_after_30pct_withholding_25bp_costs": -0.05956396544635906,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 72.64678276689524
+        },
+        {
+          "name": "base",
+          "terminal_eps": 14.292192,
+          "terminal_pe": 11.5,
+          "terminal_price": 164.360208,
+          "dividends": [
+            2.4,
+            2.52,
+            2.646
+          ],
+          "irr_reference": 0.11629962932198856,
+          "irr_limit": 0.1294922383506799,
+          "irr_reference_withholding30": 0.11074795682021799,
+          "irr_limit_withholding30": 0.12380734692776507,
+          "pv_hurdle": 124.65752576272816,
+          "pv_hurdle_withholding30": 122.83104362866466,
+          "total_return_reference": 0.38393470176285915,
+          "total_return_limit": 0.43271839999999995,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.10890827208888221,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.12194598298573578,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 122.22904787901086
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 15.972000000000005,
+          "terminal_pe": 13,
+          "terminal_price": 207.63600000000005,
+          "dividends": [
+            2.4,
+            2.592,
+            2.79936
+          ],
+          "irr_reference": 0.2043982761759292,
+          "irr_limit": 0.218610397255541,
+          "irr_reference_withholding30": 0.19909995410915793,
+          "irr_limit_withholding30": 0.21318295611603133,
+          "pv_hurdle": 156.04517651590908,
+          "pv_hurdle_withholding30": 154.1681300992185,
+          "total_return_reference": 0.7341009418014977,
+          "total_return_limit": 0.7952280000000005,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.19711201831381653,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.2111716216867171,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 153.4101338767094
+        }
+      ],
+      "change": "Sep25 post-close commutation: expected393m GAAP gain, no core EPS effect; exhausted reinsurance limit. Settlement/capital bridge required before entry.",
+      "limit": 120.0,
+      "condition": "WAIT: reference price exceeds $120. Before entry reconcile the September 25 post-close commutation settlement and capital effects. The $393m expected GAAP gain is excluded from core EPS; the $1.5bn reinsurance limit was already exhausted. Price alone does not authorize a purchase."
+    },
+    {
+      "ticker": "CPAY",
+      "reference_price": 398.11,
+      "reference_date": "2026-09-25",
+      "baseline": "Company adjustedEPS27.35 less aftertax SBC150m*74%/66mshares and aftertax annualized integration/dealcosts110.106m*74%/66m. SBCcharged; recurring integration allowancecharged. Amortization addback remains; this is analyst cash-earnings proxy, not GAAP or distributable FCF.",
+      "terminal_period": "FY2029 ending December 2029; three months forward at September 2029 exit",
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 20,
+          "terminal_pe": 11,
+          "terminal_price": 220,
+          "dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_reference": -0.1793842185430909,
+          "irr_limit": -0.1433865703279374,
+          "irr_reference_withholding30": -0.1793842185430909,
+          "irr_limit_withholding30": -0.1433865703279374,
+          "pv_hurdle": 154.51303155006858,
+          "pv_hurdle_withholding30": 154.51303155006858,
+          "total_return_reference": -0.4473889126120921,
+          "total_return_limit": -0.37142857142857144,
+          "irr_reference_after_30pct_withholding_25bp_costs": -0.1807507752455983,
+          "irr_limit_after_30pct_withholding_25bp_costs": -0.14481307326661824,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 153.74239298872163
+        },
+        {
+          "name": "base",
+          "terminal_eps": 31.642298276140004,
+          "terminal_pe": 16,
+          "terminal_price": 506.27677241824006,
+          "dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_reference": 0.08341531905171407,
+          "irr_limit": 0.13094109714105484,
+          "irr_reference_withholding30": 0.08341531905171407,
+          "irr_limit_withholding30": 0.13094109714105484,
+          "pv_hurdle": 355.5743586805746,
+          "pv_hurdle_withholding30": 355.5743586805746,
+          "total_return_reference": 0.27170071693310893,
+          "total_return_limit": 0.44650506405211443,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.0816111270055645,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.1290577612713798,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 353.8009204826666
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 35,
+          "terminal_pe": 19,
+          "terminal_price": 665,
+          "dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_reference": 0.1865139616146979,
+          "irr_limit": 0.23856232963017077,
+          "irr_reference_withholding30": 0.1865139616146979,
+          "irr_limit_withholding30": 0.23856232963017077,
+          "pv_hurdle": 467.05075445816186,
+          "pv_hurdle_withholding30": 467.05075445816186,
+          "total_return_reference": 0.6703926050589033,
+          "total_return_limit": 0.8999999999999999,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.18453808125326432,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.2364997740575442,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 464.7213242613631
+        }
+      ],
+      "change": "Price and reference IRRs refreshed; normalized operating cases unchanged.",
+      "limit": 350,
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. "
+    },
+    {
+      "ticker": "AIZ",
+      "reference_price": 265.0,
+      "reference_date": "2026-09-25",
+      "baseline": {
+        "FY2025_adjusted_exCAT_eps": 22.81,
+        "FY2026_management_direction": "mid-single-digit growth in adjusted EPS excluding reportable catastrophes",
+        "analyst_midpoint_growth": 0.05,
+        "FY2026_included_favorable_PYD_m": 41.9,
+        "Q2_non_run_rate_benefit_m": 10,
+        "assumed_full_year_normal_CAT_m": 150,
+        "assumed_tax": 0.2,
+        "assumed_diluted_shares_m": 50.2,
+        "annualized_normalized_eps_calculated": 20.73297011952191,
+        "selected_eps": 21,
+        "notes": "Guidance-based annual anchor, not H1 annualization. Normal CAT charge $150m and share denominator are analyst assumptions. Rounded $20.73 to $21; sensitivity supplied."
+      },
+      "terminal_period": "FY2029-equivalent annual earning power; three growth steps from normalized FY2026",
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 16.891496999999998,
+          "terminal_pe": 10,
+          "terminal_price": 168.91496999999998,
+          "dividends": [
+            3.52,
+            3.52,
+            3.52
+          ],
+          "irr_reference": -0.12386512426247326,
+          "irr_limit": -0.08745634187667878,
+          "irr_reference_withholding30": -0.12851619847172374,
+          "irr_limit_withholding30": -0.09248147437169701,
+          "pv_hurdle": 128.6847852701348,
+          "pv_hurdle_withholding30": 126.14845145089281,
+          "total_return_reference": -0.322735962264151,
+          "total_return_limit": -0.23627672340425543,
+          "irr_reference_after_30pct_withholding_25bp_costs": -0.1299567306916331,
+          "irr_limit_after_30pct_withholding_25bp_costs": -0.09398167674715258,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 125.53404050162378
+        },
+        {
+          "name": "base",
+          "terminal_eps": 25.725903000000002,
+          "terminal_pe": 13,
+          "terminal_price": 334.43673900000005,
+          "dividends": [
+            3.52,
+            3.7312000000000003,
+            3.9550720000000004
+          ],
+          "irr_reference": 0.09369342147879467,
+          "irr_limit": 0.13895657224190805,
+          "irr_reference_withholding30": 0.0897831926935907,
+          "irr_limit_withholding30": 0.13471337075763856,
+          "pv_hurdle": 246.97795403038444,
+          "pv_hurdle_withholding30": 244.2982073102678,
+          "total_return_reference": 0.30431324905660406,
+          "total_return_limit": 0.47082132340425553,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.0879757459640963,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.13283128418699375,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 243.09535525971026
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 28.720251000000005,
+          "terminal_pe": 16,
+          "terminal_price": 459.5240160000001,
+          "dividends": [
+            3.52,
+            3.8016,
+            4.105728
+          ],
+          "irr_reference": 0.21339394110899723,
+          "irr_limit": 0.2635322176778706,
+          "irr_reference_withholding30": 0.20979384120264288,
+          "irr_limit_withholding30": 0.25961670417611604,
+          "pv_hurdle": 336.1759634657434,
+          "pv_hurdle_withholding30": 333.44720982142854,
+          "total_return_reference": 0.7771748830188681,
+          "total_return_limit": 1.0040482723404258,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.2077851613445355,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.25752517194168634,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 331.80000950271005
+        }
+      ],
+      "change": "Price and reference IRRs refreshed; normalized operating cases unchanged.",
+      "limit": 235.0,
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. "
+    },
+    {
+      "ticker": "SNA",
+      "reference_price": 369.2,
+      "reference_date": "2026-09-25",
+      "baseline": "Analystnormalizedestimate anchoredtoFY2025 GAAP19.19 less0.31legalbenefit=18.88 and H12026 EPSgrowth; not vendorconsensus.",
+      "terminal_period": "FY2029 ending around December 2029; approximately three months forward at September 2029 exit",
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 14.6,
+          "terminal_pe": 14,
+          "terminal_price": 204.4,
+          "dividends": [
+            9.68,
+            9.68,
+            9.68
+          ],
+          "irr_reference": -0.1466972533231254,
+          "irr_limit": -0.09365269238853896,
+          "irr_reference_withholding30": -0.15631874427123932,
+          "irr_limit_withholding30": -0.10441657032506307,
+          "pv_hurdle": 168.737609329446,
+          "pv_hurdle_withholding30": 161.76269132653056,
+          "total_return_reference": -0.3677139761646804,
+          "total_return_limit": -0.24696774193548388,
+          "irr_reference_after_30pct_withholding_25bp_costs": -0.1577006861714419,
+          "irr_limit_after_30pct_withholding_25bp_costs": -0.10588386979453807,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 160.99648041885078
+        },
+        {
+          "name": "base",
+          "terminal_eps": 23,
+          "terminal_pe": 18,
+          "terminal_price": 414,
+          "dividends": [
+            9.68,
+            10.16,
+            10.68
+          ],
+          "irr_reference": 0.06541167082618349,
+          "irr_limit": 0.13105753189045977,
+          "irr_reference_withholding30": 0.05746335067316688,
+          "irr_limit_withholding30": 0.12210520107967315,
+          "pv_hurdle": 319.0211825801748,
+          "pv_hurdle_withholding30": 311.717934584548,
+          "total_return_reference": 0.20400866738894896,
+          "total_return_limit": 0.4339354838709677,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.05571774902466464,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.12025251432976669,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 310.2057277087892
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 26.2,
+          "terminal_pe": 20,
+          "terminal_price": 524.0,
+          "dividends": [
+            10,
+            11,
+            12
+          ],
+          "irr_reference": 0.15025710525543257,
+          "irr_limit": 0.22103048123645863,
+          "irr_reference_withholding30": 0.14231844510965874,
+          "irr_limit_withholding30": 0.21207705220141315,
+          "pv_hurdle": 399.2119169096209,
+          "pv_hurdle_withholding30": 391.3401967930028,
+          "total_return_reference": 0.5086673889490791,
+          "total_return_limit": 0.7967741935483872,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.14043079257115487,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.2100737286063633,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 389.4341792203165
+        }
+      ],
+      "change": "Price and reference IRRs refreshed; normalized operating cases unchanged.",
+      "limit": 310,
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. "
+    },
+    {
+      "ticker": "NTAP",
+      "reference_price": 201.15,
+      "reference_date": "2026-09-25",
+      "baseline": "FY2027 GAAPEPS7.50, retainingSBC. Company adjustedEPS9.88 adds2.19SBC and otheritems; not used as interchangeable owner earnings.",
+      "terminal_period": "FY2030 ending April 2030; seven months forward at September 2029 exit",
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 6.25,
+          "terminal_pe": 14,
+          "terminal_price": 87.5,
+          "dividends": [
+            1.8,
+            1.8,
+            1.8
+          ],
+          "irr_reference": -0.23022200668854192,
+          "irr_limit": -0.14996331323247541,
+          "irr_reference_withholding30": -0.23383878592538082,
+          "irr_limit_withholding30": -0.15430322906869826,
+          "pv_hurdle": 66.60406796647229,
+          "pv_hurdle_withholding30": 65.30707908163264,
+          "total_return_reference": -0.5381556052696992,
+          "total_return_limit": -0.3806666666666666,
+          "irr_reference_after_30pct_withholding_25bp_costs": -0.23510512777389853,
+          "irr_limit_after_30pct_withholding_25bp_costs": -0.15570120194832687,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 64.98890489019796
+        },
+        {
+          "name": "base",
+          "terminal_eps": 9.982500000000003,
+          "terminal_pe": 21,
+          "terminal_price": 209.63250000000008,
+          "dividends": [
+            2.08,
+            2.16,
+            2.24
+          ],
+          "irr_reference": 0.024450368397492928,
+          "irr_limit": 0.13094101082741594,
+          "irr_reference_withholding30": 0.02127469106685609,
+          "irr_limit_withholding30": 0.12706796836503076,
+          "pv_hurdle": 154.3857421875,
+          "pv_hurdle_withholding30": 152.83370137117348,
+          "total_return_reference": 0.07438478747203603,
+          "total_return_limit": 0.4407500000000004,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.01958030976851599,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.12519781201412294,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 152.08046951538566
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 12,
+          "terminal_pe": 24,
+          "terminal_price": 288,
+          "dividends": [
+            2.08,
+            2.3,
+            2.55
+          ],
+          "irr_reference": 0.1372431644331923,
+          "irr_limit": 0.2553052352763917,
+          "irr_reference_withholding30": 0.13419612249182877,
+          "irr_limit_withholding30": 0.25157958024383953,
+          "pv_hurdle": 210.49843977769672,
+          "pv_hurdle_withholding30": 208.8467212554664,
+          "total_return_reference": 0.46621923937360177,
+          "total_return_limit": 0.9662,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.13231312207353907,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.24950143610173903,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 207.81470272024018
+        }
+      ],
+      "change": "Adopt dated history201.15; Cboe201.145 precision difference retained. Sep25 PEAK:AIO acquisition intent: terms and earnings effect unquantified; no value added.",
+      "limit": 150,
+      "condition": "WAIT: price exceeds150. September25 PEAK:AIO acquisition intent has no quantified price/earnings bridge in the observed release. Reconcile consideration, financing, dilution and integration before any entry; assign no unverified synergy value."
+    },
+    {
+      "ticker": "IBKR",
+      "reference_price": 89.24,
+      "reference_date": "2026-09-25",
+      "baseline": {
+        "reported_Q2_adjusted_eps": 0.69,
+        "reported_Q2_effective_tax": 0.147,
+        "assumed_normal_tax": 0.19,
+        "annualized_normalized_eps_calculated": 2.620867526377491,
+        "selected_eps": 2.6,
+        "notes": "Normalize Q2 tax windfall. All EPS and dividends on post-June2025 4-for-1 split basis. EPS already accounts for noncontrolling interest; do not divide consolidated group earnings or customer equity by Class A shares."
+      },
+      "terminal_period": "FY2029-equivalent annual earning power; three growth steps from normalized FY2026",
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 2.6,
+          "terminal_pe": 18,
+          "terminal_price": 46.800000000000004,
+          "dividends": [
+            0.35,
+            0.35,
+            0.35
+          ],
+          "irr_reference": -0.18864398621668038,
+          "irr_limit": -0.09769022892056128,
+          "irr_reference_withholding30": -0.19012344289058697,
+          "irr_limit_withholding30": -0.09949825851876454,
+          "pv_hurdle": 33.26115100384852,
+          "pv_hurdle_withholding30": 33.01322998107281,
+          "total_return_reference": -0.4638054683998206,
+          "total_return_limit": -0.26384615384615384,
+          "irr_reference_after_30pct_withholding_25bp_costs": -0.19146842545826576,
+          "irr_limit_after_30pct_withholding_25bp_costs": -0.1009938290380295,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 32.85001806691903
+        },
+        {
+          "name": "base",
+          "terminal_eps": 3.9542749999999995,
+          "terminal_pe": 25,
+          "terminal_price": 98.85687499999999,
+          "dividends": [
+            0.35,
+            0.385,
+            0.42350000000000004
+          ],
+          "irr_reference": 0.038877186702120814,
+          "irr_limit": 0.15515457746585792,
+          "irr_reference_withholding30": 0.037625119938993534,
+          "irr_limit_withholding30": 0.15360806103939828,
+          "pv_hurdle": 69.41752599111372,
+          "pv_hurdle_withholding30": 69.14610017208436,
+          "total_return_reference": 0.12074602196324524,
+          "total_return_limit": 0.5386980769230767,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.03589981420203647,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.15168980557403045,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 68.80281121090458
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 4.8382542,
+          "terminal_pe": 32,
+          "terminal_price": 154.8241344,
+          "dividends": [
+            0.35,
+            0.40249999999999997,
+            0.46287499999999987
+          ],
+          "irr_reference": 0.20535573321596357,
+          "irr_limit": 0.3401664332618334,
+          "irr_reference_withholding30": 0.20422875870596646,
+          "irr_limit_withholding30": 0.3387642034706385,
+          "pv_hurdle": 108.24663811762034,
+          "pv_hurdle_withholding30": 107.96291412346137,
+          "total_return_reference": 0.7485377566113849,
+          "total_return_limit": 1.4006078369230766,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.2022254429317688,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.33653696974342806,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 107.42609665315244
+        }
+      ],
+      "change": "Price and reference IRRs refreshed; normalized operating cases unchanged.",
+      "limit": 65.0,
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. "
+    },
+    {
+      "ticker": "ABNB",
+      "reference_price": 157.47,
+      "reference_date": "2026-09-25",
+      "baseline": {
+        "period": "FY2025andQ22026; do notannualizeseasonalQ2",
+        "definition": "normalizedoperatingprofitafterSBCplusrecurringnetinterest,ordinarytax; noinvestmentgainsornetcashpremium",
+        "q2_reported_gaap_eps": 1.37,
+        "q2_tax_normalized_eps": 1.1811055276381912
+      },
+      "terminal_period": "FY2029 ending December 2029; three months forward at September 2029 exit",
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 3.2848674991803284,
+          "terminal_pe": 20,
+          "terminal_price": 65.69734998360657,
+          "dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_reference": -0.25277738394553617,
+          "irr_limit": -0.1819330101659828,
+          "irr_reference_withholding30": -0.25277738394553617,
+          "irr_limit_withholding30": -0.1819330101659828,
+          "pv_hurdle": 45.5315590673531,
+          "pv_hurdle_withholding30": 45.5315590673531,
+          "total_return_reference": -0.5827945006438904,
+          "total_return_limit": -0.45252208346994527,
+          "irr_reference_after_30pct_withholding_25bp_costs": -0.2540217203296372,
+          "irr_limit_after_30pct_withholding_25bp_costs": -0.18329532241163932,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 45.30446899719174
+        },
+        {
+          "name": "base",
+          "terminal_eps": 7.0770576993103465,
+          "terminal_pe": 25,
+          "terminal_price": 176.92644248275866,
+          "dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_reference": 0.039596892195122524,
+          "irr_limit": 0.13816134839376237,
+          "irr_reference_withholding30": 0.039596892195122524,
+          "irr_limit_withholding30": 0.13816134839376237,
+          "pv_hurdle": 122.61889967389128,
+          "pv_hurdle_withholding30": 122.61889967389128,
+          "total_return_reference": 0.12355650271644536,
+          "total_return_limit": 0.47438702068965544,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.03786567018716547,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.13626598876952867,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 122.00733408948285
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 10.152713142857143,
+          "terminal_pe": 30,
+          "terminal_price": 304.5813942857143,
+          "dividends": [
+            0,
+            0,
+            0
+          ],
+          "irr_reference": 0.24595353799033226,
+          "irr_limit": 0.3640827223335833,
+          "irr_reference_withholding30": 0.24595353799033226,
+          "irr_limit_withholding30": 0.3640827223335833,
+          "pv_hurdle": 211.0901847364811,
+          "pv_hurdle_withholding30": 211.0901847364811,
+          "total_return_reference": 0.934218545028985,
+          "total_return_limit": 1.5381782857142858,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.24387867397135066,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.3618111399084075,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 210.03736585998993
+        }
+      ],
+      "change": "Price and reference IRRs refreshed; normalized operating cases unchanged.",
+      "limit": 120,
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. "
+    },
+    {
+      "ticker": "AME",
+      "reference_price": 250.74,
+      "reference_date": "2026-09-25",
+      "baseline": "Analyst normalizedEPS8.30 based on pre-close company adjusted8.20\u00e2\u20ac\u201c8.30range plus0.05explicit assumedaccretion. Acquisitionamortizationexcluded;SBCremainsexpensed. No unverified proforma debt is asserted as actual.",
+      "terminal_period": "FY2029 ending December 2029; three months forward at September 2029 exit",
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 7.5,
+          "terminal_pe": 20,
+          "terminal_price": 150.0,
+          "dividends": [
+            1.2,
+            1.2,
+            1.2
+          ],
+          "irr_reference": -0.1516668075863999,
+          "irr_limit": -0.06055423408395727,
+          "irr_reference_withholding30": -0.15338520548509732,
+          "irr_limit_withholding30": -0.06264325360587503,
+          "pv_hurdle": 109.64923469387752,
+          "pv_hurdle_withholding30": 108.78457543731776,
+          "total_return_reference": -0.3874132567599905,
+          "total_return_limit": -0.16972972972972977,
+          "irr_reference_after_30pct_withholding_25bp_costs": -0.1547909657517978,
+          "irr_limit_after_30pct_withholding_25bp_costs": -0.06419979002437465,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 108.24704024377827
+        },
+        {
+          "name": "base",
+          "terminal_eps": 10.748740700000003,
+          "terminal_pe": 24,
+          "terminal_price": 257.9697768000001,
+          "dividends": [
+            1.36,
+            1.46,
+            1.56
+          ],
+          "irr_reference": 0.015284566440800895,
+          "irr_limit": 0.1242620516680425,
+          "irr_reference_withholding30": 0.013555565921608337,
+          "irr_limit_withholding30": 0.12214428514936493,
+          "pv_hurdle": 187.1063576211735,
+          "pv_hurdle_withholding30": 186.05978783254375,
+          "total_return_reference": 0.046302053122756925,
+          "total_return_limit": 0.4181069016216221,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.011871331002591856,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.12027947539492245,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 185.13789860687888
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 12.0,
+          "terminal_pe": 28,
+          "terminal_price": 336.0,
+          "dividends": [
+            1.36,
+            1.56,
+            1.8
+          ],
+          "irr_reference": 0.10813992004603545,
+          "irr_limit": 0.22701695483169837,
+          "irr_reference_withholding30": 0.10644300410398089,
+          "irr_limit_withholding30": 0.22493628291626766,
+          "pv_hurdle": 242.8972758746355,
+          "pv_hurdle_withholding30": 241.77554209183666,
+          "total_return_reference": 0.35885778096833376,
+          "total_return_limit": 0.8417297297297299,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.10460394764259295,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.2229001403955283,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 240.57620616825278
+        }
+      ],
+      "change": "Price refresh; post-Indicor financing bridge still required before purchase.",
+      "limit": 185,
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. Post-close financing bridge is also required."
+    },
+    {
+      "ticker": "RL",
+      "reference_price": 357.1,
+      "reference_date": "2026-09-25",
+      "baseline": "AnalysteconomicEPS17.5 anchoredtoFY2026adjusted16.59, latestguidance andQ127; ongoingtransformationcosts charged. Do notextrapolate22%quarterEPSgrowth or53rdweek.",
+      "terminal_period": "FY2029 ending around March 2029; completed fiscal year at September 2029 exit",
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 12.2,
+          "terminal_pe": 13,
+          "terminal_price": 158.6,
+          "dividends": [
+            4,
+            3.5,
+            3.5
+          ],
+          "irr_reference": -0.22344020707175277,
+          "irr_limit": -0.14084300760398966,
+          "irr_reference_withholding30": -0.2275118374839062,
+          "irr_limit_withholding30": -0.14576798722536527,
+          "pv_hurdle": 115.6147910558174,
+          "pv_hurdle_withholding30": 113.04549847996411,
+          "total_return_reference": -0.5250630075609073,
+          "total_return_limit": -0.36,
+          "irr_reference_after_30pct_withholding_25bp_costs": -0.22878824535572112,
+          "irr_limit_after_30pct_withholding_25bp_costs": -0.14717972704583965,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 112.4966306970474
+        },
+        {
+          "name": "base",
+          "terminal_eps": 21,
+          "terminal_pe": 18.5,
+          "terminal_price": 388.5,
+          "dividends": [
+            4,
+            4.2,
+            4.4
+          ],
+          "irr_reference": 0.03991751691586021,
+          "irr_limit": 0.1499885594777025,
+          "irr_reference_withholding30": 0.03648983180658172,
+          "irr_limit_withholding30": 0.14579274734745085,
+          "pv_hurdle": 271.93684426517194,
+          "pv_hurdle_withholding30": 269.02372119896535,
+          "total_return_reference": 0.1232147857742929,
+          "total_return_limit": 0.5135849056603774,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.03477057803209804,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.14389190615013303,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 267.69890784424354
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 25.3,
+          "terminal_pe": 22,
+          "terminal_price": 556.6,
+          "dividends": [
+            4.2,
+            4.6,
+            5
+          ],
+          "irr_reference": 0.1705474947383664,
+          "irr_limit": 0.29430712444864315,
+          "irr_reference_withholding30": 0.1672166245308545,
+          "irr_limit_withholding30": 0.29020853075688036,
+          "pv_hurdle": 386.28776465633143,
+          "pv_hurdle_withholding30": 383.1081790348447,
+          "total_return_reference": 0.5973116774012881,
+          "total_return_limit": 1.152452830188679,
+          "irr_reference_after_30pct_withholding_25bp_costs": 0.16527879825304115,
+          "irr_limit_after_30pct_withholding_25bp_costs": 0.28806619662179733,
+          "pv_hurdle_after_30pct_withholding_25bp_costs": 381.2159163791018
+        }
+      ],
+      "change": "Price and reference IRRs refreshed; normalized operating cases unchanged.",
+      "limit": 265,
+      "condition": "Price alone is insufficient: recheck thesis, event risk and portfolio capacity. "
+    }
+  ]
+}

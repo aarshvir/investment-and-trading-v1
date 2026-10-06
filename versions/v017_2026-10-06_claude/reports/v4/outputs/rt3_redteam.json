@@ -1,0 +1,194 @@
+{
+ "as_of": "2026-10-05",
+ "analyst": "RT3",
+ "scope": "Red-team of BR, PGR, AXP, HBAN, MCK against dossiers (cutoff 2026-09-25) and FINAL_REPORT section 6. Events searched 2026-09-26 to 2026-10-05; pre-cutoff items the dossiers omitted are included and labelled. Research only; not personal advice.",
+ "tickers": {
+  "BR": {
+   "verdict": "HOLDS",
+   "new_events": [
+    {
+     "date": "2026-09-28/29",
+     "event": "Governance items: DEF 14A, DEFA14A and ARS filed 29 Sep; annual meeting 10 Nov 2026 (virtual). Director Amit Zavery declines re-election; Srinivas Tallapragada (ex-Salesforce) nominated. Five Form 4s filed 28 Sep are director deferred-stock-unit grants (code A, no sales). No governance red flag found.",
+     "source": "SEC EDGAR submissions API CIK 1383312 (accessions 0001140361-26-037937/-37938/-37939; Form 4 0001225208-26-007964); stocktitan.net DEF 14A summary (secondary)"
+    },
+    {
+     "date": "2026-09-29",
+     "event": "Memorandum of understanding with Korea Securities Depository to modernise proxy-voting infrastructure (international ICS expansion). Also launched DLX tokenized-finance platform and named a President of Wealth Management (~23 Sep). Minor; no financial disclosure.",
+     "source": "stockanalysis.com/stocks/br news panel (secondary, retrieved 2026-10-05)"
+    },
+    {
+     "date": "2026-10-05",
+     "event": "Price $157.54 vs $163.77 at dossier cutoff (-3.8%); 52-week range $133.83-$238.73; market cap down ~35% over 12 months. No 8-K, guidance change, rating action or M&A filing after the 4 Aug 2026 earnings 8-K other than the items above.",
+     "source": "stockanalysis.com/stocks/br (secondary); SEC EDGAR submissions API (no BR 8-K between 15 Sep and 5 Oct)"
+    },
+    {
+     "date": "2026-09-16",
+     "event": "Macro (pre-cutoff, not in dossier): FOMC raised fed funds 25bp to 3.75-4.00% with hawkish dots. Little direct effect on BR fundamentals (fee-based, ~1.6x net leverage) but lifts the discount rate the reverse DCF should use.",
+     "source": "CNBC 2026-09-16 'Fed rate decision September 2026' (via WebSearch)"
+    },
+    {
+     "date": "2026-07..09",
+     "event": "Crypto rallied ~43% in Q3 2026 (Jul-Sep), the quarter BR reports on 3 Nov. A >$50m digital-asset mark-to-market LOSS (kill criterion 5) is very unlikely this quarter; another large non-operating GAAP gain is likely (excluded from adjusted EPS).",
+     "source": "fxstreet / tradingview Q3 2026 bitcoin performance (via WebSearch, secondary)"
+    }
+   ],
+   "kill_criteria_status": "None fired; none within 10% of firing. (1) Recurring-revenue growth cc: FY26 8%, Q4 8% (ICS 10%) vs <5% trigger. (2) EPS guide cut: none; FY27 guide 8-12% issued 4 Aug. (3) Net debt/EBITDA ~1.6x (as corrected) vs 3.0x. (4) FCF conversion 110% (company basis, vs adjusted net earnings) vs <90%. (5) Digital-asset MTM loss >$50m/qtr: Q4 FY26 -$11m; crypto +43% in Jul-Sep so unlikely for Q1 FY27 (reports 3 Nov). Caveat: against GAAP net income ($1,124m, incl. the $227m pre-tax non-cash gain) FCF of $1,233m is also ~110%, but only because of the gain; the clean test is vs adjusted.",
+   "bear_case": "The market has de-rated BR ~35% in 12 months through a beat-and-raise year, so it is pricing something the dossier underweights: (a) franchise-erosion fear - agentic AI, tokenization (BR is itself building tokenized-asset voting, which could disintermediate the legacy street-name chain it monetises) and a standing regulatory option to open proxy plumbing to competition (no new proposal found this window); (b) quality of growth is decelerating - Q4 FY26 adjusted EPS grew only +8% (FY +12%), adjusted operating margin was flat (26.9% vs 27.0%), event-driven revenue fell 10%, ICS recurring growth includes ~1pt of acquisitions, and the FY27 EPS range (8-12%) leans on record buybacks and balance-sheet use (CQG ~$173m, $500m 2036 notes) rather than organic margin expansion; (c) FY26 GAAP is flattered by a $227m non-cash digital-asset gain (adjusted is the clean series); (d) distribution revenue ($606m in Q4, postage-driven) inflates the top line at near-zero margin, so only 'recurring' matters and it is not accelerating on a multi-year view (FY24 6.6%, FY25 5.9%, FY26 8%). Nothing found after 25 Sep contradicts the thesis; the bear case concerns terminal value, not near-term numbers.",
+   "breaking_assumption": "That mid-single-digit-plus recurring-revenue/FCF compounding persists indefinitely (the regulated proxy/post-trade franchise is not disintermediated). Valuation re-check (own arithmetic, dossier method, FCF base $1,233m, 10 years, terminal 2.5%): at the dossier's 8.5% discount rate, $163.77 implies 2.9%/yr (EV $21.7bn); at today's $157.54 (EV ~$20.6bn with $2.85bn net debt) it implies 2.2%/yr; at a 10.5% discount rate it implies 6.2-6.9%/yr. 'Price implies growth at or below base (10% EPS growth)' holds in every case, but the cushion is much thinner than 2.9% suggests if the right discount rate is 10%+ after the 16 Sep Fed hike.",
+   "watch": "Q1 FY27 results 3 Nov 2026 (recurring cc growth vs 6-8% FY guide, closed sales vs $290-330m, adjusted margin ~21% FY guide); annual meeting 10 Nov; any SEC/SRO proposal on proxy fees or competition; tokenized-voting economics; GAAP vs adjusted EPS gap (digital-asset gain likely again)."
+  },
+  "PGR": {
+   "verdict": "WEAKENED",
+   "new_events": [
+    {
+     "date": "2026-09-18",
+     "event": "August 2026 results 8-K (pre-cutoff, absent from dossier): combined ratio 89.3 vs 83.1 (+6.2 pts); net income $951m, -22% YoY; NPW +6%, NPE +5%; commercial lines CR 97.5% with NPE -1%; agency-auto NPW only +3%. July (reported 19 Aug): CR 86.8 vs 85.3, net income -12%. YTD net income $8,041m vs $8,052m (flat on +7% YTD NPE); YTD comprehensive income $6,503m vs $9,696m (fixed-income unrealised losses -$1.54bn).",
+     "source": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000322/pgr202608ex99earningsrelea.htm ; July: .../000008066126000315/pgr202607ex99earningsrelea.htm"
+    },
+    {
+     "date": "2026-09-20",
+     "event": "Trade-press read of August: July deterioration occurred without a comparable weather event; GEICO has resumed heavy advertising (pricing competition). Earlier analyst cuts (BMO, Cantor, Mizuho) cite an extended competitive/deflationary auto-pricing environment. KBW: August operating EPS $1.49 vs $1.52 estimate.",
+     "source": "insurancebusinessmag.com 2026-09-20; investing.com / stockanalysis.com news panel (secondary)"
+    },
+    {
+     "date": "2026-09-24",
+     "event": "Form 4 (filed 28 Sep): CIO Steven Broz sold 1,225 shares at $204.29 under a 10b5-1 plan adopted 19 Feb 2026. Immaterial.",
+     "source": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000324/form4.xml"
+    },
+    {
+     "date": "2026-10-05",
+     "event": "Price $210.96 vs $205.50 at cutoff (+2.7%); JPMorgan raised target to $250 from $241 (5 Oct); BofA cut to $302 from $309 (~21 Sep). Consensus Hold, target ~$232. Q3 and September results due ~14-15 Oct 2026 (not yet released); consensus Q3 EPS ~$4.27.",
+     "source": "stockanalysis.com/stocks/pgr (secondary); finance.yahoo.com Q3 preview (via WebSearch)"
+    },
+    {
+     "date": "2026-09-16",
+     "event": "Macro (pre-cutoff): Fed hiked 25bp to 3.75-4.00%. PGR YTD fixed-income total return only +0.7% vs +5.5% a year earlier, so book value (the ROE denominator) is growing slower while underwriting margin normalises.",
+     "source": "CNBC 2026-09-16; PGR August release (portfolio table)"
+    },
+    {
+     "date": "2026-09-26..10-05",
+     "event": "No second-state profit-cap charge, no new Florida accrual disclosure and no total-loss class-action judgment found. The only PGR 8-K in the window period is the 18 Sep monthly release. Florida three-year-window risk remains open.",
+     "source": "SEC EDGAR submissions API CIK 80661; WebSearch"
+    }
+   ],
+   "kill_criteria_status": "None fired. (1) Quarterly GAAP CR >96 twice: Q3-to-date ~88 (Jul 86.8, Aug 89.3) - 8 pts of headroom (~8% relative, inside a 10% band on level), but trending the wrong way (Aug +6.2 pts YoY in one month; commercial lines already 97.5); two consecutive quarters are required and the Sep-2025 comp contains the $950m Florida charge. (2) NPE growth negative: +5% Aug. (3) PIF growth negative: +7% (40.49m). (4) Second-state >$500m charge: none seen. (5) Debt/total capital <30%: 19.6% at 2Q26, not updated. Next test: Q3 release ~14-15 Oct.",
+   "bear_case": "The thesis rests on a peak margin. ROE ~36% is produced by CR 86-88; PGR's own ceiling is 96. Own rough arithmetic (premium ~$86bn/yr, ~$3.9bn pretax investment income, 21% tax, equity $34-38bn): CR 88 gives ROE ~29-32%; CR 92 ~22-24%; CR 95 ~16-18%; CR 96 ~15-16%. The dossier's price-implied ROE (18.7% at 7.5% COE, g 3%) therefore corresponds to a perpetual combined ratio of roughly 94-95. The indicator the dossier called the main trend to monitor (premium growth) keeps decelerating (+14% -> +5%), and the one it called fine (combined ratio) has turned: July +1.5 pts, August +6.2 pts YoY, net income down two months running, YTD net income flat on 7% more premium. GEICO is spending again, agency NPW is growing only 3%, Florida filings are reported at about -8% for 2026, commercial lines is near break-even at 97.5 and shrinking, and the rate hike is hurting the bond book (OCI -$1.5bn YTD). A trailing 10.3x P/E on a peak year is the classic value-trap set-up; on a normalised CR of 93-94 the stock is roughly 14-16x earnings (own estimate). The dossier also never read the July/August monthly releases that pre-dated its own cutoff.",
+   "breaking_assumption": "That the through-cycle combined ratio stays below ~93-94, so sustained ROE stays above the ~19-22% the 3.49x P/B needs at a 7.5-8.5% cost of equity. Valuation re-check (own arithmetic, dossier justified-P/B method, g 3%): at ROE 16% justified P/B is 2.9x (COE 7.5%) or 2.4x (COE 8.5%) versus 3.49x paid; at an 8.5% COE the current price needs ~22% ROE, not 18.7%. 'Price implies returns at or below base case' holds only if CR stays below ~93; it is not self-evident if CR drifts to 95.",
+   "watch": "Q3/September release ~14-15 Oct: Q3 CR (>90 = real deterioration; the Sep-2025 comp has the $950m FL charge so GAAP YoY will look flattering), NPE and PIF growth (agency especially), commercial-lines CR, personal-auto rate changes, any new Florida accrual, book value per share after OCI losses. Kill criterion 1 should be tightened to a monthly view (e.g. any month >95 or trailing-3-month >92)."
+  },
+  "AXP": {
+   "verdict": "HOLDS",
+   "new_events": [
+    {
+     "date": "2026-09-29",
+     "event": "Long Lake merger for Global Business Travel Group closed ($9.50/share cash); Amex HoldCo's 157,786,199 shares cancelled for ~$1.5bn, exit 13D/A filed 1 Oct. In May Amex said the ~$975m pre-tax gain was NOT in FY2026 EPS guidance ($17.30-17.90) and that it would invest part and return part to shareholders. Q3 GAAP EPS will carry roughly +$1.1 (own estimate: $975m x ~0.78 / ~679m shares); trailing GAAP P/E and ROE comparisons will look flattered; capital (CET1) is boosted.",
+     "source": "https://www.sec.gov/Archives/edgar/data/4962/000000496226000356/ (Schedule 13D/A filed 2026-10-01); ir.americanexpress.com release 2026-05-04; amexglobalbusinesstravel.com completion release"
+    },
+    {
+     "date": "2026-09-15",
+     "event": "Monthly delinquency 8-K (pre-cutoff, not in dossier): US consumer 30dpd 1.1%, small business 1.3-1.4%; principal-only write-off rate US consumer 1.7% (Jul/Aug), SB 2.2% (Aug) and 2.6% (Jul). June write-offs were lowered ~0.3/0.1 pts (consumer/SB) by a sale of previously written-off balances, and some card balances are now held for sale, so Q2's stable reading had a one-off tailwind. Still far from the 3.0% trigger.",
+     "source": "https://www.sec.gov/Archives/edgar/data/4962/000000496226000353/axp-20260915.htm"
+    },
+    {
+     "date": "2026-08-19",
+     "event": "First Circuit affirmed denial of Amex's motion to compel arbitration in the 5-Star General Store (D.R.I.) merchant antitrust case; Pizza Hazel (D. Mass.) argued 15 Sep with the panel pushing back on Amex's position. Dossier says appeal pending; the arbitration route is now effectively closed and the anti-steering merits proceed in federal court. No final judgment (kill criterion 5 not triggered).",
+     "source": "pymnts.com 2026-08-20; law360.com 2026-09-15 (headline only, paywalled) (secondary)"
+    },
+    {
+     "date": "2026-09-30/10-02",
+     "event": "Amex launched an AI-driven corporate card/expense platform; routine Form 4s (1-2 Oct) are director deferred-compensation share-equivalent units at $312.25 (no insider sales).",
+     "source": "WebSearch AXP news (secondary); https://www.sec.gov/Archives/edgar/data/4962/000000496226000374/form4.xml"
+    },
+    {
+     "date": "2026-10-01..05",
+     "event": "Sell-side target cuts before Q3 (23 Oct): Barclays $364 to $342 (Equal Weight, 5 Oct), UBS $384 to $345 (Neutral), Citi $355 to $340 (exact dates unverified). Stock $303.43 on 5 Oct vs $308.89 at cutoff (-1.8%); 52-week range $290.97-$387.49; -18% YTD; technical break below $318 support noted. Consensus Q3 EPS ~$4.54-4.58 (ex gain). Dividend $0.95, ex-date 9 Oct.",
+     "source": "finance.yahoo.com/quote/AXP; stocktwits / stock3 (secondary, via WebSearch)"
+    },
+    {
+     "date": "2026-09-16",
+     "event": "Macro (pre-cutoff): Fed hiked to 3.75-4.00% with a higher 2027 dot; oil-driven inflation. Raises Amex funding costs and consumer-stress risk at the margin; the dossier's 4.2% rf is stale.",
+     "source": "CNBC 2026-09-16"
+    }
+   ],
+   "kill_criteria_status": "None fired. (1) Write-off rate (consolidated, interest and fees) 2.2% at Q2 vs 3.0% trigger; monthly US consumer/SB data through Aug stable. (2) CET1 10.4% at Q2 vs 10.0% floor: ~4% relative headroom, INSIDE the 10% band, but the ~$1.5bn GBTG proceeds (closed 29 Sep) add capital in Q3 and the trigger only fires without a stated capital-plan explanation. (3) Guidance cut: none; revenue guide raised to ~10% on 24 Jul, EPS held. (4) Spend growth +9% (FX-adj) vs <5% trigger. (5) Adverse final antitrust judgment: none; litigation moved against Amex procedurally, not on the merits.",
+   "bear_case": "The stock is -18% YTD while EPS guidance rises, so the multiple is compressing for reasons the dossier gave one line to: (a) the beat is being reinvested - EPS guidance was held at $17.30-17.90 despite a revenue raise, which the market read as a margin ceiling (stock fell ~7% that day); marketing and technology spend are rising into a tougher premium-card market (Chase Sapphire Reserve, Capital One) after the Platinum refresh pulled demand forward; (b) the 10% APR cap bill (S.381) and the Credit Card Competition Act remain live political risks, which the dossier's bear case omits; (c) the anti-steering/arbitration litigation now proceeds to the merits in two federal districts; (d) CET1 has drifted down five quarters and sits 40bp above the dossier's own kill line, so buyback capacity (about a third of EPS growth) leans on the one-off GBTG cash; (e) FY2026 GAAP EPS will carry a ~$1.1 non-recurring gain, so any trailing P/E or EPS-growth comparison is unreliable until Q3 2027; (f) a hiking Fed and oil-driven inflation lean against the affluent-spend acceleration the thesis extrapolates (+9% was a 3-year high), and Q2's 2.2% write-off had a one-off debt-sale tailwind.",
+   "breaking_assumption": "That implied ~5.1%/yr EPS growth is below what the franchise can deliver, i.e. that spend growth stays near +9% and operating leverage returns once marketing normalises. Re-check: at $303 and guide-midpoint EPS $17.60 the forward P/E is ~17.2x (dossier 17.55x at $308.89); the dossier's own sensitivity shows implied growth of ~7-8% at a 10.5% cost of equity, and with rf higher after the 16 Sep hike a 10-10.5% COE is defensible. Still below the 8-19% trailing growth, so the valuation logic survives, but the cushion is now ~7-8% implied vs ~14% guided FY26, not 5% vs 15%. What breaks it: premium-card spend growth fading to mid-single digits while reinvestment holds EPS growth below ~8%.",
+   "watch": "Q3 results 23 Oct 2026: EPS ex-GBTG gain (consensus ~$4.5-4.6), FY26 EPS guide (and whether the gain is included), CET1 with and without the gain and the announced return of part of the gain, Card Member spend growth vs +9%, reserve build, marketing expense. Legislative: rate-cap/CCCA movement. Courts: Pizza Hazel decision."
+  },
+  "HBAN": {
+   "verdict": "WEAKENED",
+   "new_events": [
+    {
+     "date": "2026-09-16",
+     "event": "Barclays conference 8-K Ex-99.1 (pre-cutoff, absent from dossier): management lowered its outlook. Slide 'Revised FY27 EPS Target Range $1.75-$1.83' with 'adopting more conservative FY27 EPS outlook' (recalibrated loan growth, lower NIM). FY26 adjusted EPS ~$1.52-1.54; FY26 adjusted ROTCE ~17%, FY27 17-18% (a transcript summary says the prior FY27 EPS was above $1.90 and ROTCE 18-19%). FY26 NII growth guide cut to ~35% from 39-43%; implied FY26 revenue growth ~34% vs ~37%; FY27 loan growth baseline ~6% (was 7-8%), NIM low-to-mid 3.20s (was mid-to-high). Causes: higher deposit costs (total cost of deposits 3.6% to 3.9%), CRE/resi paydowns at twice the planned pace, auto originations cut from ~$850m to ~$500m a quarter, tighter loan pricing. Offsets: $435m of Cadence/Veritex cost synergies fully delivered by 4Q26; 2027 buyback raised to ~$1.3-1.4bn.",
+     "source": "https://www.sec.gov/Archives/edgar/data/49196/000004919626000077/hbanbarxpresentation_vf.htm (primary); investing.com Barclays transcript summary 2026-09-16 (secondary, for the prior-guide numbers)"
+    },
+    {
+     "date": "2026-09-16",
+     "event": "Fed hiked 25bp to 3.75-4.00% (first hike since 2023); market-implied path up ~30bp since January per HBAN's own slide; HBAN raised its prime rate to 7.00% from 6.75%. Higher-for-longer rates are the stated cause of NIM moderation.",
+     "source": "CNBC 2026-09-16; HBAN deck slide 10; stockanalysis.com HBAN news panel"
+    },
+    {
+     "date": "2026-09-18/24",
+     "event": "Form 8-K Item 5.02: Senior EVP Helga S. Houston gave notice of retirement effective 31 Dec 2026 (role not stated in the filing). Series I preferred dividend declared (routine).",
+     "source": "https://www.sec.gov/Archives/edgar/data/49196/000004919626000081/hban-20260918.htm ; .../000004919626000079/"
+    },
+    {
+     "date": "2026-09-22..10-05",
+     "event": "Target cuts: Stephens $19 to $18 (22 Sep), JPMorgan $19.50 to $17.50 (2 Oct, Overweight), UBS $22 to $19 and Wells Fargo $23 to $21 (by 5 Oct). New 52-week low $14.82 on 1 Oct; $15.35 on 5 Oct vs $15.64 at cutoff (-1.9%). Q3 earnings 22 Oct 2026, consensus ~$0.39.",
+     "source": "marketbeat.com 2026-10-01; gurufocus 2026-10-02; stockanalysis.com/stocks/hban (secondary)"
+    },
+    {
+     "date": "2026-10-01",
+     "event": "Low-reliability aggregator item (pluang.com) says Huntington cut its own 2027 outlook on 1 Oct citing deposit costs and slower loan growth in new markets; consistent with, and apparently a re-statement of, the 16 Sep 8-K. No separate guidance filing found on EDGAR after 16 Sep.",
+     "source": "pluang.com/en/news-feed (low reliability); SEC EDGAR submissions API CIK 49196"
+    }
+   ],
+   "kill_criteria_status": "None fired, but three of five are strained. (1) NPA >1.00% twice: 0.85% at Q2 (15% headroom); Q3 prints 22 Oct; management calls credit stable (16 Sep). (2) CET1 <9.5% without a buyback pause: 10.0% at Q2 (5% headroom, INSIDE the 10% band) while management just RAISED 2027 buybacks to ~$1.3-1.4bn (~$550m expected in 2026), so the 'without a disclosed pause' clause is the real test. (3) Adjusted ROTCE >=17% by Q4 2026: LTM adjusted ROTCE 16.7% at 2Q26 (company slide), FY26E ~17%, FY27 target 17-18% - the bar is met only on the new, lower guide with ~0 cushion (inside 10%). (4) NCO >0.45% twice: 0.25%, FY26 guide 25-35bp. (5) Efficiency <58% by Q1 2027: 61.5% at Q2; ~6% away and the $435m cost synergies are already fully delivered, so further improvement must come from operating leverage that guidance just reduced (inside 10% in relative terms).",
+   "bear_case": "The dossier's thesis was that the market has not re-rated for accretion already delivered, and that management is constructive with no quantified guidance. Both are stale: management quantified a FY27 EPS target and then lowered it (above $1.90 to $1.75-1.83) nine days before the dossier cutoff, citing deposit costs, loan paydowns and pricing competition - the market's flat momentum despite good news was anticipating exactly this. The synergy story is exhausted, so 2027 growth must come from loan growth (cut to ~6%) and NIM (low-to-mid 3.20s) in a hiking, deposit-competitive Fed regime, from LTM reported ROTCE of only 14.2% (adjusted 16.7%) with quarterly GAAP ROTCE swinging (Q1 11.6%). NPA has risen two quarters running (0.72% to 0.85%) while CRE paydowns accelerate (what stays behind is worse); the bank is buying back ~$1.3-1.4bn into 10.0% CET1 (adjusted 9.0%); Texas, the growth leg, is where competitors are leaning into CRE and auto. Add a new 52-week low, four target cuts in two weeks and a senior-executive retirement.",
+   "breaking_assumption": "That adjusted ROTCE of ~16-17% or better is sustainable (dossier long-run input 16%). Valuation re-check (own arithmetic, dossier method (ROE-g)/(COE-g)=P/TBV, COE 10%, TBV $9.65): at $15.64 (1.62x) implied g = +0.3% at ROTCE 16%, -1.3% at 17%, +3.2% at 14.2% (LTM reported). At $14.90-15.35 (1.54-1.59x): -1.0% to -0.2% at 16% but +2.3% to +2.9% at 14.2%. So near-zero implied growth holds on adjusted ROTCE only; on reported ROTCE the market pays for ~2-3% perpetual growth - fair, not cheap. FY27E P/E at $15.35 is ~8.5x ($1.75-1.83), cheap only if EPS is not cut again.",
+   "watch": "Q3 results 22 Oct 2026: NPA ratio (>0.95% puts kill 1 in play), NIM vs low-to-mid 3.20s, total cost of deposits, loan growth ex-CRE runoff, CET1 vs 10.0% and buyback pace, adjusted ROTCE exit rate (needs >=17%), efficiency ratio, any second FY27 EPS revision. Re-base the dossier's no-quantified-guidance and cost-synergy statements before the next release."
+  },
+  "MCK": {
+   "verdict": "WEAKENED",
+   "new_events": [
+    {
+     "date": "2026-08-25..31",
+     "event": "Cybersecurity incident (pre-cutoff, absent from dossier): 8-K Item 7.01 filed 28 Aug says an incident was discovered 25 Aug and materiality not yet determined. McKesson later confirmed data exfiltration via third-party applications affecting a subset of customers in the Oncology & Multispecialty and Medical-Surgical units. ShinyHunters claimed ~1TB / 284m records and a ~$55m ransom (deadline 1 Sep) - threat-actor claims, not company figures. Putative class actions filed 31 Aug in N.D. Texas (Dallas). Company says distribution operations continue but warned of intermittent service degradation. No update found after 4 Sep.",
+     "source": "https://www.sec.gov/Archives/edgar/data/927653/000092765326000247/mck-20260825.htm (8-K); securityweek.com 2026-08-31; hallattorneys.com class action notice; claimdepot.com (secondary)"
+    },
+    {
+     "date": "2026-10-01",
+     "event": "McKesson reached an agreement in principle to extend its distribution partnership with CVS Health through June 2032, subject to a definitive contract; FY27 adjusted EPS guide $44.20-45.00 and 13-16% long-term EPS growth target reiterated. Secondary sources put CVS at ~24% of FY26 revenue. Stock +4.1% to $888.73 on 1 Oct and $902.28 on 2 Oct (vs $866.64 at cutoff; 52-week high ~$999). Cardinal Health announced a parallel CVS LOI. Removes a customer-concentration tail the dossier never discussed; margin terms undisclosed.",
+     "source": "financialcontent.com / ad-hoc-news.de 2026-10-01 (secondary; no MCK 8-K found on EDGAR through 5 Oct)"
+    },
+    {
+     "date": "2026-09-10..10-05",
+     "event": "EDGAR shows only a routine Form 4 (10 Sep) after the 28 Aug cyber 8-K; no Wellverse S-1/Form 10. Wellverse brand announced 5 Aug, rebrand January 2027, IPO expected 2H 2027 (dossier kill criterion 4 allows to FY2028).",
+     "source": "SEC EDGAR submissions API CIK 927653; businesswire 2026-08-05 Introducing Wellverse"
+    },
+    {
+     "date": "2026-08-05",
+     "event": "FY27 segment guidance (pre-cutoff, not in dossier): Oncology & Multispecialty revenue growth 14.5%-18.5%, operating-profit growth 13.5%-17.5%; NAP operating profit at the high end of 5.5-9.5%; FY27 free cash flow $4.5-4.9bn (Zacks summary of company materials; not found in the 8-K text I read). FY26 O&M revenue $48.4bn (+31%); FY26 FCF $5.4bn (OCF $6.2bn less $745m capex).",
+     "source": "finance.yahoo.com Zacks article (secondary); https://www.sec.gov/Archives/edgar/data/927653/000092765326000066/mck_exhibit991x3312026.htm; Q1 FY27 8-K 0000927653-26-000232"
+    },
+    {
+     "date": "2026-09-16",
+     "event": "Macro (pre-cutoff): Fed hike to 3.75-4.00%. MCK's $2.25bn separation Term Loan B and any higher WACC marginally pressure interest cost and the reverse DCF.",
+     "source": "CNBC 2026-09-16"
+    }
+   ],
+   "kill_criteria_status": "None fired, but criterion 1 is mis-calibrated against company guidance. (1) O&M revenue growth <15% twice: Q1 FY27 +33%. FY27 guide is +14.5-18.5%; with FY26 O&M $48.4bn and Q1 FY26 $10.658bn / Q1 FY27 $14.222bn, implied Q2-Q4 FY27 growth is ~+9% (guide low end), ~+12% (midpoint) and ~+14% (top end) - all below 15% (own arithmetic). The trigger is therefore expected to fire around Q3 FY27 (Feb 2027) if McKesson merely meets its own guidance, as acquisition contributions lap - a trigger that fires without any thesis failure. (2) Gross debt/EBITDA 1.4x vs 2.5x: ok. (3) EPS guide cut: none (raised 5 Aug, reiterated 1 Oct). (4) Wellverse abandoned or delayed beyond FY2028: IPO guided 2H 2027, ok. (5) Opioid cash >$1.5bn in a year: not assessed; no news.",
+   "bear_case": "(a) The 25 Aug cyber breach hit precisely the Oncology & Multispecialty customer base that carries the re-rating thesis; exposure claimed includes SSNs and PHI, class actions are filed, and OCR/state-AG, customer-contract (indemnity, practice churn) consequences are unknown while the company declines to call it material - the dossier's red-flag scan missed it, so its checked-to-25-Sep statement is incomplete. (b) Adjusted EPS (+20%) is not GAAP EPS (-17.6%): $3.85 per share of transaction costs and recurring NCI remeasurement charges ($293m + $81m in one quarter) are real economic costs of a separation that will not complete until 2H 2027. (c) The dossier's FCF base is overstated: it uses TTM FCF $6.80bn ($58.33/share) vs company-defined FY26 FCF $5.4bn and an FY27 guide of $4.5-4.9bn (~$40/share); Q1 cash flow is negative for the second year running. (d) O&M growth is acquisition-assisted (company language) and guided to decelerate to low-double digits while the stock is capitalised at 18x. (e) Policy risk to Part B oncology reimbursement (MFN-linked proposals) sits directly on that segment. (f) The stock rose ~4% after the cutoff on a CVS extension that is still only an agreement in principle, so valuation was tested at a lower price than now.",
+   "breaking_assumption": "That FCF/share compounds (dossier base 8-10%/yr) rather than stalls - i.e. adjusted EPS growth of 13-15% converts to cash after separation costs, NCI buy-outs, opioid payments and the loss of Medical-Surgical cash flow. Valuation re-check (dossier method: 10 years, WACC 8%, terminal 4%, 116.6m shares): at $866.64 the implied FCF/share growth is -2.9% on the dossier's $58.33 base, -1.5% on a $6.1bn company-defined TTM base, 0.0% on FY26's $5.4bn and +1.7% on the FY27 guide midpoint ($4.7bn, $40.3/share); at $902.28 it is -2.4%, -1.0%, +0.5% and +2.2%. All variants stay far below the 8-10% base case, so 'price implies growth at or below base' still holds; but the dossier's priced-for-FCF-decline framing is an artefact of an overstated base - the accurate statement is that the price implies ~0-2% FCF growth.",
+   "watch": "Q2 FY27 results ~4-5 Nov 2026: O&M revenue growth vs the 15% trigger (expect below 15% by Q3), segment margins, any cyber-incident cost/reserve, 10-Q legal note on class actions and regulators, CVS definitive-contract terms (rebate/margin concessions), FCF vs $4.5-4.9bn, Wellverse filing timing, opioid payment cadence. Recommend re-basing kill criterion 1 to organic growth or to profit growth (13.5-17.5% guide)."
+  }
+ },
+ "notes": [
+  "EDGAR submissions API (UA PersonalEquityResearch research-admin@personal-research.org, <=2 req/s) used for filings. Between 26 Sep and 5 Oct none of the five filed an 8-K/10-Q; filings were AXP's GBTG exit 13D/A, routine Form 4s and BR's proxy materials.",
+  "Prices and analyst actions come from aggregator pages (stockanalysis, Yahoo, MarketBeat, GuruFocus) via WebFetch and are secondary; verify before relying on them. The FMP connector was not available on this plan.",
+  "Q3 CY2026 earnings (PGR ~14-15 Oct, HBAN 22 Oct, AXP 23 Oct, BR 3 Nov, MCK ~4-5 Nov) are not yet reported, so no quarterly kill criterion could be tested on new quarterly data.",
+  "Reverse-DCF / ROE / implied-growth figures labelled own arithmetic are RT3 recomputations using each dossier's stated method; they are sensitivity checks, not forecasts.",
+  "No ticker is BROKEN: no kill criterion has fired and no core dossier fact was shown false by primary-source evidence. Stale or omitted dossier facts found: HBAN (quantified FY27 guidance cut 16 Sep), MCK (25 Aug cyber incident; FCF base; O&M guidance vs kill criterion), PGR (July/August monthly results), AXP (GBTG gain, arbitration ruling)."
+ ]
+}

@@ -1,0 +1,2499 @@
+# INVESTMENT SYSTEM AUDIT — v011  
+## How to turn the current research repository into a best-in-class moderate-risk, return-maximising investment process
+
+**Repository:** `aarshvir/investment-and-trading-v1`  
+**Audited HEAD:** `4d10957674932258d7f9787f2c8817b301ae684d`  
+**Latest completed publication:** `v011_2026-09-27_claude`  
+**Market-data cutoff used by the project:** US close, 25 September 2026  
+**Primary objective:** Maximise long-term wealth / investment returns while taking **moderate equity risk**, not low risk.  
+**Repository policy from this point forward:** **append-only. Never delete an existing file. Never overwrite or modify a historical file or completed release. Every correction, new analysis or new recommendation must be written as a new versioned file/release.**
+
+---
+
+# 1. EXECUTIVE CONCLUSION
+
+The investment project has improved dramatically over the last 24 hours.
+
+It has moved from a relatively narrow quantitative stock screen plus selective company work into a much broader fundamental-research system:
+
+- every S&P 500 company has received at least an initial screen;
+- 336 companies have now received full diligence;
+- 214 companies currently pass the project's eligibility tests;
+- all 20 current holdings are classified as full conviction;
+- every current holding has undergone independent fact checking;
+- multiple audit loops now exist;
+- important valuation and accounting mistakes have actually been discovered and corrected;
+- the project explicitly admits that its original factor model did **not** demonstrate alpha;
+- the latest release contains far more honest disclosures than the earlier versions.
+
+This is meaningful progress.
+
+However, the project is **not yet best-in-class for the objective Aarsh has now stated**:
+
+> **Make as much money as reasonably possible while taking moderate risk.**
+
+The current system is still partly built around an older objective:
+
+> minimise mistakes, control drawdowns aggressively, demonstrate auditability, and achieve high confidence.
+
+Those are worthwhile secondary objectives, but they are **not identical** to maximising wealth subject to moderate risk.
+
+The most important conclusion from this audit is therefore:
+
+> **Stop spending most of the marginal effort researching more companies. The diligence queue is complete. The next major investment edge, if any, must come from portfolio-selection quality, valuation discipline, forecast calibration, portfolio construction, and learning from prospective results.**
+
+The current portfolio-selection process is now the weakest link.
+
+The evidence is unusually clear.
+
+The eligible universe has expanded to **214 companies**, yet only **6 of the final 20 stocks appear in every reasonable alternative selection ordering tested**:
+
+- ADP
+- CRH
+- GDDY
+- TJX
+- USB
+- VEEV
+
+The project's own history shows that the invariant set has deteriorated as research coverage has expanded:
+
+**12 → 12 → 16 → 14 → 9 → 6**
+
+That tells us something important.
+
+The system is no longer suffering primarily from insufficient stock research.
+
+It is suffering from **decision instability among many broadly acceptable stocks**.
+
+The current portfolio is therefore overly sensitive to arbitrary or weakly justified tie-breakers.
+
+This is precisely where the next version should focus.
+
+---
+
+# 2. WHAT CHANGED OVERNIGHT
+
+The latest published release is:
+
+**`v011_2026-09-27_claude`**
+
+The latest research reports:
+
+- **336 companies fully researched**
+- **214 eligible**
+- **0 companies remaining in the full-diligence queue**
+- **20 holdings**
+- **all 20 full conviction**
+
+The current portfolio is:
+
+| Stock | Weight |
+|---|---:|
+| WEC | 8.3% |
+| RSG | 7.0% |
+| TJX | 6.4% |
+| MA | 5.6% |
+| USB | 5.6% |
+| LH | 5.6% |
+| STE | 5.3% |
+| BALL | 5.2% |
+| DOV | 5.2% |
+| ADP | 4.9% |
+| BR | 4.6% |
+| PGR | 4.6% |
+| AXP | 4.6% |
+| HBAN | 4.6% |
+| MCK | 4.5% |
+| CRH | 4.2% |
+| LVS | 3.8% |
+| PTC | 3.8% |
+| VEEV | 3.2% |
+| GDDY | 3.0% |
+
+Current sector allocation is approximately:
+
+| Sector | Weight |
+|---|---:|
+| Financials | 25.0% |
+| Industrials | 21.7% |
+| Health Care | 18.6% |
+| Consumer Discretionary | 10.2% |
+| Materials | 9.4% |
+| Utilities | 8.3% |
+| Information Technology | 6.8% |
+| Communication Services | 0% |
+| Consumer Staples | 0% |
+| Energy | 0% |
+| Real Estate | 0% |
+
+Current reported risk characteristics include approximately:
+
+- beta: **0.59**
+- tracking error: **11.8%**
+- effective independent bets: about **19**
+- GFC replay: approximately **−47%**
+- COVID replay: approximately **−37%**
+- 2022 replay: approximately **−17%**
+
+The project reports, conditional on its zero-alpha market scenarios:
+
+- 5-year probability of positive return: roughly **79%**
+- 5-year probability of beating the S&P 500: roughly **50%**
+- probability of a >20% drawdown during five years: approximately **84%**
+
+These numbers are scenario outputs, **not proof of future probabilities**.
+
+---
+
+# 3. THE MOST IMPORTANT STRATEGIC OBSERVATION
+
+## The current portfolio is an all-stock portfolio with surprisingly defensive characteristics
+
+A portfolio beta around **0.59** is very low for an investor whose stated objective is:
+
+> maximise returns subject to moderate—not low—risk.
+
+This does not automatically mean the portfolio is wrong.
+
+Low-beta stocks can outperform.
+
+But the construction method needs to demonstrate **why sacrificing market sensitivity is expected to improve geometric wealth**, rather than simply reduce volatility.
+
+At present, much of the low-beta profile arises mechanically from:
+
+- inverse-volatility weighting;
+- sector limits;
+- preference for fair/cheap current valuation;
+- a large eligible universe of mature cash-generative companies;
+- rejection of several high-growth mega-cap names because current prices require more growth than the analysts' base cases.
+
+This may produce a sensible portfolio.
+
+But it may also produce a portfolio that is inadvertently optimised for **comfort rather than return**.
+
+That distinction is central.
+
+For the stated mandate, the appropriate question is not:
+
+> Which portfolio is least volatile?
+
+It is:
+
+> Which portfolio has the highest credible long-term compound-return expectation while keeping concentration, permanent-loss risk, factor exposure and drawdown within a moderate-risk budget?
+
+Those are different optimisation problems.
+
+---
+
+# 4. THE ORIGINAL QUANTITATIVE MODEL SHOULD NO LONGER DRIVE THE PORTFOLIO
+
+The project deserves credit for discovering this itself.
+
+The original point-in-time Q/V/M/S composite did not demonstrate positive alpha.
+
+The reported top-30 mechanical strategy produced approximately:
+
+- **12.5% CAGR**
+- versus roughly **15.1% for SPY**
+- approximately **−2.6 percentage points annual excess return**
+- with a worse daily maximum drawdown.
+
+The composite's rank information coefficient was weak.
+
+The decile relationship was not reliably monotonic.
+
+The project therefore correctly stopped claiming that high model rank predicts outperformance.
+
+That creates an important implication for the current portfolio.
+
+## All 20 current holdings enter through the analyst route
+
+The latest report says effectively **20 of 20** holdings are analyst-route selections rather than stocks that qualify because the pre-registered top-70 model proved them superior.
+
+That means the B1 historical backtest does **not validate the strategy that currently chooses the portfolio**.
+
+This distinction should become explicit in the next investment version.
+
+There are now two conceptually different things:
+
+### Strategy A — mechanical quantitative strategy
+
+This has a real historical PIT backtest.
+
+Result:
+
+**No demonstrated alpha.**
+
+### Strategy B — analyst-underwritten portfolio
+
+This uses:
+
+- full dossiers;
+- reverse DCFs;
+- price-implied-growth tests;
+- judgement;
+- scenario returns;
+- conviction;
+- sector/sub-industry limits;
+- inverse-volatility sizing.
+
+This is the current portfolio.
+
+But **Strategy B does not yet have a historical or prospective evidence record demonstrating alpha.**
+
+Therefore:
+
+> Do not borrow the credibility of Strategy A's backtesting infrastructure to imply that Strategy B has been backtested.
+
+It has not.
+
+---
+
+# 5. RESEARCH COVERAGE IS NOW STRONG ENOUGH
+
+The overnight work solved a major earlier problem.
+
+Previously the final portfolio could be criticised because large parts of the S&P 500 had not received equivalent investigation.
+
+That is much less true now.
+
+As of v011:
+
+- every quick-screen ADVANCE candidate has received full diligence;
+- 336 companies received full research;
+- 214 passed;
+- three duplicate/secondary share classes are handled with siblings;
+- the queue is complete for the current cutoff.
+
+This is enough coverage to stop doing broad research for its own sake.
+
+Going forward:
+
+### Do not continuously redo 336 dossiers every week.
+
+Instead divide research into:
+
+1. **current holdings**
+2. **top replacement candidates**
+3. **stocks with new material events**
+4. **newly cheap/high-quality companies**
+5. **companies whose valuation changed materially**
+6. **companies whose thesis changed materially**
+
+That will produce better marginal research productivity.
+
+---
+
+# 6. THE BIGGEST CURRENT PROBLEM: PORTFOLIO ORDER DEPENDENCE
+
+This is now the most important issue in the entire investment system.
+
+The project currently has roughly:
+
+- 214 eligible companies
+- 20 available slots.
+
+The final 20 are selected through a lexicographic ordering based broadly on:
+
+1. conviction;
+2. margin of safety / implied growth versus base;
+3. base-case return;
+4. constraints and tie-breaks.
+
+The project tested alternative orderings.
+
+Only **6 of 20 holdings survive all tested orderings**.
+
+That is extremely informative.
+
+It says that for roughly 70% of the portfolio, the evidence does not strongly distinguish the selected stock from reasonable alternatives.
+
+This does not mean the selected stocks are bad.
+
+It means the methodology's **resolution is weaker than its output precision**.
+
+A system that says:
+
+> "These exactly 20 names are the portfolio"
+
+looks more certain than the evidence supports.
+
+## Best-in-class fix
+
+Stop using a sequential walk-down ranking as the final portfolio constructor.
+
+Instead:
+
+> Evaluate the entire eligible universe simultaneously.
+
+For every eligible company estimate:
+
+- expected annualised return;
+- uncertainty around that return;
+- bear-case permanent-loss risk;
+- cyclicality;
+- balance-sheet risk;
+- quality/durability;
+- correlation with other candidates;
+- factor exposures;
+- valuation sensitivity;
+- catalyst path;
+- thesis confidence;
+- forecast reliability.
+
+Then solve for the portfolio.
+
+This changes the question from:
+
+> Who comes first in the ordered list?
+
+to:
+
+> Which combination of securities produces the strongest expected portfolio outcome?
+
+That is a major upgrade.
+
+---
+
+# 7. DO NOT OPTIMISE THE NEXT VERSION FOR AN AUDIT SCORE
+
+The project has audit scores such as:
+
+- A1
+- A2
+- A3
+
+and repeatedly tries to increase them.
+
+That has been useful.
+
+It forced better documentation.
+
+It found errors.
+
+It improved disclosure.
+
+But **95/100 from AI auditors is not an investment objective**.
+
+It can become Goodhart's Law:
+
+> When a measure becomes the target, it stops being a good measure.
+
+An audit score can reward:
+
+- additional caveats;
+- more citations;
+- more documentation;
+- more checks;
+- more conservative assumptions;
+- cleaner formatting.
+
+Those may increase process quality.
+
+They do not necessarily increase investment returns.
+
+The objective function for the next version should be:
+
+> **Expected long-term geometric wealth after realistic costs and taxes, constrained by moderate-risk limits and protected against permanent impairment.**
+
+Audit scores should become **gates**, not objectives.
+
+For example:
+
+- data integrity must pass;
+- valuation arithmetic must pass;
+- source traceability must pass;
+- portfolio constraints must pass;
+- unresolved critical facts must pass.
+
+Once those are passed, the portfolio should be selected for investment merit—not for the audit score.
+
+---
+
+# 8. THE CURRENT WEIGHTING SYSTEM IS NOT ALIGNED ENOUGH WITH THE MANDATE
+
+Current weights are driven heavily by inverse volatility.
+
+This is why WEC can reach roughly **8.3%**, while some potentially higher-return businesses receive smaller allocations.
+
+Inverse volatility is a useful risk-control technique.
+
+But it answers:
+
+> How do I allocate less to volatile securities?
+
+It does not answer:
+
+> Where is my highest expected reward for the risk?
+
+For someone explicitly seeking **moderate risk**, inverse-volatility should not be the primary determinant of position size.
+
+## Better sizing concept
+
+Position size should depend on four things:
+
+### 1. Expected return
+
+How attractive is the security under a conservatively normalised scenario?
+
+### 2. Confidence / uncertainty
+
+How wide is the range of plausible intrinsic outcomes?
+
+### 3. Downside / permanent-loss risk
+
+How bad can the fundamental outcome become?
+
+### 4. Portfolio covariance
+
+How much incremental risk does the security add to the entire portfolio?
+
+A simplified conceptual rule could be:
+
+\[
+\text{Desired weight}
+\propto
+\frac{\text{shrunk expected excess return} \times \text{confidence}}
+{\text{incremental portfolio risk}}
+\]
+
+subject to:
+
+- maximum position;
+- sector exposure;
+- liquidity;
+- fundamental concentration;
+- downside risk.
+
+Do **not** mechanically implement this exact formula without calibration.
+
+The point is structural:
+
+> expected return belongs in sizing.
+
+The current inverse-volatility implementation gives volatility a very large role while expected return primarily affects selection.
+
+That is not ideal for the stated objective.
+
+---
+
+# 9. CURRENT PORTFOLIO BETA IS A WARNING SIGNAL
+
+Current beta is approximately **0.59**.
+
+For an all-stock portfolio, that suggests a materially defensive bias.
+
+Again, beta is not risk in its entirety.
+
+But if the objective is long-run capital growth and the investor accepts moderate risk, then the process should explicitly justify why beta should be so low.
+
+The next AI should run a complete efficient-frontier / expected-growth exercise over the eligible universe and answer:
+
+### What happens if portfolio beta is allowed to rise?
+
+For example compare portfolios around:
+
+- beta ~0.6
+- beta ~0.75
+- beta ~0.9
+- beta ~1.0
+- beta ~1.1
+
+while keeping:
+
+- single-name risk controlled;
+- sector concentration controlled;
+- leverage absent;
+- permanent-loss screens intact.
+
+Do not assume higher beta means higher return.
+
+Actually calculate the expected-return trade-off.
+
+My suspicion to test—not assume—is:
+
+> The present system may be leaving expected return on the table because its defensive construction philosophy survived even after the mandate changed from low-risk capital preservation to moderate-risk wealth maximisation.
+
+---
+
+# 10. THE QUALITY/GROWTH PROBLEM IS ONLY PARTIALLY SOLVED
+
+The project correctly noticed that a value-heavy factor screen could exclude businesses such as:
+
+- NVIDIA
+- Microsoft
+- Amazon
+- Alphabet
+- Meta
+- Apple
+- Broadcom
+
+simply because their statistical ranks were lower.
+
+It therefore created quality-growth and triage routes.
+
+That was the right direction.
+
+However, the current system can still become overly valuation-centric.
+
+A superb compounding business may be expensive on conventional multiples while still generating higher realised long-term returns than a mediocre business purchased cheaply.
+
+The correct decision is not:
+
+> high P/E = bad
+
+or:
+
+> low P/E = good.
+
+The correct decision is:
+
+\[
+\text{Return}
+\approx
+\text{fundamental growth}
++
+\text{cash yield}
++
+\text{multiple change}
++
+\text{share-count change}
+\]
+
+The next version should explicitly decompose expected return into these drivers.
+
+For every candidate:
+
+### Expected return bridge
+
+- starting owner-earnings / FCF yield;
+- organic growth;
+- margin change;
+- reinvestment economics;
+- acquisitions;
+- dilution/buybacks;
+- dividends;
+- terminal multiple change.
+
+This allows comparison between:
+
+- cheap slow growers;
+- high-quality compounders;
+- cyclical recoveries;
+- growth companies;
+- financials;
+- capital-return stories.
+
+---
+
+# 11. SCENARIO RETURNS NEED TO BECOME MORE COMPARABLE
+
+Different dossiers use different modelling styles.
+
+This is natural.
+
+A bank should not be valued like SaaS.
+
+A REIT should not be valued like a semiconductor company.
+
+But the final portfolio needs a **common output schema**.
+
+For every stock produce:
+
+### Forward return distribution
+
+**Bear**
+- annualised return;
+- peak fundamental impairment;
+- probability estimate;
+- key assumptions.
+
+**Base**
+- annualised return;
+- probability estimate;
+- key assumptions.
+
+**Bull**
+- annualised return;
+- probability estimate;
+- key assumptions.
+
+Plus:
+
+- terminal multiple;
+- starting multiple;
+- percentage of base return coming from multiple expansion;
+- annualised operating growth;
+- expected dividends;
+- expected buyback/dilution contribution;
+- expected FCF/earnings growth;
+- uncertainty score;
+- forecast reliability score.
+
+## Crucially
+
+A base case relying on:
+
+- 5% earnings growth
+- plus P/E moving from 12x to 22x
+
+should not be treated as equally robust to a base case delivering the same return via:
+
+- 12% owner-earnings growth
+- with the multiple unchanged.
+
+The latter is generally less dependent on market sentiment.
+
+This needs to be visible.
+
+---
+
+# 12. BUILD A "NO MULTIPLE EXPANSION" RETURN COLUMN
+
+This should become one of the most important fields in the system.
+
+For every candidate calculate:
+
+> **Expected annualised shareholder return if the valuation multiple is unchanged.**
+
+That gives:
+
+\[
+R_{\text{constant multiple}}
+\approx
+\text{earnings/FCF/share growth}
++
+\text{dividend yield}
+\]
+
+with appropriate adjustments.
+
+Then compare:
+
+- bear;
+- base;
+- bull;
+- no-multiple-expansion;
+- current valuation percentile.
+
+A stock that only looks attractive because of rerating should receive less conviction.
+
+A stock that can produce attractive returns without rerating deserves more weight.
+
+---
+
+# 13. USE REVERSE DCF CORRECTLY
+
+Reverse DCF is one of the better concepts in the project.
+
+Instead of pretending to know intrinsic value precisely, ask:
+
+> What operating performance must this price imply?
+
+Then compare implied performance with:
+
+- historical delivery;
+- industry economics;
+- management guidance;
+- capacity constraints;
+- competitive position;
+- consensus;
+- analyst's independent forecast.
+
+Keep this.
+
+But improve it.
+
+## Required output for every reverse DCF
+
+Show:
+
+- starting FCF;
+- definition of FCF;
+- treatment of SBC;
+- treatment of leases;
+- net debt;
+- tax rate;
+- WACC/COE;
+- terminal growth;
+- implied revenue growth;
+- implied margin;
+- implied reinvestment needs;
+- implied ROIC;
+- implied share count.
+
+Otherwise implied growth alone can be misleading.
+
+---
+
+# 14. FINANCIAL COMPANIES NEED SECTOR-SPECIFIC ECONOMICS
+
+Banks, insurers, brokers and asset managers should not pass through generic corporate valuation formulas.
+
+For banks:
+
+- ROTCE;
+- CET1;
+- NIM;
+- credit losses;
+- deposit beta;
+- loan growth;
+- tangible book value;
+- capital returns.
+
+For insurers:
+
+- combined ratio;
+- reserve development;
+- catastrophe normalisation;
+- investment income;
+- book value;
+- underwriting cycle.
+
+For asset managers:
+
+- AUM;
+- flows;
+- fee rate;
+- operating leverage;
+- market beta;
+- capital return.
+
+For payment networks:
+
+- volume;
+- cross-border;
+- take rate;
+- incentives;
+- operating leverage.
+
+Continue moving toward sector-specific underwriting.
+
+---
+
+# 15. SEVERAL CORE ENGINE DEFECTS STILL EXIST IN CURRENT HEAD
+
+The overnight research expansion did **not** repair several earlier technical issues.
+
+These should not become a repo-cleanup project.
+
+They matter because they can distort investment evidence.
+
+## 15.1 Historical share-count logic still contains future dependence
+
+Current `v4/code/b1_panel.py`, around lines 481–482, still uses:
+
+`rolling(13, center=True)`
+
+followed by:
+
+`ffill().bfill()`
+
+inside historical share-count repair.
+
+A centered window can include observations after date `t`.
+
+Backward filling can likewise propagate later information backwards.
+
+This can affect historical market capitalization and consequently valuation ratios.
+
+### Investment implication
+
+The original factor model already has no demonstrated alpha.
+
+Therefore this issue does not invalidate an attractive result—the result was already unattractive.
+
+But it prevents the backtest from meeting the gold standard for PIT methodology.
+
+### Next action
+
+Create a new version of the PIT engine using **causal-only historical operations**.
+
+Do not overwrite the old engine.
+
+Publish:
+
+- old result;
+- corrected result;
+- delta by stock-month;
+- delta by factor rank;
+- delta by CAGR.
+
+---
+
+# 16. THE CUSTOM LEDOIT-WOLF IMPLEMENTATION STILL LOOKS WRONG
+
+`v4/code/b2_risk.py` still contains the earlier custom covariance implementation in which the shrinkage calculation can pin to 1.0.
+
+The project currently acknowledges that this block is superseded for headline portfolio risk and uses sample covariance elsewhere.
+
+That is good.
+
+But the defective/suspect function remains.
+
+### Investment implication
+
+Do not rely on that estimator for portfolio selection.
+
+The next version should add a new, independently validated risk model rather than edit the old file.
+
+Recommended candidates:
+
+- sample covariance;
+- exponentially weighted covariance;
+- factor-model covariance;
+- properly validated Ledoit-Wolf;
+- downside covariance.
+
+Run sensitivity across them.
+
+If portfolio membership changes dramatically depending on covariance method, that itself is important.
+
+---
+
+# 17. FINANCIAL-SCENARIO EQUITY ROLL-FORWARD STILL NEEDS IMPROVEMENT
+
+The financial-company scenario logic still separately changes:
+
+- book equity;
+- share count;
+
+without explicitly modelling the cash paid for share repurchases in the book-equity evolution.
+
+That can overstate book value per remaining share when share count declines.
+
+Again:
+
+do not modify history.
+
+Add a new valuation engine version.
+
+Compare old/new values for every financial company.
+
+---
+
+# 18. FILE-MODIFICATION TIME SHOULD NOT DETERMINE WHICH INVESTMENT VIEW WINS
+
+The current portfolio builder still uses filesystem modification time (`mtime`) to determine precedence among certain diligence views.
+
+This is not economically meaningful.
+
+Copying a file can change modification time.
+
+Restoring backups can change modification time.
+
+### Investment fix
+
+Every analyst opinion should have an explicit immutable record such as:
+
+- analysis ID;
+- ticker;
+- effective date;
+- market-data cutoff;
+- filing cutoff;
+- author/agent;
+- supersedes ID;
+- status.
+
+The portfolio should consume:
+
+> the highest approved version ID
+
+not:
+
+> whichever file has the latest operating-system timestamp.
+
+Again, implement this only in a **new versioned pipeline**.
+
+Do not alter historical releases.
+
+---
+
+# 19. THE CURRENT TEST HARNESS STILL DOES NOT FULLY PROVE CAUSALITY
+
+The B1 test file checks many useful things.
+
+But it still does not fully rebuild historical data from a cutoff and prove invariance to future input changes.
+
+A proper PIT test is:
+
+1. build signals using full dataset;
+2. choose historical date T;
+3. physically remove all records dated after T;
+4. rebuild from raw inputs;
+5. compare every signal at or before T;
+6. require byte-for-byte or tolerance-level equality.
+
+That is the standard.
+
+---
+
+# 20. THE NEW QUARTER-LABEL CHECK IS A GOOD IMPROVEMENT
+
+This is exactly the kind of control the project needs.
+
+Recent audit loops identified repeated problems where real numbers were attached to the wrong quarter.
+
+Examples included:
+
+- TJX;
+- PTC;
+- Labcorp.
+
+The new `lead_quarter_label_check.py` attempts to automate this for calendar-year companies.
+
+Keep it.
+
+Expand it to fiscal-year companies.
+
+At present several holdings are explicitly marked uncheckable because they do not have December fiscal year ends.
+
+The control should eventually understand each company's fiscal calendar.
+
+---
+
+# 21. THE DOSSIER PRE-CHECK STILL SHOWS OPEN ISSUES
+
+The latest `dossier_precheck.json` has no flags for RSG.
+
+Labcorp still shows multiple mechanical issues such as:
+
+- citation-format warnings;
+- guidance-unquoted warnings;
+- entity-scope warnings.
+
+The independent fact checks may resolve the economic question.
+
+But best-in-class means the mechanical checks and research artefacts should agree.
+
+Any current holding with unresolved pre-check findings should trigger:
+
+> review required before increasing the position.
+
+Not necessarily immediate sale.
+
+---
+
+# 22. THE PROJECT HAS FOUND REAL RESEARCH ERRORS — THIS IS ACTUALLY A STRENGTH
+
+The fact-checking process has discovered substantive mistakes.
+
+Examples include:
+
+### RMD
+
+The research quoted FY2027 guidance that apparently did not exist in the cited source and confused full-year versus nine-month values.
+
+Its conviction was reduced.
+
+### GM
+
+Automotive net cash was confused with consolidated cash including GM Financial.
+
+### RJF
+
+Capital ratios and parent debt were mis-scoped.
+
+### LH
+
+One results-table row was assigned to the wrong quarter.
+
+### RSG
+
+A precise supporting growth number could not be traced and was marked accordingly.
+
+This is not evidence that the project is hopeless.
+
+It is evidence that **independent verification is necessary**.
+
+Keep the adversarial fact-check layer.
+
+---
+
+# 23. BUT STOP USING THE PHRASE "FULL CONVICTION" TOO EASILY
+
+All 20 holdings are currently classified full conviction.
+
+Yet:
+
+- only 6 survive every selection ordering;
+- several have relatively high valuation multiples;
+- some have unverified minor facts;
+- the investment selection model has no validated alpha;
+- expected returns depend heavily on analyst assumptions.
+
+Calling every position "full conviction" compresses useful uncertainty.
+
+A better system would have separate dimensions:
+
+### Fundamental quality
+
+0–100
+
+### Valuation attractiveness
+
+0–100
+
+### Forecast confidence
+
+0–100
+
+### Downside confidence
+
+0–100
+
+### Data-quality confidence
+
+0–100
+
+### Portfolio fit
+
+0–100
+
+Then use uncertainty directly in sizing.
+
+---
+
+# 24. DO NOT USE A SIMPLE 1–100 COMPOSITE AS THE FINAL ANSWER
+
+A composite number is useful for sorting.
+
+It becomes dangerous when it hides trade-offs.
+
+A 78 can mean:
+
+- superb company / high valuation;
+
+or:
+
+- mediocre company / extremely cheap;
+
+or:
+
+- high return / high uncertainty.
+
+Those are different investments.
+
+Keep the dimensions visible.
+
+---
+
+# 25. BUILD A TRUE EXPECTED-RETURN ENSEMBLE
+
+Best-in-class equity underwriting rarely trusts one valuation method.
+
+For every stock, calculate at least two independent methods appropriate for the sector.
+
+Examples:
+
+### Ordinary operating companies
+
+1. reverse DCF
+2. forward owner-earnings / earnings-power model
+3. peer/own-history multiple as a sanity check
+
+### Financials
+
+1. excess-return / justified P/TBV
+2. earnings power + payout
+3. peer-normalised valuation
+
+### REITs
+
+1. AFFO/FFO valuation
+2. NAV/cap-rate or peer multiple
+3. dividend-growth/FCF cross-check
+
+### High-growth businesses
+
+1. reverse DCF
+2. scenario unit economics
+3. terminal-margin/growth sensitivity
+
+Then combine them.
+
+But do **not** average blindly.
+
+Weight methods according to applicability and historical reliability.
+
+---
+
+# 26. ADD FORECAST UNCERTAINTY
+
+The missing field in most investment models is:
+
+> How wrong could we be?
+
+For every company estimate a forecast-confidence distribution.
+
+Possible components:
+
+- historical revenue volatility;
+- margin volatility;
+- cyclicality;
+- analyst forecast dispersion;
+- earnings surprise history;
+- business-model stability;
+- leverage;
+- customer concentration;
+- commodity sensitivity;
+- regulatory binary risk;
+- valuation duration.
+
+The expected return of a highly uncertain stock should be shrunk more strongly toward the market prior.
+
+---
+
+# 27. SHRINK ANALYST EXPECTED RETURNS
+
+This is extremely important.
+
+An analyst model saying:
+
+> expected return = 18%
+
+should not automatically feed 18% into portfolio optimisation.
+
+Humans and LLMs overestimate forecast precision.
+
+Use shrinkage:
+
+\[
+\mu_{\text{usable}}
+=
+\lambda \mu_{\text{analyst}}
++
+(1-\lambda)\mu_{\text{prior}}
+\]
+
+where λ depends on forecast quality.
+
+Examples:
+
+- highly predictable company + multiple methods agree → higher λ;
+- cyclical turnaround + wide scenario spread → lower λ;
+- questionable data → very low λ.
+
+This prevents the optimiser from loading aggressively into the most optimistic model.
+
+---
+
+# 28. CREATE A PROSPECTIVE PREDICTION LEDGER
+
+This may be the single most valuable new dataset you can create.
+
+You cannot accurately backtest discretionary AI fundamental research across decades.
+
+But you can start collecting genuine out-of-sample evidence **today**.
+
+For every stock at every research date save immutably:
+
+- market price;
+- expected 1-year return;
+- expected 3-year CAGR;
+- bear/base/bull;
+- forecast revenue;
+- forecast EPS;
+- forecast FCF;
+- probability assumptions;
+- verdict;
+- recommended weight;
+- reason;
+- kill criteria.
+
+Then never change that record.
+
+At:
+
+- 3 months;
+- 6 months;
+- 12 months;
+- 24 months;
+- 36 months
+
+compare predictions with outcomes.
+
+Measure:
+
+- calibration;
+- forecast bias;
+- hit rate;
+- excess return;
+- Brier score;
+- ranking IC;
+- downside prediction;
+- valuation error.
+
+This eventually tells you:
+
+> whether Claude/Codex/ChatGPT fundamental underwriting actually adds alpha.
+
+That evidence is worth far more than another backfilled simulation.
+
+---
+
+# 29. RUN CHAMPION/CHALLENGER PORTFOLIOS
+
+Do not deploy only one methodology.
+
+From the same frozen research snapshot construct several shadow portfolios.
+
+Example:
+
+### Portfolio A — Current v011 method
+
+Control.
+
+### Portfolio B — Expected-return maximiser
+
+Strong return emphasis.
+
+### Portfolio C — Expected return / CVaR
+
+Moderate risk.
+
+### Portfolio D — Quality compounder
+
+High quality + growth + fair price.
+
+### Portfolio E — Value/re-rating
+
+Cheap companies.
+
+### Portfolio F — Market benchmark
+
+SPY / suitable benchmark.
+
+Track all prospectively.
+
+Do not change historical portfolios after observing returns.
+
+After enough data, promote the method that works.
+
+---
+
+# 30. REPLACE SEQUENTIAL TOP-20 SELECTION WITH PORTFOLIO OPTIMISATION
+
+This should be a priority.
+
+Objective:
+
+\[
+\max_w
+E[\log(W_T)]
+\]
+
+or, more practically:
+
+\[
+\max_w
+\left(
+\mu'w
+-
+\lambda \cdot CVaR
+-
+\gamma \cdot \text{estimation uncertainty}
+\right)
+\]
+
+subject to moderate-risk constraints.
+
+Potential constraints:
+
+- 12–25 holdings;
+- no leverage;
+- single position ≤10%;
+- ordinary position floor 2–3%;
+- sector ≤30%;
+- sub-industry ≤15%;
+- no company with unresolved major accounting/data issue;
+- no position whose bear case implies unacceptable permanent impairment;
+- liquidity appropriate for capital;
+- total portfolio beta not mechanically forced low.
+
+The exact risk limits should be empirically stress-tested rather than arbitrary.
+
+---
+
+# 31. WHAT "MODERATE RISK" SHOULD MEAN HERE
+
+For this mandate, moderate risk should **not** mean:
+
+- 75% T-bills;
+- trying to guarantee <15% drawdown;
+- minimising volatility at all costs.
+
+That would be a low-risk allocation.
+
+A moderate-risk equity mandate should recognise:
+
+- temporary 20–30% drawdowns can happen;
+- a major equity crisis can produce materially larger temporary losses;
+- no leverage;
+- diversification;
+- no single thesis should threaten the portfolio;
+- permanent capital impairment matters more than normal volatility.
+
+The next agent should produce an empirical risk frontier rather than assume the answer.
+
+---
+
+# 32. DO NOT CONFUSE VOLATILITY WITH RISK
+
+The current weighting gives a large benefit to low-volatility shares.
+
+But a low-vol stock can still have:
+
+- duration risk;
+- regulatory risk;
+- valuation risk;
+- structural decline;
+- leverage;
+- permanent impairment.
+
+A volatile high-quality compounder may have greater long-term wealth potential.
+
+Use:
+
+- drawdown;
+- CVaR;
+- balance-sheet stress;
+- earnings impairment;
+- valuation duration;
+- idiosyncratic downside;
+- correlation;
+
+in addition to volatility.
+
+---
+
+# 33. INCLUDE AN EXPLICIT OPPORTUNITY-COST TEST
+
+Every current holding should be compared with its best available replacement.
+
+For each position:
+
+> If I sold this stock today, what is the single best use of that capital?
+
+Compare:
+
+- expected return;
+- downside;
+- quality;
+- confidence;
+- correlation.
+
+This is much better than simply asking whether the current holding remains "good."
+
+A holding should survive because it remains better than alternatives.
+
+---
+
+# 34. THE NEAR-MISS LIST IS NOW VERY VALUABLE
+
+Current near-miss names include high-quality companies such as:
+
+- MSCI
+- WTW
+- Visa
+- Raymond James
+- Exelon
+- Cardinal Health
+- PPG
+- Cencora
+- Snap-on
+- Southern
+- Arch Capital
+- GM
+- Wells Fargo
+- TE Connectivity
+- Duke
+- Darden
+- Allegion
+- M&T
+- Berkshire
+- Ameriprise
+
+The correct next question is not:
+
+> Why were they excluded?
+
+The correct question is:
+
+> Does replacing any current holding with any of these candidates increase expected portfolio compound return without violating moderate-risk constraints?
+
+Run that test directly.
+
+---
+
+# 35. HIGH-MULTIPLE HOLDINGS NEED SPECIAL MONITORING
+
+The project identifies roughly:
+
+- VEEV ~28x
+- RSG ~27x
+- MA ~26x
+
+as higher-multiple holdings.
+
+Do not remove them simply because they are expensive.
+
+But measure:
+
+### What return do they produce if their multiple contracts?
+
+For example:
+
+- −20% multiple compression;
+- −30%;
+- return to historical median;
+- no multiple expansion.
+
+The higher the valuation duration, the more operating delivery matters.
+
+---
+
+# 36. CURRENT PORTFOLIO CONCENTRATIONS DESERVE DELIBERATE REVIEW
+
+Financials are exactly at the **25% cap** and five-name count limit.
+
+That means the constraint is binding.
+
+A binding constraint is an economic signal:
+
+> the unrestricted optimiser/process would apparently hold more financial exposure.
+
+Determine whether the cap is:
+
+- preventing undesirable concentration;
+
+or:
+
+- suppressing attractive expected return.
+
+Do not automatically raise it.
+
+But test:
+
+- 20%;
+- 25%;
+- 30%;
+- unrestricted.
+
+Likewise test other sector caps.
+
+---
+
+# 37. CORRELATION SHOULD MATTER BEFORE SELECTION, NOT ONLY AFTER
+
+Currently much diversification is implemented through sector/sub-industry rules.
+
+Useful—but crude.
+
+Two companies in different sectors can be economically highly correlated.
+
+Two in the same sector can have different drivers.
+
+Use return and fundamental covariance to select the combination.
+
+Possible factor exposures:
+
+- market;
+- value;
+- quality;
+- momentum;
+- rates;
+- oil;
+- credit;
+- USD;
+- consumer;
+- AI capex;
+- residential;
+- industrial cycle.
+
+---
+
+# 38. ADD MACRO SENSITIVITY, BUT DO NOT MACRO-TRADE THE PORTFOLIO
+
+For every stock estimate directional sensitivity to:
+
+- rates;
+- inflation;
+- recession;
+- USD;
+- energy;
+- credit spreads;
+- unemployment;
+- capex cycle.
+
+This is for concentration control—not macro forecasting.
+
+---
+
+# 39. TAXES AND IMPLEMENTATION MATTER TO REAL WEALTH
+
+For a UAE-based non-US investor, the project already flags:
+
+- US dividend withholding;
+- US estate-tax exposure for directly held US situs securities.
+
+This can materially affect realised wealth.
+
+Do not let tax dominate stock selection.
+
+But optimise **after-tax expected wealth**, not only pre-tax returns.
+
+Confirm personal circumstances with a qualified adviser before implementation.
+
+---
+
+# 40. DO NOT LET AI CONSENSUS BECOME FAKE INDEPENDENCE
+
+Running five agents using:
+
+- the same data;
+- same prompt;
+- same language model family;
+- same valuation assumptions
+
+does not create five independent opinions.
+
+For real independence:
+
+### Agent A
+primary-source forensic fundamental analyst
+
+### Agent B
+valuation sceptic
+
+### Agent C
+bear / short-seller
+
+### Agent D
+quant / base-rate analyst
+
+### Agent E
+portfolio optimiser
+
+### Agent F
+source-verification auditor
+
+Hide upstream verdicts where possible.
+
+Then reconcile.
+
+---
+
+# 41. USE BLIND REVIEW
+
+The valuation agent should not know whether:
+
+- the stock is currently held;
+- another agent said INCLUDE;
+- management is a "favourite";
+- the quant rank is high.
+
+Likewise the bear agent should work independently.
+
+This reduces anchoring.
+
+---
+
+# 42. REMOVE NUMERIC "AUDIT SCORE MAXIMISATION" FROM AGENT INCENTIVES
+
+Never tell an investment agent:
+
+> get the audit score above 95.
+
+Instead say:
+
+> discover whether the current recommendation is wrong.
+
+The audit score can be calculated afterwards.
+
+Agents should be rewarded for identifying disconfirming evidence.
+
+---
+
+# 43. THE REPOSITORY MUST NOW BE STRICTLY APPEND-ONLY
+
+This is a user requirement.
+
+From now forward:
+
+## Prohibited
+
+- deleting any existing file;
+- replacing a historical release;
+- editing a completed dossier in place;
+- modifying a completed report;
+- changing an old recommendation;
+- rewriting prior mistakes;
+- removing an old artefact.
+
+## Required
+
+All work goes into a new version.
+
+For example:
+
+`versions/v012_2026-09-27_<author>/`
+
+If a prior dossier is wrong:
+
+do **not** edit:
+
+`v4/dossiers/XYZ.md`
+
+Instead create:
+
+`versions/v012.../dossiers/XYZ_v2.md`
+
+with:
+
+- previous version reference;
+- correction;
+- reason;
+- impact;
+- date.
+
+If an old portfolio is wrong:
+
+keep it.
+
+Publish a new portfolio.
+
+This preserves genuine research history and enables prospective evaluation.
+
+### Important historical exception
+
+The latest overnight commit itself removed:
+
+`v4/release/Claude_v4_Research_Release_2026-09-26.zip`
+
+That violates the policy now being imposed.
+
+Do not repeat this.
+
+Do not delete anything else.
+
+---
+
+# 44. WHAT I WOULD DO NEXT — IN ORDER
+
+## Priority 1 — Freeze v011 as historical evidence
+
+Do not change it.
+
+Treat it as the current baseline.
+
+---
+
+## Priority 2 — Create a new investment mandate file
+
+Create a new append-only version defining:
+
+### Objective
+
+Maximise long-term compound wealth.
+
+### Risk
+
+Moderate.
+
+### Not the objective
+
+- minimum volatility;
+- 15% guaranteed drawdown ceiling;
+- maximum audit score;
+- maximum number of researched companies;
+- maximum probability of positive return.
+
+### Constraints
+
+No leverage unless explicitly authorised.
+
+Diversified equity portfolio.
+
+Reasonable single-name and sector limits.
+
+---
+
+## Priority 3 — Re-underwrite the current 20 plus the best 30–50 alternatives
+
+Do not research all 500 again.
+
+Focus on:
+
+- 20 holdings;
+- first 20 near misses;
+- high-quality mega-cap compounders;
+- any stocks with unusually high expected return;
+- any materially changed companies.
+
+---
+
+## Priority 4 — Standardise expected-return modelling
+
+Every company must output a comparable return bridge.
+
+---
+
+## Priority 5 — Create the prospective prediction ledger
+
+This is essential.
+
+---
+
+## Priority 6 — Replace lexicographic selection with robust portfolio optimisation
+
+Use the full eligible universe simultaneously.
+
+---
+
+## Priority 7 — Build a moderate-risk efficient frontier
+
+Show:
+
+- expected return;
+- beta;
+- volatility;
+- CVaR;
+- crisis drawdown;
+- sector concentration;
+- effective bets.
+
+Select from the frontier.
+
+---
+
+## Priority 8 — Challenge the current portfolio
+
+The next agent must start with the assumption:
+
+> v011 may be wrong.
+
+It should try to find a better combination.
+
+---
+
+## Priority 9 — Generate a v012 investment release
+
+Do not overwrite anything.
+
+---
+
+# 45. THE MASTER PROMPT TO GIVE ANY AI THAT CAN ACCESS THIS REPOSITORY
+
+The following prompt is intentionally about **improving the investments**, not fixing software for its own sake.
+
+Copy-paste it in full.
+
+---
+
+# MASTER INVESTMENT-IMPROVEMENT PROMPT
+
+You have access to my investment-research repository:
+
+`https://github.com/aarshvir/investment-and-trading-v1`
+
+## ABSOLUTE OBJECTIVE
+
+Your job is **not to improve the repository, code quality, documentation, audit score, or presentation as ends in themselves**.
+
+Your job is to improve my **actual investment decisions**.
+
+The objective is:
+
+> **Maximise my long-term compound wealth / investment returns while taking moderate risk.**
+
+I am **not** asking for a low-risk portfolio.
+
+Do not optimise for minimum volatility, maximum cash/T-bill allocation, a tiny drawdown target, maximum probability of a positive year, or a high AI audit score.
+
+I am willing to accept normal equity volatility and meaningful temporary drawdowns if the expected long-term return justifies them.
+
+However, do not take reckless risk:
+
+- no leverage unless I explicitly authorise it;
+- avoid single-thesis portfolio dependence;
+- avoid catastrophic permanent-loss risk;
+- diversify intelligently;
+- distinguish temporary volatility from fundamental impairment.
+
+## IMMUTABILITY / VERSIONING RULE — NON-NEGOTIABLE
+
+The repository is now **strictly append-only**.
+
+### Never:
+
+- delete any file;
+- modify an existing file;
+- overwrite an existing file;
+- replace an existing dossier;
+- rewrite an old recommendation;
+- change an old release;
+- remove an old error;
+- rewrite history.
+
+Even if an old file is wrong, **leave it exactly where it is**.
+
+### Instead:
+
+create new files with new version numbers.
+
+Every new research cycle must create a new versioned release, for example:
+
+`versions/v012_YYYY-MM-DD_<author>/`
+
+or the next unused version.
+
+Corrections must explicitly say:
+
+- what old file/version they supersede intellectually;
+- what was wrong;
+- what changed;
+- why;
+- investment impact.
+
+Do not modify `LATEST_HANDOFF.md` or any old pointer if doing so violates this append-only requirement. Create a new versioned handoff/pointer instead.
+
+History must remain fully auditable.
+
+## FIRST TASK — READ BEFORE THINKING
+
+Before giving me an answer:
+
+1. inventory the complete repository;
+2. identify the latest completed numbered release;
+3. read the latest releases from each independent workstream;
+4. read the complete current investment methodology;
+5. read the current portfolio;
+6. read current eligible and near-miss names;
+7. read the backtest evidence;
+8. read the valuation methodology;
+9. read risk methodology;
+10. read independent audit findings;
+11. read error logs;
+12. read current holding dossiers;
+13. read the strongest alternative-candidate dossiers;
+14. read prior recommendations and corrections;
+15. identify unresolved factual or methodological issues.
+
+Do not assume the latest recommendation is best because it is latest.
+
+Do not assume Claude, Codex, GPT, or any other prior agent is correct.
+
+Treat all prior conclusions as evidence, not authority.
+
+## IMPORTANT EXISTING EVIDENCE
+
+The repository has already established that the original mechanical Q/V/M/S stock-selection model did not demonstrate persistent alpha versus the S&P 500 on point-in-time data.
+
+Therefore:
+
+- do not use its rank as proof of future outperformance;
+- do not assume a high quant rank means a stock is superior;
+- do not discard an excellent company merely for having a low model rank;
+- do not pretend that the factor backtest validates the analyst-curated portfolio.
+
+The current discretionary analyst-selected portfolio has **not** yet demonstrated prospective alpha.
+
+Be explicit about that.
+
+## CURRENT PROBLEM TO SOLVE
+
+The latest process has roughly:
+
+- 336 companies fully researched;
+- 214 eligible;
+- 20 portfolio slots.
+
+Only a small subset of the selected portfolio remains selected under every reasonable selection ordering.
+
+Therefore the main problem is no longer breadth of research.
+
+The main problem is:
+
+> **selecting and weighting the best combination of investments from a large set of acceptable companies.**
+
+Do not solve this using an arbitrary sequential top-20 sort if a portfolio-level solution is possible.
+
+## DEFINE THE INVESTMENT MANDATE
+
+Interpret "moderate risk" as an equity-growth mandate, not capital preservation.
+
+Do not force a 15–20% hard drawdown ceiling if doing so requires a low-risk allocation.
+
+Instead:
+
+1. construct an empirical risk/return frontier;
+2. show me the trade-off;
+3. select the portfolio that maximises credible expected long-term wealth while remaining within a genuinely moderate-risk region.
+
+Use:
+
+- expected geometric return;
+- drawdown;
+- CVaR;
+- beta;
+- portfolio volatility;
+- correlation;
+- concentration;
+- permanent-loss risk;
+- balance-sheet risk.
+
+Do not use volatility alone.
+
+## REASSESS THE CURRENT PORTFOLIO FROM ZERO
+
+Do not preserve existing holdings merely because they are held.
+
+For every current position ask:
+
+> If I had cash today and owned none of this stock, would I buy it at this price instead of every available alternative?
+
+For every holding identify its strongest replacement candidate.
+
+Calculate the opportunity cost of continuing to own it.
+
+A current holding should survive only if it remains one of the best uses of capital.
+
+## CANDIDATE UNIVERSE
+
+Start with:
+
+1. current 20 holdings;
+2. at least the first 30–50 eligible near-miss names;
+3. major high-quality compounders that the current portfolio excludes;
+4. stocks whose expected return or valuation changed materially;
+5. any business where prior analysis had a data or valuation defect.
+
+Do not automatically redo full research on all 500 companies unless new information justifies it.
+
+Research marginally important decisions deeply.
+
+## FOR EVERY CANDIDATE BUILD A STANDARD INVESTMENT RECORD
+
+Produce:
+
+### A. Business quality
+
+- moat;
+- pricing power;
+- recurring revenue;
+- reinvestment runway;
+- ROIC/ROE;
+- incremental returns on capital;
+- market structure;
+- customer concentration;
+- cyclicality.
+
+### B. Growth
+
+- historical organic growth;
+- expected organic growth;
+- acquisitions separately;
+- margin trajectory;
+- share-count trajectory;
+- consensus versus your own forecast;
+- TAM only if economically useful.
+
+### C. Financial quality
+
+- GAAP earnings;
+- owner earnings;
+- cash conversion;
+- SBC;
+- capitalised costs;
+- working capital;
+- leverage;
+- maturities;
+- dilution;
+- acquisitions;
+- contingent liabilities.
+
+### D. Valuation
+
+Use at least two independent methods appropriate to the company.
+
+Possible methods:
+
+- reverse DCF;
+- explicit DCF;
+- owner-earnings yield;
+- earnings-power valuation;
+- justified P/TBV;
+- FFO/AFFO;
+- peer valuation;
+- historical valuation.
+
+Do not use inappropriate generic methods.
+
+### E. Expected-return bridge
+
+For bear/base/bull show:
+
+- starting earnings/FCF yield;
+- revenue growth;
+- margin change;
+- EPS/FCF/share growth;
+- buyback/dilution contribution;
+- dividend contribution;
+- starting multiple;
+- terminal multiple;
+- annualised shareholder return.
+
+Also calculate:
+
+> **Return assuming NO multiple expansion.**
+
+This is mandatory.
+
+### F. Price-implied expectations
+
+What does today's price require?
+
+- growth;
+- margin;
+- ROIC;
+- FCF;
+- terminal economics.
+
+Compare implied assumptions with realistic delivery.
+
+### G. Risk
+
+- balance sheet;
+- disruption;
+- regulation;
+- litigation;
+- cyclicality;
+- key-person/customer dependence;
+- valuation duration;
+- permanent impairment.
+
+### H. Kill criteria
+
+3–5 measurable criteria.
+
+### I. Confidence
+
+Do not simply say high/medium/low.
+
+Estimate confidence in:
+
+- revenue forecast;
+- margin forecast;
+- balance-sheet forecast;
+- valuation;
+- total-return forecast.
+
+## SHRINK EXPECTED RETURNS
+
+Do not feed raw analyst forecasts directly into optimisation.
+
+Use a prior/shrinkage framework.
+
+High-confidence, stable-business forecasts can retain more of the analyst forecast.
+
+Highly uncertain forecasts must be pulled more strongly toward an appropriate market/sector prior.
+
+Document the shrinkage method.
+
+## PENALISE MULTIPLE-EXPANSION DEPENDENCE
+
+Two stocks with the same headline expected return are not equally attractive if:
+
+Stock A gets most return from operating growth and cash distributions.
+
+Stock B gets most return from a P/E rerating.
+
+Explicitly measure:
+
+`% of base-case return dependent on valuation multiple change`
+
+Penalise excessive dependence.
+
+## PORTFOLIO CONSTRUCTION
+
+Do not simply rank stocks and walk down the list.
+
+Optimise the portfolio jointly.
+
+Consider an objective such as:
+
+`expected geometric return – risk penalty – estimation-error penalty`
+
+or:
+
+`max expected long-term CAGR subject to CVaR/drawdown/concentration constraints`
+
+Run several methods and compare stability.
+
+Portfolio constraints should be moderate, not low-risk.
+
+Suggested starting ranges to test rather than blindly impose:
+
+- 12–25 stocks;
+- individual maximum 8–10%;
+- sector maximum 25–30%;
+- sub-industry maximum ~15%;
+- no leverage;
+- no unresolved critical factual defect;
+- avoid excessive hidden factor concentration.
+
+Test sensitivity around every constraint.
+
+## DO NOT AUTOMATICALLY USE INVERSE-VOL WEIGHTING
+
+Treat inverse volatility as one challenger.
+
+Compare it with:
+
+- equal weight;
+- return/confidence weighting;
+- risk-adjusted expected return;
+- CVaR optimisation;
+- robust mean-variance;
+- constrained Kelly / fractional Kelly;
+- risk parity.
+
+A lower-volatility stock should not receive a larger weight merely because it moves less if its expected return is materially inferior.
+
+## TEST PORTFOLIO BETA
+
+The latest all-stock portfolio has a relatively low beta.
+
+Run portfolios across a sensible beta range.
+
+For example:
+
+- ~0.6
+- ~0.75
+- ~0.9
+- ~1.0
+- ~1.1
+
+Then show:
+
+- expected return;
+- drawdown;
+- CVaR;
+- worst historical stress;
+- concentration.
+
+Do not choose beta by ideology.
+
+Choose based on expected wealth versus risk.
+
+## BUILD AN EFFICIENT FRONTIER
+
+Show me multiple feasible portfolios.
+
+At minimum:
+
+### Portfolio 1 — Current method
+Control.
+
+### Portfolio 2 — Return-maximising moderate risk
+Primary candidate.
+
+### Portfolio 3 — Quality compounder
+Higher durability.
+
+### Portfolio 4 — Lower-risk reference
+For comparison only.
+
+For each show:
+
+- holdings;
+- weights;
+- expected CAGR;
+- bear/base/bull;
+- no-rerating CAGR;
+- volatility;
+- beta;
+- CVaR;
+- crisis drawdowns;
+- sector exposures;
+- effective bets;
+- valuation;
+- turnover;
+- tax drag.
+
+Then explain why the recommended moderate-risk portfolio has the highest credible wealth-building potential.
+
+## RUN REPLACEMENT ANALYSIS
+
+For each current holding:
+
+`Current holding vs best replacement`
+
+Compare:
+
+- expected return;
+- return without rerating;
+- bear case;
+- forecast confidence;
+- quality;
+- correlation;
+- portfolio contribution.
+
+Show explicit KEEP / REPLACE / REDUCE / INCREASE candidates.
+
+These are research recommendations, not trade execution.
+
+## PROSPECTIVE VALIDATION — MANDATORY
+
+Create a new immutable prediction ledger.
+
+For every research date and candidate record:
+
+- timestamp;
+- market price;
+- forecast 1y return;
+- forecast 3y CAGR;
+- revenue forecasts;
+- EPS/FCF forecasts;
+- bear/base/bull;
+- verdict;
+- recommended weight;
+- forecast confidence.
+
+Never alter historical predictions.
+
+At later dates score:
+
+- forecast error;
+- calibration;
+- rank IC;
+- Brier score;
+- excess return;
+- downside accuracy.
+
+This becomes the real evidence for whether AI fundamental research adds value.
+
+## CHAMPION / CHALLENGER PROCESS
+
+Maintain multiple prospective shadow portfolios.
+
+Do not rewrite them retrospectively.
+
+Compare future realised returns.
+
+Candidate methods:
+
+- current v011 method;
+- robust return optimiser;
+- quality-growth;
+- valuation;
+- quant factor;
+- benchmark.
+
+Only promote a strategy after genuine out-of-sample evidence.
+
+## INDEPENDENT AGENTS
+
+Use genuinely different roles:
+
+1. primary-source analyst;
+2. forensic accountant;
+3. valuation analyst;
+4. bearish / short-style challenger;
+5. quant/base-rate analyst;
+6. portfolio optimiser;
+7. independent source auditor.
+
+Do not show each agent the previous agent's verdict before independent work is complete.
+
+Avoid consensus anchoring.
+
+## DO NOT OPTIMISE FOR AUDIT SCORES
+
+Do not try to get "95+".
+
+Audit scores are quality gates only.
+
+The investment objective is wealth.
+
+A highly documented low-return portfolio is not superior to a less comfortable portfolio with a better supported expected return, provided moderate-risk constraints are satisfied.
+
+## KNOWN TECHNICAL ISSUES TO VERIFY IN A NEW VERSION
+
+Do not edit the old implementation.
+
+Independently verify whether the following current-version issues materially affect investment evidence:
+
+1. historical share-count repair using centered rolling windows / backward fill;
+2. custom Ledoit-Wolf shrinkage implementation;
+3. financial-company book-equity/share-count scenario mechanics;
+4. filesystem `mtime` being used to choose analyst precedence;
+5. historical PIT invariance tests;
+6. any unresolved quarter-label / entity-scope issues;
+7. alignment between analyst-corrected scenarios and final portfolio inputs.
+
+If an issue matters:
+
+create a **new versioned implementation/output**, quantify the impact, and preserve the old result.
+
+## CURRENT REPOSITORY IS APPEND-ONLY
+
+Again:
+
+**DO NOT MODIFY OR DELETE ANY EXISTING FILE.**
+
+New analysis only.
+
+New version only.
+
+When complete, create a new version higher than the latest existing one.
+
+Include:
+
+- parent release IDs;
+- exact data cutoff;
+- exact methodology;
+- all new files;
+- change log;
+- current portfolio;
+- replacement analysis;
+- risk frontier;
+- forecast ledger;
+- unresolved items.
+
+## REQUIRED FINAL ANSWER TO ME
+
+Give me an investment decision memo containing:
+
+1. **What the current portfolio is trying to achieve.**
+2. **What you think is wrong or suboptimal in the current investments.**
+3. **Which current holdings you would keep, increase, reduce, or replace and the evidence—not merely a score.**
+4. **The strongest alternatives.**
+5. **Your proposed moderate-risk portfolio and weights.**
+6. **Expected return decomposition for every holding.**
+7. **Portfolio bear/base/bull expected outcomes.**
+8. **No-multiple-expansion expected return.**
+9. **Key risks and kill criteria.**
+10. **What could make your recommendation wrong.**
+11. **Comparison against v011.**
+12. **Comparison against an S&P 500 benchmark.**
+13. **What evidence is proven versus assumed.**
+14. **A 30-day, 90-day and 12-month monitoring plan.**
+15. **A new append-only versioned release.**
+
+Do not tell me the old portfolio is good merely because prior agents approved it.
+
+Do not maximise defensiveness.
+
+Do not promise returns.
+
+Do not manufacture confidence.
+
+Try to **beat the current investment decisions through better expected-return underwriting and better portfolio construction**, while remaining inside a genuinely moderate-risk mandate.
+
+---
+
+# 46. WHAT A BEST-IN-CLASS END STATE LOOKS LIKE
+
+The final system should have five layers.
+
+## Layer 1 — Truth
+
+Verified financial and market data.
+
+## Layer 2 — Underwriting
+
+Company-specific operating forecasts and valuation.
+
+## Layer 3 — Calibration
+
+How much confidence should we place in those forecasts?
+
+## Layer 4 — Portfolio construction
+
+Which combination maximises expected wealth for the risk budget?
+
+## Layer 5 — Learning
+
+Did our prior forecasts work?
+
+At present the project is strong in Layers 1 and 2.
+
+It is improving in Layer 4.
+
+It remains weak in Layers 3 and 5.
+
+Those are now the highest-value areas.
+
+---
+
+# 47. MY CURRENT VIEW OF v011
+
+I would describe v011 as:
+
+> **A substantially better-researched equity portfolio than earlier versions, but still a discretionary portfolio whose exact membership is too sensitive to ranking/tie-breaking rules and whose construction appears more defensive than the user's stated return-maximising moderate-risk mandate requires.**
+
+The key evidence is:
+
+- 214 eligible stocks;
+- only 20 selected;
+- only 6 robust to all tested selection orderings;
+- portfolio beta ~0.59;
+- inverse-volatility sizing;
+- original quant screen has no proven alpha;
+- analyst route now determines every current holding;
+- analyst route itself has no prospective alpha record yet.
+
+That should determine the direction of v012.
+
+---
+
+# 48. PRIORITIES FOR v012
+
+If I had to reduce this audit to ten instructions:
+
+1. **Do not research another 200 companies.**
+2. **Do not optimise an audit score.**
+3. **Do not automatically preserve v011 holdings.**
+4. **Do not use inverse volatility as the dominant sizing logic.**
+5. **Standardise expected-return models.**
+6. **Penalise return that depends on multiple expansion.**
+7. **Optimise the portfolio jointly over the eligible universe.**
+8. **Run an explicit moderate-risk efficient frontier.**
+9. **Start a prospective immutable prediction ledger.**
+10. **Publish everything as a new append-only version; never delete or alter history.**
+
+---
+
+# 49. FINAL INVESTMENT PRINCIPLE
+
+The entire system should be built around one question:
+
+> **For every dollar of risk I am willing to take, where is the highest credible long-term compounding opportunity available today?**
+
+Not:
+
+> Which stock has the highest quant score?
+
+Not:
+
+> Which portfolio has the lowest volatility?
+
+Not:
+
+> Which analysis gets a 95/100 audit score?
+
+Not:
+
+> Which AI sounds most confident?
+
+Not:
+
+> Which portfolio has the fewest uncomfortable drawdowns?
+
+The goal is:
+
+> **Maximum sustainable compounding with controlled—not minimised—risk.**
+
+That is the standard the next version should meet.

@@ -1,0 +1,481 @@
+{
+ "register": [
+  [
+   "B1X",
+   "Blind re-implementation of the whole backtest",
+   "Matches B1 within 0.04 pts/yr; live-rank correlation 0.976",
+   "outputs/b1x_report.md"
+  ],
+  [
+   "Daily drawdown check",
+   "Daily worst falls of the top 30 and the sleeve rule, without B1's code",
+   "−43.7% vs −44.4%; −41.8% vs −41.7%; same day (23 Mar 2020)",
+   "outputs/lead_check_daily_dd.json"
+  ],
+  [
+   "V1X",
+   "Valuation inputs and methods of the Loop-1 holdings, from SEC filings",
+   "261 of 297 checks pass (87.9%); no verdict or base-case sign changes",
+   "outputs/v1x_verification.md"
+  ],
+  [
+   "V2R",
+   "REIT funds from operations rebuilt from filings",
+   "HST: attractive → fair; FRT: attractive → fair; UDR: attractive → attractive; PSA: fair → fair",
+   "outputs/v2r_reit_valuation.md"
+  ],
+  [
+   "Q01–Q15 triage",
+   "Quick research pass on every S&P 500 company without a dossier: quality, growth, red flags, price vs growth",
+   "455 scored, 296 advanced to full-diligence queue",
+   "outputs/Q*_triage.json"
+  ],
+  [
+   "Diligence wave 1",
+   "Full SEC-filing diligence of the next names in the pre-committed order (verdict, reverse DCF, kill criteria)",
+   "45 names researched; 250 still queued after this wave",
+   "data/full_diligence_wave1.json"
+  ],
+  [
+   "Diligence wave 2",
+   "Full SEC-filing diligence of the next names in the pre-committed order (verdict, reverse DCF, kill criteria)",
+   "45 names researched; 205 still queued after this wave",
+   "data/full_diligence_wave2.json"
+  ],
+  [
+   "Diligence wave 3",
+   "Full SEC-filing diligence of the next names in the pre-committed order (verdict, reverse DCF, kill criteria)",
+   "45 names researched; 160 still queued after this wave",
+   "data/full_diligence_wave3.json"
+  ],
+  [
+   "Diligence wave 4",
+   "Full SEC-filing diligence of the next names in the pre-committed order (verdict, reverse DCF, kill criteria)",
+   "45 names researched; 114 still queued after this wave",
+   "data/full_diligence_wave4.json"
+  ],
+  [
+   "Diligence wave 5",
+   "Full SEC-filing diligence of the next names in the pre-committed order (verdict, reverse DCF, kill criteria)",
+   "45 names researched; 68 still queued after this wave",
+   "data/full_diligence_wave5.json"
+  ],
+  [
+   "Diligence wave 6",
+   "Full SEC-filing diligence of the next names in the pre-committed order (verdict, reverse DCF, kill criteria)",
+   "45 names researched; 23 still queued after this wave",
+   "data/full_diligence_wave6.json"
+  ],
+  [
+   "Diligence wave 7",
+   "Full SEC-filing diligence of the next names in the pre-committed order (verdict, reverse DCF, kill criteria)",
+   "23 names researched; 0 still queued after this wave",
+   "data/full_diligence_wave7.json"
+  ],
+  [
+   "DA series total (DA4–DA20)",
+   "All independent dossier fact-checks against SEC filings, cumulative",
+   "397 facts: 349 pass, 20 minor, 20 fail (every fail corrected in its dossier), 8 unverifiable",
+   "outputs/da*_factcheck.json"
+  ],
+  [
+   "DA4",
+   "Load-bearing dossier facts (6 holdings, 4 excluded names) against SEC filings",
+   "52 facts: 50 pass, 1 minor, 0 fail, 1 unverifiable",
+   "outputs/da4_factcheck.md"
+  ],
+  [
+   "DA5",
+   "Load-bearing dossier facts of the 8 holdings no auditor had checked",
+   "40 facts: 36 pass, 1 minor, 1 fail, 2 unverifiable",
+   "outputs/da5_factcheck.md"
+  ],
+  [
+   "DA6",
+   "Load-bearing dossier facts of BKNG, BR, BX, CMCSA, DG, EG, NOW against SEC filings",
+   "27 facts: 23 pass, 1 minor, 2 fail, 1 unverifiable",
+   "outputs/da6_factcheck.md"
+  ],
+  [
+   "DA7",
+   "Load-bearing dossier facts of GM, HBAN, LVS, RJF against SEC filings",
+   "26 facts: 18 pass, 3 minor, 5 fail, 0 unverifiable",
+   "outputs/da7_factcheck.md"
+  ],
+  [
+   "DA8",
+   "Load-bearing dossier facts of ADP, AMP, CRH, DOV, PGR against SEC filings",
+   "33 facts: 28 pass, 4 minor, 1 fail, 0 unverifiable",
+   "outputs/da8_factcheck.md"
+  ],
+  [
+   "DA9",
+   "Load-bearing dossier facts of AXP, MA, MSCI against SEC filings",
+   "21 facts: 20 pass, 1 minor, 0 fail, 0 unverifiable",
+   "outputs/da9_factcheck.md"
+  ],
+  [
+   "DA10",
+   "Load-bearing dossier facts of CAH, COR, VEEV against SEC filings",
+   "21 facts: 20 pass, 0 minor, 1 fail, 0 unverifiable",
+   "outputs/da10_factcheck.md"
+  ],
+  [
+   "DA11",
+   "Load-bearing dossier facts of BALL, EXC, STE against SEC filings",
+   "21 facts: 19 pass, 2 minor, 0 fail, 0 unverifiable",
+   "outputs/da11_factcheck.md"
+  ],
+  [
+   "DA12",
+   "Load-bearing dossier facts of GDDY, PPG, USB against SEC filings",
+   "19 facts: 18 pass, 0 minor, 1 fail, 0 unverifiable",
+   "outputs/da12_factcheck.md"
+  ],
+  [
+   "DA13",
+   "Load-bearing dossier facts of BR, GDDY against SEC filings",
+   "3 facts: 1 pass, 1 minor, 1 fail, 0 unverifiable",
+   "outputs/da13_factcheck.md"
+  ],
+  [
+   "DA14",
+   "Load-bearing dossier facts of SO, TJX against SEC filings",
+   "14 facts: 13 pass, 0 minor, 1 fail, 0 unverifiable",
+   "outputs/da14_factcheck.md"
+  ],
+  [
+   "DA15",
+   "Load-bearing dossier facts of BALL, DOV, EXC, MA, SO, STE, USB against SEC filings",
+   "14 facts: 13 pass, 1 minor, 0 fail, 0 unverifiable",
+   "outputs/da15_factcheck.md"
+  ],
+  [
+   "DA16",
+   "Load-bearing dossier facts of ADP, AXP, BR, CAH, HBAN, PGR, PPG against SEC filings",
+   "30 facts: 25 pass, 1 minor, 1 fail, 3 unverifiable",
+   "outputs/da16_factcheck.md"
+  ],
+  [
+   "DA17",
+   "Load-bearing dossier facts of COR, CRH, GDDY, LVS, TJX, VEEV against SEC filings",
+   "29 facts: 28 pass, 0 minor, 0 fail, 1 unverifiable",
+   "outputs/da17_factcheck.md"
+  ],
+  [
+   "DA18",
+   "Load-bearing dossier facts of MCK, PTC, RMD, WEC against SEC filings",
+   "24 facts: 20 pass, 1 minor, 3 fail, 0 unverifiable",
+   "outputs/da18_factcheck.md"
+  ],
+  [
+   "DA19",
+   "Load-bearing dossier facts of LH, RSG against SEC filings",
+   "14 facts: 12 pass, 1 minor, 1 fail, 0 unverifiable",
+   "outputs/da19_factcheck.md"
+  ],
+  [
+   "DA20",
+   "Load-bearing dossier facts of LH, RSG against SEC filings",
+   "9 facts: 5 pass, 2 minor, 2 fail, 0 unverifiable",
+   "outputs/da20_factcheck.md"
+  ],
+  [
+   "C1",
+   "Every number in the report traced to its source file",
+   "331 checked, 331 matched, 0 mismatch (each fixed before release); audited build 2026-09-27T04:39:42",
+   "outputs/c1_consistency.md"
+  ],
+  [
+   "X1",
+   "Claims inherited from Codex's release v005",
+   "23 of 26 confirmed; minor difference 1, not confirmed 1, unverifiable 1",
+   "outputs/x1_v005_verification.md"
+  ],
+  [
+   "Risk re-computation",
+   "Sleeve volatility, tracking error, correlation and risk shares from raw prices",
+   "pass: True",
+   "outputs/lead_check_risk_contrib.json"
+  ],
+  [
+   "D2R",
+   "Re-download of the 408 'no price data' symbols",
+   "Root cause found (retry logic); 0 recovered because the names were acquired and purged; coverage unchanged",
+   "outputs/d2r_report.md"
+  ],
+  [
+   "R3",
+   "UAE implementation and tax facts",
+   "IBKR entity and protection confirmed; fund, withholding and estate-tax facts re-verified; open items labelled",
+   "outputs/r3_implementation_verification.md"
+  ],
+  [
+   "DA1–DA3",
+   "Prices and corporate actions; SEC fundamentals against filing documents; estimates",
+   "See each report for pass rates and fixes",
+   "audit/da1_data_audit.md, da2, da3"
+  ]
+ ],
+ "verification": [
+  {
+   "t": "USB",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (–)",
+   "facts": [
+    "A1 (loop 7)",
+    "A2 (loop 7)",
+    "A3 (loop 7)",
+    "A3 (loop 8)",
+    "DA12: 7 facts, 0 fail",
+    "DA15: 2 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "GDDY",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A1 (loop 7)",
+    "A1 (loop 8)",
+    "A2 (loop 7)",
+    "A2 (loop 8)",
+    "A2 (loop 9)",
+    "DA12: 6 facts, 0 fail",
+    "DA13: 1 facts, 0 fail",
+    "DA17: 5 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "VEEV",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "DA10: 7 facts, 0 fail",
+    "DA17: 5 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "ADP",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A1 (loop 4)",
+    "A2 (loop 4)",
+    "A2 (loop 5)",
+    "A3 (loop 5)",
+    "DA16: 5 facts, 1 fail (corrected in dossier)",
+    "DA8: 7 facts, 1 fail (corrected in dossier)"
+   ]
+  },
+  {
+   "t": "MA",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A1 (loop 6)",
+    "A2 (loop 6)",
+    "DA15: 2 facts, 0 fail",
+    "DA9: 7 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "TJX",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "fair (consistent)",
+   "facts": [
+    "A1 (loop 8)",
+    "A1 (loop 9)",
+    "A2 (loop 8)",
+    "A3 (loop 8)",
+    "DA14: 7 facts, 1 fail (corrected in dossier)",
+    "DA17: 5 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "CRH",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (–)",
+   "facts": [
+    "A1 (loop 3)",
+    "A2 (loop 3)",
+    "A2 (loop 5)",
+    "A3 (loop 5)",
+    "A3 (loop 6)",
+    "DA17: 5 facts, 0 fail",
+    "DA8: 7 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "LVS",
+   "v1": "attractive",
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A1 (loop 6)",
+    "A2 (loop 3)",
+    "A2 (loop 5)",
+    "DA17: 4 facts, 0 fail",
+    "DA7: 7 facts, 1 fail (corrected in dossier)"
+   ]
+  },
+  {
+   "t": "BR",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A2 (loop 3)",
+    "A3 (loop 6)",
+    "A3 (loop 7)",
+    "A3 (loop 8)",
+    "DA13: 2 facts, 1 fail (corrected in dossier)",
+    "DA16: 4 facts, 0 fail",
+    "DA6: 4 facts, 1 fail (corrected in dossier)"
+   ]
+  },
+  {
+   "t": "STE",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (–)",
+   "facts": [
+    "A3 (loop 7)",
+    "DA11: 7 facts, 0 fail",
+    "DA15: 2 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "LH",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (–)",
+   "facts": [
+    "A1 (loop 10)",
+    "A2 (loop 10)",
+    "A3 (loop 10)",
+    "DA19: 7 facts, 1 fail (corrected in dossier)",
+    "DA20: 4 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "AXP",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "DA16: 4 facts, 0 fail",
+    "DA9: 7 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "PGR",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (–)",
+   "facts": [
+    "A1 (loop 3)",
+    "A2 (loop 3)",
+    "A3 (loop 3)",
+    "DA16: 4 facts, 0 fail",
+    "DA8: 6 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "DOV",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A1 (loop 4)",
+    "A2 (loop 4)",
+    "A2 (loop 5)",
+    "A3 (loop 5)",
+    "DA15: 2 facts, 0 fail",
+    "DA8: 6 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "WEC",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "– (–)",
+   "facts": [
+    "A1 (loop 9)",
+    "A2 (loop 10)",
+    "A2 (loop 9)",
+    "A3 (loop 10)",
+    "A3 (loop 9)",
+    "DA18: 6 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "BALL",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "fair (–)",
+   "facts": [
+    "A3 (loop 7)",
+    "DA11: 7 facts, 0 fail",
+    "DA15: 2 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "PTC",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (–)",
+   "facts": [
+    "A1 (loop 9)",
+    "A2 (loop 9)",
+    "A3 (loop 9)",
+    "DA18: 6 facts, 1 fail (corrected in dossier)"
+   ]
+  },
+  {
+   "t": "RSG",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "– (–)",
+   "facts": [
+    "A1 (loop 10)",
+    "A2 (loop 10)",
+    "A3 (loop 10)",
+    "DA19: 7 facts, 0 fail",
+    "DA20: 5 facts, 2 fail (corrected in dossier)"
+   ]
+  },
+  {
+   "t": "MCK",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (–)",
+   "facts": [
+    "A2 (loop 9)",
+    "A3 (loop 9)",
+    "DA18: 6 facts, 0 fail"
+   ]
+  },
+  {
+   "t": "HBAN",
+   "v1": null,
+   "check": "Dossier reconciles with V1 in §7 (added after V1X ran)",
+   "analyst": "cheap (consistent)",
+   "facts": [
+    "A1 (loop 5)",
+    "A2 (loop 4)",
+    "A2 (loop 5)",
+    "A3 (loop 4)",
+    "DA16: 4 facts, 0 fail",
+    "DA7: 6 facts, 1 fail (corrected in dossier)"
+   ]
+  }
+ ]
+}

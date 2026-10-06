@@ -1,0 +1,269 @@
+{
+  "prepared_date": "2026-09-26",
+  "valuation_date": "2026-09-24 reference; later materialnewscheckedSep26",
+  "stocks": [
+    {
+      "name": "Corpay",
+      "sector": "Financials",
+      "decision": "BUY BELOW",
+      "limit_price": 350,
+      "hurdle": 0.125,
+      "baseline_eps": 24.43366,
+      "baseline_period": "FY2026 management outlook normalized by analyst",
+      "terminal_earnings_period": "FY2029 current-fiscal-year earnings estimate at Sep2029 exit",
+      "definition": "Company adjustedEPS27.35 less aftertax SBC150m*74%/66mshares and aftertax annualized integration/dealcosts110.106m*74%/66m. SBCcharged; recurring integration allowancecharged. Amortization addback remains; this is analyst cash-earnings proxy, not GAAP or distributable FCF.",
+      "thesis": "Corporate-payments organic growth can support high-single-digit per-share compounding without another acquisition or separate buyback-yield bonus.",
+      "countercase": "Fuel/FX tailwinds reverse, integration proves recurring, regulatory expense and leverage absorb cash. Customer funds are not surplus corporate cash.",
+      "basis": "The base grows normalized earnings9% annually versus reported10% group organic growth; it assumes no incremental buyback benefit. A16x terminal multiple is a discretionary allowance for recurring revenue but below a premium software multiple because leverage and payments regulation matter.",
+      "triggers": [
+        "Two consecutive quarters group organic growth below5% with no credible temporary bridge",
+        "Management leverage above3.5x together with weak debt repayment, or loss of required facility access",
+        "Customer-funds shortfall, material compliance failure, or FTC outcome materially worse than provision"
+      ],
+      "catalysts": [
+        "Next quarterly report: organic corporate-payments growth and actual debt repayment",
+        "Resolution of preliminaryFTCsettlement; subsequent cash outflow compared with reserve"
+      ],
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1175454/000117545426000045/ex991q2_2026.htm",
+        "https://www.sec.gov/Archives/edgar/data/1175454/000117545426000050/cpay-20260630.htm"
+      ],
+      "facts": {
+        "revenue_Q2_m": 1338.809,
+        "organic_growth_Q2": 0.1,
+        "company_adjusted_eps_FY26_mid": 27.35,
+        "gaap_eps_FY26_mid": 19.7,
+        "sbc_guidance_m": 150,
+        "diluted_shares_guidance_m": 66,
+        "integration_H1_m": 55.053,
+        "net_interest_guidance_m": [
+          435,
+          465
+        ],
+        "management_leverage": 2.55,
+        "h1_cfo_less_capex_m": 1307.95,
+        "company_adjusted_income_H1_m": 861.554
+      },
+      "ticker": "CPAY",
+      "reference_price": 400.32,
+      "reference_date": "2026-09-24",
+      "holding_years": 3,
+      "probabilities": null,
+      "conditional_entry": "Buy only at/below limit after weekly thesis/event check; AME requires published post-close funding bridge.",
+      "assumption_note": "ScenarioEPSgrowth, terminalmultiples andfuturedividends are analyst judgments, not vendorconsensus or calibrated probabilities.",
+      "max_total_weight_total_capital": 0.015,
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 20,
+          "terminal_PE": 11,
+          "terminal_price": 220,
+          "annual_dividends_per_share": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "base",
+          "terminal_eps": 31.642298276140004,
+          "terminal_PE": 16,
+          "terminal_price": 506.27677241824006,
+          "annual_dividends_per_share": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 35,
+          "terminal_PE": 19,
+          "terminal_price": 665,
+          "annual_dividends_per_share": [
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NetApp",
+      "sector": "Information Technology",
+      "decision": "BUY BELOW",
+      "limit_price": 150,
+      "hurdle": 0.12,
+      "baseline_eps": 7.5,
+      "baseline_period": "FY2027 GAAP guidance midpoint",
+      "terminal_earnings_period": "FY2030 earnings estimate ending April2030; forward fiscal-year P/E at Sep2029 exit",
+      "definition": "FY2027 GAAPEPS7.50, retainingSBC. Company adjustedEPS9.88 adds2.19SBC and otheritems; not used as interchangeable owner earnings.",
+      "thesis": "All-flash storage and hybrid-cloud demand can compound, but the current share price already asks for sustained earnings and cash conversion.",
+      "countercase": "Inventory, receivables and working-capital investment grow faster than durable cash receipts; quarterly growth normalizes while valuation compresses.",
+      "basis": "BaseEPSgrowth10% is below recent30% revenuegrowth because rapid acceleration is not assumed permanent. Terminal21x GAAPearnings preserves aqualitypremium withSBCcharged. The bull needs12EPSand24x; the bear includes cyclical compression.",
+      "triggers": [
+        "Two more quarters of weak operatingcashconversion without a numerical reversal of workingcapital timing",
+        "Inventory write-downs or inventoryturns remaining below8 while revenuegrowth dropsbelow10%",
+        "Gross-margin guidance reduced by morethan200basispoints from the current midpoint without a transitoryexplanation"
+      ],
+      "catalysts": [
+        "Next quarterly earnings: inventoryturns, cash conversion and FY2027guidance",
+        "DataPelago integration and incrementalAIstorage monetization"
+      ],
+      "sources": [
+        "https://investors.netapp.com/news/news-details/2026/NetApp-Reports-First-Quarter-of-Fiscal-Year-2027-Results/default.aspx",
+        "https://www.sec.gov/Archives/edgar/data/1002047/000119312526380207/ntap-20260731.htm"
+      ],
+      "facts": {
+        "revenue_Q1_FY27_m": 2025,
+        "revenue_growth": 0.3,
+        "cfo_m": 503,
+        "fcf_m": 401,
+        "prior_cfo_m": 673,
+        "prior_fcf_m": 620,
+        "inventory_turns_current": 6,
+        "inventory_turns_prior": 14,
+        "gaap_eps_FY27_guidance": [
+          7.35,
+          7.65
+        ],
+        "adjusted_eps_FY27_guidance": [
+          9.73,
+          10.03
+        ],
+        "SBC_per_share_guidance_adjustment": 2.19,
+        "quarterly_dividend": 0.52
+      },
+      "ticker": "NTAP",
+      "reference_price": 197.24,
+      "reference_date": "2026-09-24",
+      "holding_years": 3,
+      "probabilities": null,
+      "conditional_entry": "Buy only at/below limit after weekly thesis/event check; AME requires published post-close funding bridge.",
+      "assumption_note": "ScenarioEPSgrowth, terminalmultiples andfuturedividends are analyst judgments, not vendorconsensus or calibrated probabilities.",
+      "max_total_weight_total_capital": 0.01,
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 6.25,
+          "terminal_PE": 14,
+          "terminal_price": 87.5,
+          "annual_dividends_per_share": [
+            1.8,
+            1.8,
+            1.8
+          ]
+        },
+        {
+          "name": "base",
+          "terminal_eps": 9.982500000000003,
+          "terminal_PE": 21,
+          "terminal_price": 209.63250000000008,
+          "annual_dividends_per_share": [
+            2.08,
+            2.16,
+            2.24
+          ]
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 12,
+          "terminal_PE": 24,
+          "terminal_price": 288,
+          "annual_dividends_per_share": [
+            2.08,
+            2.3,
+            2.55
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AMETEK",
+      "sector": "Industrials",
+      "decision": "AVOID AT CURRENT PRICE",
+      "limit_price": 185,
+      "hurdle": 0.12,
+      "baseline_eps": 8.3,
+      "baseline_period": "FY2026 adjusted guidance8.25 plus analyst0.05Indicoraccretion",
+      "terminal_earnings_period": "FY2029 current-fiscal-year earnings estimate at Sep2029 exit",
+      "definition": "Analyst normalizedEPS8.30 based on pre-close company adjusted8.20\u20138.30range plus0.05explicit assumedaccretion. Acquisitionamortizationexcluded;SBCremainsexpensed. No unverified proforma debt is asserted as actual.",
+      "thesis": "High-quality niche industrial businesses and cash generation deserve a premium, but a$5bnacquisition andnear30xcurrent adjustedearnings leave limited margin for integration or rerating risk.",
+      "countercase": "Acquisition earnings accretion does not cover increased capital employed or economic funding costs; organicorders soften andpremiumvaluation normalizes.",
+      "basis": "Base9%earningsgrowth and24xmultiple recognize durable industrialquality. At the corroboratedprice the basecase return isinsufficient. A185reconsiderationlevel includes aprice buffer belowPVceiling; freshbuy stillrequires actual closingdebt andinterestbridge.",
+      "triggers": [
+        "Reported acquisition cashreturnbelow fundingcost afterintegrationperiod",
+        "Organicorders decline for twoquarters withmargincompression",
+        "Published post-close netdebt/EBITDAabove3.5x without credible nearterm deleveraging"
+      ],
+      "catalysts": [
+        "First post-Indicor quarterly filing with actualdebt, interest andacquiredearnings",
+        "Organic sales andmargin evidence separate from acquiredrevenue"
+      ],
+      "sources": [
+        "https://investors.ametek.com/news-releases/news-release-details/ametek-announces-record-second-quarter-2026-results-and-raises",
+        "https://investors.ametek.com/news-releases/news-release-details/ametek-completes-acquisition-indicor-instrumentation",
+        "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000175/ame-20260630.htm"
+      ],
+      "facts": {
+        "FY26_adjusted_eps_guidance_preclose": [
+          8.2,
+          8.3
+        ],
+        "FY26_gaap_eps_guidance": [
+          7.19,
+          7.29
+        ],
+        "acquisition_cash_price_m": 5000,
+        "announced_incremental_FY26_sales_m": 350,
+        "accretion_description": "modest; no exactfigureannounced",
+        "debt_carrying_June_m": 2036.174,
+        "cash_June_m": 495.446,
+        "annual_dividend_runrate": 1.36
+      },
+      "ticker": "AME",
+      "reference_price": 247.74,
+      "reference_date": "2026-09-24",
+      "holding_years": 3,
+      "probabilities": null,
+      "conditional_entry": "Buy only at/below limit after weekly thesis/event check; AME requires published post-close funding bridge.",
+      "assumption_note": "ScenarioEPSgrowth, terminalmultiples andfuturedividends are analyst judgments, not vendorconsensus or calibrated probabilities.",
+      "max_total_weight_total_capital": 0.01,
+      "scenarios": [
+        {
+          "name": "bear",
+          "terminal_eps": 7.5,
+          "terminal_PE": 20,
+          "terminal_price": 150.0,
+          "annual_dividends_per_share": [
+            1.2,
+            1.2,
+            1.2
+          ]
+        },
+        {
+          "name": "base",
+          "terminal_eps": 10.748740700000003,
+          "terminal_PE": 24,
+          "terminal_price": 257.9697768000001,
+          "annual_dividends_per_share": [
+            1.36,
+            1.46,
+            1.56
+          ]
+        },
+        {
+          "name": "bull",
+          "terminal_eps": 12.0,
+          "terminal_PE": 28,
+          "terminal_price": 336.0,
+          "annual_dividends_per_share": [
+            1.36,
+            1.56,
+            1.8
+          ]
+        }
+      ]
+    }
+  ]
+}

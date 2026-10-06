@@ -1,0 +1,193 @@
+{
+  "ticker": "NDSN",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/NDSN?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:44.938817+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "NDSN",
+            "exchangeName": "NMS",
+            "fullExchangeName": "NasdaqGS",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 322237800,
+            "regularMarketTime": 1790798400,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 327.85,
+            "regularMarketChangePercent": -0.51,
+            "fulldayPrice": 327.85,
+            "fulldayChange": -1.68,
+            "fulldayChangePercent": -0.51,
+            "fiftyTwoWeekHigh": 339.12,
+            "fiftyTwoWeekLow": 223.29,
+            "regularMarketDayHigh": 330.99,
+            "regularMarketDayLow": 327.63,
+            "regularMarketVolume": 397211,
+            "longName": "Nordson Corporation",
+            "shortName": "Nordson Corporation",
+            "chartPreviousClose": 321.42,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "end": 1790775000,
+                "start": 1790755200,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "end": 1790798400,
+                "start": 1790775000,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "end": 1790812800,
+                "start": 1790798400,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "close": [
+                  323.260009765625,
+                  325.7699890136719,
+                  331.32000732421875,
+                  329.5299987792969,
+                  327.8500061035156
+                ],
+                "high": [
+                  324.989990234375,
+                  326.70001220703125,
+                  332.8999938964844,
+                  332.92999267578125,
+                  330.989990234375
+                ],
+                "open": [
+                  320.20001220703125,
+                  325.1199951171875,
+                  324.45001220703125,
+                  332.0799865722656,
+                  329.5299987792969
+                ],
+                "volume": [
+                  333600,
+                  271700,
+                  370700,
+                  324500,
+                  397211
+                ],
+                "low": [
+                  319.2099914550781,
+                  323.05999755859375,
+                  322.9200134277344,
+                  326.1099853515625,
+                  327.6300048828125
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  323.260009765625,
+                  325.7699890136719,
+                  331.32000732421875,
+                  329.5299987792969,
+                  327.8500061035156
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 323.260009765625,
+      "adjclose": 323.260009765625,
+      "open": 320.20001220703125,
+      "high": 324.989990234375,
+      "low": 319.2099914550781,
+      "volume": 333600
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 325.7699890136719,
+      "adjclose": 325.7699890136719,
+      "open": 325.1199951171875,
+      "high": 326.70001220703125,
+      "low": 323.05999755859375,
+      "volume": 271700
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 331.32000732421875,
+      "adjclose": 331.32000732421875,
+      "open": 324.45001220703125,
+      "high": 332.8999938964844,
+      "low": 322.9200134277344,
+      "volume": 370700
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 329.5299987792969,
+      "adjclose": 329.5299987792969,
+      "open": 332.0799865722656,
+      "high": 332.92999267578125,
+      "low": 326.1099853515625,
+      "volume": 324500
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 327.8500061035156,
+      "adjclose": 327.8500061035156,
+      "open": 329.5299987792969,
+      "high": 330.989990234375,
+      "low": 327.6300048828125,
+      "volume": 397211
+    }
+  ],
+  "currency": "USD",
+  "symbol": "NDSN",
+  "regular_market_time": 1790798400,
+  "close_sep30": 327.8500061035156,
+  "session_match": true
+}

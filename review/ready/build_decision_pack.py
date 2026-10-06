@@ -3,6 +3,7 @@ import json, csv, math, hashlib
 import xlsxwriter
 
 P=Path(__file__).resolve().parent
+WEEKLY=json.loads((P/'weekly_override.json').read_text(encoding='utf-8')) if (P/'weekly_override.json').exists() else {}
 def read(name): return json.loads((P/name).read_text(encoding='utf-8-sig'))
 def pv(terminal,divs,r,tax=0): return sum(d*(1-tax)/(1+r)**(i+1) for i,d in enumerate(divs))+terminal/(1+r)**3
 def irr(price,terminal,divs,tax=0):
@@ -37,6 +38,8 @@ def add(s,kind,root):
     ref=s.get('reference_price',s.get('price')); date=s.get('reference_date',s.get('price_date','2026-09-24'))
     # Use a later reconciled close when actually obtained, not an inconsistent header.
     if t=='MSFT': ref=516.05;date='2026-09-25'
+    update=WEEKLY.get('stocks',{}).get(t,{})
+    ref=update.get('reference_price',ref);date=update.get('reference_date',date)
     limit=LIMITS.get(t,s.get('limit_price',s.get('limit')))
     raw=s['scenarios']; raw=[dict(v,name=k) for k,v in raw.items()] if isinstance(raw,dict) else raw
     scenarios=[]
@@ -50,6 +53,7 @@ def add(s,kind,root):
           pv_hurdle=pv(tp,div,s['hurdle']),pv_hurdle_withholding30=pv(tp,div,s['hurdle'],.30),total_return_reference=(tp+sum(div))/ref-1,total_return_limit=(tp+sum(div))/limit-1))
     base=next(x for x in scenarios if x['name']=='base')
     decision='BUY NOW' if t in ['AMP','PAYX'] else ('AVOID CURRENT PRICE' if t in ['ABNB','AME','RL'] else 'BUY BELOW')
+    decision=update.get('decision',decision)
     sources=s.get('sources',[])
     if kind=='financials':sources=[v for k,v in root['source_urls'].items() if k.startswith(t+'_')]
     if kind=='technology': sources={k:v for k,v in root['sources'].items() if k.startswith(t.lower()+'_')}
@@ -59,7 +63,7 @@ def add(s,kind,root):
     horizon={'NVDA':'FY2030 ending January 2030; four months forward at September 2029 exit','MSFT':'FY2029 ending June 2029; completed fiscal year at September 2029 exit','PAYX':'FY2029 ending May 2029; completed fiscal year at September 2029 exit','ALLE':'FY2029 ending December 2029; three months forward at September 2029 exit','SNA':'FY2029 ending around December 2029; approximately three months forward at September 2029 exit','RL':'FY2029 ending around March 2029; completed fiscal year at September 2029 exit','CPAY':'FY2029 ending December 2029; three months forward at September 2029 exit','AME':'FY2029 ending December 2029; three months forward at September 2029 exit','NTAP':'FY2030 ending April 2030; seven months forward at September 2029 exit','ABNB':'FY2029 ending December 2029; three months forward at September 2029 exit'}.get(t,horizon)
     baseline=s.get('baseline_definition',s.get('definition',s.get('earnings_baseline',root.get('normalization_bridges',{}).get(t,{}))))
     S.append(dict(ticker=t,name=name,sector=sector,rank=ORDER.index(t)+1,decision=decision,reference_price=ref,reference_date=date,
-        limit_price=limit,hurdle=s['hurdle'],slot_weight=SLOTS.get(t,0),initial_weight=SLOTS.get(t,0) if decision=='BUY NOW' else 0,
+        limit_price=limit,hurdle=s['hurdle'],slot_weight=SLOTS.get(t,0),initial_weight=SLOTS.get(t,0) if decision in ['BUY NOW','BUY'] else 0,
         thesis=thesis,countercase=bear,failure_rule=trigger,baseline=baseline,terminal_period=horizon,sources=sources,scenarios=scenarios,
         base_ceiling=base['pv_hurdle'],base_ceiling_withholding30=base['pv_hurdle_withholding30'],detail_file=kind+'.md',
         condition='Price alone is insufficient: recheck thesis, event risk and portfolio capacity. '+('Post-close financing bridge is also required.' if t=='AME' else ''),
@@ -70,6 +74,16 @@ for kind,file,key in [('technology','technology.json','stocks'),('quality_compou
     if isinstance(ss,dict):ss=[dict(v,ticker=k) for k,v in ss.items()]
     for s in ss:add(s,kind,d)
 add(read('airbnb.json'),'airbnb',read('airbnb.json'))
+for stock in S:
+    update=WEEKLY.get('stocks',{}).get(stock['ticker'],{})
+    if update.get('condition'): stock['condition']=update['condition']
+    stock['price_source']=update.get('price_source')
+    stock['price_conflict']=update.get('price_conflict')
+    for case in stock['scenarios']:
+        case['irr_reference_after_30pct_withholding_25bp_costs']=irr(stock['reference_price']*1.0025,case['terminal_price']*.9975,case['dividends'],.30)
+        case['irr_limit_after_30pct_withholding_25bp_costs']=irr(stock['limit_price']*1.0025,case['terminal_price']*.9975,case['dividends'],.30)
+        case['pv_hurdle_after_30pct_withholding_25bp_costs']=pv(case['terminal_price']*.9975,case['dividends'],stock['hurdle'],.30)/1.0025
+    stock['base_ceiling_after_costs']=next(c['pv_hurdle_after_30pct_withholding_25bp_costs'] for c in stock['scenarios'] if c['name']=='base')
 S.sort(key=lambda x:x['rank']); assert len(S)==14 and len(set(x['ticker'] for x in S))==14
 for s in S:
     assert s['limit_price']<=s['base_ceiling_withholding30']+1e-6,(s['ticker'],s['limit_price'],s['base_ceiling_withholding30'])
@@ -77,6 +91,9 @@ assert abs(sum(SLOTS.values())-.10)<1e-9
 
 funds=[dict(ticker='VUAA',name='Vanguard S&P 500 UCITS ETF USD Accumulating',isin='IE00BFMXXD54',exchange='London Stock Exchange, USD trading line',domicile='Ireland',nav=149.0017,nav_date='2026-09-24',fee=.0007,weight=.15,source='https://www.vanguard.co.uk/professional/product/etf/equity/9694/sp-500-ucits-etf-',note='NAV is a sizing illustration, not an executable quote. Do not use the VUAG GBP market price. Equity risk remains.'),
 dict(ticker='IB01',name='iShares $ Treasury Bond 0-1yr UCITS ETF USD Accumulating',isin='IE00BGSF1X88',exchange='London Stock Exchange, USD trading line',domicile='Ireland',nav=121.86,nav_date='2026-09-24',fee=.0007,weight=.75,ytm=.0416,duration=.31,source='https://www.ishares.com/uk/individual/en/products/307243/ishares-treasury-bond-0-1yr-ucits-etf-fund',note='Short-duration Treasury fund, not guaranteed cash. Yield to maturity is not a locked three-year return. Reserve can instead be eligible short Treasury bills held to maturity or insured cash, after checking access and terms.')]
+
+for fund in funds:
+    fund.update(WEEKLY.get('funds',{}).get(fund['ticker'],{}))
 
 portfolios=[]
 for capital in [50000,100000]:
@@ -111,6 +128,7 @@ model=dict(prepared='2026-09-26 Dubai',decision_cutoff='Late September 2026; ind
     core_weight=.15,direct_initial=.04,direct_cap=.10,reserve_initial=.81,reserve_min_full=.75,
     overlap=dict(date='2026-08-31 issuer holdings',NVDA_index_weight=.0807902,MSFT_index_weight=.0569335,NVDA_total_full=.15*.0807902+.015,MSFT_total_full=.15*.0569335+.02),
     limitations=['Analyst scenarios, not calibrated forecasts or probabilities.','The new portfolio has no validated historical track record.','Bear terminal values are not maximum drawdowns.','Tax residency, US-person status, holdings, access, commissions and liabilities are unknown. Model is new-money USD capital with no leverage.','Conditional stock slots are not simultaneous instructions; cash stays in reserve until limits and thesis tests both pass.','ETF expense ratios are fund expenses; scenarios are after assumed fund expenses, before personal tax and trading costs.'])
+model.update({k:WEEKLY[k] for k in ['prepared','decision_cutoff','parents','weekly_report','coverage'] if k in WEEKLY})
 (P/'decision_model.json').write_text(json.dumps(model,indent=2,ensure_ascii=False),encoding='utf-8')
 with (P/'decision_table.csv').open('w',newline='',encoding='utf-8-sig') as f:
     fields=['rank','ticker','decision','reference_price','reference_date','limit_price','hurdle','base_ceiling','base_ceiling_withholding30','slot_weight','initial_weight','terminal_period']
@@ -123,7 +141,7 @@ with (P/'scenarios.csv').open('w',newline='',encoding='utf-8-sig') as f:
 wb=xlsxwriter.Workbook(P/'Investment_Decision_Model.xlsx')
 head=wb.add_format({'bold':True,'bg_color':'#17344D','font_color':'white','text_wrap':True});money=wb.add_format({'num_format':'$0.00'});pct=wb.add_format({'num_format':'0.00%'});wrap=wb.add_format({'text_wrap':True,'valign':'top'})
 ws=wb.add_worksheet('Read me');ws.set_column('A:A',30);ws.set_column('B:B',115)
-notes=[('Purpose','Prospective investment decisions, dated 26 September 2026 Dubai. Use live quotes and verify thesis before placing any order.'),('Model','Three annual dividend cashflows; year-three terminal EPS times analyst P/E. IRR differs from terminal-wealth CAGR. All future values are analyst assumptions.'),('Editable scenario inputs','Scenario sheet columns C:K are inputs. Formulas recompute terminal value, IRR and maximum entry. Tax rate starts at 30% dividend withholding as a sensitivity, not a tax-status determination.'),('Authoritative limits','Decision sheet contains the committee limits. Changing a scenario does not automatically change the published recommendation or portfolio budgets.'),('Risk','No loss guarantee, return probability, strategy backtest or trade authorization. Full allocation 25% equity /75% reserve; initial 19% equity /81% reserve before rounding.'),('Funds','VUAA/IB01 USD London trading lines for an eligible non-US investor. Confirm personal tax eligibility; Irish funds can be unsuitable for US persons. NAVs are sizing illustrations, not quotes.'),('Source archive','See companion decision_model.json, company memoranda, original three deep audits and hashed source captures. Source dates and periods differ and are explicit.'),('Costs','Personal capital-gains tax, commissions and FX excluded. Stress 25bp entry plus 25bp exit on direct stocks; 10bp per side on funds. At full target this is about 0.23% of capital once, before fixed fees and turnover.')]
+notes=[('Purpose','Prospective investment decisions, dated 27 September 2026 Dubai. Use live quotes and verify thesis before placing any order.'),('Model','Three annual dividend cashflows; year-three terminal EPS times analyst P/E. IRR differs from terminal-wealth CAGR. All future values are analyst assumptions.'),('Editable scenario inputs','Scenario sheet columns C:K are inputs. Formulas recompute terminal value, IRR and maximum entry. Tax rate starts at 30% dividend withholding as a sensitivity, not a tax-status determination.'),('Authoritative limits','Decision sheet contains the committee limits. Changing a scenario does not automatically change the published recommendation or portfolio budgets.'),('Risk','No loss guarantee, return probability, strategy backtest or trade authorization. Full allocation 25% equity /75% reserve; initial 19% equity /81% reserve before rounding.'),('Funds','VUAA/IB01 USD London trading lines for an eligible non-US investor. Confirm personal tax eligibility; Irish funds can be unsuitable for US persons. NAVs are sizing illustrations, not quotes.'),('Source archive','See companion decision_model.json, company memoranda, original three deep audits and hashed source captures. Source dates and periods differ and are explicit.'),('Costs','Personal capital-gains tax, commissions and FX excluded. Stress 25bp entry plus 25bp exit on direct stocks; 10bp per side on funds. At full target this is about 0.23% of capital once, before fixed fees and turnover.')]
 for i,(a,b) in enumerate(notes):ws.write(i,0,a,head);ws.write(i,1,b,wrap);ws.set_row(i,48)
 ws=wb.add_worksheet('Decisions');fields=['Rank','Ticker','Action','Reference price','Price date','Buy/reconsider limit','Hurdle','Base PV gross','Base PV 30% withholding','Initial weight','Full slot','Terminal earnings period'];ws.write_row(0,0,fields,head);ws.freeze_panes(1,2);ws.autofilter(0,0,14,len(fields)-1);ws.set_column('A:C',20);ws.set_column('D:K',20);ws.set_column('L:L',85)
 for i,s in enumerate(S,1):ws.write_row(i,0,[s['rank'],s['ticker'],s['decision'],s['reference_price'],s['reference_date'],s['limit_price'],s['hurdle'],s['base_ceiling'],s['base_ceiling_withholding30'],s['initial_weight'],s['slot_weight'],s['terminal_period']]);[ws.write_number(i,j,v,pct) for j,v in [(6,s['hurdle']),(9,s['initial_weight']),(10,s['slot_weight'])]]
@@ -154,6 +172,27 @@ for s in S:
     u=src.get('url',src.get('source_url',''))
     if isinstance(u,str) and u.startswith('http'):ws.write(r,0,s['ticker']);ws.write_url(r,1,u);r+=1
 for f in funds:ws.write(r,0,f['ticker']);ws.write_url(r,1,f['source']);r+=1
+ws=wb.add_worksheet('Weekly audit');ws.set_column('A:A',30);ws.set_column('B:B',115);ws.write_row(0,0,['Field','Weekly evidence / scope'],head)
+for row,(key,value) in enumerate([('Prepared',model['prepared']),('Cutoff',model['decision_cutoff']),('Parents','; '.join(WEEKLY.get('parents',[]))),('Coverage',json.dumps(WEEKLY.get('coverage',{}))),('Actions','BUY AMP <=500 and PAYX <=101.80, up to2% each, only if live price/thesis/capacity pass; WAIT on other names. No actual holdings supplied.'),('HIG event',WEEKLY.get('stocks',{}).get('HIG',{}).get('condition','')),('Valuation facts','42 operating scenarios retained; 34 prices freshly corroborated. 469 other universe prices reused from dated immutable archive.'),('Limit cost gate','Ceilings tested with30% dividend withholding plus25bp entry and25bp exit. Personal capital-gains tax and fixed dealing fees are unknown.'),('Report',WEEKLY.get('weekly_report',''))],1):
+ ws.write(row,0,key,head);ws.write(row,1,value,wrap);ws.set_row(row,60)
+ws=wb.add_worksheet('After costs');ws.set_column('A:G',24);ws.write_row(0,0,['Ticker','Case','IRR reference net','IRR limit net','PV at hurdle net','Published limit','Cost assumptions'],head)
+r=1
+for stock in S:
+ for case in stock['scenarios']:
+  n=r+1
+  ws.write_row(r,0,[stock['ticker'],case['name']])
+  ws.write_formula(r,5,f'=Scenarios!D{n}',money,stock['limit_price'])
+  ws.write(r,6,'Scenarios tax input;25bp entry/exit')
+  for offset,entrycol,entry in [(7,'C',stock['reference_price']),(11,'D',stock['limit_price'])]:
+   ws.write_formula(r,offset,f'=-Scenarios!{entrycol}{n}*1.0025',money,-entry*1.0025)
+   for i,div in enumerate(case['dividends']):
+    col=['I','J','K'][i]; form=f'=Scenarios!{col}{n}*(1-Scenarios!F{n})'+(f'+Scenarios!L{n}*0.9975' if i==2 else '')
+    ws.write_formula(r,offset+i+1,form,money,div*.7+(case['terminal_price']*.9975 if i==2 else 0))
+  ws.write_formula(r,2,f'=IRR(H{n}:K{n})',pct,case['irr_reference_after_30pct_withholding_25bp_costs'])
+  ws.write_formula(r,3,f'=IRR(L{n}:O{n})',pct,case['irr_limit_after_30pct_withholding_25bp_costs'])
+  ws.write_formula(r,4,f'=(Scenarios!I{n}*(1-Scenarios!F{n})/(1+Scenarios!E{n})+Scenarios!J{n}*(1-Scenarios!F{n})/(1+Scenarios!E{n})^2+(Scenarios!K{n}*(1-Scenarios!F{n})+Scenarios!L{n}*0.9975)/(1+Scenarios!E{n})^3)/1.0025',money,case['pv_hurdle_after_30pct_withholding_25bp_costs'])
+  r+=1
+ws.set_column('H:O',None,None,{'hidden':True})
 wb.close()
 print(json.dumps({'stocks':len(S),'scenarios':sum(len(s['scenarios']) for s in S),'portfolio_totals':[p['total'] for p in portfolios],'limits_below_afterwithholding_pv':True,'base_portfolio_wealth_cagr':portfolio_scenarios[1]},indent=2))
 

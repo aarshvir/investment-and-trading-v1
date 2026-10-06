@@ -1,0 +1,96 @@
+{
+  "agent": "r3",
+  "purpose": "Independent re-verification of r2_implementation_facts.md open items (§9), flagged load-bearing but unverified by the Loop-1 auditor",
+  "access_date": "2026-09-26",
+  "r2_edited": false,
+  "q1": {
+    "question": "Which Interactive Brokers entity opens accounts for UAE residents today, and which investor-protection scheme applies to that entity?",
+    "answer": "UAE residents onboard through Interactive Brokers (U.K.) Limited (DIFC Branch), operating under a DFSA Category 4 licence (arranging deals in investments / arranging custody, i.e. an arranging broker, not itself the custodian). It arranges access to brokerage and custody delivered by its head office, Interactive Brokers (U.K.) Limited (FCA-authorised, FRN 208159, England & Wales). Under the IBUK/IBLLC client-agreement structure, IBUK receives orders while Interactive Brokers LLC (US, SEC/CFTC-regulated) holds client money and securities in custody and executes/clears. The applicable investor-protection scheme is therefore SIPC (IBLLC is a SIPC member, USD 500,000 cover / USD 250,000 cash sublimit); the UK FSCS applies only in limited circumstances, per IBKR's own disclosure.",
+    "confidence": "high",
+    "sources": [
+      "https://www.interactivebrokers.co.uk/en/general/about/difc-branch.php",
+      "https://www.sipc.org/for-investors/what-sipc-protects"
+    ],
+    "verified": true,
+    "changed_vs_r2": "Resolves r2 §9 item #2 (previously open: 'check your statement's header'). New primary-sourced detail: DFSA Category 4 licence wording, and explicit confirmation that SIPC (via IBLLC custody), not FSCS, is the operative protection scheme for DIFC-onboarded accounts. No contradiction of r2's substance."
+  },
+  "q2": {
+    "question": "Does Vested Finance currently onboard new UAE residents? Which UAE-regulated platforms (Sarwa, Saxo, Emirates NBD Securities, others) offer US stocks and LSE-listed UCITS ETFs, and under which regulator (SCA, DFSA, FSRA)?",
+    "answer": "Vested: onboarding is effectively NRI/Indian-origin-gated (requires an Indian PAN card regardless of current residence); independent 2026 guides state Vested does not onboard UAE-resident customers who lack an Indian bank account / Indian-origin status. A UAE resident who is not of Indian origin cannot open a Vested account; a UAE-resident NRI with a PAN generally can. No single definitive Vested legal statement was found confirming this for brand-new UAE sign-ups specifically. Sarwa: confirmed via Sarwa's own help centre -- Sarwa Trade and Sarwa Invest are both regulated by the Financial Services Regulatory Authority (FSRA) in the Abu Dhabi Global Market (ADGM), legal entity Sarwa Digital Wealth (Capital) Limited, Category 3C licence. Offers 5,000+ US stocks/ETFs; no confirmation found that Sarwa offers LSE-listed UCITS ETFs. Saxo: UAE-facing entity is 'Saxo Bank A/S, DIFC Representative Office', regulated by the DFSA as a Representative Office (plus a CBUAE representative-office registration); a representative office cannot itself hold client money, so the actual carrying entity and CSPX/VUAA-specific availability were not confirmed. Emirates NBD Securities L.L.C. is licensed (no. 604003) by the Capital Market Authority (CMA) -- the SCA was reconstituted as the CMA effective 1 January 2026 (UAE Federal Laws No. 32 and No. 33 of 2025), a fact not in r2 at all. Emirates NBD Securities itself is DFM/ADX/Nasdaq Dubai/GCC-focused; the bank's separate 'ENBD X' platform advertises ~11,000 global equities including LSE, but its regulatory scope and LSE-UCITS-ETF availability could not be confirmed (product page 404'd).",
+    "confidence": "medium",
+    "sources": [
+      "https://help.sarwa.co/hc/en-us/articles/4407336316305-Is-Sarwa-regulated",
+      "https://www.home.saxo/en-mena/legal/disclaimer/disclaimer-uae",
+      "https://vested.blog/posts/us-stock-platforms-for-indians-in-uae",
+      "https://uaeinform.com/personal-finance-guide/investing-uae-residents",
+      "https://support.vestedfinance.com/portal/en/kb/articles/what-is-the-process-for-a-nri-to-invest-in-us-stocks-via-vested",
+      "https://community.vestedfinance.com/t/uae-tax-residency-changes/14323",
+      "https://www.tamimi.com/news/uae-capital-market-regulatory-overhaul-key-changes-from-1-january-2026/",
+      "https://www.dechert.com/knowledge/onpoint/2026/2/from-sca-to-cma---more-than-just-a-rebrand.html",
+      "https://en.wikipedia.org/wiki/Capital_Market_Authority_(United_Arab_Emirates)"
+    ],
+    "verified": true,
+    "changed_vs_r2": "r2 covered only IBKR and Vested; Sarwa, Saxo and Emirates NBD Securities were entirely out of scope in r2, so this is new coverage, not a correction. The SCA->CMA rename (1-Jan-2026) is a new fact not present in r2 at all. Vested's onboarding gate (r2 §9 item #4, previously fully open) is now characterised more precisely as PAN/NRI-gated, though still not resolved to high confidence."
+  },
+  "q3": {
+    "question": "CSPX and VUAA: domicile, TER, accumulating/distributing, exchange and trading currency, and fund-level US dividend withholding.",
+    "answer": "CSPX (iShares Core S&P 500 UCITS ETF), ISIN IE00B5BMR087, reconfirmed directly from iShares' own product page: domicile Ireland, issuer iShares VII plc, TER 0.07%, Accumulating, Physical replication, base/share-class currency USD, UCITS, listed on LSE as CSPX (USD) and CSP1 (GBP) among 10 global listings, fund net assets approx. USD 159.3bn (25-Sep-2026). VUAA (Vanguard S&P 500 UCITS ETF, ISIN IE00BFMXXD54) was not independently re-fetched this pass; r2's Vanguard factsheet citation (31-Jul-2026: Ireland domicile, TER 0.07%, Accumulating, Physical, USD base) stands uncontradicted. Fund-level US dividend withholding of 15% under the US-Ireland treaty (IRS Table 1) was not re-derived today but is standard treaty law consistent with r2.",
+    "confidence": "high",
+    "sources": [
+      "https://www.ishares.com/uk/individual/en/products/253743/ishares-sp-500-b-ucits-etf-acc-fund",
+      "https://fund-docs.vanguard.com/SandP_500_UCITS_ETF_USD_Accumulating_9694_INT_OFF_ETF_EN.pdf",
+      "https://www.irs.gov/pub/irs-lbi/tax-treaty-table-1.pdf"
+    ],
+    "verified": true,
+    "changed_vs_r2": "No material change. TER, domicile, structure and currency all match r2 exactly; net assets figure ticked up marginally (normal AUM drift, not a data error)."
+  },
+  "q4": {
+    "question": "US estate tax for a non-resident non-citizen: $60,000 exemption and rate schedule; situs of US-listed stocks/ETFs, Irish UCITS funds, direct T-bills (IRC §2105(b)), T-bill ETFs, and cash at a US broker.",
+    "answer": "Reconfirmed directly from the current IRS Instructions for Form 706-NA (Rev. 09/2025): 'In general, the maximum unified credit is $13,000', and the filing threshold is stated verbatim as 'the filing threshold of $60,000'. Matches r2 exactly, confirming the core exemption and the IRC §2001(c) rate schedule (18%-40%) are unchanged. Situs sub-rules were not independently re-fetched from raw statutory text this pass: (a) US-listed stock and US-domiciled ETFs are US-situs (IRC §2104(a); §2105(d) look-through repealed for deaths after 2011); (b) Irish UCITS funds are not US-situs (foreign-corporation stock, Treas. Reg. §20.2105-1(f)); (c) directly held T-bills are not US-situs (short-term OID / portfolio-interest exemption, IRC §2105(b)); (d) US T-bill/money-market ETFs are US-situs (same RIC rule as (a)); (e) cash at a US broker remains unresolved -- the §2105(b)(1) bank-deposit exemption covers bank deposits, not necessarily broker free-credit balances, and no new authority was found. r2's statutory citations (Cornell LII, primary) were not contradicted.",
+    "confidence": "high",
+    "sources": [
+      "https://www.irs.gov/instructions/i706na",
+      "https://www.law.cornell.edu/uscode/text/26/2104",
+      "https://www.law.cornell.edu/uscode/text/26/2105",
+      "https://www.law.cornell.edu/cfr/text/26/20.2105-1"
+    ],
+    "verified": true,
+    "changed_vs_r2": "No change to any figure. Core $60k/$13k exemption and rate schedule freshly reconfirmed from the primary IRS instructions today. Item (e) cash-at-broker situs remains an open item in both r2 and this pass, not newly resolved -- still 'ask an adviser'."
+  },
+  "q5": {
+    "question": "US dividend withholding for UAE residents: 30% with W-8BEN, no US-UAE treaty; W-8BEN validity (3 years).",
+    "answer": "Reconfirmed today from the IRS 'United States income tax treaties' page (last reviewed 03-Jan-2026): the UAE is not listed among treaty countries. Reconfirmed today from the IRS Instructions for Form W-8BEN: 'a Form W-8BEN will remain in effect for purposes of establishing foreign status for a period starting on the date the form is signed and ending on the last day of the third succeeding calendar year' -- the 3-year validity rule, matching r2 exactly. The underlying 30% statutory withholding rate (Pub 515/519) was not re-fetched this pass but is uncontested and already primary-sourced in r2.",
+    "confidence": "high",
+    "sources": [
+      "https://www.irs.gov/businesses/international-businesses/united-states-income-tax-treaties-a-to-z",
+      "https://www.irs.gov/instructions/iw8ben",
+      "https://www.irs.gov/publications/p515"
+    ],
+    "verified": true,
+    "changed_vs_r2": "No change. Independently reconfirmed with a fresh access date; treaty page's own 'last reviewed' date (03-Jan-2026) postdates r2's citation date, confirming continued absence of a treaty into 2026."
+  },
+  "q6": {
+    "question": "UAE personal tax on individuals' dividends and capital gains as of 2026 (MoF/FTA).",
+    "answer": "No change found. Cabinet Decision No. 49 of 2023's carve-out of 'Personal Investment' income from UAE Corporate Tax for natural persons (regardless of amount) remains in force for 2026 per multiple independent 2026-dated tax-advisory commentaries, all describing 0% personal income tax, no capital-gains tax and no dividend-withholding tax for individuals investing personally (not through a licensed business). The FTA's own natural-persons Corporate Tax page returned only navigation content when fetched today (not the substantive guide text) within the time available, so today's confirmation rests on secondary 2026 commentary rather than a freshly re-quoted primary source; r2's own primary citations (Cabinet Decision PDF, FTA Guide CTGTNP1 Example 11) were not contradicted.",
+    "confidence": "high",
+    "sources": [
+      "https://mof.gov.ae/wp-content/uploads/2023/05/Cabinet-Decision-No.-49-of-2023.pdf",
+      "https://tax.gov.ae/Datafolder/Files/Guides/CT/Taxation%20of%20natural%20persons%20-%2025%2011%202023.pdf",
+      "https://www.cleartax.com/ae/uae-corporate-tax-faqs",
+      "https://qasproglobal.com/uae-capital-gains-tax-2026/"
+    ],
+    "verified": true,
+    "changed_vs_r2": "No change."
+  },
+  "q7": {
+    "question": "IBKR costs relevant to a small account: US stock commissions (Fixed vs Tiered, minimums), LSE ETF commissions, fractional shares availability, inactivity/market-data fees.",
+    "answer": "Reconfirmed directly from IBKR's live commissions page today. US stocks/ETFs: Tiered USD 0.0035/share (<=300,000 shares/month, then lower), Fixed USD 0.005/share, minimum USD 1.00/order, capped at 1% of trade value -- matches r2 exactly. LSE, USD-denominated lines (CSPX/VUAA/SPY5/SPXS): Tiered 0.05% of trade value, minimum USD 1.70, maximum USD 39.00; Fixed-SmartRouting 0.05%, minimum USD 4.00, no maximum; Fixed-Direct-Routing 0.10%, minimum USD 6.00, no maximum -- matches r2 verbatim. Fractional shares: new evidence -- IBKR's current UK-USD fee table itself defines fractional pricing at market-segment level (0.05% tiered, same USD 1.70 minimum), and a US-market note confirms fractional trades carry the same commission as whole shares, minimum USD 0.01; per-ticker eligibility for CSPX/VUAA/SPY5/SPXS specifically is still not confirmed (lives in platform contract flags, not the public fee page). Inactivity fee: confirmed via multiple 2026 sources that IBKR abolished inactivity fees firm-wide effective 1-Jul-2021, still the case in 2026. Market-data fees: not independently verified this pass -- the pricing page was too large to fully parse in the time available and no specific current figure is asserted.",
+    "confidence": "medium",
+    "sources": [
+      "https://www.interactivebrokers.com/en/pricing/commissions-stocks.php",
+      "https://brokerchooser.com/invest-long-term/costs/inactivity-fee-interactive-brokers"
+    ],
+    "verified": true,
+    "changed_vs_r2": "No change to commission figures (freshly reconfirmed verbatim). New: fractional-share fee mechanism confirmed to exist for UK-USD listings generally, advancing but not fully resolving r2 §9 item #1. New explicit confirmation of no inactivity fee (r2 did not address this). Market-data fees remain unverified in both r2 and this pass -- flagged, not guessed."
+  }
+}

@@ -1,0 +1,42 @@
+from pathlib import Path
+P=Path('review/ready'); W=Path('review/weekly/2026-09-27')
+f=P/'build_decision_pack.py';s=f.read_text()
+a="  ws.write_row(r,0,[stock['ticker'],case['name'],case['irr_reference_after_30pct_withholding_25bp_costs'],case['irr_limit_after_30pct_withholding_25bp_costs'],case['pv_hurdle_after_30pct_withholding_25bp_costs'],stock['limit_price'],'30% dividend tax;25bp entry/exit']);r+=1"
+b="""  n=r+1
+  ws.write_row(r,0,[stock['ticker'],case['name']])
+  ws.write_formula(r,5,f'=Scenarios!D{n}',money,stock['limit_price'])
+  ws.write(r,6,'30% dividend tax;25bp entry/exit')
+  for offset,entrycol,entry in [(7,'C',stock['reference_price']),(11,'D',stock['limit_price'])]:
+   ws.write_formula(r,offset,f'=-Scenarios!{entrycol}{n}*1.0025',money,-entry*1.0025)
+   for i,div in enumerate(case['dividends']):
+    col=['I','J','K'][i]; form=f'=Scenarios!{col}{n}*(1-Scenarios!F{n})'+(f'+Scenarios!L{n}*0.9975' if i==2 else '')
+    ws.write_formula(r,offset+i+1,form,money,div*.7+(case['terminal_price']*.9975 if i==2 else 0))
+  ws.write_formula(r,2,f'=IRR(H{n}:K{n})',pct,case['irr_reference_after_30pct_withholding_25bp_costs'])
+  ws.write_formula(r,3,f'=IRR(L{n}:O{n})',pct,case['irr_limit_after_30pct_withholding_25bp_costs'])
+  ws.write_formula(r,4,f'=(Scenarios!I{n}*(1-Scenarios!F{n})/(1+Scenarios!E{n})+Scenarios!J{n}*(1-Scenarios!F{n})/(1+Scenarios!E{n})^2+(Scenarios!K{n}*(1-Scenarios!F{n})+Scenarios!L{n}*0.9975)/(1+Scenarios!E{n})^3)/1.0025',money,case['pv_hurdle_after_30pct_withholding_25bp_costs'])
+  r+=1
+ws.set_column('H:O',None,None,{'hidden':True})"""
+assert a in s;s=s.replace(a,b);f.write_text(s)
+f=P/'publish_dashboard.py';s=f.read_text(encoding='utf-8')
+s=s.replace('26 SEP 2026','27 SEP 2026').replace('26 Sep 2026','27 Sep 2026').replace('REPLACEMENT DECISION PACK','WEEKLY DECISION REVIEW')
+s=s.replace('AMP and PAYX qualify at the verified September 24 reference prices. Use the live executable quote: if it exceeds the limit, wait. MSFT uses the reconciled September 25 close; other dates remain explicit.','AMP $493.00 and PAYX $101.37 remain below their ceilings at the September 25 close. Use live quotes and confirm events before buying. MSFT is corrected to $516.17. No entry ceilings or weights increased.')
+s=s.replace('Recheck business facts before any entry.','HIG also requires the post-close settlement/capital bridge. Its accounting gain does not raise core EPS. Recheck business facts and issuer event calendars before any entry.')
+s=s.replace('September 24 ETF NAVs','September 25 ETF NAVs')
+s=s.replace('Two entries. Four conditional slots. A smaller risk budget.','Two retained entry candidates. No increase in exposure.')
+s=s.replace('A dated new-money plan for $50,000–$100,000. Primary-source underwriting, explicit assumptions and practical price ceilings replace the original all-WATCH conclusion.','Weekly review: 34 fresh price checks, three parallel audits, 42 operating cases retained. Initial 19% equity; maximum25%. New findings and exact coverage are in the weekly memo.')
+s=s.replace('<h2>The ranked action list</h2>','<div class="callout">New audit findings: AMP repurchase/book-value inconsistency in Claude v011; PAYX cash recovery remains unproved; HIG settlement affects GAAP earnings but not core EPS. <a href="weekly/2026-09-27/WEEKLY_REVIEW.md">Read the dated weekly review</a> · <a href="weekly/2026-09-27/ACTION_TABLE.csv">34-name action journal</a></div><h2>The ranked action list</h2>')
+s=s.replace('after illustrative 30% dividend withholding, before dealing costs and capital-gains tax','after illustrative 30% dividend withholding and25bp entry/exit costs, before capital-gains tax')
+s=s.replace("dpPct(s.scenarios.find(x=>x.name==='base').irr_limit_withholding30)","dpPct(s.scenarios.find(x=>x.name==='base').irr_limit_after_30pct_withholding_25bp_costs)")
+f.write_text(s,encoding='utf-8')
+f=P/'build_pdf.py';s=f.read_text().replace('26 September 2026','27 September 2026').replace('KeepTogether([t])','t');f.write_text(s)
+f=W/'build_weekly_report.py';s=f.read_text(encoding='utf-8-sig')
+s=s.replace('758 cached workbook formulas','1,262 cached workbook formulas')
+s=s.replace('A separate15%index/10%Claude-sleeve/75%reserve historical replay loses12.70%; that sleeve is not our six-stock sleeve.','A separate15%index/10%Claude-sleeve/75%reserve historical replay loses12.70%; it assumes a constant4% reserve return and that sleeve is not our six-stock sleeve.')
+s=s.replace('The existing model', 'The existing model')
+s=s.replace('Keep the recurring integration charge and existing recovery/thesis triggers.','Keep the recurring integration charge and existing recovery/thesis triggers. Require demonstrated cash recovery before adding beyond the starter allocation; the owner-cash measure sits only$11.5m above the$1.7bn failure threshold.')
+s=s.replace('No known five-session earnings gate affects AMP/PAYX in the sources reviewed; dates must still be checked live.','The filing audit did not establish a confirmed earnings event in the next five sessions, but incomplete calendars are unknown, not cleared. PAYX reported23 September; its next primary date is unconfirmed. The separate market audit reports an AMP29 October issuer announcement; the root re-open failed, so its corroboration scope remains explicit. Confirm the applicable issuer calendar before execution.')
+s=s.replace('No normalized EPS, terminal multiple or stock dividend path changes in any of the42 scenarios this week.','NetApp also announced an intent to acquire PEAK:AIO on25 September; no purchase price or quantified earnings contribution was established. Preserve the$150 ceiling and require a financing/earnings bridge before entry. [Issuer announcement](https://investors.netapp.com/news/news-details/2026/NetApp-Announces-Intent-to-Acquire-PEAKAIO-to-Advance-Scalable-AI-Infrastructure-Architecture/default.aspx). No normalized EPS, terminal multiple or stock dividend path changes in any of the42 scenarios this week.')
+s=s.replace("'NTAP':'Adopt dated history201.15; Cboe201.145 fractional-cent difference retained in evidence.'", "'NTAP':'Adopt dated history201.15; Cboe201.145 precision difference retained. Sep25 PEAK:AIO acquisition intent: terms and earnings effect unquantified; no value added.'")
+s=s.replace('LH\'s perpetual reverse-growth result cannot be directly compared with a finite-horizon growth assumption.', 'LH\'s perpetual reverse-growth result cannot be directly compared with a finite-horizon growth assumption. Its dossier also mislabels a six-month long-term debt increase as one quarter and overlooks the current-debt offset; total borrowings rose$273.8m, not$773m. Model the newly disclosed reimbursement-cut risk before a switch.')
+f.write_text(s,encoding='utf-8')
+print('Improved formula-linked cost sheet, weekly dashboard and final disclosures.')

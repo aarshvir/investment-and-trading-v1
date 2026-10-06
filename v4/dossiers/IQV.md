@@ -1,0 +1,79 @@
+# IQV - IQVIA Holdings - Diligence Dossier (Agent F131, Wave-8 Standard)
+
+## 1. Verdict
+**WATCH** (12-36 month horizon). Operating momentum is real (bookings at 1.22x book-to-bill, three guidance raises in a row, free cash flow near 100% of adjusted net income), so the triage's "not advance" on business quality is too harsh. But the stock at $270.37 (25 Sep 2026 close) is up about 57% from the $173 average price the company paid for its own shares in the first half of 2026, net leverage is 3.59x on the company's definition (3.9x after stock compensation), new debt is being issued at 6.375%, and reverse DCF implies about 5.8% annual free-cash-flow growth against my base of about 6.5%: a thin cushion (base value +8%, bear -20%, bull +23%). Condition that would change it: a price near $235 (about 20% below base value) or net leverage below 3.25x with organic growth at or above 5%.
+
+## 2. Business in plain English
+IQVIA sells two things to drugmakers and biotechs: (1) Research and Development Solutions (2Q26 revenue $2,575m, 59% of the total): it runs clinical trials as an outsourced contract research organisation, paid on multi-year contracts with a $34.2bn contracted backlog; (2) Commercial Solutions ($1,793m): health-data, analytics, consulting and commercial-outsourcing services built on proprietary prescription and patient data sets. Competitive position: largest CRO plus a data asset competitors cannot copy; the risks are biotech funding cycles, cancellations and a leveraged balance sheet. Segments were recast effective 1 Jan 2026 (TAS renamed Commercial Solutions).
+
+## 3. Why the model likes it, durable or artefact?
+b1 composite 0.544 (live rank 187, decile 6; consolidated data): quality and cash-flow families (pct_roe 0.70, pct_ocf_a 0.63, pct_leverage low, pct_bp weak because buybacks have cut book equity), plus revision momentum. The "ROE" is flattered by buybacks that have cut stockholders' equity to $6.2bn (equity attributable to IQVIA $6,171m at 30 Jun 2026 vs $6,503m at 31 Dec 2025). Durable part: cash conversion and bookings. Artefact part: adjusted EPS excludes stock-based compensation and $273m a half-year of purchase-accounting amortisation, so GAAP EPS ($1.53 in 2Q26) is about half of adjusted ($3.15).
+
+## 4. Last two years of results (GAAP vs adjusted labelled)
+Source: 8-K Ex. 99.1 releases and 10-Q acc. 0001628280-26-050211. Adjusted EBITDA and adjusted EPS are company non-GAAP measures that exclude SBC.
+
+| Quarter | Revenue $m (YoY) | Adj. EBITDA $m (margin) | GAAP EPS | Adj. EPS | FCF $m |
+|---|---|---|---|---|---|
+| 2Q25 | 4,017 | 910 (22.7%) | 1.54 | 2.81 | 718 (1H25) |
+| 3Q25 | 4,100 (+5.2%) | 949 (23.1%) | 1.93 | 3.00 | 772 |
+| 4Q25 | 4,364 | 1,046 (24.0%) | 2.99 | 3.42 | 561 |
+| 1Q26 | 4,151 (+8.4%) | 932 (22.5%) | 1.61 | 2.90 | 491 |
+| 2Q26 | 4,368 (+8.7%) | 994 (22.8%) | 1.53 | 3.15 | 360 |
+| FY25 | 16,310 | 3,788 | 7.84 | 11.92 | 2,051 |
+
+(1H25 FCF 718 is operating cash flow $1,011m less capital expenditure $293m, my arithmetic; 1Q25 and 2Q25 not split.)
+**Variance, 2Q26 vs 2Q25 (release acc. 0001628280-26-049923 and 10-Q):** revenue +$351m (+8.7%; constant currency +8.5%; about "200 basis points of contribution from acquisitions" in the full-year guide; R&DS ex-reimbursed revenue +6.7%, R&DS organic 7%); adjusted EBITDA +9.2%, margin +10 bps; GAAP operating income flat at $506m (margin 11.6% vs 12.6%, -100 bps) as SG&A rose 12.8% ($574m vs $509m), restructuring costs doubled ($63m vs $32m) and SBC rose 58% ($95m vs $60m); interest expense $197m vs $182m; GAAP EPS $1.53 vs $1.54 (-0.6%) while adjusted EPS rose 12.1% ($3.15 vs $2.81), helped by a 3.4% lower diluted share count (167.3m vs 173.2m). Material variances (>10%): SG&A, restructuring, SBC. Net new bookings $3.15bn (+19%), book-to-bill 1.22x, last-twelve-month bookings $11.3bn (+13%), backlog $34.2bn with about $9.2bn expected to convert in the next twelve months (+7.5%).
+Cash flow (1H26, consolidated, 10-Q acc. 0001628280-26-050211): operating $1,176m, capital expenditure (property, equipment and software) $325m, FCF $851m; acquisitions $200m; buybacks $950m. TTM FCF about $2,184m (FY25 $2,051m + 1H26 $851m - 1H25 $718m, my arithmetic); SBC TTM about $275m (FY25 $247m per 10-K + 1H26 $160m - 1H25 $132m) = 1.6% of TTM revenue; 2Q26 SBC 2.2% of revenue.
+
+## 5. Guidance track record (verbatim; adjusted measures are non-GAAP)
+- **3Q25 release, 28 Oct 2025 (acc. 0001628280-25-046554), FY25:** "The company is reaffirming the midpoint of its full-year 2025 guidance and narrowing the ranges ... revenue expected to be between $16,150 million and $16,250 million, Adjusted EBITDA expected to be between $3,775 million and $3,800 million, and Adjusted Diluted Earnings per Share expected to be between $11.85 and $11.95." Outcome: revenue $16,310m (above), adjusted EBITDA $3,788m and adjusted EPS $11.92 (inside).
+- **4Q25 release, 5 Feb 2026 (acc. 0001628280-26-005605), first FY26 guide:** "Full-year 2026 Revenue guidance of $17,150 million to $17,350 million, Adjusted EBITDA of $3,975 million to $4,025 million and Adjusted Diluted Earnings per Share of $12.55 to $12.85"; "This guidance includes a step up in interest expense of approximately $80 million".
+- **1Q26 release, 5 May 2026 (acc. 0001628280-26-030118):** "The company is reaffirming its full-year 2026 guidance for revenue to be between $17,150 million and $17,350 million, and for Adjusted EBITDA to be between $3,975 million and $4,025 million. The company is raising its full-year 2026 guidance for Adjusted Diluted Earnings per Share to be between $12.65 and $12.95." EPS midpoint moved from $12.70 to $12.80: **EPS raised** (+$0.10 at the midpoint), revenue and EBITDA **maintained**.
+- **2Q26 release, 28 Jul 2026 (acc. 0001628280-26-049923):** "the company is raising its full-year 2026 guidance for revenue to be between $17,275 million and $17,475 million, for Adjusted EBITDA to be between $4,000 million and $4,050 million and for Adjusted Diluted Earnings per Share to be between $12.80 and $13.00." **Raised** versus $17,150m-$17,350m, $3,975m-$4,025m and $12.65-$12.95. "The new mid-point of the revenue growth guidance is 6.5% versus the prior guidance of 5.8%, reflecting approximately 100 basis points higher organic revenue growth, and approximately 50 basis points higher contribution from M&A offset by approximately 80 basis points unfavorable change in foreign exchange impact".
+- **Record:** EPS guide midpoint up from $12.70 to $12.80 to $12.90 across the last two releases; quarters beat "the high-end of our expectations" per the CEO in both 1Q26 and 2Q26. Note that part of the revenue raise is M&A (+50 bps) rather than organic. No numeric free-cash-flow guidance was found in the releases.
+
+## 6. Earnings quality and balance sheet (entity: consolidated IQVIA Holdings Inc.)
+- **Consolidated balance sheet, 30 Jun 2026 (release Table 2 / 10-Q):** cash $1,909m; current portion of long-term debt $2,294m; long-term debt less current portion $13,705m (carrying total $15,999m); company net debt $14,090m; "Net Leverage Ratio was 3.59x trailing twelve-month Adjusted EBITDA" (company definition; adds back SBC). My SBC-burdened figure: TTM adjusted EBITDA $3,921m (FY25 3,788 + 1,926 - 1,793) less SBC about $275m = $3,646m, net debt/EBITDA about 3.9x. Gross principal $16,081m (10-Q Note, before $82m discount and issuance costs). Goodwill $16,604m plus intangibles $4,749m = 71% of $29,881m total assets; total equity $6,301m.
+- **Debt maturities (10-Q, principal):** remainder of 2026 $1,122m; 2027 $1,794m; 2028 $2,526m; 2029 $2,420m; 2030 $3,269m; thereafter $4,950m. About $5.7bn floating (term loans A and B, revolver, receivables facility). Secured: senior secured credit facilities $5,138m plus $2.0bn secured notes (5.700% 2028, 6.250% 2029); unsecured notes include 6.500% 2030 and 6.250% 2032.
+- **Post-quarter refinancing:** 8-K acc. 0001193125-26-399616, 23 Sep 2026: IQVIA Inc. issued "$2,000,000,000 in gross proceeds of 6.375% senior notes due 2034" to redeem in full the "Senior 5.000% Notes due 2026" ($1,050m), repay part of the revolver and pay fees, i.e. debt cost steps up from 5.0% to 6.375% on the refinanced piece. EUR 950m 4.625% notes due 2033 issued 11 Jun 2026 (acc. 0001193125-26-267763). Covenants: consolidated senior secured net leverage maximum and minimum interest coverage; the company "was in compliance in all material respects" at 30 Jun 2026 (10-Q).
+- **Earnings quality (consolidated; release acc. 0001628280-26-030118):** FCF/adjusted net income about 100% (1Q26 "100% of Adjusted Net Income"; FY25 99%); interest coverage TTM adjusted EBITDA/interest about 5x; GAAP EPS flat with adjusted +12% because of SBC, amortisation and restructuring ("Restructuring and related expenses" $120m in 1H26). Shares outstanding 164.6m at 30 Jun 2026 vs 169.6m at 31 Dec 2025; 1H26 buybacks $950m for 5.5m shares (about $173 per share); $2,819m authorisation left (10-Q).
+
+## 7. Valuation and reverse DCF (price $270.37, 25 Sep 2026 close; market cap about $44.5bn = 164.6m shares)
+**V1:** no IQV row in `v1_valuation_table.csv`; v1_verdict = null. Multiples (consolidated): adjusted P/E 21.0x on the FY26 guide ("$12.80 and $13.00") midpoint $12.90; SBC-burdened adjusted P/E about 23.4x (SBC $275m after 18% tax = about $1.35 per share, my arithmetic); GAAP P/E 33.5x on TTM GAAP EPS $8.06; EV about $58.7bn (market cap + net debt $14.09bn + noncontrolling $0.13bn) = 15.0x TTM adjusted EBITDA, 14.6x FY26 guide midpoint $4,025m; FCF yield 4.9% (TTM $2,184m) or 4.3% after SBC. No dividend. Peer multiples (ICLR, MEDP, Charles River) not pulled in this pass.
+**Reverse DCF (consolidated equity free cash flow after SBC, cost of equity 8.5%, terminal growth 3%, 10 years; starting FCF $1.91bn = TTM FCF $2.18bn less SBC $0.27bn):** the price implies **about 5.8% a year** growth (COE 8%: 4.6%; 9%: 7.0%; on unadjusted FCF $2.18bn: 4.1% at 8.5%). Base case: 10%, 9%, 9%, 8%, 7%, 6%, 5%, 4%, 4%, 3% (average 6.5%: guide revenue +6.5% including 2 points of M&A, backlog conversion +7.5%, margin flat, interest drag, buyback 3%) gives equity value about $48.0bn ($292 a share, +8%). Bear (3% a year: CRO cancellations, biotech funding relapse) $35.8bn ($217, -20%). Bull (13% fading to 3%, average 8.1%) $54.7bn ($332, +23%). **implied_vs_base = in_line**, but with a +8% base versus -20% bear, the asymmetry is not compelling for a leveraged cyclical.
+**Disagreement with the triage:** triage said "fairly priced (only 2.8% street upside)" and cited net debt/EBITDA 4.7x; the company's own figure is 3.59x (consolidated net debt $14,090m over TTM adjusted EBITDA; the 4.7x likely uses gross lease-inclusive debt or GAAP EBITDA; I could not reproduce it). Both agree the verdict is not a buy at this price.
+**3-year scenario returns (annualised):** bear -6.8%, base +7.1%, bull +16.6% (basis in the summary JSON).
+
+## 8. Bull and bear
+Bull: (1) record net new bookings ($3.15bn, +19%) and backlog $34.2bn give visibility, with "favorable forward-looking indicators across both segments" per the CEO; (2) Commercial Solutions is growing 8-9% with AI-enabled analytics on data no competitor owns; (3) three straight guidance raises and FCF at about 100% of adjusted net income fund about $2bn a year of buybacks.
+Bear: (1) quality of adjusted EPS: GAAP EPS fell 0.6% in 2Q26 while adjusted rose 12%; SBC rose 58% and restructuring doubled; (2) leverage of 3.6x (3.9x after SBC) with a 6.375% new coupon means interest absorbs a growing share of operating profit ($197m of interest against $506m of GAAP operating income in 2Q26); (3) the shares are up about 57% from the company's average 1H26 buyback price, so the market already pays for the recovery.
+
+## 9. Key risks and kill criteria
+1. Net leverage (company definition, consolidated net debt over trailing-twelve-month adjusted EBITDA) above 3.9x at any quarter-end (3.59x at 30 Jun 2026).
+2. R&D Solutions net new bookings book-to-bill below 1.0x for two consecutive quarters (1.22x in 2Q26; 1.18x in 4Q25).
+3. FY26 adjusted diluted EPS guidance (now "$12.80 and $13.00") cut below $12.80, or organic revenue growth below 3% for two consecutive quarters (R&DS organic 7% in 2Q26).
+4. Stock-based compensation above 2.5% of revenue in any quarter (2.2% in 2Q26, 1.5% in 2Q25), or GAAP diluted EPS below the prior-year quarter for three consecutive quarters (2Q26 $1.53 vs $1.54).
+5. Trailing-twelve-month free cash flow below 85% of adjusted net income (about 103% now on my arithmetic).
+
+## 10. Catalysts and calendar
+3Q26 results about 27 Oct 2026 (estimate from the 28 Jul 2026 and 28 Oct 2025 pattern; not confirmed in a filing); new 2027 guidance expected with 4Q26 results in February 2027 (none issued yet); redemption of the 5.0% 2026 notes and revolver paydown from the September notes; 2027 maturities of $1,794m; biotech funding and NIH/FDA policy headlines.
+
+## 11. Red-flag scan
+- Auditor change or restatement (Items 4.01/4.02): none in the 8-K list since 1 Jul 2025. Risk factors: 10-Q states "There have been no material changes from the risk factors previously disclosed in our 2025 Form 10-K". Legal: 10-Q Note 8 says "management does not expect the impact of pending legal and tax proceedings, claims and litigation, either individually or in the aggregate, to have a material adverse effect".
+- Management: CFO succession announced 2 Sep 2025 (8-K acc. 0001193125-25-193510): Michael J. Fedock succeeded Ronald E. Bruehlman as CFO effective 28 Feb 2026 (new CFO, internal promotion, so first full-year guide under him is FY26). New director appointed 5 Nov 2025 (8-K acc. 0001193125-25-267053). 8-K of 23 Apr 2026 (Items 5.02/5.07) not opened. Form 4 pattern and short-seller reports not checked this pass.
+- Data conflicts (consolidated basis): triage net debt/EBITDA 4.7x vs company 3.59x (and my 3.9x after SBC); b1 market cap $45.1bn vs my $44.5bn on 164.6m period-end shares; GAAP vs adjusted EPS gap of about 2x is a labelling issue, not an error.
+
+## 12. Sources
+1. IQVIA 8-K Ex. 99.1, 2Q26, 28 Jul 2026, https://www.sec.gov/Archives/edgar/data/1478242/000162828026049923/iqv-q2x2026earningspressre.htm
+2. IQVIA 10-Q for 30 Jun 2026, acc. 0001628280-26-050211 (filed 28 Jul 2026), https://www.sec.gov/Archives/edgar/data/1478242/000162828026050211/iqv-20260630.htm
+3. IQVIA 8-K Ex. 99.1, 1Q26, 5 May 2026, https://www.sec.gov/Archives/edgar/data/1478242/000162828026030118/iqv-q1x2026earningspressre.htm
+4. IQVIA 8-K Ex. 99.1, 4Q25, 5 Feb 2026, https://www.sec.gov/Archives/edgar/data/1478242/000162828026005605/iqv-q4x2025earningspressre.htm
+5. IQVIA 8-K Ex. 99.1, 3Q25, 28 Oct 2025, https://www.sec.gov/Archives/edgar/data/1478242/000162828025046554/iqv-q3x2025earningspressre.htm
+6. 8-K notes offering closing, 23 Sep 2026, https://www.sec.gov/Archives/edgar/data/1478242/000119312526399616/d128109d8k.htm
+7. 8-K EUR notes, 11 Jun 2026, https://www.sec.gov/Archives/edgar/data/1478242/000119312526267763/d157492d8k.htm
+8. 8-K CFO succession, 2 Sep 2025, https://www.sec.gov/Archives/edgar/data/1478242/000119312525193510/d37930d8k.htm
+9. XBRL companyfacts (SBC, OCF, capex FY25): https://data.sec.gov/api/xbrl/companyfacts/CIK0001478242.json
+10. Quant context: v4\data\b1_live_scores.csv (price $270.37, 25 Sep 2026); triage Q-series entry for IQV.
+
+## Data basis, recency and disclaimer
+Most recent period incorporated: quarter ended 30 Jun 2026 (consolidated; 10-Q acc. 0001628280-26-050211 and earnings 8-K acc. 0001628280-26-049923, both filed 28 Jul 2026) plus 8-Ks to 23 Sep 2026; events checked to 25 Sep 2026. GAAP and adjusted figures are labelled; adjusted EBITDA, adjusted EPS and the net leverage ratio are company non-GAAP measures that exclude SBC. SBC-burdened ratios, TTM figures and DCF values are my arithmetic. Research, not personal investment advice.

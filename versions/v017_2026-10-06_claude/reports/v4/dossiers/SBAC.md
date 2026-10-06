@@ -1,0 +1,71 @@
+# SBAC — SBA Communications Corporation — Diligence Dossier (Agent F153, Wave-8 Standard)
+
+## 1. Verdict
+**WATCH** (thesis horizon 24-48 months). A high-quality, contract-protected tower business with 6.4x leverage, where the 25 Sep 2026 close of $166.15 prices roughly what I think it delivers: the market-implied 10-year growth in free cash flow (about 4.0%) is a little above my base case (3.5%), giving about $156 a share on my base. AFFO per share fell 4% year on year in Q2 and the 2026 outlook is down about 5%, and domestic revenue is shrinking from Sprint and EchoStar churn. Condition that would change it: a price near $145-150 (about 12x 2026 AFFO), or 2027 guidance showing AFFO per share growing at least 5% as the churn rolls off.
+
+## 2. Business in plain English
+SBA owns about 46,400 communication sites (17,362 in the US and territories, 29,028 internationally, mainly Brazil and Central America) and leases space on them to wireless carriers under long-term contracts with built-in annual escalators. About 93% of 2026 outlook revenue is site leasing ($2,651-2,676M of $2,841-2,886M); the rest is construction and site-development services. Customers (AT&T, Verizon, T-Mobile, EchoStar and international carriers) pay rent that rises about 3% a year; adding antennas to existing towers costs SBA little, which is why tower margins are about 80%. The risk is carrier consolidation and customer failure (Sprint, EchoStar), and a heavily leveraged balance sheet.
+
+## 3. Why the model likes it, and is it durable?
+b1_live_scores.csv: valuation and quality families (AFFO yield about 7.3%, dividend growth 13%, steady contracted revenue) and street target $225.9 (36% above the price). The scores are fair on cash flow but do not capture that AFFO per share is falling in 2026 and that EchoStar has stopped paying. Partly durable (contracted rent), partly not (churn is elevated through 2026).
+
+## 4. Last six quarters (consolidated; $M except per share; AFFO and Adjusted EBITDA are company non-GAAP measures)
+| Quarter | Revenue | GAAP net income | Diluted EPS (GAAP) | Adj. EBITDA | Net cash interest | AFFO | AFFO per share |
+|---|---|---|---|---|---|---|---|
+| Q1'25 | 664.2 | 217.9 | 2.04 | 457.3 | 93.4 | 343.9 | 3.18 |
+| Q2'25 | 699.0 | 225.7 | 2.09 | 475.5 | 111.5 | 342.1 | 3.17 |
+| Q3'25 | 732.3 | 240.4 | 2.20 | 493.3 | 114.6 | 354.9 | 3.30 |
+| Q4'25 | 719.6 | 370.4 | 3.47 | 486.0 | 116.7 | 340.4 | 3.19 |
+| Q1'26 | 703.4 | 184.9 | 1.74 | 475.4 | 123.3 | 321.7 | 3.03 |
+| Q2'26 | 715.3 | 196.5 | 1.87 | 483.8 | 122.1 | 324.4 | 3.05 |
+Revenue = site leasing + site development. Sources: 8-K Ex-99.1 releases 0001193125-25-172604 (Aug 4 2025), 0001193125-25-262644 (Nov 3 2025), 0001193125-26-076767 (Feb 26 2026), 0001193125-26-191545 (Apr 29 2026), 0001193125-26-330639 (Aug 3 2026). GAAP net income includes currency gains/losses on intercompany loans (Q2'26 gain $8.0M after tax vs $30.4M in Q2'25; Q4'25 a $10.3M loss) and Q4'25 GAAP net income of $370.4M was well above the other quarters, so GAAP EPS is noisy; AFFO per share is the cleaner measure. FY2025 AFFO per share = 3.18+3.17+3.30+3.19 = $12.84.
+
+**Variance, Q2'26 vs Q2'25 (release and 10-Q 0001034054-26-000011):** site leasing revenue +5.1% (+3.0% ex-FX): domestic -3.7% ($452.5M vs $469.8M; "primarily due to Sprint, EchoStar, and other lease non-renewals"), international +30.5% (+22.4% ex-FX; 6,789 Millicom towers acquired); site development -23.5%; tower cash flow margin 79.5% vs 81.0% (-150 bps); Adjusted EBITDA +1.8% (flat ex-FX); net cash interest +9.5% ($122.1M vs $111.5M); AFFO -5.2%; AFFO per share -3.8% (-6.0% ex-FX). Growth is coming from international acquisitions and FX while the domestic base shrinks.
+
+## 5. Guidance track record (full-year AFFO per share; quotes from the Outlook tables)
+- **Aug 4 2025 (FY2025):** "AFFO per share (1) (4) $ 12.65 to $ 13.02 $ 0.13 $ 0.08" (raised by $0.13 at the midpoint).
+- **Nov 3 2025 (FY2025):** "AFFO per share (1) (4) $ 12.76 to $ 12.98 $ 0.03 $ —" (midpoint +$0.03; "Adjusted EBITDA (1) $ 1,909.0 to $ 1,919.0"). Outcome: FY2025 AFFO per share about $12.84, inside the range.
+- **Feb 26 2026 (FY2026, initial):** "AFFO per share (1) (5) $ 11.84 to $ 12.29" and "AFFO (1) $ 1,260.0 to $ 1,308.0", i.e. about 5% below 2025 at the midpoint. The release says: "Our outlook incorporates the full removal of all contracted revenue from EchoStar. While we intend to pursue our contracted legal rights to these amounts, we believe excluding these revenues provides the cleanest view of our forward expectations given the existing dispute and lack of payment from this customer."
+- **Apr 29 2026 (FY2026):** "AFFO per share (1) (5) $ 11.93 to $ 12.38 $ 0.09 $ 0.05" (raised $0.09 at the midpoint).
+- **Aug 3 2026 (FY2026):** "AFFO per share (1) (5) $11.95 to $12.40 $0.02 $0.03" (raised $0.02) with "Adjusted EBITDA (1) $1,920.0 to $1,940.0 $ (1.0 ) $ —" (midpoint cut $1M). The 2026 outlook assumes 106.3M diluted shares, no further buybacks and the 2021-1C refinancing at 5.25%. Track record: two consecutive small raises of the 2026 range; the release shows $0.09 in April ($0.05 excluding FX) and $0.02 in August ($0.03 excluding FX).
+
+## 6. Earnings quality, balance sheet and capital (consolidated, Jun 30 2026, 10-Q notes; entity named for each figure)
+- **Consolidated debt (principal, 10-Q debt table, "Total debt (1) $12,778,250" in thousands at Jun 30 2026, carrying $12,729,222; Dec 31 2025 $12,959,750):** about $12.8B, of which $9.8B secured (per the Aug 3 release). Company-reported net debt $12.4B and "Net Debt and Net Secured Debt to Annualized Adjusted EBITDA Leverage Ratios were 6.4x and 4.9x", target range 6.0x-7.0x. Current maturities $3,578.6M (Jun 30 2026).
+- **July 2026 refinancing (8-Ks 0001193125-26-304972 Jul 15, 0001193125-26-315142 Jul 24):** $1.35B 4.875% notes due 2030, $1.35B 5.150% due 2031 and $0.8B 5.450% due 2033 (blended 5.113%), SBA's first investment-grade unsecured notes (S&P upgrade to BBB per the Aug 3 release); proceeds repaid the $1.0B revolver and $2.2B 2024 term loan; new $2.5B unsecured revolver to Jul 23 2031 (SOFR + 100 bps). Sep 25 2026 8-K Item 2.03: a new commercial-paper programme of up to $2.5B; the paper "will also be structurally subordinated to all indebtedness and other liabilities of the Company's subsidiaries, including the secured tower revenue notes". Upcoming: $1,165.0M 2021-1C Tower Securities with an anticipated repayment date of Nov 9 2026 (outlook assumes refinancing at 5.25%).
+- **Shareholders' deficit:** $(4,854)M at Dec 31 2025 (balance sheet, release 0001193125-26-076767), the result of buybacks and dividends exceeding book earnings; leverage is therefore on debt/EBITDA, not book equity.
+- **Cash conversion:** H1'26 net cash from operations $662.3M vs $669.3M; capex $110.8M; acquisitions $172.3M; dividends paid $267.8M; buybacks only $2.2M (vs $130.7M H1'25); repurchase authorization remaining $1.1B. Dividend $1.25 a quarter ($5.00 a year, 3.0% yield), up 13% from $1.11, about 41% of 2026 AFFO outlook. Non-cash compensation $73.1M in FY2025 (2.6% of revenue). Total FY2026 capex outlook: non-discretionary $65-75M plus discretionary $455-475M.
+- **EchoStar default (10-K, 0001034054-26-000002):** "In December 2025, EchoStar defaulted on its payment obligations to us and such default has continued into 2026. As a result, we currently expect that this churn will represent approximately $56.0 million of cash site leasing revenue during 2026." and "has not had, and is not expected to have, a material adverse effect". 2026 domestic churn expected at "between $132.0 million and $136.0 million of cash site leasing revenue" (10-Q), including Sprint ($55-56M) and EchoStar ($56M) per the revenue bridge. Whether EchoStar's lease obligations are rejected or litigated further is unresolved; the outlook already removes the revenue.
+
+## 7. Valuation and V1 reconciliation (price $166.15 on 25 Sep 2026)
+- **V1:** SBAC has no row in v1_valuation_table.csv; v1_verdict is null, nothing to reconcile.
+- **Multiples:** market cap $17.6B (106.1M shares); EV about $30.0B (consolidated; adds $12.4B company-defined net debt); EV/2026E Adjusted EBITDA (midpoint $1,930M) 15.5x; P/AFFO on 2026 outlook midpoint ($12.175) 13.6x, AFFO yield 7.3%; TTM GAAP P/E about 18x ($9.28 TTM EPS includes Q4'25 gains). Own-history and peer comparison were not computed from primary data.
+- **Reverse DCF (unlevered FCF after non-cash compensation, WACC 7.3%, 10 years then 2.5%):** starting 2026E unlevered FCF about $1,250M (AFFO midpoint $1,294M + net cash interest about $494M - discretionary capex $465M - non-cash comp $73M). The market EV of $30.0B requires about **4.0% a year** FCF growth for ten years (2.6% at WACC 6.8%, 5.3% at 7.8%). My base is 3.5% a year (escalators about 3%, new leases and amendments about 2%, regular churn about -2.4%, EchoStar/Sprint rolling off after 2026-27, international acquisitions and builds funded from retained AFFO), which is worth about $156 a share. Implied versus base: **in_line** (0.5 point above, within estimation error). Both the verdict and the "in_line" label are sensitive to WACC.
+- **3-year scenario returns (annualised total return, 3.0 years):** bear -4.5%, base +6.6%, bull +12.5%. Basis: starting 2026E AFFO per share $12.18; base = AFFO per share +2%, +5%, +5% to $13.70 at 13.5x ($185) plus about $16.5 of dividends ($5.00 growing about 10%); bear = AFFO per share flat at $11.80, 11.0x ($130), $15 of dividends; bull = AFFO per share growing 4%, 7%, 8% to $14.64 at 15.0x ($220), $17 of dividends.
+
+## 8. Bull and bear
+**Bull:** (1) Contracted rent with escalators and about 80% tower cash-flow margins; carrier spectrum build-outs (Auction 115, 6G) and new colocations ("domestic leasing backlogs increased during the quarter", Apr 29 release); (2) churn from Sprint consolidation and EchoStar is known and finite (domestic churn $132-136M in 2026) and is already out of the guidance; (3) investment-grade access (BBB from S&P), first unsecured notes and a $2.5B revolver and CP programme lower funding risk; 13% dividend growth with a 41% payout.
+**Bear:** (1) AFFO per share fell year on year in each of the last four quarters (-0.6%, -8.1%, -4.7%, -3.8%) and the 2026 outlook midpoint implies about -5% (AFFO -7.6%); (2) leverage 6.4x with refinancing at about 5.1% versus legacy tower-security coupons, so net cash interest rose 9.5% in Q2; (3) EchoStar's non-payment shows customer concentration risk at the carrier level, and a US wireless consolidation or network-sharing change could cause more churn.
+
+## 9. Key risks and kill criteria
+1. Net Debt to Annualized Adjusted EBITDA (company definition, consolidated) above 7.0x at any quarter-end (Jun 30 2026: 6.4x; target range 6.0x-7.0x).
+2. FY2027 AFFO per share guidance midpoint (Feb 2027 release) at or below the FY2026 actual (a second consecutive annual decline).
+3. Domestic cash site leasing revenue down more than 5% year on year in any quarter (Q2'26: -3.7%) or 2026 domestic churn above $136M (10-Q range $132-136M).
+4. The 2021-1C Tower Securities ($1,165.0M, anticipated repayment Nov 9 2026) refinanced at a coupon above 6.0% (the Feb 26 2026 outlook footnote: "would be refinanced prior to the fourth quarter at a fixed rate of 5.25%") or not refinanced by the anticipated repayment date.
+5. Net cash interest expense above $500M for FY2026 (Aug 3 2026 outlook row: "Net cash interest expense (2)(3) $490.0 to $498.0").
+
+## 10. Catalysts and calendar
+Q3 2026 results about 2026-11-02 (estimate based on prior-year Nov 3; not confirmed in a filing); refinancing of the $1,165.0M 2021-1C Tower Securities by Nov 9 2026; dividend $1.25 declared payable Sep 17 2026; FCC Auction 115; EchoStar contract dispute; FY2027 guidance in Feb 2027; buyback resumption ($1.1B authorised).
+
+## 11. Red-flag scan and data conflicts
+Ernst & Young LLP is the auditor; the 10-K reports effective internal control (the single "material weakness" text match is generic risk language). No restatement, SEC/DOJ investigation or going-concern language found. The EchoStar default is disclosed in the 10-K and treated as non-material by the company. Form 4: 25 filings since 2026-03-25 and a Form 144 on Aug 17 2026 (counts from the EDGAR index; direction not analysed). 10-Q Part II Item 1 text was not retrievable in the cleaned copy, so I did not confirm the legal-proceedings wording. **Data conflict:** d4 total debt $15.2B and EV $32.6B exceed the filings' $12.8B principal / $12.4B net debt; the difference of about $2.4B is probably lease liabilities, but I did not reconcile it. The valuation above uses the filing-based net debt.
+
+## 12. Sources
+1. SBAC 8-K Ex-99.1 releases: Aug 3 2026 https://www.sec.gov/Archives/edgar/data/1034054/000119312526330639/ ; Apr 29 2026 .../000119312526191545/ ; Feb 26 2026 .../000119312526076767/ ; Nov 3 2025 .../000119312525262644/ ; Aug 4 2025 .../000119312525172604/
+2. SBAC 10-Q Jun 30 2026 (filed 2026-08-06) 0001034054-26-000011; 10-Q Mar 31 2026 0001034054-26-000009; 10-K FY2025 (filed 2026-02-27) 0001034054-26-000002.
+3. SBAC 8-Ks: Jul 15 2026 (underwriting agreement) https://www.sec.gov/Archives/edgar/data/1034054/000119312526304972/d169827d8k.htm ; Jul 24 2026 .../000119312526315142/d130705d8k.htm ; Sep 25 2026 (commercial paper) .../000119312526402918/d152825d8k.htm
+4. d4_live_snapshot.parquet, b1_live_scores.csv (price $166.15, 25 Sep 2026); Q11_triage.json; SEC EDGAR submissions index CIK 0001034054.
+
+## Data basis, recency and disclaimer
+**Data Quality Note:** sources are SEC filings and company releases listed in section 12; as-of date 2026-09-25 close; estimates and known gaps are stated inline (earnings dates are estimates, insider-trade direction not analysed).
+
+Most recent period incorporated: quarter ended 30 Jun 2026 (10-Q filed 2026-08-06) and 8-Ks through 2026-09-25; checked for events to 2026-09-25. GAAP figures are labelled GAAP; AFFO, Adjusted EBITDA, tower cash flow and net debt ratios are company non-GAAP measures and are labelled. Reverse DCF and scenarios are my estimates, not company guidance. Research only; this is not financial advice, investment advice or a recommendation to trade. Thesis-invalidation triggers are the kill criteria in section 9.

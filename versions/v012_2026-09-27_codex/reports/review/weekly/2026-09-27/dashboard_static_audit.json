@@ -1,0 +1,131 @@
+{
+  "prepared_utc": "2026-09-27T14:20:51.071677+00:00",
+  "scope": "Static HTML/current embedded model/render-function inspection; no new browser rendering performed",
+  "dashboard_sha256": "5d5c14dd5e80689f163d761876f541fe5960989c053990ae4b7ba27ea0e3492d",
+  "total_tabs": 29,
+  "preserved_prior_tabs": 25,
+  "current_tabs": [
+    "Current decisions",
+    "Capital & risk",
+    "14 valuation models",
+    "Weekly policy & memo"
+  ],
+  "historical_prefix_preserved_line_for_line": true,
+  "historical_comparison_parent": "v005_2026-09-26_codex",
+  "line_ending_note": "Raw prefix lengths differ only by CRLF/LF normalization",
+  "reference_checks": [
+    {
+      "ticker": "AMP",
+      "embedded_reference": 493.0,
+      "ledger_reference": 493.0,
+      "date": "2026-09-25",
+      "pass": true
+    },
+    {
+      "ticker": "PAYX",
+      "embedded_reference": 101.37,
+      "ledger_reference": 101.37,
+      "date": "2026-09-25",
+      "pass": true
+    },
+    {
+      "ticker": "MSFT",
+      "embedded_reference": 516.17,
+      "ledger_reference": 516.17,
+      "date": "2026-09-25",
+      "pass": true
+    },
+    {
+      "ticker": "NVDA",
+      "embedded_reference": 225.07,
+      "ledger_reference": 225.07,
+      "date": "2026-09-25",
+      "pass": true
+    },
+    {
+      "ticker": "ALLE",
+      "embedded_reference": 154.47,
+      "ledger_reference": 154.47,
+      "date": "2026-09-25",
+      "pass": true
+    },
+    {
+      "ticker": "HIG",
+      "embedded_reference": 124.23,
+      "ledger_reference": 124.23,
+      "date": "2026-09-25",
+      "pass": true
+    },
+    {
+      "ticker": "CPAY",
+      "embedded_reference": 398.11,
+      "ledger_reference": 398.11,
+      "date": "2026-09-25",
+      "pass": true
+    },
+    {
+      "ticker": "AIZ",
+      "embedded_reference": 265.0,
+      "ledger_reference": 265.0,
+      "date": "2026-09-25",
+      "pass": true
+    },
+    {
+      "ticker": "SNA",
+      "embedded_reference": 369.2,
+      "ledger_reference": 369.2,
+      "date": "2026-09-25",
+      "pass": true
+    },
+    {
+      "ticker": "NTAP",
+      "embedded_reference": 201.15,
+      "ledger_reference": 201.15,
+      "date": "2026-09-25",
+      "pass": true
+    },
+    {
+      "ticker": "IBKR",
+      "embedded_reference": 89.24,
+      "ledger_reference": 89.24,
+      "date": "2026-09-25",
+      "pass": true
+    },
+    {
+      "ticker": "ABNB",
+      "embedded_reference": 157.47,
+      "ledger_reference": 157.47,
+      "date": "2026-09-25",
+      "pass": true
+    },
+    {
+      "ticker": "AME",
+      "embedded_reference": 250.74,
+      "ledger_reference": 250.74,
+      "date": "2026-09-25",
+      "pass": true
+    },
+    {
+      "ticker": "RL",
+      "embedded_reference": 357.1,
+      "ledger_reference": 357.1,
+      "date": "2026-09-25",
+      "pass": true
+    }
+  ],
+  "embedded_scenarios": 42,
+  "embedded_vs_current_model_different_paths": [],
+  "current_view_findings": [
+    {
+      "severity": "clarity",
+      "finding": "Current valuation Details embed Sep26 source memoranda containing old reference quotes; make baseline date and noncurrent-price status explicit at Details entry."
+    },
+    {
+      "severity": "clarity",
+      "finding": "Policy effectiveSep26 is retained; label as unchanged policy reviewedSep27."
+    }
+  ],
+  "required_before_publication": "Regenerate after planned clarity edits. Current embedded model equals source exactly; no numerical mismatch.",
+  "embedded_model_exact_match": true,
+  "inspection_correction": "Initial apparent AME en-dash difference came from Windows cp1252 decoding of UTF-8 JSON. Explicit UTF-8 comparison proves full embedded/source equality; no source mutation."
+}

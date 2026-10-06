@@ -1,0 +1,34 @@
+{
+  "name": "r2_estate_tax_scenarios",
+  "producer": "code/r2_implementation_calcs.py",
+  "retrieved_utc": "2026-09-25T20:50:18Z",
+  "rows": 18,
+  "columns": [
+    "total_portfolio_usd",
+    "stock_sleeve_pct",
+    "stock_sleeve_usd",
+    "index_sleeve_usd",
+    "index_vehicle",
+    "us_situs_usd",
+    "form_706na_required",
+    "illustrative_us_estate_tax_usd",
+    "estate_tax_pct_of_portfolio",
+    "annual_dividend_wht_usd_at_1.11pct",
+    "annual_index_fund_cost_usd"
+  ],
+  "sources": [
+    "https://www.law.cornell.edu/uscode/text/26/2001",
+    "https://www.law.cornell.edu/uscode/text/26/2102",
+    "https://www.irs.gov/instructions/i706na",
+    "https://www.ssga.com/library-content/products/factsheets/etfs/emea/factsheet-emea-en_gb-spy5-gy.pdf",
+    "https://www.multpl.com/s-p-500-dividend-yield",
+    "https://www.irs.gov/pub/irs-lbi/tax-treaty-table-1.pdf"
+  ],
+  "caveats": [
+    "Illustrative arithmetic only; not tax advice.",
+    "Assumes no deductions (s.2106), no prior taxable gifts, no marital/charitable deduction, no treaty.",
+    "Stock-sleeve dividend yield set equal to index yield 1.11% as a placeholder.",
+    "Assumes all individual stocks are US-incorporated (US-situs); foreign-incorporated US listings differ.",
+    "Values are at date of death; USD 60k threshold is not inflation-indexed."
+  ]
+}

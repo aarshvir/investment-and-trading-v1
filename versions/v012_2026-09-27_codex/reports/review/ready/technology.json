@@ -1,0 +1,466 @@
+{
+  "prepared_date": "2026-09-26",
+  "valuation_date": "2026-09-25",
+  "target_date": "2029-09-25",
+  "units": "USD billions except per-share values",
+  "method": "Earnings capitalisation, stock compensation expensed; no added buyback yield, no probability weights. Annual dividends assumed received at year ends and discounted at hurdle for purchase ceiling. Total-return IRR includes annual dividends. Terminal price = revenue * operating margin * (1-tax) / diluted shares * terminal PE. No excess cash added; zero normalized net nonoperating income.",
+  "sources": {
+    "nvda_10q": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+    "nvda_10k": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+    "nvda_release": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+    "msft_10k": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm",
+    "msft_call": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q4",
+    "msft_dividend": "https://www.microsoft.com/en-us/Investor/dividends-and-stock-history"
+  },
+  "stocks": [
+    {
+      "ticker": "NVDA",
+      "decision": "BUY BELOW",
+      "limit_price": 215,
+      "hurdle": 0.15,
+      "reference_price": 224.58,
+      "reference_date": "2026-09-24",
+      "newer_observation": {
+        "date": "2026-09-25",
+        "header_close": 225.07,
+        "history_row_close": 225.05,
+        "status": "two-cent display discrepancy; does not affect limit decision"
+      },
+      "price_source": "https://stockanalysis.com/stocks/nvda/history/",
+      "max_starter_weight_total_capital": 0.01,
+      "max_total_weight_total_capital": 0.02,
+      "reported": {
+        "fy2025_revenue": 130.497,
+        "fy2026_revenue": 215.938,
+        "h1_fy2027_revenue": 177.837,
+        "q2_revenue": 96.221,
+        "q2_operating_income": 63.734,
+        "q2_gaap_net_income": 59.688,
+        "q2_gaap_eps": 2.46,
+        "q2_company_adjusted_eps_includes_sbc": 2.22,
+        "q2_diluted_shares": 24.285,
+        "h1_diluted_shares": 24.338,
+        "h1_sbc": 3.954,
+        "h1_equity_security_gains": 23.707,
+        "ttm_cfo_less_capex": 127.006,
+        "h1_cfo": 74.421,
+        "h1_capex": 4.434,
+        "h1_purchases_equity_securities": 42.404,
+        "cash_and_debt_securities": 56.586,
+        "debt_carrying_value": 33.366,
+        "q2_receivables": 63.059,
+        "year_end_receivables": 38.466,
+        "supply_capacity_commitments": 279,
+        "ai_cloud_agreements": 36,
+        "investment_commitments": 25,
+        "conditional_sb_energy_guarantee": 105
+      },
+      "management_guidance": {
+        "q3_fy2027_revenue": 108,
+        "revenue_range_pct": 0.02,
+        "q3_gaap_gross_margin": 0.74,
+        "q3_gaap_opex": 9.2,
+        "fy2027_tax_range": [
+          0.16,
+          0.18
+        ]
+      },
+      "terminal_earnings_period": "FY2030 ending January2030; four months forward of September2029 terminalvaluation",
+      "scenarios": [
+        {
+          "name": "bear",
+          "fiscal_years": [
+            2027,
+            2028,
+            2029,
+            2030
+          ],
+          "revenue": [
+            384.837,
+            307.8696,
+            292.47612,
+            307.099926
+          ],
+          "q3_fy2027_revenue": 105,
+          "q4_fy2027_revenue": 102,
+          "growth_after_fy2027": [
+            -0.2,
+            -0.05,
+            0.05
+          ],
+          "terminal_operating_margin_includes_sbc": 0.45,
+          "terminal_tax_rate": 0.21,
+          "terminal_diluted_shares": 24.5,
+          "terminal_PE": 18,
+          "annual_dividends_per_share": [
+            1,
+            1,
+            1
+          ],
+          "terminal_operating_income": 138.1949667,
+          "terminal_normalized_net_income": 109.17402369300001,
+          "terminal_eps": 4.456082599714286,
+          "terminal_price": 80.20948679485714,
+          "annualized_total_return_at_reference": -0.2839900075501166,
+          "annualized_total_return_at_limit": -0.2734337384349036,
+          "present_value_at_hurdle": 55.02226467977786
+        },
+        {
+          "name": "base",
+          "fiscal_years": [
+            2027,
+            2028,
+            2029,
+            2030
+          ],
+          "revenue": [
+            405.837,
+            527.5881,
+            606.726315,
+            667.3989465000001
+          ],
+          "q3_fy2027_revenue": 108,
+          "q4_fy2027_revenue": 120,
+          "growth_after_fy2027": [
+            0.3,
+            0.15,
+            0.1
+          ],
+          "terminal_operating_margin_includes_sbc": 0.6,
+          "terminal_tax_rate": 0.18,
+          "terminal_diluted_shares": 24.1,
+          "terminal_PE": 25,
+          "annual_dividends_per_share": [
+            1,
+            1,
+            1
+          ],
+          "terminal_operating_income": 400.43936790000004,
+          "terminal_normalized_net_income": 328.36028167800004,
+          "terminal_eps": 13.624907953443984,
+          "terminal_price": 340.6226988360996,
+          "annualized_total_return_at_reference": 0.15285089185884282,
+          "annualized_total_return_at_limit": 0.16978941623737753,
+          "present_value_at_hurdle": 226.24817873664807
+        },
+        {
+          "name": "bull",
+          "fiscal_years": [
+            2027,
+            2028,
+            2029,
+            2030
+          ],
+          "revenue": [
+            425.837,
+            638.7555,
+            798.444375,
+            918.21103125
+          ],
+          "q3_fy2027_revenue": 110,
+          "q4_fy2027_revenue": 138,
+          "growth_after_fy2027": [
+            0.5,
+            0.25,
+            0.15
+          ],
+          "terminal_operating_margin_includes_sbc": 0.64,
+          "terminal_tax_rate": 0.17,
+          "terminal_diluted_shares": 23.8,
+          "terminal_PE": 30,
+          "annual_dividends_per_share": [
+            1,
+            1.1,
+            1.2
+          ],
+          "terminal_operating_income": 587.65506,
+          "terminal_normalized_net_income": 487.7536998,
+          "terminal_eps": 20.49385293277311,
+          "terminal_price": 614.8155879831933,
+          "annualized_total_return_at_reference": 0.4024777492247661,
+          "annualized_total_return_at_limit": 0.4230682801139999,
+          "present_value_at_hurdle": 406.741571781503
+        }
+      ],
+      "earnings_baseline": {
+        "period": "Q2FY2027ended2026-07-26",
+        "reported_gaap_eps": 2.46,
+        "company_adjusted_eps_includes_sbc": 2.22,
+        "analyst_core_quarter_eps_at_17pct_tax_zero_nonoperating": 2.1782672431542105,
+        "definition": "GAAPoperatingincomeafterSBCtimes(1-tax),zeronormalizednonoperatingincome,dilutedshares;FY2030forecastuses18pcttax"
+      },
+      "base_hurdle_maximum_purchase_price": 226.24817873664807,
+      "suggested_limit_discount_to_hurdle_ceiling": 0.04971610732717058
+    },
+    {
+      "ticker": "MSFT",
+      "decision": "BUY BELOW",
+      "limit_price": 500,
+      "hurdle": 0.12,
+      "reference_price": 516.05,
+      "reference_date": "2026-09-25",
+      "price_source": "https://stockanalysis.com/stocks/msft/history/",
+      "max_starter_weight_total_capital": 0.015,
+      "max_total_weight_total_capital": 0.02,
+      "reported": {
+        "fy2024_revenue": 245.122,
+        "fy2025_revenue": 281.724,
+        "fy2026_revenue": 331.839,
+        "fy2026_operating_income": 155.237,
+        "fy2026_net_income": 133.749,
+        "fy2026_gaap_eps": 17.95,
+        "fy2026_company_adjusted_net_income": 128.786,
+        "fy2026_company_adjusted_eps": 17.28,
+        "fy2026_diluted_shares": 7.453,
+        "fy2025_diluted_shares": 7.465,
+        "fy2026_sbc": 12.405,
+        "fy2025_sbc": 11.974,
+        "fy2026_openai_aftertax_gain": 4.963,
+        "fy2026_total_other_income": 10.697,
+        "fy2026_cfo": 182.935,
+        "fy2026_cash_capex": 115.948,
+        "fy2026_finance_lease_principal": 3.101,
+        "fy2026_cfo_capex_leaseprincipal": 63.886,
+        "fy2026_new_finance_rou": 24.608,
+        "uncommenced_lease_commitments": 329.1,
+        "fy2026_segments": {
+          "productivity_business": 139.996,
+          "intelligent_cloud": 137.791,
+          "personal_computing": 54.052
+        },
+        "current_quarterly_dividend": 0.98
+      },
+      "management_guidance": {
+        "fy2027_tax": 0.2,
+        "fy2027_revenue_operating_growth": "double digits",
+        "fy2027_operating_margin_change": "down less than one percentage point",
+        "fy2027_fcf": "positive",
+        "calendar2026_reported_capex_approx": 175,
+        "q1_intelligent_cloud_growth_range": [
+          0.33,
+          0.34
+        ],
+        "q1_productivity_growth_range": [
+          0.11,
+          0.12
+        ]
+      },
+      "terminal_earnings_period": "FY2029 ending June2029; trailingmostrecent fiscalyear at September2029 terminalvaluation",
+      "scenarios": [
+        {
+          "name": "bear",
+          "fiscal_years": [
+            2026,
+            2027,
+            2028,
+            2029
+          ],
+          "revenue": [
+            331.839,
+            362.43586,
+            386.25498200000004,
+            408.50097264000004
+          ],
+          "segment_revenue": {
+            "productivity_business": [
+              139.996,
+              151.19568,
+              158.75546400000002,
+              166.69323720000003
+            ],
+            "intelligent_cloud": [
+              137.791,
+              162.59338,
+              178.852718,
+              193.16093544000003
+            ],
+            "personal_computing": [
+              54.052,
+              48.6468,
+              48.6468,
+              48.6468
+            ]
+          },
+          "segment_growth": {
+            "productivity_business": [
+              0.08,
+              0.05,
+              0.05
+            ],
+            "intelligent_cloud": [
+              0.18,
+              0.1,
+              0.08
+            ],
+            "personal_computing": [
+              -0.1,
+              0,
+              0
+            ]
+          },
+          "terminal_operating_margin_includes_sbc": 0.39,
+          "terminal_tax_rate": 0.22,
+          "terminal_diluted_shares": 7.5,
+          "terminal_PE": 22,
+          "annual_dividends_per_share": [
+            3.92,
+            3.92,
+            3.92
+          ],
+          "terminal_operating_income": 159.31537932960003,
+          "terminal_normalized_net_income": 124.26599587708803,
+          "terminal_eps": 16.568799450278405,
+          "terminal_price": 364.51358790612494,
+          "annualized_total_return_at_reference": -0.10085652393345307,
+          "annualized_total_return_at_limit": -0.09125147944516104,
+          "present_value_at_hurdle": 268.8687505026057
+        },
+        {
+          "name": "base",
+          "fiscal_years": [
+            2026,
+            2027,
+            2028,
+            2029
+          ],
+          "revenue": [
+            331.839,
+            388.67318,
+            453.4657006,
+            517.536961
+          ],
+          "segment_revenue": {
+            "productivity_business": [
+              139.996,
+              158.19548,
+              177.1789376,
+              194.89683136000002
+            ],
+            "intelligent_cloud": [
+              137.791,
+              179.1283,
+              223.910375,
+              268.69244999999995
+            ],
+            "personal_computing": [
+              54.052,
+              51.349399999999996,
+              52.376388,
+              53.94767964
+            ]
+          },
+          "segment_growth": {
+            "productivity_business": [
+              0.13,
+              0.12,
+              0.1
+            ],
+            "intelligent_cloud": [
+              0.3,
+              0.25,
+              0.2
+            ],
+            "personal_computing": [
+              -0.05,
+              0.02,
+              0.03
+            ]
+          },
+          "terminal_operating_margin_includes_sbc": 0.46,
+          "terminal_tax_rate": 0.2,
+          "terminal_diluted_shares": 7.453,
+          "terminal_PE": 28,
+          "annual_dividends_per_share": [
+            3.92,
+            4.12,
+            4.33
+          ],
+          "terminal_operating_income": 238.06700206000002,
+          "terminal_normalized_net_income": 190.45360164800002,
+          "terminal_eps": 25.553951650073795,
+          "terminal_price": 715.5106462020663,
+          "annualized_total_return_at_reference": 0.12225514430101081,
+          "annualized_total_return_at_limit": 0.13421741030562184,
+          "present_value_at_hurdle": 519.1527923153827
+        },
+        {
+          "name": "bull",
+          "fiscal_years": [
+            2026,
+            2027,
+            2028,
+            2029
+          ],
+          "revenue": [
+            331.839,
+            406.59893999999997,
+            493.9688296,
+            583.2455205199999
+          ],
+          "segment_revenue": {
+            "productivity_business": [
+              139.996,
+              162.39536,
+              186.754664,
+              211.03277031999997
+            ],
+            "intelligent_cloud": [
+              137.791,
+              190.15157999999997,
+              251.00008559999998,
+              313.75010699999996
+            ],
+            "personal_computing": [
+              54.052,
+              54.052,
+              56.21408,
+              58.4626432
+            ]
+          },
+          "segment_growth": {
+            "productivity_business": [
+              0.16,
+              0.15,
+              0.13
+            ],
+            "intelligent_cloud": [
+              0.38,
+              0.32,
+              0.25
+            ],
+            "personal_computing": [
+              0,
+              0.04,
+              0.04
+            ]
+          },
+          "terminal_operating_margin_includes_sbc": 0.49,
+          "terminal_tax_rate": 0.19,
+          "terminal_diluted_shares": 7.4,
+          "terminal_PE": 32,
+          "annual_dividends_per_share": [
+            3.92,
+            4.31,
+            4.74
+          ],
+          "terminal_operating_income": 285.79030505479994,
+          "terminal_normalized_net_income": 231.49014709438796,
+          "terminal_eps": 31.282452310052427,
+          "terminal_price": 1001.0384739216777,
+          "annualized_total_return_at_reference": 0.25388859575679035,
+          "annualized_total_return_at_limit": 0.2672428398821395,
+          "present_value_at_hurdle": 722.8291570256108
+        }
+      ],
+      "earnings_baseline": {
+        "period": "FY2026ended2026-06-30",
+        "reported_gaap_eps": 17.95,
+        "company_adjusted_eps_excludes_only_OpenAI": 17.28,
+        "analyst_core_eps_at_20pct_tax_zero_nonoperating": 16.66303501945525,
+        "definition": "GAAPoperatingincomeafterSBCtimes(1-20pcttax),zeronormalizednonoperatingincome,dilutedshares;removesotherinvestmentgainsincludingAnthropic"
+      },
+      "base_hurdle_maximum_purchase_price": 519.1527923153827,
+      "suggested_limit_discount_to_hurdle_ceiling": 0.036892399692126654
+    }
+  ]
+}

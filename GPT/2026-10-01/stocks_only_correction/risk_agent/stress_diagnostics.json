@@ -1,0 +1,664 @@
+{
+  "data_cutoff": "2026-09-30 completed US session; historical adjusted prices from Yahoo public chart API fetched after that close",
+  "proposed_concentration": {
+    "names": 20,
+    "total_weight_pct": 100,
+    "max_name_pct": 8,
+    "top_five_pct": 32,
+    "effective_name_count": 19.23076923076923,
+    "sectors_pct": {
+      "Information Technology": 20,
+      "Financials": 25,
+      "Industrials": 25,
+      "Consumer Discretionary": 6,
+      "Health Care": 15,
+      "Materials": 9
+    },
+    "sector_effective_count": 5.020080321285141,
+    "financials_pct": 25,
+    "technology_pct": 20,
+    "stock_weight_pct": {
+      "MSFT": 8,
+      "AMP": 6,
+      "NVDA": 4,
+      "ADP": 6,
+      "TJX": 6,
+      "RSG": 5,
+      "MA": 5,
+      "MCK": 6,
+      "STE": 5,
+      "BALL": 4,
+      "DOV": 5,
+      "BR": 4,
+      "AXP": 5,
+      "USB": 4,
+      "CRH": 5,
+      "PTC": 4,
+      "VEEV": 4,
+      "GDDY": 4,
+      "ALLE": 5,
+      "HIG": 5
+    }
+  },
+  "v011_concentration": {
+    "names": 20,
+    "total_weight_pct": 99.99900000000002,
+    "max_name_pct": 8.323,
+    "top_five_pct": 32.918,
+    "effective_name_count": 18.874903791076335,
+    "sectors_pct": {
+      "Financials": 25.0,
+      "Information Technology": 6.747999999999999,
+      "Health Care": 18.564,
+      "Industrials": 21.708000000000002,
+      "Consumer Discretionary": 10.239,
+      "Materials": 9.417,
+      "Utilities": 8.323
+    },
+    "sector_effective_count": 5.7169507835990885,
+    "financials_pct": 25.0,
+    "technology_pct": 6.747999999999999,
+    "stock_weight_pct": {
+      "USB": 5.585,
+      "GDDY": 3.0,
+      "VEEV": 3.209,
+      "ADP": 4.923,
+      "MA": 5.63,
+      "TJX": 6.4030000000000005,
+      "CRH": 4.204,
+      "LVS": 3.836,
+      "BR": 4.639,
+      "STE": 5.3069999999999995,
+      "LH": 5.568,
+      "AXP": 4.587,
+      "PGR": 4.633,
+      "DOV": 5.169,
+      "WEC": 8.323,
+      "BALL": 5.213,
+      "PTC": 3.7479999999999998,
+      "RSG": 6.977,
+      "MCK": 4.4799999999999995,
+      "HBAN": 4.565
+    }
+  },
+  "episodes": [
+    {
+      "episode": "Global financial crisis",
+      "start": "2007-10-09",
+      "end": "2009-03-09",
+      "proposed": {
+        "episode_return": -0.5237074592409982,
+        "worst_drawdown": -0.5305993728258228,
+        "worst_date": "2009-03-09",
+        "available_names": 17,
+        "missing_names_and_original_weight_pct": {
+          "VEEV": 4,
+          "GDDY": 4,
+          "ALLE": 5
+        },
+        "coverage_original_weight_pct": 87,
+        "session_count": 356,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      },
+      "v011_replay_same_yahoo": {
+        "episode_return": -0.47586407352482807,
+        "worst_drawdown": -0.47906330691930554,
+        "worst_date": "2009-03-09",
+        "available_names": 18,
+        "missing_names_and_original_weight_pct": {
+          "GDDY": 3.0,
+          "VEEV": 3.209
+        },
+        "coverage_original_weight_pct": 93.79,
+        "session_count": 356,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      },
+      "v011_archived_sleeve_return": -0.473495,
+      "v011_archived_spy_return": -0.551894,
+      "spy_same_yahoo": {
+        "episode_return": -0.5518942836184905,
+        "worst_drawdown": -0.5518942836184905,
+        "worst_date": "2009-03-09",
+        "available_names": 1,
+        "missing_names_and_original_weight_pct": {},
+        "coverage_original_weight_pct": 100,
+        "session_count": 356,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      }
+    },
+    {
+      "episode": "US downgrade / euro crisis",
+      "start": "2011-07-07",
+      "end": "2011-10-03",
+      "proposed": {
+        "episode_return": -0.20736025615332376,
+        "worst_drawdown": -0.20736025615332387,
+        "worst_date": "2011-10-03",
+        "available_names": 17,
+        "missing_names_and_original_weight_pct": {
+          "VEEV": 4,
+          "GDDY": 4,
+          "ALLE": 5
+        },
+        "coverage_original_weight_pct": 87,
+        "session_count": 62,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      },
+      "v011_replay_same_yahoo": {
+        "episode_return": -0.17759401083795456,
+        "worst_drawdown": -0.1803443868618928,
+        "worst_date": "2011-08-08",
+        "available_names": 18,
+        "missing_names_and_original_weight_pct": {
+          "GDDY": 3.0,
+          "VEEV": 3.209
+        },
+        "coverage_original_weight_pct": 93.79,
+        "session_count": 62,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      },
+      "v011_archived_sleeve_return": -0.177929,
+      "v011_archived_spy_return": -0.183668,
+      "spy_same_yahoo": {
+        "episode_return": -0.18366762599243136,
+        "worst_drawdown": -0.18366762599243136,
+        "worst_date": "2011-10-03",
+        "available_names": 1,
+        "missing_names_and_original_weight_pct": {},
+        "coverage_original_weight_pct": 100,
+        "session_count": 62,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      }
+    },
+    {
+      "episode": "China devaluation sell-off",
+      "start": "2015-07-20",
+      "end": "2016-02-11",
+      "proposed": {
+        "episode_return": -0.11727282527493066,
+        "worst_drawdown": -0.1618112029937423,
+        "worst_date": "2016-02-11",
+        "available_names": 20,
+        "missing_names_and_original_weight_pct": {},
+        "coverage_original_weight_pct": 100,
+        "session_count": 144,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      },
+      "v011_replay_same_yahoo": {
+        "episode_return": -0.10380522829664607,
+        "worst_drawdown": -0.12810538211467126,
+        "worst_date": "2016-02-11",
+        "available_names": 20,
+        "missing_names_and_original_weight_pct": {},
+        "coverage_original_weight_pct": 99.99900000000002,
+        "session_count": 144,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      },
+      "v011_archived_sleeve_return": -0.102587,
+      "v011_archived_spy_return": -0.130229,
+      "spy_same_yahoo": {
+        "episode_return": -0.13022931394991177,
+        "worst_drawdown": -0.13022931394991177,
+        "worst_date": "2016-02-11",
+        "available_names": 1,
+        "missing_names_and_original_weight_pct": {},
+        "coverage_original_weight_pct": 100,
+        "session_count": 144,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      }
+    },
+    {
+      "episode": "Q4 2018 rate scare",
+      "start": "2018-09-20",
+      "end": "2018-12-24",
+      "proposed": {
+        "episode_return": -0.21489199386673963,
+        "worst_drawdown": -0.21509335913488847,
+        "worst_date": "2018-12-24",
+        "available_names": 20,
+        "missing_names_and_original_weight_pct": {},
+        "coverage_original_weight_pct": 100,
+        "session_count": 66,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      },
+      "v011_replay_same_yahoo": {
+        "episode_return": -0.18550666819577455,
+        "worst_drawdown": -0.18550666819577455,
+        "worst_date": "2018-12-24",
+        "available_names": 20,
+        "missing_names_and_original_weight_pct": {},
+        "coverage_original_weight_pct": 99.99900000000002,
+        "session_count": 66,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      },
+      "v011_archived_sleeve_return": -0.184699,
+      "v011_archived_spy_return": -0.193489,
+      "spy_same_yahoo": {
+        "episode_return": -0.19348917512705,
+        "worst_drawdown": -0.19348917512705,
+        "worst_date": "2018-12-24",
+        "available_names": 1,
+        "missing_names_and_original_weight_pct": {},
+        "coverage_original_weight_pct": 100,
+        "session_count": 66,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      }
+    },
+    {
+      "episode": "COVID crash",
+      "start": "2020-02-19",
+      "end": "2020-03-23",
+      "proposed": {
+        "episode_return": -0.3874404276927247,
+        "worst_drawdown": -0.3874404276927247,
+        "worst_date": "2020-03-23",
+        "available_names": 20,
+        "missing_names_and_original_weight_pct": {},
+        "coverage_original_weight_pct": 100,
+        "session_count": 24,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      },
+      "v011_replay_same_yahoo": {
+        "episode_return": -0.3776859072107658,
+        "worst_drawdown": -0.3776859072107658,
+        "worst_date": "2020-03-23",
+        "available_names": 20,
+        "missing_names_and_original_weight_pct": {},
+        "coverage_original_weight_pct": 99.99900000000002,
+        "session_count": 24,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      },
+      "v011_archived_sleeve_return": -0.374317,
+      "v011_archived_spy_return": -0.337173,
+      "spy_same_yahoo": {
+        "episode_return": -0.3371726378600284,
+        "worst_drawdown": -0.3371726378600284,
+        "worst_date": "2020-03-23",
+        "available_names": 1,
+        "missing_names_and_original_weight_pct": {},
+        "coverage_original_weight_pct": 100,
+        "session_count": 24,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      }
+    },
+    {
+      "episode": "2022 inflation bear market",
+      "start": "2022-01-03",
+      "end": "2022-10-12",
+      "proposed": {
+        "episode_return": -0.21232611939242663,
+        "worst_drawdown": -0.2181754973224561,
+        "worst_date": "2022-10-12",
+        "available_names": 20,
+        "missing_names_and_original_weight_pct": {},
+        "coverage_original_weight_pct": 100,
+        "session_count": 196,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      },
+      "v011_replay_same_yahoo": {
+        "episode_return": -0.17333773368355143,
+        "worst_drawdown": -0.1785735891121818,
+        "worst_date": "2022-06-16",
+        "available_names": 20,
+        "missing_names_and_original_weight_pct": {},
+        "coverage_original_weight_pct": 99.99900000000002,
+        "session_count": 196,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      },
+      "v011_archived_sleeve_return": -0.173427,
+      "v011_archived_spy_return": -0.244964,
+      "spy_same_yahoo": {
+        "episode_return": -0.24496376908509887,
+        "worst_drawdown": -0.24496376908509887,
+        "worst_date": "2022-10-12",
+        "available_names": 1,
+        "missing_names_and_original_weight_pct": {},
+        "coverage_original_weight_pct": 100,
+        "session_count": 196,
+        "method": "quarterly target-weight rebalance; Yahoo adjusted close; missing names excluded/remaining weights renormalized"
+      }
+    }
+  ],
+  "raw_manifest": {
+    "ADP": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/ADP?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "3f85da233681553ad6c4a8c0a132347daad80c30d0dfef50f5a0fa955a4b1cf4",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "ADP",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "ALLE": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/ALLE?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "39935cc8dd40d06dfa3b72fbc7b4484b4158aaffde0bb1a6ad8fe3b0d18af7f6",
+      "dates": 3235,
+      "first": "2013-11-18",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "ALLE",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "AMP": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AMP?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "f38da6d7cc8a1d54af56aedea3fb8fb4c0fa3273143467f38285e0d90d3c4187",
+      "dates": 5293,
+      "first": "2005-09-15",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "AMP",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "AXP": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/AXP?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "e782b35c11c88c1dceadf3552d3a2b3148176320f63b0fec85fff8eb8cc40dda",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "AXP",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "BALL": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BALL?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "44364c5aa8927a03beab73436f34e4029c42d63db66b1f7f0831217ad816586b",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "BALL",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "BR": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/BR?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "4e9e39a8a3654f109e698537f500209b3a017d895d2fbd2fcae73da76b981f7d",
+      "dates": 4913,
+      "first": "2007-03-22",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "BR",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "CRH": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/CRH?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "db4b3da5e0dbafd66c627323fd0d621e5cf9a0fb7231e1966410f89fee4ceed0",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "CRH",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "DOV": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/DOV?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "78e0336aec39cad945f6989f93ba90f97fe7e4e49de2a8f1bde77a31b48fc94d",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "DOV",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "GDDY": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/GDDY?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "76dad7995fb396da9bcc2a57d3d63601043259aebeded92fbc657aaef527278a",
+      "dates": 2893,
+      "first": "2015-03-31",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "GDDY",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "HBAN": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/HBAN?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "f9596821ee33729fd85dae0cf8cb439dd83d14a3791175e95b5b6ea552f7338b",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "HBAN",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "HIG": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/HIG?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "90978fc98809bb2bf3e6cbb62fd360a5f489e371b5dcf90057ca5082e4d93a79",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "HIG",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "LH": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/LH?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "e1fae12deb6f31eba365d9d9f23538a3b110b19ccb410d36a7ae86ffccca2e21",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "LH",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "LVS": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/LVS?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "2f826714d8201b19512dd956783a6bda9ddeccdc3a4e650398713a504562d2e9",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "LVS",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "MA": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/MA?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "efd092911db0c31c98b20c2e9308d9cf70c11390614164584b96d6f1fae88ca3",
+      "dates": 5119,
+      "first": "2006-05-25",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "MA",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "MCK": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/MCK?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "2693c6f00c99b9ff285fd131f04c8b98df960dfd36b7b4ccdb95e5cdb30a954f",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "MCK",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "MSFT": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "6738b640546e6cf73b894e6160569a61bc927d4620d055845f862fa9dfa2b1ef",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "MSFT",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "NVDA": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "fe0b707284d5c7741e475e81b6b30584f7c1d7ddf1d6cfe7ab10ce77880d4a03",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "NVDA",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "PGR": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/PGR?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "c98aec18b73ed1f61b5d1062dce39474aa27f41ac64720d6e3355e5f70e9be9d",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "PGR",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "PTC": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/PTC?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "a5a78ebf9135c551dbc13252929b8bffb1069147bf65c8bab543aa09ecaa8ab6",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "PTC",
+        "currency": "USD",
+        "exchangeName": "NMS",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "RSG": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/RSG?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "f591c6300b67bb7674f1539bd0998fcda2ce683cd3741c82aa6c1f589776334a",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "RSG",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "SPY": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "66195956a1fc2947de4aeb581669e2405d8921fc2a672e862825aba9f7b76c0b",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "SPY",
+        "currency": "USD",
+        "exchangeName": "PCX",
+        "instrumentType": "ETF"
+      }
+    },
+    "STE": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/STE?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "31afd02a3c4fcd8b078cf392d153db91d1d3c99e24f71d386af89c461157d0e2",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "STE",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "TJX": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/TJX?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "1abd196259d84674e2a93525ba4e998db8f917e53b1becdeb5674a7ef818df1f",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "TJX",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "USB": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/USB?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "08282875b8b4a543fb3e6188a5ddb9509911ad7c30dd0d17e7794a5e318699d6",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "USB",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "VEEV": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/VEEV?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "7a84996971fafc1d75eb34443055ea38e7011bfe3a87a78c7320a3fb329b9772",
+      "dates": 3258,
+      "first": "2013-10-16",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "VEEV",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    },
+    "WEC": {
+      "url": "https://query1.finance.yahoo.com/v8/finance/chart/WEC?period1=1104537600&period2=1790812800&interval=1d&events=div%2Csplits&includeAdjustedClose=true",
+      "sha256": "6a00bab010e812ed0da763bfc1e33477d626fe1f8daddf008dc1d672b2183477",
+      "dates": 5470,
+      "first": "2005-01-03",
+      "last": "2026-09-30",
+      "identity": {
+        "symbol": "WEC",
+        "currency": "USD",
+        "exchangeName": "NYQ",
+        "instrumentType": "EQUITY"
+      }
+    }
+  },
+  "immutable_parent_sha256": "9b80342576c1da680e97039752f1e29997de28676758f7dd798ff62c08e1a1f8",
+  "caveat": "Today-selected survivor replay; not a tradeable backtest or prospective risk bound. Yahoo adjusted close is gross total-return proxy; no withholding, FX, fees, taxes or corporate history validation."
+}

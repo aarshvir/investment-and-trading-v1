@@ -1,0 +1,193 @@
+{
+  "ticker": "ES",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/ES?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:45.331424+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "ES",
+            "exchangeName": "NYQ",
+            "fullExchangeName": "NYSE",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 99153000,
+            "regularMarketTime": 1790798402,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 64.16,
+            "regularMarketChangePercent": 0.407,
+            "fulldayPrice": 64.16,
+            "fulldayChange": 0.26,
+            "fulldayChangePercent": 0.407,
+            "fiftyTwoWeekHigh": 76.57,
+            "fiftyTwoWeekLow": 62.72,
+            "regularMarketDayHigh": 64.94,
+            "regularMarketDayLow": 63.97,
+            "regularMarketVolume": 3777048,
+            "longName": "Eversource Energy",
+            "shortName": "Eversource Energy (D/B/A)",
+            "chartPreviousClose": 64.91,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "end": 1790775000,
+                "start": 1790755200,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "end": 1790798400,
+                "start": 1790775000,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "end": 1790812800,
+                "start": 1790798400,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "high": [
+                  65.23999786376953,
+                  63.9900016784668,
+                  63.63999938964844,
+                  64.05999755859375,
+                  64.94000244140625
+                ],
+                "volume": [
+                  2570500,
+                  2867400,
+                  3255600,
+                  2965400,
+                  3777048
+                ],
+                "low": [
+                  63.75,
+                  63.150001525878906,
+                  62.720001220703125,
+                  62.75,
+                  63.970001220703125
+                ],
+                "close": [
+                  63.79999923706055,
+                  63.66999816894531,
+                  63.279998779296875,
+                  63.900001525878906,
+                  64.16000366210938
+                ],
+                "open": [
+                  64.81999969482422,
+                  63.900001525878906,
+                  63.58000183105469,
+                  62.790000915527344,
+                  64.29000091552734
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  63.79999923706055,
+                  63.66999816894531,
+                  63.279998779296875,
+                  63.900001525878906,
+                  64.16000366210938
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 63.79999923706055,
+      "adjclose": 63.79999923706055,
+      "open": 64.81999969482422,
+      "high": 65.23999786376953,
+      "low": 63.75,
+      "volume": 2570500
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 63.66999816894531,
+      "adjclose": 63.66999816894531,
+      "open": 63.900001525878906,
+      "high": 63.9900016784668,
+      "low": 63.150001525878906,
+      "volume": 2867400
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 63.279998779296875,
+      "adjclose": 63.279998779296875,
+      "open": 63.58000183105469,
+      "high": 63.63999938964844,
+      "low": 62.720001220703125,
+      "volume": 3255600
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 63.900001525878906,
+      "adjclose": 63.900001525878906,
+      "open": 62.790000915527344,
+      "high": 64.05999755859375,
+      "low": 62.75,
+      "volume": 2965400
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 64.16000366210938,
+      "adjclose": 64.16000366210938,
+      "open": 64.29000091552734,
+      "high": 64.94000244140625,
+      "low": 63.970001220703125,
+      "volume": 3777048
+    }
+  ],
+  "currency": "USD",
+  "symbol": "ES",
+  "regular_market_time": 1790798402,
+  "close_sep30": 64.16000366210938,
+  "session_match": true
+}

@@ -1,0 +1,126 @@
+{
+ "agent": "F144",
+ "as_of": "2026-09-25",
+ "tickers": {
+  "SYY": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "America's largest restaurant-food distributor is buying the cash-and-carry leader with mostly borrowed money; the price allows for that if regulators approve.",
+   "horizon": "12-36 months",
+   "kill_criteria": [
+    "FTC suit to block, or merger agreement terminated, before the target close of fiscal Q3 2027 (by 27 Mar 2027).",
+    "Consolidated net debt/adjusted EBITDA (earnings-release Net Debt table) above 4.5x at fiscal year-end June 2027, or not down at least 0.5x within 12 months of close.",
+    "US Foodservice local case volume growth below 1.0% in two consecutive quarters (Q4 FY26: +2.6%).",
+    "FY27 adjusted EPS growth guidance cut below the 9% low end, or actual FY27 adjusted EPS below $4.98 (FY26 $4.61 x 1.08).",
+    "JRD segment sales down year on year for two consecutive quarters after close (2025: +3.1%)."
+   ],
+   "key_adverse_facts": [
+    "$29.1B Jetro deal pending; FTC second request received 27 May 2026; $1.164B break fee.",
+    "Pro forma total debt about $34.4B, net debt/adj EBITDA about 5.0x (my arithmetic) vs 2.75x target; buybacks paused.",
+    "Pro forma GAAP EPS $2.83 vs $3.66 actual (8-K 0001104659-26-107510 Ex 99.3).",
+    "12.35M shares issued at $81.00 on 16 Sep 2026; new notes 5.45%-6.60% coupons.",
+    "Interim CFO; FY27 guidance is on a 53-week basis."
+   ],
+   "data_conflicts": [
+    "d4 totalDebt $15.05B and FCF $1.91B include leases/gross capex; consolidated debt per release is $13.516B and company FCF $2.1B.",
+    "Management JRD 'free cash flow $1.9B' and combined '$5.5B' equal EBITDA less capex before tax and interest (my reading), not equity cash flow.",
+    "No V1 row for SYY."
+   ],
+   "next_earnings_date": "2026-11-03",
+   "confidence_in_thesis": "med: standalone business verified, outcome hinges on FTC and leverage path",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "fair",
+    "consistent": true,
+    "reconciliation": "No V1 row exists. Reverse DCF implies 2.6%-6.0% 10-year FCF growth pro forma vs my 5% base.",
+    "implied_vs_base": "in_line"
+   },
+   "scenario_returns_3y": {
+    "bear": -0.001,
+    "base": 0.093,
+    "bull": 0.155
+   },
+   "scenario_basis": "Standalone FY27E adj EPS $5.05, growth 3/7/10% to FY30E, exit NTM P/E 13/15.5/17x, dividends $2.20/yr; deal accretion excluded; bear includes FTC block and $1.164B fee."
+  },
+  "SOLV": {
+   "verdict": "WATCH",
+   "thesis_one_line": "A former 3M medical-supplies and software business, cutting costs and splitting off health IT, whose reported profit is well ahead of its cash.",
+   "horizon": "12-24 months",
+   "kill_criteria": [
+    "Q3 2026 organic sales growth below -2% (reported about 5 Nov 2026), or FY26 organic growth guide cut below +2.5%.",
+    "FY26 free cash flow below $200M (guide: $200M-$300M).",
+    "Consolidated total debt less cash (10-Q debt note and balance sheet) above $5.5B (now $4.68B), or any further increase in the Bair Hugger accrual disclosed in a 10-Q.",
+    "FY27 adjusted EPS guidance midpoint below $7.00 (would mean under 5% growth ex the tariff refund).",
+    "H2 2026 adjusted operating margin below 21% (H1 26: 24.2%, including the refund and ERP timing; H1 25: 20.8%)."
+   ],
+   "key_adverse_facts": [
+    "Q2 26 adjusted EPS $2.55 included about $100M pre-tax IEEPA tariff refund and about $125M of pulled-forward sales (10-Q); Q3 will be hit.",
+    "FY26 EPS guide raised $0.50-$0.60 vs $6.60, about the size of the one-off refund.",
+    "FCF guide $200-300M vs adjusted net income about $1.24B; FY25 FCF was -$10M.",
+    "Bair Hugger litigation accrual raised in Q2 26 with no amount disclosed; PFAS responsibility post-spin.",
+    "$355M buybacks in H1 26 while H1 FCF was -$129M; cash down $475M."
+   ],
+   "data_conflicts": [
+    "Triage net debt/EBITDA 4.3x uses Yahoo GAAP-basis EBITDA; consolidated net debt is $4.68B (debt $5,079M less cash $403M) and about 2.3x on my estimated adjusted EBITDA.",
+    "Triage described PFAS exposure as mostly retained by 3M; the 10-K says 3M indemnifies certain product claims through 2025 only.",
+    "No V1 row for SOLV."
+   ],
+   "next_earnings_date": "2026-11-05",
+   "confidence_in_thesis": "med: adverse facts are filing-verified; upside case depends on cash conversion not yet shown",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "full",
+    "consistent": true,
+    "reconciliation": "No V1 row exists. Price implies 5% FCF growth on a normalised $690M but 32% on guided FCF less SBC; evidenced cash flow is far below adjusted earnings.",
+    "implied_vs_base": "above"
+   },
+   "scenario_returns_3y": {
+    "bear": -0.092,
+    "base": 0.071,
+    "bull": 0.18
+   },
+   "scenario_basis": "FY26E underlying adj EPS $6.69 (guide mid $7.15 less $0.46 tariff refund), growth 0/6/10% to FY30E, exit NTM P/E 10/13/15x, no dividend."
+  },
+  "CDW": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "The biggest US reseller of business computers, software and cloud services is priced for almost no growth while sales still grow about 10%.",
+   "horizon": "12-36 months",
+   "kill_criteria": [
+    "Non-GAAP operating margin below 7.5% in two consecutive quarters (Q2 26: 8.5%; H1 26: 8.2%).",
+    "Gross profit dollars down year on year in two consecutive quarters (Q2 26: +6.3%).",
+    "Consolidated net debt (company definition, release table) over 3.5x TTM non-GAAP operating income (now 2.7x, my calc).",
+    "FY26 adjusted FCF (company definition) below $700M (FY25 $1,085.5M; H1 26 $278.4M).",
+    "Sales growth below 3% in any quarter for two consecutive quarters (Q2 26: +10.0%)."
+   ],
+   "key_adverse_facts": [
+    "Gross margin down 70 bps in Q2 26 to 20.1% on hardware mix; S&A +8.6%; GAAP operating income only +2.0%.",
+    "H1 26 FCF $165.8M vs $393.7M; DSO 93 days vs 80 a year ago; inventory up 74% since Dec.",
+    "GAAP EPS flat for three years ($8.10, $7.97, $8.08).",
+    "$1.5B new notes at 5.7%-6.35% on 21 Sep 2026 vs $1.0B 2.67% notes due Dec 2026.",
+    "CFO retiring in 2027; no numeric guidance given."
+   ],
+   "data_conflicts": [
+    "d4 TTM FCF yield 4.0% (TTM working-capital trough) vs FY25 FCF yield 6.4%.",
+    "d4 total debt $6.43B includes lease/inventory-financing items; consolidated debt per release is $5,817.0M.",
+    "No V1 row for CDW."
+   ],
+   "next_earnings_date": "2026-11-03",
+   "confidence_in_thesis": "med: cheap and cash-generative over a full year but profit growth lags sales",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "cheap",
+    "consistent": true,
+    "reconciliation": "No V1 row exists. Reverse DCF implies 3.1%-6.5% FCF growth depending on FCF base vs my 5.5% base.",
+    "implied_vs_base": "in_line"
+   },
+   "scenario_returns_3y": {
+    "bear": -0.023,
+    "base": 0.086,
+    "bull": 0.183
+   },
+   "scenario_basis": "FY26E consensus non-GAAP EPS $10.96, growth 2/6/10% to FY30E, exit NTM P/E 10/12/13.5x, dividends $2.52/yr."
+  }
+ }
+}

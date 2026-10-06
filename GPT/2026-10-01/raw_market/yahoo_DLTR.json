@@ -1,0 +1,193 @@
+{
+  "ticker": "DLTR",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/DLTR?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:42.216557+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "DLTR",
+            "exchangeName": "NMS",
+            "fullExchangeName": "NasdaqGS",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 794586600,
+            "regularMarketTime": 1790798401,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 114.02,
+            "regularMarketChangePercent": 0.635,
+            "fulldayPrice": 114.02,
+            "fulldayChange": 0.72,
+            "fulldayChangePercent": 0.635,
+            "fiftyTwoWeekHigh": 142.4,
+            "fiftyTwoWeekLow": 84.71,
+            "regularMarketDayHigh": 114.35,
+            "regularMarketDayLow": 112.67,
+            "regularMarketVolume": 2666243,
+            "longName": "Dollar Tree, Inc.",
+            "shortName": "Dollar Tree, Inc.",
+            "chartPreviousClose": 113.16,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "start": 1790755200,
+                "end": 1790775000,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "start": 1790775000,
+                "end": 1790798400,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "start": 1790798400,
+                "end": 1790812800,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "open": [
+                  114.06999969482422,
+                  113.30999755859375,
+                  112.9000015258789,
+                  115.76000213623047,
+                  113.63999938964844
+                ],
+                "low": [
+                  113.43000030517578,
+                  112.66000366210938,
+                  112.25,
+                  112.12999725341797,
+                  112.66999816894531
+                ],
+                "high": [
+                  116.11000061035156,
+                  114.81999969482422,
+                  116.88999938964844,
+                  115.7699966430664,
+                  114.3499984741211
+                ],
+                "close": [
+                  113.5,
+                  114.06999969482422,
+                  116.0199966430664,
+                  113.30000305175781,
+                  114.0199966430664
+                ],
+                "volume": [
+                  1851000,
+                  2007200,
+                  2072500,
+                  2541800,
+                  2666243
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  113.5,
+                  114.06999969482422,
+                  116.0199966430664,
+                  113.30000305175781,
+                  114.0199966430664
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 113.5,
+      "adjclose": 113.5,
+      "open": 114.06999969482422,
+      "high": 116.11000061035156,
+      "low": 113.43000030517578,
+      "volume": 1851000
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 114.06999969482422,
+      "adjclose": 114.06999969482422,
+      "open": 113.30999755859375,
+      "high": 114.81999969482422,
+      "low": 112.66000366210938,
+      "volume": 2007200
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 116.0199966430664,
+      "adjclose": 116.0199966430664,
+      "open": 112.9000015258789,
+      "high": 116.88999938964844,
+      "low": 112.25,
+      "volume": 2072500
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 113.30000305175781,
+      "adjclose": 113.30000305175781,
+      "open": 115.76000213623047,
+      "high": 115.7699966430664,
+      "low": 112.12999725341797,
+      "volume": 2541800
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 114.0199966430664,
+      "adjclose": 114.0199966430664,
+      "open": 113.63999938964844,
+      "high": 114.3499984741211,
+      "low": 112.66999816894531,
+      "volume": 2666243
+    }
+  ],
+  "currency": "USD",
+  "symbol": "DLTR",
+  "regular_market_time": 1790798401,
+  "close_sep30": 114.0199966430664,
+  "session_match": true
+}

@@ -1,0 +1,14 @@
+# DVH2 verification, 6 Oct 2026
+
+Scope: BIIB, APP. Research only; not personal advice. Full table: `DVH2_factcheck.json` (45 facts: 27 PASS, 8 MINOR, 6 FAIL, 4 UNVERIFIABLE).
+
+Both dossiers already carried corrections (DV06 for BIIB, DV04 for APP). Each was re-tested from EDGAR rather than trusted. Valuation re-tests used the programme parameters: 10-year Treasury 5.17% (25 Sep 2026), equity risk premium 4.14%, Blume-adjusted beta (Yahoo raw beta from the d4 snapshot), ten years of constant growth then 3.0% terminal, free cash flow after stock-based compensation, equity basis.
+
+| Ticker | Result | Corrections written |
+|---|---|---|
+| BIIB | DV06 confirmed in full. New: Q1'25 YoY is +6.1% not -1.3%; kill criterion 5 uses the wrong product set (Spinraza, Vumerity are not legacy MS); on the company's Legacy MS Portfolio Q2'26 is -14.3% vs the 15% trigger; Dec-25 liquidity omitted $1.24bn of marketable securities; "debt-funded" overstated ($5.41bn consideration, $2.0bn term loan). DV06's DCF was a perpetuity at ERP 4.5% / beta 0.7; on the programme basis implied FCF growth is -4.4%/yr (-0.7% to -3.4% with IPR&D cash or a lower base): still below | Dossier + F108. Verdict unchanged; implied vs base unchanged (below) |
+| APP | All quarterly figures, all four guidance ranges and the Q3'26 guide pass verbatim; DV04's litigation and SBC findings confirmed. DV04 priced equity at an unsourced beta of 1.2-1.5; with the snapshot's Blume beta 2.00 (Ke 13.4%) the implied 10-year FCF growth is 16.6%, not 9.9-15.2%, and a decelerating base path is worth 0.97x the market cap: **below -> in line**. Also wrong: Q2 FCF-drop mechanism (withholding is financing; it was working capital and cash taxes), buyback authorization (about $1.76bn left, not $3.3bn), factor-card percentiles (Value family is 29th percentile; momentum -56.6%), "$40B erased" (close-to-close -19.7%, about $27.5bn) | Dossier + F78. Verdict unchanged (INCLUDE-SMALL); implied vs base changed |
+
+Verdict changes: none. Implied-vs-base changed for APP (below -> in line); `F78_summary.json` entry updated (implied_vs_base, dossier_view, reconciliation, one adverse-fact line). `F108_summary.json` reconciliation text, the Q4'25 EPS adverse-fact line and an explicit implied_vs_base field updated.
+
+Limits: BIIB's TTM FCF excludes about six weeks of Apellis cash flows and carries only part of the deal financing cost, so the net sign of that bias cannot be read from filings. APP's base path (32%, 26%, 20%, then fading) is a reconstruction of the dossier's "about 26% over three years, decelerating from above 50%", not a stated analyst model. The 28% after-hours move, the $16M consensus miss, the SEC probe closure and the BIIB derivative-suit dismissal are press-sourced and unverifiable on EDGAR. Beta is the d4 snapshot's Yahoo value, Blume-adjusted, not a recomputed regression. Scenario returns were not re-derived (exit-multiple based).

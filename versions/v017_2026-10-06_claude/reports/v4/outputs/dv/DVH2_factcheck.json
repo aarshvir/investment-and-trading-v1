@@ -1,0 +1,415 @@
+{
+ "as_of": "2026-10-06",
+ "scope": [
+  "BIIB",
+  "APP"
+ ],
+ "facts": [
+  {
+   "ticker": "BIIB",
+   "claim": "Q2'26 revenue $2,736.0m, GAAP net income $97.5m, diluted EPS $0.66 (vs $2,645.5m / $634.8m / $4.33)",
+   "dossier_location": "s4 table, DV06 section",
+   "source": "10-Q acc 0000875045-26-000075; 8-K Ex-99.1 acc 0000875045-26-000073",
+   "source_value": "revenue 2,736.0 vs 2,645.5; NI 97.5 vs 634.8; EPS 0.66 vs 4.33",
+   "status": "PASS",
+   "note": "Period label correct (three months to 30 Jun 2026)."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Q1'26 revenue $2,477.8m, NI $319.5m, EPS $2.15",
+   "dossier_location": "s4 table",
+   "source": "8-K Ex-99.1 acc 0000875045-26-000042; 6M less Q2 in 10-Q",
+   "source_value": "2,477.8; 319.5; 2.15 (H1 5,213.8 / 417.0 less Q2)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Q4'25 row: revenue ~2,279.4, NI ~-48.9, EPS ~-0.35 'derived'",
+   "dossier_location": "s4 table (inline correction by DV06)",
+   "source": "8-K Ex-99.1 acc 0000875045-26-000011",
+   "source_value": "revenue 2,279.4; net loss (48.9); diluted EPS (0.33); Q4'24 266.8 / 1.83",
+   "status": "PASS",
+   "note": "Original -0.35 and 'derived' were wrong (DV06 corrected inline, re-confirmed). Q4'24 derived 266.7/1.82 vs reported 266.8/1.83 is MINOR."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "2025 Q1 revenue growth '-1.3%' YoY",
+   "dossier_location": "s4 table",
+   "source": "companyfacts (10-Q acc 0000875045-24-000016 Q1'24 revenue 2,290.5; acc 0000875045-25-000018 Q1'25 2,431.0)",
+   "source_value": "2,431.0 / 2,290.5 = +6.1%",
+   "status": "FAIL",
+   "note": "Wrong sign and size; corrected inline and in the DVH2 section. Other YoY cells (Q2'25 +7.3%, Q3'25 +2.8%, Q4'25 -7.1%, Q1'26 +1.9%, Q2'26 +3.4%) reproduce."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Q3'25 revenue 2,534.7, NI 466.5, EPS 3.17; Q3'24 2,465.8 / 388.5 / 2.66",
+   "dossier_location": "s4 table",
+   "source": "8-K Ex-99.1 acc 0000875045-25-000047; companyfacts",
+   "source_value": "2,534.7; 466.5 (3.17); 2,465.8 / 388.5 (2.66)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Q2'26 non-GAAP charges: restructuring $165.4m, acquired IPR&D $164.0m, step-up amortisation $310.4m (6 months)",
+   "dossier_location": "s4 text",
+   "source": "10-Q acc 0000875045-26-000075 (income statement, cash-flow statement)",
+   "source_value": "165.4; 164.0; 310.4 (6M)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Leqembi: +74% (Q1'26) used as current growth; DV06 states Q2'26 $184m, +15%",
+   "dossier_location": "s3, s8, s9 kill criterion 3",
+   "source": "8-K Ex-99.1 acc 0000875045-26-000073",
+   "source_value": "LEQEMBI global in-market sales $184m, +15%, U.S. $97m; Q1 $168m +74% (acc -000042)",
+   "status": "PASS",
+   "note": "DV06 correction confirmed. Original text stale. Kill criterion 3 already has one leg tripped (+15% < 30%)."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "FY2026 non-GAAP EPS guidance track (Feb/Apr/Jul) as stated in DV06 section",
+   "dossier_location": "s5 (DV06 correction)",
+   "source": "8-K Ex-99.1 acc 0000875045-26-000073 guidance table",
+   "source_value": "Feb 15.25-16.25; Apr underlying 15.25-16.25 / reported 14.25-15.25; Jul underlying 15.85-16.85 / reported 12.00-13.00; revenue mid-single-digit increase; H2 R&D+SG&A $2.65-2.70bn",
+   "status": "PASS",
+   "note": "Verbatim in release. FY25 guide 14.50-15.00 vs actual 15.28 (above top end, acc -26-000011 / -25-000047) is missing from Sec 5 (MINOR omission)."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Debt $8,090.3m (current 800.0 + non-current 7,290.3), cash $1,285.0m, Dec-25 notes payable $6,286.8m",
+   "dossier_location": "s6",
+   "source": "10-Q acc 0000875045-26-000075 balance sheet",
+   "source_value": "800.0; 7,290.3; 1,285.0; 6,286.8",
+   "status": "PASS",
+   "note": "Consolidated Biogen Inc., 30 Jun 2026. Release: total debt about $8.1bn, net debt about $6.8bn."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Cash fell $3,008.5m to $1,285.0m ('down $1.7bn'), implying a modest liquidity change",
+   "dossier_location": "s6",
+   "source": "10-Q acc 0000875045-26-000075 balance sheet; Q4'25 Ex-99.1",
+   "source_value": "Dec-25 also held marketable securities 807.2 + 431.9 = 1,239.1; liquidity 4,247.6 -> 1,285.0 (-2.96bn); net debt ~2.0bn -> ~6.8bn",
+   "status": "MINOR",
+   "note": "Omission understates the drawdown; annotated inline."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "'$5.6bn of debt-funded M&A'; Apellis acquired for ~$5.6bn; $1.8bn term loan 'drawn May 13'",
+   "dossier_location": "s1, s2, s6, s11",
+   "source": "10-Q acc 0000875045-26-000075 acquisition and indebtedness notes",
+   "source_value": "Total consideration 5,410.1 (net of cash acquired 5,065.1); funded by cash and securities, $2.0bn term loan (1.8bn outstanding at 30 Jun), $400m revolver draw repaid in June; close 14 May 2026",
+   "status": "MINOR",
+   "note": "'Debt-funded' overstated; $2.0bn drawn / $1.8bn outstanding conflated in the original (DV06 noted)."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Intangibles $13,516.4m, goodwill $6,990.8m, total assets $32,086.6m",
+   "dossier_location": "s6",
+   "source": "10-Q acc 0000875045-26-000075",
+   "source_value": "13,516.4; 6,990.8; 32,086.6",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "OCF $2,875.5m (FY24), $2,204.6m (FY25); H1'26 OCF $1,094.4m vs $420.2m",
+   "dossier_location": "s6, DV06 section",
+   "source": "companyfacts; 10-Q acc 0000875045-26-000075 cash-flow statement",
+   "source_value": "2,875.5; 2,204.6; 1,094.4; 420.2",
+   "status": "PASS",
+   "note": "TTM OCF 2,878.8, capex 182.2, FCF 2,696.6, SBC 296.3 (FY25 290.8 - H1'25 155.9 + H1'26 161.4) all reproduce."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "No share repurchases in 2026",
+   "dossier_location": "s6",
+   "source": "10-Q acc 0000875045-26-000075 cash-flow statement and equity statement",
+   "source_value": "no repurchase line; treasury stock unchanged at (2,977.1)",
+   "status": "PASS",
+   "note": "The dossier's causal story for the 2023-24 pause (Apellis) is unsupported (DV06 flagged)."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Price $227.60, market cap $33.6bn, trailing P/E 40.3-40.4x, TTM EPS $5.65",
+   "dossier_location": "s7",
+   "source": "d4_live_snapshot.parquet; Ex-99.1 quarterly EPS",
+   "source_value": "price 227.60; market cap 33.63bn (147.75M shares); trailing P/E 40.5 on Yahoo EPS 5.62; 227.60/5.65 = 40.3",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "'Forward P/E about 17.2x' (stockanalysis.com) and the V1 14.7x 'conflict'",
+   "dossier_location": "s7",
+   "source": "d4 snapshot; Ex-99.1 guidance",
+   "source_value": "Snapshot: 13.8x on FY+1 EPS 16.54; 18.2x on FY0 12.54; guidance basis 18.2x reported mid 12.50, 13.9x underlying mid 16.35",
+   "status": "UNVERIFIABLE",
+   "note": "17.2x not reproducible; the guidance-basis reconciliation in DV06 is the supportable one."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "V1 row: NTM P/E 14.71, percentile 29.4, peer median 16.87, implied growth -10.55%, consensus FY1 +2.05%, WACC 7.27%, bear/base/bull -18.4/+24.3/+65.4%, 'attractive' 0.77",
+   "dossier_location": "s7",
+   "source": "outputs/v1_valuation_table.csv",
+   "source_value": "all values match",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Q06 triage: +194% forward EPS growth, +55% trailing run, Street ~5% upside",
+   "dossier_location": "s3",
+   "source": "outputs/Q06_triage.json; d4 snapshot; b1_live_scores.csv",
+   "source_value": "forward EPS 16.54 / TTM 5.62 = +194%; 12-1 momentum +54.7%; target mean 238.18 = +4.6%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Reverse DCF 'implied growth 1.5-3%'; DV06 restated to -0.1% to 1.2% (perpetuity, ERP 4.5%, beta 0.7)",
+   "dossier_location": "s7 (DV06 correction)",
+   "source": "10-Q/companyfacts cash flow; d4 snapshot beta 0.171; programme parameters",
+   "source_value": "Programme basis (UST 5.17%, ERP 4.14%, Blume beta 0.445, Ke 7.0%, 10 years then 3.0%): FCF after SBC 2,400 on market cap 33.63bn implies -4.4%/yr (-1.7% at Ke 8.07%); with ~$185m TTM acquired-IPR&D cash in investing: -3.4% / -0.7%; on a $2.0bn base -2.2% / +0.6%",
+   "status": "MINOR",
+   "note": "Original 1.5-3% did not reproduce (FAIL, corrected by DV06). DV06's restatement is directionally right but not on the programme method; below-base conclusion holds in every variant."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Kill criterion 5: legacy MS = Tecfidera + Tysabri + Vumerity + Spinraza, decline >15% YoY",
+   "dossier_location": "s2, s8 bear 1, s9 #5",
+   "source": "8-K Ex-99.1 acc 0000875045-26-000073 Table 3",
+   "source_value": "Company Legacy MS Portfolio (AVONEX, PLEGRIDY, TECFIDERA, TYSABRI) Q2'26 766.8 vs 894.9 = -14.3%; dossier basket 1,140.1 vs 1,253.2 = -9.0%; Spinraza 401.9 (+2%); all MS products -13%",
+   "status": "FAIL",
+   "note": "Wrong product set (Spinraza is rare disease; Vumerity is a growth product). On the company basis the criterion is 0.7 points from triggering. Corrected inline and in the DVH2 section."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Verdict INCLUDE-SMALL supported by the dossier's evidence (implied below base; leverage up; GAAP volatility; Leqembi growth stalled)",
+   "dossier_location": "s1, s7",
+   "source": "Verification of s4-s9 above",
+   "source_value": "Programme-basis implied growth below any positive base; net debt ~2.4x TTM OCF; Leqembi +15%; legacy MS -14%",
+   "status": "PASS",
+   "note": "No verdict change. INCLUDE (full) would not be supported."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Bull 3: ~$600m/quarter net income 'would roughly halve the trailing P/E'",
+   "dossier_location": "s8",
+   "source": "Arithmetic from s4/s7",
+   "source_value": "$2.4bn vs $33.6bn cap = 14.0x vs 40.3x (-65%); Q2'25 GAAP tax rate 14.7%",
+   "status": "MINOR",
+   "note": "Understates the effect; corrected inline."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Next earnings 28 Oct 2026, company confirmed",
+   "dossier_location": "s10",
+   "source": "d4_live_snapshot next_earnings_date 2026-10-28, estimate flag False",
+   "source_value": "2026-10-28",
+   "status": "UNVERIFIABLE",
+   "note": "No EDGAR record for a date announcement; snapshot agrees."
+  },
+  {
+   "ticker": "BIIB",
+   "claim": "Apellis derivative suit dismissed for lack of standing (Bloomberg Law)",
+   "dossier_location": "s11",
+   "source": "secondary press only",
+   "source_value": "not in 10-Q text reviewed",
+   "status": "UNVERIFIABLE",
+   "note": "Dossier labels the source as press; no change."
+  },
+  {
+   "ticker": "APP",
+   "claim": "Q2'26 revenue $1,924m (+53%), net income from continuing ops $1,267m, Adj. EBITDA $1,614m (84%), diluted EPS $3.76, FCF $863m",
+   "dossier_location": "s4 table",
+   "source": "8-K Ex-99.1 acc 0001751008-26-000057; 10-Q acc 0001751008-26-000059",
+   "source_value": "revenue 1,923.7 (vs 1,258.8); NI cont ops 1,266.5; Adj EBITDA 1,613.8 (84%); EPS 3.76; FCF 863.3",
+   "status": "PASS",
+   "note": "Three months to 30 Jun 2026 (label correct)."
+  },
+  {
+   "ticker": "APP",
+   "claim": "Q3'25 to Q1'26 rows: revenue 1,405 / 1,658 / 1,842; NI cont ops 836 / 1,102 / 1,206; Adj EBITDA 1,158 / 1,399 / 1,557; EPS 2.45 / 3.24 / 3.56; FCF ~1,050 / ~1,310 / ~1,300",
+   "dossier_location": "s4 table",
+   "source": "8-K Ex-99.1 acc 0001751008-25-000079, -26-000005, -26-000042",
+   "source_value": "1,405.0 / 1,657.9 / 1,842.4; 835.5 / 1,102.3 / 1,205.6; 1,157.7 / 1,398.7 / 1,556.9; 2.45 / 3.24 / 3.56; FCF 1,049.0 / 1,309.2 / 1,286.7",
+   "status": "PASS",
+   "note": "Q1'26 FCF '~1,300' is 1,286.7 (rounding)."
+  },
+  {
+   "ticker": "APP",
+   "claim": "Q3'24 to Q2'25 rows (revenue 835 / 999 / 1,159 / 1,259; NI cont ops 433 / 596 / 724 / 772; Adj EBITDA 647 / 770 / 938 / 1,018; FCF 768 for Q2'25) and YoY 77%, 68%, 66%, 59%, 53%",
+   "dossier_location": "s4 table",
+   "source": "Ex-99.1 acc 0001751008-25-000069, -25-000079, -26-000005, -26-000042",
+   "source_value": "all match; Q2'25 YoY 1,259 vs 711 = +77%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "APP",
+   "claim": "Guidance given at each release: Q3'25 1,320-1,340 / 1,070-1,090; Q4'25 1,570-1,600 / 1,290-1,320; Q1'26 1,745-1,775 / 1,465-1,495; Q2'26 1,915-1,945 / 1,615-1,645 (84-85%)",
+   "dossier_location": "s5 table",
+   "source": "Ex-99.1 acc -25-000069, -25-000079, -26-000005, -26-000042",
+   "source_value": "ranges appear verbatim in each release",
+   "status": "PASS",
+   "note": "Q2'26 floor miss ($1,614m vs $1,615m) and beat sizes ($65m/$68m, $58m/$79m, $67m/$62m) reproduce."
+  },
+  {
+   "ticker": "APP",
+   "claim": "Q3'26 Adj. EBITDA margin guide 83%, stepped down from 84-85%",
+   "dossier_location": "s5, s8, s9",
+   "source": "8-K Ex-99.1 acc 0001751008-26-000057",
+   "source_value": "Q3'26 revenue $2,055-2,085m, Adj EBITDA $1,710-1,740m, margin 83%",
+   "status": "PASS",
+   "note": "Dossier did not quote the Q3'26 revenue/EBITDA ranges, only the margin."
+  },
+  {
+   "ticker": "APP",
+   "claim": "'Four straight quarters of beating the high end' before Q2'26",
+   "dossier_location": "s5",
+   "source": "Ex-99.1 acc 0001751008-25-000051 (Q1'25) and table releases",
+   "source_value": "Q1'25 release guided Q2'25 advertising revenue 1,195-1,215 and EBITDA 970-990; delivered 1,259 / 1,018",
+   "status": "PASS",
+   "note": "True, though the table shows only three of the four beats."
+  },
+  {
+   "ticker": "APP",
+   "claim": "Class action count: 'four unresolved securities class actions'; 'two distinct securities class actions' (Sec 8)",
+   "dossier_location": "s1, s8, s11 (DV04 correction)",
+   "source": "10-Q acc 0001751008-26-000059 Part II Item 1",
+   "source_value": "One live class action (Brownback; Quiero and Wayne County dismissed May 2025); two derivative suits consolidated and stayed; second class action press-sourced only",
+   "status": "PASS",
+   "note": "DV04 correction confirmed. Original 'four' FAIL."
+  },
+  {
+   "ticker": "APP",
+   "claim": "Net debt: long-term debt ~$3.52bn, cash $3.05bn, net debt ~$0.46bn (0.1x TTM Adj EBITDA ~$5.73bn); equity $3.16bn; ~335m shares",
+   "dossier_location": "s6",
+   "source": "8-K Ex-99.1 acc 0001751008-26-000057 balance sheet",
+   "source_value": "debt 3,515.1; cash 3,053.3; net 461.8; equity 3,163.0; shares 335.3M; TTM Adj EBITDA 5,728",
+   "status": "PASS",
+   "note": "Senior-note principal is $3.6bn (net debt on principal ~$0.55bn); conclusion unchanged."
+  },
+  {
+   "ticker": "APP",
+   "claim": "TTM FCF ~$4.52bn, TTM NI cont ops ~$4.41bn, FCF/NI 1.03x; trailing EPS $13.01, P/E 23.9x",
+   "dossier_location": "s6, s7",
+   "source": "Ex-99.1 quarterly FCF; d4 snapshot",
+   "source_value": "TTM FCF 4,508 (1,049.0 + 1,309.2 + 1,286.7 + 863.3); NI 4,411; EPS 13.01",
+   "status": "MINOR",
+   "note": "FCF rounded up by $12m (EV/FCF 23.2x vs 23.1x). The mechanical XBRL flag (net income 4,410 vs 1,266.5) is a false positive: a four-quarter sum."
+  },
+  {
+   "ticker": "APP",
+   "claim": "Q2'26 FCF fell q/q due to 'working-capital timing ... and heavier buyback-related tax withholding cash use'",
+   "dossier_location": "s4 text; F78 key_adverse_facts",
+   "source": "10-Q acc 0001751008-26-000059 cash-flow statement; Ex-99.1 Q1 and Q2",
+   "source_value": "Withholding taxes on net share settlement: $19.6m in Q2 ($46.5m H1 - $26.9m Q1), financing activity outside FCF; operating assets and liabilities about -$490m in Q2 vs -$15m in Q1 (accrued/other -$308m vs +$183m; receivables -$215m vs -$138m); H1 cash taxes $639.8m vs $100.6m",
+   "status": "FAIL",
+   "note": "Mechanism wrong (buybacks never enter FCF); working capital and tax payments explain it. Corrected inline and in F78."
+  },
+  {
+   "ticker": "APP",
+   "claim": "Capital return: '$3.3bn remaining authorization'; $2.58bn repurchased FY25; ~$1.0bn in Q1'26; shares ~339m (Q2'25) to ~335m (Q2'26)",
+   "dossier_location": "s6",
+   "source": "10-Q acc 0001751008-26-000059 Part II Item 2; Ex-99.1 releases",
+   "source_value": "Remaining ~$1,756m at 30 Jun 2026 ($3.3bn was 31 Oct 2025); FY25 $2.58bn; Q1 $1.0bn; 339m -> 335m",
+   "status": "FAIL",
+   "note": "Authorization figure stale; the other figures pass. Corrected inline."
+  },
+  {
+   "ticker": "APP",
+   "claim": "SBC ~$83m in Q1'26 (4.5% of revenue); TTM SBC $282.4m (DV04)",
+   "dossier_location": "s6, DV04 section",
+   "source": "Ex-99.1 acc -26-000042, -26-000005, -26-000057",
+   "source_value": "Q1'26 83.5 (83.4 cash-flow basis); FY25 210.4 - H1'25 97.0 + H1'26 169.0 = 282.4",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "APP",
+   "claim": "Reverse DCF 'implied 10-year FCF CAGR ~9.1%' (WACC 10%, EV basis); DV04 restated 9.9-15.2% at Ke 10.0-12.7%",
+   "dossier_location": "s7, DV04 section, F78 reconciliation",
+   "source": "d4_live_snapshot raw beta 2.488; programme parameters (UST 5.17%, ERP 4.14%, Blume beta, ten years then 3.0%)",
+   "source_value": "Blume beta 2.00, Ke 13.4%: FCFE after SBC 4,226 on market cap 104.19bn implies 16.6%/yr (10.3% at Ke 10.1%, 20.1% at 15.5%); a 32/26/20% then fading path (10y CAGR 14.5%) is worth 0.97x market cap (1.17x if 15% held yr 4-10)",
+   "status": "FAIL",
+   "note": "DV04's beta 1.2-1.5 is unsourced; on programme inputs the price is about in line with the base path. implied_vs_base below -> in line; verdict unchanged. F78 updated."
+  },
+  {
+   "ticker": "APP",
+   "claim": "Verdict INCLUDE-SMALL; 'cheap' on reverse DCF; litigation tail",
+   "dossier_location": "s1, s7",
+   "source": "Verification of s4-s9",
+   "source_value": "In-line valuation, strong execution, unresolved litigation and short-seller pattern",
+   "status": "PASS",
+   "note": "INCLUDE-SMALL follows from the dossier's own evidence; 'cheap' is restated to 'fair on the base path'. No verdict change."
+  },
+  {
+   "ticker": "APP",
+   "claim": "Factor card: 'Value strong (ep 86%, fcfp 62%, bp 3%)', momentum percentile 29%, ROE >300%, 'model likes APP mainly on Value + earnings momentum'",
+   "dossier_location": "s3",
+   "source": "data/b1_live_scores.csv (APP row)",
+   "source_value": "pct_ep 0.47, pct_fcfp 0.38, pct_bp 0.08, pct_ebit_ev 0.44; fam_V 0.29; momentum -56.6% (3rd pct); ROE 1.39; composite 0.32, rank 337, decile 4; pct_gp_a 0.95, pct_ocf_a 0.97, pct_sue 0.86",
+   "status": "FAIL",
+   "note": "Statistics do not match the card; the model's interest rests on Quality and surprise, not Value. Not load-bearing; annotated inline."
+  },
+  {
+   "ticker": "APP",
+   "claim": "Price $310.75 (25 Sep 2026), market cap $104.19bn, EV $104.65bn, 1-yr vol 76%, triage NTM P/E 16.5x, no V1 row",
+   "dossier_location": "s7, s3",
+   "source": "d2_close.parquet; b1_live_scores.csv; d4 snapshot; v1_valuation_table.csv",
+   "source_value": "310.75; 104.19bn; vol 75.6%; pe_ntm 16.49; APP absent from V1",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "APP",
+   "claim": "Single earnings reaction 'erased ~$40B' / 'as much as ~28% after hours'; $16m consensus miss",
+   "dossier_location": "s1, s5, s8",
+   "source": "d2_close.parquet closes 5-6 Aug 2026; press",
+   "source_value": "close 417.80 -> 335.67 = -19.7% (~$27.5bn)",
+   "status": "MINOR",
+   "note": "Close-to-close is -19.7%; the 28% / $40B are intraday or after-hours and press-sourced (the $16m consensus miss is UNVERIFIABLE on EDGAR). Annotated inline."
+  },
+  {
+   "ticker": "APP",
+   "claim": "Reported closure of the SEC AXON data-practices probe (Aug-2026)",
+   "dossier_location": "s8 bull 3, s11",
+   "source": "10-Q (no mention); secondary press (Tech Times)",
+   "source_value": "not in the 10-Q",
+   "status": "UNVERIFIABLE",
+   "note": "Dossier already flags it as secondary; should not be counted as a resolved overhang (DV04 agrees)."
+  },
+  {
+   "ticker": "APP",
+   "claim": "Tripledot sale: $400m cash + ~20% equity, closed 30 Jun 2025; continuing operations only",
+   "dossier_location": "s2",
+   "source": "10-Q acc 0001751008-26-000059 discontinued-operations note",
+   "source_value": "cash consideration $430.6m ($400.0m + $30.6m adjustment); 22% of shares outstanding / 20% fully diluted",
+   "status": "MINOR",
+   "note": "Cash figure excludes the $30.6m adjustment; no valuation effect."
+  },
+  {
+   "ticker": "APP",
+   "claim": "Next earnings 'estimated early-to-mid November 2026'; F78 summary 2026-11-06",
+   "dossier_location": "s10; F78",
+   "source": "d4_live_snapshot next_earnings_date",
+   "source_value": "2026-11-04, estimate flag False",
+   "status": "MINOR",
+   "note": "Date differs from F78 (11-06); not verifiable on EDGAR."
+  },
+  {
+   "ticker": "APP",
+   "claim": "Disclosure controls effective at 30 Jun 2026; no auditor change or material weakness",
+   "dossier_location": "s11",
+   "source": "10-Q acc 0001751008-26-000059 Item 4",
+   "source_value": "effective at a reasonable assurance level; no change in ICFR",
+   "status": "PASS",
+   "note": ""
+  }
+ ],
+ "verdict_changes": []
+}

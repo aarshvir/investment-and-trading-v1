@@ -1,0 +1,76 @@
+{
+  "agent": "RA1",
+  "date": "2026-10-05",
+  "data_cutoff_note": "Treasury and Fed facts as of 25 Sep / 16 Sep 2026 (FRED DGS10 5.17% on 2026-09-25; FOMC 16 Sep 2026 raised target range to 3.75-4.00%, vote 12-0). Prices are secondary (stockanalysis.com closes) as of 5 Oct 2026: PTC 192.59, MCK 917.21, HBAN 15.38. Research only; not personal advice.",
+  "tickers": {
+    "PTC": {
+      "claims": [
+        {"claim": "Definitive merger agreement with Schneider Electric at $205 cash, signed 4 Oct 2026", "status": "CONFIRMED", "source": "PTC 8-K Items 1.01/7.01/9.01, accession 0001193125-26-413124, event date 2026-10-04, filed 2026-10-05: 'On October 4, 2026, PTC Inc. ... entered into an Agreement and Plan of Merger'; '$205 in cash, without interest'"},
+        {"claim": "Equity ~$22.6bn, EV $23.7bn, 21x EV/Adj. EBITA 2027E, 42.3% premium, 46.1% to 30-day VWAP", "status": "CONFIRMED", "source": "Ex-99.1 joint press release of the same 8-K, 'Key Highlights'; 42.3% reproduced from 2 Oct close $144.03 (secondary)"},
+        {"claim": "Conditions: PTC majority vote, HSR, CFIUS, foreign investment/antitrust, no MAE; no financing condition", "status": "CONFIRMED", "source": "8-K Item 1.01 'Closing Conditions' and 'The Merger is not conditioned on Schneider Electric or any other party obtaining financing'"},
+        {"claim": "$25bn bridge from Morgan Stanley Europe SE and Societe Generale; EUR5-6bn equity and EUR16-17bn debt", "status": "CONFIRMED", "source": "8-K Item 1.01 'Financing' ($25,000,000,000 bridge, mandate letter 4 Oct 2026); Ex-99.1 'Financing'"},
+        {"claim": "$700m termination fee payable by PTC", "status": "CONFIRMED", "source": "8-K 'Termination and Fees'; merger agreement s.7.3(b): 'a non-refundable fee in the amount of $700,000,000'"},
+        {"claim": "No reverse termination fee payable by Schneider", "status": "NOT FOUND", "source": "Searched Exhibit 2.1 text for 'Parent Termination Fee' and 'Reverse Termination': zero hits; s.7.3 only provides a fee payable by the Company"},
+        {"claim": "Initial End Date 4 Apr 2027, extendable; closing by Q3 2027", "status": "CONFIRMED", "source": "Agreement s.7.1(b): Initial End Date 11:59 pm ET 4 Apr 2027, auto-extended in 3-month steps up to 9 months (4 Jan 2028); Ex-99.1: 'Closing of the transaction is anticipated by Q3 2027'"},
+        {"claim": "Fed raised rates on 16 Sep 2026", "status": "CONFIRMED", "source": "federalreserve.gov FOMC statement 2026-09-16: 'raise the target range for the federal funds rate by 1/4 percentage point to 3-3/4 to 4 percent' (12-0)"},
+        {"claim": "10-year Treasury yield as of 25 Sep 2026", "status": "CONFIRMED", "source": "FRED DGS10 = 5.17% on 2026-09-25"},
+        {"claim": "Form 4 on 17 Sep 2026 by insider, ordinary course; no other filing 26 Sep-4 Oct", "status": "CONFIRMED", "source": "EDGAR submissions: Form 4 0001436655-26-000003 filed 2026-09-17; next filings are 8-K 0001193125-26-413124 and DEFA14A 0001193125-26-413128 on 2026-10-05"},
+        {"claim": "Stock about $192.7 on 5 Oct, spread about $12.3 (6.4%), ~80% implied completion probability", "status": "CONFIRMED", "source": "stockanalysis.com close $192.59 (secondary); spread $12.41 = 6.44%; (192.59-144.03)/(205-144.03) = 79.6%"},
+        {"claim": "RBC, Rosenblatt (and Stifel) downgrades to neutral/hold, $205 targets; Schneider shares down ~10%", "status": "CONFIRMED", "source": "Investing.com 2026-10-05 analyst notes; press reports put the Schneider fall at 7-10% (secondary; no number depends on it)"}
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "WATCH",
+      "old_implied": "below",
+      "new_implied": "above",
+      "note": "pending takeover (merger-arb out of mandate). Reverse DCF: 10-yr FCF/share growth, terminal 3.5%, FCF $850M / 110.7M shares, 10% rate (5.17% 10-yr + beta 1.1 x ERP 4.5-5%): $138.12 implies 5.1%, $144.03 5.7%, $192.59 9.6%, $205 10.4% vs base 7-8%; at 9%: 2.9/3.5/7.2/8.0. Scenario returns restated bear -7.1% / base +4.6% / bull +5.3%.",
+      "scenario_returns_3y": {"bear": -0.071, "base": 0.046, "bull": 0.053},
+      "changed_fields": ["verdict", "thesis_one_line", "kill_criteria", "key_adverse_facts", "horizon", "valuation_view_vs_v1.implied_vs_base", "valuation_view_vs_v1.dossier_view", "valuation_view_vs_v1.reconciliation", "scenario_returns_3y", "scenario_basis"]
+    },
+    "MCK": {
+      "claims": [
+        {"claim": "Cyber incident disclosed in an 8-K (Item 1.05?)", "status": "CONFIRMED", "source": "8-K filed 2026-08-28, accession 0000927653-26-000247, but Item 7.01 (not 1.05): 'On August 25, 2026, McKesson Corporation discovered a cybersecurity incident'; 'has not determined that the incident is material'"},
+        {"claim": "Data exfiltration affected a subset of Oncology & Multispecialty and Medical-Surgical customers", "status": "CONFIRMED", "source": "Company customer notice as quoted by Paubox/BleepingComputer/HIPAA Journal (secondary; mckesson.com/cybersecurity returned HTTP 403)"},
+        {"claim": "ShinyHunters claims ~1TB / 284m records / $55m ransom; class actions filed 31 Aug", "status": "NOT FOUND", "source": "No company filing states these; media/law-firm reports only; not used"},
+        {"claim": "FY27 O&M revenue guide +14.5% to +18.5%, adjusted operating profit +13.5% to +17.5%", "status": "CONFIRMED", "source": "McKesson Q1 FY27 earnings presentation (5 Aug 2026) slide 19"},
+        {"claim": "FY27 FCF guide $4.5-4.9bn vs FY26 $5.4bn; dossier FCF base overstated", "status": "CONFIRMED", "source": "Presentation slide 18; FY26 FCF $5,410M (8-K 7 May 2026, Schedule 6); company TTM FCF = 5,410 - 372 + 1,107 = $6,145M ($52.70/share) vs dossier $6.801bn ($58.33)"},
+        {"claim": "Own guidance implies the oncology revenue kill criterion (<15% for two quarters) fires", "status": "CONFIRMED", "source": "O&M revenue FY26 $48,423M (Q1 10,658; Q2 12,044; Q3 13,010; Q4 12,711), Q1 FY27 $14,222M (+33%): guide implies Q2-Q4 FY27 growth +9.1% / +11.7% / +14.3% (low/mid/high); flat-sequential shape gives Q2 +18%, Q3 +9%, Q4 +12%, so the test fires by the Q4 FY27 print (May 2027), earlier if Q2 also slips; avoidable only with an uneven pattern"},
+        {"claim": "CVS extension through June 2032", "status": "CONFIRMED", "source": "McKesson press release 2026-10-01 (agreement in principle; terms undisclosed; guidance reaffirmed) via search; no 8-K on EDGAR through 5 Oct"},
+        {"claim": "CVS ~24% of FY26 revenue", "status": "CONFIRMED", "source": "FY26 10-K 0000927653-26-000069: 'approximately 24% of our total consolidated revenues in fiscal 2026'; contract to June 2027"},
+        {"claim": "Wellverse IPO expected 2H calendar 2027; no S-1/Form 10 yet", "status": "CONFIRMED", "source": "McKesson 2026-08-05 release as reported by Virginia Business/Richmond BizSense (secondary); EDGAR shows no registration filing through 5 Oct"},
+        {"claim": "GAAP EPS -17.6% while adjusted +20% in Q1 FY27", "status": "CONFIRMED", "source": "Q1 FY27 8-K 0000927653-26-000232: EPS $5.15 vs $6.25; adjusted $9.93 vs $8.26"},
+        {"claim": "Fed hike 16 Sep 2026; 10-year yield", "status": "CONFIRMED", "source": "FOMC statement 2026-09-16 (3-3/4 to 4 percent); FRED DGS10 5.17% on 2026-09-25"},
+        {"claim": "Policy (MFN/Part B) and opioid cash >$1.5bn risk", "status": "NOT FOUND", "source": "No new primary document; qualitative only, not assessed"}
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "below",
+      "note": "Implied FCF/share growth restated from -2.9% (dossier base $58.33) to -1.6% (company TTM $52.70) / +1.7% (FY27 guide mid $40.3) at $866.64 and -0.9% / +2.4% at $917.21 (8% WACC, 4% terminal; 9% WACC: +1.0/+4.4 and +1.7/+5.1); base 8-10%. Scenario returns restated bear -5.9% / base +8.5% / bull +17.9% from $917.21. Kill criterion 1 re-based to O&M adjusted operating profit growth; cyber-materiality and CVS-contract criteria added.",
+      "scenario_returns_3y": {"bear": -0.059, "base": 0.085, "bull": 0.179},
+      "changed_fields": ["verdict", "thesis_one_line", "kill_criteria", "key_adverse_facts", "valuation_view_vs_v1.reconciliation", "scenario_returns_3y", "scenario_basis"]
+    },
+    "HBAN": {
+      "claims": [
+        {"claim": "FY27 EPS target cut to $1.75-$1.83 on 16 Sep 2026", "status": "CONFIRMED", "source": "HBAN 8-K Item 7.01 filed 2026-09-16, accession 0000049196-26-000077, Ex-99.1 slide 13: '$1.75 $1.83 Revised FY27 EPS Target Range'; 'Adopting more conservative FY27 EPS Outlook'"},
+        {"claim": "Prior FY27 EPS target was above $1.90", "status": "CONFIRMED", "source": "Secondary only (Investing.com Barclays transcript summary, Bitget 2026-09-16); not in the deck text"},
+        {"claim": "Dossier says no quantified guidance", "status": "WRONG", "source": "Same deck: FY26 adj. EPS $1.52-$1.54; FY26 NII growth ~35% (previous 39-43%); FY27 loan growth ~6% (was 7-8%); NIM low-mid 3.20s (was mid-high); operating leverage >=300bps (was ~400-500bps); FY27 buyback $1.3-1.4B; adj. ROTCE ~17% FY26E, 17-18% FY27E"},
+        {"claim": "Drivers: deposit costs 3.6% to 3.9%, CRE/resi paydowns, auto production cut", "status": "CONFIRMED", "source": "Deck slides 11-13: total cost of deposits 3.6% (Jan-26) to 3.9% (Aug-26); 'Increased paydowns in CRE & Resi'; 'Lower Auto production'. Auto originations $850m to $500m a quarter: NOT FOUND in deck text"},
+        {"claim": "Fed hiked 25bp on 16 Sep 2026 to 3.75-4.00%", "status": "CONFIRMED", "source": "FOMC statement 2026-09-16 (12-0); FRED DFEDTARL 3.50 to 3.75 on 17 Sep"},
+        {"claim": "HBAN raised prime rate to 7.00% from 6.75%", "status": "NOT FOUND", "source": "No HBAN announcement found; arithmetic consistent with prime = fed funds upper bound (FRED DFEDTARU 4.00) + 3.00"},
+        {"claim": "Form 8-K Item 5.02: Helga S. Houston retiring effective 31 Dec 2026", "status": "CONFIRMED", "source": "8-K filed 2026-09-24, accession 0000049196-26-000081: 'provided notice of her intent to retire from the Company effective December 31, 2026'"},
+        {"claim": "Series I preferred dividend declared (routine)", "status": "CONFIRMED", "source": "8-K Item 8.01, accession 0000049196-26-000079 (dated 2026-09-18): $356.25 per share payable 2026-12-01"},
+        {"claim": "Huntington cut its outlook again on 1 Oct (pluang.com)", "status": "NOT FOUND", "source": "No EDGAR filing after 2026-09-24; consistent with a re-report of 16 Sep"},
+        {"claim": "Q3 earnings 22 Oct 2026", "status": "CONFIRMED", "source": "Huntington press release 'Third Quarter 2026 Earnings Call Details': before market open Thursday 22 Oct 2026"},
+        {"claim": "10-year Treasury yield as of 25 Sep 2026", "status": "CONFIRMED", "source": "FRED DGS10 = 5.17% on 2026-09-25"},
+        {"claim": "New 52-week low $14.82 on 1 Oct and target cuts (Stephens, JPMorgan, UBS, Wells Fargo)", "status": "NOT FOUND", "source": "Aggregator pages only; closes 15.64 (25 Sep), 15.19 (1 Oct), 15.38 (5 Oct) per stockanalysis.com; not used"}
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "note": "P/TBV model, TBV $9.65, price $15.38 = 1.59x, COE 10.5% (5.17% 10-yr + beta 1.1 x ERP ~4.8%): implied g +1.2% at 16% ROTCE, +2.9% at 15%, +4.3% at 14.2% reported (-0.1% at COE 10%, ROTCE 16%) vs base cut to ~3%. Scenario returns restated bear -3.5% / base +12.1% / bull +20.9%. Added kill criterion 6 (second FY27 EPS cut).",
+      "scenario_returns_3y": {"bear": -0.035, "base": 0.121, "bull": 0.209},
+      "changed_fields": ["verdict", "thesis_one_line", "kill_criteria", "key_adverse_facts", "confidence_in_thesis", "data_conflicts", "valuation_view_vs_v1.implied_vs_base", "valuation_view_vs_v1.dossier_view", "valuation_view_vs_v1.reconciliation", "scenario_returns_3y", "scenario_basis"]
+    }
+  }
+}

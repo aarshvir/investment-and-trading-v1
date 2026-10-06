@@ -1,0 +1,81 @@
+{
+  "analyst": "RA15",
+  "date": "2026-10-06",
+  "data_cutoff": "2026-09-25 close ($369.20, 52.5m diluted shares); 10-year Treasury 5.17% (FRED DGS10, 25 Sep 2026); EDGAR submissions checked to 2026-10-06",
+  "tickers": {
+    "SNA": {
+      "claims": [
+        {
+          "claim": "Reverse DCF at WACC 8.0% implies about 2.9% FCF growth",
+          "status": "REPRODUCES but discount rate WRONG",
+          "source": "Recomputed: EV $18.94bn, base $0.982bn, terminal 2.5%, 10 years: 2.95% at 8.0%. At the programme 9.2% (10-yr 5.17% + ERP): 5.6%; at 10.0%: 7.2%."
+        },
+        {
+          "claim": "FY2025 FCF base $0.982bn",
+          "status": "WRONG (stock compensation and interest income not handled)",
+          "source": "10-K acc 0000091440-26-000045: OCF 1,081.7, capex 76.0, SBC 28.9, additions to finance receivables 913.6 less collections 888.9, interest income 58.8 (Note 17), interest expense 50.5. Owner FCF = 945.6 ($927.7m on 52 weeks; FY2025 was 53 weeks)."
+        },
+        {
+          "claim": "Own H1-annualised consolidated FCF about $1.19bn (6.2% yield)",
+          "status": "WRONG (working-capital swing)",
+          "source": "10-Q acc 0000091440-26-000144: H1 2026 OCF 640.2 vs 535.7; MD&A attributes +$73.6m to net operating assets and liabilities. Normalised owner FCF $0.93-0.99bn, about 5.0% yield on EV."
+        },
+        {
+          "claim": "Implied vs base: BELOW (base 5-7% growth)",
+          "status": "WRONG",
+          "source": "At 9.2% implied is 6.1% (6.4% on 52 weeks; 7.7% at 10.0%). Evidenced base about 5%: net earnings 1,034.6/1,068.9/1,042.3 (FY2023-25), H1 2026 +3.2%, EPS +4.4% (9.65 vs 9.24), total revenues +4.0% a year FY2019-25 (XBRL companyfacts). Result: ABOVE (modest); base-path IRR 8.7% vs 9.2%, value about $341."
+        },
+        {
+          "claim": "FY2025 OCF -11.2% not explained by a one-off",
+          "status": "CORRECTED",
+          "source": "10-K MD&A: $105.6m change in net operating assets and liabilities and $26.6m decrease in net earnings; H1 2026 OCF +19.5%."
+        },
+        {
+          "claim": "Net cash $440.7m consolidated; EV $18.94bn",
+          "status": "CONFIRMED",
+          "source": "10-Q: cash 1,644.7; notes payable/current LTD 317.0 (3.25% $300m notes due 1 Mar 2027); LTD 887.0. 52.5m diluted x $369.20 = $19.38bn."
+        },
+        {
+          "claim": "Q2 2026 acquisitions $154.0m (Hi-Force, Diesel Laptops)",
+          "status": "CONFIRMED",
+          "source": "10-Q acquisition note: Diesel Laptops $99.1m and Hi-Force $54.9m net of cash; H1 cash-flow acquisitions $159.1m."
+        },
+        {
+          "claim": "2026 capex about $100m; maintenance capex not understated",
+          "status": "CONFIRMED",
+          "source": "10-Q Outlook: 'capital expenditures in 2026 will approximate $100 million'; FY2025 capex 76.0 vs depreciation 75.8."
+        },
+        {
+          "claim": "Scenario returns bear +1.3% / base +9.6% / bull +15.1%",
+          "status": "ARITHMETIC MOSTLY CONFIRMED (bear recomputes to +0.5%); INPUTS TOO HIGH",
+          "source": "Recomputed with the dossier inputs: +0.5% / +9.6% / +15.2%. Base EPS growth 7% above run-rate (H1 2026 +4.4%). Restated EPS +2/+5/+8%, exit P/E 14.5/17.6/19x, dividends $9.76 growing 4/7/10%: -1.4% / +7.6% / +13.3%; probability-weighted +6.4%."
+        },
+        {
+          "claim": "No material event after the dossier cutoff",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 0000091440 on 6 Oct 2026: after the 23 Jul 2026 10-Q and 8-K only Forms 4 (latest 1 Sep), Forms 144 (latest 26 Aug) and Schedule 13G (27 Jul). No 8-K, 10-Q, 13D or S-4."
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below (reverse DCF at WACC 8.0%: about 2.9% vs base 5-7%)",
+      "new_implied": "above (6.1% at 9.2% on owner FCF $0.946bn vs evidenced base about 5%)",
+      "scenario_returns_3y": {
+        "bear": -0.014,
+        "base": 0.076,
+        "bull": 0.133
+      },
+      "changed_fields": [
+        "verdict",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.note",
+        "scenario_returns_3y",
+        "scenario_basis",
+        "kill_criteria (sixth added)",
+        "key_adverse_facts (OCF item updated)",
+        "confidence_in_thesis"
+      ],
+      "note": "Auditor request answered: at 9.2% the dossier's own base gives 5.6% and owner FCF after stock compensation and net interest gives 6.1% (3.4% at 8.0%, 7.7% at 10.0%), against an evidenced base of about 5%. Margin of safety does not survive: base-path IRR 8.7% and 3-year scenario base +7.6% are below the 9.2% cost of capital. Business quality, net cash and absence of a fired kill criterion keep it at half weight rather than WATCH."
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "ticker": "TSLA",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:47.784167+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "TSLA",
+            "exchangeName": "NMS",
+            "fullExchangeName": "NasdaqGS",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 1277818200,
+            "regularMarketTime": 1790798400,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 354.81,
+            "regularMarketChangePercent": 0.558,
+            "fulldayPrice": 355.18,
+            "fulldayChange": 2.27,
+            "fulldayChangePercent": 0.643,
+            "fiftyTwoWeekHigh": 498.83,
+            "fiftyTwoWeekLow": 297.38,
+            "regularMarketDayHigh": 355.219,
+            "regularMarketDayLow": 345.88,
+            "regularMarketVolume": 38002779,
+            "longName": "Tesla, Inc.",
+            "shortName": "Tesla, Inc.",
+            "chartPreviousClose": 380.12,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "end": 1790775000,
+                "start": 1790755200,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "end": 1790798400,
+                "start": 1790775000,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "end": 1790812800,
+                "start": 1790798400,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "open": [
+                  377.3500061035156,
+                  384.6199951171875,
+                  368.05999755859375,
+                  358.3999938964844,
+                  352.1099853515625
+                ],
+                "close": [
+                  377.94000244140625,
+                  372.1099853515625,
+                  357.45001220703125,
+                  352.8399963378906,
+                  354.80999755859375
+                ],
+                "high": [
+                  383.3299865722656,
+                  386.8299865722656,
+                  369.42999267578125,
+                  358.739990234375,
+                  355.218994140625
+                ],
+                "volume": [
+                  26165700,
+                  45999500,
+                  39452900,
+                  32492400,
+                  38002779
+                ],
+                "low": [
+                  375.70001220703125,
+                  367.6700134277344,
+                  356.79998779296875,
+                  351.6700134277344,
+                  345.8800048828125
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  377.94000244140625,
+                  372.1099853515625,
+                  357.45001220703125,
+                  352.8399963378906,
+                  354.80999755859375
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 377.94000244140625,
+      "adjclose": 377.94000244140625,
+      "open": 377.3500061035156,
+      "high": 383.3299865722656,
+      "low": 375.70001220703125,
+      "volume": 26165700
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 372.1099853515625,
+      "adjclose": 372.1099853515625,
+      "open": 384.6199951171875,
+      "high": 386.8299865722656,
+      "low": 367.6700134277344,
+      "volume": 45999500
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 357.45001220703125,
+      "adjclose": 357.45001220703125,
+      "open": 368.05999755859375,
+      "high": 369.42999267578125,
+      "low": 356.79998779296875,
+      "volume": 39452900
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 352.8399963378906,
+      "adjclose": 352.8399963378906,
+      "open": 358.3999938964844,
+      "high": 358.739990234375,
+      "low": 351.6700134277344,
+      "volume": 32492400
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 354.80999755859375,
+      "adjclose": 354.80999755859375,
+      "open": 352.1099853515625,
+      "high": 355.218994140625,
+      "low": 345.8800048828125,
+      "volume": 38002779
+    }
+  ],
+  "currency": "USD",
+  "symbol": "TSLA",
+  "regular_market_time": 1790798400,
+  "close_sep30": 354.80999755859375,
+  "session_match": true
+}

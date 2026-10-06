@@ -1,0 +1,36 @@
+{
+  "scope": "Primitive-level validation only; full B1 factor-rank/return backtest and production portfolio optimizer were not rerun",
+  "source_sha256": {
+    "panel": "eb0056e204af219e4a87b171f45e137715b95c4bcd1202d38cfe24b570c29ff8",
+    "splits": "f7555535ed89204c6762ab49f866c1ea59a7cef8ad7767d991ab9a419c5dea57",
+    "prices": "3da4932d998bf4a2aff1804cfd3778530dbbccca56446228bcd2f279dbaf028f",
+    "weights": "e996d6f3a94a47f3c23c4f7a35a0874079f3d6452cf127eb935a4cac78e5c084",
+    "module": "0ce2512ffa12a5e62d3912a97e516622d156ed380a946b602f06b64282bdbd32"
+  },
+  "fixture_sha256": {
+    "b1_panel_selected.csv.gz": "d1ea0b93fbc0925294949e10dc8c7afaed87eacb3bb2fa0bf7b86a4d28f3eb14",
+    "d2_splits.csv.gz": "96c54b72ff990abd784d525c8ef51095a4b68fa8ec9ba4aacb130df5e626a315",
+    "lead_20_returns.csv.gz": "96f66a646b99678c5f592e06671310c056a1e8670c989962fefc235e326cc294"
+  },
+  "causal_share": {
+    "panel_rows": 106806,
+    "ambiguous_rows_with_strict_date_gate": 590,
+    "future_share_date_rows_rejected": 16,
+    "original_split_fixes": 330,
+    "causal_split_fixes_without_date_gate": 382,
+    "split_decisions_changed_without_date_gate": 90,
+    "strict_causal_split_fixes": 382,
+    "strict_decisions_changed_from_original": 90,
+    "strict_changed_in_headline_scored_universe": 78,
+    "note": "Future-dated share records are separately nullified; counts of changed split flags do not count every affected valuation metric"
+  },
+  "scaled_identity_covariance": {
+    "observations": 754,
+    "names": 20,
+    "window": "2023-09-25..2026-09-25",
+    "corrected_shrinkage_intensity": 0.03758231685985569,
+    "corrected_annual_vol": 0.13335034305441648,
+    "sample_annual_vol_ddof0": 0.13539065234453765,
+    "minimum_eigenvalue": 5.404130790113589e-05
+  }
+}

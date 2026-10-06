@@ -1,0 +1,688 @@
+{
+ "as_of": "2026-10-06",
+ "scope": [
+  "CI",
+  "CIEN",
+  "CINF",
+  "CL",
+  "CLX",
+  "CME",
+  "CMG",
+  "CMI",
+  "CMS",
+  "CNC"
+ ],
+ "facts": [
+  {
+   "ticker": "CI",
+   "claim": "Q2-26 (qtr ended 30 Jun 2026): total revenue $71,668m, shareholders' net income $1,660m, GAAP EPS $6.29, adjusted EPS $7.78; prior-year Q2-25 $67,178m / $1,532m / $5.71",
+   "dossier_location": "CI.md s4 table + text",
+   "source": "8-K Ex-99.1 acc 0001140361-26-030135",
+   "source_value": "Revenue 71,668 (Q2-25 67,178); shareholders' NI 1,660 (1,532); EPS 6.29 (5.71); adj EPS 7.78 (7.20)",
+   "status": "PASS",
+   "note": "Period labels correct. The crosstie flag at line 24 (NI 1,532 vs XBRL 1,660) is the correctly labelled Q2-25 comparator, not an error."
+  },
+  {
+   "ticker": "CI",
+   "claim": "Guidance: 30 Jul 2026 'at least $30.45 per share' (+$0.10), Evernorth pre-tax at least $6,900, Cigna Healthcare at least $4,550 (+$25), MCR 83.7%-84.7%; 30 Apr 'at least $30.35'; 5 Feb initial 'at least $30.25', OCF ~$9,000, capex ~$1,300, shares 261-265",
+   "dossier_location": "CI.md s5",
+   "source": "Ex-99.1 accs 0001140361-26-030135, -017971, -003768",
+   "source_value": "All figures appear verbatim in the three releases (Q4-25 release also shows adj income at least $7,950m, dividends ~$1,600m)",
+   "status": "PASS",
+   "note": "Guidance raised at Q1 and Q2 as stated; OCF/capex lines only in the 5 Feb release."
+  },
+  {
+   "ticker": "CI",
+   "claim": "Balance sheet 30 Jun 2026: cash $6,298m, ST debt $2,792m, LT debt $29,086m (total $31,878m), equity $42,620m, NCI $290m, goodwill $45,534m, intangibles $26,931m, debt-to-cap 42.8%, ~$0.8bn parent/non-regulated cash",
+   "dossier_location": "CI.md s6",
+   "source": "10-Q acc 0001739940-26-000065",
+   "source_value": "Identical in balance sheet and MD&A liquidity text",
+   "status": "PASS",
+   "note": "Consolidated entity and date correct; the $1.3bn amortisation figure in the line-32 crosstie flag is amortisation, not net income."
+  },
+  {
+   "ticker": "CI",
+   "claim": "H1-26 consolidated OCF $710m (H1-25 $34m), capex $564m, buyback ~$250-280m, dividends paid $826m",
+   "dossier_location": "CI.md s6",
+   "source": "10-Q cash flow statement",
+   "source_value": "OCF 710 / 34; PP&E purchases (564); repurchase of common stock (280) cash / (250) equity statement; dividends paid (826)",
+   "status": "PASS",
+   "note": "Interest expense and other is $713m for six months (dossier says $716m): immaterial."
+  },
+  {
+   "ticker": "CI",
+   "claim": "Q2-26 Cigna Healthcare MCR 84.5% vs 2026 range 83.7-84.7%; PBS pre-tax $609m vs $833m (-27%), Specialty and Care $1,054m vs $863m, Cigna Healthcare pre-tax +17%",
+   "dossier_location": "CI.md s1, s4",
+   "source": "Ex-99.1 acc 0001140361-26-030135",
+   "source_value": "MCR 84.5% vs 83.2% Q2-25; PBS 609 vs 833; SCS 1,054 vs 863; Evernorth total 1,663 vs 1,696",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CI",
+   "claim": "Reverse DCF: cost of equity 9.5%, terminal 2%, start FCF $7.0bn, 264m shares -> implied -1.9%/yr; base +3% PV $388; bear -3% PV $252; bull +7% PV $520",
+   "dossier_location": "CI.md s7",
+   "source": "Recomputation",
+   "source_value": "Replicated: -1.9% -> $272; +3% -> $388; -3% -> $252; +7% -> $520",
+   "status": "PASS",
+   "note": "Method is equity FCF (OCF less capex), interest already inside OCF. 9.5% = 5.17% 10-year Treasury (25 Sep 2026) + 4.3% implied ERP; the dossier does not state the ERP or tie the rate to 5.17% explicitly (presentation gap only). Verdict INCLUDE-SMALL is consistent with its own evidence (price about equals the bear case; guidance raised twice)."
+  },
+  {
+   "ticker": "CI",
+   "claim": "Events after the dossier cut-off (25 Sep 2026)",
+   "dossier_location": "CI.md Data basis",
+   "source": "8-K Item 7.01 acc 0001140361-26-038056 (30 Sep 2026)",
+   "source_value": "Company will reaffirm FY26 outlook (adjusted EPS at least $30.45, Evernorth at least $6.9bn, Cigna Healthcare at least $4.55bn, MCR 83.7%-84.7%, adjusted revenues ~$280bn) at its Investor Day and expects to give a long-term average annual adjusted EPS growth target of 10-14%",
+   "status": "PASS",
+   "note": "Post-dates the dossier; guidance floor reaffirmed (kill criteria K1-K3 not triggered). The 10-14% target is far above the dossier's +4% a year base case, supportive of the INCLUDE-SMALL verdict; not added to the dossier because it is not a FAIL."
+  },
+  {
+   "ticker": "CIEN",
+   "claim": "Q3 FY26 (ended 1 Aug 2026): revenue $1,671.1m (+37.1%), GAAP diluted EPS $1.83; Q2 FY26 $1,570.7m (+39.5%) EPS $1.49; Q1 FY26 $1,427.0m (+33.1%) EPS $1.03",
+   "dossier_location": "CIEN.md s4",
+   "source": "10-Q acc 0001628280-26-060361; Ex-99.1 accs -060245, -040614, -015006",
+   "source_value": "1,671.129 / 1.83 (release: +37.0%); 1,570.7 / 1.49 / +39.5%; 1,427.0 / 1.03 / +33.1%",
+   "status": "MINOR",
+   "note": "Figures and fiscal period labels correct; growth quoted as +37.1% vs company +37.0%."
+  },
+  {
+   "ticker": "CIEN",
+   "claim": "Q4 FY25 revenue '~1,290 (10-K annual less 9-mo)'; Q4 FY24 '~1,113'",
+   "dossier_location": "CIEN.md s4 table",
+   "source": "companyfacts CIK 936395: FY25 revenue 4,769.507 (10-K filed 2025-12-12) less 9M 3,417.523",
+   "source_value": "Q4 FY25 = $1,351.98m; Q4 FY24 = 4,014.955 - 2,890.843 = $1,124.1m",
+   "status": "FAIL",
+   "note": "Derived value is wrong by about $62m (4.6%); Q4 FY25 YoY is +20.3%."
+  },
+  {
+   "ticker": "CIEN",
+   "claim": "Revenue growth 'accelerated 24%->31%->36%->37% YoY over the last four reported quarters' (thesis durability, section 3)",
+   "dossier_location": "CIEN.md s3",
+   "source": "companyfacts quarterly revenue",
+   "source_value": "Last four quarters YoY: Q4 FY25 +20.3%, Q1 FY26 +33.1%, Q2 FY26 +39.5%, Q3 FY26 +37.0%",
+   "status": "FAIL",
+   "note": "Sequence does not match filings or the dossier's own table; growth peaked in Q2 and eased in Q3. Direction of thesis (strong growth) unchanged."
+  },
+  {
+   "ticker": "CIEN",
+   "claim": "FY26 revenue guidance: Q1 release $5.9-6.3bn; Q2 raised to $6.3bn +/- $100m (+32%) with Q3 guide $1.625bn +/- $50m; Q3 raised to $6.42bn +/- $50m (+35%), Q4 revenue $1.75bn +/- $50m, adj GM 45% +/- 50bps, adj opex $415m +/- $10m",
+   "dossier_location": "CIEN.md s5",
+   "source": "Ex-99.1 accs 0001628280-26-015006, -040614, -060245",
+   "source_value": "All appear verbatim; Q1 release says 'Raising revenue guidance range ... to $5.9 billion to $6.3 billion'",
+   "status": "PASS",
+   "note": "Three consecutive raises confirmed."
+  },
+  {
+   "ticker": "CIEN",
+   "claim": "Cash $2,445.7m, LT debt $3,229.8m (FYE $1,091.95m / $1,524.2m); $2.875bn 0.00% 2031 converts closed 11 Jun 2026; hedge $988.4m, warrants $873.4m; $140m concurrent buyback; net debt ~$784m",
+   "dossier_location": "CIEN.md s6",
+   "source": "10-Q acc 0001628280-26-060361 balance sheet, Note 13, cash flow",
+   "source_value": "2,445,708 / 3,229,843; $2.88bn principal incl. $375m option; hedge 988,425; warrants 873,425; $140.0m buyback",
+   "status": "PASS",
+   "note": "Consolidated entity/date right. Omitted: initial conversion price ~$746.66 (1.3393 shares per $1,000) and warrant strike $1,000; dossier says conversion price undisclosed. Converts are far out of the money at $356.91, so treating them as debt is correct (minor omission)."
+  },
+  {
+   "ticker": "CIEN",
+   "claim": "9M FY26 OCF $683.6m, capex $194.9m (vs $95.4m); LTM OCF ~$1,055m, capex ~$240m, LTM FCF ~$814m = 13.9% of LTM revenue ~$5.86bn",
+   "dossier_location": "CIEN.md s6",
+   "source": "10-Q cash flow; companyfacts FY25 OCF 806.093, capex 140.801",
+   "source_value": "LTM OCF 1,054.7; capex 240.3; FCF 814.4; LTM revenue 4,769.5+4,668.9-3,417.5 = $6,020.9m -> FCF margin 13.5%",
+   "status": "MINOR",
+   "note": "FCF correct; LTM revenue understated by ~$160m (margin 13.5% not 13.9%)."
+  },
+  {
+   "ticker": "CIEN",
+   "claim": "RPO $2.5bn, 'most due within 3 years'; basic ~142.1m / diluted ~146.0m shares",
+   "dossier_location": "CIEN.md s6",
+   "source": "10-Q Note 3 and EPS note",
+   "source_value": "RPO $2.5bn, 'majority ... within a year ... remaining typically within three years'; weighted 142.061m / 145.967m; cover 141.81m at 28 Aug 2026",
+   "status": "PASS",
+   "note": "Wording looser than filing (majority within one year)."
+  },
+  {
+   "ticker": "CIEN",
+   "claim": "Reverse FCF-DCF: LTM FCF $814m, EV ~$53.0bn, WACC 9.0-9.5%, terminal 2.5-3.0% -> implied 10-yr FCF CAGR ~21-23%; base ~15%",
+   "dossier_location": "CIEN.md s7",
+   "source": "Recomputation",
+   "source_value": "Replicates 20.5-22.6% on the dossier's inputs. But FCF = OCF - capex adds back SBC (FY25 $184.5m; LTM ~$212m); deducting SBC gives FCF ~$602m and implied CAGR 24.6-26.8% at 9.0-9.5% and ~30% at 11%",
+   "status": "FAIL",
+   "note": "Method flaw: SBC treated as non-cost; discount rate 9.0-9.5% not tied to the 5.17% 10-yr Treasury plus a stated ERP (implies ERP 3.8-4.3% for a high-beta name). Direction unchanged: implied remains ABOVE base, verdict WATCH unchanged; implied growth restated to ~25-30%."
+  },
+  {
+   "ticker": "CINF",
+   "claim": "Q2'26 (qtr ended 30 Jun 2026): GAAP net income $1,255m / $8.05 per diluted share; non-GAAP operating income $224m / $1.43; combined ratio 100.8% (ex-cat current accident year 88.1% vs 85.1%); Commercial Lines 104.1% vs 92.9%; cat 14.4 pts",
+   "dossier_location": "CINF.md s1, s4",
+   "source": "8-K Ex-99.1 acc 0000020286-26-000043 (filed 2026-07-27)",
+   "source_value": "NI $1,255m / $8.05 (Q2'25 $685m / $4.34); operating $224m / $1.43 (Q2'25 $311m / $1.97); CR 100.8% vs 94.9%; ex-cat 88.1% vs 85.1%; CL 104.1% vs 92.9%; cat 14.4 vs 12.4",
+   "status": "PASS",
+   "note": "Period labels correct; operating-income and ratio rows match the release."
+  },
+  {
+   "ticker": "CINF",
+   "claim": "Earlier quarterly rows Q3'24 $820M/$5.20 (op $224M/$1.42, CR 97.4%/86.8%), Q4'24 $405M/$2.56, Q1'25 -$90M/-$0.57 (CR 113.3%, cat 26.8), Q2'25, Q3'25 $1,122M/$7.11, Q4'25 $676M/$4.29 (CR 85.2%/84.8%), Q1'26 $274M/$1.75 (CR 95.6%/87.5%, cat 11.3); FY25 EPS $15.17 vs $14.53, op EPS $7.95 vs $7.58, CR 94.9% vs 93.4%",
+   "dossier_location": "CINF.md s4",
+   "source": "companyfacts CIK 20286 (10-Q/10-K) and Ex-99.1 accs -000025, -000005, -000061",
+   "source_value": "All values match; XBRL NetIncomeLoss Q3'24 820, Q1'25 -90, Q4'25 = 2,393-(−90+685+1,122)=676; EPS 5.20/-0.57/7.11/4.29",
+   "status": "PASS",
+   "note": "The quarter-label flag (Q3 2024 '$820M' = CY2022Q2 revenue frame) is a false positive: $820M is Q3'24 net income, not revenue (Q3'24 revenue was $3,320m)."
+  },
+  {
+   "ticker": "CINF",
+   "claim": "Equity portfolio $13.19bn = 39.8% of total investments with $8.9bn pre-tax appreciated value; BVPS $108.64 vs $102.35 (+6%); Q2'26 BVPS includes +$7.09 from investment gains; PYD favorable $42M/1.7 pts (Q2'26) vs 2.6 pts; diluted shares 157.8M->155.7M",
+   "dossier_location": "CINF.md s6",
+   "source": "Ex-99.1 acc 0000020286-26-000043",
+   "source_value": "$13.194bn, 39.8%, $8.907bn appreciated; BVPS $108.64 (up $6.29); $7.09; prior-year development -1.8 and +0.1 pts (net -1.7) vs -2.6; 155.7 vs 157.8",
+   "status": "PASS",
+   "note": "Consolidated basis, correct date. Dossier calls the Q2'26 equity gain '$1.03bn after-tax equity-portfolio gain': $1,031m is total after-tax investment gains; the unrealised gain on equities still held is $882m (MINOR wording)."
+  },
+  {
+   "ticker": "CINF",
+   "claim": "Guidance: none quantitative; long-term combined-ratio target 92-98% reaffirmed in Q3'25 release",
+   "dossier_location": "CINF.md s5",
+   "source": "Ex-99.1 acc 0000020286-25-000061",
+   "source_value": "No EPS/revenue outlook in any of the four releases; Q3'25 release text carries the 92%-98% long-term target",
+   "status": "PASS",
+   "note": "Dossier correctly states no numerical guidance exists."
+  },
+  {
+   "ticker": "CINF",
+   "claim": "'355 new agency appointments in 2025, 220 more in 1H26'",
+   "dossier_location": "CINF.md s8",
+   "source": "Q3'25 and Q2'26 Ex-99.1",
+   "source_value": "355 = first nine months of 2025 (not full year); 220 in first six months of 2026",
+   "status": "MINOR",
+   "note": "2025 count is nine-month, not full-year."
+  },
+  {
+   "ticker": "CINF",
+   "claim": "Dividend raised to $0.94/share from $0.87 (+8%); prior $0.81 -> $0.87 (+7%)",
+   "dossier_location": "CINF.md s6, s11",
+   "source": "Ex-99.1 accs -000043, -000005",
+   "source_value": "Quarterly cash dividend declared $0.94 vs $0.87 (+8%); Q4'25 release $0.87 vs $0.81",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CINF",
+   "claim": "Valuation: P/B 1.52x vs peer 1.79x (43rd pct of own history); justified P/B implies 10.8% ROE vs TTM GAAP ROE 20.0%; V1 3-yr +11.5% base (bear +2.9%, bull +20.7%), verdict 'attractive'",
+   "dossier_location": "CINF.md s7",
+   "source": "outputs/v1_valuation_table.csv; recomputation of (ROE-g)/(COE-g)",
+   "source_value": "CINF row: P/B 1.518, pct 43.5, peer 1.786, implied ROE 10.76%, actual ROE 19.96%, COE 8.11%, bear/base/bull 2.9/11.5/20.7%",
+   "status": "PASS",
+   "note": "Insurer method is justified P/B-ROE with CoE built on the 5.17% 10-yr Treasury plus beta x 4.14% ERP, SBC not added back: method compliant with the program rule. Verdict INCLUDE-SMALL is supported by its own evidence: valuation cushion vs a Q2 combined ratio of 100.8%; dossier itself discounts the GAAP-ROE inflation."
+  },
+  {
+   "ticker": "CINF",
+   "claim": "Sell-side revisions 6 down/1 up (FY1) and 8 down/0 up (FY0); b1 decile 9 vs live_rank 62",
+   "dossier_location": "CINF.md s1, s3, s9",
+   "source": "Internal d4/b1 snapshots (not primary)",
+   "source_value": "Not verifiable from SEC filings",
+   "status": "UNVERIFIABLE",
+   "note": "Internal-data claims; no primary source available. Flagged as such in the dossier."
+  },
+  {
+   "ticker": "CL",
+   "claim": "Quarterly table (Q1-24 to Q2-26): revenue/gross profit/operating income/net income/diluted EPS, e.g. 2026-06-30 revenue 5,361, GP 3,296 (61.5%), operating income 1,016 (19.0%), NI 693, EPS 0.86; 2026-03-31 5,324 / 964 / 0.80",
+   "dossier_location": "CL.md s4 table",
+   "source": "companyfacts CIK 21665; Q2-26 Ex-99 acc 0000021665-26-000041",
+   "source_value": "All 8 rows match XBRL; Q2-26 release: net sales $5,361m, GAAP EPS $0.86 (-5%), operating profit $1,016m (19.0%)",
+   "status": "PASS",
+   "note": "Period labels correct. But the table omits Q4-25 (derived: revenue 5,230, operating income 92 = 1.8% margin, net loss -$37m, EPS -$0.04) - see kill-criteria fact."
+  },
+  {
+   "ticker": "CL",
+   "claim": "Revenue growth 'reaccelerated: +4.2% and +4.9% YoY vs +2.0%/+0.4% a year earlier' (Q1/Q2)",
+   "dossier_location": "CL.md s4 trend",
+   "source": "companyfacts quarterly revenue",
+   "source_value": "Q1-26 5,324 vs 4,911 = +8.4%; Q2-26 5,361 vs 5,110 = +4.9%; a year earlier Q1-25 4,911 vs 5,065 = -3.0%, Q2-25 5,110 vs 5,058 = +1.0%",
+   "status": "FAIL",
+   "note": "Three of four growth rates wrong (only +4.9% right). Direction (reacceleration) holds; Q2-26 organic growth was +2.4% (net sales +4.9% includes +2.4% FX)."
+  },
+  {
+   "ticker": "CL",
+   "claim": "Operating margin fell (18.1%, 19.0% vs 21.9%, 21.1%) because 'cost inflation has moved from COGS into opex/SG&A (likely tariffs and brand investment)'",
+   "dossier_location": "CL.md s4 trend",
+   "source": "Q2-26 Ex-99 (income statement, Table 5 notes, cash flow)",
+   "source_value": "Gross margin +140bp to 61.5%. SG&A 2,130 vs 1,963 (advertising +15%), but 'Other (income) expense, net' 150 vs 26 and Corporate operating profit includes $129m (Q2) / $300m (H1) of Strategic Growth and Productivity Program charges; Base Business EPS $0.99 (+8%) vs GAAP $0.86 (-5%)",
+   "status": "FAIL",
+   "note": "The margin drop is mainly program charges (about 2.3 pts from 'other expense') plus advertising, not tariff or COGS inflation; the tariff attribution is unsupported. Base-Business operating results exclude the charges."
+  },
+  {
+   "ticker": "CL",
+   "claim": "Kill criterion 1: GAAP operating margin below 20% for three consecutive quarters ('currently 18.1%, 19.0%'); criterion 4: GAAP diluted EPS declines YoY for two consecutive quarters ('already declined in Q1-26')",
+   "dossier_location": "CL.md s9",
+   "source": "companyfacts (OperatingIncomeLoss FY25 3,306 less 9M 3,214 = 92; EPS FY25 2.63 less 9M 2.67 = -0.04; Q4-24 EPS 3.51-2.61 = 0.90)",
+   "source_value": "Operating margin: Q4-25 1.8%, Q1-26 18.1%, Q2-26 19.0% (three consecutive quarters below 20%). EPS YoY: Q4-25 -0.04 vs 0.90, Q1-26 0.80 vs 0.85, Q2-26 0.86 vs 0.91 (three consecutive declines)",
+   "status": "FAIL",
+   "note": "Both kill criteria are already met as written (the dossier's own table shows Q2-26 EPS below Q2-25 but only cites Q1; Q4-25 was omitted as a 'gap'). Charges (restructuring, ERISA) drive it, but the verdict is not supported by its own kill criteria: INCLUDE-SMALL -> WATCH until criteria are re-based on Base Business measures."
+  },
+  {
+   "ticker": "CL",
+   "claim": "'Rising debt ($7.0bn->$7.8bn YoY)'; consolidated LT debt $7.839bn Dec-25 vs $7.005bn Dec-24; net debt ~ (7.86bn - 1.45bn) / EBITDA 4.98bn = 1.3x",
+   "dossier_location": "CL.md s6, s8",
+   "source": "Q2-26 Ex-99 balance sheet; 10-K companyfacts",
+   "source_value": "Total debt $7,857m (30 Jun 2026) vs $7,988m (31 Dec 2025) vs $8,758m (30 Jun 2025); debt less cash and marketable securities $6,404m vs $7,346m a year earlier; cash $1,370m; Dec-24 LT non-current 7,289 + current 652 = 7,941",
+   "status": "FAIL",
+   "note": "Net debt level (~$6.4bn, ~1.3x) is right, but 'debt is rising' is wrong on the latest date: total debt is down $0.9bn YoY and net debt down $0.9bn. The 7.0 -> 7.8bn comparison uses a different XBRL concept (LongTermDebt) for the two years; balance-sheet total debt was ~flat 2024-2025."
+  },
+  {
+   "ticker": "CL",
+   "claim": "Consolidated stockholders' equity $363m (Mar-25) ... $54m (Dec-25), $145m (Mar-26), $236m (Jun-26); OCF TTM $4.456bn",
+   "dossier_location": "CL.md s6",
+   "source": "Q2-26 Ex-99 balance sheet; companyfacts",
+   "source_value": "Colgate-Palmolive shareholders' equity 236 / 54 / 702 (Jun-26 / Dec-25 / Jun-25); NCI 330; OCF FY25 4,198 + H1-26 1,742 - H1-25 1,484 = 4,456",
+   "status": "PASS",
+   "note": "Crosstie flag (54 vs 145) is a Dec-25 vs Mar-26 value mismatch in the flag, not a dossier error. 'Recovering' equity trend is correct."
+  },
+  {
+   "ticker": "CL",
+   "claim": "Guidance 'not independently re-verified' (section 5)",
+   "dossier_location": "CL.md s5",
+   "source": "Q2-26 Ex-99 acc 0000021665-26-000041",
+   "source_value": "FY26: net sales +2% to +6% (incl. low-single-digit FX), organic +1% to +4%; GAAP GM roughly flat (was down), GAAP double-digit EPS growth, Base Business EPS mid-single-digit growth (raised from low-to-mid-single-digit); Q2 Base Business EPS $0.99 (+8%)",
+   "status": "PASS",
+   "note": "Dossier uses no guidance figure; verified here so the gap can be closed. Base Business guide raised."
+  },
+  {
+   "ticker": "CL",
+   "claim": "Reverse DCF: EV $74.75bn, TTM FCF $3.458bn, WACC 7.5%, terminal 3% -> implied 10-yr FCF growth ~2.3%; base 6-7%; implied_vs_base = below",
+   "dossier_location": "CL.md s7",
+   "source": "Recomputation",
+   "source_value": "Replicated: 2.29% at 7.5%/3%; 7.5% is consistent with 5.17% + Blume-adjusted beta ~0.55 x 4.14% ERP (V1 rule); SBC TTM ~$178m is only ~5% of FCF",
+   "status": "MINOR",
+   "note": "Method acceptable; FCF is levered (after interest) while discounted at WACC against EV (slight conservatism), and SBC is added back (about 5% of FCF) - neither flips the direction. Base 6-7% is high versus guided organic growth of 1-4% and mid-single-digit Base Business EPS growth, so 'below' is less robust than stated, but implied 2.3% is below even the guide."
+  },
+  {
+   "ticker": "CLX",
+   "claim": "Q4 FY26 (qtr ended 30 Jun 2026): net sales $1.95bn (-2%, organic -13%, GOJO +10 pts), gross margin 41.3% (-520bp), GAAP EPS $1.34 vs $2.68, adjusted EPS $1.66 vs $2.87; FY26 net sales $6,720m (-5%), GAAP EPS $4.81 (-26%), adjusted $5.53 (-28%)",
+   "dossier_location": "CLX.md s4",
+   "source": "8-K Ex-99.1 acc 0000021076-26-000028",
+   "source_value": "Net sales $1,948m vs $1,988m; organic -13%; GM 41.3% vs 46.5%; diluted EPS $1.34 vs $2.68; adjusted $1.66 vs $2.87; FY26 net sales 6,720 vs 7,104, EPS 4.81 vs 6.52, adjusted 5.53 vs 7.72",
+   "status": "PASS",
+   "note": "Fiscal period labels (Jun fiscal year) correct throughout; Q1-Q3 FY26 rows also tie to companyfacts and the Nov/Feb/Apr releases (Q1 $1,429m/0.65, Q2 $1,673m/1.29, Q3 $1,670m/1.54, adj $0.85/$1.39/$1.64)."
+  },
+  {
+   "ticker": "CLX",
+   "claim": "Guidance trail: 31 Jul 2025 'Adjusted EPS between $5.95 and $6.30'; maintained 3 Nov 2025 and 3 Feb 2026; 30 Apr 2026 'now between $5.45 and $5.65'; FY27 'between $5.70 and $6.00 (+3% to +8%)', GAAP $5.41-$5.71, net sales +13-14%, organic 3.5-4.5% incl. '>3.5%' ERP lap, gross margin about 42%",
+   "dossier_location": "CLX.md s5",
+   "source": "Ex-99.1 accs 0000021076-25-000035, -25-000051, -26-000008, -26-000016, -26-000028",
+   "source_value": "All quotes appear verbatim in the five releases",
+   "status": "PASS",
+   "note": "The 'cut of $0.65 at the midpoint' is arithmetically $0.575 (new midpoint $5.55 vs $6.125); $0.65 is the cut at the high end (MINOR, wording only)."
+  },
+  {
+   "ticker": "CLX",
+   "claim": "Debt: notes and loans payable $1,086m + current maturities $1m + LT debt $3,981m = $5,068m; cash $143m; net debt $4,925m; Yahoo $5,598m includes ~$450m leases; equity $252m (Clorox $90m); goodwill $1,945m + trademarks $989m + other intangibles $606m",
+   "dossier_location": "CLX.md s6",
+   "source": "Ex-99.1 balance sheet acc 0000021076-26-000028; 10-K acc 0000021076-26-000034",
+   "source_value": "1,086 / 1 / 3,981 / 143; leases 86 + 366 = 452; equity 252 / 90; 1,945 / 989 / 606; 10-K '$5.1 billion of debt'",
+   "status": "PASS",
+   "note": "Consolidated entity and 30 Jun 2026 date correct. The crosstie flags (LT debt 3,981 vs XBRL 2,487; total debt 5,598/450 vs 2,484) compare against the Jun-2025 balance ($2,484m), a false positive."
+  },
+  {
+   "ticker": "CLX",
+   "claim": "FY26 OCF $612m, capex $207m, reported FCF $405m, adjusted FCF $881m (adds back $476m Glad venture payment), dividends paid $602m ($4.96/share), buybacks $254m, D&A $247m, EBIT $913m / EBITDA $1,160m, net debt/EBITDA 4.2x",
+   "dossier_location": "CLX.md s6",
+   "source": "Ex-99.1 + Ex-99.2 supplemental; 10-K cash flow statement (R9)",
+   "source_value": "612 / 207 / 881; dividends paid (602), treasury stock purchased (256); EBT 791 + interest 130 - other income 8 = 913; 4,925 / 1,160 = 4.25x",
+   "status": "MINOR",
+   "note": "Buybacks are $256m in the cash-flow statement, not $254m."
+  },
+  {
+   "ticker": "CLX",
+   "claim": "Ratings at 30 Jun 2026: S&P BBB (BBB+ a year earlier), Moody's Baa1 unchanged; $1,000m 364-day revolver matures 5 Mar 2027 ($764m available); GOJO ~$2.15bn 'primarily debt-financed'; Glad stake $476m cash 2 Mar 2026",
+   "dossier_location": "CLX.md s2, s6",
+   "source": "10-K acc 0000021076-26-000034 (risk factors, Exhibit 99.1 MD&A)",
+   "source_value": "BBB / Baa1 (2025: BBB+ / Baa1); $764 available; $2.15 billion; $476 million on March 2, 2026",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CLX",
+   "claim": "Reverse DCF: FY27E equity FCF $5.50/share, cost of equity 7.5%, terminal growth 2% -> implied -0.5%/yr; bear -1% $81, base +3% $110, bull +5% $129; at $4.50 implied +2.1%",
+   "dossier_location": "CLX.md s7",
+   "source": "Recomputation",
+   "source_value": "Replicated: -0.52% implied; -1% -> $80.7; +3% -> $110.3; +5% -> $129.0; $4.50 -> +2.05%",
+   "status": "PASS",
+   "note": "Per-share equity FCF after interest and capex discounted at cost of equity: consistent method. 7.5% vs 5.17% 10-yr Treasury + ~0.56 x 4.14% ERP is consistent with a low-beta staple; ERP/beta not stated in the dossier (presentation gap). Verdict WATCH is consistent with its evidence (leverage 4.2x, FCF below dividend)."
+  },
+  {
+   "ticker": "CLX",
+   "claim": "FY26 reported FCF ($405m) did not cover the dividend ($602m); 'Yahoo FCF $110m does not tie'",
+   "dossier_location": "CLX.md s1, s6",
+   "source": "Ex-99.2 / cash flow",
+   "source_value": "OCF 612 - capex 207 = 405 < 602 dividends; adjusted FCF 881 > 602",
+   "status": "PASS",
+   "note": "Dossier correctly treats the $476m as a real cash use and discloses the adjusted figure."
+  },
+  {
+   "ticker": "CME",
+   "claim": "Quarterly table rows 'Q1 2025 $1,487.9m / OI $959.6m / EPS $2.35', 'Q2 2025 $1,532.5m / $1,000.6m / $2.42', 'Q3 2025 $1,584.4m / $1,024.2m / $2.50'",
+   "dossier_location": "CME.md s4 table",
+   "source": "companyfacts CIK 1156375 (10-Q accs 0001156375-25-000xxx, -26-000020, -26-000047)",
+   "source_value": "Those values are Q1/Q2/Q3 2024 (period ends 2024-03-31 / 06-30 / 09-30). True 2025: Q1 revenue $1,642.3m, OI $1,108.0m, EPS $2.62; Q2 $1,692.0m / $1,129.3m / $2.81 (NI $1,025.1m); Q3 $1,537.6m / $972.6m / $2.49",
+   "status": "FAIL",
+   "note": "Prior-year columns mislabelled as 2025 (wrong-year error the quarter-label check flagged)."
+  },
+  {
+   "ticker": "CME",
+   "claim": "Q1 2026 revenue $1,880.1m (+26.4% YoY), EPS $3.18 (+35.3%); Q2 2026 revenue $1,706.2m (+11.3%), EPS $2.88 (+19.0%); 'deceleration from +26.4% to +11.3%'",
+   "dossier_location": "CME.md s4, s8",
+   "source": "companyfacts / 10-Q acc 0001156375-26-000047; Ex-99.1 acc 0001156375-26-000042",
+   "source_value": "Levels correct (1,880.1 / 3.18; 1,706.2 / 2.88 / NI 1,041.8 / OI 1,107.1). True YoY vs 2025: Q1 revenue +14.5% (vs 1,642.3), EPS +21.4% (vs 2.62); Q2 revenue +0.8% (vs 1,692.0), EPS +2.5% (vs 2.81). H1-26 revenue +7.6%, EPS +11.6%",
+   "status": "FAIL",
+   "note": "All four YoY growth rates computed against 2024 quarters. True deceleration is +14.5% to +0.8%, far sharper than stated; kill criterion (i) (revenue growth below 5% for two consecutive quarters) is already one quarter in (Q2-26 +0.8%; Q3-25 was -3.0%)."
+  },
+  {
+   "ticker": "CME",
+   "claim": "Consolidated total debt $3,868.5m, consolidated cash $2,275.6m, net debt ~$1.59bn; equity $26,520.4m; assets $194,676.6m (liabilities $168,156.2m) at 30 Jun 2026",
+   "dossier_location": "CME.md s6",
+   "source": "10-Q acc 0001156375-26-000047 balance sheet; Ex-99.1",
+   "source_value": "Long-term debt $3,424.2m (release: '$3.4 billion of debt'); cash and equivalents $2,144.2m + marketable securities $131.4m = $2,275.6m; equity $26,520.4m; assets $194,676.6m; liabilities $168,156.2m",
+   "status": "FAIL",
+   "note": "Debt is overstated by $444m (Yahoo aggregation includes non-debt items); net debt is $1.15bn, not $1.59bn. Other balance-sheet figures correct; performance-bond/guaranty-fund scope note ($158.1bn) is correct."
+  },
+  {
+   "ticker": "CME",
+   "claim": "Buybacks are 'modest ... small relative to FCF'; share count essentially flat to slightly down",
+   "dossier_location": "CME.md s6",
+   "source": "10-Q equity statement; Ex-99.1",
+   "source_value": "Repurchases $1,236.9m in H1-26 (4.38m shares), $698.2m in Q2-26 ($695m per release); $1.5bn of the $3.0bn authorisation remaining; dividends $8.75 per share in H1 ($3,171.8m, includes annual variable dividend)",
+   "status": "FAIL",
+   "note": "Buybacks are large (about $2.5bn annualised), not modest; the 85% total-payout assumption in the valuation is supported, the 'small' description is not. Share count flat because 4.58m preferred converted to Class A."
+  },
+  {
+   "ticker": "CME",
+   "claim": "Q2-26: ADV 29.8m (2nd-highest Q2, near record); market data +20% to $238m; no formal EPS/revenue guidance",
+   "dossier_location": "CME.md s4, s5",
+   "source": "Ex-99.1 acc 0001156375-26-000042",
+   "source_value": "ADV 29.8m (third-highest quarterly ADV; CEO: 'second-highest Q2 volumes ever'); market data +20% to a record $238m; adjusted EPS $2.99 vs GAAP $2.88; no outlook in release",
+   "status": "PASS",
+   "note": "'33rd consecutive quarter' and 'Q3-to-date volumes +18%' are call commentary, not in the filings: UNVERIFIABLE from SEC documents."
+  },
+  {
+   "ticker": "CME",
+   "claim": "Reverse DCF: Gordon growth on forward P/E 20.46x, payout ~0.85, cost of equity 8.0% (beta 0.95) -> implied perpetual growth 3.5-4.0%; base ~7%",
+   "dossier_location": "CME.md s7",
+   "source": "Recomputation",
+   "source_value": "At 8.0%: g = 3.7% (replicates). Stated beta 0.95 with 5.17% 10-yr Treasury + 4.14% ERP gives 9.1% -> g = 4.7%; the d4 snapshot beta is 0.275 (Blume 0.52 -> CoE ~7.3%) -> g = 3.0%. Range 3.0%-4.7%, all below the ~7% base",
+   "status": "MINOR",
+   "note": "Discount rate is not tied to the 5.17% Treasury plus a stated ERP, and the stated beta (0.95) conflicts with the snapshot beta (0.275); 8.0% sits inside the plausible 7.3%-9.1% range. Direction unchanged: implied remains below base, INCLUDE-SMALL unchanged. Trailing P/E 22.45x and TTM EPS $11.78 verified (11.16 + 6.06 - 5.43 = 11.79). Dividend: Q2-26 declared $1.30/quarter = $5.20/yr (dossier says $5.10)."
+  },
+  {
+   "ticker": "CME",
+   "claim": "Antitrust suit alleging data-fee fixing (Lawfold.com) and CME v. CFTC over Kalshi bitcoin perpetuals are the reasons for half weight",
+   "dossier_location": "CME.md s1, s8, s11",
+   "source": "10-Q acc 0001156375-26-000047 Note 'Contingencies' / Part II Item 1",
+   "source_value": "10-Q discloses only the 2014 Class B shareholder class action (jury verdict for defendants 25 Jul 2025; post-trial motions denied 15 Jun 2026; appeal noticed) plus ordinary-course matters; no mention of the antitrust data-fee suit or the CFTC/Kalshi litigation",
+   "status": "UNVERIFIABLE",
+   "note": "Both items rest on secondary sources the dossier says were not opened; the only primary legal item is favourable. The verdict reason is therefore unproven, not wrong; verdict unchanged."
+  },
+  {
+   "ticker": "CMG",
+   "claim": "Q2 2026 (13 weeks to 30 Jun 2026): revenue $3.3bn (+9.3%), comparable sales +2.2% (check +1.2%, transactions +1.0%), restaurant-level margin 25.2% (27.4%), operating margin 15.7% (18.2%), GAAP diluted EPS $0.32 flat, adjusted $0.33",
+   "dossier_location": "CMG.md s4",
+   "source": "8-K Ex-99.1 acc 0001058090-26-000063; 10-Q acc 0001058090-26-000066",
+   "source_value": "All as stated; revenue $3,348.6m vs $3,063.4m; net income $403.5m vs $436.1m (-7.5%) with EPS flat at $0.32 due to the lower share count",
+   "status": "PASS",
+   "note": "Period label correct. 'EPS roughly flat' hides a 7.5% fall in net income (buybacks of $630.7m in Q2 and $700.8m in Q1)."
+  },
+  {
+   "ticker": "CMG",
+   "claim": "Guidance: Q1 release (29 Apr 2026) FY26 comps 'about flat'; Q2 release raised to 'low single digit', 350-370 openings incl. 10-15 international, ~80% Chipotlane, tax rate 24%-26%; headline 'RAISES FULL YEAR COMPARABLE SALES GUIDANCE'",
+   "dossier_location": "CMG.md s4",
+   "source": "Ex-99.1 accs 0001058090-26-000027, -000007, -000063",
+   "source_value": "All verbatim (bullets in Q2 release: 'Full year comparable restaurant sales growth in the low single digit range'); the 'about flat' outlook also appears in the 3 Feb 2026 release",
+   "status": "PASS",
+   "note": "The 'pricing guided at 1-2%' phrase is not in the Q1 release extract checked (UNVERIFIABLE detail, immaterial)."
+  },
+  {
+   "ticker": "CMG",
+   "claim": "Comparable-sales history: Q1 2025 +0.5% (transactions +0.6%, check -0.1%); Q3 2025 +0.3% (transactions -0.8%); Q4 2025 -2.5% (transactions -3.2%); FY2025 -1.7% (transactions -2.9%); Q1 2026 +0.5%",
+   "dossier_location": "CMG.md s3, s4 table",
+   "source": "Ex-99.1 accs 0001058090-25-000028, -25-000086, -26-000007, -26-000027",
+   "source_value": "Q1 2025 comp was -0.4% (release: 'Comparable restaurant sales decreased 0.4%'); Q2 2025 -4.0%; Q3 2025 +0.3%; Q4 2025 -2.5%; FY25 -1.7%; Q1 2026 +0.5%",
+   "status": "FAIL",
+   "note": "Q1 2025 row shows +0.5%/+0.6%/-0.1%, which are Q1 2026 values copied into the prior-year row; true Q1 2025 comp -0.4%. Q2 2025 comp (-4.0%, shown as a dash) was the worst of the run. Revenue figures in the table (2,875 / 3,063 / 3,003 / 3,088) tie to XBRL."
+  },
+  {
+   "ticker": "CMG",
+   "claim": "Total debt $5.419bn is almost entirely operating-lease liabilities (no funded debt); cash $678m",
+   "dossier_location": "CMG.md s5",
+   "source": "10-Q acc 0001058090-26-000066 balance sheet",
+   "source_value": "Current operating lease liabilities $317.0m + long-term $5,102.2m = $5,419.2m; cash $228.2m + current investments $449.7m = $677.9m; LongTermDebt = 0",
+   "status": "PASS",
+   "note": "Entity (consolidated) and date (30 Jun 2026) correct."
+  },
+  {
+   "ticker": "CMG",
+   "claim": "TTM free cash flow ~$1.116bn (OCF $2.328bn)",
+   "dossier_location": "CMG.md s5, s7",
+   "source": "companyfacts CIK 1058090 (FY25 10-K, H1-26 and H1-25 10-Qs)",
+   "source_value": "TTM OCF = 2,113.9 + 1,332.0 - 1,118.4 = $2,327.5m (ties); TTM capex = 666.3 + 397.6 - 305.4 = $758.5m; TTM FCF = $1,569m ($1,470m after SBC of $98.9m)",
+   "status": "FAIL",
+   "note": "Yahoo FCF understates true FCF by ~$450m (it deducts about $1.21bn, not $0.76bn)."
+  },
+  {
+   "ticker": "CMG",
+   "claim": "Reverse DCF: EV $45.25bn, TTM FCF $1.116bn, 8.5% discount rate, 3% terminal -> implied 10-yr FCF growth ~12.9%; base 8-10%; implied_vs_base = above",
+   "dossier_location": "CMG.md s7",
+   "source": "Recomputation; d4 snapshot (market cap $39.65bn, beta 0.937)",
+   "source_value": "Dossier replicates (12.9%). Corrections: (1) FCF $1,569m / $1,470m after SBC; (2) the d4 EV includes $5.42bn of operating-lease liabilities while FCF (OCF) is already after rent, so lease debt must be excluded: EV = 39.65 - 0.68 = $39.0bn; (3) rate: 5.17% + Blume beta 0.958 x 4.14% = 9.1% (8.5% unsupported). Restated implied growth: 8.2% (FCF, 9.1%) to 9.0% (after SBC, 9.1%); 6.6%-7.5% at 8.5%",
+   "status": "FAIL",
+   "note": "Three method errors (wrong FCF, lease double-count, low discount rate). Restated implied 8-9% sits INSIDE the dossier's own 8-10% base case: implied_vs_base changes from 'above' to 'in_line'. Verdict WATCH not changed here (margin compression, Q2 net income -7.5%, food-safety litigation), but its stated premise ('priced for more than it can deliver') no longer holds; the lead should re-rank."
+  },
+  {
+   "ticker": "CMG",
+   "claim": "2026 multistate Salmonella outbreak lawsuit (Minnesota, Aug 2026) and 2024 securities-fraud class action (C.D. Cal.)",
+   "dossier_location": "CMG.md s6, s11",
+   "source": "10-Q acc 0001058090-26-000066 Note 11 (Litigation)",
+   "source_value": "10-Q litigation note describes only ordinary-course claims; a 0.2% labor-cost increase is attributed to 'costs related to certain legal proceedings' (unspecified); no outbreak or class action named",
+   "status": "UNVERIFIABLE",
+   "note": "Both items rest on press-release/Wikipedia-type secondary sources; not confirmable from SEC documents reviewed."
+  },
+  {
+   "ticker": "CMI",
+   "claim": "Quarterly table Q3'24 to Q2'26 (revenue, operating margin, GAAP diluted EPS), e.g. Q2'26 revenue $9,457M, 13.5%, EPS $6.73 (vs $6.43); Q1'26 $8,398M / 11.3% / $4.71",
+   "dossier_location": "CMI.md s4 table",
+   "source": "companyfacts CIK 26172; 8-K Ex-99 acc 0000026172-26-000026",
+   "source_value": "All eight rows tie (Q4 rows derived FY less 9M: Q4'24 8,447 / 8.7% / 3.06; Q4'25 8,536 / 9.5% / 4.27); Q2'26 net income $932M, EPS $6.73 vs $6.43, EBITDA 17.5% vs 18.4%",
+   "status": "PASS",
+   "note": "Period labels correct; TTM revenue $34.71bn, EBIT $3.89bn, OCF $4.65bn, capex $1.28bn, FCF $3.37bn all verified from XBRL."
+  },
+  {
+   "ticker": "CMI",
+   "claim": "Q4'25 row note: 'includes ~$3.28/sh, $458M, mostly non-cash Electrolyzer/Accelera strategic-review charge'",
+   "dossier_location": "CMI.md s4 table, s11",
+   "source": "Q4-25 Ex-99 acc 0000026172-26-000004",
+   "source_value": "Q4'25 alone: $218M, $1.54 per share ($175M non-cash). $458M / $3.28 is the FULL-YEAR 2025 total (so about $240M fell in earlier 2025 quarters, mainly Q3'25)",
+   "status": "FAIL",
+   "note": "Charge attributed to the wrong period; also Q3'25's 10.2% margin is depressed by the same programme, and Q1'26 includes a $199M ($1.44/sh) fuel-cell sale charge not noted in the table."
+  },
+  {
+   "ticker": "CMI",
+   "claim": "Guidance: Q4-25 release FY26 +3-8% revenue, EBITDA 17.0-18.0%; Q1-26 raised to +8-11% and 17.75-18.5%; Q2-26 raised to +10-13% and 18.0-18.5%",
+   "dossier_location": "CMI.md s5",
+   "source": "Ex-99 accs 0000026172-26-000004, -000013, -000026",
+   "source_value": "All ranges verbatim (Q2: 'improvement from prior guidance of up 8% to 11%'; EBITDA 'compared to prior guidance of 17.75% to 18.5%')",
+   "status": "PASS",
+   "note": "Ranges correct. But the 'three consecutive raises' claim (sections 3, 5, 8) is wrong: the Feb-26 release was the initial FY26 guide (the table itself says 'new guide'), so FY26 guidance has been raised twice (May, Aug)."
+  },
+  {
+   "ticker": "CMI",
+   "claim": "Net debt $3.16bn / TTM EBITDA ~$5.01bn = ~0.6x",
+   "dossier_location": "CMI.md s6, s9 (kill criterion 3)",
+   "source": "Q2-26 Ex-99 balance sheet (30 Jun 2026)",
+   "source_value": "Loans payable 459 + commercial paper 348 + current maturities 151 + long-term debt 6,737 = $7,695M; cash + marketable securities $3,924M; net debt $3,771M. TTM EBITDA = 5,385 (FY25) + 2,943 - 3,047 = $5,281M (ex-special items ~$5,480M) -> 0.69-0.71x",
+   "status": "FAIL",
+   "note": "The $3.16bn (inherited from V1/D3: total debt less cash) omits loans payable and current maturities ($610M). Leverage is ~0.7x, not 0.6x; conclusion (low leverage) unchanged, impact on V1 implied growth ~+0.1 pt."
+  },
+  {
+   "ticker": "CMI",
+   "claim": "Kill criterion 1: 'EBITDA margin stays below 18.0% for two consecutive quarters despite reiterated FY26 guidance'",
+   "dossier_location": "CMI.md s9",
+   "source": "Ex-99 accs -000013, -000026",
+   "source_value": "Q1-26 EBITDA 15.4% reported (17.7% excluding the $199M special item); Q2-26 17.5%; FY26 guide 17.75%-18.5% (Q1) and 18.0%-18.5% (Q2)",
+   "status": "FAIL",
+   "note": "On a literal reading the criterion is already met at Q2-26 (two consecutive quarters below 18.0% with guidance above it); the dossier does not say so. Verdict is WATCH, so no verdict change, but the criterion should be re-stated forward-looking (Q3/Q4-26 below 18.0%)."
+  },
+  {
+   "ticker": "CMI",
+   "claim": "V1 reverse DCF: WACC 8.74%, implied 10-yr FCF growth 15.66% vs consensus FY1 8.95%, 5y CAGR 8.44%, 10y 6.67%; base 3y return -3.9% (bear -25.1%, bull +19.4%); verdict 'excessive'",
+   "dossier_location": "CMI.md s7",
+   "source": "outputs/v1_valuation.json and v1_valuation_table.csv (CMI)",
+   "source_value": "All figures match; cost of equity 9.27% = 5.17% + Blume beta 0.989 x 4.14%; FCFF with SBC not added back; sensitivity: WACC +/-1pt gives 20.4% / 10.4%",
+   "status": "PASS",
+   "note": "Method complies with the program rule (10-yr Treasury 5.17% + stated ERP, no SBC add-back, FCFF). Verdict WATCH is consistent with the implied-vs-delivered gap."
+  },
+  {
+   "ticker": "CMI",
+   "claim": "Sell-side mean target $746 and low target $530 above price $525.06; momentum +36%; insider sales small",
+   "dossier_location": "CMI.md s7, s3, s11",
+   "source": "d4_live_snapshot.parquet (internal); Form 4 not opened",
+   "source_value": "Targets mean 745.96, low 530.0, high 894, 20 analysts (snapshot); insider data not primary",
+   "status": "UNVERIFIABLE",
+   "note": "Snapshot values tie; insider claims (aggregator-sourced) not checked against Form 4s."
+  },
+  {
+   "ticker": "CMS",
+   "claim": "Quarterly table Q3'24-Q2'26 (revenue, operating margin, GAAP EPS, adjusted EPS), e.g. Q2'26 revenue $1,808M, 14.6%, GAAP $0.37, adjusted $0.37 (vs $0.71); Q1'26 $1.10 / $1.13; TTM revenue $8.59bn, operating income $1.67bn, net income $1.03bn, GAAP EPS ~$3.33, adjusted ~$3.38",
+   "dossier_location": "CMS.md s4",
+   "source": "companyfacts CIK 811156; 8-K Ex-99.1 accs 0001104659-26-087288, -26-049718",
+   "source_value": "All rows tie (Q4'24 and Q4'25 derived FY less 9M); release: Q2'26 EPS $0.37 vs $0.66, adjusted $0.37 vs $0.71; H1 adjusted $1.50 vs $1.73 (implies Q1 $1.13 vs $1.02); Q2'26 operating income $264M",
+   "status": "PASS",
+   "note": "Period labels correct. Release date is 28 Jul 2026 (dossier labels it 'Aug-26' and cites '2026-08-04/2026-09-03 per secondary sources'): MINOR date error. Q3'25 adjusted EPS was $0.93 (shown 'n/d')."
+  },
+  {
+   "ticker": "CMS",
+   "claim": "Guidance table: Q3-25 'FY25 reaffirmed $3.54-3.60, maintained'; Q4-25 raised FY26 to $3.83-3.90 from $3.80-3.87; Q1-26 and Q2-26 reaffirmed; FY27 introduced at $4.08-4.17; section 3: 'raised twice from an initial $3.80-3.87'",
+   "dossier_location": "CMS.md s3, s5",
+   "source": "Ex-99.1 accs 0001104659-25-103975, -26-010603, -26-049718, -26-087288",
+   "source_value": "30 Oct 2025: 'raised its 2025 adjusted earnings guidance to $3.56 to $3.60 from $3.54 to $3.60' and initiated 2026 at $3.80-$3.87; 5 Feb 2026: raised 2026 to $3.83-$3.90 from $3.80-$3.87, FY25 adjusted $3.61; Apr and Jul 2026 reaffirmed; Jul 2026: 2027 $4.08-$4.17",
+   "status": "FAIL",
+   "note": "Q3-25 row is wrong (it was a raise of the FY25 low end plus the initial FY26 guide, not 'maintained'); 'raised twice' in section 3 is wrong (raised once, then reaffirmed twice, as the dossier's own kill criterion 2 says). Substance (never cut, FY27 +6.7% at midpoint) holds."
+  },
+  {
+   "ticker": "CMS",
+   "claim": "Balance sheet is 'securitization-heavy'; net debt $18.79bn (LT debt $18.17bn + short-term $0.86bn - cash $0.24bn); leverage '~4.6x on operating income plus D&A', triage 6.3x",
+   "dossier_location": "CMS.md s1, s6, s8",
+   "source": "Q2-26 Ex-99.1 summarised balance sheet; companyfacts (D&A FY25 1,306 + H1-26 720 - H1-25 676 = $1,350M)",
+   "source_value": "Securitization debt $525M (was $585M at Dec-25) = 2.7% of total debt of $19.3bn (debt and finance leases ex-securitization $18,776M + $525M); XBRL LT debt noncurrent 18,172 + current 864 - cash 241 = $18.8bn; TTM EBITDA = operating income 1,670 + D&A 1,350 = ~$3.0bn -> net debt / EBITDA = 6.2x (6.3x on company-basis debt)",
+   "status": "FAIL",
+   "note": "Securitization is not a material part of the debt stack, so it neither complicates the leverage read nor explains the gap to the triage's 6.3x; the dossier's own 4.6x is wrong (18.8 / 3.0 = 6.2x). Leverage is higher than the dossier states; this reinforces rather than weakens the half-weight reservation, verdict unchanged."
+  },
+  {
+   "ticker": "CMS",
+   "claim": "OCF TTM ~$2.77bn vs capex TTM ~$3.9bn+ (FCF structurally negative)",
+   "dossier_location": "CMS.md s4",
+   "source": "companyfacts: OCF FY25 2,235 + H1-26 1,327 - H1-25 1,414",
+   "source_value": "TTM OCF = $2,148M (also Yahoo snapshot $2.148bn); capex TTM ~$4.35bn implied by snapshot FCF -$2.2bn",
+   "status": "FAIL",
+   "note": "OCF overstated by ~$0.6bn; conclusion (structurally negative FCF, DDM appropriate) unchanged."
+  },
+  {
+   "ticker": "CMS",
+   "claim": "NorthStar Clean Energy described as a small renewables developer segment; no material change",
+   "dossier_location": "CMS.md s2",
+   "source": "Ex-99.1 acc 0001104659-26-087288 (28 Jul 2026)",
+   "source_value": "Release headline: 'Strategic Decision on NorthStar Clean Energy Services': completed strategic review, Board approved exiting non-utility renewables development while retaining Michigan assets including DIG; 'reduce financing needs'",
+   "status": "MINOR",
+   "note": "Material Q2 event omitted from the dossier. Directionally supportive of the regulated-utility thesis, but FY25's beat was 'largely due to outperformance at NorthStar' (Feb 2026 release), so part of the earnings base is being exited; 2027 guide of $4.08-4.17 was issued alongside."
+  },
+  {
+   "ticker": "CMS",
+   "claim": "Dividend $2.28 (raised 11 cents), 20th consecutive annual increase; payout ~59% of FY26 midpoint",
+   "dossier_location": "CMS.md s6",
+   "source": "Ex-99.1 acc 0001104659-26-010603; companyfacts",
+   "source_value": "'increased its annual dividend by 11 cents per share to $2.28 for 2026, the 20th increase in as many years'; $0.57 per quarter; 2.28 / 3.865 = 59%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CMS",
+   "claim": "Reverse DDM: price $62.95, dividend $2.28, cost of equity 7.0-8.0% (5.17% + beta 0.55 x 4.14% = 7.45%), '10y fade to 3% terminal' -> implied growth 3.9-6.7% (central 5.2%) vs base ~7%",
+   "dossier_location": "CMS.md s7",
+   "source": "Recomputation",
+   "source_value": "Constant 10-year dividend growth then 3% terminal replicates exactly: 3.85% / 5.18% / 6.70% at 7.0% / 7.45% / 8.0%. A linear fade from g to 3% (V1 convention) gives 4.6% / 7.1% / 9.9% for the same price",
+   "status": "MINOR",
+   "note": "Discount rate is consistent with 5.17% + stated beta/ERP (compliant). The word 'fade' mislabels what was computed (constant growth then step to 3%); on a like-for-like constant-growth base of 7% the 5.2% implied is below base, so implied_vs_base 'below' stands. Verdict INCLUDE-SMALL supported."
+  },
+  {
+   "ticker": "CMS",
+   "claim": "Moody's outlook negative (~March 2026) on a $24bn five-year capital plan; S&P BBB+/stable; Q2 'miss' bridge ($0.08 weather, $0.19 storm O&M, $0.23 non-repeating liability management) from the call",
+   "dossier_location": "CMS.md s1, s3, s11",
+   "source": "Q2-26 10-Q acc 0000811156-26-000028 and Ex-99.1",
+   "source_value": "Neither the 10-Q nor the release mentions Moody's outlook, the $24bn figure or the EPS bridge (the release only gives EPS $0.37 vs $0.71 and reaffirmed guidance)",
+   "status": "UNVERIFIABLE",
+   "note": "Secondary sources (S&P MI summary, Investing.com transcript); the bridge components sum to $0.50 against a $0.34 shortfall, so they are not a clean reconciliation."
+  },
+  {
+   "ticker": "CNC",
+   "claim": "Eight-quarter table Q3'24-Q2'26: revenue, GAAP operating income, HBR, GAAP EPS, adjusted EPS, OCF, FCF; e.g. Q2'26 revenue $53,579M, op income $1,198M (2.2%), HBR 89.6%, GAAP EPS $2.19, adjusted $2.51, OCF $3,590M, FCF $3,416M",
+   "dossier_location": "CNC.md s4",
+   "source": "companyfacts CIK 1071739; 8-K Ex-99.1 acc 0001071739-26-000154; 10-Q acc 0001071739-26-000153",
+   "source_value": "All 8 rows tie (Q4 rows derived FY less 9M: Q4'25 revenue 49,725, op income -1,745, EPS -2.24, OCF 437; Q3'25 op income -6,954, EPS -13.50); adjusted EPS Q4'25 $(1.19), FY25 $2.08, FY24 $7.17 per Feb-26 release; H1'26 adjusted 5.88 = 3.37 + 2.51",
+   "status": "PASS",
+   "note": "Period labels correct. Q2'26 vs Q2'25 variances (HBR 89.6% vs 93.0%; Medicaid 93.9% vs 94.9%; Commercial 79.2% vs 90.6%; Medicare 89.5% vs 90.9%; premium and service revenue +4% to $44,375M) verified. TTM OCF $9.75bn and FCF ~$8.95bn tie."
+  },
+  {
+   "ticker": "CNC",
+   "claim": "Guidance trail: 1 Jul 2025 withdrawal (~$1.8bn risk-adjustment, ~$2.75 EPS); Oct 2025 'at least $2.00, +$0.25 from $1.75', GAAP loss 'not to exceed $(12.85)' (missed: -$13.53); Feb 2026 'greater than $3.00' (GAAP > $1.98, revenue $186.5-190.5bn, HBR 90.9-91.7%); Apr 2026 floor > $3.40 (GAAP > $2.37), premium and service revenue +$1.0bn to $171-175bn; Jul 2026 floor > $4.80 (GAAP > $3.11), total revenue $193.5-197.5bn, HBR 90.5-91.3%, shares 497-500m",
+   "dossier_location": "CNC.md s5",
+   "source": "Ex-99.1 accs 0001071739-25-000128, -25-000185, -26-000031, -26-000099, -26-000154",
+   "source_value": "Every quoted phrase and figure appears verbatim (Q2 release also raised premium and service revenue by $2.0bn to $173-177bn)",
+   "status": "PASS",
+   "note": "Dossier verdict text says 'three guidance raises in 2026': the 6 Feb 2026 release was the initial 2026 guide, so there are two raises (Apr, Jul); section 5 and kill criterion 1 correctly show 3.00 -> 3.40 -> 4.80 (MINOR wording in the verdict)."
+  },
+  {
+   "ticker": "CNC",
+   "claim": "Total debt $16,105m (term loan $1,975m component); $4.0bn revolver undrawn; debt-to-capital 41.6% (46.5% at 12/31/25; covenant max 0.60); equity $22,634m (Centene $22,562m); goodwill $10,835m; regulated cash/investments $43.0bn vs unregulated $1.8bn, $715m available for general corporate use; NAIC RBC over 350% at 12/31/25",
+   "dossier_location": "CNC.md s6",
+   "source": "10-Q acc 0001071739-26-000153; Ex-99.1 acc -000154",
+   "source_value": "Debt note total $16,105 (term loan 1,975); equity 22,634 / 22,562; supplemental: regulated 43,015, unregulated 1,831, debt-to-cap 41.6% / 46.5%; $715M corporate cash; RBC 'in excess of 350%'; covenant 0.60",
+   "status": "PASS",
+   "note": "Consolidated vs parent scope handled correctly; Yahoo/V1 net debt of -$10.95bn correctly rejected."
+  },
+  {
+   "ticker": "CNC",
+   "claim": "10-Q items: $481M pre-tax benefit in H1-26 from final 2025 risk-adjustment results; voluntary separation programme severance ~$315-365M in H2-26 (committed 27 Jul 2026); Brock Lunstrum v. Centene securities class action (S.D.N.Y., 9 Jul 2025); California UIS transition (~250,000 members) on 1 Jan 2027; work requirements 'increasing the overall morbidity ... largely beginning in 2027'",
+   "dossier_location": "CNC.md s4, s8, s11",
+   "source": "10-Q acc 0001071739-26-000153",
+   "source_value": "All present as stated (risk adjustment payable reduced by $541M, net benefit $481M; severance $315M-$365M for the remainder of 2026)",
+   "status": "PASS",
+   "note": "Release footnote gives a full-year severance range of $355-405M for the adjusted SG&A exclusion, consistent with the H2 estimate plus H1 costs."
+  },
+  {
+   "ticker": "CNC",
+   "claim": "Own reverse DCF: rf 5.17%, ERP 4.14%, Blume beta 1.07 -> cost of equity 9.6%, 3% terminal, owner earnings 70-80% of adjusted EPS from a $5.0 base: price $61.82 implies ~3-6% a year; base 8.6% a year to $6.4 worth ~$74; bear ~$42, bull ~$97; implied_vs_base 'below'",
+   "dossier_location": "CNC.md s7",
+   "source": "Recomputation",
+   "source_value": "Replicates: 70% payout with fade 6.0%, 80% payout 2.8-2.9%; base 8.6% with 75% payout and linear fade = $73.7 per share",
+   "status": "PASS",
+   "note": "Method complies with the program rule (10-yr Treasury + stated ERP and beta; earnings-based owner earnings for an insurer; SBC not added back). Verdict INCLUDE-SMALL is supported by its own evidence and named reservations."
+  },
+  {
+   "ticker": "CNC",
+   "claim": "V1: verdict 'attractive' (score 0.96), implied growth -25.9%, base +67.7%/yr, bear -2.2%, bull +142%; V1 EV $19.8bn counts regulated-subsidiary cash",
+   "dossier_location": "CNC.md s7",
+   "source": "outputs/v1_valuation_table.csv (CNC row)",
+   "source_value": "verdict attractive, score 0.9564, implied -0.2593, base 0.6767, bear -0.0220, bull 1.4206, street flag 'base 3y value exceeds Street 12m high target'",
+   "status": "PASS",
+   "note": "Dossier correctly refuses to rely on V1's unusable numbers and explains why."
+  }
+ ],
+ "verdict_changes": [
+  {
+   "ticker": "CL",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "The dossier's own kill criteria 1 (GAAP operating margin below 20% for three consecutive quarters) and 4 (GAAP EPS down YoY for two consecutive quarters) are already met once the omitted Q4-25 quarter (operating margin 1.8%, EPS -$0.04) is included and Q2-26 EPS (0.86 vs 0.91) is counted; cause is disclosed restructuring charges (Base Business EPS +8%), so WATCH not REJECT pending re-based criteria and Q3-26 on 30 Oct 2026. F101_summary.json updated."
+  },
+  {
+   "ticker": "CMG",
+   "old": "WATCH (implied_vs_base above)",
+   "new": "WATCH (implied_vs_base in_line)",
+   "why": "Corrected TTM FCF $1,569m (not $1,116m), removal of $5.4bn operating-lease liabilities from an FCF-based EV, and a 9.1% cost of equity restate implied 10-year FCF growth from 12.9% to 8.2-9.0%, inside the 8-10% base case. Verdict label kept (margins contracting, net income -7.5%), but its stated premise no longer holds; lead should re-rank (INCLUDE-SMALL arguable). F112_summary.json updated."
+  }
+ ]
+}

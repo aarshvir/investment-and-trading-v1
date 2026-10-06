@@ -1,0 +1,113 @@
+{
+  "agent": "F106",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "TDY": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A disciplined serial acquirer of niche instrument, sensor and defense-imaging franchises, compounding earnings at low leverage, priced below what its usual growth-plus-M&A algorithm can deliver.",
+      "kill_criteria": [
+        "Digital Imaging segment organic revenue growth falls below 5% YoY for two consecutive quarters.",
+        "Funded backlog book-to-bill ratio drops below 1.0x for two consecutive quarters (it has been >1.0x for 11 straight quarters as of Q2'26).",
+        "Net debt/EBITDA rises above 2.5x post-Varex-close without a disclosed deleveraging plan within 18 months.",
+        "The Varex acquisition is blocked by regulators, terminated, or produces adjusted-EPS dilution beyond what management guides at signing.",
+        "A goodwill impairment charge is recorded against any acquired business (goodwill is 57% of consolidated assets)."
+      ],
+      "key_adverse_facts": [
+        "Unclosed $1.1B Varex Imaging cash acquisition (announced 2026-08-10, expected close early 2027) carries real regulatory-approval, financing and integration risk not yet resolved.",
+        "ROE (8.9%) and b1 quality percentile (0.27) are depressed by a large accumulated goodwill base (57% of consolidated assets) from two decades of M&A.",
+        "Digital Imaging/defense revenue depends on U.S. government budget cycles (continuing resolutions, program timing)."
+      ],
+      "data_conflicts": [
+        "b1 composite percentile (0.31, decile 4) is middling even though the filed fundamentals (9.8% revenue growth, 160bp YoY margin expansion, two consecutive guidance raises) look stronger than a decile-4 quant rank would suggest; the gap traces mainly to a low ROE/quality percentile driven by legacy M&A goodwill rather than weak underlying economics."
+      ],
+      "next_earnings_date": "2026-10-21",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - filed growth, margin trend and low leverage are solid, but the still-unclosed Varex deal is a specific, unresolved event risk that caps conviction at half weight",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No V1 systematic valuation row exists for TDY in v1_valuation_table.csv/v1_valuation.json, so there is nothing to reconcile against; this dossier's own reverse-DCF (implied 10y FCF growth ~6.6% vs. an ~9% base case) is the only quantitative valuation view available and reads attractive."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.107,
+        "base": 0.085,
+        "bull": 0.211
+      },
+      "scenario_basis": "Entry EV/FCF 26.4x on TTM FCF $1,142.1M (EV $30,156.2M = mkt cap $28,469.3M + net debt $1,686.9M); TDY pays no dividend; bear -2%/base 9%/bull 16% 3y FCF CAGR with exit EV/FCF of 20x/26x/30x respectively."
+    },
+    "TEL": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "A diversified connector and sensor maker is riding a real, order-book-confirmed AI-datacenter and electrification boom while the stock is priced for far less growth than that boom implies.",
+      "kill_criteria": [
+        "The DDTC export-control investigation results in a fine, penalty or remediation order exceeding $50M, or a formal enforcement action is announced.",
+        "AI/data-center order momentum reverses (orders decline sequentially for two consecutive quarters) rather than continuing to pull the $3B FY2027 target forward.",
+        "Automotive or Industrial segment organic revenue growth turns negative for two consecutive quarters.",
+        "Net debt/EBITDA rises above 2.0x (from an estimated ~0.9-1.0x today) without a clearly disclosed reason such as large debt-funded M&A.",
+        "A further one-time tax or legal charge exceeding $500M recurs within the next four quarters."
+      ],
+      "key_adverse_facts": [
+        "TE Connectivity has made a voluntary self-disclosure to the U.S. State Department's DDTC regarding past export-control compliance and is cooperating with an ongoing investigation whose timing, outcome and potential fines cannot be predicted.",
+        "A one-time non-cash tax charge tied to the 2025 Ireland redomicile and OECD global-minimum-tax rules collapsed FQ2 FY2025 GAAP net income to $13M (EPS $0.04), a real filed data point, not an error, but evidence the tax-law sensitivity is structural.",
+        "Automotive and Industrial end-markets, still the majority of revenue, could offset the current AI/data-center tailwind in a normal cyclical downturn."
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium-high - the order-book acceleration and valuation cushion are strong, tempered by the unresolved DDTC matter",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No V1 systematic valuation row exists for TEL in v1_valuation_table.csv/v1_valuation.json, so there is nothing to reconcile against; this dossier's own reverse-DCF (implied 10y FCF growth ~3.3% vs. an ~7% base case) is the only quantitative valuation view available and reads attractive."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.078,
+        "base": 0.082,
+        "bull": 0.206
+      },
+      "scenario_basis": "Entry EV/FCF 20.4x on TTM FCF $3,315M (EV $67,575.7M = mkt cap $63,284.7M + net debt ~$4,291M); TTM dividend yield ~1.9%; bear 0%/base 7%/bull 14% 3y FCF CAGR with exit EV/FCF of 15x/20x/23x respectively."
+    },
+    "TMO": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The largest life-science tools and services platform is genuinely re-accelerating on a bioprocessing and academic-funding recovery, but the price already implies more growth than a fair base case delivers.",
+      "kill_criteria": [
+        "Organic revenue growth (ex-recent M&A) falls below 4% YoY for two consecutive quarters.",
+        "Adjusted EPS guidance is cut from the current $24.93-$25.33 FY2026 range.",
+        "Estimated net debt/EBITDA rises above 3.5x (from an estimated ~3.3-3.4x today) without a disclosed deleveraging plan.",
+        "Bioprocessing/pharma-services order momentum (book-to-bill) turns negative for two consecutive quarters.",
+        "The reverse-DCF implied-growth gap versus this dossier's 8% base case widens further without a fundamental acceleration to justify it."
+      ],
+      "key_adverse_facts": [
+        "Consolidated total debt rose from $39,172M (2025-12-31) to $42,284M (2026-06-27), a ~$3.1B six-month increase this pass could not fully trace to a single disclosed transaction, alongside cash falling from $9,852M to $4,064M.",
+        "Buybacks accelerated sharply to a cumulative $4.0B through Q2 2026 (from ~$3.0B for all of FY2025), funded partly by the cash drawdown noted above.",
+        "b1 momentum percentile is weak (0.10) even after two consecutive guidance raises - an unresolved tension between the quant data and the narrative.",
+        "GAAP-to-adjusted EPS gap (~29% of GAAP EPS) was not independently decomposed line-by-line from the 10-Q's non-GAAP reconciliation in this pass."
+      ],
+      "data_conflicts": [
+        "b1 momentum percentile (0.10, weak) sits in tension with two consecutive quarters of guidance raises off real beats; this dossier does not resolve the conflict and flags it for the next review."
+      ],
+      "next_earnings_date": "2026-10-23",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - business quality and the near-term recovery are well evidenced, but the valuation gap and the unexplained debt increase are reasons to wait, not to add",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "above",
+        "dossier_view": "full",
+        "consistent": null,
+        "reconciliation": "No V1 systematic valuation row exists for TMO in v1_valuation_table.csv/v1_valuation.json, so there is nothing to reconcile against; this dossier's own reverse-DCF (implied 10y FCF growth ~10.2% vs. an ~8% base case) is the only quantitative valuation view available and reads full/expensive relative to a fair base case, which is why the verdict is WATCH rather than INCLUDE despite strong business quality."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.066,
+        "base": 0.051,
+        "bull": 0.168
+      },
+      "scenario_basis": "Entry EV/FCF 39.3x on TTM FCF $7,318M (EV $287,799.4M = mkt cap $249,579.4M + net debt $38,220M); TTM dividend yield ~0.2%; bear 2%/base 8%/bull 14% 3y FCF CAGR with exit EV/FCF of 30x/36x/42x respectively."
+    }
+  }
+}

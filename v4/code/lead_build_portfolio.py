@@ -106,6 +106,10 @@ for _q in sorted(glob.glob(str(V4 / 'outputs' / 'Q[0-9][0-9]_triage.json'))):
     except Exception:
         pass
 LANE = set(GROWTH_LANE) | TRIAGE_ADV
+# (n) full-coverage rule (committed 30 Sep 2026 before any wave-8+ result existed): once a company has full diligence it
+#     is judged by the analyst route even if the quick triage did not advance it (the owner asked for every S&P 500 name
+#     to be validated in depth, so a triage "no" must not outrank a full-diligence "yes"). Top-70 names keep their gates.
+LANE = LANE | {pathlib.Path(_f).stem for _f in glob.glob(str(V4 / 'dossiers' / '*.md'))}
 # (k) V1 input-defect guard (wave-3 finding, F60; committed before the build that uses it): V1's revenue-based models take
 #     D3's XBRL "TTM revenue". Where that disagrees with the independent Yahoo TTM revenue by more than a factor of 1.6
 #     either way AND V1 actually used the D3 figure, V1's valuation for that name is treated as invalid (FIX: a mis-dated
@@ -183,12 +187,22 @@ for _, r in L.sort_values('live_rank').iterrows():
         reasons.append(f"the analyst's own valuation in dossier section 7 calls it {dv}")
     if dl is None: reasons.append('no diligence dossier')
     elif dl['verdict'] not in ('INCLUDE', 'INCLUDE-SMALL'): reasons.append(f"diligence {dl['verdict']}")
+    # (p) 6 Oct 2026 (Loop-11 A1/A2 must-fix, committed before this build): for names on the V1 path, the analyst's re-assessed
+    #     implied_vs_base and base-case 3-yr return (latest F-summary) replace V1's mapping when stated. V1's "attractive" no
+    #     longer overrides a re-assessment (UDR was in_line in its dossier but "below" in the ranking). An analyst call of
+    #     "above" makes the name ineligible. Motivation: internal consistency; the build now equals the All-500 register.
+    _vv2 = (dl.get('valuation_view_vs_v1') if (dl and isinstance(dl.get('valuation_view_vs_v1'), dict)) else {}) or {}
+    _a_iv = str(_vv2.get('implied_vs_base') or IMPLIED_NORM.get(t) or '').lower().strip()
+    _a_sc = (dl or {}).get('scenario_returns_3y') or {}
+    if _a_iv == 'above' and dl is not None: reasons.append("price implies more growth than the analyst's base case (above)")
+    _impl = _a_iv if _a_iv in ('below', 'in_line') else ('below' if vv == 'attractive' else ('in_line' if vv == 'fair' else None))
+    _bb = _a_sc.get('base') if isinstance(_a_sc.get('base'), (int, float)) else (v.base_ann_return_3y if v is not None else None)
     rows.append(dict(t=t, n=r['name'], s=r.gics_sector, sub=r.gics_sub_industry, rank=(int(r.live_rank) if r.live_rank == r.live_rank else 999), comp=r.composite,
                      Q=r.fam_Q, V=r.fam_V, M=r.fam_M, S=r.fam_S, dec=r.decile, vol=r.vol_1y, voltercile=r.vol_tercile,
                      val=vv, analyst_view=ANALYST_VIEW.get(t), valpct=((V2R[t].get('own_pct_10y') if t in V2R else None) or (v.own_history_percentile if v is not None else None)),
-                     bear=(v.bear_ann_return_3y if v is not None else None), base=(v.base_ann_return_3y if v is not None else None),
+                     bear=(v.bear_ann_return_3y if v is not None else None), base=_bb,
                      bull=(v.bull_ann_return_3y if v is not None else None), verdict=(dl['verdict'] if dl else None),
-                     implied=('below' if vv == 'attractive' else ('in_line' if vv == 'fair' else None)), eligible=not reasons, why=('; '.join(reasons) if reasons else 'eligible')))
+                     implied=_impl, eligible=not reasons, why=('; '.join(reasons) if reasons else 'eligible')))
 C = pd.DataFrame(rows)
 
 # ---- diversification: walk down the ranking, max 2 per sub-industry ----
@@ -219,6 +233,45 @@ for _, r in E.iterrows():
     if len(sel) >= MAX_NAMES:
         C.loc[C.t == r.t, 'why'] = f'eligible, but outside the best {MAX_NAMES} (conviction, margin of safety, base-case return)'; continue
     sel.append(r.t); subcount[r['sub']] = subcount.get(r['sub'], 0) + 1; seccount[r['s']] = seccount.get(r['s'], 0) + 1
+# (o) owner's technology allocation (set by the owner on 5 Oct 2026, committed before the build that uses it): technology
+#     = GICS Information Technology + Interactive Media & Services + Transaction & Payment Processing Services. If the
+#     selection above gives technology under TECH_MIN of the weight, the lowest-ranked non-tech holding is swapped for the
+#     best eligible technology name not yet held (same (j) order, same sub-industry and sector limits), and repeated until
+#     technology reaches TECH_MIN or no eligible tech name is left; if it exceeds TECH_MAX the lowest-ranked tech holding is
+#     swapped for the best non-tech name. Every name still has to pass every eligibility test.
+TECH_MIN, TECH_MAX = 0.20, 0.30
+TECH_SUBS = {'Interactive Media & Services', 'Transaction & Payment Processing Services'}
+_is_tech = lambda r: r['s'] == 'Information Technology' or r['sub'] in TECH_SUBS
+_EO = list(E.t); _ER = E.set_index('t')
+
+
+def _weights_for(names):
+    _P = C[C.t.isin(names)].copy().set_index('t'); _P['sector'] = _P['s']; _P['mult'] = np.where(_P.verdict == 'INCLUDE-SMALL', 0.5, 1.0)
+    _w = build_weights(_P, hi=0.10, lo=0.03, sector_cap=0.25, sub_cap=0.12, vol_col='vol', mult_col='mult', cap_by_mult=True)[0]
+    return _w, sum(float(_w[t]) for t in _P.index if _is_tech(_ER.loc[t]))
+
+
+def _fits(t, names):
+    r = _ER.loc[t]; others = [_ER.loc[x] for x in names]
+    return sum(o['sub'] == r['sub'] for o in others) < 2 and sum(o['s'] == r['s'] for o in others) < MAX_PER_SECTOR
+
+
+TECH_LOG = []
+for _ in range(MAX_NAMES):
+    _w, _tw = _weights_for(sel)
+    if TECH_MIN <= _tw <= TECH_MAX:
+        break
+    want_tech = _tw < TECH_MIN
+    _out = [t for t in reversed(sel) if _is_tech(_ER.loc[t]) != want_tech]
+    if not _out:
+        break
+    _drop = _out[0]; _rest = [t for t in sel if t != _drop]
+    _add = next((t for t in _EO if t not in sel and _is_tech(_ER.loc[t]) == want_tech and _fits(t, _rest)), None)
+    if _add is None:
+        break
+    sel = _rest + [_add]
+    TECH_LOG.append({'dropped': _drop, 'added': _add, 'tech_weight_before': round(_tw, 4)})
+    C.loc[C.t == _drop, 'why'] = f"displaced by rule (o) technology allocation (replaced by {_add})"
 P = C[C.t.isin(sel)].copy().set_index('t')
 P['sector'] = P['s']
 P['mult'] = np.where(P.verdict == 'INCLUDE-SMALL', 0.5, 1.0)
@@ -251,7 +304,7 @@ def _fp(p):
 
 MANIFEST = [_fp(V4 / 'data' / 'b1_live_scores.csv'), _fp(V4 / 'outputs' / 'v1_valuation_table.csv'), _fp(V4 / 'data' / 'd4_live_snapshot.parquet'),
             _fp(V4 / 'outputs' / 'b1_calibration_by_decile_vol.csv')] + ([_fp(NOTES_PATH)] if NOTES_PATH.exists() else []) + ([_fp(V2R_PATH)] if V2R_PATH.exists() else []) + [_fp(p) for p in sorted(paths)] + [_fp(p) for p in sorted(glob.glob(str(V4 / 'dossiers' / '*.md')))]
-out = {'candidates': C.to_dict('records'), 'selected': sel, 'built': datetime.datetime.now().isoformat(timespec='seconds'), 'input_manifest': MANIFEST, 'rule_commitment': _RC}
+out = {'candidates': C.to_dict('records'), 'selected': sel, 'built': datetime.datetime.now().isoformat(timespec='seconds'), 'input_manifest': MANIFEST, 'rule_commitment': _RC, 'tech_rule_o': {'min': TECH_MIN, 'max': TECH_MAX, 'swaps': TECH_LOG}}
 if len(P) >= 8:
     P['p_pos'], P['p_beat'] = zip(*[cal_lookup(r.dec, r.voltercile) for _, r in P.iterrows()])
     def _pe_sane(t):   # A2 loop-3: a corrupted vendor field (PGR NTM P/E 0.27x) must never be shown; fall back to trailing, labelled

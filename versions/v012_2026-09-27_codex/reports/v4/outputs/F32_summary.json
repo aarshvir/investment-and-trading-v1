@@ -1,0 +1,113 @@
+{
+  "agent": "F32",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "CBRE": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "World's largest commercial real-estate services firm, riding a leasing and infrastructure recovery, priced close to what it can actually deliver.",
+      "kill_criteria": [
+        "Core EPS guidance cut (any reduction to the low end of the then-current full-year range) at a subsequent quarterly release.",
+        "Advisory (brokerage) segment revenue growth turns negative for two consecutive quarters (the classic cyclical-downturn signal from 2022-2023).",
+        "Cumulative UK Telford fire-safety reserve exceeds $500m (from ~$300m disclosed across Q4'25-Q2'26).",
+        "Net leverage rises above 2.5x net debt/EBITDA (from 1.60x currently) without a stated de-leveraging plan.",
+        "Share buybacks pause or reverse (net share count increases quarter over quarter) while Core EPS growth is decelerating."
+      ],
+      "key_adverse_facts": [
+        "Cumulative ~$300m non-cash reserve increase across Q4'25 ($132m) and Q2'26 ($168m) for UK Telford fire-safety remediation, with no stated ceiling.",
+        "Real Estate Investments segment revenue fell 10.2% YoY in Q2'26 even as segment profit rose 68.0% on asset-sale timing -- profit quality there is lumpy, not run-rate.",
+        "12-month price momentum is negative (raw -10.8%, 12th percentile) despite four consecutive quarters of raised guidance -- the market has not yet rewarded the beat-and-raise pattern.",
+        "2023 SEC enforcement action (resolved): CBRE subsidiary paid a $375,000 civil penalty for whistleblower-protection-rule violations in employee separation agreements (2011-2022 conduct).",
+        "Brokerage revenue is structurally cyclical (fell sharply 2022-2023); management itself guides 2027 Core EPS growth (\"at least 15%\") to roughly a third of 2026's pace."
+      ],
+      "data_conflicts": [
+        "Pre-registered quant composite (b1_live_scores.csv) ranks CBRE near the bottom of the S&P 500 (decile 2, quintile 1, live_rank 427/503), the opposite signal from triage's quality 4 / growth 5 / price_vs_growth 5 score. Explained (not a fundamental red flag): quality percentiles are genuinely strong (gp/assets 0.96, ROE 0.83), but negative 12-1-month momentum (12th pct) and weak FCF-yield/EBIT-EV value percentiles (26th/22nd -- an asset-light services firm's EV is mostly goodwill/human capital, which value factors calibrated for asset-heavy firms read poorly) drag the composite down."
+      ],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (fundamentals and guidance track record are strong and independently verified from primary filings; the Telford liability trend and brokerage cyclicality are real, un-resolved uncertainties)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for CBRE (v1_valuation_table.csv has no CBRE row), so v1_verdict is null and no reconciliation is possible. This dossier's own reverse DCF: implied 10-year FCF growth ~9.6%/yr (EV $44.9bn, FCF0 $1.7bn, WACC 9.4%) vs an evidence-based base case of ~9-10%/yr -- essentially in_line, i.e. fairly priced, not cheap."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.07,
+        "base": 0.092,
+        "bull": 0.19
+      }
+    },
+    "EQIX": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The world's most interconnected data-center network, benefiting from AI and hyperscaler demand, growing cash flow faster than its rich-looking P/E suggests.",
+      "kill_criteria": [
+        "AFFO/share guidance cut (a reduction to the low end of the then-current full-year range) at a subsequent quarterly release.",
+        "Net debt/EBITDA rises above 5.0x (from ~4.0x currently) without a credible funding plan disclosed alongside it.",
+        "Recurring (monthly recurring revenue) growth decelerates below 8% YoY for two consecutive quarters (from 11% currently).",
+        "Any restatement of prior AFFO or capex classification, or a new SEC/DOJ enforcement action (distinct from the closed 2024 matter).",
+        "Annualized gross bookings decline YoY for two consecutive quarters (from +23% YoY currently)."
+      ],
+      "key_adverse_facts": [
+        "FY2026 total capex guidance of $5.0-$6.0bn is roughly double the prior ~$3.8bn non-recurring-capex run-rate, funded by additional debt/equity issuance -- dilution risk to per-share AFFO growth.",
+        "GAAP free cash flow was -$560m in 1H'26 (adjusted FCF -$336m); this is structurally normal for a REIT in heavy build-out but means GAAP FCF cannot be used as the valuation metric.",
+        "Total debt principal $22.15bn at Q2'26 vs $21.42bn at YE'25, cash only $979m; net debt/EBITDA ~4.0x by this dossier's method (triage cited 4.9x by a different EBITDA base) -- moderate-to-elevated leverage for a REIT mid-capex-ramp.",
+        "March 2024 short-seller (Hindenburg) report alleged capex misclassification to inflate AFFO -- the exact metric this valuation depends on; SEC/DOJ investigations concluded Nov 2025 with no enforcement action and no restatement, but a related shareholder class action was settled for $41.5m."
+      ],
+      "data_conflicts": [
+        "None material. Quant composite (decile 8, live_rank 106/503) and triage both agree the stock screens well; one caveat noted -- EQIX's high book/price percentile (0.95, reads 'cheap') is a REIT historical-cost-accounting artefact, not genuine statistical cheapness, and should not be read as a value signal."
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium-high (four consecutive guidance raises independently verified from primary filings, network-effect moat is durable; main uncertainty is funding/dilution from the capex step-up, and residual sensitivity around the capex-classification judgment call the 2024 short report challenged)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for EQIX (v1_valuation_table.csv has no EQIX row), so v1_verdict is null and no reconciliation is possible. This dossier's own reverse DCF (AFFO basis): implied 10-year AFFO growth ~7.8%/yr (EV $120.6bn, AFFO0 $4.27bn, WACC 8.3%) vs an evidence-based base case of ~10%/yr (midpoint of management's just-raised 2027-2029 AFFO/share growth guide of 9-12%) -- implied is below base case, i.e. the stock is not priced above what the evidence supports."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.026,
+        "base": 0.109,
+        "bull": 0.184
+      }
+    },
+    "WELL": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Owns senior-housing real estate riding an accelerating 80+ demographic wave, but priced for that wave's current cyclical-recovery pace to continue for a decade.",
+      "kill_criteria": [
+        "Same-store total-portfolio NOI growth decelerates below 8% YoY for two consecutive quarters (from 15.5% in Q2'26) without a corresponding guidance cut.",
+        "Normalized FFO/share guidance cut (reduction to the low end of the then-current full-year range) at a subsequent release.",
+        "Diluted share count grows more than 8% YoY for two more consecutive years, while per-share FFO growth falls below aggregate FFO growth by a widening gap.",
+        "Net debt/adjusted EBITDA rises above 3.5x (from 2.99x) without a stated de-leveraging plan.",
+        "Price/normalized-FFO multiple stays above 30x while same-store NOI growth guidance for the following year is below 10%."
+      ],
+      "key_adverse_facts": [
+        "Diluted shares outstanding grew from 668.1m (Q2'25) to 737.96m (Q2'26), +10.4% in one year -- a large share of aggregate FFO growth is funded by new equity issuance, not organic per-share compounding.",
+        "FY2025 stock-based compensation expense was $1.557bn (10-K), driven almost entirely ($1.409bn) by a new 'Ten Year Executive Continuity and Alignment Program' giving the five NEOs a single large front-loaded equity award; activist short-seller Land & Buildings called it 'egregiously management-friendly' in an April 2026 white paper.",
+        "Net debt/adjusted EBITDA drifted from 2.36x (Q3'25) to 3.03x (YE'25) to 2.99x (Q2'26) funding an aggressive acquisition pace ($15.5bn gross investments YTD through Q2'26).",
+        "Dividend yield is only ~1.5% post-hike -- genuinely low for a REIT, confirming the market is pricing WELL almost entirely as a growth story.",
+        "An older, unverified short-seller allegation (asset portfolios allegedly offloaded to mask losses) was found but not corroborated by any regulatory action in this cycle's search -- disclosed as an open, low-confidence item, not a confirmed fact."
+      ],
+      "data_conflicts": [
+        "None material -- the quant composite (fam_V percentile only 0.136 despite strong quality/momentum) and this dossier's own reverse DCF independently agree the stock is priced richly; triage's own price_vs_growth score (3, the softest of its three scores) already flagged this."
+      ],
+      "next_earnings_date": "2026-10-26",
+      "horizon": "12-24 months (re-underwrite when price or growth converge)",
+      "confidence_in_thesis": "high (the business quality and demographic tailwind are well evidenced from primary filings; the valuation conclusion follows directly from the reverse DCF and the disclosed 10.4% YoY share dilution, not from a soft judgment call)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": null,
+        "reconciliation": "No V1 row exists for WELL (v1_valuation_table.csv has no WELL row), so v1_verdict is null and no reconciliation is possible. This dossier's own reverse DCF (normalized-FFO basis): implied 10-year FFO growth ~10.0%/yr (EV ~$181.2bn, FFO0 $4.72bn, WACC 7.7%) vs an evidence-based base case of ~9%/yr (occupancy recovery must decelerate toward structural mid-single-digit same-store growth, net of ~10%/yr dilution) -- implied is at/above base case, i.e. priced for more than the base case delivers. Per program rule, a great business priced above its own base case is WATCH, not INCLUDE."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.108,
+        "base": 0.038,
+        "bull": 0.15
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "ticker": "CAH",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/CAH?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:45.567294+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "CAH",
+            "exchangeName": "NYQ",
+            "fullExchangeName": "NYSE",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 428851800,
+            "regularMarketTime": 1790798402,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 222.5,
+            "regularMarketChangePercent": -0.63,
+            "fulldayPrice": 222.5,
+            "fulldayChange": -1.41,
+            "fulldayChangePercent": -0.63,
+            "fiftyTwoWeekHigh": 258.3,
+            "fiftyTwoWeekLow": 150.78,
+            "regularMarketDayHigh": 226.485,
+            "regularMarketDayLow": 222.21,
+            "regularMarketVolume": 1941201,
+            "longName": "Cardinal Health, Inc.",
+            "shortName": "Cardinal Health, Inc.",
+            "chartPreviousClose": 221.27,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "start": 1790755200,
+                "end": 1790775000,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "start": 1790775000,
+                "end": 1790798400,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "start": 1790798400,
+                "end": 1790812800,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "open": [
+                  222.0800018310547,
+                  222.0,
+                  219.3699951171875,
+                  218.5399932861328,
+                  223.66000366210938
+                ],
+                "close": [
+                  222.6199951171875,
+                  220.22000122070312,
+                  220.2899932861328,
+                  223.91000366210938,
+                  222.5
+                ],
+                "low": [
+                  221.9499969482422,
+                  219.10000610351562,
+                  218.89999389648438,
+                  216.6999969482422,
+                  222.2100067138672
+                ],
+                "volume": [
+                  3480800,
+                  2092900,
+                  2392900,
+                  973600,
+                  1941201
+                ],
+                "high": [
+                  225.3699951171875,
+                  223.02000427246094,
+                  221.97000122070312,
+                  224.00999450683594,
+                  226.48500061035156
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  222.6199951171875,
+                  220.22000122070312,
+                  220.2899932861328,
+                  223.91000366210938,
+                  222.5
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 222.6199951171875,
+      "adjclose": 222.6199951171875,
+      "open": 222.0800018310547,
+      "high": 225.3699951171875,
+      "low": 221.9499969482422,
+      "volume": 3480800
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 220.22000122070312,
+      "adjclose": 220.22000122070312,
+      "open": 222.0,
+      "high": 223.02000427246094,
+      "low": 219.10000610351562,
+      "volume": 2092900
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 220.2899932861328,
+      "adjclose": 220.2899932861328,
+      "open": 219.3699951171875,
+      "high": 221.97000122070312,
+      "low": 218.89999389648438,
+      "volume": 2392900
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 223.91000366210938,
+      "adjclose": 223.91000366210938,
+      "open": 218.5399932861328,
+      "high": 224.00999450683594,
+      "low": 216.6999969482422,
+      "volume": 973600
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 222.5,
+      "adjclose": 222.5,
+      "open": 223.66000366210938,
+      "high": 226.48500061035156,
+      "low": 222.2100067138672,
+      "volume": 1941201
+    }
+  ],
+  "currency": "USD",
+  "symbol": "CAH",
+  "regular_market_time": 1790798402,
+  "close_sep30": 222.5,
+  "session_match": true
+}

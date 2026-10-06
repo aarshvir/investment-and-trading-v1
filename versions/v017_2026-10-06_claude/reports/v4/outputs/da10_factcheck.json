@@ -1,0 +1,195 @@
+{
+  "as_of": "2026-09-26",
+  "scope": "Independent adversarial data audit (DA10) of three current-holding dossiers not previously checked by this auditor: CAH, COR, VEEV. 21 load-bearing facts checked (7/7/7 by ticker), selected for the claims most likely to break a thesis or a kill criterion if wrong: headline quarterly/annual figures, guidance track records, leverage and debt, opioid/litigation accruals and status, goodwill impairments, deal/settlement terms, and balance-sheet items. Special attention paid to consolidated vs segment vs subsidiary figures, non-calendar fiscal years (CAH FYE Jun-30, COR FYE Sep-30, VEEV FYE Jan-31), and GAAP vs adjusted/non-GAAP figures. Method: primary sources only -- SEC EDGAR 8-K Ex-99.1 earnings-release exhibits, 10-Q/10-K text, notes and R-file XBRL viewer exhibits, and data.sec.gov XBRL companyconcept pulls -- fetched directly from www.sec.gov and data.sec.gov and cited by accession/URL below. Each dossier was read to its end (no appended Correction sections were found on any of the three). Each ticker's one-line thesis and first kill criterion were checked for consistency with the underlying filings; results noted in the summary (see da10_factcheck.md section 4).",
+  "facts": [
+    {
+      "ticker": "CAH",
+      "claim": "FY2026 (FYE 2026-06-30) full year: revenue $254.2bn (+14%); non-GAAP operating earnings $3,624m/$3.6bn (+30%); GAAP diluted EPS $7.23 (+12%); non-GAAP diluted EPS $11.26 (+37%; +33%/$10.95 ex the $100m IEEPA tariff-refund benefit in GMPD)",
+      "dossier_location": "CAH.md §4 narrative (FY2026 full year) and §5",
+      "source": "CAH Q4/FY2026 8-K Ex-99.1 earnings release, accession 0000721371-26-000037, filed 2026-08-11",
+      "source_value": "\"Fiscal year 2026 revenues were $254.2 billion, a 14% increase\"; non-GAAP operating earnings \"$3.6 billion\" (+30%); GAAP diluted EPS \"$7.23\" (+12%); non-GAAP diluted EPS \"$11.26\" (+37%; ex IEEPA benefit $10.95/+33%); \"Recognition of a one-time net operating profit impact of IEEPA tariff refunds of $100 million in the GMPD segment\"",
+      "status": "PASS",
+      "note": "Exact match on all figures, including the IEEPA one-off carve-out."
+    },
+    {
+      "ticker": "CAH",
+      "claim": "FY2026 segment detail vs FY2025: Pharmaceutical and Specialty Solutions revenue $234.8bn (+15%), segment profit $2,783m (+23%), margin 1.19% (1.10% FY25); GMPD revenue $12.7bn (+1%), profit $258m (+91%), margin 2.03% (1.07% FY25); Other revenue $6.8bn (+26%), profit $707m (+37%), margin 10.41% (9.59% FY25)",
+      "dossier_location": "CAH.md §4 (segment detail) and §3",
+      "source": "CAH Q4/FY2026 8-K Ex-99.1 earnings release, segment tables",
+      "source_value": "Pharma revenue \"$234.8 billion\" vs \"$204.6 billion\" (+15%), profit \"$2.8 billion\" vs \"$2.3 billion\" (+23%), margin \"1.19%\" vs \"1.10%\"; GMPD revenue \"$12.7 billion\" vs \"$12.6 billion\" (+1%), profit \"$258 million\" vs \"$135 million\" (+91%), margin \"2.03%\" vs \"1.07%\"; Other revenue \"$6.8 billion\" vs \"$5.4 billion\" (+26%), profit \"$707 million\" vs \"$516 million\" (+37%), margin \"10.41%\" vs \"9.59%\"",
+      "status": "PASS",
+      "note": "Exact match on every segment figure checked."
+    },
+    {
+      "ticker": "CAH",
+      "claim": "Q3 FY2026: GAAP diluted EPS $1.69 (-20% YoY), fully explained by a $184m pre-tax goodwill impairment in the Navista & ION reporting unit; non-GAAP diluted EPS $3.17 (+35%); FY2026 guidance raised to $10.70-$10.80 at this release",
+      "dossier_location": "CAH.md §4 results table (Q3 FY26 row and footnote)",
+      "source": "CAH Q3 FY2026 8-K Ex-99.1 earnings release, filed 2026-04-30",
+      "source_value": "\"Q3 FY2026 GAAP Diluted EPS: $1.69, representing a 20% year-over-year decrease\"; \"$184 million pre-tax goodwill impairment in the company's Navista & ION reporting unit\"; \"Non-GAAP Diluted EPS: $3.17, reflecting a 35% year-over-year increase\"; guidance raised to \"$10.70 to $10.80\"",
+      "status": "PASS",
+      "note": "Exact match on every figure."
+    },
+    {
+      "ticker": "CAH",
+      "claim": "FY2026 non-GAAP diluted EPS guidance raised at all four quarterly checkpoints: initial (Q4/FY25, 2025-08-12) $9.30-$9.50 -> Q1 FY26 $9.65-$9.85 (+$0.35) -> Q2 FY26 $10.15-$10.35 (+$0.50) -> Q3 FY26 $10.70-$10.80 (+$0.35, narrowed) -> actual $11.26; FY2027 initial guide $12.40-$12.60 (+13-15%)",
+      "dossier_location": "CAH.md §5 guidance table",
+      "source": "CAH Q1/Q2/Q3 FY2026 and Q4/FY2026 8-K Ex-99.1 earnings releases",
+      "source_value": "Q1 FY26 release: \"raised its outlook to $9.65 to $9.85 from a prior range of $9.30 to $9.50\"; Q2 FY26 release: \"raising its fiscal year 2026 guidance for non-GAAP diluted EPS...to a range of $10.15 to $10.35 (+23% to +26% growth)\"; Q3 FY26 release: raised to \"$10.70 to $10.80\"; Q4/FY26 release: FY2027 guidance \"$12.40 to $12.60\" (\"13% to 15% growth\")",
+      "status": "PASS",
+      "note": "Exact match at every checkpoint; a clean four-for-four raise streak confirmed directly from each release, not just the dossier's own table."
+    },
+    {
+      "ticker": "CAH",
+      "claim": "Opioid litigation: $4.3bn accrued at 2026-06-30, majority of the remainder expected to be paid through 2038; FY2026 cash payments $417m, including the fifth annual $366m NOSA installment",
+      "dossier_location": "CAH.md §6 (opioid litigation), §9 kill criteria, §11 red-flag scan",
+      "source": "CAH FY2026 10-K, accession 0000721371-26-000038, Note 14 (R14.htm) Commitments, Contingent Liabilities and Litigation",
+      "source_value": "\"As of June 30, 2026, we have $4.3 billion accrued for the opioid-related matters\"; \"we expect to pay Settling Governmental Entities additional amounts up to $3.7 billion through 2038\"; \"During fiscal 2026 and 2025, we made payments totaling $417 million and $798 million, respectively\"; Q4/FY26 8-K Ex-99.1: \"fifth annual payment of $366 million under the National Opioid Settlement Agreement\"",
+      "status": "PASS",
+      "note": "Exact match on the accrual, payment horizon and FY2026 cash-payment figures."
+    },
+    {
+      "ticker": "CAH",
+      "claim": "Balance sheet, 2026-06-30: total debt $8,886m (current $1,882m + long-term $7,004m), cash $4,856m, net debt ≈$4.0bn; Cardinal Health shareholders' deficit -$2,883m (mechanical result of buybacks exceeding cumulative retained earnings)",
+      "dossier_location": "CAH.md §6 (balance sheet leverage)",
+      "source": "CAH FY2026 10-K, Consolidated Balance Sheets (R5.htm)",
+      "source_value": "\"Current portion of long-term obligations and other short-term borrowings 1,882 ... Long-term obligations, less current portion 7,004 ... Cash and equivalents 4,856 ... Total Cardinal Health shareholders' deficit (2,883)\" (2026-06-30, $M); 1,882+7,004=8,886; 8,886-4,856=4,030",
+      "status": "PASS",
+      "note": "Exact match on every figure, including the -$2,883m parent-only deficit line (distinct from the $(2,724)m figure that also nets in $159m of noncontrolling interests -- the dossier correctly cites the parent-only number)."
+    },
+    {
+      "ticker": "CAH",
+      "claim": "A DOJ Civil Investigative Demand received Nov 2023 (Anti-Kickback Statute/False Claims Act, re: a 2022 GPO and rheumatology-MSO transaction) remains open; FY2026 buybacks $1,358m (vs $765m FY25) and dividends $491m; Elliott Cooperation Agreement/Business Review Committee expired Q2 FY2025 with no ongoing activist overhang disclosed in the FY2026 10-K",
+      "dossier_location": "CAH.md §6 (capital return), §9 kill criterion 4, §11 red-flag scan",
+      "source": "CAH FY2026 10-K, Note 14 (R14.htm); SEC EDGAR XBRL companyconcept us-gaap:PaymentsForRepurchaseOfCommonStock, CIK0000721371",
+      "source_value": "\"In November 2023, we received a Civil Investigative Demand (\"CID\") from the Department of Justice focused on potential violations of the Anti-Kickback Statute and False Claims Act in connection with a 2022 transaction in which we purchased a minority ownership interest in a rheumatology managed services organization and a group purchasing organization\"; PaymentsForRepurchaseOfCommonStock FY2026 (2025-07-01 to 2026-06-30) = $1,358,000,000; FY2025 = $765,000,000",
+      "status": "PASS",
+      "note": "DOJ CID description and both buyback figures confirmed exactly. The Elliott Cooperation Agreement/expiration detail was not located in the FY2026 10-K's litigation note (it may sit in a proxy statement rather than the 10-K); its absence from the current 10-K's contingencies note is consistent with the dossier's claim of no ongoing disclosed overhang, but the specific 'expired Q2 FY2025' date was not independently re-confirmed this pass -- a scope limitation, not a contradiction."
+    },
+    {
+      "ticker": "COR",
+      "claim": "FY2025 (FYE 2025-09-30) full year: revenue $321.3bn (+9.3%); GAAP diluted EPS $7.96; adjusted diluted EPS $16.00 (+16.3%)",
+      "dossier_location": "COR.md §4 results table (FY2025 total row)",
+      "source": "COR Q4/FY2025 8-K Ex-99.1 earnings release, filed 2025-11-05",
+      "source_value": "\"Total revenue: $321.3 billion, up 9.3% YoY\"; \"GAAP diluted EPS: $7.96\"; \"Adjusted diluted EPS: $16.00, up 16.3% YoY\"",
+      "status": "PASS",
+      "note": "Exact match on all figures."
+    },
+    {
+      "ticker": "COR",
+      "claim": "Q4 FY2025: GAAP diluted EPS $(1.75), driven by a $723.9m PharmaLex goodwill impairment plus a $113.5m equity-investment impairment; adjusted diluted EPS $3.84 (+15.0%)",
+      "dossier_location": "COR.md §4 results table (Q4 FY25 row) and §3 narrative",
+      "source": "COR Q4/FY2025 8-K Ex-99.1 earnings release",
+      "source_value": "\"GAAP diluted EPS: $(1.75) loss\"; \"PharmaLex goodwill impairment: $723.9 million\"; \"Equity investment impairment: $113.5 million\"; \"Adjusted diluted EPS: $3.84, up 15.0% YoY\"",
+      "status": "PASS",
+      "note": "Exact match on all figures."
+    },
+    {
+      "ticker": "COR",
+      "claim": "Q2 FY2026: GAAP diluted EPS $8.40, driven by a $1.086bn non-cash gain on the remeasurement of the OneOncology equity-method investment to a controlling, consolidated stake plus extinguishment of the related put-option liability",
+      "dossier_location": "COR.md §4 results table (Q2 FY26 row) and §3 narrative",
+      "source": "COR Q2 FY2026 8-K Ex-99.1 earnings release, filed 2026-05-06",
+      "source_value": "\"GAAP diluted EPS: $8.40\"; company \"recorded a gain of $1.1 billion on the remeasurement of its equity method investment and the extinguishment of the put option liability related to its previously held investment in OneOncology\", recorded in \"Other (income) loss, net\", in connection with the February 2026 OneOncology acquisition",
+      "status": "PASS",
+      "note": "GAAP EPS figure is an exact match; the gain is disclosed by the company as a rounded \"$1.1 billion\", consistent with (not contradicting) the dossier's more precise $1.086bn."
+    },
+    {
+      "ticker": "COR",
+      "claim": "Opioid litigation: $4.2bn accrued at 2026-06-30 (down from $4.3bn at 2025-09-30), to be paid over 13 years with $396.2m due in the next twelve months; Q3 FY2026 recorded a net credit of $88.6m from litigation/opioid items",
+      "dossier_location": "COR.md §6 (opioid litigation)",
+      "source": "COR Q3 FY2026 10-Q, accession 0001140859-26-000034, filed 2026-08-05, Litigation note and Condensed Consolidated Statements of Operations",
+      "source_value": "\"The Company's accrued litigation liability related to the Distributor Settlement Agreement...was $4.2 billion\" (2026-06-30) vs \"$4.3 billion\" (2025-09-30); \"will be paid over 13 years...$396.2 million will be paid prior to June 30, 2027\"; income statement line \"Litigation and opioid-related (credit) expenses, net\": three months ended 2026-06-30 = \"(88,643)\" thousand",
+      "status": "PASS",
+      "note": "Every figure matches exactly, including the $88.6m credit traced to the 10-Q's own income-statement line item (a separate $102.0m 'reduction of opioid liability' figure disclosed elsewhere in the earnings release refers to one component netted within this same $88.6m consolidated total, not a contradiction)."
+    },
+    {
+      "ticker": "COR",
+      "claim": "Leverage at 2026-06-30: total debt $11.72bn (long-term $11.44bn + current $0.28bn), up sharply from $7.92bn at 2025-12-31, financing the OneOncology step-up acquisition; cash $2.82bn; net debt ≈$8.9bn",
+      "dossier_location": "COR.md §6 (leverage)",
+      "source": "COR Q3 FY2026 10-Q, Condensed Consolidated Balance Sheets (R2.htm); data.sec.gov XBRL companyconcept LongTermDebtNoncurrent/DebtCurrent, CIK0001140859",
+      "source_value": "2026-06-30: cash \"$2,815,291\" thousand, short-term debt \"$279,155\" thousand, long-term debt \"$11,444,086\" thousand (total debt $11,723,241 thousand); 2025-12-31 (10-Q filed 2026-02-04): LongTermDebtNoncurrent $7,579,459,000 + DebtCurrent $342,276,000 = $7,921,735,000",
+      "status": "PASS",
+      "note": "Every figure matches exactly, including the $7.92bn prior-period (2025-12-31) total debt figure, confirmed via two separate XBRL concept tags."
+    },
+    {
+      "ticker": "COR",
+      "claim": "FY2026 guidance track record: adjusted diluted EPS raised/held at every checkpoint (initial $17.45-$17.75 -> Q1 reaffirmed unchanged -> Q2 raised to $17.65-$17.90 -> Q3 raised to $17.75-$17.95); total-company revenue growth guidance held at 7%-9% at the initial (Q4/FY25) release and at Q1 FY26 (reaffirmed, unchanged), before being cut to 4%-6% at Q3 FY26",
+      "dossier_location": "COR.md §5 guidance table and §3 narrative",
+      "source": "COR Q4/FY2025, Q1/Q2/Q3 FY2026 8-K Ex-99.1 earnings releases, \"Fiscal Year 2026 Expectations\" guidance tables",
+      "source_value": "Q4/FY2025 release (initial FY26 guide) table: \"Revenue: 5% to 7% growth\" (not 7-9%); Adjusted diluted EPS \"$17.45 to $17.75\". Q1 FY26 release table: \"Revenue: 7% to 9% growth\" (i.e., raised from the initial 5-7%, not reaffirmed); Adjusted diluted EPS \"Reaffirmed at $17.45 to $17.75\". Q2 FY26: EPS \"raised from the previous range of $17.45 to $17.75 to a range of $17.65 to $17.90\"; revenue not re-quoted at the same breakout. Q3 FY26: EPS \"raised...to a range of $17.75 to $17.95\"; revenue \"4% to 6% growth\"",
+      "status": "FAIL",
+      "note": "The adjusted-EPS guidance column of the dossier's table is fully correct (raised/held at every checkpoint, as claimed). But the revenue-growth-guidance column is wrong on two points: (1) the initial FY2026 guide (Q4/FY2025 release, 2025-11-05) was total-company revenue growth of 5%-7%, not the 7%-9% the dossier states; (2) the Q1 FY26 release (2026-02-04) actually RAISED the revenue guide from 5-7% to 7-9% -- it was not 'reaffirmed, unchanged' as the dossier's table states (only the EPS guide was reaffirmed at Q1). The dossier's downstream narrative in §3 ('revenue-growth guidance was cut...from 7% to 9%...to 4% to 6%') is directionally salvageable using the Q1-to-Q3 comparison, but the table's own initial-guide value and Q1 characterization are factually incorrect. This does not affect kill criterion 1 (EPS-guidance-cut trigger), which remains correctly stated and unbroken."
+    },
+    {
+      "ticker": "COR",
+      "claim": "Recurring impairments: $418.0m PharmaLex goodwill impairment in Q4 FY2024, $723.9m PharmaLex impairment in Q4 FY2025, and a further $249.5m 'impairment of assets, including goodwill' in FY2026 (nine-month, U.S. Consulting Services business, divested April 2026) -- three consecutive fiscal years with a material impairment",
+      "dossier_location": "COR.md §6 (recurring impairments), §8 bear case (1), §11 red-flag scan",
+      "source": "COR Q4/FY2024 8-K Ex-99.1 earnings release (filed 2024-11-06); COR Q3 FY2026 8-K Ex-99.1 earnings release (filed 2026-08-05)",
+      "source_value": "FY2024 Q4 release: \"$418 million goodwill impairment charge related to PharmaLex\"; Q3 FY2026 release: \"Nine-month asset impairment: $249.5 million...impairment of assets, including goodwill, related to our U.S. Consulting Services business, which was divested in April 2026\"",
+      "status": "PASS",
+      "note": "All three years' figures confirmed (FY2025's $723.9m independently confirmed in fact #9 above). The dossier does not claim the $249.5m FY2026 charge is itself PharmaLex-related, only that it continues the same multi-year impairment pattern in the 'Other' segment -- consistent with the primary sources."
+    },
+    {
+      "ticker": "VEEV",
+      "claim": "FY2026 (FYE 2026-01-31) full year: total revenue $3,195.3M (+16%); GAAP diluted EPS $5.44; non-GAAP diluted EPS $8.10",
+      "dossier_location": "VEEV.md §3 (last 8 quarters table, FY2026 row)",
+      "source": "Veeva Q4/FY2026 8-K Ex-99.1 earnings release, filed 2026-03-04",
+      "source_value": "\"Total Revenue: $3,195.3 million\"; \"GAAP Diluted EPS: $5.44\"; \"Non-GAAP Diluted EPS: $8.10\"",
+      "status": "PASS",
+      "note": "Exact match on all figures."
+    },
+    {
+      "ticker": "VEEV",
+      "claim": "Guidance track record: Q3 FY26 release guided FY2026 non-GAAP EPS ~$7.93 (FY2026 actual $8.10, above guide); Q4/FY26 release gave initial FY2027 guide of $3,585-$3,600M revenue / ~$8.85 non-GAAP EPS; Q1 FY27 release raised to $3,635-$3,645M / ~$9.05; Q2 FY27 release raised again to $3,682-$3,687M / ~$9.21",
+      "dossier_location": "VEEV.md §4 guidance table",
+      "source": "Veeva Q4/FY2026, Q1 FY2027 and Q2 FY2027 8-K Ex-99.1 earnings releases",
+      "source_value": "Q4/FY26 release: FY2027 guidance \"Total Revenue Range: $3,585 to $3,600 million\", \"Non-GAAP Diluted EPS: Approximately $8.85\"; Q1 FY27 release: \"Total Revenue Range: $3,635-$3,645 million\", \"Non-GAAP Diluted EPS: Approximately $9.05\", CFO: \"We're pleased with the raised fiscal 2027 guidance\"; Q2 FY27 release: \"Total Revenue Range: $3,682 million to $3,687 million\", \"Non-GAAP Diluted EPS: Approximately $9.21\", CFO: \"our view for the full year improved across the board\"",
+      "status": "PASS",
+      "note": "Exact match at every checkpoint -- a genuine four-consecutive-release raise streak, confirmed directly from each release."
+    },
+    {
+      "ticker": "VEEV",
+      "claim": "FQ2 FY2027 (quarter ended 2026-07-31): total revenue $928.0M (+18%); subscription revenue $766.8M (+16%); professional-services revenue $161.2M (+24%); GAAP diluted EPS $1.66; non-GAAP diluted EPS $2.35; non-GAAP operating margin 44.8%",
+      "dossier_location": "VEEV.md §3 (last 8 quarters table, FQ2 FY27 row) and narrative",
+      "source": "Veeva Q2 FY2027 8-K Ex-99.1 earnings release, filed 2026-08-26",
+      "source_value": "\"Total Revenue: $928.0 million, up 18%\"; \"Subscription Revenue: $766.8 million, up 16%\"; \"Professional Services & Other Revenue: $161.2 million, up 24%\"; \"GAAP Diluted EPS: $1.66\"; \"Non-GAAP Diluted EPS: $2.35\"; \"Non-GAAP Operating Margin: 44.8%\"",
+      "status": "PASS",
+      "note": "Exact match on every figure."
+    },
+    {
+      "ticker": "VEEV",
+      "claim": "Balance sheet, 2026-07-31 (consolidated): cash and cash equivalents $1,812.0M; short-term investments $5,430.9M (total liquid assets $7,242.9M); stockholders' equity $7,431.4M; no debt reported",
+      "dossier_location": "VEEV.md §6 (earnings quality & balance sheet)",
+      "source": "Veeva FQ2 FY2027 Form 10-Q, accession 0001393052-26-000036, filed 2026-08-27, Condensed Consolidated Balance Sheets (R2.htm)",
+      "source_value": "\"Cash and cash equivalents: $1,812,012\" thousand; \"Short-term investments: $5,430,935\" thousand; \"Total stockholders' equity: $7,431,449\" thousand; \"No line items for debt, notes payable, or long-term debt appear on this balance sheet\"",
+      "status": "PASS",
+      "note": "Exact match on all figures, including the debt-free balance sheet claim."
+    },
+    {
+      "ticker": "VEEV",
+      "claim": "IQVIA litigation: settled via a Settlement Agreement dated 13-Aug-2025, an eight-year dispute (IQVIA trade-secret claims, Veeva antitrust counterclaims); no damages paid by either party, all claims dismissed with prejudice, mutual data-access agreements entered; the $30.6M FY2026 GAAP charge represents Veeva's own contingency-fee legal costs, not a payment to IQVIA",
+      "dossier_location": "VEEV.md §6 (one-off/litigation), §12 red-flag scan",
+      "source": "Veeva 8-K filed 2026-08-13 announcing the settlement (per public reporting); Veeva Q4/FY2026 8-K Ex-99.1 earnings release non-GAAP reconciliation table",
+      "source_value": "\"On August 13, 2025, Veeva and IQVIA entered into a settlement agreement that resolves all ongoing litigations...neither party will pay damages to the other party and both parties agreed to dismiss with prejudice all claims and counterclaims\"; non-GAAP reconciliation: \"Litigation settlement-related charges — — (30,627) (5,000)\" = $30,627 thousand for FY2026",
+      "status": "PASS",
+      "note": "Settlement terms and exact $30.6M ($30,627K) charge both confirmed. A separate public report of ~$31M in law-firm fees accrued as of an interim date (31-Jul-2025) is consistent with, not contradictory to, the FY2026 full-year $30,627K figure."
+    },
+    {
+      "ticker": "VEEV",
+      "claim": "Stock-based compensation $136.8M in FQ2 FY2027 (≈14.7% of revenue), the primary GAAP-to-non-GAAP reconciling item",
+      "dossier_location": "VEEV.md §6 (earnings quality)",
+      "source": "Veeva Q2 FY2027 8-K Ex-99.1 earnings release, non-GAAP reconciliation table",
+      "source_value": "\"Stock-Based Compensation (Quarter): $136.8 million\"; 136.8/928.0 = 14.7%",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "VEEV",
+      "claim": "Thesis and kill criterion 1 consistency: revenue growth has run a steady 16-18% every quarter with no deceleration (kill criterion: revenue growth below 12% YoY for two consecutive quarters)",
+      "dossier_location": "VEEV.md §3 narrative, §10 kill criterion 1",
+      "source": "Veeva quarterly 8-K Ex-99.1 earnings releases, FQ2 FY26 through FQ2 FY27",
+      "source_value": "YoY revenue growth confirmed each quarter in this pass: FQ2 FY26 +17%(789.1), FQ4 FY26 +16%(836.0), FY2026 +16%(3,195.3), FQ1 FY27 +16%(882.9), FQ2 FY27 +18%(928.0) -- all comfortably above the 12% kill-criterion threshold",
+      "status": "PASS",
+      "note": "Every quarter checked in this pass is within the dossier's claimed 16-18% band; kill criterion 1 is internally consistent with the filings and not close to being triggered."
+    }
+  ]
+}

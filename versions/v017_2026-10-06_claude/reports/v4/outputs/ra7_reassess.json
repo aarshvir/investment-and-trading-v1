@@ -1,0 +1,242 @@
+{
+  "analyst": "RA7",
+  "date": "2026-10-06",
+  "data_cutoff": "EDGAR submissions checked to 2026-10-06; prices as of 2026-09-25 close; 10-year Treasury 5.17% (FRED DGS10, 2026-09-25); Fed target range 3.75-4.00% from 2026-09-16",
+  "tickers": {
+    "ADP": {
+      "claims": [
+        {
+          "claim": "Base FCF $5,244.6m (OCF $5,441.2m less capex $196.6m)",
+          "status": "CORRECTED",
+          "source": "FY26 10-K cash flow (0000008670-26-000030): additions to intangibles $468.5m and SBC $242.6m not deducted; corrected FCF $4,533.5m"
+        },
+        {
+          "claim": "WACC 8.6% with ERP 4.14%",
+          "status": "CORRECTED",
+          "source": "Cost of equity 9.16% = 5.17% + 0.886 x 4.5% (FRED DGS10; d4 beta 0.83, Blume adjusted); FCFE basis"
+        },
+        {
+          "claim": "Implied 10-year growth 4.2%, below base",
+          "status": "CORRECTED",
+          "source": "Recomputed 6.5% (7.6% at ERP 5.0%) vs base 7.0%: in_line; value at base +4.1%"
+        },
+        {
+          "claim": "FY27 guide: revenue +5-6%, adjusted EPS +9-11%, EBIT margin +70-90bp",
+          "status": "CONFIRMED",
+          "source": "Q4 FY26 release 8-K Ex-99.1, accession 0000008670-26-000025: 'Revenue growth of 5% to 6%'; 'Adjusted diluted EPS growth of 9% to 11%'"
+        },
+        {
+          "claim": "Adjusted EPS FY26 '~$?'",
+          "status": "CORRECTED",
+          "source": "Q4 FY26 release: adjusted diluted EPS $11.12, +11%"
+        },
+        {
+          "claim": "Scenario arithmetic (EPS $10.94, exit P/E 20/24.1/27, +2.5% yield)",
+          "status": "CONFIRMED",
+          "source": "Recomputed: -0.7%, +11.5%, +18.9% reproduce; exit multiple flat at 24.1x judged too generous at a 5.17% Treasury"
+        },
+        {
+          "claim": "Client retention kill criterion not fired",
+          "status": "WARNING",
+          "source": "Q4 FY26 release outlook: 'Employer Services client revenue retention decrease of 10 to 30 basis points'"
+        },
+        {
+          "claim": "Next earnings 27-28 Oct 2026",
+          "status": "CORRECTED",
+          "source": "ADP release 28 Sep 2026: results on 28 Oct 2026"
+        },
+        {
+          "claim": "No 8-K, 10-Q, 10-K, 13D or S-4 after cutoff",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 0000008670: only DEF 14A, DEFA14A, ARS (24 Sep), Forms 4 and 144"
+        },
+        {
+          "claim": "Fed raised to 3.75-4.00% on 16 Sep; 10-year 5.17% on 25 Sep",
+          "status": "CONFIRMED",
+          "source": "Program-supplied (FRED DGS10, FOMC 16 Sep 2026); not independently re-fetched by RA7"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "scenario_returns_3y": {
+        "bear": 0.001,
+        "base": 0.112,
+        "bull": 0.177
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria",
+        "key_adverse_facts",
+        "next_earnings_date",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.consistent",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "note": "Corrected FCFE $4,533.5m, Ke 9.16%, terminal 3.5%: implied 6.5% vs base 7.0%; margin of safety +4% (-4% at ERP 5.0%). About 47% of guided FY27 EBIT growth is client-funds interest."
+    },
+    "CRH": {
+      "claims": [
+        {
+          "claim": "Adjusted FCF $5.0bn, 132% of net income",
+          "status": "CORRECTED",
+          "source": "FY2025 release 0001628280-26-009032: Adjusted FCF = OCF 5,625 + disposal proceeds 315 - maintenance capex 971; total capex 2,713; OCF less capex 2,912"
+        },
+        {
+          "claim": "EV $71.5bn, 8.6x EBITDA",
+          "status": "CORRECTED",
+          "source": "Q2 release 0001628280-26-050752: Net Debt $15,416m; NCI $1,065m + redeemable $435m; EV $73.5bn, 8.9x"
+        },
+        {
+          "claim": "implied_vs_base below (no reverse DCF)",
+          "status": "CORRECTED",
+          "source": "FCFF $3,089m, WACC 9.05%, terminal 3.5%: implied 6.6% vs base 6.05%: in_line; value at base -5.9%"
+        },
+        {
+          "claim": "FY26 guidance reaffirmed: NI $3.9-4.1bn, EBITDA $8.1-8.5bn, EPS $5.60-6.05",
+          "status": "CONFIRMED",
+          "source": "Q2 release: 'Reaffirming FY26 guidance for Net income ($3.9bn-$4.1bn), Adj. EBITDA ($8.1bn-$8.5bn) and Diluted EPS ($5.60-$6.05)'"
+        },
+        {
+          "claim": "Arcosa stockholder vote pending",
+          "status": "CORRECTED",
+          "source": "Arcosa 8-K 0001140361-26-035795: approved 4 Sep 2026, 39,595,867 for, 66,113 against"
+        },
+        {
+          "claim": "Arcosa at 11.5x 2026E EBITDA",
+          "status": "CORRECTED",
+          "source": "CRH 8-K 0001193125-26-276686: multiple includes $175m synergies; Arcosa DEFM14A 0001140361-26-030551: 2026E Adjusted EBITDA $568m (15.0x), UFCF $237m"
+        },
+        {
+          "claim": "Reverse termination fee",
+          "status": "CORRECTED",
+          "source": "DEFM14A merger agreement: Parent Termination Fee $371,967,952 on antitrust failure at the Outside Date (not mentioned in dossier)"
+        },
+        {
+          "claim": "Buyback $0.3bn/quarter continuing",
+          "status": "CORRECTED",
+          "source": "Q2 release: 'CRH has not initiated a new tranche of its share buyback program'; last tranche completed 28 Jul 2026"
+        },
+        {
+          "claim": "Financing: committed bridge debt",
+          "status": "CHANGED",
+          "source": "CRH 8-K 0001628280-26-048660 (17 Jul 2026): $2.5bn 3-year term loan, bridge cut from $5.75bn to $3.25bn"
+        },
+        {
+          "claim": "HSR clearance status",
+          "status": "NOT FOUND",
+          "source": "HSR filed 6 Jul 2026 (DEFM14A); no CRH or Arcosa filing to 6 Oct discloses the outcome"
+        },
+        {
+          "claim": "Scenario returns -15%/+11%/+29%",
+          "status": "UNSUPPORTED",
+          "source": "No assumptions in dossier or summary; replaced by own cash-flow scenarios"
+        },
+        {
+          "claim": "VMC/MLM trade at higher EV/EBITDA",
+          "status": "CONFIRMED",
+          "source": "d4_live_snapshot (Yahoo basis, 25 Sep 2026): CRH 9.6x, VMC 15.4x, MLM 16.5x; FCF yield CRH 3.6%, VMC 2.7%, MLM 1.7%"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "scenario_returns_3y": {
+        "bear": -0.111,
+        "base": 0.081,
+        "bull": 0.168
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria",
+        "key_adverse_facts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.consistent",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "note": "Company 'Adjusted FCF' omits growth capex; FCFF after all capex gives implied 6.6% vs base 6.05% (in_line), margin of safety -5.9%. Leverage heads to 2.4-2.6x with buybacks paused. Arcosa roughly value-neutral."
+    },
+    "DOV": {
+      "claims": [
+        {
+          "claim": "Reverse DCF at WACC 8.5%, terminal 4.0%: implied 4.1%",
+          "status": "CORRECTED",
+          "source": "Ke 10.11% = 5.17% + 1.098 x 4.5%; WACC 9.80%, terminal 3.5%: implied 8.1% (9.2% at ERP 5.0%)"
+        },
+        {
+          "claim": "FY26 guided adjusted-EPS growth ~13-15% at midpoint",
+          "status": "CORRECTED",
+          "source": "Q2 release 0000029905-26-000026: FY25 adjusted EPS $9.61, guide $10.55-$10.75 = +10.8% at midpoint"
+        },
+        {
+          "claim": "FY26 guidance raised: GAAP EPS $8.94-9.14, adjusted $10.55-10.75, revenue +6-8%",
+          "status": "CONFIRMED",
+          "source": "Q2 release: 'GAAP EPS in the range of $8.94 to $9.14 (adjusted EPS of $10.55 to $10.75), based on full year revenue growth of 6% to 8% (organic growth of 4% to 6%)'"
+        },
+        {
+          "claim": "FY26 FCF guide of 14-16% of revenue",
+          "status": "NOT FOUND",
+          "source": "Not in the Q2 2026 8-K Ex-99.1; FY25 FCF 13.8% of revenue, H1 2026 7.5%"
+        },
+        {
+          "claim": "Base FCF $1,177m TTM",
+          "status": "CONFIRMED",
+          "source": "FY25 FCF $1,117.7m - H1 25 $260.7m + H1 26 $319.6m = $1,176.6m (Q2 release); $1,135.7m after SBC"
+        },
+        {
+          "claim": "Net debt $1,504m, 0.8x EBITDA",
+          "status": "CONFIRMED",
+          "source": "Q2 10-Q 0000029905-26-000027: debt $3,259,988k less cash $1,755,971k"
+        },
+        {
+          "claim": "Capex not understated vs D&A",
+          "status": "CONFIRMED",
+          "source": "FY25 capex $220m vs depreciation about $160m (D&A $379.6m less purchase-accounting amortisation about $218m)"
+        },
+        {
+          "claim": "Scenario arithmetic (EPS 10.20/13.80/15.35; exit 15/18/21x; +1.3% yield)",
+          "status": "CONFIRMED",
+          "source": "Recomputed: -5.9%, +10.3%, +20.2% reproduce"
+        },
+        {
+          "claim": "No events after Q2 10-Q",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 0000029905: Form 4 on 4 Aug only; Q3 results due 22 Oct 2026 (company release)"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "scenario_returns_3y": {
+        "bear": -0.087,
+        "base": 0.085,
+        "bull": 0.173
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "key_adverse_facts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "note": "WACC 9.8% and terminal 3.5% (vs 8.5% and 4.0%) lift implied growth to 8.1% vs base 7.4%; value at base -5.3% vs market cap. EPS growth base was overstated (10.8%, not 13-15%)."
+    }
+  }
+}

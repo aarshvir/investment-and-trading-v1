@@ -1,0 +1,193 @@
+{
+  "ticker": "UNH",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/UNH?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:47.659347+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "UNH",
+            "exchangeName": "NYQ",
+            "fullExchangeName": "NYSE",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 466867800,
+            "regularMarketTime": 1790798402,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 367.08,
+            "regularMarketChangePercent": -2.096,
+            "fulldayPrice": 367.383,
+            "fulldayChange": -7.86,
+            "fulldayChangePercent": -2.096,
+            "fiftyTwoWeekHigh": 461.62,
+            "fiftyTwoWeekLow": 255.97,
+            "regularMarketDayHigh": 374.05,
+            "regularMarketDayLow": 365.76,
+            "regularMarketVolume": 4594013,
+            "longName": "UnitedHealth Group Incorporated",
+            "shortName": "UnitedHealth Group Incorporated",
+            "chartPreviousClose": 371.29,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "end": 1790775000,
+                "start": 1790755200,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "end": 1790798400,
+                "start": 1790775000,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "end": 1790812800,
+                "start": 1790798400,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "low": [
+                  368.5,
+                  371.1700134277344,
+                  374.55999755859375,
+                  371.3299865722656,
+                  365.760009765625
+                ],
+                "close": [
+                  375.010009765625,
+                  376.5899963378906,
+                  377.8299865722656,
+                  374.94000244140625,
+                  367.0799865722656
+                ],
+                "open": [
+                  371.9200134277344,
+                  375.95001220703125,
+                  376.3599853515625,
+                  374.8800048828125,
+                  374.92999267578125
+                ],
+                "volume": [
+                  4651000,
+                  4077400,
+                  4677100,
+                  3284700,
+                  4594013
+                ],
+                "high": [
+                  375.2799987792969,
+                  379.1700134277344,
+                  380.9800109863281,
+                  376.5899963378906,
+                  374.04998779296875
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  375.010009765625,
+                  376.5899963378906,
+                  377.8299865722656,
+                  374.94000244140625,
+                  367.0799865722656
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 375.010009765625,
+      "adjclose": 375.010009765625,
+      "open": 371.9200134277344,
+      "high": 375.2799987792969,
+      "low": 368.5,
+      "volume": 4651000
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 376.5899963378906,
+      "adjclose": 376.5899963378906,
+      "open": 375.95001220703125,
+      "high": 379.1700134277344,
+      "low": 371.1700134277344,
+      "volume": 4077400
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 377.8299865722656,
+      "adjclose": 377.8299865722656,
+      "open": 376.3599853515625,
+      "high": 380.9800109863281,
+      "low": 374.55999755859375,
+      "volume": 4677100
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 374.94000244140625,
+      "adjclose": 374.94000244140625,
+      "open": 374.8800048828125,
+      "high": 376.5899963378906,
+      "low": 371.3299865722656,
+      "volume": 3284700
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 367.0799865722656,
+      "adjclose": 367.0799865722656,
+      "open": 374.92999267578125,
+      "high": 374.04998779296875,
+      "low": 365.760009765625,
+      "volume": 4594013
+    }
+  ],
+  "currency": "USD",
+  "symbol": "UNH",
+  "regular_market_time": 1790798402,
+  "close_sep30": 367.0799865722656,
+  "session_match": true
+}

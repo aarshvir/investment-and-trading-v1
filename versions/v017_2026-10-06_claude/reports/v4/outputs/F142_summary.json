@@ -1,0 +1,130 @@
+{
+ "agent": "F142",
+ "as_of": "2026-09-25",
+ "tickers": {
+  "TXT": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "Maker of Cessna jets and Bell helicopters, cheap for its cash flow, with a pending Army funding decision that can swing results.",
+   "horizon": "24-36 months",
+   "kill_criteria": [
+    "MV-75 Above Threshold Reprogramming not approved and obligated by 31 Dec 2026, or the cumulative catch-up charge recognised exceeds $120m (10-Q Note 12 maximum) in any quarter.",
+    "FY2026 Manufacturing cash flow before pension contributions reported below $600m or FY2026 adjusted EPS guide cut below $6.20.",
+    "Textron Aviation jet deliveries below 40 per quarter for two consecutive quarters (Q2 FY26: 40) or Aviation segment margin below 10%.",
+    "Manufacturing-group net debt/capital above 30% (10-Q liquidity table; 20% at 4 Jul 2026) or an Industrial separation announced on terms that leave Textron with stranded debt above $3.5bn.",
+    "Adjusted-to-GAAP EPS gap above $1.20 in FY2027 guidance."
+   ],
+   "key_adverse_facts": [
+    "MV-75 FY2026 funding exhausted mid-July 2026; work at own risk; up to ~$120m catch-up charge and ~$350m cash if ATR ($350m) not approved (10-Q Note 12)",
+    "LRIP cumulative catch-up charge of $60-110m expected late 2026/early 2027",
+    "H1 FY26 Manufacturing cash flow before pension -$74m vs +$178m; Q2 EPS growth is buyback-driven (shares -3.4%), segment profit flat",
+    "Jet deliveries 40 vs 49 in Q2; Aviation and Bell segment profit down",
+    "Adjusted EPS excludes recurring LIFO provision ($0.87/share in 2026 outlook)"
+   ],
+   "data_conflicts": [
+    "Q2 release: no-funding cash impact $150-250m; 10-Q Note 12: ~$350m (net of mitigation vs gross)",
+    "No V1 row for TXT; v1_verdict null",
+    "Q08 triage said advance=false on quality; overturned on price only"
+   ],
+   "next_earnings_date": "2026-10-22",
+   "next_earnings_date_basis": "estimate from prior-year 2025-10-23; not company-confirmed",
+   "confidence_in_thesis": "low-med: valuation support is clear but the MV-75 funding outcome is binary and unknown as of 2026-09-25",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "cheap",
+    "consistent": true,
+    "implied_vs_base": "below",
+    "reconciliation": "No V1 row exists. Reverse DCF at 9% WACC needs 7.2% 10-year FCF growth from $750m guided FCF vs my ~9% base."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.093,
+    "base": 0.087,
+    "bull": 0.187
+   },
+   "scenario_basis": "Start adj EPS $6.50 (2026 guide mid); bear flat $6.00 at 9.5x, base +8%/yr at 12x, bull +12%/yr at 14x; dividend ~$0.08/yr; price $76.59"
+  },
+  "AIG": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "Global commercial insurer earning about 11% on core equity, priced below book value while it buys back shares.",
+   "horizon": "24-36 months",
+   "kill_criteria": [
+    "General Insurance accident-year combined ratio, as adjusted, above 90.0% for two consecutive quarters (Q2 2026: 88.1%).",
+    "Net adverse prior-year development in any quarter exceeding $250m (Q2 2026: $145m favourable).",
+    "Core operating ROE below 9.0% for two consecutive quarters (Q2 2026: 11.1%).",
+    "Total debt/total capital above 22% (Q2 2026: 18.1%) or AIG Parent liquidity below $5bn (Q2 2026: $7.4bn).",
+    "Constant-dollar General Insurance NPW growth below 3% for two quarters (Q2 2026: +9%)."
+   ],
+   "key_adverse_facts": [
+    "Management itself says pricing moved to a 'more selective environment'",
+    "Recurring adverse development in US Excess Casualty and Other Casualty; favourable PYD 2.5 pts props Q2 combined ratio",
+    "AATI dollars +2.4% YoY in Q2; per-share +10% is mostly 7.7% share-count reduction",
+    "Executive Chair Zaffino stepped down 2026-09-15; GI CEO Hancock retires 2026-12-31",
+    "Q2 catastrophe charges 3.4 pts including $75m Middle East conflict losses; AIG Parent liquidity fell to $7.4bn from $9.3bn"
+   ],
+   "data_conflicts": [
+    "No V1 row for AIG; v1_verdict null",
+    "Q05 triage cited ROE 7.2% (Q4 2025) below cost of capital; Q2 2026 ROE is 9.4% and core operating ROE 11.1%",
+    "No numeric guidance is given; Investor Day targets not verified"
+   ],
+   "next_earnings_date": "2026-11-03",
+   "next_earnings_date_basis": "estimate from prior-year 2025-11-04; not company-confirmed",
+   "confidence_in_thesis": "med: clear valuation cushion, but casualty reserve and leadership-transition risk are not quantifiable from filings read",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "cheap",
+    "consistent": true,
+    "implied_vs_base": "below",
+    "reconciliation": "No V1 row exists. At 9.5% cost of equity the price implies distributable earnings shrinking ~4%/yr for ten years vs my +5.5% base."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.076,
+    "base": 0.081,
+    "bull": 0.17
+   },
+   "scenario_basis": "Start TTM AATI/share $8.27; bear $7.00 at 7.5x, base +5.5%/yr at 9.0x, bull +9%/yr at 10.5x; dividends ~$2.0-2.2/yr; price $74.17"
+  },
+  "FERG": {
+   "verdict": "WATCH",
+   "thesis_one_line": "North America's largest plumbing and heating supplier to contractors, a quality share-gainer but priced for more growth than it is delivering.",
+   "horizon": "12-36 months",
+   "kill_criteria": [
+    "Organic revenue growth below 2% for two consecutive quarters (Q2 CY26: +3.8%).",
+    "Adjusted operating margin below 9.3% for the calendar year or guidance cut below the current \"9.5% - 9.8%\".",
+    "Net debt/adjusted EBITDA above 2.25x (company-stated 1.3x at 30 Jun 2026; consolidated, per release) after FloWorks closes.",
+    "Full-year 2026 operating cash flow below $1.6bn (CY25: $2.2bn; H1 CY26: $716m).",
+    "Gross margin below 30.0% in any quarter (Q2 CY26: 31.0%)."
+   ],
+   "key_adverse_facts": [
+    "H1 CY26 operating cash flow $716m vs $1,123m (-36%)",
+    "Gross margin 31.0% vs 31.2%; adjusted operating profit growth slowed to +2.9% in Q2",
+    "$1.6bn FloWorks acquisition funded by $1.2bn new notes and $700m bridge facility; pro-forma leverage ~1.8x",
+    "Residential (about half of revenue) remains weak; growth partly price inflation",
+    "Trades ~19-20x adjusted earnings vs +5% organic sales growth"
+   ],
+   "data_conflicts": [
+    "No V1 row for FERG; v1_verdict null",
+    "Aug 14 8-K text contains 2025/2026 date inconsistency",
+    "Q10 triage said thinner moat/unremarkable growth; quality partly overturned but price view upheld",
+    "Q1 and Q3 CY25 EPS derived from stated growth rates and FY total, not quoted"
+   ],
+   "next_earnings_date": "2026-11-09",
+   "next_earnings_date_basis": "company provisional financial calendar in 2026-08-10 release",
+   "confidence_in_thesis": "med: business quality clear; the valuation conclusion depends on the discount rate and FCF normalisation",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "full",
+    "consistent": true,
+    "implied_vs_base": "above",
+    "reconciliation": "No V1 row exists. At 8.5% WACC the price implies 8.0-8.6% 10-year FCF growth vs my ~7.5% base."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.076,
+    "base": 0.072,
+    "bull": 0.151
+   },
+   "scenario_basis": "Start 2026E adj EPS ~$11.46 (own calc from guidance, ex-FloWorks); bear flat $11.0 at 15x, base +7.5%/yr at 18.5x, bull +11%/yr at 21x; dividends $3.56/yr; price $222.74"
+  }
+ }
+}

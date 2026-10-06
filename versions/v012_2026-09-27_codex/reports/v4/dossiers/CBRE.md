@@ -1,0 +1,75 @@
+# CBRE Group, Inc. (CBRE) — Diligence Dossier (F32, standard depth)
+
+## 1. Verdict
+**INCLUDE-SMALL** (half weight). Thesis horizon 12–36 months. One-sentence reason: the world's largest commercial-real-estate services firm is compounding earnings through a genuine leasing/infrastructure recovery at a price that is roughly fair (not obviously cheap) once the reverse DCF is done properly, and a growing UK fire-safety liability plus negative price momentum argue for a starter position rather than full weight.
+
+**Thesis (≤25 words):** The world's largest commercial real-estate services firm, riding a leasing-market recovery and fast-growing data-center/infrastructure work, priced close to what it can actually deliver.
+
+## 2. Business in plain English
+CBRE advises, manages and invests in commercial real estate for corporate and institutional clients. It earns transaction commissions (Advisory: leasing and sales brokerage), recurring fees for running buildings and portfolios for clients (Building Operations & Experience, including a fast-growing "infrastructure/data-center services" line), fees for overseeing construction/fit-out projects (Project Management), and investment-management/development profits (Real Estate Investments, "REI"). It is asset-light — revenue scales with transaction volumes and square footage under management, not with owned property. Competitive position: #1 global commercial real-estate services franchise by revenue, ahead of JLL and Cushman & Wakefield, with particular scale advantages in outsourced facilities management and, increasingly, data-center/mission-critical infrastructure services.
+
+## 3. Why the model likes it / durability
+Triage (Q14_triage.json, as_of 2026-09-25) scored CBRE quality 4, growth 5, price_vs_growth 5 — the highest combination among wave-1 names — reasoning that "15% revenue growth, 16% ROE and low leverage at only 15x NTM P/E is a statistically compelling combination as commercial real estate transaction volumes recover." **Data conflict to disclose:** the pre-registered quant composite (b1_live_scores.csv) ranks CBRE near the **bottom** of the S&P 500 — decile 2, quintile 1, live_rank 427 of 503 — the opposite signal from triage. The gap is explainable and not a sign the fundamentals are weak: CBRE's quality percentiles are genuinely strong (gross-profit/assets pct 0.96, ROE pct 0.83), but (a) its 12-1-month price momentum is negative and in the bottom 12th percentile (raw −10.8%), and (b) its FCF-yield and EBIT/EV value percentiles are weak (26th and 22nd), because an asset-light services firm's enterprise value is mostly goodwill/intangibles and human capital rather than hard assets the value factors are calibrated for. So: the composite's poor rank reflects **recent price weakness and a value-factor construction that fits CBRE's business model poorly**, not a fundamental red flag — but the negative momentum itself is a real, current fact (the market has not yet rewarded the beat-and-raise pattern below), and is one reason for the half-weight sizing rather than full weight.
+
+## 4. Last two years of results (GAAP revenue/EPS; source: SEC XBRL companyfacts CIK0001138118, cross-checked to 8-K press releases)
+| Quarter | Revenue ($M) | YoY | GAAP diluted EPS | GAAP net income ($M) | Core (adjusted) EPS |
+|---|---|---|---|---|---|
+| Q3'23 | 7,868 | — | 0.61 | 191 | n/a |
+| Q1'24 | 7,935 | — | 0.41 | 126 | n/a |
+| Q2'24 | 8,391 | — | 0.42 | 130 | n/a |
+| Q3'24 | 9,036 | +14.8% | 0.73 | 225 | 1.20 |
+| Q1'25 | 8,875 | +11.8% | 0.54 | 163 | n/a |
+| Q2'25 | 9,717 | +15.8% | 0.72 | 215 | 1.20 |
+| Q3'25 | 10,258 | +13.5%* | 1.21 | 363 | 1.61 |
+| Q1'26 | 10,527 | +18.6% | 1.07 | 318 | n/a |
+| **Q2'26** | **11,226** | **+15.5%** | **0.69** | **204** | **1.56** |
+*Q3'25 revenue growth restated ~14% per company release. FY2025 actual: revenue growth ~15%, Core EPS $6.38 (beat the raised $6.25–$6.35 guidance range). Q4'25 revenue $11.6bn (+12% YoY), Core EPS $2.73 (+17.7% YoY). GAAP EPS is volatile quarter to quarter mainly because of the UK Telford fire-safety reserve (§11) and normal M&A/FX marks; Core EPS is management's non-GAAP measure (net income excluding amortization of acquisition intangibles, restructuring, and other one-offs) and is the figure the company itself guides to — both are labelled here, never averaged.
+
+Segment detail, Q2'26 vs Q2'25 (8-K ex-99.1, filed 2026-07-29): Advisory Services revenue +17.7% (segment profit +29.4%); Building Operations & Experience +14.6% (profit +25.5%), inside which infrastructure/data-center services revenue was ~$1.2bn (+~45%), with data-center services alone +~30% to over $700m; Project Management +19.1% (profit +27.8%); Real Estate Investments revenue **−10.2%** (profit +68.0% — smaller but higher-margin base, e.g. gains on specific dispositions). All four segments grew segment operating profit >25% in Q2'26.
+
+## 5. Guidance track record (last four releases; Core EPS)
+| Release | New FY range | Prior range | Verdict |
+|---|---|---|---|
+| Q3'25 (2025-10-23, 8-K ex-99.1) | FY2025 $6.25–$6.35 | $6.10–$6.20 | **Raised** |
+| Q4/FY'25 (2026-02-12, 8-K ex-99.1) | FY2025 actual **$6.38** (beat the raised range); initial FY2026 guide $7.30–$7.60 | n/a (FY2025 closed; FY2026 first guide) | Beat, then initiated |
+| Q1'26 (implied from the Q2'26 release's "previously $7.60–$7.80") | FY2026 $7.60–$7.80 | $7.30–$7.60 | **Raised** |
+| Q2'26 (2026-07-29, 8-K ex-99.1) | FY2026 $7.80–$7.90 | $7.60–$7.80 | **Raised** (23% growth at midpoint) |
+Four consecutive releases without a cut, and one outright beat of a just-raised range. Management also guided Q3'26 Core EPS growth "more than 20%," Q4'26 "comparable to last year," and "at least 15% Core EPS growth" for 2027 — i.e., management itself expects the pace of growth to decelerate after 2026's cyclical snapback.
+
+## 6. Earnings quality & balance sheet
+FCF conversion: TTM operating cash flow ≈$1.36bn, TTM free cash flow ≈$1.7bn against TTM Core net income roughly ~$2.4bn (implied from Core EPS ~$7 × ~340m diluted shares) — FCF/Core-NI conversion is reasonable (~70%) but not full 1:1, consistent with an asset-light but working-capital-sensitive brokerage business (Q2'26 8-K ex-99.1). Capex is low (~$423m TTM) as expected for a services firm. Balance sheet is conservative: total debt $7.4bn, cash $1.5bn, **net debt $5.9bn, net leverage 1.60x** — comfortably investment-grade, with $4.4bn total liquidity. Share count: buybacks of ~$1.0bn YTD 2026 are shrinking the count, a genuine (not merely EPS-flattering) capital-return item given the low leverage. **Adverse item, not a one-off:** CBRE increased its reserve for fire-safety remediation at its UK (Telford) development business by $132m in Q4'25 and by a further $168m in Q2'26 — a cumulative ~$300m non-cash GAAP charge across two quarters that depressed GAAP (but not Core) EPS; this is a real, growing contingent liability that needs monitoring, not a pure accounting artefact.
+
+## 7. Valuation snapshot & reverse DCF
+Price (2026-09-25 close) $134.55; NTM P/E 15.4x (d4, calendarised); FY2026 P/E on the just-raised Core EPS guide midpoint ($7.85) ≈17.1x. FCF yield ≈4.2% (d4). No dividend (CBRE pays none; capital returned via buybacks only). Peer context: JLL and Cushman & Wakefield are not S&P 500 constituents and were not re-pulled this cycle; sell-side mean target $182.92 (+36% vs price, d4 target_mean, 2026-09-25) — the sell side is materially more bullish than my base case below. **No V1 row exists for CBRE** (`v1_valuation_table.csv` has no CBRE row) → v1_verdict = null; no systematic reconciliation is possible, so this dossier's valuation view is independently derived.
+
+**Reverse DCF:** solving a 10-year explicit-growth + Gordon-terminal model for Core FCF (EV = market cap $38.96bn + net debt $5.9bn = $44.9bn; FCF₀ $1.7bn TTM; WACC 9.4% [cost of equity = rf 4.2% + β1.19×ERP 5% = 10.1%; post-tax cost of debt ≈4.5%; debt weight ≈13%]; terminal growth 3%) for the growth rate that reproduces today's EV gives **implied 10-year FCF growth ≈9.6% p.a.** My evidence-based base case is **~9–10% p.a.**: mid-single-digit structural leasing/PM growth, a fast-growing (but smaller) infrastructure/data-center line, buyback-driven share shrinkage of ~2–3%/yr, offset by the brokerage business's known cyclicality (revenue fell in 2022–2023 when rates rose) and by management's own signal that 2027 growth ("at least 15%") is explicitly lower than 2026's ~23%. Implied (9.6%) is **essentially in line with** base case (9–10%) — not screaming cheap, but not overpaying either. Bear case 2%/yr (leasing recovery stalls or reverses, Telford liability keeps growing, exit P/E compresses to 13x — near 2022–23 trough multiples): **3-yr annualized return ≈ −7%**. Base case 9.5%/yr, exit P/E 17x: **≈ +9%/yr**. Bull case 15%/yr (matching management's own 2027 framework sustained, exit P/E re-rates to 19x as growth persists): **≈ +19%/yr**.
+
+## 8. Bull case / Bear case
+**Bull:** (1) US office and industrial leasing activity keeps accelerating (Q2'26 US leasing +24%), a genuine multi-year recovery from a depressed 2023 base, not a one-quarter pop; (2) infrastructure/data-center services (+45% revenue in Q2'26) is a structurally growing, higher-margin annuity riding the same AI-capex wave benefiting EQIX/data-center landlords; (3) low leverage (1.6x) and an active buyback let management return capital and compound EPS even if the top line merely holds.
+**Bear:** (1) brokerage revenue is genuinely cyclical — it fell sharply in 2022–2023 as rates rose, and today's 15–19% growth is a snapback off a depressed base that management itself expects to slow (guided 2027 growth roughly a third of 2026's); (2) the UK Telford fire-safety reserve has grown twice in two quarters ($132m then $168m) with no stated ceiling — a real, open-ended contingent liability; (3) the Real Estate Investments segment's revenue is shrinking (−10.2% in Q2'26) even as its profit rose on asset-sale timing, meaning segment profit quality there is lumpy and not representative of a repeatable run-rate.
+
+## 9. Key risks & measurable kill criteria
+1. Core EPS guidance cut (any reduction to the low end of the then-current full-year range) at a subsequent quarterly release.
+2. Advisory (brokerage) segment revenue growth turns negative for two consecutive quarters (the classic cyclical-downturn signal from 2022–2023).
+3. Cumulative UK Telford fire-safety reserve exceeds $500m (from ~$300m disclosed across Q4'25–Q2'26).
+4. Net leverage rises above 2.5x net debt/EBITDA (from 1.60x currently) without a stated de-leveraging plan.
+5. Share buybacks pause or reverse (net share count increases quarter over quarter) while Core EPS growth is decelerating.
+
+## 10. Catalysts & calendar
+Next earnings: **2026-10-22** (Q3'26, per d4 next_earnings_date). Watch for the pace of Q3 leasing/infrastructure growth against management's own "more than 20% Core EPS growth" Q3 guide and any update on the Telford reserve.
+
+## 11. Red-flag scan
+No auditor change, restatement, or going-concern language found in the filings reviewed. SEC enforcement history: in 2023 the SEC charged CBRE, Inc. (a subsidiary) with violating the whistleblower-protection rule — from 2011–2022 CBRE conditioned employee severance pay on a release attesting the employee had not filed a complaint with a federal agency; CBRE settled without admitting or denying findings, paying a $375,000 civil penalty and remediating its release language (SEC press release 2023-184; this is resolved, not an open matter, but disclosed for completeness). Ongoing item: the UK Telford fire-safety-remediation reserve (§6/§8) is real, growing, and open-ended in disclosed scope — the closest thing to an active red flag in this file. No insider Form 4 pattern or short-seller report was found in this cycle's search; this is a time-boxed limitation, not a clean bill of health.
+
+## 12. Data basis, recency and disclaimer
+Most recent period incorporated: Q2 2026 10-Q and 8-K ex-99.1, both filed 2026-07-29. Events checked to 2026-09-25 (litigation, guidance updates, red-flag search). All figures are consolidated (US GAAP, single-entity reporter, no separate standalone statements filed). GAAP figures are labelled GAAP; "Core EPS" is CBRE's own non-GAAP measure and is labelled as such throughout — never averaged with GAAP. **Research only, not personal investment advice. This is research, not investment advice, and not a recommendation.**
+
+## 13. Sources
+1. SEC EDGAR XBRL companyfacts, CIK0001138118: https://data.sec.gov/api/xbrl/companyfacts/CIK0001138118.json
+2. Q2'26 8-K ex-99.1 (filed 2026-07-29): https://www.sec.gov/Archives/edgar/data/0001138118/000113811826000021/cbre-20260723x8kexx991.htm
+3. Q4/FY2025 8-K ex-99.1 (filed 2026-02-12): https://www.sec.gov/Archives/edgar/data/1138118/000113811826000002/cbre-20260212x8kexx991.htm
+4. Q3'25 8-K ex-99.1 (filed 2025-10-23): https://www.sec.gov/Archives/edgar/data/1138118/000113811825000023/cbre-20251023x8kexx991.htm
+5. SEC press release on whistleblower-protection settlement: https://www.sec.gov/newsroom/press-releases/2023-184
+6. v4/data/b1_live_scores.csv, v4/data/d4_live_snapshot.parquet (as_of 2026-09-25)
+7. v4/outputs/Q14_triage.json (CBRE entry)
+8. v4/outputs/v1_valuation_table.csv (checked: no CBRE row)

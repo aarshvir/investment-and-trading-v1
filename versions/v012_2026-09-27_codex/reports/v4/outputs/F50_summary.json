@@ -1,0 +1,117 @@
+{
+  "agent": "F50",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "XEL": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Regulated Xcel Energy has a fully-funded $60bn, 5-year grid buildout guiding steady 6-8% earnings growth, but a live Texas wildfire lawsuit is a real, under-priced tail risk.",
+      "kill_criteria": [
+        "FY guidance cut below the previously reaffirmed range (currently $4.04-$4.16 ongoing EPS for FY26) at any quarterly release.",
+        "Smokehouse Creek Fire Complex total estimated losses and incurred costs (currently $503m as of 2026-06-30, 10-Q) rise above $700m without a matching rate-recovery mechanism.",
+        "Consolidated net debt/EBITDA rises above 6.5x for two consecutive quarters (current ~6.2x).",
+        "Dividend growth falls below the stated 4% floor in any annual increase.",
+        "An adverse/disallowed outcome in a pending rate case that removes more than $0.10/share of the FY26 guided EPS."
+      ],
+      "key_adverse_facts": [
+        "Smokehouse Creek Fire Complex (Feb-2024 Texas Panhandle wildfire, SPS-caused per Texas A&M Forest Service, ~1,055,000 acres): $503m total estimated losses/incurred costs as of 2026-06-30, only ~$80m of the $525m annual insurance layer remaining, and a Texas Attorney General lawsuit filed Dec-2025 seeking civil penalties -- not mentioned in the Q15 triage note, which only flagged the smaller, now-resolved Marshall Fire.",
+        "Consolidated net debt/EBITDA computed at ~6.2x (total debt $36.95bn less cash $2.01bn vs TTM EBITDA ~$5.65bn), at or slightly above the top of the sector playbook's healthy 4.5-6.0x band for regulated networks.",
+        "Q2'26 electric revenue fell 4.8% YoY on milder weather even as EPS rose 24%, a reminder that headline revenue is a low-signal, pass-through-driven metric for this sector."
+      ],
+      "data_conflicts": [
+        "Q15 triage cited '24% forward EPS growth' for XEL; the company's own guidance is 6-8% long-term EPS CAGR off a $3.80 FY2025 base -- the triage figure is not confirmed by primary sources and appears substantially overstated."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "24-48 months",
+      "confidence_in_thesis": "medium - guidance record and capital plan are well documented; the Smokehouse Creek Fire's ultimate cost and the pending rate case outcomes are genuinely open, per the company's own 10-Q language ('unable to reasonably estimate... the upper end of the range')",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "implied_vs_base": "below",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for XEL (checked v4/outputs/v1_valuation_table.csv directly, absent), so v1_verdict is null and there is nothing to reconcile. This dossier's own reverse dividend-discount model implies growth of 5.1-6.6% at a plausible 8.5-9.5% cost of equity, at or slightly below management's guided 6-8% long-term growth, while consolidated EV/EBITDA (~13.9x) sits near the top of the sector's 9-13x band -- overall a fair, not cheap, valuation."
+      },
+      "scenario_returns_3y": {
+        "bear": 0.008,
+        "base": 0.099,
+        "bull": 0.136
+      },
+      "scenario_basis": "Starting FY2026E ongoing EPS $4.10 (guidance midpoint $4.04-$4.16); base 7%/yr EPS growth (mid of the guided 6-8% long-term range) to an exit P/E of 17x (~current) plus ~3.3% starting dividend yield growing with EPS; bear 4%/yr growth (rate-case setbacks, Smokehouse Creek costs exceed remaining insurance) with exit P/E 14x; bull 8.5%/yr growth (faster data-center MW ramp) with exit P/E 18x."
+    },
+    "NRG": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "NRG's LS Power deal and data-center power contracts are driving real earnings growth, but leverage is genuinely high post-acquisition and the stock is not the bargain its headline P/E suggests.",
+      "kill_criteria": [
+        "FY26 Adjusted EBITDA guidance ($5,325-$5,825m) cut at any release (currently reaffirmed twice since being set).",
+        "Net debt/Adjusted EBITDA (computed on total debt and TTM/guided EBITDA) rises above 6.0x at any quarter-end (currently ~4.2-5.3x by this dossier's own compute).",
+        "Liquidity falls back below $3.0bn (was $3.3bn at the Q1'26 trough) without a stated remediation plan.",
+        "The 1.2 GW hyperscaler 'Bring Your Own Power' deal fails to reach final documentation within 12 months of the 2026-08-04 'principal terms agreed' disclosure.",
+        "Two consecutive quarters of Adjusted EBITDA below the low end of whatever the then-current guidance range is."
+      ],
+      "key_adverse_facts": [
+        "Consolidated total debt rose from $9.8bn (mid-2025) to $23.4bn (mid-2026) funding the LS Power acquisition; liquidity fell from $9.6bn (year-end 2025) to a $3.3bn trough (Q1'26) before partially rebuilding to $5.3bn (Q2'26).",
+        "FY26 Adjusted EPS guidance spans $7.90-$9.90, an unusually wide +/-11% band for guidance described as 'reaffirmed,' signalling real integration/hedging uncertainty.",
+        "GAAP net income swings by $600m+ quarter to quarter on non-cash mark-to-market hedge movements (e.g., a $610m swing from a Q2'25 loss to a Q2'26 profit), making single-quarter GAAP results a poor signal.",
+        "A Sierra Club v. Midwest Generation LLC (2019) environmental matter and a New York State PSC matter (settled 2026-04-16) appear in the Q2'26 10-Q's legal-proceedings tags; narrative detail on materiality could not be fully retrieved in this pass."
+      ],
+      "data_conflicts": [
+        "Q15 triage stated 'Net debt/EBITDA ~7.2x'; this dossier computes ~5.3x trailing and ~4.2x on the FY26 EBITDA guidance midpoint from the company's own consolidated balance sheet (total debt $23.4bn less cash $0.16bn vs TTM/guided EBITDA). The triage's directional concern (leverage is elevated) is confirmed; its specific magnitude is not, and the discrepancy is unresolved pending clarification of which debt/EBITDA definition the triage used.",
+        "Triage described NRG as sold off 'alongside VST on PJM price-cap fears' to a cheap 9.5x NTM P/E; this dossier finds no PJM-specific capacity-price-cap discussion in NRG's own Q2'26 release or the 10-Q sections reviewed (unlike Vistra, which explicitly discloses PJM auction clearing prices), and on EV/EBITDA (~7.95x) NRG is not clearly cheap once leverage is included."
+      ],
+      "next_earnings_date": "2026-11-05",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium - EBITDA growth and guidance discipline are well documented; leverage magnitude and the exact PJM exposure are open items this dossier could not fully resolve from the sections retrieved",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "implied_vs_base": "in_line",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for NRG (checked v4/outputs/v1_valuation_table.csv directly, absent), so v1_verdict is null. This dossier's own EV/EBITDA compute (~7.95x on FY26 guidance midpoint) sits above the sector playbook's 4-7x mid-cycle merchant band, i.e., not cheap on a leverage-adjusted basis, even though the headline P/E (~11.3x) looks inexpensive; net view is fair, in line with management's own execution risk, not a bargain."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.069,
+        "base": 0.087,
+        "bull": 0.209
+      },
+      "scenario_basis": "Starting FY2026E Adjusted EPS $8.90 (guidance midpoint $7.90-$9.90); base 8%/yr EPS growth (conservative vs. management's own stated 14%+ long-term target, reflecting integration/leverage risk) to an exit P/E of 11x (~current) plus a small, growing dividend (~$1.90/yr annualized); bear 2%/yr growth (capacity prices roll over, leverage bites) with exit P/E 8x; bull 14%/yr growth (management's own target realized) with exit P/E 13x as leverage falls and data-center contracts convert to firm long-term deals."
+    },
+    "VST": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Vistra is executing brilliantly on data-center power demand and buybacks, but at roughly 9x EV/EBITDA it is already priced above its sector's normal multiple, not a bargain.",
+      "kill_criteria": [
+        "EV/EBITDA (as computed in the dossier) re-rates below 6.5x without a corresponding EBITDA increase -- i.e., a de-rating event, not a fundamentals event.",
+        "FY26 ongoing Adjusted EBITDA guidance ($6.8bn-$7.6bn) cut at any release (currently reaffirmed twice).",
+        "Cogentrix transaction fails to close by mid-2027 (guided 'late 2026') or its financing raises net debt/Adjusted EBITDA above 3.5x.",
+        "Net debt/Adjusted EBITDA rises above 3.5x for two consecutive quarters (currently ~2.9x).",
+        "The Meta/AWS/Helix data-center-adjacent deals fail to convert into guidance-additive, signed long-term contracts within 18 months of this dossier's date (2026-09-26)."
+      ],
+      "key_adverse_facts": [
+        "EV/EBITDA computed at ~9.1x on FY26 guidance midpoint (EV $65.6bn vs Adjusted EBITDA $7.2bn), materially above the sector playbook's 4-7x mid-cycle merchant-generation band.",
+        "July-2026 PJM capacity auction (planning year 2028-29) cleared at exactly $325.00/MW-day, the top of the collar, across every zone VST bid into -- confirms the triage's cited cap is binding, which is a revenue ceiling as well as a floor.",
+        "Moss Landing 300 MW battery-storage fire (Jan-2025) remediation cost estimate grew by $65m in Q2'26 alone to ~$175m total, an example of a 'resolved' incident cost still moving adversely.",
+        "Total debt rose ~$2.6bn in six months (to $19.6bn at 2026-06-30) funding the pending Cogentrix acquisition ahead of its close."
+      ],
+      "data_conflicts": [
+        "Q15 triage framed the 30-36% pullback as pure fear ('overreaction worth full diligence'); this dossier finds the stock still trades at ~9x EV/EBITDA vs a normal 4-7x merchant band, i.e., much of the 'cheap relative to fundamentals' framing does not survive a leverage-adjusted valuation check even after the pullback."
+      ],
+      "next_earnings_date": "2026-11-06",
+      "horizon": "12-24 months (re-entry watch)",
+      "confidence_in_thesis": "high - guidance record, PJM auction results and M&A financing are all directly confirmed in primary filings; the main open question is a valuation judgement (appropriate multiple), not a factual gap",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for VST (checked v4/outputs/v1_valuation_table.csv directly, absent), so v1_verdict is null. This dossier's own EV/EBITDA-based reverse DCF finds the current price requires the ~9x multiple to hold (not expand further) alongside ~5%/yr EBITDA growth; a mean-reversion of the multiple toward the sector's normal 6-7x band would produce a large decline even with continued growth, so the valuation view is 'full' (priced for the good news to continue, not for it to disappoint) rather than cheap or fair."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.235,
+        "base": 0.081,
+        "bull": 0.227
+      },
+      "scenario_basis": "No formal EPS guidance; basis is FY2026E ongoing Adjusted EBITDA guidance midpoint $7.2bn and EV/EBITDA. Base: 5%/yr EBITDA growth, multiple held at ~9x (current), net debt roughly flat, share count declining ~5%/yr on continued buybacks. Bear: EBITDA -2%/yr (PJM cap dynamics ease, Cogentrix integration disappoints), multiple compresses to ~6x (sector mid-cycle mean reversion), net debt rises modestly funding Cogentrix. Bull: EBITDA +10%/yr (Meta/Helix/AWS optionality converts to guidance), multiple sustains near 9-10x, aggressive continued buybacks. No common dividend in any scenario (capital return is buyback-led)."
+    }
+  }
+}

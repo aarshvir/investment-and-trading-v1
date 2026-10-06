@@ -1,0 +1,191 @@
+{
+  "generated_utc": "2026-09-30T20:23:35.387208+00:00",
+  "source_release": "v011_2026-09-27_claude",
+  "comparison_release": "v012_2026-09-27_codex",
+  "source_archive": "versions/v011_2026-09-27_claude/package.zip",
+  "source_archive_sha256": "9b80342576c1da680e97039752f1e29997de28676758f7dd798ff62c08e1a1f8",
+  "source_members_sha256": {
+    "v4/outputs/lead_portfolio_build.json": "e996d6f3a94a47f3c23c4f7a35a0874079f3d6452cf127eb935a4cac78e5c084",
+    "v4/outputs/lead_j_sensitivity.json": "85313696cd325ff8e67f2ce2bd52e2baded3276ef89255da8669f5c1a56e09b0",
+    "v4/outputs/lead_risk_results.json": "956ddd5577b51075737a00b5f95a24f5188a4cd73fabbc1c732cc99215239ac1",
+    "v4/outputs/v1_valuation.json": "14771c70f6713c0fc96d7922baac6643b1ea5d43a52d748e008fb71223ec6e96"
+  },
+  "coverage": {
+    "eligible_candidates": 214,
+    "eligible_with_numeric_finite_base_scenario": 210,
+    "v011_holdings": 20,
+    "selected_with_v1_valuation": 1
+  },
+  "ordering_sensitivity": {
+    "actual (j): conviction, margin, base return, rank": {
+      "overlap_with_actual": 20,
+      "weighted_base_return_unvalidated": 0.13038362124244593,
+      "same_set_as_actual": true
+    },
+    "base return before margin of safety": {
+      "overlap_with_actual": 20,
+      "weighted_base_return_unvalidated": 0.13038362124244593,
+      "same_set_as_actual": true
+    },
+    "margin of safety before conviction": {
+      "overlap_with_actual": 20,
+      "weighted_base_return_unvalidated": 0.13038362124244593,
+      "same_set_as_actual": true
+    },
+    "model rank instead of base return": {
+      "overlap_with_actual": 9,
+      "weighted_base_return_unvalidated": 0.11160111060635883,
+      "same_set_as_actual": false
+    },
+    "conviction then model rank only": {
+      "overlap_with_actual": 6,
+      "weighted_base_return_unvalidated": 0.09500286182135803,
+      "same_set_as_actual": false
+    }
+  },
+  "in_every_ordering": [
+    "ADP",
+    "CRH",
+    "GDDY",
+    "TJX",
+    "USB",
+    "VEEV"
+  ],
+  "flat_multiple_diagnostic": {
+    "CMCSA": {
+      "price_sep25": 21.91,
+      "current_ntm_pe": 6.164897563633778,
+      "v1_base_exit_pe": 17.168610328827665,
+      "v1_base_eps_year3": 5.2021189356451085,
+      "v1_cumulative_dividends": 4.087394957983193,
+      "v1_base_annualized_return": 0.6214454736163295,
+      "flat_multiple_annualized_endpoint_return": 0.18173575327125446,
+      "method": "V1 EPS year 3 and total dividends held fixed; substitute current NTM P/E for V1 exit P/E; compound total endpoint value over three years. No tax, costs, dividend timing or estimate repair."
+    },
+    "BKNG": {
+      "price_sep25": 163.95,
+      "current_ntm_pe": 13.826014049615099,
+      "v1_base_exit_pe": 30.101051639682368,
+      "v1_base_eps_year3": 14.570317760618556,
+      "v1_cumulative_dividends": 4.99090909090909,
+      "v1_base_annualized_return": 0.3934278751849549,
+      "flat_multiple_annualized_endpoint_return": 0.07984404894093844,
+      "method": "V1 EPS year 3 and total dividends held fixed; substitute current NTM P/E for V1 exit P/E; compound total endpoint value over three years. No tax, costs, dividend timing or estimate repair."
+    },
+    "LVS": {
+      "price_sep25": 38.99,
+      "current_ntm_pe": 11.470526983720863,
+      "v1_base_exit_pe": 23.50187952655294,
+      "v1_base_eps_year3": 4.127222713588056,
+      "v1_cumulative_dividends": 4.289634146341464,
+      "v1_base_annualized_return": 0.3746759554942807,
+      "flat_multiple_annualized_endpoint_return": 0.09812703648464938,
+      "method": "V1 EPS year 3 and total dividends held fixed; substitute current NTM P/E for V1 exit P/E; compound total endpoint value over three years. No tax, costs, dividend timing or estimate repair."
+    }
+  },
+  "wec_diagnostic": {
+    "price_sep25": 101.45,
+    "fy2026_guided_eps_midpoint": 5.56,
+    "assumed_three_year_eps_growth": 0.075,
+    "issuer_2026_quarterly_dividend": 0.9525,
+    "assumed_flat_annual_dividend": 3.81,
+    "gross_cashflow_irr_flat_fy2026_pe": 0.11005032284037075,
+    "gross_cashflow_irr_exit_15x": 0.04433928297971901,
+    "gross_cashflow_irr_exit_13x": -0.0007748267750930515,
+    "issuer_dividend_source": "https://investor.wecenergygroup.com/investors/news-releases/press-release-details/2026/WEC-Energy-Group-declares-quarterly-dividend-7ab72a82c/default.aspx",
+    "issuer_guidance_source": "https://investor.wecenergygroup.com/investors/news-releases/press-release-details/2026/WEC-Energy-Group-posts-2025-results/default.aspx"
+  },
+  "historical_replays": {
+    "Global financial crisis": {
+      "v011_stock_sleeve": -0.473495,
+      "spy": -0.551894,
+      "v011_defensive_15_index_10_direct_75_reserve": -0.120447,
+      "v011_defensive_worst_point": -0.126973,
+      "v011_moderate_55_index_15_direct_30_reserve": -0.394993,
+      "sleeve_real_data_share": 0.937906
+    },
+    "US downgrade / euro crisis": {
+      "v011_stock_sleeve": -0.177929,
+      "spy": -0.183668,
+      "v011_defensive_15_index_10_direct_75_reserve": -0.039112,
+      "v011_defensive_worst_point": -0.041041,
+      "v011_moderate_55_index_15_direct_30_reserve": -0.125869,
+      "sleeve_real_data_share": 0.937906
+    },
+    "China devaluation sell-off": {
+      "v011_stock_sleeve": -0.102587,
+      "spy": -0.130229,
+      "v011_defensive_15_index_10_direct_75_reserve": -0.012552,
+      "v011_defensive_worst_point": -0.027713,
+      "v011_moderate_55_index_15_direct_30_reserve": -0.080016,
+      "sleeve_real_data_share": 1.0
+    },
+    "Q4 2018 rate scare": {
+      "v011_stock_sleeve": -0.184699,
+      "spy": -0.193489,
+      "v011_defensive_15_index_10_direct_75_reserve": -0.040103,
+      "v011_defensive_worst_point": -0.040103,
+      "v011_moderate_55_index_15_direct_30_reserve": -0.131334,
+      "sleeve_real_data_share": 1.0
+    },
+    "COVID crash": {
+      "v011_stock_sleeve": -0.374317,
+      "spy": -0.337173,
+      "v011_defensive_15_index_10_direct_75_reserve": -0.085318,
+      "v011_defensive_worst_point": -0.085318,
+      "v011_moderate_55_index_15_direct_30_reserve": -0.240517,
+      "sleeve_real_data_share": 1.0
+    },
+    "2022 inflation bear market": {
+      "v011_stock_sleeve": -0.173427,
+      "spy": -0.244964,
+      "v011_defensive_15_index_10_direct_75_reserve": -0.034846,
+      "v011_defensive_worst_point": -0.041054,
+      "v011_moderate_55_index_15_direct_30_reserve": -0.156216,
+      "sleeve_real_data_share": 1.0
+    }
+  },
+  "shadow_15_index_10_v011_direct_75_reserve": {
+    "direct_weights_total_portfolio": {
+      "USB": 0.0055849,
+      "GDDY": 0.003,
+      "VEEV": 0.0032094,
+      "ADP": 0.004922800000000001,
+      "MA": 0.0056302,
+      "TJX": 0.0064028,
+      "CRH": 0.0042039,
+      "LVS": 0.0038364000000000002,
+      "BR": 0.004639,
+      "STE": 0.005307200000000001,
+      "LH": 0.0055681,
+      "AXP": 0.0045869000000000005,
+      "PGR": 0.0046332,
+      "DOV": 0.0051694,
+      "WEC": 0.0083231,
+      "BALL": 0.0052126,
+      "PTC": 0.0037484000000000007,
+      "RSG": 0.006977400000000001,
+      "MCK": 0.0044795,
+      "HBAN": 0.0045648
+    },
+    "largest_direct_name_total_portfolio": 0.0083231,
+    "direct_sector_weights_total_portfolio": {
+      "Consumer Discretionary": 0.01024,
+      "Financials": 0.025,
+      "Health Care": 0.01856,
+      "Industrials": 0.02171,
+      "Information Technology": 0.006750000000000001,
+      "Materials": 0.009420000000000001,
+      "Utilities": 0.00832
+    },
+    "largest_direct_sector_total_portfolio": 0.025,
+    "status": "historical replay/feasibility diagnostic only, not an endorsed replacement or trade plan"
+  },
+  "limitations": [
+    "Current holdings applied to old crises create look-ahead/survivorship risk.",
+    "The 2007-09 replay has no GDDY or VEEV prices for 6.2% of sleeve; mix substitutes SPY.",
+    "Reserve replay assumes constant 4% annual return.",
+    "V1 scenario returns mix models and vintages; analyst-route scenarios are not calibrated expected returns.",
+    "No current executable quotes, tax status or actual holdings are represented by this file."
+  ]
+}

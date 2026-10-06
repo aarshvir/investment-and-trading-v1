@@ -1,0 +1,25 @@
+{
+  "agent_id": "f2",
+  "as_of": "2026-09-25",
+  "note": "Created by RA13 on 2026-10-06: SYF had no entry in any F*/f*_summary.json (dossier f2; lead_holding_notes records the gap). Holds only the fields RA13 re-derived; dossier v4/dossiers/SYF.md is the source for everything else.",
+  "tickers": {
+    "SYF": {
+      "verdict": "INCLUDE-SMALL",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.3117,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "below",
+        "reconciliation": "Corrected 6 Oct 2026 (RA13): the dossier paired P/TBV 1.74x with ROE (21.3%, on total equity incl. $1.7bn preferred) and an 11% cost of equity to call the stock fair. Like-for-like: tangible book $42.01, ROTCE 25.2% in Q2 and 23.9% year to date, programme cost of equity 5.17% + 1.16 x 4.14% = 9.99%, g 3%: implied sustainable ROTCE 15.1% (16.9% at 11%) against a normalised base of about 20% (NCO at 5.75% midpoint, reserve releases fading); justified P/TBV 2.43x at 20%. Below. V1 attractive is directionally right; its +31% base was built on P/B on total equity and exceeds the Street high target."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.05,
+        "base": 0.169,
+        "bull": 0.259
+      },
+      "scenario_basis": "Corrected 6 Oct 2026 (RA13). From $72.94, TBV/share $42.01, 325.3m shares, dividend $1.36 growing 8%, payout 70-100% of net income to common. Bear: credit cycle, ROTCE 12%, exit 1.1x TBV. Base: ROTCE 20%, exit 2.0x (discount to the 2.43x justified value for partner concentration). Bull: ROTCE 24%, exit 2.5x. Replaces V1 +13.5% / +31.2% / +52.8%.",
+      "confidence_in_thesis": "medium - credit (NCO 4.9% in August) and ROTCE are primary-sourced; valuation margin is large on ROTCE, but the thesis is a credit-cycle bet with five programmes at 54% of interest and fees, fading reserve releases and a 9% cut to Q3 consensus"
+    }
+  }
+}

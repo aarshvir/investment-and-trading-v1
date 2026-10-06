@@ -1,0 +1,90 @@
+# FDX — FedEx Corporation (Diligence dossier, agent F66, standard depth)
+
+## 1. Verdict
+**INCLUDE-SMALL** (12–36 month horizon), with a named reservation: FedEx just completed two enormous structural changes at once — the 1-Jun-2026 spin-off of FedEx Freight and a change in fiscal year-end from 31-May to 31-Dec (creating a one-off 7-month "transition year," Jun–Dec 2026) — while operating without a permanent CFO (the outgoing CFO's role is filled by an "interim Chief Financial Officer" as of the June 2026 earnings release). The underlying execution is genuinely strong (guidance raised three consecutive quarters and beaten; transformation savings exceeded target; capex discipline at record lows) and V1's systematic valuation calls it **attractive**, consistent with my own reverse DCF. But the reporting noise from the FY change and the CFO vacancy are real, current facts, not hypothetical risks.
+
+## 2. Business in plain English
+FedEx moves packages and freight around the world through its integrated air-and-ground network (branded simply "Federal Express" as a single segment after the Network 2.0 consolidation of the former Express and Ground units); it earns money on a mix of package yield (price per shipment) and volume, across US domestic, international, and e-commerce parcel flows. Until 1-Jun-2026 it also owned FedEx Freight, a separate less-than-truckload (LTL) trucking business, now spun off to shareholders as its own public company. FedEx's moat is its hard-to-replicate global air-and-ground delivery network and density; the current strategic story is "DRIVE"/"Network 2.0" — a multi-year cost-and-network-consolidation program that has already delivered structural savings ahead of schedule.
+
+## 3. Why the model likes it — durable or artefact?
+Disqualifying-flag gate: checked — the Q01 triage found no disqualifying red flag for FDX, and `b1_live_scores.csv`'s own `exclude_pending_deal` flag is False (correctly, since the FedEx Freight spin-off closed 1-Jun-2026, before the pending-deal window that flag is meant to catch). This diligence pass independently confirms no disqualifying red flag, subject to the interim-CFO and fiscal-year-change caveats in §9/§12.
+Per `v4/data/b1_live_scores.csv` (as of 2026-09-25, ticker FDX, CIK 1048911, price $285.85): composite decile 8/10, quintile 4, live_rank 108 of ~500. Value percentiles are strong — pct_ep 0.88, pct_fcfp (FCF yield) 0.92, pct_ebit_ev 0.81, pct_bp 0.91 — this is squarely a **value** signal, not a momentum or quality story (pct_mom_12_1 only 0.15, pct_roe only 0.31 — modest by the panel's standards). That split is durable and confirms the primary-source picture in §4/§5: FedEx is cheap on hard cash-flow multiples because the market is still pricing in tariff/trade-war and network-transition uncertainty, not because of any accounting artefact.
+
+## 4. Last two years of results (fiscal quarters; consolidated as reported at the time — includes FedEx Freight through 31-May-2026 spin date; source: 10-Q/10-K XBRL, CIK 0001048911, and quarterly earnings releases)
+| Quarter (FQ end) | Revenue ($bn) | Operating income ($bn) | Net income ($bn) | Diluted EPS (GAAP) |
+|---|---|---|---|---|
+| Q3 FY24 (29-Feb-24) | 22.17 | 1.04 | 0.77 | $3.05 |
+| Q1 FY25 (31-Aug-24) | 21.58 | 1.08 | 0.79 | $3.21 |
+| Q2 FY25 (30-Nov-24) | 21.97 | 1.05 | 0.74 | $3.03 |
+| Q3 FY25 (28-Feb-25) | 22.16 | 1.29 | 0.91 | $3.76 |
+| Q1 FY26 (31-Aug-25) | 22.24 | 1.19 | 0.82 | $3.46 |
+| Q2 FY26 (30-Nov-25) | 23.47 | 1.38 | 0.96 | $4.04 |
+| Q3 FY26 (28-Feb-26) | 24.00 | 1.35 | 1.06 | $4.41 |
+| Q4/FY26 (31-May-26) | 25.0 (Q4); 94.7 (FY) | 1.55 (Q4 GAAP); 5.46 (FY GAAP) | 1.60 (Q4); 4.43 (FY) | $6.60 (Q4); $18.55 (FY) |
+
+FY2026 (as reported, includes Freight through the spin date): revenue $94.7bn (+7.7% YoY), GAAP diluted EPS $18.55 (+10.4%), **adjusted diluted EPS $20.24** (+11.3% vs FY2025's $18.19) — adjustments (MTM retirement-plan accounting, Freight spin-off costs, business-optimization costs, fiscal-year-change costs, asset impairments, and international-regulatory/legacy-Ground legal-matter adjustments) are large and disclosed line-by-line in the earnings release reconciliation. Capital spending FY2026 was $3.8bn, down 6% YoY and **4.0% of revenue — the lowest annual level in company history** (management's own characterization, earnings release).
+
+## 5. Guidance track record (FY2026 EPS guidance, last 4 releases through the fiscal-year-end change; all primary-source press releases furnished as 8-K Ex-99.1)
+| Release (date) | Revenue growth | GAAP EPS (ex-MTM) | Adjusted EPS (ex-MTM, spin, optimization, FY-change costs) | Action |
+|---|---|---|---|---|
+| Q1 FY26 (18-Sep-2025) | 4–6% | $14.20–$16.00 | $17.20–$19.00 | Initial |
+| Q2 FY26 (18-Dec-2025) | 5–6% (up from 4–6%) | $14.80–$16.00 (up from $14.20–$16.00) | $17.80–$19.00 (up from $17.20–$19.00) | **Raised** |
+| Q3 FY26 (19-Mar-2026) | 6.0–6.5% (up from 5–6%) | $16.05–$16.85 (up from $14.80–$16.00) | $19.30–$20.10 (up from $17.80–$19.00) | **Raised**; capex cut to ≤$4.1bn (from $4.5bn Dec forecast); transformation savings raised to ">$1bn" (from "$1bn") |
+| Q4/FY26 actual (23-Jun-2026) | Actual +7.7% | Actual GAAP $18.55 | **Actual adjusted $20.24** — above the raised $19.30–$20.10 range | Beat |
+
+FedEx then **retired the old FY2026 EPS-guidance framework** and, alongside the Q4/FY26 release, introduced a new **calendar-year 2026 outlook** for continuing operations only (FedEx Freight now excluded, recast as discontinued operations): revenue growth ~11% YoY; diluted EPS (continuing ops) **$16.55–$17.75**; adjusted diluted EPS (continuing ops) **$16.90–$18.10**; ETR ~23%; pension contributions $475M; capex $3.9bn. This CY2026 guidance has had only one data point so far (no prior range to compare against), so a "raised/maintained/cut" verdict is not yet possible on it — flagged as a genuine guidance-continuity break, not an omission on my part.
+
+## 6. Earnings quality & balance sheet
+**Entity scope: the FY2026 10-K balance sheet (as of 31-May-2026, filed 20-Jul-2026) is consolidated and still includes FedEx Freight**, because the spin-off's effective date (1-Jun-2026) fell one day after fiscal year-end. Figures below are therefore last-consolidated, pre-spin; the post-spin (continuing-operations-only) balance sheet is not yet reported in any 10-Q as of this cutoff.
+- **Balance sheet (consolidated, 31-May-2026):** total assets $98.9bn; cash & equivalents $13.3bn (includes a **$4.1bn cash dividend FedEx Freight paid to FedEx Corp** just before the spin, funded by Freight's own $3.7bn senior-notes offering (Feb-2026) and a delayed-draw term loan, plus **~$0.8bn of IEEPA tariff refunds held for pass-through to customers** — i.e., not all of the $13.3bn cash balance is free corporate liquidity); long-term debt $23.3bn + current portion (debt and capital leases) $1.7bn ≈ **total debt $25.1bn** (up from ~$19.9bn LT debt a year earlier, reflecting Freight's pre-spin notes offering); stockholders' equity $31.6bn. Net debt (total debt less cash) ≈ **$11.8bn** on this last consolidated, pre-spin basis — a figure that will look materially different once continuing-operations-only balance sheets are reported.
+- **Capital return:** FY2026 returned ~$2.2bn to stockholders ($776M buybacks + $1.4bn dividends); repurchases ≈3.3M shares (1.4% of beginning shares), adding $0.09/share (Q4) and $0.21/share (FY) to EPS. For CY2026, management reaffirmed a 5% dividend increase (post-spin-adjusted) and intends up to $1bn of opportunistic buybacks.
+- **Segment structure:** since Network 2.0, FedEx reports a single "Federal Express" segment (Express + Ground combined) plus, through the spin date, "FedEx Freight." Fourth-quarter Federal Express results improved on higher US Domestic/International Priority yields and continued transformation savings, partly offset by higher purchased-transportation and wage costs and "financial impacts of global trade policy changes" (i.e., tariffs).
+- **Adjustments quality:** the FY2026 adjusted-EPS bridge from GAAP ($18.55→$20.24) is large and multi-item (MTM retirement accounting −$2.08, Freight spin costs +$2.46, business optimization +$1.19, fiscal-year-change costs +$0.11, asset impairment +$0.08, international-regulatory/legacy-Ground legal matters −$0.07, all per-share, FY2026). The two biggest swing items (MTM pension accounting and Freight spin costs) are genuinely one-time/non-operating in nature, but their combined size (~$4.5/share) versus a ~$18.55 GAAP base means investors should track the GAAP number too, not rely on "adjusted" alone.
+
+## 7. Valuation snapshot and reconciliation with V1
+- **V1 row exists** (`v4/outputs/v1_valuation_table.csv`, classification "operating," Industrials/Air Freight & Logistics): NTM P/E **14.28x** vs. own 10-year history percentile **23.7th** (cheap versus its own history) and peer median NTM P/E 17.4x — i.e., FDX trades at a discount to both its own history and peers. V1's implied growth/ROE figure is **−4.22%** (i.e., the market is pricing FDX for a mild earnings decline), against consensus FY1 growth of +3.48% and a WACC of 7.54%. V1's verdict: **attractive**; scenario 3-yr annualized returns: bear −10.7%, **base +11.1%**, bull +43.8%. Street flag: "within Street 12m target range."
+- **My own reverse DCF** (2-stage FCF model, independent of V1's methodology; FCF/share proxy from b1's fcfp yield 7.57% of the $285.85 price ≈ $21.62/share; ~238.8M diluted shares [FY2026 net income $4.43bn ÷ diluted EPS $18.55]; EV ≈ market cap $68.2bn + net debt $11.8bn ≈ $80.1bn; WACC 7.5%; 10-year explicit stage, 3% terminal growth): implied 10-year FCF growth ≈ **−1.8%/yr** — directionally the same conclusion as V1 (priced for decline), using a different FCF base and terminal assumption; the two independent methods agree on the sign and rough magnitude.
+- **My bear/base/bull (10-yr FCF/EPS growth), evidence-based:**
+  - **Bear** (global trade/tariff disruption persists, transition-year reporting causes analyst confusion and a de-rating, e-commerce parcel pricing stays under pressure): ≈ −5% to −2%/yr.
+  - **Base** (Network 2.0/DRIVE savings continue as guided, capex discipline holds near 4% of revenue, mid-single-digit revenue growth resumes as trade-policy uncertainty fades): ≈ **6–9%/yr**.
+  - **Bull** (margin recovery accelerates as Freight-related dis-synergies prove smaller than feared and the calendar-year transition removes a reporting overhang, re-rating toward peer multiples): ≈ 15–20%/yr.
+  - All three sit **above** the ~−1.8%/yr implied rate (and above V1's −4.2%) → `implied_vs_base` = **below** (cheap), consistent with V1. dossier_view = **cheap**; **consistent** with V1's "attractive" call.
+
+## 8. Bull case
+1. Three consecutive quarters of raised FY2026 guidance, followed by an actual beat (adjusted EPS $20.24 vs. the raised $19.30–$20.10 range) — a real, primary-source-verified pattern of under-promising and over-delivering, not a one-quarter fluke.
+2. Capex discipline: FY2026 capex fell to 4.0% of revenue, the lowest in company history, while still funding Network 2.0/DRIVE — implies durable free-cash-flow expansion independent of the top line.
+3. The FedEx Freight spin-off (completed 1-Jun-2026) and calendar-year change are both now largely mechanical, one-time transition costs rather than ongoing threats to the core Federal Express network economics.
+
+## 9. Bear case
+1. FedEx currently has **no permanent CFO** — the Q4/FY26 release quotes "Claude Russ, FedEx Corp. enterprise vice president, finance and interim chief financial officer" — a leadership gap at exactly the moment the company is navigating its two biggest structural changes in years.
+2. The fiscal-year change (May→December) creates a 7-month "transition year" with no like-for-like prior-year comparison; consensus estimates, guidance frameworks and even this dossier's own quarter-over-quarter tables will be harder to interpret for several more quarters, which can itself suppress the multiple even if operations are healthy.
+3. FedEx pre-funded the Freight spin-off with a $3.7bn senior-notes offering (Feb-2026) that is consolidated on FedEx Corp's last pre-spin balance sheet — total debt rose from ~$19.9bn to ~$25.1bn year-over-year on a last-reported basis, and the true continuing-operations leverage post-spin is not yet disclosed in any filing reviewed.
+
+## 10. Key risks & kill criteria (measurable)
+1. CY2026 continuing-operations adjusted diluted EPS guidance ($16.90–$18.10) is **cut** (not just reaffirmed) at any subsequent quarterly release.
+2. Federal Express segment adjusted operating margin declines year-over-year for two consecutive quarters.
+3. No permanent CFO is named within two quarters of this dossier (i.e., by the transition-year 10-K, expected ~Feb/Mar 2027).
+4. Continuing-operations net debt/EBITDA (once disclosed post-spin) exceeds 2.5x.
+5. Capital spending for the CY2026 transition/guidance period exceeds the guided $3.9bn by more than 10%, signaling a loss of the capex discipline that is central to the bull case.
+
+## 11. Catalysts & calendar
+- Next earnings: FedEx's first-ever **transition-period** report, covering June–December 2026, is not due until after 31-Dec-2026; based on FedEx's historical ~3-week post-quarter reporting cadence, a release in **late January/February 2027** is a reasonable estimate but is **not yet confirmed** in any filing reviewed as of the 25-Sep-2026 cutoff.
+- FedEx Freight (now an independent public company) reports and trades separately; its results no longer consolidate into FDX going forward.
+- Calendar-year 2027 will be FedEx's first full calendar-year reporting period under the new fiscal year-end.
+
+## 12. Red-flag scan
+- **Structural/accounting:** fiscal-year-end change (May→Dec, effective 1-Jun-2026) and FedEx Freight spin-off (completed 1-Jun-2026) are both large, real, disclosed, non-recurring events — not hidden, but they materially reduce near-term comparability of every reported metric.
+- **Leadership:** interim (not permanent) CFO as of the most recent earnings release reviewed.
+- **Litigation:** "international regulatory and legacy FedEx Ground legal matters" are called out as recurring non-GAAP adjustment line items in FY2025 and FY2026 (with a partial reversal of a loss accrual recognized in FY2026) — the underlying matters are not named or quantified in the sections reviewed at standard depth; flagged as an open item for deeper diligence rather than a confirmed material exposure.
+- **Leverage:** total debt rose ~26% YoY on the last consolidated (pre-spin) balance sheet, driven by Freight's own pre-spin notes offering used to fund a dividend to the parent — an unusual, deal-specific spike rather than organic borrowing.
+- No auditor change, restatement, material weakness or going-concern language found in the reviewed filings.
+
+## 13. Sources
+1. FDX 10-K for FY2026 (ended 31-May-2026), filed 20-Jul-2026, accession 0001048911-26-000105: https://www.sec.gov/Archives/edgar/data/1048911/000104891126000105/fdx-20260531.htm
+2. Earnings releases (Ex-99.1, furnished under 8-K Item 2.02): Q1 FY26 (18-Sep-2025, accession 0001048911-25-000042, fdx-earningsreleasefy2026q1.htm); Q2 FY26 (18-Dec-2025, accession 0001048911-25-000076, fdx-earningsreleasefy2026q2.htm); Q3 FY26 (19-Mar-2026, accession 0001048911-26-000010, fdx-earningsreleasefy2026q3.htm); Q4/FY26 (23-Jun-2026, accession 0001048911-26-000050, fdx-earningsreleasefy2026q4.htm).
+3. FedEx Freight spin-off 8-K (Items 1.01, 2.01, 5.02, 8.01), 1-Jun-2026, accession 0001104659-26-068519: https://www.sec.gov/Archives/edgar/data/1048911/000110465926068519/tm2616055d1_8k.htm
+4. SEC XBRL companyfacts, CIK0001048911: https://data.sec.gov/api/xbrl/companyfacts/CIK0001048911.json; submissions: https://data.sec.gov/submissions/CIK0001048911.json.
+5. v4/data/b1_live_scores.csv (row FDX, as_of 2026-09-25); v4/outputs/Q01_triage.json (FDX entry); v4/outputs/v1_valuation_table.csv (row FDX) and v4/outputs/v1_valuation.json (FDX detail).
+
+## 14. Data basis, recency and disclaimer
+Most recent period incorporated: 10-K for the fiscal year ended **31-May-2026**, filed 20-Jul-2026 (consolidated, pre-spin balance sheet), plus the Q4/FY26 earnings release (23-Jun-2026) and the FedEx Freight spin-off 8-K (1-Jun-2026). Events checked to 2026-09-25 close. GAAP figures are labelled as such throughout; "adjusted" figures are the company's own non-GAAP measures, reconciled in each earnings release and labelled here wherever used. This is research, not personalized investment advice, and not a recommendation to buy or sell any security.

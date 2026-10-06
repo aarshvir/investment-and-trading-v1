@@ -1,0 +1,691 @@
+{
+ "as_of": "2026-10-06",
+ "scope": [
+  "ADSK",
+  "AEE",
+  "AEP",
+  "AES",
+  "AFL",
+  "AIG",
+  "AIZ",
+  "AJG",
+  "AKAM",
+  "ALB"
+ ],
+ "facts": [
+  {
+   "ticker": "ADSK",
+   "claim": "Q2 FY27 (qtr ended 2026-07-31) revenue $2,046M, GAAP EPS $2.33, net income",
+   "dossier_location": "s4 table; s12",
+   "source": "10-Q acc 0000769397-26-000061; XBRL; release -26-000059",
+   "source_value": "revenue 2,046; NI 492; GAAP EPS 2.33; op inc 599",
+   "status": "PASS",
+   "note": "Period label correct (fiscal Q2 FY27)."
+  },
+  {
+   "ticker": "ADSK",
+   "claim": "Q1 FY27 revenue $1,934M, GAAP EPS $2.32, non-GAAP $2.99; Q1 FY26 non-GAAP $2.29",
+   "dossier_location": "s4 table and footnote 3",
+   "source": "Q1 FY27 release acc 0000769397-26-000041",
+   "source_value": "2.99 less 0.70 increase = 2.29; GAAP 2.32 vs 0.70",
+   "status": "PASS",
+   "note": "The footnote-3 'data conflict' is spurious: $0.70 is the YoY change; coincidentally equal to Q1 FY26 GAAP EPS."
+  },
+  {
+   "ticker": "ADSK",
+   "claim": "Q4 FY25 revenue $1,674M and GAAP operating income $291M",
+   "dossier_location": "s4 table, footnote 2",
+   "source": "FY25 10-K XBRL: FY 6,131 less Q1-Q3 4,492 (rev); FY 1,354 less 988 (op inc)",
+   "source_value": "revenue 1,639; operating income 366; GAAP EPS 1.40",
+   "status": "FAIL",
+   "note": "Wrong derived Q4 FY25 figures. Correction appended."
+  },
+  {
+   "ticker": "ADSK",
+   "claim": "Q4 FY26 revenue about $1,960M, backed out of FY26 10-K total $7,596M",
+   "dossier_location": "s4 footnote 4",
+   "source": "FY26 10-K acc 0000769397-26-000015; Q4 FY26 release acc -26-000010",
+   "source_value": "FY26 revenue 7,206; Q4 FY26 revenue 1,957 (+19%)",
+   "status": "FAIL",
+   "note": "Annual total wrong ($7,596M is not a reported figure); Q4 headline rounding. Growth +19% stands."
+  },
+  {
+   "ticker": "ADSK",
+   "claim": "FY27 guidance Feb/May/Aug: revenue 8,100-8,170 / 8,155-8,215 / 8,295-8,345; non-GAAP EPS 12.29-12.56 / 12.40-12.65 / 12.52-12.60; Q3 guide 2,125-2,140, GAAP EPS 1.57-1.87, non-GAAP 3.04-3.09",
+   "dossier_location": "s5, s10",
+   "source": "Releases acc 0000769397-26-000010, -26-000041, -26-000059",
+   "source_value": "all ranges appear verbatim",
+   "status": "PASS",
+   "note": "MaintainX excluded in Feb/May, included in Aug, as stated."
+  },
+  {
+   "ticker": "ADSK",
+   "claim": "Debt $3.5bn and cash $4.1bn at 2026-07-31 (EV bridge)",
+   "dossier_location": "s6, s7",
+   "source": "10-Q balance sheet",
+   "source_value": "notes 499 current + 1,985 long-term + commercial paper 994 = 3,478; cash 4,098",
+   "status": "PASS",
+   "note": "Cross-tie flag (XBRL $2.5bn) is partial: it matched only the senior notes."
+  },
+  {
+   "ticker": "ADSK",
+   "claim": "MaintainX financing 'not read in full': new debt about $2bn",
+   "dossier_location": "s6, s12",
+   "source": "8-Ks acc 0001213900-26-084276, 0001193125-26-387877; 10-Q Note 19",
+   "source_value": "$1.0bn term loan drawn 3 Aug; $1.0bn 5.05%/5.65% notes issued 10 Sep to repay it; consideration $3.53bn",
+   "status": "MINOR",
+   "note": "Pro forma gross debt about $4.5bn, net debt about $2.6bn (my estimate); kill criterion 3 far from tripping."
+  },
+  {
+   "ticker": "ADSK",
+   "claim": "SEC/DOJ matter closed Aug 2025 with no restatement",
+   "dossier_location": "s11",
+   "source": "FY26 10-K risk factors",
+   "source_value": "SEC closed 19 Aug 2025; USAO 21 Aug 2025",
+   "status": "PASS",
+   "note": "Dossier omits the securities class action (dismissed with prejudice 26 Jan 2026, on appeal): MINOR omission."
+  },
+  {
+   "ticker": "ADSK",
+   "claim": "Reverse DCF: WACC 10.5% from rf 4.2%, ERP 5.5%, beta 1.31; base FCF $2.9bn; implied 3.0%/yr",
+   "dossier_location": "s7",
+   "source": "10-Q cash flow/SBC; programme rf 5.17%, ERP 4.14%",
+   "source_value": "rf 5.17% (not 4.2%); SBC TTM 706 added back; interest income about 85",
+   "status": "FAIL",
+   "note": "Recomputed: implied about 8.7%/yr (7.5-10.6%) vs base 11-14%: still below. Verdict unchanged."
+  },
+  {
+   "ticker": "ADSK",
+   "claim": "Verdict INCLUDE-SMALL; implied below base",
+   "dossier_location": "s1, s7",
+   "source": "DV02 recompute",
+   "source_value": "implied 8.7% vs base 11-14%",
+   "status": "PASS",
+   "note": "Supported after correction; margin thinner."
+  },
+  {
+   "ticker": "AEE",
+   "claim": "Q2'26 revenue $2,092M, operating income $459M, GAAP EPS $1.13 (vs $1.01); Q1'26 $2,176M / $532M / $1.28",
+   "dossier_location": "s4",
+   "source": "10-Q acc 0001002910-26-000023, -26-000015; XBRL",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": "Derived Q4'25 (1,782 / 360 / 0.92) also checks."
+  },
+  {
+   "ticker": "AEE",
+   "claim": "FY2026 EPS guidance $5.25-5.45 affirmed Feb/May/Jul; 6-8% EPS CAGR off $5.35 midpoint; rate base CAGR 10.6%",
+   "dossier_location": "s5",
+   "source": "Releases acc 0001002910-26-000005 (11 Feb), -000013 (5 May), -000020 (30 Jul)",
+   "source_value": "verbatim",
+   "status": "PASS",
+   "note": "Release dates in the dossier are the 10-K/10-Q filing dates (MINOR)."
+  },
+  {
+   "ticker": "AEE",
+   "claim": "Guidance range sits below delivered FY2025 EPS $5.35, implying near-zero growth (verdict reservation)",
+   "dossier_location": "s1, s8",
+   "source": "Q4 2025 release",
+   "source_value": "FY2025 GAAP $5.35 incl. tax benefits; adjusted $5.03; guide implies +4% to +8%",
+   "status": "FAIL",
+   "note": "GAAP vs adjusted mismatch; Q3'25 +38% also GAAP-only (adjusted +16%)."
+  },
+  {
+   "ticker": "AEE",
+   "claim": "Debt/(debt+equity) about 60%: LTD 19,064 + current 1,524 vs equity 13,687",
+   "dossier_location": "s6, s9",
+   "source": "10-Q balance sheet",
+   "source_value": "figures exact; short-term debt 1,220 omitted (ratio 61.5%)",
+   "status": "MINOR",
+   "note": ""
+  },
+  {
+   "ticker": "AEE",
+   "claim": "H1'26 OCF $1,191M vs capex $2,653M; dividends $414M vs $384M; $33.1bn 2026-30 capex; $343M Missouri request",
+   "dossier_location": "s6, s8",
+   "source": "10-Q acc -26-000023",
+   "source_value": "exact; 10-Q also states 2.8 GW large-load ESAs (dossier 2.2 GW from slides)",
+   "status": "PASS",
+   "note": "2.8 GW update is MINOR."
+  },
+  {
+   "ticker": "AEE",
+   "claim": "Reverse DCF: one-stage Gordon, r 7.7%, implied perpetual g 4.8% vs base 5% -> in_line",
+   "dossier_location": "s7",
+   "source": "Programme dividend method (10y then 3%, CoE 5.17%+0.58x4.14%=7.6%)",
+   "source_value": "implied 10-yr dividend growth 7.9% vs base 5-5.75%; value $79-85 vs price $99.39",
+   "status": "FAIL",
+   "note": "Perpetual rate compared with ten-year rate. Implied vs base -> above."
+  },
+  {
+   "ticker": "AEE",
+   "claim": "Verdict INCLUDE-SMALL (requires implied at or below base)",
+   "dossier_location": "s1",
+   "source": "DV02 recompute",
+   "source_value": "implied above base",
+   "status": "FAIL",
+   "note": "Verdict -> WATCH."
+  },
+  {
+   "ticker": "AEP",
+   "claim": "Q2'26 GAAP EPS $1.31 vs $2.29; operating EPS $1.36 vs $1.43; revenue $5,445M vs $5,087M",
+   "dossier_location": "s4",
+   "source": "Release acc 0000004904-26-000055",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": "Release names the prior-year item: 2025 transmission minority interest sale (gap closed)."
+  },
+  {
+   "ticker": "AEP",
+   "claim": "FY2026 operating EPS guidance raised to $6.25-6.55 from $6.15-6.45; 7-9% growth, >9% CAGR; $78bn plan; 69 GW",
+   "dossier_location": "s5",
+   "source": "same release",
+   "source_value": "verbatim",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AEP",
+   "claim": "Q1'26 long-term debt $46.85bn (+21%), equity $31.8bn (+16.5%), cash $306M",
+   "dossier_location": "s6",
+   "source": "10-Q acc -26-000034; XBRL",
+   "source_value": "46,850 vs 38,811; 31,808 vs 27,321; 306",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AEP",
+   "claim": "'~$52.6bn total debt at Q1 2026'; Q2 10-Q not pulled",
+   "dossier_location": "s1, s6",
+   "source": "10-Qs acc -26-000034, -26-000059",
+   "source_value": "Q1 total 51.1bn; 30 Jun 2026 total 52.8bn, LTD 47,987 (+16.2%), equity 32,079 (+7.4%), cash 375",
+   "status": "FAIL",
+   "note": "Stale and mis-stated; thesis point strengthens (debt growing 2x equity)."
+  },
+  {
+   "ticker": "AEP",
+   "claim": "Reverse DCF: implied growth = WACC 5.42% less earnings yield; implied -0.27%; scenarios from V1 (-16.2/-1.9/+13.2)",
+   "dossier_location": "s7",
+   "source": "V1 json; programme dividend method",
+   "source_value": "V1 WACC uses 4.08% cost of debt < 5.17% Treasury; V1 base EPS falls 6.73 -> 5.36; dividend model implied 6.05% vs base 5.25-6.25%",
+   "status": "FAIL",
+   "note": "EPS treated as cash; scenarios restated bear +0.3% / base +7.0% / bull +13.8%. implied_vs_base below -> in_line."
+  },
+  {
+   "ticker": "AEP",
+   "claim": "Verdict INCLUDE-SMALL",
+   "dossier_location": "s1",
+   "source": "DV02",
+   "source_value": "implied in line",
+   "status": "PASS",
+   "note": "Allowed at in_line; unchanged."
+  },
+  {
+   "ticker": "AES",
+   "claim": "Merger: $15.00 cash per share; termination fees $100M or ~$588M (Parent) and ~$321M (AES); expected close late 2026/early 2027",
+   "dossier_location": "s6",
+   "source": "10-Q acc 0000874761-26-000144 Note (merger)",
+   "source_value": "verbatim",
+   "status": "PASS",
+   "note": "Outside date (1 Jun 2027) rests on the 8-K, not retrievable here: UNVERIFIABLE separately."
+  },
+  {
+   "ticker": "AES",
+   "claim": "Stockholder vote 26 Jun 2026: 479.07M for, 10.13M against; CFIUS 27 Aug; PUCO 17 Sep",
+   "dossier_location": "s6",
+   "source": "8-Ks acc 0001140361-26-026562, -34714, -36994",
+   "source_value": "479,072,642 / 10,131,991; dates exact",
+   "status": "PASS",
+   "note": "No later filing on EDGAR; NY PSC, FERC, foreign approvals still required per 10-Q."
+  },
+  {
+   "ticker": "AES",
+   "claim": "Q2'26 revenue $3,422M, net income to AES $426M, diluted EPS $0.60; Q2'25 loss $95M",
+   "dossier_location": "s4",
+   "source": "10-Q; XBRL",
+   "source_value": "exact; FY2025 revenue 12,233, NI 910",
+   "status": "PASS",
+   "note": "Derived Q4'25 (3,101 / 320) consistent."
+  },
+  {
+   "ticker": "AES",
+   "claim": "Debt: recourse 300 + 5,800; non-recourse 3,162 + 22,855; cash $1.8bn; consolidated scope labelled",
+   "dossier_location": "s6",
+   "source": "10-Q balance sheet",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": "Company-defined net debt $27,561M and EV $33.4bn unverifiable (press release not retrievable)."
+  },
+  {
+   "ticker": "AES",
+   "claim": "2025 guidance reaffirmed Q2/Q3'25: Adjusted EBITDA $2,650-2,850M, Adjusted EPS $2.10-2.26; outcome $2.34 and $2,871M",
+   "dossier_location": "s5",
+   "source": "Releases acc -25-000071, -25-000086; FY25 10-K",
+   "source_value": "verbatim; 10-K text exact",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AES",
+   "claim": "Scenario arithmetic: base +4.9%, bear -9.4%, bull +7.4%",
+   "dossier_location": "s7",
+   "source": "recomputed",
+   "source_value": "15.352 x 1.042^2.73 / 14.87; 11.05/14.87; 18.4/14.87",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AES",
+   "claim": "EY dismissed (8-K Item 4.01); ICFR adverse opinion 2024; Da Santos left 14 Sep",
+   "dossier_location": "s11",
+   "source": "8-Ks acc -26-000138, -26-000153",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AES",
+   "claim": "Verdict REJECT (pending cash takeover, capped upside)",
+   "dossier_location": "s1",
+   "source": "DV02",
+   "source_value": "price 14.87 vs 15.00",
+   "status": "PASS",
+   "note": "Consistent with programme practice for pending targets."
+  },
+  {
+   "ticker": "AFL",
+   "claim": "Q2 2026 net earnings $825M, GAAP EPS $1.63; adjusted earnings $883M, adjusted EPS $1.75 (-1.7%)",
+   "dossier_location": "s3",
+   "source": "Release acc 0001628280-26-054333; XBRL",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AFL",
+   "claim": "Share count 6.1% lower (502.3M vs 534.8M)",
+   "dossier_location": "s3",
+   "source": "Release income statement",
+   "source_value": "diluted 505.6M vs 538.4M (-6.1%)",
+   "status": "MINOR",
+   "note": "Percentage right; share figures wrong."
+  },
+  {
+   "ticker": "AFL",
+   "claim": "Guidance quotes (Q4'25 call 2026 outlook; Q2'26 call trims) and FY25 adjusted EPS $7.49",
+   "dossier_location": "s4",
+   "source": "Call transcripts Ex-99.3 acc -26-005458, -26-054333; Q4 release",
+   "source_value": "verbatim",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AFL",
+   "claim": "Adjusted BV $55.01 (ex FX remeasurement $41.22), equity $30,312M, ROE ex remeasurement 16.6%, ESR 226%, leverage 21.8%",
+   "dossier_location": "s5",
+   "source": "Q2 release/call",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AFL",
+   "claim": "Cash returned H1: buybacks $2.0bn, OCF $1,080M",
+   "dossier_location": "s5",
+   "source": "10-Q XBRL",
+   "source_value": "1,984; 1,080",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AFL",
+   "claim": "Reverse DCF cost of equity 9.0%, terminal 1%: implied +3.0% vs base +1.0% -> above",
+   "dossier_location": "s6",
+   "source": "Programme CoE 5.17%+0.74x4.14%=8.2%",
+   "source_value": "reproduces (3.03%); at 8.2% implied 1.6% (terminal 1%)",
+   "status": "MINOR",
+   "note": "9.0% not tied to 5.17%+stated ERP; sensitivity would move above -> in_line. WATCH stands (no margin of safety, two guidance trims)."
+  },
+  {
+   "ticker": "AFL",
+   "claim": "Scenario arithmetic (EPS 7.10, P/E 11.5/14.5/16.5, dividend 2.44 growing)",
+   "dossier_location": "s6",
+   "source": "recomputed",
+   "source_value": "-7.7% / +3.8% / +11.1%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AFL",
+   "claim": "New debt: $500M 5.15% 2036 notes (14 May), yen notes (28 May); Japan cyber incident 8-K 30 Jun",
+   "dossier_location": "s5, s10",
+   "source": "8-Ks acc -26-061314, -67551, -26-046124",
+   "source_value": "as described",
+   "status": "PASS",
+   "note": "Cyber incident correctly described."
+  },
+  {
+   "ticker": "AIG",
+   "claim": "Q2 2026 GAAP EPS $1.78 (-10%), AATI/share $2.00 (+10%), AATI $1,069M vs $1,044M, diluted shares 533.5M vs 577.9M",
+   "dossier_location": "s4",
+   "source": "Release acc 0000005272-26-000072",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AIG",
+   "claim": "GI NPW $7.52bn (+9%), combined ratio 89.0%, AYCR 88.1%, catastrophe $210M (3.4 pts) incl. $75M Middle East, PYD $145M",
+   "dossier_location": "s4",
+   "source": "same release",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AIG",
+   "claim": "Book value $77.39; adjusted TBV $72.18; ROE 9.4%; core operating ROE 11.1%; debt/capital 18.1%",
+   "dossier_location": "s6",
+   "source": "same release",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AIG",
+   "claim": "Long-term debt $8,973M, AIG equity $40,606M; Parent liquidity $7.4bn (vs $9.3bn); net favourable reserve development $246M",
+   "dossier_location": "s4, s6",
+   "source": "10-Q acc 0000005272-26-000076",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AIG",
+   "claim": "Management changes: Zaffino steps down 15 Sep; Hancock retires 31 Dec; EUR notes 24 Sep",
+   "dossier_location": "s8, s11",
+   "source": "8-Ks acc -26-000088, -000091; 0001104659-26-110438",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": "'Both leaving in September' loosely worded (Hancock leaves 31 Dec; announced 16 Sep)."
+  },
+  {
+   "ticker": "AIG",
+   "claim": "TTM AATI/share $8.27 (2.20+1.96+2.11+2.00); P/E 9.0x",
+   "dossier_location": "s7",
+   "source": "Q4'25, Q1'26 releases",
+   "source_value": "1.96, 2.11 confirmed",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AIG",
+   "claim": "Reverse DCF (CoE 9.5%, 85% payout): implied -4.1%/yr",
+   "dossier_location": "s7",
+   "source": "recomputed; P/B-ROE cross-check",
+   "source_value": "-2.5% (reproduction); P/B 0.96x vs justified 1.07-1.31x at ROE 10.2-11.1%",
+   "status": "MINOR",
+   "note": "Number not reproduced but direction confirmed by P/B-ROE; implied below base holds."
+  },
+  {
+   "ticker": "AIZ",
+   "claim": "Eight-quarter revenue, GAAP EPS, margins and OCF table",
+   "dossier_location": "s4",
+   "source": "10-Qs/10-K XBRL; releases",
+   "source_value": "Q2'26 3,454.2 / 5.95; Q1'26 3,420.1 / 5.41; Q3'25 3,231.5 / 5.17; OCF series exact",
+   "status": "PASS",
+   "note": "Derived Q4s consistent."
+  },
+  {
+   "ticker": "AIZ",
+   "claim": "Adjusted EPS incl. and ex catastrophes (Q2'26 $6.41 / $6.60; Q1'26 $5.95; Q4'25 $5.61; FY25 ex-cat $22.81 vs $20.35)",
+   "dossier_location": "s4",
+   "source": "Releases acc -26-000039, -000024, -000006",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AIZ",
+   "claim": "Guidance track record Q3'25 to Q2'26 (low double-digit; low single / high single; mid single / ~10% ex-PYD; no H2 PYD)",
+   "dossier_location": "s5",
+   "source": "same releases",
+   "source_value": "verbatim",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AIZ",
+   "claim": "Equity $6,097.9M, book value $123.48, P/B 2.15x, leverage 26.6%, holding-company liquidity $911M",
+   "dossier_location": "s6, s7",
+   "source": "10-Q; Q2 release",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": "XBRL cross-tie flag (net income $1,063.5M vs $298.6M) is TTM vs quarter: false lead."
+  },
+  {
+   "ticker": "AIZ",
+   "claim": "'Cleaned' sustainable operating ROE 17-20% (catastrophes stripped)",
+   "dossier_location": "s7",
+   "source": "FY25 release/10-K",
+   "source_value": "adjusted EPS incl. cat $19.77 -> ROE about 16.8%",
+   "status": "FAIL",
+   "note": "Catastrophes are recurring. Effect on verdict small. Correction appended."
+  },
+  {
+   "ticker": "AIZ",
+   "claim": "Valuation: CoE 10%, g 4%; implied vs base not stated; V1 'excessive' not reconciled",
+   "dossier_location": "s7, s8",
+   "source": "v1_valuation.json AIZ",
+   "source_value": "V1: CoE 8.2%, implied ROE 14.3% vs delivered 17.4%; V1 base uses median ROE 9.7%",
+   "status": "MINOR",
+   "note": "INCLUDE-SMALL supported as in_line to below; no F*_summary entry exists for AIZ."
+  },
+  {
+   "ticker": "AJG",
+   "claim": "Q2'26 revenue $4,003M, GAAP EPS $1.25 (vs $1.40), adjusted $2.84 (vs $2.30); Q1'26 $4,758M, $3.16",
+   "dossier_location": "s4",
+   "source": "10-Q; Q2 release acc 0001628280-26-051070",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AJG",
+   "claim": "Q1'26 adjusted EPS $4.97 (Q1'25 $4.21)",
+   "dossier_location": "s4 table",
+   "source": "Q1 release acc 0000354190-26-000132",
+   "source_value": "4.47 vs 3.72",
+   "status": "FAIL",
+   "note": "Section 6 H1 $7.31 is right; table wrong."
+  },
+  {
+   "ticker": "AJG",
+   "claim": "Total organic change (Brokerage + RM combined): Q1 +5%, Q2 +4%",
+   "dossier_location": "s4, s9",
+   "source": "Q2 release",
+   "source_value": "Brokerage total organic +5% (base C&F +4%); combined +5% Q1 / +6% Q2 (CEO)",
+   "status": "FAIL",
+   "note": "Kill criterion 1 'currently 4-5%' -> 5-6%. Base C&F 4% both quarters statement is right."
+  },
+  {
+   "ticker": "AJG",
+   "claim": "Debt $11.955bn long-term + $1.52bn short-term = $13.5bn; cash $1.386bn; EV bridge",
+   "dossier_location": "s6, s7",
+   "source": "10-Q XBRL",
+   "source_value": "11,955; 1,520; 1,386",
+   "status": "PASS",
+   "note": "Cross-tie flags are false leads (different tag, $12,873M)."
+  },
+  {
+   "ticker": "AJG",
+   "claim": "Q2'25 one-off $144M interest income (~$0.42/share); amortization $218M vs $130M; integration $84M vs $30M; acquisitions 6 vs 9, $58M vs $291M",
+   "dossier_location": "s4, s6",
+   "source": "Q2 release",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AJG",
+   "claim": "Reverse DCF: WACC 7.0% (rf 4.2%), base FCF $2.29bn, implied 2.7% -> below",
+   "dossier_location": "s7",
+   "source": "Programme inputs",
+   "source_value": "rf 5.17%; SBC TTM 65; WACC about 7.5%; implied 7.2% vs base 8-10%",
+   "status": "FAIL",
+   "note": "Restated to in_line. Verdict unchanged."
+  },
+  {
+   "ticker": "AJG",
+   "claim": "No formal numeric guidance",
+   "dossier_location": "s5",
+   "source": "Q1/Q2 releases",
+   "source_value": "none issued",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AKAM",
+   "claim": "Q2'26 revenue $1,100M, GAAP EPS $0.52, GAAP operating margin 7.3%, SBC $146.3M",
+   "dossier_location": "s4",
+   "source": "10-Q XBRL acc 0001086222-26-000086",
+   "source_value": "1,099.7; 0.52; 80.3; 146.3",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AKAM",
+   "claim": "Guidance quotes Aug 2026 (rev 4,445-4,530; margin 25-26%; EPS 6.40-7.05; shares 150) and Q2 non-GAAP EPS $1.59",
+   "dossier_location": "s5",
+   "source": "Release acc -26-000083 (via web fetch of sec.gov page)",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": "Earlier releases (Aug/Nov 2025, Feb/May 2026) and the 24 Sep 8-K exhibit are not retrievable in the local store: UNVERIFIABLE here, except Sep facts confirmed by press coverage."
+  },
+  {
+   "ticker": "AKAM",
+   "claim": "Anthropic $11.6bn over seven years; capex about $5.5bn, $1.7bn in Q4'26; warrant up to about 5%, about 2% on this commitment",
+   "dossier_location": "s5, s6",
+   "source": "8-K acc 0001193125-26-401048 (search summary of Ex-99.1)",
+   "source_value": "as stated; phasing 1.7 / 3.1 / 0.7",
+   "status": "PASS",
+   "note": "Warrant strike and tranche detail unverifiable here."
+  },
+  {
+   "ticker": "AKAM",
+   "claim": "Cash $1,480M, marketable $1,875M + $1,261M = $4,616M; converts carrying $1,706M + $5,857M",
+   "dossier_location": "s6",
+   "source": "10-Q XBRL / release",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": "Par $7,640M adds from the tranche list; net debt 1.7x on adjusted EBITDA consistent."
+  },
+  {
+   "ticker": "AKAM",
+   "claim": "TTM OCF $1,447M, capex $817M (PP&E + software), FCF $630M, SBC $510M",
+   "dossier_location": "s6",
+   "source": "XBRL",
+   "source_value": "OCF 1,518.8+638.8-710.3; capex 819.5 FY25 = 507.8+311.7; SBC 459.4+275.0-224.8",
+   "status": "PASS",
+   "note": "XBRL cross-tie flag (net income) is a false lead (TTM about $411M vs quarter $79.4M)."
+  },
+  {
+   "ticker": "AKAM",
+   "claim": "Reverse DCF base TTM unlevered FCF after SBC $131M; WACC 8.5%",
+   "dossier_location": "s7",
+   "source": "XBRL interest income about $31M/qtr",
+   "source_value": "unlevered base nearer $55M after removing interest income",
+   "status": "MINOR",
+   "note": "Interest income also netted in EV; strengthens 'above'. WACC not tied to 5.17%+ERP (program CoE 8.8%)."
+  },
+  {
+   "ticker": "AKAM",
+   "claim": "Scenario arithmetic (base about $129, bear -14.6%, bull +23.9%)",
+   "dossier_location": "s7",
+   "source": "recomputed",
+   "source_value": "129 / 113.94 -> +4.2%/yr; bear 71.0; bull 219.6",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AKAM",
+   "claim": "Verdict WATCH (implied above base)",
+   "dossier_location": "s1",
+   "source": "DV02",
+   "source_value": "consistent",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "ALB",
+   "claim": "Q2'26 net sales $1,743.3M, operating income $452.9M, net income $480.0M, diluted EPS $3.52; Q1'26 $1,428.7M / 233.5 / 319.1 / 2.34",
+   "dossier_location": "s4",
+   "source": "10-Q acc 0000915913-26-000102; XBRL",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": "Derived Q4'25 (1,428.0 / -217.4 / -414.1) consistent."
+  },
+  {
+   "ticker": "ALB",
+   "claim": "Realized price $19.53/kg vs $12.17; adjusted EBITDA $858.1M (+155%); adjusted EPS $3.75; capex cut to $500M",
+   "dossier_location": "s4, s5",
+   "source": "Q2 release acc -26-000101 (web fetch)",
+   "source_value": "exact",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "ALB",
+   "claim": "FY2026 scenario table unchanged Q1 to Q2: net sales and adjusted EBITDA at ~$10/$20/$30 per kg",
+   "dossier_location": "s5",
+   "source": "Q2 release",
+   "source_value": "$4.1-4.3bn / $5.7-6.0bn / $7.5-7.8bn; EBITDA $0.9-1.0 / 2.4-2.6 / 4.2-4.4bn",
+   "status": "PASS",
+   "note": "Q1 release not fetched; 'unchanged' rests on the dossier."
+  },
+  {
+   "ticker": "ALB",
+   "claim": "Total debt $1.9bn, cash $1.6bn at 30 Jun 2026; net debt/adj. EBITDA 0.5x",
+   "dossier_location": "s6",
+   "source": "10-Q XBRL",
+   "source_value": "1,876.8; 1,631.7",
+   "status": "PASS",
+   "note": "Cross-tie flag ($1.6bn vs $1,876.8M) compared cash with debt: false lead."
+  },
+  {
+   "ticker": "ALB",
+   "claim": "Diluted shares 136.2M (if-converted preferred) vs 118.0M outstanding",
+   "dossier_location": "s6, s7",
+   "source": "10-Q XBRL",
+   "source_value": "136,212,000",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "ALB",
+   "claim": "Valuation: 7x EBITDA on $2.5bn less $0.3bn net debt, 136.2M shares -> $126 base; implied in_line",
+   "dossier_location": "s7",
+   "source": "FCF cross-check (EBITDA 2.5 - tax 0.45 - capex 0.5 - interest 0.1 - NCI 0.07; CoE 11.2%, g 2%)",
+   "source_value": "FCF about $1.38bn -> $106-120/share vs price $109.73",
+   "status": "MINOR",
+   "note": "Multiple not tied to a discount rate; cross-check supports in_line. V1 'excessive' disagreement remains stated in dossier."
+  },
+  {
+   "ticker": "ALB",
+   "claim": "Scenario returns bear -20% / base +5% / bull +38%",
+   "dossier_location": "summary",
+   "source": "no basis stated",
+   "source_value": "",
+   "status": "UNVERIFIABLE",
+   "note": "Basis not stated in summary or dossier."
+  }
+ ],
+ "verdict_changes": [
+  {
+   "ticker": "AEE",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Valuation method corrected (perpetual vs ten-year growth): implied 7.9%/yr dividend growth vs 5-5.75% base, so implied vs base is above; reservation about guidance below FY2025 EPS was a GAAP-vs-adjusted error."
+  }
+ ]
+}

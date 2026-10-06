@@ -1,0 +1,119 @@
+{
+ "agent": "F134",
+ "as_of": "2026-09-25",
+ "tickers": {
+  "IT": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "Sells subscription research to technology leaders; priced as if it will shrink while revenue is stabilising and heavy buybacks shrink the share count.",
+   "horizon": "12-36 months",
+   "kill_criteria": [
+    "Total FX-neutral contract value growth below 0% YoY at any quarter-end (Q2 2026: +1.7%).",
+    "Full-year 2026 adjusted EPS guide cut below $14.00, or FCF guide below $1.185 billion.",
+    "GTS wallet retention below 95% for two consecutive quarters (97% at 30 Jun 2026, 10-Q).",
+    "Consolidated gross debt principal above 3.0x TTM adjusted EBITDA (about 1.8x now), or any debt issued to fund buybacks beyond the current $3.0B principal without a leverage target.",
+    "Diluted share count not falling YoY for two quarters while FCF is under $250M a quarter."
+   ],
+   "key_adverse_facts": [
+    "Total stockholders' equity is -$167.3M at 30 Jun 2026 (consolidated 10-Q) after $1.08B of H1 buybacks; debt principal $3.0B.",
+    "Contract value growth only +1.7% FX-neutral; GTS wallet retention 97% vs 99%, GBS 99% vs 104%; US federal CV down mid-single digits.",
+    "EPS growth is flattered by a 14% lower diluted share count (66.6M vs 77.4M); Consulting revenue -8.8%."
+   ],
+   "data_conflicts": [
+    "Triage: revenue -0.6% is the reported figure; adjusted for the Feb 2026 Digital Markets sale it is +2.8% (+1.8% FX neutral).",
+    "Triage street target -1.5% below price not verified.",
+    "Guidance ranges are only in the IR supplement, not EDGAR; quotes come from call transcripts (Motley Fool); February 2026 initial ranges not obtained."
+   ],
+   "next_earnings_date": "2026-11-03",
+   "confidence_in_thesis": "medium: four beat-and-raise quarters and strong cash conversion, but CV growth is only about 1-2%, AI disruption unresolved, Form 4 and auditor CAMs not checked",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "implied_vs_base": "below",
+    "dossier_view": "cheap",
+    "consistent": true,
+    "reconciliation": "No V1 row exists for IT. Reverse DCF (9% discount rate, 3% terminal) implies owner FCF (after SBC, about $1.02B) shrinking about 2% a year for ten years versus my base of +3% a year."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.066,
+    "base": 0.105,
+    "bull": 0.223
+   },
+   "scenario_basis": "Start 2026 adjusted EPS guide at or above 14.00, price 187.90, no dividend; bear 2029 EPS 15.30 (+3%/yr) at 10x, base 18.13 (+9%/yr, below the management 12% target) at 14x, bull 20.20 (+13%/yr) at 17x."
+  },
+  "VMRK": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "America's largest apartment landlord after the AvalonBay merger, yielding 4.6% with low growth priced in and $125M of cost savings still to come.",
+   "horizon": "24-36 months",
+   "kill_criteria": [
+    "Combined same-store residential revenue growth below 1.0% YoY for two consecutive quarters (2026 outlook about 2% midpoint).",
+    "Consolidated net debt to EBITDAre (company definition) above 5.0x at any quarter-end (legacy entities 4.28x and 4.6x; combined about 4.4x by my sum).",
+    "Annual net synergy target of $125M withdrawn or cut below $100M.",
+    "Annualised dividend cut below $2.81 per share.",
+    "Same-store physical occupancy below 94.5% at any quarter-end (95.7% on 11 Sep 2026)."
+   ],
+   "key_adverse_facts": [
+    "Merger of equals with AvalonBay closed 17 Aug 2026; no combined earnings history; both legacy companies withdrew per-share FFO guidance.",
+    "Legacy net debt/EBITDAre 4.28x (EQR consolidated) and 4.6x (AVB consolidated); about 4.4x combined by my sum, about $17.1B net debt.",
+    "Same-store NOI growth only +1.4% at legacy EQR in Q2 2026 with expenses +3.0%; integration and governance risk (7/7 board, three EQR executives resigned at closing)."
+   ],
+   "data_conflicts": [
+    "Triage could not verify the company: SEC CIK 0000906107 is Equity Residential renamed Vivmark Residential effective 12 Aug 2026 (merged with AvalonBay 17 Aug 2026).",
+    "b1 mktcap $23.1B and triage 0% dividend yield are pre-merger or missing; post-merger market cap is about $47.7B and the dividend is $2.81 a year (about 4.6%).",
+    "Combined FFO, AFFO and leverage are my arithmetic across two legacy filers, not a filed pro forma."
+   ],
+   "next_earnings_date": "2026-10-28",
+   "confidence_in_thesis": "medium-low: fundamentals and valuation look sound but there is no combined reporting history or FFO guidance yet; 10-Q and insider data not reviewed in full",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "implied_vs_base": "below",
+    "dossier_view": "fair",
+    "consistent": true,
+    "reconciliation": "No V1 row exists for VMRK. Reverse DCF (7.5% cost of equity, 2.5% terminal) implies AFFO per share growth of about 0.4% a year (1.6% at 8%) versus my base of 3.0-3.5%."
+   },
+   "scenario_returns_3y": {
+    "bear": 0.007,
+    "base": 0.075,
+    "bull": 0.133
+   },
+   "scenario_basis": "Start combined pre-synergy normalized FFO about 4.06 per share, price 61.50, dividend 2.81 flat for three years; bear FFO +1%/yr at 13x, base +3.5%/yr at 15.1x, bull +5.5%/yr at 17x."
+  },
+  "LUV": {
+   "verdict": "WATCH",
+   "thesis_one_line": "Big US low-fare airline earning more per seat after adding bag fees and assigned seats, but fuel costs and a back-loaded 2026 forecast limit confidence.",
+   "horizon": "12-24 months",
+   "kill_criteria": [
+    "Full-year 2026 adjusted EPS guide lowered below the $3.25 low end, or withdrawn.",
+    "Q3 2026 adjusted EPS below $0.50 (low end of guide).",
+    "Adjusted RASM growth below +10% YoY in Q4 2026 (Q2 2026: +20.1%; Q3 guide +17.5% to +19.5%).",
+    "Company gross leverage above 3.0x (2.1x at Q2) or liquidity below $4.0B ($5.3B at Q2).",
+    "2026 net capital spending above $3.5B, or H2 2026 operating cash flow less gross capex below -$0.5B."
+   ],
+   "key_adverse_facts": [
+    "Full-year 2026 adjusted EPS guide cut to $3.25-4.25 from at least $4.00 (22 Jul 2026); implies about $1.23-2.05 in Q4 versus $0.58 in Q4 2025.",
+    "Trailing operating cash flow less gross capex is -$457M; about $2.1B of debt due in 2027; current maturities jumped to $2,156M.",
+    "$285M reversal of breakage revenue recognised in 2022-2025 (special item); activist advisory costs; securities class actions over the December 2022 meltdown."
+   ],
+   "data_conflicts": [
+    "Triage FCF yield -4.0% vs about -2.2% from filings (gross capex, before $450M H1 2026 asset-sale proceeds).",
+    "Triage cited general knowledge for the activist; no 13D opened here, stake not stated."
+   ],
+   "next_earnings_date": "2026-10-22",
+   "confidence_in_thesis": "low-medium: two strong quarters of revenue levers, but fuel-sensitive and capex-heavy; guidance cut and Q4 dependence",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "implied_vs_base": "in_line",
+    "dossier_view": "fair",
+    "consistent": true,
+    "reconciliation": "No V1 row exists for LUV. Reverse DCF on my normalised FCF of about $1.0B (10% cost of equity, 2.5% terminal) implies about 8% a year FCF growth versus my base of about 11% a year; wide error bars."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.151,
+    "base": 0.069,
+    "bull": 0.229
+   },
+   "scenario_basis": "Start 2026 adjusted EPS guide 3.25-4.25 (mid 3.75), price 42.68; bear 2029 EPS 3.00 at 8x, base 5.00 at 10x, bull 7.00 at 11x; dividend 0.72 a year added (3 years, 2.16)."
+  }
+ }
+}

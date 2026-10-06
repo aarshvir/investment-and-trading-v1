@@ -1,0 +1,193 @@
+{
+  "ticker": "VRSN",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/VRSN?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:43.820791+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "VRSN",
+            "exchangeName": "NMS",
+            "fullExchangeName": "NasdaqGS",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 886170600,
+            "regularMarketTime": 1790798400,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 282.01,
+            "regularMarketChangePercent": 0.775,
+            "fulldayPrice": 282.01,
+            "fulldayChange": 2.17,
+            "fulldayChangePercent": 0.775,
+            "fiftyTwoWeekHigh": 312.48,
+            "fiftyTwoWeekLow": 208.86,
+            "regularMarketDayHigh": 286.82,
+            "regularMarketDayLow": 280.425,
+            "regularMarketVolume": 664321,
+            "longName": "VeriSign, Inc.",
+            "shortName": "VeriSign, Inc.",
+            "chartPreviousClose": 293.28,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "start": 1790755200,
+                "end": 1790775000,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "start": 1790775000,
+                "end": 1790798400,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "start": 1790798400,
+                "end": 1790812800,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "open": [
+                  294.260009765625,
+                  291.8800048828125,
+                  284.0199890136719,
+                  279.2300109863281,
+                  279.760009765625
+                ],
+                "close": [
+                  291.8800048828125,
+                  287.25,
+                  282.07000732421875,
+                  279.8399963378906,
+                  282.010009765625
+                ],
+                "low": [
+                  291.5299987792969,
+                  286.82000732421875,
+                  280.1700134277344,
+                  275.2300109863281,
+                  280.42498779296875
+                ],
+                "volume": [
+                  614100,
+                  592600,
+                  470700,
+                  693000,
+                  664321
+                ],
+                "high": [
+                  298.1300048828125,
+                  292.6099853515625,
+                  285.07000732421875,
+                  280.25,
+                  286.82000732421875
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  291.8800048828125,
+                  287.25,
+                  282.07000732421875,
+                  279.8399963378906,
+                  282.010009765625
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 291.8800048828125,
+      "adjclose": 291.8800048828125,
+      "open": 294.260009765625,
+      "high": 298.1300048828125,
+      "low": 291.5299987792969,
+      "volume": 614100
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 287.25,
+      "adjclose": 287.25,
+      "open": 291.8800048828125,
+      "high": 292.6099853515625,
+      "low": 286.82000732421875,
+      "volume": 592600
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 282.07000732421875,
+      "adjclose": 282.07000732421875,
+      "open": 284.0199890136719,
+      "high": 285.07000732421875,
+      "low": 280.1700134277344,
+      "volume": 470700
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 279.8399963378906,
+      "adjclose": 279.8399963378906,
+      "open": 279.2300109863281,
+      "high": 280.25,
+      "low": 275.2300109863281,
+      "volume": 693000
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 282.010009765625,
+      "adjclose": 282.010009765625,
+      "open": 279.760009765625,
+      "high": 286.82000732421875,
+      "low": 280.42498779296875,
+      "volume": 664321
+    }
+  ],
+  "currency": "USD",
+  "symbol": "VRSN",
+  "regular_market_time": 1790798400,
+  "close_sep30": 282.010009765625,
+  "session_match": true
+}

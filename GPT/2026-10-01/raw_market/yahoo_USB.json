@@ -1,0 +1,193 @@
+{
+  "ticker": "USB",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/USB?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:38.267262+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "USB",
+            "exchangeName": "NYQ",
+            "fullExchangeName": "NYSE",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 105283800,
+            "regularMarketTime": 1790798403,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 57.76,
+            "regularMarketChangePercent": 0.278,
+            "fulldayPrice": 57.761,
+            "fulldayChange": 0.16,
+            "fulldayChangePercent": 0.278,
+            "fiftyTwoWeekHigh": 66.08,
+            "fiftyTwoWeekLow": 45.02,
+            "regularMarketDayHigh": 58.13,
+            "regularMarketDayLow": 57.555,
+            "regularMarketVolume": 8848248,
+            "longName": "U.S. Bancorp",
+            "shortName": "U.S. Bancorp",
+            "chartPreviousClose": 58.48,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "end": 1790775000,
+                "start": 1790755200,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "end": 1790798400,
+                "start": 1790775000,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "end": 1790812800,
+                "start": 1790798400,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "volume": [
+                  7083200,
+                  6412600,
+                  5759300,
+                  7642200,
+                  8848248
+                ],
+                "low": [
+                  57.95000076293945,
+                  58.5,
+                  58.65999984741211,
+                  57.810001373291016,
+                  57.55500030517578
+                ],
+                "high": [
+                  58.790000915527344,
+                  59.52000045776367,
+                  59.33000183105469,
+                  59.04999923706055,
+                  58.130001068115234
+                ],
+                "open": [
+                  58.61000061035156,
+                  58.63999938964844,
+                  59.119998931884766,
+                  58.619998931884766,
+                  57.63999938964844
+                ],
+                "close": [
+                  58.400001525878906,
+                  59.33000183105469,
+                  58.779998779296875,
+                  58.13999938964844,
+                  57.7599983215332
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  58.400001525878906,
+                  59.33000183105469,
+                  58.779998779296875,
+                  58.13999938964844,
+                  57.7599983215332
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 58.400001525878906,
+      "adjclose": 58.400001525878906,
+      "open": 58.61000061035156,
+      "high": 58.790000915527344,
+      "low": 57.95000076293945,
+      "volume": 7083200
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 59.33000183105469,
+      "adjclose": 59.33000183105469,
+      "open": 58.63999938964844,
+      "high": 59.52000045776367,
+      "low": 58.5,
+      "volume": 6412600
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 58.779998779296875,
+      "adjclose": 58.779998779296875,
+      "open": 59.119998931884766,
+      "high": 59.33000183105469,
+      "low": 58.65999984741211,
+      "volume": 5759300
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 58.13999938964844,
+      "adjclose": 58.13999938964844,
+      "open": 58.619998931884766,
+      "high": 59.04999923706055,
+      "low": 57.810001373291016,
+      "volume": 7642200
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 57.7599983215332,
+      "adjclose": 57.7599983215332,
+      "open": 57.63999938964844,
+      "high": 58.130001068115234,
+      "low": 57.55500030517578,
+      "volume": 8848248
+    }
+  ],
+  "currency": "USD",
+  "symbol": "USB",
+  "regular_market_time": 1790798403,
+  "close_sep30": 57.7599983215332,
+  "session_match": true
+}

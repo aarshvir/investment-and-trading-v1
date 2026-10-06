@@ -1,0 +1,131 @@
+{
+ "agent": "F145",
+ "as_of": "2026-09-25",
+ "tickers": {
+  "VTRS": {
+   "verdict": "WATCH",
+   "thesis_one_line": "Global maker of familiar brand-name and generic medicines, cheap on cash flow, but factory inspection problems and a missing permanent CFO argue for waiting.",
+   "horizon": "12-36 months",
+   "key_adverse_facts": [
+    "Nashik (India) plant: fire in Feb 2026 and FDA Form 483 in May 2026; company expects $100-150m second-half 2026 revenue hit",
+    "GAAP operating income only $6.3m in Q2-26; GAAP net loss $(118.8)m; $2.9bn goodwill impairment in Q1-25",
+    "Securities class action (W.D. Pa.) over Indore plant disclosures plus derivative suits",
+    "CFO position held on an interim basis (prior CFO separation agreement dated 1 May 2026)",
+    "Global Generics net sales -8% in FY2025; about $600m of cash transaction/restructuring costs in 2026 guidance",
+    "Tangible equity negative: intangibles $13.7bn plus goodwill $6.7bn vs equity $14.3bn"
+   ],
+   "data_conflicts": [
+    "No V1 row for VTRS; v1_verdict null",
+    "b1 trailing EP is negative (GAAP loss) while d4 shows forward P/E 6.7x on adjusted EPS; GAAP vs adjusted gap is about $0.40 per quarter"
+   ],
+   "next_earnings_date": "2026-11-05",
+   "next_earnings_date_basis": "estimate from prior-year cadence (Q3-25 released 2025-11-06); not company-confirmed",
+   "confidence_in_thesis": "medium: guidance and cash figures are primary-source verified, but returns depend on FDA outcomes that cannot be forecast",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "cheap",
+    "consistent": true,
+    "implied_vs_base": "in_line",
+    "reconciliation": "No V1 row exists. Reverse DCF at 10% cost of equity implies +2.1% a year FCF growth vs my base +3.3%; 1.2 points apart, so in line, and base 3-year return of 7.4% is too low for the risk."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.06,
+    "base": 0.074,
+    "bull": 0.179
+   },
+   "scenario_basis": "Start 2026 adjusted EPS $2.52 (guide midpoint); growth -4%/+3%/+7% a year; exit 6.0x/7.5x/9.0x; dividend $0.48 a year; price $17.83",
+   "kill_criteria": [
+    "Gross leverage ratio (company definition, notional debt / LTM adjusted EBITDA, consolidated) above 3.2x at any quarter-end.",
+    "Full-year 2026 adjusted EPS guidance midpoint cut below $2.40 (the 26 Feb 2026 midpoint) at any release.",
+    "FDA classifies the Nashik (or Indore) site as Official Action Indicated or issues a Warning Letter or import alert affecting US supply.",
+    "Quarterly total revenues decline more than 3% on an operational basis year-on-year for two consecutive quarters.",
+    "GAAP-basis free cash flow (operating cash flow less capex, before add-backs) below $1.2bn for the trailing four quarters."
+   ]
+  },
+  "CI": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "Health insurer and pharmacy-benefit manager priced for shrinking cash flow although it has raised its 2026 profit floor twice; drug-middleman profits are the worry.",
+   "horizon": "12-36 months",
+   "key_adverse_facts": [
+    "Pharmacy Benefit Services pre-tax income -27% in Q2-26 and -28% in Q1-26 on large client renewals and rebate-free model investment",
+    "Federal PBM rules: 100% rebate pass-through for ERISA plans from Aug 2028; Part D list-price-linked pay banned from Jan 2028 (10-K)",
+    "Consolidated operating cash flow declining: $11.8bn (2023), $10.4bn (2024), $9.6bn (2025), about $9.0bn guided for 2026",
+    "Only about $0.8bn of cash sits at the parent or non-regulated subsidiaries; goodwill plus intangibles are 170% of equity",
+    "Pharmacy customers -4% in H1-26; exiting Individual and Family Plans from 1 Jan 2027; new CEO from 1 Jul 2026",
+    "Favorable prior-year reserve development slipped to $268m in H1-26 from $297m"
+   ],
+   "data_conflicts": [
+    "No V1 row for CI; v1_verdict null",
+    "b1 has NaN for growth and accruals factors (financial classification)",
+    "Cash-flow and capex guidance lines date from 5 Feb 2026 and were not restated in the April or July releases"
+   ],
+   "next_earnings_date": "2026-10-29",
+   "next_earnings_date_basis": "estimate from prior-year cadence (Q3-25 released 2025-10-30); not company-confirmed",
+   "confidence_in_thesis": "medium: valuation and guidance are primary-source verified; PBM earnings trajectory is uncertain",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "cheap",
+    "consistent": true,
+    "implied_vs_base": "below",
+    "reconciliation": "No V1 row exists. At 9.5% cost of equity the price implies FCF shrinking about 1.9% a year for ten years (start $7.0bn) vs my base +3%; base 3-year return 9.9%."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.03,
+    "base": 0.099,
+    "bull": 0.208
+   },
+   "scenario_basis": "Start FY2026 adjusted EPS $30.45 (guidance floor); growth -2%/+4%/+8% a year; exit 8x/10x/12x; dividend $6.24 a year; price $272.01",
+   "kill_criteria": [
+    "Evernorth adjusted pre-tax income (segment, consolidated Cigna Group) below $6,900m on the company's 2026 full-year guide, or the \"at least $6,900\" floor lowered at any release.",
+    "Cigna Healthcare medical care ratio above 84.7% (top of the 2026 range) for two consecutive quarters.",
+    "Full-year 2026 adjusted EPS outlook cut below $30.25 (the 5 Feb 2026 initial floor).",
+    "Pharmacy Benefit Services pre-tax income down more than 30% year-on-year for two consecutive quarters after Q3-26.",
+    "Consolidated debt-to-capitalisation above 45% (10-Q MD&A definition; 42.8% at 30 Jun 2026)."
+   ]
+  },
+  "L": {
+   "verdict": "WATCH",
+   "thesis_one_line": "Holding company owning most of an insurer plus a pipeline and hotels; no longer cheap against its book value while insurance profitability slips.",
+   "horizon": "24-36 months",
+   "key_adverse_facts": [
+    "CNA P&C underlying combined ratio 94.2% in Q2-26 vs 91.7%; H1 combined ratio 99.4% vs 96.3%; unfavorable reserve development of $94m in H1-26",
+    "Boardwalk GP purchase-right litigation: Delaware Supreme Court found breach on 10 Dec 2025; tortious interference and unjust enrichment claims remanded incl. Parent Company; no accrual, loss not estimable",
+    "Trades at 1.12x book and 12.9x trailing EPS with ROE 8.9%; no holding-company discount found",
+    "CNA is about two-thirds of trailing net income",
+    "Antitrust class actions against Loews Hotels (Segal on appeal, Portillo pending)",
+    "Consolidated operating cash flow H1-26 $1,038m vs $1,742m"
+   ],
+   "data_conflicts": [
+    "No V1 row for L; v1_verdict null",
+    "d4 forward EPS $2.90 (36x P/E) conflicts with filing-based trailing EPS $8.15; d4 value ignored",
+    "Triage said NAV discount; sum-of-parts shows none (residual 13.7x Boardwalk plus Hotels trailing earnings)"
+   ],
+   "next_earnings_date": "2026-11-02",
+   "next_earnings_date_basis": "estimate from prior-year cadence (Q3-25 released 2025-11-03); not company-confirmed",
+   "confidence_in_thesis": "medium: balance sheet and results verified; litigation outcome and CNA margin trend uncertain",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "full",
+    "consistent": true,
+    "implied_vs_base": "above",
+    "reconciliation": "No V1 row exists. Price/book 1.12x needs sustained ROE of about 9.7% (9% cost of equity, 3% growth) vs 8.9% LTM and 8.5% base; base 3-year return 5.1%."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.072,
+    "base": 0.051,
+    "bull": 0.122
+   },
+   "scenario_basis": "Start 2026E EPS $7.90 (H1 $3.79 actual plus H2 about $4.11); growth 0%/+7%/+10% a year; exit 10.5x/12.5x/14.0x; dividend $0.25 a year; price $104.82",
+   "kill_criteria": [
+    "CNA Property and Casualty underlying combined ratio above 95.0% for two consecutive quarters (Q2-26 94.2%; H1-26 94.5%).",
+    "Parent company (Loews Corporation excluding subsidiaries) debt above $2.5bn, or parent cash and investments below $3.0bn (30 Jun 2026: $1.8bn debt, $4.4bn cash and investments).",
+    "Adverse ruling or accrual in the Boardwalk Pipelines litigation (Mishal and Berger class action, Delaware Chancery, non-General-Partner defendants incl. the Parent Company) of more than $500m attributable to Loews.",
+    "Book value per share excluding AOCI below $95.89 (its 31 Dec 2025 level) at any quarter-end (30 Jun 2026: $99.27).",
+    "CNA Property and Casualty unfavorable net prior-year reserve development above $150m over any four consecutive quarters (H1-26: $94m)."
+   ]
+  }
+ }
+}

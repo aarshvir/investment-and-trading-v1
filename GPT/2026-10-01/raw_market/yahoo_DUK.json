@@ -1,0 +1,193 @@
+{
+  "ticker": "DUK",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/DUK?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:45.043364+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "DUK",
+            "exchangeName": "NYQ",
+            "fullExchangeName": "NYSE",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 322151400,
+            "regularMarketTime": 1790798477,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 114.01,
+            "regularMarketChangePercent": -0.175,
+            "fulldayPrice": 114.03,
+            "fulldayChange": -0.2,
+            "fulldayChangePercent": -0.175,
+            "fiftyTwoWeekHigh": 134.49,
+            "fiftyTwoWeekLow": 112.4,
+            "regularMarketDayHigh": 115.025,
+            "regularMarketDayLow": 113.9,
+            "regularMarketVolume": 4049906,
+            "longName": "Duke Energy Corporation",
+            "shortName": "Duke Energy Corporation (Holdin",
+            "chartPreviousClose": 114.17,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "end": 1790775000,
+                "start": 1790755200,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "end": 1790798400,
+                "start": 1790775000,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "end": 1790812800,
+                "start": 1790798400,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "open": [
+                  114.76000213623047,
+                  113.13999938964844,
+                  113.5,
+                  112.87000274658203,
+                  114.80000305175781
+                ],
+                "high": [
+                  115.02999877929688,
+                  113.61000061035156,
+                  113.8499984741211,
+                  114.44000244140625,
+                  115.0250015258789
+                ],
+                "low": [
+                  113.16000366210938,
+                  112.5199966430664,
+                  112.79000091552734,
+                  112.4000015258789,
+                  113.9000015258789
+                ],
+                "close": [
+                  113.2300033569336,
+                  113.3499984741211,
+                  113.41000366210938,
+                  114.20999908447266,
+                  114.01000213623047
+                ],
+                "volume": [
+                  3756700,
+                  3749300,
+                  4193500,
+                  5180800,
+                  4049906
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  113.2300033569336,
+                  113.3499984741211,
+                  113.41000366210938,
+                  114.20999908447266,
+                  114.01000213623047
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 113.2300033569336,
+      "adjclose": 113.2300033569336,
+      "open": 114.76000213623047,
+      "high": 115.02999877929688,
+      "low": 113.16000366210938,
+      "volume": 3756700
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 113.3499984741211,
+      "adjclose": 113.3499984741211,
+      "open": 113.13999938964844,
+      "high": 113.61000061035156,
+      "low": 112.5199966430664,
+      "volume": 3749300
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 113.41000366210938,
+      "adjclose": 113.41000366210938,
+      "open": 113.5,
+      "high": 113.8499984741211,
+      "low": 112.79000091552734,
+      "volume": 4193500
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 114.20999908447266,
+      "adjclose": 114.20999908447266,
+      "open": 112.87000274658203,
+      "high": 114.44000244140625,
+      "low": 112.4000015258789,
+      "volume": 5180800
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 114.01000213623047,
+      "adjclose": 114.01000213623047,
+      "open": 114.80000305175781,
+      "high": 115.0250015258789,
+      "low": 113.9000015258789,
+      "volume": 4049906
+    }
+  ],
+  "currency": "USD",
+  "symbol": "DUK",
+  "regular_market_time": 1790798477,
+  "close_sep30": 114.01000213623047,
+  "session_match": true
+}

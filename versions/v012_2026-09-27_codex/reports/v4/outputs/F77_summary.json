@@ -1,0 +1,120 @@
+{
+  "agent": "F77",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "NTAP": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Storage vendor riding a real AI-data demand jump, but at $201 the price already needs decade-long growth well above its own history.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "All-flash array revenue growth decelerates below 20% YoY for two consecutive quarters",
+        "Consolidated revenue growth falls back below 10% YoY for two consecutive quarters",
+        "GAAP gross margin falls below 68% for two consecutive quarters",
+        "Any FY2027 guidance cut from the raised (2 Sep 2026) range",
+        "Public Cloud segment revenue growth falls below 15% YoY for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "V1 reverse DCF: current price implies 15.28% revenue growth compounded for 10 years, vs NetApp's own delivered 5y CAGR of 5.17% and 10y CAGR of 2.91%, and Street FY1 consensus of only 5.80%",
+        "One-quarter (+29.9% YoY) acceleration is a large outlier vs NetApp's own multi-year history; storage remains a competitive, commoditizing market (Dell, HPE, Pure Storage)",
+        "V1 base-case 3y annualised return is -17.2% despite this quarter's blowout already being in the TTM base"
+      ],
+      "data_conflicts": [
+        "V1 flags 'excessive' valuation while the quant triage overrode to 'advance' reasoning that 19x NTM P/E is 'not rich' for +30% revenue growth; the reverse-DCF view (duration of growth required) and the simple peer-multiple view (in-line with peers) genuinely disagree and both are disclosed rather than reconciled away"
+      ],
+      "next_earnings_date": "2026-12-01",
+      "confidence_in_thesis": "high (business quality and disclosure are clean; the tension is a well-evidenced valuation/duration mismatch, not an unresolved unknown)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": -0.1715282830495286,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "Agree with V1: on a simple peer multiple (19.2x NTM P/E, in line with peers, 39th percentile of own history) NTAP looks fair, but V1's reverse DCF shows the price requires 15.3% growth sustained for 10 years against a 2.9-5.2% historical CAGR; even the newly raised FY2027 guidance (~15-19% for one year) does not establish a decade-long trend, so INCLUDE is not warranted despite genuine near-term acceleration.",
+        "implied_vs_base": "above"
+      },
+      "implied_vs_base": "above",
+      "scenario_returns_3y": {
+        "bear": -0.3833324156592737,
+        "base": -0.1715282830495286,
+        "bull": 0.12530129904042786
+      },
+      "scenario_basis": "Adopted directly from V1 (v1_valuation.json, as of 25 Sep 2026, WACC 9.40%, 10y fade to 3% terminal growth; TTM revenue base of $7,391M already includes the Q1 FY27 blowout quarter): bear assumes -5.0% revenue decline/7.7% margin/16.3x exit multiple; base assumes +2.5% revenue growth/11.5% margin/21.1x exit multiple; bull assumes +7.6% revenue growth/17.7% margin/27.4x exit multiple; all scenarios include ~$6.17 cumulative dividends over 3 years."
+    },
+    "ON": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Power-chip maker in a genuine AI/SiC-driven recovery, but a dilutive all-stock deal and a fresh fraud probe make it too uncertain to size now.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Non-GAAP gross margin falls below 36% for two consecutive quarters",
+        "AI data-center revenue fails to at least double YoY for full-year 2026 as guided",
+        "Sequential revenue guidance is cut, breaking the 3-quarter beat-and-raise streak",
+        "Synaptics deal is terminated, re-priced materially, or an SEC enforcement action/restatement/settlement over $100M is disclosed",
+        "Net debt/EBITDA rises above 2.0x post-Synaptics financing"
+      ],
+      "key_adverse_facts": [
+        "Recurring large Q1 restructuring/impairment charges in both 2025 (cumulative $487.9M through 9 months, mostly Q1) and 2026 ($329.3M) drove GAAP operating losses of -39.7% and -3.5% operating margin respectively - a repeating, not one-time, pattern",
+        "Reported debt rose ~$1.48B quarter-over-quarter (current debt $0 to $802.1M; LT debt $2,982.9M to $3,657.3M) with the driver not confirmed from a primary source in the time available - plausibly Synaptics-related financing",
+        "All-stock Synaptics acquisition (~$7B EV, 1.350 exchange ratio, ~19% premium) is dilutive and extends into an adjacent (Edge-AI/HMI), not core power/SiC, market; closes mid-2027 subject to approvals",
+        "Chinese SiC entrants (Geely/Zeekr/Xiaomi-linked suppliers) gaining share even as onsemi's own China SiC revenue grows 60-70% YoY - a long-run margin risk"
+      ],
+      "data_conflicts": [
+        "No V1 row exists for ON (not in v1_valuation_table.csv), so no systematic valuation view to reconcile - flagged as a coverage gap for the lead/valuation agent"
+      ],
+      "next_earnings_date": "2026-11-03",
+      "confidence_in_thesis": "medium (genuine 3-quarter beat-and-raise operating trend, offset by unresolved M&A and litigation uncertainty)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for ON. My own single-stage reverse-DCF approximation (not V1's two-stage 10-year fade methodology) suggests the ~4.9% FCF yield on EV requires only ~4-6% perpetual FCF growth at a 10% WACC - undemanding versus the guided AI data-center doubling in 2026, so valuation itself is not the reason for the WATCH call; the pending Synaptics acquisition and open fraud investigation are.",
+        "implied_vs_base": "below"
+      },
+      "implied_vs_base": "below",
+      "scenario_returns_3y": {
+        "bear": -0.28,
+        "base": 0.1,
+        "bull": 0.3
+      },
+      "scenario_basis": "Analyst approximation (no V1 coverage): starting TTM FCF ~$1,500M (24.2% FCF margin on ~$6,198M TTM revenue), no dividend, buybacks ~3-4%/yr reducing share count. Bear: SiC price war plus auto/industrial relapse plus fraud-finding/deal-derating pushes non-GAAP EPS to ~$2.00 in 3y at a 12x trough multiple. Base: gradual auto/industrial stabilization plus AI data-center scaling to a more meaningful mix takes EPS to ~$4.50-5.00 in 3y at an 18-20x multiple. Bull: AI data-center becomes 15-20% of mix, SiC leadership holds, Synaptics proves accretive, EPS reaches ~$6.50 in 3y at a 20x multiple."
+    },
+    "PODD": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Leading insulin-patch-pump maker growing 20%+, but an unresolved fraud probe over a concealed device defect and a confirmed US slowdown are real red flags.",
+      "horizon": "12-24 months",
+      "kill_criteria": [
+        "US Omnipod revenue growth falls below 15% YoY for two consecutive quarters",
+        "A third voluntary Medical Device Correction/recall affecting more than 2% of the installed base within 12 months of the 26 May 2026 MDC",
+        "An SEC enforcement action, formal subpoena, or securities-fraud settlement/judgment is disclosed",
+        "FCF/NI conversion stays below 70% for two consecutive quarters",
+        "Non-GAAP gross margin falls below 71% for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "US Omnipod FY2026 growth guidance was cut from 20-22% to 17-19% (5 Aug 2026), explicitly attributed to weaker Type 2 diabetes patient retention/utilization in the first 90 days, not competition or pricing",
+        "Two separate voluntary Medical Device Corrections in 2026 (12 Mar and 26 May) covering approximately 7 million pods (~8.5% of 2025 global production)",
+        "FDA posted that Insulet had reported 476 serious injuries associated with the correction versus the 29 serious adverse events the company initially cited - a material disclosure gap",
+        "Multiple law firms are investigating whether Insulet and executives knew of the tubing defect before the 12 Mar 2026 disclosure, including scrutiny of the 18 Feb 2026 earnings call where the CEO called Omnipod reliable and consistent - unresolved, not adjudicated",
+        "FCF/NI conversion weakened to ~59% in Q2 2026 versus stronger conversion in the prior three quarters"
+      ],
+      "data_conflicts": [
+        "No V1 row exists for PODD (not in v1_valuation_table.csv) - flagged as a coverage gap for the lead/valuation agent"
+      ],
+      "next_earnings_date": "2026-11-05",
+      "confidence_in_thesis": "medium (unit economics and international growth are genuinely strong, but the litigation outcome and US retention trend are both unresolved unknowns, not modelling assumptions)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for PODD. Trailing GAAP P/E of ~25.5x against guided at-least-30% adjusted EPS growth is not obviously rich; valuation is not the reason for caution here - the unresolved securities-fraud investigation and the confirmed US Omnipod deceleration are.",
+        "implied_vs_base": "in_line"
+      },
+      "implied_vs_base": "in_line",
+      "scenario_returns_3y": {
+        "bear": -0.2,
+        "base": 0.12,
+        "bull": 0.3
+      },
+      "scenario_basis": "Analyst approximation (no V1 coverage): starting TTM GAAP EPS $5.33, TTM FCF ~$429M (14.0% FCF margin on ~$3,054M TTM revenue), no dividend, active buybacks. Bear: US Type 2 retention issue worsens, litigation produces a material settlement/monitor cost, growth decelerates to low teens, multiple compresses from ~25x to ~15x, EPS ~$4.50 in 3y. Base: guidance broadly holds, litigation resolved with limited financial impact, adjusted EPS growth averages ~20-25%/yr, GAAP EPS reaches ~$9-10 in 3y at a ~22x multiple (mild de-rating from current ~25.5x). Bull: Type 2 retention issue is fixed via product/UX changes, international keeps scaling, litigation dismissed, EPS reaches ~$12 in 3y at a 28x multiple."
+    }
+  }
+}

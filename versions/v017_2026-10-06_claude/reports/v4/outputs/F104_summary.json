@@ -1,0 +1,116 @@
+{
+  "agent": "F104",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "MDLZ": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Global Oreo/Cadbury snacking leader recovering from a cocoa-cost shock, but priced for more margin recovery than management's own 2027 timeline supports.",
+      "kill_criteria": [
+        "Organic net revenue growth below 2% for two consecutive quarters",
+        "Consolidated net debt/EBITDA rises above 4.0x or S&P/Moody's place the rating on negative outlook",
+        "FY2026 free cash flow comes in below $2.8bn",
+        "Adjusted EPS guidance is cut (from \"flat to 5% cc\") at the Q3 2026 or Q4 2026 release",
+        "Russia revenue share or reputational pressure escalates into a formal boycott with measurable US/EU volume impact"
+      ],
+      "key_adverse_facts": [
+        "Consolidated net debt/EBITDA ~3.8x, above the packaged-food peer median (~2.1x)",
+        "FY2026 free cash flow guidance cut to ~$3bn from ~$3.5bn delivered in FY2025 even as revenue guidance was raised",
+        "GAAP EPS this quarter exceeded adjusted EPS ($1.20 vs $0.73) due to favorable derivative mark-to-market, an earnings-quality flag, not underlying strength",
+        "Continues operating in Russia (3.8% of Q2 2026 revenue); CEO has acknowledged Russian taxes fund the war effort while defending the decision to stay"
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv shows MDLZ as a below-median quant name (composite pct 18.8th, decile 2) while the triage/quality-growth route advanced it on qualitative brand-moat and EM-growth grounds; this dossier agrees with the qualitative case on durability but not that current valuation reflects it cheaply"
+      ],
+      "next_earnings_date": "2026-10-27",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium (cocoa-cost normalization timeline is management's own guide, not independently modeled; leverage and FCF figures partly cross-checked via aggregators, not fully rebuilt from primary debt-maturity schedules)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": null,
+        "reconciliation": "No V1 valuation row exists for MDLZ (checked directly against v1_valuation_table.csv); this dossier is the sole systematic valuation check. On a normalized-FCF reverse DCF (using the company's own $3.0-3.5bn FY2026 FCF guide rather than the cyclically depressed $2.25bn TTM figure), implied 10-year growth is 6.4-8.4%/yr, at or above a reasonable evidence-based base case of ~5-6%/yr, so the dossier view is full/expensive on valuation grounds despite genuine business quality.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.04,
+        "base": 0.06,
+        "bull": 0.15
+      },
+      "scenario_basis": "Starting trailing GAAP EPS $2.73 (d4 snapshot); base case assumes FY2026 organic growth guide (>=2%) is met and adjusted EPS growth resumes mid-single-digit in 2027 as cocoa normalizes per management's own timeline, exit P/E ~18x (current NTM P/E 18.4x); bear assumes cocoa costs stay elevated into 2027 and multiple compresses to 15x; bull assumes faster cocoa relief and reacceleration to high-single-digit adjusted EPS growth with multiple re-rating to 20x; dividend yield ~3.3% included in all scenarios."
+    },
+    "MMM": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "3M's biggest litigation risks (PFAS, Combat Arms earplugs) are now largely reserved or dismissed, and the stock is priced for almost no long-run growth even as adjusted earnings guidance keeps being raised.",
+      "kill_criteria": [
+        "GAAP operating margin below 15% for two consecutive quarters",
+        "Consolidated stockholders' equity falls below $2.0bn (from $2.95bn at 30 Jun 2026)",
+        "S&P-adjusted debt/EBITDA rises above 3.0x (vs. ~2.5-2.6x now)",
+        "FY2026 adjusted EPS guidance ($8.80-$8.95) is cut at the Q3 2026 or Q4 2026 release",
+        "Consumer segment organic growth remains negative for three consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "Consolidated stockholders' equity has fallen to $2.952bn (30 Jun 2026) from $4.628bn nine months earlier, driven by litigation charges, buybacks and dividends",
+        "$7.4bn of residual 'other environmental liabilities' remains on the balance sheet; the company states it cannot bound losses beyond current accruals",
+        "GAAP operating margin (15.1% in Q2 2026, down 290bps YoY) diverges sharply from adjusted operating margin (24.9%, up 40bps) due to $0.44/share of litigation/PFAS-exit costs and $0.61/share of divestiture losses",
+        "Consumer segment organic sales declined 2.1% in Q2 2026 even as Safety & Industrial (+8.2%) and Transportation & Electronics (+5.9%) grew"
+      ],
+      "data_conflicts": [
+        "b1_live_scores.csv shows pct_roe at the 97th percentile (very high quality signal), but this is mechanically inflated by stockholders' equity shrunk to $2.95bn from litigation charges and buybacks, not by an unusually capital-light business model -- the model's quality read on ROE overstates durability here"
+      ],
+      "next_earnings_date": "2026-10-20",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (Combat Arms MDL dismissal sourced from secondary reporting, not the dismissal order itself; S&P adjusted debt/EBITDA not independently re-derived; normalized FCF base for the reverse DCF relies partly on company guidance rather than a fully rebuilt cash-flow statement)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No V1 valuation row exists for MMM (checked directly against v1_valuation_table.csv); this dossier is the sole systematic valuation check. Reverse DCF using a normalized, guidance-based FCF proxy ($4.9-5.1bn, since the raw TTM FCF figure appears inflated by one-off divestiture cash flows) implies only 2.2-2.7%/yr growth over 10 years, below a reasonable evidence-based base case of 4-6%/yr for a recovering industrial conglomerate, so the dossier view is cheap despite genuine earnings-quality and litigation-tail-risk reservations (hence INCLUDE-SMALL, not INCLUDE).",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.06,
+        "base": 0.07,
+        "bull": 0.16
+      },
+      "scenario_basis": "Starting adjusted EPS run-rate ~$8.85 (FY2026 guide midpoint), dividend yield ~1.8% (dividendRate $3.12); base case assumes FY2026 guidance is met and adjusted EPS growth moderates to mid-single-digit in FY2027, exit multiple ~17x (current forward P/E 17.3x); bear assumes a new unreserved PFAS/environmental claim emerges and multiple compresses to 14x; bull assumes margin recovery runs further than guided and multiple re-rates to 19-20x as litigation costs roll off."
+    },
+    "REG": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Grocery-anchored shopping-center REIT with very low tenant-bankruptcy exposure, raised guidance twice this year, and a valuation that implies below-trend long-run growth.",
+      "kill_criteria": [
+        "Same-property NOI growth falls below the low end of the raised guidance range (+3.7%) for two consecutive quarters",
+        "Pro-rata net debt/EBITDAre rises above 5.5x (vs. 5.0x now)",
+        "Blended cash leasing spreads turn negative or fall below +5% for two consecutive quarters (vs. +10.4% in Q2 2026)",
+        "Tenant-bankruptcy exposure (pro-rata ABR from bankrupt-but-occupying tenants) rises above 1.5% (vs. 0.4% now)",
+        "FY2026 Core Operating Earnings guidance ($4.62-$4.66/share) is cut at the Q3 2026 release"
+      ],
+      "key_adverse_facts": [
+        "Pro-rata net debt to TTM operating EBITDAre is 5.0x (30 Jun 2026), a non-trivial leverage level for a rising-rate environment, though trending down from 5.2x in Q1 2026",
+        "Blended cash rent leasing spreads decelerated from +12.1% (Q1 2026) to +10.4% (Q2 2026), still positive but a trend worth watching",
+        "The reverse DCF here uses a TTM-FFO proxy rather than a REIT-native multi-year model (e.g., the V2R NAREIT-FFO rebuild applied to other REIT holdings), a disclosed methodology limitation"
+      ],
+      "data_conflicts": [
+        "The triage entry cites REG leverage at 4.6x vs. this dossier's 5.0x pro-rata net debt/EBITDAre (company's own Q2 2026 supplemental figure); the discrepancy likely reflects a different scope (consolidated-only vs. pro-rata) or an earlier data point -- this dossier uses the company's own reported pro-rata metric as the more decision-relevant figure"
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (reverse DCF relies on a TTM-FFO proxy rather than a full REIT-native valuation build; debt maturity ladder and credit rating not independently re-derived this pass)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "No V1 valuation row exists for REG (checked directly against v1_valuation_table.csv); this dossier is the sole systematic valuation check. Reverse DCF using TTM Nareit FFO as the cash-generation proxy implies only 1.9%/yr growth over 10 years, below a reasonable evidence-based base case of ~4-5%/yr (raised same-property NOI guidance plus a self-funded ~$680mm development pipeline), so the dossier view is cheap; held at half weight given the proxy-model limitation and 5.0x leverage.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.03,
+        "base": 0.07,
+        "bull": 0.14
+      },
+      "scenario_basis": "Starting Core Operating Earnings run-rate ~$4.65/share (FY2026 guide midpoint), dividend yield ~4.1% (dividendRate $3.02); base case assumes FY2026 guidance is met and ~4-5% FFO/share growth continues into 2027, exit P/FFO ~15.5x (current P/FFO ~15.7x); bear assumes same-property NOI growth decelerates toward the low end of guidance and leasing spreads compress, P/FFO derates to 14x; bull assumes leasing spreads and occupancy keep improving and the development pipeline delivers ahead of schedule, P/FFO re-rates to 17x."
+    }
+  }
+}

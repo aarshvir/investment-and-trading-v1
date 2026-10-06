@@ -1,0 +1,234 @@
+{
+  "analyst": "RA9",
+  "date": "2026-10-06",
+  "data_cutoff": "EDGAR to 2026-10-06; prices and share counts as of 2026-09-25 (COR $306.92, SO $82.88, NOW $135.62); FRED DGS10 5.17% on 2026-09-25; Fed funds target 3.75-4.00% after 16 Sep 2026 (taken from the task brief, not re-pulled). Secondary sources (Investing.com/Yahoo Q1-Q2 2026 SO transcripts and slides) are flagged where used.",
+  "tickers": {
+    "COR": {
+      "claims": [
+        {
+          "claim": "No 10-K/10-Q/8-K filed after 2026-08-05",
+          "status": "WRONG",
+          "source": "EDGAR submissions CIK 1140859: 8-Ks 0001104659-26-090691 (5 Aug, Items 1.01/2.03 revolver raised $5.5bn to $7.0bn, maturity July 2031), 0001104659-26-094676 (12 Aug, 7.01), 0001104659-26-097096 (14 Aug, 5.02), 0001104659-26-110624 (25 Sep, 5.02/7.01)"
+        },
+        {
+          "claim": "Walgreens volume moving out of Cencora (new fact)",
+          "status": "NEW ADVERSE FACT",
+          "source": "8-K 0001104659-26-094676: 'Beginning July 1, 2026, certain Walgreens volume that was being serviced by Cencora ... separate from the prime vendor agreement began moving outside the Company'; prime vendor agreement 'remains unchanged'; adjusted EPS guidance $17.75 to $17.95 reaffirmed"
+        },
+        {
+          "claim": "Other segment 'exploring strategic alternatives', likely partial divestiture",
+          "status": "STALE",
+          "source": "10-Q 0001140859-26-000034 Note 3: MWI Animal Health sale/merger with Covetrus agreed in Q2 FY26, assets held for sale $3,836.1m, liabilities $869.7m, FTC second request 20 May 2026; Note 6: goodwill impairment $165.7m on U.S. Consulting Services, divested April 2026"
+        },
+        {
+          "claim": "FY26 adjusted EPS guidance $17.75-$17.95; revenue growth 4% to 6%",
+          "status": "CONFIRMED",
+          "source": "Q3 FY26 release 0001140859-26-000032 guidance table; reaffirmed in 12 Aug 8-K"
+        },
+        {
+          "claim": "Reverse DCF on $17.85 adjusted EPS at 7.5-9.0% WACC implies +0.3% to +3.7%",
+          "status": "WRONG METHOD",
+          "source": "EPS is not cash. Guided adjusted FCF 'about $3.0B', capex 'about $900M' (Q3 release); SBC FY25 $148.0m, 9M FY26 $122.8m (XBRL). FCF after SBC $2.84bn, 191.6m shares, $14.82 per share. At 8.5% (5.17% + 0.71 x 4.75%) implied 3.5%; 2.2% / 4.7% / 5.9% at 8.0 / 9.0 / 9.5%"
+        },
+        {
+          "claim": "FCF yield about 3.5%",
+          "status": "MISLEADING",
+          "source": "d4 trailing FCF $2.04bn reflects H1 FY26 outflows (Q1 -$2,305m, Q2 -$967m, XBRL); guided $3.0bn is 5.1% of $58.6bn market cap; nine-month adjusted FCF $1,142.3m (Q3 release reconciliation)"
+        },
+        {
+          "claim": "Net debt about $8.9bn, about 1.5x EBITDA",
+          "status": "CONFIRMED",
+          "source": "10-Q balance sheet 30 Jun 2026: debt $11,723.2m (XBRL LongTermDebt) less cash $2,815.3m"
+        },
+        {
+          "claim": "Share count about 194m",
+          "status": "OUTDATED",
+          "source": "10-Q: 190,826,409 shares outstanding at 30 Jun 2026 (193,937,673 at 30 Sep 2025) after $1bn Q3 repurchase; diluted weighted 193.9m in Q3"
+        },
+        {
+          "claim": "Three consecutive years of impairments; kill criterion 2 (single quarter above $150m) not fired since Q1 FY26",
+          "status": "CONFIRMED",
+          "source": "XBRL AssetImpairmentCharges $249,498k Q1 FY26 and $0 in Q2 and Q3; GoodwillImpairmentLoss $165,665k Q1 FY26"
+        },
+        {
+          "claim": "Opioid accrual $4.2bn, payments over 13 years",
+          "status": "CONFIRMED (not re-derived)",
+          "source": "10-Q accrued litigation liability $3,774.0m non-current plus current portion; $102.0m reduction from dismissed litigation in Q3"
+        },
+        {
+          "claim": "Scenario arithmetic -8% / +10% / +19%",
+          "status": "RESTATED",
+          "source": "NTM EPS at Oct 2029 x multiple + dividends: bear -7.3% (FY27 $18.6, 2%/yr, 12x), base +7.7% (FY27 $19.8, 7%/yr, 15.5x), bull +19.5% (FY27 $20.4, 11%/yr, 18.5x); old base used 9% growth and old bull was understated"
+        },
+        {
+          "claim": "Fed raised to 3.75-4.00% on 16 Sep 2026; 10-year 5.17% on 25 Sep 2026",
+          "status": "CONFIRMED (per task brief and earlier RA1/RA2 checks of FRED and federalreserve.gov)",
+          "source": "ra1_reassess.json, ra2_reassess.json"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE",
+      "old_implied": "below",
+      "new_implied": "below",
+      "scenario_returns_3y": {
+        "bear": -0.073,
+        "base": 0.077,
+        "bull": 0.195
+      },
+      "changed_fields": [
+        "kill_criteria",
+        "key_adverse_facts",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "note": "Free cash flow after SBC $14.82 per share, 191.6m shares, 8.5% discount rate, terminal 3.5%: price implies 3.5%/yr for 10 years versus a re-based 6-7% base (value $389 at 6.5%, +27%; +5% even at 9.5%). Margin of safety survives but is thinner; Walgreens volume loss and back-end-loaded FCF guide are the watch items for the 4 Nov print."
+    },
+    "SO": {
+      "claims": [
+        {
+          "claim": "No SEC filing issue after dossier cutoff",
+          "status": "CONFIRMED with new items",
+          "source": "EDGAR CIK 92122: 8-Ks 0000092122-26-000058/-060 (3 Aug) and -063 (6 Aug): $833.75m 2.125% converts due Dec 2027 and $1,897.5m 3.50% converts due Sep 2029 issued; roughly $369m of 4.50% 2027 converts repurchased; no 8-K after 6 Aug; Forms 4 on 5 Oct routine"
+        },
+        {
+          "claim": "Implied growth about 1.1% = 7.0% cost of equity - 5.85% earnings yield",
+          "status": "WRONG METHOD AND INPUT",
+          "source": "7.0% is 1.8 points over 5.17% Treasury (FRED); SO issued 6.00% junior subordinated notes in Mar 2026 (10-Q 0000092122-26-000054); earnings yield ignores retained earnings; H1 2026 operating cash flow $4,280m vs property additions $6,639m = FCF -$2.36bn"
+        },
+        {
+          "claim": "Corrected dividend-basis test",
+          "status": "RECOMPUTED",
+          "source": "Dividend $3.04 annualised, $3.12 next year, price $82.88, terminal 3.5%: perpetual implied growth 3.9% / 4.7% / 5.2% at 7.7% / 8.5% / 9.0%; 10-year implied 4.7% / 7.0% / 8.3%"
+        },
+        {
+          "claim": "Evidence base case 5-6% EPS CAGR; long-term target 5-7%",
+          "status": "UNDERSTATED",
+          "source": "2026 adjusted EPS guidance $4.50-$4.60 maintained, 'at or near the top' (Q2 call transcript via Investing.com/Yahoo, secondary); 8-9% through 2028 then 7-8% (Q1 2026 slides via Investing.com, secondary); filed Q2 release 0000092122-26-000056 carries no guidance; FY25 adjusted EPS $4.30 (+6.2%), H1 2026 $2.46 vs $2.15; consensus FY26 $4.59 (+6.7%), FY27 $4.92 (+7.3%) from d4"
+        },
+        {
+          "claim": "Share count: no anomalous issuance",
+          "status": "WRONG",
+          "source": "10-Q: about 31.1m shares issued in H1 2026 (forward settlements, $2.5bn); average diluted shares 1,141m in Q2 2026 vs 1,108m; 2026 ATM up to 50m shares set up June 2026"
+        },
+        {
+          "claim": "Guidance track record unverified",
+          "status": "PARTLY CLOSED",
+          "source": "Range maintained at Q1 and Q2 per secondary sources; kill criterion 4 not fired"
+        },
+        {
+          "claim": "Scenarios -0.5% / +9.5% / +16%",
+          "status": "RESTATED",
+          "source": "FY30 EPS x NTM multiple + dividends: bear -1.4% (FY27 $4.74, 3%/yr, 13.5x), base +8.5% (FY27 $4.92, 7%/yr, 16.0x), bull +16.7% (FY27 $4.97, 9%/yr, 19.0x)"
+        },
+        {
+          "claim": "Net debt/EBITDA about 5.2x; total debt about $72.8bn at 31 Mar 2026",
+          "status": "NOT RE-DERIVED",
+          "source": "d4 snapshot shows total debt $77.1bn incl. leases and cash $3.0bn at 30 Jun 2026; leverage view unchanged"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "scenario_returns_3y": {
+        "bear": -0.014,
+        "base": 0.085,
+        "bull": 0.167
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria",
+        "key_adverse_facts",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis",
+        "confidence_in_thesis"
+      ],
+      "note": "At 8.5% (5.17% Treasury + 0.7 x 4.75%) the $82.88 price implies 7.0%/yr dividend/EPS growth for 10 years versus a base of about 7%: no margin of safety; base 3-year return 8.5% equals the hurdle; FCF negative and shares up 3-4% a year. Dividend value at 5% growth is $71; re-promote near $70."
+    },
+    "NOW": {
+      "claims": [
+        {
+          "claim": "Moveworks under DOJ second request",
+          "status": "ALREADY CORRECTED (closed Dec 2025)",
+          "source": "10-Q 0001373715-26-000076 has no second-request text; purchase consideration $2,407m (stock $1,467m, cash $905m), not $2.85bn"
+        },
+        {
+          "claim": "TTM FCF $5.15bn",
+          "status": "WRONG",
+          "source": "XBRL: OCF FY25 $5,444m - H1 25 $2,393m + H1 26 $2,257m = $5,308m; capex $868m - $395m + $255m = $728m; FCF $4,580m"
+        },
+        {
+          "claim": "SBC is a cost (not added back) in the reverse DCF",
+          "status": "NOT DONE",
+          "source": "Q2 release cash-flow statement: SBC $652m in Q2, $1,199m in H1; trailing $2,185m; FCF after SBC about $2.4bn trailing, about $3.1bn FY26 guided"
+        },
+        {
+          "claim": "FY26 FCF about $6.5bn = 35% x $18.5bn total revenue",
+          "status": "WRONG",
+          "source": "FY26 revenue about $16.2bn (H1 $7,757m + Q3 subscription guide $3,975-$3,980m + Q4); guide verbatim: subscription revenues $15,760-$15,780m, free cash flow margin 35%; 35% x 16.2 = $5.7bn"
+        },
+        {
+          "claim": "Cash and investments about $8.78bn; net cash about $1.2bn",
+          "status": "WRONG",
+          "source": "Q2 release balance sheet: cash $2,503m + marketable $2,161m + long-term marketable $2,043m = $6,707m; short-term debt $2,082m + long-term debt $5,435m = $7,517m; net debt about $0.8bn; $8,776m is the H1 acquisition outflow"
+        },
+        {
+          "claim": "Discount rate 9.2% (beta 0.97, ERP 4.14%)",
+          "status": "TOO LOW",
+          "source": "5.17% (FRED DGS10) + 0.98 Blume-adjusted beta x 4.75% = 9.8%; range 9.2-10.5%"
+        },
+        {
+          "claim": "Price implies about 10.1%/yr FCF growth versus 14-16% base (below/cheap)",
+          "status": "WRONG",
+          "source": "After-SBC FCF/share $2.98, price $135.62, terminal 3.5%: implied 15.5% / 17.0% / 18.7% at 9.2 / 9.8 / 10.5%; re-based after-SBC base 14-17%; fair value at 16% and 9.8% is $126"
+        },
+        {
+          "claim": "DOJ Army-CIO investigation open",
+          "status": "CONFIRMED from primary text",
+          "source": "10-Q Note 17: 'continuing to cooperate with the Department of Justice, which has commenced its own investigation and required the Company to deliver certain documents'; 'cannot predict the timing, outcome or possible impact'"
+        },
+        {
+          "claim": "FY26 guidance: subscription $15,760-$15,780m, op margin 31.5%, FCF margin 35%; Q3 subscription $3,975-$3,980m",
+          "status": "CONFIRMED",
+          "source": "Q2 release 0001373715-26-000072 outlook tables"
+        },
+        {
+          "claim": "Scenarios -5.3% / +16.3% / +29%",
+          "status": "RESTATED",
+          "source": "Scenario fair values $77 / $126 / $206 (bear 11% at 10.5%, base 16% at 9.8%, bull 21% at 9.2%) converging in 3 years: -8.6% / +7.0% / +25.5% a year"
+        },
+        {
+          "claim": "No filing after cutoff",
+          "status": "CONFIRMED",
+          "source": "EDGAR CIK 1373715: last 8-K 0001373715-26-000072 (22 Jul); later items are Forms 4/144 and S-8s (20 Aug)"
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "WATCH",
+      "old_implied": "below",
+      "new_implied": "above",
+      "scenario_returns_3y": {
+        "bear": -0.086,
+        "base": 0.07,
+        "bull": 0.255
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria",
+        "key_adverse_facts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "note": "Corrected inputs (FCF after SBC $2.98 per share, 9.8% rate, terminal 3.5%) put the price at the top of the base-case growth range with fair value about 7% below the price; net cash is net debt; DOJ matter open. Revisit below about $110 (value at 14% growth) or if FCF after SBC tracks the $3.1bn guide on 28 Oct. Kill criterion on Moveworks dropped (withdrawn by lead 26 Sep); FCF-margin criterion moved to trailing-year basis because quarters are seasonal; SBC criterion added."
+    }
+  }
+}

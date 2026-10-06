@@ -1,0 +1,112 @@
+{
+  "agent": "F89",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "NDSN": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Precision dispensing equipment maker with sticky recurring parts revenue, growth reaccelerating on an electronics upcycle, but priced richly for it.",
+      "kill_criteria": [
+        "Organic revenue growth <3% for two consecutive quarters",
+        "Consolidated net debt/EBIT rises back above 3.0x",
+        "Full-year guidance is cut (vs. the raised Aug-2026 range of $3,035-3,075M sales / $11.80-12.00 adjusted EPS)",
+        "FCF/NI conversion falls below 0.8x for two consecutive quarters",
+        "A debt-funded acquisition >$500M is announced before net debt/EBIT falls below 1.5x"
+      ],
+      "key_adverse_facts": [
+        "25-27x NTM/FY0 P/E is at the rich end for a cyclical industrial with a history of lumpy electronics-capex demand",
+        "GAAP-vs-adjusted EPS gap (~$0.52/qtr) is real recurring acquisition-intangible amortization from Atrion/CyberOptics, not a one-off",
+        "Q3 FY26 12% organic growth is partly an easy comp against a soft FY25"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-12-10",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - strong recurring-revenue business and confirmed guidance raise, but limited insider-trading and short-interest review at this depth, and valuation leaves little margin of safety",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for NDSN. My own simplified reverse-DCF (Gordon-growth on FCF yield) implies ~5.3%/yr FCF growth at an ~8.7% WACC, below my ~6-8%/yr base case, so implied_vs_base is 'below' despite the multiple looking full in absolute terms."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.08,
+        "base": 0.07,
+        "bull": 0.18
+      },
+      "scenario_basis": "Starting FY26E adjusted EPS ~$11.90 (company guidance midpoint), NTM P/E 25.3x now; bear = organic growth stalls to 0-2%, multiple compresses to ~18x; base = mid-single-digit organic growth continues, multiple holds ~24-26x; bull = electronics upcycle persists into FY27-28 with bolt-on M&A, multiple re-rates toward 28x; dividend ~1.0%/yr added in all cases."
+    },
+    "NEM": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "World's largest gold miner generating record free cash flow and holding net cash, priced as if that cash flow will shrink, not grow.",
+      "kill_criteria": [
+        "Gold spot price falls and stays below $3,200/oz for two consecutive quarters",
+        "Company-guided AISC rises above $2,000/oz for two consecutive quarters",
+        "Net cash position (LT debt minus cash, consolidated) turns to net debt greater than $2B",
+        "Quarterly attributable gold production falls more than 10% YoY without an offsetting price effect already priced in",
+        "Full-year guidance is missed (not just 'on track') in two consecutive quarterly releases"
+      ],
+      "key_adverse_facts": [
+        "~90%+ of revenue is a single commodity (gold); earnings quality is a function of price, not diversified execution",
+        "Triage's cited realized price (~$4,900/oz) does not match the Q2 2026 realized price of $4,414/oz reported in the primary release - corrected in this dossier",
+        "Aggressive capital returns ($1.9B in Q2 2026 alone) are funded by the price windfall, not underlying volume growth (production is roughly flat)"
+      ],
+      "data_conflicts": [
+        "V1's own scenario table for NEM is internally broken: the bear case shows a negative absolute stock price (price_yr3 = -18.91, impossible for equity) and the base case's -28.7%/yr annualised return is inconsistent with that same case's assumed +7.9% revenue growth and +6.4pt margin expansion. V1's core DCF output (implied 10y growth -1.8% at WACC 8.3%) is adopted; V1's bear/base/bull scenario returns are NOT adopted and are replaced with my own below."
+      ],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium - the cash-flow and balance-sheet facts are solid and well-sourced, but confidence in the multi-year thesis is capped by full dependence on an external, uncontrollable input (gold price)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "fair",
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": false,
+        "reconciliation": "I agree with V1's core DCF (implied 10y growth -1.8%/yr, well below historical 12.8-15.6% CAGR and consensus +9.1%), which argues 'cheap', not merely 'fair'. V1's headline 'fair' verdict is driven by its verdict-score formula and a broken scenario table (see data_conflicts) rather than by the core DCF math; I score this closer to cheap given the magnitude of the gap between implied and delivered/consensus growth, while still sizing it small given single-commodity risk."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.11,
+        "base": 0.04,
+        "bull": 0.22
+      },
+      "scenario_basis": "Starting TTM EPS ~$8.06 (NI $8.60B / ~1.067B diluted shares); bear = gold reverts to $3,200-3,400/oz, EPS falls to ~$4.50-5.00 by yr3, multiple compresses to 9x trough; base = gold holds $4,000-4,500/oz, EPS roughly flat to modestly down to ~$8.50 by yr3, multiple holds ~12x NTM; bull = gold rises toward $5,500+/oz, EPS grows to ~$11-12, multiple re-rates to 15x on the net-cash balance sheet; dividend ~0.9%/yr added in all cases."
+    },
+    "NWS": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Dow Jones (WSJ), realtor.com and HarperCollins are growing digital/data revenue faster than the market prices in, but the Murdoch family controls the votes.",
+      "kill_criteria": [
+        "Total Segment EBITDA growth (company's primary metric) turns negative for two consecutive quarters",
+        "Dow Jones digital-only subscriber count (WSJ) declines YoY for two consecutive quarters",
+        "Consolidated net debt exceeds $1.5B net (vs. today's ~$106M net cash) without a value-accretive acquisition to show for it",
+        "Move/realtor.com segment revenue growth turns negative, breaking its seven-quarter growth streak, for two consecutive quarters",
+        "Any transaction increasing Murdoch-family voting concentration without a minority-shareholder vote"
+      ],
+      "key_adverse_facts": [
+        "Dual-class structure: NWS (Class B) is ~35% insider-held versus NWSA (Class A) at ~0.04%, entrenching family control regardless of performance",
+        "FY2026 total-company GAAP net income ($573M) looks like a decline versus FY2025 ($1,180M), but FY2025 was inflated by a large one-off gain on the April-2025 completion of the Foxtel-to-DAZN sale; continuing-operations Q4 FY26 net income actually rose 167% YoY - flagged to prevent the exact GAAP/adjusted mixing error the wave-3 lessons warn about",
+        "Daily September-2026 8-Ks (routine buyback disclosures, believed) were not individually opened in this pass"
+      ],
+      "data_conflicts": [
+        "Prior triage cited '45% guided EPS growth'; consensus data (D4 snapshot) shows +11.8% (FY0) / +14.6% (FY1) EPS growth, and News Corp does not issue formal point guidance. The 45% figure could not be reconciled to any primary-source number found in this pass and should not be relied on."
+      ],
+      "next_earnings_date": "2026-11-05",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - the digital-growth thesis (Dow Jones, Move) is well-supported by the primary FY2026 release, but the market-cap/FCF-yield inputs used for valuation required an approximation across the two share classes (disclosed limitation), and the daily buyback 8-Ks were not individually verified",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for NWS or NWSA. My own simplified reverse-DCF implies ~2.3%/yr FCF growth at an ~8.2% WACC, versus a ~6-8%/yr base case built from FY2026's Total Segment EBITDA growth (+15%) and Dow Jones/Move momentum, so implied_vs_base is 'below', supporting INCLUDE rather than WATCH, though sized small for governance risk."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.07,
+        "base": 0.09,
+        "bull": 0.19
+      },
+      "scenario_basis": "Starting FY26 adjusted continuing-ops EPS run-rate (Q4 annualised ~$1.40); NTM P/E ~19-23x across classes now; bear = Dow Jones subscriber growth stalls and print/News Media declines accelerate, multiple compresses to ~14x; base = Total Segment EBITDA growth normalizes to high-single-digit, multiple holds ~19-21x; bull = digital pricing power and Move growth continue, multiple re-rates to ~24x; dividend ~0.7-0.8%/yr added in all cases; NWSA and NWS share the same underlying-business scenario, differing only by the voting-premium spread observed today."
+    }
+  }
+}

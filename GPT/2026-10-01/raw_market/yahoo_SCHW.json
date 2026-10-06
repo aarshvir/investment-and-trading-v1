@@ -1,0 +1,193 @@
+{
+  "ticker": "SCHW",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/SCHW?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:46.440876+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "SCHW",
+            "exchangeName": "NYQ",
+            "fullExchangeName": "NYSE",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 559315800,
+            "regularMarketTime": 1790798402,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 97.74,
+            "regularMarketChangePercent": -1.372,
+            "fulldayPrice": 97.74,
+            "fulldayChange": -1.36,
+            "fulldayChangePercent": -1.372,
+            "fiftyTwoWeekHigh": 114.53,
+            "fiftyTwoWeekLow": 83.96,
+            "regularMarketDayHigh": 99.02,
+            "regularMarketDayLow": 97.685,
+            "regularMarketVolume": 10234033,
+            "longName": "The Charles Schwab Corporation",
+            "shortName": "Charles Schwab Corporation (The",
+            "chartPreviousClose": 99.5,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "end": 1790775000,
+                "start": 1790755200,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "end": 1790798400,
+                "start": 1790775000,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "end": 1790812800,
+                "start": 1790798400,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "high": [
+                  100.0,
+                  100.61000061035156,
+                  99.01000213623047,
+                  99.12999725341797,
+                  99.0199966430664
+                ],
+                "close": [
+                  99.48999786376953,
+                  99.02999877929688,
+                  98.30000305175781,
+                  99.0999984741211,
+                  97.73999786376953
+                ],
+                "open": [
+                  99.6500015258789,
+                  99.5199966430664,
+                  98.79000091552734,
+                  98.06999969482422,
+                  98.93000030517578
+                ],
+                "low": [
+                  98.05999755859375,
+                  98.37000274658203,
+                  97.75,
+                  97.4000015258789,
+                  97.68499755859375
+                ],
+                "volume": [
+                  8905800,
+                  7528000,
+                  6030600,
+                  8084900,
+                  10234033
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  99.48999786376953,
+                  99.02999877929688,
+                  98.30000305175781,
+                  99.0999984741211,
+                  97.73999786376953
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 99.48999786376953,
+      "adjclose": 99.48999786376953,
+      "open": 99.6500015258789,
+      "high": 100.0,
+      "low": 98.05999755859375,
+      "volume": 8905800
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 99.02999877929688,
+      "adjclose": 99.02999877929688,
+      "open": 99.5199966430664,
+      "high": 100.61000061035156,
+      "low": 98.37000274658203,
+      "volume": 7528000
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 98.30000305175781,
+      "adjclose": 98.30000305175781,
+      "open": 98.79000091552734,
+      "high": 99.01000213623047,
+      "low": 97.75,
+      "volume": 6030600
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 99.0999984741211,
+      "adjclose": 99.0999984741211,
+      "open": 98.06999969482422,
+      "high": 99.12999725341797,
+      "low": 97.4000015258789,
+      "volume": 8084900
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 97.73999786376953,
+      "adjclose": 97.73999786376953,
+      "open": 98.93000030517578,
+      "high": 99.0199966430664,
+      "low": 97.68499755859375,
+      "volume": 10234033
+    }
+  ],
+  "currency": "USD",
+  "symbol": "SCHW",
+  "regular_market_time": 1790798402,
+  "close_sep30": 97.73999786376953,
+  "session_match": true
+}

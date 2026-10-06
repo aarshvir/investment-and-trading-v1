@@ -1,0 +1,66 @@
+# NCLH - Norwegian Cruise Line Holdings Ltd. (NYSE: NCLH) - diligence dossier (agent F161, wave 8)
+
+**Verdict: WATCH.** The headline cheapness (about 9.7x 2026 guided EPS) is real, but it prices a business with a new CEO, falling yields, two guidance cuts, 5.3x net leverage and negative free cash flow. Implied growth is about equal to my base case, so there is no margin of safety against a leveraged equity whose EPS moves about 11% for each 1% of net yield. Thesis horizon 24-36 months. Upgrade condition: net yield decline narrowing to better than -3% for the Q4'26 quarter, booked position back to normal, and net leverage on a clear path below 4.5x. Triage (Q02, advance=false) is partly overturned on one point: the P/E is not the issue, the unfunded-equity risk is; I do not override the non-advance outcome.
+
+## 1. Business in plain English
+NCLH operates three cruise brands (Norwegian Cruise Line, Oceania, Regent Seven Seas): 35 ships and about 75,000 berths at 30 Jun 2026 (10-Q), with 16 ships on order through 2037. It sells cruise tickets plus onboard spending (Q2'26 revenue $2.64B: ticket $1.73B, onboard and other $0.91B). Customers book months ahead and pay deposits (advance ticket sales $3.65B). Profit depends on capacity growth versus demand (net yield), unit costs, fuel and a heavy, mostly export-credit-financed newbuild programme. The triage called it the weakest balance sheet in the cruise group (peer comparison not independently verified here).
+
+## 2. Why the model likes it, and is that durable
+b1/d4 context: ROE 29.6% (flattered by only $2.6B of equity), gross profit/assets 0.18, earnings surprise strong (standardised surprise 1.06; 6 beats in the last 8 quarters), low multiples (d4 P/E NTM 8.9x, FY26 9.5x, FY27 8.7x). Offsetting: leverage 0.63, 12-1 month momentum -34%, d4 FCF yield -25%. Durability is doubtful: the earnings are being cut (d4: 21 downward FY26 EPS revisions in 30 days; FY27 consensus down 17% in 90 days; 10 price-target cuts vs 5 raises in 90 days).
+
+## 3. Last five quarters ($M; GAAP unless labelled)
+| Quarter | Revenue | GAAP op. income (margin) | GAAP dil. EPS | Adj. EPS (non-GAAP) | Adj. EBITDA (non-GAAP) |
+|---|---|---|---|---|---|
+| Q2'25 | 2,517.5 | 423.8 (16.8%) | 0.07 | about 0.51 | 694 |
+| Q3'25 | 2,938.1 | 749.4 (25.5%) | 0.86 | 1.20 | 1,019 |
+| Q4'25 | 2,244.4 | 186.6 (8.3%) | 0.03 | 0.28 | 564 |
+| Q1'26 | 2,331.2 | 232.9 (10.0%) | 0.23 | 0.23 | 533 |
+| Q2'26 | 2,640.5 | 363.3 (13.8%) | 0.48 | 0.48 | 666 |
+
+(Q2'25 adjusted EPS derived from the Q2'26 release (0001171843-26-005050), which says "decreased 6.6% to $0.48".) Q2'26 vs Q2'25: revenue +4.9% on capacity; operating income -14.3% ($363.3M vs $423.8M); adjusted EBITDA -4.1%; net yield -2.6% constant currency; gross margin per capacity day -11.6%. GAAP net income $222.6M vs $30.0M is distorted by foreign-exchange gains of $36.1M vs losses of $158.5M (10-Q); interest expense $170.9M vs $236.8M. Operating income margin fell 300 bps; 10-Q cost lines: payroll $394.6M vs $346.1M. Material variances (>10%): operating income and gross margin per capacity day (down), net income (up, FX).
+
+Cash flow, consolidated (OCF less "additions to property and equipment, net"): Q1'26 $811.5M - $1,436.7M = $(625.2)M; Q2'26 $602.6M - $457.7M = $144.9M; H1'26 $(480.3)M; FY25 $2,089.7M - $3,259.6M = $(1,169.9)M. Newbuild-and-growth capex (Q2'26 release table): gross about $2.9B in 2026 and $2.9B in 2027, with export-credit financing of about $1.6B and $2.0B, so net of financing about $1.4B and $0.9B.
+
+Condensed consolidated balance sheet, 30 Jun 2026 vs 31 Dec 2025: cash $218.1M vs $209.9M; current portion of long-term debt $1,141.4M vs $875.9M; long-term debt $13,893.4M vs $13,730.3M; advance ticket sales $3,651.2M vs $3,200.6M; total liabilities $21,438.8M vs $20,331.5M; shareholders' equity $2,572.9M vs $2,209.9M.
+
+## 4. Guidance track record (verbatim; adjusted measures are non-GAAP)
+- **Q3'25 release (Ex 99.1, 0001171843-25-006936, 4 Nov 2025):** guidance table: Q4 "Adjusted EBITDA ~$555 million", full year "~$2.72 billion"; "Adjusted EPS ~$0.27" and "~$2.10". Outcome (Q4'25 release): EBITDA "$564 million ... exceeding guidance of $555 million"; adjusted EPS "$0.28, exceeding guidance of $0.27". Met/beat.
+- **Q4'25 release (0001171843-26-001220, 2 Mar 2026):** "2026 full year Adjusted EBITDA is expected to be approximately $2.95 billion." "Adjusted EPS is expected to be $2.38." "Net Leverage is expected to end the year at ~5.2x." Initial 2026 range (replaced the earlier long-term targets).
+- **Q1'26 release (0001171843-26-002957, 4 May 2026):** table row "Adjusted EPS ~$0.38 $1.45 to $1.79" and "Adjusted EBITDA ~$632 million $2.48 billion to $2.64 billion"; headline "Company lowered full year 2026 guidance with Adjusted EPS expected to be $1.45 to $1.79." CUT versus prior: EPS midpoint $2.38 to $1.62 (-32%); EBITDA midpoint $2.95B to $2.56B (-13%).
+- **Q2'26 release (0001171843-26-005050, 30 Jul 2026):** "2026 full year Adjusted EBITDA is expected to be approximately $2.5 billion." "Adjusted EPS is expected to be approximately $1.50." "Q3 2026 Adjusted EBITDA is expected to be $874 million". Cut again (EPS midpoint $1.62 to $1.50, EBITDA midpoint $2.56B to $2.50B) despite Q2 beats: adjusted EBITDA $666M "above guidance of $632 million", adjusted EPS $0.48 "above guidance of $0.38". Pattern: beat the quarter, cut the year. The Q3 guide implies net yield "decline 8.9%" in constant currency and EBITDA $874M versus $1,019M in Q3'25 (-14%).
+
+## 5. Earnings quality and balance sheet (entity: NCLH consolidated, including NCL Corporation Ltd.)
+- **Leverage (consolidated, Q2'26 release):** "total debt of $15.0 billion and Net Debt of $14.8 billion. Net Leverage ended the quarter at 5.3x"; liquidity $1.5B (cash $218M plus $1.3B undrawn revolver). Basis note: the $15.0B and $14.8B are company-defined (long-term debt including current portion, principal basis, 30 Jun 2026; net debt after $218.1M cash); balance-sheet carrying value (current plus long-term, consolidated) is $15,034.8M, and the SEC XBRL tag I cross-checked (a different debt concept, $13,979M) is a lower, narrower measure.
+- **Maturities (10-Q commitments table, principal plus estimated interest; excludes refinancings):** remainder 2026 $792M, 2027 $1,702M, 2028 $1,894M, 2029 $1,856M, 2030 $4,324M. Ship construction contracts for 12 effective ships total about $19.5B ($18.6B payments schedule), of which committed undrawn export-credit facilities of about $10.9B fund roughly 80% (excluding four later-dated ships).
+- **Cash conversion:** OCF H1'26 $1,414M is supported by advance ticket sales (+$482M); capex $1,894M. Equity free cash flow is negative until the newbuild cycle is financed; refinancing reliance is high.
+- **GAAP vs adjusted:** adjusted net income excludes FX, severance ($17.7M H1) and activist-related advisory fees ($5.2M H1); FY26 adjusted EPS about $1.50 versus GAAP H1 EPS $0.71. Share count: 459.2M at 30 Jun 2026 vs 455.3M at 31 Dec 2025; exchangeable notes due 2027 are being settled in cash, reducing 2026 diluted shares by about 4M.
+- **Savings:** about $125M plus about $100M of annualised run-rate cost savings announced; management says benefits will have "limited impact on 2026 financial results".
+
+## 6. Valuation and V1 reconciliation
+- **V1:** no row for NCLH in v1_valuation_table.csv; v1_verdict = null.
+- **25 Sep 2026 close (d4):** $14.61; market cap $6.71B; EV about $21.5B (market cap + consolidated net debt $14.8B); EV/2026E EBITDA about 8.6x; P/E about 9.7x guided $1.50; Street mean target $20.20 (25 analysts, range $13-$32).
+- **Reverse DCF (my calculation):** on equity, starting owner earnings $0.55B (below guided non-GAAP adjusted net income of about $700M (not GAAP net income, which was $222.6M in Q2'26) to be conservative on GAAP items), cost of equity 12%, terminal growth 2%: the price implies about 4% ten-year growth. On an enterprise basis with maintenance capex set equal to D&A ($1.085B), starting unlevered FCF $1.4B, WACC 9%: about 3%. The market is pricing roughly no growth.
+- **My cases:** bear -3% (yields keep falling, leverage stuck above 5x), base about 4-5% (2029 adjusted EPS $2.10 as cost savings and Great Stirrup Cay offset capacity-driven yield dilution), bull 9%. Implied is about equal to base; implied_vs_base = in_line. The verdict is WATCH rather than INCLUDE-SMALL because estimates are still falling and equity is a thin slice of a $21.5B enterprise.
+
+## 7. Bull and bear
+Bull: (1) cost discipline (more than $500M identified over three years) and record deliveries underpin EBITDA of about $2.5B; (2) Great Tides Waterpark opens 4 Sep 2026 and could lift Caribbean demand; (3) 9.7x EPS with a CEO and five new independent directors focused on execution.
+Bear: (1) company-specific demand weakness at NCL ("below its optimal booked position for the next 12 months") plus Middle East conflict; (2) net leverage 5.3x, negative FCF and $18.6B of scheduled ship payments (10-Q); (3) the 2026 EPS guide has been cut by 37% in four months and Q3 net yield guide is -8.9%.
+
+## 8. Kill criteria / exit triggers (measurable)
+1. Full-year 2026 adjusted EBITDA guidance below $2.50B, or Q3'26 adjusted EBITDA below $874M.
+2. Q4'26 constant-currency net yield decline worse than -5%, or FY27 initial guidance of negative net yield.
+3. Net leverage (company definition: net debt / TTM adjusted EBITDA, consolidated) above 5.5x at any quarter-end, or liquidity below $1.0B.
+4. Full-year 2026 adjusted EPS guidance below $1.40.
+5. Eleventh Circuit remand reinstating the $112.9M Havana Docks judgment, or any new covenant waiver.
+
+## 9. Catalysts and calendar
+Q3'26 earnings 4 Nov 2026 (d4, confirmed); Great Tides Waterpark opening 4 Sep 2026; Oceania Sirena sale expected to close Q3'26; 2027 booking curve; export-credit drawdowns.
+
+## 10. Red-flag scan
+No auditor change, going-concern language or material weakness in the Q2'26 10-Q text searched. Management turmoil: new CEO John Chidsey appointed Feb 2026 (Q4'25 release: "execution and cross-functional alignment have fallen short"); five new independent directors effective 31 Mar 2026; the 10-Q reports professional fees "related to activist investors" ($5.2M in H1'26). Litigation (10-Q, Note 10): Havana Docks Helms-Burton case, $112.9M judgment entered 30 Dec 2022, reversed by the Eleventh Circuit 22 Oct 2024, Supreme Court reversed that dismissal on 21 May 2026 and remanded on 22 Jun 2026; the company calls loss "reasonably possible but not probable" and records no liability. Florida AG COVID-marketing investigation resolved. Insider Form 4 pattern: not reviewed in this pass. d4: 95.0M shares short (about 20.7% of shares outstanding). Data conflicts: d4 trailing P/E 8.9x uses TTM EPS $1.65 versus 2026 guided adjusted EPS of $1.50; d4 FCF of $(1.68)B is before export-credit financing of capex.
+
+## 11. Sources
+1. NCLH 8-K Ex 99.1 Q3'25, 0001171843-25-006936 (4 Nov 2025). 2. Q4'25, 0001171843-26-001220 (2 Mar 2026). 3. Q1'26, 0001171843-26-002957 (4 May 2026). 4. Q2'26, 0001171843-26-005050 (30 Jul 2026). 5. 10-Q for 30 Jun 2026, 0001104659-26-089657 (filed 3 Aug 2026). 6. 10-K for 2025, 0001104659-26-022067 (2 Mar 2026, referenced only). 7. d4_live_snapshot.parquet (25 Sep 2026), b1_live_scores.csv, Q02_triage.json. Cache: C:\Users\user\eqv4\cache\F161.
+
+## Data basis, recency and disclaimer
+Most recent period incorporated: quarter ended 30 Jun 2026 (10-Q accession 0001104659-26-089657, filed 3 Aug 2026); events checked to 2026-09-25 through the quant snapshot only (no later filings opened). Adjusted EPS, adjusted EBITDA, net yield and net leverage are non-GAAP and labelled; GAAP otherwise. Entity scope: NCLH consolidated. Research, not personal investment advice.

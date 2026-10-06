@@ -1,0 +1,125 @@
+{
+ "agent": "F162",
+ "as_of": "2026-09-25",
+ "tickers": {
+  "OKE": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "A pipeline operator moving Permian gas and liquids to the Gulf Coast, using a fixed-return outside investor to fund growth and cut debt.",
+   "horizon": "12-36 months",
+   "key_adverse_facts": [
+    "Apollo $9bn Class B interest (closed 2026-09-10) is structurally ahead of common equity and takes 15% of OpCo cash flow, with return capped at 7.0% IRR for nine years",
+    "H1 2026 Natural Gas Pipelines EBITDA includes +$169m from Waha-Katy price differentials (spread-driven, not contracted)",
+    "Consolidated net debt/TTM adj. EBITDA ~3.9x at 30 Jun 2026; dividends (~$2.64bn TTM) barely covered by OCF less capex and affiliate contributions",
+    "$1bn at-the-market common equity program signed 2026-08-04; Brazos Midland $4.425bn deal still needs HSR clearance",
+    "Latest guidance (3 Aug 2026) predates Brazos and Class B; company has not republished"
+   ],
+   "data_conflicts": [
+    "Triage cited leverage 4.3x and FCF yield 1.6%; filings give ~3.9x consolidated TTM and OCF-minus-capex yield ~5.2% (Yahoo FCF field of $0.9bn deducts affiliate contributions and other investing)"
+   ],
+   "next_earnings_date": "2026-10-27",
+   "next_earnings_note": "estimate from prior-year pattern (Q3 2025 reported 2025-10-28); not confirmed in filings",
+   "confidence_in_thesis": "medium: contracted fee-based volumes and two guidance raises, offset by new subordinated Class B claim, spread-driven earnings and unpublished pro forma guidance",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "fair",
+    "consistent": true,
+    "reconciliation": "No V1 row exists for OKE. Reverse DCF implies ~0.9% 10-year unlevered FCF growth at 7.5% WACC versus ~3.5% base, so implied is below base.",
+    "implied_vs_base": "below"
+   },
+   "scenario_returns_3y": {
+    "bear": -0.053,
+    "base": 0.074,
+    "bull": 0.143
+   },
+   "scenario_basis": "Start 2026 guided EPS $5.68 (pre-Class B), pro forma 2027 ~$5.9 after ~$0.62bn Class B income; base EBITDA growth ~5%/yr to 2029 EPS ~$6.65, exit 14.5x, dividend $4.28 growing 3%/yr (~$13.5 cumulative); bear 2029 EPS $5.2 at 12x; bull $7.4 at 16x.",
+   "kill_criteria": [
+    "Consolidated debt less cash divided by TTM adjusted EBITDA (earnings-release reconciliation) above 3.75x at any quarter-end after Brazos closes, or still above 3.9x at the June 2027 quarter.",
+    "Adjusted EBITDA 2026 guidance cut below the $8.2bn low end, or any later guidance midpoint below $9.0bn for 2027 including Brazos.",
+    "Quarterly common dividend cut below $1.07 per share.",
+    "NGL raw feed throughput below 1,450 MBbl/d (low end of 2026 volume guidance) for two consecutive quarters.",
+    "Common equity issuance above the $1bn at-the-market program, or further minority/preferred capital above $2bn."
+   ]
+  },
+  "FISV": {
+   "verdict": "WATCH",
+   "thesis_one_line": "Software and card-payment company for banks and merchants whose sales are shrinking; the share price already assumes steady decline.",
+   "horizon": "12-36 months",
+   "key_adverse_facts": [
+    "Organic revenue -5% in Q2 2026 (Merchant -1%, Financial -8%); adjusted operating margin 31.8% vs 39.6%",
+    "FY26 guidance cut on 2026-08-06: adjusted EPS $8.00-8.30 to $7.20-7.40 and organic revenue +1% to +3% to (1%)-0%, three months after being maintained on 2026-05-05",
+    "President resigned for good reason 2026-07-07; Chief Administrative and Chief Legal Officer resigned 2026-09-16",
+    "Securities class action in SDNY (No. 1:25-cv-06094) over Clover growth and Argentina statements, class period 2024-02-06 to 2025-10-28",
+    "Restructuring add-backs recur (H1 2026 transformation $329m + severance $113m); buybacks cut to $300m in H1 from $5.9bn in FY25; net debt ~3.7x adj. EBITDA (estimate)"
+   ],
+   "data_conflicts": [
+    "Triage said guidance was cut twice within 2026; the 2026-05-05 release maintained it and the only 2026 cut is 2026-08-06",
+    "Company-defined FCF ($4.25bn TTM) adds back severance/transformation payments; OCF minus capex is ~$3.9bn"
+   ],
+   "next_earnings_date": "2026-10-28",
+   "next_earnings_note": "estimate from prior-year pattern (Q3 2025 reported 2025-10-29); not confirmed",
+   "confidence_in_thesis": "low: cheap on cash flow but trend, leadership and guidance credibility are all deteriorating; floor unproven",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "cheap",
+    "consistent": true,
+    "reconciliation": "No V1 row exists for FISV. Reverse DCF on equity cash flow (cost of equity 11%) implies about -4.6%/yr 10-year growth versus ~+0.5% base, so implied is below base; WATCH because of the show-me conditions, not valuation.",
+    "implied_vs_base": "below"
+   },
+   "scenario_returns_3y": {
+    "bear": -0.108,
+    "base": 0.079,
+    "bull": 0.248
+   },
+   "scenario_basis": "Start FY26 adjusted EPS guide midpoint $7.30 (non-GAAP); base 2029 adjusted EPS $7.8 (~2%/yr incl. buybacks) at 7.5x = $58.5; bear $5.5 at 6x; bull $9.5 at 9.5x; no dividend.",
+   "kill_criteria": [
+    "Organic revenue worse than -6% in any quarter, or no better than -3% by Q1 2027.",
+    "FY2026 adjusted EPS guidance cut below $7.20 (the low end), or FY2026 adjusted EPS delivered below $7.20.",
+    "Net debt (consolidated debt less cash, excl. settlement assets) divided by adjusted EBITDA above 4.0x.",
+    "Company-defined free cash flow for FY2026 below $3.5bn (H1 was $1.36bn).",
+    "SEC enforcement action, restatement or auditor qualification connected to Clover revenue recognition."
+   ]
+  },
+  "PFE": {
+   "verdict": "WATCH",
+   "thesis_one_line": "A global drugmaker priced cheaply and paying a 6% dividend, but profits look flat as key medicines face lower prices and generics.",
+   "horizon": "12-36 months",
+   "key_adverse_facts": [
+    "H1 2026 adjusted EPS $1.52 vs $1.69 (-10%); Q2 GAAP loss $(0.04) after $4.3bn of intangible impairments",
+    "TTM OCF minus capex ~$11.0bn covers dividends (~$9.8bn) only ~1.1x; debt $63.2bn, net debt ~$51.5bn; no buybacks in 2026",
+    "US price pressure: Eliquis negotiated price effective 2026-01-01, Ibrance and Xtandi 2027, MFN/TrumpRx agreements, Section 232 pharma tariffs effective for Pfizer 2026-07-31",
+    "COVID revenue outlook cut to ~$4bn from ~$5bn; $650m Innovent IPR&D charge (~$0.10) lands in Q3 2026",
+    "CFO transition (interim CFO named in Aug 2026 release); Zantac MDL and Chantix class actions ongoing"
+   ],
+   "data_conflicts": [
+    "Yahoo trailing EPS $0.76 reflects impairments; adjusted EPS guidance is $2.80-3.00",
+    "Yahoo total debt $63.48bn vs XBRL carrying $63.19bn (basis difference)"
+   ],
+   "next_earnings_date": "2026-11-03",
+   "next_earnings_note": "estimate from prior-year pattern (Q3 2025 reported 2025-11-04); not confirmed",
+   "confidence_in_thesis": "low-medium: reliable EPS guidance record, but post-2027 growth bridge unproven and patent-expiry dates not verified in this pass",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "fair",
+    "consistent": true,
+    "reconciliation": "No V1 row exists for PFE. Reverse DCF on equity FCF (cost of equity 8.5%) implies ~+2.4%/yr 10-year growth versus ~-1% base, so implied is above base.",
+    "implied_vs_base": "above"
+   },
+   "scenario_returns_3y": {
+    "bear": -0.045,
+    "base": 0.064,
+    "bull": 0.181
+   },
+   "scenario_basis": "Start 2026 adjusted EPS guide midpoint $2.90 (non-GAAP); base 2029 EPS $2.80 at 10.5x = $29.4 plus dividend $1.72 x3 = $5.16; bear $2.2 at 9x; bull $3.5 at 12x.",
+   "kill_criteria": [
+    "FY2026 adjusted EPS guidance cut below $2.80 (the current low end).",
+    "Common dividend cut, or TTM OCF minus capex below TTM dividends paid for two consecutive quarters.",
+    "Net debt (consolidated debt less cash and short-term investments) above $55bn.",
+    "Launched and acquired products' operational revenue growth below 10% for two consecutive quarters (Q2'26: 18%).",
+    "FY2027 revenue guidance midpoint below $58bn when issued."
+   ]
+  }
+ }
+}

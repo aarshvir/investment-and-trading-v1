@@ -1,0 +1,177 @@
+{
+  "ticker": "ABNB",
+  "prepared_date": "2026-09-26",
+  "decision": "AVOID CURRENT PRICE; BUY BELOW",
+  "limit_price": 120,
+  "hurdle": 0.13,
+  "reference_price": 151.39,
+  "reference_date": "2026-09-24",
+  "newer_observation": {
+    "date": "2026-09-25",
+    "header_close": 157.47,
+    "history_row_close": 157.25,
+    "status": "display disagreement retained; using corroboratedSept24reference"
+  },
+  "target_date": "2029-09-25",
+  "terminal_earnings_period": "FY2029endingDecember2029; threemonthsforwardfromSeptember2029exit",
+  "terminal_multiple_basis": "currentFYforecastEPS,nottrailingEPS",
+  "units": "USDbillions exceptpershare",
+  "price_source": "https://stockanalysis.com/stocks/abnb/history/",
+  "max_starter_weight_total_capital": 0.01,
+  "max_total_weight_total_capital": 0.015,
+  "sources": {
+    "annual": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000004/abnb-20251231.htm",
+    "q2": "https://www.sec.gov/Archives/edgar/data/1559720/000155972026000027/abnb-20260630.htm",
+    "letter": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526337928/d70413dex991.htm"
+  },
+  "reported": {
+    "fy2024_revenue": 11.102,
+    "fy2025_revenue": 12.241,
+    "fy2025_operating_income": 2.544,
+    "fy2025_net_income": 2.511,
+    "fy2025_sbc_cashflow": 1.592,
+    "fy2025_diluted_shares": 0.623,
+    "fy2025_interest_income": 0.705,
+    "q2_2026_revenue": 3.608,
+    "q2_2026_operating_income": 0.758,
+    "q2_2026_net_income": 0.816,
+    "q2_2026_diluted_shares": 0.597,
+    "q2_2026_sbc": 0.487,
+    "q2_2026_tax_benefit_prior_years": 0.077,
+    "h1_2026_revenue": 6.286,
+    "h1_2026_operating_income": 0.844,
+    "h1_2026_diluted_shares": 0.602,
+    "h1_2026_sbc": 0.897,
+    "q2_2026_fcf": 1.253,
+    "ttm_company_fcf": 4.827
+  },
+  "earnings_baseline": {
+    "period": "FY2025andQ22026; do notannualizeseasonalQ2",
+    "definition": "normalizedoperatingprofitafterSBCplusrecurringnetinterest,ordinarytax; noinvestmentgainsornetcashpremium",
+    "q2_reported_gaap_eps": 1.37,
+    "q2_tax_normalized_eps": 1.1811055276381912
+  },
+  "management_guidance": {
+    "q3_2026_revenue_range": [
+      4.69,
+      4.77
+    ],
+    "fy2026_revenue_growth": "atleastmidteens",
+    "fy2026_adjusted_ebitda_margin_minimum": 0.355,
+    "fy2026_effective_tax": "highteens"
+  },
+  "scenarios": [
+    {
+      "name": "bear",
+      "fiscal_years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "revenue": [
+        13.95,
+        13.2525,
+        13.650075,
+        14.33257875
+      ],
+      "growth_after_fy2026": [
+        -0.05,
+        0.03,
+        0.05
+      ],
+      "terminal_operating_margin_includes_sbc": 0.17,
+      "terminal_net_interest_income": 0.2,
+      "terminal_tax_rate": 0.24,
+      "terminal_diluted_shares": 0.61,
+      "terminal_PE": 20,
+      "annual_dividends_per_share": [
+        0,
+        0,
+        0
+      ],
+      "terminal_operating_income": 2.4365383875,
+      "terminal_normalized_net_income": 2.0037691745000004,
+      "terminal_eps": 3.2848674991803284,
+      "terminal_price": 65.69734998360657,
+      "annualized_total_return_at_reference": -0.24290527379713966,
+      "annualized_total_return_at_limit": -0.18193301016598273,
+      "present_value_at_hurdle": 45.5315590673531
+    },
+    {
+      "name": "base",
+      "fiscal_years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "revenue": [
+        14.2,
+        15.904,
+        17.494400000000002,
+        18.893952000000002
+      ],
+      "growth_after_fy2026": [
+        0.12,
+        0.1,
+        0.08
+      ],
+      "terminal_operating_margin_includes_sbc": 0.26,
+      "terminal_net_interest_income": 0.35,
+      "terminal_tax_rate": 0.22,
+      "terminal_diluted_shares": 0.58,
+      "terminal_PE": 25,
+      "annual_dividends_per_share": [
+        0,
+        0,
+        0
+      ],
+      "terminal_operating_income": 4.9124275200000005,
+      "terminal_normalized_net_income": 4.1046934656000005,
+      "terminal_eps": 7.0770576993103465,
+      "terminal_price": 176.92644248275866,
+      "annualized_total_return_at_reference": 0.053331774958538025,
+      "annualized_total_return_at_limit": 0.13816134839376226,
+      "present_value_at_hurdle": 122.61889967389128
+    },
+    {
+      "name": "bull",
+      "fiscal_years": [
+        2026,
+        2027,
+        2028,
+        2029
+      ],
+      "revenue": [
+        14.6,
+        17.227999999999998,
+        19.812199999999997,
+        22.189664
+      ],
+      "growth_after_fy2026": [
+        0.18,
+        0.15,
+        0.12
+      ],
+      "terminal_operating_margin_includes_sbc": 0.3,
+      "terminal_net_interest_income": 0.45,
+      "terminal_tax_rate": 0.2,
+      "terminal_diluted_shares": 0.56,
+      "terminal_PE": 30,
+      "annual_dividends_per_share": [
+        0,
+        0,
+        0
+      ],
+      "terminal_operating_income": 6.6568992,
+      "terminal_normalized_net_income": 5.685519360000001,
+      "terminal_eps": 10.152713142857143,
+      "terminal_price": 304.5813942857143,
+      "annualized_total_return_at_reference": 0.26241475089067645,
+      "annualized_total_return_at_limit": 0.3640827223335832,
+      "present_value_at_hurdle": 211.0901847364811
+    }
+  ],
+  "base_hurdle_maximum_purchase_price": 122.61889967389128
+}

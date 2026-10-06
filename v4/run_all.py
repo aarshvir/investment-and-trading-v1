@@ -15,6 +15,10 @@ import argparse, os, pathlib, subprocess, sys, time
 V4 = pathlib.Path(__file__).resolve().parent
 CODE = V4 / 'code'
 PYLIB = os.environ.get('EQV4_PYLIB', r'C:\Users\user\eqv4\pylib')
+# 5 Oct 2026: Windows Application Control blocks pyarrow's _fs DLL on this machine. A fastparquet folder (whose
+# sitecustomize makes it pandas' parquet engine) goes first when present; verified to reproduce v011's risk figures exactly.
+if 'EQV4_PYLIB' not in os.environ and os.path.isdir(r'C:\Users\user\eqv4\pylib_fp'):
+    PYLIB = r'C:\Users\user\eqv4\pylib_fp' + os.pathsep + PYLIB
 
 STAGES = [   # (stage, scripts in order) - network stages first, offline stages last
     ('D1', ['d1_fetch_sources.py', 'd1_fja.py', 'd1_wiki.py', 'd1_wiki_snapshots.py', 'd1_wiki_reconstruct.py', 'd1_membership.py',
@@ -30,7 +34,7 @@ STAGES = [   # (stage, scripts in order) - network stages first, offline stages 
     ('B2', ['b2_run.py']),
     ('V1', ['v1_valuation.py']),
     ('checks', ['b2_tests.py', 'b1_tests.py', 'lead_check_daily_dd.py']),   # lead_check_risk_contrib.py runs after lead_risk (below)
-    ('lead', ['lead_build_portfolio.py', 'lead_risk.py', 'lead_check_risk_contrib.py', 'lead_j_sensitivity.py', 'lead_reconcile_v005.py', 'lead_views.py', 'lead_report_sections.py', 'lead_report_appendix.py', 'lead_assemble.py']),
+    ('lead', ['lead_build_portfolio.py', 'lead_risk.py', 'lead_check_risk_contrib.py', 'lead_j_sensitivity.py', 'lead_reconcile_v005.py', 'lead_views.py', 'lead_report_sections.py', 'lead_report_appendix.py', 'lead_all500.py', 'lead_assemble.py']),
 ]
 DEFAULT = ['checks', 'lead']
 

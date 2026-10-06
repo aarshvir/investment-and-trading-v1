@@ -1,0 +1,193 @@
+{
+  "ticker": "HST",
+  "url": "https://query1.finance.yahoo.com/v8/finance/chart/HST?range=5d&interval=1d",
+  "retrieved_utc": "2026-09-30T20:19:42.309832+00:00",
+  "http_status": 200,
+  "raw_response": {
+    "chart": {
+      "result": [
+        {
+          "meta": {
+            "currency": "USD",
+            "symbol": "HST",
+            "exchangeName": "NMS",
+            "fullExchangeName": "NasdaqGS",
+            "instrumentType": "EQUITY",
+            "firstTradeDate": 322151400,
+            "regularMarketTime": 1790798401,
+            "hasPrePostMarketData": true,
+            "gmtoffset": -14400,
+            "timezone": "EDT",
+            "exchangeTimezoneName": "America/New_York",
+            "regularMarketPrice": 22.39,
+            "regularMarketChangePercent": 0.674,
+            "fulldayPrice": 22.39,
+            "fulldayChange": 0.15,
+            "fulldayChangePercent": 0.674,
+            "fiftyTwoWeekHigh": 25.71,
+            "fiftyTwoWeekLow": 15.61,
+            "regularMarketDayHigh": 22.49,
+            "regularMarketDayLow": 22.18,
+            "regularMarketVolume": 7053236,
+            "longName": "Host Hotels & Resorts, Inc.",
+            "shortName": "Host Hotels & Resorts, Inc.",
+            "chartPreviousClose": 22.15,
+            "priceHint": 2,
+            "currentTradingPeriod": {
+              "pre": {
+                "timezone": "EDT",
+                "start": 1790755200,
+                "end": 1790775000,
+                "gmtoffset": -14400
+              },
+              "regular": {
+                "timezone": "EDT",
+                "start": 1790775000,
+                "end": 1790798400,
+                "gmtoffset": -14400
+              },
+              "post": {
+                "timezone": "EDT",
+                "start": 1790798400,
+                "end": 1790812800,
+                "gmtoffset": -14400
+              }
+            },
+            "dataGranularity": "1d",
+            "range": "5d",
+            "validRanges": [
+              "1d",
+              "5d",
+              "1mo",
+              "3mo",
+              "6mo",
+              "1y",
+              "2y",
+              "5y",
+              "10y",
+              "ytd",
+              "max"
+            ]
+          },
+          "timestamp": [
+            1790256600,
+            1790343000,
+            1790602200,
+            1790688600,
+            1790775000
+          ],
+          "indicators": {
+            "quote": [
+              {
+                "open": [
+                  22.110000610351562,
+                  22.239999771118164,
+                  22.420000076293945,
+                  22.68000030517578,
+                  22.200000762939453
+                ],
+                "volume": [
+                  7573900,
+                  6232600,
+                  9418300,
+                  6103000,
+                  7053236
+                ],
+                "close": [
+                  22.209999084472656,
+                  22.420000076293945,
+                  22.65999984741211,
+                  22.440000534057617,
+                  22.389999389648438
+                ],
+                "high": [
+                  22.280000686645508,
+                  22.459999084472656,
+                  22.899999618530273,
+                  22.8799991607666,
+                  22.489999771118164
+                ],
+                "low": [
+                  21.959999084472656,
+                  22.049999237060547,
+                  22.360000610351562,
+                  22.280000686645508,
+                  22.18000030517578
+                ]
+              }
+            ],
+            "adjclose": [
+              {
+                "adjclose": [
+                  22.209999084472656,
+                  22.420000076293945,
+                  22.65999984741211,
+                  22.440000534057617,
+                  22.389999389648438
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "error": null
+    }
+  },
+  "rows": [
+    {
+      "date_et": "2026-09-24",
+      "timestamp_utc": "2026-09-24T13:30:00+00:00",
+      "close": 22.209999084472656,
+      "adjclose": 22.209999084472656,
+      "open": 22.110000610351562,
+      "high": 22.280000686645508,
+      "low": 21.959999084472656,
+      "volume": 7573900
+    },
+    {
+      "date_et": "2026-09-25",
+      "timestamp_utc": "2026-09-25T13:30:00+00:00",
+      "close": 22.420000076293945,
+      "adjclose": 22.420000076293945,
+      "open": 22.239999771118164,
+      "high": 22.459999084472656,
+      "low": 22.049999237060547,
+      "volume": 6232600
+    },
+    {
+      "date_et": "2026-09-28",
+      "timestamp_utc": "2026-09-28T13:30:00+00:00",
+      "close": 22.65999984741211,
+      "adjclose": 22.65999984741211,
+      "open": 22.420000076293945,
+      "high": 22.899999618530273,
+      "low": 22.360000610351562,
+      "volume": 9418300
+    },
+    {
+      "date_et": "2026-09-29",
+      "timestamp_utc": "2026-09-29T13:30:00+00:00",
+      "close": 22.440000534057617,
+      "adjclose": 22.440000534057617,
+      "open": 22.68000030517578,
+      "high": 22.8799991607666,
+      "low": 22.280000686645508,
+      "volume": 6103000
+    },
+    {
+      "date_et": "2026-09-30",
+      "timestamp_utc": "2026-09-30T13:30:00+00:00",
+      "close": 22.389999389648438,
+      "adjclose": 22.389999389648438,
+      "open": 22.200000762939453,
+      "high": 22.489999771118164,
+      "low": 22.18000030517578,
+      "volume": 7053236
+    }
+  ],
+  "currency": "USD",
+  "symbol": "HST",
+  "regular_market_time": 1790798401,
+  "close_sep30": 22.389999389648438,
+  "session_match": true
+}

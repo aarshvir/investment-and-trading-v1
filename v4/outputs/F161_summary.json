@@ -1,0 +1,121 @@
+{
+ "agent": "F161",
+ "as_of": "2026-09-25",
+ "tickers": {
+  "BE": {
+   "verdict": "WATCH",
+   "thesis_one_line": "Makes on-site power units for AI data centers; sales are surging, but the share price already assumes roughly 30% yearly cash growth for a decade.",
+   "horizon": "12-36 months",
+   "kill_criteria": [
+    "Any single quarter's revenue below $900M or full-year 2026 revenue guidance cut below the $3.9B low end.",
+    "A top customer above 40% of quarterly revenue in the 10-Q for two consecutive quarters, or customer-deposit balance falling by more than 25% quarter on quarter.",
+    "Non-GAAP gross margin below 30% in any quarter (versus 34.3% in Q2'26).",
+    "Diluted share count rising more than 10% year on year, or any new equity-linked consideration to customers above $250M.",
+    "Trailing-twelve-month FCF below zero for two consecutive quarters while revenue is still growing."
+   ],
+   "key_adverse_facts": [
+    "Two customers were about 44% and 21% of Q2'26 revenue (10-Q); one customer about 73% of H1 revenue",
+    "Price implies ~31% 10-yr FCF CAGR vs base ~19%; 58.6x FY27 EPS; Street mean target $280 below $288.70 price",
+    "Oracle warrant fair value $251.6M booked as customer-consideration asset reducing future revenue; shares +4.8% in six months",
+    "Short-seller report 8 Jul 2026 on raw-material supply, rejected by company 9 Jul 2026"
+   ],
+   "data_conflicts": [
+    "b1 ROE 0.8% vs d4/Yahoo ROE 22%",
+    "d4 FCF $531.6M vs filing-derived TTM FCF $624.7M",
+    "d4 forward EPS $4.93 is FY27, not NTM"
+   ],
+   "next_earnings_date": "2026-10-27",
+   "confidence_in_thesis": "low: demand and guidance are strong, but customer concentration and valuation make the result hinge on a few buyers",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "expensive",
+    "consistent": true,
+    "implied_vs_base": "above",
+    "reconciliation": "No V1 row exists. Reverse DCF at 10% WACC implies ~31% 10-year FCF CAGR versus my ~19% base case."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.462,
+    "base": -0.101,
+    "bull": 0.101
+   },
+   "scenario_basis": "Sep-2029 price = 2029 non-GAAP EPS x exit P/E, no dividend: bear $3.0 x 15; base $7.5 x 28; bull $11.0 x 35, from $288.70 (FY26 consensus $2.71, FY27 $4.93)."
+  },
+  "IP": {
+   "verdict": "WATCH",
+   "thesis_one_line": "Large US box and paper maker mid-turnaround; looks cheap but cash flow does not cover the dividend and profit guidance was cut twice this year.",
+   "horizon": "12-36 months",
+   "kill_criteria": [
+    "Full-year 2026 adjusted EBITDA guidance cut below $3.20B, or Q3'26 adjusted EBITDA below $780M.",
+    "Trailing-four-quarter free cash flow (OCF - capex, company definition) below $400M at the Q4'26 report while the $1.85 dividend is maintained, or a dividend cut without an offsetting rating-agency view.",
+    "Consolidated net debt (debt $9.2B less cash) / TTM adjusted EBITDA above 3.5x, or a downgrade of either agency's senior rating to below investment grade.",
+    "PS EMEA segment operating loss worse than $(80)M in any quarter after Q4'26.",
+    "EMEA spin-off not completed by 30 Apr 2027 (15 months from the 29 Jan 2026 announcement per the 10-Q '12-15 months')."
+   ],
+   "key_adverse_facts": [
+    "FY26 adjusted EBITDA guide cut from $3.5-3.7B (Jan) to $3.20-3.50B (Apr) to $3.20-3.40B (Jul)",
+    "H1'26 FCF $87M vs dividends paid $490M; TTM company FCF $492M",
+    "PS EMEA operating loss $(80)M in Q2'26 vs $(1)M a year ago",
+    "Moody's Baa2 negative outlook; containerboard antitrust class action filed 29 Jul 2025"
+   ],
+   "data_conflicts": [
+    "d4 FCF $1,646M vs filing-derived TTM FCF $492M",
+    "d4 trailing EPS $(5.39) includes goodwill impairment and discontinued ops"
+   ],
+   "next_earnings_date": "2026-10-28",
+   "confidence_in_thesis": "low: turnaround evidence is mixed and cash flow does not yet support the payout",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "fair",
+    "consistent": true,
+    "implied_vs_base": "in_line",
+    "reconciliation": "No V1 row exists. Reverse DCF at 8% WACC implies ~9-12% 10-year unlevered FCF CAGR versus my ~11% base case."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.103,
+    "base": 0.091,
+    "bull": 0.226
+   },
+   "scenario_basis": "Sep-2029 price = (2029 adj. EBITDA x EV/EBITDA - net debt)/529.6M shares plus cumulative dividends: bear $3.2B x 6.5, net debt $9.0B, $3.0 dividends; base $4.0B x 7.5, $8.3B, $4.5; bull $4.8B x 8.0, $7.0B, $5.5; start $35.02."
+  },
+  "NCLH": {
+   "verdict": "WATCH",
+   "thesis_one_line": "Third-largest cruise line trading at about 10x earnings, but demand is soft, debt is heavy, and profit forecasts have been cut twice this year.",
+   "horizon": "24-36 months",
+   "kill_criteria": [
+    "Full-year 2026 adjusted EBITDA guidance below $2.50B, or Q3'26 adjusted EBITDA below $874M.",
+    "Q4'26 constant-currency net yield decline worse than -5%, or FY27 initial guidance of negative net yield.",
+    "Net leverage (company definition: net debt / TTM adjusted EBITDA, consolidated) above 5.5x at any quarter-end, or liquidity below $1.0B.",
+    "Full-year 2026 adjusted EPS guidance below $1.40.",
+    "Eleventh Circuit remand reinstating the $112.9M Havana Docks judgment, or any new covenant waiver."
+   ],
+   "key_adverse_facts": [
+    "FY26 adjusted EPS guide cut from $2.38 (Mar) to $1.45-1.79 (May) to ~$1.50 (Jul); Q3 net yield guided -8.9% cc",
+    "Net leverage 5.3x, total debt $15.0B, liquidity $1.5B; H1'26 FCF $(480)M",
+    "New CEO Feb 2026; company says it remains 'below its optimal booked position for the next 12 months'",
+    "Havana Docks: Supreme Court reversed dismissal 21 May 2026, remanded 22 Jun 2026 ($112.9M judgment previously entered)"
+   ],
+   "data_conflicts": [
+    "d4 trailing EPS $1.65 vs 2026 guided adjusted EPS ~$1.50",
+    "d4 FCF $(1.68)B is before export-credit financing of newbuild capex"
+   ],
+   "next_earnings_date": "2026-11-04",
+   "confidence_in_thesis": "low: cheap on EPS but estimates are still falling and leverage leaves little room for error",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "fair",
+    "consistent": true,
+    "implied_vs_base": "in_line",
+    "reconciliation": "No V1 row exists. Reverse DCF implies ~3-4% 10-year owner-earnings growth versus my ~4-5% base case."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.31,
+    "base": 0.089,
+    "bull": 0.271
+   },
+   "scenario_basis": "Sep-2029 price = 2029 adjusted EPS x exit P/E, no dividend: bear $0.60 x 8; base $2.10 x 9; bull $3.00 x 10; start $14.61 (2026 guided adj. EPS ~$1.50)."
+  }
+ }
+}

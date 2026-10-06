@@ -1,0 +1,52 @@
+# FANG — Diamondback Energy, Inc.
+
+**1. Verdict: INCLUDE-SMALL** (half weight). Thesis horizon 12–24 months. Genuinely low-cost, scaled Permian operator with a strong post-merger balance sheet and real capital discipline, but current profitability and "cheap" multiples are inflated by a geopolitically-driven oil-price spike (WTI ~$93/bbl, well above the $65–70 long-run consensus), and GAAP earnings over the last two quarters were also distorted by two large non-cash ceiling-test impairments. Named reservation: normalize before believing the multiple.
+
+**2. Business in plain English.** Diamondback is the largest pure-play Permian Basin oil and gas producer following its September 2024 merger with Endeavor Energy Resources. It drills and produces crude oil, natural gas and NGLs, sells them at prevailing market prices (it does not set price — it is a "price taker"), and returns cash to shareholders via a base dividend, variable dividend and buybacks. Competitive position: consolidated scale gives it among the lowest per-barrel operating and G&A costs in U.S. shale, and a breakeven oil price (per company disclosure) of roughly $37/bbl to sustain 2026 production and the base dividend — a genuine structural cost advantage, not a cyclical one.
+
+**3. Why the model likes it, and why to be careful with it.** b1 percentiles: quality (fam_Q) 84th, momentum 53rd, earnings momentum (SUE) 45th, but value (fam_V) only 23rd despite triage's framing of the name as cheap. This is the E&P sector's classic trap, explicitly called out in the required sector playbook (finance-skills stock-analysis, oil-gas.md): **"cyclicals print their lowest P/E at the peak... screening for low P/E systematically buys the top of the cycle."** Triage's own reasoning ("trailing P/E 43.4 vs NTM 9.7 is depressed-base noise; normalized FCF yield 9.6% implies near-zero growth priced in") is only half right: the trailing multiple is distorted not by "noise" but by two large, real, non-cash impairments (see §6), and the low forward multiple is achieved at a spot oil price elevated by acute geopolitical risk (see §7) — both need normalizing, not waving away.
+
+**4. Last eight quarters (GAAP, attributable to Diamondback, $mm except EPS).**
+
+| Quarter (period end) | Revenue | YoY | Op. income | GAAP diluted EPS |
+|---|---|---|---|---|
+| Q3'24 | 2,645 | — | 710 | 3.19 |
+| Q4'24 (derived) | 3,711 | — | 1,412 | 3.53 |
+| Q1'25 | 4,048 | — | 1,673 | 4.83 |
+| Q2'25 | 3,678 | — | 1,139 | 2.38 |
+| Q3'25 | 3,924 | +48.4%* | 1,236 | 3.51 |
+| Q4'25 (derived) | 3,376 | −9.0% | **−2,782** | **−1,458 net loss (derived)** |
+| Q1'26 | 4,240 | +4.7% | 116 | 0.08 |
+| Q2'26 | 5,562 | +51.2% | 2,512 | 6.65 |
+
+*Q3'24→Q3'25 YoY is inflated by the Endeavor merger closing 2024-09-12 (only ~2.5 weeks of Endeavor production in the Q3'24 base). Source: SEC XBRL companyfacts (CIK 0001539838), 10-Q filed 2025-05-07 through 2026-08-05; 10-K filed 2026-02-25. **Q4'25 and Q1'26 both carried large non-cash ceiling-test impairments of oil and gas properties: $3,652mm recognized in the FY2025 10-K (essentially all in Q4, since the first three quarters of 2025 carried $0 per the same tag) and a further $1,400mm in Q1 2026** (`us-gaap:ImpairmentOfOilAndGasProperties`, confirmed directly against the primary XBRL tag, not just derived from net income). Q2'26's rebound (EPS $6.65, +53.1% YoY realized oil price improvement, production >1.0mm BOE/d) reflects the 2026 oil-price spike (see §7), not a reversal of the impairments — U.S. GAAP full-cost/ceiling-test write-downs are not reversed even if prices later recover.
+
+**5. Guidance track record.** Diamondback raised full-year 2026 production guidance at both the Q1 2026 release (2026-05-04: oil production and base dividend increased) and the Q2 2026 release (2026-08-05: full-year oil production raised to >522 MBO/d from >520 MBO/d; total production raised to >1,000 MBOE/d from >972 MBOE/d; FY cash capex held at ~$3.9bn). Q3 2026 guidance: oil production 517–527 MBO/d, total 995–1,015 MBOE/d, cash capex $950mm–$1.05bn. This is a genuine, verifiable operational guidance-raise track record — separate from, and better than, the GAAP earnings volatility in §4.
+
+**6. Earnings quality & balance sheet.** The two impairments above are the dominant earnings-quality fact for this name over the diligence window and should be disclosed prominently in any recommendation, even though they are non-cash and mechanical (SEC full-cost ceiling test marks proved reserves to a trailing-12-month average price; when that average fell through late 2025, DPZ-scale-of-magnitude write-downs followed automatically, unrelated to operational execution). FCF remains real and strong through the cycle: Q1 2026 alone generated $1.7bn of free cash flow and $3.0bn of adjusted EBITDA despite the $1.4bn impairment and the $25mm net income print, because impairments are non-cash. Balance sheet: long-term debt fell from $13.73bn (2025-12-31) to $13.15bn (2026-03-31) to $11.07bn (2026-06-30) — active, continuing deleveraging post-Endeavor-merger. Net debt/EBITDA ≈ (12.6bn debt − 0.46bn cash) / 11.78bn TTM EBITDA ≈ 1.03x — low for the sector. Buybacks continued through the weak quarter ($87mm in Q1'26, ~$181mm in Q2'26 alone), signaling management confidence rather than distress. Dividend yield 2.33%, payout ratio 79% on trailing (depressed) EPS but comfortably covered on FCF given the ~$37/bbl all-in breakeven versus a $93/bbl current WTI.
+
+**7. Valuation snapshot — the central caveat for this name.** Price $186.67; market cap $52.5bn; EV $71.16bn. EV/EBITDA (TTM) ≈ 6.0x — statistically cheap for the sector, but TTM EBITDA is earned at a WTI averaging well above its 10-year median. **WTI closed ~$93/bbl on 2026-09-25**, up over 50% from where it traded roughly a year earlier, attributed in market commentary to an acute supply shock (reported Iran/Strait-of-Hormuz tension, with active but unresolved U.S.–Iran negotiations over reopening the strait as of late September 2026) — a textbook geopolitical price spike, not a structural repricing of the oil market. Long-run consensus mid-cycle WTI is materially lower (commonly cited $65–70). Trailing P/E is distorted upward (35.6x) by the two impairments; forward P/E (9.95x) is distorted downward by the current spot-price spike feeding into near-term consensus estimates — **neither trailing nor forward P/E is usable here without normalization**, exactly the failure mode the sector playbook warns about. **No V1 row exists for FANG** (outside the systematic model's top-70 coverage), so `v1_verdict` is null. This dossier's valuation view is **"fair"**, not "cheap": the balance sheet and cost position are genuinely strong and would justify a constructive view even at a normalized $65–70 WTI (breakeven is $37), but the *current* multiple is not the bargain it appears to be on unadjusted numbers. `implied_vs_base` = **in_line**.
+
+**8. Bull case / Bear case.**
+*Bull:* (1) Lowest-cost, largest-scale pure-play Permian position post-Endeavor gives structural cost advantage across the cycle; (2) active deleveraging (debt down ~$2.7bn in two quarters) plus continued buybacks show real capital discipline even through an impairment quarter; (3) if the current geopolitical premium persists or supply tightness continues (OPEC+ discipline, sanctions), cash generation stays exceptional and could fund faster capital return.
+*Bear:* (1) If Iran/Strait-of-Hormuz tensions de-escalate (negotiations were reportedly underway as of 2026-09-25), oil could give back much or all of the ~50%+ move, compressing both realized prices and the multiple simultaneously; (2) merger-integration and insider-selling risk flagged by independent analyst commentary post-Endeavor, not independently verified here via Form 4 data (data limitation, disclosed); (3) a third large ceiling-test impairment would be a recurring-earnings-quality red flag, not a one-off, if prices weaken again.
+
+**9. Kill criteria (measurable) -- what would break the thesis.**
+1. WTI averages below $50/bbl for two consecutive quarters (tests the cushion above the ~$37/bbl breakeven and dividend coverage).
+2. Net debt/EBITDA rises above 2.0x (from ~1.0x currently).
+3. A third consecutive-year ceiling-test impairment of oil and gas properties in any of the next four quarters.
+4. Full-year oil production guidance is cut from the current >522 MBO/d target.
+5. The base dividend (currently $4.40/share annualized) is cut.
+
+**10. Catalysts & calendar.** Next earnings: 2026-11-09 (Q3 2026, per vendor tracking; treat as an estimate pending official company confirmation).
+
+**11. Red-flag scan.** Historical royalty-payment-discrepancy litigation was settled (Diamondback E&P/Energen Resources settlement, not dated precisely in sources reviewed — pre-dates this window). No current SEC/DOJ investigation, auditor change, restatement or going-concern language found. Independent commentary (not primary-sourced Form 4 data — disclosed limitation) flags insider selling and post-merger equity issuance as watch items given the buyback/share-count-reduction narrative; this should be verified directly against Form 4 filings before sizing any position. Standard E&P routine legal proceedings (title, royalty, contract, environmental claims) are disclosed in filings; nothing specific to methane regulation litigation was found for 2026.
+
+**12. Sources.**
+1. SEC EDGAR submissions & XBRL companyfacts, CIK 0001539838 (10-Q filed 2025-05-07, 2025-08-06, 2025-11-05, 2026-05-06, 2026-08-05; 10-K filed 2026-02-25).
+2. Diamondback Q1 2026 and Q2 2026 earnings releases / call transcripts (Motley Fool, Investing.com, tikr.com, StockTitan aggregation, retrieved 2026-09-26).
+3. WTI spot price, 2026-09-25 (convextrade.com, tradingeconomics.com, retrieved 2026-09-26).
+4. v4/data/b1_live_scores.csv, v4/data/d4_live_snapshot.parquet (retrieved 2026-09-26).
+5. finance-skills stock-analysis skill, references/sectors/oil-gas.md (E&P sector playbook — cycle-normalization guidance applied directly in §7).
+
+**Data basis, recency and disclaimer.** Most recent period incorporated: Q2 FY2026 10-Q, period ended 2026-06-30, filed 2026-08-05. Events checked to 2026-09-25 close via web search (oil price, guidance history, litigation). All figures above are GAAP as filed; no adjusted/non-GAAP figures were substituted. This is research, not investment advice, and it is not personalised to any individual's circumstances.

@@ -1,0 +1,117 @@
+{
+  "agent": "F114",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "O": {
+      "verdict": "INCLUDE-SMALL",
+      "horizon": "24-36 months",
+      "thesis_one_line": "The largest net-lease REIT, priced for near-zero AFFO growth while it is guiding to and delivering roughly 4% growth.",
+      "kill_criteria": [
+        "Net Debt/Annualized Pro Forma Adjusted EBITDAre rises above 6.0x for two consecutive quarters",
+        "AFFO/share guidance is cut from the current $4.44-$4.45 FY26 range in the next release",
+        "Same-store rent growth falls below 1.0% for two consecutive quarters",
+        "Occupancy drops below 97.5% vs the Approx 98.5% FY26 guide",
+        "Rent-recapture rate on re-leased space falls below 90% for two consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "Net Debt/Annualized Pro Forma Adjusted EBITDAre is 5.4x (5.2x incl. unsettled ATM forward equity), a moderate but non-trivial leverage load for a rate-sensitive external-growth model",
+        "GAAP EPS guidance midpoint was trimmed even as AFFO/share guidance was raised (real-estate depreciation/other-adjustments effect)",
+        "New growth channels (data-center JV, third-party asset management) are unproven at scale and add execution/counterparty risk",
+        "Sector-level tenant-credit-migration risk (weak pharmacy/apparel/casual-dining categories) flagged in market commentary; O's own IG-tenant % (34.3% of ABR) not independently re-verified line-by-line this pass"
+      ],
+      "data_conflicts": [
+        "None identified vs b1/d4 quant data; quality signal (low volatility, high book-to-price) is consistent with filings"
+      ],
+      "next_earnings_date": "2026-11-04",
+      "confidence_in_thesis": "medium - primary-source guidance and leverage figures are solid, but next-earnings date is an estimate and Q1'26 comparison figures were back-solved rather than independently pulled",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "V1 has no row/entry for O (companies['O'] is null in v1_valuation.json), so there is nothing to reconcile; this dossier's own reverse-DCF on AFFO implies 0-0.5%/yr perpetual growth at an 8.0-8.5% cost of equity, below the ~4% AFFO/share growth O is guiding to and delivering, which is why implied_vs_base is 'below'."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.03,
+        "base": 0.08,
+        "bull": 0.14
+      },
+      "scenario_basis": "Starting AFFO/share $4.445 (FY26 guide midpoint) and dividend yield ~5.8% (payout ~75% of AFFO); base case assumes ~4%/yr AFFO growth continues and P/AFFO multiple (~12.5x) holds flat; bear assumes AFFO growth slows to ~1%/yr and multiple compresses ~10% on a rate shock/tenant-credit scare; bull assumes AFFO growth accelerates toward 5-6%/yr (data-center JV, third-party AUM) and multiple re-rates modestly higher; no special dividend or buyback assumed in any scenario."
+    },
+    "PYPL": {
+      "verdict": "INCLUDE-SMALL",
+      "horizon": "18-30 months",
+      "thesis_one_line": "PayPal's checkout/Venmo network is losing share at the point of sale, but the stock is priced as if profits will keep shrinking even after guidance was just raised.",
+      "kill_criteria": [
+        "Active accounts decline on a QoQ basis for two consecutive quarters",
+        "Non-GAAP operating margin contracts for a third consecutive quarter",
+        "FY guidance is cut (vs raised/reaffirmed) in the next (3Q'26) release",
+        "Net revenue growth decelerates below 3% YoY for two consecutive quarters",
+        "A material adverse ruling or expanded consent order tied to the CFPB Venmo civil investigative demand or the 2026 DOJ minority-lending-fee-waiver settlement"
+      ],
+      "key_adverse_facts": [
+        "GAAP and non-GAAP EPS both declined YoY in both Q1'26 and Q2'26 despite double-digit TPV growth - take-rate/margin compression is the swing factor, not volume",
+        "Non-GAAP operating margin contracted 248bps YoY in Q2'26",
+        "Active account growth has stalled (+0.3% YoY, -0.04% QoQ in Q2'26)",
+        "DOJ settlement (waived $30m in fees), CFPB Venmo civil investigative demand, and a securities-fraud class action were all found via secondary sources and not verified against primary filings/court documents in this pass"
+      ],
+      "data_conflicts": [
+        "Quant ROE/book-to-price scores look strong (pct_roe ~0.97) but this is partly a buyback/capital-structure effect (shrinking equity base), not purely an improving operating moat - TM$ growth is only low-single-digit and non-GAAP operating margin is contracting"
+      ],
+      "next_earnings_date": "2026-10-27",
+      "confidence_in_thesis": "medium - guidance figures and quarterly results are primary-sourced and clear, but the legal/regulatory red flags in section 11 are unverified secondary-source reports and the reverse-DCF growth assumptions carry real uncertainty",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "V1 has no row/entry for PYPL (companies['PYPL'] is null in v1_valuation.json), so there is nothing to reconcile; this dossier's own reverse-DCF on FCF implies roughly flat-to-negative (0% to -3%/yr) perpetual FCF growth at a 9.5-10% cost of equity, below PYPL's current double-digit TPV growth and just-raised non-GAAP EPS guide, which is why implied_vs_base is 'below'."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.05,
+        "base": 0.13,
+        "bull": 0.28
+      },
+      "scenario_basis": "Starting FY26 non-GAAP EPS guide ~$5.38 and ~10.2x P/E ($55.04 price); no dividend, buybacks continue at a similar pace (~$1.5bn/quarter cited in Q2'26). Base case: EPS roughly flat to low-single-digit growth as buybacks offset margin pressure, multiple re-rates modestly from 10.2x toward ~12x as turnaround proof-points accumulate. Bear case: EPS declines low-single-digits per the FY26 GAAP guide trend continuing, multiple stays at ~8x on continued share loss. Bull case: EPS growth resumes mid-single-digits as branded checkout stabilizes and Venmo/Braintree monetize, multiple re-rates to ~14x."
+    },
+    "RF": {
+      "verdict": "WATCH",
+      "horizon": "12-24 months",
+      "thesis_one_line": "A disciplined, high-return Southeastern regional bank, but the stock is already priced for its currently elevated profitability to keep holding at the top of its own historical range.",
+      "kill_criteria": [
+        "CET1 ratio (inclusive of AOCI) falls below 9.0% for two consecutive quarters",
+        "Net interest margin (FTE) falls below 3.50% for two consecutive quarters",
+        "Full-year NII growth comes in below the low end of the 2.5-4% guided range",
+        "Annualized net charge-offs/avg. loans rise above 0.65% for two consecutive quarters",
+        "P/B re-rates to the peer median (1.267x) or above without a corresponding ROE improvement"
+      ],
+      "key_adverse_facts": [
+        "Adjusted total revenue grew only 2% YoY in Q2'26 - the slowest growth in its regional-bank peer group per triage, because RF has not pursued the scale M&A its peers have",
+        "V1's systematic model independently flags the stock as 'demanding' with a modest +4.46%/yr base-case 3-year annualized return and a -7.65%/yr bear case",
+        "V1's implied ROE (11.08%) sits almost exactly at RF's own 80th-percentile 15-year historical ROE (11.85%), i.e. the price assumes top-of-range profitability persists",
+        "A 2022-vintage CFPB overdraft consent order (~$191m) has an active 2025-dated Delaware shareholder derivative suit against the board; case status/dollar figures sourced from press reporting only, not a primary court filing or RF's own litigation footnote, in this pass"
+      ],
+      "data_conflicts": [
+        "None found between b1 quant quality signals and filings - the quality read (top-quartile efficiency, peer-leading deposit costs) is corroborated by the primary-source earnings releases"
+      ],
+      "next_earnings_date": "2026-10-16",
+      "confidence_in_thesis": "medium-high - V1 systematic valuation and the two primary-source earnings releases are consistent and were both read; the main gap is not having quoted the prior-quarter NII-guidance range verbatim to confirm raised/maintained/cut, and the litigation figures are unverified secondary-source",
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "in_line",
+        "v1_verdict": "demanding",
+        "v1_base_3y": 0.04462548313814918,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "Agree with V1's 'demanding' read: the implied ROE (11.08%) is close to but slightly below the currently-delivered TTM ROE (11.85%), so the price is not asking for more than RF is currently doing, but it is asking for that elevated, near-80th-percentile-of-history profitability to persist, which is a real cyclical/rate risk this dossier does not have a primary-source basis to override."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.0765,
+        "base": 0.0446,
+        "bull": 0.156
+      },
+      "scenario_basis": "Adopted directly from v1_valuation_table.csv/v1_valuation.json (justified-P/B method: P/B 1.256x, cost of equity 9.43%, terminal growth 3%, ROE scenarios drawn from RF's own 15-year 20th/50th/80th percentile ROE of 6.30%/8.67%/11.85%); this dossier did not independently rebuild the model but did verify the ROE and P/B inputs against Q2'26 filings (adjusted ROATCE 20.18% on a tangible-equity basis, CET1 10.7%) and found them consistent with, not contradicted by, the primary-source results."
+    }
+  }
+}

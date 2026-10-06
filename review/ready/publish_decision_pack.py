@@ -1,6 +1,8 @@
 from pathlib import Path
 import json, html, re
 P=Path(__file__).resolve().parent
+if (P/'weekly_override.json').exists():
+    raise SystemExit('A weekly release is active. Use the dated build_weekly_report.py in README.md; this historical publisher would overwrite newer decisions.')
 M=json.loads((P/'decision_model.json').read_text(encoding='utf-8'))
 def usd(x):return f'${x:,.2f}'
 def pct(x):return f'{x*100:.1f}%'

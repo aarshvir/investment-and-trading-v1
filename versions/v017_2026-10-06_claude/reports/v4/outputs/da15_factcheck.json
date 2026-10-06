@@ -1,0 +1,132 @@
+{
+  "as_of": "2026-09-27",
+  "scope": "DA15 loop-8 must-fix targeted sweep: verify latest-reported-quarter revenue, GAAP net income, diluted EPS (GAAP and adjusted where stated), period label/end date, and prior-year comparative (checking for prior-year-column-as-latest-quarter swap) for SO, MA, STE, USB, EXC, BALL, DOV against dossier text (incl. any appended Correction sections) and each company's latest 8-K Ex-99.1 earnings release / 10-Q on SEC EDGAR.",
+  "facts": [
+    {
+      "ticker": "SO",
+      "claim": "Q2 2026 (qtr ended 2026-06-30) operating revenue $6.98bn, GAAP diluted EPS $1.03",
+      "dossier_location": "SO.md section 4 table, row 'Q2 2026'",
+      "source": "8-K Ex-99.1 press release filed 2026-07-30, accession 0000092122-26-000056 (ex99-pressreleaseq22026.htm)",
+      "source_value": "Operating revenues $6.98bn (vs $6.97bn Q2 2025); GAAP EPS $1.03 (vs $0.80 Q2 2025); net income as reported $1,174M (vs $880M Q2 2025)",
+      "status": "PASS",
+      "note": "Exact match. Prior-year comparator ($0.80 EPS, $6.97bn revenue) correctly attributed to Q2 2025, not swapped into the latest-quarter row."
+    },
+    {
+      "ticker": "SO",
+      "claim": "Q2 2026 adjusted (non-GAAP) EPS $1.13 vs $0.92 a year earlier",
+      "dossier_location": "SO.md section 4, text below table",
+      "source": "Same 8-K Ex-99.1, 'Net Income – Excluding Items' table",
+      "source_value": "Excluding-items EPS $1.13 (2026) vs $0.92 (2025)",
+      "status": "PASS",
+      "note": "Exact match."
+    },
+    {
+      "ticker": "MA",
+      "claim": "2Q26 net revenue $9,277M (+14.1% YoY), operating income $5,587M (60.2% margin), diluted EPS (GAAP) $4.97, net income (reported) ~$4.4bn",
+      "dossier_location": "MA.md section 4 table, row '2Q26'",
+      "source": "8-K Ex-99.1 earnings release filed 2026-07-30, accession 0001141391-26-000081 (ma06302026-exx991xearnings.htm)",
+      "source_value": "Net revenue $9.3bn (+14%); operating income $5.6bn; operating margin 60.2%; net income $4.4bn (+19%); diluted EPS $4.97 (+22%)",
+      "status": "PASS",
+      "note": "Exact match, incl. adjusted EPS $5.04 and adjusted net income $4.5bn."
+    },
+    {
+      "ticker": "MA",
+      "claim": "2Q25 comparative net revenue $8,133M, diluted EPS $4.07, net income ~$3,700M (used as prior-year column, not the latest quarter)",
+      "dossier_location": "MA.md section 4 table, row '2Q25'",
+      "source": "Same 8-K Ex-99.1, Q2 2025 comparison column",
+      "source_value": "Net revenue $8.1bn; net income $3.7bn; diluted EPS $4.07",
+      "status": "PASS",
+      "note": "Prior-year quarter correctly placed in its own row; not mistaken for the latest quarter."
+    },
+    {
+      "ticker": "STE",
+      "claim": "Q1 FY2027 (qtr ended 2026-06-30) total revenue $1,492.7m, GAAP diluted EPS $2.04, adjusted diluted EPS $2.59",
+      "dossier_location": "STE.md section 4 table, row 'Q1 FY27 (Jun-26)'",
+      "source": "8-K Ex-99.1 earnings release filed 2026-08-05, accession 0001628280-26-053412 (ste6302026ex991.htm)",
+      "source_value": "Total revenues $1,492.7M (vs $1,391.1M FY26 Q1); net income $200.1M / $2.04 diluted EPS (vs $177.4M / $1.79 FY26 Q1); adjusted net income $253.4M / $2.59 (vs $231.2M / $2.34 FY26 Q1)",
+      "status": "PASS",
+      "note": "Exact match to the cent/million. Fiscal-year label correctly given as FY2027 Q1 (STERIS fiscal year ends 31-Mar), not miscast as a calendar quarter."
+    },
+    {
+      "ticker": "STE",
+      "claim": "Q1 FY2026 prior-year comparative revenue $1,391.1m, GAAP EPS $1.79 (used as the prior-year column, not the latest quarter)",
+      "dossier_location": "STE.md section 4 table, row 'Q1 FY26 (Jun-25)'",
+      "source": "Same 8-K Ex-99.1, prior-year comparison column",
+      "source_value": "Revenue $1,391.1M; net income $177.4M; diluted EPS $1.79",
+      "status": "PASS",
+      "note": "Correctly in the prior-year row; the loop-8 swap pattern (prior-year value mislabeled as latest quarter) is not present here. Also confirms the pre-existing DA11 Correction (Healthcare segment revenue $1,048.3m vs dossier text's $1,051.4m) is immaterial to these headline figures and is unaffected by this check."
+    },
+    {
+      "ticker": "USB",
+      "claim": "Q2 2026 (qtr ended 2026-06-30) net revenue $7,712M, net income $2,177M, diluted EPS $1.35",
+      "dossier_location": "USB.md section 4 table, row 'Q2 2026'",
+      "source": "8-K Ex-99.1 earnings release filed 2026-07-16, accession 0000036104-26-000039 (a2q26earningsrelease.htm)",
+      "source_value": "Record net revenue $7,712M; net income $2,177M (+20% YoY); diluted EPS $1.35 (+22% YoY)",
+      "status": "PASS",
+      "note": "Exact match to the million/cent."
+    },
+    {
+      "ticker": "USB",
+      "claim": "Q2 2025 comparative net income $1,815M, diluted EPS $1.11 (prior-year column, not the latest quarter)",
+      "dossier_location": "USB.md section 4 table, row 'Q2 2025'",
+      "source": "Same 8-K Ex-99.1, '2Q25' comparison column",
+      "source_value": "Net income $1,815M; diluted EPS $1.11",
+      "status": "PASS",
+      "note": "Correctly placed in its own prior-year row, not conflated with Q2 2026."
+    },
+    {
+      "ticker": "EXC",
+      "claim": "Q2 2026 (qtr ended 2026-06-30) GAAP diluted EPS $0.39, adjusted operating EPS $0.43; revenue and net income $ marked n/a in dossier pending XBRL update",
+      "dossier_location": "EXC.md section 4 table, row 'Q2 2026'",
+      "source": "8-K Ex-99.1 earnings release filed 2026-07-30, accession 0001109357-26-000077 (exc-20260730ex991.htm)",
+      "source_value": "GAAP EPS $0.39; adjusted operating EPS $0.43; operating revenues $5,967M (Exelon consolidated); net income to common $396M",
+      "status": "MINOR",
+      "note": "EPS figures the dossier does state are correct. However, the dossier's self-flagged 'data conflict' (bulk XBRL lag) is no longer a genuine gap: the Ex-99.1 release (already cited by the dossier) contains the exact revenue ($5,967M) and net income ($396M) figures, which were available at write time and should replace the 'n/a' entries. Not a wrong-value/swap error — a completeness gap only."
+    },
+    {
+      "ticker": "EXC",
+      "claim": "Q2 2025 comparative revenue $5,427M, net income $391M, GAAP diluted EPS $0.39 (prior-year column)",
+      "dossier_location": "EXC.md section 4 table, row 'Q2 2025'",
+      "source": "Same 8-K Ex-99.1, 'Three Months Ended June 30, 2025' comparison column",
+      "source_value": "Operating revenues $5,427M; net income $391M; diluted EPS $0.39",
+      "status": "PASS",
+      "note": "Confirms no swap: the prior-year quarter is correctly labeled Q2 2025 and is numerically distinct from Q2 2026 (revenue $5,967M / net income $396M) despite both quarters coincidentally sharing $0.39 diluted EPS."
+    },
+    {
+      "ticker": "BALL",
+      "claim": "Q2'26 (qtr ended 2026-06-30) net sales $4.00bn, GAAP diluted EPS $0.83, comparable diluted EPS $1.03",
+      "dossier_location": "BALL.md section 4 table, row 'Q2'26'",
+      "source": "8-K Ex-99.1 earnings release filed 2026-08-04, accession 0001104659-26-090074 (ball-20260804xex99d1.htm)",
+      "source_value": "Sales $4.00bn; GAAP net earnings $221M / $0.83 diluted EPS; comparable net earnings $276M / $1.03 diluted EPS",
+      "status": "PASS",
+      "note": "Exact match. Confirms and is consistent with the existing DA11 Correction to this dossier (FY2025 comparable EBITDA $2,041m not $2,044m), which concerns a different, immaterial FY2025 figure, not this quarter's headline numbers."
+    },
+    {
+      "ticker": "BALL",
+      "claim": "Q2'25 comparative net sales $3.34bn, GAAP diluted EPS $0.76, comparable diluted EPS $0.90 (prior-year column)",
+      "dossier_location": "BALL.md section 4 table, row 'Q2'25'",
+      "source": "Same 8-K Ex-99.1, '...compared to... in 2025' comparison sentence",
+      "source_value": "Sales $3.34bn; GAAP net earnings $212M / $0.76 diluted EPS; comparable net earnings $251M / $0.90 diluted EPS",
+      "status": "PASS",
+      "note": "Correctly in the prior-year row; not swapped into the Q2'26 (latest-quarter) row."
+    },
+    {
+      "ticker": "DOV",
+      "claim": "Q2 2026 (qtr ended 2026-06-30) revenue (continuing ops) $2,190.0m, net income (GAAP, total incl. discontinued ops) $312.2m, diluted EPS (GAAP) $2.30, adjusted diluted EPS $2.74",
+      "dossier_location": "DOV.md section 4 table, column 'Q2 2026 (end 2026-06-30)'",
+      "source": "8-K Ex-99.1 earnings release filed 2026-07-23, accession 0000029905-26-000026 (a202607238-kexhibit991pr.htm), Investor Supplement statement of earnings and quarterly EPS tables",
+      "source_value": "Revenue $2,190,021K; earnings from continuing operations $312,545K ($2.31 diluted EPS from continuing ops); loss from discontinued operations $(299)K; total net earnings $312,246K ($2.30 diluted EPS on total net earnings); adjusted diluted EPS from continuing ops $2.74",
+      "status": "PASS",
+      "note": "Dossier's $312.2m / $2.30 correctly uses total 'net earnings' (after the small discontinued-operations loss), not the very similar but distinct 'earnings from continuing operations' figure ($312.5m / $2.31) — a basis that could otherwise look like a swap/rounding error if the wrong source line is checked. No swap present."
+    },
+    {
+      "ticker": "DOV",
+      "claim": "Q1 2026 revenue (continuing ops) $2,053.6m, net income (GAAP) $238.4m, diluted EPS (GAAP) $1.75",
+      "dossier_location": "DOV.md section 4 table, column 'Q1 2026 (end 2026-03-31)'",
+      "source": "Same Investor Supplement, Q1 2026 column (revenue = six-month total $4,243,644K minus Q2 $2,190,021K = $2,053,623K; net earnings $238,749K continuing / diluted EPS $1.75 net earnings)",
+      "source_value": "Revenue ≈$2,053.6M; net earnings (continuing ops, pre-discontinued-ops loss) $238,749K; diluted EPS (total net earnings) $1.75",
+      "status": "PASS",
+      "note": "Matches; Q1 2026 is correctly the earlier quarter and is not duplicated as, or confused with, the Q2 2026 latest-quarter figures."
+    }
+  ]
+}
