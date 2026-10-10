@@ -1,0 +1,132 @@
+{
+ "agent": "F121",
+ "as_of": "2026-09-25",
+ "tickers": {
+  "KIM": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "Owner of grocery-anchored shopping centers with record occupancy, growing rent per share about 4% a year and paying a 5% dividend at a fair price.",
+   "horizon": "12-36 months",
+   "kill_criteria": [
+    "Pro-rata leased occupancy below 95.0% in two consecutive quarters (Q2-26: 96.4%).",
+    "Same-property NOI growth below 2.0% in two consecutive quarters (YTD \"+2.6%\"; outlook \"+3.0% to +3.5%\").",
+    "Full-year FFO per diluted share outlook midpoint cut below $1.80 (current \"$1.83 to $1.84\").",
+    "Consolidated net debt to annualised EBITDA above 6.5x (my basis, currently about 5.7x), or a downgrade of Moody's A3 or S&P A-.",
+    "Dividend payout above 90% of AFFO or no dividend increase in the 2027 cycle."
+   ],
+   "key_adverse_facts": [
+    "10-year Treasury about 5.2% pressures REIT multiples; stock fell from $26.38 (27 Jul 2026) to $22.44",
+    "Consolidated net debt about $8.0bn, about 5.7x annualised consolidated EBITDA (my basis), $773m of 2026 maturities to refinance",
+    "2026 net income guidance raised mainly by gains on sale, not operations",
+    "Small-shop occupancy already a record 92.9%, limiting further organic upside",
+    "June 2026 $600m 3.50% exchangeable notes (exchange price about $32.36) used partly to buy back 4.1m shares at $25.38, now above market"
+   ],
+   "data_conflicts": [
+    "Triage cited 26x P/E (GAAP); FFO-based P/FFO is 12.2x on the $1.835 guidance midpoint",
+    "Triage cited 6.1x leverage on an unstated basis; my consolidated net debt/EBITDA is about 5.7x (company-defined ratios not in documents opened)",
+    "Triage said about 2% forward EPS growth; company guides FFO/share +4.3% (1.835 vs 1.76) and same-property NOI +3.0% to +3.5%",
+    "No V1 row exists for KIM, so v1_verdict is null"
+   ],
+   "next_earnings_date": "2026-10-29",
+   "next_earnings_date_basis": "estimated from prior-year cadence (Q3-25 released 2025-10-30); not announced in filings reviewed",
+   "confidence_in_thesis": "medium: primary-source results and guidance are consistent, but valuation depends on rates and my AFFO estimate is not company-reported",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "fair",
+    "consistent": true,
+    "implied_vs_base": "below",
+    "reconciliation": "No V1 row for KIM. Price implies about 2.75% 10-year AFFO growth (9.0% cost of equity, 2.5% terminal) against my 4% base, so implied is below base."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.006,
+    "base": 0.087,
+    "bull": 0.139
+   },
+   "scenario_basis": "2026E FFO $1.835/share (guidance midpoint), growth 0%/4%/6% a year to 2029, exit P/FFO 10.0x/12.2x/13.5x, dividend $1.12 growing 3% then 6% (cumulative about $3.7); start price $22.44"
+  },
+  "CHTR": {
+   "verdict": "WATCH",
+   "thesis_one_line": "America's second-largest cable company, now merged with Cox, priced like a business in steep decline; the tiny equity slice on top of huge debt makes outcomes extreme.",
+   "horizon": "12-36 months",
+   "kill_criteria": [
+    "Charter consolidated net debt (principal) to LTM Adjusted EBITDA above 4.6x at any quarter-end (target range 4.0–4.5x, 10-K 0001091667-26-000017).",
+    "Total Internet customer net losses worse than 250k in any single quarter or worse than 500k over two consecutive quarters (Q2-26: -172k).",
+    "Combined free cash flow below $1.0bn in each of two consecutive quarters from Q4-26 (Q2-26 pre-Cox: $969m).",
+    "First 2027 capex outlook of \"$11.0 billion\" or more (no step-down after network evolution completes in 2027).",
+    "Permanent CFO not named by 31 Jan 2027, or any restatement or material weakness disclosure."
+   ],
+   "key_adverse_facts": [
+    "Adjusted EBITDA decline accelerating: -1.2% (Q4-25), -2.2% (Q1-26), -4.3% (Q2-26); revenue -1.7%; Internet customers -172k in Q2-26 vs -116k a year earlier",
+    "Pro forma consolidated net debt about $110bn (about 4.0x my pro forma EBITDA); equity about 14% of enterprise value; new secured notes priced at 6.05% to 7.85% and exchange notes at 7.087%/7.337%",
+    "CFO Jessica Fischer resigns effective 15 Oct 2026 during Cox integration (8-K 0001140361-26-035084)",
+    "Cox revenue already falling about 4% (6M 2026 $6,067m vs $6,323m); first combined quarter not yet reported",
+    "$6.0bn Cox convertible preferred units (6.875%) and 33.6m Cox common units rank ahead of or alongside Charter common",
+    "No numeric guidance except 2026 capex about $11.4bn (excluding Cox); 2027 capex step-down, the crux of the base case, is not quantified"
+   ],
+   "data_conflicts": [
+    "d4/b1 market cap $13.7bn uses about 121m Class A shares; economic share count after Cox and A/N units is about 163m, i.e. about $18.4bn at $112.91",
+    "Triage 2.7x NTM P/E and 15% FCF yield are pre-Cox share-count figures; my pro forma equity FCF yield is about 27.5% (estimate)",
+    "b1 ROE 0.54 is inflated by small book equity and leverage",
+    "No V1 row exists for CHTR, so v1_verdict is null"
+   ],
+   "next_earnings_date": "2026-10-30",
+   "next_earnings_date_basis": "estimated from prior-year cadence (Q3-25 released 2025-10-31); not announced in filings reviewed",
+   "confidence_in_thesis": "low: pro forma combined free cash flow is my estimate from 6-month pro forma statements and no combined quarter has been reported",
+   "valuation_view_vs_v1": {
+    "v1_verdict": null,
+    "v1_base_3y": null,
+    "dossier_view": "cheap",
+    "consistent": true,
+    "implied_vs_base": "below",
+    "reconciliation": "No V1 row for CHTR. Price implies equity FCF shrinking about 12% a year for 10 years (14% cost of equity) or about -0.9% a year unlevered FCF at 8% WACC, below my base (EBITDA -2% a year with capex falling to $11bn by 2029, an assumption); implied is below base but the base rests on an unquantified capex step-down."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.356,
+    "base": 0.14,
+    "bull": 0.481
+   },
+   "scenario_basis": "Pro forma equity FCF about $5.05bn (about $31/share on 162.9m economic shares); pro forma EBITDA about $27.3bn; net debt about $110bn plus $6.2bn preferred; EBITDA -4%/-2%/0% a year, exit EV/EBITDA 4.5x/4.9x/5.6x, all FCF to debt paydown, no dividend; start price $112.91"
+  },
+  "IVZ": {
+   "verdict": "INCLUDE-SMALL",
+   "thesis_one_line": "Global fund manager with a big ETF business, record client inflows and rising margins, trading at about 11 times current earnings; results ride on stock-market levels.",
+   "horizon": "12-36 months",
+   "kill_criteria": [
+    "Net long-term flows negative in two consecutive quarters (Q2-26: +$45.1bn; Q1-26: +$21.8bn).",
+    "Adjusted operating margin below 32.0% in two consecutive quarters (Q2-26: 37.5%; FY25: 33.4%).",
+    "Invesco consolidated parent net debt (debt less cash) above $1.5bn (30 Jun 2026: $708.6m).",
+    "A further non-cash impairment of goodwill or intangibles above $500m (Q4-25: $1,794.9m).",
+    "Ending AUM below $2.1 trillion at any quarter-end (30 Jun 2026: $2,470bn)."
+   ],
+   "key_adverse_facts": [
+    "$1,794.9m non-cash impairment in Q4-25 of indefinite-lived intangibles tied to US retail mutual-fund management contracts (goodwill still $8.4bn)",
+    "Earnings levered to equity markets: Q2-26 AUM gain was mostly market (+$256.8bn) vs net long-term flows +$45.1bn; stock near 52-week high",
+    "Fundamental equities net outflow of $7.7bn in Q2-26 and net revenue yield slipping to about 22.4 bps from 23.3 bps (my calculation)",
+    "Andrew Lo, head of Asia Pacific and China JV steward, retires 31 Mar 2027 (8-K 0000914208-26-000347); he and two others sold about $7.2m of stock on 10-14 Sep 2026",
+    "$2.5bn of 5.9% MassMutual-held preferred ranks ahead of common; consolidated parent net debt $708.6m"
+   ],
+   "data_conflicts": [
+    "Triage cited negative ROE (-0.9%) and d4/V1 TTM GAAP net loss of $309m, caused by the one-off Q4-25 $1.795bn impairment; TTM adjusted EPS is $2.51 and return on common equity about 11.4%",
+    "Triage said forward-earnings data missing; d4 has FY26 EPS $2.81 and FY27 $3.26",
+    "V1 verdict label 'excessive' rests on TTM GAAP ROE of -2.5%; on adjusted earnings the stock is priced for about the ROE it earns"
+   ],
+   "next_earnings_date": "2026-10-27",
+   "next_earnings_date_basis": "estimated from prior-year cadence (Q3-25 released 2025-10-28); not announced in filings reviewed",
+   "confidence_in_thesis": "medium: record flows and margins are filed facts, but the earnings base is market-cyclical and Q2 was flattered by a market rally",
+   "valuation_view_vs_v1": {
+    "v1_verdict": "excessive",
+    "v1_base_3y": 0.0693,
+    "dossier_view": "fair",
+    "consistent": false,
+    "implied_vs_base": "below",
+    "reconciliation": "V1 compares the P/B-implied ROE of 11.3% with TTM GAAP ROE of -2.5%, which includes the one-off $1.795bn impairment; on TTM adjusted earnings of $1,139m over about $10.0bn of common equity ROE is about 11.4%, so the price is roughly fair, not excessive. Base returns agree (mine +8.0% vs V1 +6.9%). Reverse DCF implies about 2.5% 10-year FCF growth versus my base of about 6.7%."
+   },
+   "scenario_returns_3y": {
+    "bear": -0.121,
+    "base": 0.08,
+    "bull": 0.193
+   },
+   "scenario_basis": "Start adjusted EPS $2.84 (Q2-26 x4; TTM $2.51); 2029 adjusted EPS $2.15/$3.45/$4.15, exit P/E 8.5x/10.5x/12.0x, dividend $0.86 growing 5% (cumulative about $2.7); start price $30.92"
+  }
+ }
+}

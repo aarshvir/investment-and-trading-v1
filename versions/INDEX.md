@@ -4,6 +4,7 @@ Completed releases are preserved. Publication order is not an investment-quality
 
 | Version | Author / prepared UTC | What changed | Reports | Complete archive |
 |---|---|---|---|---|
+| v018_2026-10-10_claude | Claude / 2026-10-10T07:37:46.886717+00:00 | All 500 companies independently verified; 20-name all-stock portfolio rebuilt after 909 corrected facts and 63 more verdict changes; rule (q); Loop 12 audit 73/76/75 | [Release notes](v018_2026-10-10_claude/RELEASE_NOTES.md) | [ZIP](v018_2026-10-10_claude/package.zip) |
 | v017_2026-10-06_claude | Claude / 2026-10-06T19:02:53.077016+00:00 | All-stock 20-name release: whole-index diligence, valuation re-assessment after systematic method errors, tech 20-30% rule, 40% tolerance, Codex v012-v016 reconciled | [Release notes](v017_2026-10-06_claude/RELEASE_NOTES.md) | [ZIP](v017_2026-10-06_claude/package.zip) |
 | v016_2026-10-05_codex | Codex / 2026-10-05T17:58:53.932297+00:00 | 40% drawdown tolerance mandate recast and Claude Code stock-only redesign brief; no new weights | [Release notes](v016_2026-10-05_codex/RELEASE_NOTES.md) | [ZIP](v016_2026-10-05_codex/package.zip) |
 | v015_2026-10-04_codex | Codex / 2026-10-04T14:22:15.059137+00:00 | Weekly stocks-only NO CHANGE; Oct 2 prices, MCK event, and forward return states | [Release notes](v015_2026-10-04_codex/RELEASE_NOTES.md) | [ZIP](v015_2026-10-04_codex/package.zip) |

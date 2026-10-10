@@ -480,3 +480,10 @@ tie-breakers/red flags only because no point-in-time history exists for them.
 - NEXT release parent: v017_2026-10-06_claude. The artifact is redeployed (version 19). Git pushed (6e58dbb). The release ZIP stays in OneDrive.
 - Rebuild whack-a-mole lesson: every rebuild pulls in unchecked names, so check the whole bench ahead of time before the next release.
 - Tooling gotcha: double backslashes in Bash tool commands collapse to single; use chr(92) in Python patches.
+
+## 10 Oct 2026: v018_2026-10-10_claude PUBLISHED (parent list starts v017_2026-10-06_claude)
+- All 500 dossiers have a second-analyst check (DV01–DV45, DVH1–DVH6, RA1–RA15): 909 of 4,186 facts failed and were corrected. 63 more verdict changes logged.
+- 20 holdings: BR WTW GDDY CAH ACGL COR WFC (full conviction); ADBE FIS INTU SYF BIIB FSLR BKNG FDX ACN OMC AMCR UBER CVS (half). Tech 22.2% (IT only 20.7%). Rule (q) added.
+- Loop 12 scores 73/76/75. Final C1: 1,475 checked, 4 mismatches corrected afterwards. Gate PASS.
+- OPEN (listed in the release notes): WACC table for all 20 with re-ranking; risk figures by sub-period; P(fall >30/40%) and actions at -20/-40%; stale index-core text in the lower-risk tables; order-dependence by conviction group; ACN/UBER post-cutoff news; no Loop 13.
+- Next release parent: v018_2026-10-10_claude. Artifact redeployed. The ZIP stays in OneDrive.

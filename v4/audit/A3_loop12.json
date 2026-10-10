@@ -1,0 +1,32 @@
+{
+  "total": 75,
+  "criteria": {"1": 8, "2": 9, "3": 7, "4": 8, "5": 7, "6": 9, "7": 7, "8": 6, "9": 6, "10": 8},
+  "must_fix": [
+    "Make lineage and mandate consistent: name v017 as predecessor (4 out V/ADSK/CVS/VZ, 4 in SYF/GD/ADBE/UBER, 16 unchanged), set parents v017 first and a free number v018; remove residual 15-20% and index-core framing (section 7 line 361, section 9, section 13 row 2, dashboard Implementation rules) and the false 'only overlap is HIG'.",
+    "Publish the all-stock risk numbers for the 40% owner: P(fall >30%) = 49% base and P(fall >40%) within 5 years, actions at -20% and -40%, estate-tax choice above $60k with an expected-cost sentence; fix Verdict beta 0.56 to 0.61; disclose that bottom-up scenarios exclude GD (10%) and that five 'bear' cases are positive.",
+    "Refresh or flag stale prices (25 Sep): ACN reported 1 Oct, WFC 13 Oct; print next-earnings dates (next_er) and a refresh-before-each-tranche rule; update the ACN line and trigger.",
+    "Add the UBER Delivery Hero acquisition ($14.8bn equity value, EUR 14.2bn bridge, EUR 4.5bn notes) to the report's UBER thesis, kill criteria and base case; sweep all dossier corrections that add omitted material events into section 6.",
+    "GD (10%): reconcile V1 'demanding' with analyst 'below' at one stated discount rate, publish the Ke/WACC table for all 20, supply or cap for missing scenarios, and replace its 'Thesis horizon' line with plain English.",
+    "Repair Verdict text: remove 'only 500 ... other 0 dossiers ... research budget', state same-model-family caveat and 20% fail rate and no post-correction re-check, reconcile 909/4186 vs 929/4583, fix 'a 86%' and '1.4-1.4', lead with the answer.",
+    "Collapse the ~100 re-assessment bullets in section 6 into a table; correct the WTW exit comparator (3% Q1'26, 5% Q2'26).",
+    "One dashboard next step; update hero ('500 of 500 independently checked'); analyse or delete the 'only the 8 full-conviction names' option."
+  ],
+  "fact_checks": [
+    {"ticker": "ACN", "claim": "Q2 FY26 revenue $18,044.1M EPS $2.93; Q3 FY26 revenue $18,718.1M EPS $3.80", "source": "SEC XBRL companyfacts CIK0001467373 10-Q", "status": "PASS"},
+    {"ticker": "ACN", "claim": "Latest reported quarter in report is Q3 FY26; Q4 FY26 (1 Oct 2026: revenue $18.68bn, bookings +4% USD) not reflected", "source": "Accenture Q4 FY26 8-K via web search", "status": "FAIL"},
+    {"ticker": "ADBE", "claim": "Q1/Q2/Q3 FY26 revenue 6,398/6,618/6,760 and GAAP EPS 4.60/4.25/4.62; margins 37.8/33.8/34.8%", "source": "SEC XBRL CIK0000796343 10-Q", "status": "PASS"},
+    {"ticker": "ADBE", "claim": "TTM GAAP diluted EPS $17.91", "source": "SEC XBRL (Q4 FY25 4.44 + 9M FY26 13.47)", "status": "PASS"},
+    {"ticker": "UBER", "claim": "Q1 revenue $13.2bn NI $0.26bn EPS $0.13; Q2 revenue $14.2bn NI $2.39bn EPS $1.17", "source": "SEC XBRL CIK0001543151 10-Q", "status": "PASS"},
+    {"ticker": "UBER", "claim": "Report omits Delivery Hero offer (equity value $14.8bn) and EUR financing", "source": "UBER dossier correction 3 (10-Q)", "status": "FAIL"},
+    {"ticker": "SYF", "claim": "Q1 NI $805m EPS $2.27; Q2 NI $885m EPS $2.59", "source": "SEC XBRL CIK0001601712 10-Q", "status": "PASS"},
+    {"ticker": "WFC", "claim": "Q2'26 net income $6,407m EPS $2.00", "source": "SEC XBRL CIK0000072971 10-Q", "status": "PASS"},
+    {"ticker": "GD", "claim": "Q2'26 EPS $4.24, revenue $14.1bn, backlog $136.5bn, book-to-bill 1.4x", "source": "company results via web search; DV18", "status": "PASS"},
+    {"ticker": "GD", "claim": "FY26 EPS guidance $16.80-16.90 raised", "source": "secondary sources only (not in SEC Ex-99.1 per DV18)", "status": "MINOR"},
+    {"ticker": "GD", "claim": "Gross debt $9.8bn, cash $3.65bn, net debt/EBITDA 1.0x", "source": "DV18 (debt $7.5bn, cash $4.3bn, about 0.5x)", "status": "FAIL"},
+    {"ticker": "GD", "claim": "3-year bear/base/bull scenario returns", "source": "DV18: cannot be derived", "status": "UNVERIFIABLE"},
+    {"ticker": "WTW", "claim": "Exit comparator 'vs 4-6% in the last four quarters' (section 6)", "source": "DVH1: Q1'26 organic growth 3%", "status": "FAIL"},
+    {"ticker": "Portfolio", "claim": "Weights sum 100%, caps hold, vol 14.4%, TE 12.5%, beta 0.61, worst fall -43.2%, GFC -40.5%, yield 1.6%", "source": "recomputed from d2_adjclose, d4_live_snapshot and lead_portfolio_build.json", "status": "PASS"},
+    {"ticker": "Portfolio", "claim": "Verdict beta 'about 0.56'", "source": "recomputed 0.606 (section 7 says 0.61)", "status": "FAIL"},
+    {"ticker": "Section 13", "claim": "The only overlap with v005 candidates is HIG", "source": "build holdings vs v005 list (no overlap)", "status": "FAIL"}
+  ]
+}

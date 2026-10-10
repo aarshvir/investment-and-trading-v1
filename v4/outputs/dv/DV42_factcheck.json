@@ -1,0 +1,789 @@
+{
+ "as_of": "2026-10-08",
+ "scope": [
+  "VICI",
+  "VLO",
+  "VLTO",
+  "VMC",
+  "VMRK",
+  "VRSK",
+  "VRT",
+  "VRTX",
+  "VST",
+  "VTR"
+ ],
+ "facts": [
+  {
+   "ticker": "VICI",
+   "claim": "Q2'26 revenue $1,058.5M (+5.7%), GAAP EPS $0.48 (Q2'25 $0.82), AFFO/share $0.62 (+4.6%)",
+   "dossier_location": "VICI.md s4 table",
+   "source": "8-K Ex-99.1 acc 0001705696-26-000088",
+   "source_value": "Revenue +5.7% to $1.1bn; NI/common $526.5M, EPS $0.48 vs $0.82 (-41.0%); AFFO $679.6M (+7.8%), $0.62 (+4.6%)",
+   "status": "PASS",
+   "note": "Narrative '-39% YoY' in s4 is net income; EPS fell 41.0% (MINOR)."
+  },
+  {
+   "ticker": "VICI",
+   "claim": "Q1'26 AFFO/share $0.61, +5.7% YoY; AFFO/share growth 4.6-5.7% every quarter",
+   "dossier_location": "VICI.md s4 table and footnote",
+   "source": "8-K Ex-99.1 acc 0001705696-26-000068",
+   "source_value": "AFFO $650.9M +5.7%; AFFO/share $0.61 vs $0.58, +4.5%",
+   "status": "FAIL",
+   "note": "5.7% is aggregate AFFO growth; per-share range is 4.5-5.3%."
+  },
+  {
+   "ticker": "VICI",
+   "claim": "FY26 AFFO guidance trail: $2,590-2,625M ($2.42-2.45) -> $2,665-2,695M ($2.44-2.47) -> $2,675-2,695M ($2.45-2.47); FY25 $2,510-2,520M ($2.36-2.37)",
+   "dossier_location": "VICI.md s5",
+   "source": "8-K Ex-99.1 acc 0001705696-26-000033 / -000068 / -000088 / -25-000130",
+   "source_value": "All four ranges appear verbatim",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VICI",
+   "claim": "Quarterly dividend $0.4525+ (raised ~4% YoY)",
+   "dossier_location": "VICI.md s6",
+   "source": "8-K Ex-99.1 acc 0001705696-25-000130 and -26-000088",
+   "source_value": "Declared quarterly dividend $0.45 per share (+4.0%, +$0.0175)",
+   "status": "FAIL",
+   "note": "Amount is $0.45, not $0.4525."
+  },
+  {
+   "ticker": "VICI",
+   "claim": "Total debt $17.2bn, cash $288M, liquidity $2.5bn",
+   "dossier_location": "VICI.md s6",
+   "source": "8-K Ex-99.1 acc 0001705696-26-000088",
+   "source_value": "Total debt $17,218.4M; cash $288.1M; net debt $16,930.3M; liquidity ~$2.5bn",
+   "status": "PASS",
+   "note": "Leverage 4.9x taken from supplement; not separately re-derived."
+  },
+  {
+   "ticker": "VICI",
+   "claim": "Stockholders' equity $29.17bn (Q2'26), up from $26.6bn a year earlier",
+   "dossier_location": "VICI.md s6",
+   "source": "10-Q acc 0001705696-26-000090; XBRL StockholdersEquity",
+   "source_value": "$29,170.7M at 30 Jun 2026; $27,024.5M at 30 Jun 2025 ($26,537.96M at 31 Dec 2024)",
+   "status": "FAIL",
+   "note": "Prior-year figure is $27.02bn; crosstie flag explained."
+  },
+  {
+   "ticker": "VICI",
+   "claim": "Caesars ~36% and MGM ~34% of contractual rent in Q2'26 (~70% combined)",
+   "dossier_location": "VICI.md s6",
+   "source": "10-Q acc 0001705696-26-000090 Note on concentration",
+   "source_value": "MGM 34% (3 months) and 35% (6 months); Caesars 36% of total contractual rent",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VICI",
+   "claim": "Reverse DCF: Gordon growth on AFFO/share, r 8.5-9.5%, implies -0.9% to -1.8% growth; base +3-4%",
+   "dossier_location": "VICI.md s7",
+   "source": "recomputed; 10-year Treasury 5.17% on 25 Sep 2026",
+   "source_value": "Replicates (-0.9% / -1.3% / -1.8%); r minus 5.17% = 3.3-4.3 points; dividend-based check (D=$1.80, r=9%) +1.2%",
+   "status": "PASS",
+   "note": "Method acceptable for a REIT on AFFO; AFFO growth that is externally funded is a caveat. implied_vs_base below stands."
+  },
+  {
+   "ticker": "VICI",
+   "claim": "Scenarios: bear +4%, base +11%, bull +18-19% per year (3y)",
+   "dossier_location": "VICI.md s7",
+   "source": "recomputed from dossier inputs",
+   "source_value": "bear -0.4% (growth 1%, exit 7x), base +11.4% (3.5%, 9.56x), bull +12.9% (5%, exit 9.5x; +19.3% needs 11.5x)",
+   "status": "FAIL",
+   "note": "Bear and bull inconsistent with stated exit multiples; summary F34 restated."
+  },
+  {
+   "ticker": "VICI",
+   "claim": "Verdict INCLUDE-SMALL supported by 'implied below base'",
+   "dossier_location": "VICI.md s1/s7",
+   "source": "recomputed",
+   "source_value": "Implied growth below base after the scenario restatement; bear return ~0%",
+   "status": "PASS",
+   "note": "Verdict unchanged."
+  },
+  {
+   "ticker": "VLO",
+   "claim": "Q2'26 revenue $44,476M, op income $5,196M (11.7%), GAAP EPS $12.62 (Q2'25 $2.28), adj EPS $12.54",
+   "dossier_location": "VLO.md s4",
+   "source": "8-K Ex-99.01 acc 0001628280-26-050822; XBRL",
+   "source_value": "NI $3.7bn, $12.62; adjusted $12.54; Q2'25 $2.28; operating income 5,196 vs 997 (XBRL)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VLO",
+   "claim": "Quarterly refining margin per bbl: Q3-25 13.14, Q4-25 13.61, Q1-26 14.90, Q2-26 23.62; FY25 12.29; Q2-25 12.35",
+   "dossier_location": "VLO.md s3/s4",
+   "source": "8-K Ex-99.01 acc 0001628280-25-045978 / -26-003974 / -26-028602 / -26-050822",
+   "source_value": "13.14; 13.61 (FY 12.29); 14.90; 23.62 (Q2-25 12.35)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VLO",
+   "claim": "St. Charles FCC guidance quotes (second half 2026 -> still second half -> third quarter -> still third quarter)",
+   "dossier_location": "VLO.md s5",
+   "source": "four 8-K Ex-99.01 releases",
+   "source_value": "All four quotes appear in release bullets/Strategic Update; project cost $230M",
+   "status": "PASS",
+   "note": "Valero gives no numeric guidance; dossier says so."
+  },
+  {
+   "ticker": "VLO",
+   "claim": "Cash $7,874M; debt+finance leases $927M current + $10,422M long-term; equity $28,268M (Valero $25,001M); debt-to-cap net of cash 11%",
+   "dossier_location": "VLO.md s6",
+   "source": "10-Q acc 0001628280-26-050937 balance sheet; release",
+   "source_value": "7,874; 927 + 10,422; 28,268 / 25,001; 11 percent",
+   "status": "PASS",
+   "note": "Consolidated incl. DGD VIE cash $387M, as disclosed."
+  },
+  {
+   "ticker": "VLO",
+   "claim": "Q2 buybacks 9.0m shares at $251.08; $1.4bn authorisation left; capex ~$2.0bn incl. $250M Port Arthur",
+   "dossier_location": "VLO.md s6/s5",
+   "source": "10-Q acc 0001628280-26-050937 Item 2 and liquidity",
+   "source_value": "9,011,171 shares at $251.08; $1.4 billion remaining; 'approximately $2.0 billion ... $250 million'",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VLO",
+   "claim": "TTM OCF ~$10.9bn (FY25 5,826 + 6M26 ~7.0bn - 6M25 ~1.9bn); TTM FCF ~$9.3bn",
+   "dossier_location": "VLO.md s6",
+   "source": "XBRL companyfacts",
+   "source_value": "5,826 + 6,970 - 1,888 = 10,908; Q1-26 OCF 1,390",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VLO",
+   "claim": "Trailing GAAP EPS $23.97 = 7.57 + 16.78 - 0.37",
+   "dossier_location": "VLO.md s3",
+   "source": "XBRL EarningsPerShareDiluted",
+   "source_value": "7.57; 16.78 (6M26); 0.37 (6M25) = 23.98",
+   "status": "PASS",
+   "note": "Rounding of 1 cent."
+  },
+  {
+   "ticker": "VLO",
+   "claim": "Reverse DCF: market cap $111.5bn equals TTM FCF $9.3bn growing -0.7%/yr (9% cost of equity, 2% terminal); implied_vs_base above",
+   "dossier_location": "VLO.md s7",
+   "source": "recomputed; 10-year Treasury 5.17%",
+   "source_value": "Replicates: -0.7% gives $111.1bn at 9%; -2.6%/+1.1% span 96.7-126.8bn",
+   "status": "MINOR",
+   "note": "9% = 3.8 points over the Treasury but the ERP is not stated; FCF includes $706M working-capital inflow and DGD other-member cash, flagged by the dossier. SBC immaterial. Direction (above) unchanged."
+  },
+  {
+   "ticker": "VLO",
+   "claim": "Scenario table: bear -35%, base -11%, bull +8.5% (3y)",
+   "dossier_location": "VLO.md scenarios",
+   "source": "recomputed from stated EPS, P/E, dividends, retained cash",
+   "source_value": "(108/387)^(1/3)-1 = -34.7%; (269/387)^(1/3)-1 = -11.4%; (495/387)^(1/3)-1 = +8.5%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VLO",
+   "claim": "Form 4 scan: SVP Fisher sold 31,211 shares (~$7.7m) Mar-Jun 2026",
+   "dossier_location": "VLO.md s11",
+   "source": "not re-pulled",
+   "source_value": "n/a",
+   "status": "UNVERIFIABLE",
+   "note": "Not part of load-bearing facts; no contrary evidence found."
+  },
+  {
+   "ticker": "VLTO",
+   "claim": "Q2'26 revenue $1,474M (+7.6%, core +4.2%), op margin 21.4%, GAAP EPS $0.98, adj EPS $1.11 incl. $0.05 tariff refund",
+   "dossier_location": "VLTO.md s4",
+   "source": "8-K Ex-99.1 acc 0001967680-26-000043",
+   "source_value": "Sales $1,474M +7.6%, core 4.2%; margin 21.4%; NI $241M, $0.98; adjusted $1.11; IEEPA ~$0.05",
+   "status": "PASS",
+   "note": "Period ended 3 Jul 2026."
+  },
+  {
+   "ticker": "VLTO",
+   "claim": "Q4'25 GAAP EPS ~$1.02 (derived); Q1'26 $1.02; Q3'25 $0.95; FY25 $3.76, NI $940M, revenue $5,503M",
+   "dossier_location": "VLTO.md s4",
+   "source": "8-K acc 0001967680-26-000003 / -26-000023 / -25-000135; XBRL",
+   "source_value": "Q4-25 $1.01 reported; Q1-26 $1.02; Q3-25 $0.95; FY25 $3.76, 940, 5,503",
+   "status": "MINOR",
+   "note": "Q4-25 reported $1.01."
+  },
+  {
+   "ticker": "VLTO",
+   "claim": "FY26 guidance trail: initial EPS $4.10-4.20 -> $4.20-4.28 (Q1, core 3.0-4.5%) -> $4.35-4.43 (Q2, core 4.0-4.5%)",
+   "dossier_location": "VLTO.md s5",
+   "source": "8-K Ex-99.1 acc 0001967680-26-000003 / -26-000023 / -26-000043",
+   "source_value": "All ranges verbatim; FCF conversion ~100%",
+   "status": "PASS",
+   "note": "Release dates are 28 Apr and 28 Jul (dossier 30-Apr, 29-Jul): MINOR."
+  },
+  {
+   "ticker": "VLTO",
+   "claim": "Total debt $3,593.0M, cash $2,119.0M, net debt $1,474M, net debt/EBITDA 1.06x",
+   "dossier_location": "VLTO.md s6 and kill criterion 4",
+   "source": "10-Q acc 0001967680-26-000044 balance sheet (3 Jul 2026)",
+   "source_value": "Current portion $700M + long-term $2,679M = $3,379M; cash $2,119M; net debt $1,260M (0.91x)",
+   "status": "FAIL",
+   "note": "Debt overstated by $214M; crosstie flag confirmed."
+  },
+  {
+   "ticker": "VLTO",
+   "claim": "TTM FCF $1,047M (258+291+170+328); TTM NI $988M; SBC TTM $74M (1.3% of revenue)",
+   "dossier_location": "VLTO.md s6",
+   "source": "releases and XBRL ShareBasedCompensation",
+   "source_value": "FCF 258/291/170/328; NI 239/254/254/241; SBC FY25 74 - H1-25 40 + H1-26 40 = 74",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VLTO",
+   "claim": "Reverse DCF: WACC 8%, 4% terminal, FCF $1,047M, EV $25,156M gives ~3.0%/yr",
+   "dossier_location": "VLTO.md s7",
+   "source": "recomputed",
+   "source_value": "Replicates 3.03%; with SBC as a cost ($973M) and EV $24,942M: 3.8%; WACC 8% consistent with 5.17% + beta 0.76 x 4.5%",
+   "status": "FAIL",
+   "note": "SBC added back and debt overstated; in_line still holds (base 4-5%)."
+  },
+  {
+   "ticker": "VLTO",
+   "claim": "Scenario returns bear -9.0%, base +3.4%, bull +15.0% (3y, EPS x exit P/E, 0.5% yield)",
+   "dossier_location": "VLTO.md s7",
+   "source": "recomputed from $97.14",
+   "source_value": "-9.5%/+0.5%; +2.8%+0.5%; +14.4%+0.5%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VMC",
+   "claim": "Q2 FY26 revenue $2,156M (+2.6%), adjusted EBITDA $654M (30.3%), diluted EPS $2.47, adjusted $2.59; TTM revenue $8,116M, EBITDA $2,354M, EPS $8.49",
+   "dossier_location": "VMC.md s4",
+   "source": "8-K Ex-99.1 acc 0001140361-26-029958",
+   "source_value": "2,156 vs 2,102; 654 (30.3%); 2.47 / 2.59; TTM 8,116 / 2,354 / 8.49",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VMC",
+   "claim": "'Q2 revenue is on a slightly different consolidated basis ... not an error'",
+   "dossier_location": "VMC.md s4 footnote",
+   "source": "same release",
+   "source_value": "Same total-revenue series; TTM 8,116 vs 7,595 (+6.9%)",
+   "status": "FAIL",
+   "note": "No basis difference; statement incorrect."
+  },
+  {
+   "ticker": "VMC",
+   "claim": "Guidance: FY26 Adjusted EBITDA $2.4-2.6bn reiterated at Q1 and Q2; verbatim CEO quote",
+   "dossier_location": "VMC.md s5",
+   "source": "8-K Ex-99.1 acc 0001140361-26-017638 / -26-029958 / -26-005605",
+   "source_value": "'we reiterate our full-year outlook to deliver between $2.4 and $2.6 billion of Adjusted EBITDA' (Q1 and Q2); same range at Feb initial",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VMC",
+   "claim": "Debt/EBITDA 1.9x vs target 2.0-2.5x; XBRL debt ~$4,440M at Q1",
+   "dossier_location": "VMC.md s6",
+   "source": "release; 10-Q acc 0001628280-26-050486",
+   "source_value": "'1.9 times'; 30 Jun 2026 debt 400.0 + 3,964.3 = $4,364.3M, cash $194.2M",
+   "status": "PASS",
+   "note": "Dossier used Q1 XBRL; Q2 now available, consistent."
+  },
+  {
+   "ticker": "VMC",
+   "claim": "FY25 OCF $1,813M, capex $677.7M, FCF ~$1,135M; NI attributable $1,076.7M",
+   "dossier_location": "VMC.md s6",
+   "source": "10-K XBRL",
+   "source_value": "1,813.0; 677.7; 1,076.7",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VMC",
+   "claim": "Valuation: FCF yield 3.6%, WACC ~7.5%, implied 3.5-4% perpetual growth vs base 5-6% (implied below)",
+   "dossier_location": "VMC.md s7",
+   "source": "recomputed; 10-year Treasury 5.17% on 25 Sep 2026",
+   "source_value": "TTM FCF after SBC $964M (3.0% yield); at Ke 9.0%, 3% terminal: 11.5% implied 10-year growth (10.3-12.7% over 8.5-9.5%)",
+   "status": "FAIL",
+   "note": "Discount rate inconsistent with Treasury; SBC added back; implied above base; verdict INCLUDE-SMALL -> WATCH."
+  },
+  {
+   "ticker": "VMC",
+   "claim": "Trailing P/E 28.9x (s7) vs '24-28x' in the verdict",
+   "dossier_location": "VMC.md s1 vs s7",
+   "source": "$245.00 / $8.49",
+   "source_value": "28.9x",
+   "status": "MINOR",
+   "note": "Inconsistent wording; corrected inline."
+  },
+  {
+   "ticker": "VMC",
+   "claim": "NAFTA arbitration decision 27 Jul 2026: Mexico in violation, damages 'negligible'",
+   "dossier_location": "VMC.md s11",
+   "source": "8-K acc 0001140361-26-029775",
+   "source_value": "'the Tribunal's award of monetary damages to Vulcan for Mexico's violations was negligible'",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VMRK",
+   "claim": "EQR Q2'26: EPS $0.30 (Q2'25 $0.50), Normalized FFO $1.02 ($0.99); same-store revenue +1.9%, expenses +3.0%, NOI +1.4%",
+   "dossier_location": "VMRK.md s4",
+   "source": "8-K Ex-99.1 acc 0001193125-26-312445",
+   "source_value": "0.30/0.50; 1.02/0.99; +1.9% / +3.0% / +1.4%; H1 NFFO 2.01 vs 1.94 (+3.6%)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VMRK",
+   "claim": "AVB Q2'26: Core FFO $2.86 ($2.82), EPS $1.11, Q2'25 EPS n/a",
+   "dossier_location": "VMRK.md s4 table",
+   "source": "8-K Ex-99.1 acc 0000915912-26-000018",
+   "source_value": "Core FFO 2.86 vs 2.82; EPS 1.11 vs 1.88 (-41.0%); YTD Core FFO 5.69 (+0.7%)",
+   "status": "MINOR",
+   "note": "Prior-year EPS available ($1.88)."
+  },
+  {
+   "ticker": "VMRK",
+   "claim": "Guidance: EQR same-store revenue 2.1-2.7% (was 1.2-3.2%), NOI 1.5-2.1% (0.5-2.5%), EPS/FFO withdrawn; AVB suspended outlook; VMRK 15 Sep: revenue outlook 2% midpoint, rents +3.6%, occupancy 95.7%, 60% renewing",
+   "dossier_location": "VMRK.md s5",
+   "source": "EQR and AVB 8-K Ex-99.1; VMRK 8-K Ex-99.1 acc 0001193125-26-392188",
+   "source_value": "All quotes and figures appear",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VMRK",
+   "claim": "Debt: EQR total debt $8,261.7M, net debt/NEBITDAre 4.28x, 2026 maturities $1,267M; AVB principal $9,079.1M, net debt $8,869.8M, 4.6x; combined ~4.4x",
+   "dossier_location": "VMRK.md s6",
+   "source": "EQR and AVB Ex-99.1",
+   "source_value": "8,261,669; 4.28x; 1,267,425; 9,079,099; 8,869,811; 4.6 times",
+   "status": "PASS",
+   "note": "Crosstie flag (XBRL 8,241.2) refers to a different date/definition; AVB not in EQR XBRL, as the dossier states."
+  },
+  {
+   "ticker": "VMRK",
+   "claim": "Merger closed 17 Aug 2026; exchange ratio 2.793; ~400 million shares issued",
+   "dossier_location": "VMRK.md s1/s3",
+   "source": "8-K acc 0001140361-26-033377 Ex-99/8-K text",
+   "source_value": "'2.793 common shares'; 'approximately 400 million Company Common Shares'",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VMRK",
+   "claim": "Reverse DCF at 7.5% cost of equity: implied AFFO/share growth 0.4% (1.6% at 8%) vs base 3.0-3.5%: implied below",
+   "dossier_location": "VMRK.md s7",
+   "source": "recomputed; 10-year Treasury 5.17%",
+   "source_value": "Replicates; at 8.8% (5.17% + 0.8 x 4.5%): 3.3% (2.7% at 8.5%, 4.2% at 9.2%)",
+   "status": "FAIL",
+   "note": "Rate 2.3-2.8 points over the Treasury; implied is in_line; verdict INCLUDE-SMALL -> WATCH (borderline)."
+  },
+  {
+   "ticker": "VMRK",
+   "claim": "Verdict INCLUDE-SMALL supported by implied below base",
+   "dossier_location": "VMRK.md s1/s7",
+   "source": "logic check",
+   "source_value": "Condition fails after rate correction; no combined earnings history",
+   "status": "FAIL",
+   "note": ""
+  },
+  {
+   "ticker": "VRSK",
+   "claim": "Q2'26 revenue $806M (+4.3%, OCC +5.8%), NI $229M (-9.8%), GAAP EPS $1.75 (-3.3%), adj EPS $1.98 (+5.3%), FCF $298M",
+   "dossier_location": "VRSK.md s4",
+   "source": "8-K Ex-99.1 acc 0001437749-26-024748",
+   "source_value": "806 / 4.3% / 5.8%; 229 / -9.8%; 1.75 / -3.3%; 1.98 / +5.3%; 298",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VRSK",
+   "claim": "Q1'26 revenue $783M (+3.9%, OCC +4.7%), NI $234M, EPS $1.73, adj $1.82",
+   "dossier_location": "VRSK.md s4",
+   "source": "8-K Ex-99.1 acc 0001437749-26-013728",
+   "source_value": "783 +3.9%, OCC 4.7%; 234; 1.73; 1.82",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VRSK",
+   "claim": "FY26 guidance unchanged: revenue $3,190-3,240M, adjusted EBITDA $1,790-1,830M, adjusted EPS $7.45-7.75, capex $260-280M, interest $190-200M, dividend $2.00",
+   "dossier_location": "VRSK.md s5",
+   "source": "8-K Ex-99.1 acc 0001437749-26-004451 / -013728 / -024748",
+   "source_value": "Identical table in all three releases; Q2 'remains unchanged'",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VRSK",
+   "claim": "Balance sheet 30 Jun 2026: cash $551.4M, LT debt $4,215.8M, current debt $257.7M, equity $(1,189.0)M, H1 repurchases $1,571.9M; net debt $3,922.1M",
+   "dossier_location": "VRSK.md s6",
+   "source": "8-K Ex-99.1 acc 0001437749-26-024748 balance sheet",
+   "source_value": "551.4; 4,215.8; 257.7; (1,189.0); 1,571.9",
+   "status": "PASS",
+   "note": "XBRL cash flag (524.5) is the 31 Mar value."
+  },
+  {
+   "ticker": "VRSK",
+   "claim": "AccuLynx acquisition terminated after FTC review not completed by 26 Dec 2025",
+   "dossier_location": "VRSK.md s6",
+   "source": "8-K Ex-99.1 acc 0001437749-26-004451",
+   "source_value": "Quoted text matches",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VRSK",
+   "claim": "Reverse DCF: WACC 8%, 3% terminal, EV $26.07bn, FY25 FCF $1.192bn, implied 3.8%; base 7-8%",
+   "dossier_location": "VRSK.md s7",
+   "source": "recomputed; XBRL FY25 OCF 1,436.0, capex 244.1, SBC 54.2, interest 170.9",
+   "source_value": "Replicates 3.76%; SBC cost + unlevered FCF $1,214M: 3.5%; equity basis Ke 8.8%: 4.2%",
+   "status": "FAIL",
+   "note": "Method flaws (SBC add-back, levered FCF vs EV) immaterial to the call; below base stands."
+  },
+  {
+   "ticker": "VRSK",
+   "claim": "Mgmt promised return to Investor Day targets in 'two' (s1) vs 'three' (s3) consecutive releases",
+   "dossier_location": "VRSK.md s1/s3",
+   "source": "Q1 and Q2 releases",
+   "source_value": "Language present in Q1 and Q2; Q4-25 not checked",
+   "status": "MINOR",
+   "note": "Internal inconsistency."
+  },
+  {
+   "ticker": "VRT",
+   "claim": "Q2'26 net sales $3,274M (+24%: organic 18%, acquisitions 5%, FX 1%), GAAP EPS $1.27, adj EPS $1.52, adj op margin 22.6%, OCF $1,100M, adj FCF $925M",
+   "dossier_location": "VRT.md s4",
+   "source": "8-K Ex-99.1 acc 0001628280-26-050323",
+   "source_value": "All values match; GAAP op profit $638M (19.5%)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VRT",
+   "claim": "FY26 guidance trail: $13.25-13.75bn (EPS $5.97-) -> $13.5-14.0bn ($6.30-) -> $13.8-14.2bn ($6.65-6.75); FY25 adj EPS midpoint $3.80 -> $4.10",
+   "dossier_location": "VRT.md s5",
+   "source": "8-K Ex-99.1 acc 0001674101-26-000006 / 0001628280-26-026379 / -050323 / 0001674101-25-000020",
+   "source_value": "All lower bounds and midpoints match; organic 27-29% -> 29-31% -> 30-32%",
+   "status": "PASS",
+   "note": "Upper EPS bounds for Feb/Apr not displayed in extract; midpoint raises consistent."
+  },
+  {
+   "ticker": "VRT",
+   "claim": "Backlog $15bn (+109%) and book-to-bill 2.9x 'as of the most recent quarter' / 'currently'",
+   "dossier_location": "VRT.md s1, s2, s8, s9",
+   "source": "8-K Ex-99.1 acc 0001674101-26-000006 (Q4 2025)",
+   "source_value": "Q4-25: book-to-bill ~2.9x, backlog $15.0bn; Q1/Q2 2026 releases give no figure",
+   "status": "FAIL",
+   "note": "Stale by two quarters; kill criterion baseline invalid."
+  },
+  {
+   "ticker": "VRT",
+   "claim": "Total debt ~$3,338M, cash ~$3,111M, net debt ~$228M (0.09x); also 'net-cash position for the first time'",
+   "dossier_location": "VRT.md s6 / s4",
+   "source": "8-K Ex-99.1 acc 0001628280-26-050323 balance sheet",
+   "source_value": "Long-term debt $2,939.8M, current portion nil; cash $2,810.6M + ST investments $300.0M; company: 'net cash position'",
+   "status": "FAIL",
+   "note": "Net cash ~$171M excluding leases; self-contradictory text."
+  },
+  {
+   "ticker": "VRT",
+   "claim": "Reverse DCF: EV $94,665M, FCF $2,697M, 9.5%, 2.5% terminal implies 14.3%/yr; base 11-12%",
+   "dossier_location": "VRT.md s7",
+   "source": "recomputed",
+   "source_value": "Replicates 14.2-14.3%; base path 30/20/14/10x7 compounds to 13.2%; at 11%: 17.5%",
+   "status": "FAIL",
+   "note": "Base-case arithmetic and rate not tied to the Treasury; 'above' stands more firmly."
+  },
+  {
+   "ticker": "VRT",
+   "claim": "Scenarios: bear -17.6%, base +14.5%, bull +33.6% (3y)",
+   "dossier_location": "VRT.md s7",
+   "source": "recomputed",
+   "source_value": "(141.4/253.28)^(1/3)-1 = -17.6%; 14.5%; 33.6%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VRT",
+   "claim": "TTM FCF $2,697M (quant snapshot); TTM net income $1,732M",
+   "dossier_location": "VRT.md s6",
+   "source": "XBRL / releases",
+   "source_value": "NI 398.5 + 445.6 + 390.1 + 497.8 = 1,732; OCF TTM 3,354 less capex ~424 = ~2.9bn",
+   "status": "UNVERIFIABLE",
+   "note": "NI ties; FCF differs from filings-derived ~$2.9bn."
+  },
+  {
+   "ticker": "VRT",
+   "claim": "Hyperscaler miss vs consensus ($3.27bn vs ~$3.38bn), 26% one-day drop, S&P 500 inclusion March 2026, plaintiff-firm alerts, director/CEO Form 4 items",
+   "dossier_location": "VRT.md s3/s10/s11",
+   "source": "not in SEC filings read",
+   "source_value": "n/a",
+   "status": "UNVERIFIABLE",
+   "note": "Q2 sales guide was $3,250-3,450M; reported $3,274M (low end), which is consistent."
+  },
+  {
+   "ticker": "VRTX",
+   "claim": "Q2'26 total revenue $3,333.9M (+12%), GAAP NI $1,099.8M, EPS $4.31 (Q2'25 $3.99, NI $1,032.9M)",
+   "dossier_location": "VRTX.md s3",
+   "source": "8-K Ex-99.1 acc 0000875320-26-000256",
+   "source_value": "3,333.9 vs 2,964.7; 1,099.8 vs 1,032.9; 4.31 vs 3.99",
+   "status": "PASS",
+   "note": "Column labelled 'product revenue' is total revenue in 2026 (MINOR)."
+  },
+  {
+   "ticker": "VRTX",
+   "claim": "Product mix Q2'26 vs Q2'25: Trikafta/Kaftrio 2,497.2 vs 2,551.1; Alyftrek 573.6 vs 156.8; other CF 137.1 vs 193.7; Casgevy 76.4 vs 30.4; Journavx 49.6 vs 12.0",
+   "dossier_location": "VRTX.md s3",
+   "source": "same release revenue table",
+   "source_value": "Identical",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VRTX",
+   "claim": "FY26 revenue guidance: $12.95-13.1B (Feb), unchanged (May), raised to $13.1-13.2B (Aug)",
+   "dossier_location": "VRTX.md s4",
+   "source": "8-K Ex-99.1 acc 0000875320-26-000034 / -000171 / -000256",
+   "source_value": "'Unchanged' vs $12.95 to $13.1 billion; 'raised ... to $13.1 billion to $13.2 billion from $12.95 billion to $13.1 billion'",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VRTX",
+   "claim": "TTM OCF $4,292.9M, capex $496.8M, FCF ~$3.80bn",
+   "dossier_location": "VRTX.md s6",
+   "source": "XBRL 10-K/10-Q",
+   "source_value": "3,631.4 - 1,892.0 + 2,553.5; 437.6 - 186.4 + 245.6",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VRTX",
+   "claim": "Cash $6,143.5M + ST $1,708.9M + LT securities $5,789.1M = $13,641.5M; equity $20,247.9M; no funded debt",
+   "dossier_location": "VRTX.md s6",
+   "source": "10-Q acc 0000875320-26-000259; release '$13.6 billion'",
+   "source_value": "Equity 20,247.9; total cash and securities $13.6bn; 2026 Term Loan is a subsequent event",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VRTX",
+   "claim": "Crinetics: $85.00 per share, $4.5bn bridge/term loan, closed 1 Sep 2026",
+   "dossier_location": "VRTX.md s5",
+   "source": "8-K acc 0001193125-26-296710",
+   "source_value": "'$85.00 per share in cash'; '$4.5 billion' 364-day bridge",
+   "status": "PASS",
+   "note": "Closing date not in the filings read; 10-Q shows the term loan terms."
+  },
+  {
+   "ticker": "VRTX",
+   "claim": "Reverse DCF: EV $119.6bn, FCF $3.80bn, WACC 8.8%, 3.5% terminal => 9.6%/yr; base 10%; implied IN LINE",
+   "dossier_location": "VRTX.md s7",
+   "source": "recomputed; XBRL SBC 685.9 / 333.4 / 336.6, net interest income $120.6M per quarter",
+   "source_value": "Replicates 9.64%; FCF after SBC $3.107bn: 12.2%; also excluding after-tax interest income $2.73bn: 13.9%",
+   "status": "FAIL",
+   "note": "SBC added back; interest income double counted; implied above base; verdict INCLUDE-SMALL -> WATCH."
+  },
+  {
+   "ticker": "VRTX",
+   "claim": "Scenarios: bear -7.0%, base +7.3%, bull +17.7% (non-GAAP EPS x exit P/E)",
+   "dossier_location": "VRTX.md s7",
+   "source": "recomputed",
+   "source_value": "-7.0%, +7.3%, +17.7% (TTM non-GAAP EPS 18.81)",
+   "status": "MINOR",
+   "note": "Replicates, but non-GAAP EPS excludes SBC."
+  },
+  {
+   "ticker": "VST",
+   "claim": "Q2'26 GAAP NI $305M, operating income $553M, ongoing operations adjusted EBITDA $1,767M (+31% vs $1,349M); Q1'26 op income 1,499, NI 1,029, EBITDA 1,494",
+   "dossier_location": "VST.md s4",
+   "source": "8-K Ex-99.1 acc 0001692819-26-000017",
+   "source_value": "305; 553; 1,767 vs 1,349; H1 NI 1,334, op income 2,052, EBITDA 3,261",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VST",
+   "claim": "FY26 guidance $6.8-7.6bn EBITDA / $3.925-4.725bn FCFbG 'initial' at Q4/FY25 then reaffirmed",
+   "dossier_location": "VST.md s5",
+   "source": "8-K Ex-99.1 acc 0001193125-25-268033 (Q3-25) and 0001193125-26-073364",
+   "source_value": "Initiated in the Q3-25 release (6 Nov 2025); reaffirmed Feb, May, Aug 2026",
+   "status": "FAIL",
+   "note": "Guidance origin misdated; also dossier lists 10-Q dates for releases."
+  },
+  {
+   "ticker": "VST",
+   "claim": "FY25 EBITDA $5,912M and FCFbG $3,592M beat the narrowed ranges ($5.7-5.9bn, $3.3-3.5bn)",
+   "dossier_location": "VST.md s5",
+   "source": "8-K Ex-99.1 acc 0001193125-26-073364 / -25-268033",
+   "source_value": "5,912; 3,592; narrowed 5,700-5,900 and 3,300-3,500",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VST",
+   "claim": "Total debt $19,595M (LongTermDebt), cash $435M, net debt $19.16bn; net debt/TTM EBITDA 2.9x (TTM $6,584M)",
+   "dossier_location": "VST.md s6",
+   "source": "10-Q acc 0001692819-26-000019; releases",
+   "source_value": "LT 17,719 + current 1,876 = 19,595; cash 435; TTM EBITDA 5,912 + 3,261 - 2,589 = 6,584",
+   "status": "PASS",
+   "note": "Crosstie flag ($2.6bn) is the debt increase, not a debt level."
+  },
+  {
+   "ticker": "VST",
+   "claim": "EV = market cap + net debt = $65.63bn; EV/EBITDA 9.1x",
+   "dossier_location": "VST.md s7",
+   "source": "10-Q balance sheet",
+   "source_value": "Preferred stock $2,476M and forward repurchase obligation $613M excluded; EV with preferred ~$68.1bn, 9.5x",
+   "status": "FAIL",
+   "note": "Capital-structure scope."
+  },
+  {
+   "ticker": "VST",
+   "claim": "Events checked to 2026-09-25; financing: $2.23bn (Mar) and $4.0bn (Apr) notes",
+   "dossier_location": "VST.md s6/s11/s12",
+   "source": "8-K acc 0001140361-26-037577 (24 Sep 2026), -26-017445",
+   "source_value": "$850M 7.000% + $650M 7.250% junior subordinated notes completed 24 Sep 2026; $4.0bn senior notes 22 Apr 2026",
+   "status": "FAIL",
+   "note": "Omitted $1.5bn issuance inside the window; pro forma leverage ~3.1x."
+  },
+  {
+   "ticker": "VST",
+   "claim": "Cogentrix: ~5,500 MW, ~$2.3bn cash net of ~$1.5bn assumed debt plus 5,000,000 shares at $185; FERC approval",
+   "dossier_location": "VST.md s6",
+   "source": "10-Q acc 0001692819-26-000019 Note 2; Q2 release",
+   "source_value": "Matches ($925M shares; total ~$4.7bn); FERC approval in release bullets",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VST",
+   "claim": "Valuation: EV/EBITDA 9.1x vs 4-7x band, 'reverse DCF' requires ~5%/yr EBITDA growth; implied above",
+   "dossier_location": "VST.md s7",
+   "source": "method check against program rules",
+   "source_value": "Multiple comparison, not an FCF discounting; no capex/SBC; 10-year Treasury not referenced",
+   "status": "MINOR",
+   "note": "Cannot be rebuilt as an FCF DCF from the filings read; direction reinforced by corrected EV."
+  },
+  {
+   "ticker": "VTR",
+   "claim": "Q2'26 revenue $1,729.6M (+21.7%), Q1'26 $1,656.9M (+22.0%); EPS $0.14 (Q2'25 $0.15), Q1'26 $0.11",
+   "dossier_location": "VTR.md s4",
+   "source": "8-K Ex-99.1 acc 0000740260-26-000022; XBRL",
+   "source_value": "1,729.6 vs 1,420.9; 1,656.9 vs 1,358.1; 0.14 vs 0.15; YTD 0.26",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VTR",
+   "claim": "Normalized FFO guidance raised to $3.85-3.90 (prior lower range), citing Q2 call dated 2026-08-07 via aggregators",
+   "dossier_location": "VTR.md s5",
+   "source": "8-K Ex-99.1 acc 0000740260-26-000022 (29 Jul 2026)",
+   "source_value": "$3.85-3.90 (midpoint $3.88) vs $3.82-3.89 as of 4/27/26",
+   "status": "FAIL",
+   "note": "Date wrong (29 Jul, not 7 Aug); primary exhibit now confirms the figures."
+  },
+  {
+   "ticker": "VTR",
+   "claim": "SHOP same-store NOI +16% (US +18%); total same-store NOI +10%; investment guidance $4.5B from $3.0B",
+   "dossier_location": "VTR.md s5",
+   "source": "same release",
+   "source_value": "SHOP +16%; total same-store cash NOI +10%; investment volume $4.5 billion; 'from $3.0B' not stated; US +18% not found in extract",
+   "status": "MINOR",
+   "note": "Main figures PASS; prior-guidance and US sub-figure unverified."
+  },
+  {
+   "ticker": "VTR",
+   "claim": "Debt: latest confirmed total debt $13,011M (31 Dec 2025); net debt/EBITDA 5.3x",
+   "dossier_location": "VTR.md s6 and kill criterion 2",
+   "source": "8-K Ex-99.1 acc 0000740260-26-000022 non-GAAP reconciliation",
+   "source_value": "Total debt $12,687.8M; net debt $12,906.1M / annualized further adjusted EBITDA $2,734.9M = 4.72x (5.57x at 30 Jun 2025)",
+   "status": "FAIL",
+   "note": "Leverage lower than stated; kill baseline stale."
+  },
+  {
+   "ticker": "VTR",
+   "claim": "Cash $198.96M (30 Jun 2026); equity $14.65bn",
+   "dossier_location": "VTR.md s6",
+   "source": "release balance sheet",
+   "source_value": "198,956; Ventas stockholders' equity 14,649,399",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "VTR",
+   "claim": "Reverse DCF: FFO0 $3.875, Ke 8.5%, 3% terminal => 5.3%/yr; base 7%; implied BELOW",
+   "dossier_location": "VTR.md s7",
+   "source": "recomputed; 10-year Treasury 5.17%",
+   "source_value": "Replicates 5.27%; at 9.0%: 6.4%; at 9.5%: 7.6%",
+   "status": "FAIL",
+   "note": "Rate 3.3 points over Treasury; FFO is not a cash flow; implied in_line; verdict INCLUDE-SMALL -> WATCH (borderline)."
+  },
+  {
+   "ticker": "VTR",
+   "claim": "Dividend ~$0.48 quarterly (yield 2.3%)",
+   "dossier_location": "VTR.md s6",
+   "source": "XBRL CommonStockDividendsPerShareDeclared FY25 $1.92",
+   "source_value": "$1.92 for 2025 = $0.48 x 4",
+   "status": "PASS",
+   "note": "2026 declaration not re-pulled."
+  },
+  {
+   "ticker": "VTR",
+   "claim": "Share count 451.2M -> 512.9M (+13.7%)",
+   "dossier_location": "VTR.md s6",
+   "source": "Q2 release weighted average shares",
+   "source_value": "Diluted weighted 459.1M (Q2-25) -> 497.7M (Q2-26), +8.4%; period-end counts not re-pulled",
+   "status": "UNVERIFIABLE",
+   "note": "Weighted-average growth is +8.4%; the +13.7% compares period-end share counts across 15 months."
+  }
+ ],
+ "verdict_changes": [
+  {
+   "ticker": "VMC",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Original reverse DCF used a ~7.5% WACC (2.3 points over the 5.17% Treasury) and FCF before SBC. Corrected TTM FCF after SBC $964M (3.0% yield on $31.79bn) at a 9.0% cost of equity and 3% terminal growth implies ~11.5% 10-year FCF growth (10.3-12.7%) versus the 5-6% base: implied_vs_base below -> above, so the necessary INCLUDE condition fails. F107_summary.json updated."
+  },
+  {
+   "ticker": "VRTX",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Reverse DCF (9.6% vs 10% base, in_line) added back SBC (TTM $689M) and counted interest income on cash already netted in EV. Corrected implied growth 12.2% (SBC as cost) to 13.9% (also ex interest income) versus the 10% base: implied_vs_base in_line -> above. F58_summary.json updated."
+  },
+  {
+   "ticker": "VMRK",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Reverse DCF used 7.5% cost of equity (implied 0.4%, 'below' the 3.0-3.5% base). At 8.8% (5.17% + 0.8 x 4.5%) implied is ~3.3%: in_line. Borderline (4.0% ERP gives ~2.5%); no combined earnings history. F134_summary.json updated."
+  },
+  {
+   "ticker": "VTR",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Reverse DCF used 8.5% cost of equity (implied 5.3% 'below' the 7% base). At 9.0% (5.17% + 0.85 x 4.5%) implied is ~6.4% (7.6% at 9.5%): in_line; FFO also overstates cash flow. Leverage corrected to 4.72x (not 5.3x) and guidance verified to the 29 Jul 2026 8-K, so the change is borderline. F94_summary.json updated."
+  }
+ ],
+ "valuation_changes_without_verdict_change": [
+  {
+   "ticker": "VICI",
+   "field": "scenario_returns_3y",
+   "old": {
+    "bear": 0.04,
+    "base": 0.11,
+    "bull": 0.185
+   },
+   "new": {
+    "bear": -0.004,
+    "base": 0.114,
+    "bull": 0.129
+   },
+   "note": "F34_summary.json updated"
+  }
+ ]
+}

@@ -1,0 +1,664 @@
+{
+ "as_of": "2026-10-08",
+ "scope": [
+  "IQV",
+  "IR",
+  "IRM",
+  "ISRG",
+  "IT",
+  "ITW",
+  "IVZ",
+  "J",
+  "JBHT",
+  "JBL"
+ ],
+ "facts": [
+  {
+   "ticker": "IQV",
+   "claim": "2Q26 revenue $4,368m (+8.7%), GAAP diluted EPS $1.53 vs $1.54",
+   "dossier_location": "s4 table",
+   "source": "8-K Ex-99.1 acc 0001628280-26-049923",
+   "source_value": "revenue 4,368 (+8.7%); NI attrib 256; diluted EPS 1.53 vs 1.54",
+   "status": "PASS",
+   "note": "Period label correct (second quarter 2026)."
+  },
+  {
+   "ticker": "IQV",
+   "claim": "4Q25 GAAP EPS 2.99, FY25 7.84; 1Q26 EPS 1.61, revenue 4,151 (+8.4%)",
+   "dossier_location": "s4 table",
+   "source": "8-K Ex-99.1 4Q25 acc 0001628280-26-005605 and 1Q26 acc 0001628280-26-030118",
+   "source_value": "2.99; 7.84; 1.61; 4,151 +8.4%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "IQV",
+   "claim": "Guidance quotes (3Q25 narrowing, 4Q25 first FY26 guide, 1Q26 EPS raise, 2Q26 raise to 17,275-17,475 / 4,000-4,050 / 12.80-13.00)",
+   "dossier_location": "s5",
+   "source": "Releases 0001628280-25-046554, -26-005605, -26-030118, -26-049923",
+   "source_value": "All four quotes found verbatim",
+   "status": "PASS",
+   "note": "Mid-point 6.5% vs 5.8% growth also verbatim."
+  },
+  {
+   "ticker": "IQV",
+   "claim": "Cash $1,909m, debt $15,999m, net debt $14,090m, net leverage 3.59x; current debt $2,294m, LT debt $13,705m",
+   "dossier_location": "s6",
+   "source": "2Q26 release and 10-Q acc 0001628280-26-050211",
+   "source_value": "1,909 / 15,999 / 14,090 / 3.59x; 2,294 / 13,705",
+   "status": "PASS",
+   "note": "Cross-tie flag (-83.5%) compares the 31 Dec 2025 LT debt 13,884 with a current-portion figure; consolidated entity correct."
+  },
+  {
+   "ticker": "IQV",
+   "claim": "SG&A $574m vs $509m; restructuring $63m vs $32m; SBC $95m vs $60m; operating income $506m flat; interest expense $197m",
+   "dossier_location": "s4 variance",
+   "source": "2Q26 release income statement and Adjusted EBITDA reconciliation",
+   "source_value": "574/509; 63/32; 95/60; 506/506; 197/182",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "IQV",
+   "claim": "Cross-tie net-income flag: dossier 2,000 vs XBRL 275",
+   "dossier_location": "s8 bull",
+   "source": "n/a",
+   "source_value": "2,000 is the ~$2bn annual buyback figure, not net income",
+   "status": "PASS",
+   "note": "False positive from the mechanical check."
+  },
+  {
+   "ticker": "IQV",
+   "claim": "Reverse DCF: cost of equity 8.5%, FCF after SBC $1.91bn, implied 5.8%/yr vs base 6.5% -> in_line",
+   "dossier_location": "s7",
+   "source": "Programme parameters: 10y UST 5.17% (25 Sep 2026) + Blume beta 1.127 x ERP 4.14%",
+   "source_value": "Ke 9.83%; implied 8.8%; base value $233 (-14%), bear $175, bull $270",
+   "status": "FAIL",
+   "note": "Cash-flow basis correct (FCF less SBC, equity level, no interest double count); 5.8% replicates at 8.5% but 8.5% is not tied to 5.17%+ERP. implied_vs_base in_line -> above; verdict unchanged."
+  },
+  {
+   "ticker": "IQV",
+   "claim": "Verdict WATCH supported by own evidence",
+   "dossier_location": "s1",
+   "source": "Dossier evidence + restated valuation",
+   "source_value": "Leverage 3.6x, price 57% above buyback average, thin cushion",
+   "status": "PASS",
+   "note": "Restatement strengthens WATCH."
+  },
+  {
+   "ticker": "IR",
+   "claim": "Q2-26 revenue $2,048.8M (+9%), net income attributable $257M, GAAP EPS $0.66, adj EPS $0.86 (+7%)",
+   "dossier_location": "s3 table",
+   "source": "8-K Ex-99.1 acc 0001628280-26-051068; companyfacts",
+   "source_value": "2,048.8; 257 (256.8 XBRL); 0.66; 0.86",
+   "status": "PASS",
+   "note": "Period label correct."
+  },
+  {
+   "ticker": "IR",
+   "claim": "Guidance table: revenue growth 4.5-6.5%, EBITDA $2,130-2,190M, adj EPS $3.45-3.57, FCF conversion ~95%, organic +1-3%; prior 2.5-4.5% and flat to 2%",
+   "dossier_location": "s4",
+   "source": "Q2-26 and Q1-26 releases",
+   "source_value": "All verbatim",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "IR",
+   "claim": "Q3-25 revised guide adj EPS $3.25-3.31; FY25 actual $3.34, adj NI $1,341M, FCF $1,220M, OCF $1,356M",
+   "dossier_location": "s4/s5",
+   "source": "Q3-25 acc 0001628280-25-047573; Q4-25 acc 0001628280-26-007710",
+   "source_value": "3.25-3.31; 3.34; 1,341; 1,220; 1,356",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "IR",
+   "claim": "Debt $4,768.5M incl. current; net debt/EBITDA 1.7x; Moody's Baa1",
+   "dossier_location": "s5",
+   "source": "Q2-26 release balance sheet",
+   "source_value": "LT 4,068.7 + current 699.8 = 4,768.5; 1.7x; Baa1",
+   "status": "PASS",
+   "note": "Consolidated entity, right date."
+  },
+  {
+   "ticker": "IR",
+   "claim": "FY25 GAAP net income ~$581M; SBC FY25 $53.0M (cross-tie flag)",
+   "dossier_location": "s5",
+   "source": "companyfacts CIK 1699150",
+   "source_value": "581.4M; 53.0M",
+   "status": "PASS",
+   "note": "Flag compared annual with quarterly value."
+  },
+  {
+   "ticker": "IR",
+   "claim": "Reverse DCF: 9%/3% fading, FCF $1.2B, implied 11.7% vs base ~8% -> above",
+   "dossier_location": "s6",
+   "source": "Programme Ke 5.17%+1.098x4.14%=9.72%; SBC 53.0M",
+   "source_value": "Start growth 15.4% (avg ~9.2%) vs base 8% at Ke 9.72%, FCF 1,167M; at dossier 9% avg implied 7.1-7.7%",
+   "status": "FAIL",
+   "note": "11.7% is a fade-start compared with an average base; SBC not deducted; 9% untied. implied_vs_base still above after restatement; verdict unchanged."
+  },
+  {
+   "ticker": "IR",
+   "claim": "Verdict WATCH (22x adj EPS for +1-3% organic growth)",
+   "dossier_location": "s1",
+   "source": "Dossier evidence and release",
+   "source_value": "IT&S organic orders flat, margin -180bps, organic guide +1-3%",
+   "status": "PASS",
+   "note": "Restated valuation still above base; verdict logic holds."
+  },
+  {
+   "ticker": "IRM",
+   "claim": "Q2-26 revenue $2,029.1M (+18.5%), GAAP diluted EPS $0.34 (Q2-25 $(0.15)); Q3-25 0.28, Q4-25 0.30, Q1-26 0.48",
+   "dossier_location": "s4 table",
+   "source": "8-K 0001020569-26-000068 presentation; companyfacts CIK 1020569",
+   "source_value": "2,029 (+18.5% reported); NI 106; EPS 0.34; -0.15; 0.28; 0.30; 0.48",
+   "status": "PASS",
+   "note": "Period labels correct."
+  },
+  {
+   "ticker": "IRM",
+   "claim": "Guidance track record not verifiable: 8-K has no press-release exhibit",
+   "dossier_location": "s5 and Data basis",
+   "source": "8-K acc 0001020569-26-000068 (ironmountainq22026earnin.htm / final-q22026earningspres.htm)",
+   "source_value": "FY26 guide raised: revenue 7,940-8,010 (prev 7,825-7,925); adj EBITDA 2,945-2,975; AFFO 1,760-1,780; AFFO/sh 5.87-5.93",
+   "status": "FAIL",
+   "note": "The exhibit exists; claim of cover-page-only filing is wrong. Gap closed; verdict unaffected."
+  },
+  {
+   "ticker": "IRM",
+   "claim": "Total debt $17,349.6M (current 220.8, non-current 17,128.8); June-30 cash not captured",
+   "dossier_location": "s6",
+   "source": "10-Q acc 0001020569-26-000071",
+   "source_value": "Debt 17,349.649; cash 204.8 -> net debt 17,145",
+   "status": "PASS",
+   "note": "Consolidated entity and date correct; cash gap filled."
+  },
+  {
+   "ticker": "IRM",
+   "claim": "H1-26 OCF $887.8M, capex $1,106.2M, FCF -$218.4M",
+   "dossier_location": "s6",
+   "source": "10-Q cash-flow statement",
+   "source_value": "887.813; 1,106.206 (H1-25: 572.4; 1,231.5)",
+   "status": "PASS",
+   "note": "Omitted that the H1 deficit narrowed ~$441M YoY (OCF +55%, capex -10%)."
+  },
+  {
+   "ticker": "IRM",
+   "claim": "EBITDA estimated at 34% margin = $2.57B TTM; EV/EBITDA 19.6x",
+   "dossier_location": "s7",
+   "source": "Presentations 4Q25/1Q26/2Q26",
+   "source_value": "Adj EBITDA 705/708/727 (margins 38.3/36.6/35.8%); H1-26 1,435; FY26 guide mid 2,960",
+   "status": "FAIL",
+   "note": "TTM about $2.80bn -> EV/EBITDA ~18.0x (17.0x on guide). Estimate was labelled but low by ~9%."
+  },
+  {
+   "ticker": "IRM",
+   "claim": "Reverse DCF: cost of capital ~7.5%, needs 13-15%/yr EBITDA growth for a decade -> above base",
+   "dossier_location": "s7",
+   "source": "Programme: Ke 5.17%+1.137x4.14%=9.88%; dividend $0.864/qtr (8-K)",
+   "source_value": "Dividend basis implied 13.3%/yr; at 7.5% only 7.2%; AFFO/sh basis 6.1%",
+   "status": "FAIL",
+   "note": "Not computed, rate untied, EBITDA multiple not an equity cash flow. implied_vs_base above retained on dividend basis; verdict unchanged."
+  },
+  {
+   "ticker": "IRM",
+   "claim": "Verdict WATCH (negative FCF, leverage rising, full price)",
+   "dossier_location": "s1",
+   "source": "Dossier evidence + 8-K",
+   "source_value": "Leverage 4.8x within 4.5-5.5x target; guidance raised; FCF deficit narrowing",
+   "status": "PASS",
+   "note": "Verdict supported."
+  },
+  {
+   "ticker": "ISRG",
+   "claim": "Q2-26 revenue $2,892.3M (+18.5%), op margin 33.6%, GAAP diluted EPS $2.29; Q1-26 2,770.8 (+23.0%), EPS 2.28; Q2-25 2,440.0, EPS 1.81",
+   "dossier_location": "s4 table",
+   "source": "8-K Ex-99.1 acc 0001035267-26-000047",
+   "source_value": "2,892.3; 971.9 op income; 2.29; 2,770.8; 2.28; 2,440.0; 1.81",
+   "status": "PASS",
+   "note": "Period labels correct (calendar fiscal year). Mechanical flag on derived Q4 footnote is not an error."
+  },
+  {
+   "ticker": "ISRG",
+   "claim": "Procedure growth Q2-26 ~16% (da Vinci ~15%, Ion ~36%); da Vinci 5 placements 246 vs 180",
+   "dossier_location": "s4/s8",
+   "source": "Q2-26 release",
+   "source_value": "16%; 15%; 36%; 246 vs 180 (+37%)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "ISRG",
+   "claim": "Guidance: Q1-26 gross margin \"maintained\"; year \"maintained/modestly narrowed, not clearly raised\"",
+   "dossier_location": "s5",
+   "source": "Q4-25, Q1-26, Q2-26 releases (0001035267-26-000006, -000029, -000047)",
+   "source_value": "Procedure growth 13-15% -> 13.5-15.5%; GM 67-68% -> 67.5-68.5% -> 68.0-69.0%; opex 11-15% -> 11-14% -> 11-13%",
+   "status": "FAIL",
+   "note": "Guidance was raised at Q1 and again (gross margin) at Q2. Verdict-relevant only in tone; kill criterion 3 range outdated."
+  },
+  {
+   "ticker": "ISRG",
+   "claim": "TTM FCF $3,222.6M (OCF 3,706.4 less capex 483.8); H1-26 SBC $419.4M; FY25 NI $2,856.0M",
+   "dossier_location": "s6",
+   "source": "10-Q 0001035267-26-000058; companyfacts",
+   "source_value": "OCF H1 1,972.9; capex H1 215.9; SBC FY25 788.2, H1-25 381.4; NI 2,856.0",
+   "status": "PASS",
+   "note": "Arithmetic replicates. TTM SBC is $826.2M, not netted in valuation."
+  },
+  {
+   "ticker": "ISRG",
+   "claim": "No debt; cash $2,760.4M; vendor cash $5.2B explained by short-term investments; equity $18,168.4M",
+   "dossier_location": "s6",
+   "source": "10-Q balance sheet",
+   "source_value": "Cash 2,760.4; ST inv 2,455.8; LT inv 3,409.3; equity attrib 18,168.4",
+   "status": "MINOR",
+   "note": "Correct but omits $3.4bn long-term investments (total $8.6bn); no borrowings confirmed."
+  },
+  {
+   "ticker": "ISRG",
+   "claim": "Litigation: Restore Robotics on appeal at 11th Circuit; Rebotix \"antitrust jury found evidence\"",
+   "dossier_location": "s1/s8/s11",
+   "source": "10-Q Note 8",
+   "source_value": "Restore: dismissed for Intuitive 7 Nov 2025, appeal filed 29 Nov 2025, reply brief 6 Jul 2026; no jury in Rebotix",
+   "status": "MINOR",
+   "note": "Appeal is of a dismissal in Intuitive favour; \"jury found\" wording wrong (judge denied summary judgment)."
+  },
+  {
+   "ticker": "ISRG",
+   "claim": "Reverse DCF: WACC 8.5%, EV 136.05B, FCF 3.223B, terminal 3.5% -> 12.6% vs base 11-13% -> in_line",
+   "dossier_location": "s7",
+   "source": "Programme: Ke 5.17%+1.311x4.14%=10.60%; SBC 826.2M; mc 143.4B",
+   "source_value": "Implied ~23% (FCF after SBC, equity basis, terminal 3%); 12.6% replicates only with original inputs",
+   "status": "FAIL",
+   "note": "Rate untied, SBC not deducted, terminal 3.5%, EV netted for cash while FCF holds interest income. implied_vs_base in_line -> above."
+  },
+  {
+   "ticker": "ISRG",
+   "claim": "Verdict INCLUDE-SMALL supported by thin in_line cushion",
+   "dossier_location": "s1",
+   "source": "Restated valuation",
+   "source_value": "Price needs ~2x base growth; 34.5x NTM P/E",
+   "status": "FAIL",
+   "note": "Verdict INCLUDE-SMALL -> WATCH."
+  },
+  {
+   "ticker": "ISRG",
+   "claim": "Stock fell ~30% in 2026 (third-party coverage)",
+   "dossier_location": "s7",
+   "source": "Not an SEC fact",
+   "source_value": "Not verifiable from primary sources",
+   "status": "UNVERIFIABLE",
+   "note": "Secondary sources only; not load-bearing for the corrected conclusion."
+  },
+  {
+   "ticker": "IT",
+   "claim": "Q2-26 revenue $1,676M (-0.6%; adjusted +2.8%), net income $275M (+14.4%), GAAP EPS $4.14 vs $3.11, adj EPS $4.37, FCF $378M",
+   "dossier_location": "s4 table",
+   "source": "8-K Ex-99.1 acc 0000749251-26-000243",
+   "source_value": "1,676 vs 1,686; 275 vs 241; 4.14; 4.37; FCF 378 vs 347",
+   "status": "PASS",
+   "note": "Period label correct (calendar fiscal year). Cross-tie net income flag (-12.5%) compares quarterly 275.5 with a 241 prior-year quarter figure; both correct."
+  },
+  {
+   "ticker": "IT",
+   "claim": "Q1-26 GAAP EPS 3.18; Q3-25 0.47; Q2-25 3.11; FY25 SBC; diluted shares 66.6M vs 77.4M",
+   "dossier_location": "s4",
+   "source": "companyfacts CIK 749251; 10-Q 0000749251-26-000245",
+   "source_value": "3.18; 0.47; 3.11; diluted 66,581 vs 77,359 (000s)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "IT",
+   "claim": "FY26 guidance: revenue at or above $6.375B, EBITDA >= $1.57B, adj EPS >= $14, FCF >= $1.185B, Q3 EBITDA >= $315M",
+   "dossier_location": "s5",
+   "source": "Not filed on EDGAR (release points to IR supplement); Motley Fool Q2-26 call transcript, 11 Aug 2026",
+   "source_value": "All five quotes appear verbatim in the transcript",
+   "status": "MINOR",
+   "note": "Primary release carries no outlook table, so guidance is verified only to a secondary transcript. Quotes match."
+  },
+  {
+   "ticker": "IT",
+   "claim": "Equity -$167.3M at 30 Jun 2026 (+$63.4M at 31 Mar); cash $1,488.7M; principal debt $3,000M; SBC Q2 $41M",
+   "dossier_location": "s6",
+   "source": "10-Q acc 0000749251-26-000245",
+   "source_value": "Equity (167,345); Mar-31 63,384; cash 1,488,706; SBC 40,990",
+   "status": "PASS",
+   "note": "Cross-tie flag (stockholders equity 167.3 vs 63.4) compares June with March balances; dossier states both correctly."
+  },
+  {
+   "ticker": "IT",
+   "claim": "Retention: GTS wallet 97% (99%), GBS wallet 99% (104%), client retention 85% (84%)",
+   "dossier_location": "s6",
+   "source": "10-Q MD&A",
+   "source_value": "GTS wallet 97% vs 99%; GBS wallet 99% vs 104%; GBS client 86% vs 87%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "IT",
+   "claim": "Reverse DCF: 9% rate, FCF less SBC ~$1.02B, implied -2%/yr vs base +3% -> below",
+   "dossier_location": "s7",
+   "source": "Programme Ke 5.17%+0.968x4.14%=9.18%",
+   "source_value": "Implied -1.6%/yr at 9.18% (-2.0% at 9%)",
+   "status": "MINOR",
+   "note": "9% is untied but within 0.2 pp of 9.18%; SBC deducted, equity basis, no double count. Conclusion unchanged: implied below base."
+  },
+  {
+   "ticker": "IT",
+   "claim": "Verdict INCLUDE-SMALL supported by evidence",
+   "dossier_location": "s1",
+   "source": "Dossier evidence + restated valuation",
+   "source_value": "Price implies decline; CV re-accelerating; buyback-driven EPS",
+   "status": "PASS",
+   "note": "No change."
+  },
+  {
+   "ticker": "ITW",
+   "claim": "Q2-26 revenue $4,301M (+6.1%, organic +4.5%), op margin 26.7%, GAAP EPS $2.84 vs $2.58, FCF $631M vs $449M",
+   "dossier_location": "s4 table",
+   "source": "8-K Ex-99.1 acc 0000049826-26-000047",
+   "source_value": "Revenue 4.30bn +6.1%; organic +4.5%; op income +7.4%; EPS 2.84/2.58; FCF 631/449",
+   "status": "PASS",
+   "note": "Period label correct."
+  },
+  {
+   "ticker": "ITW",
+   "claim": "Guidance Q2-26: GAAP EPS $11.35-11.55 (+$0.15), revenue growth 4-5%, organic 3-4%, op margin 26.5-27.5%, buyback ~$1.5bn, FCF >100% of NI",
+   "dossier_location": "s5",
+   "source": "Q2-26 release",
+   "source_value": "All quoted phrases appear verbatim",
+   "status": "PASS",
+   "note": "Earlier raises not re-opened in full; Q2-26 and the +$0.15 mechanics verified."
+  },
+  {
+   "ticker": "ITW",
+   "claim": "Debt: short-term $3,145M + long-term $6,549M = $9,694M; cash $839M; TTM EBITDA $4,764M; debt/EBITDA 2.0x; equity $2,895M",
+   "dossier_location": "s6",
+   "source": "10-Q acc 0000049826-26-000049",
+   "source_value": "3,145; 6,549; 9,694; 839; 4,764; 2.0x; 2,895",
+   "status": "PASS",
+   "note": "Cross-tie flags (long-term debt 9,694 vs 6,603; total debt 6,600 vs 7,682) compare different XBRL concepts or dates; consolidated scope and 30 Jun 2026 date are right."
+  },
+  {
+   "ticker": "ITW",
+   "claim": "TTM net income $3,194M (821+790+768+815); H1-26 FCF/NI 73%",
+   "dossier_location": "s6",
+   "source": "10-Q Total Debt to EBITDA table; release FCF table",
+   "source_value": "Net income TTM 3,194; Q2 815; H1 FCF/NI 73%",
+   "status": "PASS",
+   "note": "Cross-tie flag (3,194 vs 815) compares TTM with a single quarter."
+  },
+  {
+   "ticker": "ITW",
+   "claim": "Reverse DCF: 8.5% discount, FCF $2,921M, implied 7.6% vs base 7.0% -> above",
+   "dossier_location": "s7",
+   "source": "Programme Ke 5.17%+0.998x4.14%=9.30%; SBC ~$80M/yr",
+   "source_value": "Implied 9.9% (FCF after SBC); base value ~$221; 7.6% replicates only with original inputs",
+   "status": "FAIL",
+   "note": "Rate untied; SBC not deducted. implied_vs_base still above, larger gap; re-entry price for 6% implied ~$205 not $235-245. Verdict unchanged."
+  },
+  {
+   "ticker": "ITW",
+   "claim": "Verdict WATCH supported",
+   "dossier_location": "s1",
+   "source": "Dossier evidence + restated valuation",
+   "source_value": "Price near bull case",
+   "status": "PASS",
+   "note": "Restatement strengthens WATCH."
+  },
+  {
+   "ticker": "IVZ",
+   "claim": "Q2-26 GAAP diluted EPS $0.76 (net income attributable $345.3M), adjusted EPS $0.71 (+97% vs $0.36), net LT inflows $45.1bn, ending AUM $2,470.3bn",
+   "dossier_location": "s1/s4",
+   "source": "8-K Ex-99.1 acc 0000914208-26-000229",
+   "source_value": "0.76; 345.3; 0.71 vs 0.36; 45.1; 2,470.3",
+   "status": "PASS",
+   "note": "Period label correct. Q2-25 EPS (0.03) includes $159.3M preferred repurchase cost: verified."
+  },
+  {
+   "ticker": "IVZ",
+   "claim": "Operating revenue $1,825.6M (+20.5%), GAAP operating margin 19.9%, adjusted operating margin 37.5% (Q1 34.5%, Q2-25 31.2%), headcount 7,405 vs 8,407",
+   "dossier_location": "s4",
+   "source": "Q2-26 release",
+   "source_value": "1,825.6 vs 1,515.5; 37.5/34.5/31.2%; 7,405/8,407",
+   "status": "PASS",
+   "note": "Cross-tie net-income flags compare components ($105.8M other gains is a line item, confirmed) with total net income $338.9M."
+  },
+  {
+   "ticker": "IVZ",
+   "claim": "Parent debt $1,624.0M (revolver 736.0 + 5.375% notes 391.7 + term loan 496.3), cash $915.4M, net debt $708.6M (from $1,159.8M); equity attributable $12,472M; no numeric guidance given",
+   "dossier_location": "s5/s6",
+   "source": "10-Q acc 0000914208-26-000235; Q2 release",
+   "source_value": "Debt 1,624.0; cash 915.4; equity 12,471.9; net debt cut >$450M",
+   "status": "PASS",
+   "note": "Entity is Invesco Ltd consolidated parent excluding CIP debt ($9,007.7M separately), as stated. No guidance table in the releases."
+  },
+  {
+   "ticker": "IVZ",
+   "claim": "Preferred: 2.5M shares, dividends $37.0M a quarter, held by MassMutual; Lo retirement 8-K 0000914208-26-000347",
+   "dossier_location": "s6/s8",
+   "source": "10-Q; EDGAR submissions",
+   "source_value": "Preferred dividends 37.0; preferred outstanding 2.5M; 8-K filed 31 Aug 2026 Items 5.02/7.01",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "IVZ",
+   "claim": "Reverse DCF: Ke 10.36% (V1), terminal 2.5%, FCF proxy $1.08bn, mc $14.0bn -> implied 2.5% vs base 6.7% -> below",
+   "dossier_location": "s7",
+   "source": "Programme Ke 5.17%+1.405x4.14%=10.99%",
+   "source_value": "Implied 3.5% (terminal 2.5%) or 3.1% (terminal 3%); 2.4% replicates at 10.36%",
+   "status": "MINOR",
+   "note": "Rate borrowed from V1 and 0.6 pp below the programme rate; ERP not stated. FCF proxy is 95% of adjusted net income to common (SBC not added back), equity basis, preferred excluded. implied_vs_base below unchanged; verdict unchanged."
+  },
+  {
+   "ticker": "IVZ",
+   "claim": "Verdict INCLUDE-SMALL (V1 label \"excessive\" disputed; own-evidence fair; base +8% vs V1 +6.9%)",
+   "dossier_location": "s1/s7",
+   "source": "Dossier evidence + restated valuation",
+   "source_value": "ROCE ~11.4% adjusted vs 11.3% demanded; implied growth below base at the programme rate",
+   "status": "PASS",
+   "note": "Verdict supported."
+  },
+  {
+   "ticker": "J",
+   "claim": "Fiscal Q3-26 (qtr ended 26 Jun 2026): gross revenue $4,076M (+34.5%), adjusted net revenue $2,417M (+8.3%), GAAP EPS $1.16 vs $1.56, adjusted EPS $1.84 vs $1.62, GAAP tax rate 43.4% vs 21.9%",
+   "dossier_location": "s4",
+   "source": "8-K Ex-99.1 acc 0001628280-26-052563",
+   "source_value": "4,076.4; 2,416.6; 1.16/1.56; 1.84/1.62; 43.4%/21.9%",
+   "status": "PASS",
+   "note": "Fiscal labels (Sept year-end) correct; Q3-26 is the quarter ended 26 Jun 2026, not calendar Q3."
+  },
+  {
+   "ticker": "J",
+   "claim": "Earlier rows: Q4-25 GAAP 1.05/adj 1.75; Q2-26 (0.32)/1.75; Q1-26 1.11/1.53; backlog $28.9bn (+27.3%), Q3 book-to-bill 1.5x, adj-NR 1.1x",
+   "dossier_location": "s4",
+   "source": "Q1/Q2/Q4 releases (0001628280-26-005001, -030521, -053313) and Q3 release",
+   "source_value": "1.05/1.75; (0.32)/1.75; 1.11/1.53; backlog 28.9bn +27.3%; 1.5x / 1.1x",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "J",
+   "claim": "Guidance track record: Nov 2025 6-10%, EBITDA 14.4-14.7%, EPS 6.90-7.30, FCF 7.0-8.0%; Feb 6.95-7.30; May 7.10-7.35; Aug adj NR 9.5-10.0%, EBITDA 14.7-14.8%, EPS 7.20-7.30, FCF ~8%",
+   "dossier_location": "s5",
+   "source": "Four 8-K releases",
+   "source_value": "All four outlook paragraphs match, including the \"versus prior forecast\" ranges",
+   "status": "PASS",
+   "note": "Verbatim."
+  },
+  {
+   "ticker": "J",
+   "claim": "Balance sheet: cash $1,173M; long-term debt carrying $3,579M (up from $2,236M); 9-month OCF $352.8M, Q3 OCF $456.1M, capex $61.7M, SBC $56.9M",
+   "dossier_location": "s6",
+   "source": "Q3-26 release balance sheet and cash-flow statement; companyfacts",
+   "source_value": "1,172.9; 3,579.4; 2,236.5; 352.8; 456.1; 61.7; 56.9",
+   "status": "PASS",
+   "note": "Consolidated entity, correct date. Adjusted EBITDA 9 months $996.6M also matches."
+  },
+  {
+   "ticker": "J",
+   "claim": "Reverse DCF: Ke 9%, 3% terminal, FCF after SBC $690M -> 7.2% vs base 9% -> below",
+   "dossier_location": "s7",
+   "source": "Programme Ke 5.17%+0.785x4.14%=8.42%",
+   "source_value": "Implied 5.8% at 8.42% (7.2% replicates at 9%); 5.9% without SBC",
+   "status": "MINOR",
+   "note": "9% untied (actually above the programme rate for a low-beta name); SBC deducted, equity basis. implied_vs_base below holds, with a larger gap. Verdict unchanged."
+  },
+  {
+   "ticker": "J",
+   "claim": "Verdict INCLUDE-SMALL supported by evidence (three guidance raises, implied below base)",
+   "dossier_location": "s1/s7",
+   "source": "Dossier evidence + restated valuation",
+   "source_value": "Guidance raised 3x; implied 5.8% vs base 9%",
+   "status": "PASS",
+   "note": "Quality caveats (GAAP vs adjusted, receivables +26%) are stated by the dossier."
+  },
+  {
+   "ticker": "JBL",
+   "claim": "FQ3 FY26 (quarter ended 31 May 2026): net revenue $8,751M (+11.8%), GAAP op income $445M (5.1%), GAAP EPS $2.59, core EPS $3.16, core op income $504M; FQ2 FY26 $8,282M (+23.1%), EPS 2.08, core 2.69",
+   "dossier_location": "s4 table",
+   "source": "8-K Ex-99.1 acc 0001628280-26-043719 and -019043",
+   "source_value": "8.8bn; 445; 2.59; 3.16; 504; FQ2 8.3bn, 374, 2.08, 2.69",
+   "status": "PASS",
+   "note": "Fiscal labels correct (August year-end). Nine-month core EPS 8.70 vs 6.48 and GAAP NI attributable 644 also verified."
+  },
+  {
+   "ticker": "JBL",
+   "claim": "Guidance: FQ2 release FY26 $34B / 5.7% / $12.25 / $1.3+B; FQ3 release $35B / 5.8% / $12.70 / $1.4+B; FQ3 guide $8.1-8.9B and $2.83-3.23; FQ4 guide $9.2-10.0B and $3.80-4.20",
+   "dossier_location": "s5",
+   "source": "Two 8-K Ex-99.1 releases",
+   "source_value": "All outlook bullets match verbatim",
+   "status": "PASS",
+   "note": "Raised twice, as stated."
+  },
+  {
+   "ticker": "JBL",
+   "claim": "Balance sheet 31 May 2026: cash $1,360M, debt $2,879M + $499M = $3,378M, net debt $2,018M, equity $1,323M (from $1,513M), treasury $(8,849)M, buybacks $891M, goodwill+intangibles $1,855M (from $1,114M)",
+   "dossier_location": "s6",
+   "source": "FQ3 release balance sheet and cash-flow statement",
+   "source_value": "1,360; 2,879; 499; 1,323; 1,513; 8,849; 891; 1,855; 1,114",
+   "status": "PASS",
+   "note": "Consolidated entity. Cross-tie flag (total debt 1,360 vs 3,378) took cash for debt: false positive."
+  },
+  {
+   "ticker": "JBL",
+   "claim": "Share price $310.69 labelled 25 Sep 2026 close",
+   "dossier_location": "s7",
+   "source": "d4_live_snapshot.parquet (regularMarketTime 25 Sep 2026)",
+   "source_value": "Close 316.74; previous close 310.69; market cap 33.19bn",
+   "status": "FAIL",
+   "note": "Used the 24 Sep close (1.9% low)."
+  },
+  {
+   "ticker": "JBL",
+   "claim": "Reverse DCF: WACC 9.5%, terminal 2.5%, EV $34.6B vs annualised adjusted FCF $1.32B -> 10.3% vs base 11% -> in_line",
+   "dossier_location": "s7",
+   "source": "Programme Ke 5.17%+1.198x4.14%=10.12%; SBC 115M (9m) / 140M (FY26)",
+   "source_value": "Equity basis: 12.2% (FCF after SBC 1.17bn); 9.8% on FY26 FCF 1.39bn after SBC",
+   "status": "FAIL",
+   "note": "EV (debt added) set against after-interest FCF; rate untied; SBC not deducted. implied_vs_base remains in_line (+/-1.2 pp); verdict unchanged."
+  },
+  {
+   "ticker": "JBL",
+   "claim": "Post-cutoff FQ4 FY26 8-K not located",
+   "dossier_location": "Data basis",
+   "source": "8-K acc 0001628280-26-063890 (30 Sep 2026)",
+   "source_value": "Revenue 10.6bn; core EPS 4.40 vs 3.80-4.20; FY26 core EPS 13.09; adj FCF 1,532; FY27 revenue 44.5bn, core EPS 17.55; equity 1,613",
+   "status": "MINOR",
+   "note": "Filing exists; no kill criterion triggered; confidence text updated."
+  },
+  {
+   "ticker": "JBL",
+   "claim": "Verdict INCLUDE-SMALL supported by evidence",
+   "dossier_location": "s1/s7",
+   "source": "Dossier evidence + restated valuation + 30 Sep release",
+   "source_value": "Guidance raised twice and beaten again; equity cushion thin but rising",
+   "status": "PASS",
+   "note": "No change."
+  },
+  {
+   "ticker": "JBHT",
+   "claim": "Q2-26 revenue $3,495.3M (+19.4% on $2,928.2M), operating income $259.5M (+32%, margin 7.4%), diluted EPS $1.91 vs $1.31; Q1-26 EPS $1.49; FY25 revenue $11,999.1M, NI $598.3M, EPS $6.12",
+   "dossier_location": "s4 table",
+   "source": "10-Q acc 0001437749-26-024397; 8-K Ex-99.1 acc 0001437749-26-023629; companyfacts CIK 728535",
+   "source_value": "3,495.3; 259.5; 1.91/1.31; 1.49; 11,999.1; 598.3; 6.12",
+   "status": "PASS",
+   "note": "Period labels correct (calendar fiscal year)."
+  },
+  {
+   "ticker": "JBHT",
+   "claim": "Segments Q2-26: Intermodal revenue $1.75bn +22%, operating income $150.9M +58%, volume +10%; Truckload revenue +35%, operating loss $1.3M; Final Mile revenue -6%; tax rate 25.4% and 2026 guide 24.0-24.5%; no numeric revenue/EPS guidance",
+   "dossier_location": "s4/s5",
+   "source": "Q2-26 release",
+   "source_value": "All as stated",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "JBHT",
+   "claim": "H1-26 capex $144.9M vs H1-25 $399.1M (a 64% cut); H1 FCF $496.1M and $343.9M",
+   "dossier_location": "s4",
+   "source": "10-Q cash-flow statement",
+   "source_value": "Gross additions to P&E 227.2 vs 462.3 (-51%); net investing outflow 144.9 vs 399.1; FCF 723.3-227.2=496.1 and 806.2-462.3=343.9",
+   "status": "FAIL",
+   "note": "Net cash used in investing (after equipment sale proceeds) mislabelled as capex; FCF values correct."
+  },
+  {
+   "ticker": "JBHT",
+   "claim": "Gross debt $1,227.7M, cash $4.2M, net debt/EBITDA about 1.0x",
+   "dossier_location": "s6",
+   "source": "10-Q balance sheet",
+   "source_value": "Debt 1,145.3 at 30 Jun 2026 (current 0); 1,466.8 at 31 Dec 2025 (699.9+766.9); cash 4.2 (17.3 at Dec); net debt ~1.14bn ~0.7x TTM EBITDA 1.67bn",
+   "status": "FAIL",
+   "note": "$1,227.7M matches no balance sheet; CFO $1.15bn figure is correct."
+  },
+  {
+   "ticker": "JBHT",
+   "claim": "SBC not broken out in sources reviewed (gap)",
+   "dossier_location": "s6",
+   "source": "companyfacts",
+   "source_value": "FY25 SBC 71.753M; H1-26 38.084M; H1-25 38.107M",
+   "status": "MINOR",
+   "note": "Gap fillable; SBC then deducted in restated valuation."
+  },
+  {
+   "ticker": "JBHT",
+   "claim": "TTM OCF $1,595.3M and capex $495.6M reconcile to lead_prelim_rank; rev field wrong ($7.19bn vs $11.999bn)",
+   "dossier_location": "Data-quality note",
+   "source": "companyfacts; 10-Q",
+   "source_value": "OCF 1,678.3+723.3-806.2=1,595.3; gross capex 730.7+227.2-462.3=495.6; FY25 revenue 11,999.1",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "JBHT",
+   "claim": "Reverse DCF: WACC 8.5%, terminal 3%, EV $22.39B implies ~6%/yr FCF growth",
+   "dossier_location": "s7",
+   "source": "Programme Ke 5.17%+1.193x4.14%=10.11%; SBC 71.8M",
+   "source_value": "Equity basis, mc ~21.3bn, FCF after SBC 1.03bn: implied ~7.9%; the 6% not reproducible (3.4% at 8.5% on TTM FCF 1.10bn)",
+   "status": "FAIL",
+   "note": "Rate untied, SBC not deducted, figure not reproducible."
+  },
+  {
+   "ticker": "JBHT",
+   "claim": "Verdict INCLUDE-SMALL vs own evidence (probability-weighted value $155, -31% vs price; V1 fair; base EPS $7.20 = TTM EPS)",
+   "dossier_location": "s1/s7",
+   "source": "Dossier section 7 vs restated valuation",
+   "source_value": "Central value 31% below price; implied 7.9% a year with revenue flat in FY25",
+   "status": "FAIL",
+   "note": "Dossier evidence does not support inclusion: INCLUDE-SMALL -> WATCH. Lead sleeve already excluded JBHT (STATE.md T2)."
+  }
+ ],
+ "verdict_changes": [
+  {
+   "ticker": "ISRG",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Restated reverse DCF (Ke 10.6%, FCF after SBC $2.40bn, terminal 3%, equity basis) implies about 23% a year FCF growth versus the 11-13% base: implied_vs_base moves from in_line to above, removing the thin cushion that justified half weight. F53_summary.json updated."
+  }
+ ]
+}

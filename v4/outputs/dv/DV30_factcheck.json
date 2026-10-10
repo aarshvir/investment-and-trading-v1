@@ -1,0 +1,751 @@
+{
+ "as_of": "2026-10-08",
+ "scope": [
+  "NDAQ",
+  "NDSN",
+  "NEE",
+  "NEM",
+  "NFLX",
+  "NI",
+  "NKE",
+  "NOC",
+  "NRG",
+  "NSC"
+ ],
+ "facts": [
+  {
+   "ticker": "NDAQ",
+   "claim": "Q2-26 net revenue $1.5B, +15% reported and adjusted",
+   "dossier_location": "NDAQ.md s4 table",
+   "source": "8-K Ex-99.1 acc 0001120193-26-000011; 10-Q acc 0001120193-26-000013",
+   "source_value": "Revenues less transaction-based expenses $1,500m vs $1,306m (+14.9%); GAAP NI attributable $507m (Q2-25 $452m); GAAP diluted EPS $0.89 (Q2-25 $0.78)",
+   "status": "PASS",
+   "note": "Period label Q2-26 correct. Gross revenue is $2,532m before transaction-based expenses; the dossier correctly uses net revenue."
+  },
+  {
+   "ticker": "NDAQ",
+   "claim": "Q2-26 operating margin 57%, EBITDA margin 60% (table headed GAAP unless noted)",
+   "dossier_location": "NDAQ.md s4 table",
+   "source": "Ex-99.1 acc 0001120193-26-000011 reconciliation",
+   "source_value": "GAAP op margin 47% (44%); non-GAAP 57% (55%); EBITDA margin not disclosed in release or 10-Q",
+   "status": "FAIL",
+   "note": "57% is non-GAAP, presented under a GAAP header; 60% EBITDA margin unverifiable. Correction appended; verdict unchanged."
+  },
+  {
+   "ticker": "NDAQ",
+   "claim": "Adenza: first quarter fully lapped in Q2-26",
+   "dossier_location": "NDAQ.md s4 table",
+   "source": "10-K FY2025 acc 0001628280-26-007703",
+   "source_value": "'Nasdaq's 2023 acquisition of Adenza'",
+   "status": "FAIL",
+   "note": "Acquisition was in 2023; not first lapped quarter in 2026."
+  },
+  {
+   "ticker": "NDAQ",
+   "claim": ">$160M net expense synergies actioned; Adenza EPS-accretive in Q3-25, six months early",
+   "dossier_location": "NDAQ.md s5",
+   "source": "10-Q Q2-26 acc 0001120193-26-000013; 10-Q Q1-26 acc 0001628280-26-027105; 10-K",
+   "source_value": "'over $160 million net expense synergies actioned through June 30, 2026' (same figure at 31 Dec 2025 and 31 Mar 2026); no 'accretive' language in 10-K, Q1 or Q2 10-Q",
+   "status": "MINOR",
+   "note": "Synergy figure verified, but it has been flat for three reporting dates, so kill criterion 3 is already met as worded. The accretion/six-months-early claim is not in the filings checked (UNVERIFIABLE, likely in the Q3-25 release)."
+  },
+  {
+   "ticker": "NDAQ",
+   "claim": "Consolidated gross leverage 2.6x at end-Q2-26; net debt repaid $162M in quarter",
+   "dossier_location": "NDAQ.md s6",
+   "source": "Ex-99.1 acc 0001120193-26-000011; 10-Q XBRL",
+   "source_value": "Company 'net repaid $162 million of debt in the quarter' (verbatim). Debt $8,492m non-current + $269m current = $8,761m; cash $520m. 2.6x ratio not stated in release/10-Q",
+   "status": "UNVERIFIABLE",
+   "note": "$162M PASS. 2.6x is not disclosed in the documents; arithmetic cross-check: H1-26 non-GAAP op income 1,658 plus D&A (FY25 145) implies TTM EBITDA about 3.4bn and 8,761/3.4 = 2.6x, consistent. Entity consolidated, correct."
+  },
+  {
+   "ticker": "NDAQ",
+   "claim": "TTM FCF about $2.2B at 97% conversion; TTM GAAP EPS $3.43",
+   "dossier_location": "NDAQ.md s6, s8",
+   "source": "10-K/10-Q XBRL",
+   "source_value": "TTM CFO $2,246m; capex about $295m; FCF about $1,951m; TTM diluted EPS 0.73+0.90+0.91+0.89 = $3.43",
+   "status": "FAIL",
+   "note": "EPS $3.43 PASS. $2.2B is operating cash flow, not FCF. Correction appended; verdict unchanged."
+  },
+  {
+   "ticker": "NDAQ",
+   "claim": "Valuation: 24x forward needs 10-12% sustained EPS growth; implied_vs_base in_line",
+   "dossier_location": "NDAQ.md s8",
+   "source": "own reverse DCF (r 9.45% = 5.17% + 0.95 x 4.5%; g 3%; SBC-adjusted FCF 1,780m; mcap 52.8bn)",
+   "source_value": "required 10-yr FCF growth 11.2-11.9%",
+   "status": "MINOR",
+   "note": "Conclusion holds but the dossier states no discount rate and uses EPS rather than FCF. in_line retained."
+  },
+  {
+   "ticker": "NDAQ",
+   "claim": "Verdict logic INCLUDE-SMALL",
+   "dossier_location": "NDAQ.md header",
+   "source": "dossier evidence",
+   "source_value": "fair-not-cheap, 2.6x leverage, 15% growth",
+   "status": "PASS",
+   "note": "Evidence supports INCLUDE-SMALL; no change."
+  },
+  {
+   "ticker": "NDSN",
+   "claim": "Q3 FY26 (May-Jul 2026): revenue $817.7M (+10.3% vs $741.5M), op income $223.1M, GAAP EPS $2.73 (+23%), adjusted EPS $3.25 (+19%)",
+   "dossier_location": "NDSN.md s4",
+   "source": "10-Q acc 0000072331-26-000054; Ex-99.1 acc 0000072331-26-000052",
+   "source_value": "Revenue 817.7 vs 741.5; op income 223.1; diluted EPS 2.73 vs 2.22; adjusted 3.25 vs 2.73; NI 152.8",
+   "status": "PASS",
+   "note": "Fiscal period labels correct (FY ends 31 Oct). The crosstie flag (NI 403.5 vs 152.8) is the correctly labelled nine-month figure."
+  },
+  {
+   "ticker": "NDSN",
+   "claim": "Guidance 19 Aug 2026: sales $3,035-3,075M, adjusted EPS $11.80-12.00, raised; backlog +35%; guidance raised in each of Q1, Q2, Q3",
+   "dossier_location": "NDSN.md s5, s9",
+   "source": "Ex-99.1 accs 0000072331-26-000052, -000022, -000011",
+   "source_value": "Q3: $3,035-3,075M / $11.80-12.00 (verbatim); Q2: $2,930-3,010M / $11.30-11.80; Q1: $2,860-2,980M / $11.00-11.60; backlog up 35%",
+   "status": "PASS",
+   "note": "All ranges verbatim; each quarter increased."
+  },
+  {
+   "ticker": "NDSN",
+   "claim": "Balance sheet 31 Jul 2026: long-term debt $1,731.0M, cash $113.4M, net debt about $1,618M, equity $3,269.1M; debt $1,996M at Oct-25",
+   "dossier_location": "NDSN.md s6",
+   "source": "10-Q acc 0000072331-26-000054 XBRL",
+   "source_value": "LongTermDebt (total incl. current) 1,731.0 (noncurrent tag 1,529.0, current 10.0); cash 113.4; equity 3,269.1; Oct-25 LongTermDebt 1,996.3",
+   "status": "PASS",
+   "note": "Figures match the consolidated total-debt tag; the crosstie flag compared against the noncurrent tag. Entity and date correct."
+  },
+  {
+   "ticker": "NDSN",
+   "claim": "9M FY26 NI $403.5M, OCF $570.5M, capex $40.3M, FCF about $530M, FCF/NI 1.3x",
+   "dossier_location": "NDSN.md s4, s6",
+   "source": "10-Q acc 0000072331-26-000054",
+   "source_value": "NI 403.5 (133.4+117.3+152.8); OCF 570.5; capex 40.3",
+   "status": "PASS",
+   "note": "Arithmetic verified."
+  },
+  {
+   "ticker": "NDSN",
+   "claim": "TTM operating income about $774M using Q4 FY25 estimate $178M",
+   "dossier_location": "NDSN.md s6",
+   "source": "10-K acc 0000072331-25-000144, 10-Q 0000072331-26-000054",
+   "source_value": "Q4 FY25 = 711.7 - 497.5 = 214.2; TTM 800.9",
+   "status": "MINOR",
+   "note": "Estimate understated by $36M; net debt/EBIT 2.0x unchanged. Correction appended."
+  },
+  {
+   "ticker": "NDSN",
+   "claim": "Annual dividend $3.76/share, yield about 1.0%",
+   "dossier_location": "NDSN.md s6",
+   "source": "10-Q acc 0000072331-26-000054",
+   "source_value": "CommonStockDividendsPerShareDeclared 0.82 per quarter = $3.28/yr",
+   "status": "FAIL",
+   "note": "Per-share amount wrong; yield 1.0% right. Correction appended."
+  },
+  {
+   "ticker": "NDSN",
+   "claim": "GAAP-adjusted EPS gap $0.52 is mostly recurring acquisition amortization (not a one-off)",
+   "dossier_location": "NDSN.md s6",
+   "source": "Ex-99.1 acc 0000072331-26-000052 reconciliation",
+   "source_value": "amortization $19.3m; non-cash loss on minority investments $14.9m (one-off); total adjustments $37.1m; EPS effect $0.52",
+   "status": "FAIL",
+   "note": "About 40% of the gap is a one-off investment loss; recurring amortization is about $0.27/share. Correction appended."
+  },
+  {
+   "ticker": "NDSN",
+   "claim": "Reverse DCF: implied perpetual FCF growth 5.3% (WACC 8.7% less 3.4% FCF yield) vs base 6-7%, implied_vs_base below",
+   "dossier_location": "NDSN.md s7",
+   "source": "own recompute: filings FCF 724m less SBC 23m = 701m; Ke 9.19% (5.17% + 0.97 x 4.14%); mcap 18.15bn",
+   "source_value": "required 10-yr FCF growth 8.8-9.5% (tg 3.0-2.5%); 6.5% base = 0.84 of market cap",
+   "status": "FAIL",
+   "note": "WACC used on equity FCF, perpetuity vs ten-year mismatch, Yahoo FCF, no SBC. Restated to above."
+  },
+  {
+   "ticker": "NDSN",
+   "claim": "Verdict INCLUDE-SMALL because market prices in less growth than achievable",
+   "dossier_location": "NDSN.md s1, s7",
+   "source": "dossier evidence plus recomputed valuation",
+   "source_value": "implied 8.8-9.5% vs base 6-7%; 27x guide EPS; dossier itself says no margin of safety",
+   "status": "FAIL",
+   "note": "With implied_vs_base above, INCLUDE-SMALL is not supported; WATCH."
+  },
+  {
+   "ticker": "NEE",
+   "claim": "Q2-26 revenue $7,534M (FPL 4,896 + NEER 2,532 + Corp 106) vs Q2-25 $6,700M, +12.4%",
+   "dossier_location": "NEE.md s4",
+   "source": "Ex-99.1 acc 0000753308-26-000058",
+   "source_value": "Operating revenues 7,534 (4,896/2,532/106) vs 6,700 (4,708/1,914/78)",
+   "status": "PASS",
+   "note": "Correct. Q2-26 GAAP EPS $1.50 / adjusted $1.15 (+9.5%) are shown as n/a in the dossier (MINOR omission)."
+  },
+  {
+   "ticker": "NEE",
+   "claim": "FY2025 GAAP NI $6.835bn ($3.30) vs FY2024 $6.946bn ($3.37); adjusted EPS $3.71, +8.2%; Q1-26 GAAP $1.04",
+   "dossier_location": "NEE.md s4",
+   "source": "Ex-99.1 acc 0000753308-26-000007; 10-K XBRL acc 0000753308-26-000015",
+   "source_value": "Verbatim: $6.835bn / $3.30 vs $6.946bn / $3.37; adjusted $7.683bn / $3.71 vs $3.43, about 8.2%",
+   "status": "PASS",
+   "note": "Crosstie flags (6,835 vs 2,182 etc.) compared annual figures with the latest quarterly XBRL value, not errors."
+  },
+  {
+   "ticker": "NEE",
+   "claim": "Guidance: FY26 $3.92-4.02 (targeting high end), 8%+ through 2032 off $3.71, dividends ~10% through 2026 and 6% 2027-28; Q3-25 ranges 3.45-3.70 / 3.63-4.00 / 3.85-4.32",
+   "dossier_location": "NEE.md s5",
+   "source": "Ex-99.1 accs 0000753308-26-000058, -000007, 0000753308-25-000055",
+   "source_value": "All figures appear verbatim",
+   "status": "MINOR",
+   "note": "Figures PASS; the Jan-26 release says expectations 'remain unchanged' from the December investor conference, so the FY26 narrowing was not first announced there."
+  },
+  {
+   "ticker": "NEE",
+   "claim": "Consolidated LT debt $98,790M (Dec-25 $89,556M, +10.3%), equity $57,126M, debt/(debt+equity) 63.4%; FPL LT debt $30,188M (Dec-25 $28,041M)",
+   "dossier_location": "NEE.md s6",
+   "source": "Ex-99.1 acc 0000753308-26-000058 balance sheet",
+   "source_value": "98,790 / 89,556 / 57,126 / FPL 30,188 / 28,041 (segment columns; NEER 16,914, Corp 51,688)",
+   "status": "MINOR",
+   "note": "Values and entities correct (non-current debt). Ratio omits current maturities ($3.8bn at Mar-26) so is about 64%."
+  },
+  {
+   "ticker": "NEE",
+   "claim": "Red-flag scan complete; no changes to risk factors; latest 8-K 14 Sep 2026 routine",
+   "dossier_location": "NEE.md s11, data basis",
+   "source": "EDGAR submissions; 8-K 1.01 acc 0001104659-26-063001; 8-K 5.07 acc 0000753308-26-000071; Q2 release",
+   "source_value": "Pending Dominion combination: 0.8138 NEE shares + $360m cash per agreement, NEE vote 3 Sep 2026 (99.47% for), close 2H 2027, break fees $2.24bn/$6.52bn/$4.83bn; 14 Sep 8-K filed with five Rule 425 communications",
+   "status": "FAIL",
+   "note": "Transformational merger omitted entirely; 14 Sep 8-K mischaracterised. Correction appended."
+  },
+  {
+   "ticker": "NEE",
+   "claim": "Reverse DCF: price implies ~1.2% ten-year EPS CAGR (EPS 3.97, 7.0% rate, 4.2% rf, g 2.5%); implied_vs_base below by a wide margin",
+   "dossier_location": "NEE.md s7",
+   "source": "own recompute: dividends D0 $2.49 (0.6232 x 4, 10-Q acc 0000753308-26-000060), Ke 7.82% (5.17% + 0.64 x 4.14%), tg 2.5-3.0%, price 76.08",
+   "source_value": "required 10-yr dividend growth 7.5-8.4% vs 8%+ EPS guide; 6% dividend guide 2027-28",
+   "status": "FAIL",
+   "note": "EPS-as-cash and stale 4.2% risk-free; restated to in_line."
+  },
+  {
+   "ticker": "NEE",
+   "claim": "Dividend $2.49/share trailing annualised (~3.3% yield)",
+   "dossier_location": "NEE.md s6",
+   "source": "10-Q acc 0000753308-26-000060 footnote",
+   "source_value": "Dividends per share $0.6232 per quarter in 2026 = $2.4928",
+   "status": "PASS",
+   "note": "Yield 3.27% at $76.08."
+  },
+  {
+   "ticker": "NEE",
+   "claim": "Verdict INCLUDE-SMALL (price implies far less growth than guided)",
+   "dossier_location": "NEE.md s1, s7",
+   "source": "recomputed valuation plus merger facts",
+   "source_value": "in_line valuation; unresolved merger",
+   "status": "FAIL",
+   "note": "Support removed; WATCH."
+  },
+  {
+   "ticker": "NEM",
+   "claim": "Q2-26 revenue $6,118M (+15.1% vs $5,317M), GAAP NI $2,202M ($2.06), adjusted NI $2.2B ($2.10), AISC $1,621/oz, realized price $4,414/oz",
+   "dossier_location": "NEM.md s3, s4",
+   "source": "Ex-99.1 acc 0001164727-26-000034; 10-Q acc 0001164727-26-000036",
+   "source_value": "Revenue 6,118 vs 5,317; NI 2,202 / 2.06; adjusted 2,246 / 2.10; AISC 1,621; realized 4,414",
+   "status": "PASS",
+   "note": "Period labels right; the release was filed 2026-07-23, not 2026-08-13 (MINOR source-date error)."
+  },
+  {
+   "ticker": "NEM",
+   "claim": "Q1-26: adjusted NI $2.4B ($2.24/sh), realized price ~$4,200/oz (est.); triage's $4,900 was a Sept spot figure",
+   "dossier_location": "NEM.md s3, s4 table",
+   "source": "Ex-99.1 acc 0001164727-26-000034 summary table",
+   "source_value": "Q1-26 realized $4,900; adjusted NI $3,156m, $2.90/sh; Q1 GAAP NI $3,262m ($3.00)",
+   "status": "FAIL",
+   "note": "Both wrong; $4,900 was the Q1 average realized price. Correction appended."
+  },
+  {
+   "ticker": "NEM",
+   "claim": "Production roughly flat; kill criterion 4 production fall >10% YoY",
+   "dossier_location": "NEM.md s8, s9",
+   "source": "Ex-99.1 summary table",
+   "source_value": "Attributable gold production Q1-26 1.30 Moz vs 1.54 (-16%); Q2-26 1.29 vs 1.48 (-13%); FY25 5.89; 2026 guide 5.3",
+   "status": "FAIL",
+   "note": "Volume is falling about 13-16% YoY; criterion met on volume. Correction appended."
+  },
+  {
+   "ticker": "NEM",
+   "claim": "Guidance: on track for FY26 guidance; AISC guide $1,680/oz beaten",
+   "dossier_location": "NEM.md s5",
+   "source": "Ex-99.1 acc 0001164727-26-000034",
+   "source_value": "'on track to meet previously published 2026 guidance'; total by-product AISC guide $1,680; Q2 AISC $1,621 (+58% QoQ, Cadia seismic events)",
+   "status": "MINOR",
+   "note": "Quoted guidance verified; omits Cadia seismic events and the 58% sequential AISC jump."
+  },
+  {
+   "ticker": "NEM",
+   "claim": "Balance sheet: cash $9.0B, debt $5.08B, equity $35.2B at Jun-26; Dec-24 debt $8.48B, cash $3.6B; net cash $3.9B; H1 OCF $6,709M vs $4,415M",
+   "dossier_location": "NEM.md s4, s6",
+   "source": "10-Q acc 0001164727-26-000036; 10-K acc 0001164727-26-000010 XBRL",
+   "source_value": "Cash 9,009; LongTermDebt 5,083; equity 35,243; Dec-24 8,476 / 3,619; OCF 6,709 / 4,415",
+   "status": "PASS",
+   "note": "Consolidated, correct date."
+  },
+  {
+   "ticker": "NEM",
+   "claim": "$1.9B returned to shareholders in Q2 2026 alone; Q2 FCF $2.2B vs NI $2.2B",
+   "dossier_location": "NEM.md s6",
+   "source": "Ex-99.1; 10-Q cash flow statement",
+   "source_value": "$1.9B is 'since the last earnings call' incl. >$600m July buybacks; Q2 buybacks 1,567 + dividends 277 = 1,844; FCF 2,205 vs NI 2,202",
+   "status": "MINOR",
+   "note": "FCF/NI right; return figure mislabelled as Q2-only (Q2 cash $1.84bn)."
+  },
+  {
+   "ticker": "NEM",
+   "claim": "TTM EPS about $8.06; own scenario returns -11% / +4% / +22% per year",
+   "dossier_location": "NEM.md s7",
+   "source": "own recompute from stated inputs",
+   "source_value": "TTM EPS 7.92; at price $121.6: bear -28%, base -5%, bull +13% annualised",
+   "status": "FAIL",
+   "note": "Scenario arithmetic inconsistent with stated EPS, multiples and dividends. Restated."
+  },
+  {
+   "ticker": "NEM",
+   "claim": "Reverse DCF adopted from V1: implied FCF growth -1.8%/yr at WACC 8.3%; implied_vs_base below; INCLUDE-SMALL",
+   "dossier_location": "NEM.md s1, s7",
+   "source": "own recompute: TTM FCF 9.73bn (1,571+2,813+3,144+2,205), Q2 run-rate 8.8bn, mcap about 130bn, r 8.3%",
+   "source_value": "TTM -1.0% to -1.8%; Q2 run-rate about 0%; base: volume -10% in 2026 guide",
+   "status": "FAIL",
+   "note": "Method sound but compared with a base that ignores falling volume and rising costs; restated to in_line, verdict WATCH."
+  },
+  {
+   "ticker": "NFLX",
+   "claim": "Q2-26 (qtr ended 30 Jun 2026): revenue $12,560M (+13.4%), op income $4,193M (33.4%), NI $3,401M, EPS $0.80; Q1-26 revenue $12,250M (+16.2%), op income $3,957M",
+   "dossier_location": "NFLX.md s4",
+   "source": "10-Q acc 0001065280-26-000212; Ex-99.1 acc 0001065280-26-000211",
+   "source_value": "12,559.9 / 4,192.6 / 3,401.4 / 0.80; Q1 12,249.8 / 3,957.0",
+   "status": "PASS",
+   "note": "Period labels correct; EPS split-adjusted."
+  },
+  {
+   "ticker": "NFLX",
+   "claim": "Q1-26 NI $5.28bn / EPS $1.23 inflated by FX remeasurement and unrealised investment gains",
+   "dossier_location": "NFLX.md s4",
+   "source": "Q1 letter Ex-99.1 acc 0001065280-26-000137; 10-Q Q2 acc 0001065280-26-000212",
+   "source_value": "'$2.8B termination fee related to the Warner Bros. transaction, recognized in interest and other income'; interest and other income $2,852m in Q1-26",
+   "status": "FAIL",
+   "note": "Cause of the Q1 spike mis-identified; also in Q1 FCF/OCF. Correction appended."
+  },
+  {
+   "ticker": "NFLX",
+   "claim": "Guidance: Q2 guide 13% / 32.6% delivered 13.4% / 33.4%; FY26 $50.7-51.7bn then $51.0-51.4bn at 31.5%; Q3 guide 11.7% to $12.86bn, 33.2%",
+   "dossier_location": "NFLX.md s5",
+   "source": "Q1 and Q2 letters, accs 0001065280-26-000137 and -000211",
+   "source_value": "All figures verbatim (Q3 forecast revenue 12,860, margin 33.2%, growth 11.7%)",
+   "status": "PASS",
+   "note": "Street ~$13bn and the 9% after-hours drop come from Variety/CNBC: UNVERIFIABLE in primary sources. FY26 FCF guide (~$12.5bn incl. fee) is not mentioned in the dossier."
+  },
+  {
+   "ticker": "NFLX",
+   "claim": "TTM: revenue $48.37bn, operating income $16.24bn (33.6% margin), FCF $11.15bn, gross debt $14.4bn, cash $9.1bn",
+   "dossier_location": "NFLX.md s6",
+   "source": "10-Q/10-K XBRL; Q2 letter",
+   "source_value": "Revenue 11,510+12,051+12,250+12,560 = 48,371; op income 3,248+2,957+3,957+4,193 = 14,355 (29.7%); FCF 2,660+1,872+5,094+1,525 = 11,151; debt $14.4bn, cash $9.1bn",
+   "status": "FAIL",
+   "note": "TTM operating income overstated by $1.9bn; other figures right but TTM FCF includes the one-off $2.8bn fee. Correction appended."
+  },
+  {
+   "ticker": "NFLX",
+   "claim": "Q2-26 FCF $1.53bn vs $2.27bn (-32.6%), FCF/NI 45% vs 73%, attributed to content-amortization timing",
+   "dossier_location": "NFLX.md s4, s6",
+   "source": "Q2 letter Ex-99.1 acc 0001065280-26-000211",
+   "source_value": "FCF 1,525 vs 2,267 (-32.7%); 'higher cash tax payments due in part to the Warner Bros. termination fee'",
+   "status": "MINOR",
+   "note": "Numbers right; cause incomplete."
+  },
+  {
+   "ticker": "NFLX",
+   "claim": "Q2-26 buybacks $4.7bn (record), $27.1bn authorisation left; ~$1bn debt maturity refinanced",
+   "dossier_location": "NFLX.md s6",
+   "source": "Q2 letter, cash flow statement",
+   "source_value": "Repurchases 4,714; $27.1B capacity; '$1B of debt maturing later this year, which we plan to refinance'",
+   "status": "PASS",
+   "note": "Verified."
+  },
+  {
+   "ticker": "NFLX",
+   "claim": "Reverse DCF: TTM FCF $11.15bn, WACC 10.0%, implied stage-1 growth 11.2%/yr vs 12% base: in_line",
+   "dossier_location": "NFLX.md s7",
+   "source": "own recompute: normalised TTM FCF 9.65bn (9.16bn after SBC 487m), mcap 296.24bn, r 10.0-10.35%, g 3%",
+   "source_value": "required 13.6-14.4%/yr (TTM normalised after SBC); 11.8-12.5% on FY26E ex-fee",
+   "status": "FAIL",
+   "note": "Cash flow base contains a one-off $2.8bn receipt; SBC not deducted. Restated to above."
+  },
+  {
+   "ticker": "NFLX",
+   "claim": "Verdict INCLUDE-SMALL (fully priced, not cheap)",
+   "dossier_location": "NFLX.md s1",
+   "source": "recomputed valuation and Q3 guide deceleration",
+   "source_value": "implied above base",
+   "status": "FAIL",
+   "note": "Support removed; WATCH."
+  },
+  {
+   "ticker": "NI",
+   "claim": "2Q'26 GAAP net income $45.5m, EPS $0.09; op income $228.1m; 1H'26 NI $552.6m, EPS $1.15; FY2025 NI $929.5m, EPS $1.95",
+   "dossier_location": "NI.md s4",
+   "source": "10-Q acc 0001111711-26-000088; Ex-99.1 acc 0001111711-26-000087; 10-K acc 0001111711-26-000027",
+   "source_value": "45.5 / 0.09; 228.1; 552.6 / 1.15; 929.5 / 1.95",
+   "status": "PASS",
+   "note": "Period labels correct. Q2-26 non-GAAP adjusted EPS $0.16 (vs $0.22, -27%) is not mentioned (MINOR omission)."
+  },
+  {
+   "ticker": "NI",
+   "claim": "Guidance reaffirmed: FY26 non-GAAP EPS $2.02-2.07, 9-10% CAGR 2026-2033, $28.6bn 2026-2030 capital plan ($21.0bn + $7.6bn), 9-11% rate base growth; $1.4bn savings via Amazon/Alphabet agreements",
+   "dossier_location": "NI.md s5",
+   "source": "Ex-99.1 acc 0001111711-26-000087",
+   "source_value": "All figures verbatim",
+   "status": "PASS",
+   "note": "Quote verified."
+  },
+  {
+   "ticker": "NI",
+   "claim": "1Q'26 GAAP net income $507.1m is disproportionately large, inflated by one-off Blackstone transaction gains (normal quarter $100-300m)",
+   "dossier_location": "NI.md s1, s3, s4, s6, s12",
+   "source": "10-Q acc 0001111711-26-000045; Ex-99.1 acc 0001111711-26-000087 Schedule 1",
+   "source_value": "1Q'25 NI $474.8m (EPS $1.00); 1Q'26 $507.1m; 1H-26 GAAP $556.2m vs adjusted $587.2m (adjustments +$31.0m)",
+   "status": "FAIL",
+   "note": "Seasonal Q1, not one-off gains; GAAP is below adjusted. Correction appended; the crosstie flags (507.1 vs 45.5) compared Q1 with the latest quarter."
+  },
+  {
+   "ticker": "NI",
+   "claim": "Dividend $0.30/q, $1.12 FY25, annualised $1.20 'consistent with triage low ~1.5% yield'",
+   "dossier_location": "NI.md s4",
+   "source": "10-Q XBRL; price $39.25 per dossier",
+   "source_value": "$0.30 per quarter, 2025 $1.12; yield 1.20/39.25 = 3.06%",
+   "status": "FAIL",
+   "note": "Dividend amounts right; yield about double the stated 1.5%. Correction appended."
+  },
+  {
+   "ticker": "NI",
+   "claim": "Balance sheet 30 Jun 2026: equity $9,574.6m (Dec-25 $9,450.1m), cash $70.0m (Dec-25 $110.1m); long-term debt not sourced",
+   "dossier_location": "NI.md s6",
+   "source": "10-Q acc 0001111711-26-000088 balance sheet",
+   "source_value": "Equity 9,574.6; cash 70.0 / 110.1; LT debt 15,612.6; current portion 1,098.4 (Dec 19.7); short-term borrowings 692.0 (Dec 736.0)",
+   "status": "PASS",
+   "note": "Stated figures correct on consolidated entity; debt gap filled (total $17.4bn). Capex 1,902.6 vs 1,295.5 and OCF 1,122.7 vs 1,181.8 also verified."
+  },
+  {
+   "ticker": "NI",
+   "claim": "IURC gas-meter hearing expected July 2026, may have occurred; no other regulatory items",
+   "dossier_location": "NI.md s9, s11, s12",
+   "source": "10-Q acc 0001111711-26-000088 note 9",
+   "source_value": "Hearing scheduled for October 2026; July 2026 IURC investigations into authorised ROE and trackers for Indiana electric utilities",
+   "status": "FAIL",
+   "note": "Stale date and omitted ROE/tracker investigation. Correction appended."
+  },
+  {
+   "ticker": "NI",
+   "claim": "Reverse DCF: P/E 19.2 = 1/(0.075 - g) so implied perpetual EPS growth 2.3%; implied_vs_base below",
+   "dossier_location": "NI.md s7",
+   "source": "own recompute: D0 $1.20, price $39.25, Ke 7.65% (5.17% + 0.60 x 4.14%), tg 2.5-3.0%",
+   "source_value": "required 10-yr dividend growth 7.9-8.8% vs 9-10% base",
+   "status": "FAIL",
+   "note": "EPS-as-cash method; restated to in_line. Verdict INCLUDE-SMALL retained."
+  },
+  {
+   "ticker": "NI",
+   "claim": "Verdict INCLUDE-SMALL (reverse DCF well below guide, tempered by regulatory probe)",
+   "dossier_location": "NI.md s1",
+   "source": "recomputed valuation plus new ROE investigation",
+   "source_value": "in_line valuation",
+   "status": "MINOR",
+   "note": "Label still consistent with an in-line valuation, but the stated rationale is weaker; no verdict change."
+  },
+  {
+   "ticker": "NKE",
+   "claim": "Fiscal quarters: Q1 FY26 revenue 11,720 EPS 0.49; Q2 12,427 / 0.53; Q3 11,279 / 0.35; Q4 FY26 10,972 (derived) / 0.72; FY2026 46,398 / 2.10; FY2025 46,309 / 2.16",
+   "dossier_location": "NKE.md s4",
+   "source": "10-K acc 0000320187-26-000088; 10-Qs accs 0000320187-25-000151, -26-000037",
+   "source_value": "FY26 46,398 / 2.10 less 9M 35,426 / 1.38 = Q4 10,972 / 0.72; FY25 46,309 / 2.16",
+   "status": "PASS",
+   "note": "Fiscal period labels correct (FY ends 31 May)."
+  },
+  {
+   "ticker": "NKE",
+   "claim": "Q4 FY26 gross margin 49.2% (40.2% ex-$986M IEEPA benefit), EPS $0.72 incl. $0.52 benefit; Q4 FY25 gross margin 40.3%",
+   "dossier_location": "NKE.md s1, s4",
+   "source": "Ex-99.1 acc 0000320187-26-000076; XBRL gross profit",
+   "source_value": "'890 bps to 49.2 percent ... approximately 900 basis point benefit'; $0.52 benefit; GP 5,393/10,972 = 49.2%; (5,393-986)/10,972 = 40.2%",
+   "status": "PASS",
+   "note": "Verbatim and arithmetic verified."
+  },
+  {
+   "ticker": "NKE",
+   "claim": "FY26 OCF $2,868M (-22.4%), capex $684M, FCF about $2,184M (-33.2%); ~$300M of OCF is IEEPA tariff cash; buybacks $146M vs $2,985M",
+   "dossier_location": "NKE.md s6",
+   "source": "10-K acc 0000320187-26-000088; Ex-99.1",
+   "source_value": "OCF 2,868 vs 3,698; capex 684 vs 430; 'approximately $0.3 billion of cash received from IEEPA tariff recoveries'; repurchases 146 vs 2,985",
+   "status": "PASS",
+   "note": "Verified."
+  },
+  {
+   "ticker": "NKE",
+   "claim": "Balance sheet 31 May 2026: cash $7,563M, LT debt $5,942M + $2,000M current = $7,942M, net debt about $379M, equity $14,865M",
+   "dossier_location": "NKE.md s6, s8",
+   "source": "10-K XBRL; Ex-99.1 balance sheet",
+   "source_value": "Debt and equity match; short-term investments $1,464M (cash + STI $9.0bn)",
+   "status": "MINOR",
+   "note": "Net debt ignores short-term investments; consolidated net cash about $1.1bn. Crosstie flags compared with later (Aug-26) balances."
+  },
+  {
+   "ticker": "NKE",
+   "claim": "Guidance: FQ4 guided revenue -2-4%, GM -25-75bps; FY27 revenue down low single digits, earnings flattish (no formal point guidance in the 30 Jun release)",
+   "dossier_location": "NKE.md s5",
+   "source": "Ex-99.1 accs 0000320187-26-000076 (no outlook section) and 0000320187-26-000184",
+   "source_value": "30 Jun release has no outlook (dossier right); 1 Oct 2026 release: FY27 revenue down high-single digits, adjusted EPS $1.15-1.35",
+   "status": "MINOR",
+   "note": "FQ3 guidance not re-checked; the secondary-source FY27 colour is superseded and was weaker than reported."
+  },
+  {
+   "ticker": "NKE",
+   "claim": "Reverse DCF: normalised FCF about $1.9bn implies 9.0%/yr; $2.5bn base implies 5.4%; in_line vs 6-8% base",
+   "dossier_location": "NKE.md s7",
+   "source": "own recompute: SBC $715M (10-K), Ke 8.5%, tg 2.5-3.0%, mcap $53.0bn",
+   "source_value": "after SBC: 14.4-15.2% (norm. $1,169m); 8.9-9.7% ($2.5bn - 715)",
+   "status": "FAIL",
+   "note": "SBC not deducted; restated to above."
+  },
+  {
+   "ticker": "NKE",
+   "claim": "Scenario basis adds ~1.6% dividend yield",
+   "dossier_location": "F69 scenario_basis",
+   "source": "Ex-99.1 acc 0000320187-26-000076: dividends declared per share $1.630 (FY26), $0.410 (Q4)",
+   "source_value": "$1.63 / $35.75 = 4.6%",
+   "status": "FAIL",
+   "note": "Dollar dividend mistaken for a percentage yield; scenarios restated (-8% / +7% / +20%)."
+  },
+  {
+   "ticker": "NKE",
+   "claim": "Verdict INCLUDE-SMALL; FQ1 FY27 on 1 Oct 2026 is the near-term test",
+   "dossier_location": "NKE.md s1, s11",
+   "source": "Ex-99.1 acc 0000320187-26-000184",
+   "source_value": "FQ1 revenue -4%, EPS $0.48; FY27 revenue down high-single digits, adjusted EPS $1.15-1.35; Pace charges ~$1.0bn",
+   "status": "FAIL",
+   "note": "With implied_vs_base above and the test outcome weaker than the dossier's base, INCLUDE-SMALL is not supported; WATCH."
+  },
+  {
+   "ticker": "NOC",
+   "claim": "Q2'26: sales $10,876m (+5%), operating income $1,096m, GAAP diluted EPS $7.68, adjusted FCF $978m; Q1'26 sales 9,881, EPS 6.14, FCF (1,823); Q4'25 sales 11,712, EPS 9.99, MTM-adj 7.23, FCF 3,235; FY25 sales 41,954, EPS 29.08, MTM-adj 26.34, FCF 3,307",
+   "dossier_location": "NOC.md s4",
+   "source": "Ex-99.1 accs 0001133421-26-000033, -000002; 10-Q acc 0001133421-26-000034 XBRL",
+   "source_value": "10,876 / 1,096 / 7.68 / 978; Q1 9,881 / 6.14 / H1 FCF (845) less Q2 978 = (1,823); Q4'25 9.99, 7.23, 3,235; FY25 29.08, 26.34, 3,307",
+   "status": "PASS",
+   "note": "Period labels, YoY (-23% operating income from the Q2'25 $231m gain, ETR 6.3% vs 17.7%) and segment figures verified."
+  },
+  {
+   "ticker": "NOC",
+   "claim": "Guidance quotes: Q2'26 sales $43.75-44.25B (+$250M), MTM-adjusted EPS $28.60-29.10 (+$1.20), operating income and adjusted FCF reaffirmed ($3,100-3,500m, segment operating income $4,850-5,000m); Q4'25 initial guide $43,500-44,000 / $27.40-27.90 / FCF $3,100-3,500",
+   "dossier_location": "NOC.md s5",
+   "source": "Ex-99.1 accs 0001133421-26-000033, -000002",
+   "source_value": "Verbatim in both releases; EPS raise accompanied by unchanged segment operating income",
+   "status": "PASS",
+   "note": "Q2'25 and Q3'25 quotes not re-opened; the three most recent were. No fabricated guidance."
+  },
+  {
+   "ticker": "NOC",
+   "claim": "Balance sheet 30 Jun 2026 (consolidated): cash $2,307m (Dec-25 $4,403m), long-term debt net of current $14,428m + current $763m = $15,191m, equity $17,884m, net debt about $12.9bn; covenant debt/capital cap 65%",
+   "dossier_location": "NOC.md s6",
+   "source": "10-Q acc 0001133421-26-000034 XBRL and text",
+   "source_value": "2,307 / 4,403; 14,428 / 763; 17,884; 'not permit the ratio of its debt to capitalization ... to exceed 65 percent'",
+   "status": "PASS",
+   "note": "Right entity (consolidated Northrop Grumman Corporation) and date."
+  },
+  {
+   "ticker": "NOC",
+   "claim": "B-21: about $2.0bn cumulative LRIP losses, remaining loss accrual $1.0bn; dividend raised 7% to $2.47/qtr (yield ~1.9%); DOJ criminal inquiry closed 20 May 2026, civil CID and DCMA continue",
+   "dossier_location": "NOC.md s6, s11",
+   "source": "10-Q acc 0001133421-26-000034 notes 6-7, 10",
+   "source_value": "Verbatim; dividend $2.47 vs $2.31; 9.88 / 510.52 = 1.94%",
+   "status": "PASS",
+   "note": "Verified."
+  },
+  {
+   "ticker": "NOC",
+   "claim": "Reverse DCF: FCF $3.3bn, Ke 8.0%, terminal growth 3%, implies ~3.8% FCF growth vs 6.5% base (below); scenario returns -4.4% / +6.4% / +13.3%",
+   "dossier_location": "NOC.md s7",
+   "source": "own recompute; SBC $119m (FY25)",
+   "source_value": "3.8% reproduced; after SBC 4.3% at 8.0% (4.5-6.0% at Ke 8.1-8.7%); scenarios reproduced from stated inputs (-4.2% / +6.5% / +13.4%)",
+   "status": "MINOR",
+   "note": "Method is FCF-based with a stated rate and passes; SBC not deducted but small (3.6% of FCF), so implied growth is 4.3-4.5% and still below the 6.5% base. implied_vs_base 'below' stands."
+  },
+  {
+   "ticker": "NOC",
+   "claim": "TTM FCF yield 3.4% (d4) alongside FCF/price 5.0% (b1)",
+   "dossier_location": "NOC.md s3, s7",
+   "source": "Q3'25-Q2'26 adjusted FCF: 1,256 + 3,235 - 1,823 + 978",
+   "source_value": "TTM FCF 3,646 / market cap 72.5bn = 5.0%",
+   "status": "MINOR",
+   "note": "The d4 3.4% cross-check conflicts with the filings-based 5.0%; no effect on the valuation, which uses the 2026 guide."
+  },
+  {
+   "ticker": "NOC",
+   "claim": "Verdict INCLUDE-SMALL: implied below base, modest margin of safety, tax-driven EPS raise, B-21/EAC and DOJ risks",
+   "dossier_location": "NOC.md s1",
+   "source": "dossier evidence and checks above",
+   "source_value": "implied 3.8-4.5% vs 6.5% base; base return ~6%/yr; EPS raise from tax",
+   "status": "PASS",
+   "note": "Evidence supports the label. No filings after 25 Sep other than two Form 4s on 1 Oct 2026."
+  },
+  {
+   "ticker": "NRG",
+   "claim": "Q2'26: GAAP net income $506m, GAAP EPS $2.31 diluted, Adjusted EBITDA $1,217m, Adjusted EPS $1.49 (Q2'25 $1.73); operating income $976m",
+   "dossier_location": "NRG.md s4",
+   "source": "Ex-99.1 acc 0001013871-26-000018; 10-Q acc 0001013871-26-000020 XBRL",
+   "source_value": "NI 506 / (104); EPS diluted 2.31 (basic 2.32); Adj EBITDA 1,217 / 909; Adj EPS 1.49 / 1.73; operating income 976",
+   "status": "PASS",
+   "note": "Period labels right; swing of $610m verified in the release."
+  },
+  {
+   "ticker": "NRG",
+   "claim": "Revenue Q2'26 $7,319m, Q1'26 $10,136m, Q2'25 $6,673m labelled consolidated revenue",
+   "dossier_location": "NRG.md s4",
+   "source": "10-Q XBRL RevenueFromContractWithCustomer vs Revenues; Ex-99.1",
+   "source_value": "Contract revenue 7,319 / 10,136; total revenue 7,481 / 10,256 (Q2'25 6,740)",
+   "status": "MINOR",
+   "note": "Column is revenue from contracts with customers, not total revenue; difference about 2%."
+  },
+  {
+   "ticker": "NRG",
+   "claim": "Guidance: FY26 Adj EBITDA $5,325-5,825m, Adj EPS $7.90-9.90, FCFbG $2,800-3,300m reaffirmed; FY25 actual 4,087 / 8.24 / 2,210; 14%+ EPS growth target extended through 2030",
+   "dossier_location": "NRG.md s5",
+   "source": "Ex-99.1 accs 0001013871-26-000018, -000002",
+   "source_value": "All verbatim; Q4'25 release shows FY25 4,087 / 8.24 / 2,210 and the 14%+ target through 2030",
+   "status": "PASS",
+   "note": "Guide is back-end loaded (H1 Adj EBITDA 2,297; H1 adj EPS 2.98 vs 4.42), not discussed."
+  },
+  {
+   "ticker": "NRG",
+   "claim": "Total debt $23,392m at 30 Jun 2026 (up from $9,812m and $16,412m), cash $162m, net debt $23.23bn; TTM Adj EBITDA about $4,348m (Q4'25 $1,706m), ND/EBITDA 5.3x, 4.2x on guide",
+   "dossier_location": "NRG.md s6",
+   "source": "10-Q acc 0001013871-26-000020; Ex-99.1 acc 0001013871-26-000002",
+   "source_value": "LongTermDebt 23,392; balance sheet 21,744 + 1,512; cash 162; Q4'25 Adj EBITDA 847 (TTM 1,205 + 847 + 1,080 + 1,217 = 4,349)",
+   "status": "MINOR",
+   "note": "Totals and ratios right; the Q4'25 bracket figure ($1,706m) is a slip and the comparators are non-current. Correction appended."
+  },
+  {
+   "ticker": "NRG",
+   "claim": "Liquidity $5.3bn (YE25 $9.6bn); buybacks $1.0bn planned, dividend $0.475/q ($407m)",
+   "dossier_location": "NRG.md s6",
+   "source": "Ex-99.1 acc 0001013871-26-000018",
+   "source_value": "Total liquidity $5,280m vs $9,628m; $1.0bn repurchases, $407m dividends; $0.475 declared 22 Jul 2026",
+   "status": "PASS",
+   "note": "Verified."
+  },
+  {
+   "ticker": "NRG",
+   "claim": "Valuation: EPS-based reverse DCF (11x exit), EV/EBITDA 7.95x, implied_vs_base in_line",
+   "dossier_location": "NRG.md s7",
+   "source": "own recompute: FCFbG 3,050 less SBC 140; Ke 9.3-10.6%; TTM CFO 1,555, capex 1,207",
+   "source_value": "implied FCF growth -6% to -8% on guided FCFbG; +1% to +3% on a $1.5bn FCF; TTM GAAP FCF about $0.35bn",
+   "status": "FAIL",
+   "note": "Not a cash-flow DCF; programme-method result is indeterminate (guide back-end loaded), so label left at in_line and verdict unchanged. Correction appended."
+  },
+  {
+   "ticker": "NRG",
+   "claim": "Verdict INCLUDE-SMALL: leverage elevated, not cheap on EV/EBITDA, clean guidance record",
+   "dossier_location": "NRG.md s1",
+   "source": "checks above",
+   "source_value": "net debt/EBITDA 4.2-5.3x; guidance maintained twice",
+   "status": "PASS",
+   "note": "Evidence supports a half-weight label; valuation leg has low confidence."
+  },
+  {
+   "ticker": "NSC",
+   "claim": "Q2 26: revenue $3.465bn (record, +$355m, +11%), operating ratio 67.6% GAAP / 65.5% adjusted (+210bp YoY), GAAP EPS $3.26, adjusted EPS $3.52 (+$0.23); GAAP operating income $1,124m vs $1,175m",
+   "dossier_location": "NSC.md s4",
+   "source": "8-K Ex-99.1 acc 0001193125-26-313393; 10-Q acc 0001628280-26-049326 XBRL",
+   "source_value": "Release: revenue $3.5bn all-time record, up $355m (11%), OR 67.6% (62.2%), adjusted 65.5%, EPS 3.26 (down $0.15), adjusted 3.52; XBRL operating income 1,124 / 1,175, EPS 3.26",
+   "status": "PASS",
+   "note": "Period labels right; Q3-25 to Q1-26 EPS and the TTM sums (GAAP 11.72, adjusted 12.69) verified from XBRL (Q4-25 = 12.75 - 9.88 = 2.87)."
+  },
+  {
+   "ticker": "NSC",
+   "claim": "No numeric earnings guidance in Q4 25, Q1 26, Q2 26; productivity target raised to ~$200m then achieved over $215m",
+   "dossier_location": "NSC.md s5",
+   "source": "Ex-99.1 acc 0001193125-26-313393 (no outlook section found); earlier releases not re-opened",
+   "source_value": "Q2 26 release contains no financial guidance",
+   "status": "PASS",
+   "note": "Q3 25 and Q4 25 productivity quotes not re-opened (UNVERIFIABLE here); no fabricated guidance found."
+  },
+  {
+   "ticker": "NSC",
+   "claim": "Balance sheet 30 Jun 2026 (consolidated): cash $1,069m, current maturities $649m, long-term debt $15,967m, equity $16,253m, debt-to-total capitalization 50.6% (52.4% Dec-25), incident accruals $186m (Dec-25 $474m)",
+   "dossier_location": "NSC.md s6, s9",
+   "source": "10-Q acc 0001628280-26-049326",
+   "source_value": "All verbatim; H1 OCF 1,398 vs 2,027; capex 821; dividends 606",
+   "status": "PASS",
+   "note": "Right entity (consolidated NSC) and date."
+  },
+  {
+   "ticker": "NSC",
+   "claim": "Deal terms: each NSC share converts to one UNP share plus $88.82 cash; $2.5bn termination fee payable by UNP on regulatory failure",
+   "dossier_location": "NSC.md s7",
+   "source": "8-K acc 0001193125-25-168147",
+   "source_value": "Verbatim; UNP pays $2.5bn 'in certain circumstances relating to failure to obtain regulatory approvals'; End Date 28 Jan 2028; each party also owes $2.5bn on change of recommendation",
+   "status": "PASS",
+   "note": "UNP price $273.79 and STB status come from UNP 10-Q/aggregators and were not re-opened (UNVERIFIABLE here)."
+  },
+  {
+   "ticker": "NSC",
+   "claim": "Normalised FCF about $2.8bn (NI + D&A - $1.7bn capex), 4.0% yield; implied FCF growth 6.5% vs 5% base",
+   "dossier_location": "NSC.md s7",
+   "source": "10-K acc 0001628280-26-006268, 10-Q acc 0001628280-26-049326 XBRL",
+   "source_value": "TTM NI 2,636 + D&A 1,411 - 1,700 = 2,347; capex TTM 2,101; TTM CFO - capex 1,631; implied growth 9.9-10.7% at $2.2bn",
+   "status": "FAIL",
+   "note": "Arithmetic and capex assumption wrong; direction strengthens the above-base finding. Correction appended; verdict unchanged."
+  },
+  {
+   "ticker": "NSC",
+   "claim": "H1 26 FCF about $577m (H1 25 about $1,103m); incident cash payments $322m",
+   "dossier_location": "NSC.md s6",
+   "source": "10-Q XBRL",
+   "source_value": "OCF 1,398 - capex 821 = 577; H1-25 2,027 - 924 = 1,103",
+   "status": "PASS",
+   "note": "Verified; the crosstie flag (1,700 vs 734) was the capex assumption in the valuation line."
+  },
+  {
+   "ticker": "NSC",
+   "claim": "Verdict WATCH: price is mostly a bet on the UNP takeover; standalone implied growth above base",
+   "dossier_location": "NSC.md s1, s7",
+   "source": "checks above",
+   "source_value": "implied 6.8-10.7% vs 5% base",
+   "status": "PASS",
+   "note": "Evidence supports WATCH."
+  }
+ ],
+ "verdict_changes": [
+  {
+   "ticker": "NDSN",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Reverse DCF used WACC on equity FCF and compared a perpetuity with a ten-year base; programme ten-year model (Ke 9.19%, FCF after SBC $701m) requires 8.8-9.5%/yr FCF growth vs the dossier's 6-7% base, so implied_vs_base is above, not below. Base-case scenario return restated from +7% to +2% annualised (exit multiple). F89_summary.json updated."
+  },
+  {
+   "ticker": "NEE",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Dossier omits the pending Dominion Energy combination (0.8138 NEE shares + cash per Dominion share; NEE vote 3 Sep 2026; close 2H 2027) and its 'priced for ~1% growth' valuation used EPS as cash and a 4.2% risk-free rate; dividend-basis DCF with programme inputs needs 7.5-8.4%/yr vs the 8%+ guide: in_line. F55_summary.json updated."
+  },
+  {
+   "ticker": "NEM",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Dossier called production flat when attributable gold output fell 16% (Q1) and 13% (Q2) YoY (kill criterion 4 met on volume), misreported Q1 realized price ($4,900 not ~$4,200) and Q1 adjusted EPS ($2.90 not $2.24), and its own scenario returns were arithmetically wrong (base about -5%/yr, not +4%); implied growth on the Q2 run-rate is about 0%, so implied_vs_base is in_line. F89_summary.json updated."
+  },
+  {
+   "ticker": "NFLX",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "TTM FCF $11.15bn used in the reverse DCF includes the one-off $2.8bn Warner Bros. termination-fee receipt (the dossier attributed the Q1 spike to FX/investment gains); normalised and SBC-adjusted, the price needs 13.6-14.4%/yr FCF growth vs a 12% base, so implied_vs_base is above, not in_line. TTM operating income was also overstated ($16.24bn vs $14.35bn). F19_summary.json updated."
+  },
+  {
+   "ticker": "NKE",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Reverse DCF omitted $715M of SBC (38% of normalised FCF): SBC-adjusted implied growth is 9-15%/yr vs the 6-8% base, so implied_vs_base is above, not in_line; the 1 Oct 2026 release (FY27 revenue down high-single digits, adjusted EPS $1.15-1.35, $1.0bn Pace charges) further weakens the base case. Scenario dividend yield corrected (4.6%, not 1.6%). F69_summary.json updated."
+  }
+ ]
+}

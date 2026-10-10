@@ -1,0 +1,787 @@
+{
+ "as_of": "2026-10-08",
+ "scope": [
+  "GEV",
+  "GILD",
+  "GIS",
+  "GLW",
+  "GNRC",
+  "GOOGL",
+  "GPC",
+  "GPN",
+  "GRMN",
+  "GS"
+ ],
+ "facts": [
+  {
+   "ticker": "GEV",
+   "claim": "2Q26 revenue $11,104m, +22% y/y (+12% organic)",
+   "dossier_location": "GEV.md s4 table",
+   "source": "Q2 FY26 Ex-99 gevpressrelease2q26 / 10-Q acc 0001996810-26-000148",
+   "source_value": "$11,104m (XBRL RevenueFromContract 90d to 2026-06-30); release +22%, +12% organic",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GEV",
+   "claim": "2Q26 GAAP net income $649m; 2Q26 diluted EPS $2.47",
+   "dossier_location": "GEV.md s4 table",
+   "source": "Q2 FY26 Ex-99 gevpressrelease2q26 / 10-Q acc 0001996810-26-000148",
+   "source_value": "ProfitLoss $649m (incl. NCI); NetIncomeLoss attributable $668m; EPS $2.47",
+   "status": "MINOR",
+   "note": "Dossier uses net income incl. noncontrolling interests ($649m); attributable to GE Vernova is $668m. EPS $2.47 and H1 EPS $19.96 match."
+  },
+  {
+   "ticker": "GEV",
+   "claim": "1Q26 revenue $9,338m; net income $4,749m (50.9% margin) incl. $4.5bn pre-tax M&A gains",
+   "dossier_location": "GEV.md s4 table",
+   "source": "Q1 FY26 Ex-99 gevpressrelease1q26 / 10-Q 0001996810-26-000064",
+   "source_value": "Revenue $9,339m; ProfitLoss $4,750m, attributable $4,745m; release line cites $4.5B pre-tax M&A net gains, Prolec GE",
+   "status": "MINOR",
+   "note": "Rounding-level differences ($1m revenue, $1m net income incl NCI); one-off gain claim verified."
+  },
+  {
+   "ticker": "GEV",
+   "claim": "Guidance table: FY26 revenue/EBITDA margin/FCF guides at 4Q25, 1Q26, 2Q26 releases",
+   "dossier_location": "GEV.md s5",
+   "source": "4Q25 (gevpressrelease4q25), 1Q26, 2Q26 Ex-99",
+   "source_value": "4Q25: rev $44-45bn (up from $41-42bn), margin 11-13%, FCF $5.0-5.5bn (up from $4.5-5.0bn). 1Q26: $44.5-45.5bn, 12-14%, FCF $6.5-7.5bn. 2Q26: $45.5-46.5bn, 12-14% maintained, FCF $11.5-12.5bn",
+   "status": "PASS",
+   "note": "All nine guidance cells appear verbatim in the cited releases."
+  },
+  {
+   "ticker": "GEV",
+   "claim": "Wind guide ~$400m EBITDA loss repeated while H1 Wind EBITDA was -$657m",
+   "dossier_location": "GEV.md s6",
+   "source": "2Q26 Ex-99 segment table; 4Q25 Ex-99",
+   "source_value": "H1 Wind segment EBITDA $(657)m; 2Q26 $(275)m (-13.6%) vs $(165)m (-7.3%); guide 'approximately $400 million of segment EBITDA losses' in all three releases",
+   "status": "PASS",
+   "note": "Tension is real. Note FY25 Wind loss $(598)m verified."
+  },
+  {
+   "ticker": "GEV",
+   "claim": "FCF guide jump 'not explained in the press release'; likely working capital",
+   "dossier_location": "GEV.md s5, s8",
+   "source": "2Q26 Ex-99 p1",
+   "source_value": "Release: FCF $5.1bn up $4.9bn 'primarily due to higher positive benefits from working capital and stronger adjusted EBITDA'",
+   "status": "MINOR",
+   "note": "Release does name working capital as primary driver; dossier says unconfirmed. Substance of the bear point unchanged."
+  },
+  {
+   "ticker": "GEV",
+   "claim": "Total debt $3.72bn vs $12.72bn cash; net cash ~$9bn",
+   "dossier_location": "GEV.md s6, s7",
+   "source": "10-Q 0001996810-26-000148 XBRL (30 Jun 2026)",
+   "source_value": "LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities $2,849m + operating lease liability $871m = $3,720m; cash/restricted cash $13,120m (release: $13.1B)",
+   "status": "MINOR",
+   "note": "The $3.72bn includes $871m of operating leases; borrowings plus finance leases are $2.85bn. Cash in s7 ($12.72bn) differs from release $13.1B (snapshot excludes restricted cash). Net cash conclusion holds ($9-10bn); EV about $1bn lower on a debt-only basis."
+  },
+  {
+   "ticker": "GEV",
+   "claim": "Reverse DCF: 10% discount rate, 14x exit EBITDA multiple, 22-23% EBITDA CAGR; 2028 outlook $56bn rev, 20% margin",
+   "dossier_location": "GEV.md s7",
+   "source": "4Q25 Ex-99 (2028 outlook); method review",
+   "source_value": "Outlook by 2028: revenue $56bn, adj EBITDA margin 20% -> $11.2bn; 41x FY26 guide-midpoint EV/EBITDA arithmetic checks",
+   "status": "MINOR",
+   "note": "Outlook figures verified. Method is an EBITDA/exit-multiple hurdle, not FCF-based and no stated ERP; 10% implies ERP about 4.8% over 5.17%, acceptable. Cross-check: guided FCF midpoint $12bn is 4.7% of $255bn market cap, below the 5.17% Treasury, so WATCH stands."
+  },
+  {
+   "ticker": "GILD",
+   "claim": "Q2 2026 revenue $7,803M, +10.2% y/y",
+   "dossier_location": "GILD.md s3, s4",
+   "source": "Q2 FY26 Ex-99.1 exhibit991earningspressrel acc 0000882095-26-000028; 10-Q acc 0000882095-26-000031",
+   "source_value": "XBRL revenue 90d to 2026-06-30 $7,803M vs $7,082M = +10.2%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GILD",
+   "claim": "Q2 2026 GAAP net loss $(10,496)M, diluted EPS $(8.45)",
+   "dossier_location": "GILD.md s3, s4",
+   "source": "Q2 FY26 Ex-99.1 exhibit991earningspressrel acc 0000882095-26-000028; 10-Q acc 0000882095-26-000031",
+   "source_value": "NetIncomeLoss $(10,496)M; EarningsPerShareDiluted $(8.45) tagged in the 10-Q",
+   "status": "PASS",
+   "note": "Figures correct. Dossier's claim that the EPS tag is missing post-2010 is wrong: -8.45 (Q2), 1.61 (Q1 26) and 6.78 (FY25) are all tagged."
+  },
+  {
+   "ticker": "GILD",
+   "claim": "Acquired IPR&D $11.2B (Arcellx $7.0B, Tubulis $3.1B, Ouro ~$1.0B net) plus $1.75B Trodelvy impairment",
+   "dossier_location": "GILD.md s3",
+   "source": "Q2 FY26 Ex-99.1 exhibit991earningspressrel acc 0000882095-26-000028; 10-Q acc 0000882095-26-000031",
+   "source_value": "Release: acquired IPR&D $11,183M; $7.0B Arcellx, $3.1B Tubulis, $1.0B Ouro net of Lakefront; IPR&D impairment $1,750M",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GILD",
+   "claim": "EarningsPerShareDiluted XBRL tag 'returns almost no post-2010 data'; EPS 'derived'/data gap",
+   "dossier_location": "GILD.md s4 note, s11",
+   "source": "10-Q acc 0000882095-26-000031 XBRL",
+   "source_value": "EPS -8.45 tagged for 2026-04-01..2026-06-30",
+   "status": "FAIL",
+   "note": "Tag present and populated; the stated data gap does not exist. No effect on conclusions."
+  },
+  {
+   "ticker": "GILD",
+   "claim": "Consolidated total debt $26.246B vs 'noncurrent-only debt of $23.832B a year-ago-comparable period'",
+   "dossier_location": "GILD.md s6",
+   "source": "10-Q acc 0000882095-26-000031 balance sheet XBRL",
+   "source_value": "LongTermDebt $26,246M = LongTermDebtNoncurrent $23,832M + LongTermDebtCurrent $2,414M, all at 30 Jun 2026",
+   "status": "FAIL",
+   "note": "$23.832B is the 30 Jun 2026 noncurrent portion, not a year-ago figure; the 'debt increased materially' inference is not supported by that comparison (cash fell $7.4bn and debt-funded M&A is separately evidenced: net debt proceeds $4.1bn, repayments $2.8bn YTD)."
+  },
+  {
+   "ticker": "GILD",
+   "claim": "Cash balance 'could not be confirmed' (data gap); net debt/EBITDA unresolved",
+   "dossier_location": "GILD.md s6, s9",
+   "source": "Q2 FY26 Ex-99.1 exhibit991earningspressrel acc 0000882095-26-000028; 10-Q acc 0000882095-26-000031",
+   "source_value": "Release: cash, equivalents and marketable debt securities $3,179M (down from $10,605M at 31 Dec 2025); net debt about $23.1bn; normalized TTM EBITDA about $12.5-14.6bn -> about 1.6-1.8x",
+   "status": "FAIL",
+   "note": "Data was available. Net debt/EBITDA about 1.7x vs 3.0x kill level, so the leverage criterion is far from tripped. Stockholders' equity $11,829M verified."
+  },
+  {
+   "ticker": "GILD",
+   "claim": "Guidance track record 'not tabulated'; no numeric guidance used",
+   "dossier_location": "GILD.md s5",
+   "source": "Q2 FY26 Ex-99.1 exhibit991earningspressrel acc 0000882095-26-000028; 10-Q acc 0000882095-26-000031",
+   "source_value": "4 Aug 2026 guidance: product sales $30,100-30,400M (prior $30,000-30,400M); GAAP EPS $(3.75)-$(3.40) (prior $(3.25)-$(2.85)); non-GAAP EPS $(0.65)-$(0.30) (prior $(1.05)-$(0.65))",
+   "status": "MINOR",
+   "note": "Filled the gap. Product-sales low end raised $100M; non-GAAP EPS loss narrowed. FY26 GAAP and non-GAAP EPS are guided NEGATIVE, which the valuation section does not reflect."
+  },
+  {
+   "ticker": "GILD",
+   "claim": "Yeztugo Q2 sales $232M, +40% sequential; Q1 2026 OCF $2.544B vs $1.757B",
+   "dossier_location": "GILD.md s6, s8",
+   "source": "Q2 FY26 Ex-99.1 exhibit991earningspressrel acc 0000882095-26-000028; 10-Q acc 0000882095-26-000031",
+   "source_value": "Yeztugo Q2 $232M (YTD $397M => Q1 $165M, +40.6% q/q); Q1 2026 OCF $2,544M (XBRL); H1 OCF $6,117M => Q2 $3,573M",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GILD",
+   "claim": "Valuation: 'high-single-digit/low-double-digit forward P/E'; reverse DCF on normalized operating income vs market cap; implied growth mid-single digit vs base lower = implied_vs_base 'below'",
+   "dossier_location": "GILD.md s7, F85 valuation_view_vs_v1",
+   "source": "Method (e); XBRL cash flow; d4 snapshot price $150.93, market cap $187.1bn",
+   "source_value": "TTM OCF $13,552M - capex $609M = FCF $12.94bn; less SBC $909M = $12.03bn = 6.4% yield on $187.1bn; at 9.67% cost of equity (5.17% + 4.5% ERP) implied perpetual growth about 3.2% (about 4.8% if $3bn/yr of business development is treated as recurring). FY26 EPS guide is negative; P/E on y_forwardEps $9.89 (FY27 consensus) = 15.3x",
+   "status": "FAIL",
+   "note": "(1) Forward P/E is 15.3x on next-year consensus, not high-single/low-double digit, and FY26 EPS is guided negative. (2) Method compared operating income with market cap (EV mismatch, no cash flow, no discount rate). (3) Direction inverted: implied growth (about 3-5%) is not below a 'low-to-mid single digit' base, so implied_vs_base is in_line, not below. Scenario base +9%/yr is about the 9.67% hurdle."
+  },
+  {
+   "ticker": "GIS",
+   "claim": "Q1 FY27 net sales $4,389.5m, GAAP diluted EPS $0.74, adjusted EPS $0.75 (vs $0.86)",
+   "dossier_location": "GIS.md s4 table, s4 variance",
+   "source": "Q1 FY27 Ex-99 a20260923ex99 acc 0001628280-26-063141; 10-Q 0001628280-26-063201",
+   "source_value": "XBRL revenue 2026-06-01..2026-08-30 $4,389.5m; EPS $0.74; release adjusted EPS $0.75, -13% cc; adjusted operating profit $634.0m vs $711.2m (-11%)",
+   "status": "PASS",
+   "note": "Period labels (fiscal Q1 FY27 ended 30 Aug 2026) correct. Operating profit $633.6m in XBRL vs $634.0m adjusted: immaterial."
+  },
+  {
+   "ticker": "GIS",
+   "claim": "Prior-year columns: Q2 FY25 to Q4 FY26 net sales and GAAP EPS (5,240.1/1.42; 4,842.2/1.12; 4,556.2/0.53; 4,517.5/2.22; 4,860.8/0.78; 4,436.7/0.56; 4,609.6/-3.74)",
+   "dossier_location": "GIS.md s4 table",
+   "source": "10-K 0001628280-26-046466, 10-Qs XBRL",
+   "source_value": "All seven net sales and EPS values match XBRL durations (Q4 FY26 = 97 days incl. 53rd week)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GIS",
+   "claim": "Guidance verbatim: FY27 organic -1.5% to +0.5%; adj op profit -13% to -8% cc; adj EPS $3.00-$3.20; FCF conversion about 95%; reaffirmed 23 Sep 2026, same as 1 Jul 2026",
+   "dossier_location": "GIS.md s5, s9",
+   "source": "Ex-99 acc 0001628280-26-063141 and 0001628280-26-046337",
+   "source_value": "All four targets appear verbatim in both releases; reported-sales headwind now about 4%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GIS",
+   "claim": "FY26 history: 18 Mar 2026 guide 'down 16 to 20 percent' reaffirmed; FY26 actual adj EPS $3.55 (-16% cc), FCF conversion 85% vs guide at least 95%; 17 Dec 2025 and 17 Sep 2025 guides down 10-15%",
+   "dossier_location": "GIS.md s5",
+   "source": "Ex-99 acc 0001628280-26-019020 and 0001628280-26-046337 (conversion table: 85%)",
+   "source_value": "Mar release: 'reaffirmed... down 16 to 20 percent', FCF conversion at least 95%; Jul release: adjusted EPS $3.55, down 16% cc; FCF conversion 85%. EDGAR list shows no 8-K with item 2.02 between 17 Dec 2025 and 18 Mar 2026",
+   "status": "PASS",
+   "note": "Dec 2025 and Sep 2025 releases cited but not re-opened; consistent with the Mar 2026 statement."
+  },
+  {
+   "ticker": "GIS",
+   "claim": "Consolidated debt $13,615.6m (current LTD $1,046.8m + notes payable $201.6m + LTD $12,367.2m), cash $433.1m, equity $7,463.8m",
+   "dossier_location": "GIS.md s6, s9",
+   "source": "10-Q acc 0001628280-26-063201 balance sheet (30 Aug 2026)",
+   "source_value": "1,046.8 + 201.6 + 12,367.2 = 13,615.6; cash $433.1m; total equity $7,463.8m",
+   "status": "PASS",
+   "note": "Mechanical cross-tie flag (-91.6%/-98.4%/+9.7% vs 12,416) compares components with the 31 May 2026 long-term debt line ($12,416.0m); dossier states this explicitly. False positive."
+  },
+  {
+   "ticker": "GIS",
+   "claim": "TTM adjusted EBITDA about $3,290m (adj op profit $2,733.9m + D&A $556.3m); net debt/EBITDA about 4.0x",
+   "dossier_location": "GIS.md s6, s9",
+   "source": "Ex-99 FY26 adj op profit $2,811.5m; Q1 FY27 $634.0m vs $711.2m; D&A FY26 $555.2m, Q1 $139.8m vs $138.7m",
+   "source_value": "TTM adj op profit 2,811.5-711.2+634.0 = 2,734.3; D&A 555.2-138.7+139.8 = 556.3; sum $3,290.6m; net debt $13,182.5m = 4.0x",
+   "status": "PASS",
+   "note": "$0.4m difference in adj op profit is rounding."
+  },
+  {
+   "ticker": "GIS",
+   "claim": "Q4 FY26 charges: $1,750.0m goodwill/brand impairments (Pet goodwill $1,500m, brands $250m), Brazil valuation loss $1,032m; Brazil sale closed 2 Sep 2026; $750m FY27 savings, $3bn by FY2030",
+   "dossier_location": "GIS.md s6, s10",
+   "source": "Ex-99 acc 0001628280-26-046337 and 0001628280-26-063141",
+   "source_value": "Impairments $1,750.0m; valuation loss $1,032m; Brazil divestiture completed 2 Sep 2026; $750m FY27 and $3bn cumulative savings through FY2030",
+   "status": "PASS",
+   "note": "Pet/brands split not separately re-opened (sum matches)."
+  },
+  {
+   "ticker": "GIS",
+   "claim": "Valuation: reverse DCF at 8.5% cost of equity, 2% terminal growth, base FCF $1,585m implies -2.2%/yr vs base +2.5% (implied below base)",
+   "dossier_location": "GIS.md s1, s7",
+   "source": "Method (e): own re-computation; Treasury 5.17% on 25 Sep 2026; TTM SBC $86.1m (XBRL)",
+   "source_value": "At 8.5% reproduces -2.25%. At 9.67% (5.17% + 4.5% ERP) implied growth is -0.1%; with SBC ($86m) deducted from base FCF it is +0.9%. Base +2.5% still above implied",
+   "status": "MINOR",
+   "note": "8.5% is only 3.3 points over the 5.17% Treasury and SBC is not deducted. Restated: implied about 0% to +1% vs base +2.5%, still below base; verdict INCLUDE-SMALL and implied_vs_base unchanged. FCF (not EPS) is used and interest is netted in OCF, so the method is otherwise sound."
+  },
+  {
+   "ticker": "GLW",
+   "claim": "Q2 26 GAAP sales $4,505M (+17% y/y), GAAP EPS $0.64, core sales $4,738M, core EPS $0.78 (+30%)",
+   "dossier_location": "GLW.md s4",
+   "source": "Q2 26 Ex-99 acc 0000024741-26-000253; 10-Q acc 0000024741-26-000255",
+   "source_value": "XBRL revenue $4,505M vs $3,862M (+16.6%); EPS $0.64; release core sales $4,738M +17%, core EPS $0.78 +30%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GLW",
+   "claim": "Eight-quarter GAAP table: op margins and GAAP EPS (Q2 25 14.8%/0.54, Q3 25 14.4%/0.50, Q1 26 15.4%/0.43, Q2 26 15.5%/0.64)",
+   "dossier_location": "GLW.md s4",
+   "source": "10-Q/10-K XBRL",
+   "source_value": "Operating income 573/3,862, 589/4,100, 639/4,144, 698/4,505 = 14.8/14.4/15.4/15.5%; EPS match",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GLW",
+   "claim": "Guidance table: Q3 26 core sales $4.9-5.0B, core EPS $0.85-0.89 (+28%); prior guides Q2 25, Q3 25, Q4 25, Q1 26 and delivered values",
+   "dossier_location": "GLW.md s5",
+   "source": "Ex-99 releases Q2 25 (0001628280-25-036303), Q3 25 (0000024741-25-000109), Q4 25 (0000024741-26-000034), Q1 26 (0000024741-26-000198), Q2 26",
+   "source_value": "All five guides appear verbatim; delivered core sales/EPS 4,272/0.67, 4,412/0.72, 4,345/0.70, 4,738/0.78 match the following releases",
+   "status": "PASS",
+   "note": "Four-for-four at or above range top confirmed."
+  },
+  {
+   "ticker": "GLW",
+   "claim": "Springboard targets: $20B annualized by end-2026, $30B 2028, $40B 2030; 19% CAGR Q4 26 to Q4 30; Optical $2.07B +32%; Glass Innovations $1.46B; Automotive $471M; Solar $438M +90%",
+   "dossier_location": "GLW.md s2, s5",
+   "source": "Q2 26 Ex-99",
+   "source_value": "All values and quotes present (Optical $2,072M +32%; Glass Innovations $1,463M; Automotive $471M; Solar $438M +90%)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GLW",
+   "claim": "Debt: cash $2,504M; total debt $8,424M ($668M current + $7,756M long-term); equity $12,560M; net debt about $5.9B",
+   "dossier_location": "GLW.md s6, s9",
+   "source": "10-Q acc 0000024741-26-000255 XBRL",
+   "source_value": "DebtCurrent $668M + LongTermDebtAndCapitalLeaseObligations $7,756M = $8,424M; cash $2,504M; equity $12,560M",
+   "status": "PASS",
+   "note": "Mechanical flag (8.6% gap) arises because the XBRL long-term tag excludes the current portion; dossier already states this. Kill criterion on $9.5B uses total, correctly."
+  },
+  {
+   "ticker": "GLW",
+   "claim": "Adjusted FCF Q2 26 $1,423M incl. $1.0B customer deposit; H1 $1,611M; TTM about $2.88B",
+   "dossier_location": "GLW.md s4, s6",
+   "source": "Q2 26 Ex-99 (adjusted FCF $1,423M/$451M; H1 $1,611M/$450M); 10-K FY25",
+   "source_value": "Adjusted FCF Q2 $1,423M, H1 26 $1,611M, H1 25 $450M; FY25 $1,717M => TTM $2,878M; H1 OCF $2,079M (XBRL)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GLW",
+   "claim": "Reverse DCF: WACC 9%, terminal 3.5%, starting FCF $2.3B implies 18.9% 10-year FCF CAGR vs base 14%; base value about $104/share",
+   "dossier_location": "GLW.md s1, s7",
+   "source": "Method (e); Treasury 5.17%; beta 1.15 (d4); SBC H1 26 $250M (10-Q)",
+   "source_value": "WACC 9% implies about a 3.8% premium over the 5.17% Treasury; at 5.17% + 1.15 x 4.5% = 10.3% cost of equity (WACC about 9.9%) the implied CAGR is higher still; adjusted FCF is not reduced by SBC",
+   "status": "MINOR",
+   "note": "Method is FCF-based on an enterprise basis, which is acceptable. The 9% WACC is on the low side and SBC is not deducted; both make the price look less demanding than it is, so implied_vs_base 'above' and WATCH are conservative-direction robust. No restatement needed."
+  },
+  {
+   "ticker": "GNRC",
+   "claim": "Q2'26 net sales $1,173.5M (+11%), operating income $210.4M, net income $143.2M, GAAP EPS $2.40, adjusted EPS $2.91",
+   "dossier_location": "GNRC.md s4",
+   "source": "Q2 26 Ex-99.1 acc 0001437749-26-024731; 10-Q acc 0001437749-26-025669",
+   "source_value": "XBRL: revenue $1,173,510K; operating income $210,433K; net income $143,244K; EPS $2.40; release adjusted EPS $2.91 (vs $1.65)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GNRC",
+   "claim": "Q1'26 and 2025 quarters; Q4'25 sales ~$1,090M, GAAP EPS -$0.42, adjusted EPS $1.61; FY25 adj. EBITDA $716M (17.0%)",
+   "dossier_location": "GNRC.md s4, s6",
+   "source": "10-K acc 0001437749-26-004568 XBRL; Q4 FY25 Ex-99.1 acc 0001437749-26-003700",
+   "source_value": "FY25 revenue $4,209.1M less 9M $3,117.7M = $1,091.4M; release: Q4 net loss $(24)M, $(0.42)/sh, adjusted $1.61; FY25 adjusted EBITDA $716M, 17.0%",
+   "status": "PASS",
+   "note": "Q1'26 sales $1,059.4M, op income $117.3M, EPS $1.24, adjusted $1.80 also match."
+  },
+  {
+   "ticker": "GNRC",
+   "claim": "FY26 guidance track: 11 Feb 2026 mid-teens, 18.0-19.0%; 29 Apr raised mid-to-high teens, 18.5-19.5%; 29 Jul maintained, 20.0-21.0% incl. about 1.5% tariff refund",
+   "dossier_location": "GNRC.md s5",
+   "source": "Ex-99.1 accs 0001437749-26-003700, -013726, -024731",
+   "source_value": "All three guide sets verbatim; Q2 pre-tax tariff refund about $71M; gross margin 44.5% with about 6 pts from refunds",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GNRC",
+   "claim": "Data-center backlog about $1.6bn per Q2 2026 release",
+   "dossier_location": "GNRC.md s10 (kill criterion 2)",
+   "source": "Q2 26 Ex-99.1 CEO quote",
+   "source_value": "'backlog for products serving the data center market has now increased to approximately $1.6 billion as of today', excluding the second hyperscale customer; release also notes nearly $700M committed for 2027",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GNRC",
+   "claim": "Amazon 8-K 16 Sep 2026: warrant up to 1,693,745 shares at $200.9266, vesting on up to $8bn gross payments, initial deliveries $2.4bn in 2027-2028",
+   "dossier_location": "GNRC.md s6",
+   "source": "8-K acc 0001437749-26-030550",
+   "source_value": "All quantities verbatim; 307,954 shares vested immediately; expiry 16 Sep 2033; 1,693,745 / 59.0M shares = 2.9%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GNRC",
+   "claim": "Stock re-rated about 40% in a single session on the Amazon news (s1, s6, s9; F75 thesis line)",
+   "dossier_location": "GNRC.md s1, s6, s9",
+   "source": "d2_close.parquet (GNRC daily close)",
+   "source_value": "16 Sep 2026 close $175.11; 17 Sep $207.23 = +18.3%; 25 Sep $208.14 = +18.9% from the 16 Sep close; lowest close since 1 Jul was $175.03",
+   "status": "FAIL",
+   "note": "Single-session move was +18.3%, not 40%. Thesis wording corrected; valuation is price-based so verdict unchanged."
+  },
+  {
+   "ticker": "GNRC",
+   "claim": "Balance sheet: cash $264.9M; debt $1,281.0M (current $32.1M + LT $1,249.0M); equity $2,877.6M; total assets $5,772.2M; net debt/adj EBITDA about 1.4x",
+   "dossier_location": "GNRC.md s6",
+   "source": "10-Q acc 0001437749-26-025669 XBRL (30 Jun 2026)",
+   "source_value": "Cash $264,921K; DebtAndCapitalLeaseObligations $1,281,010K; equity $2,877,623K; assets $5,772,151K; net debt $1,016M / FY25 adj EBITDA $716M = 1.42x",
+   "status": "PASS",
+   "note": "Mechanical flag (equity $5,772.2M vs 2,877.6) is a false positive: the dossier labels $5,772.2M as total assets."
+  },
+  {
+   "ticker": "GNRC",
+   "claim": "TTM FCF about $289M (fcf_yield 2.4%, d4); M&A $348.5M deployed H1 funded from balance sheet",
+   "dossier_location": "GNRC.md s6",
+   "source": "10-Q XBRL; 10-Q acquisitions note",
+   "source_value": "TTM OCF $548.1M less capex $168.9M = $379.2M ($328M after $51M SBC); acquisition price $348,482K net of cash incl. holdbacks/contingent consideration, of which $44,785K in treasury stock; cash paid $211.8M (cash-flow statement)",
+   "status": "MINOR",
+   "note": "FCF from filings is $379M (yield 3.1%, 2.7% after SBC), not $289M (Yahoo). $348.5M is purchase price incl. $44.8M stock and holdbacks; H1 cash outlay was $211.8M. Neither changes the verdict."
+  },
+  {
+   "ticker": "GNRC",
+   "claim": "Legal: securities class action 'resolved in Generac's favor'; no investigations noted (s8 bull 3, s12)",
+   "dossier_location": "GNRC.md s8, s12",
+   "source": "10-Q acc 0001437749-26-025669 legal note",
+   "source_value": "Dismissed with prejudice 30 Apr 2026 but 'Plaintiffs have appealed'; shareholder derivative suits pending; DOJ grand jury subpoena (E.D. Mich.) plus EPA/CARB emissions enforcement on portable generators, EPA notice 3 Oct 2025 affecting about 4,850 more units, EPA information request 12 May 2026",
+   "status": "FAIL",
+   "note": "'Resolved' overstates: appeal pending, derivative actions open, and an open DOJ/EPA/CARB emissions investigation is absent from the red-flag scan. Quantum not disclosed; no verdict change, but it is a risk to flag."
+  },
+  {
+   "ticker": "GNRC",
+   "claim": "Reverse DCF: FY26E adj EPS $8.10, 18x exit, 9.5% cost of equity (beta 1.91) -> 13.5% 10-yr EPS CAGR vs base 10.5% (above)",
+   "dossier_location": "GNRC.md s7",
+   "source": "Method (e); Treasury 5.17%; H1 adjusted EPS $1.80+$2.91 = $4.71",
+   "source_value": "Re-run: 9.67% -> 13.6%; 11% -> 15.0%; stripping the about $0.9/sh after-tax tariff refund from the $8.10 base -> about 15% or more. CAPM at beta 1.91 = 5.17% + 1.91 x 4.5% = 13.8%",
+   "status": "MINOR",
+   "note": "9.5% is only 2.3 points over the Treasury for a beta of 1.91 and EPS (not FCF) is the cash-flow proxy with a one-off refund inside the base year. Every correction raises the implied growth, so implied_vs_base 'above' and WATCH stand."
+  },
+  {
+   "ticker": "GOOGL",
+   "claim": "Q2 2026 revenue $119.8bn, +24% y/y; operating margin 34% (+2pp)",
+   "dossier_location": "GOOGL.md s4",
+   "source": "Q2 26 Ex-99.1 acc 0001652044-26-000066; 10-Q acc 0001652044-26-000071",
+   "source_value": "Revenue $119,796M vs $96,428M = +24.2%; operating income $40,770M = 34.0% vs 32.4%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GOOGL",
+   "claim": "Google Cloud Q2 revenue $24.8bn +82%; Q1 $20.0bn +63%; Cloud operating income $8.8bn vs $2.8bn",
+   "dossier_location": "GOOGL.md s4",
+   "source": "Q2 26 Ex-99.1 acc 0001652044-26-000066; 10-Q acc 0001652044-26-000071; Q1 Ex-99.1 acc 0001652044-26-000043",
+   "source_value": "Cloud $24,768M (+82%); Q1 +63% to $20.0bn; Cloud operating income $8,814M vs $2,826M (margin 35.6% vs 20.8%)",
+   "status": "PASS",
+   "note": "Q4 2025 Cloud +48% not re-opened."
+  },
+  {
+   "ticker": "GOOGL",
+   "claim": "$99bn Q2 2026 'paper gain' distorts trailing EPS $19.93",
+   "dossier_location": "GOOGL.md s3, s11",
+   "source": "Q2 26 Ex-99.1 acc 0001652044-26-000066; 10-Q acc 0001652044-26-000071",
+   "source_value": "Gain on equity securities $99.0bn (other income net gain $98.0bn); Q2 net income $112.2bn, diluted EPS $9.11; TTM EPS 10.81-5.12+14.24 = $19.93",
+   "status": "PASS",
+   "note": "Gain increased net income by $77.1bn / $6.26 per share after tax per the release."
+  },
+  {
+   "ticker": "GOOGL",
+   "claim": "June 2026 raised $49.6bn equity and $20.3bn net senior notes; share count rose",
+   "dossier_location": "GOOGL.md s6",
+   "source": "Q2 26 Ex-99.1 acc 0001652044-26-000066; 10-Q acc 0001652044-26-000071 ; Q2 Ex-99.1 'Additional Information'",
+   "source_value": "Equity raise net $49.6bn (Class A/C plus mandatory convertible preferred); notes net $20.3bn; shares outstanding 12,088M at Dec 2025 -> 12,230M at 30 Jun 2026",
+   "status": "PASS",
+   "note": "Release also discloses a $40.0bn ATM program (none sold at 30 Jun); not mentioned in dossier."
+  },
+  {
+   "ticker": "GOOGL",
+   "claim": "H1 2026 capex $80.6bn vs $39.6bn; RPO $467.6bn (Mar) of which Cloud $462.3bn; backlog $514bn at Q2, just over half within 24 months",
+   "dossier_location": "GOOGL.md s4, s6",
+   "source": "10-Q acc 0001652044-26-000071",
+   "source_value": "H1 capex $80,598M vs $39,643M; RPO $519.5bn of which Cloud $513.9bn; 'just over 50%' within 24 months",
+   "status": "PASS",
+   "note": "Q1 RPO split consistent (513.9 - 462.3 = $51.6bn sequential)."
+  },
+  {
+   "ticker": "GOOGL",
+   "claim": "FY2026 capex guidance raised twice, to $195-205bn at the Q2 2026 call",
+   "dossier_location": "GOOGL.md s5, s9",
+   "source": "10-Q and Q2 Ex-99.1 searched; only CNBC cited",
+   "source_value": "Neither the release nor the 10-Q states a capex dollar guide; 10-Q says only that capex will 'significantly increase' relative to 2025",
+   "status": "UNVERIFIABLE",
+   "note": "Guidance figure is from a call/press source, not an SEC filing; kill criterion 4 ($205bn) rests on it."
+  },
+  {
+   "ticker": "GOOGL",
+   "claim": "FCF (Yahoo definition) $22.7bn TTM; operating cash flow adjusted for SBC $148bn TTM (+35.2%)",
+   "dossier_location": "GOOGL.md s6",
+   "source": "Q2 Ex-99.1 non-GAAP reconciliation",
+   "source_value": "Company TTM FCF = OCF $185,675M - capex $132,402M = $53,273M; quarterly FCF $24.5bn, $24.6bn, $10.1bn, then $(5.9)bn in Q2 2026; TTM SBC $28.1bn so OCF less SBC = $157.5bn",
+   "status": "FAIL",
+   "note": "Company-reported TTM FCF is $53.3bn, not $22.7bn, and Q2 FCF was negative $5.9bn (the real capex-burden datum, omitted). The $148bn SBC-adjusted figure does not reconcile to filings (157.5)."
+  },
+  {
+   "ticker": "GOOGL",
+   "claim": "Reverse DCF: 12% discount rate, 36% margin, 18% tax, 21x terminal P/E -> 16.6% revenue CAGR vs base 11.3%; base value ~$220, '~56% below the current $343.92'",
+   "dossier_location": "GOOGL.md s1, s7",
+   "source": "Method (e): 10-year Treasury 5.17% on 25 Sep 2026; beta 1.225 (d4); own recomputation",
+   "source_value": "Reproduced 16.8% at 12%. At 9.67% (5.17% + 4.5% ERP): required CAGR 14.4%, base fair value $262 (price 31% above); at 10.7% (CAPM beta 1.225): 15.4%, $239. $220 is 36% below $343.92, not 56%",
+   "status": "FAIL",
+   "note": "Discount rate 12% implies a 6.8-point equity risk premium, inconsistent with the program's 9.67% hurdle; cash flow is NOPAT-based (not FCF; Q2 FCF negative; SBC $28bn not deducted). '56% below' inverts the percentage ($343.92 is 56% above $220). Restated: implied 14.4% vs base 11.3% and fair value about $262: still above base; WATCH stands."
+  },
+  {
+   "ticker": "GOOGL",
+   "claim": "3-year scenarios: base +1.1%, bear -20.5%, bull +18.6% (Yr3 price $353/$171/$570)",
+   "dossier_location": "GOOGL.md s7",
+   "source": "Own arithmetic",
+   "source_value": "(353/343.92)^(1/3)-1 = 0.9%; (171/343.92)^(1/3)-1 = -20.8%; (570/343.92)^(1/3)-1 = 18.4%; dividends add about 0.3%/yr",
+   "status": "MINOR",
+   "note": "Rounding-level; dividends account for the difference."
+  },
+  {
+   "ticker": "GOOGL",
+   "claim": "Red-flag scan: DMA investigations open; no accounting/legal items otherwise",
+   "dossier_location": "GOOGL.md s11",
+   "source": "10-Q acc 0001652044-26-000071 legal note",
+   "source_value": "10-Q: Stockholm court awarded about $2.1bn to PriceRunner/Klarna in July 2026, recognized in Q2 2026 (appealed); EC adtech fine EUR 3.0bn (Sep 2025, $3.5bn charge Q3 2025) under appeal; DOJ and states appealed Feb 2026, Google appealed Jan 2026",
+   "status": "MINOR",
+   "note": "Red-flag scan omits the $2.1bn PriceRunner damages charge and the EC adtech fine. Chrome-divestiture request is from press (not in 10-Q): unverified."
+  },
+  {
+   "ticker": "GPC",
+   "claim": "Q2-26 revenue $6,537m (+6.0%: comparable +3.4%, FX +1.4%, acquisitions +1.2%); GAAP EPS $1.65; adjusted EPS $2.15",
+   "dossier_location": "GPC.md s4",
+   "source": "Q2-26 Ex-99.1 gpc-earnq22026 acc 0000040987-26-000031; 10-Q acc 0000040987-26-000033",
+   "source_value": "XBRL revenue $6,536.951M vs $6,164.425M; EPS $1.65; release adjusted net income $296M, $2.15 per diluted share",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GPC",
+   "claim": "GAAP net income $228m vs $255m (-11%); adjusted net income $296m vs $292m",
+   "dossier_location": "GPC.md s4 variance",
+   "source": "10-Q XBRL; Ex-99.1 reconciliation",
+   "source_value": "NetIncomeLoss $227.558M vs $254.880M; adjusted net income $296.234M vs $291.787M",
+   "status": "PASS",
+   "note": "Mechanical net-income flags (255/296/292 vs 227.6) compare other-quarter and adjusted figures with the GAAP tag; the dossier labels each correctly."
+  },
+  {
+   "ticker": "GPC",
+   "claim": "Guidance 21 Jul 2026: adjusted EPS $7.50-8.00 maintained; GAAP EPS $6.10-6.60 -> $5.90-6.40; NA Automotive 3-5% -> 2.5-4.5%; International 3-6% -> 5-8%; FCF $550-700m maintained",
+   "dossier_location": "GPC.md s5, s9",
+   "source": "Q2-26 Ex-99.1 outlook table",
+   "source_value": "All six rows verbatim; 'Reaffirms 2026 Outlook for Adjusted EPS' headline",
+   "status": "PASS",
+   "note": "Earlier releases (17 Feb, 21 Apr, 21 Oct 2025) cited by accession but not re-opened; the 21 Jul table references the Feb and Apr guidance consistently."
+  },
+  {
+   "ticker": "GPC",
+   "claim": "Debt $4,979m = short-term borrowings $752m (incl. $683m CP) + current LTD $250m + LTD $3,977m; cash $559m; equity $4,526m; assets $21,058m; inventory $6,288m vs payables $6,280m",
+   "dossier_location": "GPC.md s6, s9",
+   "source": "10-Q acc 0000040987-26-000033 XBRL (30 Jun 2026)",
+   "source_value": "ShortTermBorrowings $752.474M; LongTermDebtCurrent $250.0M; LongTermDebtNoncurrent $3,976.648M; CommercialPaper $683M; cash $559.118M; equity $4,526.012M; assets $21,058.293M; inventory $6,287.933M; trade payables $6,279.867M",
+   "status": "PASS",
+   "note": "Mechanical debt flags arise from XBRL tag-mapping (nearest tag 3,478.9/3,976.6); the dossier's components sum to $4,979.1m exactly and the kill criterion uses total debt."
+  },
+  {
+   "ticker": "GPC",
+   "claim": "Free cash flow: 2025 $421m vs dividends $564m; H1-26 $259m vs dividends $288m; TTM OCF less capex $760m",
+   "dossier_location": "GPC.md s6, s8",
+   "source": "10-K/10-Q XBRL; Q2-26 Ex-99.1 FCF table",
+   "source_value": "FY25 OCF $890.8M - capex $469.8M = $421.0M; dividends $563.8M; H1-26 $464.1M - $205.4M = $258.7M (release $258.723M); dividends $288.0M; TTM $1,185.8M - $426.4M = $759.4M",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GPC",
+   "claim": "Gross margin 37.8% vs 37.7%; segment EBITDA NA Automotive $208m (8.2%, +20 bps); Q2 segment sales and separation announced 17 Feb 2026, targeted completion",
+   "dossier_location": "GPC.md s4, s10",
+   "source": "Q2-26 Ex-99.1",
+   "source_value": "Gross profit $2,470.7M / $6,537.0M = 37.8% vs 37.7%; NA Automotive segment EBITDA $208M +6.0%, margin 8.2% +20 bps; separation costs $16.2M (Q2) and $33.7M (H1)",
+   "status": "PASS",
+   "note": "Separation 'Q1 2027' target date not re-opened (release text line truncated)."
+  },
+  {
+   "ticker": "GPC",
+   "claim": "Reverse DCF at 9% discount rate, 3% terminal growth: TTM FCF $760m implies 7.1%/yr; base ~6%; implied slightly above base",
+   "dossier_location": "GPC.md s7",
+   "source": "Method (e); Treasury 5.17%; TTM SBC $54.4M (XBRL)",
+   "source_value": "Reproduced 7.1% at 9%. At 9.67% (5.17% + 4.5%): 8.6%; with SBC deducted (FCF $705m): 9.6%; from the guided $650m: 10.7%",
+   "status": "MINOR",
+   "note": "9% is 3.8 points over the 5.17% Treasury and SBC is not deducted. Restated implied growth about 8.6-9.6% vs base about 6%: 'above', margin larger than 'slightly'. WATCH stands, so no verdict change."
+  },
+  {
+   "ticker": "GPN",
+   "claim": "Q2'26 GAAP revenue $3.32bn, GAAP diluted EPS $0.05, adjusted EPS $3.46 (+12%), adjusted net revenue $3.16bn (+4% normalized), adjusted operating margin 42.0% (+70bp)",
+   "dossier_location": "GPN.md s4",
+   "source": "Q2'26 Ex-99.1 exhibit99120260630 acc 0001123360-26-000082; 10-Q acc 0001123360-26-000084",
+   "source_value": "XBRL revenue $3,320.8M, EPS $0.05; release adjusted EPS $3.46, adjusted net revenue $3.16bn, normalized +4%, margin 42.0% +70 bps",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GPN",
+   "claim": "Q2'26 GAAP operating income $337m vs $393m (-14.3%); GAAP revenue +68.6%; H1'26 net loss attributable $(1,787)m",
+   "dossier_location": "GPN.md s4 variance",
+   "source": "10-Q XBRL",
+   "source_value": "Operating income $337.121M vs $393.308M; revenue $3,320.8M vs $1,969.3M = +68.6%; NetIncomeLoss H1 $(1,786.9)M",
+   "status": "PASS",
+   "note": "Q2'25 GAAP revenue shown as $1.96bn; recast 10-Q figure is $1.969bn ($1.97bn): rounding."
+  },
+  {
+   "ticker": "GPN",
+   "claim": "Q1'26 GAAP revenue $2.97bn, GAAP EPS -$6.59, adjusted EPS $2.96",
+   "dossier_location": "GPN.md s4",
+   "source": "Q1'26 Ex-99.1 acc 0001123360-26-000070; 10-Q XBRL",
+   "source_value": "Revenue $2,969.7M; EPS $(6.59); adjusted EPS $2.96 (+10%)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GPN",
+   "claim": "Guidance: 18 Feb 2026 adj EPS $13.80-14.00, growth about 5%, margin +150bp; 6 May reaffirmed; 5 Aug cut to approx 4-5% and $13.60-13.80 citing Middle East/travel; capital return more than $2bn",
+   "dossier_location": "GPN.md s5, s9",
+   "source": "Ex-99.1 accs 0001123360-26-000004, -000070, -000082",
+   "source_value": "All three sets verbatim; 5 Aug release: 'Given the ongoing conflict in the Middle East and its impact on our travel portfolio, we now expect...'",
+   "status": "PASS",
+   "note": "6 Aug 2025 and 4 Nov 2025 quotes (accs -25-000038, -25-000075) were not re-opened."
+  },
+  {
+   "ticker": "GPN",
+   "claim": "Segment adjusted net revenue Q2'26: Enterprise $838m, Platforms $628m, SMB $1,513m",
+   "dossier_location": "GPN.md s2",
+   "source": "Q2'26 Ex-99.1 reconciliation table",
+   "source_value": "$838,149K / $627,534K / $1,512,621K",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GPN",
+   "claim": "Debt: Note 6 total long-term debt $22,418m (current $925m); cash $5,409m; net debt about $17.0bn; net debt/adj EBITDA about 2.9x (my estimate), 3.3x after tax payable",
+   "dossier_location": "GPN.md s1, s6, s9",
+   "source": "10-Q acc 0001123360-26-000084 XBRL",
+   "source_value": "LongTermDebtAndCapitalLeaseObligationsIncludingCurrentMaturities $22,418.3M; current $925.0M; cash $5,409.0M; net $17.0bn / $5.8bn = 2.9x; tax payable $2,450.0M (vs $117.5M at Dec 2025)",
+   "status": "PASS",
+   "note": "EBITDA denominator is the dossier's own estimate (labelled); no company figure exists. Mechanical check found no gaps."
+  },
+  {
+   "ticker": "GPN",
+   "claim": "Cash conversion: H1'26 OCF $374m (H1'25 $1,373m), capex $497m, TTM OCF less capex about $0.8bn; 15.2m shares repurchased for $1.1bn; SBC $57m",
+   "dossier_location": "GPN.md s6, s7",
+   "source": "10-Q XBRL cash flow",
+   "source_value": "H1 OCF $373.8M vs $1,372.6M; capex (productive assets) $497.0M; TTM OCF $1,657.7M - capex $835.0M = $822.7M; repurchases $1,099.9M; SBC $57.2M",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GPN",
+   "claim": "Reverse DCF: cost of equity 10%, terminal 3%, 10 years: normalized FCF $2.5bn -> -3.5%/yr; $2.0bn -> -0.4%; reported $0.82bn -> +11.7%",
+   "dossier_location": "GPN.md s7",
+   "source": "Method (e); Treasury 5.17% on 25 Sep 2026; own recomputation",
+   "source_value": "Reproduced exactly at 10%; at 9.67%: -4.1% / -1.0% / +11.0%; at 11%: -1.8% / +1.4% / +13.8%",
+   "status": "PASS",
+   "note": "FCF-based on an equity basis with a 4.8-point premium over the Treasury: consistent with the method rule. Normalized FCF is the dossier's labelled estimate; verdict WATCH rests on exactly that uncertainty, consistently."
+  },
+  {
+   "ticker": "GPN",
+   "claim": "Red flags: Elliott engagement and director appointed (18 Feb 2026 8-K Ex 99.2); income-tax payable unexplained",
+   "dossier_location": "GPN.md s11, s6",
+   "source": "8-K acc 0001123360-26-000004 Ex-99.2; 10-Q",
+   "source_value": "Ex-99.2: appointment follows 'constructive engagement with Elliott Investment Management L.P.'; 10-Q shows income taxes payable $2,450.0M, cash-flow change +$2,333.8M; no explanatory text found",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GRMN",
+   "claim": "Q2'26 revenue $2,022.1M (+11%), gross margin 62.4%, operating margin 30.4%, GAAP EPS $2.80, pro forma EPS $2.81",
+   "dossier_location": "GRMN.md s3",
+   "source": "Q2'26 Ex-99.1 acc 0001193125-26-322113; 10-Q acc 0001193125-26-322114",
+   "source_value": "Release: revenue approx $2.02bn +11%; gross and operating margins 62.4% and 30.4%; GAAP EPS $2.80, pro forma $2.81 (+29%)",
+   "status": "PASS",
+   "note": "Fiscal quarter labels (quarter ended 27 Jun 2026) correct; Garmin's fiscal year is the 52/53 weeks to the last Saturday of December."
+  },
+  {
+   "ticker": "GRMN",
+   "claim": "Q1'25 to Q1'26 revenue, op margin and GAAP EPS; FCF (OCF minus capex) per quarter",
+   "dossier_location": "GRMN.md s3",
+   "source": "10-Q/10-K XBRL (accs 0001193125-26-188908, 0000950170-25-099877, 0001193125-25-254605, 0001193125-26-056028)",
+   "source_value": "Revenue 1,535.1/1,814.6/1,770.9/1,753.5; op margins 21.7/26.0/25.8/24.6%; EPS 1.72/2.07/2.08/2.09; FCF 380.7/127.5/425.1/429.6/469.4 derived from cumulative OCF and capex",
+   "status": "PASS",
+   "note": "Q4'25 EPS derived 2.72 (XBRL FY 8.59 - 9M 5.87) vs 2.73 shown: rounding."
+  },
+  {
+   "ticker": "GRMN",
+   "claim": "Guidance rows: 29 Oct 2025 ($7.10bn, $8.15); 18 Feb 2026 ($7.9bn, $9.35, 58.5%/25.5%/16.0%); 29 Apr 2026 maintained; 29 Jul 2026 ($8.05bn, $10.00, 59.7%/27.0%/16.5%)",
+   "dossier_location": "GRMN.md s4",
+   "source": "Ex-99.1 accs 0001193125-25-254600, -26-056025, -26-188907, -26-322113",
+   "source_value": "All four guidance sentences verbatim; FY25 pro forma EPS $8.56 vs $8.15 guided (+5.0%)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GRMN",
+   "claim": "Segment revenue Q2'26: Fitness $756.8M (+25%), Outdoor -2%, Aviation +8%, Marine +14%, Auto OEM +1%; about $21M tariff refunds in gross margin",
+   "dossier_location": "GRMN.md s3, s6",
+   "source": "Q2'26 Ex-99.1 segment discussion; MD&A",
+   "source_value": "Fitness $756,823K; segment growth rates match; 'approximately $21 million in refunds of previously paid tariffs'",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GRMN",
+   "claim": "Cash $2,334.2M, marketable securities $332.0M current + $1,703.7M noncurrent, about $4.4bn; no borrowings; dividend payable $607.7M; $448M left on buyback; inventories $1,966.1M",
+   "dossier_location": "GRMN.md s6, s9",
+   "source": "Q2'26 Ex-99.1 acc 0001193125-26-322113; 10-Q acc 0001193125-26-322114",
+   "source_value": "Cash $2,334,235K; marketable $331,955K and $1,703,680K; dividend payable $607,651K; release: '$448 million remaining' and 'approximately $4.4 billion'; inventories $1,966,061K",
+   "status": "PASS",
+   "note": "Mechanical entity-scope flag (liquidity vs debt) is a false positive: the dossier states no borrowings and that Yahoo's $227M 'total debt' is leases."
+  },
+  {
+   "ticker": "GRMN",
+   "claim": "TTM FCF about $1.60bn; 2026E starting FCF $1.65bn; TTM revenue $7.67bn; H2'26 implied revenue $4.27bn and pro forma EPS $5.11 (+7%)",
+   "dossier_location": "GRMN.md s6, s7, s9",
+   "source": "XBRL and Q2 Ex-99.1",
+   "source_value": "TTM OCF $1,979M - capex $379M = $1,600M; TTM revenue 7,245.5-3,349.7+3,775.6 = $7,671M; H2 revenue $8.05bn-$3.776bn = $4.27bn; H2 EPS $10.00-(2.08+2.81) = $5.11 vs $4.78",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GRMN",
+   "claim": "Reverse DCF: EV $52.4B, 9% discount rate, 3% terminal growth, starting FCF $1.65B -> 11.0%/yr vs base 5.8% (above)",
+   "dossier_location": "GRMN.md s1, s7",
+   "source": "Method (e); Treasury 5.17% on 25 Sep 2026; XBRL interest income $134M TTM; SBC $166.0M FY25",
+   "source_value": "Reproduced 11.0% at 9%. At 9.67% (5.17% + 4.5%): 12.6%. FCF includes about $112M/yr after-tax interest income on the $4.4bn that is also subtracted from EV (double count) and SBC is not deducted; with both fixed (FCF $1.37bn) at 9.67%: 15.1% (13.5% at 9%)",
+   "status": "FAIL",
+   "note": "Discount rate 9% is 3.8 points over the Treasury, SBC is added back and interest income is counted in FCF while the same cash is netted from EV. Restated implied growth about 13-15% vs base 5.8%: gap widens, implied_vs_base 'above' and WATCH unchanged. F147 summary text updated."
+  },
+  {
+   "ticker": "GRMN",
+   "claim": "Scenarios: bear -10.7%, base +2.3%, bull +11.3% (3-yr annualised from $294.14, dividends $4.20/yr)",
+   "dossier_location": "GRMN.md s7",
+   "source": "Own arithmetic",
+   "source_value": "Base: EPS 10.00x1.08^3 = 12.60 x 24 = $302 + $12.6 dividends = $314.6/294.14 -> 2.3%/yr",
+   "status": "PASS",
+   "note": "Arithmetic consistent."
+  },
+  {
+   "ticker": "GS",
+   "claim": "2Q26 net revenues $20,338M (+39.5%), diluted EPS $20.98, net earnings $6,628M; 1Q26 $17,227M / $17.55 / $5,630M",
+   "dossier_location": "GS.md s3, s4",
+   "source": "10-Q XBRL accs 0000886982-26-000297, -000118",
+   "source_value": "RevenuesNetOfInterestExpense $20,338M vs $14,583M; EPS $20.98; NetIncomeLoss $6,628M; 1Q26 $17,227M, $17.55, $5,630M",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GS",
+   "claim": "Prior quarters: 3Q24-3Q25 revenue/EPS/net earnings; 4Q25 revenue $13,454M (-3.0%), EPS ~$13.99, net earnings ~$4,620M",
+   "dossier_location": "GS.md s4",
+   "source": "10-K acc 0000886982-26-000091 and 10-Qs XBRL",
+   "source_value": "FY25 $58,283M less 9M $44,829M = $13,454M (vs 13,869: -3.0%); FY EPS 51.32 less 9M 37.28 = $14.04; FY net earnings 17,176 less 12,559 = $4,617M; 3Q25 +19.6% on $12,699M",
+   "status": "MINOR",
+   "note": "Derived 4Q25 EPS is $14.04 (dossier ~$13.99) - rounding of a derived figure; no effect."
+  },
+  {
+   "ticker": "GS",
+   "claim": "Annualised ROE 14.2% (3Q25), 16.0% (4Q25), 19.8% (1Q26), 23.5% (2Q26); BVPS $367.67 (+2.8% H1); dividend raised to $5.00 from $4.50; $4.00bn buybacks (4.1M shares)",
+   "dossier_location": "GS.md s3, s4, s6",
+   "source": "2Q26 release; 1Q26 release acc 0000886982-26-000096",
+   "source_value": "ROE 23.5% (Q2), 21.7% (H1), 19.8% (Q1); BVPS $367.67 +2.8% in H1; dividend $5.00 from $4.50; $4.00bn repurchases of 4.1M shares at $984.57 average, $1.36bn dividends, $5.36bn total",
+   "status": "PASS",
+   "note": "3Q25/4Q25 ROE (14.2%, 16.0%) not re-opened. Release footnote 4: share-based award tax benefits of about $965M in H1 added about $3.15 to EPS and 1.7 points to H1 ROE (H1 ROE ex-benefit about 20.0%) - not mentioned in the dossier."
+  },
+  {
+   "ticker": "GS",
+   "claim": "Standardized CET1 12.9% (2Q26), down from 13.3% (1Q26) and 14.3% (4Q25); Advanced CET1 13.7% down from 15.1%; 'CET1 buffer has fallen two quarters running'",
+   "dossier_location": "GS.md s1, s6, s8, s9; F23 key_adverse_facts",
+   "source": "2Q26 release capital table; 1Q26 release capital table",
+   "source_value": "Standardized CET1: 14.3% (31 Dec 2025) -> 12.5% (31 Mar 2026) -> 12.9% (30 Jun 2026); Advanced: 15.1% -> 13.4% (13.3% revised) -> 13.7%; SLR 5.2% -> 4.6% (4.7% revised) -> 4.3%",
+   "status": "FAIL",
+   "note": "1Q26 standardized CET1 was 12.5%, not 13.3% (13.3% is the Advanced ratio); CET1 rose 40bp in 2Q26, so it did not fall two quarters running. The SLR (5.2% -> 4.6% -> 4.3%) is the ratio that fell twice. Capital still above the 11.5% kill level."
+  },
+  {
+   "ticker": "GS",
+   "claim": "Balance sheet: total assets $2.13tn; deposits $558bn; unsecured long-term borrowings $348bn from $285bn (4Q25)",
+   "dossier_location": "GS.md s6",
+   "source": "2Q26 release balance sheet; 1Q26 release",
+   "source_value": "Total assets $2,128bn; deposits $558bn; unsecured long-term borrowings $348bn (Mar 2026 $315bn; Dec 2025 $285bn)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "GS",
+   "claim": "Apple Card $2.26bn markdown in 4Q25; Malaysia 1MDB demand about $1bn (Aug 2025), arbitration since Oct 2023; QPAM exemption extended to 2031",
+   "dossier_location": "GS.md s4, s6",
+   "source": "10-Q / 4Q25 release (not re-opened); 2Q26 release confirms Apple Card HFS transfer in 4Q25",
+   "source_value": "2Q26 release: Platform Solutions revenue lower on net markdowns on the Apple Card portfolio transferred to held for sale in 4Q25",
+   "status": "UNVERIFIABLE",
+   "note": "Direction confirmed; the $2.26bn amount, the Malaysia demand figure and the QPAM date were not re-opened in this pass."
+  },
+  {
+   "ticker": "GS",
+   "claim": "Justified P/B: COE 10.5% (rf 5.17%, ERP 4.14%, beta 1.28), g 3%; P/B 2.54x requires about 22% sustained ROE; dossier_view fair / implied in_line vs base ROE ~19-20%",
+   "dossier_location": "GS.md s7; F23 valuation_view_vs_v1",
+   "source": "Method (e): bank P/B-ROE; BVPS $367.67; price $935.45",
+   "source_value": "P/B = 935.45/367.67 = 2.544x; required ROE = 3% + 2.544 x 7.5% = 22.1% (reproduced). At base ROE 19%: justified P/B 2.13x = $784 (price 19% above); at consensus 20%: 2.27x = $833 (12% above). At ERP 4.5% (COE 10.9%): required ROE 23.2%, base-ROE value $742 (26% above). Base 3-year return +5%/yr vs COE 10.5%",
+   "status": "FAIL",
+   "note": "The dossier's own numbers (required 22% vs base 19-20%; base 3y return 5% vs 10.5% cost of equity) show implied ABOVE base, not in_line; H1 ROE ex tax benefit is already only about 20.0%. Restated implied_vs_base: above. Verdict INCLUDE-SMALL -> WATCH, consistent with the DV13 DLR precedent (in_line -> above, narrow)."
+  },
+  {
+   "ticker": "GS",
+   "claim": "Dividend $5.00 declared; kill criterion CET1 below 11.5%; effective tax rate H1 18.5% vs 13.2% in 1Q26",
+   "dossier_location": "GS.md s5, s9",
+   "source": "2Q26 release",
+   "source_value": "Quarterly dividend $5.00 payable 29 Sep 2026; effective tax rate H1 2026 18.5% up from 13.2% in 1Q26",
+   "status": "PASS",
+   "note": ""
+  }
+ ],
+ "verdict_changes": [
+  {
+   "ticker": "GS",
+   "old": "INCLUDE-SMALL (implied_vs_base in_line / dossier_view fair)",
+   "new": "WATCH (implied_vs_base above)",
+   "why": "Own P/B-ROE test needs about 22.1% sustained ROE (cost of equity 10.5%, g 3%) vs stated base 19-20%; justified value $784-$833 vs $935.45; H1 ROE ex tax benefit about 20.0%; base 3-year return +5%/yr below cost of equity. Standardized CET1 did not fall two quarters (12.5% to 12.9%); SLR did. F23 summary updated."
+  },
+  {
+   "ticker": "GILD",
+   "old": "INCLUDE-SMALL (implied_vs_base below)",
+   "new": "INCLUDE-SMALL (implied_vs_base in_line)",
+   "why": "FCF-after-SBC yield 6.4% implies about 3.2% growth (4.8% with recurring BD spend) at 9.67% cost of equity vs low-to-mid single digit base; verdict unchanged. F85 summary updated."
+  }
+ ]
+}

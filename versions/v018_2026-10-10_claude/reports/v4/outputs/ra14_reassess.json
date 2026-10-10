@@ -1,0 +1,359 @@
+{
+  "analyst": "RA14",
+  "date": "2026-10-06",
+  "data_cutoff": "2026-09-25 close (prices, shares); 10-year Treasury 5.17% (FRED DGS10, 25 Sep 2026); EDGAR submissions checked to 2026-10-06",
+  "tickers": {
+    "TGT": {
+      "claims": [
+        {
+          "claim": "10-year Treasury 5.17% on 25 Sep 2026 and a consistent discount rate",
+          "status": "CONFIRMED (dossier WACC 8.5% WRONG)",
+          "source": "FRED DGS10 (fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10): 25 Sep 2026 5.17% (cutoff, used); 2 Oct 5.28%. Fed raised the target range to 3.75-4.00% on 16 Sep 2026. Dossier used an 8.5% WACC; corrected cost of equity 9.9% (beta 0.944 x ERP 5.0%), WACC about 9.0%."
+        },
+        {
+          "claim": "FY2026 guidance GAAP/Adjusted EPS $9.90-10.90 including about $1.65 of tariff refunds; ex-refund midpoint +$0.75 vs $7.50-8.50",
+          "status": "CONFIRMED",
+          "source": "8-K Ex-99.1 Q2 FY2026, acc 0000027419-26-000034: 'An updated GAAP and Adjusted EPS guidance range of $9.90 to $10.90, which includes second quarter tariff refund benefits of approximately $1.65'; 'The Company's guidance excludes any potential future tariff refunds.'"
+        },
+        {
+          "claim": "TTM FCF $4,456M (6.2% yield) is a usable run-rate",
+          "status": "WRONG",
+          "source": "10-Q acc 0000027419-26-000042 Note 3: $994M of IEEPA refunds 'received during the second quarter'; TTM OCF $8,723M - NI $4,392M - D&A $3,173M - SBC $302M = $856M working-capital/deferred-tax inflow; owner FCF after SBC and ex-refund $2.5-3.4B; FY2025 FCF $2,835M (XBRL: OCF $6,562M, capex $3,727M)."
+        },
+        {
+          "claim": "EV $85,170M = market cap + debt + operating-lease liabilities - cash",
+          "status": "WRONG (double count)",
+          "source": "FCF is after rent expense under ASC 842; corrected EV $81,479M = $71,533M (454.3M shares at 21 Aug 2026, 10-Q cover) + $15,357M debt incl. finance leases - $5,411M cash."
+        },
+        {
+          "claim": "Reverse-DCF: market prices in only about 3.3% FCF growth for 10 years",
+          "status": "WRONG (inputs)",
+          "source": "Recomputed (10-year constant growth, 3% terminal, EV $81.5B): 3.7% at 9.0% on $4,456M, but 7.3% on $3,402M, 8.5% on $3,086M, 11.0% on $2,546M; base path about 5% returns 7.4-7.9% vs 9.0% WACC; base-path value $111-125."
+        },
+        {
+          "claim": "V1 scenario arithmetic (bear -11.8%, base +4.7%, bull +21.3% a year)",
+          "status": "ARITHMETIC CONFIRMED; INPUTS WRONG",
+          "source": "V1 base: year-3 EPS $10.86 x 15.38 = $167.11 + $13.59 dividends; share count -2.9% a year although Target repurchased $3M in 1H FY2026 (10-Q cash flow, $8.3B authorisation unused). Restated -12.7% / +3.5% / +17.7%."
+        },
+        {
+          "claim": "FY2026 capex plan about $5B",
+          "status": "CONFIRMED (not used in dossier FCF)",
+          "source": "10-K FY2025 acc 0000027419-26-000016, Item 7 liquidity: 'We expect capital expenditures in 2026 of approximately $5 billion'; TTM capex $4,267M."
+        },
+        {
+          "claim": "No material filing after the dossier cutoff",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 0000027419 checked 6 Oct 2026: after 25 Aug only 10-Q (0000027419-26-000042), S-3ASR (-000045), S-8 (-000046) filed 28 Aug and Forms 4; no 8-K, 13D or S-4 after the 19 Aug release."
+        },
+        {
+          "claim": "Refund upside",
+          "status": "NOT QUANTIFIABLE",
+          "source": "10-Q Note 3: refund claims outstanding at 1 Aug 2026 are not recognised; amount cannot be estimated. Excluded."
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "WATCH",
+      "old_implied": "not stated (dossier: reverse-DCF 'undemanding'; no F-summary entry; V1 verdict 'demanding')",
+      "new_implied": "above",
+      "scenario_returns_3y": {
+        "bear": -0.127,
+        "base": 0.035,
+        "bull": 0.177
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria (sixth added)",
+        "key_adverse_facts",
+        "data_conflicts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1.dossier_view",
+        "valuation_view_vs_v1.implied_vs_base",
+        "valuation_view_vs_v1.reconciliation",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "note": "TGT had no entry in any F*_summary.json (the lead pipeline read the verdict from the dossier text, which still opens with INCLUDE-SMALL because original text is never deleted), so a new entry was written to outputs\\f3_TGT_summary.json. Price needs about 7-9% FCF growth for ten years versus about 5% evidenced (normalised FCF yield 3.6-4.3%); probability-weighted 3-year return +2.2%; no kill criterion fired. Revisit INCLUDE-SMALL at about $125 or below, or ex-refund FY2026 EPS $9.00+ with normalised FCF $3.5B+."
+    },
+    "TPR": {
+      "claims": [
+        {
+          "claim": "10-year Treasury 5.17% on 25 Sep 2026 and consistent discount rate",
+          "status": "CONFIRMED (V1 WACC 9.16% too low)",
+          "source": "FRED DGS10 (fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10): 25 Sep 2026 5.17% (cutoff, used); 2 Oct 5.28%. Fed raised the target range to 3.75-4.00% on 16 Sep 2026. Corrected cost of equity 10.6% (beta 1.086 x ERP 5.0%), WACC about 10.1%."
+        },
+        {
+          "claim": "FY2027 outlook: revenue $8.4-8.5B, EPS $7.80-7.90, tax about 18.5%, about 203M diluted shares, adjusted FCF approaching $1.7B incl. capex and cloud costs $300M",
+          "status": "CONFIRMED",
+          "source": "8-K Ex-99.1 acc 0001140361-26-032624 (13 Aug 2026), Financial Outlook section, quoted verbatim."
+        },
+        {
+          "claim": "FY2026 FCF $1,812.5M (OCF $1,978.5M - capex $166.0M) 'strong cash conversion' as the base",
+          "status": "ARITHMETIC CONFIRMED; BASIS STALE",
+          "source": "XBRL/10-K acc 0001116132-26-000018: OCF $1,978.5M, capex $166.0M, SBC $104.5M (a cost); company adjusted FCF $1.86B; FY2027 guided about $1.7B, so forward SBC-adjusted FCF is about $1.60B."
+        },
+        {
+          "claim": "Share count 208.3M diluted / market cap $23.7B",
+          "status": "WRONG",
+          "source": "10-K cover: 199.4M shares outstanding at 31 Jul 2026; FY2027 guide about 203M; FY2026 weighted diluted 210.2M (XBRL). Market cap on 202.5M shares $23.06B; EV $24.3B (net debt $1,245M)."
+        },
+        {
+          "claim": "Reverse-DCF implied growth 1.9% (V1)",
+          "status": "RESTATED, direction CONFIRMED",
+          "source": "FCFF $1,640M, WACC 10.1%, terminal 3%: 3.1% constant 10-year growth (2.1% at 9.5%, 4.1% at 10.5%); base path about 6.5% returns 11.5% vs 10.1% WACC; value about $138."
+        },
+        {
+          "claim": "V1 scenarios bear -30.5% / base -7.1% / bull +36.5%",
+          "status": "ARITHMETIC CONFIRMED; BASE NOT EVIDENCE-BASED",
+          "source": "V1 base mean-reverts operating margin to 12.2% vs FY2026 non-GAAP 23.4% and guided +50 bps; restated -12.8% / +8.6% / +19.7% on guidance (EPS $7.89 / $8.73 / $9.58)."
+        },
+        {
+          "claim": "Next earnings about 5 Nov 2026",
+          "status": "CONFIRMED",
+          "source": "8-K Ex-99.1: 'The Company expects to report fiscal 2027 first quarter results on Thursday, November 5, 2026.'; Q1 FY2027 EPS about $1.55."
+        },
+        {
+          "claim": "Dividend $1.85 annual rate; $1.35B buyback planned in FY2027",
+          "status": "CONFIRMED",
+          "source": "8-K Ex-99.1: quarterly $0.4625, 16% increase; buyback $1.35B expected."
+        },
+        {
+          "claim": "No material event after the dossier cutoff",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 0001116132 checked 6 Oct 2026: DEF 14A 0001116132-26-000024, DEFA14A -000025, ARS 0001140361-26-037692 (all 25 Sep, routine); nothing else after 13 Aug."
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE",
+      "old_implied": "below (V1 reverse-DCF 1.9%; no stated implied_vs_base in the summary)",
+      "new_implied": "below",
+      "scenario_returns_3y": {
+        "bear": -0.128,
+        "base": 0.086,
+        "bull": 0.197
+      },
+      "changed_fields": [
+        "kill_criteria (sixth added)",
+        "key_adverse_facts",
+        "data_conflicts",
+        "next_earnings_date",
+        "valuation_view_vs_v1 (added: implied_vs_base, dossier_view, reconciliation)",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "note": "Margin of safety survives: price needs about 3% FCF growth for ten years vs about 6.5% in a guidance-based path (base-path return 11.5% vs 10.1% WACC; value about $138). Forward FCF is lower than the dossier's base (AFCF guide $1.7B vs $1.86B) and the base 3-year return (+8.6%) is below the 10.6% cost of equity because the exit multiple de-rates; no kill criterion fired. Verdict held at INCLUDE."
+    },
+    "TRV": {
+      "claims": [
+        {
+          "claim": "10-year Treasury 5.17% on 25 Sep 2026 and consistent cost of equity",
+          "status": "CONFIRMED (V1 cost of equity 7.74% too low)",
+          "source": "FRED DGS10 (fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10): 25 Sep 2026 5.17% (cutoff, used); 2 Oct 5.28%. Fed raised the target range to 3.75-4.00% on 16 Sep 2026. Corrected cost of equity 9.0% central (8.3% / 9.5% tested)."
+        },
+        {
+          "claim": "Q2 2026: combined ratio 83.6% vs 90.3%, underlying 84.1% vs 84.7%, catastrophes $518M vs $927M, favourable development $578M vs $315M, core ROE 24.9%, book value per share $158.81 (adjusted $168.20)",
+          "status": "CONFIRMED",
+          "source": "8-K Ex-99.1 acc 0000086312-26-000143 (17 Jul 2026), headline table and segment tables."
+        },
+        {
+          "claim": "2.29x P/B (2.16x ex-AOCI) at $363.04",
+          "status": "CONFIRMED",
+          "source": "$363.04 / $158.81 = 2.286x; / $168.20 = 2.158x (Q2 release book values)."
+        },
+        {
+          "claim": "Price implies core ROE 'settling in the mid-teens'",
+          "status": "WRONG",
+          "source": "Justified P/B = (ROE - 3%) / (COE - 3%): 2.286x requires ROE 15.1% / 16.7% / 17.9% at COE 8.3% / 9.0% / 9.5%; V1's 14.1% used COE 7.74%."
+        },
+        {
+          "claim": "ROE evidence",
+          "status": "CONFIRMED",
+          "source": "Q4 2025 release acc 0000086312-26-000008: FY2025 core ROE 19.4%, FY2024 17.2%; catastrophes $3,690M (8.4 pts) vs $3,335M (8.0 pts); favourable development $1,036M vs $709M; underlying combined ratio 83.9% vs 86.2%. LTM core ROE 24.2% (Q2 release) is flattered: 1H26 catastrophes $1,279M vs $3,193M in 1H25."
+        },
+        {
+          "claim": "Debt $9.068B, debt-to-capital 21.5%",
+          "status": "STALE",
+          "source": "8-K acc 0001193125-26-316247 (24 Jul 2026, Item 8.01) and prospectus supplement acc 0001193125-26-312518: $750M of 4.950% senior notes due 2031 sold 21 Jul 2026 for general corporate purposes; pro-forma debt about $9.82B, debt-to-capital about 22.9% (target 15-25%)."
+        },
+        {
+          "claim": "Q2 buyback $1.311B",
+          "status": "CONFIRMED (context added)",
+          "source": "Q2 release: 4.3M shares at an average $304.06, $3.915B authorisation remaining; dividend declared $1.25 per share; the price is 19% above the Q2 average."
+        },
+        {
+          "claim": "V1 scenarios bear -7.8% / base -0.5% / bull +17.2%",
+          "status": "ARITHMETIC CONFIRMED; BASE NOT EVIDENCE-BASED",
+          "source": "V1 base ROE 12.1% (own-history median) and exit 1.46x book vs delivered 17.2% / 19.4%; restated -9.5% / +7.3% / +16.2% (30/45/25 weighted +4.5%)."
+        },
+        {
+          "claim": "No guidance, no merger, no rating action; recency",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 0000086312 checked 6 Oct 2026: 8-K 7 Aug (acc 0001104659-26-092716, Item 5.02, director Anthony Jabbour); 8-K 24 Jul; 424B3 22 Jul; Form 3/A, 13F-HR, N-PX routine; Travelers gives no quantitative guidance."
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below (dossier: market prices core ROE 'in the mid-teens' against 20-25% delivered; V1 implied ROE 14.1%)",
+      "new_implied": "in_line",
+      "scenario_returns_3y": {
+        "bear": -0.095,
+        "base": 0.073,
+        "bull": 0.162
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line (added)",
+        "kill_criteria (sixth added)",
+        "key_adverse_facts",
+        "data_conflicts",
+        "confidence_in_thesis",
+        "valuation_view_vs_v1 (added: implied_vs_base, dossier_view, reconciliation)",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "note": "P/B on ROE retained for an insurer. Required sustained ROE 16.7% vs 17.5% evidence-based base (normalised about 19% today, fading with the pricing cycle): in line, no margin of safety for full weight; fair value on the base path about $384 (+6%); P/B is in the 97.7th percentile of its own history. Probability-weighted 3-year return +4.5%. No kill criterion fired. Next test: Q3 results 16 Oct 2026."
+    },
+    "UDR": {
+      "claims": [
+        {
+          "claim": "10-year Treasury 5.17% on 25 Sep 2026 and consistent cost of capital",
+          "status": "CONFIRMED (V1 WACC 6.54% WRONG)",
+          "source": "FRED DGS10 (fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10): 25 Sep 2026 5.17% (cutoff, used); 2 Oct 5.28%. Fed raised the target range to 3.75-4.00% on 16 Sep 2026. Corrected cost of equity 9.2% (beta 0.807 x ERP 5.0%); marginal debt about 5.8-6.0% vs 3.31% book coupon."
+        },
+        {
+          "claim": "FY2026 guidance: FFOA $2.49-2.57 (mid $2.53, +$0.01), FFO $2.47-2.55 (mid $2.51, -$0.02), same-store NOI 0.00-1.25%",
+          "status": "CONFIRMED",
+          "source": "8-K Ex-99.1 acc 0000074208-26-000070 (27 Jul 2026), Outlook table; supplement Ex-99.2 Attachment 13 (interest expense $187-195M, 348.5M diluted shares and units, capex $220-260M, dispositions $400-750M)."
+        },
+        {
+          "claim": "Consolidated debt $5.8B at 3.4%, 3.9 years to maturity, net debt/EBITDAre 5.6x",
+          "status": "CONFIRMED",
+          "source": "Release 'Balance Sheet Update'; supplement Attachment 4(C): annualised EBITDAre adjusted $1,029.7M; total debt $5,827M at 3.31%."
+        },
+        {
+          "claim": "V1 share base 330.3M (market cap $11.18B)",
+          "status": "WRONG",
+          "source": "Supplement Attachment 4(C): 2Q26 diluted 348.3M incl. 22.2M OP/DownREIT units and 2.8M Series E as converted; 3Q guide 346.2M; economic count 346.3M, market cap $11.72B, EV about $17.5B."
+        },
+        {
+          "claim": "Capex $7.8M TTM understated; dossier correction of about $314M (18% of revenue)",
+          "status": "PARTLY WRONG",
+          "source": "Recurring capex was $49.2M in 1H26 (supplement Attachment 2, incl. JV share; about $0.29 per share a year); the remainder is NOI-enhancing, redevelopment and development spend. AFFO per share 1H26 $1.11 vs $1.12; FY2026E AFFO about $2.24."
+        },
+        {
+          "claim": "V1 implied growth -5.2% ('below'); dossier 'closer to 0%'",
+          "status": "WRONG (inputs)",
+          "source": "Equity DCF on AFFO/share $2.24 at 9.2%: +1.7% constant 10-year growth (+0.2% at 8.5%, +3.4% at 10.0%) vs base +2-3%; base-path return 9.7% vs 9.2%; value $36.7."
+        },
+        {
+          "claim": "V1 scenarios bear -7.4% / base +21.9% / bull +57.4%",
+          "status": "ARITHMETIC CONFIRMED; INPUTS WRONG",
+          "source": "V1 base: year-3 'FFO' $2.33 (net income + depreciation proxy) x 24.09x exit multiple (peer GAAP P/E blend) = $56.19; UDR trades 13.4x FFOA (peers 14.6-16.1x per V2R). Restated -1.6% / +8.3% / +15.2%."
+        },
+        {
+          "claim": "Q2 same-store NOI growth and no kill criterion fired",
+          "status": "CONFIRMED",
+          "source": "Release: SS NOI +1.4% in Q2, +0.3% YTD (so Q1 was negative but not two quarters running); net debt/EBITDAre 5.6x; FFOA guide raised; 5.5M shares repurchased at $36.49 in Q2."
+        },
+        {
+          "claim": "No material event after the dossier cutoff",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 0000074208 checked 6 Oct 2026: 8-K 9 Sep (acc 0000074208-26-000077, Item 7.01 presentation; image-only exhibit, no guidance change found), Schedule 13G/A 30 Jul and 14 Aug; no merger, 13D or S-4."
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "scenario_returns_3y": {
+        "bear": -0.016,
+        "base": 0.083,
+        "bull": 0.152
+      },
+      "changed_fields": [
+        "valuation_view_vs_v1.dossier_view (cheap -> fair)",
+        "valuation_view_vs_v1.implied_vs_base (below -> in_line)",
+        "valuation_view_vs_v1.reconciliation (RESTATED appended)",
+        "kill_criteria (sixth added)",
+        "key_adverse_facts",
+        "data_conflicts",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "note": "Implied growth +1.7% (9.2% cost of equity, AFFO $2.24) vs +2-3% base: in line, base-path value $36.7 (+8%); about 15% below peers on FFOA. V1's +21.9% base return was an artefact of a 24x exit multiple. Half weight kept: FFOA flat for eight quarters, 5.6x leverage, refinancing headwind at a 5.17% Treasury; base return +8.3% is below the 9.2% cost of equity; probability-weighted +7.0%. No kill criterion fired."
+    },
+    "VRSN": {
+      "claims": [
+        {
+          "claim": "10-year Treasury 5.17% on 25 Sep 2026 and consistent discount rate",
+          "status": "CONFIRMED",
+          "source": "FRED DGS10 (fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10): 25 Sep 2026 5.17% (cutoff, used); 2 Oct 5.28%. Fed raised the target range to 3.75-4.00% on 16 Sep 2026. Cost of equity 9.6% (beta 0.888 x ERP 5.0%), WACC about 9.24%."
+        },
+        {
+          "claim": ".com up to 7% in the final four years of each six-year period; term to 30 Nov 2030; increase $10.26 to $10.97 effective 1 Nov 2026",
+          "status": "CONFIRMED",
+          "source": "10-Q acc 0001014473-26-000028 (MD&A): current six-year period began 26 Oct 2024; increase announced 23 Apr 2026. Increases therefore possible Nov 2026-2029."
+        },
+        {
+          "claim": ".net price increase",
+          "status": "NEW EVENT",
+          "source": "8-K acc 0001014473-26-000030 (27 Aug 2026, Item 8.01): .net wholesale price $10.91 to $12.00 effective 1 Mar 2027; the .net agreement allows up to 10% a year through 30 Jun 2029 (10-Q)."
+        },
+        {
+          "claim": "Q2 2026 guidance revenue $1.745-1.755B, operating income $1.185-1.195B, domain-base growth 5.2-6.0%",
+          "status": "NOT FOUND in filings",
+          "source": "8-K Ex-99.1 acc 0001014473-26-000026 contains only 'We are also raising our guidance for full-year 2026' with no figures. Q1 slide guidance ($1.730-1.745B; $1.170-1.185B; 3.1%-4.3%) confirmed on investor.verisign.com; Q2 figures not verified."
+        },
+        {
+          "claim": "V1 implied growth 14.5% a year for a decade vs delivered 5-year CAGR 5.8%",
+          "status": "WRONG (framing)",
+          "source": "14.5% is the year-1 rate of a 10-year linear fade to 3% (average about 8.7%); constant-growth equivalent on FCFF $1,050M (OCF $1,101.3M - capex $35.2M - SBC $74.8M + after-tax interest $59M) and EV $27.47B is 9.5% at 9.24% WACC; base path returns 8.9%."
+        },
+        {
+          "claim": "Net debt $1,306M and ~1.1x EBITDA",
+          "status": "CONFIRMED",
+          "source": "Q2 release balance sheet: notes $549.3M current + $1,785.1M long-term = $2,334.4M less cash $840.9M and marketable securities $193.2M = $1,300M; $550M 4.75% notes redeemed 20 Jul with the 5.10% 2031 notes' proceeds."
+        },
+        {
+          "claim": "SBC treated as a cost; V1's cumulative dividends",
+          "status": "CONFIRMED",
+          "source": "V1 FCFF method subtracts SBC ($74.8M TTM); quarterly dividend $0.81 ($3.24 a year, $147.8M paid in 1H26) per Q2 release, so V1's $9.58 of three-year dividends is valid (the dossier text omitted dividends)."
+        },
+        {
+          "claim": "V1 scenarios bear -10.2% / base +7.8% / bull +25.8%",
+          "status": "ARITHMETIC CONFIRMED; INPUTS DATED",
+          "source": "V1 base: EPS $12.14 x 28.84 = $350.12 + $9.58 = $359.70 (+7.8%); uses 4.9% revenue growth and an exit multiple above today's 27.3x NTM. Restated -7.1% / +6.5% / +16.1% (probability-weighted +4.8%)."
+        },
+        {
+          "claim": "Renewal rate Q1 2026 76.3% vs 75.5%",
+          "status": "CONFIRMED (earlier DA5 correction)",
+          "source": "Q2 release: 'The final .com and .net renewal rate for the first quarter of 2026 was 76.3 percent compared to 75.5 percent'. Domain base 179.1M (+5.1%), 12.7M new registrations."
+        },
+        {
+          "claim": "No other material event after the dossier cutoff",
+          "status": "CONFIRMED",
+          "source": "EDGAR submissions CIK 0001014473 checked 6 Oct 2026: after 23 Jul only the 27 Aug 8-K and a Schedule 13G (13 Aug); no 13D, S-4 or merger."
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "in_line",
+      "new_implied": "in_line",
+      "scenario_returns_3y": {
+        "bear": -0.071,
+        "base": 0.065,
+        "bull": 0.161
+      },
+      "changed_fields": [
+        "valuation_view_vs_v1.implied_vs_base (stated: in_line)",
+        "valuation_view_vs_v1.reconciliation (RESTATED appended)",
+        "kill_criteria (sixth added)",
+        "key_adverse_facts",
+        "data_conflicts",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "note": "Implied constant growth 9.5% (not 14.5%) at 9.24% WACC vs about 9-10% in the announced-price-step base: in line, no cushion (base-path value about $272 vs $287.25; probability-weighted +4.8%). Monopoly economics, 68% operating margin and 1.1x leverage intact; no kill criterion fired. Half weight kept. Q2 guidance figures in the dossier are not in a filing."
+    }
+  }
+}

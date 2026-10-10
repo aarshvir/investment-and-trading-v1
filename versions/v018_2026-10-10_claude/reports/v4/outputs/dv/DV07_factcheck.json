@@ -1,0 +1,912 @@
+{
+ "as_of": "2026-10-08",
+ "scope": [
+  "BRO",
+  "BSX",
+  "BXP",
+  "C",
+  "CARR",
+  "CASY",
+  "CAT",
+  "CB",
+  "CBOE",
+  "CBRE"
+ ],
+ "note": "DV07 verified 2026-10-08. Beta used in valuation re-tests: own 5-year weekly beta vs the equal-weight universe in d2_close.parquet, Blume-adjusted; rf 5.17% (25 Sep 2026), ERP 4.14%, ten years constant growth then 3.0% terminal, SBC treated as a cost. BRO had already been corrected by DVH6 (2026-10-06); DV07 re-tested and confirmed it.",
+ "facts": [
+  {
+   "ticker": "BRO",
+   "claim": "Q2'26 revenue $1,676M (+30.4%), GAAP diluted EPS $0.84 (+7.7%), adjusted $1.07",
+   "dossier_location": "BRO.md s4 row Q2'26",
+   "source": "Ex-99.1 8-K 2026-07-27 acc 0001193125-26-318245; 10-Q 0001193125-26-318251",
+   "source_value": "Revenues 1,676 vs 1,285; diluted EPS 0.84 vs 0.78; adjusted 1.07 vs 1.03; NI attrib 288",
+   "status": "PASS",
+   "note": "Period label correct (calendar FY)."
+  },
+  {
+   "ticker": "BRO",
+   "claim": "Q1'26 revenue $1,901M, EPS $1.06; organic flat",
+   "dossier_location": "BRO.md s4 row Q1'26",
+   "source": "H1'26 less Q2'26: revenue 3,577-1,676; EPS 1.90-0.84; Q1 release 0001193125-26-182375",
+   "source_value": "1,901; 1.06; Q1 organic 0.0% (H1 -0.3%, Q2 -0.7%)",
+   "status": "PASS",
+   "note": "Consistent with six-month release table."
+  },
+  {
+   "ticker": "BRO",
+   "claim": "Organic series incl. Q4'25 -2.8%; Q4'25 adj EPS $0.93; GAAP EPS fell in four of last five quarters (DVH6 correction)",
+   "dossier_location": "BRO.md s3/s4 [Corrected 2026-10-06]",
+   "source": "Q4'25 release 2026-01-26 acc 0001193125-26-022760",
+   "source_value": "Organic growth % (2.8); diluted EPS 0.59 vs 0.73 (-19.2%); adjusted 0.93; FY25 organic +2.8%",
+   "status": "PASS",
+   "note": "DVH6 correction re-tested and confirmed; no further change."
+  },
+  {
+   "ticker": "BRO",
+   "claim": "TTM GAAP NI $1.205bn; TTM revenue $6.79bn; TTM GAAP EPS $3.17",
+   "dossier_location": "BRO.md s4",
+   "source": "Q3'25 release (NI 227, EPS 0.68), Q4 (264, 0.59), Q1 (426), Q2 (288)",
+   "source_value": "227+264+426+288=1,205; revenue 1,606+1,607+1,901+1,676=6,790; EPS 0.68+0.59+1.06+0.84=3.17",
+   "status": "PASS",
+   "note": "Sums reproduce."
+  },
+  {
+   "ticker": "BRO",
+   "claim": "Total debt/leverage: LT debt $7.35bn, net debt $6.84bn, net debt/EBITDAC ~2.8x",
+   "dossier_location": "BRO.md s6",
+   "source": "10-Q 0001193125-26-318251 Note 8 and balance sheet",
+   "source_value": "Total debt 7,759 (LT 7,346 + current 413); cash 918; net debt 6,841; H1'26 EBITDAC-adjusted 1,329",
+   "status": "PASS",
+   "note": "Consolidated entity, 30 Jun 2026; ratio uses dossier TTM EBITDAC ~2.5bn (not independently re-summed, plausible: Q3 587 + Q4 ? + 1,329)."
+  },
+  {
+   "ticker": "BRO",
+   "claim": "TTM FCF ~$1.45bn (OCF - capex); SBC ~$49M H1-26",
+   "dossier_location": "BRO.md s6",
+   "source": "XBRL: OCF FY25 1,450 + H1'26 608 - H1'25 538; capex H1 38; SBC FY25 93, H1'26 49, H1'25 52",
+   "source_value": "TTM OCF 1,520; TTM SBC 90",
+   "status": "PASS",
+   "note": "TTM capex ~ $70M gives FCF ~$1.45bn; SBC H1 $49M exact."
+  },
+  {
+   "ticker": "BRO",
+   "claim": "Reverse DCF method (DVH6-corrected): Ke 8.15%, FCF after SBC $1,356M, implied about -0.6%/yr",
+   "dossier_location": "BRO.md s7 [Corrected 2026-10-06]",
+   "source": "Programme parameters rf 5.17%, ERP 4.14%",
+   "source_value": "Re-run with rdcf: equity basis, 10y const then 3% terminal",
+   "status": "PASS",
+   "note": "Method now rate-consistent; implied_vs_base 'below' stands."
+  },
+  {
+   "ticker": "BRO",
+   "claim": "Management reaffirms $30-40M FY26 Accession synergies",
+   "dossier_location": "BRO.md s8 Bull 1, s9 kill 4",
+   "source": "10-Q Q2'26, 10-K FY25 and Q2 release searched",
+   "source_value": "No $30-40M synergy figure in any filing or release; 10-Q only says 'synergies realized'",
+   "status": "UNVERIFIABLE",
+   "note": "Likely from earnings-call commentary; kill criterion 4 rests on an unfiled number."
+  },
+  {
+   "ticker": "BRO",
+   "claim": "Q2'26 $18M litigation-related revenue impact",
+   "dossier_location": "BRO.md s8 Bear 3, s11",
+   "source": "Q2 release organic reconciliation",
+   "source_value": "Litigation-Related Impact (18) Q2, (28) H1",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "BRO",
+   "claim": "No formal guidance issued; qualitative commentary only",
+   "dossier_location": "BRO.md s5",
+   "source": "Q4'25/Q2'26 releases",
+   "source_value": "No numeric guidance table in any release",
+   "status": "PASS",
+   "note": "Consistent."
+  },
+  {
+   "ticker": "BSX",
+   "claim": "Q2'26 revenue $5,442M (+7.5%), GAAP EPS $0.61, NI $905M",
+   "dossier_location": "BSX.md s4 row 2026-06-30",
+   "source": "Ex-99.1 acc 0000885725-26-000051; 10-Q 0000885725-26-000053",
+   "source_value": "Net sales 5,442 vs 5,061; attributable NI 907 (dossier 905 is net of NCI -2); EPS 0.61",
+   "status": "PASS",
+   "note": "Label and values correct (calendar FY)."
+  },
+  {
+   "ticker": "BSX",
+   "claim": "Q1'26 revenue $5,203M (+11.6%), GAAP EPS $0.90, NI $1,339M with $384M discrete tax benefit",
+   "dossier_location": "BSX.md s4, s4 text",
+   "source": "Ex-99.1 acc -26-000031; 10-Q Q1 acc -26-000033 tax note",
+   "source_value": "Net sales 5,203 vs 4,663; EPS 0.90; attributable NI 1,341; discrete tax benefit $384M",
+   "status": "PASS",
+   "note": "Release's own deferred-tax adjustment to adjusted EPS is $320M, but 10-Q discrete benefit is $384M as stated."
+  },
+  {
+   "ticker": "BSX",
+   "claim": "Q4'25 (implied FY-9M) revenue 5,286, NI 670, EPS n/a",
+   "dossier_location": "BSX.md s4 row 2025-12-31",
+   "source": "Ex-99.1 acc -26-000006",
+   "source_value": "Net sales 5,286 (+15.9%); attributable NI 672; GAAP EPS 0.45; adjusted 0.80",
+   "status": "MINOR",
+   "note": "EPS reported but shown n/a; YoY omitted."
+  },
+  {
+   "ticker": "BSX",
+   "claim": "FY26 guidance ladder: Feb sales +10.5-11.5%, EPS $3.43-3.49; Apr +7.0-8.5%, $3.34-3.41; Jul +5.5-6.5%, $3.28-3.32; Q3 +3-5%, $0.80-0.82",
+   "dossier_location": "BSX.md s5",
+   "source": "Ex-99.1 of 2026-02-04, 2026-04-22, 2026-07-29",
+   "source_value": "All figures appear verbatim",
+   "status": "PASS",
+   "note": "Guidance cuts correctly dated."
+  },
+  {
+   "ticker": "BSX",
+   "claim": "2026-09-08 company 'unlikely to meet' Q3/FY26 guidance; revised outlook 28 Oct",
+   "dossier_location": "BSX.md s5, s12",
+   "source": "8-K Item 1.05 acc 0000885725-26-000059",
+   "source_value": "Likely material impact to Q3 and FY26; unlikely to meet ranges; update on 28 Oct 2026 call",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "BSX",
+   "claim": "Pending ~$1.26bn all-cash acquisition of Silk Road Medical (2026)",
+   "dossier_location": "BSX.md s6, s8 bull 3, s11, s7 bull scenario",
+   "source": "10-K FY2025 acc 0000885725-26-000010 acquisitions note",
+   "source_value": "Completed acquisition of 100% of Silk Road Medical on 17 Sep 2024",
+   "status": "FAIL",
+   "note": "Deal closed in 2024; not pending, not a 2026 leverage commitment or catalyst. Restructuring plan ($700-800M charges, 8-K 2026-07-21) and $2.0bn ASR are the real items."
+  },
+  {
+   "ticker": "BSX",
+   "claim": "Balance sheet 30 Jun 2026: cash $539M, debt $12,624M, net debt $12,085M, equity $24,930M, NCI $242M",
+   "dossier_location": "BSX.md s6",
+   "source": "10-Q acc 0000885725-26-000053",
+   "source_value": "cash 539; current debt 1,709; LT debt 10,915; equity 24,930; NCI 242",
+   "status": "PASS",
+   "note": "Consolidated entity, correct date."
+  },
+  {
+   "ticker": "BSX",
+   "claim": "TTM FCF $3,625M (OCF 4,529 - capex 904)",
+   "dossier_location": "BSX.md s6",
+   "source": "XBRL: OCF FY25 4,534 + H1'26 1,822 - H1'25 1,827; capex 876+372-344",
+   "source_value": "4,529; 904",
+   "status": "PASS",
+   "note": "SBC TTM $320M not deducted in the dossier's FCF."
+  },
+  {
+   "ticker": "BSX",
+   "claim": "$2.0bn buyback in Q2 2026",
+   "dossier_location": "BSX.md s6",
+   "source": "10-Q Q2'26 equity note",
+   "source_value": "ASR $2.000bn paid 19 May 2026, ~30M shares delivered upfront",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "BSX",
+   "claim": "Reverse DCF: WACC 9.0%, terminal 4.0%, implied FCF growth 4.1%/yr",
+   "dossier_location": "BSX.md s7",
+   "source": "Programme: rf 5.17%, ERP 4.14%, beta Blume 0.83, SBC cost, market cap $63.65bn (1,449.2M shares x $43.92)",
+   "source_value": "Ke 8.6%: implied 3.6%/yr; Ke 9.3%: 5.2%/yr",
+   "status": "FAIL",
+   "note": "Not rate-consistent and SBC not deducted; implied lower (3.6%) so 'below' vs base 5.1% still holds."
+  },
+  {
+   "ticker": "BSX",
+   "claim": "Watchman growth 4.3% in Q2'26",
+   "dossier_location": "BSX.md s5, s9",
+   "source": "10-Q Q2'26 segment table",
+   "source_value": "Watchman 507 vs 486 (+4.3%)",
+   "status": "PASS",
+   "note": "Worldwide net sales."
+  },
+  {
+   "ticker": "BSX",
+   "claim": "Securities class action filed 2026-03-05 (D. Mass.)",
+   "dossier_location": "BSX.md s9, s12",
+   "source": "10-Q legal note searched",
+   "source_value": "Not found in 10-Q text",
+   "status": "UNVERIFIABLE",
+   "note": "Sourced to law-firm press releases only."
+  },
+  {
+   "ticker": "BXP",
+   "claim": "Q2-26 revenue $895.7M (+3.1%), GAAP EPS $0.43, FFO/share $1.78, impairment $0.10",
+   "dossier_location": "BXP.md s4",
+   "source": "8-K acc 0001037540-26-000031 supplemental",
+   "source_value": "Total revenue 895,699 vs 868,457; EPS 0.43; FFO 1.78; impairment 18,036",
+   "status": "PASS",
+   "note": "Calendar FY, label correct."
+  },
+  {
+   "ticker": "BXP",
+   "claim": "Occupancy 88.4%, leased 91.3%; BXP-share net debt/EBITDAre 7.94x (Q1 8.50x)",
+   "dossier_location": "BXP.md s4/s6",
+   "source": "Supplemental Q2-26 pp.5, 31",
+   "source_value": "Occupancy 88.4 vs 87.4; leased 91.3; 7.94 vs 8.50",
+   "status": "PASS",
+   "note": "Entity labelled correctly (BXP share)."
+  },
+  {
+   "ticker": "BXP",
+   "claim": "Guidance ladder Oct-25 to Jul-26 (EPS and FFO ranges; Q3 FFO $1.80-1.82)",
+   "dossier_location": "BXP.md s5",
+   "source": "Projected tables in four releases",
+   "source_value": "6.89-6.92; 6.88-7.04; 6.90-7.04; 6.99-7.05; EPS 0.99-1.02, 2.08-2.29, 2.15-2.29, 2.14-2.24",
+   "status": "PASS",
+   "note": "All verbatim."
+  },
+  {
+   "ticker": "BXP",
+   "claim": "FY25 FFO $6.85; Q4-25 FFO $0.05 below guidance midpoint",
+   "dossier_location": "BXP.md s5",
+   "source": "Release 2026-01-28 (acc -26-000003)",
+   "source_value": "FFO $6.85 vs $7.10; Q4 below midpoint by $0.05",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "BXP",
+   "claim": "Debt: consolidated $15,618.6M, cash $493.9M, net $15,124.6M; BXP-share net debt $14,904.8M",
+   "dossier_location": "BXP.md s6",
+   "source": "Supplemental p.31",
+   "source_value": "Consolidated Debt 15,618,563; cash 493,949",
+   "status": "PASS",
+   "note": "Both entities labelled."
+  },
+  {
+   "ticker": "BXP",
+   "claim": "FAD TTM $567.0M ($3.19/unit); FAD payout 88% (Q1 140%)",
+   "dossier_location": "BXP.md s6",
+   "source": "Supplemental FAD reconciliation and prior releases",
+   "source_value": "201.8+134.5+88.7+142.1=567.1; payout 87.54 / 140.25",
+   "status": "PASS",
+   "note": "But FAD adds back SBC $50.4M TTM, not a cost-adjusted figure."
+  },
+  {
+   "ticker": "BXP",
+   "claim": "$700M 6.050% senior notes due 2036 sold 31 Aug 2026 to repay 2.750% notes",
+   "dossier_location": "BXP.md s6",
+   "source": "8-K acc 0001037540-26-000037",
+   "source_value": "$700.0M aggregate principal 6.050% due 2036, completed 31 Aug 2026",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "BXP",
+   "claim": "Reverse DCF: 3.8% a year forever at 9% Ke on FAD $3.19",
+   "dossier_location": "BXP.md s7",
+   "source": "Programme: rf 5.17%, ERP 4.14%, Blume beta 1.09 (Ke 9.7%), SBC a cost, 10y then 3%",
+   "source_value": "Restated implied about 7.6% a year (6.4% if SBC left in)",
+   "status": "FAIL",
+   "note": "Rate not tied to Treasury, SBC added back, perpetuity form. Implied vs base stays 'above' (stronger)."
+  },
+  {
+   "ticker": "BXP",
+   "claim": "18 Form 4 filings since 1 Jun 2026",
+   "dossier_location": "BXP.md s11",
+   "source": "BXP_sub.json (EDGAR submissions)",
+   "source_value": "18 Form 4 filings 2026-06-01 to 2026-09-25",
+   "status": "PASS",
+   "note": "Count reproduces."
+  },
+  {
+   "ticker": "C",
+   "claim": "Q2'26 revenue $24,766M; net income $5,831M; diluted EPS $3.15",
+   "dossier_location": "C.md s4",
+   "source": "Ex-99.1 2026-07-14; 10-Q acc 0000831001-26-000045",
+   "source_value": "Revenues 24,766; Citigroup net income 5,831 (NCI 193 separate); EPS 3.15 vs 1.96",
+   "status": "PASS",
+   "note": "Calendar FY; label correct. XBRL cross-tie flag (3,790) is a different line."
+  },
+  {
+   "ticker": "C",
+   "claim": "Q1'26 revenue $24,633M; net income $5,785M; EPS $3.06",
+   "dossier_location": "C.md s4",
+   "source": "Q2'26 release comparative column; 10-Q H1 EPS 6.21",
+   "source_value": "24,633; 5,785; 6.21-3.15=3.06",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "C",
+   "claim": "Q4'25 derived revenue ~19,871, EPS ~1.21, NI n/a",
+   "dossier_location": "C.md s4",
+   "source": "Ex-99.1 2026-01-14",
+   "source_value": "Revenue 19,871; NI 2,471; EPS 1.19 (Q4'24 1.34)",
+   "status": "MINOR",
+   "note": "EPS derived 1.21 vs reported 1.19; Q4'24 1.33 vs 1.34; TTM EPS 9.26 not 9.28."
+  },
+  {
+   "ticker": "C",
+   "claim": "RoTCE 13.0% Q2-26, 13.1% YTD, +430bp YoY",
+   "dossier_location": "C.md s1, s6",
+   "source": "Release 2026-07-14; 10-Q key metrics",
+   "source_value": "13.0 vs 8.7; YTD 13.1 vs 8.9",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "C",
+   "claim": "CET1 12.8%, about 120bp above the regulatory minimum",
+   "dossier_location": "C.md s6",
+   "source": "10-Q capital table",
+   "source_value": "12.78% vs requirement 11.6% (SCB 3.6 + GSIB 3.5 + 4.5)",
+   "status": "PASS",
+   "note": "Standardized Approach binding."
+  },
+  {
+   "ticker": "C",
+   "claim": "Management targeting ~12.6% CET1",
+   "dossier_location": "C.md s6",
+   "source": "Release and 10-Q searched",
+   "source_value": "Not found",
+   "status": "UNVERIFIABLE",
+   "note": "No filed target located."
+  },
+  {
+   "ticker": "C",
+   "claim": "Tangible book ~$99/share; 1.36x P/TBV",
+   "dossier_location": "C.md s6",
+   "source": "Release 2026-07-14",
+   "source_value": "TBVPS $100.89; P/TBV 1.33x at $134.28",
+   "status": "MINOR",
+   "note": "Own calculation slightly low."
+  },
+  {
+   "ticker": "C",
+   "claim": "Banamex: 51% still owned; 24% sold Feb 2026 at 0.85x book for ~$2.5bn",
+   "dossier_location": "C.md s6",
+   "source": "10-Q Q2'26 Banamex divestiture note",
+   "source_value": "47.6% sold in total (25% + 22.6% closed 29 Apr 2026); 1.4% expected Q3-26; early-2027 deconsolidation",
+   "status": "MINOR",
+   "note": "Ownership about 52.4% today; price/book not in filing."
+  },
+  {
+   "ticker": "C",
+   "claim": "Bank valuation: justified P/TBV = RoTCE/Ke at 10-11% Ke gives 1.2-1.3x vs 1.36x actual; in_line",
+   "dossier_location": "C.md s7",
+   "source": "Programme: rf 5.17%, ERP 4.14%, Blume beta 1.04 (Ke 9.5%)",
+   "source_value": "Justified P/TBV 1.37x no-growth (1.54x at g=3%); actual 1.33x",
+   "status": "MINOR",
+   "note": "Method (P/TBV-ROTCE) correct for a bank but Ke not rate-tied; restated, in_line stands."
+  },
+  {
+   "ticker": "C",
+   "claim": "Guidance track record not verified by original author",
+   "dossier_location": "C.md s5",
+   "source": "n/a",
+   "source_value": "No guidance used",
+   "status": "UNVERIFIABLE",
+   "note": "No numeric guidance supports the verdict."
+  },
+  {
+   "ticker": "CARR",
+   "claim": "Q2'26 net sales $6,351M (+4%, organic +3%), GAAP EPS $0.60, adjusted $0.86, FCF $810M",
+   "dossier_location": "CARR.md s4",
+   "source": "Ex-99 2026-07-28; 10-Q acc 0001783180-26-000032",
+   "source_value": "6,351 vs 6,113; 0.60; 0.86; FCF 810",
+   "status": "PASS",
+   "note": "Calendar FY; level values correct."
+  },
+  {
+   "ticker": "CARR",
+   "claim": "Adjusted EPS grew in Q2'26; EPS growth driven by lower share count",
+   "dossier_location": "CARR.md s4, s9, F73",
+   "source": "Ex-99 2026-07-28 / 04-30 / 2026-02-05",
+   "source_value": "Adjusted EPS 0.86 vs 0.92 (-7%); 0.57 vs 0.65 (-12%); 0.34 vs 0.54 (-37%); GAAP 0.60 vs 0.70 (-14%)",
+   "status": "FAIL",
+   "note": "EPS fell YoY three quarters running; release cites lower operating profit and higher tax."
+  },
+  {
+   "ticker": "CARR",
+   "claim": "Q1'26 net sales $5,341M, GAAP EPS $0.28, adjusted $0.57, FCF -$15M, reaffirmed guidance",
+   "dossier_location": "CARR.md s4/s5",
+   "source": "Ex-99 2026-04-30",
+   "source_value": "5,341; 0.28; 0.57; FCF (15); 'Reaffirms full year outlook'",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "CARR",
+   "claim": "FY26 guidance ladder: ~$22B/$3.4B/$2.80 -> reaffirmed -> ~$23B/$3.5B/$2.90; FCF ~$2B",
+   "dossier_location": "CARR.md s5",
+   "source": "Ex-99 of 2026-02-05, 04-30, 07-28",
+   "source_value": "Outlook tables verbatim; Riello headwind $350M -> $250M; ~$0.05 NORESCO/factory drag",
+   "status": "PASS",
+   "note": "Verbatim."
+  },
+  {
+   "ticker": "CARR",
+   "claim": "Net debt $10,608M (debt $11,952M, cash $1,344M); equity $13,472M; AR $3,246M",
+   "dossier_location": "CARR.md s6",
+   "source": "10-Q balance sheet",
+   "source_value": "ST debt 1,638 + LT 10,314; cash 1,344; equity 13,472; AR 3,246 vs 2,639",
+   "status": "PASS",
+   "note": "Consolidated Carrier Global at 30 Jun 2026."
+  },
+  {
+   "ticker": "CARR",
+   "claim": "Goodwill $15,313M",
+   "dossier_location": "CARR.md s6",
+   "source": "10-Q balance sheet",
+   "source_value": "15,267 (Dec-25 15,501)",
+   "status": "MINOR",
+   "note": "Small error."
+  },
+  {
+   "ticker": "CARR",
+   "claim": "Adjusted EPS $0.86 on ~617M shares = ~$530M adjusted earnings",
+   "dossier_location": "CARR.md s6",
+   "source": "Ex-99 2026-07-28",
+   "source_value": "Adjusted net earnings $721M; GAAP $501M; ~838M diluted shares",
+   "status": "FAIL",
+   "note": "Share count wrong by ~220M."
+  },
+  {
+   "ticker": "CARR",
+   "claim": "TTM FCF ~$0.86B; trailing FCF yield 1.8%; 17.8%/yr implied from TTM",
+   "dossier_location": "CARR.md s7, F73 data_conflicts",
+   "source": "Ex-99s: Q3-25 224, Q4-25 909, Q1-26 -15, Q2-26 810; FY25 2,121",
+   "source_value": "TTM FCF 1,928; yield about 4.1% on $46.5bn",
+   "status": "FAIL",
+   "note": "Premise wrong; no 'negative-Q1 distortion'."
+  },
+  {
+   "ticker": "CARR",
+   "claim": "Reverse DCF: WACC 8.0%, EV $56.6B, FCF $2.0B -> ~7.0%/yr; in_line",
+   "dossier_location": "CARR.md s7",
+   "source": "Programme: rf 5.17%, ERP 4.14%, Blume beta 1.09 (Ke 9.7%), SBC cost, equity basis",
+   "source_value": "Implied 9.0% (guided) to 9.5% (TTM) vs base 7-9%",
+   "status": "FAIL",
+   "note": "Upper edge of base; INCLUDE-SMALL kept, in_line at upper edge (flagged)."
+  },
+  {
+   "ticker": "CARR",
+   "claim": "Riello exit completed 1 Jul 2026; Q2 release headwinds ~$225M Riello and ~$125M NORESCO",
+   "dossier_location": "CARR.md s6, s10",
+   "source": "Ex-99 2026-07-28 footnote and outlook table",
+   "source_value": "Riello exit completed July 1, 2026; headwinds $225M / $125M",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "CASY",
+   "claim": "Q1 FY27 (qtr to 31 Jul 2026) revenue $5,678.3M (+24.3%), net income $273.7M, EPS $7.37, EBITDA $485.1M",
+   "dossier_location": "CASY.md s4",
+   "source": "8-K Ex-99.1 acc 0000726958-26-000084; 10-Q -26-000085",
+   "source_value": "Total revenue 5,678,336 vs 4,567,106; NI 273,720; EPS 7.37; EBITDA 485,083",
+   "status": "PASS",
+   "note": "Fiscal label correct (Q1 FY27 = May-Jul 2026)."
+  },
+  {
+   "ticker": "CASY",
+   "claim": "Q4 FY26 revenue $4,571.8M, NI $162.7M, EPS $4.37; FY26 EBITDA $1,483.6M (+23.6%)",
+   "dossier_location": "CASY.md s4/s5",
+   "source": "8-K Ex-99.1 acc 0000726958-26-000033",
+   "source_value": "4,571,779; 162,684; 4.37; FY EBITDA 1,483,615 vs 1,200,047",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "CASY",
+   "claim": "Q2 FY26 / Q3 FY26 / Q1 FY26 / FY25 quarters (revenue, NI, EPS, EBITDA, SSS, fuel cents)",
+   "dossier_location": "CASY.md s4",
+   "source": "Ex-99.1 of 2025-06-09, 09-08, 12-09 and 2026-03-09",
+   "source_value": "e.g. Q3 FY26 3,916.1 / 130.1 / 3.49 / 308.9; Q2 FY25 3,946.8 / 180.9 / 4.85 / 348.9",
+   "status": "PASS",
+   "note": "All 8 rows reproduce."
+  },
+  {
+   "ticker": "CASY",
+   "claim": "Guidance ladder FY26 and FY27 (10-12, unchanged, 15-17, 18-20; FY27 8-10%, unchanged Sep 2026)",
+   "dossier_location": "CASY.md s5",
+   "source": "Releases of Jun-25, Sep-25, Dec-25, Mar-26, Jun-26, Sep-26",
+   "source_value": "Verbatim; 'imply 35% on a two-year stack basis at the midpoint'",
+   "status": "PASS",
+   "note": "Verbatim."
+  },
+  {
+   "ticker": "CASY",
+   "claim": "TTM to Jul-26: revenue $18,672M, EBITDA $1,554M, NI $772.8M, EPS $20.76",
+   "dossier_location": "CASY.md s4",
+   "source": "FY26 + Q1 FY27 - Q1 FY26",
+   "source_value": "17,561.1-4,567.1+5,678.3; 1,483.6-414.3+485.1; 714.4-215.4+273.7; 19.16-5.77+7.37",
+   "status": "PASS",
+   "note": "Sums reproduce."
+  },
+  {
+   "ticker": "CASY",
+   "claim": "Debt $2,430.5M, cash $524.1M, net debt $1,906.5M, 1.23x net / 1.56x gross; liquidity ~$1.4bn",
+   "dossier_location": "CASY.md s6",
+   "source": "10-Q acc 0000726958-26-000085 debt note and balance sheet",
+   "source_value": "Cash 524,059; LT debt 2,326,200 + current; revolver $850M facility, $807.4M availability + $50M bank line",
+   "status": "PASS",
+   "note": "Consolidated; d4 totalDebt basis difference correctly explained."
+  },
+  {
+   "ticker": "CASY",
+   "claim": "Insider sales about $29.1M (CEO $15.2M), one purchase $0.2M, 25 Mar-25 Sep 2026",
+   "dossier_location": "CASY.md s11",
+   "source": "Form 4 XML (cached) code S/P",
+   "source_value": "Sum S = $29.1M; P = $0.2M; CEO 15.2",
+   "status": "PASS",
+   "note": "Reproduces."
+  },
+  {
+   "ticker": "CASY",
+   "claim": "Reverse DCF 10.5% implied at 8.5% rate on UFCF $719M; base 8%; above",
+   "dossier_location": "CASY.md s1, s7",
+   "source": "Programme: rf 5.17%, ERP 4.14%, Blume beta 0.58 (Ke 7.6%), SBC $63M a cost",
+   "source_value": "Implied 9.4% a year (equity basis, FCF after SBC $586M)",
+   "status": "FAIL",
+   "note": "Rate not Treasury-tied, SBC not deducted; restated 9.4% still above 8% base: verdict logic holds."
+  },
+  {
+   "ticker": "CASY",
+   "claim": "The cause of the 14.2% fall on 9 Sep 2026 is not stated in any filing",
+   "dossier_location": "CASY.md s3",
+   "source": "Release/10-Q/8-K reviewed",
+   "source_value": "No stated cause",
+   "status": "PASS",
+   "note": "Dossier correctly labels as inference."
+  },
+  {
+   "ticker": "CAT",
+   "claim": "Q2'26 revenue $20.5B (+24%), adj op margin 21.9% (17.6%), adj EPS $8.17 (4.72)",
+   "dossier_location": "CAT.md s4",
+   "source": "8-K Ex-99.1 acc 0000018230-26-000040",
+   "source_value": "$20.543bn vs $16.569bn; 21.9% vs 17.6%; adj profit per share 8.17 vs 4.72; GAAP 7.77 vs 4.62",
+   "status": "PASS",
+   "note": "Calendar FY; label correct. GAAP EPS now verified."
+  },
+  {
+   "ticker": "CAT",
+   "claim": "Q1 2026 revenue ~$17.7B",
+   "dossier_location": "CAT.md s4",
+   "source": "Q1 release 2026-04-30 (ER_CAT_2026-04-30)",
+   "source_value": "$17.415bn (+22% vs $14.249bn)",
+   "status": "MINOR",
+   "note": "Overstated by ~$0.3bn."
+  },
+  {
+   "ticker": "CAT",
+   "claim": "Guidance raised to mid-to-high-teens revenue growth citing $72B backlog",
+   "dossier_location": "CAT.md s5",
+   "source": "10-Q Q2'26 outlook; 10-Q Q1'26",
+   "source_value": "Q1: 'low double digits'; Q2: 'mid-to-high teens'; backlog $72.1bn (+$9.4bn QoQ)",
+   "status": "PASS",
+   "note": "Raise verified; prior range now quoted."
+  },
+  {
+   "ticker": "CAT",
+   "claim": "Beat driven largely by Energy & Transportation gensets for data centres",
+   "dossier_location": "CAT.md s3",
+   "source": "Q2 release segment table",
+   "source_value": "CI +$2,156M (+35%), P&E +$1,201M (+17%), RI +$762M (+20%)",
+   "status": "FAIL",
+   "note": "Segment now named Power & Energy; Construction Industries was the largest contributor."
+  },
+  {
+   "ticker": "CAT",
+   "claim": "Consolidated cash $6.713B; total debt $45.146B (+$1.816B); MP&E debt -$7M, Financial Products +$1.839B",
+   "dossier_location": "CAT.md s6",
+   "source": "10-Q Q2'26 balance sheet and liquidity text",
+   "source_value": "6,713; 45.146bn; -7M; +1.839bn",
+   "status": "PASS",
+   "note": "Entity split correct; MP&E net debt ~$4.7bn is the better leverage gauge."
+  },
+  {
+   "ticker": "CAT",
+   "claim": "V1 row: NTM P/E 26.5x, implied growth 29.6%, consensus 11.2%, WACC 9.34%, verdict excessive",
+   "dossier_location": "CAT.md s7",
+   "source": "outputs/v1_valuation_table.csv",
+   "source_value": "26.50; 0.2957; 0.1124; 0.0934; -0.498/-0.297/+0.178; excessive",
+   "status": "PASS",
+   "note": "Values reproduce."
+  },
+  {
+   "ticker": "CAT",
+   "claim": "V1 implied growth read as '~30% for 10 years' (2.6x consensus)",
+   "dossier_location": "CAT.md s7, s9",
+   "source": "code/v1_valuation.py reverse_dcf_growth",
+   "source_value": "Starting revenue growth fading linearly to 3% over 10 years (rf 5.17%, ERP 4.14%)",
+   "status": "FAIL",
+   "note": "Average ~16%; programme re-test ~13.7% constant. 'Above' stands."
+  },
+  {
+   "ticker": "CAT",
+   "claim": "Analyst consensus $6.19 for Q2 adj EPS",
+   "dossier_location": "CAT.md s4",
+   "source": "Filings searched",
+   "source_value": "Not in any filing",
+   "status": "UNVERIFIABLE",
+   "note": "Third-party number."
+  },
+  {
+   "ticker": "CAT",
+   "claim": "Backlog $72B; 430bp margin expansion",
+   "dossier_location": "CAT.md s8/s9",
+   "source": "10-Q Q2'26 backlog note; release",
+   "source_value": "$72.1bn; 21.9% - 17.6% = 4.3pts",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "CB",
+   "claim": "Q2'26 net income $7.30/share; core operating income $7.26/share, +18.2%",
+   "dossier_location": "CB.md s4",
+   "source": "8-K Ex-99.1 2026-07-21; 10-Q Q2'26",
+   "source_value": "Net income $2.85bn, $7.30; core $2.84bn, $7.26, +18.2%",
+   "status": "PASS",
+   "note": "Calendar FY; label correct."
+  },
+  {
+   "ticker": "CB",
+   "claim": "NPW $14.7B +3.6% (P&C +3.0%, life +7.5%); P&C CR 83.8% (-180bp); CAY ex-cat 82.2% (-10bp); UW income $1.94B +18.8%",
+   "dossier_location": "CB.md s4",
+   "source": "Release 2026-07-21",
+   "source_value": "14,705 vs 14,196; 83.8% vs 85.6%; 82.2% vs 82.3%; 1.94bn +18.8%",
+   "status": "PASS",
+   "note": "All reproduce."
+  },
+  {
+   "ticker": "CB",
+   "claim": "Adjusted net investment income record $1.88B, +11.4%",
+   "dossier_location": "CB.md s4",
+   "source": "Release",
+   "source_value": "$1.88bn, +11.4%, both records",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "CB",
+   "claim": "Revenue $15.77B, +2.7% y/y",
+   "dossier_location": "CB.md s4",
+   "source": "10-Q Q2'26 income statement",
+   "source_value": "Total revenues 15,816 vs 14,836 (+6.6%); net premiums earned 13,889 vs 13,125",
+   "status": "FAIL",
+   "note": "Third-party figure; GAAP revenue growth is 6.6%."
+  },
+  {
+   "ticker": "CB",
+   "claim": "Management reiterated confidence in double-digit EPS and TBV growth; softening pricing",
+   "dossier_location": "CB.md s5",
+   "source": "Release CEO commentary",
+   "source_value": "'double-digit growth in tangible book value'; soft conditions spreading to casualty",
+   "status": "PASS",
+   "note": "Substantially verbatim."
+  },
+  {
+   "ticker": "CB",
+   "claim": "V1 row: P/B 1.78x, 88.7th pct, peer 1.79x, implied ROE 11.2%, delivered 15.3%, returns -6.5/-0.04/+13.4, demanding",
+   "dossier_location": "CB.md s7",
+   "source": "outputs/v1_valuation_table.csv",
+   "source_value": "1.7828; 88.70; 1.7862; 0.1121; 0.1531; -0.0655/-0.0004/0.1344; demanding",
+   "status": "PASS",
+   "note": "Reproduces; V1 book value is stale (BVPS $195.45 gives 1.71x)."
+  },
+  {
+   "ticker": "CB",
+   "claim": "implied_vs_base = above (price needs more than base case)",
+   "dossier_location": "CB.md s7, F79",
+   "source": "Programme P/B-ROE: Ke 7.6% (rf 5.17%, beta 0.59, ERP 4.14%), g 3%; BVPS $195.45",
+   "source_value": "Implied ROE 10.9% vs delivered 15.3%; stressed ROE ~12% justifies 1.64-1.96x vs 1.71x",
+   "status": "FAIL",
+   "note": "Restated in_line; WATCH kept but unsupported by implied-above."
+  },
+  {
+   "ticker": "CB",
+   "claim": "Balance sheet/debt/10-Q not verified by original author",
+   "dossier_location": "CB.md s6, s11",
+   "source": "10-Q Q2'26 (acc 0000896159-26-000017 cited)",
+   "source_value": "Not independently re-tied in this audit beyond income statement",
+   "status": "UNVERIFIABLE",
+   "note": "No debt/leverage figure drives the verdict."
+  },
+  {
+   "ticker": "CBOE",
+   "claim": "Q2'26 net revenue $732M (+25%), adjusted diluted EPS $3.56 (+45%)",
+   "dossier_location": "CBOE.md s3, s4",
+   "source": "Ex-99.1 acc 0001628280-26-051217",
+   "source_value": "Net revenue 731.6 vs 587.3; adjusted EPS 3.56 vs 2.46; GAAP 3.35 (+50%)",
+   "status": "PASS",
+   "note": "Calendar FY."
+  },
+  {
+   "ticker": "CBOE",
+   "claim": "Segment growth: Derivatives +30%, Data Vantage +15%, Global FX +17%",
+   "dossier_location": "CBOE.md s3",
+   "source": "Release segment tables",
+   "source_value": "Options +30%; Data Vantage 181.6 vs 158.3 (+14.7%); Global FX +17%",
+   "status": "PASS",
+   "note": "'Derivatives' is the Options segment/caption."
+  },
+  {
+   "ticker": "CBOE",
+   "claim": "Q1 2026 row 'per release', guidance raised",
+   "dossier_location": "CBOE.md s4",
+   "source": "Q1 release 2026-05-01 acc 0001628280-26-029103",
+   "source_value": "Net revenue 728.9 (+29%); adjusted EPS 3.70 (+48%); target raised to low double-digit to mid-teens",
+   "status": "MINOR",
+   "note": "Row blank in dossier; facts supportive of the statement."
+  },
+  {
+   "ticker": "CBOE",
+   "claim": "Q2 raise: organic net revenue 'mid to high teens' (from lower), Data Vantage 'low teens' (from 'low double-digit')",
+   "dossier_location": "CBOE.md s5",
+   "source": "Q2 release",
+   "source_value": "Verbatim",
+   "status": "PASS",
+   "note": "Prior ranges: Feb 'mid single-digit'; May 'low double-digit to mid-teens'."
+  },
+  {
+   "ticker": "CBOE",
+   "claim": "FY2026 adjusted opex guided $864-879M",
+   "dossier_location": "CBOE.md s5",
+   "source": "Q2 release 'Reaffirms ... $838 to $853 million'; Q1 release 'Decreases ... from $864 to $879 million'",
+   "source_value": "$838-853M",
+   "status": "FAIL",
+   "note": "Dossier quotes the superseded February range."
+  },
+  {
+   "ticker": "CBOE",
+   "claim": "Tax rate on adjusted earnings guided 27.5-29.5%",
+   "dossier_location": "CBOE.md s5",
+   "source": "Q2 release",
+   "source_value": "Reaffirmed 27.5 to 29.5 percent",
+   "status": "PASS",
+   "note": "Verbatim."
+  },
+  {
+   "ticker": "CBOE",
+   "claim": "Total debt $1,443.4M at 31 Mar 2026 (Q2 not pulled); no cash stated",
+   "dossier_location": "CBOE.md s6",
+   "source": "Q2 release balance sheet",
+   "source_value": "Debt $1,443.8M at 30 Jun 2026 (current 649.6, LT 794.2); cash $2,276.2M",
+   "status": "MINOR",
+   "note": "Right order of magnitude; omits net-cash position."
+  },
+  {
+   "ticker": "CBOE",
+   "claim": "Credit facility covenants: interest coverage >= 4.00x, leverage <= 3.50x, step-up 4.25x",
+   "dossier_location": "CBOE.md s6",
+   "source": "8-K acc 0001104659-26-087625",
+   "source_value": "Verbatim",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "CBOE",
+   "claim": "Reverse DCF: in_line at ~19x forward P/E, DCF not rebuilt, price $267.57",
+   "dossier_location": "CBOE.md s7",
+   "source": "Programme: rf 5.17%, ERP 4.14%, Blume beta 0.49-1.0, 105.0M shares x $258.03",
+   "source_value": "Implied 0.4-5.7%/yr (TTM NI $1,353M) or 3.0-8.4% (FY25 NI $1,100M)",
+   "status": "FAIL",
+   "note": "Not rebuilt originally; rebuilt: at or below high-single-digit base, in_line stands. Price was $258.03 on 25 Sep close."
+  },
+  {
+   "ticker": "CBOE",
+   "claim": "SPX/VIX moat from regulatory/listing exclusivity",
+   "dossier_location": "CBOE.md s2",
+   "source": "8-K acc 0001104659-26-111989 (28 Sep 2026)",
+   "source_value": "S&P Master License Agreement to 31 Dec 2051; exclusive S&P 500 options rights; new per-contract fees from 1 Jan 2027",
+   "status": "FAIL",
+   "note": "Exclusivity is contractual; new post-cutoff event omitted."
+  },
+  {
+   "ticker": "CBRE",
+   "claim": "Q2'26 revenue $11,226M (+15.5%), GAAP EPS $0.69, GAAP NI $204M, Core EPS $1.56 (+30%)",
+   "dossier_location": "CBRE.md s4",
+   "source": "8-K Ex-99.1 2026-07-29",
+   "source_value": "11,226 vs 9,717; 0.69 vs 0.72; 204; 1.56 vs 1.20",
+   "status": "PASS",
+   "note": "Calendar FY; label correct."
+  },
+  {
+   "ticker": "CBRE",
+   "claim": "Q1'26 revenue $10,527M (+18.6%), GAAP EPS $1.07, NI $318M; Core EPS n/a",
+   "dossier_location": "CBRE.md s4",
+   "source": "Q1 release 2026-04-23",
+   "source_value": "10,527; 1.07; 318; Core 1.61 (+81%)",
+   "status": "MINOR",
+   "note": "Core EPS available but shown n/a."
+  },
+  {
+   "ticker": "CBRE",
+   "claim": "Q3'25 and Q4'25/FY25: Core EPS $1.61, $2.73 (+17.7%), FY $6.38 beat raised range",
+   "dossier_location": "CBRE.md s4/s5",
+   "source": "Releases 2025-10-23, 2026-02-12",
+   "source_value": "1.61; 2.73 vs 2.32; 6.38; raised range 6.25-6.35",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "CBRE",
+   "claim": "Guidance ladder FY25 6.10-6.20 -> 6.25-6.35; FY26 7.30-7.60 -> 7.60-7.80 -> 7.80-7.90",
+   "dossier_location": "CBRE.md s5",
+   "source": "Q3'25, Q1'26, Q2'26 releases",
+   "source_value": "Verbatim ('raised ... from')",
+   "status": "PASS",
+   "note": "Q1 step is stated directly in the Q1 release."
+  },
+  {
+   "ticker": "CBRE",
+   "claim": "Management guided Q3-26 Core EPS growth 'more than 20%', Q4 'comparable', 2027 'at least 15%'",
+   "dossier_location": "CBRE.md s5",
+   "source": "Q2 release searched",
+   "source_value": "Not in the release",
+   "status": "UNVERIFIABLE",
+   "note": "Likely call commentary."
+  },
+  {
+   "ticker": "CBRE",
+   "claim": "Debt $7.4bn, cash $1.5bn, net debt $5.9bn, 1.60x, liquidity $4.4bn",
+   "dossier_location": "CBRE.md s6",
+   "source": "Q2 release leverage table",
+   "source_value": "7,382; 1,489; 5,893; 1.60x; $4.4bn",
+   "status": "PASS",
+   "note": "Consolidated; net debt excludes non-recourse debt."
+  },
+  {
+   "ticker": "CBRE",
+   "claim": "TTM FCF ~$1.7bn; Core NI ~$2.4bn from ~340M diluted shares; ~70% conversion",
+   "dossier_location": "CBRE.md s6",
+   "source": "Q2 release FCF reconciliation; diluted shares 293,859,609",
+   "source_value": "FCF 1,684 = CFO 1,361 + gains 746 - capex 423; plain CFO-capex 938; Core NI ~2.2bn",
+   "status": "FAIL",
+   "note": "Share count wrong; FCF definition adds gains; SBC $164M not deducted."
+  },
+  {
+   "ticker": "CBRE",
+   "claim": "Infrastructure/data-center services revenue ~$1.2bn, +45%; data-center +30% to >$700M",
+   "dossier_location": "CBRE.md s4, s8",
+   "source": "Q2 release BOE segment text",
+   "source_value": "Critical infrastructure services +68% (66% LC), including Pearce Services acquired Nov 2025",
+   "status": "FAIL",
+   "note": "Figures not in the release; growth partly acquired."
+  },
+  {
+   "ticker": "CBRE",
+   "claim": "Telford fire-safety reserve +$132M (Q4'25) and +$168M (Q2'26)",
+   "dossier_location": "CBRE.md s6, s9",
+   "source": "Q4'25 and Q2'26 reconciliation tables",
+   "source_value": "132; 168",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "CBRE",
+   "claim": "Reverse DCF: WACC 9.4% with rf 4.2%, beta 1.19, ERP 5%; implied 9.6% vs base 9-10%; in_line",
+   "dossier_location": "CBRE.md s7",
+   "source": "Programme: rf 5.17%, ERP 4.14%, Blume beta 1.05, SBC a cost, equity basis",
+   "source_value": "Company FCF after SBC 1,520 -> 9.4%; plain CFO-capex-SBC 774 -> ~18%",
+   "status": "FAIL",
+   "note": "Stale rf; SBC; gain add-back. in_line holds only on company FCF definition."
+  }
+ ],
+ "verdict_changes": [],
+ "implied_vs_base_changes": [
+  {
+   "ticker": "CB",
+   "old": "above",
+   "new": "in_line",
+   "why": "P/B-ROE: P/B 1.71x on BVPS $195.45 implies ROE 10.9% at Ke 7.6% vs delivered 15.3%; verdict WATCH kept, summary F79 and lead_implied_normalization updated"
+  },
+  {
+   "ticker": "CARR",
+   "old": "in_line (7.0% implied)",
+   "new": "in_line (upper edge, 9.0-9.5% implied vs 7-9% base)",
+   "why": "TTM FCF was $1,928M not $0.86B, EPS fell YoY three quarters, Ke 9.7% equity basis; F73 text corrected, label unchanged"
+  },
+  {
+   "ticker": "CBRE",
+   "old": "in_line",
+   "new": "in_line (conditional)",
+   "why": "holds only on company FCF that adds back $746M of real-estate gains; plain CFO-capex-SBC implies ~18%/yr; F32 text corrected"
+  }
+ ]
+}

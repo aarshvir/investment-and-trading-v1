@@ -1,0 +1,117 @@
+{
+  "agent_id": "F115",
+  "depth": "standard",
+  "data_cutoff": "2026-09-25",
+  "recency_check": "Most recent period incorporated per ticker: Q2 2026 10-Q for all three (RSG period end 2026-06-30 filed 2026-08-07; SNA period end 2026-07-04 filed 2026-07-23; VRSK period end 2026-06-30 filed 2026-07-29); checked EDGAR filing lists for events to 2026-09-25.",
+  "tickers": {
+    "RSG": {
+      "verdict": "INCLUDE-SMALL",
+      "horizon": "24-36 months",
+      "v1_verdict": null,
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "in_line",
+        "note": "Corrected 5 Oct 2026 (RA4): reverse DCF (10 years constant growth then 2.5% terminal, EV $79.2B = $65.2B market cap + $13.96B net debt) reproduces 7.19% only at the original WACC 7.3% on a levered-FCF base. Central WACC 7.5% (CAPM: rf 5.17% on 25 Sep 2026, ERP 4.14%, Blume beta 0.59-0.70): 7.7% on the original base vs ~8% original base, and ~5.5% on a corrected unlevered base ($3.03B = adj. FCF $2.5575B + after-tax interest) vs a ~6.5% aggregate-FCF base: in line. Turns above base on the original basis at WACC >= 8.0% (9.0%). No v1 row exists for RSG; v1_verdict stays null."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.014,
+        "base": 0.072,
+        "bull": 0.147
+      },
+      "scenario_basis": "From $212.10 (25 Sep 2026), 3-year annualised; NTM EPS $7.86 (27.0x), dividends $2.68 growing 7% (~$8.6 over 3 yrs). Bear: EPS +4%/yr, 22x (de-rating with the 10-yr above 5%). Base: EPS +8%/yr (ex-fuel organic ~2%, margin flat to slightly up, buybacks), 25.5x. Bull: EPS +11%/yr, 29x. Replaces the earlier 1.6% / 10.2% / 16.6%.",
+      "kill_criteria": [
+        "Recycling-and-waste organic revenue growth excluding fuel-recovery fees below 2% for two consecutive quarters [restated 5 Oct 2026: reported total organic 1.5% / 3.5% is flattered by fuel recovery (+0.2 / +1.8 pts); ex-fuel R&W organic was 2.6% in Q1 and 1.9% in Q2, so one more quarter below 2% fires it; status AMBER; Q3 due 29 Oct 2026 after close]",
+        "Net debt/adjusted EBITDA exceeds 3.5x (currently ~2.5x on FY26E guidance basis)",
+        "Full-year adjusted FCF guidance is cut below the raised $2.540-2.575bn range",
+        "Core price growth on related-business revenue falls below 4% (was 6.4-6.8% in H1'26)",
+        "A Regulation S-K Item 103 environmental proceeding is disclosed at >=$1,000,000 (none disclosed as of Q2'26 10-Q)"
+      ],
+      "key_adverse_facts": [
+        "Volume has been negative every quarter shown (Q1'25 through Q2'26, -0.8% to -1.9% depending on measure); growth is entirely price-driven",
+        "Net debt (consolidated) ~$13.96bn at 30 Jun 2026, net debt/guided-FY26-adjEBITDA ~2.5x, with continued M&A ($860m H1'26) and buybacks ($651m H1'26)",
+        "Recycled-commodity price fell to $136/ton in Q2'26, down $13/ton YoY, a swing factor on the smaller 'Other' revenue line",
+        "An internal XBRL pull under the legacy 'Revenues' tag returned FY2025 revenue of $19,027m, which does NOT reconcile against the sum of the four quarters ($16,592m) confirmed directly from the FY2025 earnings release and 10-K income statement ($16,591m); the mistagged figure was discarded and not used in the dossier, but is recorded here as a caution for any downstream reuse of raw XBRL annual 'Revenues' facts for RSG",
+        "Insider Form 4 selling pattern not independently verified this pass (FMP insider-trading data endpoint required a paywalled plan tier)",
+        "Reported organic growth is flattered by fuel-recovery fees: internal growth excluding fuel was 1.3% (Q1) and 1.7% (Q2); related-business yield plus volume was 3.1% and 2.1%; management guided Q3 adjusted EBITDA margin 'relatively flattish' year on year and residential volume down 3-3.5% in H2 and ~2% in 2027 (Q2 call)",
+        "Valuation margin is gone: ~27x NTM P/E, ~3% FCF yield (below the 5.17% 10-yr on 25 Sep); at WACC 7.5% the price implies growth in line with base; management 'underestimated' Environmental Solutions integration; leverage ~2.6x with >$1.2B of 2026 acquisitions"
+      ],
+      "data_conflicts": [
+        "XBRL companyfacts 'Revenues' tag (annual, CIK0001060391) gives FY2025 = $19,027m, inconsistent with the primary-source Q4'25/FY2025 earnings release and 10-K, which both state FY2025 total revenue = $16,591m (matching the sum of the four quarters). Resolved in favor of the primary filing; the XBRL fact appears to be a mistagged or non-comparable concept and should not be used for RSG without cross-checking against the filed press release/10-K income statement."
+      ],
+      "next_earnings_date": "2026-10-29 (after market close; call 5 p.m. ET; company release)",
+      "confidence_in_thesis": "high - primary-source guidance quotes, consolidated balance sheet, and quarterly trend are all directly sourced and internally consistent after correcting the XBRL revenue mistag"
+    },
+    "SNA": {
+      "verdict": "INCLUDE-SMALL",
+      "horizon": "24-36 months",
+      "v1_verdict": null,
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "above",
+        "note": "Corrected 2026-10-06 (RA15): original reverse DCF used WACC 8.0% (implied ~2.9%, 'below'). At the programme 9.2% (10-year Treasury 5.17% on 25 Sep 2026 plus ERP), EV $18.94bn, terminal 2.5%, owner FCF base $0.946bn (OCF 1,081.7 - capex 76.0 - SBC 28.9 - net finance-receivable additions 24.7 - after-tax net interest 6.5), implied 10-yr FCF growth is 6.1% (5.6% on the old $0.982bn base; 7.7% at 10.0%) vs an evidenced base of about 5% (range 4-6%). Base-path value about $341 (-8%); IRR 8.7% vs 9.2%. Verdict cut to INCLUDE-SMALL. Original note: No v1 row exists for SNA; v1_verdict null."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.014,
+        "base": 0.076,
+        "bull": 0.133
+      },
+      "scenario_basis": "Corrected 2026-10-06 (RA15): NTM EPS $20.98 (369.20/17.6); EPS growth bear 2% / base 5% / bull 8% (was 3/7/10%; H1 2026 EPS +4.4%, 2022-25 CAGR 4.5%); exit P/E 14.5x/17.6x/19x; dividends $9.76 a year growing 4/7/10%. Probability-weighted (30/45/25) +6.4% a year. Original: Starting NTM P/E 17.6x, dividend yield 2.6%. Bear: EPS growth 3%/yr, multiple compresses to ~15x. Base: EPS growth 7%/yr, multiple flat. Bull: EPS growth 10%/yr, multiple expands to ~19x. Anchored to Q2'26 consolidated diluted EPS growth of +5.1% YoY, C&I segment organic growth of +11.0%, and a shrinking share count (52.5m diluted Q2'26 vs 53.0m FY2025).",
+      "kill_criteria": [
+        "Two consecutive quarters of negative organic sales growth (was +3.0% organic, Q2'26)",
+        "Consolidated operating cash flow declines >10% YoY for a second consecutive fiscal year (FY2025 was already -11.2% YoY vs FY2024)",
+        "Financial Services originations fall >10% YoY for two consecutive quarters (was -4.1% YoY, Q2'26)",
+        "Consolidated net debt/EBITDA turns positive beyond 0.5x, eroding the current net-cash position",
+        "Commercial & Industrial segment organic growth decelerates below 5% for two consecutive quarters (was +11.0% in Q2'26)",
+        "Trailing owner FCF (OCF - capex - stock compensation - net finance-receivable additions) below $0.90bn after Q3 or Q4 2026 reporting (implied growth would exceed 8% at a 9.2% discount rate)"
+      ],
+      "key_adverse_facts": [
+        "FY2025 consolidated operating cash flow fell 11.2% YoY ($1,081.7m vs $1,217.5m FY2024); the FY2025 10-K attributes it to a $105.6m change in net operating assets and liabilities and a $26.6m decrease in net earnings (explained by RA15 2026-10-06); H1 2026 OCF recovered to $640.2m",
+        "Financial Services originations fell 4.1% YoY in Q2'26, an early-warning indicator on franchisee/technician credit demand",
+        "Snap-on Tools Group and Repair Systems & Information Group segment operating margins both contracted YoY in Q2'26 (-120bp and -160bp respectively) on OEM-dealership softness and cost pressure; growth is currently concentrated in the Commercial & Industrial segment",
+        "Snap-on issues no formal numeric revenue/EPS guidance, so there is no external benchmark to catch a forward miss early - the market and this dossier are relying on trailing results only",
+        "Insider Form 4 selling pattern not independently verified this pass (FMP insider-trading data endpoint required a paywalled plan tier)"
+      ],
+      "data_conflicts": [
+        "The quant triage snapshot (triage_cards.csv) states revenue_growth_yoy of 4.2% for SNA. The primary-source FY2025 income statement shows FY2025 net sales (product only) grew just +0.76% YoY ($4,743.2m vs $4,707.4m FY2024). The triage figure likely reflects total revenues including Financial Services revenue, or a trailing-quarter-annualized rate (recent quarters Q1'26 +5.7% and Q2'26 +4.7% are much closer to 4.2%), rather than FY2025 net sales growth. Not resolved further in this pass; flagged as a genuine data conflict between the quant snapshot and the filed income statement.",
+        "An XBRL annual 'Revenues' pull (CIK0000091440) returned FY2025 = $5,156.1m, which appears to be total revenues (net sales + Financial Services revenue) rather than net sales; this was not used as 'net sales' anywhere in the final dossier after the conflict was caught, but the two concepts should not be conflated in any downstream reuse."
+      ],
+      "next_earnings_date": "~mid/late Oct 2026 (Q3 2026) - estimated from prior-year cadence, not confirmed by a company release",
+      "confidence_in_thesis": "medium - business quality and the consolidated vs Financial Services debt split are filing-sourced; valuation margin of safety does not survive a 9.2% discount rate and owner FCF after stock compensation (RA15 2026-10-06). Original: high - consolidated vs. segment (Operations vs. Financial Services) debt split is explicitly quoted from the filing, and the OCF deceleration and originations softening are both directly sourced, not inferred"
+    },
+    "VRSK": {
+      "verdict": "WATCH",
+      "horizon": "revisit in 2-3 quarters (not a standard 12-36mo INCLUDE horizon)",
+      "v1_verdict": null,
+      "valuation_view_vs_v1": {
+        "implied_vs_base": "below",
+        "note": "No v1 row exists for VRSK in v4/outputs/v1_valuation_table.csv; v1_verdict set to null per instructions. Reverse DCF (WACC 8.0%, terminal growth 3.0%, EV $26.07bn, FY2025 FCF base $1.192bn) implies ~3.8% 10-yr FCF CAGR versus a 7-8% base case. Despite implied growth being below base (which is a necessary condition for INCLUDE per the mandate), the verdict is WATCH rather than INCLUDE because of capital-structure deterioration (stockholders' deficit, rising leverage) that is not captured by a static reverse-DCF snapshot: if the debt-funded buyback pace continues, WACC should rise and the implied-growth bar would move back toward or above the base case."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.004,
+        "base": 0.091,
+        "bull": 0.161
+      },
+      "scenario_basis": "Starting NTM P/E 20.1x, dividend yield 1.1%. Bear: EPS growth 4%/yr (organic deceleration persists, refinancing/interest cost and litigation charges weigh), multiple compresses to ~17x. Base: EPS growth 8%/yr (buyback-driven per-share accretion continues at current pace plus high-single-digit revenue/EBITDA growth), multiple flat at ~20x. Bull: EPS growth 12%/yr (growth finally reaccelerates to the repeatedly-promised Investor Day targets), multiple expands to ~22x. Anchored to Q2'26 OCC revenue growth of 5.8%, adjusted EPS growth of 5.3% (partly buyback-driven, per Non-GAAP reconciliation), and a 6.7% YoY reduction in diluted share count.",
+      "kill_criteria": [
+        "Full-year 2026 revenue or adjusted EBITDA guidance is cut below the unchanged $3,190-3,240m / $1,790-1,830m range (guidance has been flat for 2 consecutive quarters; any cut would be a first)",
+        "Consolidated net debt/adjusted EBITDA exceeds 3.0x at any quarter-end (was ~2.2x on a run-rate FY26-guidance basis as of Jun'26)",
+        "A material adverse ruling, class certification, or settlement in In re: Consumer Vehicle Driving Data Tracking Litigation (MDL No. 1:24-md-03115-TWT, N.D. Georgia) exceeding an illustrative $100m",
+        "Underlying/OCC subscription revenue growth fails to exceed 6% for two consecutive quarters despite two prior quarters of management guidance promising a 'return to Investor Day targets'",
+        "Any credit-rating downgrade of Verisk's debt, or stockholders' equity remaining in deficit for more than four consecutive quarters"
+      ],
+      "key_adverse_facts": [
+        "Consolidated stockholders' equity moved from +$309.0m (31 Dec 2025) to a DEFICIT of -$1,189.0m (30 Jun 2026), driven by $1,571.9m of H1'26 share repurchases funded substantially by new debt (a $999m senior notes issuance plus a $500m term loan drawn and partly repaid) rather than by retained cash flow alone",
+        "Cash fell 75% in six months, from $2,178.2m to $551.4m, while total debt rose from $4,737.2m to $4,473.5m (mix shifted from short-term to long-term via refinancing)",
+        "Net income fell 9.8% YoY in Q2'26 to $228.6m, explicitly attributed by the company to 'increases in our effective tax rate, net interest expense, and legal fees incurred in connection with ongoing litigation' - i.e. financing and legal costs, not the underlying business, drove the GAAP decline",
+        "The GAAP-vs-adjusted EPS gap widened materially in Q2'26 (13% gap, $1.75 vs $1.98) versus Q2'25 (4% gap), driven by new addbacks (acquisition-related fees $18.7m, litigation reserve $2.0m, equity-method losses $6.5m) that did not exist a year earlier - the adjusted-EPS growth story is partly an artefact of what is now being excluded, not purely operating improvement",
+        "Management has stated in three consecutive quarterly releases (Q4'25, Q1'26, Q2'26) that growth 'should return to levels consistent with Investor Day targets' without yet demonstrating a clear step-up (OCC growth 4.7% Q1'26 to 5.8% Q2'26 is directionally positive but not yet proof of the promised reacceleration)",
+        "The AccuLynx acquisition was terminated in Dec 2025 after the FTC did not complete its review by the contractual deadline - a real regulatory/antitrust setback for the M&A growth lever, not a voluntary decision",
+        "Active Telematics/driver-data-sharing MDL (twenty original putative class actions against GM/OnStar/LexisNexis/Verisk and Hyundai/Verisk, consolidated as MDL No. 1:24-md-03115-TWT, N.D. Georgia; a related suit McBride v. General Motors filed 2 Oct 2025 remains pending) - verified directly from the 10-Q's Commitments and Contingencies note, not from a news summary",
+        "Insider Form 4 selling pattern not independently verified this pass (FMP insider-trading data endpoint required a paywalled plan tier)"
+      ],
+      "data_conflicts": [
+        "The quant triage snapshot computes net_debt_to_ebitda of 2.7x, likely on trailing FY2025 figures before the H1'26 debt increase and buyback acceleration; our own calculation using the 30 Jun 2026 balance sheet against FY26 guided adjusted EBITDA gives ~2.2x on a run-rate guidance basis, but the true multiple is probably converging back toward or above 2.7x once a full 12 months of the higher debt load and ASR financing cost are reflected. Neither figure should be treated as precise; direction (rising leverage) is the more reliable signal than either point estimate."
+      ],
+      "next_earnings_date": "~late Oct 2026 (Q3 2026) - estimated from prior-year cadence, not confirmed by a company release",
+      "confidence_in_thesis": "medium - the moat/growth thesis is high-confidence and primary-sourced, but the capital-structure trajectory and litigation exposure are evolving and were assessed from a single quarter's balance-sheet snapshot; a WATCH verdict reflects that uncertainty rather than a confirmed negative call"
+    }
+  }
+}

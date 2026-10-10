@@ -1,0 +1,536 @@
+{
+  "as_of": "2026-10-09",
+  "scope": [
+    "XYL",
+    "XYZ",
+    "YUM",
+    "ZBH",
+    "ZBRA",
+    "ZTS"
+  ],
+  "facts": [
+    {
+      "ticker": "XYL",
+      "claim": "Q2'26 revenue $2,336m, GAAP EPS $1.11, net income attributable $263m (Q2'25: 2,301 / 0.93 / 226); op income 390 vs 305",
+      "dossier_location": "s4 table",
+      "source": "8-K Ex-99.1 acc 0001524472-26-000108 (28 Jul 2026)",
+      "source_value": "Cost of revenue 1,373 + gross profit 963 = 2,336; Q2'25 1,409 + 892 = 2,301; EPS 1.11 vs 0.93; NI attributable 263 vs 226; op income 390 vs 305",
+      "status": "PASS",
+      "note": "Period label correct (quarter ended 30 Jun 2026)."
+    },
+    {
+      "ticker": "XYL",
+      "claim": "Q3'25 (rev 2,268, GAAP EPS 0.93, adj 1.37) and Q4'25 (derived rev 2,397, GAAP EPS 1.37, adj 1.42) rows",
+      "dossier_location": "s4 table",
+      "source": "8-K Ex-99.1 acc 0001524472-25-000043 (28 Oct 2025); 0001524472-26-000008 (10 Feb 2026)",
+      "source_value": "Q3'25 EPS 0.93 and adj 1.37 in headline; FY25 revenue 9,035 less Q1-Q3 (2,069+2,301+2,268) = 2,397; FY25 diluted EPS 3.92 less 9M 2.55 = 1.37",
+      "status": "PASS",
+      "note": "Derived Q4 values reproduce."
+    },
+    {
+      "ticker": "XYL",
+      "claim": "Q2'26 guidance verbatim: FY adj EPS $5.55-5.70 (from 5.35-5.60); revenue ~$9.2bn, ~2% reported, 2-3% organic (from 2-4%); FCF margin 10.2-11.0%; adj EBITDA margin 23.1-23.5%",
+      "dossier_location": "s5",
+      "source": "8-K Ex-99.1 acc 0001524472-26-000108 (28 Jul 2026)",
+      "source_value": "Release text: 'Xylem now forecasts full-year 2026 revenue of approximately $9.2 billion, up approximately 2 percent on a reported basis, versus 2 to 3 percent previously guided ... adjusted earnings per share of $5.55 to $5.70, up from the previous guidance range of $5.35 to $5.60. Full-year free cash flow margin is still expected to be approximately 10.2 to 11.0 percent.'",
+      "status": "PASS",
+      "note": "Every quoted number is in the release."
+    },
+    {
+      "ticker": "XYL",
+      "claim": "Earlier guidance quotes: Q3'25 ($5.03-5.08 vs 4.70-4.85), Q4'25 initial ($9.1-9.2bn, 2-4% organic, $5.35-5.60), Q1'26 ($9.2-9.3bn vs 1-3% previous; EPS 5.35-5.60 unchanged), 18 Aug reaffirmation",
+      "dossier_location": "s5",
+      "source": "8-Ks 0001524472-25-000043, -26-000008, -26-000065, -26-000123",
+      "source_value": "All four quotations found verbatim; 8-K -000123 Item 7.01 'reaffirming the Company's previously issued financial guidance for the third quarter and full year 2026'",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "XYL",
+      "claim": "Consolidated debt 531 + 2,395 = 2,926; cash 1,276; net debt 1,650 = ~0.8x FY26E adj EBITDA; $500m 3.250% notes due Oct 2026",
+      "dossier_location": "s6, kill criterion 3",
+      "source": "Q2 release balance sheet; 10-Q acc 0001524472-26-000110 debt note",
+      "source_value": "Short-term borrowings and current maturities 531, long-term debt 2,395, cash 1,276; 3.250% Senior Notes due 2026 $500m; 9.2bn x 23.3% = 2.14bn EBITDA gives 0.77x",
+      "status": "PASS",
+      "note": "Right entity (consolidated), right date (30 Jun 2026)."
+    },
+    {
+      "ticker": "XYL",
+      "claim": "Cornell/Roper purchase ~$1.46bn cash (Q4'26 close); $1.5bn notes 5.250% 2029 / 5.450% 2032 / 5.850% 2037 with 101% special mandatory redemption; CFO resignation and internal successor",
+      "dossier_location": "s6, s8, s11",
+      "source": "8-K -26-000119, -26-000134, -26-000123; 424B5 0001193125-26-391375",
+      "source_value": "'purchase price of approximately $1.46 billion in cash'; three $500m series and 101% redemption price in -000134; Grogan resigns effective 31 Aug 2026, Andrea van der Berg appointed CFO effective 1 Sep 2026",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "XYL",
+      "claim": "Orders $3,086m (+42%, +40.9% organic); backlog $5,315m (+5.9% YoY); single significant WSS contract; H1 FCF 398-179 = 219 (vs 338-169 = 169); H1 net income 450",
+      "dossier_location": "s4, s6",
+      "source": "10-Q acc 0001524472-26-000110; Q2 release cash-flow statement",
+      "source_value": "Orders $3,086m up 42.0% from $2,174m; backlog $5,315m up $297m or 5.9%; 'securing of a significant contract in Water Solutions and Services'; OCF 398, capex 179; net income 450",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "XYL",
+      "claim": "Reverse DCF: FCF $0.975bn, equity $24.0bn, 8.5%, 10 years then 3% -> implied 6.5% (7.2% after SBC) vs base 7.5%",
+      "dossier_location": "s7",
+      "source": "Recomputed (constant growth 10 years, 3% terminal, FCF = guide midpoint 10.6% x $9.2bn)",
+      "source_value": "6.51% / 7.19% reproduce. Sensitivity: 9.2% (5.17% + 4.0%) gives 8.1%; 9.5% gives 8.85% (after SBC 9.55%)",
+      "status": "MINOR",
+      "note": "Arithmetic and method (FCF after SBC variant shown, no EPS-as-cash, no interest double count) acceptable. 8.5% = 5.17% Treasury + 3.3% premium but the premium is not stated, and at a 4% premium implied growth (8.1%) would exceed the 7.5% base: the 'below' call holds only at the low end of the rate range. No verdict change: INCLUDE-SMALL is already half weight."
+    },
+    {
+      "ticker": "XYL",
+      "claim": "3-year scenario returns bear -2.5% / base +10.6% / bull +18.2% from $102.63",
+      "dossier_location": "s7",
+      "source": "Recomputed from stated basis",
+      "source_value": "Base (7.20 x 18.5 + 5.55)/102.63 -> 10.6%; bull (7.8 x 21 + 5.55) -> 18.2%; bear (6.0 x 15 + 5.55) -> -2.4%",
+      "status": "PASS",
+      "note": "Rounding only on bear (-2.4% vs -2.5%)."
+    },
+    {
+      "ticker": "XYL",
+      "claim": "Mechanical leads: precheck 'guidance_unquoted' lines 30, 32, 36, 40; xbrl_crosstie and quarter_label flags",
+      "dossier_location": "precheck, crosstie, quarter-label outputs",
+      "source": "dossier_precheck_all500.json, xbrl_crosstie_all500.json, quarter_label_check_all500.json",
+      "source_value": "Precheck lines are computed or derived values (net debt, FCF 219, reverse DCF, bull case); the only guidance numbers are the verbatim s5 quotes. No crosstie or quarter-label flags",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "XYZ",
+      "claim": "Q2'26 revenue $6,618m, gross profit $3,166m, GAAP operating income $447m, GAAP EPS $0.15, net income to common $88.5m; Q3'25 6,115/2,662/409/0.74; Q1'26 6,057/2,909/(172)/(0.52); Q2'25 6,054/2,537/484/0.87",
+      "dossier_location": "s3 table",
+      "source": "XBRL companyfacts CIK 1512673; 10-Q acc 0001628280-26-053368; letter 8-K 0001193125-26-335117",
+      "source_value": "Revenues 6,617.7 / 6,115.0 / 6,056.8 / 6,054.5; GrossProfit 3,166.1 / 2,661.6 / 2,909.2 / 2,536.5; OperatingIncomeLoss 446.9 / 409.4 / (172.0) / 484.3; EPS 0.15 / 0.74 / (0.52) / 0.87",
+      "status": "PASS",
+      "note": "Period labels correct (calendar fiscal year)."
+    },
+    {
+      "ticker": "XYZ",
+      "claim": "Q2'26 adjusted operating income $864m, adjusted diluted EPS $1.02, FCF $967m",
+      "dossier_location": "s3 table",
+      "source": "Q2'26 shareholder letter, 8-K 0001193125-26-335117",
+      "source_value": "Letter: Adjusted Operating Income $864M (27% margin), Adjusted Diluted EPS $1.02 (+65%), Free Cash Flow row 343/1,400/580/935/967/3,882 (TTM 3,882)",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "XYZ",
+      "claim": "All four guidance quotations (Q3'25, Q4'25, Q1'26, Q2'26) incl. $12.51bn GP, $3.47bn AOI, $4.02 EPS, Q3 guide $3.13bn / $875M",
+      "dossier_location": "s4",
+      "source": "8-Ks 0001193125-25-269715, -26-076557, -26-212032, -26-335117",
+      "source_value": "Verbatim: 'For 2026, we now expect $12.51 billion in gross profit, up 21% ... Adjusted Operating Income of $3.47 billion ... Adjusted Diluted EPS to grow 70% to $4.02'; Q1 letter $12.33bn / $3.34bn / $3.85 / $3.04bn / $740M; Q4 letter $12.20bn / $3.20bn / $3.66 / $2.80bn / $600M; Q3'25 letter $10.243bn / $2.056bn / $2.755bn / $560M",
+      "status": "PASS",
+      "note": "Every figure is in the cited release."
+    },
+    {
+      "ticker": "XYZ",
+      "claim": "Consolidated cash $6,427.3m; long-term debt $5,720.6m; warehouse funding $572.4m + $589.6m; $900m revolver to 14 Jan 2031; 2027 convertible $575m; accrued legal contingencies $674.6m (vs $173.0m)",
+      "dossier_location": "s6",
+      "source": "10-Q acc 0001628280-26-053368 balance sheet, Note 12",
+      "source_value": "Cash 6,427,331; LTD 5,720,569 (2027 Convertible Notes principal 575,000); warehouse 572,388 + 589,556; accrued legal contingencies 674,575 vs 172,959; revolver increased from $775m to $900m, maturity 14 Jan 2031",
+      "status": "PASS",
+      "note": "Right entity (consolidated); the 2026 senior notes and 2026 convertible were repaid in H1."
+    },
+    {
+      "ticker": "XYZ",
+      "claim": "DOJ accrual $526M; 'losses in excess of the amount accrued ... could be material'",
+      "dossier_location": "s0, s9",
+      "source": "10-Q Note 16",
+      "source_value": "'The Company has accrued an estimate of loss in the amount of $526 million as of the second quarter of 2026' and further loss reasonably possible",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "XYZ",
+      "claim": "Loss provisions $585.5M vs $294.1M (+99%); G&A $825.9M vs $449.2M; bitcoin remeasurement loss $88.5M vs gain $212.2M; H1 OCF $1,985.4M with $1,085.6M loss add-back; restructuring $495.0M; buybacks $700.9M, $4.6bn left; shares 540.8M A + 60.0M B",
+      "dossier_location": "s3, s6",
+      "source": "10-Q statements of operations and cash flows",
+      "source_value": "585,450 / 294,090; 825,869 / 449,237; 88,474 / (212,165); 1,985,416 and 1,085,575; $495.0 million; $4.6 billion remained",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "XYZ",
+      "claim": "XBRL cross-tie flag: 'net income $350M vs nearest XBRL $88.5M'",
+      "dossier_location": "s6 (line 44)",
+      "source": "xbrl_crosstie_all500.json; companyfacts",
+      "source_value": "The dossier figure is trailing-twelve-month net income to common (EPS 0.74 + 0.19 - 0.52 + 0.15 = 0.56 x ~616M shares = $0.35bn; Yahoo $357M); the XBRL value is the single Q2'26 quarter ($88.5M)",
+      "status": "PASS",
+      "note": "False positive: different periods."
+    },
+    {
+      "ticker": "XYZ",
+      "claim": "Q3'26 earnings 'expected about 5 Nov 2026 (estimated ...; not announced)' and F147 next_earnings_date 2026-11-05",
+      "dossier_location": "s10; F147 summary",
+      "source": "Q2'26 shareholder letter, 8-K 0001193125-26-335117",
+      "source_value": "'We will release financial results for the third quarter of 2026 on November 3, 2026, after the market closes'",
+      "status": "FAIL",
+      "note": "Date had been announced in the cited letter. Corrected to 3 Nov 2026 (dossier and F147 next_earnings_date)."
+    },
+    {
+      "ticker": "XYZ",
+      "claim": "Reverse DCF: $2.1bn normalised owner earnings (FY26 adjusted EPS $4.02 x ~616M, less 15% haircut), 10% cost of equity, 10 years then 3% on equity value $45.9bn -> implied 8.3% (6.2% at 9%) vs base 10.2%",
+      "dossier_location": "s7",
+      "source": "Recomputed",
+      "source_value": "8.35% / 6.16% reproduce; 10.37% at 11%; base path 15% x3, 10% x3, 6% x4 is worth about $87.7 a share at 10%",
+      "status": "MINOR",
+      "note": "Arithmetic replicates. The method deviates from the FCF rule: it capitalises SBC-burdened adjusted earnings (not cash) because Block's GAAP FCF is distorted by loss add-backs and loan originations in investing; the dossier states this and adds a haircut, so acceptable. Cost of equity 10% (5.17% + 4.8%) is not tied to a beta (Yahoo beta 2.52); at 11% implied growth 10.4% equals the 10.2% base, so 'below' is not robust. No verdict change; INCLUDE-SMALL (half weight) stands."
+    },
+    {
+      "ticker": "XYZ",
+      "claim": "3-year scenarios bear -13.3% / base +8.6% / bull +22.0% from $76.42",
+      "dossier_location": "s7",
+      "source": "Recomputed",
+      "source_value": "-13.3% / +8.6% / +22.0% reproduce",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "XYZ",
+      "claim": "Street mean target $98.31 (42 analysts); Yahoo FCF about -$27M; 2025 CFPB / NY DFS / multistate figures",
+      "dossier_location": "s7, s2, s11",
+      "source": "Vendor snapshot; Q06 triage (not opened by the dossier)",
+      "source_value": "Not available on EDGAR (Yahoo FCF -27.1M is in the d4 snapshot)",
+      "status": "UNVERIFIABLE",
+      "note": "The dossier already flags the regulatory figures as not independently opened."
+    },
+    {
+      "ticker": "YUM",
+      "claim": "Q2'26 revenue $2,169m, net income $853m, GAAP diluted EPS $3.08, EPS excluding Special Items $1.62; Q1'26 2,059 / 432 / 1.55 / 1.50",
+      "dossier_location": "s4 table",
+      "source": "8-K Ex-99.1 acc 0001041061-26-000149 (30 Jul 2026); XBRL CIK 1041061",
+      "source_value": "Revenues 2,169 / 2,059; NetIncomeLoss 853 / 432; EPS 3.08 / 1.55; Special Items EPS 1.46 -> 1.62 excl.; H1 adjusted 3.12",
+      "status": "PASS",
+      "note": "Period label correct."
+    },
+    {
+      "ticker": "YUM",
+      "claim": "Q3'25 1.41 / 1.58, Q4'25 1.91 / 1.73 (FY25 revenue 8,214), Q3'24 revenue 1,826 / adj 1.37, Q4'24 GAAP 1.49 / adj 1.61; TTM adjusted EPS $6.43 vs $5.72 (+12.4%)",
+      "dossier_location": "s4",
+      "source": "8-Ks 0001041061-25-000091, -26-000003",
+      "source_value": "Q3'25 release: 1.41 / 1.58, Q3'24 revenue 1,826, 1.37; Q4 release: 1.91 / 1.73, 1.49 / 1.61, revenue 8,214 vs 7,549",
+      "status": "PASS",
+      "note": "Sums: 1.58+1.73+1.50+1.62 = 6.43; 1.37+1.61+1.30+1.44 = 5.72."
+    },
+    {
+      "ticker": "YUM",
+      "claim": "Long-term growth algorithm quoted verbatim and 'identically' in four releases (5% units, 7% system sales ex-F/X, at least 8% Core Operating Profit growth)",
+      "dossier_location": "s5",
+      "source": "Four Ex-99.1 releases",
+      "source_value": "Q2'26 and Q1'26 identical; Q3'25 reads 'excluding F/X and 53rd week' on the 7% and 8% lines; Q4/FY25 has no 53rd-week wording",
+      "status": "MINOR",
+      "note": "The dossier discloses the dropped caveat; 'identical' overstates by a small wording difference."
+    },
+    {
+      "ticker": "YUM",
+      "claim": "Balance sheet 30 Jun 2026: short-term borrowings $2,813m, long-term debt $9,462m (total $12,275m, up from $11,910m), cash $674m, shareholders' deficit $(7,107)m",
+      "dossier_location": "s6, s9",
+      "source": "10-Q acc 0001041061-26-000160",
+      "source_value": "2,813 + 9,462 = 12,275; 38 + 11,872 = 11,910; cash 674; deficit (7,107) vs (7,325)",
+      "status": "PASS",
+      "note": "Right entity and date. The xbrl_crosstie 'total debt' flags (10,213 / 9,462) compare against single tags; the dossier states it is the sum of two tags."
+    },
+    {
+      "ticker": "YUM",
+      "claim": "Why short-term borrowings jumped: '~$2.4bn reclassified ... most likely ahead of a refinancing or repayment tied to the Pizza Hut sale proceeds'",
+      "dossier_location": "s6, s8 bear 1",
+      "source": "10-Q Note 12",
+      "source_value": "Current maturities of long-term debt $2,823m include Term Loan A $488m and Revolving Facility $675m, reclassified because their maturity springs to 91 days before the 1 Jun 2027 maturity of $750m Subsidiary Senior Unsecured Notes if more than $250m remain outstanding; the rest is other debt falling due within 12 months",
+      "status": "FAIL",
+      "note": "The 10-Q gives the reason (a springing maturity), not a Pizza Hut-linked refinancing. Total debt and the $2.4bn reclassification figure are right."
+    },
+    {
+      "ticker": "YUM",
+      "claim": "Pizza Hut sale pending: 'until its pending sale closes', 'expected Q3 2026', kill criterion 2 (fails to close by year-end), catalyst 'verify status', 'no filing found that updates the Pizza Hut closing status' (events checked to 25 Sep 2026)",
+      "dossier_location": "s1, s2, s9, s10, data basis",
+      "source": "8-K acc 0001104659-26-092305 (7 Aug 2026, Item 2.01); 8-K acc 0001041061-26-000187 (1 Sep 2026, Items 7.01/8.01)",
+      "source_value": "Pizza Hut China sold to Yum China for $1.2bn on 7 Aug 2026; Pizza Hut ex-China sold to Toppings TopCo (LongRange Capital) for $1,488,000,000 on 1 Sep 2026; '$2.7 billion in the aggregate'",
+      "status": "FAIL",
+      "note": "Both closings are in the EDGAR index before the 25 Sep as-of date. The open item is resolved; the verdict logic is unchanged (WATCH rests on valuation and the Cyclospora event). Kill criterion 2 is moot."
+    },
+    {
+      "ticker": "YUM",
+      "claim": "Pizza Hut deal terms: ~$1.5bn + $75m earn-out (ex-China), ~$1.2bn (China), ~$2.3bn net proceeds, ~$85m separation costs, incremental $4bn buyback authorisation, close in Q3 2026",
+      "dossier_location": "s6",
+      "source": "8-K Ex-99.1 acc 0001193125-26-271893 (16 Jun 2026)",
+      "source_value": "All six figures and 'third quarter of 2026' present",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "YUM",
+      "claim": "Q2 GAAP/adjusted gap ($3.08 vs $1.62) 'almost certainly Pizza Hut-related ... consistent with an initial gain/remeasurement recognized ahead of closing'; 'release does not fully itemize'",
+      "dossier_location": "s6, s8 bear 3",
+      "source": "Q2 release non-GAAP reconciliation",
+      "source_value": "Special Items EPS +$1.46 = $449m special-items tax benefit (of which $359m net deferred tax benefit on the planned sale of Pizza Hut and $79m intra-entity IP transfers) less $44m operating special expense; release: sales 'expected to close at significant book gains in the quarter ended September 30, 2026'",
+      "status": "MINOR",
+      "note": "Pizza Hut link is right, mechanism is wrong: a deferred tax benefit excluded from adjusted EPS, not a pre-closing gain. Conclusion (underwrite on adjusted EPS) stands; Q3'26 GAAP will carry the gain on sale."
+    },
+    {
+      "ticker": "YUM",
+      "claim": "Reverse DCF: Gordon P/E on TTM adjusted EPS (21.6x, 9%) -> implied perpetual growth 4.2%, called 'below' base (algorithm 8%+, TTM EPS growth 12.4%)",
+      "dossier_location": "s7",
+      "source": "Recomputed on programme method (10-year Treasury 5.17% on 25 Sep 2026; FCF after SBC; 10 years then 3%)",
+      "source_value": "Arithmetic of 4.2% reproduces, but EPS is treated as distributable cash and a perpetual rate is compared with 10-year and algorithm growth. TTM OCF 2,083 less capex 404 = FCF 1,679; less SBC 68 = 1,611 on equity value $37.8bn: implied 7.1% a year at 9% (4.6% at 8%, 9.3% at 10%; CAPM 5.17% + 0.70 x 4.14% = 8.06% gives about 4.9%)",
+      "status": "FAIL",
+      "note": "Method error. Restated implied growth 7.1% (range 4.6-9.3%) against an 8% algorithm: the gap to base narrows from about 4 points to about 1 point, so 'below' is marginal rather than clear. Verdict WATCH unchanged; consistent with a narrow margin."
+    },
+    {
+      "ticker": "YUM",
+      "claim": "Cyclospora outbreak risk-factor update and ~$44m credit-card interchange settlement income",
+      "dossier_location": "s6, s11",
+      "source": "10-Q acc 0001041061-26-000160",
+      "source_value": "Risk factor on the multistate Cyclospora outbreak (July 2026); 'income of approximately $44 million related to a credit card interchange fee litigation settlement'",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "YUM",
+      "claim": "KFC/Taco Bell ex-Pizza Hut: system sales +7% ex-F/X, units +6%, COP +8%; digital approached $9bn, mix above 60%; Pizza Hut system sales -2%; 34,747 KFC and 9,046 Taco Bell units; Taco Bell same-store sales +7%",
+      "dossier_location": "s2, s8, s9",
+      "source": "Q2 release",
+      "source_value": "All present: 'Excluding Pizza Hut, system sales grew 7% ... unit count grew 6% ... Core Operating Profit grew 8%'; Pizza Hut (2); 34,747; 9,046; Taco Bell SSS +7",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "ZBH",
+      "claim": "Q2'26 net sales $2,177.0m (+4.8%, +4.0% organic cc), operating margin 15.0%, GAAP EPS $1.03, adjusted EPS $2.07, FCF $308.3m; net earnings $198.3m vs $152.8m",
+      "dossier_location": "s4 table",
+      "source": "XBRL CIK 1136869; 8-K Ex-99.1 acc 0001193125-26-333761 (5 Aug 2026)",
+      "source_value": "Revenue 2,177.0; operating income 326.1 (14.98%); NI 198.3 vs 152.8; EPS 1.03 (+33.8%); adjusted EPS $2.07 'consistent with the prior year period'; FCF $308.3m",
+      "status": "PASS",
+      "note": "Other quarters (Q3'25 2,001.4 / 17.6%; Q1'26 2,086.7 / 17.9% / EPS 1.22; Q2'25 2,077.3 / 14.4% / 0.77; Q3'25 EPS 1.16) also reproduce from XBRL."
+    },
+    {
+      "ticker": "ZBH",
+      "claim": "Four guidance rows (5 Nov 2025, 10 Feb, 28 Apr, 5 Aug 2026): adjusted EPS 8.10-8.30; 8.30-8.45; 8.30-8.45 -> 8.40-8.55; 8.40-8.55 -> 8.47-8.59; organic 3.5-4.5 -> 3.5-4.0; 1.0-3.0 -> 1.0-3.0 -> 2.25-3.25; reported 2.5-4.5 -> 3.9-4.9",
+      "dossier_location": "s5",
+      "source": "Four Ex-99.1 releases (acc 0001193125-25-265649, -26-043620, -26-183411, -26-333761)",
+      "source_value": "Table rows found as printed (footnote marker '(2)' without a space)",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "ZBH",
+      "claim": "Debt: total carrying value $7,479.0m ($1,201.5m current + $6,277.5m long-term), cash $410.0m, net debt 3.1x TTM GAAP EBITDA ($2,314m); notes due $571.5m Dec 2026, $600.0m 4.700% Feb 2027, $30.0m facility",
+      "dossier_location": "s6, kill criterion 3",
+      "source": "10-Q acc 0001193125-26-335044 Note 9",
+      "source_value": "Current portion 1,201.5 (30.0 + 571.5 + 600.0); cash 410.0; TTM operating income 351.3 + ~154.8 + 373.2 + 326.1 = 1,205 plus D&A 1,108",
+      "status": "PASS",
+      "note": "Consolidated entity and 30 Jun 2026 date. Covenant 4.5x confirmed in 8-K acc 0001193125-26-288390 (5.0x after a qualified material acquisition)."
+    },
+    {
+      "ticker": "ZBH",
+      "claim": "TTM company-defined FCF about $1.2bn (OCF $1,743m); H1'26 OCF $807.2m vs $761.0m; SBC $48.8m; buybacks $500.8m, $1,003.1m authorisation left; equity $12,632.5m",
+      "dossier_location": "s6",
+      "source": "10-Q; 10-K; Q4'25 release",
+      "source_value": "OCF 1,697.1 - 761.0 + 807.2 = 1,743.3; FCF FY25 1,172 - H1'25 526.1 + H1'26 554.1 = 1,200.0; SBC 48.8; $1,003.1 million remained; total equity 12,632.5",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "ZBH",
+      "claim": "Reverse DCF: FCF base $1.2bn, equity $17.36bn, 9%, 10 years then 3% -> 0.8% (1.9% after SBC; -1.5% at 8%, 2.8% at 10%) vs base 5%",
+      "dossier_location": "s7",
+      "source": "Recomputed",
+      "source_value": "0.75% / 1.87% after SBC / -1.48% / 2.77% reproduce",
+      "status": "MINOR",
+      "note": "The headline base adds back SBC (TTM about $98m) but the after-SBC variant (1.9%) is shown; the premium over the 5.17% Treasury (3.8%) is not stated. Implied is far below base on every variant, so INCLUDE-SMALL is supported."
+    },
+    {
+      "ticker": "ZBH",
+      "claim": "CFO resignation (8-K acc 0001193125-26-183430, effective 28 Apr 2026) and Group President departure (8-K acc 0001193125-26-385256, 30 Sep 2026); no later filings through 25 Sep",
+      "dossier_location": "s1, s8",
+      "source": "EDGAR submissions; the two 8-Ks",
+      "source_value": "Upadhyay resigns effective 28 Apr 2026; Thornal departs effective 30 Sep 2026 (8-K 8 Sep 2026); no 8-K/10-Q after 8 Sep other than 13G/A",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "ZBH",
+      "claim": "US 57% of Q2 sales; knees +0.1% organic ($828.9m); hips +5.1%; US organic +4.6%",
+      "dossier_location": "s2, s4, s8",
+      "source": "Q2 release geographic and product tables",
+      "source_value": "US $1,239.9m of $2,177.0m = 56.9%; knees 0.1%; hips 5.1%; US organic 4.6%",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "ZBH",
+      "claim": "IEEPA tariff refund about $30m of H1 cost-of-sales relief; acquisitions ~$245m + $210m contingent (Note 17)",
+      "dossier_location": "s3, s6",
+      "source": "10-Q",
+      "source_value": "IEEPA discussion present; '$245 million with additional contingent consideration of up to $210 million'",
+      "status": "PASS",
+      "note": "The $30m amount was not re-footed."
+    },
+    {
+      "ticker": "ZBH",
+      "claim": "Insider Form 4 pattern (16,341 shares, four insiders); peer multiples SYK 16.3x, BSX 12.9x, MDT 13.8x",
+      "dossier_location": "s11, s7",
+      "source": "Form 4 XML; vendor snapshot",
+      "source_value": "Not re-pulled",
+      "status": "UNVERIFIABLE",
+      "note": "Peer data is flagged as unverified vendor data in the dossier."
+    },
+    {
+      "ticker": "ZBRA",
+      "claim": "Q2'26 (quarter ended 4 Jul 2026): net sales $1,557m (+20.4%), GAAP op income $321m, GAAP EPS $4.85, non-GAAP EPS $6.35, adjusted operating income $411m (26.4%); Q1'26 $1,495m",
+      "dossier_location": "s4",
+      "source": "XBRL CIK 877212; 8-K Ex-99.1 acc 0001628280-26-052158",
+      "source_value": "Revenue 1,557 vs 1,293 (+20.4%); op income 321; EPS 4.85 (Q1 2.72); non-GAAP EPS $6.35; organic net sales growth 9.2%",
+      "status": "PASS",
+      "note": "Fiscal-quarter labels correct (13-week quarters ending 4 Jul / 4 Apr)."
+    },
+    {
+      "ticker": "ZBRA",
+      "claim": "Guidance quotes: Q1'26 sales growth 10-14%, non-GAAP EPS $18.30-18.70; Q2'26 14-16% (including ~8 points from acquisitions, dispositions and FX), adj EBITDA margin 23.5-24.0%, EPS $20.75-21.25",
+      "dossier_location": "s4",
+      "source": "8-K Ex-99.1 acc 0001628280-26-033877 and -26-052158",
+      "source_value": "Verbatim in both; the Q4'25 release initiated 9-13% and Q1 raised to 10-14% (7 points acquisitions/FX); Q1 FCF 'greater than $900 million'",
+      "status": "PASS",
+      "note": "The Q2 release also raised the FCF guide to 'greater than $1 billion'."
+    },
+    {
+      "ticker": "ZBRA",
+      "claim": "DVH4 correction 1: total debt $2,776m (TLA 1,531, notes 500, revolver 565, receivables 180); $2,275m current; cash $157m; net $2,619m",
+      "dossier_location": "Correction DVH4 #1",
+      "source": "Q2 release; 10-Q acc 0001628280-26-052550 debt note",
+      "source_value": "'total debt of $2,776 million'; current portion (2,275); long-term debt 493; maturities 2027 $2,160m; TLA/revolver mature 25 May 2027; 1,531+500+565+180 = 2,776; 2,776 vs 2,511 at year end (+265)",
+      "status": "PASS",
+      "note": "DVH4 holds. The xbrl_crosstie flag (2,962 vs 2,776) is the Yahoo aggregate and was already corrected."
+    },
+    {
+      "ticker": "ZBRA",
+      "claim": "DVH4 correction 2-3: TTM FCF $904m (OCF 979 less capex 75); $73m IEEPA tariff recovery inside adjusted results (ex-benefit adj op margin ~21.7%, non-GAAP EPS ~$5.1)",
+      "dossier_location": "Correction DVH4 #2-3",
+      "source": "Q2 release and 10-Q",
+      "source_value": "'Recorded IEEPA tariff recoveries of $73 million, of which $14 million received in the quarter'; (411-73)/1,557 = 21.7%; Yahoo OCF 979",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "ZBRA",
+      "claim": "DVH4 correction 4: programme-basis reverse DCF (Ke 10.99% = 5.17% + 1.407 x 4.14%, equity $17.63bn, FCF after SBC $730-826M) -> implied 11.7% / 10.0% vs mid-single-digit base; verdict INCLUDE-SMALL -> WATCH; F112 updated",
+      "dossier_location": "Correction DVH4 #4-5",
+      "source": "Recomputed; F112_summary.json",
+      "source_value": "11.73% (730) and 10.02% (826); F112 ZBRA verdict WATCH, implied_vs_base above",
+      "status": "PASS",
+      "note": "Re-verified independently; no change needed."
+    },
+    {
+      "ticker": "ZBRA",
+      "claim": "'Trailing GAAP P/E of ~34x (vs ~17.6x on adjusted/non-GAAP EPS)'",
+      "dossier_location": "s8 bear 3",
+      "source": "d4_live_snapshot.parquet",
+      "source_value": "Yahoo trailing P/E 33.9 (GAAP EPS 10.92); 17.6x = price / FY26 consensus EPS 21.04, a forward (not trailing) adjusted multiple",
+      "status": "MINOR",
+      "note": "Mislabelled: the 17.6x is forward. No effect on the verdict."
+    },
+    {
+      "ticker": "ZBRA",
+      "claim": "Mechanical leads: xbrl_crosstie total debt (2,962 vs 2,776; 157 vs 2,660); quarter-label check; precheck",
+      "dossier_location": "precheck outputs",
+      "source": "outputs/*_all500.json",
+      "source_value": "Debt flags explained and already corrected by DVH4; no quarter-label flags",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "ZTS",
+      "claim": "Q2'26 revenue $2,468m, GAAP EPS $1.65, adjusted EPS $1.87; Q1'26 $2,262m, GAAP EPS $1.42, adjusted $1.53; Q4'25 revenue $2,387m, FY25 revenue 9,467, FY25 EPS 6.02",
+      "dossier_location": "s4 table",
+      "source": "8-K Ex-99.1 acc 0001555280-26-000038, -000021, -000008; XBRL CIK 1555280",
+      "source_value": "Revenue 2,468 / 2,262 / 2,387; EPS 1.65 / 1.42; adjusted 1.87 / 1.53; FY25 9,467 and $6.02",
+      "status": "PASS",
+      "note": "Period labels right. Table cells for Q1'26 and Q2'26 show 'current/prior-year recast' pairs in inconsistent order (for example EPS '1.63/1.65' = Q2'25 recast / Q2'26)."
+    },
+    {
+      "ticker": "ZTS",
+      "claim": "2025 comparatives 'restated slightly for FX/reclass ... the gap is <1% and not a data-quality flag'",
+      "dossier_location": "s4 footnote",
+      "source": "10-Q acc 0001555280-26-000040 (accounting-change note); Q1'26 release income statement",
+      "source_value": "Retrospective change in accounting principle (elimination of the reporting lag of certain international subsidiaries): Q1'25 revenue 2,198 vs 2,220 as filed (-1.0%), Q1'25 EPS 1.34 vs 1.41 (-5%); Q2'25 revenue 2,474 vs 2,460, EPS 1.63 vs 1.61, net income 726 vs 718",
+      "status": "FAIL",
+      "note": "The cause is an accounting-principle change and the EPS gap is up to 5%, not under 1%. Reported growth on the recast base: Q1'26 +3% (company), Q2'26 flat (-0.2%); the dossier's +1.9% / +0.3% compare with as-filed 2025 figures."
+    },
+    {
+      "ticker": "ZTS",
+      "claim": "Guidance table: FY26 revenue 9.825-10.025bn -> 9.68-9.96bn -> 9.12-9.32bn; adjusted EPS 7.00-7.10 -> 6.85-7.00 -> 6.15-6.25; organic +3-5% -> +2-5% -> (3)% to (1)%; 'cut sharply (~12% off EPS midpoint)'",
+      "dossier_location": "s5",
+      "source": "Q4'25, Q1'26, Q2'26 Ex-99.1 releases",
+      "source_value": "All ranges verbatim. EPS midpoint 6.925 -> 6.20 is -10.5% versus the prior (Q1) range; -12.1% is versus the February 7.05",
+      "status": "MINOR",
+      "note": "Midpoint cut mislabelled (versus prior = 10.5%). Accession cites '8-K ...000011' and '8-K ...000024' are the 10-K and the 10-Q; the 8-Ks are -000008 and -000021."
+    },
+    {
+      "ticker": "ZTS",
+      "claim": "'Consolidated long-term debt jumped from $5,231mm (Jun 2025) to $9,042mm (Dec 2025) ... leverage has roughly doubled in two quarters'; $3.8bn of new debt",
+      "dossier_location": "s6, s8",
+      "source": "XBRL LongTermDebtNoncurrent / LongTermDebtCurrent; 10-K acc 0001555280-26-000011",
+      "source_value": "Noncurrent 5,231 -> 9,042, but $1,350m was classified current at 30 Jun 2025 (nil after), so total debt rose from 6,581 to 9,042 (+37%); net debt/TTM EBITDA about 1.27x -> 1.62x. Gross issuance Aug 2025 $1.85bn senior notes + Dec 2025 $2.0bn convertible = $3.85bn",
+      "status": "FAIL",
+      "note": "Gross issuance right; 'doubled' is wrong (+37% total debt, +0.35x). $1,535m of convertible proceeds went to repurchases (10-K)."
+    },
+    {
+      "ticker": "ZTS",
+      "claim": "Net debt/EBITDA 'about 1.6x now' (basis Dec 2025: debt 9,042 - cash 2,450)",
+      "dossier_location": "s6, kill criterion 3",
+      "source": "10-Q acc 0001555280-26-000040 balance sheet",
+      "source_value": "30 Jun 2026: long-term debt 9,048, cash 1,476 -> net debt 7,572 = 1.86x the 4,066 TTM EBITDA used in the dossier",
+      "status": "FAIL",
+      "note": "The baseline for the 2.5x kill criterion is stale; current is about 1.9x (headroom 0.6x, not 0.9x). The dossier itself uses the June cash balance one bullet later."
+    },
+    {
+      "ticker": "ZTS",
+      "claim": "Reverse DCF: single-stage Gordon, required return 7.5%, FCF yield 6.87% -> implied perpetual +0.6% vs base +3%",
+      "dossier_location": "s7",
+      "source": "Recomputed on programme method (5.17% + Blume beta 0.82 x 4.14% = 8.56%; FCF after SBC; 10 years then 3%)",
+      "source_value": "Yahoo FCF 2,017 (6.87% of $29.36bn) less SBC ~95 = 1,922: implied +0.5% (8.56%), -2.0% (7.5%), +2.5% (9.5%). On statement FCF (OCF 2,840 less capex 524 = 2,316, less SBC 2,221): -1.4% at 8.56%",
+      "status": "FAIL",
+      "note": "Rate not tied to the Treasury (7.5% = 5.17% + 2.3%), perpetual single-stage, SBC added back. Direction unchanged on restatement: implied 0.5% (range -2.0% to +2.5%) is below the +3% base. FY26 adjusted net income is guided down 5-9%, so the trailing FCF base is generous. Verdict WATCH unchanged."
+    },
+    {
+      "ticker": "ZTS",
+      "claim": "Securities class action (S.D.N.Y. No. 26-cv-04401, class period Jan 2025-May 2026), 'not yet reflected ... in the 10-Q ... at the motion stage'",
+      "dossier_location": "s8, s11",
+      "source": "10-Q acc 0001555280-26-000040 Legal note",
+      "source_value": "10-Q discloses City of Ann Arbor ... v. Zoetis, Case No. 1:26-cv-04401, class period 14 Jan 2025 - 6 May 2026, 'early stages ... have not yet responded to the complaint'",
+      "status": "MINOR",
+      "note": "The case is disclosed in the 10-Q (no accrual) and no response or motion has been filed; kill criterion 4 ('survives a motion to dismiss') is premature but valid."
+    },
+    {
+      "ticker": "ZTS",
+      "claim": "U.S. companion animal product sales -11%; U.S. livestock +23%; international companion animal +5% organic; H1'26 FCF 1,056-227 = 829; FY25 OCF 2,904 - capex 621 = 2,283; buybacks 3,235 (FY25) and 1,190 (H1'26); equity 3,148",
+      "dossier_location": "s4, s6, s8",
+      "source": "Q2 release; 10-Q; 10-K",
+      "source_value": "Release: US companion animal -11%, livestock +23%, international companion animal +5% organic; XBRL OCF, capex, repurchase and equity values reproduce",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "ZTS",
+      "claim": "'U.S. canine OA pain (Librela/Lenivia) revenue -24% YoY to $34mm'; derivative suits filed June 2026; Form 4 pattern",
+      "dossier_location": "s4, F100 key_adverse_facts",
+      "source": "Q2 release, 10-Q",
+      "source_value": "The release and 10-Q give no product-level revenue for Librela (only 'lower sales of Librela'); derivative suits not located in the 10-Q",
+      "status": "UNVERIFIABLE",
+      "note": "The figure appears only in the dossier and summary; no primary source found."
+    },
+    {
+      "ticker": "ZTS",
+      "claim": "Red-flag scan completeness (leadership)",
+      "dossier_location": "s11",
+      "source": "8-K acc 0001193125-26-338080 (6 Aug 2026, Item 5.02)",
+      "source_value": "James Saccaro appointed EVP, CFO and COO effective 17 Aug 2026",
+      "status": "MINOR",
+      "note": "The new CFO/COO appointment is not mentioned in the red-flag scan; informational."
+    }
+  ],
+  "verdict_changes": []
+}

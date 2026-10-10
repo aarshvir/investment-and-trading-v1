@@ -1,0 +1,936 @@
+{
+ "as_of": "2026-10-10",
+ "scope": [
+  "MRK",
+  "MRNA",
+  "MRSH",
+  "MRVL",
+  "MS",
+  "MSFT",
+  "MSI",
+  "MTD",
+  "MU",
+  "NCLH"
+ ],
+ "facts": [
+  {
+   "ticker": "MRK",
+   "claim": "Q2-26 sales $16,607M, GAAP EPS -$0.54 (Jun-26 quarter); Q1-26 -$1.72; Sep-25 $17,276M/EPS 2.32",
+   "dossier_location": "MRK.md s4 table",
+   "source": "10-Q acc 0000310158-26-000212 (XBRL); 8-K Ex-99.1 acc 0001104659-26-090045",
+   "source_value": "Q2-26 revenue 16,607; NI -1,335; diluted EPS -0.54 (Q2-25 1.76); Q1-26 16,286 / -4,240 / -1.72; Q3-25 17,276 / 5,785 / 2.32",
+   "status": "PASS",
+   "note": "Period labels correct (calendar FY). Release: GAAP loss/share $0.54, non-GAAP loss/share $0.13 incl. $2.31 Terns charge. TTM GAAP NI ~ $3.2bn reproduces (5,785+Q4-25 ~2,960-4,240-1,335)."
+  },
+  {
+   "ticker": "MRK",
+   "claim": "Aug 4 2026 guidance: sales $66.3-67.3B (prior $65.8-67.0B); non-GAAP EPS $2.66-2.76 incl. $2.43/sh Terns charges ($2.31 one-time); tax 35.0-36.0% vs 23.5-24.5%",
+   "dossier_location": "MRK.md s5",
+   "source": "8-K Ex-99.1 acc 0001104659-26-090045",
+   "source_value": "'Narrows and Raises Expected Worldwide Sales Range To Be Between $66.3 Billion and $67.3 Billion'; 'Now Expects Non-GAAP EPS To Be Between $2.66 and $2.76; Outlook Includes Charges of $2.43 per Share for the Acquisition of Terns'; tax 35.0% to 36.0% vs 23.5% to 24.5%",
+   "status": "PASS",
+   "note": "Verbatim. The dossier's $8.59-8.69 add-back arithmetic ($2.66/2.76 + 3.62 + 2.31) is correct."
+  },
+  {
+   "ticker": "MRK",
+   "claim": "Oct 30 2025, Feb 3 2026 and Apr 30 2026 guidance quotes",
+   "dossier_location": "MRK.md s5",
+   "source": "8-K Ex-99.1 acc 0001104659-25-103974, -26-009495, -26-052081",
+   "source_value": "$64.5-65.0B and EPS $8.93-8.98; $65.5-67.0B and EPS $5.00-5.15 with ~$3.65 Cidara charge; $65.8-67.0B and EPS $5.04-5.16, Terns ~$5.8B / ~$2.35 per share excluded",
+   "status": "PASS",
+   "note": "All three quotes appear verbatim; FY25 sum of quarters = $65,011M."
+  },
+  {
+   "ticker": "MRK",
+   "claim": "Debt $53.9B (loans payable $2,825M + LTD $51,081M); cash $6,849M + ST investments $292M; net debt ~ $45.5B; kill criterion 2 on same basis",
+   "dossier_location": "MRK.md s6 and s9 item 2",
+   "source": "10-Q acc 0000310158-26-000212 balance sheet 30 Jun 2026",
+   "source_value": "Loans payable and current portion 2,825; long-term debt 51,081 (Dec-25 46,750 + 2,589); cash 6,849; short-term investments 292",
+   "status": "PASS",
+   "note": "Consolidated, correct date. Net debt is $46.8B using only cash plus short-term investments; $45.5B needs the $8,363M cash-and-investments figure that includes long-term investments (not located on the 10-Q balance sheet face; MINOR definitional point). Crosstie flag (53.9 vs 51.1) is just current + long-term portions."
+  },
+  {
+   "ticker": "MRK",
+   "claim": "TTM OCF $19.97B, capex $3.90B, FCF $16.1B; investing outflow $15.8B in H1-26 (Cidara/Terns); shares 2,467M",
+   "dossier_location": "MRK.md s6",
+   "source": "10-Q acc 0000310158-26-000212",
+   "source_value": "H1-26 OCF 9,288 (3,918+5,370), capex 1,884 (991+893); 'Cash used in investing activities was $15.8 billion in the first six months'; shares 2,467,171,638 at 31 Jul 2026",
+   "status": "PASS",
+   "note": "Quarter table sums: 7,822+2,857+3,918+5,370 = 19,967; capex 987+1,033+991+893 = 3,904."
+  },
+  {
+   "ticker": "MRK",
+   "claim": "Keytruda 50% of sales ($8.37B), Winrevair $588M (+75%), Qlex $463M; Keytruda IRA selection expected 2027 effective 1 Jan 2029",
+   "dossier_location": "MRK.md s2, s8, s9",
+   "source": "8-K Ex-99.1 acc 0001104659-26-090045; 10-Q acc 0000310158-26-000212",
+   "source_value": "Keytruda/Qlex $8.4B (+5%), Qlex $463M, Winrevair $588M (+75%); 10-Q: 'expects that Keytruda ... will be selected in 2027 for government price setting, which would become effective on January 1, 2029'",
+   "status": "PASS",
+   "note": "Exact $8.37B is in the product table; rounded $8.4B in the release headline."
+  },
+  {
+   "ticker": "MRK",
+   "claim": "Reverse DCF: 8% cost of equity, start FCF $13.1B (TTM FCF $16.1B less $3.0B BD), implied 10-yr FCF CAGR 8.5% vs base 5.2%: 'above'",
+   "dossier_location": "MRK.md s7",
+   "source": "Recomputed from dossier inputs; d4 beta 0.226 (Blume 0.48); 10Y UST 5.17% (25 Sep 2026)",
+   "source_value": "8.48% reproduces at 8%. SBC TTM $892M not deducted: start $12.2B gives 9.4% at 8%, 7.4% at the programme Ke 5.17% + 0.48 x 4.14% = 7.2%. Base-path value $129/sh and bull $180/sh at 7.2% after SBC",
+   "status": "FAIL",
+   "note": "Method is FCF-based with an explicit rate but (i) SBC is not deducted (6.9% of start FCF) and (ii) 8% is not tied to rf 5.17% + beta x ERP (ERP implied 2.8%). Restated implied growth 7.4-9.4% still above base 5.2%; 'above' and WATCH stand. Correction appended."
+  },
+  {
+   "ticker": "MRK",
+   "claim": "3-year scenario returns bear -17.7%, base -6.3%, bull +11.5% (EPS 6.3/8.0/11.5 x 11.5/14/17 + $3.5 dividends/yr)",
+   "dossier_location": "MRK.md s7",
+   "source": "Recomputed",
+   "source_value": "(72+10.4)/148.78 -> -17.9%; (112+10.6)/148.78 -> -6.2%; (196+10.8)/148.78 -> +11.6%",
+   "status": "PASS",
+   "note": "Arithmetic reproduces within rounding."
+  },
+  {
+   "ticker": "MRK",
+   "claim": "Verdict WATCH supported by own evidence (price ~ bull value, base value $116/sh, Keytruda 50% of sales, net debt up $16B of acquisitions)",
+   "dossier_location": "MRK.md s1",
+   "source": "Dossier evidence",
+   "source_value": "Price $148.78 between base ($117-135 depending on Ke) and bull ($159-186)",
+   "status": "PASS",
+   "note": "WATCH is consistent with implied above base and a negative base-case 3-year return."
+  },
+  {
+   "ticker": "MRNA",
+   "claim": "Q2-26 revenue $145M, net loss $(782)M, GAAP EPS $(1.97); Q1-26 389/(1,343)/(3.40); Q3-25 1,016/(200)/(0.51); Q2-25 142/(825)/(2.13)",
+   "dossier_location": "MRNA.md s4 table",
+   "source": "10-Q acc 0001682852-26-000150 and -26-000060 (XBRL); 8-K Ex-99.1 acc 0001682852-26-000147",
+   "source_value": "Q2-26 revenue 145, NI -782, EPS -1.97; Q1-26 389/-1,343/-3.40; Q3-25 1,016/-200/-0.51; Q2-25 142/-825/-2.13",
+   "status": "PASS",
+   "note": "Period labels correct. FY25 revenue 1,944 and NI -2,822 (10-K acc 0001682852-26-000033) give Q4-25 678 / -826 as in the dossier; Q1-25 108 / -971 (XBRL EPS -2.52; dossier shows n/a)."
+  },
+  {
+   "ticker": "MRNA",
+   "claim": "Jul 2026 guidance: year-end cash $4.7-5.2B; R&D ~$2.9B (from ~$3.0B); revenue 'up to 10% growth'",
+   "dossier_location": "MRNA.md s5",
+   "source": "8-K Ex-99.1 acc 0001682852-26-000147",
+   "source_value": "'Year-end cash and investments for 2026 are now projected to be $4.7 to $5.2 billion'; 'R&D ... approximately $2.9 billion, lowered from approximately $3.0 billion'; 'targeting up to 10% growth from 2025 revenue'",
+   "status": "PASS",
+   "note": "Verbatim."
+  },
+  {
+   "ticker": "MRNA",
+   "claim": "Earlier guidance (Nov 2025, Jan, Feb, May 2026): revenue $1.6-2.0B, cash $6.5-7B; ~$8.1B cash and ~$1.9B revenue; 2026 cash $5.5-6.0B; $4.5-5.0B and cost of sales ~$1.8B",
+   "dossier_location": "MRNA.md s5",
+   "source": "8-K Ex-99.1 acc 0001682852-25-000073, -26-000007, -26-000015, -26-000057",
+   "source_value": "All five quotes found verbatim in the cited releases",
+   "status": "PASS",
+   "note": "No invented guidance."
+  },
+  {
+   "ticker": "MRNA",
+   "claim": "Cash $1,723M + investments $3,415M + non-current $1,772M = $6,910M; H1 operating cash flow -$1,156M, capex $99M; term loan $591M carrying",
+   "dossier_location": "MRNA.md s6",
+   "source": "10-Q acc 0001682852-26-000150",
+   "source_value": "Cash 1,723; investments 3,415; investments non-current 1,772; net cash used in operating activities (1,156); PP&E purchases (99); long-term debt 591",
+   "status": "PASS",
+   "note": "Consolidated, 30 Jun 2026."
+  },
+  {
+   "ticker": "MRNA",
+   "claim": "$3.0bn 0.00% convertible notes due 1 Mar 2032 closed 1 Sep 2026 incl. $400M option; conversion price ~$210.58 (47.5% premium to $142.77), cap ~$392.62; 14.2M underlying shares",
+   "dossier_location": "MRNA.md s6",
+   "source": "8-K acc 0001193125-26-378505",
+   "source_value": "'$3,000,000,000 aggregate principal amount of 0.00% Convertible Senior Notes due 2032 ... including ... additional $400,000,000'; 4.7487 shares per $1,000; ~$210.58; cap ~$392.62",
+   "status": "PASS",
+   "note": "3,000 x 4.7487 = 14.25M shares = 3.6% of 399.2M."
+  },
+  {
+   "ticker": "MRNA",
+   "claim": "Arbutus/Genevant: $950M paid July 2026; contingent up to $1.3bn, no accrual; covenant tied to 30-day average market cap above $5.0bn; 399.2M shares",
+   "dossier_location": "MRNA.md s6, s9",
+   "source": "10-Q acc 0001682852-26-000150; 8-K Ex-99.1 acc -26-000147",
+   "source_value": "'could be required to make an additional payment of up to $1.3 billion'; 'no accrual has been recorded'; 'trailing 30-day average market capitalization ... exceeds $5.0 billion'; 399,235,889 shares at 24 Jul 2026; 'subsequently paid $950 million in July 2026'",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MRNA",
+   "claim": "Reverse DCF 9% / 3% terminal: price needs year-10 FCF ~$8.0bn vs base $3.0bn ('above'); net cash $5.4bn",
+   "dossier_location": "MRNA.md s7",
+   "source": "Recomputed from dossier inputs; d4 beta 1.106",
+   "source_value": "Path -1.5, -0.5 then linear ramp: market cap $79.4bn less net cash $5.4bn needs $8.0bn at 9% ($9.0bn at 9.6% = 5.17% + Blume beta 1.07 x 4.14%); $3bn year-10 gives ~$78/sh incl. cash",
+   "status": "MINOR",
+   "note": "Reproduces exactly. Rate 9% is below the programme rate (~9.6%) and SBC treatment of the ramp is unstated, but both would raise the required FCF, so 'above' and REJECT are strengthened, not weakened."
+  },
+  {
+   "ticker": "MRNA",
+   "claim": "3-year scenarios: bear ~$19 (-55%/yr), base ~$96 (-22%/yr), bull ~$252 (+8%/yr)",
+   "dossier_location": "MRNA.md Scenario basis",
+   "source": "Recomputed",
+   "source_value": "(96/198.88)^(1/3)-1 = -21.6%; (19/198.88)^(1/3)-1 = -54.6%; (252/198.88)^(1/3)-1 = +8.2%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MRNA",
+   "claim": "mFLUSIVA FDA approval on 5 Aug 2026 (press only)",
+   "dossier_location": "MRNA.md s2, s8",
+   "source": "EDGAR submissions list: no 8-K after 31 Jul 2026 announces it (8-Ks of 1 Sep and 30 Sep concern financing and management)",
+   "source_value": "Not in an SEC filing",
+   "status": "UNVERIFIABLE",
+   "note": "Dossier labels it press-sourced and non-primary; it does not drive the REJECT."
+  },
+  {
+   "ticker": "MRNA",
+   "claim": "Verdict REJECT supported: implied $8bn FCF vs base $3bn, base 3-yr return -22%/yr, price 17% above highest target",
+   "dossier_location": "MRNA.md s1, s7",
+   "source": "Dossier evidence",
+   "source_value": "",
+   "status": "PASS",
+   "note": "Own evidence supports REJECT."
+  },
+  {
+   "ticker": "MRSH",
+   "claim": "Q2-26 revenue $7,404M (+6.2%), GAAP NI $1,266M, GAAP EPS $2.63; Q1-26 $7,597M / $1,146M / $2.36; Q3-25 $6,351M / $747M / $1.51; Q2-25 $6,974M / $1,211M / $2.45",
+   "dossier_location": "MRSH.md s4 table",
+   "source": "10-Q acc 0000062709-26-000195, -26-000098, -25-000125, -25-000069 (XBRL); 8-K Ex-99.1 acc 0000062709-26-000193",
+   "source_value": "Q2-26 7,404 / 1,266 / 2.63; Q1-26 7,597 / 1,146 / 2.36; Q3-25 6,351 / 747 / 1.51; Q2-25 6,974 / 1,211 / 2.45; operating income Q2-26 1,899, Q1-26 1,754",
+   "status": "PASS",
+   "note": "Period labels correct. Q4-25 derived from FY25 10-K acc 0000062709-26-000022 (revenue 26,981, op income 6,223, NI 4,160, EPS 8.43): 6,595 / 1,219 / 821 / 1.68 as in dossier. Q3-24 5,697 / 747 / 1.51 equals Q3-25 NI and EPS, genuine coincidence (both in XBRL)."
+  },
+  {
+   "ticker": "MRSH",
+   "claim": "H1-26 GAAP EPS $4.99 vs $5.23 (-5%); adjusted EPS $6.25 (+8%); GAAP operating income down 5% YTD; no numeric guidance in releases",
+   "dossier_location": "MRSH.md s4, s5",
+   "source": "8-K Ex-99.1 acc 0000062709-26-000193 (21 Jul 2026)",
+   "source_value": "'$4.99 per diluted share, compared with $5.23'; 'Adjusted earnings per share increased 8% to $6.25'; H1 operating income 3,653 vs 3,834 (-4.7%); release contains no outlook or guidance figures",
+   "status": "PASS",
+   "note": "Quarter-level nuance: Q2-26 GAAP EPS rose 7% YoY ($2.63 vs $2.45); the whole H1 decline is Q1-26 (2.36 vs 2.79)."
+  },
+  {
+   "ticker": "MRSH",
+   "claim": "Greensill: $425M gross liability booked Q1-26 at Marsh Ltd / Marsh Pty; White Oak settled May 2025 via E&O; Greensill Bank (~$3bn) settled June 2026; Credit Suisse (~$2bn) unresolved; 'no assurance' language",
+   "dossier_location": "MRSH.md s6, s11",
+   "source": "10-Q acc 0000062709-26-000195 Note 17",
+   "source_value": "Gross liability of $425 million in Q1 2026; White Oak settled May 2025 recovered through E&O; Greensill Bank claimed ~$3 billion and settled June 2026; Credit Suisse claimed ~$2 billion; 'there can be no assurance that the Company's current estimate will prove to be accurate'",
+   "status": "PASS",
+   "note": "All figures and entity scope match. The recorded liability also covers management's estimate for the remaining Credit Suisse claims (10-Q), which the dossier implies."
+  },
+  {
+   "ticker": "MRSH",
+   "claim": "Next procedural milestone for the Credit Suisse claim 'not dated in the 10-Q text' (open item)",
+   "dossier_location": "MRSH.md s10",
+   "source": "10-Q acc 0000062709-26-000195 Note 17",
+   "source_value": "'Trial is currently scheduled for September 2026.'",
+   "status": "FAIL",
+   "note": "The 10-Q does state a trial date (September 2026), i.e. before the 25 Sep price cutoff and before this audit. Outcome not in any SEC filing to 9 Oct 2026. Correction appended; verdict unchanged (INCLUDE-SMALL already reserves for this claim)."
+  },
+  {
+   "ticker": "MRSH",
+   "claim": "Aviation information-sharing investigation and Brazil antitrust matter listed as two separate open items",
+   "dossier_location": "MRSH.md s11 and F54 key_adverse_facts",
+   "source": "10-Q acc 0000062709-26-000195 legal proceedings",
+   "source_value": "One item: January 2019 notice that Brazil's CADE commenced an administrative proceeding against brokers and insurers 'to investigate an alleged sharing of sensitive commercial and competitive confidential information' in aviation insurance and reinsurance",
+   "status": "FAIL",
+   "note": "Same matter counted twice. Not a new risk; correction appended."
+  },
+  {
+   "ticker": "MRSH",
+   "claim": "Balance sheet 30 Jun 2026: own cash $1,700M, fiduciary cash $12,203M, LTD $18,891M + current portion $646M + CP $1,024M = $20,561M; equity $15,433M; assets $59,682M; net debt $18,861M",
+   "dossier_location": "MRSH.md s6",
+   "source": "10-Q acc 0000062709-26-000195 balance sheet",
+   "source_value": "Cash 1,700; fiduciary cash 12,203; long-term debt 18,891; short-term debt 1,670 (= 646 + 1,024); total equity 15,433; total assets 59,682",
+   "status": "PASS",
+   "note": "Own-liquidity vs fiduciary scope handled correctly. Net debt/EBITDA 2.43x uses d4 EBITDA $7.758bn (not independently rebuilt)."
+  },
+  {
+   "ticker": "MRSH",
+   "claim": "Buybacks Q2 4.5M shares $750M, H1 8.7M shares $1.5bn; quarterly dividend $0.990 declared July 2026; 5 acquisitions for $181M",
+   "dossier_location": "MRSH.md s6",
+   "source": "10-Q acc 0000062709-26-000195",
+   "source_value": "'repurchased approximately 4.5 million shares for $750 million'; '8.7 million shares ... $1.5 billion'; 'declared a quarterly dividend of $0.990 per share'; '5 acquisitions in 2026 for a total purchase consideration of $181 million'",
+   "status": "PASS",
+   "note": "The 10 percent increase and the 2026-07-08 date are not stated in the 10-Q text read (UNVERIFIABLE detail; prior quarterly dividend of $0.90 implied)."
+  },
+  {
+   "ticker": "MRSH",
+   "claim": "TTM OCF $5.078bn, FCF $4.785bn (d4); SBC 'not quantified'",
+   "dossier_location": "MRSH.md s6",
+   "source": "10-K acc 0000062709-26-000022; 10-Q acc 0000062709-26-000195 cash flow",
+   "source_value": "TTM OCF = 5,292 - 1,049 + 835 = 5,078; capex = 291 - 114 + 134 = 311; FCF 4,767; SBC = 394 - 210 + 235 = 419",
+   "status": "MINOR",
+   "note": "d4 FCF within 0.4% of XBRL. SBC is quantifiable ($419M TTM), not an information gap; it matters for the valuation."
+  },
+  {
+   "ticker": "MRSH",
+   "claim": "Reverse DCF: FCF/share $10.03, cost of equity 7.1% (beta 0.577), 18x terminal FCF multiple, implies about 0.8%/yr 10-year growth vs ~8% base ('below')",
+   "dossier_location": "MRSH.md s7",
+   "source": "Recomputed; d4 beta 0.577; 10Y UST 5.17% (25 Sep 2026); programme ERP 4.14%",
+   "source_value": "0.8% reproduces. SBC $419M not deducted: FCF after SBC $9.11/share. Ke 7.1% implies ERP 3.35%; programme Ke = 5.17% + Blume beta 0.717 x 4.14% = 8.14%. Restated implied growth 2.0% (Ke 7.1%) to 3.0% (Ke 8.14%); 3.3-4.3% if the unpaid $425M accrual is also deducted from the base",
+   "status": "FAIL",
+   "note": "SBC treated as free and discount rate not tied to rf + ERP. Restated implied growth 2.0-4.3% is still well below the ~8% base case, so 'below' and INCLUDE-SMALL stand. Correction appended; F54 reconciliation text updated."
+  },
+  {
+   "ticker": "MRSH",
+   "claim": "3-year scenarios bear -3.5%, base +6.8%, bull +13.2%",
+   "dossier_location": "MRSH.md F54 summary",
+   "source": "Recomputed from F54 scenario_basis (trailing EPS $8.19, exits 16x/19x/21x)",
+   "source_value": "Bear (8.95 x 16 + dividends)/171.12 -> -3.3%; base (10.32 x 19 + dividends) -> +6.7%; bull -> +12.7%",
+   "status": "PASS",
+   "note": "Reproduces within rounding."
+  },
+  {
+   "ticker": "MRSH",
+   "claim": "Section 2 says two segments; header note says 'four operating segments'",
+   "dossier_location": "MRSH.md header note vs s2",
+   "source": "10-Q acc 0000062709-26-000195 segment note",
+   "source_value": "Reportable segments: Risk & Insurance Services and Consulting (four businesses: Marsh, Guy Carpenter, Mercer, Oliver Wyman)",
+   "status": "MINOR",
+   "note": "The note should read four businesses within two segments; no figure affected."
+  },
+  {
+   "ticker": "MRVL",
+   "claim": "Quarterly table: Q2 FY27 revenue $2,739.3M (+37%), GAAP EPS $0.33, non-GAAP $0.94; Q1 FY27 $2,417.8M, $0.04 / $0.80; Q4 FY26 $2,219M, $0.46 / $0.80; FY26 $8,194.6M, $3.07 / $2.84; Q2/Q3 FY26 $2,006.1M / $2,074.5M",
+   "dossier_location": "MRVL.md s4 table",
+   "source": "10-Q acc 0001835632-26-000025, -26-000019; 8-K Ex-99.1 acc 0001835632-26-000022, -26-000014, -26-000006",
+   "source_value": "Q2 FY27 revenue 2,739.3, GAAP EPS 0.33, non-GAAP 0.94; Q1 FY27 2,417.8, 0.04 / 0.80; Q4 FY26 0.46 / 0.80; FY26 net revenue $8.195B, GAAP $3.07, non-GAAP $2.84; Q2 FY26 2,006.1",
+   "status": "PASS",
+   "note": "Fiscal-quarter labels correct (FY27 ends Jan 2027). Q2 FY27 YoY +36.6% and Q1 +27.5% reproduce."
+  },
+  {
+   "ticker": "MRVL",
+   "claim": "Q2 FY27 operating cash flow $1,244.3M '(6mo cumulative less Q1)'",
+   "dossier_location": "MRVL.md s4 table, OCF column",
+   "source": "8-K Ex-99.1 acc 0001835632-26-000022 cash-flow statement; 10-Q acc 0001835632-26-000025",
+   "source_value": "Q2 FY27 net cash from operations $605.5M (three months); $1,244.3M is the six-month figure; Q1 FY27 $638.8M",
+   "status": "FAIL",
+   "note": "Row shows the six-month cumulative as the quarter value. Correction appended."
+  },
+  {
+   "ticker": "MRVL",
+   "claim": "Guidance: Q1 FY27 $2.400B +/-5% (beat by $18.0M), Q2 FY27 $2.700B +/-5% (beat by $39.0M), Q3 FY27 $3.150B +/-5%, non-GAAP GM 57.5-58.5%",
+   "dossier_location": "MRVL.md s5",
+   "source": "8-K Ex-99.1 acc 0001835632-26-000006, -26-000014, -26-000022",
+   "source_value": "'Net revenue is expected to be $2.400 billion +/- 5%'; '$2.700 billion +/- 5%'; '$3.150 billion +/- 5%'; 'Non-GAAP gross margin is expected to be 57.5% to 58.5%'; actual Q2 non-GAAP GM 58.9%",
+   "status": "PASS",
+   "note": "All verbatim. Q2 release also confirms Investor Day on 6 Oct 2026."
+  },
+  {
+   "ticker": "MRVL",
+   "claim": "'Third consecutive raise to the FY27/FY28 outlook'; 'three straight quarters of beat-and-raise'",
+   "dossier_location": "MRVL.md s4, s5",
+   "source": "8-K Ex-99.1 acc 0001835632-26-000006 (5 Mar), -26-000014 (27 May), -26-000022 (27 Aug)",
+   "source_value": "May release: 'significantly raising ... fiscal 2027 and fiscal 2028'; Aug release: 'again raising ... both fiscal 2027 and fiscal 2028'; 5 Mar release contains no FY27/FY28 raise language (no 'fiscal 2028' text)",
+   "status": "FAIL",
+   "note": "Two consecutive raises, not three; only two guides (Q1, Q2 FY27) have actual outcomes, the third is pending. Correction appended."
+  },
+  {
+   "ticker": "MRVL",
+   "claim": "Balance sheet 1 Aug 2026: cash $3,932.8M, debt $4,962.9M (no current portion), net debt about $1,030M; equity $14.31B -> $18.53B; goodwill $11.06B -> $13.87B; $2.098B stock for Celestial AI / XConn; buybacks $400M, dividends $107.7M",
+   "dossier_location": "MRVL.md s6",
+   "source": "10-Q acc 0001835632-26-000025; 8-K Ex-99.1 acc -26-000022",
+   "source_value": "Cash 3,932.8; long-term debt 4,962.9 (current portion 0 vs 499.8 at 31 Jan); equity 18,531.6 vs 14,308.4; goodwill 13,873.9 vs 11,062.2; stock issued for acquisitions 2,098.0; repurchases 400.0; dividends 107.7; Celestial AI closed 2 Feb 2026, XConn 10 Feb 2026",
+   "status": "PASS",
+   "note": "XBRL crosstie flag (equity 18,215.8) is the 2 May 2026 balance, not the 1 Aug figure the dossier cites."
+  },
+  {
+   "ticker": "MRVL",
+   "claim": "NVIDIA $2.0bn Series A Convertible Preferred, 31 Mar 2026, conversion price about $91.8355, about 21.8M shares",
+   "dossier_location": "MRVL.md s6",
+   "source": "10-Q acc 0001835632-26-000025",
+   "source_value": "Aggregate purchase price $2.0 billion; stated value $1,000; conversion price approximately $91.8355; aggregate maximum approximately 21.8 million shares",
+   "status": "PASS",
+   "note": "2,000,000,000 / 91.8355 = 21.78M."
+  },
+  {
+   "ticker": "MRVL",
+   "claim": "Valuation text: NTM EPS $5.86, base case 15%/yr EPS growth for 3 years, multiple 44.7x to 25x implies price near $417 and only ~1.5%/yr",
+   "dossier_location": "MRVL.md s7",
+   "source": "Recomputed; F61_summary scenario_basis",
+   "source_value": "5.86 x 1.15^3 x 25 = $222.8 (-5.3%/yr). The F61 summary base case is 30%/yr growth at 25x = $321.9 (+7.1%/yr); 15%/yr is its bear case (18x, -15.1%/yr)",
+   "status": "FAIL",
+   "note": "Text contradicts its own inputs and the scenario file ($417 and 1.5%/yr cannot be reproduced). Correction appended."
+  },
+  {
+   "ticker": "MRVL",
+   "claim": "Valuation method: EPS (non-GAAP, SBC added back) used as cash flow; FCF yield 1.0%",
+   "dossier_location": "MRVL.md s7",
+   "source": "10-K acc 0001835632-26-000011; 10-Q acc 0001835632-26-000025",
+   "source_value": "TTM OCF 2,200.3 (1,750.5 - 794.5 + 1,244.3); capex 470.2 (354.1 - 166.3 + 282.4); FCF 1,730.1; SBC 828.9 (590.8 - 295.7 + 533.8); FCF after SBC about 901; market cap $229.7bn (876.9M shares x $261.94)",
+   "status": "FAIL",
+   "note": "Programme Ke = 5.17% + Blume beta 1.84 (d4 beta 2.253) x 4.14% = 12.8%. Price implies 10-year FCF growth of about 40-50%/yr from the TTM base (30-40% from FCF before SBC). 'Above base' and WATCH are reinforced. Correction appended."
+  },
+  {
+   "ticker": "MRVL",
+   "claim": "Verdict WATCH and scenarios bear -15.1%, base +7.2%, bull +35.1% (F61)",
+   "dossier_location": "MRVL.md s1; F61 summary",
+   "source": "Recomputed",
+   "source_value": "(5.86 x 1.15^3 x 18/261.94)^(1/3) - 1 = -15.1%; 30%/yr at 25x = +7.1%; 40%/yr at 40x = +35.1%",
+   "status": "PASS",
+   "note": "Arithmetic reproduces; base return +7.2% is below the 12.8% cost of equity, consistent with WATCH."
+  },
+  {
+   "ticker": "MS",
+   "claim": "Net revenues / NI / diluted EPS by quarter: Q2-26 21,348 / 5,581 / 3.46; Q1-26 20,580 / 5,567 / 3.43; Q4-25 17,890 / 4,397 / 2.68; Q3-25 18,224 / 4,610 / 2.80; Q2-25 16,792 / 3,539 / 2.13",
+   "dossier_location": "MS.md s4 table",
+   "source": "10-Q acc 0000895421-26-000212, -26-000121, -25-000539; 10-K acc 0000895421-26-000086 (XBRL)",
+   "source_value": "RevenuesNetOfInterestExpense and NetIncomeLoss as listed; Q4-25 = FY25 (70,645 / 16,861 / 10.21) less 9M (52,755 / 12,464 / 7.53) = 17,890 / 4,397 / 2.68",
+   "status": "PASS",
+   "note": "Period labels correct; YoY percentages (+27.1%, +16.0%, +18.5%, +10.3%) reproduce."
+  },
+  {
+   "ticker": "MS",
+   "claim": "TTM (Q3'25-Q2'26): revenue $77.99B, net income $18.16B, diluted EPS $12.37",
+   "dossier_location": "MS.md s4",
+   "source": "Sum of the four quarters above (XBRL)",
+   "source_value": "Revenue 78,042; net income applicable to MS 20,155 (4,610 + 4,397 + 5,567 + 5,581); diluted EPS 12.37",
+   "status": "FAIL",
+   "note": "EPS correct; net income understated by $2.0bn and revenue by $0.05bn. Not load-bearing (P/E uses EPS). Correction appended."
+  },
+  {
+   "ticker": "MS",
+   "claim": "Q2-26 segment: IS $11.04B (+44%), IB +58%, Equity +69% (record), FI +13%; WM $8.86B (+14%), NNA $148.1B vs $59.2B, IM $1.65B (+6%), AUM $2.00T",
+   "dossier_location": "MS.md s4",
+   "source": "8-K Ex-99.1 acc 0000895421-26-000207 (a2q26msearningsrelease.htm)",
+   "source_value": "IS 11,040 vs 7,643; IB 2,437 vs 1,540; Equity 6,300 vs 3,721; FI 2,455 vs 2,180; WM 8,856 vs 7,764; NNA $148.1bn vs $59.2bn; IM 1,646 vs 1,552, AUM $2,004bn",
+   "status": "PASS",
+   "note": "All percentages reproduce."
+  },
+  {
+   "ticker": "MS",
+   "claim": "'Wealth Management now the largest single revenue segment' (verdict, bull case)",
+   "dossier_location": "MS.md s1, s8",
+   "source": "8-K Ex-99.1 acc 0000895421-26-000207; 10-Q acc 0000895421-26-000212",
+   "source_value": "Q2-26 net revenues: Institutional Securities $11,040M vs Wealth Management $8,856M; ROTCE by segment IS 26%, WM 53%",
+   "status": "FAIL",
+   "note": "Institutional Securities is the largest segment by revenue (and equity capital); WM leads on pre-tax margin quality and ROTCE. Correction appended; verdict unchanged."
+  },
+  {
+   "ticker": "MS",
+   "claim": "Q2-26 ROE 20.7% / ROTCE 26.6% (Q2-25 13.9% / 18.2%); BVPS $67.80, TBVPS $53.18 (61.59 / 47.25); efficiency ratio 65% (71%); tax 23.1%",
+   "dossier_location": "MS.md s4, s5, s6",
+   "source": "8-K Ex-99.1 acc 0000895421-26-000207; 10-Q acc 0000895421-26-000212",
+   "source_value": "ROE 20.7 / 13.9; ROTCE 26.6 / 18.2; BVPS 67.80 / 61.59; TBVPS 53.18 / 47.25; efficiency 65 / 71; tax 23.1%; H1 ROTCE 26.8%",
+   "status": "PASS",
+   "note": "Efficiency ratio 65% is quarterly (also 65% for H1)."
+  },
+  {
+   "ticker": "MS",
+   "claim": "Capital: Std CET1 14.8% (15.0%), Std T1 16.5% (16.9%), Adv CET1 16.2% (15.7%), T1 leverage 6.0% (6.8%), SLR 4.9% (5.5%); kill criterion CET1 13.0%",
+   "dossier_location": "MS.md s6, s9",
+   "source": "8-K Ex-99.1 acc 0000895421-26-000207; 10-Q acc 0000895421-26-000212 capital buffer table",
+   "source_value": "All ratios match. Standardized requirement: 4.5% minimum + 7.3% buffer (SCB 4.3% + G-SIB 3.0%) = 11.8%",
+   "status": "PASS",
+   "note": "13.0% kill level sits 1.2 points above the 11.8% requirement, so it is a meaningful early-warning level; headroom is 3.0 points."
+  },
+  {
+   "ticker": "MS",
+   "claim": "Q2 buybacks $1.5B (vs $1.0B) at average $197.64; $20B multi-year authorisation from Q3 2026; quarterly dividend $1.15 (+$0.15)",
+   "dossier_location": "MS.md s6",
+   "source": "8-K Ex-99.1 acc 0000895421-26-000207; 10-Q",
+   "source_value": "Repurchases $1,500M vs $1,000M; average price $197.64 vs $123.22; 'up to $20 billion'; 'declared a $1.15 quarterly dividend per share, an increase of 15 cents'; period-end shares 1,572M (market cap about $308.6bn at $196.31)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MS",
+   "claim": "Equity net revenues +69% attributed by the company to 'favorable market conditions'; ROTCE quarter 'attributed largely to unusually favorable trading conditions'",
+   "dossier_location": "MS.md s3, s7",
+   "source": "8-K Ex-99.1 acc 0000895421-26-000207",
+   "source_value": "'Equity net revenues were a record on strong performance across businesses and regions, with notable strength in Asia, driven by strong client engagement and favorable market conditions'",
+   "status": "MINOR",
+   "note": "Company says client engagement and favorable conditions; 'unusually' and 'largely' are the dossier's interpretation. Interpretive, no number affected; marker appended."
+  },
+  {
+   "ticker": "MS",
+   "claim": "Reverse valuation: P/TBV 3.69x; cost of equity about 10%, g 4% gives implied sustainable ROTCE 26.1% vs 26.6% now vs base about 20% ('above')",
+   "dossier_location": "MS.md s7",
+   "source": "Recomputed; d4 beta 1.207; 10Y UST 5.17% (25 Sep 2026); ERP 4.14%",
+   "source_value": "196.31 / 53.18 = 3.69x; Blume beta 1.14 x 4.14% + 5.17% = 9.9% ~ 10%; 3.69 x (9.9% - 4%) + 4% = 25.8%",
+   "status": "PASS",
+   "note": "Bank method (P/TBV-ROTCE) is the right one and the rate is consistent with the 5.17% Treasury plus a programme ERP, though the dossier does not state the ERP. 'Above base' stands."
+  },
+  {
+   "ticker": "MS",
+   "claim": "Scenarios: bear -9.4% (EPS ~11, 12x), base +3.3% (13.5, 15x), bull +13.5% (16, 17x); TTM P/E 15.9x",
+   "dossier_location": "MS.md s7",
+   "source": "Recomputed",
+   "source_value": "Price + about $14 dividends over 3 years: bear (132 + 14)/196.31 -> -9.4%; base (202.5 + 14) -> +3.3%; bull (272 + 14) -> +13.4%; 196.31 / 12.37 = 15.9x",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MS",
+   "claim": "Management medium-term targets (efficiency under 70%, ROTCE 20%+) and 2024 settlements ($249.4M DOJ/SEC; $15M SEC)",
+   "dossier_location": "MS.md s5, s8, s11",
+   "source": "Not in the Q2 2026 release or 10-Q text read",
+   "source_value": "Dossier itself labels these secondary-source and unverified",
+   "status": "UNVERIFIABLE",
+   "note": "Disclosed limitation in the dossier; no impact on numbers."
+  },
+  {
+   "ticker": "MSFT",
+   "claim": "FY26 revenue $331.8B, operating income $155.2B (46.8%), segments Productivity $140.0B / Intelligent Cloud $137.8B / More Personal Computing $54.1B",
+   "dossier_location": "MSFT.md s4 table",
+   "source": "10-K acc 0001193125-26-323660 (fiscal year ended 30 Jun 2026)",
+   "source_value": "Revenue 331,839; operating income 155,237; P&BP 139,996; IC 137,791; MPC 54,052",
+   "status": "PASS",
+   "note": "Fiscal labels correct (FY26 = year to 30 Jun 2026). Q4 FY26 revenue $90.0B (8-K Ex-99.1 acc 0001193125-26-323632) = 331.8 - 241.9."
+  },
+  {
+   "ticker": "MSFT",
+   "claim": "FY2025 row: revenue ~282, ~14%, operating income ~128, ~45%, Productivity ~125, Intelligent Cloud ~114, More Personal Computing ~43",
+   "dossier_location": "MSFT.md s4 table",
+   "source": "10-K acc 0001193125-26-323660 segment note and income statement",
+   "source_value": "FY25: revenue 281,724 (+14.9%); operating income 128,528 (45.6%); P&BP 120,810; IC 106,265; MPC 54,649",
+   "status": "FAIL",
+   "note": "Totals right; segment split wrong (Productivity +3%, Intelligent Cloud +7%, MPC -21%). MPC was flat to down (54.6 to 54.1), not growing from ~43. Correction appended."
+  },
+  {
+   "ticker": "MSFT",
+   "claim": "Azure constant-currency growth Q2 FY26 ~33-34%, Q3 FY26 40%, Q4 FY26 43% ('accelerating over the last four quarters')",
+   "dossier_location": "MSFT.md s4 and s8 bull case 1",
+   "source": "8-K Ex-99.1 acc 0001193125-25-256310, -26-027198, -26-191457, -26-323632",
+   "source_value": "Azure and other cloud services: Q1 FY26 +40% (39% cc); Q2 FY26 +39% (38% cc); Q3 FY26 +40% (39% cc); Q4 FY26 +43% (43% cc)",
+   "status": "FAIL",
+   "note": "Q2 was 38% cc, not 33-34%; Q3 was 39% cc. Acceleration is one step (39% to 43%) in Q4, not a 33-40-43 ramp. Correction appended; verdict unchanged."
+  },
+  {
+   "ticker": "MSFT",
+   "claim": "Guided Azure growth beaten in each of the last two quarters (guide ~40% cc for Q4, delivered 43%)",
+   "dossier_location": "MSFT.md s5",
+   "source": "Earnings call guidance (not in the 8-K Ex-99.1)",
+   "source_value": "Delivered 43% confirmed; the ~40% guide is from the 29 Apr call, not an SEC document",
+   "status": "UNVERIFIABLE",
+   "note": "Q4 release also discloses discrete items (a $3.2bn Anthropic gain) versus guidance."
+  },
+  {
+   "ticker": "MSFT",
+   "claim": "FY26 CFO minus capex minus finance-lease principal = $63.886B; SBC $12.405B (3.7% of revenue); $51.481B after SBC (1.34% of equity value)",
+   "dossier_location": "MSFT.md s6",
+   "source": "10-K acc 0001193125-26-323660 cash-flow statement",
+   "source_value": "CFO 182,935; PP&E purchases 115,948; finance lease principal 3,101; SBC 12,405; 182,935 - 115,948 - 3,101 = 63,886; 63,886 - 12,405 = 51,481; 12,405 / 331,839 = 3.7%",
+   "status": "PASS",
+   "note": "Reproduces exactly. FCF after SBC is 38% of FY26 net income ($133.7B)."
+  },
+  {
+   "ticker": "MSFT",
+   "claim": "Total debt $128.8B vs cash $76.8B vs EBITDA $194.2B (d4); balance sheet 'not a constraint'",
+   "dossier_location": "MSFT.md s6",
+   "source": "10-K acc 0001193125-26-323660 balance sheet and lease note",
+   "source_value": "Cash 20,935 + short-term investments 55,908 = 76,843; borrowings 40,294 (31,067 + 9,227) + finance lease liabilities 66,594 + operating lease liabilities 21,925 = 128,813",
+   "status": "PASS",
+   "note": "Debt figure is consolidated and includes $88.5B of lease liabilities (finance leases up from $46.2B). Crosstie flag (46,156) compared with borrowings only. Net debt including leases about $52bn."
+  },
+  {
+   "ticker": "MSFT",
+   "claim": "Trailing EPS $17.97; diluted shares 7.453bn; 7.4255bn shares outstanding",
+   "dossier_location": "MSFT.md s4, s7",
+   "source": "10-K acc 0001193125-26-323660",
+   "source_value": "FY26 diluted EPS $17.95; weighted diluted shares 7,453M; 7,425,545,491 shares outstanding at 23 Jul 2026",
+   "status": "MINOR",
+   "note": "d4 trailing EPS differs by $0.02. FY26 GAAP EPS includes non-operating gains (OpenAI marks, $3.2bn Anthropic gain in Q4)."
+  },
+  {
+   "ticker": "MSFT",
+   "claim": "Copilot paid seats 30m by Q4 FY26; $37bn AI run-rate; EU DMA preliminary gatekeeper view on Azure (25 Jun 2026)",
+   "dossier_location": "MSFT.md s4, s8",
+   "source": "8-K Ex-99.1 acc 0001193125-26-323632; 10-K",
+   "source_value": "Release: 'Microsoft 365 Copilot reached over 30 million paid seats'. $37bn run-rate and DMA designation do not appear in the release or 10-K ('gatekeeper' 0 hits)",
+   "status": "UNVERIFIABLE",
+   "note": "Seat count confirmed; run-rate and DMA items are press-sourced and labelled so in the dossier."
+  },
+  {
+   "ticker": "MSFT",
+   "claim": "Reverse DCF: 12% discount rate, 46% margin, 28x terminal P/E on 10-year EPS; implied 12.7% constant revenue CAGR vs 10.9% base ('above'); base value $444",
+   "dossier_location": "MSFT.md s7",
+   "source": "Recomputed; d4 beta 1.108; 10Y UST 5.17% (25 Sep 2026)",
+   "source_value": "Base path 18/15/14/12/11/10/9/8/7/6% = 10.96% CAGR reproduces; EPS year 10 = $46.3; 28x at 12% = $417 + dividends = about $444. At Ke 9.6% (5.17% + Blume beta 1.07 x 4.14%) the same EPS method gives about $548. FCF method (conversion 41% rising to 86%, Ke 9.6%, g 3.5%): base $397, implied constant revenue CAGR 14.6%",
+   "status": "FAIL",
+   "note": "Method uses earnings with a 28x exit multiple and a 12% hurdle rather than a cost of equity; FCF after SBC is only 38% of net income today. The EPS-multiple answer flips sign at a CAPM rate (base about $548), whereas a consistent FCF method gives base $397 and implied 14.6%. 'Above' stands on the FCF basis only. Correction appended."
+  },
+  {
+   "ticker": "MSFT",
+   "claim": "3-year scenarios: bear $376 (-9.2%), base $716 (+12.2%), bull $982 (+24.6%)",
+   "dossier_location": "MSFT.md s7 table",
+   "source": "Recomputed from stated inputs",
+   "source_value": "Base 517.5 x 46% x 80% / 7.453 = EPS 25.55 x 28 = $715; bear 408.5 x 39% x 80% / 7.453 x 22 = $376; bull 583.3 x 49% x 80% / 7.453 x 32 = $982",
+   "status": "PASS",
+   "note": "Arithmetic reproduces; IRRs include roughly 1-1.5 points of dividends."
+  },
+  {
+   "ticker": "MSI",
+   "claim": "Q2 2026 (13wk to 2026-07-04): revenue $3,133M (+13.3%), operating income $809M (25.8%), GAAP EPS $3.33; Q1 2026 $2,714M / $525M / $2.18; FY2025 $11,682M / $2,988M / $12.75; Q2 2025 $2,765M / $692M / $3.04; Q3 2025 $3,009M / $770M / $3.33",
+   "dossier_location": "MSI.md s4 table",
+   "source": "10-Q acc 0000068505-26-000028, -26-000021, -25-000052; 10-K acc 0000068505-26-000010 (XBRL)",
+   "source_value": "Revenue 3,133 / 2,714 / 11,682 / 2,765 / 3,009; operating income 809 / 525 / 2,988 / 692 / 770; diluted EPS 3.33 / 2.18 / 12.75 / 3.04 / 3.33",
+   "status": "PASS",
+   "note": "Fiscal period labels correct (fiscal quarters end Saturday nearest quarter end). Q2 GAAP EPS growth 9.5% reproduces; release rounds to 10%."
+  },
+  {
+   "ticker": "MSI",
+   "claim": "Non-GAAP EPS Q2 2026 +24% YoY; GAAP/non-GAAP gap caveat",
+   "dossier_location": "MSI.md s4",
+   "source": "8-K Ex-99.1 acc 0000068505-26-000027",
+   "source_value": "'Non-GAAP EPS of $4.41, up 24%'; 'GAAP earnings per share of $3.33, up 10%'",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MSI",
+   "claim": "Guidance: FY2026 revenue ~$12.98B (from ~$12.8B) and non-GAAP EPS $17.62-17.72 (from $16.87-16.99); dossier dates the raise 2026-08-12",
+   "dossier_location": "MSI.md s5, s10",
+   "source": "8-K Ex-99.1 acc 0000068505-26-000027 (5 Aug 2026); 8-K Ex-99.1 acc 0000068505-26-000018 (7 May 2026)",
+   "source_value": "'The company now expects revenue of approximately $12.975 billion, up from its prior guidance of $12.8 billion and non-GAAP EPS between $17.62 and $17.72 ..., up from ... $16.87 and $16.99'; Q1 release raised $12.7bn to $12.8bn and $16.70-16.85 to $16.87-16.99; Q3 guide: revenue growth ~8%, EPS $4.39-4.44",
+   "status": "MINOR",
+   "note": "Figures verbatim and two consecutive raises confirmed (primary releases rather than the Yahoo article cited); date wrong (release 5 Aug, not 12 Aug). Sourcing should be the Ex-99.1."
+  },
+  {
+   "ticker": "MSI",
+   "claim": "Backlog: record Q2 $15.6B, +11% / +$1.5B; Software & Services +$1.2B; Products & Systems Integration +$329M",
+   "dossier_location": "MSI.md s5, s8",
+   "source": "8-K Ex-99.1 acc 0000068505-26-000027",
+   "source_value": "'backlog ... up 11% or $1.5 billion'; 'Products and Systems Integration segment backlog was up $329 million, or 10%'; 'Software and Services segment backlog was up $1.2 billion, or 11%'",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MSI",
+   "claim": "OCF H1 2026 $920M vs $783M; FY2025 OCF $2.837B vs net income $2.154B",
+   "dossier_location": "MSI.md s6",
+   "source": "10-Q acc 0000068505-26-000028; 10-K acc 0000068505-26-000010",
+   "source_value": "OCF H1-26 920, H1-25 783; FY25 OCF 2,837; FY25 net income 2,154; TTM OCF 2,974; TTM capex 297 (265 - 85 + 117); TTM SBC 357 (293 - 140 + 204)",
+   "status": "PASS",
+   "note": "SBC is quantifiable (about 3% of revenue), contrary to the dossier's 'not quantified'."
+  },
+  {
+   "ticker": "MSI",
+   "claim": "Long-term debt $8.417B (2026-07-04) vs $7.661B a year earlier; equity $2.672B vs $1.968B; cash $710M vs $3.206B",
+   "dossier_location": "MSI.md s6",
+   "source": "10-Q acc 0000068505-26-000028 balance sheet; XBRL",
+   "source_value": "LongTermDebtNoncurrent 8,417 vs 7,661; StockholdersEquity 2,672 vs 1,968; cash 710 vs 3,206; current portion of debt 615, total debt 9,033, net debt about 8.3bn",
+   "status": "PASS",
+   "note": "Consolidated, correct dates."
+  },
+  {
+   "ticker": "MSI",
+   "claim": "M&A: 'no major pending deal identified'",
+   "dossier_location": "MSI.md s6",
+   "source": "10-Q acc 0000068505-26-000028 'Recent Announcements'; 8-K Ex-99.1 acc -26-000027",
+   "source_value": "31 May 2026 definitive agreement to acquire D-Fend for $1.5 billion (expected close 2H 2026); 26 Mar 2026 agreement to buy Bell Mobility's land mobile radio networks services business for C$675 million",
+   "status": "FAIL",
+   "note": "Two pending acquisitions totalling about US$2.0bn (about 2.7% of market cap, about 24% of long-term debt) missed; kill criterion 4 (debt up more than 20%) would trip on debt funding alone. Correction appended."
+  },
+  {
+   "ticker": "MSI",
+   "claim": "Trailing GAAP EPS 'rough TTM ~$14.90', GAAP P/E ~30.7x",
+   "dossier_location": "MSI.md s7",
+   "source": "10-K acc 0000068505-26-000010; 10-Q acc 0000068505-26-000028",
+   "source_value": "TTM GAAP diluted EPS = 12.75 - 5.57 + 5.51 = $12.69; $456.88 / 12.69 = 36.0x (non-GAAP guide midpoint 25.9x)",
+   "status": "FAIL",
+   "note": "TTM overstated by $2.2; GAAP P/E is 36x, not 31x. The GAAP versus non-GAAP gap is wider than stated. Correction appended; verdict unchanged."
+  },
+  {
+   "ticker": "MSI",
+   "claim": "Reverse-DCF sense: ~24-26x forward non-GAAP implies low-to-mid-teens sustained EPS growth; implied_vs_base in_line",
+   "dossier_location": "MSI.md s7",
+   "source": "Recomputed; d4 beta 0.881; 10Y UST 5.17% (25 Sep 2026); ERP 4.14%",
+   "source_value": "Market cap 165.5M x $456.88 = $75.6bn; TTM FCF after SBC = 2,974 - 297 - 357 = $2.32bn; Ke = 5.17% + Blume beta 0.92 x 4.14% = 9.0%; terminal growth 3% gives implied 10-year FCF growth 11.3% (10.5% at 3.5%); 9.4% from FCF before SBC",
+   "status": "MINOR",
+   "note": "No discount rate or cash flow was stated; earnings multiples only. Restated FCF method gives roughly 10.5-11.3% a year, in line with the 'low-double-digit' base: in_line stands."
+  },
+  {
+   "ticker": "MSI",
+   "claim": "Scenarios bear -9.0%, base +9.5%, bull +15.0% (F80)",
+   "dossier_location": "F80 summary scenario_basis",
+   "source": "Recomputed from basis: EPS guide midpoint $17.67, 11-12%/yr, exit 23x, ~1% yield",
+   "source_value": "Base: FY29 EPS 24.5 x 23x + dividends = +8.0%/yr; on NTM EPS about 26.6 = +11.0%/yr; stated +9.5% lies in the range",
+   "status": "MINOR",
+   "note": "Exit EPS timing is unstated; result depends on whether trailing or NTM EPS is capitalised. Verdict unaffected."
+  },
+  {
+   "ticker": "MSI",
+   "claim": "Hytera litigation gains in GAAP results",
+   "dossier_location": "MSI.md s4, s9 (not mentioned)",
+   "source": "10-Q acc 0000068505-26-000028 legal note; 8-K Ex-99.1 -26-000027",
+   "source_value": "Hytera has paid $232M against the award, of which $60M in H1 2026, recorded as gains within Other charges ($157M in 2025, $61M in 2024); excluded from non-GAAP",
+   "status": "MINOR",
+   "note": "A non-recurring gain inside GAAP operating income and cash flow that the earnings-quality discussion omits; GAAP/non-GAAP gap is therefore partly gain-related, not only amortisation and SBC."
+  },
+  {
+   "ticker": "MSI",
+   "claim": "Kill criterion 5: revenue growth below 8% for two consecutive quarters",
+   "dossier_location": "MSI.md s10",
+   "source": "8-K Ex-99.1 acc 0000068505-26-000027",
+   "source_value": "Q3 2026 guide: 'revenue growth of approximately 8%'",
+   "status": "MINOR",
+   "note": "The threshold equals the company's own Q3 guide, so it is a hair-trigger rather than a thesis-break test; consider 6%."
+  },
+  {
+   "ticker": "MTD",
+   "claim": "Quarterly sales and GAAP EPS: Q2'26 $1,027.3M / $11.55; Q1'26 $947.1M / $8.33; Q4'25 $1,129.7M / $13.98; Q3'25 $1,029.7M / $10.57; Q2'25 $983.2M / $9.76; Q1'25 $883.7M / $7.81; Q3'24 $954.5M / $9.96",
+   "dossier_location": "MTD.md s4 table",
+   "source": "10-Q acc 0001037646-26-000051, -26-000021, -25-000058, -25-000040 (XBRL); 8-K Ex-99.1 acc 0001037646-26-000008",
+   "source_value": "Revenue and EPS as listed; Q4'25 sales = FY25 4,026.4 less 9M 2,896.7 = 1,129.7; Q4'25 EPS 13.98 vs 11.96 per release",
+   "status": "PASS",
+   "note": "Fiscal labels are calendar quarters (XBRL fy tags read Q2 2024 for the Jun-25 quarter, a tagging quirk, not a dossier error)."
+  },
+  {
+   "ticker": "MTD",
+   "claim": "Adjusted EPS by quarter: Q2'26 $11.46 (+14%), Q1'26 $8.91 (+9%), Q4'25 $13.36 (+8%), Q3'25 $11.15 (+9%); local-currency growth Q2'26 +6% (+4% excl. acquisitions, before a one-time tariff refund reducing growth by 3 points); regions Americas -3%, Europe +7%, Asia/RoW +12% reported",
+   "dossier_location": "MTD.md s4",
+   "source": "8-K Ex-99.1 acc 0001037646-26-000049, -26-000019, -26-000008, -25-000056",
+   "source_value": "'Adjusted EPS was $11.46, an increase of 14% over the prior-year amount of $10.09'; '$8.91 ... $8.19'; '$13.36 ... $12.41'; '$11.15 ... $10.21'; 'local currency sales increased 6%, or 4% excluding acquisitions, before a one-time tariff refund to customers that reduced sales growth by 3%'; Americas -3%, Europe +7%, Asia/RoW +12%",
+   "status": "PASS",
+   "note": "Adjusted operating profit $309.3M vs $283.3M; $52M IEEPA refund benefit and customer refunds excluded from non-GAAP."
+  },
+  {
+   "ticker": "MTD",
+   "claim": "Guidance track record: 30 Jul $47.15-47.50 (prior $46.30-46.95); 7 May $46.30-46.95 (prior $46.05-46.70); 5 Feb $46.05-46.70 (prior $45.35-46.00); 6 Nov 2025 $45.35-46.00; Q3 guide $12.00-12.15; Q2 guide $10.70-10.85, Q1 guide $8.60-8.75",
+   "dossier_location": "MTD.md s5",
+   "source": "8-K Ex-99.1 acc 0001037646-26-000049, -26-000019, -26-000008, -25-000056",
+   "source_value": "All quotes verbatim ('Adjusted EPS is forecast to be in the range of $47.15 to $47.50, representing growth of approximately 10% to 11%' etc.); FY25 range $42.05-42.25; FY25 quarterly adjusted EPS sum 42.79",
+   "status": "PASS",
+   "note": "Three raises in 2026 confirmed; Q1 delivered $8.91 vs $8.60-8.75 and Q2 $11.46 vs $10.70-10.85."
+  },
+  {
+   "ticker": "MTD",
+   "claim": "Balance sheet 30 Jun 2026: cash $51.4M; short-term borrowings and current maturities $67.3M; long-term debt $2,044.7M; equity $12.8M (deficit $23.6M at Dec-25); 20.04M shares",
+   "dossier_location": "MTD.md s3, s6",
+   "source": "10-Q acc 0001037646-26-000051",
+   "source_value": "Cash 51,383; short-term 67,290; long-term debt 2,044,673; total shareholders' equity 12,823 vs (23,636); 20,036,559 shares at 30 Jun 2026",
+   "status": "PASS",
+   "note": "Total debt 2,112; net debt 2,061. XBRL crosstie flag (67.3 vs 2,044.7) compares the short-term and long-term lines, not an error."
+  },
+  {
+   "ticker": "MTD",
+   "claim": "TTM OCF about $975M, capex about $111M, FCF about $864M (2.9% yield), SBC about $22.5M a year; buybacks $825M in 2025 (kill criterion says $800M)",
+   "dossier_location": "MTD.md s6, s9",
+   "source": "10-K acc 0001037646-26-000011; 10-Q acc 0001037646-26-000051",
+   "source_value": "OCF 955.8 - 430.8 + 450.2 = 975.2; capex 107.1 - 41.1 + 45.2 = 111.2; FCF 864.0; SBC FY25 22.5, TTM 22.8; repurchase cash FY25 799,995 (H1-26 412,500)",
+   "status": "MINOR",
+   "note": "Cash paid for repurchases in 2025 was $800.0M; the dossier uses $825M in section 6 and $800M in section 9 (internal inconsistency). No effect on the thesis."
+  },
+  {
+   "ticker": "MTD",
+   "claim": "Reverse DCF: equity FCF $864M, 8.5% cost of equity, 3% terminal, 5 years growth then fade: implied 14.0%/yr vs 9% base; base value ~$1,140, 11% ~$1,276; 'above'",
+   "dossier_location": "MTD.md s1, s7",
+   "source": "Recomputed; d4 beta 1.22; 10Y UST 5.17% (25 Sep 2026); programme ERP 4.14%",
+   "source_value": "14.0%, $1,140 and $1,276 reproduce exactly at 8.5% (5-year growth then 5-year linear fade to 3%). Programme Ke = 5.17% + Blume beta 1.15 x 4.14% = 9.9%: implied 18.6% (19.1% on FCF after SBC $22.8M); base 9% value $898, 11% value $1,002",
+   "status": "FAIL",
+   "note": "8.5% is not tied to the 10-year Treasury (5.17%) plus a beta x ERP: it implies a premium of 3.3% at beta 1.15. Restated gap is wider; 'above' and WATCH stand, but the entry band ($1,150-1,300) is too high. Correction appended; F136 reconciliation updated."
+  },
+  {
+   "ticker": "MTD",
+   "claim": "3-year scenarios: bear -7.7% (EPS 54 x 22), base +4.7% (62 x 28), bull +12.9% (68 x 32)",
+   "dossier_location": "MTD.md s7",
+   "source": "Recomputed",
+   "source_value": "(1,188 / 1,511.64)^(1/3) - 1 = -7.7%; (1,736 / 1,511.64)^(1/3) - 1 = +4.7%; (2,176 / 1,511.64)^(1/3) - 1 = +12.9%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MTD",
+   "claim": "Section 3: equity $12.8M because repurchases of $10.3bn cumulative at cost have consumed equity; ROE an artefact",
+   "dossier_location": "MTD.md s3",
+   "source": "10-Q acc 0001037646-26-000051 balance sheet",
+   "source_value": "Equity 12,823 vs 9.64bn retained earnings; treasury stock total not re-extracted",
+   "status": "MINOR",
+   "note": "Equity level confirmed; the $10.3bn cumulative cost figure was not re-extracted (UNVERIFIABLE detail)."
+  },
+  {
+   "ticker": "MTD",
+   "claim": "Form 4 sales about $6.1M since 2026-03-25, no purchases; Section 122 tariff expired late July 2026",
+   "dossier_location": "MTD.md s10, s11",
+   "source": "Not re-opened",
+   "source_value": "",
+   "status": "UNVERIFIABLE",
+   "note": "Not within primary documents read in this pass; not load-bearing."
+  },
+  {
+   "ticker": "MU",
+   "claim": "Quarterly table: revenue, gross margin, operating margin, GAAP EPS FY24 Q1 to FY26 Q3 (e.g. FY26 Q3 $41.46B, 84.6%, 80.4%, $24.67; FY26 Q2 $23.86B, 74.4%, 67.6%, $12.07; FY26 Q1 $13.64B, 56.1%, 45.0%, $4.60)",
+   "dossier_location": "MU.md s4 table",
+   "source": "10-Q acc 0000723125-26-000015, -26-000006, -25-000046, -25-000021, -25-000009, -24-000047 (XBRL); 8-K Ex-99.1 acc 0000723125-26-000013",
+   "source_value": "All 9 revenue, gross profit, operating income and EPS figures reproduce (e.g. FY26 Q3 gross profit 35,056, operating income 33,318, EPS 24.67)",
+   "status": "PASS",
+   "note": "Fiscal labels correct (FY26 ends 3 Sep 2026). FY26 Q1 gross margin is 56.0% (7,646 / 13,643), dossier 56.1%."
+  },
+  {
+   "ticker": "MU",
+   "claim": "QoQ column: FY25 Q1 +28%, FY26 Q1 +47%; 'three consecutive quarters of >45% sequential revenue growth'",
+   "dossier_location": "MU.md s4",
+   "source": "8-K Ex-99.1 acc 0000723125-25-000044; 10-K acc 0000723125-26-000023",
+   "source_value": "The table omits the August-quarter rows: FY24 Q4 = 25,111 - 17,361 = $7,750M; FY25 Q4 = $11,315M. True QoQ: FY25 Q1 +12.4%, FY26 Q1 +20.6% (release: '$13.64 billion versus $11.32 billion for the prior quarter'), FY26 Q2 +75%, FY26 Q3 +74%",
+   "status": "FAIL",
+   "note": "Two quarters (not three) above 45%; the +28% and +47% compare across a skipped quarter. Correction appended; the 'weighed most heavily' fact is overstated but the two-quarter surge is real."
+  },
+  {
+   "ticker": "MU",
+   "claim": "Guidance track record: FQ2 guide $18.7B +/-$0.4B, GM 68%+/-1; FQ3 $33.5B +/-$0.75B, GM ~81%; FQ4 $50.0B +/-$1B, GM ~86%, EPS $31+/-$1 (capex ~$10B)",
+   "dossier_location": "MU.md s5",
+   "source": "8-K Ex-99.1 acc 0000723125-25-000044, -26-000004, -26-000013",
+   "source_value": "FQ2: revenue $18.70B +/- $400M, GM 67.0% GAAP / 68.0% non-GAAP; FQ3: $33.5B +/- $750M, ~81%; FQ4: $50.0B +/- $1.0B, ~86%, EPS GAAP $30.73 +/- 1.00, non-GAAP $31.00 +/- 1.00. Capex not in the release table",
+   "status": "PASS",
+   "note": "Verbatim. Dossier compares non-GAAP guide with GAAP/non-GAAP outcomes interchangeably (basis mixing, no effect). Q3 results and guide are dated 24 Jun 2026, not 25 Jun. Capex ~$10B and the Vantage Markets source are UNVERIFIABLE."
+  },
+  {
+   "ticker": "MU",
+   "claim": "TTM (to 2026-05-28) OCF $51.4B, capex $25.3B, FCF $26.2B, NI $50.5B, SBC $1.18B, revenue $90.3B, EBIT $59.2B",
+   "dossier_location": "MU.md s6, s7",
+   "source": "10-K acc 0000723125-26-000023; 10-Q acc 0000723125-26-000015",
+   "source_value": "OCF 45,702 - 11,795 + 17,525 = 51,432; capex 19,602 - 10,199 + 15,857 = 25,260; FCF 26,172; NI 50,469; SBC 1,204 (V1 1,178); revenue 90,274; EBIT 59,243",
+   "status": "PASS",
+   "note": "All reproduce. Stale as a base: the FQ4 FY26 quarter alone (ended 3 Sep 2026) had OCF $43.97B."
+  },
+  {
+   "ticker": "MU",
+   "claim": "Balance sheet: cash $25.0B (from $9.6B), equity $100.7B, P/B 12.1x, net cash $20.9B; buyback resumed ($300M) in FQ1 FY26",
+   "dossier_location": "MU.md s6",
+   "source": "10-Q acc 0000723125-26-000015",
+   "source_value": "Cash 24,995 vs 9,642; equity 100,724; $8.5bn of debt prepaid in 9M FY26; repurchase programme $650M in 9M FY26 (plus employee-award withholdings $762M)",
+   "status": "PASS",
+   "note": "P/B 1082.28 / 89.2 = 12.1x reproduces. Buyback was $650M year to date, not $300M; MINOR."
+  },
+  {
+   "ticker": "MU",
+   "claim": "Strategic Customer Agreements: not mentioned",
+   "dossier_location": "MU.md s1, s7, s8, s9 (omission)",
+   "source": "10-Q acc 0000723125-26-000015 MD&A; 8-K Ex-99.1 acc 0000723125-26-000013 headline",
+   "source_value": "'strategic customer agreements ... structured as take-or-pay agreements, with binding commitments for specific volumes over the multi-year contract terms. Pricing ... fixed, or ... minimum and maximum pricing'; 'gross margins ... even at floor pricing levels ... well above our peak quarterly margins in any past cycle'",
+   "status": "FAIL",
+   "note": "The central counter-argument to the dossier's mean-reversion thesis and to kill criterion 1 (ASP declines) is absent. Correction appended."
+  },
+  {
+   "ticker": "MU",
+   "claim": "Reverse DCF per V1: WACC 11.6%, implied 33.0%/yr FCFF growth vs base 18-22% ('above'); V1 base 3-yr -36.8%, bull +35.0%; Street low $361",
+   "dossier_location": "MU.md s7",
+   "source": "outputs/v1_valuation.json (MU row); recomputed; d4 beta 2.222; 10Y UST 5.17%",
+   "source_value": "V1 figures reproduce (WACC 11.61% = 5.17% + Blume beta 1.56 x 4.14% at 14.6% tax). Restating the starting cash flow: FCF after SBC TTM $25.0B gives 23.0-25.4%; FY26 actual FCF after SBC $57.6B (OCF 89,675 - capex 30,712 - SBC 1,333) gives 11.3% at 11.6% and 13.3% at 12.7%",
+   "status": "FAIL",
+   "note": "The 33% reflects a stale start (TTM FCF depressed by working-capital build and one quarter behind the FQ4 record). Even on information at the cutoff (FQ4 guide $50B revenue, EPS $31, NTM P/E 6.8x) the price is about 7-9x annualised guided earnings, i.e. discounts a sharp fade, not continuation. On FY26 FCF implied growth is below the 18-22% base. Correction appended; verdict not re-underwritten."
+  },
+  {
+   "ticker": "MU",
+   "claim": "Litigation: securities class action dismissed 2026-02-03 with leave to amend, voluntarily dismissed 2026-04-03; DRAM price-fixing class action filed 2026-06-25 (web); ITC investigation (web)",
+   "dossier_location": "MU.md s9, s11",
+   "source": "10-Q acc 0000723125-26-000015 legal note",
+   "source_value": "Securities class action (S.D. Fla. transferred to D. Idaho 3 Apr 2025): dismissed 3 Feb 2026 with leave to amend; plaintiffs voluntarily dismissed 3 Apr 2026; derivative suits dismissed; YMTC Lanham Act suit (7 Jun 2025) and a New York fab environmental petition (16 Jan 2026) are open. Antitrust class action and ITC matter not in the 10-Q",
+   "status": "MINOR",
+   "note": "Securities facts verbatim (dossier says S.D. Fla.; case was transferred to D. Idaho in April 2025). Open YMTC and Clay NY fab matters not listed. Antitrust and ITC items UNVERIFIABLE in SEC filings (filed the day of the 10-Q)."
+  },
+  {
+   "ticker": "MU",
+   "claim": "FQ4 FY26 (post-cutoff, informational): revenue $54.23B vs guide $50.0B +/-$1B; non-GAAP EPS $33.42 vs $31.00 +/-$1; FQ1-27 guide $61.5B +/-$1.5B, non-GAAP EPS $38.15",
+   "dossier_location": "MU.md s5, s10 (event 30 Sep 2026)",
+   "source": "8-K Ex-99.1 acc 0000723125-26-000018; 10-K acc 0000723125-26-000023 (filed 9 Oct 2026)",
+   "source_value": "FQ4: revenue 54,229, GAAP EPS 32.87, GM 86.8%; FY26 revenue 133.19B, GAAP NI 84.97B, EPS 74.33, OCF 89.68B",
+   "status": "PASS",
+   "note": "A fourth consecutive beat, by 8% vs 24-28% earlier. Trailing GAAP P/E at $1,082.28 is 14.6x FY26 EPS; 7.1x annualised FQ1-27 guided non-GAAP EPS."
+  },
+  {
+   "ticker": "NCLH",
+   "claim": "Quarterly table: revenue, GAAP operating income, GAAP diluted EPS, adjusted EPS, adjusted EBITDA for Q2'25 to Q2'26 (Q2'26 2,640.5 / 363.3 / 0.48 / 0.48 / 666; Q1'26 2,331.2 / 232.9 / 0.23 / 0.23 / 533; Q4'25 2,244.4 / 186.6 / 0.03 / 0.28 / 564; Q3'25 2,938.1 / 749.4 / 0.86 / 1.20 / 1,019; Q2'25 2,517.5 / 423.8 / 0.07 / 0.51 / 694)",
+   "dossier_location": "NCLH.md s3 table",
+   "source": "8-K Ex-99.1 acc 0001171843-26-005050, -26-002957, -26-001220, -25-006936; 10-Q acc 0001104659-26-089657 and XBRL companyfacts",
+   "source_value": "All values tie; period labels correct (calendar fiscal year). Q2'25 adjusted EPS is exactly $0.51 (release table), 'decreased 6.6% to $0.48'. Q2 ticket 1,729.8 and onboard 910.7 tie; op income -14.3% and margin 13.8% vs 16.8% recompute.",
+   "status": "PASS",
+   "note": "XBRL net-income flag (guided adjusted NI ~$700M vs Q2 GAAP $222.6M) is a false positive: different measures and periods."
+  },
+  {
+   "ticker": "NCLH",
+   "claim": "Guidance quotes: Q3'25 release (Q4 EBITDA ~$555M, FY ~$2.72B, EPS ~$0.27 / ~$2.10); Q4'25 release (FY26 EBITDA ~$2.95B, EPS $2.38, net leverage ~5.2x); Q1'26 release (Q2 EBITDA ~$632M, EPS ~$0.38; FY EBITDA $2.48-2.64B, EPS $1.45-1.79); Q2'26 release (FY EBITDA ~$2.5B, EPS ~$1.50, Q3 EBITDA $874M)",
+   "dossier_location": "NCLH.md s4",
+   "source": "8-K Ex-99.1 acc 0001171843-25-006936, -26-001220, -26-002957, -26-005050",
+   "source_value": "Every figure appears verbatim in the cited release, including outcomes (Q4'25 $564M vs $555M, $0.28 vs $0.27; Q1'26 $533M vs ~$515M, $0.23 vs ~$0.16; Q2'26 $666M vs $632M, $0.48 vs $0.38). EPS cut 2.38 to 1.50 = -37% recomputes. No invented guidance.",
+   "status": "PASS",
+   "note": "The dossier does not mention the Q2'26 FY net yield guide (about -5%) or the 33.2% adjusted operational margin; not an error."
+  },
+  {
+   "ticker": "NCLH",
+   "claim": "Leverage: total debt $15.0B, net debt $14.8B, net leverage 5.3x, liquidity $1.5B (cash $218M + $1.3B revolver); carrying debt $15,034.8M; XBRL debt concept $13,979M is a narrower measure",
+   "dossier_location": "NCLH.md s5, s8 item 3",
+   "source": "8-K Ex-99.1 acc 0001171843-26-005050; 10-Q acc 0001104659-26-089657 balance sheet",
+   "source_value": "Release text verbatim; current portion 1,141.4 + long-term 13,893.4 = 15,034.8; net debt 15,034.8 - 218.1 = 14,816.7; TTM adjusted EBITDA 1,019+564+533+666 = 2,782 gives 5.33x. Consolidated NCLH including NCL Corporation; correct entity and date.",
+   "status": "PASS",
+   "note": "Company net-debt definition (long-term debt incl. current portion less cash) matches the dossier's usage; kill criterion 3 is on the same basis."
+  },
+  {
+   "ticker": "NCLH",
+   "claim": "Maturities (principal plus estimated interest): remainder 2026 $792M, 2027 $1,702M, 2028 $1,894M, 2029 $1,856M, 2030 $4,324M; ship construction contracts $18.6B payments, 12 effective ships about $19.5B, committed undrawn export-credit facilities about $10.9B (~80%)",
+   "dossier_location": "NCLH.md s5",
+   "source": "10-Q acc 0001104659-26-089657 commitments table, Note 10 and MD&A",
+   "source_value": "Commitments table values tie exactly (792,057 / 1,702,053 / 1,894,473 / 1,855,675 / 4,323,725; ship contracts 18,648,354). Principal-only schedule (note 6) is lower: 477.8 / 1,105.7 / 1,340.9 / 1,364.8 / 3,949.6 (total 15,467.7).",
+   "status": "PASS",
+   "note": "The dossier correctly labels its schedule as principal plus estimated interest."
+  },
+  {
+   "ticker": "NCLH",
+   "claim": "Cash flow: OCF less additions to property and equipment: Q1'26 811.5 - 1,436.7 = (625.2); Q2'26 602.6 - 457.7 = 144.9; H1'26 (480.3); FY25 2,089.7 - 3,259.6 = (1,169.9); newbuild-and-growth capex gross ~$2.9B (2026) and ~$2.9B (2027), export credit ~$1.6B / ~$2.0B, net ~$1.4B / ~$0.9B",
+   "dossier_location": "NCLH.md s3, s5",
+   "source": "8-K Ex-99.1 acc 0001171843-26-005050 cash flow statement and capex table; -26-001220 for FY25",
+   "source_value": "H1'26 OCF 1,414.0 and capex 1,894.4 tie; FY25 2,089.7 / 3,259.6 tie; capex table ties. H1 newbuild-and-growth capex is 1,274 + 328 = $1,602M, so non-newbuild capex is only about $292M in H1, well below D&A of $575M.",
+   "status": "PASS",
+   "note": "This shows the 'maintenance capex = D&A' assumption in the reverse DCF is conservative; it does not cure the FCF-basis issue (next fact)."
+  },
+  {
+   "ticker": "NCLH",
+   "claim": "Reverse DCF equity basis: owner earnings $0.55B, cost of equity 12%, terminal growth 2%, price implies about 4% ten-year growth; enterprise basis start $1.4B, WACC 9%, about 3%",
+   "dossier_location": "NCLH.md s6",
+   "source": "Recomputed; d4 beta 1.881 (Blume 1.59); 10Y UST 5.17% + 4.14% ERP = 11.76%",
+   "source_value": "Replicates: 4.7% at 12%, 4.3% at 11.76%; enterprise 2.7% (tg 2%). Rate is consistent with the programme rate. SBC is effectively deducted (guided adjusted NI of ~$700M adds back about $90M a year of share-based pay, and $0.55B is below it). Interest is not double counted.",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "NCLH",
+   "claim": "Valuation method: 'owner earnings' (adjusted-net-income based, maintenance capex = D&A) used as the equity cash flow, and 'in_line' implied-vs-base",
+   "dossier_location": "NCLH.md s6",
+   "source": "Recomputed with free cash flow after net-of-financing newbuild capex (release capex table); rate 11.76%, tg 2%, price $6.71B",
+   "source_value": "Programme rule (e) requires free cash flow. The dossier's own section 5 says equity FCF is negative until the newbuild cycle is financed ($(480)M H1'26, $(1,170)M FY25). Deducting the company's net-of-financing growth capex (about $0.9B in 2027, $0.5B in 2028 and after) from the same $0.55B base, the price implies about 9-10% a year (12% if the drag continues into the terminal value), versus a 4-5% base: 'above', not 'in_line'. Assumption-labelled restatement.",
+   "status": "FAIL",
+   "note": "Verdict WATCH unchanged (a higher implied rate strengthens the non-INCLUDE call). implied_vs_base restated in_line to above."
+  },
+  {
+   "ticker": "NCLH",
+   "claim": "Scenarios: bear -31%/yr ($0.60 x 8), base +8.9%/yr ($2.10 x 9), bull +27.1%/yr ($3.00 x 10), start $14.61",
+   "dossier_location": "NCLH.md s6, F161_summary.json",
+   "source": "Recomputed",
+   "source_value": "4.80/14.61, 18.90/14.61 and 30.00/14.61 annualised over 3 years give -31.0%, +8.9% and +27.1%. Arithmetic is right.",
+   "status": "PASS",
+   "note": "The 2029 adjusted EPS of $2.10 pre-dates the 30 Sep 2026 disclosure that 2027 net interest expense will be $860-880M (2026 guide ~$705M); the base case is more exposed than written (see post-cutoff fact)."
+  },
+  {
+   "ticker": "NCLH",
+   "claim": "GAAP to adjusted bridge: 'adjusted net income excludes FX, severance ($17.7M H1) and activist-related advisory fees ($5.2M H1)'",
+   "dossier_location": "NCLH.md s5",
+   "source": "8-K Ex-99.1 acc 0001171843-26-005050 (Adjusted Net Income reconciliation); 10-Q acc 0001104659-26-089657",
+   "source_value": "Advisory fees $5.2M ties (5,242). The release bridge for H1'26 also adds back non-cash share-based compensation $44.1M, deferred compensation $2.2M and restructuring costs $19.7M (severance $17.7M in the 10-Q EBITDA table), none of which is listed. Adjusted NI of ~$700M therefore adds back about $90M a year of SBC.",
+   "status": "MINOR",
+   "note": "Omission, not an error in a figure; matters because SBC is a real cost."
+  },
+  {
+   "ticker": "NCLH",
+   "claim": "Havana Docks: $112.9M judgment 30 Dec 2022, Eleventh Circuit reversal 22 Oct 2024, Supreme Court reversal 21 May 2026, remand 22 Jun 2026, loss 'reasonably possible but not probable', no liability; Florida AG matter resolved; no going concern or material weakness",
+   "dossier_location": "NCLH.md s10",
+   "source": "10-Q acc 0001104659-26-089657 Note 10",
+   "source_value": "All dates and amounts tie; no going-concern or material-weakness text in the 10-Q.",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "NCLH",
+   "claim": "Events checked to 2026-09-25; 'no later filings opened'",
+   "dossier_location": "NCLH.md Data basis",
+   "source": "8-K acc 0001104659-26-112116 (30 Sep 2026, Item 7.01); web: NCL Corporation 8.750% senior notes due 2031, $950M priced 30 Sep, closing 15 Oct 2026 (non-SEC source)",
+   "source_value": "Post-cutoff: NCLH expects Q3'26 results to exceed guidance (better revenue) and reaffirms FY2026 guidance (EPS ~$1.50, EBITDA ~$2.5B); as adjusted for the NCLC refinancing, 2027 net interest expense is guided to $860-880M versus ~$705M for 2026. Kill criterion 1 clause 'Q3 EBITDA below $874M' now less likely; the 2027 interest step-up is a headwind to the $2.10 2029 EPS base case.",
+   "status": "MINOR",
+   "note": "Not an error as of the dossier cutoff; recorded as update. The web item rests on a press release and is not primary."
+  },
+  {
+   "ticker": "NCLH",
+   "claim": "Verdict logic: WATCH (not INCLUDE-SMALL) because estimates still falling and equity is a thin slice of a $21.5B enterprise",
+   "dossier_location": "NCLH.md s1, s6",
+   "source": "Dossier evidence plus restatement above",
+   "source_value": "Own evidence supports WATCH; restated implied_vs_base 'above' reinforces it. Base 3-year return +8.9%/yr against a -31% bear does not support inclusion.",
+   "status": "PASS",
+   "note": ""
+  }
+ ],
+ "verdict_changes": []
+}

@@ -1,0 +1,693 @@
+{
+ "as_of": "2026-10-08",
+ "scope": [
+  "ALGN",
+  "ALLE",
+  "AMAT",
+  "AMCR",
+  "AMD",
+  "AME",
+  "AMGN",
+  "AMT",
+  "AMZN",
+  "ANET"
+ ],
+ "facts": [
+  {
+   "ticker": "ALGN",
+   "claim": "Q2'26 revenue $1,056.2M (+4.3% y/y), GAAP net income $108.3M, GAAP diluted EPS $1.51",
+   "dossier_location": "s4 table; s3",
+   "source": "10-Q acc 0001097149-26-000060; release acc 0001097149-26-000054",
+   "source_value": "revenue 1,056.192; NI 108.294; EPS 1.51",
+   "status": "PASS",
+   "note": "Period label correct (calendar Q2 2026)."
+  },
+  {
+   "ticker": "ALGN",
+   "claim": "FY2026 GAAP operating margin guide cut from 'slightly below 18.0%' to '15.1%-15.6%'; non-GAAP ~23.7% unchanged",
+   "dossier_location": "s5",
+   "source": "Q1 release acc -26-000033 (slightly below 18.0%, 23.7%); Q2 release acc -26-000054 (15.1%-15.6%, 23.7%)",
+   "source_value": "as stated, verbatim",
+   "status": "PASS",
+   "note": "Q3'26 revenue guide $1,000M-$1,020M and FY26 revenue growth 3%-4% also verbatim; capex $125-150M verbatim."
+  },
+  {
+   "ticker": "ALGN",
+   "claim": "Cash $1,102.6M at 2Q26 vs $1,094.9M at FY25; no debt",
+   "dossier_location": "s6 balance sheet",
+   "source": "Q2 release balance sheet; no debt tag in XBRL; $300.0M revolver undrawn",
+   "source_value": "cash 1,102,591 / 1,094,908",
+   "status": "PASS",
+   "note": "Revolver availability $300.0M consistent with no borrowings."
+  },
+  {
+   "ticker": "ALGN",
+   "claim": "UK VAT liability $37.5M recorded Q2'26; Upper Tribunal decision 2026-07-07",
+   "dossier_location": "s6",
+   "source": "10-Q acc -26-000060 notes",
+   "source_value": "approx $37.5 million incl. interest; decision released 7 Jul 2026",
+   "status": "PASS",
+   "note": "Release rounds to $38 million."
+  },
+  {
+   "ticker": "ALGN",
+   "claim": "$733.3M buyback remaining; diluted shares 72.59M (2Q25) -> 71.52M (2Q26); H1'26 OCF $343.8M vs $181.3M",
+   "dossier_location": "s6",
+   "source": "Q2 release; XBRL",
+   "source_value": "733.3; 72,593k -> 71,520k; OCF 343,799k vs 181,326k",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "ALGN",
+   "claim": "Valuation: base case P/E re-rating to 15-17x with 4-6% revenue growth; V1 +59.65%/yr rejected as non-credible",
+   "dossier_location": "s7",
+   "source": "Dossier method (multiple-based, V1 reverse DCF rejected)",
+   "source_value": "n/a",
+   "status": "MINOR",
+   "note": "No FCF discount-rate model is stated, so rule (e) cannot be tested; the dossier's own judgement ('fair', INCLUDE-SMALL) is internally consistent with rejecting V1 and a 12x NTM P/E at a 14-year low. Not restated."
+  },
+  {
+   "ticker": "ALGN",
+   "claim": "Verdict INCLUDE-SMALL supported by own evidence",
+   "dossier_location": "s1, s7-9",
+   "source": "Dossier evidence vs verdict logic",
+   "source_value": "n/a",
+   "status": "PASS",
+   "note": "Named reservation (growth deceleration, GAAP charges) is sized small; kill criteria are measurable."
+  },
+  {
+   "ticker": "ALLE",
+   "claim": "Q2'26 revenue $1,151.5M, GAAP EPS $2.15, adjusted EPS $2.40; Q1'26 $1,033.6M / $1.59",
+   "dossier_location": "s4",
+   "source": "10-Q acc 0001579241-26-000028 and -000015; release -26-000026",
+   "source_value": "1,151.5 / 2.15 / 2.40; 1,033.6 / 1.59",
+   "status": "PASS",
+   "note": "Period labels correct. DVH1 correction (2026-10-06) independently re-confirmed."
+  },
+  {
+   "ticker": "ALLE",
+   "claim": "FY2026 adjusted EPS guide $8.85-9.00; organic +6.9% in Q2 (acquisition +5.1pts)",
+   "dossier_location": "s5, correction",
+   "source": "Release acc -26-000026",
+   "source_value": "adjusted EPS 8.85-9.00; reported EPS 7.95-8.10; organic 6.9%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "ALLE",
+   "claim": "Debt $2,030.9M and cash $320.6M at 30 Jun 2026; equity $2,118.6M",
+   "dossier_location": "s6 + DVH1",
+   "source": "Release balance sheet; XBRL LongTermDebtNoncurrent",
+   "source_value": "debt 2,030.9; cash 320.6; equity 2,118.6",
+   "status": "PASS",
+   "note": "Net debt $1.71bn (DVH1 value) correct; the original text used 31 Dec cash $356.2M (already corrected)."
+  },
+  {
+   "ticker": "ALLE",
+   "claim": "Buybacks FY2024 $220M, FY2025 $80M, H1'26 $160.6M; FY2025 OCF $783.8M",
+   "dossier_location": "s6",
+   "source": "10-K and 10-Q XBRL",
+   "source_value": "220.0 / 80.0 / 160.6; OCF 783.8",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "ALLE",
+   "claim": "DVH1 restated reverse DCF: implied 5.4% (WACC 8.4%) on TTM FCF after SBC $641M, EV $14.85bn",
+   "dossier_location": "DVH1 correction",
+   "source": "Recomputed independently (10-yr, terminal 3.0%)",
+   "source_value": "5.49% at WACC 8.4% on 641; 5.1% at 8.9% on equity value 13.14bn",
+   "status": "PASS",
+   "note": "Method complies with rule (e): 5.17% Treasury + ERP 4.14% build, FCF after SBC, no interest double count. Verdict INCLUDE-SMALL consistent with 'in line'."
+  },
+  {
+   "ticker": "AMAT",
+   "claim": "Q3 FY26 (qtr ended 2026-07-26) revenue $9,115M, GAAP NI $2,538M, GAAP EPS $3.17; Q2 FY26 $7,910M / $2.806bn NI / $3.51",
+   "dossier_location": "s4 table",
+   "source": "10-Q acc 0001628280-26-058235 and -26-037227; XBRL",
+   "source_value": "9,115 / 2,538 / 3.17; 7,910 / 2,806 / 3.51",
+   "status": "PASS",
+   "note": "Fiscal-quarter labels correct; Q1 FY26 7,012 / 2.54 and prior-year columns also tie."
+  },
+  {
+   "ticker": "AMAT",
+   "claim": "Q4 FY26 guide ~$10.25B revenue (+51%); Q3 guide ~$8.95B +/-$0.5B",
+   "dossier_location": "s4, s5",
+   "source": "Releases acc -26-056699 and -26-035071",
+   "source_value": "10,250 +/- 500; 8,950 +/- 500",
+   "status": "PASS",
+   "note": "The $8.95B figure was the initial Q3 guide issued with the Q2 release, not a raise of an earlier Q3 guide (see wording note)."
+  },
+  {
+   "ticker": "AMAT",
+   "claim": "Implied FY26 revenue 'roughly $34.05B, +20% vs FY25'",
+   "dossier_location": "s4",
+   "source": "Sum of 7,012+7,910+9,115+10,250",
+   "source_value": "34,287 (+20.9% vs FY25 28,368)",
+   "status": "FAIL",
+   "note": "Arithmetic error of $0.24B; conclusion (strong acceleration) unchanged."
+  },
+  {
+   "ticker": "AMAT",
+   "claim": "Debt: current $1.20B + long-term $5.25B = $6.44B; cash $7.04B; net cash ~$0.6B",
+   "dossier_location": "s6, s7",
+   "source": "Q3 release balance sheet, 10-Q",
+   "source_value": "short-term debt 1,299 (of which current LTD 1,199 + borrowings 100); LT debt 5,245; cash 7,037; short-term investments 2,196",
+   "status": "FAIL",
+   "note": "Total debt $6.54B; net cash is about $2.7B if short-term investments $2.2B are counted (dossier omitted them). EV effect under 1% of $384B."
+  },
+  {
+   "ticker": "AMAT",
+   "claim": "Footnote 1: Q1 FY25 EPS $1.45 depressed by a $784M tax expense (vs $185M next quarter)",
+   "dossier_location": "s4 footnote 1",
+   "source": "XBRL IncomeTaxExpenseBenefit",
+   "source_value": "Q1 FY25 tax 934M (EPS 1.45 ties); 784M is Q3 FY25 tax",
+   "status": "FAIL",
+   "note": "Wrong tax figure for the quarter; EPS itself correct. The discrete tax item is $934M."
+  },
+  {
+   "ticker": "AMAT",
+   "claim": "Q2 FY26 net income exceeded Q3 despite lower operating income - cause 'could not be isolated'",
+   "dossier_location": "s4 footnote 2, s6, s12",
+   "source": "Q3 release income statement; 10-Q XBRL",
+   "source_value": "Q3 interest and other income (expense), net = -100 vs 9M +1,237; Q1 FY26 gain on investments 466; Q2 operating income 2,523 vs pre-tax ~3,225",
+   "status": "MINOR",
+   "note": "Open item resolved: gains on strategic investments in interest and other income in H1 FY26, not an operating or accrual anomaly. Accruals concern is therefore weaker."
+  },
+  {
+   "ticker": "AMAT",
+   "claim": "Reverse DCF: WACC 8.5-10%, TTM FCF $5.62B, implied growth 17.7-23.8%",
+   "dossier_location": "s7",
+   "source": "Recomputed: TTM OCF 8.396bn, capex 2.773bn (ties); SBC ~$0.7bn TTM not deducted; rf 5.17% + ERP 4.14% x Blume beta ~1.25-1.3 = 10.3-10.5%",
+   "source_value": "implied growth ~24.5% (9.5%) to ~26.5% (10.3%) on FCF after SBC ~$4.9bn",
+   "status": "FAIL",
+   "note": "Method breaches rule (e): SBC added back, WACC range 8.5-10% unsupported by the 5.17% Treasury. Corrected implied growth is higher, so implied_vs_base stays 'above' and WATCH is reinforced."
+  },
+  {
+   "ticker": "AMAT",
+   "claim": "Semiconductor Systems calendar-2026 growth outlook raised from >20% to >30%",
+   "dossier_location": "s5",
+   "source": "Q3 release text: 'further raising our Semiconductor Systems revenue expectations for calendar 2026' (no figures)",
+   "source_value": "no percentage in release or 10-Q",
+   "status": "UNVERIFIABLE",
+   "note": "Percentages come from non-primary coverage (call/slides). Direction (raise) verified."
+  },
+  {
+   "ticker": "AMAT",
+   "claim": "$600M FY26 revenue headwind from export restrictions; BIS settlement $253M on 11 Feb 2026; China 28% of Q3 revenue",
+   "dossier_location": "s9, s12, s6",
+   "source": "10-Q, releases, 10-K searched; Q3 release China table",
+   "source_value": "$253M legal settlement in income statement (paid Q2 FY26); China $2,506M = 28% vs 35%",
+   "status": "MINOR",
+   "note": "BIS $253M and China 28% verified; the $600M headwind figure appears in none of the 10-K, 10-Qs or releases (UNVERIFIABLE) and the 11 Feb date is not in the filings."
+  },
+  {
+   "ticker": "AMCR",
+   "claim": "FY2026 (year to 30 Jun 2026) net sales $23,506M, adjusted EPS $4.02; Q4 FY26 net sales $6.4bn, NI $389M, GAAP EPS $0.83, adjusted $1.23",
+   "dossier_location": "s4 table",
+   "source": "Q4 release acc 0001748790-26-000020",
+   "source_value": "23,506; 4.02; 6.4bn; 389; 0.83; 1.23",
+   "status": "PASS",
+   "note": "Fiscal quarter labels correct; Q1-Q3 FY26 (5,745/262; 5,449/177; 5,914/278) tie to 10-Q XBRL (EPS split-adjusted x5)."
+  },
+  {
+   "ticker": "AMCR",
+   "claim": "Guidance path: Q1 reaffirmed 80-83 cps (=$4.00-4.15 post-split), FCF $1.8-1.9bn; Q3 cut to adjusted EPS $3.98-4.03 and FCF $1.5-1.6bn; transition-period adjusted EPS $1.80-1.90, leverage 3.5x-3.6x at 31 Dec 2026",
+   "dossier_location": "s5, s6",
+   "source": "Releases acc -25-000034, -26-000014, -26-000020",
+   "source_value": "verbatim",
+   "status": "PASS",
+   "note": "The $4.00-4.15 post-split equivalent is the dossier's arithmetic (x5); the release itself states cents pre-split."
+  },
+  {
+   "ticker": "AMCR",
+   "claim": "FCF $1,303M, below the cut $1.5-1.6bn range; OCF $2,151M; capex $922M gross / $848M net of $73M proceeds; dividends paid $1,195M",
+   "dossier_location": "s5, s6",
+   "source": "Q4 release cash flow statement",
+   "source_value": "FCF 1,303; OCF 2,151; capex 922; proceeds 73; dividends 1,195",
+   "status": "PASS",
+   "note": "DVH6 capex correction (848 net, 922 gross) confirmed."
+  },
+  {
+   "ticker": "AMCR",
+   "claim": "Net debt $12,897M = debt ~$14,012M - cash $1,115M; net debt / TTM adjusted EBITDA $3,673M ~3.5x",
+   "dossier_location": "s6 (precheck lead: XBRL total debt 13,862)",
+   "source": "Q4 release balance sheet",
+   "source_value": "short-term 150 + long-term 13,862 = 14,012; cash 1,115; net debt 12,897; adj EBITDA 2,628 (9M) + 1,045 = 3,673",
+   "status": "PASS",
+   "note": "Mechanical flag cleared: XBRL 13,862 is the long-term portion only; consolidated entity and date correct."
+  },
+  {
+   "ticker": "AMCR",
+   "claim": "Reverse DCF (DVH6 restatement): Ke 8.19% (5.17% + 0.729 x 4.14%), equity basis $19.65bn, FCF after SBC $1,220M -> +0.3%/yr; normalised $1,510M -> -2.4%/yr",
+   "dossier_location": "s7 + DVH6",
+   "source": "Recomputed independently (10 years then 3.0%)",
+   "source_value": "+0.34% and -2.4%",
+   "status": "PASS",
+   "note": "Method complies with rule (e). implied_vs_base 'below' and INCLUDE-SMALL supported; FCF dividend cover thin (1,303 vs 1,195) is disclosed."
+  },
+  {
+   "ticker": "AMCR",
+   "claim": "Auditor change (PwC Switzerland resigned, PwC US appointed) per 8-K Item 4.01 filed 2026-08-14",
+   "dossier_location": "s11 + DVH6",
+   "source": "EDGAR filing list: 8-K acc 0001104659-26-096303 items 4.01, 9.01",
+   "source_value": "8-K filed 2026-08-14 with Item 4.01",
+   "status": "PASS",
+   "note": "Filing exists with the stated date and item; DVH6 correction of 'no auditor changes' stands."
+  },
+  {
+   "ticker": "AMCR",
+   "claim": "Brazil tax litigation accrued $14M, reasonably possible loss above accrual $27M; environmental PRP accruals $10M + $59M",
+   "dossier_location": "s6, s9 kill criterion 5",
+   "source": "10-K acc -26-000022 text searched",
+   "source_value": "not located in the text pulled",
+   "status": "UNVERIFIABLE",
+   "note": "Could not be located in the 10-K sections retrieved; low materiality. Kill criterion 5 keyed to it is untested."
+  },
+  {
+   "ticker": "AMD",
+   "claim": "Q2 2026 (qtr ended 2026-06-27) revenue $11,536M (+50.1%), GAAP net income $2,297M, GAAP EPS $1.38; Q1 2026 $10,253M / $1,383M / $0.84",
+   "dossier_location": "s4 table",
+   "source": "10-Q acc 0000002488-26-000123 and -000076; release acc -26-000121",
+   "source_value": "11,536 / 2,297 / 1.38; 10,253 / 1,383 / 0.84",
+   "status": "PASS",
+   "note": "Period labels correct (fiscal quarters ending 27 Jun / 28 Mar 2026); Q3-Q2 2025 columns tie to XBRL."
+  },
+  {
+   "ticker": "AMD",
+   "claim": "Guidance track record: Q4'25 ~$9.6bn, Q1'26 ~$9.8bn, Q2'26 ~$11.2bn (each +/-$0.3bn); Q3'26 ~$13.0bn (+12.7% q/q)",
+   "dossier_location": "s5",
+   "source": "8-K Ex-99.1 acc -25-000163, -26-000014, -26-000072, -26-000121",
+   "source_value": "verbatim; Q3 guide 'approximately $13 billion +/- $300 million', ~13% sequential",
+   "status": "PASS",
+   "note": "Beat percentages 7.0%/4.6%/3.0% recomputed correct. Q1'26 guide was a sequential decline (-5%), so 'accelerating beat-and-raise' wording is loose."
+  },
+  {
+   "ticker": "AMD",
+   "claim": "Balance sheet: cash $5,086M, long-term debt $2,351M, net cash ~+$2.7bn (current debt 'immaterial')",
+   "dossier_location": "s6",
+   "source": "Q2 release balance sheet",
+   "source_value": "cash 5,086; short-term investments 8,025; current portion of LT debt 875; LT debt 2,351",
+   "status": "FAIL",
+   "note": "Current portion of debt is $875M, not immaterial; short-term investments $8,025M omitted. Net cash is about $9.9bn (13,111 - 3,226). The EV $1.019tn used in s7 is consistent with the larger figure."
+  },
+  {
+   "ticker": "AMD",
+   "claim": "Entity/date completeness: no mention of the $4.75bn senior notes (2029/2031/2033/2036) closed 17 Aug 2026",
+   "dossier_location": "s6, s9 kill criterion 4",
+   "source": "8-K acc 0001193125-26-354029 (Items 1.01, 2.03)",
+   "source_value": "$4.75bn: 1.25 / 1.50 / 1.00 / 1.00 (+ one more tranche)",
+   "status": "FAIL",
+   "note": "Material post-quarter financing before the 25 Sep as-of date not mentioned; gross debt rises to ~$8.0bn but pro forma net cash stays ~$9.9bn, so kill criterion 4 is not triggered."
+  },
+  {
+   "ticker": "AMD",
+   "claim": "Non-GAAP EPS for Q2 2026 'not independently re-derived - data gap'",
+   "dossier_location": "s6",
+   "source": "Q2 release",
+   "source_value": "non-GAAP EPS $1.66; non-GAAP operating income $3.1bn; non-GAAP net income $2.8bn",
+   "status": "MINOR",
+   "note": "Data gap closed; dossier's guess range $1.68-1.75 was for 'comparable quarters' and not the actual."
+  },
+  {
+   "ticker": "AMD",
+   "claim": "H1 2026 OCF $5,321M, capex $1,197M, FCF ~$4,124M; FY2025 OCF $7,709M, capex $974M; buybacks $221M H1'26 vs $1,227M H1'25; equity $67,224M vs $57,881M (Mar-25)",
+   "dossier_location": "s6",
+   "source": "10-Q XBRL; 10-K acc -26-000018",
+   "source_value": "5,321 / 1,197 / 7,709 / 974 / 221 / 1,227 / 67,224 / 57,881",
+   "status": "PASS",
+   "note": "Mechanical equity lead cleared (64,462 is Mar-26, not Mar-25). SBC H1'26 $990M (FY25 $1,638M) is not deducted in FCF."
+  },
+  {
+   "ticker": "AMD",
+   "claim": "Reverse DCF: FCF base ~$8.25bn, WACC 10%, terminal 3%, EV $1.019tn -> implied g 24-26%/yr",
+   "dossier_location": "s7",
+   "source": "Recomputed with the dossier's own inputs; rf 5.17% + ERP 4.14% x Blume beta ~1.5-1.6 = 11.4-11.8%; SBC annualised ~$2.0bn",
+   "source_value": "32% on the dossier's own inputs; ~36% on FCF after SBC ($6.3bn) at 10%; ~41% at Ke 11.8%",
+   "status": "FAIL",
+   "note": "Stated inputs do not reproduce 24-26%; WACC 10% unsupported by the 5.17% Treasury; SBC added back. Corrected implied growth is far higher, so 'implied_vs_base = above' and WATCH are reinforced."
+  },
+  {
+   "ticker": "AMD",
+   "claim": "OpenAI warrant: up to 160 million shares at $0.01; 6 GW; announced 2025-10-06",
+   "dossier_location": "s8",
+   "source": "Not re-sourced (press release / 8-K of Oct 2025 outside the quarter-by-quarter pull)",
+   "source_value": "n/a",
+   "status": "UNVERIFIABLE",
+   "note": "Not checked against the primary 8-K within the budget; dilution 9-10% is the dossier's own arithmetic."
+  },
+  {
+   "ticker": "AME",
+   "claim": "Q2 2026 sales $2.044bn (+15%), GAAP EPS $1.77, adjusted EPS $2.09 (+17%); Q1 2026 $1.928bn, GAAP EPS $1.74",
+   "dossier_location": "s4 table",
+   "source": "10-Q acc 0001037868-26-000175 and -000144; release acc -26-000173",
+   "source_value": "2,044.4 / 1.77 / 2.09; 1,928.4 / 1.74",
+   "status": "PASS",
+   "note": "Calendar labels correct. Q3 2025 $1.892bn / $1.60 also ties."
+  },
+  {
+   "ticker": "AME",
+   "claim": "FY2026 adjusted EPS guidance path $7.87-8.07 -> $7.94-8.14 -> $8.20-8.30; FY2025 actual adjusted $7.43; Q3'25 raise to $7.32-7.37 from $7.06-7.20",
+   "dossier_location": "s5",
+   "source": "Releases acc -26-000006, -26-000141, -26-000173, -25-000075",
+   "source_value": "verbatim, including prior ranges",
+   "status": "PASS",
+   "note": "Ranges exact."
+  },
+  {
+   "ticker": "AME",
+   "claim": "'Three consecutive full-year guidance raises in 2026' / 'Three straight guidance raises in 2026'",
+   "dossier_location": "s1, s5, s8; F51 summary",
+   "source": "Same releases",
+   "source_value": "FY2026 guidance: initial (Feb) then raised in Apr and Aug = two raises in 2026; the third (Oct 2025) raised FY2025 guidance",
+   "status": "FAIL",
+   "note": "Count wrong: two raises of FY2026 guidance (three raises across the last three releases, one of them for FY2025)."
+  },
+  {
+   "ticker": "AME",
+   "claim": "TTM FCF ~$1.825bn derived as OCF $2.686bn - capex $0.171bn",
+   "dossier_location": "s6",
+   "source": "10-K FY2025 and 10-Q XBRL",
+   "source_value": "TTM OCF 1,960.4 (1,801.8 - 776.6 + 935.2); capex 135.4; FCF 1,825.0",
+   "status": "FAIL",
+   "note": "Components wrong (and $2.686bn - $0.171bn would be $2.515bn); the FCF result $1.825bn is correct. Also TTM SBC ~$49M is not deducted."
+  },
+  {
+   "ticker": "AME",
+   "claim": "Pre-Indicor leverage: total debt, net $2,036.2M vs $2,283.3M at 31 Dec 2025; net debt $1,540.8M; net debt/capitalization 12.0%; H1 EBITDA $1,245.7M -> ~0.6x",
+   "dossier_location": "s6 (precheck lead: XBRL debt 2,283.3)",
+   "source": "10-Q acc -26-000175 Liquidity section",
+   "source_value": "2,036.2 vs 2,283.3; net debt-to-capital 12.0% vs 14.7%",
+   "status": "PASS",
+   "note": "Mechanical lead cleared: 2,283.3 is the 31 Dec 2025 comparative; consolidated entity and date correct."
+  },
+  {
+   "ticker": "AME",
+   "claim": "Indicor: $5.0bn all-cash, funded by $4.0bn term loan (1.625 / 1.625 / 0.75bn) plus revolver up to $1.0bn; ~$350M 2026 sales; pro forma net debt/EBITDA ~2.5x",
+   "dossier_location": "s1, s6",
+   "source": "8-K Ex-99.1 acc -26-000191; 10-Q loan note",
+   "source_value": "$5.0bn; $4.0bn in three tranches; $350M",
+   "status": "PASS",
+   "note": "Pro forma 2.5x is the dossier's estimate: (1.54 + 5.0) / (2.49 + ~0.1-0.3) = 2.3-2.5x, consistent."
+  },
+  {
+   "ticker": "AME",
+   "claim": "Reverse DCF: WACC 8.0%, terminal 3%, TTM FCF/share ~$7.93 on price $250.74 -> implied ~8.4%/yr; 'below' base ~10%",
+   "dossier_location": "s7",
+   "source": "Recomputed; rf 5.17% + ERP 4.14% x Blume beta 0.993 = cost of equity 9.28% (equity-financed pre-deal); pro forma EV basis includes $5.0bn new debt",
+   "source_value": "8.4% at 8.0% reproduced; 12.0% at 9.28% on FCF after SBC; 10.4% on pro forma EV basis (WACC 8.8%)",
+   "status": "FAIL",
+   "note": "8.0% is unsupported by the 5.17% Treasury, SBC not deducted, and pre-deal FCF is set against a post-deal price. Restated implied 10.4%-12.0% vs ~10% base: IN LINE (was 'below'); margin of safety nil. Verdict INCLUDE-SMALL kept."
+  },
+  {
+   "ticker": "AME",
+   "claim": "Orders +28% in Q2 2026; EIG sales $1.32bn (+14%); FCF/NI conversion 111%; OCF +35% to $483.7M",
+   "dossier_location": "s4, s8",
+   "source": "Q2 release acc -26-000173",
+   "source_value": "as stated",
+   "status": "PASS",
+   "note": "Q1 orders +23% not re-checked."
+  },
+  {
+   "ticker": "AMGN",
+   "claim": "Q2'26 revenue $10.05bn (+10%), GAAP EPS $4.37, non-GAAP EPS $6.29 vs $6.02; Q1'26 $8.6bn / $3.34",
+   "dossier_location": "s4 table, variance",
+   "source": "10-Q acc 0000318154-26-000126 and -000057; release acc -26-000124",
+   "source_value": "10,054 / 4.37 / 6.29; 8,618 / 3.34",
+   "status": "PASS",
+   "note": "Calendar quarters correct; quarterly GAAP EPS sum to FY25 $14.23 (3.20+2.65+5.93+2.45)."
+  },
+  {
+   "ticker": "AMGN",
+   "claim": "Guidance: FY26 $38.2-39.4bn, non-GAAP EPS $22.30-23.50, tax 15.0-16.5%; Q1 $37.1-38.5bn / $21.70-23.10; Q4'25 $37.0-38.4bn / $21.60-23.00 (tax 16.0-17.5%); FY25 $35.8-36.6bn / $20.60-21.40",
+   "dossier_location": "s5",
+   "source": "Four earnings releases (acc -26-000124, -26-000054, -26-000003, -25-000070)",
+   "source_value": "verbatim; midpoint arithmetic (+$1.0bn/+$0.50 and +$0.1bn/+$0.10) correct",
+   "status": "PASS",
+   "note": "All guidance figures appear verbatim in the cited releases."
+  },
+  {
+   "ticker": "AMGN",
+   "claim": "Debt: current portion $5,445M + long-term $51,859M = $57,304M; cash $13,989M; equity $11,688M",
+   "dossier_location": "s6 (precheck lead: XBRL long-term debt 51,886)",
+   "source": "Q2 release balance sheet; 10-Q",
+   "source_value": "5,445 + 51,859; cash $14.0bn; equity 11,688; release 'debt outstanding $57.3 billion'",
+   "status": "PASS",
+   "note": "Mechanical flag cleared: XBRL figure is the noncurrent line only; consolidated entity and 30 Jun 2026 date correct."
+  },
+  {
+   "ticker": "AMGN",
+   "claim": "Segment facts: Repatha +37% ($953M), Evenity +38%, Prolia -32% ($759M; volume -20%, price -12%), non-GAAP operating margin 48.4%, FCF $3.5bn vs $1.9bn",
+   "dossier_location": "s4",
+   "source": "Q2 release",
+   "source_value": "as stated",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "AMGN",
+   "claim": "Item 1.05 cyber 8-K (31 Jul 2026): data exfiltrated, 'not reasonably likely to have a material impact'; Item 1.02 Kyowa Kirin (30 Jan 2026); $4.0bn notes 8-K",
+   "dossier_location": "s6, s11",
+   "source": "EDGAR filing list and 8-K text",
+   "source_value": "Item 1.05 filed 2026-07-31; Item 1.02 filed 2026-01-30; notes 8-K filed 2026-02-19 (Item 1.01)",
+   "status": "MINOR",
+   "note": "Quotes verbatim. The dossier dates the note issuance 17 Feb; the 8-K was filed 19 Feb (closing date not checked)."
+  },
+  {
+   "ticker": "AMGN",
+   "claim": "Reverse DCF: cost of equity 8.0%, terminal 2.5%, equity FCF TTM $10.2bn vs market cap $224bn -> implied 4.6%; base 3.9% worth $214bn (5% below)",
+   "dossier_location": "s7",
+   "source": "Recomputed; TTM SBC $492M (FY25 494 - H1'25 242 + H1'26 240); rf 5.17% + ERP 4.14% x Blume beta ~0.67 = 7.9-8.0%",
+   "source_value": "4.6% and $214bn reproduced; on FCF after SBC ($9.7bn): 5.2% and $204bn (9% below market cap)",
+   "status": "FAIL",
+   "note": "Rule (e): FCF is not after stock-based compensation (dossier says 'SBC not sourced'). Rate 8.0% is consistent with the 5.17% Treasury but its build is unstated. Corrected: implied 5.2% vs 3.9% base: still ABOVE; WATCH stands."
+  },
+  {
+   "ticker": "AMGN",
+   "claim": "TTM FCF about $10.2bn = 8.1 + 4.97 - 2.89",
+   "dossier_location": "s6",
+   "source": "Release/10-Q cash flow",
+   "source_value": "FY25 8.1; H1'26 OCF 6,191 - capex 1,225 = 4,966; H1'25 ~2.9",
+   "status": "PASS",
+   "note": "Arithmetic ties."
+  },
+  {
+   "ticker": "AMT",
+   "claim": "Q2 2026 total revenue $2.75bn (+4.7%), net leverage 4.9x",
+   "dossier_location": "item 4, 6",
+   "source": "8-K Ex-99.1 acc 0001053507-26-000131; 10-Q acc -26-000133",
+   "source_value": "revenue 2,749.1; net debt 35,427 / annualised Adjusted EBITDA 7,233 = 4.9x",
+   "status": "PASS",
+   "note": "Calendar Q2 2026 label correct."
+  },
+  {
+   "ticker": "AMT",
+   "claim": "Q2 2026 adjusted EPS $1.87 (vs ~$1.55 consensus); 8-K filed 29 Jul 2026",
+   "dossier_location": "item 4",
+   "source": "Release and 10-Q",
+   "source_value": "AMT does not report adjusted EPS; GAAP diluted EPS attributable to common $1.86 (+138.5%, helped by unrealized FX gains; net income +133%); release dated 28 Jul 2026",
+   "status": "FAIL",
+   "note": "The $1.87 figure is not a company measure (vendor number); the filing date is 28 Jul, not 29 Jul. The company's headline metric is AFFO/share."
+  },
+  {
+   "ticker": "AMT",
+   "claim": "Outlook raised: property revenue +$110M, Adjusted EBITDA +$45M, AFFO/share +$0.09 (~3% growth); data-center growth ~15%",
+   "dossier_location": "item 5, 8",
+   "source": "Release outlook table",
+   "source_value": "property revenue +110; EBITDA +45; AFFO +45; AFFO/share +0.09; growth 3.0%; Data Centers segment property revenue midpoint growth 14.9%",
+   "status": "PASS",
+   "note": "Release attributes the raise to FX, data-center outperformance and one-time expense benefits."
+  },
+  {
+   "ticker": "AMT",
+   "claim": "2026 AFFO/share guide midpoint ~$11.00 -> 15.4x AFFO at $169.03",
+   "dossier_location": "item 7",
+   "source": "Release",
+   "source_value": "guide $11.00-$11.17, midpoint $11.085; 15.25x at $169.03",
+   "status": "MINOR",
+   "note": "$11.00 is the low end, not the midpoint; multiple is 15.2x, not 15.4x. Immaterial to the conclusion."
+  },
+  {
+   "ticker": "AMT",
+   "claim": "Reverse-DCF 'sense': 15.4x AFFO with high-single-digit COE implies flat-to-low-single-digit growth in perpetuity -> 'below' a mid-single to high-single-digit base",
+   "dossier_location": "item 7",
+   "source": "Recomputed (10 years then 3.0% terminal; rf 5.17% + ERP 4.14% x Blume beta ~0.9 = ~8.9%; equity $78.8bn = $169.03 x 466.0M shares)",
+   "source_value": "FCF after all capex and SBC $3.79bn (OCF 5,775 - capex 1,815 - SBC 166): implied 5.3% (4.3% at Ke 8.5%); dividend basis ($7.16/share): 6.0%-6.9%; AFFO basis 1.2%-1.7%",
+   "status": "FAIL",
+   "note": "Rule (e): AFFO adds back SBC and excludes development capex, and a perpetuity rate is compared with a ten-year base. On free cash flow after SBC the implied ten-year growth (4.3%-5.3%) and on dividends (6.0%-6.9%) are IN LINE with a mid-to-high single-digit base, not 'below'. INCLUDE-SMALL kept."
+  },
+  {
+   "ticker": "AMT",
+   "claim": "No major near-term maturity wall; red flags none identified",
+   "dossier_location": "item 6, 11",
+   "source": "8-Ks of 9 Sep 2026 (acc -26-000141) and 14 Sep 2026 (acc 0001193125-26-390605)",
+   "source_value": "$500M 5.300% 2031, $500M 5.560% 2033, $600M 5.750% 2036 senior notes priced 9 Sep 2026; $700M 1.600% notes repaid 14 Apr 2026",
+   "status": "MINOR",
+   "note": "New $1.6bn issuance at 5.3%-5.75% (refinancing cost 'headwind' persists) after the Q2 release is not mentioned; quarterly distribution $1.79 declared 18 Sep 2026."
+  },
+  {
+   "ticker": "AMT",
+   "claim": "Quarterly dividend: recurring distribution yield and payout",
+   "dossier_location": "item 7 (implicit)",
+   "source": "8-K acc -26-000145; FY2025 dividends paid $3.18bn",
+   "source_value": "$1.79 per quarter (~4.2% yield at $169.03)",
+   "status": "PASS",
+   "note": "Used in the dividend-basis recomputation."
+  },
+  {
+   "ticker": "AMZN",
+   "claim": "Q2 2026 net sales $200.6bn (+20%), AWS $42.2bn (+37%, 18-quarter high), AWS operating income $16.6bn (39% margin), consolidated operating income $27.5bn (~14%)",
+   "dossier_location": "s4 table",
+   "source": "Q2 release acc 0001018724-26-000024; 10-Q acc -26-000026",
+   "source_value": "200.6; 42.2 (+36.7%); 16.6; 27.5",
+   "status": "PASS",
+   "note": "Calendar Q2 2026 correct. Run-rate 4 x 42.2 = $169bn ties."
+  },
+  {
+   "ticker": "AMZN",
+   "claim": "GAAP results omitted: Q2 2026 net income $62.6bn, EPS $5.75; trailing EPS $12.42",
+   "dossier_location": "s4",
+   "source": "Q2 release",
+   "source_value": "net income $62.6bn incl. $53.4bn non-operating pre-tax other income, primarily Anthropic",
+   "status": "FAIL",
+   "note": "The table shows only revenue and operating lines; the Anthropic-driven gain (inflates trailing EPS $12.42 vs NTM $11.13) is not disclosed. Operating-margin based valuation is unaffected, but the equity stake is a non-operating asset not credited."
+  },
+  {
+   "ticker": "AMZN",
+   "claim": "'Data conflict': d4 shows FCF +$3.2bn vs 'independent coverage' TTM FCF -$7.6bn; 'treat as ambiguous'",
+   "dossier_location": "s6, s11; F18 data_conflicts",
+   "source": "Q2 release: free cash flow outflow of $7.6 billion for the trailing twelve months vs +$18.2bn a year earlier; OCF $161.4bn (+33%)",
+   "source_value": "company-reported -$7.6bn",
+   "status": "FAIL",
+   "note": "Not ambiguous: -$7.6bn is Amazon's own reported figure (OCF less net purchases of property and equipment, $169.0bn); the +$3.2bn vendor figure is the outlier."
+  },
+  {
+   "ticker": "AMZN",
+   "claim": "SBC: 'Q2 2026 $10.07bn (down 1.5% YoY), Q1 2026 $4.03bn'",
+   "dossier_location": "s6",
+   "source": "10-Q XBRL ShareBasedCompensation",
+   "source_value": "Q2 2026 quarter $6.038bn (Q2 2025 $6.534bn, -7.6%); Q1 2026 $4.032bn; six months $10.070bn vs $10.223bn (-1.5%)",
+   "status": "FAIL",
+   "note": "$10.07bn is the six-month figure mislabelled as Q2; quarter-on-quarter and YoY statements wrong."
+  },
+  {
+   "ticker": "AMZN",
+   "claim": "Long-term debt principal+interest $220.3bn at 30 Jun 2026, 'roughly doubling in six months'",
+   "dossier_location": "s6, s9 kill criterion 3",
+   "source": "10-Q commitments table",
+   "source_value": "Long-term debt principal and interest 220,309; face value of long-term debt 132,995 (68,836 at 31 Dec 2025)",
+   "status": "PASS",
+   "note": "Figure correct, but it is contractual principal plus interest over the life; balance-sheet face value is $133.0bn (+93%). Kill criterion 3 ($300bn) should be read on that scale."
+  },
+  {
+   "ticker": "AMZN",
+   "claim": "More debt issuance 'plausible'",
+   "dossier_location": "s6",
+   "source": "8-Ks acc 0001104659-26-082293 (9 Jul 2026) and -26-107526 (14 Sep 2026)",
+   "source_value": "$25.0bn USD notes closed 9 Jul 2026 (floating 0.75 + 3.5 + 4.25 + 3.0 + 4.5 + 2.75 + 4.0 + 2.25) and GBP 4.25bn notes closed 14 Sep 2026",
+   "status": "FAIL",
+   "note": "Two large issuances already completed before the 25 Sep as-of date were omitted; pro forma face value ~ $164bn and principal+interest roughly $280-290bn (my estimate), i.e. close to the $300bn kill trigger."
+  },
+  {
+   "ticker": "AMZN",
+   "claim": "Reverse DCF: discount rate 12.5%, 16% terminal margin, 20% tax, 22x terminal P/E, 10.79bn shares -> required CAGR 14.9%; base 10.9% -> fair value ~$176, '~42% below' price",
+   "dossier_location": "s1, s7",
+   "source": "Recomputed (terminal-value model reproduces 14.9% and $176)",
+   "source_value": "$176 is 29.5% below $249.67 (price is 42% above fair value). At cost of equity 10.1% (5.17% + Blume beta ~1.2 x 4.14%): required CAGR 12.4%, base value ~$218 (-12.5%); at 11%: 13.4% / $201",
+   "status": "FAIL",
+   "note": "12.5% is unsupported by the 5.17% Treasury; 'about 42% below' is arithmetic reversed; terminal value is earnings (net income x 22) with no capex burden or interim FCF. Corrected gap is smaller but implied remains ABOVE base; WATCH stands."
+  },
+  {
+   "ticker": "AMZN",
+   "claim": "Backlog $496bn; capex guide ~$220bn (from ~$200bn); AWS $225bn+ Trainium commitments",
+   "dossier_location": "s4, s5",
+   "source": "10-Q: performance obligations ~$496bn at 30 Jun 2026",
+   "source_value": "$496bn tied; capex guide and Trainium figure are call/press items",
+   "status": "MINOR",
+   "note": "Backlog verified in the 10-Q; $220bn capex guide and $225bn Trainium commitments are from secondary coverage (UNVERIFIABLE in the 8-K/10-Q text searched). TTM cash capex $173bn vs release net purchases of PP&E $169.0bn (gross vs net of proceeds/incentives)."
+  },
+  {
+   "ticker": "ANET",
+   "claim": "Q2 2026 (qtr ended 2026-06-30) revenue $3,035.7M (+37.7%), GAAP EPS $0.95, non-GAAP EPS $1.02, GAAP/non-GAAP operating margin 45.4%/49.9%",
+   "dossier_location": "s4 table",
+   "source": "10-Q acc 0001596532-26-000175; release acc -26-000174",
+   "source_value": "3,035.7; 0.95; 1.02; 45.4% / 49.9%",
+   "status": "PASS",
+   "note": "Calendar quarter labels correct; Q1 2026 $2,709.0M / $0.80 and prior-year growth rates (27.5% / 28.9% / 35.1% / 37.7%) recomputed and tie. Mechanical quarter-label flags on the guidance table are false positives (the table labels the guide release, not the actual quarter)."
+  },
+  {
+   "ticker": "ANET",
+   "claim": "Guidance table: Q3'25 'approximately $2.25bn', Q4'25 '$2.3-2.4bn', Q1'26 'approximately $2.6bn', Q2'26 'approximately $2.8bn'; current Q3'26 guide ~$3.3bn, non-GAAP operating margin 48-49%, EPS $1.06-1.08",
+   "dossier_location": "s5",
+   "source": "Releases acc -25-000214, -25-000284, -26-000010, -26-000074, -26-000174",
+   "source_value": "verbatim",
+   "status": "PASS",
+   "note": "All guidance figures appear verbatim in the cited releases."
+  },
+  {
+   "ticker": "ANET",
+   "claim": "'Q3'26 non-GAAP EPS guide of $0.88 (issued with Q1'26 release for Q2)'",
+   "dossier_location": "s5 last row",
+   "source": "Q1'26 release acc -26-000074",
+   "source_value": "'For the second quarter of 2026 ... non-GAAP diluted net income per share of approximately $0.88'",
+   "status": "FAIL",
+   "note": "Label error: the $0.88 guide was for Q2'26 (beaten by $1.02, +16%), not Q3'26."
+  },
+  {
+   "ticker": "ANET",
+   "claim": "Net cash: cash $2,290.2M + marketable securities $11,053.1M = $13,343.3M; no debt",
+   "dossier_location": "s6",
+   "source": "Q2 release balance sheet",
+   "source_value": "2,290.2 + 11,053.1; no debt line",
+   "status": "PASS",
+   "note": "Consolidated, 30 Jun 2026."
+  },
+  {
+   "ticker": "ANET",
+   "claim": "SBC/revenue (TTM) ~4.2% (440.2 / 10,540.8)",
+   "dossier_location": "s6",
+   "source": "10-K and 10-Q XBRL ShareBasedCompensation",
+   "source_value": "FY2025 439.2; TTM = 439.2 - 178.2 + 241.3 = 502.3 (4.8% of TTM revenue)",
+   "status": "FAIL",
+   "note": "440.2 is not TTM (and FY2025 is 439.2); TTM SBC is $502.3M, 4.8%."
+  },
+  {
+   "ticker": "ANET",
+   "claim": "TTM FCF ~$5.16bn; FCF/NI 1.28x",
+   "dossier_location": "s4, s6",
+   "source": "Quarterly OCF minus capex; 10-K / 10-Q XBRL",
+   "source_value": "5,155.3 (1,238.1 + 1,224.9 + 1,639.0 + 1,053.3); H1'26 OCF 2,776.5 - capex 84.2 = 2,692.3",
+   "status": "PASS",
+   "note": "Ties."
+  },
+  {
+   "ticker": "ANET",
+   "claim": "Reverse DCF: EV $247.17bn, TTM FCF $5.16bn, WACC 9.5% (rf ~4.3%), terminal 3.5% -> implied 16.9%; base 14-15%",
+   "dossier_location": "s1, s7",
+   "source": "Recomputed; rf 5.17% + ERP 4.14% x Blume beta ~1.3 = ~10.7% (no debt); interest income TTM $434M ($383.4M FY25 - $180.6M + $231.5M) and SBC $502M removed from FCF",
+   "source_value": "16.9% reproduced; FCF to firm after SBC and after-tax interest ~$4.30bn: 23.1% at 10.7% / 3.0% terminal (20.2% at 9.5%)",
+   "status": "FAIL",
+   "note": "Rule (e): rf 4.3% is stale (5.17% on 25 Sep 2026), SBC is added back, and interest income on the $13.3bn of cash is both in FCF and in the EV bridge (double count). Corrected implied ~21-23% vs base 14-15%: still ABOVE; WATCH reinforced. The '<=15% implied' re-underwrite level is about $120/share (not about $180)."
+  },
+  {
+   "ticker": "ANET",
+   "claim": "Two customers 26% and 16% of FY2025 revenue (20% and 15%/ 18-21% in prior years)",
+   "dossier_location": "s8, s9, s11",
+   "source": "10-K acc 0001596532-26-000013 risk factors",
+   "source_value": "16%, 15%, 21% and 26%, 20%, 18% for 2025, 2024, 2023",
+   "status": "PASS",
+   "note": "Verbatim."
+  },
+  {
+   "ticker": "ANET",
+   "claim": "Kill criterion 3: non-GAAP operating margin 'vs 44.7-49.9% over the last four' quarters",
+   "dossier_location": "s9",
+   "source": "Q2'26 release (Q2'25: GAAP 44.7%, non-GAAP 48.8%; Q2'26 non-GAAP 49.9%)",
+   "source_value": "44.7% is a GAAP margin of Q2'25",
+   "status": "MINOR",
+   "note": "Range mixes a GAAP margin from outside the last four quarters with the non-GAAP 49.9%; the threshold (44%) is still below every disclosed non-GAAP margin."
+  }
+ ],
+ "verdict_changes": []
+}

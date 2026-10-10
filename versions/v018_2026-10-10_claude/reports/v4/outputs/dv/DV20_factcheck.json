@@ -1,0 +1,877 @@
+{
+  "as_of": "2026-10-09",
+  "scope": [
+    "GWW",
+    "HAL",
+    "HAS",
+    "HCA",
+    "HD",
+    "HII",
+    "HLT",
+    "HON",
+    "HONA",
+    "HOOD"
+  ],
+  "facts": [
+    {
+      "ticker": "GWW",
+      "claim": "Q2 2026 sales $5,021M, NI $570M, diluted EPS $12.01 (period 3 months to 30 Jun 2026)",
+      "dossier_location": "section 3 table",
+      "source": "XBRL companyfacts 10-Q 0000277135-26-000079",
+      "source_value": "5,021 / 570 / 12.01",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "GWW",
+      "claim": "FY2026 guide $45.50-47.25 raised from $44.25-46.25; sales growth 6.7-9.1% -> 8.4-10.0%; daily organic cc 9.5-12.0% -> 11.5-13.0%",
+      "dossier_location": "section 4",
+      "source": "8-K Ex-99.1 0000277135-26-000076 / 10-Q 0000277135-26-000079",
+      "source_value": "verbatim in guidance table (as of 7 May / 4 Aug 2026)",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "GWW",
+      "claim": "3-Feb-2026 initial guide $42.25-44.75; FY25 adjusted EPS $39.48, reported $35.40",
+      "dossier_location": "section 4",
+      "source": "8-K Ex-99.1 0000277135-26-000004",
+      "source_value": "42.25-44.75; 39.48; 35.40",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "GWW",
+      "claim": "7-May-2026 raised to $44.25-46.25",
+      "dossier_location": "section 4",
+      "source": "8-K Ex-99.1 0000277135-26-000056",
+      "source_value": "previous (3 Feb) 42.25-44.75 -> updated 44.25-46.25",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "GWW",
+      "claim": "Q4 2024 diluted EPS $9.85 (FY-minus-9mo) and \"company-reported Q4 2024 EPS was $9.44\"",
+      "dossier_location": "section 3 table row Q4 2024 and footnote",
+      "source": "10-K FY2024 EPS 38.71 less 9M 29.00 (XBRL); Q4 2025 release EPS $9.44, -2.8% YoY",
+      "source_value": "Q4 2024 EPS = $9.71; $9.44 is Q4 2025",
+      "status": "FAIL",
+      "note": "Table value 9.85 wrong; the 9.44 was the Q4 2025 figure mis-attributed to Q4 2024; no verdict effect"
+    },
+    {
+      "ticker": "GWW",
+      "claim": "\"three straight quarterly guidance raises\" / \"Three consecutive guidance raises (initiate -> raise -> raise)\"",
+      "dossier_location": "header, section 8 point 1, F52 thesis_one_line",
+      "source": "Releases 3 Feb, 7 May, 4 Aug 2026",
+      "source_value": "1 initiation + 2 raises",
+      "status": "FAIL",
+      "note": "Section 4 itself says two consecutive raises; header/bull case overstate. No verdict effect"
+    },
+    {
+      "ticker": "GWW",
+      "claim": "MonotaRO NCI $382M; cash $589M; total debt $2,408M; equity ex-NCI $4,131M",
+      "dossier_location": "section 6",
+      "source": "10-Q XBRL 30 Jun 2026",
+      "source_value": "MinorityInterest 382; Cash 589; LongTermDebt 2,408; StockholdersEquity 4,131",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "GWW",
+      "claim": "TTM OCF $2,175M, capex $665M, FCF $1,510M, NI $1,870M",
+      "dossier_location": "section 6",
+      "source": "XBRL FY25 + H1-26 - H1-25",
+      "source_value": "2,175 / 665 / 1,510 / 1,870 (attributable)",
+      "status": "PASS",
+      "note": "Mechanical xbrl_crosstie net income flag (600 vs 1,870) is a quarter/TTM mismatch, not an error"
+    },
+    {
+      "ticker": "GWW",
+      "claim": "$43M IEEPA tariff refund reduced COGS in Q2 2026; High-Touch +11.9%, Endless Assortment +13.5% / +20.6% organic",
+      "dossier_location": "section 5",
+      "source": "8-K Ex-99.1 0000277135-26-000076",
+      "source_value": "43; 11.9%; 13.5%; 20.6%",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "GWW",
+      "claim": "Reverse DCF: WACC 8.0%, EV $62.85bn, FCF $1,510M -> implied 12.8%/yr",
+      "dossier_location": "section 7",
+      "source": "Method re-derivation: 10y UST 5.17% (25 Sep 2026) + beta 1.03 x ERP 4.5% = Ke 9.8%; debt ~4% of EV -> WACC ~9.6%; EV = 58.7 + net debt 1.82 + NCI 0.38 = 60.9bn; SBC TTM $68M deducted -> FCF 1,442",
+      "source_value": "Restated implied growth ~17.0%/yr vs base 10%",
+      "status": "FAIL",
+      "note": "8.0% discount rate inconsistent with 5.17% Treasury (implies ERP 2.7%); EV 62.85bn does not reconcile to market cap + net debt + NCI (60.9bn); SBC not deducted. Gap to base widens: verdict WATCH and ABOVE unchanged"
+    },
+    {
+      "ticker": "HAL",
+      "claim": "Q2 2026 revenue $5,714M, operating income $778M, GAAP NI $534M, GAAP EPS $0.64, adjusted EPS $0.55, adjusted op income $683M",
+      "dossier_location": "section 3 table",
+      "source": "10-Q 0000045012-26-000061; 8-K Ex-99.1 0000045012-26-000057",
+      "source_value": "5,714 / 778 / 534 / 0.64 / 0.55 / 683",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HAL",
+      "claim": "Q1 2026 GAAP EPS $0.55, op income $679M; Q3 2025 EPS $0.02, op income $356M",
+      "dossier_location": "section 3 table",
+      "source": "XBRL companyfacts 10-Q 0000045012-26-000039 / -25-000069",
+      "source_value": "0.55 / 679; 0.02 / 356",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HAL",
+      "claim": "Total debt carrying value $7,161M (current $90M + LT $7,071M), cash $2,048M, net debt $5,113M; ~$90M due Feb 2027; no financial covenants",
+      "dossier_location": "section 5",
+      "source": "10-Q 0000045012-26-000061; 8-K Ex-99.1 0000045012-26-000057",
+      "source_value": "7,161; 90; 7,071; 2,048; 90 due Feb 2027; no covenants",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HAL",
+      "claim": "TTM OCF $2,750M, TTM GAAP NI $1,602M, TTM capex $1,025M -> FCF $1,725M; H1 capex $427M",
+      "dossier_location": "section 5",
+      "source": "XBRL FY25 + H1-26 - H1-25; Ex-99.1",
+      "source_value": "2,750 / 1,602 / 1,025 / 427",
+      "status": "PASS",
+      "note": "xbrl_crosstie net income flag (538 vs 1,602) compares one quarter with a TTM sum; no error"
+    },
+    {
+      "ticker": "HAL",
+      "claim": "Capex guide \"approximately $1.1 billion\" for 2026; returns \"in line with our capital return framework\", \"at least 50%\"; CDS notional $217M vs $592M; Mexico customer ~7% of receivables; $1.7B buyback authorization remaining",
+      "dossier_location": "section 4 and 5",
+      "source": "10-Q 0000045012-26-000061",
+      "source_value": "all quoted sentences present",
+      "status": "PASS",
+      "note": "Halliburton gives no numeric revenue/EPS guidance; dossier states that correctly"
+    },
+    {
+      "ticker": "HAL",
+      "claim": "CEO quote Q2 2026 \"encouraged by the recovery... incremental improvements\" and \"stage for revenue growth and margin expansion\"; company FCF $668M in Q2",
+      "dossier_location": "section 3 and 4",
+      "source": "Ex-99.1 0000045012-26-000057",
+      "source_value": "present verbatim; FCF 668",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HAL",
+      "claim": "SAP S4 upgrade expense $88M in H1 2026",
+      "dossier_location": "section 5",
+      "source": "10-Q income statement",
+      "source_value": "46 (Q2), 88 (H1)",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HAL",
+      "claim": "Reverse DCF: cost of equity 9.5% (no ERP or beta stated), FCF $1,725M (OCF minus capex, SBC not deducted) -> implied ~3.9%/yr, implied_vs_base = below",
+      "dossier_location": "section 6",
+      "source": "Method re-derivation: 10y UST 5.17% + ERP 4.5% x beta (d4 beta 0.77 -> 8.6%; beta 1.0 convention -> 9.67%); SBC 2025 $213M (10-K); same fade structure (years 1-5 at g, fading to 2.5%) on market cap $27.4B",
+      "source_value": "Restated: FCF after SBC $1,512M, implied 6.8%/yr at 9.67% (8.9% at 10.5%) vs base 6-8%",
+      "status": "FAIL",
+      "note": "OCF-based FCF treats SBC as free; ERP not stated. Restated implied lies inside the 6-8% base: implied_vs_base below -> in_line. Verdict kept INCLUDE-SMALL (balance sheet, 5.5% SBC-adjusted FCF yield) but the valuation leg is no longer \"cheap\""
+    },
+    {
+      "ticker": "HAS",
+      "claim": "Q2 FY26 (quarter to 28 Jun 2026) revenue $1,139.6M, operating income $252.5M (release $253M), GAAP EPS $1.12, adjusted EPS $1.28, NI $160.9M",
+      "dossier_location": "section 4 table",
+      "source": "XBRL 10-Q 0000046080-26-000050; Ex-99.1 0000046080-26-000044",
+      "source_value": "1,139.6 / 252.5 / 1.12 / 1.28",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HAS",
+      "claim": "Q1 FY26 revenue $1,000.2M, op income $270.3M, EPS $1.39, adjusted $1.47; Q3 FY25 revenue 1,387.5, EPS 1.64; Q2 FY25 op loss -798.2, EPS -6.10",
+      "dossier_location": "section 4 table",
+      "source": "XBRL 10-Q 0000046080-26-000026 / -25-000164 / -25-000128; Ex-99.1 -26-000029",
+      "source_value": "all match",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HAS",
+      "claim": "Q4 FY25 (derived) operating income ~285.7",
+      "dossier_location": "section 4 table",
+      "source": "10-K FY2025 operating income 11.1 less 9M -286.4 (XBRL 0000046080-26-000011 / -25-000164)",
+      "source_value": "297.5 (margin 20.6% on 1,445.9)",
+      "status": "FAIL",
+      "note": "Derived figure wrong by ~$12M; EPS ~1.44 and revenue 1,445.9 correct. No verdict effect"
+    },
+    {
+      "ticker": "HAS",
+      "claim": "Q1 FY26 guidance \"MAINTAINED\" release dated 2026-04-23, acc. 0000046080-26-000029",
+      "dossier_location": "section 5 point 3, Sources 5",
+      "source": "EDGAR submissions: acc -26-000029 filed 2026-05-20 (Ex-99.1 exhibit991q12026); 2026-04-23 acc -26-000016 is a preliminary-results release that reiterated guidance",
+      "source_value": "Date should be 2026-05-20; guidance quoted is correct",
+      "status": "FAIL",
+      "note": "Citation date wrong; content (3-5% / 24-25% / $1.40-1.45bn) is verbatim in both releases"
+    },
+    {
+      "ticker": "HAS",
+      "claim": "Q2 FY26 guidance: revenue +5-7% cc (prev 3-5%), adj op margin 25-26% (prev 24-25%), adj EBITDA $1.45-1.50bn (prev $1.40-1.45bn)",
+      "dossier_location": "section 5 point 4",
+      "source": "Ex-99.1 0000046080-26-000044",
+      "source_value": "verbatim",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HAS",
+      "claim": "Q4 FY25 initial FY26 guide 3-5% / 24-25% / $1.40-1.45bn; FY25 adj op margin 24.2%, adj EPS $5.54, GAAP -$2.30; Q3 FY25 guide 22-23% / $1.24-1.26bn",
+      "dossier_location": "section 5 points 1-2, section 4",
+      "source": "Ex-99.1 0000046080-26-000006 and -25-000156",
+      "source_value": "verbatim",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HAS",
+      "claim": "$56M Digital Games impairment; CP operating loss $15M (adj -$8M); cyber: $25M revenue impact, $11M direct cost, no insurance recognized; Magic first $500M quarter, WotC +27%",
+      "dossier_location": "section 6, 8",
+      "source": "Ex-99.1 0000046080-26-000044",
+      "source_value": "verbatim",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HAS",
+      "claim": "FCF yield 5.5% (d4 vendor); WACC 7.77% (beta 0.90)",
+      "dossier_location": "section 7",
+      "source": "XBRL: TTM OCF 1,288.2 (893.2+604.4-209.4); PP&E capex 74.6; capitalized software 127.2; SBC 95.5; d4 beta 0.466; V1 sbc_adj_fcf_yield 8.87%",
+      "source_value": "TTM FCF 1,086 (8.7% of $12.4bn market cap; 8.0% after SBC)",
+      "status": "FAIL",
+      "note": "5.5% is a vendor figure not reconciled to the filings; WACC 7.77% is ~1.4pt under a 5.17% Treasury + 4.5% ERP x beta 0.9 cost of equity (9.2%) but debt weight lowers WACC to ~8.1%, so only a minor gap"
+    },
+    {
+      "ticker": "HAS",
+      "claim": "Reverse DCF implied 10y growth -3.7% (V1) / -3.8% (FCF-anchored), \"market pricing continued mild decline\"",
+      "dossier_location": "section 7",
+      "source": "Re-derived on equity FCF after SBC $991M vs market cap $12.4bn, fade years 1-5, terminal 2.5%",
+      "source_value": "-1.0% at 9.2% Ke; +0.2% at 9.67% (vs consensus FY1 +6.8%)",
+      "status": "MINOR",
+      "note": "Implied growth is less negative than stated (about 0%, not -3.7%) but remains far below the +5-7% company guide; direction (cheap) unchanged"
+    },
+    {
+      "ticker": "HAS",
+      "claim": "Verdict INCLUDE \"sized full-weight\"; V1 row",
+      "dossier_location": "section 1 vs V1 table",
+      "source": "outputs/v1_valuation_table.csv HAS: verdict fair, 3y annualised bear -33.6% / base -6.5% / bull +23.2%, street flag base below Street 12m low target",
+      "source_value": "V1 base-case 3y return is negative",
+      "status": "MINOR",
+      "note": "Dossier quotes the Street flag but not V1 negative base return; \"full weight\" is not supported by the dossier's own evidence alone. Verdict left INCLUDE; sizing should be reviewed"
+    },
+    {
+      "ticker": "HCA",
+      "claim": "Q2 2026 revenue $20,230M, NI $1,699M, diluted EPS $7.62 (adj $7.59)",
+      "dossier_location": "section 4 table",
+      "source": "8-K Ex-99.1 0001193125-26-315151 (24 Jul 2026) and preliminary 8-K 0001193125-26-302539 (14 Jul 2026)",
+      "source_value": "20,230 / 1,699 / 7.62 / 7.59",
+      "status": "PASS",
+      "note": "Dossier says \"not yet in XBRL pull\" but the Q2 10-Q (acc. 0001193125-26-321077) was filed 2026-07-28"
+    },
+    {
+      "ticker": "HCA",
+      "claim": "Q1 2026 revenue $19,109M, NI $1,620M, EPS $7.15; Q2/Q3 2025 revenue 18,605/19,161, EPS 6.83/6.96; FY2025 revenue 75,600, NI 6,784, EPS 28.33; Q1 2025 EPS 6.45",
+      "dossier_location": "section 4 table",
+      "source": "XBRL 10-Q 0001193125-26-191444 / 10-K 0001193125-26-044769",
+      "source_value": "all match",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HCA",
+      "claim": "Q1 2026 revenue growth \"about +2.7% YoY\"",
+      "dossier_location": "section 4 text",
+      "source": "Ex-99.1 0001193125-26-174933 (24 Apr 2026)",
+      "source_value": "Revenues increased 4.3 percent to $19.109 billion",
+      "status": "FAIL",
+      "note": "Wrong growth rate; respiratory admissions -42% and January storm quote is correct"
+    },
+    {
+      "ticker": "HCA",
+      "claim": "FY2026 guide cut: EPS $28.70-30.50 from $29.10-31.50; revenue $77.0-79.5bn from $76.5-80.0bn; adj EBITDA $15.4-16.1bn from $15.55-16.45bn; ~$400M Q2 payer-mix hit",
+      "dossier_location": "section 5",
+      "source": "Ex-99.1 0001193125-26-302539 (14 Jul 2026) and -315151 (24 Jul)",
+      "source_value": "verbatim; revision first announced 14 Jul",
+      "status": "PASS",
+      "note": "Cut was announced 14 Jul 2026 in the preliminary release, not the 24 Jul release; the $400M includes ~$75M catch-up of Q1"
+    },
+    {
+      "ticker": "HCA",
+      "claim": "FY2025 guidance raise 72.80-75.80 -> 74.00-76.00 revenue; NI 5.85-6.29 -> 6.11-6.48bn",
+      "dossier_location": "section 5",
+      "source": "Ex-99.1 0000950170-25-098578 (25 Jul 2025)",
+      "source_value": "verbatim",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HCA",
+      "claim": "Price $423.48 \"as-of close 2026-09-25\"",
+      "dossier_location": "header, sections 7",
+      "source": "v4/data/d2_close.parquet",
+      "source_value": "2026-09-24 close 423.48; 2026-09-25 close 435.61",
+      "status": "FAIL",
+      "note": "Stale by one trading day (+2.9%); P/E 14.3x becomes 14.7x on guide midpoint; valuation conclusion unchanged"
+    },
+    {
+      "ticker": "HCA",
+      "claim": "Debt $44.37bn total / $39.49bn noncurrent at 2026-03-31; net debt/EBITDA 3.0-3.2x; equity -$6.30bn",
+      "dossier_location": "section 6",
+      "source": "Ex-99.1 -315151 balance sheet 30 Jun 2026; XBRL 31 Mar 2026",
+      "source_value": "31 Mar: debt 44.37, net debt 43.4 -> 2.7-2.8x on 15.4-16.1 guide; 30 Jun: total debt 49.718bn, cash 1.013bn -> 3.0-3.2x; attributable deficit -6.642bn (31 Mar -6.303)",
+      "status": "FAIL",
+      "note": "Multiple 3.0-3.2x is right only on the 30 Jun 2026 balance sheet ($49.7bn, +$5.3bn in one quarter); cited $44.37bn is a quarter stale. Kill criterion 3.5x unchanged but headroom is smaller than implied"
+    },
+    {
+      "ticker": "HCA",
+      "claim": "Buybacks $10.07bn FY2025; diluted shares 249.4M -> 226.7M; SBC ~$400M",
+      "dossier_location": "section 6",
+      "source": "XBRL 10-K / 10-Q",
+      "source_value": "10,067; 249.44 -> 226.65; SBC 401",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HCA",
+      "claim": "FCF/share ~$33.2 = $7.69bn / ~232M avg diluted shares; r 8.5%; implied g 4.3-5%",
+      "dossier_location": "section 7",
+      "source": "XBRL FY2025: OCF 12,636, capex 4,944, SBC 401, NCI distributions 827, avg diluted shares 239.5M; d4 beta 1.109 -> Ke 5.17%+1.109x4.5% = 10.16%",
+      "source_value": "Dossier formula P = F(1+g)/(r-g) with its own inputs gives g = 0.6%, not 4.3-5%",
+      "status": "FAIL",
+      "note": "Arithmetic error plus method gaps: 8.5% below Treasury-based Ke; SBC and NCI distributions ($827M, belongs to minorities) not deducted; share count 239.5M not 232M. Restated: FY25 basis FCF to HCA $6.49bn -> implied g 3.3% (Ke 10.16%) ; TTM basis $4.86bn (H1-26 OCF fell to $4.35bn from $5.86bn) -> 4.9%; against 4-5% base: implied_vs_base in_line stands"
+    },
+    {
+      "ticker": "HD",
+      "claim": "Q2 FY26 revenue $47.86B (+5.7%), op income $6.84B, EPS $4.79; Q1 FY26 $41.77B, 4.98B, $3.30; Q3 FY25 $41.35B/5.35B/$3.62; Q2 FY25 $45.28B/6.56B/$4.58; FY25 revenue $164.68B, op income $20.89B, EPS $14.23, NI $14.156B",
+      "dossier_location": "section 4 table",
+      "source": "XBRL 10-Q 0001628280-26-058715, -26-038247, -25-053868; 10-K 0001628280-26-019436",
+      "source_value": "all match",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HD",
+      "claim": "Comp sales Q2 FY26 +1.7% (US +1.3%), Q1 +0.6% (US +0.4%)",
+      "dossier_location": "section 4",
+      "source": "8-K Ex-99.1 0000354950-26-000145 / -000101",
+      "source_value": "1.7 / 1.3; 0.6 / 0.4",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HD",
+      "claim": "FY26 guidance (sales +2.5-4.5%, comp flat to +2.0%, op margin 12.4-12.6%, adj 12.8-13.0%, EPS flat to +4% from $14.23, GM 33.1%) reaffirmed in Q1 and Q2 releases",
+      "dossier_location": "section 5",
+      "source": "Ex-99.1 0000354950-26-000145 and -000101; Q4 release 0000354950-26-000026 (24 Feb 2026)",
+      "source_value": "verbatim in Q2 release; both releases titled \"Reaffirms Fiscal 2026 Guidance\"",
+      "status": "PASS",
+      "note": "Q1 release is dated 2026-05-19 (dossier gives 2026-05-27 = 10-Q date): MINOR"
+    },
+    {
+      "ticker": "HD",
+      "claim": "\"Growth is decelerating on a comp basis\"; bear case \"Comp growth has decelerated for three straight quarters (0.4% -> 0.6% -> 1.7%)\"",
+      "dossier_location": "section 4 text, section 9 point 1",
+      "source": "Ex-99.1 releases / 10-K",
+      "source_value": "Total comps +0.4% (Q4 FY25), +0.6% (Q1), +1.7% (Q2): rising; US 0.3 -> 0.4 -> 1.3",
+      "status": "FAIL",
+      "note": "Dossier's own series shows three straight quarters of acceleration, not deceleration. Q2 US comp 1.3% is above kill criterion 1 (1.0%). Valuation-based WATCH rationale remains, but the \"comp deceleration\" support is false"
+    },
+    {
+      "ticker": "HD",
+      "claim": "GMS acquisition \"expected close early 2026\"; kill criterion 4 \"GMS acquisition fails to close as expected in early 2026\"",
+      "dossier_location": "section 6, 10, 11",
+      "source": "10-Q 0001628280-26-058715 Note (Acquisitions)",
+      "source_value": "Completed 4 Sep 2025, cash consideration $5.1bn; Mingledorff's acquired May 2026 (HD paid $1.33bn for businesses H1 FY26)",
+      "status": "FAIL",
+      "note": "Stale/wrong deal status; criterion 4 is moot. Mingledorff's (HVAC) omitted"
+    },
+    {
+      "ticker": "HD",
+      "claim": "Consolidated debt \"DebtAndCapitalLeaseObligations $51.308B at 2026-02-01\" as the leverage figure and kill-criterion 2 metric",
+      "dossier_location": "section 6, 9, 10",
+      "source": "10-Q 0001628280-26-058715 balance sheet",
+      "source_value": "1 Feb 2026: short-term debt (commercial paper) 4,464 + current installments 4,967 + LT debt 46,341 = 55,772; 2 Aug 2026: 4,248 + 4,697 + 43,951 = 52,896; cash 2,085",
+      "status": "FAIL",
+      "note": "Tag excludes ~$4.3-4.5bn commercial paper; latest quarter available but dossier uses 1 Feb 2026. Total debt fell $2.9bn in H1 (repayments of long-term debt $3.04bn)"
+    },
+    {
+      "ticker": "HD",
+      "claim": "Equity $12.813B (1 Feb 2026) -> $16.617B (2 Aug 2026); buybacks $0 in FY25 (paused March 2024)",
+      "dossier_location": "section 6",
+      "source": "XBRL 10-Q 0001628280-26-058715",
+      "source_value": "12,813; 16,617; repurchases paused March 2024",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HD",
+      "claim": "FY25 OCF $16.325B, capex ~$3.7B, FCF ~$12.6B, FCF yield 4.3% on $292.5B market cap",
+      "dossier_location": "section 6, 7",
+      "source": "XBRL 10-K OCF 16,325; H1 FY26 OCF 11,422 vs 8,968, capex 1,724",
+      "source_value": "OCF match; capex from third-party source (stocktitan) not tagged in cache",
+      "status": "MINOR",
+      "note": "Source 7 is a third-party site; FY25 OCF primary-verified"
+    },
+    {
+      "ticker": "HD",
+      "claim": "Reverse DCF: WACC ~8%, \"perpetual FCF growth roughly 3.5-4% (WACC minus FCF yield)\"",
+      "dossier_location": "section 7",
+      "source": "Method re-derivation: Ke = 5.17% + 4.5% x beta 0.955 (d4) = 9.47%; WACC (debt ~15% of capital) ~8.7%; g = (Ke x P - FCF)/(P + FCF) on equity FCF; SBC $522M deducted",
+      "source_value": "Implied perpetual growth ~5.0-5.1% (equity FCF 12.6bn, SBC-adjusted 12.1bn)",
+      "status": "FAIL",
+      "note": "8% WACC with the 5.17% Treasury is ~0.7pt low and the shortcut subtracts FCF yield from a firm-level rate; SBC ($522M) not deducted. Restated implied growth ~5%, top of the mid-single-digit base: implied_vs_base in_line (upper end) stands, WATCH unchanged"
+    },
+    {
+      "ticker": "HII",
+      "claim": "Q2 2026 revenue $3,418M, operating income $210M (6.1%), net income $208M, GAAP EPS $5.27; Q2 2025 $3,082M / 163 / 3.86",
+      "dossier_location": "section 4 table",
+      "source": "XBRL 10-Q 0001501585-26-000047; Ex-99.1 0001501585-26-000045",
+      "source_value": "3,418 / 210 / 208 / 5.27",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HII",
+      "claim": "Q1 2026 3,099 / 155 / 3.79; Q3 2025 3,192 / 161 / 3.68; derived Q4 2025 3,476 / 172; derived Q4 2024 3,004 / 110 / 3.15",
+      "dossier_location": "section 4 table",
+      "source": "XBRL 10-Q/10-K FY less 9M",
+      "source_value": "all reproduce; Q4 2025 EPS FY 15.39 less 9M 11.33 = 4.06 vs 4.04 shown",
+      "status": "PASS",
+      "note": "4.04 vs 4.06 is within rounding of per-quarter share counts; MINOR at most"
+    },
+    {
+      "ticker": "HII",
+      "claim": "FY26 guidance: 5 Feb shipbuilding revenue $9.7-9.9bn, margin 5.5-6.5%, FCF $500-600M; 30 Jul raised revenue to $10.2-10.4bn, margin low end to 6.0%, FCF reaffirmed; MT $3.0-3.2bn; non-operating retirement benefit $213M; D&A ~$330M",
+      "dossier_location": "section 5",
+      "source": "Ex-99.1 0001501585-26-000004 and -000045 outlook tables",
+      "source_value": "verbatim",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HII",
+      "claim": "FY25 FCF $800M (guided $550-650M after Oct 2025 raise); H1 2026 FCF -$611M (Q1 -461, Q2 -150); H1 2025 +$268M",
+      "dossier_location": "section 4, 5",
+      "source": "Ex-99.1 -000004 and -000045 FCF reconciliation; XBRL OCF H1-26 -421, capex 193",
+      "source_value": "800; (611); 268; Q4 2025 FCF 516 is reported directly",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HII",
+      "claim": "Backlog $57.3bn, Q2 awards $6.7bn; cash $12M (Dec 2025 $774M); long-term debt $2,702M; net debt ~$2.69bn; net debt/EBITDA ~2.6x",
+      "dossier_location": "section 4, 6",
+      "source": "Ex-99.1 -000045 balance sheet; XBRL LongTermDebtNoncurrent 2,702",
+      "source_value": "57.3; 6.7; 12; 774; 2,702; TTM op income 698 + D&A 330 -> 2.6x",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HII",
+      "claim": "Reverse DCF: FCFF $637M, EV $13.11bn, WACC 8.5/9/9.5% -> implied 4.2/5.4/6.5%; base 7%; implied_vs_base = below",
+      "dossier_location": "section 7",
+      "source": "Re-run: same inputs reproduce 4.2 / 5.4 / 6.5. Program rule: Treasury 5.17% + ERP; WACC at beta 1.0 and 21% debt weight ~8.4%. SBC $52M TTM (XBRL) not deducted",
+      "source_value": "With SBC deducted (FCFF $583M): 5.4 / 6.5 / 7.7% at 8.5 / 9 / 9.5%; at WACC ~8.4% ~5.3%",
+      "status": "MINOR",
+      "note": "Stated range brackets the Treasury-based WACC, so \"below base\" survives; SBC ($52-54M) not deducted and WACC not tied to 5.17% Treasury; at 9.5% with SBC deducted implied (7.7%) would exceed the 7% base - the dossier itself notes the flip risk. Verdict and implied_vs_base unchanged"
+    },
+    {
+      "ticker": "HII",
+      "claim": "Net debt $2.71bn in section 7 versus $2.69bn in section 6",
+      "dossier_location": "section 6 vs 7",
+      "source": "10-Q balance sheet 30 Jun 2026",
+      "source_value": "LTD 2,702 less cash 12 = 2,690",
+      "status": "MINOR",
+      "note": "$0.02bn internal inconsistency, no effect"
+    },
+    {
+      "ticker": "HII",
+      "claim": "Press reports of a $5.1bn USS Harry S. Truman RCOH award on 29 Sep 2026 (post-cutoff, not used)",
+      "dossier_location": "section 10",
+      "source": "No SEC filing in cache covering 29 Sep 2026",
+      "source_value": "not checked",
+      "status": "UNVERIFIABLE",
+      "note": "Dossier labels it post-cutoff and excludes it from the verdict"
+    },
+    {
+      "ticker": "HLT",
+      "claim": "Q2 2026 revenue $3,341M, operating income $858M, net income $482M, GAAP EPS $2.10, adj EPS $2.29, Adj EBITDA $1,054M; Q2 2025 EPS $1.84",
+      "dossier_location": "section 3",
+      "source": "8-K Ex-99.1 0001585689-26-000042 / 10-Q 0001585689-26-000043",
+      "source_value": "3,341 / 858 / 482 / 2.10 / 2.29 / 1,054 / 1.84",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HLT",
+      "claim": "Quarterly net income Q2'25 442, Q3'25 421, Q1'26 383; FY25 net income $1,461M",
+      "dossier_location": "section 3, 4",
+      "source": "XBRL NetIncomeLoss (attributable to Hilton) 10-Q/10-K",
+      "source_value": "440 / 420 / 385; FY25 1,457",
+      "status": "MINOR",
+      "note": "Dossier figures differ by $2-4M (appear to include noncontrolling interests); attributable figures are the XBRL values. The mechanical crosstie net-income flags compare FY/guidance numbers with a quarter and are not errors"
+    },
+    {
+      "ticker": "HLT",
+      "claim": "Q2'26 guidance: RevPAR +3.0-3.5%, net income $1,883-1,911M, Adj EBITDA $4,040-4,080M, adj EPS $8.89-9.01, capital return ~$3.5bn; Q3: Adj EBITDA $1,035-1,055M, adj EPS $2.28-2.34",
+      "dossier_location": "section 4",
+      "source": "Ex-99.1 0001585689-26-000042",
+      "source_value": "verbatim",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HLT",
+      "claim": "Pipeline 541,300 rooms, net unit growth 6.1%, RevPAR +3.9%, $17M non-RevPAR items pulled forward",
+      "dossier_location": "section 1, 4",
+      "source": "Ex-99.1 -000042",
+      "source_value": "verbatim",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HLT",
+      "claim": "Debt principal $13,444M, carrying $13,343M (Dec 2025 $12,363M), $13.1bn ex finance leases at 5.04%, cash $1,064M incl. $55M restricted, revolver availability $1,894M, only $600M due April 2027 before April 2029",
+      "dossier_location": "section 5",
+      "source": "Ex-99.1 -000042 net-debt reconciliation; XBRL cash 1,009 + restricted 55",
+      "source_value": "all match",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HLT",
+      "claim": "Net debt ~$12.38bn = 3.2x TTM Adj EBITDA $3,877M; stockholders' deficit $(6,303)M",
+      "dossier_location": "section 2, 5",
+      "source": "Ex-99.1; XBRL StockholdersEquity -6,303",
+      "source_value": "12,380 / 3,877 = 3.19x; -6,303",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HLT",
+      "claim": "TTM OCF $2,109M, capex $80M, FCF $2,029M, SBC ~$180M",
+      "dossier_location": "section 3",
+      "source": "XBRL FY25 + H1-26 - H1-25",
+      "source_value": "2,109 / 80 / SBC 185",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HLT",
+      "claim": "Reverse DCF at 8.5% discount rate: implied 10.4% FCF CAGR (11.6% after SBC) vs 8% base",
+      "dossier_location": "section 6",
+      "source": "Method: 10y UST 5.17% + 4.5% ERP x beta 1.056 (d4) = Ke 9.9%; FCF after SBC ($185M) and contract acquisition costs ($220M) = $1,624M; same structure (constant growth 10y, 3% terminal) reproduces dossier ~11.0% at 8.5%",
+      "source_value": "Restated implied ~14-17% at 9.7-9.9% (14.4% on $2,029M; 17.4% on $1,624M)",
+      "status": "FAIL",
+      "note": "8.5% is ~1.4pt below the Treasury-based cost of equity; equity FCF is discounted at a rate below Ke. Gap to the 8% base widens: implied_vs_base ABOVE and WATCH unchanged"
+    },
+    {
+      "ticker": "HON",
+      "claim": "Q2 2026 revenue $9,719M and net income $5,682M shown as HON (pure-play) results",
+      "dossier_location": "section 4 table",
+      "source": "Ex-99 0000773840-26-000120 Table 1/2",
+      "source_value": "Consolidated incl. Aerospace: sales 9,719, EPS 17.83 (post 1-for-2 reverse split); Honeywell Technologies only: sales 5,187, EPS 16.65, adj EPS 1.95",
+      "status": "FAIL",
+      "note": "Table mixes consolidated-with-Aerospace figures with the automation pure-play narrative; standalone sales are $5.19bn"
+    },
+    {
+      "ticker": "HON",
+      "claim": "Q2 2026 net income includes a large one-time gain from separation/deconsolidation of Aerospace; equity jump from Aerospace deconsolidation",
+      "dossier_location": "section 4 note, section 6",
+      "source": "8-K Ex-99 0000773840-26-000120; 10-Q 0000773840-26-000124",
+      "source_value": "Release: EPS reflects a one-time gain on deconsolidation of Quantinuum; Aerospace is consolidated through 30 Jun and shown as discontinued operations from Q3",
+      "status": "FAIL",
+      "note": "Gain is Quantinuum, not Aerospace; 30 Jun 2026 balance sheet still includes Aerospace"
+    },
+    {
+      "ticker": "HON",
+      "claim": "Two inconsistent FY2025 NetIncomeLoss/EPS tags ($4,729M/$7.36 vs -$115M/-$0.18)",
+      "dossier_location": "section 4 note, F102 key_adverse_facts / data_conflicts",
+      "source": "XBRL companyfacts 10-K 0000773840-26-000013",
+      "source_value": "FY2025 NI 4,729, EPS 7.36; -115 / -0.18 is the Q4 2025 quarter (2025-10-01 to 2025-12-31)",
+      "status": "FAIL",
+      "note": "Not a conflict: a quarter was read as a second FY tag. Share count 638M -> 319M is the 1-for-2 reverse stock split effective 29 Jun 2026 (10-Q Note 1), not Aerospace deconsolidation; Q1 2026 EPS $1.29 is pre-split (about $2.58 post-split)"
+    },
+    {
+      "ticker": "HON",
+      "claim": "Q2 2025 revenue $9,435M; EPS $4.90 (6mo) / $2.45 restated-Q; Q3 2025 NI $1,825 (9mo cum.)",
+      "dossier_location": "section 4 table",
+      "source": "XBRL 10-Q 0000773840-26-000124 and -25-000105",
+      "source_value": "Q2 2025 revenue 9,322 recast (10,352 originally); EPS 4.90 is the Q2 2025 quarter post-split (2.45 pre-split); Q3 2025 NI 1,825 is the quarter",
+      "status": "FAIL",
+      "note": "Period labels wrong (the quarter_label_check flag is confirmed)"
+    },
+    {
+      "ticker": "HON",
+      "claim": "Could not source HON standalone FY guidance; Solstice guidance only",
+      "dossier_location": "section 5, 11",
+      "source": "Ex-99 0000773840-26-000120 Table 4 (23 Jul 2026)",
+      "source_value": "Honeywell Technologies FY2026: sales $19.8-20.0bn (prev 19.9-20.2), organic +3-4%, segment margin 20.1-20.5%, adj EPS $8.05-8.35 (prev $7.90-8.30), FCF ~$2.0bn unchanged",
+      "status": "FAIL",
+      "note": "Standalone guidance exists and was raised; verbatim in the Q2 release"
+    },
+    {
+      "ticker": "HON",
+      "claim": "Price ~$226 and market cap ~$146bn as of 25 Sep 2026",
+      "dossier_location": "header, section 7",
+      "source": "v4/data/d2_close.parquet; d4_live_snapshot marketCap",
+      "source_value": "Close $212.55; market cap $67.4bn (about 317M post-split shares)",
+      "status": "FAIL",
+      "note": "$226 / $146bn reflect the pre-spin, pre-reverse-split capitalization (about 638M shares)"
+    },
+    {
+      "ticker": "HON",
+      "claim": "Long-term debt $31.51bn at 30 Jun 2026, up from $28.69bn; leverage rose; net debt/EBITDA ~3x",
+      "dossier_location": "section 6, kill criterion 1",
+      "source": "Ex-99 balance sheet 30 Jun 2026",
+      "source_value": "LTD 26,228 + current maturities 5,282 = 31,510 (Dec 27,141 + 1,546 = 28,687); commercial paper 2,478 (Dec 5,893); total debt 33,988 vs 34,580; cash 8,751",
+      "status": "FAIL",
+      "note": "Figures tie but total debt incl. CP fell; balance sheet still includes Aerospace (and $15.8bn pre-separation funding), so ~3x is not a Honeywell Technologies standalone ratio and criterion 1 cannot be assessed until the Q3 10-Q"
+    },
+    {
+      "ticker": "HON",
+      "claim": "Buybacks $1.0bn in both Q1 and Q2 2026",
+      "dossier_location": "section 6, F102 key_adverse_facts",
+      "source": "Ex-99 cash flow statement",
+      "source_value": "Repurchases of common stock: Q2 2026 nil, six months $1,000M (Q1)",
+      "status": "FAIL",
+      "note": "Q2 had no repurchases; Q1 OCF -$650M is correct (6mo 626 less Q2 1,276)"
+    },
+    {
+      "ticker": "HON",
+      "claim": "Reverse DCF: FY2027 consensus EPS $10.20 x 85% = $8.67 FCF/share, r 8.5%, P $226 -> g 4.3-4.6%; implied_vs_base in_line",
+      "dossier_location": "section 7",
+      "source": "Method: EPS-derived FCF not reported FCF; Ke = 5.17% + 4.5% x beta 0.901 = 9.2%; price $212.55; company FCF guide ~$2.0bn / 319M shares = $6.27 (FY26); conversion 2.0 / (8.2 x 319M) = 76%",
+      "source_value": "g = 4.9% (dossier 85% haircut), 5.4% (76% conversion on FY27 EPS), 6.1% (FY26 guided FCF/share) vs base 4-5%",
+      "status": "FAIL",
+      "note": "8.5% below Treasury-based Ke; cash flow built from EPS; wrong price. Restated central ~5.4%: implied_vs_base in_line -> above; verdict stays WATCH"
+    },
+    {
+      "ticker": "HON",
+      "claim": "Q1 2026 OCF -$650M, capex $223M; FY2025 revenue $37,442M, OCF $6,408M, capex $986M; 6mo 2026 revenue $18,862M",
+      "dossier_location": "section 4 table",
+      "source": "XBRL 10-K 0000773840-26-000013 / 10-Q",
+      "source_value": "all match",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HON",
+      "claim": "Q3 2026 earnings 2026-10-22 confirmed; DOJ $2.04M FCA settlement of Honeywell Aerospace Inc. on 1 Sep 2026",
+      "dossier_location": "section 11, 12",
+      "source": "Not in cached EDGAR filings (post 25 Sep / no 8-K located)",
+      "source_value": "not checked",
+      "status": "UNVERIFIABLE",
+      "note": ""
+    },
+    {
+      "ticker": "HONA",
+      "claim": "Q2 2026 net sales $4,522M (+5.4%), income before taxes $378M, net income attributable $246M (-70.9% YoY); Q2 2025 $4,289M / $1,000M / $844M; H1 2026 8,874 / 1,178 / 880",
+      "dossier_location": "section 4 table",
+      "source": "XBRL 10-Q 0002089271-26-000021; condensed combined statements",
+      "source_value": "all match (release shows net income incl. NCI 256 vs 852)",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HONA",
+      "claim": "FY26 guidance cut: organic 7-9% -> 4-5%; pro forma standalone adjusted EBIT $4.65-4.75bn -> $4.35-4.45bn; growth 7-10% -> flat to 3%; adjusted EPS $7.60-7.90 initiated; H2 FCF $1.0-1.5bn unchanged; CEO quote on supply chain",
+      "dossier_location": "section 5",
+      "source": "Ex-99.1 0002089271-26-000020",
+      "source_value": "verbatim guidance table and quote; Investor Day held 3 Jun 2026",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HONA",
+      "claim": "Segment adjusted EBIT Q2: Electronic Solutions sales +8%, EBIT -3%; Engines and Power Systems sales +1%, EBIT -32%; Control Systems sales +7%, EBIT +8%",
+      "dossier_location": "section 4",
+      "source": "Ex-99.1 -000020",
+      "source_value": "verbatim",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HONA",
+      "claim": "$16.0bn senior notes in nine series (3.90%-5.852%, 2028-2066), long-term debt $15,849M net of $153M costs vs $4M at Dec 2025; $6.0bn notes + $9.1bn cash distributed to Honeywell; net transfers to parent $(15,087)M; proceeds $15,843M",
+      "dossier_location": "section 6",
+      "source": "10-Q Note 9 and cash flow statement",
+      "source_value": "nine series sum 16,000; 15,849; 4; 6.0bn + 9.1bn; (15,087); 15,843",
+      "status": "PASS",
+      "note": "The xbrl_crosstie long-term debt flag (153 vs 4) is the issuance-cost line, not a debt figure"
+    },
+    {
+      "ticker": "HONA",
+      "claim": "Cash $1,057M; net debt $14.9-15.0bn \"using $15,849-15,853M gross less $1,057M\"; net debt/EBITDA ~3.1x, gross ~3.3x",
+      "dossier_location": "section 6",
+      "source": "10-Q balance sheet",
+      "source_value": "Carrying debt less cash = 14,792; face $16,000M less cash = 14,943; EBITDA 4.4bn + D&A 466 = 4.87bn -> 3.0-3.1x net, 3.3x gross",
+      "status": "MINOR",
+      "note": "Quoted range mixes carrying and face amounts (14.8 vs 14.9bn); ratios are right"
+    },
+    {
+      "ticker": "HONA",
+      "claim": "Operating cash flow H1 2026 $346M vs $1,025M; capex $260M vs $234M; FCF $86M vs $791M; receivables -$365M, inventories -$165M",
+      "dossier_location": "section 6",
+      "source": "10-Q cash flow statement",
+      "source_value": "346 / 1,025 / 260 / 234; (365); (165)",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HONA",
+      "claim": "SG&A +$339M in Q2 = $253M transaction costs + $68M labor; transaction costs in Other expense $74M (Q2) / $94M (H1); interest and other financial charges $200M Q2 / $229M H1",
+      "dossier_location": "section 4",
+      "source": "10-Q MD&A and segment reconciliation",
+      "source_value": "253 / 68 verbatim; interest 200 / 229; total transaction costs per reconciliation 329 (Q2) and 522 (H1) vs dossier 327 and 505",
+      "status": "MINOR",
+      "note": "Other-expense transaction costs are ~$76M Q2 / ~$111M H1 by reconciliation; immaterial to the ~30% normalised pretax decline"
+    },
+    {
+      "ticker": "HONA",
+      "claim": "Equity \"not separately isolated\" and 2025 predecessor equity $9,682-9,978M",
+      "dossier_location": "section 6",
+      "source": "10-Q balance sheet 27 Jun 2026 vs 31 Dec 2025",
+      "source_value": "Total deficit $(5,623)M (attributable $(5,697)M) at 27 Jun 2026 vs total equity $8,496M at 31 Dec 2025",
+      "status": "MINOR",
+      "note": "Open item can be closed: post-spin equity is a $5.6bn deficit because $15.1bn was paid to the parent; the $9.7-10.0bn range was not found at the 31 Dec 2025 date"
+    },
+    {
+      "ticker": "HONA",
+      "claim": "Price $158.78 (25 Sep 2026), market cap ~$50.33bn on 317M shares, EV ~$65.3bn, P/E 20.5x on $7.75 guide midpoint",
+      "dossier_location": "section 7",
+      "source": "d2_close.parquet 2026-09-25; Ex-99.1 317M shares",
+      "source_value": "158.78; 158.78 x 317M = 50.3bn; 65.3bn; 20.5x",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HONA",
+      "claim": "Reverse DCF: WACC 8.5%, g 3%, estimated FCFF $2.5bn, EV $65.3bn -> implied 7.3%/yr; implied above base",
+      "dossier_location": "section 7",
+      "source": "Re-run: implied 7.28% reproduced; program check Ke 9.67% (beta 1.0) with debt 24.5% of EV at ~5% coupon gives WACC ~8.3%; at 9.67% implied would be 10.0%",
+      "source_value": "8.5% consistent with Treasury-based WACC; FCFF $2.5bn is the dossier judgment estimate",
+      "status": "MINOR",
+      "note": "Discount rate acceptable for FCFF; base cash flow is an estimate (H1 FCF $86M; H2 guide $1.0-1.5bn). SBC not separately deducted ($61M H1). Conclusion (implied above mid-single-digit base) stands, WATCH unchanged"
+    },
+    {
+      "ticker": "HOOD",
+      "claim": "Quarterly revenue/NI/EPS Q1 2024-Q2 2026 (e.g. Q2 2026 1,308 / 561 / 0.62; Q1 2026 1,067 / 350 / 0.38; Q3 2025 1,274 / 556 / 0.61; Q2 2025 989 / 386 / 0.42)",
+      "dossier_location": "section 4 table",
+      "source": "XBRL companyfacts 10-Q filings",
+      "source_value": "all 9 listed quarters match",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HOOD",
+      "claim": "Q4 2025 derived: revenue 1,283 (FY 4,473 less 9M), NI 605 (FY 1,883 less 9M 1,278); LTM NI $2,072M",
+      "dossier_location": "section 4, 7",
+      "source": "10-K FY2025 and 10-Qs; 336+386+556 = 1,278",
+      "source_value": "605 reproduces; LTM 556+605+350+561 = 2,072",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HOOD",
+      "claim": "Crypto revenue -38% YoY in Q2 2026; users placing crypto trades -16% and -24%; event contracts surge; Q2 revenue +32.3%",
+      "dossier_location": "section 3, 8",
+      "source": "10-Q MD&A transaction revenue table",
+      "source_value": "Crypto 160 -> 100 (-38%); event contracts 10 -> 156; 16% and 24% decreases quoted verbatim",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HOOD",
+      "claim": "$2.2bn 0.00% convertible senior notes due 2029 issued 25 Jun 2026 (incl. $200M option), \"carrying/fair value $2,208M\"; cash $5,362M",
+      "dossier_location": "section 6",
+      "source": "10-Q Note 11 and fair value table",
+      "source_value": "Notes carried at amortized cost net of ~$30.6M issuance costs (about $2,169M); $2,208M is the Level 2 fair value; cash 5,362 (XBRL)",
+      "status": "MINOR",
+      "note": "Carrying value and fair value are different numbers; no effect on net-cash conclusion"
+    },
+    {
+      "ticker": "HOOD",
+      "claim": "Net capital: RHS $3,947M vs $504M required; RHF 196 vs 0.25; RHD 435 vs 9; TradePMR 13 vs 0.25; all in compliance",
+      "dossier_location": "section 6, 9",
+      "source": "10-Q net capital table",
+      "source_value": "verbatim",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HOOD",
+      "claim": "Senate bill introduced 23 Mar 2026; Illinois tax 1.75% / 3.5% effective 1 Jul 2026",
+      "dossier_location": "section 1, 8",
+      "source": "10-Q risk factors",
+      "source_value": "verbatim",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HOOD",
+      "claim": "Red-flag scan: litigation list (IPO class actions, Milito, Dey); no SEC/DOJ action",
+      "dossier_location": "section 11",
+      "source": "10-Q legal proceedings note",
+      "source_value": "Also disclosed: Event Contracts Litigation (June 2025, six state Statute-of-Anne gambling-loss suits against RHM and RHD) and a New York Attorney General investigation into execution quality plus other state examinations",
+      "status": "FAIL",
+      "note": "Omission of the six-state event-contract suits and state regulatory matters - directly on the prediction-market risk the verdict rests on. Verdict WATCH unchanged; strengthens the existing bear case"
+    },
+    {
+      "ticker": "HOOD",
+      "claim": "OCF H1 2026 $2,758M, H1 2025 $4,151M, FY2025 $1,638M (implied H2 2025 about -$2.5bn); total liabilities $28.99bn -> $47.0bn",
+      "dossier_location": "section 6",
+      "source": "XBRL 10-Q / 10-K",
+      "source_value": "2,758; 4,151; 1,638; 28,986 -> 47,009",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HOOD",
+      "claim": "Reverse DCF: LTM NI $2,072M vs market cap $108.9bn, cost of equity 10-11%, terminal 2.5-3% -> implied NI CAGR 20-23%; base 15-18%; implied above base",
+      "dossier_location": "section 7",
+      "source": "Re-run: 20.1-22.5% reproduced at 10-11%; program check: 5.17% + 4.5% x beta 2.34 (d4) = 15.7% cost of equity -> implied about 32%; market cap at $119.40 per d4 is $107.4bn",
+      "source_value": "10-11% is above the 9.67% beta-1 floor but far below the d4 beta-implied rate",
+      "status": "MINOR",
+      "note": "Net income is an acceptable cash-flow proxy for a broker-dealer (stated reason); discount rate low for beta 2.3, which only widens the gap to the 15-18% base. Conclusion ABOVE and WATCH unchanged; no summary change"
+    },
+    {
+      "ticker": "HOOD",
+      "claim": "Price $119.40 (25 Sep 2026); NTM P/E 45.6x on EPS $2.62",
+      "dossier_location": "section 7",
+      "source": "v4/data/d2_close.parquet; d4 snapshot",
+      "source_value": "119.40; 45.6x",
+      "status": "PASS",
+      "note": ""
+    },
+    {
+      "ticker": "HOOD",
+      "claim": "Next earnings ~4 Nov 2026 (d4 field)",
+      "dossier_location": "section 10",
+      "source": "not an SEC filing",
+      "source_value": "not checked",
+      "status": "UNVERIFIABLE",
+      "note": ""
+    }
+  ],
+  "verdict_changes": [
+    {
+      "ticker": "HAL",
+      "old": "INCLUDE-SMALL; implied_vs_base below",
+      "new": "INCLUDE-SMALL (unchanged); implied_vs_base in_line",
+      "why": "FCF after SBC ($1,512M) at 9.67% cost of equity implies ~6.8%/yr vs 6-8% base; F133_summary updated. Probability-weighted +6.6%/yr is below the cost of equity, so half-weight is the ceiling."
+    },
+    {
+      "ticker": "HON",
+      "old": "WATCH; implied_vs_base in_line",
+      "new": "WATCH (unchanged); implied_vs_base above",
+      "why": "Price $212.55 not $226, Ke 9.2% not 8.5%, company-guided FCF (~$2.0bn / 319M shares): implied perpetual growth ~5.4% (4.9-6.1%) vs 4-5% base. F102_summary HON updated (valuation_view_vs_v1, key_adverse_facts, data_conflicts)."
+    }
+  ]
+}

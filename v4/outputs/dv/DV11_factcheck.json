@@ -1,0 +1,619 @@
+{
+ "as_of": "2026-10-09",
+ "scope": [
+  "CRL",
+  "CRM",
+  "CRWD",
+  "CSCO",
+  "CSGP",
+  "CSX",
+  "CTAS",
+  "CTSH",
+  "CTVA",
+  "CVNA"
+ ],
+ "facts": [
+  {
+   "ticker": "CRL",
+   "claim": "Quarterly table: revenue, GAAP and non-GAAP EPS, margins for Q4-25, Q1-26, Q2-26",
+   "dossier_location": "sec 4",
+   "source": "CRL 8-K Ex-99.1 acc. 0001100682-26-000115 (Q2-26), -000036 (Q1-26), -000020 (Q4-25); 10-Q acc. 0001100682-26-000118",
+   "source_value": "all matched the releases",
+   "status": "PASS",
+   "note": "Checked 2026-10-06; re-affirmed from the correction section."
+  },
+  {
+   "ticker": "CRL",
+   "claim": "Every guidance quote used",
+   "dossier_location": "sec 5",
+   "source": "CRL 8-K Ex-99.1 acc. 0001100682-26-000115 (Q2-26), -000036 (Q1-26), -000020 (Q4-25); 10-Q acc. 0001100682-26-000118",
+   "source_value": "each quote found verbatim in the cited release",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CRL",
+   "claim": "Cash $192.0M, debt $2,637.4M, equity $2,846.0M, 47,728K shares",
+   "dossier_location": "sec 6",
+   "source": "10-Q acc. 0001100682-26-000118 balance sheet",
+   "source_value": "$192.0M / $2,637.4M / $2,846.0M / 47,728K",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CRL",
+   "claim": "Mechanical flags: cash $2,800M and net income $550M",
+   "dossier_location": "precheck / crosstie",
+   "source": "10-Q and dossier text",
+   "source_value": "$2,800M is the kill-criterion threshold; $550M is the dossier's labelled estimate",
+   "status": "PASS",
+   "note": "False positives."
+  },
+  {
+   "ticker": "CRL",
+   "claim": "Reverse DCF: price implies 13.1%/yr at 8% (9.0% at 7%, 16.7% at 9%); 7-9% treated as the plausible range; FCF base $450M adds back SBC",
+   "dossier_location": "sec 7",
+   "source": "10-Q 0001100682-26-000118 cash-flow statement (TTM SBC $83.1M, OCF $582.1M, capex $211.6M); 5.17% 10y on 25 Sep 2026 + ERP 4.14% x beta 1.4",
+   "source_value": "cost of equity 10.97%, WACC about 10.0%; implied growth 19.9% (SBC added back) to 23.8% (after SBC)",
+   "status": "FAIL",
+   "note": "implied_vs_base stays above (more strongly); verdict WATCH unchanged. Correction section written."
+  },
+  {
+   "ticker": "CRM",
+   "claim": "1Q FY27 GAAP operating margin 20.1%",
+   "dossier_location": "sec 4 table",
+   "source": "CRM 8-K Ex-99.1 acc. 0001108524-26-000125 (1Q FY27), -000187 (2Q FY27); 10-Q acc. 0001108524-26-000190",
+   "source_value": "21.1% (operating income $2,347M on revenue $11,133M); 20.1% is the FY26 margin",
+   "status": "FAIL",
+   "note": "Corrected inline."
+  },
+  {
+   "ticker": "CRM",
+   "claim": "Gross debt quadrupled in six months ($10.4bn to $39.3bn)",
+   "dossier_location": "secs 6, 8, 11",
+   "source": "10-Q acc. 0001108524-26-000190 debt note",
+   "source_value": "total carrying debt $14,439M (31 Jan 2026) to $39,288M (31 Jul 2026): 2.7x, +$24.8bn; only the noncurrent line quadrupled",
+   "status": "FAIL",
+   "note": "Net debt and the 1.8x kill-criterion base unaffected."
+  },
+  {
+   "ticker": "CRM",
+   "claim": "Quarterly table, three guidance releases, ASR phrase, balance sheet and pending-deal prices",
+   "dossier_location": "secs 4-6",
+   "source": "CRM 8-K Ex-99.1 acc. 0001108524-26-000125 (1Q FY27), -000187 (2Q FY27); 10-Q acc. 0001108524-26-000190",
+   "source_value": "matched",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CRM",
+   "claim": "TTM GAAP net income \"roughly $9.2bn\"",
+   "dossier_location": "sec 6",
+   "source": "XBRL quarterly net income",
+   "source_value": "$9,662M (2,086 + 1,943 + 2,107 + 3,526)",
+   "status": "MINOR",
+   "note": ""
+  },
+  {
+   "ticker": "CRM",
+   "claim": "Reverse DCF: cost of equity 8.96% on FCF $15.15bn with SBC added back, implies about 1%/yr",
+   "dossier_location": "sec 7",
+   "source": "5.17% + 1.202 x 4.14% = 10.15%; TTM SBC $3,665M (10-Q 0001108524-26-000190)",
+   "source_value": "implied growth 5.1% after SBC at 10.15% (1.3% with SBC added back)",
+   "status": "FAIL",
+   "note": "implied_vs_base stays below; INCLUDE-SMALL unchanged. F64_summary.json text updated."
+  },
+  {
+   "ticker": "CRWD",
+   "claim": "Quarterly table, every guidance quote, balance sheet, SBC, FCF build",
+   "dossier_location": "secs 3-5",
+   "source": "CRWD 8-K Ex-99.1 acc. 0001535527-26-000007 and -000029; 10-Q acc. 0001535527-26-000031",
+   "source_value": "matched (FY26 SBC $1,096.7M; H1 FY27 $674.6M)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CRWD",
+   "claim": "DOJ/SEC wording, Note 17 revision, split date",
+   "dossier_location": "sec 8-9",
+   "source": "10-Q Note 17; 8-Ks",
+   "source_value": "matched",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CRWD",
+   "claim": "Q1 FY26 operating loss (118.7) and net loss (104.3) are also revised figures; only Q2 marked revised",
+   "dossier_location": "sec 3",
+   "source": "10-Q Note 17 (H1 FY26 revised by $13.5M, $7.5M in Q2)",
+   "source_value": "labels only",
+   "status": "MINOR",
+   "note": "No value change."
+  },
+  {
+   "ticker": "CRWD",
+   "claim": "Reverse DCF: cost of equity 8.5% giving about 31% (48% on SBC-adjusted FCF); implied equals 18% base at about $100",
+   "dossier_location": "sec 7",
+   "source": "5.17% + 1.255 x 4.14% = 10.37%; TTM SBC $1,244M",
+   "source_value": "implied growth 37.6% (64.7% after SBC); equals the 18% base only near $66",
+   "status": "FAIL",
+   "note": "implied_vs_base stays above; WATCH unchanged."
+  },
+  {
+   "ticker": "CSCO",
+   "claim": "Quarterly table, guidance ranges, cash flow and FCF, SBC, buyback, Brazil, AI orders, scenario arithmetic",
+   "dossier_location": "secs 3-5",
+   "source": "CSCO FY26 10-K acc. 0000858877-26-000132; 8-K Ex-99.1 acc. 0000858877-26-000106",
+   "source_value": "matched",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CSCO",
+   "claim": "Current debt $3,500M and net debt $15.65bn, net debt/FCF 1.2x",
+   "dossier_location": "sec 6, kill criterion 4",
+   "source": "CSCO FY26 10-K acc. 0000858877-26-000132; 8-K Ex-99.1 acc. 0000858877-26-000106",
+   "source_value": "short-term debt $10,161M, long-term $19,372M, total $29,533M; less cash $22.3bn (1.75x TTM FCF $12.77bn), less cash and investments $13.6bn (1.07x)",
+   "status": "FAIL",
+   "note": "Verified against XBRL DebtCurrent 10,161 and LongTermDebtNoncurrent 19,372."
+  },
+  {
+   "ticker": "CSCO",
+   "claim": "FY25 comparatives: assets $124,413M, liabilities $78,956M, equity $45,457M, cash $7,508M",
+   "dossier_location": "sec 6",
+   "source": "CSCO FY26 10-K acc. 0000858877-26-000132; 8-K Ex-99.1 acc. 0000858877-26-000106",
+   "source_value": "assets $122,291M, liabilities $75,448M, equity $46,843M, cash $8,346M",
+   "status": "FAIL",
+   "note": ""
+  },
+  {
+   "ticker": "CSCO",
+   "claim": "Reverse DCF cost of equity 9.16% from rf 4.2%, FCF with SBC added back",
+   "dossier_location": "sec 7",
+   "source": "CSCO FY26 10-K acc. 0000858877-26-000132; 8-K Ex-99.1 acc. 0000858877-26-000106 cash-flow statement",
+   "source_value": "10y 5.17% gives 10.13% (9.28% on the 4.14% ERP); TTM SBC $3,830M; implied growth 14.2% (19.0% after SBC)",
+   "status": "FAIL",
+   "note": "implied_vs_base stays above; WATCH unchanged."
+  },
+  {
+   "ticker": "CSCO",
+   "claim": "\"Up 25% excluding hyperscalers\" attributed to networking product orders (+40%)",
+   "dossier_location": "sec 3",
+   "source": "Ex-99.1 acc. 0000858877-26-000106",
+   "source_value": "given for total product orders (+35%)",
+   "status": "MINOR",
+   "note": ""
+  },
+  {
+   "ticker": "CSGP",
+   "claim": "Q1 and Q2 2026 results; FY22-FY25 net income, EPS and FCF; January outlook quotes; cash history",
+   "dossier_location": "secs 3-6",
+   "source": "CSGP 10-Q acc. 0001057352-26-000066; 8-Ks acc. 0001057352-26-000030 (28 Apr), -000061 (28 Jul), -000072 (21 Aug); 8-K acc. 0001193125-26-246361",
+   "source_value": "matched (cash $1,266M at 30 Jun 2026, XBRL)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CSGP",
+   "claim": "FY2025 net income $7m on $4.3bn+ of revenue",
+   "dossier_location": "sec 8 bear 1",
+   "source": "10-K filed 2026-02-26 (XBRL)",
+   "source_value": "revenue $3,247.0M; net income $7.0M correct",
+   "status": "FAIL",
+   "note": ""
+  },
+  {
+   "ticker": "CSGP",
+   "claim": "EBITDA guidance raised to $780-820m in July; revenue cut in the same release",
+   "dossier_location": "guidance track record",
+   "source": "CSGP 10-Q acc. 0001057352-26-000066; 8-Ks acc. 0001057352-26-000030 (28 Apr), -000061 (28 Jul), -000072 (21 Aug); 8-K acc. 0001193125-26-246361",
+   "source_value": "EBITDA raised 28 Apr 2026 with revenue reaffirmed at $3.78-3.82bn; on 28 Jul EBITDA only affirmed and revenue cut to $3.715-3.755bn",
+   "status": "FAIL",
+   "note": "The July release was a revenue cut with no offset."
+  },
+  {
+   "ticker": "CSGP",
+   "claim": "Debt: 2029 convertible-type notes",
+   "dossier_location": "sec 6",
+   "source": "10-Q acc. 0001057352-26-000066",
+   "source_value": "$994M 2.800% Senior Notes due 15 July 2030, not convertible",
+   "status": "FAIL",
+   "note": ""
+  },
+  {
+   "ticker": "CSGP",
+   "claim": "Net cash about $270M at 30 Jun 2026; no mention of Zonda",
+   "dossier_location": "sec 6",
+   "source": "8-K 0001193125-26-246361; 8-K 0001057352-26-000072; 10-Q Liquidity",
+   "source_value": "$800M cash purchase of Zonda completed 21 Aug 2026; pro forma cash about $0.47bn vs $0.99bn notes; kill criterion 3 breached pro forma",
+   "status": "FAIL",
+   "note": "Missed event."
+  },
+  {
+   "ticker": "CSGP",
+   "claim": "Normalized FCF proxy $440M (55% of adjusted EBITDA), 9.5% rate unstated",
+   "dossier_location": "sec 7",
+   "source": "TTM SBC $191.8M; 5.17% + 1.05 x 4.14%",
+   "source_value": "implied growth 11.5-17.2% vs about 10% base",
+   "status": "FAIL",
+   "note": "implied_vs_base in_line -> above."
+  },
+  {
+   "ticker": "CSGP",
+   "claim": "Verdict INCLUDE-SMALL",
+   "dossier_location": "verdict",
+   "source": "dossier rule: an \"above\" valuation does not qualify; base 3-yr return +1.2%/yr below the 5.17% Treasury",
+   "source_value": "not supported by the dossier's own evidence",
+   "status": "FAIL",
+   "note": "Verdict changed to WATCH; F41_summary.json updated."
+  },
+  {
+   "ticker": "CSX",
+   "claim": "Quarterly table incl. derived Q4-25; capex sentence in 10-K and both 10-Qs; cash-flow and buyback figures",
+   "dossier_location": "secs 3-5",
+   "source": "CSX 10-K and 10-Qs (to 22 Jul 2026)",
+   "source_value": "matched",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CSX",
+   "claim": "Net debt $17,474M = 2.64x the $6.6bn EBITDA proxy",
+   "dossier_location": "sec 6",
+   "source": "CSX 10-K and 10-Qs (to 22 Jul 2026)",
+   "source_value": "$17,474M",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CSX",
+   "claim": "Scenario returns -12.2%, +2.7%, +13.9%",
+   "dossier_location": "sec 7",
+   "source": "CSX 10-K and 10-Qs (to 22 Jul 2026)",
+   "source_value": "re-compute to -12.6%, +2.8%, +14.2%",
+   "status": "MINOR",
+   "note": "Within 0.4 point."
+  },
+  {
+   "ticker": "CSX",
+   "claim": "Rail headcount \"~20,000 employees\"",
+   "dossier_location": "sec 2",
+   "source": "CSX 10-K and 10-Qs (to 22 Jul 2026)",
+   "source_value": "rail 20,046; total including trucking 22,151 (vs 23,543, -5.9%)",
+   "status": "MINOR",
+   "note": ""
+  },
+  {
+   "ticker": "CSX",
+   "claim": "Reverse DCF cost of equity 8.5% gives about 9.5%; INCLUDE-SMALL at $38-40",
+   "dossier_location": "sec 7",
+   "source": "5.17% + 1.207 x 4.14% = 10.17%; TTM FCF $2,796M, 1,852m shares",
+   "source_value": "implied growth 13.4% (11.5% at beta 1); equals the 7% base near $29 a share",
+   "status": "FAIL",
+   "note": "implied_vs_base stays above; WATCH unchanged."
+  },
+  {
+   "ticker": "CTAS",
+   "claim": "Five-quarter table incl. derived Q4 FY26; four guidance quotes; balance sheet; FCF and SBC; buyback; UniFirst terms; scenario arithmetic",
+   "dossier_location": "secs 3-7",
+   "source": "CTAS 10-K acc. 0000723254-26-000028; 8-K Ex-99 acc. 0000723254-25-000029 (Q1 FY26), -26-000044 (Q1 FY27)",
+   "source_value": "matched; scenarios -6.4%, +4.2%, +12.5%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CTAS",
+   "claim": "Mechanical flag: net income 551.7 vs 502.5",
+   "dossier_location": "crosstie",
+   "source": "8-K Ex-99 releases",
+   "source_value": "502.5 is Q3 FY26; Q1 FY26 was $491.1M, so +12.3% is right",
+   "status": "PASS",
+   "note": "False positive."
+  },
+  {
+   "ticker": "CTAS",
+   "claim": "Organic growth 8.2-8.9% for five quarters",
+   "dossier_location": "verdict paragraph",
+   "source": "CTAS 10-K acc. 0000723254-26-000028; 8-K Ex-99 acc. 0000723254-25-000029 (Q1 FY26), -26-000044 (Q1 FY27)",
+   "source_value": "Q1 FY26 was 7.8%; 8.2-8.9% holds for four quarters",
+   "status": "FAIL",
+   "note": ""
+  },
+  {
+   "ticker": "CTAS",
+   "claim": "Reverse DCF cost of equity 8.5% gives about 12.2%; re-entry near $165",
+   "dossier_location": "sec 7",
+   "source": "5.17% + 0.913 x 4.14% = 8.95%; SBC $128.1M (XBRL, verified)",
+   "source_value": "implied growth 13.7% (14.6% after SBC); equals the 9.5% base near $145",
+   "status": "FAIL",
+   "note": "implied_vs_base stays above; WATCH unchanged."
+  },
+  {
+   "ticker": "CTSH",
+   "claim": "Q2-26 revenue $5,481M (+4.5%, +4.1% cc), GAAP EPS $1.36, adjusted EPS $1.37, GAAP op margin 15.9%, FCF $459M",
+   "dossier_location": "sec 3 table",
+   "source": "CTSH 8-K Ex-99.1 acc. 0001058290-26-000030 (Q2-26), -26-000015, -26-000003, -25-000338; 10-Q acc. 0001058290-26-000031",
+   "source_value": "$5,481M; 4.5% / 4.1%; $1.36; $1.37; 15.9%; FCF $459M",
+   "status": "PASS",
+   "note": "Period label Q2 2026 (calendar year)."
+  },
+  {
+   "ticker": "CTSH",
+   "claim": "Q3-25, Q4-25, Q1-26 and Q2-25 rows (revenue, cc growth, margins, EPS, FCF)",
+   "dossier_location": "sec 3 table",
+   "source": "Ex-99.1 -25-000338, -26-000003, -26-000015; XBRL",
+   "source_value": "all match; Q4-25 derived 5,333 and NI $648M; Q3-25 GAAP EPS $0.56 with $0.80 tax item",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CTSH",
+   "claim": "Guidance quotes: FY25 EPS $5.22-5.26; FY26 revenue $22.14-22.66bn / EPS $5.56-5.70; Q1 revised $22.11-22.64bn / $5.63-5.77 / margin 16.0-16.2%; Q2 revised $22.04-22.35bn / $5.70-5.82",
+   "dossier_location": "sec 4",
+   "source": "CTSH 8-K Ex-99.1 acc. 0001058290-26-000030 (Q2-26), -26-000015, -26-000003, -25-000338; 10-Q acc. 0001058290-26-000031",
+   "source_value": "each found verbatim",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CTSH",
+   "claim": "Cash and ST investments $1,051M; total debt $1,560M; equity $14,462M; goodwill $8,083M",
+   "dossier_location": "sec 5",
+   "source": "Ex-99.1 -26-000030 balance sheet",
+   "source_value": "$1,038M + $13M; $33M + $1,527M; $14,462M; $8,083M",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CTSH",
+   "claim": "TTM FCF $2,598M; TTM GAAP net income about $2.2B; mechanical flag 2,200 vs 662",
+   "dossier_location": "sec 5",
+   "source": "XBRL / Ex-99.1",
+   "source_value": "FCF 1,160 + 781 + 198 + 459 = 2,598; NI 274 + 648 + 662 + 636 = 2,220",
+   "status": "PASS",
+   "note": "Flag is a false positive (TTM sum)."
+  },
+  {
+   "ticker": "CTSH",
+   "claim": "Project Leap $230-320M total, $84M in Q2; India tax claim 33bn rupees ($349M); 450,444,209 shares; attrition 13.0%; headcount 356,700",
+   "dossier_location": "secs 2, 5, 7",
+   "source": "10-Q 0001058290-26-000031; Ex-99.1",
+   "source_value": "all matched",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CTSH",
+   "claim": "Scenario returns -3.6%, +10.5%, +20.6%",
+   "dossier_location": "sec 6",
+   "source": "recomputed from EPS x exit P/E + 2.3% yield",
+   "source_value": "-3.6%, +10.5%, +20.6%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CTSH",
+   "claim": "Q1-26 GAAP operating margin -110 bp, cause not established",
+   "dossier_location": "sec 3",
+   "source": "Q1-26 release 0001058290-26-000015",
+   "source_value": "cause is a pre-tax $62M property-sale gain in Q1-25 ($0.13/share); adjusted margin +10 bp",
+   "status": "MINOR",
+   "note": "Corrected inline."
+  },
+  {
+   "ticker": "CTSH",
+   "claim": "Syntel matter: status not read",
+   "dossier_location": "sec 10",
+   "source": "10-Q Note 11",
+   "source_value": "award raised to about $298M (27 Mar 2026), judgment 29 Apr 2026, appeal filed 19 May 2026; no gain recorded",
+   "status": "MINOR",
+   "note": "Favorable contingent asset; corrected inline."
+  },
+  {
+   "ticker": "CTSH",
+   "claim": "SBC about $46-53M a quarter; reverse DCF starts at FCF $2.5B before SBC, cost of equity 9% unanchored",
+   "dossier_location": "secs 5, 6",
+   "source": "10-Q cash-flow statement; 5.17% + 0.886 x 4.14% = 8.84%",
+   "source_value": "TTM SBC $190M; with SBC deducted implied growth -2.7% (vs -3.2%); implied_vs_base stays below",
+   "status": "FAIL",
+   "note": "Method point only (SBC added back); no verdict effect. Correction section written; F127_summary.json text updated."
+  },
+  {
+   "ticker": "CTSH",
+   "claim": "Financial Services \"+12%\" growth and double digits for two quarters",
+   "dossier_location": "secs 1, 7",
+   "source": "Ex-99.1 -26-000030 footnotes (b), (c)",
+   "source_value": "reported growth includes about 250 bp from third-party product sales and acquisitions add about 100 bp to total growth",
+   "status": "MINOR",
+   "note": ""
+  },
+  {
+   "ticker": "CTSH",
+   "claim": "Verdict INCLUDE-SMALL given implied below base",
+   "dossier_location": "verdict",
+   "source": "dossier evidence",
+   "source_value": "supported: price implies shrinking FCF, net cash-neutral balance sheet, kill criteria measurable",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CTVA",
+   "claim": "Quarterly and H1 results, FY2025 results, every guidance quote and raise, segment figures, litigation accrual",
+   "dossier_location": "secs 3-5",
+   "source": "CTVA 10-Q acc. 0001755672-26-000025; 8-Ks acc. 0001755672-26-000022, -000028; 8-K acc. 0001193125-26-414490",
+   "source_value": "matched",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CTVA",
+   "claim": "30 Jun 2026 balance sheet and net debt (0.6x)",
+   "dossier_location": "sec 6",
+   "source": "CTVA 10-Q acc. 0001755672-26-000025; 8-Ks acc. 0001755672-26-000022, -000028; 8-K acc. 0001193125-26-414490",
+   "source_value": "matched",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CTVA",
+   "claim": "31 Dec 2025 debt = $894M short-term + $782M current LTD + $1,686M = $3,362M; net cash about $1.2B",
+   "dossier_location": "sec 6",
+   "source": "10-Q acc. 0001755672-26-000025 debt note",
+   "source_value": "short-term borrowings of $894M already include the $782M; total debt $2,580M; net cash $1,941M",
+   "status": "FAIL",
+   "note": "30 Jun 2026 figures unaffected."
+  },
+  {
+   "ticker": "CTVA",
+   "claim": "Q1-26 net sales 4,900 and Q3-25 2,620 (rounded in table)",
+   "dossier_location": "sec 4",
+   "source": "CTVA 10-Q acc. 0001755672-26-000025; 8-Ks acc. 0001755672-26-000022, -000028; 8-K acc. 0001193125-26-414490",
+   "source_value": "$4,905M and $2,618M",
+   "status": "MINOR",
+   "note": ""
+  },
+  {
+   "ticker": "CTVA",
+   "claim": "Reverse DCF at 8.5% cost of equity (3.5% / 4.2% / 5.7%)",
+   "dossier_location": "sec 7",
+   "source": "5.17% + 0.577 x 4.14% = 7.56%; 9.31% at beta 1",
+   "source_value": "arithmetic reproduces; implied 5.3% at 9.31%, 6.7% at 10% vs 7% base: below holds but marginal on conservative rates",
+   "status": "MINOR",
+   "note": "No change to implied_vs_base or verdict."
+  },
+  {
+   "ticker": "CTVA",
+   "claim": "Scenario returns -6.1%, +6.7%, +16.3%",
+   "dossier_location": "sec 7",
+   "source": "recomputed",
+   "source_value": "-6.3%, +6.8%, +16.6%",
+   "status": "MINOR",
+   "note": ""
+  },
+  {
+   "ticker": "CVNA",
+   "claim": "Q2-26: revenue $7,376M, operating income $680M, consolidated net income $513M, Adjusted EBITDA $769M, 197,325 units (+38%), diluted EPS $0.42",
+   "dossier_location": "sec 4",
+   "source": "CVNA 10-Q acc. 0001690820-26-000055; 8-K/Ex-99.1 acc. 0001690820-26-000054 (Q2-26), -000034, -000008, 0001690820-25-000352, -000310; 8-K acc. 0001690820-26-000059",
+   "source_value": "$7,376M; $680M; $513M (attributable to Carvana Co. $310M); $769M; 197,325; $0.42",
+   "status": "PASS",
+   "note": "Calendar-year company; labels correct."
+  },
+  {
+   "ticker": "CVNA",
+   "claim": "Q3-25 to Q1-26 columns (revenue, operating income, net income, Adjusted EBITDA, units) and Q4-25 derived",
+   "dossier_location": "sec 4",
+   "source": "XBRL; Ex-99.1 letters",
+   "source_value": "all matched (Q4-25 revenue 5,603; operating income 424; net income 951 incl. about $685M one-off tax benefit and $67M warrant loss)",
+   "status": "PASS",
+   "note": "Q3-24 and Q4-24 columns are derived from growth rates and were not re-checked."
+  },
+  {
+   "ticker": "CVNA",
+   "claim": "Guidance: FY26 Adjusted EBITDA $2.7-3.0bn (first numeric range), Q1-26, Q4-25, Q3-25 (\"over 150k\"; at or above $2.0-2.2bn) and Q2-25 ($2.0-2.2bn) quotes",
+   "dossier_location": "sec 5",
+   "source": "CVNA 10-Q acc. 0001690820-26-000055; 8-K/Ex-99.1 acc. 0001690820-26-000054 (Q2-26), -000034, -000008, 0001690820-25-000352, -000310; 8-K acc. 0001690820-26-000059",
+   "source_value": "each quote found in the cited release",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CVNA",
+   "claim": "Cash $2,630M; debt principal $5,133M (carrying $5,236M); net debt 0.97x TTM Adjusted EBITDA $2,589M",
+   "dossier_location": "sec 6",
+   "source": "10-Q 0001690820-26-000055 Note 9 and balance sheet",
+   "source_value": "$2,630M; $5,133M; $126M + $256M + $4,854M = $5,236M; (5,133 - 2,630) / 2,589 = 0.97x",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CVNA",
+   "claim": "TTM OCF $1,120M, capex $191M, FCF $929M; SBC H1 $51M",
+   "dossier_location": "sec 4",
+   "source": "XBRL FY25 10-K acc. 0001690820-26-000009 + 10-Q",
+   "source_value": "1,036 + 345 - 261; 147 + 102 - 58; SBC 51",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CVNA",
+   "claim": "Gain on loan sales $349M (25% of gross profit, 51% of operating income); DriveTime commissions $113M; TRA $2,130M; NCI $1,110M; Ally $8.0B; $12B fixed-pool agreements; $8.7B unused; legal accrual $10M; class-certification motion 6 Apr 2026",
+   "dossier_location": "sec 6, 11",
+   "source": "10-Q Notes 6, 7, 16",
+   "source_value": "all matched",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CVNA",
+   "claim": "Term loan B $1.66bn at SOFR + 2.25% due 2033; redemptions 15 and 22 Aug; 1% premium to about Feb 2027",
+   "dossier_location": "sec 6, 10",
+   "source": "8-K acc. 0001690820-26-000059",
+   "source_value": "matched",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CVNA",
+   "claim": "Share count about 1.127B fully-converted; market cap $73.3B at $65.06",
+   "dossier_location": "secs 1, 7",
+   "source": "10-Q cover 27 Jul 2026 (719.9M Class A, 380.5M Class B); diluted Class A 739.96M; Class B units 8.1M",
+   "source_value": "1.127B includes dilutive securities; basic fully-exchanged count about 1.107B",
+   "status": "MINOR",
+   "note": "Label should say diluted."
+  },
+  {
+   "ticker": "CVNA",
+   "claim": "Liquidity $7.0B",
+   "dossier_location": "sec 8",
+   "source": "Q2-26 letter, liquidity table",
+   "source_value": "$7,024M includes $2,250M debt-incurrence capacity; committed liquidity $4,669M",
+   "status": "MINOR",
+   "note": ""
+  },
+  {
+   "ticker": "CVNA",
+   "claim": "Base-case DCF value $63 a share (entry where implied = base about $58)",
+   "dossier_location": "sec 7",
+   "source": "dossier model re-run",
+   "source_value": "19.5% case is worth $58.5 at r = 10%",
+   "status": "MINOR",
+   "note": "Internal inconsistency."
+  },
+  {
+   "ticker": "CVNA",
+   "claim": "Scenario returns bear -24%, base +7.8%, bull +24.8%",
+   "dossier_location": "F169 summary",
+   "source": "recomputed from EPS x P/E over 3 years",
+   "source_value": "-23.8%, +7.4%, +24.6%",
+   "status": "MINOR",
+   "note": ""
+  },
+  {
+   "ticker": "CVNA",
+   "claim": "Reverse DCF at r = 10% (no stated basis) implies 20.9%/yr vs 19.5% base (\"marginally above\")",
+   "dossier_location": "sec 7",
+   "source": "5.17% + Blume beta 2.673 x 4.14% = 16.2% (d4 beta 3.497); model reproduces 19.6% / 20.9% / 23.3% at 9.5% / 10% / 11%",
+   "source_value": "implied growth 19.1% at beta 1, 27.8% at 13%, 34.2% at 16.2%; base case worth $23.6 a share at 16.2%",
+   "status": "FAIL",
+   "note": "implied_vs_base stays above (more strongly); WATCH unchanged. Correction section written; F169_summary.json text updated."
+  },
+  {
+   "ticker": "CVNA",
+   "claim": "Triage items (Hindenburg report, Executive Chairman felony history), sell-side expectations, insider-sale totals, earnings date 28 Oct 2026",
+   "dossier_location": "secs 5, 10, 11",
+   "source": "not in the filings read",
+   "source_value": "n/a",
+   "status": "UNVERIFIABLE",
+   "note": "Dossier already labels them unverified."
+  }
+ ],
+ "verdict_changes": [
+  {
+   "ticker": "CSGP",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Valuation is above base once SBC ($191.8M TTM) is a cost; the dossier's own rule excludes an above-base name from INCLUDE-SMALL; July revenue cut, near-zero GAAP profit, and pro forma cash of about $0.47bn after the $800M Zonda purchase. F41_summary.json updated (2026-10-06 pass)."
+  }
+ ]
+}

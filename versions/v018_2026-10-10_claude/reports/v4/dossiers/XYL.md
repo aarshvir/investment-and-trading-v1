@@ -1,0 +1,58 @@
+# XYL - Xylem Inc. (F138, wave 8, standard depth)
+
+**1. Verdict: INCLUDE-SMALL** (half weight; horizon 24-36 months). Xylem is a quality water-technology business priced at about 18x FY26 adjusted EPS, and the price implies about 6.5% a year of FCF growth against my base of about 7.5%. The triage "no" (still digesting Evoqua, growth not there) is partly right on growth but wrong on price. Named reservation: organic revenue growth is only +0.5% in H1'26 and the reported +42% Q2 orders are driven by one "significant contract", so the orders headline overstates demand; plus an unexplained CFO departure and a new $1.46bn acquisition.
+
+**2. Business.** Makes pumps, water treatment, metering and analytics: clean and waste water transport and treatment for utilities (Water Infrastructure), building and industrial water (Applied Water), smart meters and leak detection (Measurement and Control) and, since the Evoqua deal, industrial water services (Water Solutions and Services). Sells mostly to municipalities and industrial customers, with recurring services and replacement parts. Utility budgets make revenue sticky.
+
+**3. Why the model likes it.** b1 composite 0.524, rank 237 (decile 6). Strong on quality/profitability (gross profit/assets 20.6%) and earnings surprise (SUE 1.61, sentiment family 0.79), valuation 0.69, but weak 12-1 month momentum (-24%). The model is partly responding to real margin beats, which the filings confirm.
+
+**4. Results (consolidated, USD m; GAAP unless labelled; 8-K Ex 99.1)**
+
+| Quarter | Revenue | YoY (organic) | GAAP op. income (margin) | GAAP EPS | Adj. EPS (non-GAAP) |
+|---|---|---|---|---|---|
+| Q3'25 | 2,268 | +8% (+7%) | 334 (14.7%) | 0.93 | 1.37 |
+| Q4'25 | 2,397 (derived FY less 9M) | +6% (+4%) | 353 (14.7%, derived) | 1.37 | 1.42 |
+| Q1'26 | 2,125 | +3% (flat) | 244 (11.5%) | 0.79 | 1.12 |
+| Q2'26 | 2,336 | +1.5% (+1.3%) | 390 (16.7%) | 1.11 | 1.46 |
+| Q2'25 (comp) | 2,301 | | 305 (13.3%) | 0.93 | about 1.26 (derived from +16%) |
+
+Q2'26 variance vs Q2'25: revenue +35 (+1.5%); gross profit 963 vs 892 (+8.0%), gross margin 41.2% vs 38.8% (+240 bp, flagged; 10-Q: productivity +230 bp, price +180 bp, mix +80 bp, less inflation -240 bp and volume -80 bp); SG&A 503 flat; restructuring 11 vs 26; operating income +28% (+340 bp margin, flagged); income tax 103 vs 75 (tax rate up). Adjusted EBITDA margin 23.3% (+150 bp). GAAP-to-adjusted EPS gap 0.35 (24% of adjusted) from acquired-intangible amortization, restructuring and a $16m loss on business sales: acquisition-accounting heavy, so GAAP P/E is about 24x. Orders 3,086 (+42%; organic +40.9%) but Water Solutions and Services organic orders +147% from "the securing of a significant contract"; the other segments: Water Infrastructure orders -3.9% organic, Applied Water +9.2%, Measurement and Control +2.4%. Backlog 5,315 (+5.9% YoY, +15.2% vs Dec 2025).
+
+**5. Guidance track record (non-GAAP adjusted EPS and revenue; verbatim)**
+- Q3'25 (8-K 0001524472-25-000043, 28 Oct 2025): "full-year adjusted earnings per share of $5.03 to $5.08, versus the previous guide of $4.70 to $4.85." Raised. Actual FY25 adjusted EPS 5.08 (Q4 release): top of range.
+- Q4'25 (0001524472-26-000008, 10 Feb 2026), first FY26 guide: "Initiating 2026 full-year revenue guidance of $9.1 to $9.2 billion, up 2% to 4% organically, and adjusted earnings per share of $5.35 to $5.60".
+- Q1'26 (0001524472-26-000065, 28 Apr 2026): "full-year adjusted earnings per share of $5.35 to $5.60, in line with the previous guidance range" (EPS unchanged); revenue "$9.2 to $9.3 billion ... versus 1 to 3 percent previously guided" (reported growth raised); organic "2 to 4 percent ... as previously guided".
+- Q2'26 (0001524472-26-000108, 28 Jul 2026): "full-year adjusted earnings per share of $5.55 to $5.70, up from the previous guidance range of $5.35 to $5.60" (raised; midpoint +0.30). But "full-year 2026 revenue of approximately $9.2 billion, up approximately 2 percent on a reported basis, versus 2 to 3 percent previously guided, and up approximately 2 to 3 percent on an organic basis, versus 2 to 4 percent previously guided" (revenue top end lowered). "Full-year free cash flow margin is still expected to be approximately 10.2 to 11.0 percent." Adjusted EBITDA margin "approximately 23.1 to 23.5 percent" vs prior 22.9-23.3.
+- 18 Aug 2026 8-K 0001524472-26-000123 (Item 7.01): press release "reaffirming the Company's previously issued financial guidance for the third quarter and full year 2026" alongside the CFO change.
+Read: profit guidance raised three times in 12 months (margin, price, lower tax/share count), revenue guidance edged down. The beat is margin-led, not volume-led.
+
+**6. Earnings quality and balance sheet (CONSOLIDATED, 10-Q 30 Jun 2026)**
+- Debt: short-term borrowings and current maturities 531 + long-term debt 2,395 = 2,926 carrying (Condensed Consolidated Balance Sheets); cash 1,276; net debt 1,650 = about 0.8x FY26E adjusted EBITDA (about 2.1bn, my estimate from guide 23.1-23.5% x 9.2bn). $500m 3.250% notes mature October 2026 (10-Q Note on debt).
+- Pending deal and financing: on 10-11 Aug 2026 Xylem agreed to buy the Cornell Pump and Roper Pump businesses from Indicor, LLC "for a purchase price of approximately $1.46 billion in cash" expected to close in Q4 2026 (424B5 0001193125-26-391375, filed 15 Sep 2026; equity purchase agreement dated 10 Aug 2026). Financing: $1.5bn senior notes priced 15 Sep and settled 29 Sep 2026 (8-K 0001524472-26-000134): 5.250% 2029, 5.450% 2032, 5.850% 2037, $500m each, with a special mandatory redemption at 101% if the deal fails by Aug 2027; a $1.5bn bridge commitment exists but is not expected to be drawn. Pro-forma consolidated net debt about 3.1bn, about 1.4-1.5x EBITDA (my estimate; the target's EBITDA is not disclosed in filings I opened). Also new $1.5bn revolver 8 Sep 2026 (8-K 0001524472-26-000132) replacing the $1.0bn 2023 facility; $1.0bn notes issued 29 May 2026 (5.200% 2033, 5.450% 2036).
+- Cash conversion: H1 operating cash flow 398 less capex 179 = FCF 219 (vs 169), seasonally weak (49% of net income 450); FY guide 10.2-11.0% FCF margin implies about 0.94-1.01bn, requiring roughly 0.75bn in H2. Long-term receivables build (-104 H1) is a watch item. SBC 25 in H1 (0.6% of revenue).
+- Buybacks: 1,243 in H1 (shares in treasury 26.8m vs 16.3m; diluted shares 236.6m in Q2 vs 243.9m a year ago, -3.0%), funded in part by the new debt. Dividends 207. Redeemable non-controlling interest 242. Goodwill 8,256 and intangibles 2,150 against equity 10,421 (no impairment reported).
+
+**7. Valuation (close $102.63; market cap 24.0bn d4).** No V1 row exists for XYL, so v1_verdict is null. P/E 18.2x on FY26E adjusted EPS midpoint 5.625 (GAAP-based about 24x); 19.1x trailing adjusted EPS 5.37; EV/EBITDA about 12x (EV 26.0bn d4 / FY26E adjusted EBITDA 2.1bn); FCF yield about 4.1% (company-defined, 0.975bn) or 3.9% after SBC; dividend yield 1.7%.
+Reverse DCF (cost of equity 8.5%, terminal growth 3%, 10 years, FCF 0.975bn): implied FCF growth 6.5% a year (7.2% after SBC). My base: revenue +4% organic (utility demand, industrial/data-centre water, price), margin +50-100 bp a year for three years per the 2026 guide trajectory, buybacks about 2% a year: FCF growth about 7.5%. Implied is BELOW base, acceptable for INCLUDE-SMALL. Bear: organic growth stalls at 1%, margin gains fade, acquisition disappoints, multiple 15x: -2.5% a year. Bull: 6% organic plus margin to 25%, multiple 21x: +18.2%.
+3-year annualised total returns: bear -2.5%, base +10.6%, bull +18.2%. Basis: start adjusted EPS 5.625 (FY26E); base FY29 EPS 7.20 (8.6% CAGR) x 18.5 P/E plus dividends about 5.55; bear EPS 6.0 x 15; bull EPS 7.8 x 21.
+
+**8. Bull / bear.**
+Bull: (1) margin expansion is real: gross margin +240 bp in Q2 and adjusted EBITDA margin guide raised; (2) backlog 5.3bn (+15% YTD) including a large services contract, about 40% of it to be recognised in rest of 2026; (3) balance sheet has room: about 0.8x net leverage before the deal.
+Bear: (1) organic revenue +0.5% in H1 and guided 2-3% for FY, below the earlier 2-4%; Water Infrastructure (largest segment) orders fell 3.9% organically in Q2; (2) +42% orders rests on one contract, and adjusted EPS excludes about 24% of GAAP-to-adjusted items; (3) CFO resigned abruptly 13 Aug 2026 (effective 31 Aug, left by 13 Sep) 16 days after the raise, and a $1.46bn acquisition closes in Q4 while Evoqua integration is still not finished.
+
+**9. Kill criteria.**
+1. Organic revenue growth below 1.0% in two consecutive quarters (company release; Q2'26 was +1.3%).
+2. Full-year adjusted EPS guidance midpoint cut below $5.45 at any release.
+3. Consolidated net debt over adjusted EBITDA above 2.5x after the Cornell/Roper closing (computed from the 10-Q balance sheet: short-term plus long-term debt less cash).
+4. Full-year free cash flow (operating cash flow less capex, consolidated) below 9.0% of revenue, or H2 FCF below 0.65bn.
+5. Backlog (ex the single large contract) shrinking year on year for two consecutive quarters, or cancellation of that contract.
+
+**10. Catalysts.** Q3'26 results expected late October 2026 (estimate from 28 Oct 2025 cadence; not confirmed). Closing of the Cornell and Roper Pump purchase in Q4 2026 (regulatory approvals pending). Repayment of the $500m October 2026 notes. New CFO Andrea van der Berg (internal, from 1 Sep 2026) first earnings call.
+
+**11. Red-flag scan.** Swedish Tax Agency assessment SEK837m (about $86m) on a 2013 intellectual-property transfer: appellate court ruled for Xylem in May 2024 and the trial court on the remanded issue in Dec 2025; the STA has appealed again; "no unrecognized tax benefits" recorded (10-Q). CFO change (above) is the main governance flag: Form 8-K Item 5.02 of 13 Aug 2026 says he resigned "to pursue another professional opportunity". Insider filings: a Form 144 (30 Jul 2026), Form 4s (14 Aug, 1-2 Sep 2026) and Forms 3 (13 Aug, 1 Sep) appear in the EDGAR index; I did not open them, so the selling pattern is unverified. Loss on sale of businesses (16 in Q2) shows portfolio pruning continues. No material weakness or auditor change seen.
+
+**12. Sources** (SEC EDGAR, opened): 10-Q 0001524472-26-000110 (filed 28 Jul 2026); 8-K Ex 99.1 0001524472-26-000108 (28 Jul 2026), -000065 (28 Apr 2026), -000008 (10 Feb 2026), 0001524472-25-000043 (28 Oct 2025); 8-K 0001524472-26-000119 and -000123 (13 and 18 Aug 2026); 8-K 0001524472-26-000132 (9 Sep 2026); 8-K 0001524472-26-000134 (29 Sep 2026); 424B5 0001193125-26-391375 (15 Sep 2026); 8-K 0001193125-26-248342 (29 May 2026). Quant: d4_live_snapshot.parquet, b1_live_scores.csv.
+
+**Data basis, recency and disclaimer.** Most recent period incorporated: quarter ended 30 Jun 2026 (10-Q filed 28 Jul 2026). Events checked through the EDGAR index to 29 Sep 2026; the pricing date of the financing (15 Sep) precedes the 25 Sep cutoff, the settlement (29 Sep) is after it and is treated as confirming, not changing, the 15 Sep disclosure. GAAP and adjusted are labelled; adjusted EPS, adjusted EBITDA, organic growth and FCF margin are company non-GAAP measures. Reverse-DCF and scenarios are my estimates. Research, not personal investment advice.
+
+Entity scope: every debt, cash and equity figure above is CONSOLIDATED (parent and all subsidiaries) from the condensed consolidated balance sheet of the quarterly report named in section 12, unless labelled otherwise. Guidance figures mentioned outside section 5 are the same company figures quoted verbatim, with document and accession, in section 5; none is inferred.

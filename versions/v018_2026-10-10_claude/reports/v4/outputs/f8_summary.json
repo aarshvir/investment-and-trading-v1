@@ -1,0 +1,127 @@
+{
+  "agent_id": "f8",
+  "as_of": "2026-09-26",
+  "info_cutoff": "2026-09-25 close",
+  "companies": {
+    "HIG": {
+      "verdict": "INCLUDE-SMALL",
+      "horizon": "12-24 months",
+      "v3_holding": true,
+      "v3_note": "Supporting tier, 4.0% weight in the final 14-name v3 portfolio (12.0% in the earlier 10-name v1 cut). v4 would keep HIG but at reduced conviction/size vs. v3, not as a core position.",
+      "kill_criteria": [
+        "Business Insurance underlying combined ratio >91% for two consecutive quarters (was 89.3% Q2'26, up from 88.0% Q2'25)",
+        "Adverse general-liability/commercial-auto/A&E reserve development >$150M in any single quarter",
+        "Hartford Funds/Wellington sale delayed, renegotiated, or terminated",
+        "Core-earnings ROE <15% for two consecutive quarters (vs. 18.7% TTM at Q2 2026 per the Q2 release; the earlier 20.3% was the Q1 figure)",
+        "Net FY1 sell-side EPS revisions stay negative for two more months with no fundamental offset"
+      ],
+      "key_adverse_facts": [
+        "Q2'26 GAAP EPS $4.68 vs core EPS $3.42 - gap driven by a $251M one-off tax benefit and $318M discontinued-ops income tied to the Hartford Funds sale, not operating performance",
+        "Q1'26: Business Insurance prior-year reserve development was $30M net UNFAVORABLE (vs $51M favorable in Q1'25); both Q1'26 and Q2'26 releases cite increases in general liability and commercial auto reserves (social-inflation pattern)",
+        "$165M A&E reserve increase Q4'25 plus $70M more in Q1'26 for legacy sexual-molestation/abuse exposures (1970s-80s policies) - a recurring adverse category, not one-time",
+        "Sept 25 2026 8-K: commuted a legacy asbestos & environmental reinsurance treaty with Berkshire's National Indemnity (in place since Dec-2016) for $1.12bn cash and a $497M pretax gain expected in Q3'26 - cash-positive, but HIG now bears more legacy A&E tail risk directly, without that cover",
+        "17 of 19 sell-side FY1 EPS revisions in the last 30 days were cuts (vs 2 up), primarily because the Hartford Funds divestiture removes a profitable earnings stream from consensus models, plus commentary on softening P&C pricing (KBW, Wells Fargo, Mizuho estimate cuts)",
+        "Business Insurance underlying combined ratio drifting up: 88.0 (Q2'25) -> 89.2 (Q1'26) -> 89.3 (Q2'26)",
+        "Added 6 Oct 2026 (RA12): 8-K of 30 Sep 2026 (accession 0000874766-26-000067): CEO Christopher Swift resigns as CEO effective 1 Mar 2027 (becomes Executive Chair); President A. Morris Tooker becomes CEO; orderly internal succession, a governance watch item.",
+        "Added 6 Oct 2026 (RA12): core earnings ROE fell from 20.3% (Q1 release) to 18.7% TTM (Q2 release); core earnings grew only 1% in Q2-26 ($945m vs $932m); FY2026 consensus EPS $12.76 is below FY2025 core EPS $13.42."
+      ],
+      "data_conflicts": [
+        "DA2 found a filer-side EPS scale error in HIG's XBRL EPS series; this dossier sources all EPS figures from primary 8-K/press-release text, not XBRL - do not reconcile against d3/XBRL EPS without DA2's correction applied",
+        "Corrected 6 Oct 2026 (RA12): the dossier said the buyback was 'explicitly part-funded by Hartford Funds sale proceeds' and that the sales bring '~$1.1bn+ cash'; not found: the $1.12bn is the National Indemnity commutation; the Funds sale gives $300m at closing (Q1 2027 expected) plus 95% of after-tax available cash for about 7 years, company-estimated NPV $1.9bn at 11% (8-K 3 Jun 2026, accession 0000874766-26-000043); the earn-out is excluded from core earnings."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "next_earnings_date_confirmed": true,
+      "confidence_in_thesis": "medium - strong core franchise and quant score, but recent GAAP beats lean heavily on non-recurring items and the underwriting cycle (BI underlying CR, casualty reserves) is showing early softening; one more quarter (Oct 29 report, first full quarter after the National Indemnity commutation) would raise or lower confidence materially",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "fair",
+        "v1_base_3y": 0.027,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "Added 6 Oct 2026 (RA12). P/B ex-AOCI 1.574x ($124.23 / $78.91) matched with core ROE (ex-AOCI). Ke 8.5% (rf 5.17% + beta 0.8 x 4.14%; V1 8.05%), g 3% imply a sustainable ROE of 11.7% (11.0% at V1's Ke, 12.4% at 9.0%). Through-cycle base ROE 14.5% (TTM core ROE 18.7% is near a cycle high: BI underlying CR 88.0 to 89.3, reserve additions, FY26 consensus EPS below FY25). Implied 2.8 points below base: below, a thin margin given the turning cycle. V1's base ROE of 9.7% (historical median) and bear 2.8% are replaced. Not in the ROE test: Funds earn-out NPV $1.9bn (about $6.9 a share) and the $393m commutation gain.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.064,
+        "base": 0.082,
+        "bull": 0.178
+      },
+      "scenario_basis": "Annualised 3-year return = payout 60% x ROE / P/B0 1.574 + 40% x ROE + annualised change in P/B (ex-AOCI basis); bear ROE 8% exit 1.05x, base ROE 14% exit 1.45x, bull ROE 17% exit 1.8x (RA12, own arithmetic; V1: -15.1% / +2.7% / +24.6%)."
+    },
+    "CINF": {
+      "verdict": "INCLUDE-SMALL",
+      "horizon": "12-24 months",
+      "v3_holding": false,
+      "v3_note": "Not a v3 holding; v3's capped '<=2 insurers' CIO slots were filled by AIZ and HIG.",
+      "kill_criteria": [
+        "Consolidated combined ratio stays above 100% (underwriting loss) for a second consecutive quarter",
+        "Current-accident-year ex-catastrophe combined ratio continues rising past ~90% (was 88.1% Q2'26, up from 85.1% Q2'25)",
+        "Commercial Lines combined ratio fails to normalize back under ~95% within two quarters (was 104.1% Q2'26)",
+        "A sustained broad-equity-market drawdown >20% that visibly impairs book value per share (40% of invested assets are equities)",
+        "Net FY1 consensus EPS revisions remain negative for two more months without stabilization"
+      ],
+      "key_adverse_facts": [
+        "Q2'26 consolidated combined ratio 100.8% - an underwriting LOSS quarter, driven by Commercial Lines at 104.1% (vs 92.9% Q2'25) and Ohio severe weather 'nearly four times' the 5-year Q2 average",
+        "Current-accident-year ex-catastrophe combined ratio also rose YoY in Q2'26 (85.1% -> 88.1%), meaning the deterioration is not fully explained by catastrophe severity alone",
+        "Q2'26 GAAP EPS $8.05 was 5.6x operating EPS $1.43, almost entirely a $1.03bn after-tax equity-portfolio gain masking the underwriting loss; GAAP EPS here is materially an equity-market read-through, not an underwriting signal - use operating income/EPS",
+        "Sell-side estimate revisions skew negative: FY1 6 down/1 up, FY0 8 down/0 up in last 30 days, consistent with the Q2'26 miss",
+        "Personal Lines had unfavorable prior-year reserve development of $20M in Q4'25 alone, and its FY2025 combined ratio deteriorated YoY (103.6% vs 97.5% FY2024)",
+        "Share buyback volume was not disclosed/quantified in 3 of the 4 releases reviewed (Q1'26, Q3'25, Q4'25) - a genuine disclosure gap"
+      ],
+      "data_conflicts": [
+        "b1 composite decile is 9 (0.875, a top-decile score) yet live_rank is 62 and live_top30=False - inconsistent with how HIG (decile 10, composite 0.886, rank 20) and MTB (decile 10, composite 0.930, rank 35) rank relative to their own composite scores. Cause not resolved from data available; flagged for the quant/lead agents rather than guessed at."
+      ],
+      "next_earnings_date": "2026-10-26",
+      "next_earnings_date_confirmed": false,
+      "confidence_in_thesis": "medium-low - valuation is genuinely the cheapest of the three names and the FY2025 underwriting trend was excellent, but the single most recent quarter available (Q2'26) is a real underwriting loss with rising ex-cat losses and negative estimate revisions, so the thesis hinges on whether Q3'26 (~Oct 26) shows Q2 was a weather-driven blip or the start of a trend"
+    },
+    "MTB": {
+      "verdict": "INCLUDE-SMALL",
+      "horizon": "12-36 months",
+      "v3_holding": false,
+      "v3_note": "Not a v3 holding; added to the v4 valuation universe once b1_live_scores identified it in the live top-40.",
+      "kill_criteria": [
+        "NIM falls below ~3.55% for two consecutive quarters (a Q3 2026 print below 3.60% is a warning against the guided \"mid 3.60s\")",
+        "Net charge-offs exceed ~50bps in any quarter (vs ~37bps guided for FY2026, 23-31bps delivered in the last 4 quarters)",
+        "CET1 falls below the guided 10.0% floor, or ROTCE below 13% for two consecutive quarters (1H26: 16.5%)",
+        "Once disclosed, CRE-office nonaccrual/criticized balances show material deterioration - currently not broken out in materials reviewed",
+        "Efficiency ratio deteriorates persistently above ~60% (expenses already guided to the high end of the FY2026 range)"
+      ],
+      "key_adverse_facts": [
+        "CRE loan balances grew $1.1bn quarter-over-quarter in Q2'26 with ZERO office-specific exposure, criticized-loan, or CRE sub-segment disclosure in any of the three earnings releases or the investor deck reviewed - a genuine disclosure gap for a regional bank in the current cycle",
+        "Management's own FY2026 guidance (Sept 2026 deck) implies NIM compresses slightly into 2H26 (to 'mid-3.60s' from 3.70-3.71% now), NII tracking to the bottom of its $7.2-7.35bn range, and expenses tracking to the top of its $5.5-5.6bn range - a mildly unfavorable mix",
+        "Guided FY2026 net charge-offs (~37bps) sit above the 23-31bps actually delivered over the last four quarters - management's own base case expects credit-cost normalization upward",
+        "CET1 has fallen from 11.54% (Q3'24) to 10.19% (Q2'26), approaching the low end of the guided 10.0-10.5% band, via aggressive buybacks (8% of shares in the trailing 12 months)",
+        "Q4'24 and Q4'25 earnings-release data could not be fully retrieved this session (SEC EDGAR intermittent 503s) - two gaps in the 8-quarter table are disclosed rather than filled with invented numbers",
+        "A Section 5.02 (officer/director change) 8-K filed June 16 2026 was not investigated in detail given the time budget",
+        "RA13 (6 Oct 2026): P/B of 1.16x in V1 and the dossier used total equity including preferred; common P/B is 1.26x and P/TBV 1.88x, so the \"fair, modestly cheap to peers\" read was too generous by about 8%",
+        "RA13: 17 Jul Series L preferred (24m depositary shares, 6.625%); 28 Sep 8-K reclassifies other-income lines and separates loans held for sale from Q3 2026, so quarterly fee and loan ratios will not match the old layout (no effect on totals)"
+      ],
+      "data_conflicts": [
+        "b1 composite is 0.930 (decile 10, the highest of the three names) yet live_rank is 35 and live_top30=False - the same rank/composite inconsistency noted for CINF; not resolved from data available."
+      ],
+      "next_earnings_date": "2026-10-16",
+      "next_earnings_date_confirmed": true,
+      "confidence_in_thesis": "medium - NIM, credit and the FY2026 guide are primary-sourced; valuation is in line, not cheap (P/TBV 1.88x vs a justified 1.9-2.2x), CET1 is already at the 10.19% bottom of its band, and Q2 ROTCE (18.6%) was lifted by a higher Bayview distribution",
+      "thesis_one_line": "Super-regional bank with four quarters of margin expansion and improving credit, but at 1.88x tangible book the price already pays for a 14-15% ROTCE against about 16% guided, with CET1 at the floor of its range.",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "fair",
+        "v1_base_3y": 0.1047,
+        "dossier_view": "fair",
+        "consistent": true,
+        "implied_vs_base": "in_line",
+        "reconciliation": "Corrected 6 Oct 2026 (RA13): V1/dossier P/B 1.16x divided the price by total equity including preferred; common book value is $176.03 (1.26x) and tangible book $117.41 (1.88x). Bank method: implied sustainable ROTCE = g + P/TBV x (CoE - g) = 14.0% at the programme CoE of 8.82% (15.2% at 9.5%, 16.2% at 10%) against 16.5% in 1H26 and a base of about 16% (FY2026 guide: NII $7.2-7.35bn bottom half, fees $2.8-2.85bn high end, expenses $5.5-5.6bn high end, NCO ~37 bp; management expects 17% in 2027). In line; justified P/TBV at 16% is 2.23x / 2.00x / 1.86x at 8.82% / 9.5% / 10%."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.001,
+        "base": 0.107,
+        "bull": 0.179
+      },
+      "scenario_basis": "Corrected 6 Oct 2026 (RA13). From $221.19, TBV/share $117.41, 144.4m shares, dividend $6.00 growing 4%, payout 60-80% of net income to common. Bear: ROTCE 11.5%, exit 1.45x TBV. Base: ROTCE 16%, exit 1.90x (today). Bull: ROTCE 18%, exit 2.3x. V1 was +3.0% / +10.5% / +23.1% on total-equity P/B."
+    }
+  },
+  "cross_cutting_notes": [
+    "All three names' EPS/combined-ratio/NIM figures in this pass are sourced directly from primary 8-K Exhibit 99.1 press releases (not XBRL), consistent with the lead's instruction that a filer-side XBRL EPS scale error was found in HIG's data.",
+    "None of HIG or CINF give quantitative forward EPS/revenue guidance in their earnings releases (standard for P&C underwriters); MTB does give full-year guidance via quarterly investor decks. This asymmetry is noted rather than treated as a gap in MTB's disclosure or an omission in HIG/CINF's.",
+    "Scope limitations disclosed across all three dossiers rather than silently skipped: full 10-K risk-factor diffs, Form 4 insider-trading patterns, and auditor-tenure/litigation detail were not exhaustively pulled given the ~30-minute completion budget after the session resume. scripts/ratios.py, valuation.py, verify_data.py and lint_report.py from the stock-analysis skill were not run this pass (time budget); the dossiers instead rely on the already-systematic v1 valuation pipeline output plus primary-source press releases."
+  ]
+}

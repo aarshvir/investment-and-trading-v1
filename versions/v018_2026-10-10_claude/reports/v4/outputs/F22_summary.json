@@ -1,0 +1,114 @@
+{
+  "agent": "F22",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "BLK": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The world's largest asset manager, growing AUM over 20% a year, priced at a market-average multiple.",
+      "kill_criteria": [
+        "Organic base-fee (ex-acquisition) net flow growth below 3% for two consecutive quarters.",
+        "Adjusted operating margin falls below 42% for two consecutive quarters (Q1-26 was 44.5%, Q2-26 was 45.9%).",
+        "Net outflows (negative total net flows) in any single quarter.",
+        "A further negative fair-value mark or impairment on GIP/HPS/Preqin contingent consideration/goodwill exceeding $500m in a quarter.",
+        "Adverse final ruling or consent decree in the 13-state-AG antitrust (coal) suit or the LifePath ERISA litigation that restricts index-voting or fee practices."
+      ],
+      "key_adverse_facts": [
+        "Q1-26 GAAP diluted EPS ($14.06) exceeded as-adjusted EPS ($12.53), the reverse of BlackRock's normal pattern, due to a $549m non-cash positive fair-value mark on contingent consideration; GAAP EPS growth of 46% YoY that quarter is not comparable to the 11% adjusted-EPS growth.",
+        "A large share of AUM and EPS growth is inorganic (GIP, HPS, Preqin acquisitions closing through 2024-2025); Q1-26 intangible amortization was $277m.",
+        "H1-26 GAAP operating cash flow was only $247m against $4.13bn of H1-26 net income, a large negative swing versus net income (consolidation-of-sponsored-vehicles artefact per sector methodology, but a swing worth monitoring).",
+        "13 state Attorneys General allege BlackRock, State Street and Vanguard used common index-fund ownership to suppress coal-industry output (E.D. Texas, unresolved); ERISA class actions on BlackRock's LifePath target-date funds have survived motions to dismiss and are in discovery."
+      ],
+      "data_conflicts": [
+        "b1 quant data (Quality 5/Growth 4) and the triage's 54% forward EPS growth figure reflect an EPS growth rate substantially inflated by M&A and a one-off contingent-consideration mark, not pure organic performance; this dossier's adjusted, ex-one-off view is materially more conservative than the headline growth figure the model scored."
+      ],
+      "next_earnings_date": "2026-10-14",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (durable moat and real organic flow growth are well evidenced; the acquisition-driven and one-off-distorted portion of near-term EPS growth is harder to isolate cleanly with only two quarters of clean XBRL data)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "BLK has no row in v1_valuation_table.csv or v1_valuation.json, so there is no systematic valuation to reconcile against. This dossier's own reverse DCF (r=10.5%, terminal g=3.5%) implies a 10-year growth rate of ~6.7% p.a. from the current price; the evidence-based base case (~8-9% p.a.) sits above that implied rate, so the dossier's independent view is cheap-to-fair."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.024,
+        "base": 0.106,
+        "bull": 0.203
+      }
+    },
+    "BX": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "The world's largest alternative-asset manager, still raising about $70bn a quarter, priced about in line with (not below) its evidence-based growth once equity compensation and the 5.17% Treasury yield are counted.",
+      "kill_criteria": [
+        "Fee-earning AUM net inflows turn negative for two consecutive quarters.",
+        "Distributable Earnings per share declines YoY for two consecutive quarters (last two quarters were +12% to +26% YoY).",
+        "Any nontraded vehicle (BREIT, BCRED, or successors) reinstates repurchase gating/proration for more than one quarter.",
+        "Standalone long-term debt/FRE exceeds roughly 3.0x (current standalone debt ~$13.3bn).",
+        "Dividend cut or suspension (current payout ratio is roughly 85% of Distributable Earnings per share)."
+      ],
+      "key_adverse_facts": [
+        "GAAP EPS is far more volatile and much lower-growth than Distributable Earnings per share (Q1-26 GAAP EPS +3.75% YoY vs DE/share +12% YoY) because GAAP includes non-cash equity comp and unrealized carry marks; headline GAAP growth numbers should not be read as the cash-earnings trend.",
+        "Standalone long-term debt rose from $11.5bn (Dec-24) to $13.3bn (Jun-26), +16% in six quarters, while the dividend payout ratio is already roughly 85% of DE/share, leaving limited cushion.",
+        "BREIT (Blackstone's flagship nontraded REIT) gated redemptions for roughly 15 months in 2022-2023 at the fund's cap; current full satisfaction of repurchase requests (Q1 and Q2 2026) is a recent, not multi-year, recovery. A related vehicle, BCRED, has also used repurchase-plan caps historically.",
+        "8-K of 22 Sep 2026 (accession 0001193125-26-398100): Q3-to-date realized performance revenues plus principal investment income of only \"in excess of $350 million\" (about 90% performance revenues) against \"in excess of $525 million\" at the same point of Q3 2025, so Q3 DE per share ($1.52 a year ago) may fall YoY.",
+        "DE excludes equity-based compensation (TTM $1,578m, about $1.27 per share, 21% of LTM DE per share of $6.15)."
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium (fee-earning AUM growth and realizations are organic; the corrected valuation leaves no margin of safety, Q3 carry realizations are tracking about a third below last year, and the nontraded-fund liquidity model has not been stress-tested since 2022-23) - RA10 2026-10-06",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "BX has no row in v1_valuation_table.csv or v1_valuation.json, so there is no systematic valuation to reconcile against. This dossier's own reverse DCF (r=11.5%, terminal g=3.5%) implies a 10-year growth rate of ~8.2% p.a. from the current price; the evidence-based base case (~11% p.a., driven by continued double-digit fundraising and fee-earning AUM growth) sits above that implied rate, so the dossier's independent view is cheap-to-fair. RA10 2026-10-06: corrected (rf 5.17% not 4.2%, COE 11.8%; NTM DE less equity comp $5.70 not $7.09): implied 10-year growth 10.6% against the 11% base, in line with no margin; base-path value $107 vs $118.42; base 3-year return +11.7% a year equals the cost of equity.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.016,
+        "base": 0.117,
+        "bull": 0.219
+      }
+    },
+    "EG": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Global reinsurer that twice surprised markets with US casualty reserve charges, now capping its worst legacy exposure with a $1.2bn cover, priced at 6.4x earnings.",
+      "kill_criteria": [
+        "Any new adverse prior-year development charge on North America casualty exceeding $150m in a single quarter.",
+        "Group combined ratio above 100% for two consecutive quarters (last two: 91.2%, 92.0%).",
+        "Net premiums written declines exceeding -15% YoY for three consecutive quarters (only Q2-26 at -26.3% is worse than -15%; Q1-26 at -14.7% is not: 1 of the last 2 quarters).",
+        "Book value per share (ex-AOCI) declines quarter-over-quarter for two consecutive quarters.",
+        "Rating-agency downgrade (A.M. Best or S&P) of Everest Re's financial-strength rating.",
+        "Annualised ROE below 9% (the ROE the price implies at Ke 9.9%) for two consecutive quarters (added 6 Oct 2026, RA12)."
+      ],
+      "key_adverse_facts": [
+        "Everest has had two distinct adverse-reserve or loss events within roughly 12-15 months: a Q4-2024 loss quarter and a $478m Q3-2025 US casualty reserve charge (103.4% combined ratio) that directly preceded the $1.2bn Longtail Re adverse development cover.",
+        "Net premiums written are shrinking sharply as management exits underpriced lines: -14.7% YoY in Q1-26 and -26.3% YoY in Q2-26, a large ongoing top-line contraction.",
+        "The $1.2bn ADC covers only North America liability reserves for accident years 2024-and-prior; it provides no protection against a new reserve problem emerging in 2025-or-later accident years, which is the open question the two clean quarters (Q1/Q2-26) cannot yet resolve.",
+        "Corrected 6 Oct 2026 (RA12): at 0.93x book value the price implies a sustainable ROE of about 9.4% (Ke 9.9% = rf 5.17% + 0.9 x 4.14% + 1.0 reserve-risk premium, g 3%), against 12.4% TTM and a 10-11% normalised base; the margin of safety is about one ROE point (value $405 at 10% ROE, +9%; $347 at 9%, -6%), and property catastrophe reinsurance rates fell 16% at the July 2026 renewal after a five-quarter benign loss run. The earlier '-12% implied growth, close to our bear case' came from treating EPS as cash with rf 4.2%."
+      ],
+      "data_conflicts": [
+        "b1 quant data (price_vs_growth 5, the highest of the three names) and the triage's framing of the stock as priced for continued reserve problems are consistent with this dossier's own reverse DCF, which independently finds implied growth of about -12% p.a. -- an unusual case where quant, triage and primary-source fundamentals all agree on the direction of the mispricing, conditional on the reserve thesis holding. [Corrected 6 Oct 2026 (RA12): the -12% reverse-DCF figure is withdrawn; quant cheapness (price_vs_growth 5) is confirmed only as 'fair-to-cheap' on a P/B-vs-ROE test, implied ROE 9.4% vs 10-11% base.]"
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "18-30 months",
+      "confidence_in_thesis": "medium (the ADC transaction is a real, primary-source-verified de-risking event and two subsequent quarters are clean, but two quarters is not enough to overturn a documented pattern of reserve surprises roughly every 12-15 months over the prior two years) Re-assessed 6 Oct 2026 (RA12): confidence stays medium; valuation margin thinner than first shown (implied ROE 9.4% vs 10-11% base).",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair_to_cheap",
+        "consistent": null,
+        "reconciliation": "Corrected 6 Oct 2026 (RA12): EG has no V1 row. The original reverse DCF (r 9.5% with rf 4.2%, EPS treated as cash, implied -11.9% a year) is withdrawn; for a reinsurer the test is P/B vs ROE. P/B 0.929x ($370.43 / $398.83), Ke 9.9% (rf 5.17%), g 3% imply a sustainable ROE of 9.4%; normalised base ROE 10-11% (TTM 12.4% is flattered by benign catastrophe quarters; H1-26 catastrophe losses $224m) so implied is about 1-1.5 points below base: in_line, with justified P/B 1.01x at 10% ROE and 1.16x at 11%.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.091,
+        "base": 0.131,
+        "bull": 0.252
+      },
+      "scenario_basis": "Annualised 3-year return = payout 75% x ROE / P/B0 0.929 + 25% x ROE + annualised change in P/B; bear ROE 2% exit P/B 0.65x, base ROE 10% exit 1.0x, bull ROE 14% exit 1.25x (RA12, own arithmetic; replaces -10.0% / +14.6% / +28.0%)."
+    }
+  }
+}

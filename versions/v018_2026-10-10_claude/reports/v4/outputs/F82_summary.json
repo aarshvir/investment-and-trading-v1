@@ -1,0 +1,112 @@
+{
+  "agent": "F82",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "SO": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Southeast's largest regulated utility with Vogtle behind it and real data-center load growth, but at a discount rate consistent with a 5.17% Treasury the price already asks for the growth management and consensus expect, with negative free cash flow and 3-4% annual share dilution.",
+      "kill_criteria": [
+        "Adjusted EPS growth falls below 4% for two consecutive quarters (vs the ~5–7% long-term target)",
+        "Consolidated net debt/EBITDA rises above 6.0x without a credit-positive equity issuance offsetting it",
+        "A state commission (Georgia, Alabama or Mississippi PSC) formally disallows recovery of a material capex or fuel-cost item (>$250mn) in a rate order",
+        "Guidance is cut (not just reaffirmed) at any of the next two quarterly releases",
+        "A confirmed hyperscaler data-center load agreement in the Southeast is publicly cancelled or downsized",
+        "Management raises the projected equity need through 2030 above the $2.3bn originally given, or net share issuance exceeds 1.5% in any quarter (average shares were 1,137m in Q2 2026, +3.3% year on year)."
+      ],
+      "key_adverse_facts": [
+        "Guidance track record not independently verified this pass (no confirmed prior-range comparison from a primary source) - treat as medium, not high, confidence",
+        "Consolidated net debt/EBITDA ~5.2x leaves limited headroom before the next rate case",
+        "1-year price momentum negative (-4.1%) versus peers that have already re-rated on confirmed hyperscaler contracts",
+        "Full Item 3 legal-proceedings read of the current 10-Q not completed this pass",
+        "Free cash flow is negative: H1 2026 operating cash flow $4,280m less property additions $6,639m = -$2.36bn; funded by $2.5bn of equity (31.1m shares), $2.73bn of convertible notes (Aug 2026) and $1.3bn of 6.00% junior subordinated notes (Mar 2026).",
+        "The original reverse DCF used a 7.0% cost of equity (1.8 points over the 5.17% Treasury) and an earnings-yield shortcut; on a dividend basis at 8.5% the price implies 7.0% annual growth for 10 years, about equal to the base case."
+      ],
+      "data_conflicts": [
+        "Systematic factor model (b1_live_scores.csv) ranks SO near the bottom of the scored universe (decile 2, model rank 400) on weak momentum and low trailing FCF yield, while qualitative triage and this dossier rate it INCLUDE on quality/scale and an under-priced data-center growth option - the factor model cannot see the point-in-time load-growth catalyst"
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium - guidance maintained at $4.50-$4.60 and expected at or near the top (Q2 call, secondary source; the filed release carries no range), but valuation margin of safety is gone at a 5.17% Treasury and dilution is running at 3-4% a year",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "in_line",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row for SO. RA9 re-test 6 Oct 2026: replaced the 7.0% cost of equity and earnings-yield shortcut (implied ~1%) with a dividend discount test (utility FCF is negative). Annualised dividend $3.04, next-year $3.12, price $82.88, terminal growth 3.5%, discount rate 8.5% (5.17% Treasury + 0.7 floored beta x 4.75% ERP; range 7.7-9.0%): implied perpetual growth 4.7%, implied 10-year dividend/EPS growth 7.0% (4.7% at 7.7%, 8.3% at 9.0%) versus an evidence base case of about 7% (consensus FY26 +6.7%, FY27 +7.3%; management framework 8-9% through 2028 then 7-8%, secondary sources). Implied is in line with the base case, so no margin of safety: verdict cut to INCLUDE-SMALL."
+      },
+      "scenario_returns_3y": {"bear": -0.014, "base": 0.085, "bull": 0.167},
+      "scenario_basis": "RA9 restated 6 Oct 2026 on FY30 EPS x NTM multiple plus dividends ($3.08-3.24 a year), from $82.88: bear FY27 $4.74, +3%/yr, 13.5x; base FY27 $4.92 (consensus), +7%/yr, 16.0x; bull FY27 $4.97, +9%/yr, 19.0x. Previous figures were -0.5% / +9.5% / +16%."
+    },
+    "TJX": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "TJ Maxx/Marshalls/HomeGoods off-price retailer with near-net-cash leverage and ~90% FCF conversion; after the 16 Sep Fed hike the price (~25x trailing adjusted EPS) implies ~10.6% 10-year FCF growth at a 9.5% cost of equity, in line with the 8-10% evidence, with kill criterion 1 one print (18 Nov) from firing.",
+      "kill_criteria": [
+        "Marmaxx US comp sales below 2% for two consecutive quarters (Q2 FY27 +1% is the first leg; a Q3 FY27 print below 2% on 18 Nov 2026 fires it)",
+        "Consolidated gross margin (ex. one-time tariff items) contracts more than 100bps YoY in any quarter",
+        "Full-year adjusted EPS guidance is cut (not just reaffirmed/raised) at any of the next two quarterly releases",
+        "Net debt/EBITDA rises above 2.0x (current 0.9x) without a value-accretive acquisition explaining it",
+        "Buybacks are paused or reduced by more than 30% quarter-over-quarter without a stated capital-allocation reason"
+      ],
+      "key_adverse_facts": [
+        "Marmaxx (largest US banner) comps only +1% in Q2 FY2027 and explicitly called 'below expectations' by the CEO",
+        "Reported Q2 FY2027 GAAP EPS growth (+24%) is inflated by a one-time $331mn tariff refund and $112mn of related accruals; adjusted EPS growth (+11%) is the better run-rate figure",
+        "Prior full-year guidance range before the Q2 FY2027 raise was not independently re-pulled from the Q1 FY2027 release this pass",
+        "An 8-K item 5.02 (executive/board change) filed 2026-09-17 was not investigated this pass",
+        "Re-assessment 5 Oct 2026 (RA2): the original 'implied ~4.2%' was a perpetual-growth shortcut; on a 10-year two-stage FCF model (normalised FCF $5.08bn, terminal 3%) the 25 Sep price implies 8.3% at 8.5% CoE and 10.6% at 9.5% CoE (rf 5.17%), i.e. in line with, not below, the 8-10% base",
+        "FOMC hiked 25bp to 3.75-4.00% on 16 Sep 2026 (12-0) and the 10-year Treasury closed 5.17% on 25 Sep (FRED); the dossier's 8.5% cost of equity predates this",
+        "Q3 FY27 results are on 18 Nov 2026; Marmaxx Q3 comp below 2% fires kill criterion 1 (Citi/Jefferies downgrades 20/26 Aug; stock -15% in August; secondary)"
+      ],
+      "data_conflicts": [
+        "Dossier 8-K Item 5.02 flag resolved: benign independent-director election (Pintoff, 16 Sep 2026). Prior FY27 guide was $5.08-$5.15 (Q1 release); FY26 adjusted EPS $4.73 (not ~$4.80). Red-team claims '~7-8% adjusted EPS growth', 'FCF conversion 75-80%' and 'Marmaxx ~70% of EBIT' are not supported by filings (guided +9.4%; FCF 86-90% of NI; Marmaxx 64-66% of segment profit)"
+      ],
+      "next_earnings_date": "2026-11-18",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - business evidence is intact (above-plan Q2, raised adjusted guide, 0.9x leverage) but the valuation margin of safety has gone and kill criterion 1 is one print from firing",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "in_line",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "Re-assessed 5 Oct 2026 (RA2). No V1 row. Reverse DCF restated on a 10-year two-stage equity model (market cap $143.1bn at $130.06, normalised FCF $5.08bn = 88% of FY27 adjusted EPS $5.175, terminal 3%): implied 10-year FCF growth 8.3% at 8.5% CoE, 9.5% at 9.0%, 10.6% at 9.5% (rf 5.17% on 25 Sep + 4.3%), 11.8% at 10%; 11.1% at the 5 Oct price ($135.04) and 9.5% CoE. Base 8-10% (guided FY27 adjusted EPS +9.4%). Central 10.6% is within 1 point of the top of the base => in_line (was below). Price for implied 10%: ~$124; 9%: ~$115."
+      },
+      "scenario_returns_3y": {"bear": -0.03, "base": 0.077, "bull": 0.144},
+      "scenario_basis": "RA2 5 Oct 2026, from $130.06 on TTM adjusted EPS $5.12 (25.4x), +1.5% dividend: bear = Marmaxx stays below 2%, EPS +4%/yr, exit 19.5x; base = adjusted EPS +9%/yr (guided FY27 +9.4%), exit 23.5x (mild compression for higher rates); bull = Marmaxx recovers, EPS +12%/yr, exit 26x."
+    },
+    "AEP": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Multi-state regulated utility with a filing-confirmed, unusually strong 7-9% growth pipeline from data-center load, but leverage is rising faster than equity.",
+      "kill_criteria": [
+        "Net debt/EBITDA rises above 6.5x (current 5.9x) without a credit-rating-neutral equity raise alongside it",
+        "Any of the newly signed 6 GW (Q2 2026) or the broader 69 GW contracted-load pipeline is publicly cancelled or downsized by more than 10%",
+        "Full-year operating EPS guidance is cut (not raised/reaffirmed) at either of the next two quarterly releases",
+        "A credit-rating agency downgrades AEP or a major operating subsidiary by one notch",
+        "Operating EPS growth (ex identified one-time items) falls below 5% for two consecutive quarters against the 7-9% long-term target"
+      ],
+      "key_adverse_facts": [
+        "Consolidated long-term debt (non-current) grew 16.2% YoY to $47.99bn at 30 Jun 2026 versus AEP common equity +7.4% to $32.08bn (Q1: +20.7% vs +16.4%); total debt $52.8bn, 61.4% of capitalisation - leveraging up about twice as fast as capitalizing [DV02 2026-10-06, Q2 10-Q]",
+        "Net debt/EBITDA 5.9x is the highest in this batch (SO 5.2x, TJX 0.9x)",
+        "GAAP diluted EPS fell 43% YoY in Q2 2026 ($2.29 to $1.31) versus a 5% decline in operating EPS ($1.43 to $1.36); the Q2 2026 release attributes the gap to the 2025 transmission minority interest sale gain in the prior-year quarter [DV02 2026-10-06]",
+        "At a fair price the dividend-model base return is only about the cost of equity (base 3y +7.0%/yr vs 7.24% cost of equity); V1's negative base (-1.9%) was replaced in DV02 because its path contradicts the raised guidance",
+        "Cash and cash equivalents only $375mn at 30 Jun 2026 ($306mn at Q1) - thin cushion against a financing-market disruption"
+      ],
+      "data_conflicts": [
+        "V1 WACC 5.42% uses a pre-tax cost of debt of 4.08% (below the 10-year Treasury 5.17%); DV02 replaced the EPS-yield reverse DCF with the programme dividend model (implied 6.05% vs base 5.25-6.25%), so implied vs base moved from below to in_line; V1 verdict 'fair' is unchanged."
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium - load-growth pipeline and guidance raise are filing-confirmed; rising leverage (debt growing about twice as fast as equity) argues for half weight; valuation is in line, not cheap",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "fair",
+        "v1_base_3y": -0.0193,
+        "implied_vs_base": "in_line",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "DV02 2026-10-06: the original reverse DCF treated EPS as cash (earnings yield vs V1's 5.42% WACC, which uses a 4.08% pre-tax cost of debt below the 5.17% Treasury) and adopted V1's scenario set, whose base path cuts EPS from $6.73 to $5.36 despite raised guidance. Programme dividend model (10 years constant growth, 3.0% terminal, cost of equity 5.17% + Blume beta 0.50 x ERP 4.14% = 7.24%, price $118.35, dividend $3.80): implied 6.05%/yr dividend growth (4.5% at 6.7%, 7.5% at 7.7%) vs base 5.25-6.25% (guided 7-9% EPS CAGR fading to 4.5%, with a haircut path): price/value 0.97-1.06 = in line. V1 verdict 'fair' unchanged; V1 scenarios replaced."
+      },
+      "scenario_returns_3y": {"bear": 0.003, "base": 0.07, "bull": 0.138},
+      "scenario_basis": "DV02 restated: start NTM EPS $6.73, price $118.35, dividend $3.80; bear EPS +2%/yr, exit 15.0x, dividend +3%; base EPS +6%/yr (haircut to 7-9% guide), exit 16.5x (peer median 16.1x), dividend +5%; bull EPS +9%/yr, exit 18.5x, dividend +7%; total return = (year-3 price + cumulative dividends) / start, annualised (V1 method)."
+    }
+  }
+}

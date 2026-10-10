@@ -1,0 +1,123 @@
+{
+  "agent": "F125",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "CSX": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Eastern US freight railroad with improving margins and volume, but priced for faster growth than its record or my base case supports.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "GAAP operating margin below 34.0% for two consecutive quarters (Q2'26 38.3%, H1'26 37.2%; FY25 32.1%).",
+        "Consolidated net debt (current maturities + long-term debt less cash and short-term investments) / TTM (operating income + D&A) above 3.2x (now ~2.6x).",
+        "Total carload volume down year over year for two consecutive quarters (Q2'26 +6%, H1'26 +4%).",
+        "TTM operating cash flow less property additions below $2.0bn (now ~$2.8bn) or 2026 capex guidance raised above $2.6bn.",
+        "CSX signs a definitive agreement to acquire or merge with another Class I railroad at consideration above $10bn, or an STB decision materially adverse to CSX's interchange position."
+      ],
+      "key_adverse_facts": [
+        "Price implies ~9.5% 10-year FCF growth vs ~7% base and 5.2% delivered 5y (V1).",
+        "Q2 revenue +10% is inflated by fuel surcharge ($410m vs $222m); fuel lag was -$54m and fuel expense +$177m.",
+        "Unresolved industry consolidation (UNP/NS merger needs STB approval); Q2 MD&A cites advisory expenses related to potential industry consolidation.",
+        "Current maturities of debt rose to $1,702m from $708m; buybacks partly debt-funded; CTO separated 2026-05-14."
+      ],
+      "data_conflicts": [
+        "V1 implied growth 13.9% and base -8.2% vs my FCF reverse DCF 9.5% implied and +2.7% base; different growth frames.",
+        "Yahoo TTM FCF $1.95bn vs my OCF less property additions ~$2.8bn (company FCF definition includes disposals)."
+      ],
+      "next_earnings_date": "2026-10-21",
+      "confidence_in_thesis": "medium: primary 10-Q/8-K data clear; company gives no earnings guidance and merger outcome is open",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": -0.0819,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "Both say the price exceeds what the business has delivered; V1's -8.2% base uses a 13.9% implied-growth frame, while my FCF reverse DCF implies 9.5% vs a ~7% base (base return +2.7%/yr), so I am less negative but still WATCH. [DV11 2026-10-06: at a consistent 10.17% cost of equity (5.17% + 1.207 x 4.14%) the FCF reverse DCF implies 13.4%, close to V1's 13.9%; implied_vs_base stays above; the 7% base is reached only near $29 a share.]",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.122,
+        "base": 0.027,
+        "bull": 0.139
+      },
+      "scenario_basis": "Start EPS $2.00 (2026E), growth 0/7/12%, exit P/E 15/20/24x, dividend $0.56/share/yr."
+    },
+    "UHS": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Big US hospital and mental-health operator priced like earnings will stop growing, but about half its profit depends on Medicaid programs Congress is trimming.",
+      "horizon": "24-36 months",
+      "kill_criteria": [
+        "Full-year Adjusted EPS guidance midpoint cut again below $21.50 (now $22.97), or actual FY2026 adjusted EPS below $21.50.",
+        "Aggregate net benefit from Provider Tax Programs (10-Q Medicaid table) projected below $1.2bn for a fiscal year (now $1,481m for 2026), or a state directed-payment program is denied by CMS.",
+        "Consolidated net debt (carrying debt less cash) / Adjusted EBITDA net of NCI above 3.0x (now ~1.8x pre-Talkspace).",
+        "Same-facility acute and behavioral adjusted admissions both negative for two consecutive quarters (Q2'26: +2.9% and +0.5%).",
+        "A professional-liability or government settlement/judgment against UHS of Delaware above $250m becomes final and enforceable."
+      ],
+      "key_adverse_facts": [
+        "2026 guidance cut on 2026-07-27: Adjusted EPS $22.28-23.65 vs prior $22.64-24.52; H2 implied ~$11.37 vs H1 $11.60.",
+        "Projected 2026 Medicaid provider-tax program net benefit $1,481m pre-tax, ~56% of guided Adjusted EBITDA; OBBBA reduces supplemental payments.",
+        "Q2'26 EPS includes +$72m net pre-tax items (incl. $100m Florida prior-period benefit); underlying margin 11.1% vs 11.7%.",
+        "Behavioral-health litigation: Cumberland ~43 further plaintiffs; Nevada $500m punitive verdict vacated, retrial expected 2028; +$28m malpractice reserve in Q2.",
+        "Aug 2026 refinancing of 1.65% notes with 5.5%/6.0% notes plus Talkspace acquisition raises interest cost and debt."
+      ],
+      "data_conflicts": [
+        "Triage said EPS declining; filings show TTM GAAP EPS $24.50 and FY25 adjusted $21.74 (up), though 2026 guidance was cut.",
+        "Yahoo shares outstanding 51.7m (class B only) vs ~58.9m implied/59.9m diluted; I used ~58.9m.",
+        "Yahoo FCF $498m vs my OCF less capex ~$845m."
+      ],
+      "next_earnings_date": "2026-10-27",
+      "confidence_in_thesis": "medium: cheap on any earnings measure, but the supplemental-payment exposure and litigation limit conviction; Q3 date is an estimate",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for UHS, so nothing to reconcile; my reverse DCF (about -0.2% implied FCF CAGR) is below the +5% base, supporting 'cheap' with a named Medicaid reservation.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.162,
+        "base": 0.07,
+        "bull": 0.19
+      },
+      "scenario_basis": "Start underlying EPS $22.00 (guide mid $22.97 less ~$1.3 prior-period item), growth -8/+5/+9%, exit P/E 6/8.5/10.5x, dividend $0.80/share/yr."
+    },
+    "KO": {
+      "verdict": "WATCH",
+      "thesis_one_line": "World's largest soft-drink brand owner raising guidance steadily, but its share price already assumes near-flawless growth for a decade.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Organic revenue (non-GAAP) growth below 3% for two consecutive quarters (Q2'26 +6%, Q1'26 +10% incl. six extra days).",
+        "Global unit case volume growth negative for two consecutive quarters (Q2'26 +5%, Q1'26 +3%).",
+        "Full-year comparable EPS growth guidance cut below 7% (currently 9% to 10%, 7% to 8% currency neutral ex-M&A).",
+        "Consolidated net debt (carrying debt less cash, short-term investments and marketable securities) / (TTM operating income + D&A) above 2.5x (now ~1.7x).",
+        "An unfavourable appellate ruling in the IRS transfer pricing case adding more than $1.0bn of tax and interest beyond the $6.0bn deposit."
+      ],
+      "key_adverse_facts": [
+        "Price 26.7-26.9x 2026 guided comparable EPS; FCF yield ~3.3% on $12.4bn guide; implied FCF CAGR ~6.5% vs ~6% base.",
+        "About 3 points of 2026 EPS growth is currency tailwind; ~2 of the ~3 points of the latest raise are real (currency-neutral 7-8% vs prior 6-7%).",
+        "fairlife ransomware (8-K 2026-07-16): US production suspended, majority resumed per 10-Q; company says not reasonably likely material.",
+        "IRS transfer-pricing case: $6.0bn deposit paid; outcome on appeal pending.",
+        "Net debt ~$27.2bn consolidated; $5.4bn assets held for sale (Africa bottling) closing by end-2026."
+      ],
+      "data_conflicts": [
+        "Triage FCF yield 1.4% reflects FY25 fairlife milestone payment (~$6.1bn, derived); normalised 2026 guide FCF $12.4bn = ~3.3% yield.",
+        "GAAP EPS $1.03 vs comparable $0.97 in Q2'26: $320m securities gain and Africa impairment reversal."
+      ],
+      "next_earnings_date": "2026-10-21",
+      "confidence_in_thesis": "high on business quality, medium on valuation: guidance is raised three releases in a row but date for Q3 is an estimate",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for KO, so nothing to reconcile; my reverse DCF implies ~6.5% FCF growth vs ~6% base, a marginal premium, hence WATCH rather than INCLUDE.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.024,
+        "base": 0.073,
+        "bull": 0.118
+      },
+      "scenario_basis": "Start 2026E comparable EPS $3.285, growth 3/7.5/9.5%, exit P/E 21/25/27x, dividend $2.12/share/yr."
+    }
+  }
+}

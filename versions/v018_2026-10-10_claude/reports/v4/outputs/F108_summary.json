@@ -1,0 +1,103 @@
+{
+  "agent": "F108",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "BIIB": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Alzheimer's drug Leqembi and a newly bought eye-disease franchise are growing fast, but a big debt-funded acquisition just wrecked short-term profits.",
+      "kill_criteria": [
+        "GAAP diluted EPS below $1.50 for two consecutive quarters excluding clearly-labeled, auditor-confirmed one-off deal/restructuring charges",
+        "Gross debt (notes payable + term loan, consolidated Biogen Inc.) remains above $7.5bn and trailing-12-month operating cash flow falls below $2.0bn as of any quarter-end after Q4 2026",
+        "Leqembi global in-market sales growth decelerates below 30% YoY for two consecutive quarters",
+        "A negative FDA/EMA safety signal (ARIA-related label change, boxed warning, or REMS tightening) on Leqembi",
+        "Legacy MS franchise revenue (Tecfidera + Tysabri + Vumerity + Spinraza, combined) declines more than 15% YoY in any quarter"
+      ],
+      "key_adverse_facts": [
+        "GAAP net income collapsed to $97.5m (EPS $0.66) in Q2 2026 vs $634.8m (EPS $4.33) a year earlier, driven by $165.4m restructuring charges, $164.0m acquired IPR&D/milestone expense and $310.4m (6mo) amortization of acquired-inventory step-up from the Apellis deal",
+        "Q4 2025 GAAP net income was negative: reported net loss $(48.9)m, diluted EPS $(0.33) (Ex-99.1 0000875045-26-000011; not derived, DV06/DVH2 2026-10-06)",
+        "Total debt rose from $6,286.8m (Dec-25) to $8,090.3m (Jun-26), including a new $2.0bn unsecured term loan drawn to help fund the ~$5.6bn Apellis acquisition; cash fell from $3,008.5m to $1,285.0m over the same period",
+        "Company disclosed a headcount/pipeline trim within the combined research organization post-acquisition",
+        "Adjusted (non-GAAP) EPS reconciliation was not independently verified this pass -- any adjusted-EPS figure cited elsewhere is unconfirmed"
+      ],
+      "data_conflicts": [
+        "V1's NTM P/E of 14.71 does not match a separately-sourced forward P/E of ~17.2x for BIIB; likely different EPS basis (GAAP vs adjusted) or consensus vintage -- not reconciled this pass, flagged rather than silently picked"
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "18-36 months",
+      "confidence_in_thesis": "med (Leqembi/Apellis growth franchises are real and durable; near-term GAAP earnings and leverage picture is noisy and only two post-deal quarters old)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.2427,
+        "dossier_view": "cheap", "implied_vs_base": "below",
+        "consistent": true,
+        "reconciliation": "V1 reads BIIB's price as implying negative growth (implied_growth_or_roe -10.6%) against consensus FY1 growth of +2%; my own reverse-DCF using ~$2.1-2.5bn FCF against $33.6bn market cap implies only ~1.5-3% perpetual growth is priced in, which the Leqembi/Apellis ramp should clear even net of legacy-MS decline -- I agree the stock looks cheap, but I hold to INCLUDE-SMALL rather than a fuller weight given the fresh leverage and unreconciled adjusted-EPS gap. [DV06/DVH2 2026-10-06 restatement: the 1.5-3% perpetual-growth figure did not reproduce. On the filed basis (FCF after SBC $2,400M; market cap $33.63bn) programme inputs (10-yr UST 5.17%, ERP 4.14%, Blume beta 0.445 from raw 0.171, Ke 7.0%, ten years then 3.0% terminal) imply -4.4%/yr FCF growth (-1.7% at Ke 8.07%; -3.4%/-0.7% after the ~$185M TTM acquired-IPR&D cash booked in investing; -2.2%/+0.6% on a $2.0bn base). Implied vs base remains below; verdict INCLUDE-SMALL unchanged.]"
+      },
+      "scenario_returns_3y": {"bear": -0.15, "base": 0.14, "bull": 0.38},
+      "scenario_basis": "Base: TTM GAAP EPS ~$5.63 normalizes toward a ~$9-10 run-rate by 2027-28 as deal costs roll off and Leqembi/Apellis scale, exit P/E ~15-16x (vs current 17.2x forward), no dividend (BIIB pays none), modest buyback resumption. Bear: legacy MS decline outruns new-franchise ramp, leverage stays elevated, EPS stalls near $5-6, multiple compresses to ~12x. Bull: Apellis synergies land faster, Leqembi keeps accelerating, EPS reaches ~$12-13 by 2028, multiple holds near 18-20x."
+    },
+    "C": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "America's third-largest bank is finally delivering on its multi-year turnaround, with returns up sharply, though the Mexico spin-off keeps slipping.",
+      "kill_criteria": [
+        "RoTCE falls below 10% for two consecutive quarters",
+        "CET1 ratio falls below 12.0%",
+        "Banamex deconsolidation is not completed by end-2027",
+        "Net interest income growth turns negative YoY for two consecutive quarters",
+        "Any regulatory enforcement action or material adverse finding tied to the long-running risk/data-governance consent orders"
+      ],
+      "key_adverse_facts": [
+        "Banamex separation has slipped repeatedly: 2025 target -> 2026 -> now 'early 2027' deconsolidation, with the IPO itself still being marketed (>$3bn target) as of 2026-09-25, i.e., not closed as of the cutoff",
+        "RoTCE of 13% remains below top-tier US bank peers despite the recent 430bp YoY improvement",
+        "Long-running OCC/Fed consent orders on risk management and data governance were not independently re-verified for current remediation status this pass",
+        "A generic 'net debt' figure from a structured data feed ($447.4bn) is not economically meaningful for a bank and should not be read as leverage in the industrial-company sense -- flagged as a data-quality issue in the feed, not a company red flag"
+      ],
+      "data_conflicts": [
+        "No row exists for ticker C in v4/outputs/v1_valuation_table.csv or v1_valuation.json -- confirmed absent by direct inspection of both files, not assumed"
+      ],
+      "next_earnings_date": "2026-10-14",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "med-high (broad-based, multi-segment operating improvement over two consecutive quarters, cross-tied to filed 10-Q income statements; main uncertainty is Banamex execution timeline, which is outside management's full control)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No systematic V1 valuation exists for this ticker in this run's outputs, so v1_verdict is null per the wave-6 instructions. My own Gordon-growth read (RoTCE 13% / cost of equity ~10-11% for a G-SIB) implies a fair no-growth P/TBV of roughly 1.2-1.3x; the stock trades at ~1.36x tangible book, i.e. close to fair value on the current run-rate, with upside only if the 13% RoTCE proves durable or improves further."
+      },
+      "scenario_returns_3y": {"bear": -0.06, "base": 0.10, "bull": 0.24},
+      "scenario_basis": "Base: RoTCE holds near 13%, EPS grows to ~$11-12 by 2028 on continued buybacks and modest revenue growth, multiple re-rates modestly from ~1.36x to ~1.5x tangible book plus a small dividend yield (~3%). Bear: RoTCE reverts toward 10-11% as Q1/Q2 2026 strength proves partly cyclical (strong Markets revenue), multiple compresses back toward ~1.1-1.2x TBV. Bull: RoTCE continues climbing past 14-15% as Banamex separation completes and cost discipline persists, multiple re-rates toward 1.7-1.8x TBV, consistent with peer G-SIB multiples."
+    },
+    "CFG": {
+      "verdict": "WATCH",
+      "thesis_one_line": "A super-regional bank building a high-return private bank for the wealthy, but the stock already prices in profitability it hasn't delivered yet.",
+      "kill_criteria": [
+        "Run-rate ROE (annualized quarterly net income / average stockholders' equity) fails to reach 9.5% by Q4 2026",
+        "CET1 ratio falls below 10.0%",
+        "NIM in any quarter comes in below the low end of the company's own guided range (322bp for 4Q26)",
+        "Private-bank deposits or wealth AUM growth stalls (flat or down quarter-over-quarter) for two consecutive quarters",
+        "Long-term debt/total assets ratio continues rising for two more consecutive quarters without a disclosed, understood funding rationale"
+      ],
+      "key_adverse_facts": [
+        "My own run-rate ROE calc (~9.0%, annualizing Q2 2026 net income) is still below the ~10.1% the current 1.06x price-to-book multiple implies is sustainable, per V1's own framework",
+        "Long-term debt rose ~45% in nine months (Sep-25 $10,441m to Jun-26 $15,190m); the funding driver was not diagnosed this pass",
+        "The forward ROE story leans heavily on a private-banking business built almost entirely since 2023 around one hiring cohort (ex-First Republic bankers), untested through a full credit cycle",
+        "A minor internal data inconsistency was found and disclosed rather than silently corrected: 2025 Q1 revenue YoY computes to approximately -1.2% against the 2024 Q1 XBRL figure, not the +2.7% a naive read of adjacent rows might suggest"
+      ],
+      "data_conflicts": [
+        "None material beyond the revenue YoY note above; V1's P/B (1.068) and delivered ROE (8.12%) both cross-tied closely to my independently computed book value per share (~$61.96, ~1.06x price) and TTM run-rate ROE"
+      ],
+      "next_earnings_date": "2026-10-15",
+      "horizon": "12-24 months (would revisit sooner if Q3 2026 ROE clears 9.5%)",
+      "confidence_in_thesis": "med (NIM/margin trajectory is well-guided and cross-tied to filed financials; the specific segment-level private-bank ROE and long-term-debt driver claims rest partly on secondary earnings-call coverage rather than a primary transcript or segment footnote read this pass)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": 0.0098,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "I agree with V1's direction (price ahead of delivered profitability: implied ROE 10.1% vs actual/run-rate ROE 8.1-9.0%) but not its full degree of pessimism (bear/base/bull -8.4%/+1.0%/+8.7%) -- the guided NIM path (322-327bp 4Q26 rising to 330-350bp 4Q27) is a specific, quotable management commitment to further convergence that V1's backward-looking ROE input cannot yet see; if it holds, WATCH could become INCLUDE-SMALL within 1-2 quarters."
+      },
+      "scenario_returns_3y": {"bear": -0.10, "base": 0.03, "bull": 0.16},
+      "scenario_basis": "Base: ROE grinds from ~9.0% run-rate toward ~9.7-10% by FY2027 as NIM guide is met and private bank scales, EPS grows to ~$5.30-5.60, P/B stays near ~1.0-1.1x, dividend yield ~2.8% provides most of the base-case return. Bear: NIM guide is missed, ROE stalls near 8.5-9%, multiple compresses toward 0.85-0.9x book. Bull: private bank scales faster than guided, ROE reaches 10.5-11% by 2027, multiple re-rates to ~1.2-1.3x book in line with better-returning regional peers."
+    }
+  }
+}

@@ -1,0 +1,720 @@
+{
+ "as_of": "2026-10-08",
+ "scope": [
+  "JCI",
+  "JKHY",
+  "JNJ",
+  "JPM",
+  "KDP",
+  "KEY",
+  "KEYS",
+  "KHC",
+  "KIM",
+  "KKR"
+ ],
+ "facts": [
+  {
+   "ticker": "JCI",
+   "claim": "FQ3 FY26 (Apr-Jun 2026) net sales $6,614M, +9.3% vs $6,052M; continuing diluted EPS $1.23 vs $0.94",
+   "dossier_location": "JCI.md s4 table",
+   "source": "8-K Ex-99.1 acc 0000833444-26-000083",
+   "source_value": "Net sales 6,614 vs 6,052; continuing diluted EPS 1.23 vs 0.94; income from continuing ops attributable 749 vs 618",
+   "status": "PASS",
+   "note": "Period label correct (fiscal Q3 ends 30 Jun). Growth 9.3% computes."
+  },
+  {
+   "ticker": "JCI",
+   "claim": "FQ1/FQ2 FY26 net sales $5,797M / $6,142M (+8.2% vs $5,676M); EPS shown as 'total' $0.85 / $1.00",
+   "dossier_location": "JCI.md s4 table",
+   "source": "Ex-99.1 accs 0000833444-26-000014 and -000047",
+   "source_value": "Q1 sales 5,797 vs 5,426; total EPS 0.85 (continuing 0.90); Q2 sales 6,142 vs 5,676; total EPS 1.00 (continuing 0.99)",
+   "status": "MINOR",
+   "note": "Figures correct and labelled 'total'; the table header says continuing EPS so continuing 0.90/0.99 would be the like-for-like numbers; Q1 YoY growth (+6.8%) omitted."
+  },
+  {
+   "ticker": "JCI",
+   "claim": "9-month FY26 net sales $18,553M vs $17,154M; continuing income $1,913M vs $1,454M; EPS $3.12 vs $2.20 (+41.8%)",
+   "dossier_location": "JCI.md s4",
+   "source": "Ex-99.1 acc -000083; 10-Q acc 0000833444-26-000087",
+   "source_value": "18,553 vs 17,154; 1,913 vs 1,454; 3.12 vs 2.20",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "JCI",
+   "claim": "Guidance track record 'not re-verified' (triage: raised three straight quarters)",
+   "dossier_location": "JCI.md s5",
+   "source": "Ex-99.1 accs -000014, -000047, -000083",
+   "source_value": "FY26 adj EPS guide ~$4.55 -> ~$4.70 (Feb) -> ~$4.85 (May) -> ~$5.05 (Jul); organic growth mid-single -> ~6% -> ~8%; Q4 adj EPS ~$1.55; FCF conversion ~100%",
+   "status": "PASS",
+   "note": "Dossier left this as a data gap; primary releases confirm three consecutive raises. Dossier is silent on the numbers (omission, not error)."
+  },
+  {
+   "ticker": "JCI",
+   "claim": "Backlog ~$20-21B record, orders +27%",
+   "dossier_location": "JCI.md s3, s8",
+   "source": "Ex-99.1 acc -000083",
+   "source_value": "Q3 orders +27% organic; backlog $21.0B, +32% organic (restated to include equipment-only sales)",
+   "status": "PASS",
+   "note": "Backlog series was restated in Q1 FY26; comparability with older figures is limited."
+  },
+  {
+   "ticker": "JCI",
+   "claim": "Consolidated debt: ST $865M + current LTD $311M + LTD $8,299M = $9,475M; cash $641M; net debt $8,834M; ND/EBITDA ~2.2x",
+   "dossier_location": "JCI.md s6",
+   "source": "10-Q acc 0000833444-26-000087 balance sheet",
+   "source_value": "865 / 311 / 8,299 / cash 641; 9-month pretax 2,363 + net financing 197 = EBIT 2,560",
+   "status": "PASS",
+   "note": "Consolidated entity, 30 Jun 2026; leverage arithmetic reproduces (~2.2x)."
+  },
+  {
+   "ticker": "JCI",
+   "claim": "TTM FCF ~$3.1-3.2B (flagged partial estimate)",
+   "dossier_location": "JCI.md s6",
+   "source": "10-Q -000087 cash flow; 10-K acc 0000833444-25-000097 via companyfacts",
+   "source_value": "9mo FY26 OCF 2,572 capex 243; FY25 OCF 2,554 less 9mo 1,586 = 968; FY25 capex 434 less 9mo 304 = 130; TTM OCF 3,540 - capex 373 = 3,167",
+   "status": "PASS",
+   "note": "The estimate is confirmed; FQ4 FY25 capex was $130M."
+  },
+  {
+   "ticker": "JCI",
+   "claim": "Reverse DCF: WACC 8%, 10-yr explicit, 3% terminal, FCF ~$3.15B vs $91.64B market cap -> implied FCF growth ~7.5%; base 8-10%; implied_vs_base 'below'",
+   "dossier_location": "JCI.md s7",
+   "source": "Program rule: 10y UST 5.17% (25 Sep 2026) + ERP; b1_live_scores mktcap 91.64B",
+   "source_value": "Dossier arithmetic reproduces (7.3% at 8%). At cost of equity 9.6% (5.17% + ~1.07 beta x 4.14% ERP), FCF after SBC (~$127M/yr) $3.04B, 10 years then 3% terminal: implied ~11.8% (10.8% at 9.2%)",
+   "status": "FAIL",
+   "note": "Method fault: 8% WACC is not tied to 5.17% Treasury + stated ERP; levered (after-interest) FCF and equity value are matched to an unlevered-style WACC; SBC not deducted. Restated implied growth ~11-12% is ABOVE the dossier's 8-10% base, so implied_vs_base 'below' becomes 'above' so the stated premise (implied at or below base) fails and eligibility is lost. Beta is an assumption (not verified from a source)."
+  },
+  {
+   "ticker": "JCI",
+   "claim": "Verdict INCLUDE-SMALL supported by evidence",
+   "dossier_location": "JCI.md s1, s7",
+   "source": "Own re-computation",
+   "source_value": "Implied 11-12% vs base 8-10%",
+   "status": "MINOR",
+   "note": "Label INCLUDE-SMALL kept (program precedent allows INCLUDE-SMALL with implied above base), but the dossier's stated premise (implied at or below base) fails and the name loses lead eligibility (STATE.md rule: implied at or below base)."
+  },
+  {
+   "ticker": "JKHY",
+   "claim": "FY26 table: Q1-Q4/FY net income, diluted EPS (1.97, 1.72, 1.71, 1.57, FY 6.98; FY25 6.24; NI 502.8), Q4 EPS -10.2%, op income -12.2%",
+   "dossier_location": "JKHY.md s4",
+   "source": "Ex-99.1 + 10-K acc 0000779152-26-000067 companyfacts",
+   "source_value": "NI Q1 143.986 / Q2 124.668 / Q3 122.894 / FY 502.776; EPS 1.97/1.72/1.71/FY 6.98; Q4 EPS 1.57 vs 1.75 (-10.2%); GAAP op income -12.2%",
+   "status": "PASS",
+   "note": "Period labels correct on a June FY. Quarterly revenue sums tie to FY $2,544.3M (644.7+619.3+636.2+644.0)."
+  },
+  {
+   "ticker": "JKHY",
+   "claim": "FY2027 guidance: non-GAAP revenue growth 6.3-7.3%, margin expansion 20-40bps, GAAP EPS $7.33-7.38 (+5.0-5.7%)",
+   "dossier_location": "JKHY.md s5",
+   "source": "8-K Ex-99.1 acc 0000779152-26-000057 (18 Aug 2026)",
+   "source_value": "Table: GAAP revenue $2,684-2,709M (+5.5-6.5%); non-GAAP adj revenue $2,659-2,684M, growth 6.3-7.3% on comparison basis; adj op margin 24.1-24.3% vs 23.9% comparison; GAAP EPS 7.33-7.38 (+5.0-5.7%)",
+   "status": "PASS",
+   "note": "Figures appear in the release. Not stated in dossier: GAAP operating margin is guided 24.5-24.7% vs 25.0% in FY26, i.e. GAAP margin contracts 30-50bps; kill criterion 2 uses the non-GAAP basis."
+  },
+  {
+   "ticker": "JKHY",
+   "claim": "58 competitive core wins, FY26 buybacks $448.2M vs $35.1M FY25",
+   "dossier_location": "JKHY.md s3, s6",
+   "source": "8-K Ex-99.1 acc 0000779152-26-000057 (18 Aug 2026); 10-K companyfacts",
+   "source_value": "58 core wins (record); repurchases $448M avg $152; FY25 $35.051M",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "JKHY",
+   "claim": "Balance sheet: cash path $102.0M -> $36.2M -> $28.2M -> $20.6M (Mar 2026); LT debt $40M at FY26-end; kill criterion 4: cash below $15M",
+   "dossier_location": "JKHY.md s6, s10",
+   "source": "Ex-99.1; 10-K companyfacts",
+   "source_value": "Cash $12.056M at 30 Jun 2026; debt $40M drawn on credit facility",
+   "status": "FAIL",
+   "note": "Dossier stops at the March 2026 cash figure ($20.6M) and omits the FY-end $12.1M. Kill criterion 4 (cash < $15M) was therefore already met at 30 Jun 2026 (partly mitigated by a drawn $40M facility; the criterion's 'no increase in undrawn facility' clause is not testable from the release)."
+  },
+  {
+   "ticker": "JKHY",
+   "claim": "FY26 FCF = OCF 762.0 - capex 67.1 = $694.9M, FCF/NI 138%; FCF/share $9.65",
+   "dossier_location": "JKHY.md s4, s7, s8",
+   "source": "Ex-99.1 'Calculation of Free Cash Flow'",
+   "source_value": "Company FCF $539.3M (OCF 762.0 - capex 67.1 - internal-use software 4.1 - capitalized software 184.2 + asset-sale proceeds 32.8); excl. proceeds $506.5M; FCF conversion 100.7%",
+   "status": "FAIL",
+   "note": "Dossier omitted $184.2M of capitalized (developed) software and $4.1M of purchased software, ~$188M of recurring investment: FCF overstated by ~37%, conversion is ~101% not 138%, FCF/share ~$7.0 not $9.65."
+  },
+  {
+   "ticker": "JKHY",
+   "claim": "Reverse DCF: FCF/share $9.65, r=7.5%, price $147.81 'implies g ~3.0-3.3%'",
+   "dossier_location": "JKHY.md s7",
+   "source": "Recomputation; b1_live_scores mktcap $10.36B",
+   "source_value": "Gordon g=(P*r-F)/(P+F) with dossier inputs = 0.9%, not 3.0-3.3%. Restated: FCF $474.5M (506.5 less SBC 32.5), Ke 8.9-9.2% (5.17% + beta 0.9-1.0 x 4.14% ERP; beta an assumption), 10 yrs then 3% terminal: implied FCF growth 5.9-6.6%",
+   "status": "FAIL",
+   "note": "Arithmetic not reproducible; r=7.5% not tied to 5.17% Treasury + stated ERP; FCF not net of capitalized software or SBC. Restated implied 5.9-6.6% sits inside the dossier's own 5-7% EPS / 6-8% revenue base: implied_vs_base 'above' -> 'in_line'."
+  },
+  {
+   "ticker": "JKHY",
+   "claim": "Verdict INCLUDE-SMALL",
+   "dossier_location": "JKHY.md s1",
+   "source": "Own re-computation",
+   "source_value": "Implied in line with base; FCF conversion ~100%",
+   "status": "MINOR",
+   "note": "Verdict still supported (moat, record wins, in-line implied growth) but reasons in s1 (implied above base) must be read per the correction; kill criterion 4 already tripped."
+  },
+  {
+   "ticker": "JNJ",
+   "claim": "Q2 2026 revenue $25.310B, +5.5% vs Q2'25 $23.993B; company headline +6.6% explained as 'rounding/constant currency'",
+   "dossier_location": "JNJ.md s4",
+   "source": "8-K Ex-99.1 acc 0000200406-26-000146 (15 Jul 2026); 10-Q acc 0000200406-26-000153",
+   "source_value": "Q2'26 sales $25,310M vs Q2'25 $23,743M = +6.6% reported; H1'25 45,636 - Q1'25 21,893 = 23,743",
+   "status": "FAIL",
+   "note": "Prior-year Q2 comparator is wrong ($23.993B vs $23.743B), so growth is +6.6% (not +5.5%); there is no data conflict with the company headline. H1 +8.2% is correct. Kill criterion 1 baseline '5.5-9.9%' should read 6.6-9.9%."
+  },
+  {
+   "ticker": "JNJ",
+   "claim": "Q2 2026 net income $5.534B, GAAP EPS $2.27, adjusted EPS $2.90; Q1 2026 $24.062B, NI $5.235B, EPS $2.14; FY2025 $94.193B (+6.0%), NI $26.804B, EPS $11.03; H1 NI $10.769B EPS $4.41",
+   "dossier_location": "JNJ.md s4",
+   "source": "Ex-99.1; companyfacts 10-K/10-Qs",
+   "source_value": "Q2 NI 5,534 (vs 5,537, -0.1%) EPS 2.27 (vs 2.29, -0.9%) adj 2.90; Q1 24,062/5,235/2.14; FY25 94,193/26,804/11.03; H1 49,372/10,769/4.41",
+   "status": "PASS",
+   "note": "Period labels correct (fiscal quarter ends 28 Jun 2026). GAAP EPS fell 0.9% YoY in Q2; dossier does not mention it."
+  },
+  {
+   "ticker": "JNJ",
+   "claim": "FY26 guidance raised with Q2 release (dated 2026-07-23): sales ~$101.1B, adj EPS +$0.13 to ~$11.68; second consecutive raise (Q1 also raised)",
+   "dossier_location": "JNJ.md s5",
+   "source": "Ex-99.1 accs 0000200406-26-000146, -000076",
+   "source_value": "Q2 release (15 Jul 2026): sales $101.1B (+7.3% midpoint), adj EPS +$0.13 to $11.68 (+8.2%); Q1 release (14 Apr): sales $100.8B (+7.0%), adj EPS $11.55",
+   "status": "MINOR",
+   "note": "Numbers verbatim and both raises are real; only the date is wrong: the release was 15 Jul 2026, 23 Jul is the 10-Q filing date."
+  },
+  {
+   "ticker": "JNJ",
+   "claim": "Balance sheet: cash $20.422B, LT debt $37.344B, equity $84.971B; net debt/EBITDA ~0.5x with 'modest current debt'",
+   "dossier_location": "JNJ.md s6",
+   "source": "10-Q acc -000153 balance sheet",
+   "source_value": "Cash 20,422; marketable securities 336; loans and notes payable (current debt) 11,692; LT debt 37,344",
+   "status": "FAIL",
+   "note": "Current debt is $11.692B, not modest. Net debt = 37.344 + 11.692 - 20.422 - 0.336 = $28.3B; on the dossier's own TTM EBITDA $34.872B (d4, not re-verifiable) that is ~0.8x, not 0.5x. Still low; kill criterion 4 (1.5x) unaffected in direction."
+  },
+  {
+   "ticker": "JNJ",
+   "claim": "FCF TTM $16.885B (Yahoo/d4), FCF yield 6.4%, FCF/share $7.01",
+   "dossier_location": "JNJ.md s4, s7",
+   "source": "10-K/10-Q cash flows via companyfacts",
+   "source_value": "TTM OCF = 24,530 - 8,052 + 11,130 = 27,608; capex = 4,832 - 1,838 + 2,370 = 5,364; FCF = $22,244M; SBC TTM $1,414M; price $271.22 -> 7.01/271.22 = 2.6%",
+   "status": "FAIL",
+   "note": "FCF yield '6.4%' is arithmetically wrong: 16.885/653.6B = 2.6% and 7.01/271.22 = 2.6%; it is not 'consistent with FCF/share / price'. The aggregator FCF is also ~$5.4B below filing-based OCF less capex ($22.2B); the source of the gap is undocumented."
+  },
+  {
+   "ticker": "JNJ",
+   "claim": "Reverse DCF: 7.5% WACC (beta ~0.6), 4% terminal, FCF/share $7.01 -> ~7.2%/yr 10-yr; base 5.5-6.5%; 'above'",
+   "dossier_location": "JNJ.md s7",
+   "source": "Recomputation; b1 mktcap $653.6B",
+   "source_value": "Dossier arithmetic reproduces (7.2%). Restated: equity FCF after SBC $20.8B, Ke 7.65% (5.17% + 0.6 x 4.14%) to 8.2% (Blume beta 0.73), terminal 3%: implied 7.4-8.9%",
+   "status": "FAIL",
+   "note": "Rate is a 'WACC' applied to equity FCF and not shown as 5.17% + stated ERP; 4% terminal growth is high against a 5.17% risk-free rate; SBC not deducted. Direction unchanged but the gap to the 5.5-6.5% base widens to 1-3 points: implied_vs_base stays 'above'. (With the dossier's lower $16.9B FCF, Ke 8.2% and 3% terminal the implied rate is 11.5%.)"
+  },
+  {
+   "ticker": "JNJ",
+   "claim": "Talc: 'over 58,600 cases pending'; plaintiff-favorable Daubert ruling Jan 2026; no reserve verified from the 10-Q",
+   "dossier_location": "JNJ.md s11, s12",
+   "source": "10-Q acc -000153, talc note",
+   "source_value": "~76,000 plaintiffs with direct claims at 28 Jun 2026; reserve ~$3.7B present value (~40% current); Jan 2026 Special Master report excluded certain plaintiff expert opinions and allowed others; plaintiffs then withdrew two specific-causation experts; Jul 2026 court granted J&J's motion to show cause on dismissing the MDL",
+   "status": "FAIL",
+   "note": "Count understated (76,000 plaintiffs per the company vs 58,600 per a tracker); the Daubert ruling was mixed, and the dossier omits the June-July 2026 J&J-favourable development; reserve ($3.7B) now primary-sourced. Core conclusion (litigation active, tort system resumed after three dismissed Chapter 11 filings) is supported."
+  },
+  {
+   "ticker": "JNJ",
+   "claim": "~2.410B diluted shares 'post the company's 2:1 stock split effected around September 2026'",
+   "dossier_location": "JNJ.md s6",
+   "source": "10-Q acc -000153; EDGAR submissions to 2026-09-25",
+   "source_value": "No split disclosed in the 10-Q or any 8-K through 25 Sep 2026; Q2 diluted shares = 5,534/2.27 = ~2.44B; market cap $653.6B / $271.22 = 2.41B shares",
+   "status": "FAIL",
+   "note": "Split claim is unsupported and inconsistent with the dossier's own price and market cap; per-share figures are unaffected. Delete the split statement."
+  },
+  {
+   "ticker": "JNJ",
+   "claim": "Verdict INCLUDE-SMALL (implied above base)",
+   "dossier_location": "JNJ.md s1, s7",
+   "source": "Own re-computation",
+   "source_value": "Implied 7.4-8.9% vs base 5.5-6.5%",
+   "status": "MINOR",
+   "note": "Label supportable (quality, low leverage), but the program eligibility rule requires growth priced in at or below base; JNJ stays ineligible. No verdict change."
+  },
+  {
+   "ticker": "JPM",
+   "claim": "Q2 2026: revenue $57,347M (+27.7%), net income $21,155M, diluted EPS $7.70; Q1 2026 $49,836M / $16,494M / $5.94; Q2 2025 NI $14,987M EPS $5.24",
+   "dossier_location": "JPM.md s4",
+   "source": "8-K Ex-99.1 narrative + Ex-99.2 supplement acc 0001628280-26-048078 (14 Jul 2026); 10-Q acc 0001628280-26-054343",
+   "source_value": "Reported revenue $57.3B; NI 21,155 / 16,494 / 14,987; EPS 7.70 / 5.94 / 5.24; Q4'25 13,025; Q3'25 14,393",
+   "status": "PASS",
+   "note": "Period labels correct (calendar quarters). Q2'25 revenue implied $44.9B."
+  },
+  {
+   "ticker": "JPM",
+   "claim": "Significant items: $4.6B Visa net gain + $1.0B equity gains; NI excl. items $16.9B, EPS $6.14; adjusted NI +13% YoY vs +41% headline",
+   "dossier_location": "JPM.md s4, s9",
+   "source": "8-K Ex-99.1 narrative + Ex-99.2 supplement acc 0001628280-26-048078 (14 Jul 2026)",
+   "source_value": "Release headline: 'net income excluding significant items of $16.9 billion ($6.14 per share)'; NI up 41%, up 13% excl. items; $4.2B after-tax, $1.56/share; ROTCE 29% reported, 23% ex items",
+   "status": "PASS",
+   "note": "Every number appears in the release."
+  },
+  {
+   "ticker": "JPM",
+   "claim": "CET1 Standardized 14.1% (down 20bp QoQ), Advanced 14.2%, CET1 capital $303B; dividends $4.0B ($1.50), buybacks $6.2B",
+   "dossier_location": "JPM.md s6, s8",
+   "source": "8-K Ex-99.1 narrative + Ex-99.2 supplement acc 0001628280-26-048078 (14 Jul 2026)",
+   "source_value": "CET1 14.1% vs 14.3% in 1Q26; capital $302.6B; RWA $2.14T (+5% QoQ); dividend $4.0B/$1.50; net repurchases $6.2B",
+   "status": "PASS",
+   "note": "Release footnotes the ratios as estimated."
+  },
+  {
+   "ticker": "JPM",
+   "claim": "Deposits $2.7137T at 30 Jun 2026 vs $2.5593T (Dec 2025) and $2.5485T (Sep 2025); equity $374.598B vs $362.438B; card NCO 3.34%; credit costs $2.5B ($2.4B NCOs, $149M reserve build)",
+   "dossier_location": "JPM.md s6",
+   "source": "10-Q acc -054343 / companyfacts; release",
+   "source_value": "Deposits 2,713.7 / 2,559.3 / 2,548.5 ($B); total stockholders' equity 374,598 vs 362,438; card NCO 3.34%; credit costs $2.5B",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "JPM",
+   "claim": "Trailing P/E ~14-16x (annualized adjusted EPS $24.56 -> ~14x)",
+   "dossier_location": "JPM.md s7",
+   "source": "Release; b1_live_scores px $343.06",
+   "source_value": "TTM reported EPS = 5.07 + 4.63 + 5.94 + 7.70 = $23.34 -> 14.7x; ex-items $21.78 -> 15.8x; 4 x $6.14 = $24.56 -> 14.0x",
+   "status": "PASS",
+   "note": "Dossier's formula is sloppy (lists 5.07+5.24+7.70+'FY25 remainder') but the range holds."
+  },
+  {
+   "ticker": "JPM",
+   "claim": "Valuation method: P/E and 'ROE ~18% per triage' lens; implied_vs_base 'below' (mid-to-high single-digit EPS growth implied)",
+   "dossier_location": "JPM.md s7",
+   "source": "Program rule for banks: P/TBV-ROTCE; release TBVPS $113.35, ROTCE ex-items 23%",
+   "source_value": "P/TBV = 343.06/113.35 = 3.03x. Justified P/TBV = (ROTCE - g)/(Ke - g) with Ke 9.6% (5.17% + beta ~1.07 x 4.14% ERP; beta assumed), g 4%: ROTCE 23% -> 3.39x ($384), 21% -> 3.04x ($344), 18% -> 2.50x ($283)",
+   "status": "FAIL",
+   "note": "Dossier does not use the P/TBV-ROTCE method required for banks, quotes a triage ROE (~18%) not a filed figure (reported ROE 24%, ex-items about 18-19%), and gives no derivation for 'below'. Price equals the justified multiple at a sustained ~21% ROTCE, which is the average of the last five quarters ex one-offs (21, 20, 18, 23, 23): implied_vs_base 'below' -> 'in_line'. Verdict INCLUDE-SMALL unchanged."
+  },
+  {
+   "ticker": "JPM",
+   "claim": "2026 NII/expense outlook 'not independently verified' (no formal guidance)",
+   "dossier_location": "JPM.md s5",
+   "source": "Ex-99.1 narrative",
+   "source_value": "No outlook, guidance or NII/expense target appears in the 14 Jul release text (given on the call)",
+   "status": "UNVERIFIABLE",
+   "note": "Not in the filed release; consistent with the dossier's own disclosure."
+  },
+  {
+   "ticker": "JPM",
+   "claim": "Four active class actions (card fees, rate-fixing, discrimination, ERISA) filed Oct 2025-Jan 2026; kill criterion 4 depends on them",
+   "dossier_location": "JPM.md s6, s10",
+   "source": "10-Q acc -054343 text search",
+   "source_value": "None of the four matters is found in the 10-Q text",
+   "status": "UNVERIFIABLE",
+   "note": "Media-sourced, as the dossier states; kill criterion 4 ('any of the four ... reserve > $1B') cannot be monitored from filings."
+  },
+  {
+   "ticker": "KDP",
+   "claim": "Q2 26: net sales $7.31bn (+75.6%), GAAP EPS $0.04, adj EPS $0.57 (+16.3%), FCF $714m; GAAP op income $628m (-30.1%), adj op income $1,478m (20.2%); H1 adj EPS $0.97 (+4.3%)",
+   "dossier_location": "KDP.md s4, s5",
+   "source": "8-K Ex-99.1 acc 0001418135-26-000048",
+   "source_value": "Net sales $7.31bn +75.6%; GAAP EPS 0.04 (-90.0%); adj EPS 0.57 (+16.3%); FCF 714; GAAP OI 628 (-30.1%); adj OI 1,478 (+42.9%, 20.2%); YTD adj EPS 0.97 (+4.3%)",
+   "status": "PASS",
+   "note": "Period labels correct; JDE Peet's included from 1 Apr 2026 (acquisition closed 1 Apr)."
+  },
+  {
+   "ticker": "KDP",
+   "claim": "Segments Q2 26: US Refreshment +10.0%, adj OI $874m (29.9%); US Coffee sales -3.2%, adj OI -24.7%, volume/mix -8.2%; JDE Peet's $2.8bn, adj OI $414m (14.8%); International +19.6% (12.4% cc); legacy +7.3% (price 4.2%, vol/mix 3.1%)",
+   "dossier_location": "KDP.md s4, s8",
+   "source": "Ex-99.1 acc -000048",
+   "source_value": "All values appear verbatim; US Coffee volume/mix -8.2% includes a reporting shift of Peet's K-Cup pods into the JDE segment",
+   "status": "PASS",
+   "note": "Dossier's bear point 'US Coffee volume/mix -8.2%' omits that part of the decline is the Peet's reclassification into JDE Peet's (MINOR context)."
+  },
+  {
+   "ticker": "KDP",
+   "claim": "Guidance trail: Q3 25 sales raised to high-single-digit, EPS unchanged; Q4 25 initial 2026 sales $25.9-26.4bn and low-double-digit adj EPS growth; Q1 and Q2 reaffirmed; 4.1x pro forma management leverage at YE26; legacy 4-6%",
+   "dossier_location": "KDP.md s5",
+   "source": "Ex-99.1 accs 0001418135-25-000118 (27 Oct 2025), -000011, -000020, -000048",
+   "source_value": "Quotes verbatim: 'KDP now expects fiscal 2025 constant currency net sales growth in a high-single-digit range ...'; 'For 2026, KDP expects net sales of $25.9-$26.4 billion ...'; Q2: 'approximately 4.1x'",
+   "status": "PASS",
+   "note": "Q1 and Q2 sentences differ slightly in wording (Q2 'comprised of', adds the 4.1x sentence) but the content is the same."
+  },
+  {
+   "ticker": "KDP",
+   "claim": "Quarterly table: Q3 25 $4.31bn (+10.7%) EPS $0.49/$0.54; Q4 25 $4.50bn (+10.5%) $0.26/$0.60; Q1 26 $3.98bn (+9.4%) $0.20/$0.39 (adj -7.1%) FCF $184m; FY25 $16.60bn, EPS $1.53/$2.05, FCF $1,519m",
+   "dossier_location": "KDP.md s4",
+   "source": "Ex-99.1 accs -000118, -000011, -000020",
+   "source_value": "All match; Q3 and Q4 quarterly FCF ($528m, $564m) not re-checked individually",
+   "status": "PASS",
+   "note": "FY25 FCF $1,519m and Q1 $184m confirmed."
+  },
+  {
+   "ticker": "KDP",
+   "claim": "Balance sheet 30 Jun 2026: cash $1,517m; ST borrowings and current LT obligations $8,394m; LT obligations $21,586m; total debt $29,980m vs $16,141m at Dec 2025; total assets $87.6bn; $4.5bn convertible preferred; H1 OCF $1,176m, capex $297m, interest $617m vs $328m",
+   "dossier_location": "KDP.md s6",
+   "source": "10-Q acc 0001418135-26-000051",
+   "source_value": "Cash 1,517; 8,394 + 21,586 = 29,980; Dec 3,105 + 13,036 = 16,141; assets 87,619; preferred liquidation preference $4,500m (carrying $4,418m); OCF 1,176; capex 297; interest 617 vs 328",
+   "status": "PASS",
+   "note": "Consolidated entity and date correct."
+  },
+  {
+   "ticker": "KDP",
+   "claim": "Keurig antitrust: damages claimed 'more than $1.5 billion', not accrued; summary judgment fully briefed",
+   "dossier_location": "KDP.md s8, s9",
+   "source": "10-Q acc -000051 legal note",
+   "source_value": "Plaintiffs collectively claim more than $1.5 billion; discovery concluded; summary judgment motions fully briefed",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "KDP",
+   "claim": "Reverse DCF: 8.5% cost of equity, normalised FCF ~$2.5bn (80% of estimated adjusted NI $3.1bn), market cap $43.5bn -> implied ~3% FCF growth for 10 years; base 6-8%; implied below base",
+   "dossier_location": "KDP.md s7",
+   "source": "Recomputation; b1 mktcap",
+   "source_value": "With FCF $2.5bn, Ke 8.5%, 10 years then 2.5% terminal: implied 2.7% (2.1% at 3% terminal); with FCF $2.0bn: 4.9-6.1%",
+   "status": "MINOR",
+   "note": "Method is equity FCF at a cost of equity and reproduces ~3%, but: 8.5% is not tied to the 5.17% Treasury plus a stated ERP/beta (implies beta ~0.8), terminal growth is not stated, SBC ($97M FY25) is not deducted, and the $2.5bn FCF is the analyst's estimate (80% of adjusted NI; H1 reported FCF $0.9bn includes one JDE quarter). If normalised FCF is only $2.0bn the implied rate (4.9-6.1%) is still inside the 6-8% base, so 'below' holds."
+  },
+  {
+   "ticker": "KDP",
+   "claim": "Verdict INCLUDE-SMALL supported by evidence",
+   "dossier_location": "KDP.md s1",
+   "source": "Own assessment",
+   "source_value": "Leverage reservation named; guidance reaffirmed twice; US Refreshment strong",
+   "status": "PASS",
+   "note": "Verdict consistent with dossier evidence; no correction required."
+  },
+  {
+   "ticker": "KEY",
+   "claim": "Q2 2026: revenue $1,964M, NII $1,250M, provision $92M, NI attributable to Key $509M / $472M to common, diluted EPS $0.44; NIM 2.89%; NCO 42bps; allowance coverage 1.56%",
+   "dossier_location": "KEY.md s4",
+   "source": "8-K Ex-99.1 acc 0000091576-26-000017 (21 Jul 2026); 10-Q acc 0001628280-26-052671; companyfacts",
+   "source_value": "Total revenue (TE) 1,964; NII (TE) 1,258 (GAAP 1,250 per XBRL); NI from continuing ops to common $472M, EPS $0.44 (+26% YoY from $0.35); NIM 2.89%; NCO 42 bps; coverage 1.56%",
+   "status": "PASS",
+   "note": "The mechanical flag (472 vs 509) is correctly labelled: 509 is NI attributable to Key before preferred dividends; 472 is to common."
+  },
+  {
+   "ticker": "KEY",
+   "claim": "Eight-quarter table Q3'23-Q1'26 (NII 915, 875, 887, 952, 1,096, 1,141, 1,184, 1,222; NI 303, 219, 274, -410, 405, 425, 489, 522; EPS 0.29 ... 0.44)",
+   "dossier_location": "KEY.md s4",
+   "source": "10-Q/10-K companyfacts (acc 0001628280-26-052671 and earlier)",
+   "source_value": "All values match discrete-quarter XBRL; Q4 quarters absent from the table (derived Q4'24 NII 1,051, Q4'25 1,215)",
+   "status": "PASS",
+   "note": "Q2'25 EPS $0.35 is to common; NI 425 is before preferred."
+  },
+  {
+   "ticker": "KEY",
+   "claim": "'NII has risen for eight consecutive quarters ($875M -> $1,250M, Q1 2024-Q2 2026)'; kill criterion 1 baseline 'eight straight quarters'",
+   "dossier_location": "KEY.md s1, s8, s10",
+   "source": "companyfacts: FY NII less 9M",
+   "source_value": "NII by quarter: 875, 887, 952, 1,051 (Q4'24), 1,096, 1,141, 1,184, 1,215 (Q4'25), 1,222, 1,250 = nine consecutive sequential increases over ten quarters",
+   "status": "MINOR",
+   "note": "Trend claim holds but the table skips both Q4 quarters, so 'eight consecutive' undercounts (nine increases)."
+  },
+  {
+   "ticker": "KEY",
+   "claim": "Capital 30 Jun 2026: CET1 11.17% (min+SCB 7.70%), Tier 1 12.78%, total 14.82%, leverage 10.32%; deposits $153.1bn; assets $191.3bn; equity $19.8bn",
+   "dossier_location": "KEY.md s6",
+   "source": "10-Q acc -052671",
+   "source_value": "CET1 11.17 / T1 12.78 / total 14.82 / leverage 10.32; total assets 191,317; total equity 19,798",
+   "status": "PASS",
+   "note": "Release rounds CET1 to 11.2%; down 20bp QoQ (11.4%) which the dossier does not mention."
+  },
+  {
+   "ticker": "KEY",
+   "claim": "Buyback $341M (~16M shares) in Q2 incl. $49M from Scotiabank true-up; new $3.0bn authorization replacing $1.0bn; dividend $0.205",
+   "dossier_location": "KEY.md s6",
+   "source": "10-Q acc -052671",
+   "source_value": "$341M / ~16M shares incl. $49M (~2M shares) from Scotiabank; $3.0bn replaces $1.0bn; dividend $0.205",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "KEY",
+   "claim": "No explicit guidance in the four earnings releases",
+   "dossier_location": "KEY.md s5",
+   "source": "Ex-99.1 acc -000017 text",
+   "source_value": "Release contains results text only; management makes a ROTCE >15% target by year-end 2027 statement in the CEO quote",
+   "status": "MINOR",
+   "note": "Dossier omits the filed target 'return on tangible common equity exceeding 15% by year-end 2027' (current ROTCE 12.89%, TBV $13.62 per share), which is the key valuation lever for a bank."
+  },
+  {
+   "ticker": "KEY",
+   "claim": "Reverse DCF: EPS-based, rf ~4.2% + beta 1.02 x 5.5% = 10.0% cost of equity, exit multiple 11x, EPS0 $2.06 NTM consensus -> implied EPS growth ~9%; base 7-8%; implied_vs_base in_line",
+   "dossier_location": "KEY.md s7",
+   "source": "Program rule: 10y UST 5.17% on 25 Sep 2026 + stated ERP; bank method P/TBV-ROTCE; release TBV $13.62, ROTCE 12.89%",
+   "source_value": "P/TBV = 20.61/13.62 = 1.51x. Implied sustained ROTCE = g + P/TBV x (Ke - g): Ke 9.4% (5.17% + 1.02 x 4.14%), g 3.5-4%: 12.2-12.4%; Ke 10.0%: 13.1-13.3%; Ke 10.8% (5.5% ERP): 14.3-14.5%. Justified P/TBV at ROTCE 12.9%: 1.59-1.65x ($21.7-22.5) at Ke 9.4%",
+   "status": "FAIL",
+   "note": "Risk-free input 4.2% is not the program's 5.17% (2026-09-25 Treasury), the bank is valued on an EPS two-stage model with an arbitrary 11x exit multiple instead of P/TBV-ROTCE, and EPS0 is consensus not reported. Cross-check: price needs ROTCE of about 12-14% sustained against 12.9% now and a stated 15% target, so 'in_line' is a fair call (below at Ke 9.4%, in line at 10%, above only at an ERP of 5.5%). No restatement of implied_vs_base."
+  },
+  {
+   "ticker": "KEY",
+   "claim": "Verdict INCLUDE-SMALL",
+   "dossier_location": "KEY.md s1",
+   "source": "Own assessment",
+   "source_value": "Consistent with evidence",
+   "status": "PASS",
+   "note": "No change."
+  },
+  {
+   "ticker": "KEYS",
+   "claim": "Q3 FY26 (qtr ended 31 Jul 2026): revenue $1,846M (+36.5% vs $1,352M), GAAP NI $397M, diluted EPS $2.30 vs $1.10",
+   "dossier_location": "KEYS.md s4",
+   "source": "8-K Ex-99.1 acc 0001601046-26-000029 (18 Aug 2026); 10-Q acc 0001601046-26-000036",
+   "source_value": "Revenue $1.85bn vs $1.35bn; GAAP NI $397M ($2.30) vs $191M ($1.10); non-GAAP EPS $3.07 vs $1.72",
+   "status": "PASS",
+   "note": "Fiscal-quarter labels correct (FY ends 31 Oct). Prior-year column correctly used."
+  },
+  {
+   "ticker": "KEYS",
+   "claim": "Q1/Q2 FY26 revenue $1,600M / $1,717M (+31.5% vs $1,306M); NI $281M / $349M; EPS $1.63 / $2.02; Q4 FY25 derived $1,419M, EPS $1.35",
+   "dossier_location": "KEYS.md s4",
+   "source": "Ex-99.1 accs -000003, -000019; 10-K acc 0001601046-25-000127 via companyfacts",
+   "source_value": "Q1 1,600/281/1.63; Q2 1,717/349/2.02; FY25 5,375 less 9mo 3,956 = 1,419; EPS 4.91 - 3.56 = 1.35",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "KEYS",
+   "claim": "TTM revenue ≈ $6,682M",
+   "dossier_location": "KEYS.md s4",
+   "source": "Companyfacts",
+   "source_value": "1,419 + 1,600 + 1,717 + 1,846 = $6,582M (9mo FY26 5,163 + Q4 FY25 1,419)",
+   "status": "FAIL",
+   "note": "Arithmetic error of $100M; TTM revenue is $6,582M. TTM EPS $7.30 is correct."
+  },
+  {
+   "ticker": "KEYS",
+   "claim": "Balance sheet: cash $2,605M, long-term debt (noncurrent) $1,817M, 'net-cash positive by roughly $0.8B'",
+   "dossier_location": "KEYS.md s6",
+   "source": "Ex-99.1 balance sheet",
+   "source_value": "Current portion of long-term debt $700M (nil at Oct 2025) omitted; total debt $2,517M; net cash $88M (cash 2,605)",
+   "status": "FAIL",
+   "note": "Net cash is about $0.1B, not $0.8B, because $700M of notes are now current. Still no leverage risk; the earlier claim of a $0.8B cushion is wrong."
+  },
+  {
+   "ticker": "KEYS",
+   "claim": "9mo FY26 OCF $1,379M, capex $97M, FCF $1,282M, FCF/NI 125%; SBC not extracted",
+   "dossier_location": "KEYS.md s6",
+   "source": "Ex-99.1 cash flow; 10-Q SBC tag",
+   "source_value": "OCF 1,379; capex 97; FCF 1,282; 9mo SBC $181M (3.5% of 9mo revenue)",
+   "status": "PASS",
+   "note": "SBC data gap closed: $181M for nine months, about $240M a year."
+  },
+  {
+   "ticker": "KEYS",
+   "claim": "Guidance track record 'not re-verified' (triage: consistent beats)",
+   "dossier_location": "KEYS.md s5",
+   "source": "Ex-99.1 accs -000003, -000019, -000029",
+   "source_value": "Q2 guide revenue $1.690-1.710bn, non-GAAP EPS $2.27-2.33 -> actual $1.717bn / $2.87; Q3 guide $1.730-1.750bn, $2.43-2.49 -> actual $1.846bn / $3.07; Q4 guide $1.930-1.950bn, EPS $3.34-3.40; release headline 'full-year outlook improved'",
+   "status": "PASS",
+   "note": "Gap closed: each quarter beat the top of its guided range by a widening margin (Q3 revenue +$96M above top end, non-GAAP EPS +$0.58)."
+  },
+  {
+   "ticker": "KEYS",
+   "claim": "Reverse DCF: TTM FCF ~$1,469M, mktcap $61.65B (FCF yield 2.4%), WACC 8.5%, 10-yr fading to 3% -> implied ~13%/yr vs base 8-9%; WATCH",
+   "dossier_location": "KEYS.md s7",
+   "source": "Recomputation; b1_live_scores mktcap",
+   "source_value": "Dossier reproduces (13.4%). Restated: FCF after SBC about $1.23-1.28bn, Ke 9.4-9.7% (5.17% + beta 1.0-1.1 x 4.14%; beta assumed): implied 17.5-18.3%; on annualised Q3 FCF ($1.6bn) less SBC, Ke 9.7%: 15.3-16%",
+   "status": "FAIL",
+   "note": "8.5% is not tied to 5.17% Treasury plus a stated ERP, SBC is not deducted. Direction unchanged and strengthened: implied (about 15-18%) is further above the 8-9% base; verdict WATCH supported (growth is also accelerating, which the TTM base understates: Q4 guide +37% YoY)."
+  },
+  {
+   "ticker": "KEYS",
+   "claim": "Verdict WATCH",
+   "dossier_location": "KEYS.md s1",
+   "source": "Own assessment",
+   "source_value": "Implied well above base",
+   "status": "PASS",
+   "note": "Consistent."
+  },
+  {
+   "ticker": "KHC",
+   "claim": "Q2'26 (qtr ended 27 Jun 2026): net sales 6,262 (-1.4%, organic -1.3%), adj op income 1,041 (-18.4%), GAAP EPS (4.60), adj EPS 0.56; Q2'25 comp 6,352 / 1,276 / (6.60) / 0.69; impairments 7,352 vs 9,266",
+   "dossier_location": "KHC.md s4",
+   "source": "8-K Ex-99.1 acc 0001637459-26-000052 (5 Aug 2026)",
+   "source_value": "Net sales 6,262 vs 6,352; adj OI 1,041 vs 1,276; diluted EPS (4.60) vs (6.60); adj EPS 0.56 vs 0.69 (-18.8%); impairment losses 7,352 vs 9,266; volume/mix -2.6pp, price +1.3pp; Emerging Markets +8.5% organic",
+   "status": "PASS",
+   "note": "Period labels and prior-year column correct (fiscal Q2 ended 27 Jun 2026)."
+  },
+  {
+   "ticker": "KHC",
+   "claim": "Q3'25-Q1'26 rows: net sales 6,237 / 6,354 / 6,047; GAAP EPS 0.52 / 0.55 / 0.67; adj EPS 0.61 / 0.67 / 0.58; Q4'25 sales -3.4% (organic -4.2%), Q1'26 +0.8% (-0.4%)",
+   "dossier_location": "KHC.md s4",
+   "source": "Ex-99.1 accs -000006 (Q4'25), -000020 (Q1'26)",
+   "source_value": "Q4'25 sales 6,354 vs 6,576, GAAP EPS 0.55, adj EPS 0.67; Q1'26 +0.8% / organic -0.4%, GAAP EPS 0.67, adj EPS 0.58",
+   "status": "PASS",
+   "note": "Q3'25 row not re-pulled individually (consistent with FY25 totals)."
+  },
+  {
+   "ticker": "KHC",
+   "claim": "'Adjusted EPS is down 13-19% every quarter; FY25 adjusted EPS 2.60 (FY24 3.06)'",
+   "dossier_location": "KHC.md s4",
+   "source": "Ex-99.1 accs -000020, -000006, -000052",
+   "source_value": "Adj EPS YoY: Q1'26 0.58 vs 0.62 = -6.5%; Q2'26 -18.8%; Q4'25 0.67 vs 0.84 = -20.2%; H1'26 -13.0%; FY25 2.60 vs 3.06 = -15.0%",
+   "status": "FAIL",
+   "note": "Q1'26 fell only 6.5% and Q4'25 fell 20.2%, so the quarterly range is -6.5% to -20.2%, not -13% to -19%. The FY25 figures are correct."
+  },
+  {
+   "ticker": "KHC",
+   "claim": "Guidance trail: Q3'25 range $2.50-2.57 vs prior $2.51-2.67; initial FY26 $1.98-2.10; Q1 reaffirmed; Q2 adj EPS $2.03-2.09, organic sales (2)%-(0.5)% vs prior (3.5)%-(1.5)%, cc adj OI (18)%-(16)% vs prior (18)%-(14)%, FCF conversion ~110% vs ~100%, investment +$100m to ~$700m",
+   "dossier_location": "KHC.md s5",
+   "source": "Ex-99.1 acc -000052 outlook table",
+   "source_value": "Q2 release: adj EPS $2.03 to $2.09; organic net sales 'down 0.5 percent to down 2.0 percent'; cc adj OI 'down 16 percent to down 18 percent'; prior outlook column (3.5)%-(1.5)%, (18)%-(14)%, ~100%; incremental investments ~$700M",
+   "status": "PASS",
+   "note": "Q3'25 and Q4'25/Q1'26 quotes not re-opened beyond the Q4'25 and Q1'26 releases' guidance sentence; Q2 table matches. The dossier's reading ('not a clean raise') is accurate."
+  },
+  {
+   "ticker": "KHC",
+   "claim": "Debt 1,382 + 17,619 = 19,001 carrying; cash 2,419 + marketable securities 262; ratings BBB negative (S&P, Fitch), Baa2 under review (Moody's); no CP; FY25 net leverage 3.0x (EBITDA 5,755, net debt 17,544)",
+   "dossier_location": "KHC.md s6",
+   "source": "Ex-99.1 balance sheet; 10-Q acc 0001637459-26-000054; Q4'25 release",
+   "source_value": "1,382 / 17,619 / cash 2,419 / securities 262; ratings text verbatim in the 10-Q; 17,544 / 5,755 = 3.05x",
+   "status": "PASS",
+   "note": "Consolidated entity and date correct."
+  },
+  {
+   "ticker": "KHC",
+   "claim": "H1'26 OCF 2,088, capex 429, FCF 1,659 = 123% of adjusted NI 1,349; supplier terms 0-250 days; dividends paid 949",
+   "dossier_location": "KHC.md s6",
+   "source": "Ex-99.1; 10-Q",
+   "source_value": "FCF conversion 123% (release headline); dividends paid (949) vs (951); supplier payment terms 'generally range from 0 to 250 days'; supplier-finance amounts $868M outstanding",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "KHC",
+   "claim": "Reverse DCF: Ke 9%, terminal 1%, 10 yrs, normalized FCF $2.45bn, mktcap $28.0bn -> FCF -0.4%/yr (-1.7% with $2.7bn); base 0%; in line",
+   "dossier_location": "KHC.md s7",
+   "source": "Recomputation",
+   "source_value": "-0.39% and -1.75% reproduce exactly",
+   "status": "MINOR",
+   "note": "Arithmetic reproduces; method is equity FCF (after interest) at a cost of equity with SBC small ($53M H1), but 9% is not shown as 5.17% Treasury plus a stated ERP/beta, and FY26 FCF conversion is flattered by supplier terms (dossier says so). Conclusion (implied about flat) unaffected."
+  },
+  {
+   "ticker": "KHC",
+   "claim": "Verdict WATCH",
+   "dossier_location": "KHC.md s1",
+   "source": "Own assessment",
+   "source_value": "Evidence consistent: adj EPS falling, guide -16 to -18% adj OI, ratings under review",
+   "status": "PASS",
+   "note": "Consistent."
+  },
+  {
+   "ticker": "KIM",
+   "claim": "Q2-26 (qtr ended 30 Jun 2026): revenue $550.8M (+4.9% vs $525.2M), net income to common $145.8M ($0.22/share vs $0.23), FFO/share $0.46 (+4.5%), same-property NOI +3.5%, occupancy 96.4%, small-shop 92.9%, new-lease cash spreads 40.4%",
+   "dossier_location": "KIM.md s4",
+   "source": "8-K Ex-99.1 acc 0001193125-26-331498 (4 Aug 2026); companyfacts",
+   "source_value": "Total revenues 550,801 vs 525,175; net income $145.8M; FFO/share $0.46 (+4.5%); same-property NOI +3.5%; occupancy 96.4%; small-shop 92.9%; spreads 40.4%",
+   "status": "PASS",
+   "note": "Period labels correct (calendar year). Eight-quarter XBRL columns (revenue, operating income, net income to common) tie for Q3-24, Q1-25 to Q3-25, Q1-26, Q2-26; Q4 rows are derived."
+  },
+  {
+   "ticker": "KIM",
+   "claim": "Guidance trail: Q2-26 FFO $1.83-1.84 vs previous $1.81-1.84, SP NOI +3.0-3.5% vs +2.8-3.5%, net income $1.00-1.03 vs $0.83-0.87; Q1-26 FFO $1.81-1.84 vs $1.80-1.84; Q4-25 initial $1.80-1.84; 2025 actual $1.76",
+   "dossier_location": "KIM.md s5",
+   "source": "Ex-99.1 accs 0001193125-26-331498, -193907, -047615",
+   "source_value": "Quotes verbatim: 'raised its 2026 outlook ... FFO: $1.83 to $1.84 / $1.81 to $1.84'; Q1 'updated ... $1.81 to $1.84 / $1.80 to $1.84'; FY25 FFO $1.76",
+   "status": "PASS",
+   "note": "Q3-25 release (acc -257371) not re-opened; the 2025 finish of $1.76 is confirmed in the Q4-25 release."
+  },
+  {
+   "ticker": "KIM",
+   "claim": "Balance sheet 30 Jun 2026 (consolidated): notes payable $8,308M, mortgages $432M, cash incl. restricted $700M, net debt ~$8.0bn, total assets $20,031M, total equity $10,423M, 670.8M shares",
+   "dossier_location": "KIM.md s6",
+   "source": "Ex-99.1 balance sheet; 10-Q acc 0001193125-26-331817",
+   "source_value": "8,308,033 / 431,616 / total assets 20,030,952 / total equity 10,423,041 (thousands); 670,789,373 shares at 28 Jul 2026",
+   "status": "PASS",
+   "note": "Entity scope (consolidated, excludes pro-rata JV debt) stated correctly."
+  },
+  {
+   "ticker": "KIM",
+   "claim": "Covenants 38% / 2% / 4.6x; ratings A-/A-/A3; $773.4M 2026 maturities; $600M 3.50% exchangeable notes, exchange price ~$32.36; 4.1M shares bought at $25.38 ($104.7M); OCF six months $588M vs $529M",
+   "dossier_location": "KIM.md s6",
+   "source": "10-Q acc -331817",
+   "source_value": "All figures appear in the 10-Q (covenant table, ratings sentence, maturities, exchangeable notes, buyback, cash flow statement)",
+   "status": "PASS",
+   "note": "The preferred tender (516,750 Class N shares at $64.50) is not in the 10-Q text searched: UNVERIFIABLE here (immaterial)."
+  },
+  {
+   "ticker": "KIM",
+   "claim": "Reverse DCF: AFFO est. $1.40/share, cost of equity 9.0% (5.17% + 0.9 x 4.14%), terminal 2.5% -> implied 10-yr AFFO CAGR 2.75%; base 4%; price $22.44, mktcap $15.05bn",
+   "dossier_location": "KIM.md s7",
+   "source": "Recomputation; b1 mktcap",
+   "source_value": "AFFO cross-check 1,246M FFO - 50.5 non-cash - 287.5 capex + 40 = ~$948M = $1.40/share; solver: 2.72% at 9.0%, 2.59% at 8.9%, 1.67% at 8.5%, 3.72% at 9.5%",
+   "status": "PASS",
+   "note": "Method is compliant: cash flow is AFFO (after leasing and maintenance capex), the rate is tied to the 5.17% Treasury plus ERP and beta, no SBC add-back issue noted (SBC small). AFFO is the analyst's own estimate, labelled as such."
+  },
+  {
+   "ticker": "KIM",
+   "claim": "Verdict INCLUDE-SMALL with implied (2.75%) below base (4%)",
+   "dossier_location": "KIM.md s1, s7",
+   "source": "Own assessment",
+   "source_value": "Implied below base; leverage ~5.7x consolidated on own EBITDA basis (not company-defined)",
+   "status": "PASS",
+   "note": "Supported; leverage basis is the analyst's estimate and flagged as such."
+  },
+  {
+   "ticker": "KKR",
+   "claim": "2Q'26: revenues $5,725.9M, GAAP net income $700.5M (to common $0.7bn after $40.4M preferred dividends), ANI per adjusted share $1.63 vs $1.18; 1H'26 revenue $10,043.9M, NI $1,105.7M, ANI/share $3.02 vs $2.33",
+   "dossier_location": "KKR.md s4",
+   "source": "8-K Ex-99.1 acc 0001404912-26-000022 (30 Jul 2026); companyfacts",
+   "source_value": "Total revenues 5,725,891 (5,088,843); ANI per adjusted share 1.18 / 1.63 / 2.33 / 3.02; NetIncomeLoss 700.5 / 510.1 / 405.2 (1Q'26) / 1,105.7",
+   "status": "PASS",
+   "note": "The mechanical flag (405.2 vs 700.5) is a false positive: 405.2 is the correctly labelled 1Q'26 figure. FY2025 revenue 19,464.3, NI 2,370.5, 3Q'25 5,526.0 / 900.4 tie to companyfacts."
+  },
+  {
+   "ticker": "KKR",
+   "claim": "AUM $796bn (~$796.5bn), FPAUM $556.2bn -> $638.4bn, TOE $5.5bn LTM +19%, FY2025 ANI/share $4.87",
+   "dossier_location": "KKR.md s2, s3, s4",
+   "source": "8-K Ex-99.1 acc 0001404912-26-000022 (30 Jul 2026); Ex-99.1 acc -000002",
+   "source_value": "AUM $796bn up 16%; FPAUM 556,247 -> 638,403 ($ thousands); TOE $5.5bn in the LTM ($6.13/adj. share) up 19%; FY25 ANI/share $4.87",
+   "status": "PASS",
+   "note": "The '84% of segment earnings' share was not re-derived."
+  },
+  {
+   "ticker": "KKR",
+   "claim": "Prior DVH6 corrections: new capital raised $34.3bn in 2Q'26 and $133bn LTM (not $4.68bn); Asset Management and Strategic Holdings debt at par $9,298.5M; buybacks $233.2M (1H'26)",
+   "dossier_location": "KKR.md Correction DVH6",
+   "source": "8-K Ex-99.1 acc 0001404912-26-000022 (30 Jul 2026); 10-Q acc 0001404912-26-000027",
+   "source_value": "New Capital Raised $34,325M (2Q'26) / $133bn LTM; outstanding debt at par $9,298,541K (GAAP debt obligations $49,682,423K); repurchases tag $233.2M (1H'26)",
+   "status": "PASS",
+   "note": "The DVH6 corrections are independently confirmed."
+  },
+  {
+   "ticker": "KKR",
+   "claim": "Cash flow and equity: OCF 1H'26 $4,999.2M vs $2,988.5M (includes insurance); equity $31,047.4M vs $30,902.6M; shares outstanding 897.8M (adjusted shares 923.7M)",
+   "dossier_location": "KKR.md s6, s7",
+   "source": "10-Q acc -000027 companyfacts; Ex-99.1",
+   "source_value": "OCF 4,999.2 / 2,988.5; equity 31,047.4 / 30,902.6; common 897,776,609; adjusted shares 923,731,511",
+   "status": "PASS",
+   "note": "Market cap uses common shares (897.8M, $86.8bn); on adjusted shares (the basis of ANI per share) it is $89.3bn, which leaves implied growth unchanged at about 8.1%."
+  },
+  {
+   "ticker": "KKR",
+   "claim": "Reverse DCF (DVH6 restatement): Ke 11.5% (5.17% + Blume beta 1.53 x 4.14%), ANI $5.0bn, 10 years then 3% -> implied ~8.1% (9.9% after SBC); dossier base 10-12% -> in line",
+   "dossier_location": "KKR.md s7 / DVH6",
+   "source": "Recomputation",
+   "source_value": "Solver: 8.10% on $5.0bn at 11.5%; 9.90% on $4.4bn; 8.12% on adjusted-share basis; 4.2% at 9.5%",
+   "status": "PASS",
+   "note": "Restatement reproduces. Note it is sensitive to the discount rate: at a 9.5% cost of equity the implied growth is ~4.2%."
+  },
+  {
+   "ticker": "KKR",
+   "claim": "Residual uncorrected sentences: s1 'implies far less growth than KKR has delivered or guides toward'; s8 bull 3 'implied growth (~3%) is well below any plausible base case'",
+   "dossier_location": "KKR.md s1, s8",
+   "source": "Own check against DVH6 and s5",
+   "source_value": "KKR gives no numeric guidance (s5); implied growth is ~8-10%, in line with the 10-12% base",
+   "status": "FAIL",
+   "note": "These two operative sentences still carry the superseded ~3% conclusion without an inline tag (DVH6 tagged the s7 and s8 bull-1 items but missed these). Tagged now. Verdict INCLUDE-SMALL and F111 implied_vs_base 'in line' already reflect the corrected view."
+  },
+  {
+   "ticker": "KKR",
+   "claim": "Verdict INCLUDE-SMALL",
+   "dossier_location": "KKR.md s1",
+   "source": "Own assessment",
+   "source_value": "Implied in line with base; open gaps: Global Atlantic statutory capital, parent-only leverage",
+   "status": "MINOR",
+   "note": "Supportable; DVH6 already flagged the lead to reconsider WATCH. No further change."
+  }
+ ],
+ "verdict_changes": []
+}

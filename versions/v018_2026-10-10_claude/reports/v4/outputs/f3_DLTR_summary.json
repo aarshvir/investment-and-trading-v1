@@ -1,0 +1,42 @@
+{
+  "DLTR": {
+    "verdict": "INCLUDE-SMALL",
+    "horizon": "12-36 months",
+    "kill_criteria": [
+      "Comparable-store sales below +1.0% for two consecutive quarters, or traffic negative for two consecutive quarters while ticket growth is below +2%",
+      "Ex-tariff-refund gross margin down more than 150 bps YoY for two consecutive quarters",
+      "Any cut to FY2026 adjusted EPS guidance (currently $7.70-8.05), or FY2027 guidance implying less than 5% ex-refund EPS growth",
+      "Lease-adjusted (net debt + operating lease liabilities)/EBITDAR above 2.5x (1.85x at FYE Jan-2026), or funded net debt/EBITDA above 1.5x (0.65x TTM)",
+      "Normalized (ex-one-off) TTM free cash flow below $1.0B (FY2025 was $1,056.7M)"
+    ],
+    "key_adverse_facts": [
+      "The ~47% ROE / 0.962 Quality score is mostly an equity-denominator artefact. Equity fell from $8,751.5M (Jan-2023) to $3,425.3M (Aug-2026): -$6.3B of after-tax Family Dollar discontinued-ops losses (Q4 FY23 -$2,242.2M; Q4 FY24 -$4,096.1M, including a $1,400.0M trade-name impairment, a $490.5M goodwill impairment and a $3,438.7M held-for-sale write-down) plus ~$3.6B of buybacks. At the FY2023 equity level, TTM ROE would be ~20% (~17% ex-refund). Fixed-asset turnover is flat (3.90x to 3.99x).",
+      "Q2 FY2026 GAAP/adjusted EPS of $2.70 includes a $1.31 one-off IEEPA tariff refund ($383M gross; +680 bps gross margin, +650 bps operating margin). Ex-refund EPS was ~$1.39. FY2026 guidance ($7.70-8.05) includes ~$0.60 of refund benefit, and Q3 FY26 guidance includes a ~-$0.50 reinvestment drag.",
+      "Comps are ticket-driven: traffic was -0.3%, -1.2% and -1.0% in Q3 FY25 through Q1 FY26 (+0.4% in Q2 FY26). Comp growth slowed from +6.5% (Q2 FY25) to +3.5-3.7%. The FY26 sales/comp guide ($20.5-20.7B, 3-4%) has not been raised. Multi-price creep (85% of assortment at $2 or less) risks the value proposition.",
+      "SG&A deleverage: FY2025 SG&A was 28.2% vs 27.5% (adjusted 28.1% vs 26.9%), driven by store payroll, wages, general-liability claims and depreciation. TSA income ($39M in H1 FY26) ends within ~18 months of July 2025. Shrink is described as 'historically high'. FY2025 included a $56.0M slow-SKU write-off.",
+      "Capital-allocation scar: Family Dollar ended in a $1,007.5M base-price sale (closed 2025-07-05; ~$800M cash monetized) after ~$6.3B of after-tax losses. The West Memphis DOJ plea (2024-02-26, $41.675M, 3-year compliance term) is still listed as 10-K Exhibit 10.27, and the post-divestiture liability allocation is undisclosed.",
+      "Shares fell ~15% in September 2026 (about $131 on 2026-09-04 to $114.07 on 2026-09-25) after the refund-flattered beat. The 2026-09-24 by-law amendments tightened advance-notice and special-meeting rules. Several senior roles turned over (CFO in 2025, CLO, IR head).",
+      "[Added 2026-10-06, RA11] Q3 quarter-to-date share repurchases were only $5.3 million (Q2 FY2026 release, acc. 0000935703-26-000108) against about $1.2bn in H1, so the buyback leg of the EPS path is paused. Normalized FCF of $1,608M is before SBC ($68M) and benefited from an 8.6% inventory reduction; a $1.3bn stress case is used."
+    ],
+    "data_conflicts": [
+      "d4 TTM gross profit of $7,050.7M is actually the FY2025 fiscal-year figure (10-K), not TTM. True TTM gross profit is $7,753.7M (revenue $20,049.4M less COGS $12,295.7M, both matching d4 within 0.1%). This explains the ~$723M revenue-minus-COGS gap and understates d4's GP/assets (true ~0.55 vs 0.503).",
+      "d4 long-term debt of $2,431.7M is one quarter stale (it equals FYE 2026-01-31). The Q2 FY2026 10-Q shows $2,933.5M, up ~$502M after the 2026-03-19 credit agreement.",
+      "d4 capex of $845.4M vs $1,138.9M TTM capex from the company's own FCF-reconciliation tables (continuing ops). d4 FCF (~$2,198M) and FCF yield (10.27%) are overstated. True TTM FCF is $1,978.1M (9.2% yield), or ~$1,608M (~7.5%) excluding tariff-refund cash.",
+      "d4 TTM OCF of $3,043.1M vs $3,117.0M self-constructed (2.4% gap, likely a cut-off difference). Market cap: d4 $21,403M vs FMP raw field $21,921M vs shares x price $21,407M.",
+      "Confirmed matches: d4 equity $3,425.3M, total assets $14,029.6M, cash $1,058.1M, operating income $2,201.4M, NI $1,612.5M (vs $1,618.6M), and TTM revenue. d4 ROE of 47.1% is mechanically right (ratios.py 45.1% on average equity) but economically flattered, as above.",
+      "[Added 2026-10-06, RA11] The dossier's scenarios ($78 / $117 / $156) carry no time dimension; restated as 3-year annualised returns. The reverse-DCF base ($1,608M) is before SBC."
+    ],
+    "next_earnings_date": "Not announced as of 2026-09-25. Estimated early December 2026 (Q3 FY2025 was reported 2025-12-03); aggregator dates of 2026-11-24 or 2026-12-02 are unconfirmed.",
+    "confidence_in_thesis": "med -- the underlying Dollar Tree banner (positive comps in all 8 quarters, ~$1.1-1.6B normalized FCF, moderate lease-adjusted leverage, ~15.7x normalized P/E) supports a position, but the factor scores are flattered by impairment/buyback-driven equity shrinkage and one-off tariff refunds, and traffic is soft.",
+    "valuation_view_vs_v1": {
+      "implied_vs_base": "below",
+      "note": "Added 2026-10-06 (RA11): equity-level reverse DCF on FCF after SBC (ex-refund $1.54bn, price $114.07, Ke 9.00% = 5.17% + Blume beta 0.92 x 4.14%): implied +0.2% (+3.2% on a $1.23bn stress base) vs evidence-based 6.0%: below. Base 3-year return +9.0% equals the cost of equity, so the cushion rests on the cash-flow yield."
+    },
+    "scenario_returns_3y": {
+      "bear": -0.119,
+      "base": 0.09,
+      "bull": 0.179
+    },
+    "scenario_basis": "From $114.07, 3-year annualised, no dividend. Bear: EPS $6.50, 12.0x. Base: NTM ex-refund EPS about $7.60 +9% a year to $9.84, flat 15.0x. Bull: EPS +12% a year, 17.5x."
+  }
+}

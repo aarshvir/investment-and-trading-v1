@@ -1,0 +1,490 @@
+{
+ "as_of": "2026-10-08",
+ "scope": [
+  "SHW",
+  "SJM",
+  "SLB",
+  "SMCI",
+  "SNA",
+  "SNDK",
+  "SNPS",
+  "SOLV",
+  "SPG",
+  "SPGI"
+ ],
+ "facts": [
+  {
+   "ticker": "SHW",
+   "claim": "Q2-26 net sales $6,789.3m (+7.5%), net income $843.6m (+11.8%), GAAP diluted EPS $3.43 (+14.3%); Q1-26 net income $534.7m",
+   "dossier_location": "s4 table",
+   "source": "10-Q acc 0000089800-26-000049 XBRL; Q2 release acc 0000089800-26-000046",
+   "source_value": "Q2 rev 6,789.3 vs 6,314.5; NI 843.6 vs 754.7; EPS 3.43 vs 3.00; Q1 NI 534.7 (Q1 net sales 5,666.9, which the dossier called 'not separately quoted')",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SHW",
+   "claim": "FY26 guidance: GAAP EPS $10.92-11.32, adjusted $11.80-12.20 (raised from 10.70-11.10 and 11.50-11.90); FY25 adjusted $11.43",
+   "dossier_location": "s4 guidance",
+   "source": "Q2 release acc 0000089800-26-000046; Q1 release",
+   "source_value": "verbatim in release; Q1 release reaffirmed 11.50-11.90",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SHW",
+   "claim": "Total debt $12,072.1m (long-term incl. current 9,825.7 + short-term 2,246.4), cash $293.5m, equity $3,854.7m (from $4,598.3m)",
+   "dossier_location": "s5",
+   "source": "10-Q acc 0000089800-26-000049",
+   "source_value": "debt 12,072.1; cash 293.5; equity 3,854.7 vs 4,598.3; TTM adj EBITDA 1,359.0+993.1+998.2+1,458.6 = 4,808.9 (FY25 release and Q2 release) so 2.45x",
+   "status": "PASS",
+   "note": "Triage 3.1x vs 2.45x reconciles to the filing"
+  },
+  {
+   "ticker": "SHW",
+   "claim": "Q1-26 adjusted EBITDA $998.2m, +8.8% y/y, 17.6% margin",
+   "dossier_location": "s4 table",
+   "source": "Q1 release",
+   "source_value": "998.2 is EBITDA, +8.8% is the unadjusted EBITDA growth (917.7 prior); adjusted EBITDA prior year was 937.0 so adjusted growth is +6.5%",
+   "status": "MINOR",
+   "note": "label error, no verdict effect"
+  },
+  {
+   "ticker": "SHW",
+   "claim": "Q1 FCF conversion 90.1% 'per Q3-2025 release'",
+   "dossier_location": "s4 table",
+   "source": "Q1, Q3-25, FY25 releases",
+   "source_value": "no '90.1' or free-cash-flow-conversion line in those releases; Q2-26 release shows 86%",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "SHW",
+   "claim": "Lead-pigment litigation dates: Gibson discovery to 15 Dec 2026; Valoe stayed 6 Apr 2026; nothing accrued",
+   "dossier_location": "s11",
+   "source": "10-Q Note (Wisconsin Litigation)",
+   "source_value": "matches 10-Q text",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SHW",
+   "claim": "Reverse DCF: r 9.68% (5.17% + 1.089 x 4.14%), base adjusted EPS $12.00, implied 11.2% vs base 8%",
+   "dossier_location": "s6",
+   "source": "recomputed; TTM OCF 3,886.7, capex 673.5, SBC 120.2",
+   "source_value": "on adjusted EPS I get 10.7%; on TTM FCF less SBC ($12.57/share) 10.1%; both above the 8% base; scenario values reproduce within 3-4%",
+   "status": "MINOR",
+   "note": "EPS used as the cash flow but FCF-after-SBC cross-check gives the same conclusion: implied above base, WATCH holds"
+  },
+  {
+   "ticker": "SJM",
+   "claim": "Q1 FY27 sales $2,219.3m (+5%), GAAP EPS $3.03, adjusted EPS $3.24 incl $0.84 tariff refund, FCF $337.3m; FY26 net sales $9,050.9m, GAAP EPS -$1.30, adj EPS $9.15",
+   "dossier_location": "s4",
+   "source": "10-Q acc 0000091419-26-000080; Q1 FY27 release acc 0000091419-26-000079; Q4 FY26 release acc 0000091419-26-000047",
+   "source_value": "all match; Q4 FY26 GAAP EPS 3.64 = FY -1.30 less 9M -4.94",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SJM",
+   "claim": "FY27 guidance table: adj EPS $10.50-11.00 (prev $9.75-10.25), sales (2.0)-(1.0)% (prev (4.0)-(3.0)%), FCF $1.1bn (prev $1.0bn); ~$0.60 net tariff-refund benefit; ~$115.0m refunds received",
+   "dossier_location": "s5",
+   "source": "Q1 FY27 release; Q4 FY26 release; Q1 FY26 release",
+   "source_value": "verbatim rows found; $0.60 and $115.0m in text; Q1 FY26 rows ($8.50-9.50; FCF $975m vs $875m) also match",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SJM",
+   "claim": "Debt/cash: cash 43.2, current LTD 150.0 + ST borrowings 193.5 + LTD 6,394.3 = 6,737.8; net debt 6,694.6; equity 5,750.8; goodwill 5,200.0, intangibles 5,625.0",
+   "dossier_location": "s6",
+   "source": "10-Q acc 0000091419-26-000080 XBRL",
+   "source_value": "all match; term loan due 5 Mar 2027 $150.0m present",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SJM",
+   "claim": "Net debt/EBITDA ~3.3x using FY26 adj op income 1,678.3 + depreciation 346.4",
+   "dossier_location": "s6, kill criterion 2",
+   "source": "10-K/10-Q XBRL; Q4 FY26 and Q1 FY27 releases",
+   "source_value": "inputs correct; but the latest TTM (adj op income 1,848.7 + depreciation 331.0 = 2,179.7) gives about 3.07x, and that includes the one-off $115m refund",
+   "status": "MINOR",
+   "note": "uses FY26 not TTM; threshold 3.75x not at risk"
+  },
+  {
+   "ticker": "SJM",
+   "claim": "Reverse DCF: FCF0 $1.1bn, cost of equity 8.5%, terminal 2.5%, implied -2.4% vs base +2.0%",
+   "dossier_location": "s7",
+   "source": "recomputed",
+   "source_value": "reproduces -2.4%; 8.5% is not tied to the 5.17% Treasury plus a stated premium (about 3.3 points implied); at 9.6% implied is -0.4%; removing after-tax refund from FCF0 gives -1.4% at 8.5%; implied stays below the +2% base",
+   "status": "MINOR",
+   "note": "conclusion robust; INCLUDE-SMALL unchanged"
+  },
+  {
+   "ticker": "SLB",
+   "claim": "Q2-26 revenue $8,972m (+5.0%), net income $786m (-22.5%), GAAP EPS $0.52; table Q1-25 to Q1-26",
+   "dossier_location": "s4",
+   "source": "10-Q acc 0001193125-26-322595 XBRL; Q2 release acc 0001193125-26-315068",
+   "source_value": "all table rows match XBRL; release: revenue +5% y/y, EPS -30%, adj EPS $0.55 -26%, adj EBITDA $1.90bn -7%",
+   "status": "PASS",
+   "note": "release adds that ChampionX contributed $870m and revenue ex-ChampionX fell 5% y/y; not in dossier"
+  },
+  {
+   "ticker": "SLB",
+   "claim": "TTM FCF $4,806m (OCF 6,533 less PP&E capex 1,727), $3.19/share, yield 6.2%",
+   "dossier_location": "s6, s7",
+   "source": "10-K/10-Q: SLB-defined free cash flow = OCF less capex, APS investments and exploration data",
+   "source_value": "FY25 4,115 + H1-26 693 - H1-25 725 = 4,083 TTM; dossier overstated by 723 (18%)",
+   "status": "FAIL",
+   "note": "correction appended; implied growth 4.3% (5.5% after SBC) at 9%, not 2.2%; call stays 'below'"
+  },
+  {
+   "ticker": "SLB",
+   "claim": "Net debt about $8.4bn from noncurrent debt less cash",
+   "dossier_location": "s6",
+   "source": "10-Q liquidity table",
+   "source_value": "company net debt 8,727 (debt 12,798 less cash 2,743 and ST investments 1,328)",
+   "status": "MINOR",
+   "note": "folded into correction"
+  },
+  {
+   "ticker": "SLB",
+   "claim": "No pending M&A; events checked to 25 Sep 2026",
+   "dossier_location": "s10, s12",
+   "source": "8-K acc 0001193125-26-375358 (31 Aug 2026)",
+   "source_value": "SLB agreed to buy Kelvion for about $3.4bn cash plus $0.7bn assumed debt; pro forma net debt about $12.8bn, about 2.4x vs 2.5x kill criterion",
+   "status": "FAIL",
+   "note": "omitted material event inside the window; no verdict change"
+  },
+  {
+   "ticker": "SLB",
+   "claim": "Guided sequential growth in Q3 and revenue above $10B in Q4 2026",
+   "dossier_location": "s5, kill criterion 1",
+   "source": "Q2 release and 10-Q searched",
+   "source_value": "not in release or 10-Q; call only; Q4 figure has one secondary source",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "SMCI",
+   "claim": "Quarterly table Sep-25 to Jun-26: revenue, margins, NI, EPS, OCF, capex",
+   "dossier_location": "s4",
+   "source": "10-K acc 0001375365-26-000022 and 10-Q XBRL; Aug 11 release acc 0001375365-26-000021",
+   "source_value": "Q4 FY26 revenue 11,119.8, NI 1,178.2, OCF 747.0, GM 17.5%, op margin 13.4%, EPS $1.62 diluted (release), Q3 NI 483.4 (the mechanical flag compared a Jun-quarter NI with the Mar-quarter XBRL row)",
+   "status": "PASS",
+   "note": "crosstie flags are period-label artefacts"
+  },
+  {
+   "ticker": "SMCI",
+   "claim": "Guidance rows: FY26 at least $33.0bn / $36.0bn / $40.0bn / $38.9-40.4bn; Q2 $10.0-11.0bn; Q3 at least $12.3bn; Q4 $11.0-12.5bn, GAAP EPS $0.53-0.67; Q1 FY27 $14.5-15.5bn, EPS $0.89-0.98, 745M shares; FY27 $65-72bn",
+   "dossier_location": "s5",
+   "source": "Nov, Feb, May, Aug releases",
+   "source_value": "Nov/Feb/May/Aug quotes verbatim; actuals 12.68, 10.24, 11.12bn as stated",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SMCI",
+   "claim": "Debt: lines/term loans $4,056.1m (2,039.8 current), converts $4,725.0m, total about $8.7bn, cash $7,521m; equity raise $5,638.6m; purchase commitments $34.2bn; 28.1% customer; ICFR not effective",
+   "dossier_location": "s6",
+   "source": "10-K acc 0001375365-26-000022",
+   "source_value": "all found (debt 8,781; cash 7,521.5; financing 9,478.8; commitments $34.2bn; 28.1%; material weakness)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SMCI",
+   "claim": "Share count 657M at 31 Jul 2026; insider sales Sep 2026 by CEO and director",
+   "dossier_location": "s6, s11",
+   "source": "10-K cover; Form 4s 8 Sep 2026",
+   "source_value": "656,965,384 shares; both Form 4s are code S sales (share amounts not extracted)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SMCI",
+   "claim": "Reverse DCF: cost of equity 12% with beta 2.0, implied 13.2% vs base 9.2%",
+   "dossier_location": "s7",
+   "source": "recomputed",
+   "source_value": "reproduces 13.2% (9.5% at 11%); 5.17% + 2.0 x 4.14% = 13.45% not 12%; at 13.45% implied about 19.5%, so 'above' is strengthened",
+   "status": "MINOR",
+   "note": "owner-earnings basis (NI x (1-g/ROIC)) is acceptable; rate understated; verdict WATCH unchanged"
+  },
+  {
+   "ticker": "SNA",
+   "claim": "Q2'26 EPS $4.96 vs $4.72; Q1'26 $4.69; Q4'25 $4.94; revenue series",
+   "dossier_location": "s4",
+   "source": "10-Q acc 0000091440-26-000144 XBRL",
+   "source_value": "EPS 4.96, 4.72, 5.02, 4.69 match; XBRL net sales Q2'26 1,225.8 (+4.7%) vs the release/dossier 1,235.1 (+4.7% on release prior 1,179.4)",
+   "status": "MINOR",
+   "note": "Q2'26 shown on release basis (1,235.1) beside Q2'25 on XBRL basis (1,170.9); growth rate unaffected"
+  },
+  {
+   "ticker": "SNA",
+   "claim": "Consolidated cash 1,644.7, debt 1,204.0 (317.0 current + 887.0 LT), net cash 440.7",
+   "dossier_location": "s6, RA15",
+   "source": "10-Q XBRL",
+   "source_value": "cash 1,644.7; LTD 887.0; current LTD 299.8 + notes 17.2; total 1,204.0",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SNA",
+   "claim": "OCF FY25 1,081.7 (-11.2%), H1-26 640.2 vs 535.7 (+19.5%), SBC 28.9; owner FCF $945.6m; RA15 re-test at 9.2% gives 6.1% vs base 5%; INCLUDE-SMALL",
+   "dossier_location": "RA15",
+   "source": "10-K/10-Q XBRL",
+   "source_value": "OCF, H1 OCF, SBC and diluted EPS +4.4% (9.65 vs 9.24) match; RA15 method already uses Treasury 5.17% + premium, FCF after SBC and net finance receivables",
+   "status": "PASS",
+   "note": "earlier correction RA15 stands; F115 summary already INCLUDE-SMALL"
+  },
+  {
+   "ticker": "SNA",
+   "claim": "Guidance: no numeric guide; capex about $100m; tax rate 22%; originations $281.0m -4.1%",
+   "dossier_location": "s5",
+   "source": "Q2 release acc 0000091440-26-000141",
+   "source_value": "capex and 22% tax in text; originations $281.0m in text",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SNDK",
+   "claim": "Quarter table (rev, op inc, NI, EPS) 28 Mar 2025 to 3 Jul 2026",
+   "dossier_location": "s4",
+   "source": "10-Q/10-K XBRL",
+   "source_value": "1,695/(1,881)/(1,933)/(13.33); 2,308/176/112/0.75; 3,025/1,065/803/5.15; 5,950/4,111/3,615/23.03; FQ4 derived 8,965 and NI 6,903 vs release 8.97bn/6.90bn/43.97",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SNDK",
+   "claim": "Guidance table: FQ2 $2.55-2.65bn/$3.00-3.40; FQ3 $4.40-4.80bn/$12.00-14.00; FQ4 $7.75-8.25bn/$30.00-33.00; actual FQ4 non-GAAP EPS 'not re-confirmed'",
+   "dossier_location": "s5",
+   "source": "Q1, Q2, Q3, Q4 releases",
+   "source_value": "guides verbatim; FQ3 non-GAAP EPS 23.41 confirmed; FQ4 non-GAAP EPS is 39.25; FQ1'27 guide ($10.30-10.80bn, $44-46) omitted",
+   "status": "MINOR",
+   "note": "gap closed in correction"
+  },
+  {
+   "ticker": "SNDK",
+   "claim": "About 80% of Sandisk capacity comes from Flash Ventures",
+   "dossier_location": "s2, s6, s11",
+   "source": "10-K acc 0001628280-26-057406",
+   "source_value": "10-K: all flash wafers are made by Flash Ventures; 80% is Flash Ventures' share of Kioxia facility capacity",
+   "status": "FAIL",
+   "note": "correction appended; risk is stronger than stated"
+  },
+  {
+   "ticker": "SNDK",
+   "claim": "Net cash: cash $4.76bn, debt $0; buyback $4.5bn in FQ4; no customer over 10%",
+   "dossier_location": "s6",
+   "source": "10-K XBRL and cash-flow statement",
+   "source_value": "cash 4,762; LongTermDebt 0; repurchases 4,524 (FQ4 equals FY); no customer >10%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SNDK",
+   "claim": "Kill criterion 2: gross margin floor 60% from the current 78.4% (FQ3)",
+   "dossier_location": "s9",
+   "source": "10-K, Q4 release",
+   "source_value": "78.4% is FQ3 GAAP; FQ4 GAAP margin 84.6%; FQ1'27 guide 83.0-84.9%",
+   "status": "FAIL",
+   "note": "stale 'current' value; correction appended"
+  },
+  {
+   "ticker": "SNDK",
+   "claim": "Reverse DCF 16-21% (rate 13.56%, FCF $7.72-11.49bn)",
+   "dossier_location": "s7",
+   "source": "recomputed",
+   "source_value": "reproduces 15-17% on FY26 FCF; on FQ4 annualised FCF about $28bn implied is 2-3%; 'above base' depends on the cycle-peak view, not stated numerically",
+   "status": "MINOR",
+   "note": "WATCH stands on cycle risk"
+  },
+  {
+   "ticker": "SNPS",
+   "claim": "Q3 FY26 revenue $2.477bn (+42.4%), GAAP EPS $2.84, non-GAAP $3.91; FY revenue mid $9.715bn, non-GAAP EPS mid $15.07; Q4 $2.530-2.580bn / $4.10-4.16; Ansys $2.98bn (+$20m)",
+   "dossier_location": "s4, s5",
+   "source": "Q3 release acc 0001193125-26-368620; 10-Q acc 0000883241-26-000025",
+   "source_value": "all values match",
+   "status": "PASS",
+   "note": "dossier cites acc 0001193125-26-241911, which is the Q2 release (27 May 2026)"
+  },
+  {
+   "ticker": "SNPS",
+   "claim": "Ansys closed in the quarter / this fiscal year / newly closed",
+   "dossier_location": "s1, s3, s6, s12",
+   "source": "Q3 release tax note; CEO quote",
+   "source_value": "Ansys completed in Q3 FY2025 (July 2025)",
+   "status": "FAIL",
+   "note": "correction appended"
+  },
+  {
+   "ticker": "SNPS",
+   "claim": "Net debt about $7.5bn, about 3.5x (30 Apr 2026)",
+   "dossier_location": "s6, kill criterion 2",
+   "source": "10-Q acc 0000883241-26-000025",
+   "source_value": "31 Jul 2026: debt 10,037.4, cash 3,606.3 + STI 1.4 = net debt 6,429; 2.5x TTM GAAP EBITDA (802 + 1,811), about 1.5x adjusted; 3.5x not reproducible",
+   "status": "FAIL",
+   "note": "stale and unsupported ratio"
+  },
+  {
+   "ticker": "SNPS",
+   "claim": "Reverse DCF on non-GAAP net income less capex: implied 11-12% vs base 10-11%, in line",
+   "dossier_location": "s8",
+   "source": "recomputed; TTM OCF 2,938, capex 191, SBC 950, FY26 FCF guide about 2,600",
+   "source_value": "FCF after SBC 1,798 (or about 1,650): implied 16.3-17.5% at 9.5%; base value $261-285 vs $425.76",
+   "status": "FAIL",
+   "note": "SBC added back; implied_vs_base -> above; verdict INCLUDE-SMALL -> WATCH; F92 summary updated"
+  },
+  {
+   "ticker": "SNPS",
+   "claim": "EDA revenue +8.5%; Design IP +11% to $474m",
+   "dossier_location": "s4",
+   "source": "Q3 release segment table",
+   "source_value": "Design IP 473.8 vs 427.9 (+10.7%); +8.5% EDA not in the release",
+   "status": "UNVERIFIABLE",
+   "note": "EDA organic figure unsourced"
+  },
+  {
+   "ticker": "SOLV",
+   "claim": "Quarter table incl Q2-26 sales 2,209 (+2.2%, organic +9.5%), op inc 181, GAAP EPS 0.53, adj EPS 2.55 (+50.9%), FCF 144; Q3-25 op inc 1,690, EPS 7.22",
+   "dossier_location": "s4",
+   "source": "10-Q acc 0001964738-26-000047 XBRL; Q2 release acc 0001964738-26-000045",
+   "source_value": "all match; H1 FCF = 38 - 167 = -129; FY25 OCF 369 - capex 379 = -10",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SOLV",
+   "claim": "Guidance rows Feb/May/Aug 2026 (adj EPS $6.40-6.60, toward high end, $7.10-7.20; FCF about $200m then $200-300m; organic 2.5-3.0%)",
+   "dossier_location": "s5",
+   "source": "Q4-25, Q1-26, Q2-26 releases",
+   "source_value": "verbatim",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SOLV",
+   "claim": "Debt 5,079 (506 current + 4,573 LT), cash 403, equity 4,800, goodwill 5,626; net debt 4,676; $355m H1 buybacks; $120m refund claims with $100m pre-tax benefit; $125m advance orders; accrual raised, no amount",
+   "dossier_location": "s6, s4",
+   "source": "10-Q acc 0001964738-26-000047",
+   "source_value": "all found; the crosstie flag (506 vs 5,083) is the current portion, not total debt",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SOLV",
+   "claim": "Reverse DCF: cost of equity 8.45%, FCF less SBC; implied 32% / 14.6% / 5.0% vs base 4%",
+   "dossier_location": "s7",
+   "source": "recomputed (price $89.50, market cap $15.2bn)",
+   "source_value": "reproduces 32.1% / 14.5% / 5.0%; FCF-based with SBC as a cost; rate 8.45% implies beta about 0.8 and is not tied to 5.17% in text",
+   "status": "MINOR",
+   "note": "conclusion (above base) robust; WATCH unchanged"
+  },
+  {
+   "ticker": "SPG",
+   "claim": "Q2-26 NI to common $483.1m ($1.49) vs $556.1m ($1.70); Real Estate FFO $1,249m, $3.29 (+7.9%); occupancy 96.0%; rent $62.42; sales/sf $838",
+   "dossier_location": "s4",
+   "source": "10-Q acc 0001104659-26-093360; Q2 release acc 0001104659-26-093361",
+   "source_value": "all match",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SPG",
+   "claim": "Guidance Real Estate FFO $13.20-13.30 (from $13.10-13.25), GAAP EPS $6.47-7.47 (from $6.61-6.76)",
+   "dossier_location": "s4",
+   "source": "Q2 release",
+   "source_value": "verbatim",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SPG",
+   "claim": "Consolidated debt $28,699.6m; Simon's share total debt $35,731.0m; total assets $39,709.3m; cash $1,019.1m",
+   "dossier_location": "s5",
+   "source": "10-Q XBRL; supplemental",
+   "source_value": "all match",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SPG",
+   "claim": "David Simon died 22 Mar 2026; Eli Simon CEO; Glasscock chair",
+   "dossier_location": "s8",
+   "source": "8-K acc 0001104659-26-033931",
+   "source_value": "matches (note: 8-K says Eli remains COO as well as CEO/President)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SPG",
+   "claim": "Reverse DCF on Real Estate FFO/share $13.25, r 10.60%, implied 5.7% vs base 6.5% -> below",
+   "dossier_location": "s6",
+   "source": "recomputed; supplemental capex table",
+   "source_value": "FFO ignores about $517m/yr tenant allowances and operational capex ($1.36/share); on about $11.9/share implied is 6.8-7.2%, in line; base value about $195 vs $204.82",
+   "status": "FAIL",
+   "note": "implied_vs_base below -> in_line; scenarios restated; INCLUDE-SMALL kept; F56 summary updated"
+  },
+  {
+   "ticker": "SPGI",
+   "claim": "Q2-26 GAAP revenue $4.146bn, op profit $1.812bn, NI $1.217bn, EPS $4.12; pro forma revenue $3.678bn, EPS $4.08, adjusted $4.83; Q1 NI $1.395bn, EPS $4.69, adj $4.97",
+   "dossier_location": "s4",
+   "source": "Q2 release acc 0000064040-26-000040; Q1 release; 10-Q acc 0000064040-26-000045",
+   "source_value": "all match (the crosstie NI flag compared Q1 with Q2)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SPGI",
+   "claim": "Guidance: Q1 adj EPS $19.40-19.65, revenue growth 6.3-8.3%; Q2 rebased GAAP EPS $16.35-16.60, adjusted $17.50-17.75, not comparable",
+   "dossier_location": "s4",
+   "source": "Q1 and Q2 releases",
+   "source_value": "verbatim",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SPGI",
+   "claim": "Total debt $15,170m vs $13,088m; Mobility Global notes issued 19 May 2026 (5.05% 2029, 5.45% 2031, 6.05% 2036)",
+   "dossier_location": "s5",
+   "source": "10-Q acc 0000064040-26-000045 Note 7",
+   "source_value": "15,170 vs 13,088; notes principal 650/650/700 = 2,000 (dossier 645/644/692 = 1,981 appears to be carrying value)",
+   "status": "MINOR",
+   "note": "carrying vs principal; ex-transfer debt about +0.8%, 'roughly flat'"
+  },
+  {
+   "ticker": "SPGI",
+   "claim": "Segment operating profit Q2-26: Ratings 913 on 1,339; Indices 373 on 534; MI 293 on 1,290; Energy 233 on 568; Mobility 104 on 468",
+   "dossier_location": "s4",
+   "source": "10-Q segment note",
+   "source_value": "all match",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "SPGI",
+   "claim": "Reverse DCF on guided adjusted EPS $17.625, r 9.63% (5.17% + 1.077 x 4.14%), implied 8.6% vs base 10%",
+   "dossier_location": "s6",
+   "source": "recomputed; TTM OCF 5,735 incl Mobility, SBC 228",
+   "source_value": "implied 8.2% by my convention (9.2% on an assumed FCF-after-SBC base of $16.3/share); adjusted EPS excludes only deal amortisation and already expenses SBC; TTM FCF (about $5.5bn) is above EPS-based cash",
+   "status": "MINOR",
+   "note": "method acceptable; 'below' vs 'in line' within noise; INCLUDE-SMALL unchanged"
+  }
+ ],
+ "verdict_changes": [
+  {
+   "ticker": "SNPS",
+   "old": "INCLUDE-SMALL (implied in line / marginally above)",
+   "new": "WATCH (implied ABOVE base)",
+   "why": "Reverse DCF used non-GAAP net income that adds back about $0.95bn/yr of stock compensation; on FCF after SBC the price implies 16-18% 10-year growth vs 10-11% base; Ansys timing and net debt/EBITDA also wrong; F92 summary updated"
+  },
+  {
+   "ticker": "SPG",
+   "old": "implied_vs_base below; scenarios -3.5%/+6.2%/+14.8%",
+   "new": "implied_vs_base in_line; scenarios -6.8%/+2.7%/+10.9%; verdict INCLUDE-SMALL unchanged",
+   "why": "Real Estate FFO ignores recurring tenant-allowance and operational capex (about $1.36/share); F56 summary updated"
+  }
+ ]
+}

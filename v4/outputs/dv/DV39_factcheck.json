@@ -1,0 +1,1071 @@
+{
+ "as_of": "2026-10-08",
+ "scope": [
+  "TDG",
+  "TDY",
+  "TECH",
+  "TEL",
+  "TER",
+  "TFC",
+  "TKO",
+  "TMO",
+  "TMUS",
+  "TPL"
+ ],
+ "facts": [
+  {
+   "ticker": "TDG",
+   "claim": "FQ3 FY26 net sales $2,741M (+22.5%), GAAP dil EPS $9.39, GAAP op margin 44.8%; FQ3 FY25 $2,237M / $8.47 / 46.4%",
+   "dossier_location": "S4 table",
+   "source": "companyfacts + TDG 8-K Ex.99.1 acc 0001260221-26-000052 (2026-08-04); 10-Q acc 0001260221-26-000053",
+   "source_value": "Rev 2,741 vs 2,237; EPS 9.39 vs 8.47; OpInc 1,227/2,741=44.8%, 1,039/2,237=46.4%; organic 13%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TDG",
+   "claim": "FQ1 FY26 GAAP NI fell 9.7% ($445M from $493M) while EPS 6.62 (-13.1%)",
+   "dossier_location": "S4",
+   "source": "10-Q acc 0001260221-26-000017; companyfacts",
+   "source_value": "NI 445 vs 493 = -9.7%; EPS 6.62; FQ1 FY25 EPS 7.62 per dossier -> -13.1%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TDG",
+   "claim": "Guidance table: 11-12-25 $9,750-9,950 / $31.55-33.59; 2-3-26 $9,845-10,035 / $32.47-34.39; 5-5-26 $10,300-10,420 / $33.91-35.29; 8-4-26 $10,470-10,550 / $35.38-36.21 (adj EPS $40.62-41.46)",
+   "dossier_location": "S5",
+   "source": "Table 7 of 8-K Ex.99.1 dated 2026-02-03 and 2026-08-04",
+   "source_value": "All ranges and midpoint changes ($90M/$0.86; $150M/$1.20) appear verbatim; adj EPS 40.62-41.46 verbatim; EBITDA As Defined guide $5,490-5,550M (mid $5,520M) matches",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TDG",
+   "claim": "Total debt $33,485M (139 + 725 + 32,621), cash $2,773M, net debt $30,712M at 2026-06-27; stockholders deficit -$9,809M",
+   "dossier_location": "S6",
+   "source": "Q3 release Table 5; 10-Q",
+   "source_value": "139+725+32,621=33,485; cash 2,773; deficit (9,809). Mechanical flag (XBRL 31,150) is a tag-definition gap, not a dossier error",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TDG",
+   "claim": "TTM OCF $2.198bn, capex $0.271bn, FCF $1.927bn",
+   "dossier_location": "S6",
+   "source": "companyfacts OCF FY25 2,038 - 9M25 1,531 + 9M26 1,691; capex 222-156+205",
+   "source_value": "OCF 2,198; capex 271; FCF 1,927",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TDG",
+   "claim": "$1.8bn buybacks in 39 weeks; 809,101 shares in FQ3 at avg $1,208.20; $1.5bn debt raise (6.125% notes due 2034 $0.5bn + Tranche N $1.0bn due 2033)",
+   "dossier_location": "S6/S8",
+   "source": "Q3 release",
+   "source_value": "1,496,383 sh YTD at avg $1,207 ($1.8bn); 809,101 sh at avg $1,208 ($1.0bn); incremental $1.5bn matches. Dossier quotes $1,208.20 (release rounds to $1,208)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TDG",
+   "claim": "Reverse DCF: market cap ~$62.43bn; TTM FCFE $1.927bn; implied growth 12.5/13.6/14.75% at ke 9.5/10/10.5%; tg 3%",
+   "dossier_location": "S7",
+   "source": "Recomputed with 10y constant growth + Gordon TV",
+   "source_value": "Reproduces exactly (12.50/13.64/14.75). ke 9.5-10.5% = 5.17% + 4.3-5.3% ERP, acceptable. FCF = OCF-capex, so stock comp (TTM $146M: FY25 152 - 9M25 124 + 9M26 118) is added back, contrary to method rule; with SBC deducted implied growth is 13.65/14.81/15.93%",
+   "status": "FAIL",
+   "note": "Method flaw (SBC addback) strengthens, not weakens, the WATCH call; verdict and implied_vs_base unchanged"
+  },
+  {
+   "ticker": "TDG",
+   "claim": "Market cap ~$62.43bn at $1,116.20 (implies 55.93m shares)",
+   "dossier_location": "header",
+   "source": "10-Q cover (dei) 55,276,525 shares at 2026-07-31",
+   "source_value": "55.28m x 1,116.20 = $61.70bn; 55.93m was the 2026-04-30 count",
+   "status": "MINOR",
+   "note": "1.2% overstatement; immaterial to implied growth (12.4% vs 12.5%)"
+  },
+  {
+   "ticker": "TDG",
+   "claim": "Prince & Izant not yet closed, expected FY2026/early FY2027; net leverage 5.5-5.9x",
+   "dossier_location": "S11",
+   "source": "8-K acc 0001260221-26-000064 (2026-09-28); 8-K acc 0001193125-26-406037 (2026-09-29)",
+   "source_value": "P&I acquisition completed 2026-09-28 for ~$1.066bn cash (cash on hand); TransDigm Inc. issued 6.75% Senior Secured Notes due 2035 (indenture 2026-09-28)",
+   "status": "MINOR",
+   "note": "Post-cutoff (as-of 2026-09-25) development, not an error at the time; leverage will rise further"
+  },
+  {
+   "ticker": "TDG",
+   "claim": "Next earnings estimated early-mid Nov 2026, not confirmed",
+   "dossier_location": "S11",
+   "source": "EDGAR 8-K list to 2026-09-29",
+   "source_value": "No earnings-date 8-K filed",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "TDG",
+   "claim": "Verdict WATCH supported by own evidence (leverage ~5.5-5.9x, implied 12.5-14.8% vs base 9-12%)",
+   "dossier_location": "S1/S7",
+   "source": "Own recompute",
+   "source_value": "Evidence supports WATCH; no change",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TDY",
+   "claim": "Q2 2026 (period 2026-06-28): revenue $1,662.5M, op income $333.2M, NI $251.7M, GAAP diluted EPS $5.37; Q2 2025 revenue $1,513.7M (+9.8%)",
+   "dossier_location": "S3",
+   "source": "companyfacts + TDY 8-K acc 0001094285-26-000039 Ex.99.1 q2-2026earningsrelease.htm (2026-07-22)",
+   "source_value": "1,662.5 / 333.2 / 251.7 / 5.37; 9.8% growth stated in release",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TDY",
+   "claim": "Prior-quarter rows (Q3 24 to Q1 26) revenue/op income/NI/EPS",
+   "dossier_location": "S3",
+   "source": "companyfacts 10-Q acc 0001094285-25-000131/-000140/-26-000030",
+   "source_value": "All match (e.g. Q1 26 1,560.1/294.2/226.8/4.85; Q3 25 1,539.5/282.8/220.7/4.65)",
+   "status": "PASS",
+   "note": "Row labelled 2025-03-30 (Q1 25) is the quarter ended 2025-03-30 and ties; no mislabelling"
+  },
+  {
+   "ticker": "TDY",
+   "claim": "Non-GAAP EPS guidance raised to $24.45-24.65 (+$0.55 midpoint); second consecutive raise",
+   "dossier_location": "S4",
+   "source": "Q2 and Q1 release, Q4 release (acc 0001094285-26-000008)",
+   "source_value": "Q2: 24.45-24.65 vs prior 23.85-24.15 (+0.55); Q1: 23.85-24.15 vs 23.45-23.85; initial 23.45-23.85",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TDY",
+   "claim": "Full-year 2026 revenue outlook raised by $120M to over $6.53B",
+   "dossier_location": "S4",
+   "source": "Q2 release full text searched for outlook/sales",
+   "source_value": "Release gives only GAAP and non-GAAP EPS outlook (Q3 and FY); no revenue outlook of any kind, no $6.53B, no $120M",
+   "status": "FAIL",
+   "note": "Guidance figure does not exist in cited release (same failure type as earlier dossier)"
+  },
+  {
+   "ticker": "TDY",
+   "claim": "Funded backlog ~$5.0B; orders exceeded sales for 11 consecutive quarters; DI revenue $868.7M +12.7%",
+   "dossier_location": "S3/S7/S9",
+   "source": "Q2 release",
+   "source_value": "~$5.0B funded backlog stated; DI $868.7M vs $771.0M +12.7% stated; release says all-time record quarterly orders but no \"11 consecutive quarters\" statement",
+   "status": "MINOR",
+   "note": "Backlog and DI verified; 11-quarter streak not in release (kill criterion 2 baseline unverifiable)"
+  },
+  {
+   "ticker": "TDY",
+   "claim": "Cash $340.1M; total debt ~$2,027.0M; net debt $1,686.9M; leverage 1.1-1.2x",
+   "dossier_location": "S5",
+   "source": "Q2 release balance sheet and non-GAAP table; 10-Q acc 0001094285-26-000043",
+   "source_value": "Cash 340.1; debt 0.1+2,026.9=2,027.0; net debt 1,686.9; company-reported consolidated leverage ratio 1.1x",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TDY",
+   "claim": "TTM OCF $1,271.3M, capex $129.2M, FCF $1,142.1M, TTM op income $1,239.7M",
+   "dossier_location": "S5",
+   "source": "companyfacts",
+   "source_value": "OCF 1,191.3-469.2+549.2=1,271.3; capex 117.3-48.3+60.2=129.2; OpInc 1,149.8-537.5+627.4=1,239.7",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TDY",
+   "claim": "TTM D&A \"estimated ~$150-200M\", EBITDA $1,400-1,450M",
+   "dossier_location": "S5",
+   "source": "companyfacts DepreciationAndAmortization",
+   "source_value": "TTM D&A = 336.3-167.2+172.9 = $342.0M, so TTM EBITDA ~ $1,582M and net debt/EBITDA ~1.07x",
+   "status": "MINOR",
+   "note": "Estimate understated D&A by ~2x; leverage conclusion (~1.1x) unchanged"
+  },
+  {
+   "ticker": "TDY",
+   "claim": "Source citation: Q2 earnings release is accession 0001094285-26-000047; Varex 8-K same accession",
+   "dossier_location": "Sources 2-3, S3",
+   "source": "EDGAR submissions",
+   "source_value": "Earnings 8-K is acc 0001094285-26-000039 (filed 2026-07-22); -000047 is the 2026-08-10 Varex 8-K (Item 7.01, Ex.99.1 projectviking-announcement.htm). Dossier cites -000047 for the earnings release",
+   "status": "FAIL",
+   "note": "Mis-cited accession; content claims otherwise traceable"
+  },
+  {
+   "ticker": "TDY",
+   "claim": "Varex: $1.1B cash deal, announced 2026-08-10, close early 2027",
+   "dossier_location": "S8",
+   "source": "8-K acc 0001094285-26-000047",
+   "source_value": "$18.90 per share cash, aggregate ~$1.1bn, expected early 2027, subject to regulatory and Varex stockholder approval",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TDY",
+   "claim": "Valuation: WACC 8.5%, tg 3.5%; implied 10y FCF growth 6.6% vs 9% base -> BELOW",
+   "dossier_location": "S6",
+   "source": "Recompute; Treasury 5.17% (2026-09-25) + stated ERP",
+   "source_value": "6.6% reproduces at 8.5% but 8.5% = 5.17% + 3.3% total premium, no ERP stated and below 5.17+4.5 = 9.67% used by other audits. At 9.31% (5.17% + 4.14% ERP x beta 1.0) to 9.67% (ERP 4.5%): implied 8.6-9.5% (FCF) / 9.3-10.1% (FCF less ~$55M SBC) vs 9% base; equity-basis 8.5-9.4%",
+   "status": "FAIL",
+   "note": "implied_vs_base below -> in_line (implied about equal to base). Verdict INCLUDE-SMALL unchanged: programme rule allows in-line for INCLUDE-SMALL, INCLUDE needs below"
+  },
+  {
+   "ticker": "TECH",
+   "claim": "Quarterly revenue Q1-Q4 FY26: 286.6 / 295.9 / 311.4 / 321.2; FY26 $1,215.0M; GAAP EPS 0.24/0.24/0.32/0.35, FY26 $1.16",
+   "dossier_location": "S4",
+   "source": "companyfacts 10-Q acc 0001104659-25-107053, -26-010335, -26-056302 + TECH 8-K Ex.99.1 acc 0001104659-26-094391 (2026-08-12); 10-K acc 0001104659-26-100322",
+   "source_value": "286.555 / 295.877 / 311.415 / Q4 = 1,215.039-893.847 = 321.192; EPS 0.24/0.24/0.32, FY 1.16 (Q4 0.35 per release)",
+   "status": "PASS",
+   "note": "Period labels correct for 30-June fiscal year"
+  },
+  {
+   "ticker": "TECH",
+   "claim": "Q4 FY26 GAAP operating income $74.3M vs $23.9M loss; adj op margin 32.2% vs 32.0%; adj EPS 0.52 vs 0.53; adjusted operating income FY26 $386.1M",
+   "dossier_location": "S4",
+   "source": "Q4 FY26 release",
+   "source_value": "Matches verbatim (74.3 vs (23.9); 32.2% vs 32.0%; adj EPS $0.52 vs $0.53; FY GAAP op income 251.9)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TECH",
+   "claim": "No numeric guidance; no outlook section in releases; no investor calls post-deal",
+   "dossier_location": "S5",
+   "source": "Q4 FY26 release full text",
+   "source_value": "No outlook/guidance figures in the release; only forward-looking-statement boilerplate",
+   "status": "PASS",
+   "note": "Dossier correctly makes no guidance claim"
+  },
+  {
+   "ticker": "TECH",
+   "claim": "Management projections FY26E-28E revenue 1,208/1,282/1,445; adj op income 386/409/484",
+   "dossier_location": "S5",
+   "source": "DEFM14A acc 0001140361-26-033911",
+   "source_value": "Revenue 1,208 / 1,282 / 1,445 and adjusted operating income 386 / 409 / 484 appear in Management Projections table",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TECH",
+   "claim": "FY26 OCF $292.1M, capex $28.9M, FCF $263.2M, SBC $41.4M, D&A $97.4M, buybacks $41.7M vs $275.7M",
+   "dossier_location": "S6",
+   "source": "companyfacts 10-K acc 0001104659-26-100322",
+   "source_value": "OCF 292.073; capex 28.850; SBC 41.365; D&A 97.359; repurchases 41.675 vs 275.731",
+   "status": "PASS",
+   "note": "Mechanical flag (net income $97.4M vs XBRL $51.0M) is the dossier line quoting D&A of $97.4M, not net income; no error"
+  },
+  {
+   "ticker": "TECH",
+   "claim": "Cash $264.7M; long-term debt obligations $200.0M (from $346.0M); net cash $64.7M; equity $2,108.2M",
+   "dossier_location": "S6",
+   "source": "Q4 FY26 release balance sheet; companyfacts",
+   "source_value": "Cash 264.712; LT debt obligations 200,000 vs 346,000; equity 2,108.221",
+   "status": "PASS",
+   "note": "Consolidated; operating leases excluded from debt and disclosed separately"
+  },
+  {
+   "ticker": "TECH",
+   "claim": "Merger: $73.00 cash, agreement dated 25 Jun 2026; company termination fee $230,455,000; outside date 25 Mar 2027 auto-extending to 25 Jun and 25 Sep 2027",
+   "dossier_location": "S7",
+   "source": "Merger 8-K acc 0001999371-26-013527",
+   "source_value": "$73.00 cash; fee $230,455,000; Outside Date March 25 2027 extendable by two successive 3-month periods",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TECH",
+   "claim": "Shareholder vote 23 Sep 2026: 121,929,544 for, 1,208,817 against, 30,610 abstain of 156,800,296; advisory comp vote 25.9M for, 96.4M against",
+   "dossier_location": "S7",
+   "source": "8-K acc 0001140361-26-037450",
+   "source_value": "Exact counts match; comp vote 25,912,275 / 96,412,306 / 844,390",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TECH",
+   "claim": "EV ~ $11.3bn = ~26.6x estimated FY26 Adjusted EBITDA (Core); hypothetical undisturbed price $56.71",
+   "dossier_location": "S7",
+   "source": "DEFM14A",
+   "source_value": "Both appear verbatim",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TECH",
+   "claim": "Reverse DCF: 8.5% discount rate, 3% terminal growth, UFCF $267M, EV $11.32bn -> implied 13.5%/yr (10.7% at 7.5%, 16.1% at 9.5%) vs 7% base -> ABOVE",
+   "dossier_location": "S7",
+   "source": "Recompute",
+   "source_value": "Reproduces (13.53/10.67/16.08). 8.5% is only 3.3 points over the 5.17% Treasury and stock comp ($41M) is inside UFCF; at 9.67% and SBC deducted implied growth is about 18.3%",
+   "status": "MINOR",
+   "note": "Method not aligned with house rate and adds back SBC, but corrections raise implied growth further, REJECT rests on the fixed cash price; verdict and implied_vs_base unchanged"
+  },
+  {
+   "ticker": "TECH",
+   "claim": "Spread $0.39 (0.54%), about 1.8% annualised over 112 days; base-case 3y return +3.8%",
+   "dossier_location": "S7",
+   "source": "Arithmetic",
+   "source_value": "0.39/72.61 = 0.537%; x365/112 = 1.75%; 73.08 compounded at 4% for 2.7y vs 72.61 -> 3.8%/yr",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TECH",
+   "claim": "Price $72.61, 156.8M shares, market cap ~ $11.4bn; Wilson Wolf forward purchase ~ $1bn on 31 Dec 2027",
+   "dossier_location": "header/S6",
+   "source": "Record-date shares 156,800,296 (8-K 5.07)",
+   "source_value": "156.8m x 72.61 = $11.38bn; Wilson Wolf contract not re-read in 10-K text",
+   "status": "MINOR",
+   "note": "Price from vendor snapshot not checked; Wilson Wolf clause unverified"
+  },
+  {
+   "ticker": "TECH",
+   "claim": "Expected earnings ~2026-11-04; close late 2026 / early 2027; non-US antitrust still outstanding",
+   "dossier_location": "S10",
+   "source": "EDGAR filings to 2026-09-29",
+   "source_value": "No earnings-date 8-K; HSR expiry on 18 Sep 2026 per 8-K 7.01",
+   "status": "UNVERIFIABLE",
+   "note": "Forward date is an estimate"
+  },
+  {
+   "ticker": "TEL",
+   "claim": "FQ3 FY26 (qtr ended 2026-06-26): revenue $5,160M, op income $981M, NI $748M, GAAP EPS $2.55; FQ3 FY25 $4,534M / 857 / 638 / 2.14",
+   "dossier_location": "S3",
+   "source": "companyfacts 10-Q acc 0001104659-26-086509, -0001558370-25-009599",
+   "source_value": "Op income 981 vs 857; NI 748 vs 638; EPS 2.55 vs 2.14 (revenue per release +14%, 12% organic)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TEL",
+   "claim": "FQ1 FY26 and FQ2 FY26 rows (963 op income/750 NI/2.53 EPS; 954/855/2.90)",
+   "dossier_location": "S3",
+   "source": "10-Q acc 0001104659-26-006062, -26-048160",
+   "source_value": "Op income 963 and 954; NI 750 and 855; EPS 2.53 and 2.90",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TEL",
+   "claim": "Orders up >$1B YoY to $5.7B; adjusted EPS $2.94",
+   "dossier_location": "S4",
+   "source": "8-K Ex.99.1 acc 0001104659-26-085589",
+   "source_value": "Record orders $5.7bn, +27%; \"more than $1 billion year over year\"; adjusted EPS $2.94 (+22%)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TEL",
+   "claim": "FY2026 guidance raised each quarter; now assumes ~15% sales growth and 20%+ adjusted EPS growth (DVH1 correction: not in releases)",
+   "dossier_location": "S4 + DVH1 correction",
+   "source": "Ex.99.1 and Ex.99.2 (investor slides) of acc 0001104659-26-085589",
+   "source_value": "Ex.99.1 guides only FQ4 (sales ~$5.25bn, adj EPS ~$3.05, GAAP ~$2.84). Ex.99.2 slide states: \"For the full year, Q4 guidance implies Sales growth of 15% reported & 11% organic Y/Y; Adjusted EPS increasing 23% Y/Y\". So ~15% sales is supported (as implied, not formal FY guidance); EPS growth is 23%, \"20%+\" is consistent",
+   "status": "MINOR",
+   "note": "DVH1 said the 15% / 20%+ figures were FQ2 actuals and absent from the releases; they are present as implied full-year growth in Ex.99.2. \"Raised each quarter\" remains unsupported"
+  },
+  {
+   "ticker": "TEL",
+   "claim": "DDTC voluntary self-disclosure and ongoing investigation disclosed in FY2025 10-K (acc 0001104659-25-109150); kill criterion 1 and the \"single most important adverse fact\"",
+   "dossier_location": "S8.1, S9.1, S11",
+   "source": "FY2025 10-K (full text searched for DDTC, Defense Trade, Department of State, export/trade control, voluntary disclosure) and FQ3 FY26 10-Q Note 9",
+   "source_value": "No DDTC / export-control / State Department disclosure in the 10-K (Item 3 and risk factors) or the 10-Q. The only trade-compliance matter is a US CBP Section 301 customs-duty prior disclosure: TE paid $14M in the quarter ended 2026-06-26 and does not expect a material effect",
+   "status": "FAIL",
+   "note": "Cited source does not contain the DDTC matter; it came from secondary web coverage. The real disclosed matter is the CBP duty item (immaterial, $14M). Verdict unaffected (INCLUDE-SMALL rests on valuation)"
+  },
+  {
+   "ticker": "TEL",
+   "claim": "TTM OCF $4,418M, capex $1,103M, FCF $3,315M; 9M buybacks ~$1.35B",
+   "dossier_location": "S5",
+   "source": "companyfacts",
+   "source_value": "OCF 4,139-2,718+2,997=4,418; capex 936-665+832=1,103; repurchases 9M FY26 $1,348M",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TEL",
+   "claim": "Cash $1,239M; noncurrent debt $5,530M; short-term debt $102M; net debt $4,393M (DVH1)",
+   "dossier_location": "S5",
+   "source": "10-Q balance sheet; companyfacts DebtCurrent 102 at 2026-06-26",
+   "source_value": "Cash 1,239; DebtCurrent 102; total 5,632; net 4,393 (DVH1 correction confirmed)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TEL",
+   "claim": "FQ2 FY25 net income $13M due to $574M valuation allowance on Swiss ten-year tax credit after Jan 2025 OECD guidance",
+   "dossier_location": "S3",
+   "source": "FY2025 10-K income tax note",
+   "source_value": "10-K: FY25 tax expense includes $574M valuation allowance for deferred tax assets tied to Swiss subsidiary ten-year tax credit after January 2025 OECD guidance",
+   "status": "PASS",
+   "note": "Ireland redomicile cost link is not stated in the 10-K excerpt checked"
+  },
+  {
+   "ticker": "TEL",
+   "claim": "Astrodyne TDI acquisition ~ $1.4bn (DVH1 omission)",
+   "dossier_location": "S5 / DVH1",
+   "source": "8-K Ex.99.1 acc 0001104659-26-085589",
+   "source_value": "Definitive agreement, purchase price approx $1.4bn, sales >$250M, close by end of calendar 2026",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TEL",
+   "claim": "Corrected valuation (DVH1): EV $67.7bn, FCF after SBC $3.14bn, WACC 9.4%, tg 3.0% -> implied 6.9% (7.6% at ke 9.75%) vs 7% base = in line",
+   "dossier_location": "S6 / DVH1",
+   "source": "Recompute; 5.17% Treasury + 4.14% ERP",
+   "source_value": "Reproduces: 6.88% at 9.4%, 7.64% at 9.75%, 7.46% at 9.67%. TTM SBC 149-105+130 = 174",
+   "status": "PASS",
+   "note": "Discount rate consistent with 5.17% Treasury plus stated ERP; SBC deducted; FCF method correct"
+  },
+  {
+   "ticker": "TEL",
+   "claim": "Verdict INCLUDE-SMALL supported by corrected valuation (in line with base)",
+   "dossier_location": "S1",
+   "source": "Own recompute",
+   "source_value": "Base 3y scenario +8.2%/yr vs 9.67% hurdle is below the cost of equity, so conviction should be modest; INCLUDE-SMALL (half weight) is the upper bound, not a floor",
+   "status": "MINOR",
+   "note": "Scenario table not re-derived after DVH1; base annualised return 8.2% is below the 9.4-9.75% discount rate"
+  },
+  {
+   "ticker": "TEL",
+   "claim": "Next earnings ~2026-10-28 (estimate); no 8-K confirming",
+   "dossier_location": "S10",
+   "source": "EDGAR list to 2026-10-07",
+   "source_value": "Only an Item 5.02 8-K (filed 2026-10-07) after the 10-Q",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "TER",
+   "claim": "Q2 2026 (qtr ended 2026-06-28): revenue $1,329M (+104% vs $652M), GAAP EPS $2.38, non-GAAP $2.47; Q1 2026 $1,282M / $2.53 / $2.56",
+   "dossier_location": "S4",
+   "source": "8-K Ex.99.1 acc 0001193125-26-321933 and -26-188706; companyfacts",
+   "source_value": "Revenue 1,328.990 / 1,282.494 / Q2 25 651.797; EPS 2.38, 2.53, 0.49; non-GAAP 2.47 and 2.56 stated in releases",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TER",
+   "claim": "Q4 2025 $1,083M GAAP EPS $1.63 / non-GAAP $1.80; FY2025 $3,190M, $3.47 / $3.96; FY2024 $2,820M, $3.32 / $3.22; Q3 2025 $769M / 0.75 / 0.85",
+   "dossier_location": "S4",
+   "source": "8-K Ex.99.1 acc 0001193125-26-034348",
+   "source_value": "All match the Q4/FY2025 release table",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TER",
+   "claim": "Guidance record: Q1 26 guide $1,150-1,250M, GAAP EPS $1.82-2.19; Q2 26 guide $1,150-1,250M, $1.83-2.12; Q3 26 guide $1,200-1,300M, $1.79-2.09",
+   "dossier_location": "S5",
+   "source": "Releases dated 2026-02-02, 2026-04-28, 2026-07-28",
+   "source_value": "All ranges appear verbatim (non-GAAP Q3 guide $1.85-2.15). Q3 midpoint $1,250M < Q2 actual $1,329M as stated; CEO quote verbatim",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TER",
+   "claim": "H1 2026 OCF $734.3M, net income $773.4M, capex ~$155.4M, SBC $42.0M, revenue $2,611.5M, buybacks $74.2M (vs $702M FY25), dividends $40.7M",
+   "dossier_location": "S6",
+   "source": "10-Q acc 0001193125-26-327715 / companyfacts",
+   "source_value": "OCF 734.262; NI 773.442; capex 155.439; SBC 41.964; revenue 2,611.484; repurchases 74.238 vs FY25 702.095; dividends 40.710; FCF/NI = 74.9%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TER",
+   "claim": "Cash $349.5M, no long-term debt, net cash; open item: 2026-08-10 8-K exhibit 10.1 not opened",
+   "dossier_location": "S6/S10",
+   "source": "10-Q; 8-K acc 0001193125-26-342367 (Items 1.01, 2.03)",
+   "source_value": "Cash 349.538 confirmed. The 8-K is a new $1.0bn five-year senior secured revolving credit agreement with PNC (SOFR + 1.00-1.75%), undrawn at signing, covenants: max leverage 3.50x, min interest coverage 2.50x",
+   "status": "PASS",
+   "note": "Open item resolved: undrawn revolver, no change to the net-cash statement"
+  },
+  {
+   "ticker": "TER",
+   "claim": "Technoprobe 10% stake: equity-method carrying value $537.1M; fair value $2,457.9M at 2026-06-28",
+   "dossier_location": "S6",
+   "source": "10-Q Note F Equity Method Investments",
+   "source_value": "Fair value $2,457.9M confirmed. Carrying value at 2026-06-28 is $514,957K ($545,414K at 2025-06-29), not $537.1M; unrecognised gain about $1.94bn (dossier ~$1.9bn)",
+   "status": "MINOR",
+   "note": "Carrying value misquoted by $22M; conclusion unchanged"
+  },
+  {
+   "ticker": "TER",
+   "claim": "FCF yield 0.7% per d4; \"No data conflict\"",
+   "dossier_location": "S3/S7",
+   "source": "companyfacts TTM: OCF 674.4-343.7+734.3 = 1,065.0; capex 224.0-114.4+155.4 = 265.0",
+   "source_value": "TTM FCF = $800M; at market cap 398.38 x 156.34M shares = $62.3bn the yield is about 1.3% (1.2% after $74M SBC), not 0.7%",
+   "status": "MINOR",
+   "note": "Vendor FCF figure differs from SEC-derived; no conflict was flagged"
+  },
+  {
+   "ticker": "TER",
+   "claim": "Valuation labelled a reverse DCF: NTM EPS $10.97, 15%/yr EPS growth, exit multiple 25x -> +1.5%/yr; bear -33%/yr; bull +28%/yr; implied_vs_base above",
+   "dossier_location": "S7",
+   "source": "Recompute",
+   "source_value": "Scenario arithmetic reproduces (price ~$417; 1.5%, -33.1%, +28.3%). But it is an EPS x multiple scenario: EPS treated as cash, no free cash flow, no discount rate, no link to 5.17% Treasury. Proper reverse DCF on market cap $62.3bn at 9.67% (5.17% + 4.5% ERP), tg 3%: implied 10y FCF growth 26% on TTM FCF less SBC ($726M), 21% on annualised H1 FCF less SBC ($1,074M), 20% on annualised H1 FCF ($1,158M)",
+   "status": "FAIL",
+   "note": "Method wrong but result robust: implied growth far above a 15% base, implied_vs_base stays above, WATCH unchanged"
+  },
+  {
+   "ticker": "TER",
+   "claim": "Verdict WATCH consistent with evidence (36x NTM P/E, Q3 guide below Q2 actual, cyclical)",
+   "dossier_location": "S1",
+   "source": "Own assessment",
+   "source_value": "Supported; kill criteria numbers (op margin 37%/33%) tie: 473.0/1,282.5 = 36.9%, 437.8/1,329.0 = 32.9%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TER",
+   "claim": "Next earnings 2026-10-21 (d4 estimate); consensus 15 analysts, mean target $446.47, buy",
+   "dossier_location": "S7/S10",
+   "source": "No filing",
+   "source_value": "No 8-K announcing date; consensus not an SEC item",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "TFC",
+   "claim": "2Q26 (quarter ended 2026-06-30): NII $3.62bn, noninterest income $1.64bn, expense $3.06bn, NI to common $1.52bn, diluted EPS $1.23 (vs $0.90 in 2Q25)",
+   "dossier_location": "S4",
+   "source": "companyfacts + TFC 8-K Ex.99.1 acc 0000092230-26-000096 (2026-07-17); 10-Q acc 0000092230-26-000099",
+   "source_value": "NII 3,621; nonint income 1,644; expense 3,055; NI to common 1,519; EPS 1.23 vs 0.90",
+   "status": "PASS",
+   "note": "Period label correct (calendar fiscal year)"
+  },
+  {
+   "ticker": "TFC",
+   "claim": "Prior quarters 2Q25-1Q26 (NII, nonint income, expense, NI to common, EPS, ROTCE, NIM-TE, NCO, CET1)",
+   "dossier_location": "S4 table",
+   "source": "companyfacts; release key-data table",
+   "source_value": "2Q25 3,587/1,400/2,986/1,180/0.90; 3Q25 3,629/1,558/3,014/1,348/1.04; 1Q26 3,599/1,553/2,983/1,377/1.09; ROTCE 15.4/13.8/12.3; NIM 2.98/3.02/3.02; NCO 0.50/0.61/0.51; CET1 10.9/10.8/11.0",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TFC",
+   "claim": "2Q26 vs 2Q25: investment banking and trading +$147m (+71.7%), wealth +7.8%, expense +2.3%, efficiency 58.0% vs 59.9%",
+   "dossier_location": "S4",
+   "source": "Release tables",
+   "source_value": "IB and trading 352 vs 205 (+147, +71.7%); wealth 375 vs 348 (+7.8%); efficiency 58.0 vs 59.9; expense +69m, +2.3%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TFC",
+   "claim": "1Q26-to-2Q26 other income rise of $106m is \"income from equity investments per the release\"; underlying 2Q EPS about $1.16; ROTCE \"flattered\"",
+   "dossier_location": "S1/S4/S8",
+   "source": "Release noninterest income commentary",
+   "source_value": "Other income 208 vs 102 is correct, but the release attributes the rise primarily to \"higher returns from investments held for post-retirement benefits (which is offset by higher personnel expense), and higher income from equity investments\". Part of the $106m is therefore offset in expense and the dossier quote is incomplete; the $1.16 \"underlying\" EPS overstates the flattery",
+   "status": "FAIL",
+   "note": "Misattributed driver; underlying EPS is higher than $1.16. Verdict unchanged (INCLUDE-SMALL)"
+  },
+  {
+   "ticker": "TFC",
+   "claim": "Guidance (secondary): NII growth 1%-1.5% (from 2%-3%), revenue growth 3.5%-4%, expense ~1.75%, NCO ~55 bps, tax ~14.5%, buybacks $5bn; dossier says the EDGAR deck (Ex.99.3) contains no figures",
+   "dossier_location": "S5",
+   "source": "Ex.99.3 earnings deck acc 0000092230-26-000096",
+   "source_value": "Deck contains the figures: \"Net interest income expected to increase 1% to 1.5% in 2026 vs. 2025\"; FY26 revenue-TE up 3.5% to 4%, expense up ~1.75%, NCO ~55 bps, tax ~14.5% effective, buybacks ~$5 billion; 3Q26 revenue up ~1% and expense up ~2% ($3.1bn)",
+   "status": "MINOR",
+   "note": "All FY26 guidance numbers verified against primary filing; the statement that the deck has no figures is wrong, and \"3Q26 NII up about 1.5%\" is not what the deck shows (it gives revenue up ~1%). Earlier-call guidance (3%-4%, 2%-3%) remains secondary-source only"
+  },
+  {
+   "ticker": "TFC",
+   "claim": "Balance sheet 30 Jun 2026: total assets $556,023m; long-term debt $42,976m; equity $64,095m incl. preferred $5,411m; TCE $40,797m; CET1 10.9%; LCR 113%",
+   "dossier_location": "S6",
+   "source": "10-Q Table 28 and balance sheet; companyfacts",
+   "source_value": "Assets 556,023; LTD 42,976; equity 64,095; ROTCE 15.4% reconciled in Table 28; CET1 10.9% in release; LCR 113% in 10-Q",
+   "status": "PASS",
+   "note": "Consolidated Truist Financial Corporation entity throughout"
+  },
+  {
+   "ticker": "TFC",
+   "claim": "Six-month buybacks $2.4bn / 46.6m shares; $7.7bn remains; 2Q dividends $636m; Series S $500m 6.25% on 15 May; $1.3bn notes at 4.96% due 2030 in July",
+   "dossier_location": "S6",
+   "source": "10-Q",
+   "source_value": "All appear verbatim; $2.4bn includes excise tax (cash payments tag $2,334m)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TFC",
+   "claim": "Credit: NPLs $1,692m (0.51%) vs $1,577m; NCO 0.50%; overdraft settlement up to $240m, final approval 26 May 2026, claims to 14 Sep 2026",
+   "dossier_location": "S6/S11",
+   "source": "10-Q",
+   "source_value": "NPLs 1,692 vs 1,577 at Dec 2025; 0.51%; settlement text verbatim, claims deadline 14 Sep 2026",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TFC",
+   "claim": "Price $47.66, market cap ~$58.2bn, BVPS $48.04, TBVPS $33.40, P/TBV 1.43x",
+   "dossier_location": "S7",
+   "source": "10-Q period-end shares 1,221.6m; TCE 40,797",
+   "source_value": "47.66 x 1,221.6 = $58.2bn; 58,684/1,221.6 = 48.04; 40,797/1,221.6 = 33.40; 47.66/33.40 = 1.43x (TBVPS 33.40 also in release)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TFC",
+   "claim": "Reverse DCF (distributable earnings $4.5bn from FY27, ke 10%, g 3%, 10y): market cap less $3.9bn x 92% excess capital implies +0.4%/yr; base $57.1/share (+20%), bear $30.6, bull $76.9",
+   "dossier_location": "S7",
+   "source": "Recompute",
+   "source_value": "Implied growth reproduces (+0.4% at 10%; -1.8% at 9%; +2.5% at 11%). At 9.67% (5.17% + 4.5%): -0.3%/yr. Base/bear/bull per-share values recompute ~8% lower on a plain end-of-year discounting ($52.6, $28.2, $70.5 before adding $2.9/share excess capital). Cross-check P/TBV = (ROTCE-g)/(ke-g): 14% -> 1.57x vs 1.43x market (15.4% -> 1.77x)",
+   "status": "MINOR",
+   "note": "Method acceptable for a bank (excess capital plus distributable earnings; ke 10% = 5.17% + 4.8% ERP); per-share outputs slightly generous but implied_vs_base = below holds"
+  },
+  {
+   "ticker": "TFC",
+   "claim": "Verdict INCLUDE-SMALL supported by evidence (ROTCE 15.4%, 13% cash return, implied growth below base)",
+   "dossier_location": "S1",
+   "source": "Own assessment",
+   "source_value": "Evidence supports INCLUDE-SMALL; NII guide cuts are the main reservation and are stated",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TFC",
+   "claim": "CEO succession: Mike Lyons CEO effective 1 Sep 2026 (8-K 5.02 acc 0001193125-26-270320, 15 Jun 2026); Rogers executive chair through 2027 meeting",
+   "dossier_location": "S2/S11",
+   "source": "10-Q; EDGAR 8-K list",
+   "source_value": "10-Q: effective Sept 1, 2026 Lyons becomes President and CEO; 8-K Item 5.02 filed 2026-06-15 acc 0001193125-26-270320",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TFC",
+   "claim": "3Q26 results about 16 Oct 2026",
+   "dossier_location": "S10",
+   "source": "EDGAR list to 2026-09-15",
+   "source_value": "No 8-K confirming; 2026-09-15 8-K (7.01) not opened",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "TKO",
+   "claim": "Q2 2026: revenue $1,547.1m (+18.2% vs $1,308.4m), operating income $429.8m (27.8% margin), consolidated net income $303.9m, attributable to TKO $101.6m, diluted Class A EPS $1.34",
+   "dossier_location": "S4",
+   "source": "companyfacts + TKO 10-Q acc 0001193125-26-330592 (2026-08-03); 8-K Ex.99.1 acc 0001193125-26-330561",
+   "source_value": "Revenue 1,547.078 vs 1,308.442 (+18.2%); OpInc 429.806 (27.8%); ProfitLoss 303.934; NetIncomeLoss 101.575; EPS 1.34; NCI 202.4 (66.6%)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TKO",
+   "claim": "Q2 2025 row: $1,308.4m, op income $368.3m, NI $273.1m, attributable $98.4m, EPS $1.17",
+   "dossier_location": "S4",
+   "source": "companyfacts",
+   "source_value": "1,308.442 / 368.305 / ProfitLoss 273.097 / attributable 98.365 / 1.17",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TKO",
+   "claim": "Table column \"Net income (consol.)\" for Q3 2025 $41.0m, Q4 2025 -$2.4m, FY2025 $195.4m, Q1 2026 $89.4m",
+   "dossier_location": "S4 table",
+   "source": "companyfacts ProfitLoss vs NetIncomeLoss",
+   "source_value": "Those four values are net income attributable to TKO (41.005; -2.375; FY195.4; 89.351), not consolidated. Consolidated net income: Q3 2025 $106.8m, FY2025 $546.3m, Q1 2026 $249.8m (Q4 2025 consolidated not pulled)",
+   "status": "FAIL",
+   "note": "Entity-scope mislabel inside the table (attributable figures in the consolidated column); EPS column is correct"
+  },
+  {
+   "ticker": "TKO",
+   "claim": "1H 2026 vs 1H 2025: revenue $3,144.0m vs $2,577.2m (+22.0%); op income $768.3m vs $605.7m; consolidated NI $553.7m vs $438.7m; attributable $190.9m vs $156.8m; EPS $2.46 vs $1.87 (+31.6%)",
+   "dossier_location": "S4",
+   "source": "companyfacts",
+   "source_value": "Revenue 3,143.954; OpInc 768.285; ProfitLoss 553.727 vs 438.653; NetIncomeLoss 190.926; EPS 2.46 (1H25 1.87 = FY25 2.26 less H2 and Q1 consistency)",
+   "status": "PASS",
+   "note": "Mechanical flag (consolidated NI 553.7 vs 303.9) is 1H vs Q2 - not an error"
+  },
+  {
+   "ticker": "TKO",
+   "claim": "Noncurrent LTD $4,583.7m (Jun-26) vs $3,724.1m (Dec-25); cash $592.5m vs $831.1m; equity incl. NCI $8,330.9m, attributable $3,395.9m vs $3,737.4m",
+   "dossier_location": "S6",
+   "source": "10-Q balance sheet / companyfacts",
+   "source_value": "4,583.724; 3,724.063; cash 592.485 / 831.100; equity incl NCI 8,330.896; attributable 3,395.932 vs 3,737.381. Current portion $45.5m; company gross debt $4.659bn",
+   "status": "PASS",
+   "note": "Mechanical flag (6bn vs XBRL 4,594) compares a kill threshold with the Mar-26 balance; not an error"
+  },
+  {
+   "ticker": "TKO",
+   "claim": "Guidance \"not independently re-pulled\"; triage \"64% guided EPS growth\" not verified",
+   "dossier_location": "S5",
+   "source": "Q2 2026 release (acc 0001193125-26-330561)",
+   "source_value": "Release raises FY2026 guidance: revenue $5.775-5.825bn and Adjusted EBITDA $2.275-2.305bn; Q2 Adjusted EBITDA $649.9m; Q2 free cash flow $349.6m. No EPS guidance in the release",
+   "status": "MINOR",
+   "note": "Limitation was disclosed; primary guidance exists and is revenue/EBITDA, not EPS, so the 64% EPS figure remains unsupported"
+  },
+  {
+   "ticker": "TKO",
+   "claim": "Le v. Zuffa $375m settlement, court approval 2025-02-06; Johnson v. Zuffa may still be active",
+   "dossier_location": "S8/S11",
+   "source": "10-Q legal proceedings",
+   "source_value": "Le settlement approved Feb 6 2025 and paid in full in June 2025 (confirmed). Johnson case is active (discovery, no trial date); a further Cirkunovs v. Zuffa case filed 23 May 2025 is also disclosed",
+   "status": "PASS",
+   "note": "Open item resolved; Cirkunovs not mentioned in dossier"
+  },
+  {
+   "ticker": "TKO",
+   "claim": "Valuation: price $182.67 (dated 2026-08-03), mkt cap $13.86bn, annualised 1H EPS $4.92 gives mid-30s NTM P/E; implied vs base = ABOVE",
+   "dossier_location": "S7",
+   "source": "Recompute with 5.17% Treasury + 4.5% ERP = 9.67%, tg 3%",
+   "source_value": "TTM attributable EPS is about $2.85 (2.26-1.87+2.46) so trailing P/E ~64x; the 37x is an annualised-H1 construct. No numeric base case or DCF is stated; EPS (after NCI and non-cash amortisation) is used as the cash measure. Look-through consolidated reverse DCF (ownership 34.5-40%, EV $39-44bn, TTM FCF ~ $1.7bn before / $1.56bn after $134m SBC): implied 10-year FCF growth 8-11%",
+   "status": "FAIL",
+   "note": "Method does not meet the programme standard and the \"above\" call cannot be confirmed or refuted numerically; FY26 guide (revenue +22%, EBITDA to $2.3bn) makes 8-11% not obviously above a fair base. WATCH retained pending a stated base; see correction"
+  },
+  {
+   "ticker": "TKO",
+   "claim": "Price date: px $182.67 dated 2026-08-03 while valuation as-of is 2026-09-25",
+   "dossier_location": "S7",
+   "source": "Vendor snapshot not in SEC",
+   "source_value": "Cannot be verified from EDGAR; stale by ~7 weeks",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "TKO",
+   "claim": "WWE-Netflix ~$550m/yr over 10 years through 2035",
+   "dossier_location": "S3/S8",
+   "source": "10-Q MD&A (Netflix revenue growth only)",
+   "source_value": "10-Q confirms Netflix content distribution agreement revenue growth but not the $550m/yr term (secondary source)",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "TKO",
+   "claim": "Net debt/EBITDA about 2.3-2.6x (1H op income run-rated)",
+   "dossier_location": "S6",
+   "source": "10-Q + release",
+   "source_value": "Net debt = 4,583.7+45.5-592.5 = $4,036.7m; on guided FY26 Adjusted EBITDA midpoint $2.29bn that is 1.8x; on annualised 1H op income $1,537m it is 2.6x",
+   "status": "MINOR",
+   "note": "Range is conservative; company EBITDA basis gives lower leverage"
+  },
+  {
+   "ticker": "TKO",
+   "claim": "Next earnings early Nov 2026 (not confirmed)",
+   "dossier_location": "S10",
+   "source": "EDGAR list to 2026-08-03",
+   "source_value": "No 8-K",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "TMO",
+   "claim": "Q2 2026 (qtr ended 2026-06-27): revenue $11,994M (+10%, organic 5%), operating income $2,087M, NI $1,736M, GAAP diluted EPS $4.68 (+9%), adjusted EPS $6.03 (+13%)",
+   "dossier_location": "S3",
+   "source": "companyfacts + TMO 8-K Ex.99.1 acc 0000097745-26-000138 (2026-07-23); 10-Q acc 0000097745-26-000144",
+   "source_value": "Revenue \"$11.99 billion vs $10.85 billion\"; OpInc 2,087 vs 1,834; NI 1,736; EPS 4.68; adjusted EPS 6.03 (+13%); organic growth 5%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TMO",
+   "claim": "Other quarter rows (Q3 24 to Q1 26): op income/NI/EPS",
+   "dossier_location": "S3",
+   "source": "companyfacts 10-Q acc 0000097745-25-000101/-000159/-26-000092",
+   "source_value": "Q1 26 1,863/1,651/4.43; Q2 25 1,834/1,617/4.28; Q3 25 1,941/1,616/4.27",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TMO",
+   "claim": "Q2 release raised FY2026 guidance to $47.4-48.1B revenue and $24.93-25.33 adjusted EPS (+$0.25 midpoint), per the 8-K release",
+   "dossier_location": "S4, header, S9",
+   "source": "8-K Ex.99.1 acc 0000097745-26-000138 (full text searched)",
+   "source_value": "Release says only: \"The company will provide updated 2026 financial guidance during its earnings conference call this morning\". No revenue or EPS guidance range appears in the release (or any 8-K); the figures come from call-transcript summaries (secondary)",
+   "status": "FAIL",
+   "note": "Guidance attributed to a release that contains none; figures unverifiable from primary sources, and kill criterion 2 is anchored to them"
+  },
+  {
+   "ticker": "TMO",
+   "claim": "Total debt (LongTermDebt tag) $42,284M vs $39,172M at 2025-12-31; cash $4,064M vs $9,852M; net debt $38,220M",
+   "dossier_location": "S5",
+   "source": "10-Q Note 3: total borrowings at carrying value $42,284M vs $39,172M",
+   "source_value": "Confirmed (par $42,592M; plus finance leases $264M; short-term obligations $3,368M); net debt 38,220",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TMO",
+   "claim": "The $3.1B six-month debt increase is \"unexplained\"; growth aided by Solventum (closed 2025-09-02) and bolt-ons",
+   "dossier_location": "S5, S8, S11",
+   "source": "10-Q acquisitions note (Clario Holdings, Inc.)",
+   "source_value": "Thermo Fisher acquired Clario Holdings on 2026-03-24 (Laboratory Products and Biopharma Services): purchase price $9,098M (cash paid $5,806M, debt settled $3,180M, plus payable and contingent consideration). Cash fell $9.85bn to $3.25bn in Q1 and debt rose to $42.9bn. This explains the cash drawdown and debt rise; the dossier does not mention it",
+   "status": "FAIL",
+   "note": "Material omission: a $9.1bn acquisition accounts for the \"open item\"; also a microbiology divestiture was announced in Q2 (release)"
+  },
+  {
+   "ticker": "TMO",
+   "claim": "TTM OCF $9,013M, capex $1,695M, FCF $7,318M; buybacks $3.0B/Q1... $4.0B YTD vs FY25 $3.0B; SBC",
+   "dossier_location": "S5",
+   "source": "companyfacts",
+   "source_value": "OCF 7,818-2,122+3,317 = 9,013; capex 1,525-656+826 = 1,695; repurchases H1 26 $4.0bn (Q1 $3.0bn per tag, Q2 $1.0bn per release) vs FY25 $3.0bn",
+   "status": "MINOR",
+   "note": "Dossier says buybacks $2.0B in Q1 alone; the Q1 10-Q tag shows $3.0B in Q1 and the release $1.0B in Q2 (H1 $4.0B). Total correct, split wrong"
+  },
+  {
+   "ticker": "TMO",
+   "claim": "Valuation: WACC 8.0%, tg 3.5%, EV $287.8bn, FCF $7,318M -> implied 10.2% vs 8% base = ABOVE",
+   "dossier_location": "S6",
+   "source": "Recompute; 5.17% Treasury + 4.5% ERP",
+   "source_value": "10.2% reproduces. But 8.0% is only 2.8 points over the 5.17% Treasury; FCF adds back $319M TTM SBC (310-156+165); FCF includes interest income on cash that is also subtracted from EV (H1 26 interest income $440M); levered FCF paired with EV. At 9.0%-9.67%, SBC deducted: implied 13.6%-15.3% (EV basis), 11.8%-13.5% (equity basis)",
+   "status": "FAIL",
+   "note": "Method not aligned with the 5.17% Treasury and SBC addback; correction raises implied growth, so ABOVE and WATCH both stand (gap widens from 2.2 to 4-7 points)"
+  },
+  {
+   "ticker": "TMO",
+   "claim": "Net debt/EBITDA about 3.3-3.4x with D&A \"estimated $3.0-3.5bn, not re-verified\"",
+   "dossier_location": "S5",
+   "source": "Not re-derived (D&A tag not available in companyfacts for 2026)",
+   "source_value": "Net debt $38.2bn; Clario adds EBITDA only from 2026-03-24, so TTM EBITDA understates run-rate leverage relief",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "TMO",
+   "claim": "Goodwill $54,832M (48% of assets), equity $52,679M, total assets $113,174M",
+   "dossier_location": "S5",
+   "source": "companyfacts / 10-Q",
+   "source_value": "Equity 52,679 confirmed; goodwill and assets not re-pulled (goodwill rises with Clario $5.9bn)",
+   "status": "MINOR",
+   "note": ""
+  },
+  {
+   "ticker": "TMO",
+   "claim": "Verdict WATCH consistent with evidence",
+   "dossier_location": "S1",
+   "source": "Own assessment",
+   "source_value": "Implied growth (13-15%) above 8% base; leverage up after $9.1bn Clario deal; WATCH stands",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TMO",
+   "claim": "Next earnings ~2026-10-23 (estimate)",
+   "dossier_location": "S10",
+   "source": "EDGAR list",
+   "source_value": "No 8-K",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "TMUS",
+   "claim": "Q2 2026: service revenue $19.0bn (+9%), postpaid net account adds 277k (-13% YoY), GAAP NI $3.2bn (+1%), diluted EPS $2.99 (+5%), Core Adj EBITDA $9.5bn, Adj FCF $4.8bn",
+   "dossier_location": "S4",
+   "source": "companyfacts + TMUS 8-K Ex.99.1 acc 0001283699-26-000100 (2026-07-23); 10-Q acc 0001283699-26-000101",
+   "source_value": "Service revenues 18,983 (+8.9%); net account additions 277k, down 41k or 13%; NI 3,239; EPS 2.99 (vs 2.84); Core Adj EBITDA $9.5bn +12%; Adj FCF $4.8bn +4%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TMUS",
+   "claim": "Q1 2026: NI fell 15%, EPS fell 12% ($2.27), UScellular merger costs $476m / $0.43; net adds 217k (+6%); Core Adj EBITDA $9.2bn; Adj FCF $4.6bn",
+   "dossier_location": "S4",
+   "source": "Q1 release acc 0001283699-26-000062",
+   "source_value": "All verbatim (NI $2.5bn -15%; EPS $2.27 -12%; $476m and $0.43; 217 thousand +6%; $9.2bn; $4.6bn)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TMUS",
+   "claim": "Q3 2025 and Q4/FY2025 rows: service revenue 18.2/18.7, net adds 396k (+26%) / 261k / 1.2m, NI 2.7/2.1/11.0bn, EPS 2.41/1.88/9.72, Core Adj EBITDA 8.7/8.4/33.9, Adj FCF 4.8/4.2/18.0",
+   "dossier_location": "S4",
+   "source": "Q3 2025 and Q4 2025 releases; companyfacts",
+   "source_value": "396 thousand up 26%; 261 thousand Q4 and 1.2 million 2025; EPS 2.41, 1.88, 9.72; EBITDA 8.7, 8.4, 33.9; Adj FCF 4.8, 4.2, 18.0; FY NI 10,992",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TMUS",
+   "claim": "Q2 2026 guidance table: net account adds 950-1,050k unchanged; Core Adj EBITDA $37.1-37.5bn unchanged; OCF $28.4-28.8bn (from $28.1-28.7bn); Adj FCF $18.4-18.8bn (from $18.1-18.7bn); tax rate 25-26%",
+   "dossier_location": "S5",
+   "source": "Q2 release Previous/Current/Change table",
+   "source_value": "All values appear verbatim; midpoint change +$200m for both OCF and Adj FCF; capex ~$10bn unchanged",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TMUS",
+   "claim": "Net debt ~ $80.7bn = FY2025 debt $86.28bn less FY2025 cash $5.60bn; ~2.4x FY25 Core Adj EBITDA; cash fell to $2.83bn by Q2 2026",
+   "dossier_location": "S6/S8/S9",
+   "source": "10-Q debt note and balance sheet (30 Jun 2026)",
+   "source_value": "Total debt at 30 Jun 2026 $84,621m (short-term 6,117 + long-term 78,504; affiliates nil) and cash $2,825m, so net debt is $81.8bn, about 2.3x TTM Core Adj EBITDA (about $36bn). $86,282m total debt at 31 Dec 2025 confirmed (mechanical flag vs XBRL 81,147 is a tag-definition gap). Tower obligations $3.5bn and finance leases $2.3bn are excluded",
+   "status": "MINOR",
+   "note": "Leverage computed on year-end debt while cash cited at June; latest net debt is $1.1bn higher but TTM EBITDA is higher too, so the ratio is similar and kill criterion 3 (3.0x) unaffected"
+  },
+  {
+   "ticker": "TMUS",
+   "claim": "Capital return: Q2 buybacks $2.2bn + dividends $1.1bn = $3.3bn; $18.2bn authorization through 31 Dec 2026; cumulative $54.6bn ($44.2bn + $10.4bn); diluted shares 1,131m (FY25) -> 1,082m (Q2 26)",
+   "dossier_location": "S6",
+   "source": "Q2 release; 10-Q EPS note",
+   "source_value": "All verbatim; Q2 diluted shares 1,082.4m (vs 1,134.8m in Q2 2025); cash-flow buybacks $2,320m Q2 and $7,146m H1 (Q1 $4.8bn)",
+   "status": "PASS",
+   "note": "H1 26 buybacks of $7.1bn vs H1 25 $5.0bn"
+  },
+  {
+   "ticker": "TMUS",
+   "claim": "FCF yield ~10.4-10.5%: Adjusted FCF guide midpoint $18.6bn vs ~$177.5bn market cap; \"fair-to-cheap\", no DCF run",
+   "dossier_location": "S7",
+   "source": "Recompute reverse DCF at 8.3-9.67% (5.17% + ERP), FCF less $0.85bn SBC (FY25 $829m), g 3%",
+   "source_value": "Equity-basis implied 10-year FCF growth is -3% (at 9.67%) to -6% (at 8.3%), i.e. the price discounts a decline against the dossier base of +8%/yr FCF per share; implied_vs_base is clearly below, so INCLUDE-SMALL is conservative rather than aggressive",
+   "status": "PASS",
+   "note": "Dossier valuation was qualitative; recompute supports its direction. Adjusted FCF is a non-GAAP measure that excludes some merger-related cash items"
+  },
+  {
+   "ticker": "TMUS",
+   "claim": "SBC ~$214m in Q2 2026 (~1% of revenue)",
+   "dossier_location": "S6",
+   "source": "companyfacts",
+   "source_value": "ShareBasedCompensation Q2 2026 = 214m (H1 423m)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TMUS",
+   "claim": "Q3 2025 and Q1 2026 guidance characterised only by headline (\"raised across the board\")",
+   "dossier_location": "S5",
+   "source": "Not re-extracted",
+   "source_value": "Disclosed gap in dossier; not an error",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "TMUS",
+   "claim": "CEO transition: Srini Gopalan CEO from 1 Nov 2025; Sievert vice chairman through Dec 2026",
+   "dossier_location": "S6",
+   "source": "Newsroom (secondary)",
+   "source_value": "Not re-verified; 8-K Item 5.02 filings exist 2026-07-07 and 2026-09-03 not opened",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "TMUS",
+   "claim": "Next earnings ~2026-10-22/23; 8-K of 2026-09-01 routine debt-related",
+   "dossier_location": "Header/S10",
+   "source": "EDGAR list",
+   "source_value": "The 2026-09-03 8-K (acc 0001193125-26-381901) lists Items 5.02, 7.01, 9.01, which are officer-related and Reg FD items, not \"debt-related\"",
+   "status": "MINOR",
+   "note": "Item description in the header is imprecise; content not opened"
+  },
+  {
+   "ticker": "TPL",
+   "claim": "Q2 2026 revenue $246.1M (+31% vs $187.5M), operating income $191.8M, net income $153.9M, diluted EPS $2.23; Q2 2025 EPS $1.68 (split-adjusted)",
+   "dossier_location": "S3",
+   "source": "companyfacts + TPL 10-Q acc 0001811074-26-000058 (2026-08-05); 8-K Ex.99.1 acc 0001811074-26-000056",
+   "source_value": "OpInc 191.817 vs 143.751; NI 153.930 vs 116.140; EPS 2.23 and 1.68 (originally 5.05, 3-for-1 adjusted); revenue 246.1 vs 187.5 in release table",
+   "status": "PASS",
+   "note": "Mechanical net-income flags compared Q2/TTM figures with a different period; not errors"
+  },
+  {
+   "ticker": "TPL",
+   "claim": "Quarterly table Q1 25-Q1 26: revenue, op income, net income, EPS, FCF",
+   "dossier_location": "S3",
+   "source": "Release table (acc 0001811074-26-000056); companyfacts",
+   "source_value": "Revenue 187.5/203.1/211.6/236.8/246.1; FCF 130.1/122.9/118.9/136.4/155.5; Q1 26 OpInc 182.328, NI 142.902, EPS 2.07; Q3 25 OpInc 149.091, NI 121.238",
+   "status": "PASS",
+   "note": "Q1 26 land sale $20.9M confirmed in release"
+  },
+  {
+   "ticker": "TPL",
+   "claim": "TTM (Q3 25-Q2 26): revenue $898.4M, NI $541.4M, EPS ~$7.85, FCF $533.7M",
+   "dossier_location": "S3",
+   "source": "Release quarterly revenue, NI, FCF",
+   "source_value": "Revenue 203.1+211.6+236.8+246.1 = $897.6M; NI 541.3; EPS 1.76+1.79+2.07+2.23 = 7.85; FCF 533.7",
+   "status": "MINOR",
+   "note": "TTM revenue overstated by $0.8M"
+  },
+  {
+   "ticker": "TPL",
+   "claim": "Q2 realised oil $97.55/bbl vs $70.57 in Q1; gas $0.40/Mcf; royalty production 39.7 MBoe/d (H1 38.4 vs 32.2)",
+   "dossier_location": "S2/S7",
+   "source": "Release charts and 10-Q",
+   "source_value": "Oil 97.55 (Q1 70.57); gas $0.40 vs $0.87; 39.7 and 33.2 Boe/d Q2; H1 38.4 vs 32.2",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TPL",
+   "claim": "Produced-water royalty volumes 4,872 MBbl/d vs 3,990 H1 25 (water growth)",
+   "dossier_location": "S7",
+   "source": "10-Q MD&A",
+   "source_value": "4,872 MBbl/d is the Q2 2026 three-month figure (Q2 2025: 4,248, +14.7%); 3,990 is the six-month 2025 figure (six-month 2026: 4,739, +18.8%). The dossier compares a quarter with a half-year",
+   "status": "FAIL",
+   "note": "Period mismatch inflates apparent growth (22% vs true 15% like-for-like); kill criterion 3 (4,000 floor) uses Q2 4,872 correctly"
+  },
+  {
+   "ticker": "TPL",
+   "claim": "Cash $248.6M, revolver $500M undrawn maturing 23 Oct 2029, liabilities $187.1M, equity $1,672.4M, land acquisitions $110.2M in H1, buyback authorisation $170.2M left",
+   "dossier_location": "S5",
+   "source": "10-Q",
+   "source_value": "All confirmed (cash 248.612; equity 1,672.398; liabilities 187.076; facility matures October 23, 2029, undrawn; $110.2M; $170.2M)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TPL",
+   "claim": "Financing receivable $20.4M from Chevron land deal, payments through 2046",
+   "dossier_location": "S5/S10",
+   "source": "10-Q",
+   "source_value": "Chevron U.S.A. agreement for Project Kilby (land and brackish water), financing receivable net $20,376K; non-cash financing receivable from land sale $21.4M; payments due through 2046",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TPL",
+   "claim": "No numeric guidance in the last four releases",
+   "dossier_location": "S4",
+   "source": "Q2 2026 release",
+   "source_value": "Only forward-looking safe-harbour text; no ranges",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TPL",
+   "claim": "Reverse DCF at 9% (growth fading linearly to 3%, terminal 3%, market cap $23.5bn, FCF $533.7M): implied starting growth 26.5%, 14.5% 10-year CAGR vs 9% base",
+   "dossier_location": "S6",
+   "source": "Recompute",
+   "source_value": "Reproduces exactly (26.5% start, 14.5% CAGR, FCF $2.07bn in year 10). 9% is only 3.8 points over the 5.17% Treasury; at 9.67% implied CAGR is 16.0% (16.4% after $15M SBC). Method (FCF, no SBC issue of note, net cash 1%) otherwise sound",
+   "status": "MINOR",
+   "note": "Discount rate below Treasury + 4.5% ERP; correction widens the gap versus the 9% base, so ABOVE and WATCH stand"
+  },
+  {
+   "ticker": "TPL",
+   "claim": "Price $341.07, market cap ~$23.5B, 43x trailing EPS; INCLUDE-SMALL near $235 (30x)",
+   "dossier_location": "S1/S6/S8",
+   "source": "Cover shares 68,974,683; arithmetic",
+   "source_value": "68.97m x 341.07 = $23.52bn; 341.07/7.85 = 43.4x; 30 x 7.85 = $235.5",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TPL",
+   "claim": "8-K 25 Sep 2026: employment agreements extended to 31 Dec 2029; annual meeting 5 Nov 2026",
+   "dossier_location": "S9/S10",
+   "source": "8-K acc 0001104659-26-111009",
+   "source_value": "Item 5.02 extends expiry from 2026-12-31 to 2029-12-31 for Glover, Steddum, Dobbs; Item 5.08 refers to the 2026 proxy statement filed 25 Sep 2026",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "TPL",
+   "claim": "Q3 2026 results about 4 Nov 2026 (estimate)",
+   "dossier_location": "S9",
+   "source": "EDGAR list",
+   "source_value": "No announcement 8-K",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  }
+ ],
+ "verdict_changes": [],
+ "other_changes": [
+  {
+   "ticker": "TDY",
+   "field": "implied_vs_base",
+   "old": "below",
+   "new": "in_line",
+   "why": "WACC 8.5% not tied to 5.17% Treasury plus ERP; at 9.3-9.7% with SBC deducted implied 8.6-10.1% vs 9% base; verdict INCLUDE-SMALL unchanged"
+  }
+ ]
+}

@@ -1,0 +1,700 @@
+{
+ "as_of": "2026-10-08",
+ "scope": [
+  "PLTR",
+  "PM",
+  "PNC",
+  "PNR",
+  "PNW",
+  "PODD",
+  "PPL",
+  "PRU",
+  "PSA",
+  "PSKY"
+ ],
+ "facts": [
+  {
+   "ticker": "PLTR",
+   "claim": "Q2-26 revenue $1,935M (+93% y/y), GAAP op income $912M, GAAP net income $1,062M, GAAP diluted EPS $0.41, labelled Q2 2026 (quarter ended 30 Jun 2026)",
+   "dossier_location": "s4 table",
+   "source": "10-Q 0001321655-26-000041 XBRL; 8-K 0001321655-26-000039 Ex-99.1",
+   "source_value": "revenue 1,935.464; op inc 912.004; NI attributable 1,061.890; EPS 0.41; Q2-25 revenue 1,003.697",
+   "status": "PASS",
+   "note": "Q1-26 1,633/754/871/0.34 and Q1-25..Q3-25 also tie to XBRL. Quarter-label check clean."
+  },
+  {
+   "ticker": "PLTR",
+   "claim": "FY26 guidance revenue $8.150-$8.158bn, adj. op income $4.889-$4.897bn, adj. FCF $4.5-$4.7bn; Q3 revenue $2.160-$2.164bn, adj. op income $1.292-$1.296bn; earlier guides (Feb 7.182-7.198 and FCF 3.925-4.125; May 7.650-7.662 and FCF 4.2-4.4); Q1/Q2 guides 1.532-1.536 and 1.797-1.801",
+   "dossier_location": "s5, s10",
+   "source": "8-K Ex-99.1 0001321655-26-000039, -26-000026, -26-000004",
+   "source_value": "All quoted ranges appear verbatim in the three releases",
+   "status": "PASS",
+   "note": "Dossier text matches (en-dash vs hyphen only)."
+  },
+  {
+   "ticker": "PLTR",
+   "claim": "Cash $2,030M + marketable securities $7,379M = $9,409M; no debt; $500M revolver matures 31 Mar 2027 undrawn; total liabilities $1,794M; total equity $9,885M",
+   "dossier_location": "s6",
+   "source": "10-Q 0001321655-26-000041 XBRL and Note 6",
+   "source_value": "cash 2,030.047; marketable 7,379.052; liabilities 1,793.680; equity incl NCI 9,884.884; revolver $500M, maturity 31 Mar 2027, no outstanding balance",
+   "status": "PASS",
+   "note": "Release headline says $9.2bn (cash plus short-term Treasuries only); dossier $9.4bn includes equity stakes and says so. Consolidated entity throughout."
+  },
+  {
+   "ticker": "PLTR",
+   "claim": "US commercial revenue $764M (+149% y/y); US government $809M; US commercial RDV $6.24bn (+124%); 220 deals >= $1M; top three customers 16% of H1-26 revenue; $5.6bn cloud commitment to Feb 2036",
+   "dossier_location": "s2, s8",
+   "source": "8-K 0001321655-26-000039 Ex-99.1; 10-Q Note 7 and risk factors",
+   "source_value": "764; 809; RDV $6.238bn up 124%; 220 deals >= $1M; top three 16% of revenue for six months ended 30 Jun 2026; at least $5.6bn through 29 Feb 2036",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PLTR",
+   "claim": "Valuation (e): reverse DCF on FCF after SBC (TTM $2,523M), 9% discount, 3% terminal, implies 34% 10-yr growth (31% at 8%, 37% at 10%); base 25% (about $99); verdict WATCH",
+   "dossier_location": "s7",
+   "source": "Recomputed from dossier inputs (price $189.67, 2,402.9M shares) with the same model",
+   "source_value": "Implied growth 31.4% at 8%, 34.7% at 9%, 36.7% at 9.67% (= 5.17% UST + 4.5% ERP), 37.7% at 10%; base-25% path gives about $95 vs $99 stated",
+   "status": "MINOR",
+   "note": "Cash-flow basis is right (FCF after SBC; equity-holder view so interest income on cash is consistent with using market cap). Dossier does not tie 9% to the 5.17% Treasury plus a stated ERP (9% implies 3.8% ERP); at 9.67% implied growth is 37%, not 34%. Conclusion (implied above base, WATCH) unchanged. No correction section needed."
+  },
+  {
+   "ticker": "PLTR",
+   "claim": "Verdict logic: WATCH because implied growth (34%) exceeds base (25%); INCLUDE not permitted",
+   "dossier_location": "s1, s7",
+   "source": "Dossier evidence plus recomputation above",
+   "source_value": "Implied 31-38% > base 25% at every discount rate tested",
+   "status": "PASS",
+   "note": "Verdict follows from own evidence."
+  },
+  {
+   "ticker": "PM",
+   "claim": "Q2-26 revenue $11,192M, op income $4,530M, GAAP net income $2,817M, GAAP diluted EPS $1.80, label Q2 2026; Q1-26 10,146/3,893/2,438/1.56",
+   "dossier_location": "s4 table",
+   "source": "10-Q 0001628280-26-049493 and 0001628280-26-027019 XBRL",
+   "source_value": "revenue 11,192; op inc 4,530; NI 2,817 (attributable 2,810); EPS 1.80; Q1 10,146/3,893/2,438/1.56",
+   "status": "PASS",
+   "note": "Table ties; Q2-25 EPS 1.95 also confirmed in the release."
+  },
+  {
+   "ticker": "PM",
+   "claim": "Adjusted Q2-26 EPS $2.20 (+~15%), cited from secondary coverage and flagged unverified",
+   "dossier_location": "s4",
+   "source": "8-K Ex-99.1 0001628280-26-049107",
+   "source_value": "Adjusted Diluted EPS grew by 15.2% to $2.20; and by 13.6% excluding currency",
+   "status": "PASS",
+   "note": "Now verified from the primary release."
+  },
+  {
+   "ticker": "PM",
+   "claim": "PMI RAISED FY26 adjusted EPS guidance to $8.35-$8.50 in 8-K 0001628280-26-062621 filed 18 Sep 2026, a genuine raise not merely a currency mark; bull case (3) relies on it",
+   "dossier_location": "s5, s8 bull (3), s9 kill (1)",
+   "source": "8-K 0001628280-26-060806 Ex-99.1 (8 Sep 2026); 8-K 0001628280-26-062621 Ex-99.1 (18 Sep 2026)",
+   "source_value": "8 Sep release: PMI raises its 2026 full-year reported diluted EPS forecast to $7.28-$7.43 to reflect currency only; adjusted $8.35-$8.50; favorable currency $0.24 (previously $0.15); ex-currency growth 7.5%-9.5%. The 18 Sep 8-K is the dividend increase to $1.60 a quarter ($6.40 annualised), not guidance.",
+   "status": "FAIL",
+   "note": "Range is real but the source/date are wrong (8 Sep, acc 0001628280-26-060806, not 18 Sep -062621) and the raise is currency-only: organic guide unchanged at 7.5-9.5% (July also 7.5-9.5% ex-currency). \"Not merely FX\" is false."
+  },
+  {
+   "ticker": "PM",
+   "claim": "Consolidated total debt per SEC $45.71B (LT debt noncurrent 42.37 + short-term borrowings 3.34), net debt/EBITDA about 2.2x; Yahoo/d4 $49.14B treated as a data conflict",
+   "dossier_location": "s6, s8 bear (1)",
+   "source": "10-Q 0001628280-26-049493 balance sheet and MD&A",
+   "source_value": "Short-term borrowings 3,341 + current portion of LTD 3,406 + LTD 42,366 = 49,113; MD&A: total debt was $49.1 billion at June 30, 2026. Cash 5,999; net debt 43.1bn / TTM EBITDA 18.0bn = 2.39x",
+   "status": "FAIL",
+   "note": "Dossier omitted the $3,406M current portion of long-term debt. SEC figure is $49.1bn, equal to d4; net leverage 2.4x (s8 bear case already says 2.4x; s6 says 2.2x). 3.0x kill criterion unaffected."
+  },
+  {
+   "ticker": "PM",
+   "claim": "FCF yield 3.27% (d4) attributed to elevated Zyn/IQOS capex; reservation in s1 is capex-driven FCF compression",
+   "dossier_location": "s1, s6, s9 kill (4)",
+   "source": "10-Q 0001628280-26-049493 cash-flow statement; 10-K FY2025 XBRL; d4 snapshot",
+   "source_value": "TTM OCF 12,233-3,062+5,093 = 14,264; TTM capex 1,569-760+733 = 1,542 (H1-26 733 vs H1-25 760, down 4%); OCF less capex 12,722 = 4.3% of $296.9bn market cap; d4 y_freeCashflow 9,714 does not tie to these components",
+   "status": "FAIL",
+   "note": "Capex is flat to lower, not rising. The 3.27% comes from a Yahoo FCF field that does not reconcile to the filing. On filed numbers FCF yield is about 4.3% (H1-26 OCF helped by a $1.5bn working-capital release, so 3.6-4.0% normalised). Reservation text unsupported; verdict unaffected."
+  },
+  {
+   "ticker": "PM",
+   "claim": "Consolidated stockholders' equity -$8.58B; crosstie flag (-$6,657M) dismissed as stale-cache false positive",
+   "dossier_location": "s6, source note",
+   "source": "10-Q 0001628280-26-049493 balance sheet",
+   "source_value": "Total PMI stockholders deficit (8,583); noncontrolling interests 1,926; total stockholders deficit (6,657)",
+   "status": "MINOR",
+   "note": "-8,583 is PMI-attributable; the consolidated total incl. NCI is -6,657. The crosstie flag was the consolidated total, not a stale cache. Label only; negative-equity point stands."
+  },
+  {
+   "ticker": "PM",
+   "claim": "Valuation (e): implied growth in line with base; no discount rate or cash-flow basis stated",
+   "dossier_location": "s7",
+   "source": "Recomputed: FCF 12.7bn (and 10.7bn normalised), market cap $296.9bn (1,558.6M sh x $190.48), terminal 3%",
+   "source_value": "Implied 10-yr FCF CAGR 6.2%-8.5% at 8.67%-9.67% discount on 12.7bn; 8.5%-10.9% on 10.7bn. Organic EPS growth guide 7.5-9.5%",
+   "status": "MINOR",
+   "note": "Dossier states no method. Recomputed with Rf 5.17% + 3.5-4.5% ERP, implied growth is roughly in line with the organic guide plus 3.4% yield, so INCLUDE-SMALL is supportable. The 10-13% growth cited includes $0.24 of currency; ex-currency 7.5-9.5%."
+  },
+  {
+   "ticker": "PM",
+   "claim": "Zyn: FDA authorization for 20 variants; IQOS revenue +14.2% in Q2-26",
+   "dossier_location": "s8 bull (1),(2)",
+   "source": "10-Q 0001628280-26-049493; Q2 release",
+   "source_value": "20 ZYN variants hold PMTA and, from June 2026, MRTP; +14.2% is International Smoke-Free segment net revenue (+11.8% organic), not IQOS alone",
+   "status": "MINOR",
+   "note": "Authorization claim PASS. 14.2% mislabelled as IQOS revenue; it is the whole International smoke-free segment."
+  },
+  {
+   "ticker": "PNC",
+   "claim": "Q2-26 revenue $6,875M, NII $4,107M, noninterest income $2,768M, net income $2,055M, GAAP diluted EPS $4.81, adjusted $4.85 (Q2-25 3.85; Q1-26 4.13 / 4.32), label Q2 2026",
+   "dossier_location": "s4 table",
+   "source": "8-K 0001628280-26-048244 Ex-99.1; 10-Q 0001628280-26-053170 XBRL",
+   "source_value": "revenue 6,875; NII 4,107; nonint 2,768; net income 2,055 (XBRL NetIncomeLoss attributable 2,040); EPS 4.81; adjusted 4.85, 4.32, 3.85",
+   "status": "PASS",
+   "note": "All six quarters tie to XBRL (revenue, NII, nonint income, EPS). Net income column is total incl. noncontrolling interests."
+  },
+  {
+   "ticker": "PNC",
+   "claim": "Significant items: $448M Visa B-2 exchange gain, offset by $140M Foundation contribution, $139M securities loss, $121M integration costs, -$85M Visa B-3 derivative; net -$0.04/share; share repurchases Q3 expected to approximate Q2 ($0.6bn)",
+   "dossier_location": "s4, s5, s11",
+   "source": "8-K Ex-99.1 0001628280-26-048244",
+   "source_value": "Gain of $448 million ... substantially offset by $140 million PNC Foundation contribution, $139 million securities loss, negative $85 million Visa Class B-3 derivative adjustments; 4 cent reduction to EPS; Share repurchase activity in the third quarter of 2026 is expected to approximate second quarter of 2026 levels",
+   "status": "PASS",
+   "note": "Verbatim. The only forward-looking statement quoted is genuine."
+  },
+  {
+   "ticker": "PNC",
+   "claim": "NIM 2.96% vs 2.80% (+16bps y/y); efficiency 60% flat; NCO $226M / 0.25%; NPLs $2.0bn (-10% q/q); delinquencies $1.4bn (-8%); ACL/loans 1.48% vs 1.62%",
+   "dossier_location": "s6",
+   "source": "8-K Ex-99.1 0001628280-26-048244",
+   "source_value": "NIM 2.96 / 2.95 / 2.80; efficiency 60 / 61 / 60; NCO 226 (0.25%); NPL 2,027 (-10%); delinquencies 1,436 (-8%); ACL 1.48% / 1.52% / 1.62%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PNC",
+   "claim": "CET1 fell 60bps in a single quarter (10.1% to 9.9%) while buying back $0.6bn (s6 and bear case 1)",
+   "dossier_location": "s6 Capital; s8 bear (1)",
+   "source": "8-K Ex-99.1 0001628280-26-048244 selected ratios",
+   "source_value": "CET1 9.9% (Q2-26), 10.1% (Q1-26), 10.5% (Q2-25): quarterly fall 20bps, annual fall 60bps",
+   "status": "FAIL",
+   "note": "Arithmetic error: 10.1% to 9.9% is 20bps. The 60bps is the year-on-year change. The F46 summary JSON already says 20bp in the quarter. Verdict unaffected; the \"single metric\" concern is somewhat less acute."
+  },
+  {
+   "ticker": "PNC",
+   "claim": "Valuation (e): justified P/B model, rf 4.2% + beta 0.889 x ERP 5% = COE 8.6%; implied growth 0% to +1% (P/B 1.55x, ROE 13-16%) and +0.5% to +2.5% (P/TBV 2.03x, ROTCE 15-17%)",
+   "dossier_location": "s7",
+   "source": "Recomputed with 10-yr UST 5.17% (25 Sep 2026) and ERP 5%; inputs from release (BV 145.52, TBV 111.09) and d4 (price 225.64, beta 0.889)",
+   "source_value": "COE = 5.17% + 0.889 x 5% = 9.6%. Implied g = (P/B x COE - ROE)/(P/B - 1): P/B 1.55 with ROE 13%/14.5%/16% gives +3.4%/+0.7%/-2.0%; P/TBV 2.03 with ROTCE 15%/16%/17% gives +4.4%/+3.4%/+2.4%. At the dossier COE 8.6% the P/B range is +0.6% to -4.9%, so the stated 0-1% held only for ROE 13%",
+   "status": "FAIL",
+   "note": "Risk-free input 4.2% is stale vs 5.17%; with it COE rises about 1.0pt and P/TBV-implied growth rises from 0.5-2.5% to 2.4-4.4%. P/B-implied range was also misstated. Conclusion survives: implied growth stays below the dossier base (high-single-digit EPS growth), implied_vs_base remains below, verdict INCLUDE-SMALL unchanged; cushion is thinner."
+  },
+  {
+   "ticker": "PNC",
+   "claim": "Scenario returns use dividend yield about 3.0%; bear -1%, base +11%, bull +20% per year",
+   "dossier_location": "s7 scenarios",
+   "source": "8-K Ex-99.1 0001628280-26-048244; d4 snapshot",
+   "source_value": "Quarterly dividend raised 30 cents (18%) to $2.00; annualised $8.00 = 3.58% of $225.64 (d4 y_dividendYield 3.58)",
+   "status": "MINOR",
+   "note": "Stale yield understates all three scenarios by about 0.6pt a year (bear -0.4%, base +11.6%, bull +20.6%). Does not change the ranking or verdict."
+  },
+  {
+   "ticker": "PNC",
+   "claim": "FirstBank: announced 8 Sep 2025, implied consideration $4.1bn, closed 5 Jan 2026, cash/stock split not quantified (flagged gap); conversion 22 Jun 2026",
+   "dossier_location": "s2, s6",
+   "source": "8-K 0000713676-25-000062 Ex-99.1; 8-K 0000713676-26-000003 Ex-99.1; Q2 release",
+   "source_value": "About 13.9 million PNC shares plus $1.2 billion cash, implied transaction value $4.1 billion; completed 5 Jan 2026; 780,000 customers, 95 branches converted as of 22 Jun 2026",
+   "status": "PASS",
+   "note": "The stated data gap is closable: split is 13.9M shares + $1.2bn cash."
+  },
+  {
+   "ticker": "PNR",
+   "claim": "Q2-26 sales $933M (-17% y/y), GAAP op margin 17.9%, GAAP EPS (continuing) $0.80, adjusted EPS $1.14, FCF $553M (Q2-25 596); Q1-26 sales 1,036.7, EPS 0.98 / adj 1.22; label Q2 2026",
+   "dossier_location": "s4 table, s6",
+   "source": "8-K 0000077360-26-000042 Ex-99.1; 8-K 0000077360-26-000023 Ex-99.1",
+   "source_value": "Net sales 932.6 vs 1,123.1; operating income 166.5 (17.9%); diluted EPS continuing ops 0.80 vs 0.90; adjusted 1.14 vs 1.39; OCF 571.8, FCF 553; Q1 sales 1,036.7, EPS cont 0.98 (total 1.05 incl discontinued 0.07), adjusted 1.22",
+   "status": "PASS",
+   "note": "Dossier uses continuing-ops EPS, which is the company headline; XBRL total EPS for Q1 is 1.05 including discontinued operations, not a conflict."
+  },
+  {
+   "ticker": "PNR",
+   "claim": "Guidance: Feb GAAP 4.94-5.09 / adj 5.25-5.40 / sales +3-4%; Apr GAAP 4.83-4.93 / adj 5.30-5.40 / sales +2-4%; Jul GAAP 3.86-4.06 / adj 4.60-4.80 / sales -4% to -7%; Q3 GAAP 0.97-1.00 / adj 1.05-1.08 / sales -4% to -6%",
+   "dossier_location": "s5",
+   "source": "8-K Ex-99.1 0000077360-26-000003, -000023, -000042; pre-announcement 0000077360-26-000039",
+   "source_value": "All ranges appear verbatim (pre-announcement 14 Jul gave GAAP 3.90-4.10, updated to 3.86-4.06 on 28 Jul). Q2 release says results and guidance include approximately $35 million of IEEPA tariff refunds",
+   "status": "PASS",
+   "note": "Ranges verified. Omission: the IEEPA refunds (about $35M, a positive non-recurring item inside Q2 and FY26 guidance) are not mentioned anywhere in the dossier."
+  },
+  {
+   "ticker": "PNR",
+   "claim": "Table row Q4 2024 revenue about $1,021M",
+   "dossier_location": "s4 table",
+   "source": "8-K 0000077360-26-000003 Ex-99.1",
+   "source_value": "Q4-24 net sales 972.9; Q4-25 1,020.5; FY25 4,176.0; FY24 4,082.8",
+   "status": "FAIL",
+   "note": "The Q4 2024 cell repeats the Q4 2025 figure; correct value is $972.9M (so Q4-25 growth +5% is right). FY2025 ~4,200 is a rounding of 4,176.0. Not load-bearing for the verdict."
+  },
+  {
+   "ticker": "PNR",
+   "claim": "H1 2026 cash generation is down 13.5% \"but nowhere near as much as GAAP EPS (-~15% H1)\"; FCF/NI >100% on FY25 net income ~$636M",
+   "dossier_location": "s6 FCF conversion",
+   "source": "8-K Ex-99.1 0000077360-26-000042 and -000003",
+   "source_value": "H1-26 GAAP EPS from continuing ops 1.78 vs 1.83 = -2.7%; adjusted 2.36 vs 2.50 = -5.6%; FY25 net income 653.8 (continuing about 649); the 635M quoted is the FY26 net-income guide from the 14 Jul pre-announcement",
+   "status": "FAIL",
+   "note": "H1 EPS decline is about -3%, not -15%, so the argument that cash held up better than EPS is inverted: H1 FCF fell more (-13.5%) than EPS. Q2 operating cash flow also benefited from a receivables release ($482.7M vs $673.2M at Dec-25) and IEEPA refunds. FY25 NI mislabelled (653.8 total, FCF/NI still about 115%). Verdict unaffected."
+  },
+  {
+   "ticker": "PNR",
+   "claim": "Balance sheet 30 Jun 2026: cash $91.8M, total debt $1,606.0M, equity $3,749.3M, total assets $6,712.2M; net debt $1,514M; Taco $1.425bn funded by cash plus $1.4bn bridge, close expected Q4 2026",
+   "dossier_location": "s6",
+   "source": "10-Q 0000077360-26-000045",
+   "source_value": "cash 91.8; total debt 1,606.0 (Dec 1,638.6); equity 3,749.3; assets 6,712.2; Taco purchase price $1.425 billion, bridge $1.4 billion, close fourth quarter 2026",
+   "status": "PASS",
+   "note": "Consolidated Pentair plc, correct entity and date."
+  },
+  {
+   "ticker": "PNR",
+   "claim": "CFO Brazis resigned 10 Jul 2026; interim Fishman 14 Jul; permanent CFO Hau effective 1 Nov 2026 described as external hire; s5 table says resignation was the same day as the 14 Jul pre-announcement",
+   "dossier_location": "s5, s6",
+   "source": "8-K 0000077360-26-000039; 8-K 0000077360-26-000050",
+   "source_value": "Resigned July 10; Fishman appointed July 14; Hau appointed Sept 21, effective Nov 1, 2026, Senior VP Finance since Sept 15, 2026",
+   "status": "MINOR",
+   "note": "Resignation was 10 Jul (s6 says four days before, correct; s5 table says same day, wrong). Hau joined as SVP Finance six days before appointment, so \"external hire\" is true but he is not a long-standing outsider. Immaterial."
+  },
+  {
+   "ticker": "PNR",
+   "claim": "Valuation (e): EV $10.19bn, TTM FCF $675M, WACC 8.5%, terminal 2.5% gives g +0.9%; sensitivity -0.2% at 8%, +1.9% at 9%; implied below base",
+   "dossier_location": "s7",
+   "source": "Recomputed with the dossier inputs; 10-yr UST 5.17% (25 Sep 2026)",
+   "source_value": "g = +0.9% (8.5%), +1.9% (9.0%), +2.5% (9.3%), +2.9% (9.5%). Using unlevered FCF (+ after-tax interest about 60M) and excluding IEEPA refunds (35M): +0.4% to +1.4% at 8.5-9.0%",
+   "status": "MINOR",
+   "note": "Arithmetic ties. WACC 8.5% is not tied to a 5.17% Treasury plus ERP (cost of equity at beta about 1.1 and ERP 4.5% is about 10%, WACC about 9.3%). Levered FCF is discounted at WACC against EV (minor mismatch, makes implied g look higher). Net effect: implied growth +0.9% to about +2.5% depending on WACC; conclusion (below a recovery base, WATCH) unchanged."
+  },
+  {
+   "ticker": "PNR",
+   "claim": "Securities class action (class period 11 Mar 2025-14 Jul 2026, lead-plaintiff deadline 2 Oct 2026)",
+   "dossier_location": "s11, s10",
+   "source": "Plaintiff-firm press releases only; EDGAR 10-Q filed 28 Jul 2026 has no litigation disclosure of it",
+   "source_value": "No primary filing found by 8 Oct 2026",
+   "status": "UNVERIFIABLE",
+   "note": "Dossier correctly labels the sources as plaintiff-firm releases. Not checked against a court docket."
+  },
+  {
+   "ticker": "PNW",
+   "claim": "Q2-26 revenue $1,455.7M, op income $305.7M, diluted EPS $1.43 (Q2-25 $1.58), net income $178.6M vs $192.6M; Q1-26 1,149.6 / 131.2 / 0.27; label Q2 2026",
+   "dossier_location": "s4 table",
+   "source": "10-Q 0000764622-26-000041 XBRL; 8-K 0000764622-26-000040 Ex-99.1",
+   "source_value": "revenue 1,455.749 vs 1,358.751; op inc 305.672; EPS 1.43 vs 1.58; net income decline about $14M; fuel and purchased power 558.5 vs 477.0 (+81.5)",
+   "status": "PASS",
+   "note": "Q3-25 (1,820.7 / 3.39), Q1-25 (1,032.3 / -0.04) also tie. Attribution quote (higher interest charges, D&A, lower transmission) verbatim."
+  },
+  {
+   "ticker": "PNW",
+   "claim": "FY26 weather-normalized EPS guidance \"$4.55 to $4.75\" maintained in Feb, May and Aug 2026 releases; load growth 4.0-6.0% for 2026 and 5.0-7.0% average through 2030",
+   "dossier_location": "s5",
+   "source": "8-K Ex-99.1 0000764622-26-000040; 10-Q 0000764622-26-000041 MD&A",
+   "source_value": "For 2026, the Company continues to estimate its consolidated earnings will be within a range of $4.55 to $4.75 per diluted share on a weather-normalized basis; 10-Q: 4.0% to 6.0% for 2026",
+   "status": "PASS",
+   "note": "Verbatim. Dossier says a long-term EPS target was not obtained: the Aug and Sep 2026 investor decks (8-K 0000764622-26-000044 and -000046, Ex-99) state long-term EPS growth of 5%-7% off the original 2024 midpoint, bracketing the dossier base of 5%."
+  },
+  {
+   "ticker": "PNW",
+   "claim": "Consolidated debt $11,369.4M = ST borrowings 818.6 + current LTD 775.0 + LTD 9,775.8; cash $9.1M; equity $7,034.8M; operating lease liabilities $5,135.9M; debt/capitalisation about 62% vs 65% covenant; APS debt-limit request $9.5bn to $12bn",
+   "dossier_location": "s6 (crosstie flags)",
+   "source": "10-Q 0000764622-26-000041 XBRL and liquidity section",
+   "source_value": "LongTermDebtNoncurrent 9,775.808; LongTermDebtCurrent 775.0; ShortTermBorrowings 818.6; cash 9.124; equity 7,034.754; OperatingLeaseLiability 5,135.887; ratio approximately 62% for Pinnacle West and 51% for APS; limit application $9.5 billion to $12 billion",
+   "status": "PASS",
+   "note": "Mechanical crosstie flags (775.0 vs 9,775.8; 8,740 vs 9,775.8) are scope/component false positives, as the dossier explains."
+  },
+  {
+   "ticker": "PNW",
+   "claim": "Rate case: APS request net $579.5M at 10.70% ROE; ACC Staff $506.5M and 9.55-9.80% ROE; RUCO $200.2-278.1M and 9.00-9.20% ROE",
+   "dossier_location": "s6, s9",
+   "source": "10-Q 0000764622-26-000041 Note 4",
+   "source_value": "Staff adjusted to a $506.5 million total base revenue increase; RUCO $200.2 to $278.1 million, 9.00% to 9.20% ROE",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PNW",
+   "claim": "Valuation (e): dividend-discount reverse DCF, D0 $3.64, 10 years then 3% terminal, cost of equity 8% gives 5.5% implied growth (4.2% at 7.5%, 6.8% at 8.5%); base 5.0%; implied_vs_base in_line",
+   "dossier_location": "s7",
+   "source": "Recomputed from price $91.74, D0 $3.64; 10-yr UST 5.17%",
+   "source_value": "Implied growth 4.2% (7.5%), 5.55% (8.0%), 6.8% (8.5%), 8.0% (9.0%), 8.4% (9.17% = 5.17% + 4.0% ERP). Base 5% growth is worth $87.9 at 8% and $72.8 at 9%",
+   "status": "MINOR",
+   "note": "Arithmetic ties and the cash-flow basis (dividends, stated) is allowed. The 8% cost of equity is not tied to the 5.17% Treasury (it implies a 2.8% premium). At 9% the call becomes \"above\" (8.0% vs base 5.0%). WATCH already says INCLUDE is not warranted, so the verdict is unchanged either way. No correction section."
+  },
+  {
+   "ticker": "PNW",
+   "claim": "Verdict logic: WATCH with INCLUDE-SMALL conditional on an ACC order at ROE >= 9.6% and base increase >= $500M, or price <= about $88; base 3-yr +7.6% a year equals a utility cost of equity",
+   "dossier_location": "s1, s7",
+   "source": "Dossier evidence plus recomputation above",
+   "source_value": "Base value $87.9 at 8%, price $91.74; Staff ROE 9.55-9.80%, increase $506.5M sits near the upgrade thresholds",
+   "status": "PASS",
+   "note": "Verdict is internally consistent: priced at or slightly above base, rate order pending."
+  },
+  {
+   "ticker": "PNW",
+   "claim": "Event scan: \"no later 8-K found\" after 4 Aug 2026 through 25 Sep 2026",
+   "dossier_location": "s11, data basis",
+   "source": "EDGAR submissions CIK 764622",
+   "source_value": "8-Ks filed 7 Aug 2026 (acc -000044), 13 Aug (1104659-26-095989), 4 Sep (-000046): investor-deck and exhibit filings (Items 7.01, 9.01)",
+   "status": "MINOR",
+   "note": "Statement is inaccurate but the filings are presentations that repeat existing guidance; no new financial information."
+  },
+  {
+   "ticker": "PODD",
+   "claim": "Q2-26 revenue $801.7M (+23.5%), op margin 16.2%, GAAP EPS $1.37, adjusted EPS $1.66; Q1-26 761.7 (+33.9%) / 16.0% / 1.30; Q3-25 706.3 / 16.7% / 1.24; label Q2 2026",
+   "dossier_location": "s4 table",
+   "source": "10-Q 0001145197-26-000169 XBRL; 8-K 0001145197-26-000167 Ex-99.1",
+   "source_value": "revenue 801.7 vs 649.1; op inc 129.7 (16.2%, down 250bps); net income 95.0, EPS 1.37 vs 0.32; adjusted net income 115.0, $1.66 per share; Q1 122.1 op inc, EPS 1.30",
+   "status": "PASS",
+   "note": "Q2-25 EPS 0.32 depressed by $84M-123.9M debt extinguishment loss, so the y/y GAAP EPS comparison is not like-for-like."
+  },
+  {
+   "ticker": "PODD",
+   "claim": "Q4 2025 GAAP EPS $1.42 (TTM EPS $5.33)",
+   "dossier_location": "s4 table, s7",
+   "source": "8-K 0001145197-26-000026 Ex-99.1 (18 Feb 2026)",
+   "source_value": "Q4-25 net income $101.6M, $1.44 per diluted share; revenue 783.8 (+31.2%), op margin 18.7%, gross margin 72.5%",
+   "status": "MINOR",
+   "note": "Dossier $1.42 appears to be FY minus nine-month EPS (not additive). Reported $1.44, so TTM EPS is $5.35 and trailing P/E 25.4x. Immaterial."
+  },
+  {
+   "ticker": "PODD",
+   "claim": "Guidance: Feb Total Omnipod 21-23%, Intl 24-26%, EPS >25%; May Total Omnipod 22-24%, Intl 26-28%, US 20-22%; Aug \"Total Omnipod/total revenue\" cut to 20-22%, US 17-19%, Intl 30-32%, adjusted EPS \"at least 30%\"",
+   "dossier_location": "s5",
+   "source": "8-K Ex-99.1 0001145197-26-000026, -000100, -000167",
+   "source_value": "Aug: Total Omnipod 21-23% (prior 22-24%); Total revenue 20-22% (prior 21-23%); US 17-19% (prior 20-22%); Intl 30-32% (prior 26-28%); Adjusted EPS growth >30% (prior >25%). Q3 2026 guide: US 14-16%, Intl 28-30%, Total Omnipod 18-20%, Total 17.5-19.5%",
+   "status": "MINOR",
+   "note": "Ranges verified except the label: 20-22% is total revenue, Total Omnipod is 21-23%. The Q3 US Omnipod guide of 14-16% is omitted (see kill-criterion fact)."
+  },
+  {
+   "ticker": "PODD",
+   "claim": "Kill criterion 1: US Omnipod growth below 15% y/y for two consecutive quarters (current guide is already 17-19%)",
+   "dossier_location": "s9",
+   "source": "8-K Ex-99.1 0001145197-26-000167 outlook table",
+   "source_value": "Q3-26 US Omnipod guide 14%-16% (midpoint 15%); FY 17-19% after H1 (Q1 28.3%, Q2 20.1%) implies H2 growth of roughly 11-17%",
+   "status": "FAIL",
+   "note": "The threshold sits at the midpoint of the company own Q3 guide and below the implied H2 run-rate, so the criterion is close to tripping on guidance alone; the dossier cites only the FY range. Verdict WATCH unaffected but the trigger needs resetting."
+  },
+  {
+   "ticker": "PODD",
+   "claim": "International Omnipod growth (+59% y/y) is accelerating and guidance keeps being raised (s3 and bull case 2)",
+   "dossier_location": "s3, s8 bull (2)",
+   "source": "8-K Ex-99.1 0001145197-26-000100 and -000167",
+   "source_value": "International Omnipod revenue Q1-26 +59.4% (45.2% cc); Q2-26 +35.5% (32.9% cc); Q3 guide 28-30%",
+   "status": "FAIL",
+   "note": "Growth decelerated sharply from Q1 to Q2; +59% is a stale Q1 figure and \"accelerating\" is wrong. International guide was raised (26-28% to 30-32%), so the guidance part is right. Verdict unaffected."
+  },
+  {
+   "ticker": "PODD",
+   "claim": "Balance sheet 30 Jun 2026: cash $534.9M, debt $929.5M non-current + $18.9M current, equity $1,422.2M; $419.9M of convertible notes repurchased in H1 2025; $300M ASR in Q1 2026",
+   "dossier_location": "s6",
+   "source": "10-Q 0001145197-26-000169",
+   "source_value": "cash 534.9; LT debt net 929.5; current portion 18.9; equity 1,422.2; $419.9 million principal repurchased for $541.5 million in cash (H1 2025); repurchase of common stock (300.0) in six months 2026",
+   "status": "PASS",
+   "note": "Post-quarter: 21 Sep 2026 Ninth Amendment (8-K 0001193125-26-396779) re-priced the $475M term loan 25bps lower and added $250M revolver capacity; not in dossier, favourable and minor."
+  },
+  {
+   "ticker": "PODD",
+   "claim": "Valuation (e): FCF yield on EV 4.35%; price needs high-teens/low-20s % earnings growth for a few years, below-to-in-line with guidance; no discount rate stated",
+   "dossier_location": "s7",
+   "source": "Recomputed from dossier inputs (market cap $9,441M, TTM FCF $428.8M); 10-yr UST 5.17%",
+   "source_value": "Implied 10-yr FCF CAGR 5.5%/7.7%/9.8% at 8.67%/9.67%/10.67% on FCF before SBC; 8.3%/10.7%/12.8% on FCF after SBC (about $85M a year)",
+   "status": "MINOR",
+   "note": "No explicit method or discount rate. FCF excludes SBC as a cost; after SBC the implied 10-yr growth is about 11% at Rf 5.17% + 4.5% ERP, still below guided 20%+ revenue growth, so \"valuation is not the reason for caution\" holds. Verdict unchanged."
+  },
+  {
+   "ticker": "PODD",
+   "claim": "Device corrections and FDA serious-injury count (476 vs 29), stock move of 6.9% on 12 Mar 2026, law-firm investigations",
+   "dossier_location": "s11",
+   "source": "FDA pages, law-firm releases and price data not on EDGAR",
+   "source_value": "Not verifiable from SEC filings in this pass",
+   "status": "UNVERIFIABLE",
+   "note": "Dossier labels the securities claims as unadjudicated allegations. 8-Ks of 3 Sep (board chair Scannell stepped down for health reasons after 7 years as Chairman) and 14 Sep 2026 (deferred-compensation plan) are not mentioned in the red-flag scan."
+  },
+  {
+   "ticker": "PPL",
+   "claim": "Q2-26 reported EPS $0.30 (Q2-25 $0.25), net income $230M ($183M), ongoing EPS $0.33 ($0.32); H1-26 $0.90 / $0.96 vs H1-25 $0.80 / $0.92; revenue 2,111 (Q2) and 4,885 (H1)",
+   "dossier_location": "s4 table",
+   "source": "8-K Ex-99.1 0000922224-26-000042; 10-Q 0000922224-26-000044",
+   "source_value": "Q2 reported earnings $230 million, $0.30 vs $183 million, $0.25; ongoing $247 million, $0.33 vs $240 million, $0.32; H1 $682 million, $0.90 vs $597 million, $0.80; H1 ongoing $0.96 vs $0.92",
+   "status": "PASS",
+   "note": "Q1-25..Q3-25 and Q1-26 revenue and net income also tie to XBRL (2,504/414; 2,025/183; 2,239/318; 2,774/452)."
+  },
+  {
+   "ticker": "PPL",
+   "claim": "Guidance: 2026 ongoing EPS $1.90-$1.98 (midpoint $1.94) reaffirmed; EPS growth 6%-8% through at least 2029, near top end; $10-12bn generation upside through 2032; pipelines 31.8 GW PA (>11 GW signed, >6.5 GW under construction), KY 13.7 GW (11.6 data center, 1.3 GW signed)",
+   "dossier_location": "s5",
+   "source": "8-K Ex-99.1 0000922224-26-000042",
+   "source_value": "All quotes appear verbatim",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PPL",
+   "claim": "Balance sheet 30 Jun 2026: total assets $46.3B, LTD $19.79B (from $17.99B) plus $469M current, short-term debt $65M, cash $332M; H1 debt issued $2,046M, retired $668M; H1 OCF $1,140M, PP&E expenditure $2,339M",
+   "dossier_location": "s6",
+   "source": "10-Q 0000922224-26-000044",
+   "source_value": "Total assets 46,301 (Dec 45,244); short-term debt 65; LTD due within one year 469; cash 332; issuance 2,046; retirement (668); OCF 1,140; capex (2,339)",
+   "status": "PASS",
+   "note": "Total debt about $20.3bn / EBITDA 3.76bn (d4) = 5.4x ties."
+  },
+  {
+   "ticker": "PPL",
+   "claim": "Long-term debt +$1.8bn in a single quarter (s1 reservation and bear case 1)",
+   "dossier_location": "s1, s8 bear (1)",
+   "source": "10-Q 0000922224-26-000026 (Q1) and -000044 (Q2) XBRL",
+   "source_value": "Noncurrent LTD: 17.99bn (Dec-25), 19.02bn (Mar-26), 19.79bn (Jun-26). Q2 change +0.77bn; H1 change +1.80bn. Including current portion: 18.89bn to 20.26bn = +1.37bn in H1",
+   "status": "FAIL",
+   "note": "The +$1.8bn is the six-month non-current change, not one quarter. Financing intensity is real (capex +36% y/y) but the single-quarter claim is overstated by more than half. Verdict unaffected."
+  },
+  {
+   "ticker": "PPL",
+   "claim": "Valuation (e): two-stage DDM with rf 4.2%, ERP 5%, beta 0.583, COE 7.1%, terminal growth 4%; implied growth about 2.0% (-0.5% at 6.5%, +3.3% at 7.5%); well below guided 6-8%; implied_vs_base below",
+   "dossier_location": "s7",
+   "source": "Recomputed with 10-yr UST 5.17% (25 Sep 2026): COE = 5.17% + 0.583 x 5% = 8.1%; price $32.03, D0 $1.14",
+   "source_value": "Implied 10-yr dividend growth: terminal 4%: 1.9% at 7.1%, 5.3% at 8.1%, 8.3% at 9.17%; terminal 3%: 4.4% at 7.1%, 7.2% at 8.1%, 9.8% at 9.17%",
+   "status": "FAIL",
+   "note": "Stale risk-free rate (4.2% vs 5.17%) and a 4% terminal growth rate (close to the old COE spread) understate required growth. At a consistent COE of 8.1% implied growth is 5.3% (4% terminal) to 7.2% (3% terminal), i.e. in line with the 6-8% guided CAGR and the 7% base case, not \"well below\". implied_vs_base restated from below to in_line; INCLUDE-SMALL remains supportable but the margin of safety claim (cheap-to-fair) is gone."
+  },
+  {
+   "ticker": "PPL",
+   "claim": "Verdict logic: growth \"currently ahead of schedule\"; results \"beating the reaffirmed framing\"; GAAP EPS +20% as evidence of acceleration (s1, s3, s8 bull 1)",
+   "dossier_location": "s1, s3, s8 bull (1)",
+   "source": "Dossier s4 against 8-K Ex-99.1 0000922224-26-000042",
+   "source_value": "Ongoing EPS +3% in Q2 and +4% in H1 (0.96 vs 0.92) versus a 6-8% annual target; GAAP +20% reflects lower special items ($17M vs $57M)",
+   "status": "FAIL",
+   "note": "The dossier own s4 shows ongoing EPS growth below the 6-8% target, and it says the GAAP jump is due to smaller special charges. Company says growth is H2-weighted, so \"on track\" is arguable, \"ahead of schedule\" is not supported. INCLUDE-SMALL stands on the guided H2 acceleration and a valuation that is in line with, not below, base."
+  },
+  {
+   "ticker": "PPL",
+   "claim": "Event scan: 2026-08-27 8-K is \"an equity-units/common-stock item\", routine",
+   "dossier_location": "s11, s13 #6",
+   "source": "8-K 0000922224-26-000048 (Item 8.01)",
+   "source_value": "Rhode Island PUC base rate case decision of 21 Aug 2026: electric +$44.1M, gas +$93.7M annual revenue, ROE 9.275%, 48/52 debt/equity, second rate year not approved; effective 1 Sep 2026",
+   "status": "FAIL",
+   "note": "Source mischaracterised. It is a rate-case order for Rhode Island Energy, directly relevant to the regulatory-risk bear case and to kill criterion 4; it is not an equity item. Requested amounts are not in the 8-K so the disallowance share cannot be computed here."
+  },
+  {
+   "ticker": "PPL",
+   "claim": "KPSC rehearing order of 14 Aug 2026 net favourable by about $4M (LG&E) and $3M (KU) a year; PPL reaffirmed long-term EPS targets",
+   "dossier_location": "s6",
+   "source": "8-K 0000922224-26-000046",
+   "source_value": "Increases of approximately $4 million LG&E and $3 million KU above the February 2026 order; PPL reaffirms previously disclosed long-term EPS growth targets",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PRU",
+   "claim": "Q2-26 GAAP EPS $2.80, net income $985M, adjusted operating income $1,438M, adjusted EPS $4.08 (Q2-25 $3.58); Q1-26 1.68 / 597 / 3.61; revenue Q2 15,661M; label Q2 2026",
+   "dossier_location": "s3 table",
+   "source": "8-K Ex-99.1 0001137774-26-000170; 10-Q 0001137774-26-000176 XBRL",
+   "source_value": "After-tax adjusted operating income $1.438 billion or $4.08 per share vs $1.284 billion or $3.58; revenues 15,661; EPS 2.80; NetIncomeLoss 985 (attributable to PFI 973); Q1 NetIncomeLoss 597 (attributable 588)",
+   "status": "PASS",
+   "note": "The column headed \"net income to PFI\" shows total net income (incl. noncontrolling interests); attributable is 973 and 588. Immaterial (1-2%). EPS correct."
+  },
+  {
+   "ticker": "PRU",
+   "claim": "Q2 adjusted EPS +14% y/y but includes a +$0.15 assumption-update benefit vs a $0.10 charge a year ago, so underlying growth is about 9%",
+   "dossier_location": "s3 variance",
+   "source": "8-K Ex-99.1 0001137774-26-000170",
+   "source_value": "Benefit of $51 million or $0.15 per share vs charge of $36 million or $0.10 year ago. Underlying: (4.08-0.15)/(3.58+0.10) = 3.93/3.68 = +6.8%",
+   "status": "FAIL",
+   "note": "Arithmetic: removing only the 2026 benefit gives 9.8%; removing both sides gives +6.8%. Reported +14% (4.08/3.58 = 14.0%) is right. Underlying growth about 7%, not 9%. Verdict unaffected (base 4-5% distribution growth)."
+  },
+  {
+   "ticker": "PRU",
+   "claim": "Japan suspension: pre-tax AOI reduction $525-575M for 2026 and $400-450M for 2027, $235M in H1, $50-60M per additional month beyond November 2026; extension of 180 days through 5 Nov 2026; FSA onsite inspection",
+   "dossier_location": "s4, s8, s10",
+   "source": "10-Q 0001137774-26-000176 MD&A and Note 21",
+   "source_value": "All quotes appear verbatim; suspension extended for an additional 180 days through November 5, 2026; Gibraltar Life sales practices under proactive review",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PRU",
+   "claim": "Balance sheet: borrowings $20,618M (ST 955 + LT 19,663); PFI equity $31,577M; BVPS $90.50, adjusted BVPS $100.91; parent liquid assets $4.2bn; capital returned $743M ($250M buybacks); dividend $1.40 a quarter; $750M 6.25% junior subordinated notes due 2056; PGIM AUM $1.49tn",
+   "dossier_location": "s5",
+   "source": "10-Q 0001137774-26-000176; 8-K Ex-99.1 0001137774-26-000170",
+   "source_value": "Short-term debt 955; long-term debt 19,663; StockholdersEquity 31,577; BVPS 90.50 / 100.91; highly liquid assets $4.2 billion; $743 million incl $250 million repurchases; $1.40 dividend; $750 million 6.25% due June 2056; PGIM AUM $1.491 trillion",
+   "status": "PASS",
+   "note": "Consolidated entity (not parent-only) stated correctly; borrowings exclude debt of consolidated VIEs and are labelled as such."
+  },
+  {
+   "ticker": "PRU",
+   "claim": "Valuation (e): reverse DCF on distributions (start $3.0B, cost of equity 9.5%, terminal 2.5%) implies +1.6% growth; base +4-5%; implied below base; P/B 1.32x, ROE 12.0%",
+   "dossier_location": "s6",
+   "source": "Recomputed; cross-check by justified P/B = (ROE - g)/(COE - g) with 10-yr UST 5.17% + 4.5% ERP = 9.67%",
+   "source_value": "Distribution DDM: 1.6% at 9.5%, 2.0% at 9.67%, 3.5% at 10.5%. P/B route: g = (1.32 x 9.67% - ROE)/0.32 gives +5.5% at ROE 11%, +2.4% at 12%, -0.7% at 13%",
+   "status": "MINOR",
+   "note": "Stated COE 9.5% is about consistent with 5.17% plus a 4.3% ERP and the arithmetic ties. Insurer cross-check via P/B-ROE shows the \"below base\" call holds only if sustainable ROE is at least about 12%; at 11.5% implied growth is about 4% (in line with base). Verdict WATCH is event-driven, so unchanged. No correction section."
+  },
+  {
+   "ticker": "PRU",
+   "claim": "Verdict logic: WATCH because Japan suspension and FSA inspection are unresolved; cost estimate moved from 90 to 270 days; conversion to INCLUDE-SMALL if inspection closes without group-wide sanctions and sales resume by Q4 2026 results",
+   "dossier_location": "s0, s4, s8",
+   "source": "10-Q 0001137774-26-000176 Note 21 and MD&A",
+   "source_value": "Suspension runs to 5 Nov 2026; inspection ongoing; no resolution disclosed through 8 Oct 2026 (8-Ks 15 Jul, 24 Jul, 4 Aug, 8 Oct are results/financing/FD items)",
+   "status": "PASS",
+   "note": "Verdict is supported by the dossier evidence; valuation is not the obstacle, event risk is. 8-K of 8 Oct 2026 (Item 7.01) post-dates the cutoff and was not read."
+  },
+  {
+   "ticker": "PSA",
+   "claim": "Q2-26 revenue $1,232.9M, GAAP diluted EPS $2.55 (Q2-25 $1.76), FFO/sh $4.21, Core FFO/sh $4.17 (Q2-25 $4.28, -2.6%); operating income $466.7M vs $500.0M; Q1-26 1,217.7 / 2.71; Q3-25 1,224.0 / 2.62; label Q2 2026",
+   "dossier_location": "s4 table, s6",
+   "source": "8-K Ex-99.1 0001628280-26-050608; 10-Q 0001628280-26-050612 XBRL",
+   "source_value": "Net Income $2.55 vs $1.76 (+44.9%); Core FFO $4.17 vs $4.28 (-2.6%); FFO per share 4.21 vs 3.44; operating income 466.681 vs 499.999; revenue 1,232.881",
+   "status": "PASS",
+   "note": "All eight quarters of revenue and GAAP EPS tie where XBRL is available; FY2025 Core FFO 16.97 = 4.12+4.28+4.31+4.26."
+  },
+  {
+   "ticker": "PSA",
+   "claim": "Q2-26 guidance raised: Core FFO/share $16.75-$17.05 (prior $16.35-$17.00, mid +$0.225); Q1 reaffirmed $16.35-$17.00; Feb initial guide below FY25 actual; only $0.02 of raise from financing accretion",
+   "dossier_location": "s5",
+   "source": "8-K Ex-99.1 0001628280-26-050608 guidance table and 0001628280-26-027484 (Q1)",
+   "source_value": "Core FFO per share current $16.75-$17.05, prior $16.35-$17.00, adjustment $0.22 (midpoint 0.225); Net Debt/EBITDA 2.9x, Net Debt and Preferred/EBITDA 4.2x (4.1x), EBITDA to fixed charges 6.6x, A2/A",
+   "status": "PASS",
+   "note": "Q3-25 and Q4-25 guide quotes not re-opened (consistent with XBRL-derived FY25 Core FFO 16.97)."
+  },
+  {
+   "ticker": "PSA",
+   "claim": "Maintenance capex: $86.5M (maintain) and about $269M annualised including enhancements and energy; V1 proxied capex with full D&A; OCF 1H26 $1,563.2M vs $1,577.8M; G&A $44.4M vs $25.7M",
+   "dossier_location": "s6, s7",
+   "source": "10-Q 0001628280-26-050612 cash-flow and income statements",
+   "source_value": "maintain 86.529; enhancements 18.563; energy 29.468 (sum 134.6 for six months, x2 = 269); OCF 1,563.238 vs 1,577.771; G&A 44.369 vs 25.727",
+   "status": "PASS",
+   "note": "Development and expansion capex (113.7M in 1H26) is excluded from the 269M, which is correct for a maintenance-cash-flow view but not for total capital spend."
+  },
+  {
+   "ticker": "PSA",
+   "claim": "PS Canada acquisition (about $1.2bn) is pending, expected Q3 2026, closing \"not independently confirmed\"; kill criterion 5 depends on it closing; 8-Ks reviewed only through 14/16 Sep",
+   "dossier_location": "s2, s6, s9 kill (5), s10, s13",
+   "source": "8-K 0001193125-26-377690 (Items 7.01, 8.01) filed 2026-09-01",
+   "source_value": "On September 1, 2026, the Company completed the acquisition of PS Canada: about $1.2 billion upfront = about $900 million of PSA OP Units (2,762,108 units at $321.98) + about $310 million cash; earn-out up to 768,000 units at $375; $500.0 million delayed draw term loan fully drawn on August 31, 2026",
+   "status": "FAIL",
+   "note": "The deal closed on 1 Sep 2026, 24 days before the cutoff, in a filing that the dossier did not read. Kill criterion 5 is moot; leverage after the $500M DDTL draw and $310M cash outlay is higher than the 4.2x quoted (Jun-26 data). Verdict WATCH unchanged."
+  },
+  {
+   "ticker": "PSA",
+   "claim": "NSA closing 22 Jul 2026: about 11.2M common shares, Series T and U preferred, Dropdown JV with about $2.2bn debt ($2.0bn mortgage maturing Aug 2027 + $237M mezzanine from a PSA subsidiary)",
+   "dossier_location": "s6",
+   "source": "8-K 0001193125-26-312563",
+   "source_value": "Dropdown JV incurred approximately $2.2 billion of indebtedness: approximately $2.0 billion secured mortgage from Goldman Sachs and Wells Fargo, approximately $237 million mezzanine from a subsidiary of Public Storage; mortgage matures August 2027",
+   "status": "PASS",
+   "note": "Share count and preferred issuances not re-derived."
+  },
+  {
+   "ticker": "PSA",
+   "claim": "Balance sheet: notes payable / total debt $10.25B, 3.30% rate, 6.3% maturing 2026",
+   "dossier_location": "s6",
+   "source": "10-Q 0001628280-26-050612 balance sheet",
+   "source_value": "Notes payable carrying 10,180.2 at 30 Jun 2026 (10,253.9 at 31 Dec 2025); release table weighted rate 3.3%",
+   "status": "MINOR",
+   "note": "$10.25B is the 31 Dec 2025 carrying amount (or face); June carrying is $10.18B. Immaterial. Pro forma debt is much higher after the NSA JV, $900M notes (Jul), C$400M notes (Sep) and the $500M DDTL."
+  },
+  {
+   "ticker": "PSA",
+   "claim": "Valuation (e): dossier gives no own implied-growth figure; relies on \"no reliable valuation anchor\"; V1 base +18.2%/yr and implied growth 25.3% are stale",
+   "dossier_location": "s7",
+   "source": "Recomputed with FAD (1H26 $1,389.7M annualised, about $15.83 per pre-merger share), price $287.97, 10-yr UST 5.17% + 4.5% ERP",
+   "source_value": "Implied 10-yr FAD growth 1.8% (8.17%), 3.0% (8.67%), 4.1% (9.17%), 5.2% (9.67%); dividend $12.00 only supports 6.6-8.9% growth because payout is about 71% of Core FFO",
+   "status": "MINOR",
+   "note": "Using cash flow after maintenance capex (not D&A), the price needs 3-5% growth, roughly the sector long-run rate and above the flat FY26 Core FFO outlook: \"fair, not cheap\" supports WATCH. No correction section."
+  },
+  {
+   "ticker": "PSA",
+   "claim": "Verdict logic: WATCH because same-store NOI is shrinking (-2.2% Q2), Core FFO/share fell three quarters, valuation anchor stale; upgrade needs two quarters of positive SS NOI and a reported NSA-inclusive accretive quarter",
+   "dossier_location": "s1, s4, s9",
+   "source": "Dossier evidence checked against Q2 release",
+   "source_value": "Core FFO 4.31 (Q3-25) > 4.26 > 4.22 > 4.17; guidance midpoint 16.90 vs FY25 16.97",
+   "status": "PASS",
+   "note": "Verdict follows from evidence."
+  },
+  {
+   "ticker": "PSKY",
+   "claim": "Q2-26 revenue $6,913M (+0.9%), operating income $475M (6.9%), net earnings $41M, GAAP EPS $0.04, adj. EBITDA $1,099M (+27%); Q1-26 7,347 / 616 / 168 / 0.15 / 1,161; Q4-25 8,148; Q3-25 predecessor 2,581 + successor 4,121; DTC $2,474M (+9%), Studios $1,314M (+16%), TV Media $3,128M (-9%, advertising -14%)",
+   "dossier_location": "s4 table and variance",
+   "source": "10-Q 0002041610-26-000054 XBRL; Ex-99 shareholder letter 0002041610-26-000052",
+   "source_value": "Total revenue 6,913 / 7,347 / 8,148 / 2,581 / 4,121; OperatingIncomeLoss 475 / 616; NetIncomeLoss 41 / 168; EPS 0.04 / 0.15; adj. EBITDA 1,099 vs 863; segments as quoted; TV Media margin 34.0% vs 26.4%",
+   "status": "PASS",
+   "note": "Predecessor/successor split correctly shown and labelled; Q2-26 label correct."
+  },
+  {
+   "ticker": "PSKY",
+   "claim": "Guidance: 10 Nov 2025 2026 adj. OIBDA $3.5bn; Feb 2026 $3.8bn; May reaffirmed $30bn revenue and $3.8bn; Aug raised to $3.8-$3.9bn (12.8% margin), FCF conversion at least 10% before about $800M transformation costs, Q3 revenue $6.95-$7.15bn and adj. EBITDA $875-$975M",
+   "dossier_location": "s5",
+   "source": "Ex-99 letters 0002041610-26-000052 (Aug), -000022 (May), -000008 (Feb), -25-000042 (Nov)",
+   "source_value": "Aug letter: increasing our adj. EBITDA forecast from our previous $3.8 billion to $3.8 to $3.9 billion, or a 12.8% margin at the midpoint; free cash flow conversion of at least 10% before roughly $800 million of transformation costs; Q3 revenue $6.95 billion to $7.15 billion; adj. EBITDA $875 million to $975 million",
+   "status": "PASS",
+   "note": "Aug quotes verified verbatim; Feb/May/Nov letters not re-opened (Q2 letter table confirms prior actuals 7,347/1,161 and 8,148)."
+  },
+  {
+   "ticker": "PSKY",
+   "claim": "Consolidated 30 Jun 2026: cash $1,627M, long-term debt $14,491M carrying, $15.2bn gross debt, parent equity $11,771M, NCI $1,039M; revolver $1.8bn drawn after $350M repayment; $2.15bn drawn to pay $2.8bn Netflix termination fee",
+   "dossier_location": "s6",
+   "source": "10-Q 0002041610-26-000054; Ex-99 letter -000052",
+   "source_value": "Total debt 15,156 (LT 14,491 + current 665); cash 1,627; StockholdersEquity 11,771; MinorityInterest 1,039; letter: $1.6 billion cash, $15.2 billion gross debt, revolver at $1.8 billion drawn",
+   "status": "PASS",
+   "note": "Right entity (Paramount consolidated) and date; WBD figures separately labelled."
+  },
+  {
+   "ticker": "PSKY",
+   "claim": "Deal terms: $80.9bn WBD equity value; $54bn debt commitments; up to $46.7bn Class B equity from Ellison parties/RedBird at floor $12.00 / ceiling $16.02; $7.0bn Regulatory Termination Fee; synergised leverage 4.3x and $6bn synergies; Ellison/RedBird hold 100% of Class A voting",
+   "dossier_location": "s2, s6, s11",
+   "source": "10-Q 0002041610-26-000054 (WBD Merger note); 8-K Ex-99.1 0001104659-26-021911",
+   "source_value": "Equity value of $80.9 billion; commitments for debt financing totaling $54 billion; $46.7 billion from the Ellison Parties; $7.0 billion Regulatory Termination Fee; net debt-to-EBITDA of 4.3x on a synergized basis; over $6 billion in synergies; Ellison family and RedBird sole holders of Class A, 100% of the voting shares",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PSKY",
+   "claim": "WBD (separate entity): Q2-26 revenue $8,717M (-11%), adj. EBITDA $1,879M (-4%), FCF $572M, $29.7bn net debt, 3.4x net leverage",
+   "dossier_location": "s6",
+   "source": "WBD 8-K 0001437107-26-000072 Ex-99 (6 Aug 2026)",
+   "source_value": "Total revenues 8,717 vs 9,812 (-11%); Adjusted EBITDA 1,879 vs 1,953 (-4%); FCF 572 vs 702; Ended the first quarter with $29.7 billion of net debt and 3.4x net leverage",
+   "status": "MINOR",
+   "note": "Numbers verbatim, but the release text dates the $29.7bn / 3.4x to the end of the first quarter, not 30 Jun; the dossier does not state the date. During Q2 WBD refinanced its $15bn bridge with a $13bn plus EUR1.7bn Term Loan B."
+  },
+  {
+   "ticker": "PSKY",
+   "claim": "Valuation (e): pro forma reverse view: 11% cost of equity, 2.5% growth, equity $49.9bn needs $4.2bn levered FCF; pre-synergy levered FCF about $0.3bn after about $2.4bn extra interest; price needs about 83% of $6bn synergies vs base 58%; implied above base",
+   "dossier_location": "s7",
+   "source": "Recomputed; 10-yr UST 5.17% + 5.8% = 11%; 8-K 0001104659-26-113913 (6 Oct 2026, post-cutoff)",
+   "source_value": "49.9bn x (11% - 2.5%) = 4.24bn; (4.2 - 0.3)/4.7 = 83%. Actual closing financing: PIPE 3,917,657,246 Class B shares at $12.00 (= $47.0bn); notes $30.0bn first lien (6.30%-8.90%, weighted about 7.5%) + $11.4bn second lien (8.25%-9.125%, about 8.6%) + EUR885M at 7.0%; plus $8.5bn and EUR850M Term B-1 loans",
+   "status": "MINOR",
+   "note": "Method is cash-flow based and consistent with 5.17% + ERP; arithmetic ties. Post-cutoff closing terms show a higher blended coupon (about 7.8% on about $42.4bn of notes, before term loans) than the roughly 7% implied by $2.4bn on $34bn, so pre-synergy FCF is probably lower and the synergy requirement higher: \"above\" is reinforced, REJECT unchanged."
+  },
+  {
+   "ticker": "PSKY",
+   "claim": "WBD close \"any time after the 30 Sep 2026 order\"; deal still pending; NYSE listing transfer about 6 Oct; shares about 5.0bn",
+   "dossier_location": "s1, s10",
+   "source": "8-K 0001104659-26-113913 and Ex-99.1 (6 Oct 2026); 8-K 0001104659-26-113076 (2 Oct)",
+   "source_value": "Skydance Corporation (f/k/a Paramount Skydance) completed the acquisition of WBD; closed 5-6 Oct 2026; WBD holders received $31.00 plus ticking consideration ($0.00277778 per day after 30 Sep) in cash; Class B moved to NYSE as SKYD on 6 Oct; 3.918bn PIPE shares issued",
+   "status": "MINOR",
+   "note": "Post-cutoff (25 Sep) event, 3 days before this audit date. Dossier is correct for its cutoff; its pro forma share count (about 5.0bn) matches (1.12bn + 3.92bn). The dossier is now stale on the \"binary\" status and ticker (PSKY now SKYD). No correction section because nothing written was wrong when written."
+  },
+  {
+   "ticker": "PSKY",
+   "claim": "Verdict logic: REJECT for a 15-20% drawdown mandate because net leverage of about 4x-7x makes the equity a claim on the synergy plan, price needs 83% of synergies from day one",
+   "dossier_location": "s1, s7",
+   "source": "Dossier evidence plus closing terms above",
+   "source_value": "Pro forma net debt about $77bn on about $11.2bn pre-synergy EBITDA (6.9x); actual coupons 6.3%-9.1%",
+   "status": "PASS",
+   "note": "Verdict follows from the dossier evidence and is reinforced by the closing terms."
+  }
+ ],
+ "verdict_changes": [],
+ "other_changes": [
+  {
+   "ticker": "PPL",
+   "field": "implied_vs_base",
+   "old": "below",
+   "new": "in_line",
+   "why": "Reverse DDM used risk-free 4.2% (COE 7.1%) and 4% terminal growth; with the 10-year Treasury at 5.17% COE is 8.1% and implied growth is 5.3%-7.2% vs 6%-8% guided; F46_summary.json updated (dossier_view cheap to fair)"
+  },
+  {
+   "ticker": "PNC",
+   "field": "scenario_returns_3y / reconciliation",
+   "old": "bear -1%, base +11%, bull +20%; implied growth 0-2.5%",
+   "new": "bear -0.4%, base +11.6%, bull +20.6%; implied growth 2.4-4.4% on P/TBV at COE 9.6%",
+   "why": "Dividend yield stale (3.58% not 3.0%) and risk-free 4.2% vs 5.17%; implied_vs_base unchanged (below); F46_summary.json updated"
+  }
+ ]
+}

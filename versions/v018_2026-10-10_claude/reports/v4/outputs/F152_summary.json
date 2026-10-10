@@ -1,0 +1,129 @@
+{
+  "agent": "F152",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "SMCI": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Builds servers for AI data centres and is growing fast, but faces export-control investigations, weak controls and heavy cash burn at a price above what we can justify.",
+      "horizon": "12-36 months",
+      "key_adverse_facts": [
+        "SDNY indictment unsealed 2026-03-19 of co-founder/director Liaw and two others over alleged export-control conspiracy; SEC, SDNY grand jury and multiple BIS subpoenas outstanding; company not named or told it is a target (10-K FY26)",
+        "ICFR not effective at 2026-06-30 (IT general controls material weakness), second year running (10-K Item 9A)",
+        "FY26 operating cash flow -$6,809.9M and FCF about -$6.97B; inventory $12.9B; non-cancelable purchase commitments $34.2B; one customer 28.1% of sales",
+        "June 2026 equity raise: common at $27.50 and $4.3B 7.00% mandatory convertible preferred; ATM up to $1.25B; diluted share count 745M vs 599M in Jan 2026",
+        "Q4 FY26 gross margin 17.5% vs guided 8.2-8.4% and six prior quarters at 6.3-11.8%; revenue timing erratic (Q3 FY26 guide 'at least $12.3B', actual $10.2B)"
+      ],
+      "data_conflicts": [
+        "d4 FY27 consensus EPS $4.34 and NTM P/E 9.5 rest on Q4 FY26 peak margin; FCF yield -29.5% conflicts with 'cheap' value-factor reading",
+        "Yahoo basic shares 646.9M vs 745M diluted share count in company Q1 FY27 guidance; market value used 745M diluted",
+        "Sara Liu and Charles Liang Form 4s show identical 200,000-share sales (likely same jointly held shares; not verified)",
+        "Auditor-change history taken from Q12 triage, not re-verified in filings opened"
+      ],
+      "next_earnings_date": "2026-11-03",
+      "confidence_in_thesis": "low: legal and control outcomes are binary and unresolved; demand evidence is strong but cash conversion is negative",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": null,
+        "implied_vs_base": "above",
+        "reconciliation": "No V1 row exists. My reverse DCF (12% cost of equity) implies 13.2% ten-year earnings growth vs my base 9.2%, so the price is above base; 9.5% at an 11% discount rate."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.32,
+        "base": 0.054,
+        "bull": 0.356
+      },
+      "scenario_basis": "FY29 EPS 1.7/4.6/7.7 (bear/base/bull) x exit P/E 8/11/14 from $43.26; no common dividend; FY27 base NI $3.0B on 745M diluted shares.",
+      "kill_criteria": [
+        "BIS issues a temporary or permanent denial order against Supermicro, or the company is named a defendant or target by DOJ/SEC/BIS (10-K: \"has not been informed that it is the target\").",
+        "The FY27 10-K (or any 10-Q) again reports ICFR \"not effective\", or any prior period is restated.",
+        "GAAP gross margin below 10.0% in two consecutive quarters (Q4 FY26: 17.5%; FY26: 10.8%).",
+        "Consolidated net debt (total bank debt plus convertible notes minus cash, company basis) above $3.0B at the Dec 31 2026 quarter-end (Jun 30 2026: about $1.2B), or quarterly OCF below -$1.0B again.",
+        "Quarterly net sales below the low end of guidance two quarters in a row (Q1 FY27 guide low end $14.5B)."
+      ]
+    },
+    "DVN": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "One of America's largest shale oil and gas producers after absorbing Coterra, buying back stock at a price that only needs mid-cycle oil to work.",
+      "horizon": "12-36 months",
+      "key_adverse_facts": [
+        "Q2 2026 WTI averaged $92.47 vs $64.87 for FY2025; earnings and FCF are on a price spike (10-Q and 8-K)",
+        "Coterra merger closed 2026-05-07 (0.70 exchange ratio, $24.9B consideration); $14.1B of unproved properties acquired create impairment risk; asset-by-asset portfolio review under way",
+        "Also spent $2.6B on New Mexico federal leases in Q2; debt rose to $11.4B consolidated from $8.4B at Mar 31",
+        "FY26 full-year guidance 'unchanged from June' but the June guidance document was not in the SEC filings opened, so no verified prior range; no full-year guide from Feb to June",
+        "Senior turnover after merger: 5 legacy directors resigned, CFO and CAO replaced by Coterra executives, executive reshuffle 2026-08-20"
+      ],
+      "data_conflicts": [
+        "Yahoo/d4 shares 1.10B (rounded 10-Q cover) vs 1,150M issued on the 30 Jun 2026 balance sheet; market cap $51.8B vs $54.1B",
+        "d4 FCF $0.78B (Yahoo) vs my TTM OCF less capex $4.69B; Yahoo appears to deduct lease/acquisition outlays",
+        "b1 factor history is pre-merger; asset-growth and net-issuance penalties reflect the merger",
+        "One Form 4 entry of 1,755,174 shares (~$52.7M) filed under the issuer's own name was not interpreted"
+      ],
+      "next_earnings_date": "2026-11-04",
+      "confidence_in_thesis": "medium: valuation needs only a $68 oil deck but the oil price, integration and synergy delivery are unproven",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "implied_vs_base": "below",
+        "reconciliation": "No V1 row exists. EV of $64.5B implies about 0% ten-year FCF growth at a $68 WTI deck (flat WTI about $72), below my 2% base, so the price is below base."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.123,
+        "base": 0.084,
+        "bull": 0.301
+      },
+      "scenario_basis": "Exit EV/EBITDAX 4.3x/5.0x/5.5x on WTI $55/$68/$82 (HH 3.0/3.5/4.0), net debt $10.4B, 1.15B shares falling with buybacks, dividends about $1.28 growing 5%, entry $47.05.",
+      "kill_criteria": [
+        "Consolidated total debt minus cash above $12.0B at any quarter-end (Jun 30 2026: $10.4B), per the 10-Q/10-K balance sheet.",
+        "Company-reported run-rate synergies below $1.0B by year-end 2027 or 2027 capture below the $600M it guided.",
+        "Full-year 2027 total capital guidance above $6.3B with flat or falling production (Q3 2026 guide $1.4-1.5B per quarter).",
+        "WTI quarterly average below $55 for two consecutive quarters (Q2 2026: $92.47).",
+        "Impairment of acquired Coterra unproved properties above $1.0B in any year."
+      ]
+    },
+    "MRK": {
+      "verdict": "WATCH",
+      "thesis_one_line": "A global drug maker whose cancer drug Keytruda loses patent protection in late 2028; the current price already assumes the pipeline replaces most of it.",
+      "horizon": "12-36 months",
+      "key_adverse_facts": [
+        "Keytruda was $8.37B or 50% of Q2 2026 sales; 10-K says biosimilar competition 'could begin in December 2028' and Keytruda is expected to be selected for IRA price-setting in 2027 (effective 2029)",
+        "Acquired-R&D charges of $9.0B (Cidara, Jan 2026) and $5.7B (Terns, May 2026) produced GAAP EPS of -$1.72 in Q1 and -$0.54 in Q2",
+        "Consolidated debt $53.9B vs cash and investments $8.4B (net about $45.5B); debt to total liabilities and equity 41.5% vs 36.0% at Dec 2025; $6.0B of new notes in May 2026",
+        "Pricing pressure: MFN agreement, Medicaid GENEROUS model, Germany GKV-BStabG law (from 2027), Januvia/Janumet -31% in Q2",
+        "Litigation: about 800 Dr. Scholl's talc cases, Gardasil MDL, Keytruda IRA suit against the government"
+      ],
+      "data_conflicts": [
+        "d4 NTM P/E 19.3 and FY26 consensus $2.74 include one-time charges; underlying 2026 EPS is about $8.64 (my arithmetic from guidance), about 17x",
+        "b1 earnings-yield and surprise percentiles are distorted by $14.7B of acquired-R&D charges",
+        "Yahoo FCF yield 4.1% vs my TTM FCF $16.1B / $367B = 4.4%; FCF excludes about $16.0B of 2026 acquisition cash plus Verona",
+        "Next earnings date 2026-10-29 from d4 only; no 8-K confirmation opened"
+      ],
+      "next_earnings_date": "2026-10-29",
+      "confidence_in_thesis": "medium: business quality is high and verified, but the valuation gap to my base case is wide and the cliff timing is set by patents",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": null,
+        "implied_vs_base": "above",
+        "reconciliation": "No V1 row exists. Price implies 8.5% ten-year FCF growth (8% cost of equity) vs my base 5.2%; market value is close to my bull-case value of $159 per share, so implied is above base."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.177,
+        "base": -0.063,
+        "bull": 0.115
+      },
+      "scenario_basis": "Exit Sep 2029 on NTM non-GAAP EPS ex one-time charges of $6.3/$8.0/$11.5 x 11.5/14/17 plus dividends of about $3.5 a year, entry $148.78.",
+      "kill_criteria": [
+        "Keytruda/Keytruda Qlex worldwide sales growth below 0% year-on-year in any quarter before biosimilar entry (Q2 2026: +5%; Q1: +12%).",
+        "Consolidated net debt (loans payable plus long-term debt minus cash and investments, 10-Q balance sheet) above $50B at any quarter-end (Jun 30 2026: about $45.5B).",
+        "A further single acquisition or licence with a one-time charge or cash price above $5B announced within the next 12 months.",
+        "Winrevair quarterly sales below $550M in two consecutive quarters (Q2 2026: $588M).",
+        "Full-year sales guidance midpoint for 2027 below $66B when first issued (2026 guide $66.3-67.3B)."
+      ]
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "release": "v005_2026-09-26_codex",
+  "verifier": "X1 (cross-workstream verifier)",
+  "verified_at_utc": "2026-09-26",
+  "checked": 26,
+  "confirmed": 23,
+  "counts_by_status": {
+    "CONFIRMED": 23,
+    "MINOR DIFFERENCE": 1,
+    "NOT CONFIRMED": 1,
+    "UNVERIFIABLE": 1
+  },
+  "items": [
+    {
+      "claim": "AMP reference close $485.15 on 2026-09-24",
+      "source": "v4 d2_close.parquet/d2_adjclose.parquet (485.1499938964844); stockanalysis.com/stocks/amp/history/ (live fetch: $485.15)",
+      "status": "CONFIRMED",
+      "note": "Exact match across two independent sources."
+    },
+    {
+      "claim": "PAYX reference close $101.59 on 2026-09-24",
+      "source": "v4 d2_close.parquet/d2_adjclose.parquet (101.58999633789062)",
+      "status": "CONFIRMED",
+      "note": "Exact match."
+    },
+    {
+      "claim": "MSFT reference close $516.05 on 2026-09-25 ('reconciled')",
+      "source": "v4 d2_close.parquet/d2_adjclose.parquet (516.1699829101562); stockanalysis.com/stocks/msft/history/ (live fetch: $516.17)",
+      "status": "MINOR DIFFERENCE",
+      "note": "Both independent sources show $516.17, a $0.12 (0.02%) gap from the memo's $516.05. No disclosed header/row conflict for MSFT (unlike NVDA/AMP/HIG/AIZ/IBKR on 25-Sep), so calling it 'reconciled' is not supported by any source found. Immaterial to the BUY BELOW $500 decision either way."
+    },
+    {
+      "claim": "NVDA reference close $224.58 on 2026-09-24",
+      "source": "v4 d2_close.parquet/d2_adjclose.parquet (224.5800018310547)",
+      "status": "CONFIRMED",
+      "note": "Exact match."
+    },
+    {
+      "claim": "ALLE reference close $152.48 on 2026-09-24",
+      "source": "v4 d2_close.parquet/d2_adjclose.parquet (152.47999572753906)",
+      "status": "CONFIRMED",
+      "note": "Exact match."
+    },
+    {
+      "claim": "HIG reference close $125.69 on 2026-09-24",
+      "source": "v4 d2_close.parquet/d2_adjclose.parquet (125.69000244140625)",
+      "status": "CONFIRMED",
+      "note": "Exact match."
+    },
+    {
+      "claim": "VUAA ISIN IE00BFMXXD54",
+      "source": "vanguard.co.uk/professional/product/etf/equity/9694/sp-500-ucits-etf- (live fetch)",
+      "status": "CONFIRMED",
+      "note": "Exact match; fund is 'S&P 500 UCITS ETF (USD) Accumulating'."
+    },
+    {
+      "claim": "IB01 ISIN IE00BGSF1X88",
+      "source": "ishares.com/uk/individual/en/products/307243/ishares-treasury-bond-0-1yr-ucits-etf-fund (live fetch)",
+      "status": "CONFIRMED",
+      "note": "Exact match."
+    },
+    {
+      "claim": "VUAA expense ratio 0.07%",
+      "source": "vanguard.co.uk product page (live fetch)",
+      "status": "CONFIRMED",
+      "note": "Exact match."
+    },
+    {
+      "claim": "IB01 expense ratio 0.07%",
+      "source": "justetf.com/en/etf-profile.html?isin=IE00BGSF1X88; iShares product page (2 sources)",
+      "status": "CONFIRMED",
+      "note": "Exact match on both."
+    },
+    {
+      "claim": "IB01 yield to maturity 4.16% as of 24 Sep 2026",
+      "source": "ishares.com product page (live fetch)",
+      "status": "CONFIRMED",
+      "note": "Page text verbatim: 'Weighted Average YTM 24/Sept/2026: 4.16%' -- exact figure and exact date match."
+    },
+    {
+      "claim": "IB01 effective duration 0.31 years",
+      "source": "ishares.com product page; justetf.com; iShares factsheet PDF (all attempted)",
+      "status": "UNVERIFIABLE",
+      "note": "Duration was not displayed on any page reachable via WebFetch/WebSearch; the factsheet PDF returned as unparseable binary content. Plausible given the fund's stated 0-1yr maturity mandate, but not independently confirmed within the time available."
+    },
+    {
+      "claim": "Vanguard look-through weight NVIDIA 8.08% (8.07902%) of VUAA",
+      "source": "vanguard.co.uk holdings table (live fetch)",
+      "status": "CONFIRMED",
+      "note": "Live fetch shows 'NVIDIA Corp - 8.08%' exactly. Memo's stated 'August 31' as-of date not independently re-confirmed, but the percentage matches to 2 decimal places."
+    },
+    {
+      "claim": "Vanguard look-through weight Microsoft 5.69% (5.69335%) of VUAA",
+      "source": "vanguard.co.uk holdings table (live fetch)",
+      "status": "CONFIRMED",
+      "note": "Live fetch shows 'Microsoft Corp - 5.69%' exactly."
+    },
+    {
+      "claim": "Combined look-through exposure at full deployment: NVIDIA 2.712%, Microsoft 2.854%",
+      "source": "Recomputed from stated weights: 1.5% direct + 15%*8.07902% = 2.712%; 2% direct + 15%*5.69335% = 2.854%",
+      "status": "CONFIRMED",
+      "note": "Reproduces memo figures exactly."
+    },
+    {
+      "claim": "Correlated-shock table: initial/full losses of -6.1%/-8.5% (equity selloff), -10.7%/-14.3% (severe), -13.6%/-18.0% (tail), and corresponding $50k/$100k dollar losses",
+      "source": "Recomputed independently in Python from stated weights (initial 15/4/81, full 15/10/75) and stated shock magnitudes",
+      "status": "CONFIRMED",
+      "note": "All six percentage figures and four dollar figures reproduce exactly (severe-shock full loss computes to -14.25%, which the memo rounds to -14.3% in the percentage column but uses unrounded in the dollar columns -- internally consistent)."
+    },
+    {
+      "claim": "Return-tradeoff table: initial/all-slots-filled wealth CAGRs of 0.6%/-0.2% (bear), 4.3%/4.9% (base), 6.5%/8.3% (bull)",
+      "source": "Recomputed independently in Python via geometric (terminal-wealth) blend of index/reserve annual assumptions with each stock's own irr_limit_withholding30 from scenarios.csv, weighted by slot sizes",
+      "status": "CONFIRMED",
+      "note": "All six values reproduce to within 0.05 percentage points. A naive linear weighted-average of the same rates does NOT reproduce these figures, confirming Codex correctly used compounding (terminal wealth) rather than a simple average."
+    },
+    {
+      "claim": "AMP/PAYX scenario mechanics: base-case IRR at reference and limit prices, terminal EPS, terminal price, PV/max-entry at the stated hurdle",
+      "source": "Independently re-solved (Newton's-method IRR, explicit PV discounting) in Python from the disclosed cash flows in scenarios.csv/financials.md/quality_compounders.md",
+      "status": "CONFIRMED",
+      "note": "AMP base IRR @ref 14.343% vs scenarios.csv 14.343%; @limit 13.186% vs 13.186%. PAYX base IRR @ref 13.637% vs 13.637%; @limit 13.556% vs 13.556%. AMP terminal EPS 44*1.07^3=53.9019 vs 53.901892; terminal price 700.7246 vs 700.724596. PAYX bottom-up EPS recomputes to $6.6047 vs stated $6.60. All match to floating-point precision once exact (unrounded) dividend inputs are used."
+    },
+    {
+      "claim": "AMP H1 2026 adjusted EPS $22.33; Comerica termination pretax benefit $25m; quarterly dividend $1.70; Q2 diluted shares 92.9m",
+      "source": "SEC EDGAR: q22026er.htm and q12026er.htm (Ameriprise Q1/Q2 2026 earnings releases, live fetch); ir.ameriprise.com dividend declaration (live fetch)",
+      "status": "CONFIRMED",
+      "note": "Q1 adjusted EPS $11.26 + Q2 adjusted EPS $11.07 = $22.33 exactly. Comerica benefit '$25 million' exact match. Dividend '$1.70 per common share' exact match. Q2 diluted shares '92.9 million' exact match."
+    },
+    {
+      "claim": "AMP normalized base EPS $44 and 7%/yr growth to $53.90 terminal EPS is a reasonable extension of reported results",
+      "source": "Derived from confirmed H1 EPS $22.33 (see above), Comerica adjustment, doubled and rounded down",
+      "status": "CONFIRMED",
+      "note": "Traceable, disclosed normalization from confirmed filed figures; not an unsupported jump."
+    },
+    {
+      "claim": "AMP 13.0x terminal P/E multiple is inside AMP's own 10-year P/E history",
+      "source": "WebSearch aggregation: fullratio.com, macrotrends.net (secondary sources; no primary source publishes historical P/E ranges)",
+      "status": "CONFIRMED",
+      "note": "10-year average P/E ~12.76x; 10-year range ~3.7x (2020 COVID-distorted low) to ~27.0x (2021 high). 13.0x sits almost exactly on the average and well inside the range."
+    },
+    {
+      "claim": "PAYX FY2026 adjusted diluted EPS $5.51 vs GAAP $4.89; FY2027 guidance 7-9% adjusted EPS growth (midpoint $5.951)",
+      "source": "SEC EDGAR: payx-ex99_1.htm (Paychex FY2026 results release, live fetch)",
+      "status": "CONFIRMED",
+      "note": "Both EPS figures exact match. Guidance range exact match; midpoint recomputes to $5.951 exactly as stated in quality_compounders.md."
+    },
+    {
+      "claim": "PAYX Year-1 dividend $4.76",
+      "source": "WebSearch: SEC 8-K (payx-ex99_2.htm) and globenewswire.com dividend declarations, May/July 2026",
+      "status": "CONFIRMED",
+      "note": "Current quarterly rate is $1.19/share (raised from $1.08 in May 2026); 4x$1.19 = $4.76 exactly."
+    },
+    {
+      "claim": "PAYX FY2029 terminal EPS $6.60 bottom-up build ($7.6bn revenue, 43.8% margin, $265m interest, $30m other income, 24% tax, 356m diluted shares)",
+      "source": "Recomputed independently in Python from the disclosed drivers in quality_compounders.md",
+      "status": "CONFIRMED",
+      "note": "Recomputes to $6.6047, matching the stated $6.60 to the cent."
+    },
+    {
+      "claim": "PAYX 20.0x terminal P/E multiple is inside PAYX's own 10-year P/E history",
+      "source": "WebSearch aggregation: fullratio.com, financecharts.com (secondary sources)",
+      "status": "NOT CONFIRMED",
+      "note": "10-year average P/E ~28-29x; cited 10-year range ~23.6x (2020 low) to ~34.3x (2025 high). 20.0x sits below the entire cited range, i.e. NOT inside PAYX's own 10-year history. This makes the model more conservative than history (not an overstatement of value), but quality_compounders.md does not disclose that the multiple is below-range."
+    },
+    {
+      "claim": "Cross-check with v4 V1: AMP V1 verdict 'fair', base annual return ~+6.5%/yr",
+      "source": "v4/outputs/v1_valuation_table.csv, AMP row",
+      "status": "CONFIRMED",
+      "note": "v1_valuation_table.csv shows verdict='fair', base_ann_return_3y=0.064809 (+6.48%/yr, rounds to +6.5%/yr), derived from a P/B-relative/peer-median methodology (P/B 7.19x vs peer median 2.75x, wacc/coe 9.87%). This is a materially more conservative estimate than Codex's base case (13-14% IRR, BUY NOW). Recorded as a methodological divergence between workstreams, not an error in either -- see disagreements."
+    }
+  ],
+  "disagreements": [
+    {
+      "topic": "AMP valuation and recommendation strength",
+      "codex_v005_position": "Three-scenario DDM/EPS-multiple model: base-case IRR 14.3% at reference price / 12.8% at the $500 limit after 30% dividend withholding; BUY NOW, first-ranked candidate, 2% direct slot.",
+      "v4_v1_position": "P/B-relative / peer-median model: verdict 'fair', base annual return only +6.5%/yr (P/B 7.19x vs peer median 2.75x).",
+      "assessment": "Both figures independently reproduce correctly from each workstream's own stated methodology and inputs (verified above); the gap is a methodology choice (absolute three-scenario cash-flow IRR vs. relative P/B-to-peers), not a sourcing or arithmetic error in either model. Not adjudicated by this verification -- flagged for the next release to reconcile or to explicitly justify preferring the DDM basis over the peer-relative basis for a wealth-management/asset-management hybrid like AMP."
+    }
+  ],
+  "scope_note": "Verification covered the memo's AMP/PAYX/MSFT/NVDA/ALLE/HIG reference prices, VUAA/IB01 fund facts, the three correlated-shock rows, the return-tradeoff CAGR table, and the AMP/PAYX base-case load-bearing inputs (normalized EPS, dividend path, terminal multiple vs 10-year P/E history), per the assigned task. No files under versions/ or review/ were modified; no trades were placed or recommended."
+}

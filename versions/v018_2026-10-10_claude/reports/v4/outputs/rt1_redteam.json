@@ -1,0 +1,258 @@
+{
+ "as_of": "2026-10-05",
+ "analyst": "RT1",
+ "scope": "Research only; not personal investment advice. Dossier cutoff 2026-09-25 close. Search window 2026-09-26 to 2026-10-05 plus pre-cutoff items the dossiers missed.",
+ "method_notes": [
+  "EDGAR submissions API and browse-edgar feed (UA PersonalEquityResearch research-admin@personal-research.org, <=2 req/s) show NO filings by WEC, RSG, TJX, MA or USB dated 2026-09-26 to 2026-10-05 (latest per company: WEC 9/4, RSG 9/14 Form 4, TJX 9/17, MA 9/3, USB 9/17 424B2). The feed itself is live (it lists 5 Oct filings for other issuers); an apparent lag in per-company indexes cannot be excluded, so absence of filings is evidence, not proof.",
+  "Web news was read from search summaries and fetched pages; FMP connector tools returned a plan-access error and were not used. Third-party items (Aterio, analyst notes) are labelled as such. Several publisher pages returned HTTP 403 and are cited by headline only.",
+  "Reverse DCFs were reproduced from dossier inputs (MA 6.80%, RSG 7.19%, WEC -0.76% all match) and then re-run with current-rate discount rates, dividend/FCF bases and the 5 Oct prices (scratchpad val.py); breakeven values are accurate to ~0.05 pt.",
+  "Cross-cutting finding: the dossiers' discount rates were set as if the 10-yr Treasury were ~4.2-4.5%; it was ~5.0% on 16 Sep and ~5.25% on 5 Oct. This does not hurt MA or USB (very low implied growth) but flips or erodes the valuation gate for WEC, RSG and TJX."
+ ],
+ "tickers": {
+  "WEC": {
+   "verdict": "WEAKENED",
+   "new_events": [
+    {
+     "date": "2026-10-05",
+     "event": "EDGAR: no WEC filing dated after 2026-09-04 (latest are 8-K 7.01 investor deck 9/4 and Forms 3/4 on 9/2-9/3). No post-cutoff 8-K, 13D, S-4 or rating 8-K found. Price $101.65 (vs $101.45 at cutoff); 52-wk low $99.80 hit ~1 Oct.",
+     "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000783325 ; https://stockanalysis.com/stocks/wec/"
+    },
+    {
+     "date": "2026-10-02",
+     "event": "We Energies/Oracle announced Oracle will subscribe to 10-20% (125-250 MW) of Point Beach nuclear output to serve Project Lighthouse (Port Washington); company says other customers avoid ~$300M of fuel cost over five years; needs PSCW approval. Mildly positive: shows a named large-load customer taking cost risk.",
+     "source": "https://wisconsinwatch.org/2026/10/wisconsin-we-energies-deal-oracle-data-center-nuclear-energy-power-point-beach-plant/ ; https://news.we-energies.com/we-energies-agreement-with-oracle-expected-to-save-customers-approximately-300-million/"
+    },
+    {
+     "date": "2026-09-30 to 2026-10-02",
+     "event": "Third-party research (Aterio) and press: Project Lighthouse (1.3 GW total, 902 MW compute) interconnection is gated by ATC's PSC application; PSC withdrew its completeness finding and closed the first case in August, ATC refiled in September (clock reset). Aterio base case: partial power Dec 2027, full Oct 2028, load ramp mainly from Q1 2028 vs Oracle's H2-2027 target. Delay, not cancellation. WEC had not commented. Not in the dossier.",
+     "source": "https://theregister.com/on-prem/2026/10/02/power-approval-set-to-delay-oracles-wisconsin-ai-datacenter/5300832 ; https://www.businesswire.com/news/home/20260930874475/en/Aterio-Flags-Delay-Risk-for-Oracles-1.3-GW-Wisconsin-Data-Center"
+    },
+    {
+     "date": "2026-10-01",
+     "event": "WEC closed $99.95 after touching a 12-month low of $99.80; BMO PT 120->117 (market perform), KeyBanc 126->117 (overweight), Truist 122->114 (hold); JPMorgan PT raised to $124 (neutral). 50-day MA ~$107, 200-day ~$111.8. No company-specific catalyst cited.",
+     "source": "https://www.marketbeat.com/instant-alerts/price-wec-energy-group-nyse-wec-hits-new-12-month-low-heres-why-2026-10-01/"
+    },
+    {
+     "date": "2026-09-04",
+     "event": "8-K Item 7.01 (acc. 0000783325-26-000099) investor deck, primary-source confirmation of items the dossier flagged as data gaps: 2026 EPS guide $5.51-5.61; 7-8% EPS CAGR; $37.5B 2026-30 plan; financing = $20.5-21.5B CFO + $5.3-5.7B common equity + $14.2-14.8B incremental debt INCLUDING $5-6B junior subordinated/hybrid; ratings A-/Baa1 with FFO/debt >15% (S&P) and CFO pre-WC/debt >16% (Moody's) targets; 2.6 GW Microsoft + 1.3 GW Vantage; annual dividend $3.81 (dossier used ~$3.53, so dividend yield is 3.75% not 3.5% and payout ~68.5% of the $5.56 EPS midpoint); Wisconsin rate cases (filed Apr 1) ask ROE 9.9% vs 9.8% current, orders expected Q4 2026, effective 1 Jan 2027; Peoples Gas current ROE 9.38% (asks 10.10%), order Q4 2026; VLC tariff ROE 10.48-10.98%.",
+     "source": "https://www.sec.gov/Archives/edgar/data/783325/000078332526000099/a092026septemberfinal002.htm"
+    },
+    {
+     "date": "2026-08-18",
+     "event": "8-K Item 1.01: Wisconsin Electric signed 20-year Point Beach PPA extension with NextEra (86% of each unit; Unit 1 to Oct 2050, Unit 2 to Mar 2053), subject to PSCW approval by 1 Jan 2028 (extendable to 1 Jul 2028). Pre-cutoff; not in dossier.",
+     "source": "https://www.sec.gov/Archives/edgar/data/783325/000078332526000095/wec-20260814.htm"
+    },
+    {
+     "date": "2026-08 (approx.)",
+     "event": "Ladenburg Thalmann cut WEC to Neutral (PT $110.50 from $125.50) citing bipartisan Wisconsin political opposition to further data-centre development; leading governor candidates of both parties (general election 3 Nov 2026) favour curbing data-centre incentives; one Democratic candidate wants a moratorium. Pre-cutoff; not in dossier.",
+     "source": "https://www.investing.com/news/analyst-ratings/ladenburg-cuts-wec-energy-stock-rating-on-data-center-headwinds-93CH-4833881 ; https://wisconsinwatch.org/2026/08/wisconsin-election-governor-race-data-centers-energy-center-stage-democrat-republican/"
+    },
+    {
+     "date": "2026-09-16",
+     "event": "FOMC hiked 25bp to 3.75-4.00% (12-0), first hike since July 2023; Chair Warsh hawkish; 10-yr Treasury moved back above 5% (5.016%); 16 of 19 participants expect at least one more hike this year. Pre-dates the 25 Sep cutoff but none of the five dossiers mention it; the discount rates in their reverse DCFs (MA rf 4.2%/CoE 7.9%; RSG WACC 7.3%; WEC CoE 7.5%; TJX 8.5%; USB 9.5-10%) look calibrated to a 4-4.5% 10-yr.",
+     "source": "https://www.cnbc.com/2026/09/16/treasury-yield-bond-market-fed-decision.html ; https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-september-16-2026"
+    },
+    {
+     "date": "2026-10-01",
+     "event": "10-yr Treasury hit 5.34% (highest in 24 years); ~5.25% on 5 Oct after Sep payrolls +29k (unemployment 4.2%) cut odds of an October hike. S&P 500 about 1% below its August record.",
+     "source": "https://investing.com/news/stock-market-news/dow-jones-nasdaq-sp-500-weekly-preview-q3-earnings-to-kick-off-as-yields-surge-4932059 ; https://www.cnbc.com/2026/10/02/stock-market-next-week-outlook-for-oct-5-9-2026-.html"
+    }
+   ],
+   "kill_criteria_status": "None has fired. (1) EPS guide cut: none; 9/4 deck still shows $5.51-5.61; next test Q3 release 29 Oct. (2) Large-load commitments reduced/cancelled: not fired, but Port Washington energisation is slipping toward 2028 (third-party analysis; ATC docket reset) and Microsoft has paused phases before (2025) - treat as AMBER; would fire on any cancellation/downsizing notice. (3) Ratings: A-/Baa1 reconfirmed by company deck (9/4); no downgrade found; $5-6B of the debt is hybrid, so FFO/debt headroom cannot be checked from public data. (4) Equity issuance: no sign of >25% overshoot. (5) Rate-case ROE <9.5%: WITHIN 10% OF FIRING. Authorised 9.8% is only ~3% above the 9.5% line; utilities ask 9.9%; the consumer advocate (CUB) proposes 9.1% (PSC staff recommended 9.65% in the prior case and the PSC awarded 9.8%); orders due Q4 2026. Peoples Gas already sits at 9.38%, so the criterion wording is ambiguous for Illinois.",
+   "bear_case": "(a) The reverse DCF that carries the INCLUDE is mis-specified. It discounts EPS ($5.56) as if it were distributable cash at a 7.5% cost of equity and 3.5% terminal growth, giving 'implied growth -0.8%/yr'. WEC retains most of its cash flow: $33.3B of capex against $20.5-21.5B of CFO and $7.6-7.8B of dividends, funded by $5.3-5.7B of new equity and $14-15B of debt. On the distributable-cash basis (dividends, $3.81, yield 3.75%), the price implies 10-yr dividend growth (3% terminal) of 4.9% at 7.5% CoE, 6.3% at 8.0%, 7.55% at 8.5% and 8.8% at 9.0%, against a guided 6.5-7% dividend growth and 7-8% EPS growth that is only guided to 2030. With the 10-yr at ~5.25% and the stock yielding 3.75% (150 bp UNDER the risk-free rate), 8.0-8.5% is the defensible CoE band, so the margin of safety is thin to nil, not 'the largest gap in the batch'. (b) Utilities are rate-sensitive and this is the worst rate backdrop in two decades: stock at a 12-month low despite a Q2 beat. (c) Funding loop: ~$1.1B/yr of equity at ~18.8x forward P/E (19.7x trailing), plus $5-6B of hybrids; share count +2.1% in 5 quarters. (d) The growth layer is concentrated in two data-centre campuses, both delayed or politically exposed (ATC docket reset; 3 Nov governor's race; the PSC reshaped the VLC tariff in April toward more customer protection). (e) Q4 rate orders: a 9.6-9.7% ROE with a lower equity ratio would trim EPS and move the stock more than the Q3 print. (f) The dossier's 7.5% base for ten years extrapolates a five-year guide.",
+   "breaking_assumption": "That the market's cost of equity for WEC is <= ~8.0-8.5%. Breakeven CoE for 'price implies growth <= 7.5% base' is 8.48% (DDM, 3% terminal). Above ~8.5% the price demands more than the 7-8% guide delivers and the dossier's own 'implied below base' gate fails. With a 10-yr at 5.25%, 8.5% is only a 3.25-point spread over Treasuries.",
+   "watch": "29 Oct Q3 results (guide reaffirmed? equity issuance pace; large-load update); PSC orders in docket 5-UR-112 (We Energies/WPS/Wisconsin Gas) and ICC order for Peoples Gas in Q4 (authorised ROE must stay >=9.5%, equity ratio); PSC/ATC Port Washington docket; PSCW decisions on Oracle/Point Beach deals; Wisconsin governor election 3 Nov; any S&P/Moody's action on the hybrids; 10-yr UST above ~5.5% would push implied growth above base. Dossier fixes: dividend $3.81 not $3.53; replace the EPS-based reverse DCF with a dividend/FCFE one."
+  },
+  "RSG": {
+   "verdict": "WEAKENED",
+   "new_events": [
+    {
+     "date": "2026-10-05",
+     "event": "EDGAR: no RSG 8-K/10-Q/proxy after the 10-Q of 2026-08-07; nothing in the post-cutoff window (latest are Forms 4 through 9/14 and Schedule 13D/A 9/9). Price $212.59 (cutoff $212.10); 52-wk $196.41-233.42; trailing P/E 29.7x, forward 27.5x; ~-7% over past month. Q3 results confirmed for 29 Oct after market close.",
+     "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001060391 ; https://stockanalysis.com/stocks/rsg/"
+    },
+    {
+     "date": "2026-09-09",
+     "event": "Schedule 13D/A No. 29 (event date 9/4): Cascade Investment/Bill Gates now holds 116,166,330 shares = 37.9% of RSG, up from 112,403,625 (36.7%) in Amendment 28 (event 8/18): about 3.76M shares (~$0.8B) bought in ~2.5 weeks, funded from working capital. Supportive signal but also shows 38% of the equity is in one hand (free float ~62%); not in dossier.",
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000110465926106327/xslSCHEDULE_13D_X02/primary_doc.xml ; https://www.sec.gov/Archives/edgar/data/1060391/000110465926099242/xslSCHEDULE_13D_X02/primary_doc.xml"
+    },
+    {
+     "date": "2026-09 (approx. 15 Sep)",
+     "event": "Wolfe Research initiated at Peer Perform; consensus Buy, avg PT ~$246; post-Q2 PT changes: UBS 235, Morgan Stanley 232, Barclays 240, Baird 235. No downgrade found.",
+     "source": "https://stockanalysis.com/stocks/rsg/"
+    },
+    {
+     "date": "2026-08-06 (call; pre-cutoff, not in dossier)",
+     "event": "Q2 call detail: volume -1.9% related/-1.6% total; fuel-recovery fees added 1.8% to revenue; residential volumes -3% to -3.5% in H2 and ~-2% in 2027; Q3 adj. EBITDA margin guided 'relatively flattish' YoY (Q2 adj. EBITDA margin 32.1%, flat); M&A integration costs in Q3-Q4; management said it 'underestimated' integration of some legacy Environmental Solutions assets; analysts flagged the open-market vs restricted pricing gap as the narrowest in many years; leverage ~2.6x; >$1.2B M&A planned for 2026.",
+     "source": "https://stockanalysis.com/stocks/rsg/transcripts/662834-q2-2026/"
+    },
+    {
+     "date": "2026-07-28/30",
+     "event": "8-K 8.01: quarterly dividend raised 4.5c to $0.670 (+7.2%), record 2 Oct, paid 15 Oct (already in dossier).",
+     "source": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000266/rsg-20260728.htm"
+    },
+    {
+     "date": "2026-09-16",
+     "event": "FOMC hiked 25bp to 3.75-4.00% (12-0), first hike since July 2023; Chair Warsh hawkish; 10-yr Treasury moved back above 5% (5.016%); 16 of 19 participants expect at least one more hike this year. Pre-dates the 25 Sep cutoff but none of the five dossiers mention it; the discount rates in their reverse DCFs (MA rf 4.2%/CoE 7.9%; RSG WACC 7.3%; WEC CoE 7.5%; TJX 8.5%; USB 9.5-10%) look calibrated to a 4-4.5% 10-yr.",
+     "source": "https://www.cnbc.com/2026/09/16/treasury-yield-bond-market-fed-decision.html ; https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-september-16-2026"
+    },
+    {
+     "date": "2026-10-01",
+     "event": "10-yr Treasury hit 5.34% (highest in 24 years); ~5.25% on 5 Oct after Sep payrolls +29k (unemployment 4.2%) cut odds of an October hike. S&P 500 about 1% below its August record.",
+     "source": "https://investing.com/news/stock-market-news/dow-jones-nasdaq-sp-500-weekly-preview-q3-earnings-to-kick-off-as-yields-surge-4932059 ; https://www.cnbc.com/2026/10/02/stock-market-next-week-outlook-for-oct-5-9-2026-.html"
+    }
+   ],
+   "kill_criteria_status": "None has fired. (1) Organic growth <2% two consecutive quarters: Q1 was 1.5% (below), Q2 3.5% (above), so the count reset; the FY revenue guide ($17.20-17.30B) implies H2 total growth of roughly 3.7-4.9% less ~1.3-1.5 pts of acquisitions = ~2.3-3.6% organic, not within 10% of 2% on the reported measure. BUT reported organic includes ~1.8 pts of fuel-recovery pass-through; ex-fuel, Q2 organic was ~1.7% (our arithmetic from the call statement), i.e. already below the 2% line - the criterion is being satisfied by a pass-through item. (2) Net debt/adj. EBITDA 2.5-2.6x vs 3.5x: far. (3) Adj. FCF guide ($2.540-2.575B) cut: none; next test 29 Oct. (4) Related-business core price <4%: 6.4% in Q2, guided 6.2-6.4% for H2; but average yield was only 3.4% total / 4.0% related. (5) Item 103 environmental proceeding >=$1M: none seen in EDGAR since the Q2 10-Q.",
+   "bear_case": "(a) Growth is price over volume, and volume has fallen every quarter shown; residential contract losses persist into 2027 and the open-market/restricted price spread is the narrowest in years, so the 'core price 5.3-6.4%' headline overstates what reaches revenue (average yield 3.4-4.0%). (b) The dossier credits price-over-cost for margin expansion, but Q2 adj. EBITDA margin was flat at 32.1% and Q3 is guided flat YoY; FY expansion (60-70 bp underlying) is back-end loaded into Q4. (c) Reported organic growth is flattered by fuel recovery fees (+1.8 pts with diesel near $4 and oil rising), so the headline kill criterion is the wrong gauge. (d) Capital intensity: >$1.2B of M&A in 2026 plus ~$1.3B of buybacks and a ~$1.5B dividend on 2.6x leverage, while the dossier assumes WACC 7.3% with the 10-yr at 5.25%. (e) ~27.5x forward P/E and a ~3.0-3.9% FCF yield (below the 10-yr Treasury) leave no cushion; 52-wk low $196, high $233. (f) 38% single holder (Cascade): supportive today, an overhang if it ever sells. (g) Environmental Solutions integration is lagging management's own plan.",
+   "breaking_assumption": "WACC <= ~7.6%. The dossier's 7.2% implied 10-yr FCF growth (vs ~8% base) rests on WACC 7.3% (reproduced exactly); implied growth is 7.7% at 7.5%, 8.5% at 7.8%, 9.0% at 8.0% and 10.3% at 8.5%. Breakeven vs the 8% base is 7.6%. With the 10-yr ~100 bp above the 4.2-4.3% rf that a 7.3% WACC implies, a WACC of 7.8-8.0% is more defensible, which flips the dossier's gate to implied ABOVE base (8.5-9.0% vs 8%).",
+   "watch": "29 Oct Q3: organic growth ex-fuel, volume trend (management promised sequential improvement), Q3 adj. EBITDA margin (flat guide) and Q4 expansion setup, adj. FCF guide ($2.54-2.575B), residential contract losses, ES margin; any further Cascade 13D/A (buys vs sells); net leverage after >$1.2B M&A; 10-yr UST/WACC; commodity (~$135-140/ton). Restate the kill criterion on organic ex-fuel."
+  },
+  "TJX": {
+   "verdict": "WEAKENED",
+   "new_events": [
+    {
+     "date": "2026-10-05",
+     "event": "EDGAR: no TJX filing after 2026-09-17 (8-K Item 5.02 plus Forms 3/4). Price $135.10 (+3.9% vs $130.06 cutoff); 52-wk $122.78-170.00; trailing P/E 24.6x, forward 24.5x; next earnings 18 Nov 2026; consensus PT ~$171.6 (22 analysts).",
+     "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000109198 ; https://stockanalysis.com/stocks/tjx/"
+    },
+    {
+     "date": "2026-09-16 (8-K filed 9/17)",
+     "event": "Item 5.02: Craig A. Pintoff (EVP & Chief Administrative Officer, United Rentals) elected to the board and Audit & Finance Committee, effective immediately; ordinary non-employee director terms. Benign; closes the dossier's open flag. Quarterly dividend $0.48 also declared 9/16 (payable 3 Dec).",
+     "source": "https://www.sec.gov/Archives/edgar/data/109198/000010919826000051/tjx-20260916.htm ; https://stockanalysis.com/stocks/tjx/"
+    },
+    {
+     "date": "2026-08-20 / 2026-08-26 (pre-cutoff, not in dossier)",
+     "event": "Citi cut to Neutral (PT $154) calling Marmaxx +1% 'weak and disappointing' and 'a stock priced for flawless execution'; Jefferies cut to Hold (PT $145 from $180) saying the Marmaxx slowdown looks bigger than a typical merchandise miss (process changes with CEO involvement; Ross outperforming); Gordon Haskett to Accumulate; Guggenheim PT $152 from $175. Stock fell ~15% in August. Raised FY27 adj. EPS guide ($5.15-5.20, from $5.08-5.15) still fell short of the $5.22 consensus.",
+     "source": "https://www.investing.com/news/stock-market-news/tjx-cut-at-citi-as-disappointing-marmaxx-comp-shows-offprice-isnt-immune-4869980 ; https://www.investing.com/news/stock-market-news/jefferies-cuts-tjx-to-hold-as-marmaxx-stumbles-and-ross-pulls-ahead-4877405 ; https://www.fool.com/investing/2026/09/04/why-tjx-companies-stock-got-thrashed-in-august/"
+    },
+    {
+     "date": "2026-08-19 (release; fills dossier gaps)",
+     "event": "Q2 FY27 release (acc. 0000109198-26-000045): Marmaxx 'below our expectations' but 'improvement ... to start the quarter'; Q3 consolidated comps planned +2% to +3%, Q3 adj. EPS $1.30-1.32 (GAAP $1.36-1.38 incl. $0.06 tariff refund); FY comps +3% to +4%; FY GAAP pretax margin 12.3-12.4% incl. 0.3 pt net tariff-refund benefit; says total IEEPA refunds 'may not equal' tariffs paid. Store growth to be accelerated to 4% a year from next year, 7,500-store long-term target.",
+     "source": "https://www.sec.gov/Archives/edgar/data/109198/000010919826000045/tjxq2fy27earningspressrele.htm"
+    },
+    {
+     "date": "2026 Q2 (retail data)",
+     "event": "Placer.ai-based commentary: US TJX-banner visits flat YoY in Q2 vs a 3.5% decline for US apparel; management described Marmaxx issues as self-inflicted merchandise-mix/execution.",
+     "source": "https://retailwire.com/discussion/off-price-retail-recent-traffic/ (via web search summary)"
+    },
+    {
+     "date": "2026-09-16",
+     "event": "FOMC hiked 25bp to 3.75-4.00% (12-0), first hike since July 2023; Chair Warsh hawkish; 10-yr Treasury moved back above 5% (5.016%); 16 of 19 participants expect at least one more hike this year. Pre-dates the 25 Sep cutoff but none of the five dossiers mention it; the discount rates in their reverse DCFs (MA rf 4.2%/CoE 7.9%; RSG WACC 7.3%; WEC CoE 7.5%; TJX 8.5%; USB 9.5-10%) look calibrated to a 4-4.5% 10-yr.",
+     "source": "https://www.cnbc.com/2026/09/16/treasury-yield-bond-market-fed-decision.html ; https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-september-16-2026"
+    },
+    {
+     "date": "2026-10-01",
+     "event": "10-yr Treasury hit 5.34% (highest in 24 years); ~5.25% on 5 Oct after Sep payrolls +29k (unemployment 4.2%) cut odds of an October hike. S&P 500 about 1% below its August record.",
+     "source": "https://investing.com/news/stock-market-news/dow-jones-nasdaq-sp-500-weekly-preview-q3-earnings-to-kick-off-as-yields-surge-4932059 ; https://www.cnbc.com/2026/10/02/stock-market-next-week-outlook-for-oct-5-9-2026-.html"
+    },
+    {
+     "date": "2026-10-02",
+     "event": "Sep payrolls +29k (unemployment 4.2%): softer labour market with 10-yr ~5.25% is a mixed read for discretionary retail (trade-down tailwind, but weaker spending).",
+     "source": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-5-135537124.html"
+    }
+   ],
+   "kill_criteria_status": "None has fired, but #1 is ONE PRINT from firing. (1) Marmaxx comp <2% for two consecutive quarters: Q2 FY27 was +1% (first sub-2% quarter); a Q3 FY27 print (18 Nov) below 2% completes the trigger. A consolidated Q3 comp plan of +2-3% with HomeGoods/Canada/International running +6-7% implies a Marmaxx plan of only roughly 0-2% (our inference; not disclosed), so the bar is near the line; TJX historically plans conservatively and says Q3 started better. (2) Ex-tariff gross margin down >100 bp: no (adj. GM 31.4%, +0.7 pt). (3) Adj. EPS guide cut in next two releases: none; but the guide is below consensus. (4) Net debt/EBITDA >2.0x: 0.9x. (5) Buyback cut >30% QoQ: none ($798M in Q2).",
+   "bear_case": "(a) Marmaxx is >60% of sales and ~70% of EBIT; it grew +6% in Q1 and +1% in Q2, the weakest since FY2018 ex-COVID, with management itself calling it self-inflicted and Ross gaining share; two sell-side downgrades and a 15% August drawdown show the market already prices a problem. (b) The dossier's reverse DCF (earnings yield 4.33% -> 'implied growth 4.2%') treats 100% of earnings as distributable. TJX converts ~75-80% of earnings to FCF (FCF yield ~3.0%, P/FCF ~33x). On FCF, the price implies 10-yr FCF-per-share growth of 10.5% at 8.5% CoE (3% terminal), 11.7% at 9%, 13% at 9.5%: AT OR ABOVE the 8-10% base case the dossier itself uses, not below. Even on the dossier's own earnings-yield shortcut, moving CoE from 8.5% to the 9.5% a 5.25% 10-yr implies gives 5.4%, not 4.2%. (c) FY27 EPS includes a ~$0.16 tariff-refund benefit of uncertain size; adjusted EPS growth is ~7-8% (guide $5.15-5.20), which is the real run-rate and sits at the bottom of 'base 8-10%'. (d) 24.5x forward is a top-of-range multiple for a retailer with a stalling main banner, so a second weak Marmaxx quarter on 18 Nov probably costs more than the quarter's EPS. (e) Faster store growth (4% a year) raises capital intensity and cannibalisation risk just as US comps slow.",
+   "breaking_assumption": "That Marmaxx comps recover to mid-single digits (base case 'comps normalise to mid-single-digit; adj. EPS +9-10%') AND cost of equity <= ~8%. On FCF, implied growth equals the 9% base at a 7.95% CoE and the 10% top of the base at 8.3%; at any CoE above ~8.3% the price already requires more than the dossier's base case. This is the name closest to BROKEN: it flips if the Q3 Marmaxx comp is <2% (kill criterion) or if the CoE is set at today's rates.",
+   "watch": "18 Nov Q3 FY27: Marmaxx comp (>=2% required), consolidated vs +2-3% plan, adj. EPS vs $1.30-1.32, FY guide, gross margin ex-tariff, any change in tariff-refund accounting, buyback pace; Ross Stores/Burlington prints; US apparel traffic data; consumer data after the 5 Oct payrolls; 10-yr UST."
+  },
+  "MA": {
+   "verdict": "HOLDS",
+   "new_events": [
+    {
+     "date": "2026-10-05",
+     "event": "EDGAR: no MA filing dated after 2026-09-03 (Forms 4/144 only; last 8-K and 10-Q 7/30). Price $564.43 (cutoff $567.65); 52-wk $464.52-601.23 (record close $599.86 in August); trailing P/E 30.4x, forward 26.0x; Q3 results est. 29 Oct.",
+     "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001141391 ; https://stockanalysis.com/stocks/ma/"
+    },
+    {
+     "date": "2026-08-03 (pre-cutoff; dossier left open)",
+     "event": "BVNK acquisition closed ($1.5B base + up to $300M earn-out), well ahead of the year-end guide; regulators cleared; no adverse condition reported. Resolves the dossier 'open item' and kill criterion #3 favourably (adds ~$1.5B net debt, leverage still <1x).",
+     "source": "https://www.americanbanker.com/payments/news/mastercard-closes-its-1-8-billion-bvnk-acquisition ; https://genfinity.io/2026/08/03/mastercard-completes-bvnk-acquisition-stablecoin-capabilities/"
+    },
+    {
+     "date": "2026-06-09 preliminary approval; 2026-09-19 objections report (not in dossier)",
+     "event": "Visa/Mastercard merchant injunctive-relief class settlement (announced Nov 2025): Judge Cogan (EDNY) granted preliminary approval; terms: 10 bp cut to varying interchange rates for 5 years, 1.25% cap on standard consumer-card rates for 8 years, merchants may decline premium/commercial cards (honor-all-cards relaxed), steer and surcharge up to 3%. ~1,000 merchants and trade groups filed objections; NACS says it will appeal if final approval is granted; final decision pending.",
+     "source": "https://www.paymentsdive.com/news/court-approves-visa-mastercard-settlement/822440/ ; https://www.crowdfundinsider.com/2026/09/310317-visa-mastercard-settlement-faces-merchant-pushback-in-court/"
+    },
+    {
+     "date": "2026-01 onward; reported again 2026-09-30",
+     "event": "Credit Card Competition Act re-introduced (Marshall/Durbin) with Trump endorsement; Visa/Mastercard fell >5% in January on it and a proposed 10% card-rate cap. A Washington Times piece of 30 Sep shows it still live in Congress (page returned 403, headline only). No vote found.",
+     "source": "https://www.paymentsdive.com/news/credit-card-competition-bill-wins-trump-support/809550/ ; https://www.washingtontimes.com/news/2026/sep/30/legislation-targeting-credit-card-swipe-fees-could-lower-retail/"
+    },
+    {
+     "date": "2026-09-22 / 2026-09-29",
+     "event": "SoFi first national bank live on stablecoin settlement across Mastercard's network (9/22); quarterly dividend of $0.87 declared (9/29). Neutral-to-positive.",
+     "source": "https://stockanalysis.com/stocks/ma/"
+    },
+    {
+     "date": "2026-04 (suit); no ruling found through 2026-10-05",
+     "event": "April 2026 merchant class action challenging the scope of the 2023 Damages Class release: no ruling or reserve change found (dossier kill criterion #4 not triggered).",
+     "source": "https://www.paymentsdive.com/news/visa-mastercard-face-new-suit-over-card-fees/818294/"
+    },
+    {
+     "date": "2026-09-16",
+     "event": "FOMC hiked 25bp to 3.75-4.00% (12-0), first hike since July 2023; Chair Warsh hawkish; 10-yr Treasury moved back above 5% (5.016%); 16 of 19 participants expect at least one more hike this year. Pre-dates the 25 Sep cutoff but none of the five dossiers mention it; the discount rates in their reverse DCFs (MA rf 4.2%/CoE 7.9%; RSG WACC 7.3%; WEC CoE 7.5%; TJX 8.5%; USB 9.5-10%) look calibrated to a 4-4.5% 10-yr.",
+     "source": "https://www.cnbc.com/2026/09/16/treasury-yield-bond-market-fed-decision.html ; https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-september-16-2026"
+    },
+    {
+     "date": "2026-10-01",
+     "event": "10-yr Treasury hit 5.34% (highest in 24 years); ~5.25% on 5 Oct after Sep payrolls +29k (unemployment 4.2%) cut odds of an October hike. S&P 500 about 1% below its August record.",
+     "source": "https://investing.com/news/stock-market-news/dow-jones-nasdaq-sp-500-weekly-preview-q3-earnings-to-kick-off-as-yields-surge-4932059 ; https://www.cnbc.com/2026/10/02/stock-market-next-week-outlook-for-oct-5-9-2026-.html"
+    }
+   ],
+   "kill_criteria_status": "None has fired and none is within 10%. (1) Net revenue growth <8% two quarters: last prints +15.8% and +14.1% (Q2), far above. (2) Adjusted operating margin compression >300 bp: Q2 GAAP op. margin 60.2% (up). (3) BVNK: closed 3 Aug without adverse conditions - criterion moot/passed. (4) Court ruling voiding the 2023 release with >$1B loss: none; settlement final approval and the April suit still pending. (5) Net debt/EBITDA >1.5x: ~0.6x pre-BVNK, <1x after.",
+   "bear_case": "(a) Regulation is bunching: injunctive settlement cutting rates and loosening honor-all-cards (final approval pending, appeal threatened), a Trump-backed Credit Card Competition Act, card-rate cap talk, and a standing EU/US-state cap risk; the dossier mentions this only generically and omits the November 2025 settlement entirely. (b) Customer incentives rose 22% vs gross network revenue +10% in Q2, i.e. net take-rate is already being squeezed by mix. (c) Stablecoin/agentic-payment disintermediation is real enough that MA paid up to $1.8B for BVNK defensively. (d) Valuation: 26x forward and a 3.4% FCF yield are below the 10-yr Treasury (5.25%); the stock is an equity-duration asset after a 24-year-high yield. (e) A hiking cycle and a +29k payrolls print raise odds of slower consumer/cross-border volume. (f) ROE of 290% is a buyback artefact; the April suit could reopen interchange claims back to 2019 against a $296M reserve.",
+   "breaking_assumption": "That net revenue can keep compounding ~12-15% (take-rate intact) for a decade. The valuation arithmetic itself is robust: reproducing the dossier (6.8% implied at 7.9% CoE, 22x exit) and re-running at today's rates gives 7.8% at a 9% CoE; 9.5% at 9% CoE with an 18x exit; 10% only at an 11.2% CoE; implied growth reaches the ~12% base only at a ~13% CoE. So the price-implies-below-base test survives the rate shock. What would break it is a regulatory or disintermediation shock that permanently cuts net revenue growth to ~8% (the kill line).",
+   "watch": "29 Oct Q3 (net revenue growth vs 8% line; incentives/rebates growth vs revenue; cross-border; VAS); Judge Cogan final-approval ruling and appeals; CCCA movement/any Senate vote; April 2026 release-scope suit rulings; BVNK integration; Visa's print for read-across; 10-yr UST."
+  },
+  "USB": {
+   "verdict": "HOLDS",
+   "new_events": [
+    {
+     "date": "2026-10-05",
+     "event": "EDGAR: no USB 8-K, 10-Q or proxy after the 7/16 earnings release and 8/6 10-Q; only structured-note 424B2/424B3 pricing supplements through 9/17 (routine). Price $57.65 (-2.8% vs $59.33 at cutoff); 52-wk $45.02-66.08; trailing P/E 11.5x, forward 10.5x; market cap ~$89.8B; P/TBV ~1.92x on $30.04 TBV. Q3 results 15 Oct, 8:00 a.m. CT (confirmed).",
+     "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000036104 ; https://stockanalysis.com/stocks/usb/"
+    },
+    {
+     "date": "2026-09-08 (pre-cutoff; contradicts dossier)",
+     "event": "USB raised its quarterly common dividend 3.8% to $0.54 ($2.16 annualised), record 30 Sep, payable 15 Oct. The dossier (checked 'to 25 Sep') says the dividend was $0.52 and unchanged for several quarters; payout (~43% of $5.01 TTM EPS) shifts marginally; confidence signal positive.",
+     "source": "https://ir.usbank.com/news-events/news/news-details/2026/U-S--Bancorp-Announces-Quarterly-Dividends-d0de6f7ae/default.aspx"
+    },
+    {
+     "date": "2026-09-16",
+     "event": "After the Fed hike, USB fell 3.8% on the day (one of the worst diversified banks); the same source cites concern about banks' private-credit exposure.",
+     "source": "https://markets.financialcontent.com/stocks/article/stockstory-2026-9-16-truist-financial-us-bancorp-and-republic-bancorp-stocks-trade-down-what-you-need-to-know"
+    },
+    {
+     "date": "2026-10-01 to 2026-10-05",
+     "event": "Pre-earnings target cuts: Evercore ISI 72->65 (Outperform), JPMorgan 69->65 (Neutral), Truist 69->67 (Buy), UBS 66->64 (Neutral); HSBC raised 74->76 (Buy). No stated estimate or credit reason found in the sources. Consensus PT ~$67.4.",
+     "source": "https://www.gurufocus.com/news/9106087/usb-maintains-rating-by-evercore-isi-group-price-target-lowered-to-65 ; https://www.marketbeat.com/instant-alerts/analyst-jpmorgan-chase-co-cuts-us-bancorp-nyse-usb-price-target-to-6500-2026-10-02/ ; https://stockanalysis.com/stocks/usb/"
+    },
+    {
+     "date": "2026-09-25",
+     "event": "Nano Banc (CA, $736M assets) closed by regulators: sixth US bank failure of 2026, the most in a year this decade; small and not USB-specific but feeds sector credit sentiment.",
+     "source": "https://bankingjournal.aba.com/2026/09/nano-banc-in-california-closed-by-regulators/"
+    },
+    {
+     "date": "NOT an event",
+     "event": "A web search returned 'September 2026' USB penalties (Fed $15M, OCC $75M, FinCEN $185M, DOJ $528M). These amounts are the February 2018 AML settlement ($613M); the page dates are wrong and no EDGAR disclosure of a new action exists. Discarded; kill criterion #5 not triggered.",
+     "source": "https://www.investing.com/news/stock-market-news/us-bancorp-to-pay-613-million-for-moneylaundering-violations-1254374"
+    },
+    {
+     "date": "2026-09-16",
+     "event": "FOMC hiked 25bp to 3.75-4.00% (12-0), first hike since July 2023; Chair Warsh hawkish; 10-yr Treasury moved back above 5% (5.016%); 16 of 19 participants expect at least one more hike this year. Pre-dates the 25 Sep cutoff but none of the five dossiers mention it; the discount rates in their reverse DCFs (MA rf 4.2%/CoE 7.9%; RSG WACC 7.3%; WEC CoE 7.5%; TJX 8.5%; USB 9.5-10%) look calibrated to a 4-4.5% 10-yr.",
+     "source": "https://www.cnbc.com/2026/09/16/treasury-yield-bond-market-fed-decision.html ; https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-september-16-2026"
+    },
+    {
+     "date": "2026-10-01",
+     "event": "10-yr Treasury hit 5.34% (highest in 24 years); ~5.25% on 5 Oct after Sep payrolls +29k (unemployment 4.2%) cut odds of an October hike. S&P 500 about 1% below its August record.",
+     "source": "https://investing.com/news/stock-market-news/dow-jones-nasdaq-sp-500-weekly-preview-q3-earnings-to-kick-off-as-yields-surge-4932059 ; https://www.cnbc.com/2026/10/02/stock-market-next-week-outlook-for-oct-5-9-2026-.html"
+    }
+   ],
+   "kill_criteria_status": "None has fired. (1) CET1 10.8% vs 9.5%: 12% headroom (outside the 10% band); Q3 print 15 Oct. (2) NCO >0.75% two quarters: 0.53% in Q2; no new credit disclosure. (3) Efficiency ratio >60% two quarters: Q2 57.1%, headroom ~5% (WITHIN 10% on the ratio); a full quarter of BTIG (about 86% efficiency in its first month) plausibly lifts the group ratio ~0.7 pt to ~58% (our rough estimate), narrowing headroom to ~3%, but two consecutive prints are required. (4) NIM compression >15 bp YoY: NIM was +13 bp YoY; a Fed hike helps asset yields but funding costs and a deposit gap (loans +7.1% vs deposits +2.4%) are the risk. (5) Enforcement action >$50M: none found (the 2018-dated results were discarded).",
+   "bear_case": "(a) Higher-for-longer shock: 10-yr at ~5.25% and a Fed that is hiking raises deposit competition (loan growth outrunning deposits), pressures securities marks/TBV and slows capital markets; the stock fell 3.8% on the hike day and is 2.8% below the cutoff price while analysts cut targets ahead of 15 Oct. (b) Credit is late-cycle: six bank failures in 2026, private-credit worries; NCO 0.53% is near a cyclical low and the kill line (0.75%) is only ~40% higher. (c) ROTCE of 18.7% in Q2 may be a peak (Q1 17.0%); the whole P/TBV case assumes high-teens ROTCE persists. (d) BTIG adds cyclical, low-margin revenue (about $98M revenue / $84M expense in its first month) that raises the efficiency ratio. (e) Dossier errors: dividend stale ($0.54 not $0.52); the cost of equity for the reverse valuation (9.5-10%) was set before the yield spike.",
+   "breaking_assumption": "Through-cycle ROTCE staying at or above ~16-17%. Implied growth from P/TBV = 1 + (ROTCE - r)/(r - g): at today's price (1.92x TBV) and ROTCE 18.7% implied g is -0.5% at r 9.5%, 0.5% at 10%, 1.6% at 10.5%, 2.6% at 11%; at ROTCE 16% and r 10.5% it is 4.5%; at ROTCE 15% and r 11% it is 6.65%, which equals the low end of the dossier's 6-9% TBV-growth capacity. So the valuation gate survives the rate move but only while ROTCE holds; a credit-cost-driven ROTCE near 15% breaks it.",
+   "watch": "15 Oct Q3: NIM (vs +13 bp YoY cushion), efficiency ratio (BTIG full quarter), NCO and reserve build, CET1, loan vs deposit growth and deposit costs, AOCI/TBV change after the yield rise, buyback pace, capital-markets softness, fee growth ex-BTIG; sector credit events/private-credit marks; 10-yr UST."
+  }
+ }
+}

@@ -1,0 +1,118 @@
+{
+  "agent": "F40",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "CMI": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Engine and data-center power-systems maker with a real structural tailwind, but the price already assumes growth well above what it has ever delivered.",
+      "kill_criteria": [
+        "EBITDA margin stays below 18.0% for two consecutive quarters despite reiterated FY26 guidance (would break the \"raises are backed by margin\" thesis). [DV09: literally already met at Q2-26 (Q1-26 17.7% ex-special item, Q2-26 17.5%); restate forward-looking for Q3/Q4-26.]",
+        "Power Systems / large-genset book-to-bill falls below 1.0x for two consecutive quarters (backlog thesis breaking).",
+        "Net debt/EBITDA rises above 1.5x (from ~0.7x; DV09-corrected from ~0.6x) without offsetting FCF growth.",
+        "NTM P/E re-rates above the 20x peer median without a corresponding upward revision to consensus 10-year growth.",
+        "Follow-on shareholder/consumer litigation tied to the 2023-24 DOJ/EPA/CARB Clean Air Act settlement produces a material (>$200M) incremental charge beyond current accruals."
+      ],
+      "key_adverse_facts": [
+        "Q2-26 EBITDA margin fell YoY (17.5% vs 18.4%) despite two consecutive FY26 guidance raises (May, Aug; DV09-corrected from 'three'), driven by higher incentive comp and R&D.",
+        "Q1-24 GAAP EPS of $14.03 included a one-off $1.3bn ($9.08/share) Atmus divestiture gain; FY2025 GAAP results included a $458M ($3.28/share) mostly non-cash Electrolyzer/Accelera charge ($218M / $1.54 of it in Q4-25; DV09-corrected) - both must be excluded from any 'clean' trend read.",
+        "$1.675bn DOJ/EPA/CARB Clean Air Act settlement (finalized Apr-2024) remains subject to ongoing shareholder/consumer follow-on litigation.",
+        "V1 reverse DCF implies the price already discounts 15.66%/yr FCF growth for 10 years vs 8.4-8.9% consensus/delivered growth; V1 base-case 3y annualised return is negative (-3.9%)."
+      ],
+      "data_conflicts": [
+        "Sell-side mean price target ($746) and even the low target ($530) sit above the $525.06 close, implying Street consensus is more bullish than V1's reverse DCF (verdict 'excessive', base case -3.9%/yr) - an unresolved disagreement between two legitimate valuation approaches, flagged rather than resolved.",
+        "DV09: net debt is $3,771M (~0.7x TTM EBITDA of $5,281M), not $3.16bn (~0.6x); V1/D3 omit loans payable and current maturities (~$610M); effect on V1 implied growth about +0.1 pt",
+        "Triage attributed V1's 'excessive' flag to price momentum; the flag is actually a fundamentals-based reverse-DCF result independent of the momentum factor - triage's causal claim is not supported."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - quality and the structural data-center driver are well evidenced, but the valuation math is the swing factor and depends on assumptions (WACC, terminal growth) that are inherently uncertain",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "excessive",
+        "v1_base_3y": -0.0391,
+        "dossier_view": "expensive",
+        "consistent": true,
+        "reconciliation": "This dossier agrees with V1: the reverse DCF implies growth (15.7%/yr) well above delivered/consensus (8-9%), and V1's own base-case 3y return is already negative; the durable data-center tailwind is real but insufficient to close this gap at the current price.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.2507,
+        "base": -0.0391,
+        "bull": 0.1936
+      }
+    },
+    "BRO": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Insurance broker whose headline growth is now mostly a debt-funded mega-acquisition, while underlying organic growth just turned negative.",
+      "kill_criteria": [
+        "Organic revenue growth negative for 3+ consecutive quarters (organic was -2.8% in Q4-25, flat in Q1-26, -0.7% in Q2-26: two negative and one flat of the last three).",
+        "Net debt / adjusted EBITDAC exceeds 3.5x (currently ~2.8x).",
+        "Adjusted EBITDAC margin contracts >150bps YoY for two consecutive quarters (Q2-26 was already -100bps YoY).",
+        "Accession-segment synergies fall short of the disclosed $30-40M FY26 target.",
+        "Additional material producer/team departures or adverse non-compete litigation rulings beyond the $18M already disclosed."
+      ],
+      "key_adverse_facts": [
+        "Organic revenue growth decelerated from +6.5% in Q1-25 to -2.8% in Q4-25, flat in Q1-26 and -0.7% in Q2-26 (verification DVH6: Q4-25 added); triage's '32% revenue growth' headline is almost entirely the debt/equity-funded Accession acquisition, not organic.",
+        "GAAP diluted EPS declined YoY in 4 of the last 5 quarters (Q2-25 -10%, Q3-25 -16%, Q4-25 -19.2%, Q1-26 -7.8%) as acquisition financing costs and an 18% increase in diluted share count outran GAAP net income growth; only adjusted EPS shows consistent (decelerating) growth.",
+        "Net debt/adjusted EBITDAC rose from well under 1x to roughly 2.8x to fund the $9.825bn Accession acquisition (Aug-2025).",
+        "$18M of Q2-26 revenue was lost to litigation tied to producers/staff departing for a competing startup.",
+        "Triage's '54% EPS growth' claim is not supported by GAAP or adjusted quarterly EPS found in SEC filings/press releases this session."
+      ],
+      "data_conflicts": [
+        "Triage's growth narrative (32% revenue/54% EPS growth, 'proven broker compounder') conflicts with the primary-source organic-growth and GAAP-EPS trend, which shows deceleration into negative organic growth by Q2-26; this dossier's verdict is more cautious than triage's implied framing."
+      ],
+      "next_earnings_date": "2026-10-26",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium-low - valuation cross-checks agree the stock isn't priced for perfection, but the organic-growth deceleration is a live, unresolved trend, not yet a proven bottom",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "consistent": null,
+        "reconciliation": "[Corrected 2026-10-06 (DVH6)] No V1 systematic valuation exists for BRO this cycle; the dossier's own reverse DCF is restated on the programme basis (equity, Ke 8.15% = 5.17% UST + Blume beta 0.720 x 4.14% ERP, ten years then 3.0%, FCF after SBC $1,356M, market cap $20.35bn): implied 10-year FCF growth about -0.6%/yr (dossier +0.3% used levered FCF at a WACC against EV and no SBC deduction). implied_vs_base remains below.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.0789,
+        "base": 0.1303,
+        "bull": 0.3205
+      }
+    },
+    "CMS": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Michigan's dominant regulated utility with a 20-year dividend-growth streak and guidance never cut, but Moody's just flagged its huge capital plan as a credit risk.",
+      "kill_criteria": [
+        "Moody's or S&P actually downgrades CMS Energy or Consumers Energy (current status: negative outlook only, ratings affirmed).",
+        "FY2026 adjusted EPS guidance ($3.83-3.90) is cut mid-year (reaffirmed twice through Q2-26 to date).",
+        "An MPSC rate-case order disallows a material (>10%) share of pending capital-recovery requests.",
+        "Net debt continues rising without a matching credit-rating cushion or explicit securitization pass-through disclosure.",
+        "Adjusted EPS growth falls outside the reaffirmed 6-8% long-term range for two consecutive fiscal years."
+      ],
+      "key_adverse_facts": [
+        "Q2-26 adjusted EPS missed consensus by >50% ($0.37 vs ~$0.76 expected) on weather, storm O&M, and non-repeating 2025 liability-management benefits; full-year guidance was reaffirmed the same day.",
+        "Moody's moved CMS Energy/Consumers Energy to a negative outlook (~March 2026) over the size of a $24bn five-year capital plan relative to regulatory cost-recovery timing.",
+        "Leverage is high at ~6.2-6.3x net debt/EBITDA (net debt ~$18.8bn vs TTM EBITDA ~$3.0bn); DV09-corrected: securitization debt is only $525M (2.7% of total debt), so it neither explains nor obscures the leverage.",
+        "FCF is structurally negative (capex materially exceeds OCF), a normal utility feature but one that rules out a standard FCF-yield valuation."
+      ],
+      "data_conflicts": [
+        "None material found versus the quant/triage view this session; triage's characterisation (cheap NTM P/E, above-average guided growth, leverage 'typical not new concern') is corroborated by primary-source guidance history, though the Moody's negative-outlook action (not in the triage card) is a genuine incremental risk this dossier adds.",
+        "DV09: FY26 guidance was raised once (5 Feb 2026) then reaffirmed, not raised twice; the 30 Oct 2025 release raised FY25 guidance (not maintained) and initiated FY26; TTM OCF is $2,148M not $2.77bn; the 28 Jul 2026 release announced the exit from non-utility renewables development at NorthStar"
+      ],
+      "next_earnings_date": "2026-10-29",
+      "horizon": "24-48 months",
+      "confidence_in_thesis": "medium-high - the guidance track record is strong and independently verified across 4 releases; the main uncertainty is credit-rating trajectory, not the earnings algorithm",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": null,
+        "reconciliation": "No V1 systematic valuation exists for CMS this cycle (absent from v1_valuation_table.csv/v1_valuation.json); this dossier's reverse dividend-discount cross-check (implied growth ~5.2%, below the guided 6-8% algorithm) stands alone and supports a fair-to-cheap read.",
+        "implied_vs_base": "below"
+      },
+      "scenario_returns_3y": {
+        "bear": 0.039,
+        "base": 0.1054,
+        "bull": 0.1548
+      }
+    }
+  }
+}

@@ -1,0 +1,427 @@
+{
+  "agent": "Q11",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "CRM": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "CRM/SaaS suite of record (Sales/Service/Data Cloud/Slack) with high switching costs; Agentforce is the new upsell.",
+      "reason": "Core growth has decelerated to ~11% but NTM P/E of 14.4x with 9% FCF yield is cheap for a durable enterprise-software leader; Agentforce/AI monetization is optionality, not yet priced in.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "DDOG": {
+      "advance": false,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 2,
+      "red_flags": [
+        "extreme valuation vs FCF"
+      ],
+      "one_line": "Leading cloud observability/monitoring platform with high net-revenue-retention and broad product suite.",
+      "reason": "Real 35.6% revenue growth and strong moat, but 93.9x NTM P/E against a 1.1% FCF yield and only 6.8% street upside means the price already assumes near-flawless multi-year execution; too rich to advance now.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "FICO": {
+      "advance": false,
+      "quality": 3,
+      "growth": 3,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "regulatory: FHFA directed Fannie Mae/Freddie Mac to accept VantageScore 4.0 (Sep 4, 2026), ending FICO's de facto mortgage-scoring monopoly"
+      ],
+      "one_line": "Analytics/credit-scoring monopoly (FICO Score) plus a growing decisioning-software platform.",
+      "reason": "Scores segment (the main growth/margin engine, ~60%+ mortgage-driven) faces multi-year competitive erosion now that VantageScore is mandated as an alternative; stock already down >50% from highs but the core moat that justified the premium is structurally impaired, so this is a disqualifying red flag despite still-strong headline growth and a wide analyst price-target gap.",
+      "sources": [
+        "https://finance.yahoo.com/markets/stocks/articles/one-regulator-just-ended-fair-035755697.html",
+        "https://www.wsj.com/personal-finance/credit/fico-stock-pricing-model-434ff3e7",
+        "https://www.spglobal.com/ratings/en/regulatory/article/-/view/type/HTML/id/3576436",
+        "data/triage_cards.csv"
+      ]
+    },
+    "INTU": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "long-run AI/free-filing disintermediation risk to TurboTax (monitor, not confirmed this quarter)"
+      ],
+      "one_line": "TurboTax/QuickBooks/Credit Karma/Mailchimp platform with deep consumer and SMB network effects.",
+      "reason": "13.7% revenue growth, 23.6% ROE and an 8.6% FCF yield against an 11.3x NTM P/E (a steep de-rating from Intuit's historical 25x+) look overdone on the downside; 47% street upside supports advancing pending a closer look at the AI-disruption narrative.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "PLTR": {
+      "advance": false,
+      "quality": 4,
+      "growth": 5,
+      "price_vs_growth": 1,
+      "red_flags": [
+        "valuation priced for perfection"
+      ],
+      "one_line": "AI/data platform (Gotham/Foundry/AIP) for government and enterprise customers, genuinely hyper-growing.",
+      "reason": "92.8% revenue growth and strong margins are real, but 88.8x NTM P/E, a 0.5% FCF yield and only 3.1% street upside show the price already assumes years of flawless compounding at these rates; too extended to advance.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "PTC": {
+      "advance": true,
+      "quality": 4,
+      "growth": 2,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "reported revenue (-6.8%) and EPS (-13.6%) declined YoY - needs verification this is a tough prior-year compare / deal-timing lump in the perpetual-to-SaaS transition rather than genuine ARR deceleration"
+      ],
+      "one_line": "PLM/CAD software (Windchill, Onshape, ServiceMax) for industrial manufacturers with high switching costs.",
+      "reason": "41% margins, 35% ROE and a 6.9% FCF yield at 15.5x NTM P/E are unusually strong for a supposedly declining business, suggesting the headline revenue/EPS drop is a comp or timing issue rather than structural decay; worth full diligence to confirm underlying ARR trend before relying on the discount.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "SNPS": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "China EDA export-control exposure (US restrictions on EDA software sales to Chinese semiconductor customers, partially eased in 2025) is a real revenue-at-risk item",
+        "elevated leverage (net debt/EBITDA 3.5x) from debt-funded Ansys acquisition"
+      ],
+      "one_line": "EDA chip-design software duopolist (with Cadence) now also owns Ansys simulation - near-essential tools for semiconductor design.",
+      "reason": "Revenue/EPS growth is inflated by the Ansys merger and margin is temporarily compressed by deal costs, but the underlying moat (mission-critical, non-substitutable design tools) is as strong as it gets; 24.4x NTM P/E is reasonable once integration and China risk are underwritten, so it merits full diligence.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "TRMB": {
+      "advance": false,
+      "quality": 3,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "negative profit margin/ROE - likely a GAAP artifact from the Trimble/AGCO precision-ag joint-venture deconsolidation rather than core operating losses; unverified"
+      ],
+      "one_line": "Positioning/GPS hardware and software for construction, agriculture and transportation, now restructured around 50/50 JVs.",
+      "reason": "Scores don't clear the bar (quality/growth both mid-pack) even though the cheap multiple and JV-driven margin distortion look like they may be overstating the weakness; not disqualified, just not compelling enough to advance this round.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "TYL": {
+      "advance": true,
+      "quality": 5,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Dominant public-sector software (courts, property tax/appraisal, ERP) for US state and local governments.",
+      "reason": "Multi-decade government contracts create extreme switching costs; steady 8.2% revenue growth plus SaaS-transition margin inflection at 22.1x NTM P/E (well below Tyler's historical premium) makes this a clear advance.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "WDAY": {
+      "advance": false,
+      "quality": 3,
+      "growth": 3,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "HCM/financials SaaS suite for large enterprises with sticky, hard-to-rip-out payroll and HR systems.",
+      "reason": "Solid but unremarkable across the board: growth has slowed to 12.8%, and only 10.2% street upside signals limited analyst conviction; doesn't clear quality>=4 or growth>=4, so it stays in the pile for now rather than advancing.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "ANET": {
+      "advance": true,
+      "quality": 5,
+      "growth": 5,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "customer concentration (Meta and Microsoft are large single-digit-to-double-digit-percent customers)",
+        "competitive risk from hyperscaler in-house silicon and Nvidia's networking push"
+      ],
+      "one_line": "AI/cloud data-center networking leader (EOS software moat) for hyperscalers.",
+      "reason": "37.7% revenue growth with 38% margins and 31.5% ROE is a rare combination; 42x NTM P/E is full but not absurd given the multi-year AI-networking capex cycle, so this warrants full diligence despite customer-concentration risk.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "CIEN": {
+      "advance": true,
+      "quality": 3,
+      "growth": 5,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "stock up ~163% over 12 months - valuation and expectations are extended; AI-datacenter-interconnect capex cycle could normalize"
+      ],
+      "one_line": "Optical networking/coherent-optics equipment maker riding the AI datacenter interconnect buildout.",
+      "reason": "37% revenue growth and thin FCF yield (1.3%) are typical of a capital-intensive equipment cycle; street still sees 44.8% upside even after the huge run, so the growth case survives the momentum, but this needs a hard look at cycle durability before sizing.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "CSCO": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [],
+      "one_line": "Legacy networking incumbent (switches/routers) reaccelerating via AI-networking demand and Splunk/security cross-sell.",
+      "reason": "17.6% revenue growth (reaccelerating from a multi-year lull) with 27% ROE and a 1.6% dividend at a reasonable 20.4x NTM P/E is an attractive combination for an incumbent with a huge installed base.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "FFIV": {
+      "advance": false,
+      "quality": 3,
+      "growth": 2,
+      "price_vs_growth": 2,
+      "red_flags": [],
+      "one_line": "Application-delivery and security appliances/software (load balancers, WAF) for enterprise data centers.",
+      "reason": "Growth is modest (10.9%) and, critically, the street target implies -1.6% downside from here - analysts already see the stock as fully to over-valued, so price_vs_growth fails outright.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "LITE": {
+      "advance": false,
+      "quality": 3,
+      "growth": 5,
+      "price_vs_growth": 2,
+      "red_flags": [
+        "reported profit margin/ROE deeply negative - needs verification whether this is a one-time non-cash charge (e.g., convertible-debt or impairment item) versus genuine cash losses",
+        "stock up ~460% over 12 months on AI-optics mania"
+      ],
+      "one_line": "Optical components/laser maker riding the AI datacenter transceiver (800G/1.6T) upgrade cycle.",
+      "reason": "109% revenue growth is a real AI-capex tailwind, but a nearly 5x run in twelve months at 38x NTM P/E on a barely-positive FCF yield (0.3%) means the price already assumes the supercycle continues without interruption; too extended to chase, and the negative margin needs cleaning up before any real conclusion.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "MSI": {
+      "advance": true,
+      "quality": 5,
+      "growth": 3,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Near-monopoly US public-safety radio/911-dispatch/video-security provider (P25 land-mobile radio, Avigilon).",
+      "reason": "Multi-decade, mission-critical government contracts are about as durable a moat as exists in tech; steady 13.3% growth and a high (buyback-driven) ROE at 24.1x NTM P/E is a fair price for that quality, so this clears the bar on quality alone.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "APH": {
+      "advance": true,
+      "quality": 5,
+      "growth": 5,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Interconnect/sensor leader (connectors, cable assemblies) and serial acquirer across AI datacenter, auto, defense and broadband.",
+      "reason": "55% revenue growth (organic plus disciplined M&A) with 38% ROE is best-in-class; FCF yield is temporarily low from AI-driven capex, but the long capital-allocation track record and diversified end-market exposure make this a strong advance.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "COHR": {
+      "advance": true,
+      "quality": 3,
+      "growth": 5,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "negative FCF yield (-1.1%) despite a huge share-price run (+158% in 12 months) - cash conversion needs to catch up to the reported earnings recovery"
+      ],
+      "one_line": "Photonics/laser and optical-components maker (merged II-VI/Coherent) turning around into an AI-optics transceiver supplier.",
+      "reason": "34% revenue growth and a strong EPS recovery support the turnaround narrative and 40% street upside, but negative free cash flow alongside the rally is a real caution flag that full diligence needs to resolve before sizing conviction.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "GLW": {
+      "advance": false,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 2,
+      "red_flags": [],
+      "one_line": "Materials-science leader (Gorilla Glass, optical fiber) riding an AI-datacenter fiber upgrade cycle (\"Springboard\" plan).",
+      "reason": "Good business but already fully re-rated: stock up 83% in a year to 38.5x NTM P/E against a near-zero FCF yield (0.5%) - much of the AI-fiber upside looks priced in already; better to revisit on a pullback.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "KEYS": {
+      "advance": true,
+      "quality": 4,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "cyclical: current growth partly reflects a semiconductor/AI test-capex upswing that could moderate"
+      ],
+      "one_line": "Test-and-measurement equipment/software leader (semiconductor, telecom, aerospace/defense validation).",
+      "reason": "36.5% revenue growth reflects a real cyclical recovery plus AI/6G test-capex tailwinds, with a durable duopoly-like moat; 26.6x NTM P/E is fair for the cycle, so this merits full diligence on durability.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "ROP": {
+      "advance": true,
+      "quality": 4,
+      "growth": 2,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "forward EPS growth guide is nearly flat (+1.3%) - confirm whether this reflects deal-integration/portfolio-transition timing (recent divestitures being redeployed into new SaaS M&A) rather than a genuine deceleration"
+      ],
+      "one_line": "Diversified vertical-market software conglomerate (permitting, insurance, medical, network software) built by disciplined M&A.",
+      "reason": "90%+ recurring revenue and a best-in-class capital-allocation record justify quality=4; 15.1x NTM P/E is unusually cheap for Roper (historically 20-25x) with a 6.4% FCF yield, but the flat near-term EPS guide needs to be understood before concluding this is simply cheap.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "TDY": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Diversified instrumentation, sensors, defense and digital-imaging company built by disciplined serial acquisition.",
+      "reason": "Consistent 9.8% revenue growth and 29% EPS growth at a reasonable 23.4x NTM P/E, with a long history of disciplined capital allocation across niche, high-switching-cost end markets - a steady compounder worth full diligence.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "ZBRA": {
+      "advance": true,
+      "quality": 3,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "hardware-heavy, cyclical business - current growth partly reflects rebound from 2023 retail/warehouse inventory destocking"
+      ],
+      "one_line": "Barcode scanning/RFID and rugged mobile-computing leader for retail and warehouse/logistics.",
+      "reason": "20.4% revenue growth and a sharp margin snapback (103% EPS growth) at a reasonable 16.9x NTM P/E clears the growth bar; already ranks well in the quant model too, so worth confirming the cyclical recovery has legs.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "FLEX": {
+      "advance": true,
+      "quality": 3,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "core EMS business is inherently low-margin/commoditized; monitor whether the data-center power/cooling mix shift (JetCool) is durable or just riding the current AI capex wave"
+      ],
+      "one_line": "Electronics manufacturing services (EMS) provider increasingly mixed toward AI-datacenter power and liquid-cooling systems.",
+      "reason": "20.6% revenue growth and a real margin-mix shift toward higher-value datacenter power/cooling support 40% street upside at 19.5x NTM P/E; growth clears the bar despite EMS's traditionally thin, cyclical margins.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "JBL": {
+      "advance": true,
+      "quality": 3,
+      "growth": 4,
+      "price_vs_growth": 3,
+      "red_flags": [
+        "thin core EMS margins (2.6%); high ROE partly reflects a small equity base from buybacks rather than pure business quality"
+      ],
+      "one_line": "Electronics manufacturing services provider with growing AI-datacenter infrastructure (power, cooling, networking) exposure.",
+      "reason": "11.8% revenue growth and 111% EPS growth from AI-related mix shift, at 18.8x NTM P/E with 36% street upside, clears the growth bar; worth a closer look at how much of the earnings power is capex-cycle-dependent.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "TEL": {
+      "advance": true,
+      "quality": 4,
+      "growth": 3,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Diversified connector/sensor leader across auto, industrial, AI datacenter, and aerospace/defense end markets.",
+      "reason": "13.8% revenue growth and 26.5% EPS growth with disciplined capital allocation and diversified exposure at a reasonable 16.9x NTM P/E is a solid quality-driven advance.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "ACN": {
+      "advance": true,
+      "quality": 4,
+      "growth": 2,
+      "price_vs_growth": 5,
+      "red_flags": [
+        "US federal government segment revenue pressure from 2025 federal budget/efficiency-driven contract reviews and terminations",
+        "long-run risk that GenAI reduces demand/pricing for traditional staff-augmentation consulting, even as ACN also sells GenAI integration work"
+      ],
+      "one_line": "Global #1 IT/management consulting and systems-integration franchise, now repositioning around GenAI \"reinvention\" services.",
+      "reason": "Growth has genuinely slowed to 5.6% amid federal-government headwinds, but an 11.2% FCF yield and 12x NTM P/E (down from Accenture's historical 25-30x) is priced for far more pessimism than the franchise quality and net-cash balance sheet likely warrant; already model_rank 50 and v1-flagged attractive, so full diligence should focus on how much of the federal/GenAI risk is already reflected.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "CTSH": {
+      "advance": false,
+      "quality": 3,
+      "growth": 2,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "same GenAI/staff-augmentation cannibalization risk as ACN, with less diversification and a heavier health-insurance/payer client concentration"
+      ],
+      "one_line": "Mid-tier IT services/BPO provider with a large health-insurance and payer client base, under a multi-year turnaround.",
+      "reason": "Cheap (9.3x NTM P/E, 8.2% FCF yield) but growth is slow (4.5%) and quality/moat is a notch below peers like Accenture; doesn't clear the quality>=4 or growth>=4 bar, so it's a pass for now rather than a value trap bet.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "IBM": {
+      "advance": false,
+      "quality": 3,
+      "growth": 1,
+      "price_vs_growth": 3,
+      "red_flags": [],
+      "one_line": "Hybrid-cloud (Red Hat), AI (watsonx) and consulting company still carrying a large legacy mainframe/services base.",
+      "reason": "Revenue growth is essentially flat (1.1%) and the street sees only 6.7% upside; earnings growth is buyback/margin-driven rather than organic, so this doesn't clear the growth or quality bar despite a fair price.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "IT": {
+      "advance": false,
+      "quality": 3,
+      "growth": 1,
+      "price_vs_growth": 2,
+      "red_flags": [
+        "revenue growth is negative (-0.6%) for a subscription research/advisory business that has compounded contract-value growth for two decades - consistent with reported concerns that GenAI is reducing willingness-to-pay for traditional IT-research subscriptions and that enterprise IT-budget pressure is hitting Gartner's consulting/conference segments",
+        "street target implies -1.5% downside"
+      ],
+      "one_line": "IT research and advisory subscription business (Gartner for IT leaders) plus consulting and conferences.",
+      "reason": "A two-decade compounder now showing outright revenue decline and a street target below the current price is a genuine secular-disruption warning sign, not just a cheap multiple; disqualifying red flag, so reject despite the historically strong moat.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    },
+    "AKAM": {
+      "advance": false,
+      "quality": 3,
+      "growth": 3,
+      "price_vs_growth": 4,
+      "red_flags": [
+        "elevated leverage (net debt/EBITDA 5.5x) mid-transition",
+        "legacy CDN business (~40% of revenue) is structurally declining/commoditizing, offset by growing security and cloud-compute segments"
+      ],
+      "one_line": "Legacy CDN provider transitioning toward security (WAAP/segmentation) and cloud compute (Linode), which now drive most of the growth.",
+      "reason": "The transition story is real and the stock is cheap (16.7x NTM P/E, 38.8% street upside), but blended growth is still modest (5.4%) and leverage is elevated for a company mid-transition; doesn't clear quality>=4 or growth>=4, so pass for now and revisit as the security/cloud mix keeps improving.",
+      "sources": [
+        "data/triage_cards.csv"
+      ]
+    }
+  }
+}

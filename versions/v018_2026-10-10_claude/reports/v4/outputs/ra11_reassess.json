@@ -1,0 +1,404 @@
+{
+  "analyst": "RA11",
+  "date": "2026-10-06",
+  "data_cutoff": "2026-09-25 close (prices and share counts); EDGAR checked to 2026-10-06; rf = 10-yr Treasury 5.17% (FRED DGS10, 25 Sep 2026)",
+  "note": "Research only; not personal advice. Status labels: CONFIRMED / NOT FOUND / WRONG. Third-party sources are labelled.",
+  "tickers": {
+    "CVS": {
+      "claims": [
+        {
+          "claim": "10-year Treasury 5.17% on 25 Sep 2026 (rf for all discount rates)",
+          "status": "CONFIRMED",
+          "source": "FRED DGS10 CSV pulled 2026-10-06: 5.17 on 2026-09-25 (5.24, 5.26, 5.29, 5.24, 5.28 on 28 Sep-2 Oct, not used)"
+        },
+        {
+          "claim": "No CVS 8-K, 13D or S-4 after 25 Sep 2026; only post-Aug-5 filings are the 17 Aug 8-K (5.02, 7.01, 9.01), a 13G/A (13 Aug) and a 13F (6 Aug)",
+          "status": "CONFIRMED",
+          "source": "SEC EDGAR submissions API, pulled 2026-10-06 CIK 0000064803; 8-K acc. 0001193125-26-354096"
+        },
+        {
+          "claim": "Larry Robbins is a sitting director who sold $317.5M on 19 May 2026",
+          "status": "WRONG",
+          "source": "8-K ex-99.1 17 Aug 2026: 'His departure from the Board of Directors was effective on August 13, 2026'; sale itself not re-verified (secondary source in dossier)"
+        },
+        {
+          "claim": "Guidance: GAAP EPS $6.84 to $7.04 (from $6.24 to $6.44); Adjusted EPS $7.90 to $8.10 (from $7.30 to $7.50); cash flow from operations at least $11.5 billion (from at least $9.5 billion)",
+          "status": "CONFIRMED",
+          "source": "8-K ex-99.1 filed 2026-08-05, acc. 0000064803-26-000097, verbatim"
+        },
+        {
+          "claim": "Net debt/EBITDA about 3.7x",
+          "status": "WRONG",
+          "source": "XBRL OperatingIncomeLoss TTM $8,288M includes GoodwillImpairmentLoss $5,725M (FY2025 10-K acc. 0000064803-26-000010); ex-impairment EBIT $14,013M + D&A $4,522M = $18,535M; net debt $47,452M => 2.56x"
+        },
+        {
+          "claim": "TTM OCF $14.78bn and capex $3.02bn confirmed; TTM SBC $715M",
+          "status": "CONFIRMED",
+          "source": "XBRL companyfacts CIK 64803, 10-Q acc. 0000064803-26-000098 (FY2025 10,639 + H1-26 10,594 - H1-25 6,453)"
+        },
+        {
+          "claim": "TTM OCF is a clean FCF base",
+          "status": "WRONG",
+          "source": "XBRL IncomeTaxesPaidNet: H1 2026 $37M vs H1 2025 $863M; FY2026 OCF guide >= $11.5bn implies weak H2"
+        },
+        {
+          "claim": "13-15x exit still supports 'low-to-mid-teens' annual return on V1's EPS path",
+          "status": "WRONG",
+          "source": "Own arithmetic: $8.40 -> $12.37 EPS, 13x => +23.7%, 15x => +29.5% a year (V1's 17.46x reproduces +36.0%)"
+        },
+        {
+          "claim": "Aetna MBR 87.4% Q2 2026; H1 86.0%; favorable prior-year development $1.2bn in H1",
+          "status": "CONFIRMED",
+          "source": "8-K ex-99.1 acc. 0000064803-26-000097, Health Care Benefits segment text"
+        },
+        {
+          "claim": "Goodwill $85,478M unchanged; net debt $47.45bn",
+          "status": "CONFIRMED",
+          "source": "XBRL Goodwill 2026-06-30; V1 file net_debt $47,452M = LT debt+current $61.4bn - cash $11.3bn - STI $2.6bn"
+        },
+        {
+          "claim": "2027 Medicare Advantage Star Ratings released",
+          "status": "NOT FOUND",
+          "source": "Web search 2026-10-06 returned only 2026 ratings (81% in 4-star plans, 63% in 4.5-star); no primary 2027 release found"
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "below",
+      "discount_rate_and_inputs": "Equity-level reverse DCF: FCF = OCF - capex - SBC; market cap = price x cover-page shares; 10 years constant growth then 3.0% terminal; Ke = rf 5.17% (10-yr Treasury, 25 Sep 2026) + Blume-adjusted 5-yr weekly beta (V1 file) x ERP 4.14%; 9.0% stress shown. CVS: price $89.13, 1,278.97M shares, mcap $113.99bn, Blume beta 0.66, Ke 7.91%; FCF base $7.76bn (OCF guide 11.5 - capex 3.02 - SBC 0.715); implied growth -1.5% (7.91%), -0.1% (8.5%), +0.9% (9.0%); stress $6.76bn +0.2%/+1.6%/+2.8%; base 5.5%",
+      "scenario_returns_3y": {
+        "bear": -0.114,
+        "base": 0.114,
+        "bull": 0.267
+      },
+      "changed_fields": [
+        "kill_criteria (leverage basis restated)",
+        "key_adverse_facts (leverage, Robbins status, cash-tax timing, reserve development)",
+        "data_conflicts (13-15x arithmetic)",
+        "valuation_view_vs_v1.implied_vs_base (added: below)",
+        "valuation_view_vs_v1.reconciliation",
+        "valuation_view_vs_v1.note",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "files_updated": [
+        "v4/dossiers/CVS.md",
+        "v4/outputs/F15_summary.json"
+      ],
+      "note": "Margin of safety survives on FCF after SBC (6.8% yield, implied growth near zero vs 5.5% base); V1's +35.9% needed a 17.5x re-rating. Half weight stays: Star Ratings, Q3 print (28 Oct) and 2028 PBM change unresolved."
+    },
+    "DG": {
+      "claims": [
+        {
+          "claim": "10-year Treasury 5.17% on 25 Sep 2026 (rf for all discount rates)",
+          "status": "CONFIRMED",
+          "source": "FRED DGS10 CSV pulled 2026-10-06: 5.17 on 2026-09-25 (5.24, 5.26, 5.29, 5.24, 5.28 on 28 Sep-2 Oct, not used)"
+        },
+        {
+          "claim": "No DG 8-K, 10-Q, 13D or S-4 after 28 Aug 2026; later filings are a Form 4/144 (3 Sep) and a 13G (7 Aug)",
+          "status": "CONFIRMED",
+          "source": "SEC EDGAR submissions API, pulled 2026-10-06 CIK 0000029534; Form 4 acc. 0000029534-26-000076 (code S, 5,578 sh at $131.33, EVP Chief People Officer)"
+        },
+        {
+          "claim": "V1 base margin 5.8% is an operating margin below the FY2022 peak 8.79% and in line with FY2026 guidance",
+          "status": "WRONG",
+          "source": "V1 file: EPS $15.67 = revenue $54.39bn x 5.8% / 201.3M shares, so margin_assumed is NET margin; DG TTM net margin $1,703M/$43,638M = 3.9%; FY2022 net margin $2,416M/$37,845M = 6.4% (XBRL)"
+        },
+        {
+          "claim": "V1 bear case is a negative return (dossier text garbled)",
+          "status": "WRONG",
+          "source": "V1 file: bear annualised_return_3y +19.7% (net margin 5.2%, exit 16.7x, EPS $12.42)"
+        },
+        {
+          "claim": "FY2026 guidance: net sales ~4.0% to 4.3%; same-store ~2.5% to 2.9%; EPS ~$7.80 to $8.00 incl. ~$0.25 Q2 tariff refund; tax ~24.5%; buybacks up to $700M; capex $1.4-1.5bn",
+          "status": "CONFIRMED",
+          "source": "8-K ex-99 filed 2026-08-27, acc. 0001104659-26-101918, verbatim"
+        },
+        {
+          "claim": "Remaining repurchase authorization $1.4bn; no material tariff-refund impact expected in H2",
+          "status": "CONFIRMED",
+          "source": "Same release"
+        },
+        {
+          "claim": "TTM OCF $3,316.4M, capex $1,305.7M, SBC $99.7M, D&A $1,085.0M; H1 OCF $1,496.7M vs $1,814.9M",
+          "status": "CONFIRMED",
+          "source": "XBRL companyfacts CIK 29534, 10-Q acc. 0001104659-26-101932"
+        },
+        {
+          "claim": "Net debt $2,981M; cash $1,589.6M; shares 220.6M",
+          "status": "CONFIRMED",
+          "source": "10-Q balance sheet (LT obligations $4,558.1M + current $12.7M - cash); cover shares 220,616,790 at 2026-08-25"
+        },
+        {
+          "claim": "Securities-suit status per the 26 Sep correction (leave to amend granted 24 Mar 2026; motion to dismiss fully briefed 29 May 2026)",
+          "status": "CONFIRMED",
+          "source": "No new DG filing since 3 Sep; correction acc. 0001104659-26-101932 retained"
+        },
+        {
+          "claim": "Implied 10-year growth -2.9% (V1, WACC 7.25%)",
+          "status": "WRONG",
+          "source": "Re-run at equity level on FCF after SBC: -1.9% (Ke 7.55%), +0.4% (8.5%), +1.5% (9.0%); stress $1.45bn +0.8% to +4.3%"
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "below",
+      "discount_rate_and_inputs": "Equity-level reverse DCF: FCF = OCF - capex - SBC; market cap = price x cover-page shares; 10 years constant growth then 3.0% terminal; Ke = rf 5.17% (10-yr Treasury, 25 Sep 2026) + Blume-adjusted 5-yr weekly beta (V1 file) x ERP 4.14%; 9.0% stress shown. DG: price $124.84, 220.617M shares, mcap $27.54bn, Blume beta 0.57, Ke 7.55%; FCF base $1.80bn (FY26E); base growth 6.0%",
+      "scenario_returns_3y": {
+        "bear": -0.076,
+        "base": 0.097,
+        "bull": 0.198
+      },
+      "changed_fields": [
+        "kill_criteria (FCF criterion added)",
+        "data_conflicts (V1 net-margin finding)",
+        "valuation_view_vs_v1.implied_vs_base (added: below)",
+        "valuation_view_vs_v1.reconciliation",
+        "valuation_view_vs_v1.note",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "files_updated": [
+        "v4/dossiers/DG.md",
+        "v4/outputs/F12_summary.json"
+      ],
+      "note": "Verdict holds on FCF after SBC (implied 0-4% vs 6% base), but the V1 base (+34.7%) assumed doubling EPS; evidence-based base is +9.7% a year, 1.4-2.2 points above Ke."
+    },
+    "DLTR": {
+      "claims": [
+        {
+          "claim": "10-year Treasury 5.17% on 25 Sep 2026 (rf for all discount rates)",
+          "status": "CONFIRMED",
+          "source": "FRED DGS10 CSV pulled 2026-10-06: 5.17 on 2026-09-25 (5.24, 5.26, 5.29, 5.24, 5.28 on 28 Sep-2 Oct, not used)"
+        },
+        {
+          "claim": "No DLTR 8-K, 10-Q, 13D or S-4 with business content after 25 Sep; 8-K of 25 Sep is Items 5.03/9.01 by-law amendments; Forms 4 on 1 Sep, 4 Sep and 2 Oct",
+          "status": "CONFIRMED",
+          "source": "SEC EDGAR submissions API, pulled 2026-10-06 CIK 0000935703; 8-K acc. 0000935703-26-000116"
+        },
+        {
+          "claim": "FY2026 guidance: net sales $20.5-20.7bn, comps 3-4%, ~400 openings/75 closings, adjusted EPS $7.70-$8.05 including ~$0.60 tariff-refund benefit; Q3 EPS $0.80-$0.95 incl. ~$0.50 reinvestment",
+          "status": "CONFIRMED",
+          "source": "8-K ex-99.1 filed 2026-08-27, acc. 0000935703-26-000108, verbatim"
+        },
+        {
+          "claim": "Buybacks continue at the H1 pace ($2.5bn authorization remaining)",
+          "status": "WRONG",
+          "source": "Same release: 'Q3 quarter-to-date share repurchases totaled $5.3 million'; H1 about $1.2bn (XBRL PaymentsForRepurchaseOfCommonStock YTD $1,208.9M)"
+        },
+        {
+          "claim": "TTM FCF $1,978.1M, SBC $68.0M, NI $1,612.5M; shares 187.673M",
+          "status": "CONFIRMED",
+          "source": "XBRL companyfacts CIK 935703, 10-Q acc. 0000935703-26-000109; dossier reconciliation tables"
+        },
+        {
+          "claim": "Normalized FCF $1,608M is the right reverse-DCF base",
+          "status": "WRONG",
+          "source": "Before SBC ($68M); inventory -8.6% YoY released cash (dossier section 6); capex $1,138.9M is about 1.7x D&A. After SBC $1.54bn; stress $1.23bn"
+        },
+        {
+          "claim": "Scenarios $78/$117/$156 and 'probability-weighted $115 about the current price'",
+          "status": "CONFIRMED",
+          "source": "Arithmetic reproduced (6.50x12, 7.30x16, 8.20x19) but undated; restated as 3-year annualised -11.9% / +9.0% / +17.9%"
+        },
+        {
+          "claim": "Net debt $1,875.4M, lease-adjusted leverage 1.85x, operating leases $4,737.3M",
+          "status": "CONFIRMED",
+          "source": "Dossier section 6 against XBRL: LongTermDebtNoncurrent $2,933.5M less cash $1,058.1M; OperatingLeaseLiability $1,011.0M + $3,726.3M = $4,737.3M"
+        },
+        {
+          "claim": "Reverse DCF implies about 0.8%/yr FCF growth",
+          "status": "CONFIRMED",
+          "source": "Reproduced at equity level: +0.2% (Ke 9.0%) on $1.54bn; +3.2% on $1.23bn stress"
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "below",
+      "discount_rate_and_inputs": "Equity-level reverse DCF: FCF = OCF - capex - SBC; market cap = price x cover-page shares; 10 years constant growth then 3.0% terminal; Ke = rf 5.17% (10-yr Treasury, 25 Sep 2026) + Blume-adjusted 5-yr weekly beta (V1 file) x ERP 4.14%; 9.0% stress shown. DLTR: price $114.07, 187.673M shares, mcap $21.41bn, Blume beta 0.92, Ke 9.00%; FCF base $1.54bn (ex-refund, after SBC), stress $1.23bn; base growth 6.0%",
+      "scenario_returns_3y": {
+        "bear": -0.119,
+        "base": 0.09,
+        "bull": 0.179
+      },
+      "changed_fields": [
+        "key_adverse_facts (buyback pause, FCF base)",
+        "data_conflicts",
+        "valuation_view_vs_v1 (added: implied_vs_base below, note)",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "files_updated": [
+        "v4/dossiers/DLTR.md",
+        "v4/outputs/f3_DLTR_summary.json"
+      ],
+      "note": "Half weight retained: cash-flow yield (7.2% after SBC) gives a cushion, but the earnings-scenario base (+9.0%) only equals Ke and buybacks have paused."
+    },
+    "DRI": {
+      "claims": [
+        {
+          "claim": "10-year Treasury 5.17% on 25 Sep 2026 (rf for all discount rates)",
+          "status": "CONFIRMED",
+          "source": "FRED DGS10 CSV pulled 2026-10-06: 5.17 on 2026-09-25 (5.24, 5.26, 5.29, 5.24, 5.28 on 28 Sep-2 Oct, not used)"
+        },
+        {
+          "claim": "New filing after dossier cutoff: Form 10-Q for quarter ended 30 Aug 2026, filed 2 Oct 2026",
+          "status": "CONFIRMED",
+          "source": "SEC EDGAR submissions API, pulled 2026-10-06 CIK 0000940944; acc. 0000940944-26-000042 (CP $480.0M, $500.0M 3.850% notes due May 2027 current, revolver availability $770M, Baa2/BBB/BBB, $1.5bn buyback authorization, dividend $1.62 declared 23 Sep)"
+        },
+        {
+          "claim": "FY2027 guidance reaffirmed incl. diluted EPS $11.10 to $11.35; EBITDA $2.26-2.29bn; capex ~$875M",
+          "status": "CONFIRMED",
+          "source": "8-K ex-99.1 filed 2026-09-24, acc. 0000940944-26-000032 (as quoted in dossier section 5); no newer guidance in the 10-Q"
+        },
+        {
+          "claim": "Net debt about $2.4bn (1.0-1.1x EBITDA)",
+          "status": "WRONG",
+          "source": "10-Q balance sheet: finance lease liabilities $21.6M current + $1,738.7M non-current omitted; net debt $4,156M = 1.8x guided EBITDA, 1.95x TTM EBITDA (TTM EBIT $1,562.9M + D&A $570.2M)"
+        },
+        {
+          "claim": "V1 scenario margins are all below V1's current EBIT margin (data conflict)",
+          "status": "WRONG",
+          "source": "V1 file: base EPS $11.39 = revenue $16.02bn x 7.84% / 110.3M shares, so margin_assumed is NET margin; FY2026 net margin $1,206.7M/$13,210.9M = 9.1%; TTM $1,182.3M/$13,366.5M = 8.8%"
+        },
+        {
+          "claim": "V1 base 3-year return +7.4% a year supports 'attractive'",
+          "status": "WRONG",
+          "source": "V1 file base +7.39% < Ke 8.39% (5.17% + 0.78 x 4.14%); score 0.35"
+        },
+        {
+          "claim": "Implied growth 2.7% vs consensus 6.1%: below",
+          "status": "WRONG",
+          "source": "Equity-level re-run on FY27E FCF after SBC $0.99bn: 5.2% (8.39%), 5.5% (8.5%), 6.7% (9.0%) vs 5.0% base => in_line"
+        },
+        {
+          "claim": "TTM OCF $1,789.6M, capex $735.2M, SBC $80.7M, D&A $570.2M; Q1 FY27 OCF $279.0M vs $342.5M",
+          "status": "CONFIRMED",
+          "source": "XBRL companyfacts CIK 940944, 10-Q acc. 0000940944-26-000042"
+        },
+        {
+          "claim": "Q1 FY27 returned $405.0M (dividends $184.2M, buybacks $220.8M) with $285.9M net short-term borrowing",
+          "status": "CONFIRMED",
+          "source": "10-Q liquidity section and cash flow statement"
+        },
+        {
+          "claim": "Shares 113.5M",
+          "status": "CONFIRMED",
+          "source": "10-Q cover: 113,143,224 at 2026-09-21 (used)"
+        }
+      ],
+      "old_verdict": "INCLUDE",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "in_line",
+      "discount_rate_and_inputs": "Equity-level reverse DCF: FCF = OCF - capex - SBC; market cap = price x cover-page shares; 10 years constant growth then 3.0% terminal; Ke = rf 5.17% (10-yr Treasury, 25 Sep 2026) + Blume-adjusted 5-yr weekly beta (V1 file) x ERP 4.14%; 9.0% stress shown. DRI: price $199.75, 113.143M shares, mcap $22.60bn, Blume beta 0.78, Ke 8.39%; FCF base $0.99bn (FY27E); base growth 5.0%; net debt incl. finance leases $4,156M",
+      "scenario_returns_3y": {
+        "bear": -0.081,
+        "base": 0.102,
+        "bull": 0.165
+      },
+      "changed_fields": [
+        "verdict",
+        "thesis_one_line",
+        "kill_criteria (leverage basis)",
+        "key_adverse_facts",
+        "data_conflicts (resolved)",
+        "confidence_in_thesis (high->medium)",
+        "valuation_view_vs_v1.implied_vs_base (below->in_line)",
+        "valuation_view_vs_v1.dossier_view (cheap->fair)",
+        "valuation_view_vs_v1.consistent",
+        "valuation_view_vs_v1.reconciliation",
+        "valuation_view_vs_v1.note",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "files_updated": [
+        "v4/dossiers/DRI.md",
+        "v4/outputs/F12_summary.json"
+      ],
+      "note": "No cushion remains: implied equals base, V1's own base return is below Ke, and net leverage incl. finance leases is 1.8-1.95x and rising on commercial paper."
+    },
+    "DVA": {
+      "claims": [
+        {
+          "claim": "10-year Treasury 5.17% on 25 Sep 2026 (rf for all discount rates)",
+          "status": "CONFIRMED",
+          "source": "FRED DGS10 CSV pulled 2026-10-06: 5.17 on 2026-09-25 (5.24, 5.26, 5.29, 5.24, 5.28 on 28 Sep-2 Oct, not used)"
+        },
+        {
+          "claim": "No DVA 8-K, 10-Q, 13D or S-4 after the 4 Aug 2026 10-Q/8-K; later filings are Forms 4 only (nine on 18 Aug, one on 24 Sep)",
+          "status": "CONFIRMED",
+          "source": "SEC EDGAR submissions API, pulled 2026-10-06 CIK 0000927066; Form 4 acc. 0000927066-26-000126 (COO, code F, 7,501 sh at $182.34)"
+        },
+        {
+          "claim": "FY2026 guidance: adjusted operating income $2,150-$2,250M; adjusted EPS $14.10-$15.20; free cash flow $1,000-$1,250M",
+          "status": "CONFIRMED",
+          "source": "8-K ex-99.1 filed 2026-08-04, acc. 0000927066-26-000105 ('Current 2026 guidance' table), verbatim"
+        },
+        {
+          "claim": "FCF about $1.61bn (V1: OCF less capex)",
+          "status": "WRONG",
+          "source": "Release non-GAAP reconciliation: TTM OCF $2,193M less NCI distributions $323M, maintenance capex $424M, development capex $159M plus contributions $9M and proceeds $12M = FCF $1,308M"
+        },
+        {
+          "claim": "Leverage ratio 3.37x (Q2), 3.34x (Q1); consolidated EBITDA $3,018M; max permitted 5.00x",
+          "status": "CONFIRMED",
+          "source": "Same release, calculation of leverage ratio"
+        },
+        {
+          "claim": "Share count ~66.09M diluted is the defensible reference",
+          "status": "WRONG",
+          "source": "10-Q cover (acc. 0000927066-26-000108): 63.8M at 2026-07-31 (66.8M 2026-02-06; 64.2M 2026-05-05)"
+        },
+        {
+          "claim": "V1 base +20.0% a year reflects EPS growth",
+          "status": "WRONG",
+          "source": "V1 file: EPS $16.51 -> $17.18 (+1.3%/yr), exit multiple 10.8x -> 17.95x; at flat 10.8x the return is +1.3%"
+        },
+        {
+          "claim": "Q2 buyback 2.2M shares for $348M at $154.95; 0.2M shares for $37M at $199.55 to 4 Aug",
+          "status": "CONFIRMED",
+          "source": "Same release, share repurchases paragraph"
+        },
+        {
+          "claim": "TTM capex $583.4M, D&A $709.8M, SBC $131.6M, acquisitions FY2025 $117.5M",
+          "status": "CONFIRMED",
+          "source": "XBRL companyfacts CIK 927066, 10-Q acc. 0000927066-26-000108"
+        },
+        {
+          "claim": "Net debt about $10.1bn; shareholders' deficit $(765.1)M at 30 Jun 2026",
+          "status": "CONFIRMED",
+          "source": "XBRL: LongTermDebtAndCapitalLeaseObligations $10,663.8M + current $117.2M - cash $669.0M; StockholdersEquity -$765.1M"
+        }
+      ],
+      "old_verdict": "INCLUDE-SMALL",
+      "new_verdict": "INCLUDE-SMALL",
+      "old_implied": "below",
+      "new_implied": "below",
+      "discount_rate_and_inputs": "Equity-level reverse DCF: FCF = OCF - capex - SBC; market cap = price x cover-page shares; 10 years constant growth then 3.0% terminal; Ke = rf 5.17% (10-yr Treasury, 25 Sep 2026) + Blume-adjusted 5-yr weekly beta (V1 file) x ERP 4.14%; 9.0% stress shown. DVA: price $178.47, 63.8M shares, mcap $11.39bn, Blume beta 0.59, Ke 7.63%; FCF base $0.99bn (guide midpoint less SBC), stress $0.75bn; base growth 3.5%",
+      "scenario_returns_3y": {
+        "bear": -0.131,
+        "base": 0.1,
+        "bull": 0.212
+      },
+      "changed_fields": [
+        "kill_criteria (FCF criterion added)",
+        "key_adverse_facts",
+        "data_conflicts (share count resolved)",
+        "valuation_view_vs_v1.implied_vs_base (added: below)",
+        "valuation_view_vs_v1.reconciliation",
+        "valuation_view_vs_v1.note",
+        "scenario_returns_3y",
+        "scenario_basis"
+      ],
+      "files_updated": [
+        "v4/dossiers/DVA.md",
+        "v4/outputs/F15_summary.json"
+      ],
+      "note": "Survives on FCF after NCI distributions and SBC (8.7% yield, implied negative-to-1.4% vs 3.5% base), but V1's +20% was a re-rating; evidence base is +10.0% from buybacks, with equity only 53% of EV at 3.37x leverage. Half weight."
+    }
+  }
+}

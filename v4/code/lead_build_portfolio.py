@@ -152,6 +152,10 @@ for _, r in L.sort_values('live_rank').iterrows():
             if _iv not in ('below', 'in_line'):
                 reasons.append(f"price implies more growth than the analyst's base case ({_iv or 'not stated'})")
         _sc = (dl or {}).get('scenario_returns_3y') or {}
+        # (q) 10 Oct 2026 (Loop-12 A1/A2 must-fix, committed before this build): same completeness rule as Loop-2 (c) for the analyst route -
+        #     no stated, non-negative analyst base-case 3-year return = incomplete valuation = not eligible (GD had none).
+        if dl is not None and not (isinstance(_sc.get('base'), (int, float)) and _sc['base'] == _sc['base']): reasons.append('no analyst base-case 3-year return stated (incomplete valuation)')
+        elif dl is not None and _sc['base'] < 0: reasons.append(f"analyst base case {_sc['base']:+.0%}/yr")
         rows.append(dict(t=t, n=r['name'], s=r.gics_sector, sub=r.gics_sub_industry, rank=(int(r.live_rank) if r.live_rank == r.live_rank else 999), comp=r.composite,
                          Q=r.fam_Q, V=r.fam_V, M=r.fam_M, S=r.fam_S, dec=r.decile, vol=r.vol_1y, voltercile=r.vol_tercile,
                          val='quality-growth lane', analyst_view=ANALYST_VIEW.get(t), valpct=None,
@@ -197,6 +201,7 @@ for _, r in L.sort_values('live_rank').iterrows():
     if _a_iv == 'above' and dl is not None: reasons.append("price implies more growth than the analyst's base case (above)")
     _impl = _a_iv if _a_iv in ('below', 'in_line') else ('below' if vv == 'attractive' else ('in_line' if vv == 'fair' else None))
     _bb = _a_sc.get('base') if isinstance(_a_sc.get('base'), (int, float)) else (v.base_ann_return_3y if v is not None else None)
+    if dl is not None and vv is not None and not (isinstance(_bb, (int, float)) and _bb == _bb): reasons.append('no base-case 3-year return (incomplete valuation)')
     rows.append(dict(t=t, n=r['name'], s=r.gics_sector, sub=r.gics_sub_industry, rank=(int(r.live_rank) if r.live_rank == r.live_rank else 999), comp=r.composite,
                      Q=r.fam_Q, V=r.fam_V, M=r.fam_M, S=r.fam_S, dec=r.decile, vol=r.vol_1y, voltercile=r.vol_tercile,
                      val=vv, analyst_view=ANALYST_VIEW.get(t), valpct=((V2R[t].get('own_pct_10y') if t in V2R else None) or (v.own_history_percentile if v is not None else None)),

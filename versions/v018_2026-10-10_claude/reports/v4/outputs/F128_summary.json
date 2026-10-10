@@ -1,0 +1,138 @@
+{
+  "agent": "F128",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "MO": {
+      "verdict": "WATCH",
+      "thesis_one_line": "America's biggest cigarette maker earns huge cash as smokers decline, but its price already reflects that steady, slowly shrinking cash flow.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Full-year 2026 adjusted diluted EPS guidance cut below the current $5.61 low end, or reported FY2026 adjusted EPS below $5.56.",
+        "Trade-adjusted smokeable domestic cigarette shipment volume decline worse than 8% in two consecutive quarters (4.5% in Q2 2026).",
+        "Smokeable adjusted operating income margin below 62.0% in two consecutive quarters (64.8% in Q2 2026; 62.4% total adjusted OCI margin for 2025).",
+        "Dividend not increased at the next annual raise, or declared dividend per share above 90% of trailing adjusted EPS (about 78% now on guide mid-point).",
+        "A final FDA rule banning menthol cigarettes, or a US tobacco-and-health judgment above $1 billion against PM USA or Altria that is not stayed on appeal."
+      ],
+      "key_adverse_facts": [
+        "Trade-adjusted domestic cigarette volume fell an estimated 4.5% in Q2 2026 (industry 5%); Marlboro retail share 39.5%, down 1.5 points; discount share 33.8%, up 2.6 points (Q2 2026 release 0000764180-26-000093).",
+        "Oral tobacco operating income fell 23.5% in Q2 2026 and NJOY ACE will not return to market in 2026 (guide assumption iv).",
+        "H1 2026 free cash flow (about $2.9B) was below dividends paid ($3.56B) because settlement payments fall in H1; payout is about 78% of guided EPS and the capex guide was raised to $375-450M.",
+        "July 2026: a British Columbia court certified a nationwide JUUL class action in Canada (Altria to appeal); accrued tobacco and health litigation liability $156M at 30 Jun 2026 (10-Q 0000764180-26-000094).",
+        "2025 goodwill impairment of $873M on e-vapor; stockholders' deficit $(2,618)M at 30 Jun 2026."
+      ],
+      "data_conflicts": [
+        "Yahoo revenue 20.44B is revenue net of excise taxes; reported net revenues were 23.28B in 2025.",
+        "Yahoo dividend rate 4.44 is not confirmed by the filings opened (10-Q dividends payable 1,777M implies about 1.06 per quarter before the latest raise).",
+        "No v1 row exists for MO, so v1_verdict is null.",
+        "Triage called it a yield trap with 1.7% Street upside; filings show FCF/adjusted earnings about 98%, so the issue is price versus growth, not cash quality."
+      ],
+      "next_earnings_date": "2026-10-29",
+      "confidence_in_thesis": {
+        "level": "medium",
+        "reason": "Cash flow and guidance are verified from filings, but the implied growth (+1.0%) sits within rounding of my base (+0.8%) and is very sensitive to the 8.5% cost of equity; regulatory and litigation tails are unquantifiable."
+      },
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "implied_vs_base": "in_line",
+        "reconciliation": "No V1 row exists for MO; reverse DCF (owner FCF $9.1B, cost of equity 8.5%, terminal growth 0%) implies +1.0% a year FCF growth versus my +0.8% base, so the stock is fairly priced."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.0455,
+        "base": 0.0726,
+        "bull": 0.1468
+      },
+      "scenario_basis": "Start 2026 adjusted EPS 5.665 (guide mid-point 5.61-5.72), dividend 4.44 growing 0/3/5%; EPS growth -3/+3/+5.5% a year; exit P/E 9.0x/11.5x/13.5x."
+    },
+    "VZ": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "America's second-largest mobile carrier, priced as if its cash flow will shrink for a decade while a new CEO is delivering growth and raised targets.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Company-defined net unsecured debt to consolidated adjusted EBITDA above 2.8x at any quarter-end (2.5x at 30 Jun 2026; release schedule).",
+        "Reported 2026 free cash flow (consolidated, operating cash flow less capex including capitalised software) below $21.5 billion, or the guide cut below \"$21.5 billion or more\".",
+        "2026 adjusted EPS guidance cut below $4.95, or reported FY2026 adjusted EPS below $4.95.",
+        "Mobility and broadband service revenue growth below 2.0% in either Q3 or Q4 2026 (guided about 3.0% and about 4.0%), or full-year postpaid phone net adds below 750,000.",
+        "Quarterly dividend cut or frozen at $0.7075 at the next annual review (raised from $0.69 in the last year)."
+      ],
+      "key_adverse_facts": [
+        "Consolidated debt $165.2B at 30 Jun 2026 (unsecured $136.5B, secured $28.8B) with $21.8B due within one year; company-defined net unsecured debt/EBITDA 2.5x but about 3.0-3.2x on total consolidated net debt (10-Q 0000732712-26-000046).",
+        "H1 2026 operating cash flow growth of 9.9% is 'primarily attributable to the timing of cash tax payments ... and working capital benefits primarily related to lower upgrade volumes'; deferred income taxes 1,433 vs 95 a year earlier; vendor financing payments of $983M sit outside FCF.",
+        "Q2 2026 GAAP EPS 0.92 vs adjusted 1.30: $1.8B pre-tax special items including a $746M loss on classifying the international wireline business as held for sale; FY2025 GAAP 4.06 vs adjusted 4.71.",
+        "Wireless service revenue guided approximately flat in 2026; equipment revenue fell nearly 20% in Q2; January 2026 network outage cost 80 bp of wireless service revenue growth in Q1.",
+        "Frontier purchase accounting is preliminary; goodwill $30.7B and licences $158.2B are 47% of consolidated assets."
+      ],
+      "data_conflicts": [
+        "V1 net debt $141.7B equals long-term debt 143.4B less cash 1.75B and omits $21.8B of debt maturing within one year; consolidated net debt is about $163.5B, so V1 enterprise value of $338B is understated by about $22B.",
+        "Yahoo FCF 17.5B vs company-definition TTM about 21.5B (OCF 38.8B less capex about 17.3B).",
+        "Yahoo total debt 193.6B includes operating leases; triage 3.8x leverage uses that basis versus the company's 2.5x on net unsecured debt.",
+        "V1 bull case (exit 18x) is too generous; V1 verdict 'attractive' is otherwise agreed."
+      ],
+      "next_earnings_date": "2026-10-20",
+      "confidence_in_thesis": {
+        "level": "medium",
+        "reason": "Two raised guides and filing-verified cash flow support the base case and the price implies shrinkage, but part of 2026 FCF is tax-timing and working-capital help, leverage is high, and wireless service revenue is flat in a promotional market."
+      },
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.1174,
+        "dossier_view": "cheap",
+        "consistent": true,
+        "implied_vs_base": "below",
+        "reconciliation": "[Corrected 2026-10-06 (DVH6)] Agree with V1 'attractive' (my base 3-year return +11.4% vs V1 +11.7%); V1 net debt omits current debt and its bull exit multiple is too high. The dossier's reverse DCF (8.5% cost of equity, 1% terminal, SBC not deducted) is restated: programme basis (Ke 7.20% = 5.17% UST + Blume beta 0.491 x 4.14% ERP, ten years then 3.0%, FCF after ~$1.2bn SBC = $16.8bn) implies about -6.2% a year; with 8.5%/1% and SBC deducted about -1.0% a year; versus my +1.5% base. implied_vs_base remains below."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.0391,
+        "base": 0.1139,
+        "bull": 0.2155
+      },
+      "scenario_basis": "Start 2026 adjusted EPS 5.015 (guide 4.99-5.04), dividend 2.83 growing 0/2/3%; EPS growth -4/+4/+8% a year; exit P/E 7.5x/10.0x/12.0x."
+    },
+    "AFL": {
+      "verdict": "WATCH",
+      "thesis_one_line": "A strong, well-capitalised cancer and supplemental insurer, mostly in Japan, with shrinking Japanese premiums and a price that already assumes growth.",
+      "horizon": "12-36 months",
+      "kill_criteria": [
+        "Aflac Japan premium persistency (12-month rolling, company-reported) below 91.5% (92.7% in Q2 2026; 93.7% a year earlier).",
+        "Aflac Japan pre-tax adjusted margin below 33% for two consecutive quarters, or the full-year Japan benefit ratio (excluding the Q3 actuarial review) above 63%.",
+        "Company-reported ESR below 200% (226% at 30 Jun 2026) or adjusted leverage above 25% (21.8%).",
+        "Adjusted EPS excluding foreign-currency effect below $1.65 in two consecutive quarters (1.80 in Q2 2026, 1.77 in Q1).",
+        "Disclosure of a loss, penalty or settlement above $100 million pre-tax from the June 2025 or June 2026 cyber incidents."
+      ],
+      "key_adverse_facts": [
+        "Aflac Japan underlying earned premiums guided to decline 1% to 2% in 2026; persistency 92.7% vs 93.7% a year earlier; Japan benefit ratio now expected at the high end of 60%-63% and US premium growth just below the 3%-6% range (Q2 2026 call, 0001628280-26-054333).",
+        "Two cyber incidents with losses not estimable: US (12 Jun 2025, pending disputes with regulators) and Aflac Japan (25 Jun 2026, systems suspended) (10-Q 0001628280-26-054618).",
+        "Distributions (about $2.6B in H1 2026) are about 145% of adjusted earnings ($1.78B); adjusted book value per share excluding foreign-currency remeasurement fell 4.1% to $41.22.",
+        "Allowance for credit losses on loans rose to $533M from $426M in six months; cash-collateral payables on loaned securities rose to $7.3B from $4.0B; variable investment income below plan in three of four recent quarters.",
+        "Weak yen (159.45 per dollar in Q2 2026 vs 144.60) cut Q2 adjusted EPS by $0.05; FY2025 adjusted EPS of 7.49 includes a $0.76 actuarial assumption boost that may not repeat."
+      ],
+      "data_conflicts": [
+        "Triage forward EPS growth of -18.6% mostly reflects comparison with GAAP TTM EPS 9.27 and FY2025 adjusted EPS including the $0.76 Q3 2025 assumption update; underlying FY2026 adjusted EPS is about +4% versus 6.73.",
+        "Yahoo GAAP trailing P/E 12.3x flatters valuation; TTM adjusted P/E is 15.0x.",
+        "No v1 row exists for AFL, so v1_verdict is null.",
+        "ESR 226% is stated by the CFO without naming the legal entity (Japan FSA regime)."
+      ],
+      "next_earnings_date": "2026-11-04",
+      "confidence_in_thesis": {
+        "level": "medium",
+        "reason": "Capital strength and Japan margins are verified from filings, but the valuation call rests on a total-earnings reverse DCF (+3.0% implied vs +1.0% base), the annual actuarial review in Q3 and the cyber losses are unresolved, and the yen path cuts both ways."
+      },
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "implied_vs_base": "above",
+        "reconciliation": "No V1 row exists for AFL; reverse DCF (TTM adjusted earnings $3.9B, cost of equity 9.0%, terminal growth 1%) implies +3.0% a year versus my +1.0% base, with base present value $98 versus a $113.72 price."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.0778,
+        "base": 0.0371,
+        "bull": 0.1097
+      },
+      "scenario_basis": "Start FY2026 adjusted EPS 7.10 (H1 actual 3.50 plus about 3.60), dividend 2.44 growing 3/5/7%; EPS growth 0/+5/+8% a year; exit P/E 11.5x/14.5x/16.5x."
+    }
+  }
+}

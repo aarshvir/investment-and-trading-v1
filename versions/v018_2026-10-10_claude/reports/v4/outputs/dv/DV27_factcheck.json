@@ -1,0 +1,660 @@
+{
+ "as_of": "2026-10-08",
+ "scope": [
+  "LYB",
+  "LYV",
+  "MAA",
+  "MAR",
+  "MAS",
+  "MCD",
+  "MCHP",
+  "MCO",
+  "MDLZ",
+  "MDT"
+ ],
+ "facts": [
+  {
+   "ticker": "LYB",
+   "claim": "Q2-26 revenue $9,177M; GAAP EPS $1.71; adj EPS $4.30; EBITDA ex-items $2,127M",
+   "dossier_location": "Sec 4 table (Q2-26)",
+   "source": "SEC EDGAR 8-K 0001489393-26-000057 Ex-99.1; 10-Q 0001489393-26-000061",
+   "source_value": "9,177 / 1.71 / 4.30 / 2,127",
+   "status": "PASS",
+   "note": "Period label Q2-26 = quarter ended 30 Jun 2026 confirmed; Q1-26 7,197 / 0.38 / 0.49 / 615 and Q2-25 7,658 / 0.34 / 0.62 / 715 also tie."
+  },
+  {
+   "ticker": "LYB",
+   "claim": "Q3-25 (2.77) GAAP / 1.01 adj / EBITDA 835; Q4-25 7,091 revenue, (0.45) GAAP, (0.26) adj, 417",
+   "dossier_location": "Sec 4 table",
+   "source": "8-K Q3-25 0001489393-25-000054, Q4-25 0001489393-26-000003; companyfacts",
+   "source_value": "(2.77)/1.01/835; 7,091/(0.45)/(0.26)/417",
+   "status": "PASS",
+   "note": "Q4-25 derived from FY25 10-K less 9M: 30,153-23,062=7,091; EPS -2.34-(-1.89)=-0.45."
+  },
+  {
+   "ticker": "LYB",
+   "claim": "Total debt $12,910M (1,461+234+11,215); cash $2,630M; net debt $10.3bn; equity $10,680M",
+   "dossier_location": "Sec 6",
+   "source": "10-Q 0001489393-26-000061 balance sheet and liquidity text",
+   "source_value": "12,910 / 2,630 / 10,680",
+   "status": "PASS",
+   "note": "XBRL cross-tie flag (15% gap) is a false positive: the XBRL LongTermDebtNoncurrent tag (11,215) excludes current maturities, as the dossier explains. Consolidated entity and date correct."
+  },
+  {
+   "ticker": "LYB",
+   "claim": "Net debt/TTM EBITDA ex-items 2.6x ($3,994M TTM)",
+   "dossier_location": "Sec 6, kill criterion 1",
+   "source": "8-K Q3-25, Q4-25, Q1-26, Q2-26 EBITDA ex-items",
+   "source_value": "835+417+615+2,127=3,994; 10,280/3,994=2.57x",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "LYB",
+   "claim": "Guidance: Q3 operating rates 85% NA / 70% Europe / 85% I&D; $500M Cash Improvement Plan on target by end-2026; recovery 'likely extending into 2027'; Q1 rates quote",
+   "dossier_location": "Sec 5",
+   "source": "8-K Q2-26 Ex-99.1 and Q1-26 Ex-99.1",
+   "source_value": "verbatim present",
+   "status": "PASS",
+   "note": "LYB gives no numeric EPS/EBITDA guidance; the dossier says so correctly."
+  },
+  {
+   "ticker": "LYB",
+   "claim": "Dividend cut to $0.69 from $1.37 (a $0.68 reduction); H1-26 dividends paid $448M; H1 FCF -$56M; TTM FCF $1,578M; FY25 OCF 2,262, capex 1,878, dividends 1,764",
+   "dossier_location": "Sec 6",
+   "source": "10-Q equity statement and cash flow; companyfacts",
+   "source_value": "0.69 vs 1.37; 448; 483-539=-56; 2,262/1,878/1,764",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "LYB",
+   "claim": "Available liquidity $7.1bn",
+   "dossier_location": "Sec 6",
+   "source": "Q2-26 release Table 4",
+   "source_value": "Total liquidity 7,090",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "LYB",
+   "claim": "Reverse DCF: on $1,300M (my base) the price implies about 3.5% growth (10%, 3%, 10 years, mkt cap $18.8bn)",
+   "dossier_location": "Sec 7",
+   "source": "Recomputed from the dossier's own inputs",
+   "source_value": "2.8%",
+   "status": "FAIL",
+   "note": "Same inputs reproduce 6.3% on $1,000M and ~0% on $1,578M but give 2.8% (not 3.5%) on $1,300M."
+  },
+  {
+   "ticker": "LYB",
+   "claim": "Valuation method: base FCF $1,300M / 10% rate; implied vs base 'in_line'",
+   "dossier_location": "Sec 7; F141 valuation_view_vs_v1",
+   "source": "10-Q cash-flow statement (SBC $66M H1-26; $91M FY25); program rate rule (5.17% + stated ERP)",
+   "source_value": "FCF after SBC (~$130M/yr) = ~$1,170M -> implied 4.2% vs base 3.0%",
+   "status": "FAIL",
+   "note": "SBC is added back inside OCF and not deducted (rule e); the 10% rate is not tied to 5.17% + ERP in the text (it equals 5.17% + 4.8%, above the program's Blume-beta CAPM of ~7.5% for raw beta 0.35, so conservative but unstated). Restated implied_vs_base: in_line -> above. Verdict WATCH unchanged."
+  },
+  {
+   "ticker": "LYB",
+   "claim": "Normalised FCF derivation: ~90% of EBITDA as operating cash, capex $1.3-1.5bn, minus cash interest ~$0.6bn",
+   "dossier_location": "Sec 7",
+   "source": "10-K FY25: interest paid $483M is already inside OCF",
+   "source_value": "0.9x3.4bn - 1.4bn = ~$1.66bn before SBC",
+   "status": "MINOR",
+   "note": "OCF is after interest, so deducting interest again double-counts; the stated $1.0bn/$1.3bn range sits below what the dossier's own inputs give. Sensitivity is large (implied growth ~0.5% on $1.53bn net of SBC). No label change made because the base is a stated judgement; flagged for next review."
+  },
+  {
+   "ticker": "LYB",
+   "claim": "Q3-26 earnings 2026-10-30",
+   "dossier_location": "Sec 10",
+   "source": "not yet published",
+   "source_value": "n/a",
+   "status": "UNVERIFIABLE",
+   "note": "Future event date."
+  },
+  {
+   "ticker": "LYV",
+   "claim": "Q2'26: revenue $7,666.9M (+9%), operating income $521.9M (+7%), GAAP EPS $1.05, AOI $817.0M (+2%), OCF $419.3M",
+   "dossier_location": "Sec 3 table",
+   "source": "8-K 0001335258-26-000034 Ex-99.1; 10-Q 0001335258-26-000035; companyfacts",
+   "source_value": "7,666.9 / 521.9 / 1.05 / 817.0; OCF 2,758.1-2,338.8=419.3",
+   "status": "PASS",
+   "note": "Period labels correct (calendar year). Q1'26 -1.85 EPS, 371.0 AOI, OCF 2,338.8 and H1 operating income 151.4 vs 601.4 also tie."
+  },
+  {
+   "ticker": "LYV",
+   "claim": "Guidance quotes: AOI double-digit; Concerts double-digit AOI majority in Q4; Ticketmaster AOI mid-single digits; capex $1.1bn (Q1: $1.1-1.2bn); FCF conversion 'in line with or higher than 2025' (Q4: 'higher'); net interest ~$280M; NCI ~$325M (Q1: grow 25%); accretion one-third / $160-180M; ~75M fans (Q4: over 70M)",
+   "dossier_location": "Sec 4",
+   "source": "Q2'26, Q1'26 (0001335258-26-000018), Q4'25 (0001335258-26-000007) Ex-99.1",
+   "source_value": "all verbatim present",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "LYV",
+   "claim": "Debt: principal $9,282.3M; net of discounts $9,201.5M; current portion $2,968.4M; redeemable NCI $1,063.6M; LN equity $82.3M",
+   "dossier_location": "Sec 5",
+   "source": "10-Q 0001335258-26-000035",
+   "source_value": "2,968.4+6,233.1=9,201.5; 1,063.6; 82.3",
+   "status": "PASS",
+   "note": "Consolidated entity; client/event cash correctly separated from 'free cash ~$2 billion' (release)."
+  },
+  {
+   "ticker": "LYV",
+   "claim": "FCF-adjusted Q2'26 $515.9M; FY25 $1,298.2M; SBC Q2 $62.0M; litigation accrual $450.0M",
+   "dossier_location": "Sec 5, 8",
+   "source": "Q2'26 release reconciliation; 10-Q cash flow",
+   "source_value": "515.9; SBC 94.8-32.8=62.0",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "LYV",
+   "claim": "8-K of 25 Sep 2026 (Items 5.02, 8.01), accession 0001335258-26-000038",
+   "dossier_location": "Sec 9, 11",
+   "source": "EDGAR submissions index",
+   "source_value": "Form 8-K, 2026-09-25, items 5.02, 8.01, 9.01",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "LYV",
+   "claim": "Reverse DCF (9%/3% fading, equity level, FCF-adjusted start $1.4B) implies 15.3% (8%: 10.6%; 10%: 19.5%); after growth capex (start $650M) ~35%",
+   "dossier_location": "Sec 6",
+   "source": "Recomputed; 10-Q SBC H1 $94.8M; program rate 5.17% + 1.08 (Blume beta) x 4.14% = 9.65%",
+   "source_value": "Replicates exactly (15.3/10.6/19.5/35.3). Restated at 10%: $1.4B -> 19.5%; $1.21B after SBC -> 23.3%; $0.46B after growth capex and SBC -> 50%",
+   "status": "FAIL",
+   "note": "Method breach (rule e): start FCF adds back SBC (~$190M/yr), excludes growth capex that is real spending, and the 9% base rate is below the program formula (~9.65%). Direction unchanged: implied remains far above base ~10% ('above'). Verdict WATCH unchanged."
+  },
+  {
+   "ticker": "MAA",
+   "claim": "Q2-26: rental revenue $555.1M (+0.9%), GAAP EPS $1.04 (vs 0.92), Core FFO $2.08 (vs 2.15); Q1-26 EPS 1.06 (H1 2.10)",
+   "dossier_location": "Sec 4",
+   "source": "8-K 0001193125-26-323756 Ex-99.1",
+   "source_value": "555,127 / 1.04 / 2.08; H1 EPS 2.10",
+   "status": "PASS",
+   "note": "Period labels correct. Same-store revenue -0.3%, expenses +0.8%, NOI -1.0%; blended +0.7%, new -5.3%, renewal +5.2%, occupancy 95.3%, turnover 39.6% all tie."
+  },
+  {
+   "ticker": "MAA",
+   "claim": "FY26 guidance rows: Core FFO $8.41-8.65 / $8.53; EPS $3.96-4.20 / $4.08 (down from $4.34); NOI -1.70% to 0.10%; revenue -0.20% to 0.40%; AFFO $7.50; Q3 Core FFO $2.04-2.16",
+   "dossier_location": "Sec 5",
+   "source": "Q2-26 release guidance table (columns: prior | current)",
+   "source_value": "verbatim present",
+   "status": "PASS",
+   "note": "Column order prior-then-current, correctly read by the dossier."
+  },
+  {
+   "ticker": "MAA",
+   "claim": "Debt carrying $5,691.9M (5,331.4 + 360.5); cash $51.8M; total assets $11,994.6M; liabilities $6,393.1M; liquidity $882.8M; 4.5x; 31.2%; 86.6% fixed; 3.9%; 6.0 years",
+   "dossier_location": "Sec 6",
+   "source": "10-Q 0001193125-26-326153; Q2 release",
+   "source_value": "all tie",
+   "status": "PASS",
+   "note": "Consolidated entity."
+  },
+  {
+   "ticker": "MAA",
+   "claim": "H1 OCF $482.5m vs $550.1m; RealPage $53.0m; buybacks $122.8m (0.6m at $130.46, 0.4m at $130.66); dividend $6.12 = 82% of AFFO $7.50",
+   "dossier_location": "Sec 4, 6",
+   "source": "10-Q cash flow; release",
+   "source_value": "482,549 / 550,067 / 122,788 / 6.12",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MAA",
+   "claim": "Reverse DCF on AFFO/share (8.5%, 2.5% terminal, 10 yrs) implies 1.5% a year",
+   "dossier_location": "Sec 7",
+   "source": "Recomputed; d4 raw beta 0.715 -> Blume 0.81 x 4.14% + 5.17% = 8.5%",
+   "source_value": "1.46% constant growth; 2.5% at 9%; 0.4% at 8%",
+   "status": "PASS",
+   "note": "Rate is consistent with the program formula (5.17% + Blume beta x 4.14%) though the dossier does not state the beta. AFFO is after recurring capex, an acceptable REIT cash basis."
+  },
+  {
+   "ticker": "MAA",
+   "claim": "Precheck: guidance_unquoted lines 3, 22, 31, 35, 39, 44 and entity_scope line 53",
+   "dossier_location": "Various",
+   "source": "Dossier read to the end",
+   "source_value": "n/a",
+   "status": "MINOR",
+   "note": "Flags are artefacts of the checker; every figure on those lines traces to the cited release or 10-Q."
+  },
+  {
+   "ticker": "MAR",
+   "claim": "Q2'26 GAAP EPS $2.90 (vs 2.78), adjusted EPS $3.19 (vs 2.65), revenue $7,071M vs $6,744M, operating income $1,229M vs $1,236M, net income $766M vs $763M, adj EBITDA $1,592M",
+   "dossier_location": "Sec 4",
+   "source": "8-K 0001048286-26-000033 Ex-99; 10-Q 0001048286-26-000035",
+   "source_value": "2.90 / 3.19 / 7,071 / 1,229 / 766 / 1,592",
+   "status": "PASS",
+   "note": "Q1'26 GAAP 2.43 (companyfacts); H1 adjusted 5.91 vs GAAP 5.32 tie."
+  },
+  {
+   "ticker": "MAR",
+   "claim": "Guidance rows verbatim: Q1'26 release FY26 adj EPS $11.38-11.63; Q4'25 release $11.32-11.57; Q2'26 release $11.64-11.81, adj EBITDA $5,965-6,025M, RevPAR 3.0-3.5%, Q3 3.5-4.0%, net rooms 'Low end of 4.5% to 5%', capital return 'Over $4,500'",
+   "dossier_location": "Sec 5",
+   "source": "Q2'26, Q1'26 (0001048286-26-000012), Q4'25 (0001048286-26-000005) Ex-99",
+   "source_value": "all present",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MAR",
+   "claim": "Debt 460 + 16,455 = 16,915; cash 462; net debt 16,453; CP 1,242; net debt/TTM adj EBITDA 2.9x",
+   "dossier_location": "Sec 6",
+   "source": "10-Q balance sheet and Note on debt",
+   "source_value": "460 / 16,455 / 462 / 1,242; 16,453/5,741=2.87x",
+   "status": "PASS",
+   "note": "Consolidated entity; dossier computes the trailing EBITDA itself."
+  },
+  {
+   "ticker": "MAR",
+   "claim": "Cash flow: FY25 OCF 3,212, SBC 236; H1'26 OCF 1,806, capex 282, buybacks 1,819, dividends 370",
+   "dossier_location": "Sec 6",
+   "source": "companyfacts; 10-Q cash flow",
+   "source_value": "tie",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MAR",
+   "claim": "Reverse DCF: cost of equity 8.5%, terminal 3%, FCF $3.2bn, mkt cap $91.8bn -> 8.5% (9.5% with SBC deducted)",
+   "dossier_location": "Sec 7; F138",
+   "source": "Recomputed; d4 raw beta 1.104 -> Blume 1.07; 5.17% + 1.07 x 4.14% = 9.6%",
+   "source_value": "Replicates 8.5%/9.5% at 8.5%. At 9.6%: 11.1% before SBC, 12.1% after SBC",
+   "status": "FAIL",
+   "note": "Cost of equity 8.5% is below the program formula (~9.6%) for a beta-1.1 name and is not tied to 5.17% + ERP. Restated implied FCF growth ~12% a year vs base ~7%: label 'above' unchanged, gap larger. Verdict WATCH unchanged."
+  },
+  {
+   "ticker": "MAS",
+   "claim": "Q2'26 net sales $1,992M (-3%), operating profit $470M, GAAP EPS $1.60, adj EPS $1.64, adj margin 24.2%; segments Plumbing $1,337M, Decorative $655M",
+   "dossier_location": "Sec 4",
+   "source": "8-K 0000062996-26-000026 Ex-99.1",
+   "source_value": "1,992 / 470 / 1.60 / 1.64 / 24.2%",
+   "status": "PASS",
+   "note": "Q1'26 sales 1,918, op profit 316, EPS 1.05 (adj 1.04) also tie."
+  },
+  {
+   "ticker": "MAS",
+   "claim": "Guidance: FY26 adj EPS $4.40-4.60 (from $4.10-4.30; maintained in Q1; initial Q4 GAAP $3.91-4.11)",
+   "dossier_location": "Sec 5",
+   "source": "Q2'26, Q1'26 (0000062996-26-000013), Q4'25 (0000062996-26-000004) Ex-99.1",
+   "source_value": "verbatim present; GAAP now $4.21-4.41",
+   "status": "PASS",
+   "note": "Dossier cited secondary sources (Alphastreet, StockTitan, BigGo) but the primary figures agree."
+  },
+  {
+   "ticker": "MAS",
+   "claim": "Q2 beat: '$95M net one-time IEEPA tariff refund ... excluded from adjusted EPS'",
+   "dossier_location": "Sec 4 footnote",
+   "source": "Q2'26 release adjusted reconciliation (only rationalization charges $12M excluded); 10-Q MD&A",
+   "source_value": "Reported operating profit 470 -> adjusted 482 (+12 rationalization only); tariff benefit ~$95M is inside both",
+   "status": "FAIL",
+   "note": "Adjusted EPS INCLUDES the refund; Masco says the ~$85M full-year net refund benefit is what lifted adj EPS guidance. The guidance section's 'attributed to the $95M' should read ~$85M for the year ($95M is the Q2 operating-profit benefit)."
+  },
+  {
+   "ticker": "MAS",
+   "claim": "Bull #1: adjusted margin expanded +410bps to 24.2% 'showing real cost/price discipline'",
+   "dossier_location": "Sec 8",
+   "source": "Release: adj op profit 482 on 1,992; refund ~$95M",
+   "source_value": "Ex-refund adjusted margin ~19.4% vs 20.1% a year ago (-70bps)",
+   "status": "FAIL",
+   "note": "The entire margin expansion (and more) is the tariff refund; ex-refund the adjusted margin fell."
+  },
+  {
+   "ticker": "MAS",
+   "claim": "Balance sheet: long-term debt 'flat at $2,945M for years'; net debt ~$2,557M; equity -$242M; ND/EBITDA 1.79x",
+   "dossier_location": "Sec 6, 8, 9",
+   "source": "10-Q 0000062996-26-000027 balance sheet at 30 Jun 2026 (filed 29 Jul, available at dossier date)",
+   "source_value": "LTD 3,245 (term loan proceeds 300); cash 548; Masco shareholders' deficit (365); total equity (118); net debt ~2,699; ND/EBITDA ~1.8x (1.9x ex-refund)",
+   "status": "FAIL",
+   "note": "Stale Q1 balance sheet used though the Q2 10-Q was filed; a $300M term loan was drawn in H1 2026, ending the 'flat debt' statement. Ratio impact small; the 2.5x kill criterion is not close."
+  },
+  {
+   "ticker": "MAS",
+   "claim": "OCF narrative: three straight annual declines; H1'25 OCF $148M vs $252M; kill criterion 'TTM OCF declines for a fourth year'",
+   "dossier_location": "Sec 6, 9; upgrade condition Sec 1",
+   "source": "10-Q Q2: H1'26 net cash from operations $417M vs $148M",
+   "source_value": "TTM OCF 1,022-148+417 = $1,291M vs $971M a year earlier (+33%)",
+   "status": "FAIL",
+   "note": "Omits that H1'26 OCF almost tripled, so the dossier's own alternative upgrade trigger ('TTM operating cash flow inflecting positive year-over-year') is literally met. Verdict held at WATCH because the gain includes tariff-refund receipts and seasonal receivable timing (receivables 1,028 -> 1,342), but an upgrade review is now due."
+  },
+  {
+   "ticker": "MAS",
+   "claim": "'Sales guide remains low single digits for the year' in the Q2 raise",
+   "dossier_location": "Sec 5",
+   "source": "Q2'26 release; Q4'25 release says sales 'roughly flat to up low-single digits when adjusted for currency'",
+   "source_value": "Q2 release contains no sales guidance",
+   "status": "MINOR",
+   "note": "Attribute to the Q4'25 release, not Q2."
+  },
+  {
+   "ticker": "MAS",
+   "claim": "V1 reverse DCF (WACC 8.22%, implied +0.44%/yr); V1 uses rf 5.17%, ERP 4.14%",
+   "dossier_location": "Sec 7",
+   "source": "v4/outputs/v1_valuation.json meta.assumptions",
+   "source_value": "rf_10y 0.0517, erp 0.0414; net debt input 2,557 (Q1)",
+   "status": "PASS",
+   "note": "Method consistent with program rule; input net debt is Q1 (stale by ~$140M, immaterial). Verdict logic supports WATCH."
+  },
+  {
+   "ticker": "MCD",
+   "claim": "Q2 2026: revenue $7,099M (+4%), operating income $3,338M, GAAP EPS $3.32 (adj $3.38), global comp +1.3%, US +0.8%, systemwide sales $37bn (+5%, +4% cc), loyalty users ~220M",
+   "dossier_location": "Sec 4",
+   "source": "8-K 0000063908-26-000067 Ex-99.1; 10-Q 0000063908-26-000073",
+   "source_value": "7,099 / 3,338 / 3.32 / 3.38 / 1.3% / 0.8%",
+   "status": "PASS",
+   "note": "FY25 EPS 11.95 and quarterly EPS series tie to companyfacts."
+  },
+  {
+   "ticker": "MCD",
+   "claim": "FY26 guidance: operating margin mid-to-high 40% range; capex $3.7-3.9bn; ~2,600 openings; net unit expansion ~2.5% of systemwide growth; FCF conversion low-to-mid 80%",
+   "dossier_location": "Sec 5",
+   "source": "10-Q outlook section (reaffirmed in the Aug 10-Q)",
+   "source_value": "verbatim present",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MCD",
+   "claim": "Total debt ~$40.7B (LT debt $39.86B + current ~$0.7-0.9B); net debt ~$39.9B",
+   "dossier_location": "Sec 6",
+   "source": "10-Q balance sheet 30 Jun 2026",
+   "source_value": "Long-term debt 39,863; no current-maturities line (Dec-25: 725); cash 822; net debt 39,041",
+   "status": "FAIL",
+   "note": "Current portion was $725M at 31 Dec 2025, nil at 30 Jun 2026; debt overstated by ~$0.84bn."
+  },
+  {
+   "ticker": "MCD",
+   "claim": "Net debt/EBITDA ~2.8x using FY25 EBIT + estimated D&A $1.6-1.8bn",
+   "dossier_location": "Sec 6, kill criterion 3",
+   "source": "10-K and 10-Q: D&A FY25 $2,199M, H1'26 $1,131M vs $1,064M",
+   "source_value": "TTM EBIT 12,805 + TTM D&A 2,266 = 15,071; 39,041/15,071 = 2.6x",
+   "status": "FAIL",
+   "note": "D&A was estimated too low; leverage is ~2.6x. Kill-criterion reference point should read 2.6x."
+  },
+  {
+   "ticker": "MCD",
+   "claim": "TTM net income ~$8,678M and FCF/NI ~89%",
+   "dossier_location": "Sec 6",
+   "source": "companyfacts / 10-Q",
+   "source_value": "8,563-4,121+4,345 = 8,787; FCF 7,761/8,787 = 88%",
+   "status": "FAIL",
+   "note": "Arithmetic slip of $109M; conclusion unchanged."
+  },
+  {
+   "ticker": "MCD",
+   "claim": "Cash $822M; stockholders' deficit $(1,023)M; H1 buybacks $1,251M; dividends $2,640M; TTM OCF 11,347, capex 3,586, FCF 7,761",
+   "dossier_location": "Sec 6",
+   "source": "10-Q",
+   "source_value": "tie",
+   "status": "PASS",
+   "note": "XBRL cross-tie flags are false positives (sign of equity; quarterly vs annual net income)."
+  },
+  {
+   "ticker": "MCD",
+   "claim": "Reverse DCF: WACC 6.8%, FCF $7,761M against EV $207bn -> ~2.8% a year",
+   "dossier_location": "Sec 7; F36",
+   "source": "Recomputed; WACC arithmetic (5.17% + 0.61 x 4.14%, debt 20% at 4.0% x (1-21.4%)) replicates 6.8%",
+   "source_value": "EV/levered FCF: 2.7-2.8% (replicates). Consistent bases: equity-level (mkt cap 167.4bn, FCF less SBC at 7.7%) 3.1%; EV-level with unlevered FCF 8.9bn: ~1.0%",
+   "status": "FAIL",
+   "note": "Method inconsistency: levered FCF (after ~$1.3bn after-tax interest) is discounted at WACC against enterprise value; SBC ($175M TTM) is added back. Corrected implied 3.1% (equity basis) or ~1% (EV basis) vs base ~7%: label 'below' unchanged. Verdict INCLUDE-SMALL unchanged."
+  },
+  {
+   "ticker": "MCHP",
+   "claim": "Q1 FY27 (Apr-Jun 2026): net sales $1,484.7M (+38.0%), GAAP gross margin 63.2%, operating income $336.8M, EPS $0.37, non-GAAP EPS $0.76",
+   "dossier_location": "Sec 4",
+   "source": "8-K 0000827054-26-000037 Ex-99.1; 10-Q 0000827054-26-000038",
+   "source_value": "1,484.7 / 63.2% / 336.8 / 0.37 / 0.76",
+   "status": "PASS",
+   "note": "Fiscal labels correct (FYE 31 Mar). Q4 FY26 derived 1,311.2 = 4,713.1 - 3,401.9 ties."
+  },
+  {
+   "ticker": "MCHP",
+   "claim": "Guidance record: May-26 guide GAAP EPS $0.28-0.29 / non-GAAP $0.67-0.71 (beaten); Q2 FY27 guide net sales $1.589-1.618bn, GAAP $0.53-0.54, non-GAAP $0.91-0.95; Jan-26 update ~$1,185M vs original $1,109M; Q4 FY26 $1,311M vs $1,260M midpoint",
+   "dossier_location": "Sec 5",
+   "source": "Q1 FY27, Q4 FY26, Q3 FY26 Ex-99.1 and 8-K 0000827054-26-000002",
+   "source_value": "verbatim present",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MCHP",
+   "claim": "LT debt $5,361.3M, cash $272.3M, net debt $5,089M; $1,485.0M 7.50% Series A mandatory convertible preferred (issued 25 Mar 2025), $27.8M quarterly dividend; net debt down ~$170M",
+   "dossier_location": "Sec 6",
+   "source": "10-Q balance sheet; release",
+   "source_value": "5,361.3 / 272.3 / 1,485,000 shares / 27.8",
+   "status": "PASS",
+   "note": "Consolidated entity."
+  },
+  {
+   "ticker": "MCHP",
+   "claim": "$246.9M returned via dividends 'common + preferred combined, per the earnings release'",
+   "dossier_location": "Sec 6",
+   "source": "Q1 FY27 release",
+   "source_value": "'Returned approximately $246.9 million to common stockholders ... through dividends'; preferred dividends $27.8M are separate",
+   "status": "FAIL",
+   "note": "Preferred dividends are not in the $246.9M."
+  },
+  {
+   "ticker": "MCHP",
+   "claim": "Common dividend flat at $0.455 (no cut)",
+   "dossier_location": "Sec 6, 12",
+   "source": "Q1 FY27 release",
+   "source_value": "45.5 cents declared",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MCHP",
+   "claim": "Reverse DCF: EPS0 $4.10 non-GAAP, cost of equity 13% (rf 4.2%), 20x exit multiple -> implied 12.5% a year",
+   "dossier_location": "Sec 7; F76",
+   "source": "Recomputed; 10-Q cash flow (SBC TTM $277.5M); program rate 5.17% + 1.49 (Blume of 1.736) x 4.14% = 11.3%",
+   "source_value": "Replicates 12.5% (price = 20 x EPS10 discounted; no interim cash flows). FCF basis: TTM FCF 1,111 less SBC 278 = 833 -> ~24% a year; annualised Q1 FY27 run-rate FCF less SBC 1,690 -> ~14% (11.3%, 3% terminal, fading)",
+   "status": "FAIL",
+   "note": "Rule (e): EPS treated as cash, non-GAAP EPS adds back SBC, and rf 4.2% is stale (5.17%). Restated implied growth 14-24% vs base 8-9%: label 'above' unchanged, much stronger. Verdict WATCH unchanged."
+  },
+  {
+   "ticker": "MCO",
+   "claim": "Q2 2026: revenue $2,185M (+15%), operating income $1,046M, net income $878M, GAAP EPS $5.03 (+57%), adjusted EPS $4.68 (+31%); MIS revenue $1,260M (+25%), transactional $891M (+34%)",
+   "dossier_location": "Sec 4, 8",
+   "source": "8-K 0001628280-26-049104 Ex-99.1; 10-Q 0001628280-26-049398",
+   "source_value": "2,185 / 1,046 / 878 / 5.03 / 4.68 / 1,260 / 891",
+   "status": "PASS",
+   "note": "Period labels correct. Q1'26 EPS 3.73 vs 3.46 ties."
+  },
+  {
+   "ticker": "MCO",
+   "claim": "Adj EPS guidance: FY25 actual $14.94; initial FY26 $16.40-17.00 (GAAP $15.00-15.60); Q1 reaffirmed (repurchase ~$2.5bn); Q2 narrowed to $16.50-17.00, repurchases up to $3.0bn",
+   "dossier_location": "Sec 5",
+   "source": "Q4'25 (0001628280-26-008788), Q1'26 (0001628280-26-026383), Q2'26 Ex-99.1",
+   "source_value": "verbatim present",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MCO",
+   "claim": "'Guidance has been raised or narrowed-upward at every one of the last four releases, with no cuts'",
+   "dossier_location": "Sec 5 track record",
+   "source": "Q2'26 release guidance table ('Last Publicly Disclosed' vs 'Current')",
+   "source_value": "FCF $2.8-3.0bn -> $2.7-2.9bn; GAAP EPS $16.00-16.60 -> $16.00-16.50",
+   "status": "FAIL",
+   "note": "The Q2-26 release cut free-cash-flow guidance by $0.1bn and the top of GAAP EPS guidance; only adjusted EPS was raised. FCF is the basis of the dossier's own reverse DCF."
+  },
+  {
+   "ticker": "MCO",
+   "claim": "Balance sheet 30 Jun 2026: cash $1,467M; LT debt $6,375M + current $571M = $6,946M; equity $3,025M (from $4,054M); total assets $14,675M",
+   "dossier_location": "Sec 6",
+   "source": "10-Q 0001628280-26-049398",
+   "source_value": "tie",
+   "status": "PASS",
+   "note": "XBRL cross-tie flags are false positives (component vs total). Consolidated entity."
+  },
+  {
+   "ticker": "MCO",
+   "claim": "H1 OCF $1,718M, FCF $1,532M, SBC $117M, repurchases ~$2.2bn, dividends $365M, $181M divestiture gain",
+   "dossier_location": "Sec 6",
+   "source": "10-Q cash flow; release",
+   "source_value": "tie",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MCO",
+   "claim": "Reverse DCF: FCF/share $14.89, CoE 11.1%, 10 yrs then 20x terminal FCF multiple -> ~11.7%; 'in line' with base",
+   "dossier_location": "Sec 7; F54",
+   "source": "Recomputed; d4 raw beta 1.334 -> Blume 1.22; 5.17% + 1.22 x 4.14% = 10.2%",
+   "source_value": "Replicates 11.7%. 20x FCF at 11.1% embeds ~5.8% perpetual growth. With program terminal growth 3%, rate 10.2%: 13.7% (TTM FCF), 15.0% (net of SBC), 13.9% (FY26 guide midpoint net of SBC)",
+   "status": "FAIL",
+   "note": "Exit multiple inconsistent with 3% terminal growth; SBC (~$235M/yr) added back. Restated implied ~14-15% vs base ~12-13% (guided trajectory, buyback-assisted): in_line -> above. The dossier's own rule (INCLUDE-SMALL needs implied at or below base) now fails: verdict INCLUDE-SMALL -> WATCH (medium confidence; terminal-assumption sensitive)."
+  },
+  {
+   "ticker": "MDLZ",
+   "claim": "Q2 2026: net revenues $9,355M (+4.1%, organic +2.2%); GAAP diluted EPS $1.20; adjusted EPS $0.73; GAAP operating margin 20.8% (+7.8pp) on derivative mark-to-market",
+   "dossier_location": "Sec 4",
+   "source": "8-K 0001628280-26-050157 Ex-99.1",
+   "source_value": "9,355 / 2.2% / 1.20 / 0.73 / 20.8%",
+   "status": "PASS",
+   "note": "GAAP operating income $1,946M (vs 1,172) is in the release but shown as n/a in the dossier table."
+  },
+  {
+   "ticker": "MDLZ",
+   "claim": "Guidance: organic growth 'at least 2 percent' (raised); adj EPS growth 'flat to 5 percent' cc (maintained); FCF 'approximately $3 billion'; dividend +4%; H1 repurchases $212M, dividends $1,287M",
+   "dossier_location": "Sec 5, 6",
+   "source": "Q2'26 release; Q4'25 and Q1'26 releases",
+   "source_value": "verbatim present; FCF ~$3bn in Feb, Apr and Jul releases",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MDLZ",
+   "claim": "'FY2026 FCF guide ~$3bn, i.e. FCF guidance was cut year-on-year'; FY2025 delivered FCF ~ $3.5bn (secondary source)",
+   "dossier_location": "Sec 5, 9; F104 key_adverse_facts",
+   "source": "FY25 10-K cash flow",
+   "source_value": "OCF 4,514 - capex 1,279 = FCF $3,235M; ~$3bn guide unchanged since Feb 2026",
+   "status": "FAIL",
+   "note": "FY25 FCF was $3.2bn, not $3.5bn; the step-down is about 7%, and there was no guidance cut during 2026 (same ~$3bn in Q4'25, Q1 and Q2 releases)."
+  },
+  {
+   "ticker": "MDLZ",
+   "claim": "Net debt/EBITDA ~3.8x (gurufocus/finbox), consolidated net debt ~$19.5bn at 31 Mar 2026",
+   "dossier_location": "Sec 6, 9; F104",
+   "source": "10-Q 0001628280-26-050179 (30 Jun 2026; on EDGAR since 28 Jul)",
+   "source_value": "Debt 2,327+2,663+16,460 = 21,450; cash 1,716; net debt 19,734; TTM adj OI ~4.8bn + D&A ~1.36bn = ~6.2bn -> 3.2x (GAAP EBITDA ~5.8bn -> 3.4x)",
+   "status": "FAIL",
+   "note": "Primary-source leverage is ~3.2-3.4x, not 3.8x, and the 30 Jun balance sheet was available. Triage's ~3.3x was closer. Reduces, but does not remove, the leverage flag; kill threshold 4.0x stays."
+  },
+  {
+   "ticker": "MDLZ",
+   "claim": "Reverse DCF: levered FCF $3.0bn against EV $98.07bn at 7.5% WACC, terminal 2.5% -> 8.4% (12.0% on $2.25bn, 6.4% on $3.5bn)",
+   "dossier_location": "Sec 7; F104",
+   "source": "Recomputed; d4 raw beta 0.402 -> Blume 0.60 -> CoE 7.65%; SBC TTM ~$136M",
+   "source_value": "Replicates 8.4/12.0/6.4. Equity basis (mkt cap 78.6bn, FCF net of SBC 2.86bn, 7.65%, 2.5%) -> ~6.8%",
+   "status": "FAIL",
+   "note": "Levered FCF cannot be set against EV; SBC added back. Restated 6.8% vs base 5-6%: 'above' label unchanged (gap ~1pp). Verdict WATCH unchanged."
+  },
+  {
+   "ticker": "MDLZ",
+   "claim": "Russia 3.8% of Q2 revenue; S&P BBB stable (14 Nov 2024)",
+   "dossier_location": "Sec 6",
+   "source": "cited only to business-humanrights.org / cbonds.com",
+   "source_value": "not in the primary filings checked",
+   "status": "UNVERIFIABLE",
+   "note": "Secondary and dated; the rating action is almost two years old."
+  },
+  {
+   "ticker": "MDT",
+   "claim": "Q1 FY27 (quarter ended 31 Jul 2026): net sales $9,756M (+13.7% organic), operating profit $1,764M, GAAP EPS $1.14, non-GAAP EPS $1.45; Cardiac Ablation +88%",
+   "dossier_location": "Sec 4",
+   "source": "8-K 0001628280-26-059697 Ex-99.1; 10-Q 0001628280-26-060473",
+   "source_value": "9,756 / 13.7% / 1.14 / 1.45 / 88%",
+   "status": "PASS",
+   "note": "Fiscal labels correct (FYE last Friday of April)."
+  },
+  {
+   "ticker": "MDT",
+   "claim": "'Reacceleration is durable ... not a one-off comp or accounting effect' (+13.7% organic in Q1 FY27)",
+   "dossier_location": "Sec 3",
+   "source": "Release and 10-Q: FY27 is a 53-week year, extra week in Q1",
+   "source_value": "Extra week benefited Q1 organic growth by ~$570M (~6.6pp of the Q1 base $8.6bn; ~1.6pp of FY27); guidance includes it; Q1 is a 14-week quarter",
+   "status": "FAIL",
+   "note": "Underlying Q1 organic growth is ~7%, and FY27 organic guidance of 7.25-7.75% is ~5.7-6.2% ex the extra week, close to FY26's 5.8%. The reacceleration is much smaller than stated. Verdict kept (valuation still supports INCLUDE-SMALL) but the thesis wording is overstated."
+  },
+  {
+   "ticker": "MDT",
+   "claim": "FY26 row: non-GAAP EPS shown as 'FY26 guided (reiterated) $5.62-$5.66'; guidance record described as raise/in-line",
+   "dossier_location": "Sec 4 table, Sec 5",
+   "source": "Q4/FY26 release 0001628280-26-040034",
+   "source_value": "FY26 non-GAAP EPS actual $5.53 (+0.7%) vs reiterated guide $5.62-5.66",
+   "status": "FAIL",
+   "note": "The year finished below the reiterated EPS range; the dossier shows the guide in the actual column. FY26 GAAP EPS $3.73 and revenue $36.4bn (+5.8% organic) are correct."
+  },
+  {
+   "ticker": "MDT",
+   "claim": "FY27 guidance raised: organic 6.75-7.25% -> 7.25-7.75%; non-GAAP EPS $5.90-6.00 -> $5.94-6.00; Q4 FY26 revenue 90bps ahead; FY26 organic ~5.0% -> ~5.5% (Nov 2025)",
+   "dossier_location": "Sec 5",
+   "source": "Q1 FY27, Q4 FY26 (0001628280-26-040034), Q2 FY26 (0001628280-25-052771) Ex-99.1",
+   "source_value": "verbatim present",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MDT",
+   "claim": "Balance sheet 31 Jul 2026: current debt $2,536M + LT debt $25,617M = $28,153M; cash $1,691M + investments $7,128M; total assets $93,306M; Q1 FCF $1,290M; dividend $0.72, 49th year",
+   "dossier_location": "Sec 6",
+   "source": "10-Q; Q1/Q4 releases",
+   "source_value": "tie",
+   "status": "PASS",
+   "note": "Mechanical flag (total debt gap) is a false positive: the XBRL tag is long-term debt only. Net debt/EBITDA 1.9x relies on d4 EBITDA (not rebuilt)."
+  },
+  {
+   "ticker": "MDT",
+   "claim": "Applied Medical verdict $382M (trebled), injunctive hearing October 2026; hernia mesh ~10,500 plaintiffs as of 5 Aug 2026",
+   "dossier_location": "Sec 9, 12",
+   "source": "10-Q Note 16",
+   "source_value": "tie",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "MDT",
+   "claim": "Reverse DCF: EPS0 $5.97 non-GAAP, CoE 7.5% (rf 4.2%), 16x exit multiple -> 6.7% a year; implied 'in_line'",
+   "dossier_location": "Sec 7; F76",
+   "source": "Recomputed; 10-Q/10-K cash flow (TTM OCF 8,035, capex 1,903, FCF 6,132; SBC TTM ~450); program rate 5.17% + 0.72 x 4.14% = 8.15%",
+   "source_value": "Replicates 6.7% (exit multiple only). FCF basis, mkt cap $113.9bn: 1.8% (no SBC, 8.05%) / 2.8% (net of SBC, 8.05%) / 5.1% (net of SBC, 9.05%)",
+   "status": "FAIL",
+   "note": "EPS-as-cash, non-GAAP SBC add-back, stale rf 4.2%. Restated implied ~3-5% vs base 6-8%: in_line -> below (TTM flows are slightly flattered by the 14-week Q1). Verdict INCLUDE-SMALL unchanged and better supported on valuation."
+  }
+ ],
+ "verdict_changes": [
+  {
+   "ticker": "MCO",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Reverse DCF restated: the 20x terminal FCF multiple embedded ~5.8% perpetual growth and SBC was added back; with 3% terminal growth at 10.2% (5.17% + Blume 1.22 x 4.14%) implied FCF/share growth is ~14-15% vs a guided/realized base of ~12-13%, so implied is above base and the dossier rule for INCLUDE-SMALL fails. The Q2-26 release also cut FCF guidance to $2.7-2.9bn and the dossier said no guidance was cut. Medium confidence (terminal-assumption sensitive)."
+  }
+ ],
+ "other_label_changes": [
+  {
+   "ticker": "LYB",
+   "field": "implied_vs_base",
+   "old": "in_line",
+   "new": "above",
+   "why": "arithmetic fix 3.5%->2.8% and SBC deducted gives 4.2% vs base 3.0%; verdict WATCH unchanged"
+  },
+  {
+   "ticker": "MDT",
+   "field": "implied_vs_base",
+   "old": "in_line",
+   "new": "below",
+   "why": "FCF-based restatement 3-5% vs base 6-8%; verdict INCLUDE-SMALL unchanged"
+  },
+  {
+   "ticker": "MAS",
+   "field": "upgrade review",
+   "old": "WATCH",
+   "new": "WATCH (review due)",
+   "why": "TTM OCF now $1,291M vs $971M, so the dossier's own alternative upgrade trigger is literally met; not promoted because gain includes tariff-refund receipts"
+  }
+ ]
+}

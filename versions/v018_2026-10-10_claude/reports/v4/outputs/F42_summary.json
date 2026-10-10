@@ -1,0 +1,109 @@
+{
+  "agent": "F42",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "DIS": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Best-in-class content and theme-park owner where streaming is finally turning profitable, but companywide cash generation actually fell this year.",
+      "kill_criteria": [
+        "TTM free cash flow does not recover to at least $10bn by FY26 year-end (vs FY25's $10.1bn) — signals the FCF decline is structural, not timing.",
+        "ESPN/Sports segment operating income declines YoY for two consecutive quarters excluding sports-calendar effects (playoff timing).",
+        "Disney+/Hulu/Hotstar combined SVOD operating margin fails to reach double digits for full FY26 (vs the guided target).",
+        "Net debt/EBITDA rises above 2.5x (vs ≈1.7x now), signalling buybacks are outrunning cash generation.",
+        "FY27 guidance (to be given with FY26 Q4 results, Nov 2026) is cut from the currently-reiterated \"double-digit adjusted EPS growth.\""
+      ],
+      "key_adverse_facts": [
+        "9-month FY26 free cash flow $5.74bn vs $7.52bn prior year (-24%); 6-month FY26 FCF down 53% YoY before partial recovery in Q3.",
+        "Q3 FY26 $812m impairment on the A+E Networks equity-method investment (Hearst JV); 1H FY26 also carried $147m equity-investment impairment, $92m severance and $422m non-cash tax charges tied to the Fubo/NFL transactions.",
+        "Sports (ESPN) segment operating income fell 17% YoY in Q3 FY26 on playoff-schedule effects and a network-carriage dispute.",
+        "International park attendance (Shanghai, Hong Kong) stayed soft through Q3 FY26 and management expects continued softness in Q4.",
+        "$50m antitrust settlement (in principle, not yet fully closed) over YouTube TV/DirecTV Stream bundling pricing; a related FuboTV antitrust suit is unresolved.",
+        "GAAP diluted EPS ($1.27-$1.51 the last two quarters) is far below and far more volatile than adjusted EPS ($2.06 in Q3) due to recurring one-off items."
+      ],
+      "data_conflicts": [
+        "v4 quant composite (b1_live_scores.csv) ranks DIS poorly (composite 0.167, decile 2, live_rank 414/503) with a negative earnings-momentum/SUE score (0.033) despite management reiterating ~12% FY26 adjusted-EPS growth and raising the buyback target; likely a GAAP-EPS-volatility artefact (impairments, tax items) feeding the SUE calculation rather than genuine deceleration -- flagged, not resolved."
+      ],
+      "next_earnings_date": "2026-11-12",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - the streaming-margin inflection and Parks growth are well evidenced, but this year's FCF decline is real and not yet explained away as pure timing",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "Restated by verification DV13 (2026-10-06): original 7.5%/yr implied growth used EV vs levered FCF, 9.0% WACC, 4.0% terminal growth and SBC added back. On an equity basis with SBC deducted (TTM SBC $1.52bn), cost of equity 9.67% (5.17% 10-yr UST + 4.5% ERP, beta 1) and 3.0% terminal growth the price implies about 10.5%/yr FCF growth vs a 7-8% base case, i.e. above base; the dossier's own rule then gives WATCH. Probability-weighted 3y scenario return is about +5.2%/yr, below the 9.7% cost of equity. Base-case scenario EPS ($6.90) equals FY26 guided adjusted EPS and should be re-underwritten before re-promotion. No V1 row exists for DIS.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {"bear": -0.085, "base": 0.064, "bull": 0.194},
+      "dv13_correction": "Verdict INCLUDE-SMALL -> WATCH on valuation-method restatement; see dossiers/DIS.md Correction (verification DV13, 2026-10-06). Also corrected: Q3 FY25 GAAP EPS is $2.92 (not -$0.25); TTM net income attributable $8.6bn (not ~$10.2bn); antitrust settlement in principle dated 3 Oct 2025, preliminary approval 31 Mar 2026, amount 'not material' per 10-Q."
+    },
+    "DLR": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Largest data-center REIT, riding the AI/hyperscale build with a record leasing backlog, but growth is being funded by heavy equity dilution and rising debt costs.",
+      "kill_criteria": [
+        "Net debt/adjusted EBITDA rises above 5.5x (vs 4.7x now) without a corresponding acceleration in backlog conversion.",
+        "FY26 Core FFO/share guidance is cut (vs the current $8.15-$8.20 ex-net-promote range) at the Q3 2026 release (2026-10-22).",
+        "Same-capital cash NOI growth falls below 4.0% for two consecutive quarters (vs the 4.25-5.25% FY26 guide).",
+        "ATM share issuance for the full year exceeds ~$4bn (vs $2.5bn through Q2) without matching growth in per-share Core FFO -- a sign dilution is outrunning growth.",
+        "A new SEC or other regulatory action on cybersecurity disclosure (the prior SEC investigation was concluded without an enforcement recommendation by letter of 22 Dec 2025, FY2025 10-K)."
+      ],
+      "key_adverse_facts": [
+        "Net debt/adjusted EBITDA is 4.7x, elevated for a REIT even though flat-to-improving YoY.",
+        "$2.5bn of YTD ATM equity issuance (13.5m shares at avg $184.94) is real, ongoing per-share dilution funding the growth capex.",
+        "FY26 development capex guidance raised to $4.25-4.75bn; long-term debt issuance pricing guidance raised to 4.5-5.5% (from 4.0-4.5%), i.e. marginal borrowing costs are rising.",
+        "Share count rose 7.7% in six months (343.6m to 370.0m at 30 Jun 2026): 13.5m ATM shares ($2.5bn) plus 12.3m issued in the June 2026 purchase of the remaining 64% of two Northern Virginia JVs; a new $7.5bn ATM was signed 4 May 2026. (The earlier SEC cybersecurity-disclosure investigation was concluded 22 Dec 2025 with no enforcement recommendation.)",
+        "GAAP diluted EPS is extremely volatile and not meaningful (e.g. $2.94 in Q2 2025 on a one-off gain vs $0.15-$0.46 in adjacent quarters); the triage's raw 62x P/E is a GAAP artefact.",
+        "June 2026 purchase of the remaining 64% of two Northern Virginia JVs (now wholly owned): ~$3.5bn consideration ($1.2bn cash + 12.3m shares), ~$5.2bn total capitalised cost incl. $726m assumed debt; raises leverage/dilution rather than partner concentration."
+      ],
+      "data_conflicts": [
+        "Triage flagged net debt/EBITDA of 5.7x as a red flag; the company's own Q2 2026 primary-source disclosure states 4.7x (flat vs Q1 2026, improved from 5.1x a year ago) -- resolved in DLR's favour, but the source of the triage's 5.7x figure was not independently traced this pass.",
+        "v4 quant composite ranks DLR poorly (composite 0.161, decile 2, live_rank 417/503) with a very weak Quality-family score (fam_Q 0.035); this is very likely a REIT-accounting artefact (straight-line depreciation, land/building capitalisation distort the generic Quality factor's gross-profit/assets and accruals inputs) rather than a genuine quality problem, per the sector playbook -- flagged, not independently re-derived."
+      ],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium - leasing/backlog evidence is strong and primary-sourced, but per-share economics depend on continued heavy equity issuance (shares +7.7% in H1 2026)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "Restated by verification DV13 (2026-10-06): the original 8% cost of equity (2.8 pts over the 5.17% 10-yr UST) and perpetual-growth test (5.3%) made the base-case $212 look in line. At 9.67% (5.17% + 4.5% ERP, beta 1) the 3-year hurdle price is ~$220, needing ~10.4%/yr Core FFO/share growth at a 20x exit vs the 9% base case (above by ~1.4 pts, narrow); probability-weighted scenario return ~7.0%/yr vs 9.67%. No V1 row exists for DLR.",
+        "implied_vs_base": "above"
+      },
+      "scenario_returns_3y": {"bear": -0.043, "base": 0.086, "bull": 0.178},
+      "dv13_correction": "Verdict INCLUDE-SMALL -> WATCH (narrow) on valuation-hurdle restatement; see dossiers/DLR.md Correction (verification DV13, 2026-10-06). Also: SEC cybersecurity investigation was concluded 22 Dec 2025 (not open); the June 2026 Northern Virginia deal bought the remaining 64% of two JVs (12.3m shares issued), not a partner stake."
+    },
+    "DOV": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Diversified industrial group with real AI-data-center cooling demand and low debt; at a 5.17% Treasury the price already discounts about the base-case growth, so size is reduced.",
+      "kill_criteria": [
+        "Climate & Sustainability Technologies segment organic growth or margin deteriorates for a second consecutive quarter (vs the Q2 2026 refrigeration-driven miss), indicating the production problem is structural, not a one-quarter event.",
+        "FY26 adjusted EPS guidance (currently $10.55-$10.75) is cut at the Q3 2026 release (2026-10-22).",
+        "Book-to-bill falls below 1.0x for two consecutive quarters (vs 1.06x-1.2x in H1 2026).",
+        "Net debt/EBITDA rises above 2.0x (vs ≈0.8x now) without a value-accretive acquisition justifying it.",
+        "The $58.9m ESG jury verdict is upheld on appeal and expands materially beyond the awarded amount, or triggers additional related claims."
+      ],
+      "key_adverse_facts": [
+        "Q2 2026 stock fell 9.7% on a disclosed production-throughput/execution miss in the Climate & Sustainability (refrigeration) segment that cost ~1.0-1.5 points of consolidated organic growth, despite an EPS beat and guidance raise.",
+        "FY26 adjusted EPS guide of $10.55-$10.75 is +9.8% to +11.9% on FY25's $9.61, not the 13-15% in the original dossier; recurring restructuring costs ($0.41 a share) are excluded from adjusted EPS.",
+        "A jury returned a ~$58.9m verdict (June 2025) against the Environmental Solutions Group business (sold to Terex in Oct 2024) for breach of contract/inducement of breach of fiduciary duty; post-trial motions filed, appeal to the Seventh Circuit possible.",
+        "The October 2024 sale of the Environmental Solutions Group causes a real discontinuity in reported revenue/net income/OCF between FY2024 and FY2025-26 filings; FY2024 GAAP net income ($2,697m) was inflated by the ~$2.0bn divestiture gain.",
+        "The original 'FY26 FCF guide of 14-16% of revenue' was not found in the Q2 2026 release; FY25 FCF was 13.8% of revenue and H1 2026 7.5%."
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-22",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (broad order strength, low leverage and the data-center driver are primary-sourced; confidence cut because the corrected valuation leaves a margin of safety of about -5% and the EPS growth base was overstated)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for DOV. Reverse DCF restated: FCFF about $1,178m (TTM FCF $1,177m less SBC $41m plus after-tax net interest), EV $27.35bn, WACC 9.8% (Ke 10.11% = 5.17% + 1.098 x 4.5%), terminal 3.5%: implied 8.1%/yr for 10 years (9.2% at ERP 5.0%) vs a base case of about 7.4%/yr; value at base $24.5bn vs $25.84bn market cap (-5.3%). The original 4.1% used WACC 8.5% and terminal 4.0%.",
+        "implied_vs_base": "in_line"
+      },
+      "scenario_returns_3y": {"bear": -0.087, "base": 0.085, "bull": 0.173},
+      "scenario_basis": "Annualised equity IRR on $25.84bn; FCFF about $1,178m less after-tax interest; exit value is the DCF at 9.8% WACC of remaining flows less net debt $1.5bn (terminal 3.5%). Bear FCFF -2%/yr for 3 years then 3.5%; base 9.5% then 6.5%; bull 13% then 9%. The original arithmetic reproduces but used a flat 18x exit on adjusted EPS."
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "agent": "F96",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "TTWO": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Rockstar's owner is executing well toward GTA VI's Nov-2026 launch, but the stock already pays 57x forward earnings for a flawless outcome.",
+      "kill_criteria": [
+        "GTA VI release date slips again from 19-Nov-2026 (any public announcement of a new date)",
+        "Q2 FY27 (Sep-26 quarter) Net Bookings miss the guided $1,620-1,670m range",
+        "FY2027 full-year outlook ($8.0-8.2bn Net Bookings, $0.55-0.75 diluted EPS) is cut at any subsequent quarterly release",
+        "The $629.9m current portion of convertible notes is not refinanced/repaid smoothly and OCF stays negative for two consecutive quarters post-launch (through Q4 FY27)",
+        "NTM P/E stays above 45x more than two quarters after GTA VI's first full quarter of sales without a corresponding upward revision to consensus FY2028 FCF"
+      ],
+      "key_adverse_facts": [
+        "GAAP has posted a net loss every quarter for two years; Q1 FY27 net loss was $34.1m ($0.18/share) and operating cash flow was -$168.8m",
+        "A previously undisclosed (to triage) $43.4m impairment was taken in Q1 FY27 on a cancelled unannounced third-party-developed title",
+        "FY2027 capex guidance was raised ~45% (from ~$200m to ~$290m) even though revenue/EPS/Net Bookings guidance ranges were only maintained, not raised",
+        "Q2 FY27 guidance calls for a materially wider GAAP net loss ($140-157m) than Q1's, ahead of the launch quarter"
+      ],
+      "data_conflicts": [
+        "b1's quant composite is near the bottom decile (0.025, decile 1/10) driven by negative trailing profitability, while triage advanced the name purely on qualitative growth/catalyst grounds -- the two inputs are not in conflict once this is understood, but a reader of the composite score alone would misread this as a weak name"
+      ],
+      "next_earnings_date": "2026-11-09",
+      "horizon": "12-24 months",
+      "confidence_in_thesis": "medium - primary-source guidance and launch-date reaffirmation are solid evidence, but the entire thesis rests on a single unreleased title with real execution risk",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "above",
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for TTWO. This dossier's own reverse DCF off guided FY2027 FCF implies ~19.3% 10-year compound FCF growth; my base case (a strong but imperfect launch, FCF normalizing to ~$1.6-1.8bn by FY2029 then high-single-digit growth) implies roughly 10-13% -- so the price is priced above my base case, matching triage's own caution that GTA VI's success is already in the price."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.14,
+        "base": 0.04,
+        "bull": 0.24
+      },
+      "scenario_basis": "Base off FY2027 guided FCF ~$720m (OCF >$1,000m guide less ~$290m capex guide), discounted at 9.5% CAPM cost of capital (4.2% rf + 0.966 beta x 5.5% ERP), assuming FCF ramps to ~$1.6-1.8bn by FY2029 as GTA VI monetizes and then grows high-single-digit; bear assumes a launch stumble/delay compressing the multiple to ~35x normalized FCF; bull assumes GTA VI monetization outperforms GTA V's and the multiple holds near current levels on a much larger FCF base; no dividend."
+    },
+    "ACGL": {
+      "verdict": "INCLUDE",
+      "thesis_one_line": "A top-tier specialty insurer whose underwriting is still very profitable, priced by the market as if its earnings power is fading fast -- it isn't, yet.",
+      "kill_criteria": [
+        "Combined ratio excluding cat/prior-year-development exceeds 90% in any reported quarter (vs 82.3-82.5% in the last two)",
+        "Favorable prior-year reserve development turns negative (net reserve strengthening) in any quarter",
+        "Annualized operating ROE falls below 10% for two consecutive quarters (vs 15.3-15.4% in the last two)",
+        "Book value per common share declines sequentially for two consecutive quarters (it has risen every quarter shown)",
+        "Share repurchase pace falls below $400m/quarter for two consecutive quarters without an explicit capital-allocation explanation"
+      ],
+      "key_adverse_facts": [
+        "Combined ratio excluding cat/PYD has risen in two straight quarters on a YoY basis (81.0% to 82.3% Q1; 80.9% to 82.5% Q2) -- a real, moderate pricing-cycle softening",
+        "Favorable reserve development shrank sequentially ($200m Q1 2026 to $165m Q2 2026)",
+        "Q2 2026 net income fell 14-15% YoY (against a benign 2025 cat comp), even as Q1 2026 net income nearly doubled YoY (against a heavy 2025 wildfire-loss comp) -- headline EPS is cat-comp-driven and volatile quarter to quarter"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-26",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "high - two consecutive quarters of primary-source combined-ratio, reserve-development and buyback data all point the same direction and corroborate both the triage note and the V1 valuation model",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "attractive",
+        "v1_base_3y": 0.09612984784669298,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "I agree with V1's 'attractive' call. V1 frames it as an ROE-fade story (9.5% implied ROE vs 19.5% delivered). My original earnings-based reverse DCF (-9.3%/yr) used net income as cash and is withdrawn; DV01 restated it with the insurer method: 1.39x book (1.47x tangible) implies a sustainable ROE of about 11.4% at a 9.0% cost of equity (12.3% at 9.67%) versus operating ROE 15.3% and net ROE 18%, which is roughly the end-point of my base combined-ratio fade (82.5% to 88-90%). Price remains below what the evidence supports, with a thinner margin of safety than first written."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.03,
+        "base": 0.09,
+        "bull": 0.20
+      },
+      "scenario_basis": "Base off trailing-4Q net income to common ~$4,692m (Q3'25 $1,350m + Q4'25 $1,238m [derived] + Q1'26 $1,047m + Q2'26 $1,057m), current BVPS $68.04, ~18% operating ROE persisting with combined ratio easing to ~86-88% over the cycle, continued ~$1bn/quarter-pace buybacks reducing share count; bear assumes a hard reinsurance-pricing downturn pushes combined ratio toward 95%+ and reserve releases end; bull assumes underwriting discipline holds combined ratio near 82-84% through the cycle turn and buybacks continue at the current pace; no material dividend in the total-return calc beyond the disclosed preferred dividends already netted out of common EPS. [DV01 note: 18.0% is the annualized NET income ROE; operating ROE is 15.3%; the $4,692m is net income before preferred dividends; scenario returns not recomputed.]"
+    },
+    "AOS": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "North America's leading water-heater and boiler maker is executing well, but its China business is still shrinking and guidance has been cut twice this year.",
+      "kill_criteria": [
+        "Rest of World/China segment sales decline more than 20% YoY for a third consecutive quarter (Q1 2026: -11% YoY comp; Q2 2026: -19% reported/-28% local currency China)",
+        "FY2026 diluted or adjusted EPS guidance is cut a third time at the Q3 2026 release (~late Oct 2026)",
+        "Total debt/total capitalization leverage ratio rises above 35% (vs 25.7% currently) without a disclosed deleveraging plan",
+        "North America segment adjusted margin falls below 22% for two consecutive quarters (vs 24.4% in Q2 2026)",
+        "Actual share repurchases for FY2026 come in below the $300m target management just raised"
+      ],
+      "key_adverse_facts": [
+        "FY2026 EPS guidance has been cut twice in six months, both explicitly attributed to China: diluted EPS range lowered from the initial $3.85-$4.15 (Jan 2026) to $3.60-3.90 (April 2026), then to $3.60-3.75 (July 2026)",
+        "Rest of World segment earnings fell from $25.3m to $10.2m YoY (margin 10.5% to 5.2%) in Q2 2026; China sales down 28% in local currency",
+        "Total debt rose roughly 4x since December 2025 (from $155.0m to $637.5m) to fund the Leonard Valve acquisition via a new term loan, lifting leverage to 25.7% of total capitalization",
+        "GAAP diluted EPS missed the prior-year comparable in both of the last two quarters (-11% Q1 2026, -15% Q2 2026), and Q2 2026 included a $22.6m restructuring/impairment charge"
+      ],
+      "data_conflicts": [],
+      "next_earnings_date": "2026-10-27",
+      "horizon": "24-36 months",
+      "confidence_in_thesis": "medium - the North America core thesis is well-supported by this quarter's segment data, but the China business has not yet shown signs of stabilizing despite two guidance cuts, so the timing of the 'worth revisiting once China stabilizes' condition from triage has not yet arrived",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for AOS. This dossier's own reverse DCF off TTM FCF ($484.6m), a 10.5% cost of capital and 3% terminal growth implies ~6.3% 10-year compound FCF growth; my base case (NA mid-single-digit organic growth plus buybacks and China stabilizing, not growing, within 2-3 years) implies roughly 8-10%, so the price sits below my base case -- consistent with triage's 'cheap' read, though I weight the unresolved China trend as a bigger open risk than triage did. [DV04 2026-10-06 restatement: rf 4.2% was stale (10-yr UST 5.17% on 2026-09-25 gives Ke 11.5% with beta 1.153 and ERP 5.5%) and the $484.6M 'TTM FCF' does not tie to filings (TTM FCF $639.4M; FY2025 $546.0M); on an equity basis implied 10-year FCF growth is ~4-6% (6.0% on FY2025 FCF less SBC; 3.8% on TTM FCF less SBC), still below the 8-10% base case, so 'below' is unchanged.]"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.04,
+        "base": 0.09,
+        "bull": 0.17
+      },
+      "scenario_basis": "Base off TTM free cash flow ~$484.6m, NTM P/E 14.7x, ~1.5% dividend yield, NA segment growing mid-single-digit organically with continued ~$300m/year buybacks, China segment stabilizing (flat, not growing) within 2-3 years; bear assumes China continues shrinking at a similar pace and NA volumes stay soft, holding the multiple flat to slightly down; bull assumes China stabilizes/inflects and NA re-accelerates, supporting modest multiple expansion toward its own 5-10yr average."
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "dataset": "d4_ntm_vs_yahoo_table.csv",
+  "agent": "d4",
+  "written_utc": "2026-09-25T20:59:40Z",
+  "description": "share of names where Yahoo forwardPE differs >10% from NTM P/E, by group",
+  "rows": 26,
+  "columns": [
+    "group",
+    "n",
+    "n_gt10pct",
+    "share_gt10pct",
+    "median_fwdPE_over_peNTM",
+    "p10",
+    "p90",
+    "share_yahoo_lower"
+  ],
+  "inputs": [
+    "v4/data/d4_live_snapshot.parquet"
+  ],
+  "generated_by": "v4/code/d4_validate.py"
+}

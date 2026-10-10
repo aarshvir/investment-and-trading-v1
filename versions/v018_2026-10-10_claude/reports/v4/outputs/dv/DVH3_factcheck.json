@@ -1,0 +1,261 @@
+{
+ "as_of": "2026-10-06",
+ "scope": [
+  "RTX"
+ ],
+ "facts": [
+  {
+   "ticker": "RTX",
+   "claim": "Q2 2026 revenue $24,708M, GAAP NI $2,139M, diluted EPS $1.57 (vs Q2 2025 $21,581M / $1,657M / $1.22); label = three months to 30 Jun 2026",
+   "dossier_location": "s4 table",
+   "source": "10-Q acc 0000101829-26-000027; 8-K Ex-99 acc 0000101829-26-000025",
+   "source_value": "revenue 24,708 vs 21,581; NI attributable 2,139 vs 1,657; diluted EPS 1.57 vs 1.22",
+   "status": "PASS",
+   "note": "Revenue is reported directly, not derived (dossier says derived): MINOR wording."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Q1 2026 revenue $22,076M, op income $2,555M, NI $2,059M, EPS $1.51; Q1 2025 20,306 / 2,035 / 1,535 / 1.14",
+   "dossier_location": "s4 table",
+   "source": "8-K Ex-99 acc 0000101829-26-000009; XBRL 0000101829-26-000011",
+   "source_value": "22,076; 2,555; 2,059; 1.51; Q1'25 20,306 / 1,535 / 1.14; Q1'25 op income 4,181-2,146 = 2,035",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Q3 2025 revenue 22,478, op income 2,523 (flagged as derived), NI 1,918, EPS 1.41",
+   "dossier_location": "s4 table (asterisk)",
+   "source": "XBRL companyfacts, 10-Q acc 0000101829-25-000042",
+   "source_value": "22,478; 2,523; 1,918; 1.41",
+   "status": "PASS",
+   "note": "Operating income 2,523 is directly tagged in the Q3 2025 10-Q; asterisk can be dropped."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "FY2025 revenue 88,603, op income 9,300, NI 6,732, EPS 4.96",
+   "dossier_location": "s4 table",
+   "source": "8-K Ex-99 acc 0000101829-26-000003",
+   "source_value": "88,603; 9,300; 6,732; 4.96",
+   "status": "PASS",
+   "note": "Q4 2025 row (24,238 / 1,622 / 1.19) is omitted from the table; not an error."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "YoY growth +8.7% (Q1 2026) and +14.5% (Q2 2026)",
+   "dossier_location": "s4 table",
+   "source": "8-K Ex-99 acc 0000101829-26-000009; 8-K Ex-99 acc 0000101829-26-000025",
+   "source_value": "22,076/20,306 = +8.72%; 24,708/21,581 = +14.49%",
+   "status": "MINOR",
+   "note": "Computed values correct; RTX's releases say 9 percent and 14 percent, and the dossier attributes 14.5% to RTX."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Q1 2026 guidance: adjusted sales $92.5-$93.5B (+$0.5B), adjusted EPS $6.70-$6.90 (+$0.10), FCF $8.25-$8.75B maintained",
+   "dossier_location": "s5",
+   "source": "8-K Ex-99 acc 0000101829-26-000009",
+   "source_value": "'Adjusted sales of $92.5 - $93.5 billion, up from $92.0 - $93.0 billion'; EPS '$6.70 - $6.90, up from $6.60 - $6.80'; 'Confirms free cash flow of $8.25 - $8.75 billion'",
+   "status": "PASS",
+   "note": "Prior ranges also confirmed in the 27 Jan 2026 release."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Q2 2026 guidance: adjusted sales $95-$96B (from $92.5-$93.5B), adjusted EPS $7.10-$7.25 (from $6.70-$6.90), organic growth 8-9% (from 5-6%)",
+   "dossier_location": "s5",
+   "source": "8-K Ex-99 acc 0000101829-26-000025",
+   "source_value": "'Adjusted sales of $95.0 - $96.0 billion, up from $92.5 - $93.5 billion'; 'Organic sales growth of 8 to 9 percent, up from 5 to 6 percent'; 'Adjusted EPS of $7.10 - $7.25, up from $6.70 - $6.90'",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "RTX",
+   "claim": "FY2026 FCF guidance $8.25-$8.75B 'not re-confirmed at the same level in the Q2 2026 release'; kill criterion 4 on that basis",
+   "dossier_location": "s5, s9 item 4, F105 kill_criteria[3]",
+   "source": "8-K Ex-99 acc 0000101829-26-000025",
+   "source_value": "'Free cash flow of $8.50 - $8.75 billion, up from $8.25 - $8.75 billion'",
+   "status": "FAIL",
+   "note": "Guidance was raised, not omitted; the dossier left the Q2 raise out of s5."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Consolidated cash $8,305M, debt $37,383M (229 + 5,296 + 31,858), net debt $29,078M, shareowners' equity $66,377M, net debt/equity 0.44x",
+   "dossier_location": "s6, s9 item 3",
+   "source": "10-Q acc 0000101829-26-000027",
+   "source_value": "cash 8,305; ST borrowings 229; current LTD 5,296; LTD 31,858; equity 66,377 (total equity 68,116 incl. NCI)",
+   "status": "PASS",
+   "note": "Consolidated, 30 Jun 2026; no segment or subsidiary mix-up."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Net debt/TTM EBITDA a 'data gap'",
+   "dossier_location": "s6",
+   "source": "10-Q acc 0000101829-26-000027; 8-K Ex-99 acc 0000101829-26-000003",
+   "source_value": "TTM op profit 10,485 + D&A 4,400 = 14,885; net debt 29,078 => 1.95x",
+   "status": "MINOR",
+   "note": "Gap filled in correction section."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "TTM OCF 14,206 (10,567-1,763+5,402), capex 2,799, FCF 11,407, TTM NI 7,738, FCF/NI 147%",
+   "dossier_location": "s6",
+   "source": "10-Q acc 0000101829-26-000027; 8-K Ex-99 acc 0000101829-26-000003",
+   "source_value": "FY25 OCF 10,567 / capex 2,627; H1'25 1,763 / 1,043; H1'26 5,402 / 1,215; NI 6,732-3,192+4,198",
+   "status": "PASS",
+   "note": "Arithmetic correct; the base is unrepresentative (see valuation fact) and the working-capital explanation omits $1.5B YoY factoring."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "FCF/NI of 147% explained by 'heavy D&A and working-capital tailwinds from the ramp'",
+   "dossier_location": "s6",
+   "source": "10-Q acc 0000101829-26-000027 MD&A cash flow",
+   "source_value": "Factoring activity increased operating cash flow by $1.5B in H1 2026 vs H1 2025; c.$0.7B 2026 powder-metal cash outflow expected",
+   "status": "MINOR",
+   "note": "Incomplete rather than wrong; mattered for the DCF base."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Buybacks essentially nil in H1 2026 (FY2025 $50M)",
+   "dossier_location": "s6",
+   "source": "10-Q acc 0000101829-26-000027; XBRL",
+   "source_value": "Repurchase of common stock: 2026 H1 nil; FY2025 (50)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Dividend: XBRL jump $0.68 to $1.46 'inconsistent with ~$0.60-$0.64 quarterly dividend', likely tagging artefact",
+   "dossier_location": "s6, s11, F105 key_adverse_facts",
+   "source": "10-Q acc 0000101829-26-000027 Note 17 and MD&A",
+   "source_value": "Dividends declared per share $1.460 (Q2'26), $2.140 (H1'26); two $0.73 declarations (30 Apr, 26 Jun 2026); prior rate $0.68",
+   "status": "FAIL",
+   "note": "Real figure; quarterly rate $0.73, annual $2.92 (1.54% yield). Dossier's own hypothesis (two declarations in one period) was right, its $0.60-$0.64 belief was wrong."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Price $189.38 (25 Sep 2026); NTM P/E 26.7x/26.4x on the FY2026 guide; FCF yield 4.4%",
+   "dossier_location": "s7",
+   "source": "d4_live_snapshot.parquet; arithmetic",
+   "source_value": "price 189.40; 189.38/7.10 = 26.7x; /7.175 = 26.4x; 8.357/189.38 = 4.41%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Triage 24.6x NTM P/E 'set before the Q2 guidance raise ... somewhat stale'",
+   "dossier_location": "s7, s8 bear 3",
+   "source": "d4_live_snapshot.parquet (25 Sep 2026)",
+   "source_value": "pe_ntm 24.63 = 189.4 / NTM EPS 7.69; FY0 EPS 7.24 => 26.2x",
+   "status": "MINOR",
+   "note": "Different EPS windows (NTM vs FY2026 guide), not a re-rating; bear point 3 unsupported as worded."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Reverse DCF: WACC 8.0%, FCF0 $8.36/share, 10 years + 3% terminal => 4.2%/yr",
+   "dossier_location": "s7 (valuation method)",
+   "source": "recomputation",
+   "source_value": "reproduced 4.20% at 8.0%; programme basis Ke 7.33% (5.17% + 0.522 x 4.14%): 2.4% on TTM; 3.8% TTM after SBC+401(k) stock; 5.9% FY26 guide mid; 7.7% guide mid after SBC",
+   "status": "FAIL",
+   "note": "Method: discount rate not tied to the 5.17% UST; SBC ($591M stock comp + $605M share-based 401(k) match TTM) not deducted; TTM FCF 32% above the FY26 guide midpoint."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Dossier view 'cheap-to-fair' / implied_vs_base 'below' vs the 12%-EPS-growth base path",
+   "dossier_location": "s7, F105 valuation_view_vs_v1",
+   "source": "recomputation (equity basis, Ke 7.33%, FY26 guide mid after SBC)",
+   "source_value": "base path 12%x3 fading to 3% by yr 10 = 1.08x price (1.17x stock comp only; 0.93x at Ke 8.0%); slower 9%->3% path 0.90x",
+   "status": "FAIL",
+   "note": "Restated: below -> in_line; dossier_view fair unchanged; INCLUDE-SMALL unchanged."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Scenario returns 3y bear -5.3% / base 13.6% / bull 23.6% (annualised); '~2% dividend yield'; starting EPS 7.175 at 24.6x",
+   "dossier_location": "F105 scenario_returns_3y, scenario_basis",
+   "source": "recomputation; 10-Q acc 0000101829-26-000027",
+   "source_value": "re-derived -5.4% / 13.4% / 22.9% with 1.54% yield ($2.92/$189.38); 24.6x belongs to NTM EPS 7.69",
+   "status": "MINOR",
+   "note": "Within 0.7 point; basis text mislabels EPS; numbers not changed."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Pratt & Whitney powder-metal matter: AOG elevated through 2026, $2.9B 2023 charge, not complete; GTF Advantage full cutover 2028",
+   "dossier_location": "s8, s11",
+   "source": "10-Q acc 0000101829-26-000027 Note 16; Q2 call transcript",
+   "source_value": "10-Q: AOG levels expected to remain elevated through 2026; $2.9B Q3 2023 charge; compensation accrual $0.4B (from $0.7B at Dec 2025)",
+   "status": "PASS",
+   "note": "2028 cutover is from the call transcript (press-sourced)."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Q2 call: AOG down 25% YTD, MRO output up over 40%, turnaround time down 23%",
+   "dossier_location": "s8, s9 item 2, s11",
+   "source": "Motley Fool Q2 2026 transcript (press)",
+   "source_value": "'down 25% year-to-date'; 'MRO output ... up over 40%'; '23% reduction in turnaround time'",
+   "status": "UNVERIFIABLE",
+   "note": "Not in the 8-K or 10-Q; consistent with the transcript."
+  },
+  {
+   "ticker": "RTX",
+   "claim": ">$200M incremental investment for GTF MRO capacity and GEM-T component production",
+   "dossier_location": "s6",
+   "source": "Motley Fool Q2 2026 transcript (press)",
+   "source_value": "'additional $100 million ... GEM-T ... LTAMDS'; 'more than $100 million ... GTF MRO capacity'",
+   "status": "MINOR",
+   "note": "Two items summing to about $200M+; press-sourced."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "'No new SEC/DOJ investigation disclosure identified'; legacy export-control and bribery matters in 'prior years (pre-2025)'",
+   "dossier_location": "s11",
+   "source": "10-Q acc 0000101829-26-000027 Note 16",
+   "source_value": "ongoing SEC investigation (subpoenas) on 2023 powder-metal disclosures; DOJ DPA-1/DPA-2 and SEC order (Oct 2024; monitor April 2026; 3-year term); DOS consent agreement Aug 2024 ($200M, $100M suspended, $218M accrued); DCMA CAS claims c.$1.7B + $1.6B interest, $1.1B + $461M",
+   "status": "FAIL",
+   "note": "Matters are current. RTX states no expected material adverse effect. Verdict unchanged (already half weight)."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Class action and derivative suits on GTF disclosures",
+   "dossier_location": "s11 (not covered)",
+   "source": "10-Q acc 0000101829-26-000027 Note 16",
+   "source_value": "consolidated securities class action dismissed 12 Sep 2025; appeal to 2nd Circuit filed 14 Oct 2025; derivative suits in D. Del.",
+   "status": "MINOR",
+   "note": "Omitted from the dossier."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Next earnings ~27 Oct 2026 (one source suggested 20 Oct)",
+   "dossier_location": "s9 item 5, s10, F105 next_earnings_date",
+   "source": "company release 'RTX to release third quarter earnings results on October 20, 2026' (press-reported); d4 snapshot yf_calendar 2026-10-20",
+   "source_value": "20 Oct 2026, call 8:30 a.m. ET",
+   "status": "FAIL",
+   "note": "Low severity; kill criterion 5 date corrected."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Backlog 'record'",
+   "dossier_location": "s1, s8",
+   "source": "8-K Ex-99 acc 0000101829-26-000025",
+   "source_value": "$289B (Q2'26) vs $271B (Q1'26), $268B (Dec 2025)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "RTX",
+   "claim": "No auditor change, restatement or going-concern language in FY2025 10-K",
+   "dossier_location": "s11",
+   "source": "10-K FY2025 acc 0000101829-26-000006 (filing index; submissions)",
+   "source_value": "no 8-K Item 4.01 or 4.02 in 2026 submissions list; 8-K items 2.02, 5.02, 5.07 only",
+   "status": "PASS",
+   "note": "Based on the EDGAR filing list; 10-K text not re-read in full."
+  },
+  {
+   "ticker": "RTX",
+   "claim": "Insider Form 4 pattern 'not reviewed'",
+   "dossier_location": "s11",
+   "source": "EDGAR submissions",
+   "source_value": "Form 4 and 144 filings present through 5 Oct 2026; not analysed",
+   "status": "UNVERIFIABLE",
+   "note": "Not load-bearing."
+  }
+ ],
+ "verdict_changes": []
+}

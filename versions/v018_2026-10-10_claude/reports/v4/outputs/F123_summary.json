@@ -1,0 +1,118 @@
+{
+  "agent": "F123",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "KVUE": {
+      "verdict": "WATCH",
+      "thesis_one_line": "Maker of Tylenol and Listerine being bought by Kimberly-Clark for cash plus shares; the stock now just tracks the deal price.",
+      "horizon": "3-6 months to deal close; 12-36 months only as a Kimberly-Clark holder",
+      "key_adverse_facts": [
+        "Second Circuit vacated the Tylenol/acetaminophen MDL dismissal in July 2026 (10-Q acc. 0001944048-26-000142); liability not estimable.",
+        "Texas AG acetaminophen case on appeal; UK, Scotland and Australia talc claims outside J&J indemnity scope.",
+        "Goodwill 9,265 + intangibles 8,406 = 66% of consolidated total assets; tangible equity negative.",
+        "Gross spread to deal value only ~0.5%; upside capped, downside if deal breaks."
+      ],
+      "data_conflicts": [
+        "Triage treated KVUE as pure merger arb with no primary-source work; filings confirm (HSR expired 4 Feb 2026, votes 29 Jan 2026, close expected Q4 2026) but triage omitted the July 2026 Tylenol appellate ruling."
+      ],
+      "next_earnings_date": "2026-11-05",
+      "confidence_in_thesis": "medium on deal mechanics (10-Q and releases); no numeric guidance exists; KMB not underwritten; next earnings date is a Yahoo estimate",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "in_line",
+        "dossier_view": "fair",
+        "consistent": true,
+        "reconciliation": "No V1 row exists. Standalone reverse DCF implies 3.2% 10-year FCF growth vs a 3.5% base, and the shares trade 0.5% below deal value of $17.90, so price is deal-anchored and there is no standalone edge."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.06,
+        "base": 0.07,
+        "bull": 0.12
+      },
+      "scenario_basis": "Start $17.80, deal value $17.90 ($3.50 + 0.14625 x KMB $98.43); base = deal closes, combined company ~4% growth + ~5% dividend yield, flat multiple; bear = deal breaks/KMB de-rates to ~$14; bull = synergies and re-rating.",
+      "kill_criteria": [
+        "KVUE trades more than 5% below (3.50 + 0.14625 x KMB close) for 5 consecutive sessions.",
+        "Any 8-K announcing termination of the Merger Agreement or a foreign-regulator block.",
+        "Quarterly organic sales growth below 0% in the Q3 2026 release.",
+        "Any accrual or judgment disclosed above $1.0bn for acetaminophen or talc matters.",
+        "Consolidated net debt/EBITDA above 3.0x."
+      ]
+    },
+    "SJM": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Maker of Folgers coffee, Jif and Uncrustables, priced for shrinking cash flow although guidance was just raised; carries heavy debt and Hostess write-offs.",
+      "horizon": "24-36 months",
+      "key_adverse_facts": [
+        "Goodwill impairments of $1,661.6m in FY25 and $507.5m (plus trademark) in FY26 on Sweet Baked Snacks; FY26 GAAP EPS -$1.30.",
+        "~$0.60 of FY27 adjusted EPS guidance is one-off IEEPA tariff refunds; FY27 net sales guided down 1-2%.",
+        "Net debt ~$6.7bn, ~3.3x adjusted EBITDA (own estimate); maturities $150m Mar 2027, $500m Dec 2027, $750m Nov 2028.",
+        "Sweet Baked Snacks sales -7% in Q1 FY27 with 12.6% segment margin."
+      ],
+      "data_conflicts": [
+        "Triage flagged 56.5x trailing P/E as a valuation problem; it is an impairment artefact and FY26 adjusted EPS was $9.15, FCF $1.2bn.",
+        "Triage cited weak ROE; GAAP ROE is depressed by non-cash impairments, not operating losses."
+      ],
+      "next_earnings_date": "2026-11-24",
+      "confidence_in_thesis": "medium: guidance track record is reliable (FY26 inside range, FY27 raised) and valuation is undemanding, but leverage and structural volume pressure cap conviction; date is a Yahoo estimate",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "below",
+        "dossier_view": "cheap",
+        "consistent": true,
+        "reconciliation": "No V1 row exists. Reverse DCF implies -2.4% 10-year FCF growth vs a +2.0% base, supporting a cheap-for-the-risk view."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.06,
+        "base": 0.06,
+        "bull": 0.15
+      },
+      "scenario_basis": "Start $121.00 and underlying FY27 EPS ~$10.15; base EPS ~$11.0 x 12x exit + ~$4.6/yr dividends; bear EPS $9.0 x 9.5x; bull EPS $12.5 x 13.5x.",
+      "kill_criteria": [
+        "FY27 adjusted EPS guidance cut so that the underlying midpoint (ex the ~$0.60 refund benefit) falls below $9.90.",
+        "Consolidated net debt/adj. EBITDA (own calculation from 10-Q/10-K) above 3.75x.",
+        "Consolidated volume/mix negative in two consecutive quarterly releases.",
+        "Sweet Baked Snacks net sales down more than 10% y/y for two consecutive quarters, or any further impairment above $250m.",
+        "Full-year FCF guidance cut below $0.9bn."
+      ]
+    },
+    "DGX": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "Largest US independent blood-testing lab, growing about 10% a year and raising guidance, but already priced for that growth.",
+      "horizon": "24-36 months",
+      "key_adverse_facts": [
+        "About 8 points of H1 2026 organic volume growth came from Corewell Health and Fresenius contracts; other volume grew ~4%; revenue per requisition -2.8% in Q2.",
+        "Adjusted operating margin 16.5% vs 16.9% in Q2 2026; GAAP 15.1% vs 15.9%.",
+        "Open inquiries: AMCA data breach state AGs, NJ USAO subpoenas, NY AG and Texas AG Medicaid billing, qui tam suits.",
+        "PAMA Medicare lab-fee cuts repeatedly delayed, not fixed; 2027 status not verified."
+      ],
+      "data_conflicts": [
+        "Triage said price captures growth and did not note that revenue growth is ~10% with three consecutive guidance raises; filings confirm the valuation read but the execution is stronger than triage implied."
+      ],
+      "next_earnings_date": "2026-10-22",
+      "confidence_in_thesis": "medium: clean execution and raised guidance vs priced-in growth at ~19.6x; date is a Yahoo estimate",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "implied_vs_base": "in_line",
+        "dossier_view": "full",
+        "consistent": true,
+        "reconciliation": "No V1 row exists. Reverse DCF implies 5.1% 10-year FCF growth vs a 6.0% base (within 1 pt), so price is full but not above base."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.04,
+        "base": 0.065,
+        "bull": 0.135
+      },
+      "scenario_basis": "Start $236.32, FY26 adjusted EPS midpoint $11.15, dividend $3.44 rising to ~$4.0; base NTM EPS ~$14.4 at Sep 2029 x 19x + ~$11 dividends; bear EPS $12.5 x 16x; bull EPS $16.0 x 21x.",
+      "kill_criteria": [
+        "Organic requisition volume excluding Corewell and Fresenius below +2% for two consecutive quarters (currently ~+4%).",
+        "Adjusted operating margin below 15.0% in any quarter of a full year where revenue is guided up (H1 2026: 16.0%).",
+        "Full-year adjusted EPS guidance midpoint cut below $10.83 (the prior range top), i.e. erasing the last raise.",
+        "Consolidated net debt/EBITDA above 3.0x.",
+        "An enacted Medicare CLFS cut effective 2027 that the company estimates at more than $150m annual revenue."
+      ]
+    }
+  }
+}

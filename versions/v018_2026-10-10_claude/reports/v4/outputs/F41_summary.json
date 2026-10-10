@@ -1,0 +1,118 @@
+{
+  "agent": "F41",
+  "as_of": "2026-09-25",
+  "tickers": {
+    "CPAY": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "A corporate fuel-card and cross-border payments company growing over 20% a year at a cheap price, but running more debt than it used to and facing a fresh $100m regulatory settlement.",
+      "kill_criteria": [
+        "Company-reported gross leverage exceeds 3.0x for two consecutive quarterly releases.",
+        "Organic (constant-currency) revenue growth falls below 10% YoY for two consecutive quarters.",
+        "Cumulative litigation/regulatory settlement charges exceed $250m in any trailing 12 months.",
+        "Full-year adjusted EPS guidance is cut versus the prior quarter's range.",
+        "GAAP-to-adjusted pre-tax add-backs exceed 50% of GAAP pre-tax income for two consecutive quarters."
+      ],
+      "key_adverse_facts": [
+        "GAAP net income fell 13% YoY in Q2 2026 while the company's own adjusted EPS rose 36%, one of the widest GAAP/adjusted gaps we found this cycle.",
+        "A $100.9m pre-tax charge was booked in Q2 2026 for the proposed FTC consent order of 1 Jul 2026, which resolves the same fee-disclosure case (FTC investigation, District Court claims and administrative action) and is subject to FTC Commissioner and District Court approval; the 11th Circuit had affirmed the liability judgment on 2026-01-06 (one count vacated/remanded for CEO Ron Clarke; en banc review denied 2026-05-05). Corrected in verification DVH6.",
+        "Company-stated gross leverage is 2.55x, above the 2.5x level a prior internal audit (lead_v3_audit.md) flagged as a red line for this name specifically.",
+        "FY2025 operating cash flow fell 22.7% YoY ($1,940.6m to $1,499.9m) and full-year FCF fell 26.4%, even as revenue and adjusted EPS grew double digits.",
+        "CEO Ron Clarke and three other insiders sold stock (Clarke >120,000 shares, ~$49-50m) in the days after the Q2 2026 print; no offsetting insider buying found."
+      ],
+      "data_conflicts": [
+        "Triage flagged 'legacy fee-disclosure complaints are largely resolved' but full diligence found an active, new $100.9m preliminary FTC settlement booked in Q2 2026 plus an adverse Jan-2026 appellate ruling -- the regulatory matter is not resolved.",
+        "No V1 systematic valuation row exists for CPAY; v1_verdict is null and this dossier's valuation view is the analyst's own reverse DCF only."
+      ],
+      "next_earnings_date": "2026-11-09",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (growth and guidance-raise pattern are well verified from primary sources; the FTC settlement's ultimate cost and the FY2025 cash-flow dip's durability are open questions)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "cheap",
+        "implied_vs_base": "below",
+        "consistent": true,
+        "reconciliation": "[Corrected 2026-10-06 (DVH6)] No V1 row exists for CPAY. The dossier's own reverse DCF (Ke 9.0% is consistent with 5.17% UST + Blume beta 0.915 x 4.14% ERP) did not deduct stock-based compensation (~$110m a year); after SBC the implied 10-yr FCF growth is about 1.9-6.1% depending on base year (3.9% on the blended base), still below a plausible ~8%/yr base but with a thinner margin (an 8% base is worth 1.16x-1.60x the market cap). implied_vs_base remains below."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.071,
+        "base": 0.138,
+        "bull": 0.36
+      }
+    },
+    "CSGP": {
+      "verdict": "WATCH",
+      "thesis_one_line": "The dominant commercial real-estate data company is funding a multi-year bet on a home-listings site that just turned its first profitable quarter, but profits are near zero, revenue guidance was cut and an $800M cash acquisition leaves little cash; the price is no longer clearly cheap once stock compensation is counted.",
+      "kill_criteria": [
+        "Full-year revenue guidance is cut again at the next quarterly release (already cut once, Jan to Jul 2026).",
+        "Residential-segment Adjusted EBITDA reverts to negative for two consecutive quarters after the Q2 2026 inflection.",
+        "Cash and equivalents fall below $750m without a corresponding new debt raise. [DV11 2026-10-06: pro forma cash after the $800M Zonda closing (21 Aug 2026) is about $0.47bn; to be confirmed by the Q3 2026 balance sheet.]",
+        "GAAP net income is negative for the full FY2026.",
+        "Homes.com's guided 2026 net-investment cut (more than $300m versus 2025's $850m) is not delivered by year-end 2026."
+      ],
+      "key_adverse_facts": [
+        "GAAP net income collapsed from $369.5m (FY22) to $375.0m (FY23) to $139.0m (FY24) to $7.0m (FY25) as Homes.com spending ramped; GAAP diluted EPS was only $0.02 for all of FY2025.",
+        "FY2026 full-year revenue guidance was cut ($3.78-3.82bn in January to $3.715-3.755bn in July) in the same release that raised adjusted EBITDA guidance -- a mixed signal, not a clean beat-and-raise.",
+        "FY2024 free cash flow was negative (-$186m, OCF $393m less capex $579m) on a capex spike; FY2025 FCF recovered to only $123m, still low relative to a ~$11.4bn market cap.",
+        "Cash fell from $5.2bn (FY23) to $1.27bn (Q2 2026), a roughly $4bn reduction over 18 months funding M&A (Matterport, Visual Lease, Domain), continued Homes.com losses and a new $1.5bn buyback authorization.",
+        "Homes.com is not guided to reach positive Adjusted EBITDA until 2030 on the company's own timeline; activist pressure (Third Point, reportedly also D.E. Shaw) was the proximate cause of the 2026 spending cuts, not a self-initiated pivot."
+      ],
+      "data_conflicts": [
+        "Triage described the stock as 'at a 7-year low pricing in the burn without much credit for the inflection' (implying clearly cheap); this dossier's own reverse-DCF cross-check (EV/forward-EBITDA ~13.9x, normalized-FCF implied growth ~9.5% vs a ~10% base case) lands closer to fair value than to a clear bargain -- a genuine, disclosed data conflict.",
+        "No V1 systematic valuation row exists for CSGP; v1_verdict is null."
+      ],
+      "next_earnings_date": "2026-10-28",
+      "horizon": "24-48 months",
+      "confidence_in_thesis": "low-to-medium (the core CRE-data moat and the Q2 2026 EBITDA inflection are well verified; the valuation read depends on an analyst-estimated normalized-FCF proxy, not a company-disclosed figure, and is explicitly low confidence)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": null,
+        "v1_base_3y": null,
+        "dossier_view": "fair-to-expensive",
+        "implied_vs_base": "above",
+        "consistent": true,
+        "reconciliation": "No V1 row exists for CSGP. On a normalized-FCF proxy, implied 10-yr growth was ~9.5%/yr vs a ~10%/yr base case (in_line). [DV11 2026-10-06: the proxy added back SBC; after deducting ~$192M TTM SBC the implied growth is 11.5-17% depending on the proxy, above the base, so implied_vs_base is above and the verdict is WATCH.]"
+      },
+      "scenario_returns_3y": {
+        "bear": -0.416,
+        "base": 0.012,
+        "bull": 0.177
+      }
+    },
+    "DAL": {
+      "verdict": "INCLUDE-SMALL",
+      "thesis_one_line": "America's strongest full-service airline, with a loyalty and cargo business that cushions it from commodity ticket pricing, fairly priced right as fuel costs spike and a pilot contract comes up for renewal.",
+      "kill_criteria": [
+        "Company-guided FY2026 free cash flow ($3-4bn) is cut or actual FY2026 FCF comes in below $2.5bn.",
+        "Full-year adjusted EPS guidance ($6.50-7.50) is cut at any remaining 2026 release.",
+        "Company-stated gross leverage rises above 3.0x (guided approximately 2x).",
+        "Jet-fuel cost per gallon sustains above $3.50 for two consecutive quarters without offsetting fare/capacity action.",
+        "The pilot-contract re-opener (amendable 31-Dec-2026) concludes with double-digit annual unit-cost escalation beyond current assumptions, or results in a work action/strike."
+      ],
+      "key_adverse_facts": [
+        "Jet-fuel cost per gallon rose from a $2.30-2.60 range in 2025 to $3.93 in the June-2026 quarter, driving a Q1 2026 GAAP net loss (-$289m, diluted EPS -$0.44) and a 24% YoY decline in Q2 2026 adjusted operating income.",
+        "V1's own systematic valuation calls DAL 'fair' with a slightly negative base-case 3-yr annualized return (-2.8%/yr), i.e. no valuation cushion despite the strong franchise.",
+        "A pilot-contract re-opener (amendable 31 December 2026) and a flight-attendant unionization drive are two concrete, dated labor-cost risks not yet reflected in detail in FY2026 guidance.",
+        "Q1 2026 produced a GAAP net loss even though revenue grew 12.9% YoY, illustrating the airline's high operating leverage to the fuel line."
+      ],
+      "data_conflicts": [
+        "None material found versus triage; the triage's '18.7% revenue growth, 20% ROE at 10.7x NTM P/E, cheap for the quality' framing is directionally confirmed, though this dossier finds the valuation closer to 'fair' than 'cheap' once V1's own base case and the fuel shock are weighed in."
+      ],
+      "next_earnings_date": "2026-10-09",
+      "horizon": "12-36 months",
+      "confidence_in_thesis": "medium (revenue growth, FCF trend and deleveraging are well verified from primary sources; the fuel-cost and labor-contract risks are real, dated, unresolved near-term tests)",
+      "valuation_view_vs_v1": {
+        "v1_verdict": "fair",
+        "v1_base_3y": -0.028,
+        "dossier_view": "fair",
+        "implied_vs_base": "in_line",
+        "consistent": true,
+        "reconciliation": "V1's base case (-2.8%/yr) and this dossier's own FCF-based reverse DCF (+2.8%/yr under a symmetric framing) both cluster near zero and both independently conclude the stock is fairly priced with limited base-case upside, not cheap; the sign difference likely reflects V1 pricing in more of the 2026 fuel-cost shock into its base case than our FCF-guide-anchored approach does."
+      },
+      "scenario_returns_3y": {
+        "bear": -0.141,
+        "base": 0.028,
+        "bull": 0.148
+      }
+    }
+  }
+}

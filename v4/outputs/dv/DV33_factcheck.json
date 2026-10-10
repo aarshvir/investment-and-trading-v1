@@ -1,0 +1,695 @@
+{
+ "as_of": "2026-10-08",
+ "scope": [
+  "PCG",
+  "PEG",
+  "PEP",
+  "PFE",
+  "PFG",
+  "PG",
+  "PH",
+  "PHM",
+  "PKG",
+  "PLD"
+ ],
+ "facts": [
+  {
+   "ticker": "PCG",
+   "claim": "Q2 2026 revenue $5,902M, GAAP EPS $0.33, core EPS $0.40, correct label Q2 2026",
+   "dossier_location": "s3 table",
+   "source": "10-Q 0001004980-26-000048 XBRL; 8-K 0001004980-26-000047",
+   "source_value": "revenue 5,902; GAAP EPS 0.33; core 0.40 (YTD 0.83)",
+   "status": "PASS",
+   "note": "Q4 2025 derived (24,935 less 18,131 = 6,804; EPS 1.18 less 0.89 = 0.29) also ties."
+  },
+  {
+   "ticker": "PCG",
+   "claim": "FY2026 non-GAAP core EPS guidance $1.64-$1.66 reaffirmed",
+   "dossier_location": "s4",
+   "source": "8-K Ex-99.1 0001004980-26-000047",
+   "source_value": "'Full year 2026 non-GAAP core EPS guidance reaffirmed at $1.64 to $1.66 per share'",
+   "status": "PASS",
+   "note": "Guidance appears verbatim."
+  },
+  {
+   "ticker": "PCG",
+   "claim": "Consolidated balance sheet 30 Jun 2026: LTD $61,768M, current LTD $1,075M, short-term borrowings $1,375M, cash $972M, equity $33,901M",
+   "dossier_location": "s6",
+   "source": "10-Q 0001004980-26-000048 XBRL",
+   "source_value": "61,768; 1,075; 1,375; 972; 33,901",
+   "status": "PASS",
+   "note": "Mechanical crosstie flags (1,075 and 11,600 vs 60,146) are false positives: 60,146 is the 31 Mar 2026 balance and 11,600 is the VIE subset."
+  },
+  {
+   "ticker": "PCG",
+   "claim": "TTM operating cash flow about $8.15B (FY25 8,716 less H1 25 3,905 plus H1 26 3,336) and capex about $12.4B",
+   "dossier_location": "s6",
+   "source": "10-K 0001004980-26-000009; 10-Q -26-000048",
+   "source_value": "OCF FY25 8,716; H1 26 3,336; capex FY25 11,787, H1 26 6,323",
+   "status": "PASS",
+   "note": "H1 2025 comparators (3,905; 5,700) not re-pulled; consistent with d4 operating cash flow 8,147."
+  },
+  {
+   "ticker": "PCG",
+   "claim": "Reverse DCF starts from core EPS $1.65 with Ke 9.5% (already corrected by DVH5)",
+   "dossier_location": "s7",
+   "source": "Dossier Correction DVH5; recompute",
+   "source_value": "Programme Ke = 5.17% + Blume 0.494 x 4.14% = 7.22%; 9.5% is an explicit wildfire premium",
+   "status": "MINOR",
+   "note": "DVH5 restated implied vs base to in line; accepted. Ke is a judgement premium, not tied to the Treasury plus ERP, but conservative."
+  },
+  {
+   "ticker": "PCG",
+   "claim": "Verdict INCLUDE-SMALL supported by own evidence (implied in line, wildfire tail as sizing cap)",
+   "dossier_location": "s1, s7, DVH5",
+   "source": "Dossier evidence",
+   "source_value": "Implied 5.6%-7.6% vs base 7% (DVH5)",
+   "status": "PASS",
+   "note": "No kill criterion triggered by filings to 8 Oct 2026 (31 Aug 8-K is Item 7.01)."
+  },
+  {
+   "ticker": "PEG",
+   "claim": "Q2 2026 revenue $2,554M, net income $334M, GAAP diluted EPS $0.67; Q2 2025 585 / 1.17",
+   "dossier_location": "s4 table",
+   "source": "10-Q 0001193125-26-332943 XBRL; 8-K Ex-99.1 -26-331660",
+   "source_value": "2,554; 334; 0.67; Q2 25 2,805 / 585 / 1.17",
+   "status": "PASS",
+   "note": "Q1 2025/Q3 2025/Q1 2026/H1 2026/FY2025 rows all tie to XBRL."
+  },
+  {
+   "ticker": "PEG",
+   "claim": "Non-GAAP operating EPS Q2 2026 $0.86, Q2 2025 $0.77, H1 2026 $2.41",
+   "dossier_location": "s4",
+   "source": "8-K Ex-99.1 0001193125-26-331660",
+   "source_value": "0.86; 0.77; 2.41 (H1 2025 2.20)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PEG",
+   "claim": "Q2 2026 GAAP EPS fell 43% because of NDT mark-to-market losses",
+   "dossier_location": "s4, s8, kill criterion 2, F46 key_adverse_facts",
+   "source": "8-K Ex-99.1 reconciliation",
+   "source_value": "NDT fund activity pre-tax GAIN $153M (Q2 25 gain $108M); MTM on power hedges pre-tax LOSS $258M (Q2 25 gain $190M)",
+   "status": "FAIL",
+   "note": "The driver is hedge MTM, not NDT losses. Operating EPS unaffected. Verdict unchanged; kill criterion 2 wording should refer to MTM/NDT items."
+  },
+  {
+   "ticker": "PEG",
+   "claim": "2026 guidance $4.28-$4.40 maintained; 6%-8% CAGR through 2030; $24-28B capital program; dividend raised $0.16 (15th year)",
+   "dossier_location": "s5, s6",
+   "source": "8-K Ex-99.1 0001193125-26-331660",
+   "source_value": "All appear verbatim",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PEG",
+   "claim": "FY2025 non-GAAP operating EPS implied about $4.06",
+   "dossier_location": "s4 note",
+   "source": "8-K Ex-99.1 0001193125-26-073678",
+   "source_value": "$4.05 stated",
+   "status": "MINOR",
+   "note": "Derived figure confirmed within a cent."
+  },
+  {
+   "ticker": "PEG",
+   "claim": "Long-term debt (noncurrent) $22,741M at 30 Jun 2026; debt/EBITDA proxy 5.53x",
+   "dossier_location": "s6",
+   "source": "10-Q XBRL; d4 snapshot",
+   "source_value": "22,741 ties; total debt 24,678 and EBITDA 4,463 are Yahoo fields",
+   "status": "UNVERIFIABLE",
+   "note": "Mechanical flag (4,463 vs 23,090) is EBITDA, not debt; no entity-scope error. Multiple not re-derivable from filings."
+  },
+  {
+   "ticker": "PEG",
+   "claim": "Reverse DCF: rf 4.2%, ERP 5%, COE 6.8%, terminal 4%, implied -0.6% to +2%",
+   "dossier_location": "s7",
+   "source": "Recompute (dividend model, D0 $2.68, price $67.02)",
+   "source_value": "Ke 7.98% (5.17% + Blume 0.678 x 4.14%), terminal 3%: implied 5.4% (3.4% at 7.25%, 6.7% at 8.5%)",
+   "status": "FAIL",
+   "note": "rf inconsistent with the 5.17% Treasury and the 4% terminal is too high. Implied vs base (7%, guide 6-8%) remains below but narrow (1.6 pts), not 'well below'. Verdict INCLUDE-SMALL unchanged."
+  },
+  {
+   "ticker": "PEG",
+   "claim": "3-year scenario returns +1% / +11% / +19%",
+   "dossier_location": "s7",
+   "source": "Recompute",
+   "source_value": "Yield 3.9% + EPS CAGR + re-rating reproduces 1.6 / 11 / 18.7",
+   "status": "PASS",
+   "note": "Arithmetic reproduced; not re-based on restated Ke."
+  },
+  {
+   "ticker": "PEP",
+   "claim": "Q2 2026 net revenue $24,181M, net income $2,981M, GAAP EPS $2.18; Q2 2025 $22,726M / $1,263M / $0.92",
+   "dossier_location": "s4 table",
+   "source": "10-Q 0000077476-26-000035 XBRL; 8-K Ex-99.1 -26-000037",
+   "source_value": "24,181; 2,981; 2.18; 22,726; 1,263; 0.92",
+   "status": "PASS",
+   "note": "Period labels correct (fiscal Q2, 12 weeks to 13 Jun 2026). All table rows tie."
+  },
+  {
+   "ticker": "PEP",
+   "claim": "Q2 2025 included a $1,860M intangible impairment; core EPS +4% Q2 / +6% YTD; organic +2.4%/+2.5%; core margin 16.8% vs 17.2%",
+   "dossier_location": "s4",
+   "source": "10-Q XBRL; 8-K Ex-99.1 0000077476-26-000037",
+   "source_value": "1,860; core EPS 2.20 vs 2.12; 3.81 vs 3.59; 2.4%; 2.5%; 16.8% vs 17.2%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PEP",
+   "claim": "Fiscal quarter lengths: 'Q3 is 16 weeks'",
+   "dossier_location": "s4 header",
+   "source": "XBRL durations",
+   "source_value": "Q3 2025 and Q3 2026 both 83 days (12 weeks); Q4 is 16 weeks",
+   "status": "MINOR",
+   "note": "Descriptive error only; YoY comparisons unaffected."
+  },
+  {
+   "ticker": "PEP",
+   "claim": "FY2026 guidance 4-6% revenue, ~5-7% core EPS (affirmed Feb, Apr, Jul); ~7-9% ex minimum tax in February",
+   "dossier_location": "s5",
+   "source": "8-K Ex-99.1 -26-000009, -26-000019, -26-000037",
+   "source_value": "All three show the same range; Q4 release shows 7-9% ex global minimum tax",
+   "status": "PASS",
+   "note": "FY2025 core EPS $8.14 so midpoint $8.63 ties."
+  },
+  {
+   "ticker": "PEP",
+   "claim": "FY2026 core EPS guidance 5-7% (kill criterion 2: guidance cut)",
+   "dossier_location": "s5, s9, s10",
+   "source": "8-K Ex-99.1 0000077476-26-000050 (8 Oct 2026)",
+   "source_value": "Core EPS now +2.5% to +3.5% (was low end of +5% to +7%); core constant currency +1% to +2%; Q3 core EPS $2.34 (+2%); GAAP EPS $2.23; revenue $25,274M",
+   "status": "FAIL",
+   "note": "Post-as-of event (dossier dated 25 Sep) but it triggers the dossier's own kill criterion 2 and removes the 5-6% base. INCLUDE-SMALL -> WATCH."
+  },
+  {
+   "ticker": "PEP",
+   "claim": "Debt: LTD $42,612M + current $1,600M + short-term $10,602M = $54.8B; cash $10,251M; equity $22,098M",
+   "dossier_location": "s6",
+   "source": "10-Q 0000077476-26-000035 XBRL",
+   "source_value": "42,612; 1,600; 10,602; 10,251; 22,098",
+   "status": "PASS",
+   "note": "Mechanical flag (54,800 vs 42,612) is the sum of components; correct."
+  },
+  {
+   "ticker": "PEP",
+   "claim": "Repurchases $479M in Q2 2026 ($182M in Q1)",
+   "dossier_location": "s6",
+   "source": "10-Q XBRL",
+   "source_value": "YTD 479 (Q1 182), so Q2 alone 297",
+   "status": "MINOR",
+   "note": "479 is the 24-week figure."
+  },
+  {
+   "ticker": "PEP",
+   "claim": "54th consecutive dividend increase cited to the 16 Apr 2026 release",
+   "dossier_location": "s6",
+   "source": "8-K Ex-99.1 0000077476-26-000009",
+   "source_value": "Announced 3 Feb 2026: +4% to $5.92 annualised, 54th consecutive",
+   "status": "MINOR",
+   "note": "Fact right; citation should be the Q4 release."
+  },
+  {
+   "ticker": "PEP",
+   "claim": "Reverse DCF: FCF0 $7.9B, 7.5% discount, 2.5% terminal, implied 3.5%",
+   "dossier_location": "s7",
+   "source": "Recompute",
+   "source_value": "Reproduced at 7.5%/2.5%. Programme Ke 7.54% (Blume 0.572), 3% terminal; filings FCF 9.28B less SBC 0.32B = 8.96B: implied 1.2%; 3.4% on 7.5B",
+   "status": "MINOR",
+   "note": "Method acceptable; against the original 5-6% base it stays below, but that base is superseded by the 8 Oct guidance (about 3%), so in line."
+  },
+  {
+   "ticker": "PEP",
+   "claim": "No SC 13D for Elliott (only 13G filings)",
+   "dossier_location": "s11",
+   "source": "EDGAR submissions CIK 77476",
+   "source_value": "Latest SC 13G/A 2024-02-13; no 13D",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PFE",
+   "claim": "Q2 2026 revenue $15,034M, GAAP EPS $(0.04), adjusted EPS $0.77, Q2 2025 adjusted $0.78",
+   "dossier_location": "s4",
+   "source": "10-Q 0000078003-26-000095 XBRL; 8-K Ex-99 -26-000094",
+   "source_value": "15,034; -0.04; 0.77; 0.78; H1 adjusted 1.52 vs 1.69",
+   "status": "PASS",
+   "note": "Derived Q4'25 (17,557; EPS -0.29), Q1'26 (14,451; 0.47) tie. Q1'25 revenue derived 13,714 vs XBRL 13,715."
+  },
+  {
+   "ticker": "PFE",
+   "claim": "Q3 2025 revenue about $16,700M",
+   "dossier_location": "s4 table",
+   "source": "10-Q 0000078003-25-000150 XBRL",
+   "source_value": "16,654",
+   "status": "MINOR",
+   "note": "Approximation of 16,654."
+  },
+  {
+   "ticker": "PFE",
+   "claim": "Aug 2026 guidance: revenue raised to $60.5-62.5B; adjusted EPS $2.80-3.00 reaffirmed; COVID about $4B from $5B; $2.5B extra savings; Innovent $650M, about $0.10",
+   "dossier_location": "s5",
+   "source": "8-K Ex-99 0000078003-26-000094",
+   "source_value": "All appear verbatim",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PFE",
+   "claim": "Debt $63,194M (LTD $60,495M + current $2,699M); cash $976M; equity $85,190M; TTM OCF about $13.4B, capex about $2.4B, FCF about $11.0B",
+   "dossier_location": "s6",
+   "source": "10-Q 0000078003-26-000095, 10-K -26-000026 XBRL",
+   "source_value": "60,495; current LTD 2,605 (+94 other); 976; 85,190; TTM OCF 13,401; capex 2,416",
+   "status": "PASS",
+   "note": "Short-term investments $10,723M not available in the XBRL tags pulled (sub-item unverified)."
+  },
+  {
+   "ticker": "PFE",
+   "claim": "$4.3B intangible impairments in Q2 (sigvotatug, Oxbryta); CFO transition to Cecile Guegan",
+   "dossier_location": "s4, s6",
+   "source": "8-K Ex-99 0000078003-26-000094",
+   "source_value": "'$4.3 Billion in Non-Cash Intangible Asset Impairments'; interim CFO from 16 Aug",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PFE",
+   "claim": "Reverse DCF: equity FCF $10.99B, Ke 8.5%, terminal 1%, implied +2.4%; implied_vs_base above",
+   "dossier_location": "s7",
+   "source": "Recompute",
+   "source_value": "Reproduced (2.35%). SBC TTM $947M not deducted. Programme Ke 7.37% (Blume 0.53), 3% terminal, FCF after SBC $10.04B: implied -1.6% (vs base -1%)",
+   "status": "FAIL",
+   "note": "Parameters not tied to the 5.17% Treasury; SBC treated as free. At the dossier parameters with SBC deducted the answer is +3.6% (above). WATCH unchanged because dividend cover is thin and upgrade conditions are unmet. implied_vs_base restated to in line on programme parameters."
+  },
+  {
+   "ticker": "PFE",
+   "claim": "FY2025 adjusted EPS $3.22 and revenue $62.6B",
+   "dossier_location": "s5",
+   "source": "10-K XBRL",
+   "source_value": "Revenue 62,579",
+   "status": "UNVERIFIABLE",
+   "note": "Revenue ties; adjusted EPS not re-pulled."
+  },
+  {
+   "ticker": "PFG",
+   "claim": "Q2 2026 GAAP EPS $1.84, net income $403.4M, non-GAAP operating EPS $2.50 ($547.0M), ex-significant variances $2.42",
+   "dossier_location": "s4",
+   "source": "8-K Ex-99 0001104659-26-087091",
+   "source_value": "1.84; 403.4; 2.50; 547.0; 2.42 (+17%)",
+   "status": "PASS",
+   "note": "Period label correct (Q2 2026)."
+  },
+  {
+   "ticker": "PFG",
+   "claim": "AUM $808.0B; AUM net cash flow -$11.1B (Q2) and -$14.4B TTM; excess and available capital $1.6B",
+   "dossier_location": "s5, s6",
+   "source": "8-K Ex-99 0001104659-26-087091",
+   "source_value": "808.0 vs 752.7; -11.1; -14.4; $1.6B",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PFG",
+   "claim": "2026 outlook 9-12% EPS growth, 75-85% free capital flow, 15-17% ROE, $1.5-1.8B capital deployment",
+   "dossier_location": "s5",
+   "source": "8-K Ex-99 0001104659-26-012083",
+   "source_value": "All appear verbatim; 406% RBC at 31 Dec 2025",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PFG",
+   "claim": "Consolidated cash $5,259.5M, total assets $352,752.3M, LTD $4,324.4M, short-term debt $16.2M, OCF H1 $2,264.5M",
+   "dossier_location": "s6",
+   "source": "10-Q 0001104659-26-088071",
+   "source_value": "5,259.5; 352,752.3; 4,324.4; 16.2; 2,264.5",
+   "status": "PASS",
+   "note": "Mechanical flags are false positives (4,431 is the Dec 2025 cash; 424.6 is Q1 net income)."
+  },
+  {
+   "ticker": "PFG",
+   "claim": "Trailing four-quarter non-GAAP net income ex-exited business $1,811.0M",
+   "dossier_location": "s7",
+   "source": "8-K Ex-99 0001104659-26-087091",
+   "source_value": "1,811.0",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PFG",
+   "claim": "Reverse DCF on 80% x non-GAAP income, Ke 9.5%: implied 3.9% vs base 8% = below",
+   "dossier_location": "s7",
+   "source": "Recompute (P/B-ROE for insurers)",
+   "source_value": "Company-adjusted equity $12,531.8M (BVPS $58.40); P/B 1.97x; TTM operating ROE 15.7%; justified P/B at Ke 8.95%, g 3% = 2.13x; price implies ROE 14.7%",
+   "status": "FAIL",
+   "note": "Wrong method for an insurer and the growth gap is overstated. Price is in line to slightly below fair on ROE; INCLUDE-SMALL still supported."
+  },
+  {
+   "ticker": "PFG",
+   "claim": "Equity ex-AOCI $16,208.6M",
+   "dossier_location": "s6",
+   "source": "8-K Ex-99 0001104659-26-087091",
+   "source_value": "Company-adjusted equity excluding embedded-derivative and AOCI (non-FX): $12,531.8M",
+   "status": "MINOR",
+   "note": "16,208.6 is a plain add-back of total AOCI (-4,065.8) and ignores the -2,137.9 derivative offset; wording only."
+  },
+  {
+   "ticker": "PFG",
+   "claim": "Credit facility 8-K dated 9 Sep 2026",
+   "dossier_location": "header",
+   "source": "EDGAR submissions",
+   "source_value": "Filed 2026-09-10 (items 1.01, 2.03, 9.01)",
+   "status": "MINOR",
+   "note": "Agreement date vs filing date."
+  },
+  {
+   "ticker": "PG",
+   "claim": "Q4 FY26 (Apr-Jun 2026) revenue $21,204M, operating margin 18.6%, diluted EPS $1.26; FY26 revenue $87,032M",
+   "dossier_location": "s4 table",
+   "source": "10-K 0000080424-26-000103 XBRL",
+   "source_value": "FY 87,032 less 9M 65,828 = 21,204; op income 19,748-15,798 = 3,950 (18.6%); EPS 6.62-5.36 = 1.26",
+   "status": "PASS",
+   "note": "Fiscal labels correct; all eight rows tie (FY25 Q4 20,889, 20.8%, 1.48)."
+  },
+  {
+   "ticker": "PG",
+   "claim": "FY26 core EPS $6.89 (+1%), organic +1% FY and 0% in Q4, Q4 core EPS -3% to $1.43",
+   "dossier_location": "s4",
+   "source": "8-K Ex-99.1 0000080424-26-000093",
+   "source_value": "6.89 vs 6.83; +1%; 0%; 1.43 (-3%)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PG",
+   "claim": "FY2027 guidance not yet issued; kill criterion 3 is a future event",
+   "dossier_location": "s10, s9",
+   "source": "8-K Ex-99.1 0000080424-26-000093 (29 Jul 2026)",
+   "source_value": "FY27: organic +1% to +3%; core EPS in line to +3% ($6.89-$7.11, midpoint +1.5%); $0.56/share (8%) cost headwind; FCF productivity 85-90%",
+   "status": "FAIL",
+   "note": "FY27 guide was already published; it is below the 'in line to +4%' test, so kill criterion 3 is already triggered. Verdict INCLUDE-SMALL -> WATCH."
+  },
+  {
+   "ticker": "PG",
+   "claim": "Margin: -220bps YoY driven by a $150M after-tax commodity/logistics headwind concentrated in Q4",
+   "dossier_location": "s4",
+   "source": "8-K Ex-99.1 -26-000093; Q3 release -26-000056",
+   "source_value": "Reported -220bps includes 90bps restructuring; core -130bps; $150M is the full-year FY26 commodity headwind (Q3 release)",
+   "status": "MINOR",
+   "note": "Attribution to Q4 and to Middle East logistics rests on a secondary source and is not in the primary releases."
+  },
+  {
+   "ticker": "PG",
+   "claim": "FY26 FCF $15,147M (OCF 19,556 - capex 4,409); buybacks $5,028M + dividends $10,232M; LTD $22,842M",
+   "dossier_location": "s6",
+   "source": "10-K XBRL",
+   "source_value": "19,556; 4,409; 5,028; 10,232; 22,842 (24,995 a year earlier)",
+   "status": "PASS",
+   "note": "FCF/NI 94% ties. Mechanical flag (26,000 vs 23,852) is a kill-criterion threshold, not a reported figure."
+  },
+  {
+   "ticker": "PG",
+   "claim": "Reverse DCF: Ke about 7.3%, FCF $15,147M, implied 2.2-2.8% aggregate (3.5-4.5% per share with buybacks); in_line",
+   "dossier_location": "s7",
+   "source": "Recompute",
+   "source_value": "Ke 7.58% (Blume 0.583), SBC $524M deducted: implied 3.4% (3.0% before SBC). Base 3% aggregate; but the FY27 guide implies roughly flat aggregate cash flow",
+   "status": "FAIL",
+   "note": "Ke not tied to the Treasury; SBC not deducted; buyback uplift added to an aggregate cash-flow figure (double count). With the FY27 guide the implied figure exceeds guided growth: in line -> above. INCLUDE-SMALL -> WATCH."
+  },
+  {
+   "ticker": "PG",
+   "claim": "Guidance 'in-line to +4%' organic and core EPS for FY26, maintained in April 2026",
+   "dossier_location": "s5",
+   "source": "8-K Ex-99.1 0000080424-26-000056",
+   "source_value": "'maintained its outlook for organic sales growth in the range of in-line to up four percent'; core EPS in-line to +4% ($6.83-$7.09)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PH",
+   "claim": "4Q FY26 sales $5,755M (+9.8%), organic +8.0%, GAAP EPS $8.54, adjusted $9.27; FY26 $21,499M, $28.48, $32.31",
+   "dossier_location": "s4 table",
+   "source": "8-K Ex-99.1 0000076334-26-000082; 10-K XBRL",
+   "source_value": "5,755 vs 5,243; 8.0%; 8.54; 9.27; 21,499; 28.48; 32.31",
+   "status": "PASS",
+   "note": "Fiscal labels correct (FY ends 30 Jun). Q1-Q3 EPS tie to XBRL (6.29/6.60/7.06)."
+  },
+  {
+   "ticker": "PH",
+   "claim": "Guidance quotes: FY26 initial $28.40-29.40, raised $29.60-30.40, $30.40-31.00, $31.20; FY27 $34.25-35.25 adjusted, organic 5.5%-8.5%",
+   "dossier_location": "s5",
+   "source": "8-K Ex-99.1 -25-000031, -25-000068, -26-000005, -26-000070, -26-000082",
+   "source_value": "All appear verbatim",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PH",
+   "claim": "Balance sheet 30 Jun 2026: cash $501M, debt payable within one year $1,754M, LTD $6,766M, equity $15,404M; covenant 0.36 vs 0.65; OCF $4,364M, capex $459M, SBC $179M",
+   "dossier_location": "s4, s6",
+   "source": "8-K Ex-99.1; 10-K 0000076334-26-000105",
+   "source_value": "501; 1,754; 6,766; 15,404; 0.36; 4,364; 459; 179",
+   "status": "PASS",
+   "note": "Crosstie flag (3,649 vs 904) compares full-year net income with a quarter; false positive."
+  },
+  {
+   "ticker": "PH",
+   "claim": "Filtration Group closed 13 Aug 2026 for a cash purchase price of $9.25B; $5.25B + $2.50B term loans; notes issued 14 Sep; CIRCOR $2.55B pending",
+   "dossier_location": "s6",
+   "source": "8-K 0001193125-26-349148, -390561, -384428; 10-K",
+   "source_value": "All confirmed; 4 Sep 2026 is the agreement date (8-K filed 8 Sep); the 'notes pricing' 8-K was filed 10 Sep",
+   "status": "PASS",
+   "note": "Source-list dates for two 8-Ks are agreement dates, not filing dates (MINOR)."
+  },
+  {
+   "ticker": "PH",
+   "claim": "Adjusted segment margin lifted from 25.1% (FY25) to 27.3% (FY26)",
+   "dossier_location": "s2",
+   "source": "8-K Ex-99.1 0000076334-26-000082",
+   "source_value": "FY25 total 26.1%; 25.1% is Diversified Industrial",
+   "status": "FAIL",
+   "note": "Internal inconsistency with the section 4 table (26.1%). Cosmetic; verdict unaffected."
+  },
+  {
+   "ticker": "PH",
+   "claim": "Reverse DCF: WACC 8.0%, terminal 3%, start FCF $4.7B, EV $143B, implied 8.0%",
+   "dossier_location": "s7",
+   "source": "Recompute",
+   "source_value": "Reproduced (7.9%). Programme Ke 9.65% (Blume 1.082), WACC about 8.9%: 10.2%; with SBC deducted 10.7%; base 5.6%",
+   "status": "FAIL",
+   "note": "WACC below the Treasury-anchored rate and SBC added back. Direction reinforced: above base. WATCH unchanged."
+  },
+  {
+   "ticker": "PH",
+   "claim": "Rating statement (Fitch A-, Moody's A3, S&P BBB+) at 30 Jun 2026",
+   "dossier_location": "s6",
+   "source": "10-K text search",
+   "source_value": "Not located in the 10-K text",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "PHM",
+   "claim": "Q2 2026 revenue $3,983.0M, net income $472.0M, diluted EPS $2.48; Q2 2025 $4,403.8M / $608.5M / $3.03; H1 819.0 / 4.27 vs 1,131.3 / 5.60",
+   "dossier_location": "s4 table",
+   "source": "10-Q 0000822416-26-000036 and -25-000051 XBRL",
+   "source_value": "3,983.0; 472.0; 2.48; 4,403.8; 608.5; 3.03; 818.998; 4.27; 1,131.3; 5.60",
+   "status": "PASS",
+   "note": "Mechanical flags (608.5 / 819 / 1,131 vs 472) are prior-year and H1 columns; false positives."
+  },
+  {
+   "ticker": "PHM",
+   "claim": "OCF H1 2026 $176.8M vs $421.7M; notes payable $1,820.3M vs $1,631.1M; cash $1,335.7M vs $1,980.9M; buybacks $681.2M; dividends $101.8M; equity $13,013.7M",
+   "dossier_location": "s3, s6",
+   "source": "10-Q XBRL",
+   "source_value": "176.8; 421.7; 1,820.3; 1,631.1; 1,335.7; 1,980.9; 681.2; 101.8; 13,013.7",
+   "status": "PASS",
+   "note": "Debt-to-capital 12.3% reproduces (1,820.3 / (1,820.3 + 13,013.7))."
+  },
+  {
+   "ticker": "PHM",
+   "claim": "H1 2026 issued $795M of new debt to fund buybacks while OCF fell ('leverage-direction change')",
+   "dossier_location": "s1, s3, s6, s11",
+   "source": "10-Q cash-flow XBRL",
+   "source_value": "Proceeds 794.8 but long-term debt repaid 600.7: net borrowing about 194; cash fell 645",
+   "status": "FAIL",
+   "note": "Gross issuance overstates the change; the shortfall was financed mainly by cash drawdown. Debt-to-capital rose from 11.2% to 12.3%, so the direction is right but small. INCLUDE-SMALL unchanged."
+  },
+  {
+   "ticker": "PHM",
+   "claim": "Reverse DCF: TTM EPS $9.79 as cash, Ke 10.5% assumption, g = 2.3% vs base 4-5% = below",
+   "dossier_location": "s7",
+   "source": "Recompute",
+   "source_value": "TTM FCF 1,512 (OCF 1,626 less capex 114), less SBC 58 = 1,454; Ke 9.87% (Blume 1.135): implied 3.6% (4.9% at 10.5%)",
+   "status": "FAIL",
+   "note": "EPS treated as cash and Ke unanchored. Restated implied vs base: in line. Verdict unchanged."
+  },
+  {
+   "ticker": "PHM",
+   "claim": "8-K of 12 Aug 2026 assumed routine",
+   "dossier_location": "header",
+   "source": "8-K 0000822416-26-000038",
+   "source_value": "Items 1.01/2.03: Pulte Mortgage master repurchase agreement with Truist (warehouse line)",
+   "status": "PASS",
+   "note": "Routine financial-services facility."
+  },
+  {
+   "ticker": "PKG",
+   "claim": "Quarterly table: revenue, operating income, net income, diluted EPS Q1 2025-Q2 2026 (Q2 2026: 2,489.9 / 291.2 / 192.1 / 2.15)",
+   "dossier_location": "s4",
+   "source": "10-Q 0001193125-26-339405 and prior XBRL",
+   "source_value": "All rows tie; Q4'25 derived 2,363.6 / 168.5 / 101.8 / 1.13",
+   "status": "PASS",
+   "note": "Release is dated 22 Jul 2026 (filed 23 Jul); the dossier cites 23 Jul."
+  },
+  {
+   "ticker": "PKG",
+   "claim": "Q2 2026 EPS ex special items $2.35; Greif contributed $0.14; Q3 guide $2.91",
+   "dossier_location": "s4, s5",
+   "source": "8-K Ex-99.1 0001193125-26-312651",
+   "source_value": "2.35; $.14; 'third quarter earnings of $2.91 per share, excluding special items'",
+   "status": "PASS",
+   "note": "Q2 guide was $2.33 (beat by $0.02)."
+  },
+  {
+   "ticker": "PKG",
+   "claim": "Capex guide $840-870M; FY2025 capex $828.9M",
+   "dossier_location": "s5",
+   "source": "10-Q 0001193125-26-339405; 10-K XBRL",
+   "source_value": "'$840 million to $870 million'; 828.9",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "PKG",
+   "claim": "TTM OCF about $1,624.1M, capex $881.7M, FCF about $742M; LTD doubled from $2.47B to $3.97B in Q3 2025; cash $442.8M",
+   "dossier_location": "s6",
+   "source": "10-K, 10-Q XBRL",
+   "source_value": "1,557.5 - 638.7 + 705.3 = 1,624.1; capex 881.7; LTD 2,475.2 -> 3,966.4; cash 442.8",
+   "status": "PASS",
+   "note": "Net debt about $3.8B uses Yahoo debt and cash; filings give about $3.5B (LTD less cash) to $4.0B including leases (MINOR)."
+  },
+  {
+   "ticker": "PKG",
+   "claim": "EV/EBIT about 24x versus 10-14x mid-cycle; 'price implies growth above a disciplined base'",
+   "dossier_location": "s7",
+   "source": "Recompute",
+   "source_value": "TTM EBIT 1,035.5 ties (24.0x). FCF reverse DCF (market cap $21.1B, FCF $0.69-0.74B, Ke 8.75-9.25%): implied 9-11% a year",
+   "status": "MINOR",
+   "note": "No discount-rate or FCF test in the dossier; the 10-14x range is unsourced. My FCF test supports 'above', so WATCH is supported."
+  },
+  {
+   "ticker": "PLD",
+   "claim": "Q2 2026 revenue $2,425.5M (+11.1%), net earnings $1,060.8M, diluted EPS $1.13, Core FFO $1.63 vs $1.46",
+   "dossier_location": "s4",
+   "source": "8-K Ex-99.1/99.2 0001193125-26-305416",
+   "source_value": "2,425.452; 1,060.844; 1.13; 1.63; 1.46",
+   "status": "PASS",
+   "note": "Q2 2025 attributable net earnings 569.7 in the release vs 571.2 (XBRL net income) in the dossier (MINOR); Q4'25 derived 1,363 vs FY-9M 1,400 (MINOR)."
+  },
+  {
+   "ticker": "PLD",
+   "claim": "Three consecutive quarterly raises of 2026 Core FFO guidance",
+   "dossier_location": "s1, s5, s8, kill criterion 1",
+   "source": "8-K Ex-99.2 -26-157977, -26-305416",
+   "source_value": "Initial 6.00-6.20; April 6.07-6.23; July 6.22-6.30; company: 'raised its 2026 guidance for the second time this year'",
+   "status": "FAIL",
+   "note": "Two raises, not three. The July raise is also helped by net promote moving from -$50M to $0."
+  },
+  {
+   "ticker": "PLD",
+   "claim": "Balance sheet 30 Jun 2026: debt $36,442M, cash $1,765M, equity $53,726M, total assets $101,012M",
+   "dossier_location": "s6",
+   "source": "10-Q 0001193125-26-323746; Ex-99.1",
+   "source_value": "36,442.085; 1,765.043; 53,725.722; 101,011.872",
+   "status": "PASS",
+   "note": "Crosstie flag (1,765 vs 34,670) compares cash with the 31 Mar debt balance; false positive."
+  },
+  {
+   "ticker": "PLD",
+   "claim": "No material events to 25 Sep 2026 (red-flag scan)",
+   "dossier_location": "s11",
+   "source": "8-K 0001104659-26-089980 (4 Aug), -090724 (5 Aug), -092072 (6 Aug), 0001193125-26-280195 (24 Jun)",
+   "source_value": "Recommended all-share offer for SEGRO plc (GBP 14.0B; up to GBP 3.5B cash via term loan; SEGRO holders 8.9%-11.5% of the combined group; completion expected H1 2027); 17.25M-share offering, net about $2.4B",
+   "status": "FAIL",
+   "note": "Transformational omission: dilution, leverage and integration risk are absent from the thesis, bear case and kill criteria. Share price fell from $149.94 (21 Jul) to $133.05."
+  },
+  {
+   "ticker": "PLD",
+   "claim": "Reverse DCF: Ke 7.8%, Core FFO as cash, market cap $124.05B, implied 2.8-3.0% = cheap",
+   "dossier_location": "s7",
+   "source": "Recompute",
+   "source_value": "Reproduced (2.9%). Programme Ke 10.19% (Blume 1.212), AFFO about $5.7B (H1 AFFO $2,795M), market equity $129B incl. units: implied 9.3% (7.2% at Ke 9.19%) vs base 5-6%",
+   "status": "FAIL",
+   "note": "Core FFO is not cash flow, Ke is not Treasury-anchored, and the equity value omits exchangeable units. The cheap call is no longer supported: above base. Combined with the SEGRO omission: INCLUDE-SMALL -> WATCH (provisional pending re-underwrite)."
+  },
+  {
+   "ticker": "PLD",
+   "claim": "Next earnings confirmed 15 Oct 2026",
+   "dossier_location": "s10",
+   "source": "Dossier cites a press release",
+   "source_value": "Not checked on EDGAR",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  }
+ ],
+ "verdict_changes": [
+  {
+   "ticker": "PEP",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "8 Oct 2026 Q3 release cut FY2026 core EPS growth guidance to +2.5% to +3.5% (from 5-7%), triggering the dossier's own kill criterion 2 and removing its 5-6% base case; implied vs base now in line (was below)."
+  },
+  {
+   "ticker": "PG",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "FY2027 guidance (29 Jul 2026: core EPS in line to +3%, $0.56/share cost headwind, FCF productivity 85-90%) was already published and already triggers kill criterion 3; at Ke 7.58% with SBC deducted the price implies 3.0%-3.4% aggregate growth versus roughly flat guided cash flow, so implied vs base is above (was in line)."
+  },
+  {
+   "ticker": "PLD",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Dossier omits the 4 Aug 2026 recommended all-share offer for SEGRO plc (GBP 14.0bn, up to GBP 3.5bn cash via term loan, H1 2027 completion) and the 5 Aug equity raise; only two guidance raises, not three; at the programme Ke 10.19% on AFFO the price implies 7%-9% growth versus a 5-6% base (above, was below). Provisional until re-underwritten with the SEGRO terms."
+  }
+ ],
+ "implied_vs_base_changes": [
+  {
+   "ticker": "PEG",
+   "old": "below",
+   "new": "below (narrow: 5.4% vs base 7%)"
+  },
+  {
+   "ticker": "PFE",
+   "old": "above",
+   "new": "in_line"
+  },
+  {
+   "ticker": "PFG",
+   "old": "below",
+   "new": "in_line"
+  },
+  {
+   "ticker": "PHM",
+   "old": "below",
+   "new": "in_line"
+  },
+  {
+   "ticker": "PEP",
+   "old": "below",
+   "new": "in_line"
+  },
+  {
+   "ticker": "PG",
+   "old": "in_line",
+   "new": "above"
+  },
+  {
+   "ticker": "PLD",
+   "old": "below",
+   "new": "above"
+  }
+ ]
+}

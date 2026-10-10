@@ -1,0 +1,953 @@
+{
+ "as_of": "2026-10-09",
+ "scope": [
+  "CCI",
+  "CCL",
+  "CDNS",
+  "CDW",
+  "CEG",
+  "CF",
+  "CFG",
+  "CHD",
+  "CHRW",
+  "CHTR"
+ ],
+ "note": "DV08: nine names (CCI to CHRW) were verified on 2026-10-06 (dossier corrections dated 2026-10-06); CHTR was completed on 2026-10-09 and the file assembled then.",
+ "facts": [
+  {
+   "ticker": "CCI",
+   "claim": "Q2 2026 site rental revenue $967m (-4% YoY), Q2 2025 $1,008m, Adj EBITDA $675m vs $705m, AFFO $488m / $1.13 vs $444m / $1.02",
+   "dossier_location": "Sec 4 table rows Q2 2025 / Q2 2026",
+   "source": "CCI 8-K Ex-99.1 filed 2026-07-22, acc 0001051470-26-000069",
+   "source_value": "Site rental revenues $967m vs $1,008m; Adj EBITDA $675m vs $705m; AFFO $488m vs $444m; AFFO/sh $1.13 vs $1.02 (Fiber excluded, discontinued ops)",
+   "status": "PASS",
+   "note": "Prior-year column correctly labelled Q2 2025 (recast ex-Fiber); the quarter_label_check flag (XBRL frame CY2026Q1/Q2) is explained by the recast and is not a label error."
+  },
+  {
+   "ticker": "CCI",
+   "claim": "Q1 2026 Adjusted EBITDA $722m",
+   "dossier_location": "Sec 4 table row Q1 2026",
+   "source": "CCI 8-K Ex-99.1 filed 2026-04-22, acc 0001051470-26-000046",
+   "source_value": "Q1 2026 Adj EBITDA $675m; $722m is the Q1 2025 comparative",
+   "status": "FAIL",
+   "note": "Prior-year column pulled into the current-quarter row. Q1 2026 AFFO $446m / $1.02 in the same row is correct."
+  },
+  {
+   "ticker": "CCI",
+   "claim": "GAAP net income was distorted by \"large, one-off-driven positive figures around the May 2026 divestiture\" / large book gain; GAAP shown as n/a",
+   "dossier_location": "Sec 4 footnote 1 and paragraph",
+   "source": "CCI 8-K Ex-99.1 filed 2026-07-22 (acc 0001051470-26-000069) and 2026-04-22 (acc 0001051470-26-000046)",
+   "source_value": "Q2 2026 net income $94m, diluted EPS $0.22 (Q2 2025: $291m / $0.67); Q1 2026 $151m / $0.34 (Q1 2025: $(464)m after $830m loss-on-sale accrual); FY26 guide net income $730-1,010m, EPS $1.70-2.35 incl. $(80)-(360)m disc. ops loss",
+   "status": "FAIL",
+   "note": "The data were available in the release; GAAP net income fell YoY in Q2 and no large positive sale gain appears; the sale loss was largely booked in 2025. Speculative statement is wrong."
+  },
+  {
+   "ticker": "CCI",
+   "claim": "FY2026 AFFO guidance path: Feb/Apr $1,895-1,945m, $4.38-4.49; Jul 22 $1,950-2,000m, $4.53-4.65",
+   "dossier_location": "Sec 5 table rows 1,2,4",
+   "source": "CCI releases 2026-02-04 (acc 0001051470-26-000008), 2026-04-22, 2026-07-22",
+   "source_value": "Feb 4 and Apr 22: AFFO $1,895-1,945m, $4.38-4.49 (mid $1,920m / $4.43); Jul 22: $1,950-2,000m, $4.53-4.65 (mid $1,975m / $4.59)",
+   "status": "PASS",
+   "note": "Ranges match verbatim."
+  },
+  {
+   "ticker": "CCI",
+   "claim": "May 1 special update changed only \"+$5m site rental revenue, favorable opex\"; AFFO not separately re-quoted",
+   "dossier_location": "Sec 5 table row 3 (and the \"+$5m ... +$0.16 vs original\" text in row 4)",
+   "source": "CCI 8-K Ex-99.1 filed 2026-05-01, acc 0001051470-26-000052",
+   "source_value": "May 1 release raised AFFO to $1,945-1,995m (+$50m at midpoint) and AFFO/share to $4.53-4.65 (+$0.16), driven by -$40m interest expense and +$10m interest income; site rental revenue unchanged ($3,828-3,873m). The +$5m site rental revenue change was the Jul 22 update, which moved AFFO +$5m and left AFFO/share unchanged",
+   "status": "FAIL",
+   "note": "Row 3 misdescribes the release and row 4 misattributes the +$0.16 to the Q2 release. The per-share guide did NOT change on Jul 22."
+  },
+  {
+   "ticker": "CCI",
+   "claim": "Quoted CEO line \"Beat our full-year AFFO guide across all key metrics\"",
+   "dossier_location": "Sec 5 table row 4 Note",
+   "source": "CCI 8-K Ex-99.1 filed 2026-07-22",
+   "source_value": "No such sentence in the release. CEO quote reads that Q2 was \"solid\" and positions the company \"to increase our full year 2026 guide for AFFO\"",
+   "status": "FAIL",
+   "note": "Quotation not found in the cited release; fabricated or paraphrased as a quote."
+  },
+  {
+   "ticker": "CCI",
+   "claim": "Net Debt $17,099m, 100% fixed-rate, ~7yr maturity, $4.5bn revolver undrawn; ~6.4x net debt / FY26 Adj EBITDA midpoint $2,690m; ~$1bn buybacks, >$7bn debt repaid",
+   "dossier_location": "Sec 6",
+   "source": "CCI Q2 2026 release Non-GAAP schedule; 10-Q acc 0001051470-26-000074",
+   "source_value": "Net Debt $17,099m; $4.5bn 2026 Revolver undrawn availability $4.5bn; \"$1 billion of share repurchases and repaid more than $7 billion of debt\"; 17,099/2,690 = 6.36x; consolidated Crown Castle Inc.",
+   "status": "PASS",
+   "note": "Right entity (consolidated parent), right date (30 Jun 2026). Dec-25 debt $24,337m LT + $2,783m current and cash $99m also match XBRL."
+  },
+  {
+   "ticker": "CCI",
+   "claim": "Dividend $1.0625/sh flat; AFFO payout ~92.6% on $4.59 midpoint",
+   "dossier_location": "Sec 6",
+   "source": "CCI 8-Ks 2026-02-25 (acc 0001051470-26-000019), 2026-08-05 (acc 0001051470-26-000076); Q2 release",
+   "source_value": "Declared $1.0625/share (Aug 5 2026, payable 30 Sep 2026); 4.25/4.59 = 92.6%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CCI",
+   "claim": "Organic growth \"disclosed both including and excluding DISH/Sprint\": 3.9% headline, 4.2% ex-DISH base; FY26 guide 3.4-3.6%",
+   "dossier_location": "Sec 3 and Sec 6",
+   "source": "CCI Q2 2026 release",
+   "source_value": "3.9% and 4.2% are both \"as Adjusted for Impact of Sprint Cancellations and DISH Terminations\"; the all-in Organic Contribution to Site Rental Billings was $(16)m, i.e. (1.8)% of prior-year billings (Q2 2025: (0.6)%). Full-year guide midpoint 3.6% (adjusted basis)",
+   "status": "MINOR",
+   "note": "Both quoted figures exclude the churn; the including figure is -1.8%. Kill criterion 3 is defined on the adjusted basis so it still works, but \"headline\" is mislabelled."
+  },
+  {
+   "ticker": "CCI",
+   "claim": "Sept 14 2026 8-K is \"a routine dividend declaration with no new operating disclosure\"; kill criterion 5 = second CEO/CFO departure within 24 months of Sep 2025 CEO appointment",
+   "dossier_location": "Header italic, Sec 9 item 5, Sec 11, Data basis",
+   "source": "CCI 8-K filed 2026-09-14, acc 0001051470-26-000081 (Items 5.02, 7.01, 9.01) and Ex-99.1",
+   "source_value": "CFO Sunit Patel to retire effective 2027-03-31 (successor Kris Hinson from 2027-04-01); COO Cathy Piche steps down (transition out 2026-09-23, leaves 2027-02-22). Not a dividend declaration (the dividend 8-K is 2026-08-05)",
+   "status": "FAIL",
+   "note": "Material omission: the cited latest filing announces the CFO retirement and COO exit. Kill criterion 5, as worded, is met (CFO departure announced); the departure is orderly with an internal successor and 6.5 months notice."
+  },
+  {
+   "ticker": "CCI",
+   "claim": "Reverse DCF: AFFO/sh $4.59, CoE 9.0-9.5%, g_T 3% => implied +1.0% to +2.1% 10-yr growth; implied_vs_base \"below\" vs 3-5% base",
+   "dossier_location": "Sec 7",
+   "source": "Recomputed (2-stage, 10y, g_T 3.0%) on $67.84 price; CCI release SBC add-back $78-82m ($0.18-0.19/sh) in AFFO outlook",
+   "source_value": "Reproduces: 9.0% -> 1.03%, 9.5% -> 2.07%. But AFFO adds back SBC ($0.18-0.19/sh FY26); treating SBC as a cost (CF $4.40) and using 10y UST 5.17% + 4.5% ERP = 9.67% gives implied ~3.0%/yr, i.e. at the bottom of the 3-5% base",
+   "status": "MINOR",
+   "note": "Method flaw (SBC added back; discount rate not tied to 5.17% UST). Corrected implied growth ~2.6-3.0% vs base 3-5%: still \"below\" but only marginally; verdict INCLUDE-SMALL unchanged on valuation, see leadership item."
+  },
+  {
+   "ticker": "CCL",
+   "claim": "Q2 FY26 (quarter ended 31 May 2026): revenue $6.7B, net income $537M, adj NI $569M, diluted EPS $0.39, adj EPS $0.41, adj EBITDA $1.6B",
+   "dossier_location": "Sec 4 table row Q2 FY26",
+   "source": "CCL 8-K Ex-99.1 filed 2026-06-23, acc 0000815097-26-000086",
+   "source_value": "Net income $537M; adj NI $569M; diluted EPS $0.39; adj EPS $0.41; revenues $6.7B; adj EBITDA $1.6B",
+   "status": "PASS",
+   "note": "Fiscal period label correct (Nov 30 FY; Q2 = Mar-May 2026)."
+  },
+  {
+   "ticker": "CCL",
+   "claim": "Q1 FY26 (Dec 25-Feb 26): revenue $6.2B, NI $258M, adj NI $275M, EPS $0.19, adj $0.20, EBITDA $1.3B; FY25 revenue $26.6B, NI $2.8B, adj NI $3.1B, EBITDA $7.2B",
+   "dossier_location": "Sec 4 table rows Q1 FY26 and FY2025",
+   "source": "CCL 8-K Ex-99.1 filed 2026-03-27, acc 0000815097-26-000034 ; CCL 8-K Ex-99.1 filed 2025-12-19, acc 0001628280-25-058106",
+   "source_value": "Q1: NI $258M, adj NI $275M, EPS $0.19 / adj $0.20, revenue $6.2B, adj EBITDA $1.3B. FY25: NI $2.8B, adj NI $3.1B ($3,079M), revenue $26.6B, adj EBITDA $7.2B",
+   "status": "PASS",
+   "note": "Q4 FY25 row left as \"part of FY25 total\" although the release gives Q4 NI $422M / EPS $0.31, adj NI $454M / $0.34 (omission, not an error)."
+  },
+  {
+   "ticker": "CCL",
+   "claim": "Dec 19 2025 initial FY26 guide: adj NI ~$3.5B (about +12%), net yields cc ~+2.5% (~3.0% normalised)",
+   "dossier_location": "Sec 5 bullet 1",
+   "source": "CCL 8-K Ex-99.1 filed 2025-12-19, acc 0001628280-25-058106",
+   "source_value": "Adjusted net income \"expected to be $3.5 billion\"; up approx 12%; net yields cc up approx 2.5% / 3.0% normalised; table midpoint $3,450M, adj EPS $2.48",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CCL",
+   "claim": "Mar 27 2026 guidance \"raised\"; \"genuine verified raise\" of ~$150M vs December; FY26 adj NI guide remains ~$3.5-3.6B",
+   "dossier_location": "Sec 5 bullet 2; Sec 7; Sec 9 item 2",
+   "source": "CCL 8-K Ex-99.1 filed 2026-03-27, acc 0000815097-26-000034",
+   "source_value": "Release: \"operational improvement of nearly $150 million ... compared to December guidance, partially mitigating the impact from recent changes in fuel prices of more than $500 million\". Net FY26 guide fell to approx $3,070M adj NI / $2.21 adj EPS (from $3,450M / $2.48 in Dec). Jun 23 guide approx $3,070M / $2.22; Sep 29 guide approx $3,080M / $2.24",
+   "status": "FAIL",
+   "note": "The operational raise was more than offset by fuel; net dollar guidance was CUT ~11% at Q1 and has stayed near $3.07B. The dossier states ~$3.5-3.6B as the \"current\" range three times."
+  },
+  {
+   "ticker": "CCL",
+   "claim": "FY26 adj EPS ~$3.0-3.1 from ~$3.5-3.6B adj NI on ~1.15B shares; d4 forwardEps $2.59 is a data conflict",
+   "dossier_location": "Sec 7 bullets 1-2",
+   "source": "CCL 8-K Ex-99.1 filed 2026-06-23, acc 0000815097-26-000086",
+   "source_value": "Adjusted diluted shares 1,384M (FY26 guide); adj EPS guide approx $2.22 on approx $3,070M adj NI. NTM P/E 8.8x at $22.25 implies ~$2.53, consistent with d4 $2.59",
+   "status": "FAIL",
+   "note": "The conflict was created by the dossier (stale Dec NI figure and wrong share count). Price / FY26 guided adj EPS = 10.0x."
+  },
+  {
+   "ticker": "CCL",
+   "claim": "Jun 23 2026: cc net yields FY26 guided up ~1.75% (2.25% normalised) vs ~2.5%/3.0% in Dec; adj cruise costs ex fuel +3.7% reported; fuel/FX net impact <$0.01",
+   "dossier_location": "Sec 5 bullet 3",
+   "source": "CCL 8-K Ex-99.1 filed 2026-06-23, acc 0000815097-26-000086",
+   "source_value": "Net yields cc approx +1.75% (2.25% after redeployment/loyalty effects); adj cruise costs ex fuel +3.7% (2.4% cc, 1.3% normalised); \"net impact of fuel prices and currency ... less than $0.01 per share\"",
+   "status": "PASS",
+   "note": "Dossier compares to Dec (2.5/3.0); the Mar guide was 2.75/3.25, so the Q2 trim was 1.0 point."
+  },
+  {
+   "ticker": "CCL",
+   "claim": "Net debt / adj EBITDA 3.1x; LT debt $23,418M (May 31) vs $24,037M (Nov 30); cash $2,243M vs $1,928M; equity $12,968M vs $12,270M; deposits $9.0B record",
+   "dossier_location": "Sec 6",
+   "source": "CCL 10-Q acc 0000815097-26-000096 (XBRL) and Q2 release",
+   "source_value": "LongTermDebtNoncurrent 23,418 / 24,037; cash 2,243 / 1,928; equity 12,968 / 12,270 (Nov 30 per Q1 10-Q); release: net debt to adj EBITDA 3.1x; deposits $9.0B; Moody's upgrade",
+   "status": "PASS",
+   "note": "Consolidated entity correct. Total long-term debt incl. current portion is $25,570M at May 31 (current $1,471M); the dossier quotes the non-current line only."
+  },
+  {
+   "ticker": "CCL",
+   "claim": "Helms-Burton: Oct 22 2024 11th Cir. reversal \"removes a previously accrued contingent liability\" (resolution)",
+   "dossier_location": "Sec 6 Litigation bullet",
+   "source": "CCL 10-Q acc 0000815097-26-000096, legal proceedings note",
+   "source_value": "\"On May 21, 2026, the Supreme Court vacated the 11th Circuit ruling and remanded the case ... for further proceedings\"; company believes no material impact; no accrual stated",
+   "status": "FAIL",
+   "note": "Dossier cites the superseded appellate result; the Supreme Court vacated it in May 2026, so the $110M + $4M judgment risk is live again (company says immaterial)."
+  },
+  {
+   "ticker": "CCL",
+   "claim": "Red-flag scan: litigation = two COVID class actions + DOJ/EPA Clean Water Act matter; no other items",
+   "dossier_location": "Sec 11",
+   "source": "CCL 10-Q acc 0000815097-26-000096",
+   "source_value": "Also discloses a data security incident on April 14, 2026 with six purported class actions in S.D. Florida (consolidated May 2026); CWA matter (14 Mar 2022) still unresolved, as the dossier states",
+   "status": "MINOR",
+   "note": "Omission of the April 2026 cyber incident; the CWA and COVID items verified."
+  },
+  {
+   "ticker": "CCL",
+   "claim": "Reverse DCF: WACC 9.5%, g_T 2.5%, TTM FCF $1.9B -> 11.4%/yr; normalised $2.5B -> 7.7%/yr; base 7-9% => implied_vs_base in_line",
+   "dossier_location": "Sec 7",
+   "source": "Recomputed; CCL 10-Q XBRL (OCF 9M FY26 $5,303M; capex $2,139M; SBC $73M); price $22.25 x ~1.37B shares = $30.5B market cap",
+   "source_value": "The 11.4%/7.7% only reproduce if FCF is divided into enterprise value (~$51-52B: market cap + ~$21B net debt) while FCF is after interest (equity FCF). On equity value $30.5B: 9.5% -> 3.7% / 0.0%; 11.9% (5.17% UST + 1.5 beta x 4.5% ERP) -> 8.1% / 4.1%; beta 2.31 (CAPM 15.6%) -> 14.0% / 9.7%",
+   "status": "FAIL",
+   "note": "Entity mismatch (equity FCF vs EV) and an unstated, too-low discount rate for a beta of 2.3. At a defensible 11-12% cost of equity the implied growth (4-8%) sits at or below the 7-9% base, so the in_line call survives; the stated figures do not."
+  },
+  {
+   "ticker": "CCL",
+   "claim": "Dividend reinstated $0.15 (Dec 19 2025); $2.5B buyback authorised Mar 27 2026; >$450M repurchased by Jun 23; Fitch IG (Dec) and Moody's upgrade",
+   "dossier_location": "Sec 6 Capital return",
+   "source": "CCL 8-K Ex-99.1 filed 2025-12-19, acc 0001628280-25-058106 ; CCL 8-K Ex-99.1 filed 2026-03-27, acc 0000815097-26-000034 ; CCL 8-K Ex-99.1 filed 2026-06-23, acc 0000815097-26-000086",
+   "source_value": "Dividend $0.15 record 13 Feb 2026; 'initial $2.5 billion share buyback program'; 'surpassing $450 million in stock repurchases'; Moody's upgrade; Fitch IG",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CCL",
+   "claim": "Next earnings 2026-09-29 not yet reported (as of dossier cutoff 25 Sep)",
+   "dossier_location": "Sec 1, 4, 10",
+   "source": "CCL 8-K Ex-99.1 filed 2026-09-29, acc 0000815097-26-000104; 10-Q acc 0000815097-26-000107",
+   "source_value": "Q3 FY26: net income $1.9B, adj NI $2.0B ($1,963M), adj EPS $1.43, adj EBITDA $3.0B; FY26 adj NI guide approx $3,080M / $2.24; S&P upgrade to investment grade; ~$1.2B buybacks YTD; net yields cc +2.4%",
+   "status": "UNVERIFIABLE",
+   "note": "Not an error at the dossier cutoff; the event has since occurred and is favourable (guide edged up, S&P upgrade). Recorded so the owner can refresh."
+  },
+  {
+   "ticker": "CDNS",
+   "claim": "Q2 2026 (quarter ended 2026-06-30): revenue $1,584.5M (+24.2% YoY), GAAP operating margin 28.4%, GAAP diluted EPS $1.33, non-GAAP EPS $2.11 vs $1.65",
+   "dossier_location": "Sec 4 table last row; Sec 3",
+   "source": "CDNS 8-K Ex-99.01 filed 2026-07-27, acc 0000813672-26-000089; 10-Q acc 0000813672-26-000092",
+   "source_value": "Revenue $1,584.451M vs $1,275.441M (+24%); GAAP op margin 28.4% vs 19.0%; GAAP EPS $1.33 vs $0.59; non-GAAP EPS $2.11 vs $1.65; GAAP net income $367.076M",
+   "status": "PASS",
+   "note": "Calendar fiscal year; period labels correct."
+  },
+  {
+   "ticker": "CDNS",
+   "claim": "Quarterly table Q3 2024 - Q1 2026 (revenue, GAAP margin, GAAP EPS): 1,215.5/28.8%/0.87; 1,356.0/33.7%/1.24; 1,242.4/29.1%/1.00; 1,275.4/19.0%/0.59; 1,338.8/31.8%/1.05; 1,440.1/32.2%/1.42; 1,474.2/29.3%/1.23",
+   "dossier_location": "Sec 4 table",
+   "source": "CDNS 8-K Ex-99.01 filed 2025-10-27, acc 0000813672-25-000144; CDNS 8-K Ex-99.01 filed 2026-02-17, acc 0000813672-26-000013; CDNS 8-K Ex-99.01 filed 2026-04-27, acc 0000813672-26-000044",
+   "source_value": "Q3-25 $1.339B/31.8%/$1.05 (Q3-24 $1.215B/28.8%/$0.87); Q4-25 $1.440B/32.2%/$1.42 (Q4-24 $1.356B/33.7%/$1.24); Q1-26 $1.474B/29.3%/$1.23 (Q1-25 $1.242B/29.1%/$1.00)",
+   "status": "PASS",
+   "note": "All seven rows tie. The \"32.2%*  derived estimate\" is in fact the reported figure. Q3-25 YoY 10.2% is 10.1% on unrounded figures (rounding)."
+  },
+  {
+   "ticker": "CDNS",
+   "claim": "The Q2 2025 $140.6m \"one-time charge ... 10.1% of revenue\" for the BIS/DOJ settlement",
+   "dossier_location": "Sec 4 Q2 2025 row note",
+   "source": "CDNS FY2025 10-K acc 0000813672-26-000016 (MD&A / Note 18); Q2-25 8-K Ex-99.01 acc 0000813672-25-000108",
+   "source_value": "Charge recorded: $128.5M \"Loss related to contingent liability\" (10.1% of revenue); cash paid to BIS/DOJ: $140.6M net penalties and forfeitures, paid in Q3 2025",
+   "status": "MINOR",
+   "note": "$140.6M is the cash payment, not the P&L charge ($128.5M). 10.1% of revenue only fits $128.5M."
+  },
+  {
+   "ticker": "CDNS",
+   "claim": "FY2026 guidance path: Q4-25 initial rev $5.9-6.0bn, non-GAAP EPS $8.05-8.15 (ex-Hexagon); Q1-26 raised revenue to ~17%; Q2-26 raised to ~19%, EPS $8.10, OCF $2bn",
+   "dossier_location": "Sec 5 table",
+   "source": "CDNS 8-K Ex-99.01 filed 2026-02-17, acc 0000813672-26-000013; CDNS 8-K Ex-99.01 filed 2026-04-27, acc 0000813672-26-000044; CDNS 8-K Ex-99.01 filed 2026-07-27, acc 0000813672-26-000089",
+   "source_value": "Q4-25: revenue $5.9-6.0bn, non-GAAP EPS $8.05-8.15, GAAP EPS $4.95-5.05 excl. Hexagon. Q1-26: revenue $6.125-6.225bn (~17%) but non-GAAP EPS $7.85-7.95 and GAAP EPS $4.39-4.49 (lower, Hexagon included). Q2-26: revenue $6.26-6.34bn (~19%), non-GAAP EPS $8.05-8.15 (mid $8.10), GAAP EPS $4.76-4.86, OCF ~$2bn",
+   "status": "MINOR",
+   "note": "Revenue raises verbatim and correct. Omission: the Q1 release lowered EPS guidance (acquisition dilution), so \"consistent raises\" holds for revenue but not for EPS; Q2 EPS is a raise vs Q1 but equal to the pre-deal Feb guide."
+  },
+  {
+   "ticker": "CDNS",
+   "claim": "Balance sheet 30 Jun 2026: cash $1,440.4M, LT debt $2,482.2M (FY25 $2,480.2M), net debt ~$1.04bn; goodwill $2,749.1M -> $4,914.8M; intangibles $718.2M -> $1,874.5M; $2,100.3M cash paid for business combinations in H1",
+   "dossier_location": "Sec 6",
+   "source": "CDNS 10-Q acc 0000813672-26-000092",
+   "source_value": "Cash 1,440,443; long-term debt 2,482,200 / 2,480,150; goodwill 4,914,788 / 2,749,143; acquired intangibles 1,874,455 / 718,223; cash paid in business combinations 2,100,292; net debt = 1,041.8",
+   "status": "PASS",
+   "note": "Consolidated Cadence Design Systems, Inc., right date. Cash fell from $3,001M at 2025-12-31 (the net-debt turn is acquisition-funded)."
+  },
+  {
+   "ticker": "CDNS",
+   "claim": "TTM OCF $1,854.9M (310.7+553.5+355.8+634.9); TTM capex ~$0.28bn; TTM FCF ~$1.58bn",
+   "dossier_location": "Sec 4 footnote",
+   "source": "CDNS 10-K acc 0000813672-26-000016; 10-Qs Q1/Q2 2026",
+   "source_value": "OCF ties (Q2 = 990.7-355.8 = 634.9). Capex: Q3-25 33.7 + Q4-25 41.0 + Q1-26 48.8 + Q2-26 52.6 = $176.1M, not $0.28bn, so TTM FCF = $1,679M",
+   "status": "MINOR",
+   "note": "Capex overstated by ~$0.1bn (\"rough\" per dossier). TTM GAAP NI sentence says \"$1.65bn\" but its own components sum to $1,378M (ratio 1.34x uses the right figure)."
+  },
+  {
+   "ticker": "CDNS",
+   "claim": "China 13% of FY2025 revenue; plea agreement 3-year probation; BIS annual audits; 5/23/2025 license requirement rescinded 7/2/2025; interim rule effective 9/29/2025",
+   "dossier_location": "Sec 8, 9, 11",
+   "source": "CDNS FY2025 10-K acc 0000813672-26-000016",
+   "source_value": "China 13% (FY24 12%); \"three-year probationary term\"; \"two internal annual audits\"; May 23, 2025 BIS letter rescinded July 2, 2025; interim final rule effective September 29, 2025; $45.3M of sales 2015-2021",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CDNS",
+   "claim": "Reverse DCF: EV $90.99bn, TTM FCF ~$1.855bn (OCF used as FCF), WACC 9.5%, g 3.5% -> implied 17.3%; base 14-15% -> implied_vs_base above -> WATCH",
+   "dossier_location": "Sec 7",
+   "source": "Recomputed; CDNS 10-K / 10-Q cash-flow statements",
+   "source_value": "Reproduces 17.3% (17.1% on the $89.95bn market cap). But OCF adds back SBC of ~$514M TTM (8.8% of revenue); FCF after capex ($176M) and SBC as a cost = ~$1.165bn, implied 10-yr growth ~24%; with 3.0% terminal growth higher still",
+   "status": "MINOR",
+   "note": "Method fails the SBC-as-cost rule and labels OCF as FCF; WACC 9.5% is consistent with 5.17% UST + 4.3% ERP though not stated. Correction widens the gap to the 14-15% base, so \"above\" and WATCH are reinforced. No summary field changes."
+  },
+  {
+   "ticker": "CDNS",
+   "claim": "Price $326.13 and market cap ~$89.95bn at the 2026-09-25 close",
+   "dossier_location": "Sec 1, 7",
+   "source": "Market-data snapshot (internal d4); not an SEC figure",
+   "source_value": "Not verifiable from EDGAR. Shares: 276.2M diluted (Q2 release) x $326.13 = $90.1bn, consistent",
+   "status": "UNVERIFIABLE",
+   "note": "Consistent with filing share counts."
+  },
+  {
+   "ticker": "CDW",
+   "claim": "Q2 2026: sales $6,572M (+10.0%), GAAP op margin 6.5%, GAAP EPS $2.15, non-GAAP EPS $2.91 (+11.9%); gross margin 20.1% (-70bp); S&A +8.6%; non-GAAP op margin 8.5%",
+   "dossier_location": "Sec 4 last row and Q2 variance paragraph",
+   "source": "CDW 8-K Ex-99.1 filed 2026-08-05, acc 0001402057-26-000062",
+   "source_value": "Net sales $6,572.2M vs $5,976.6M; operating margin 6.5% vs 7.0%; diluted EPS $2.15 vs $2.05; non-GAAP EPS $2.91 vs $2.60; GP margin 20.1% vs 20.8%; S&A +8.6%; non-GAAP op income margin 8.5% vs 8.7%; segments Commercial +9.2%, Government +13.6%, Education +0.7%, Other +22.9%",
+   "status": "PASS",
+   "note": "Calendar fiscal year; labels correct."
+  },
+  {
+   "ticker": "CDW",
+   "claim": "Quarterly table Q3 24 - Q1 26 (sales, YoY, GAAP op margin, GAAP EPS, non-GAAP EPS), incl. Q4 25 GAAP EPS $2.13",
+   "dossier_location": "Sec 4 table",
+   "source": "CDW 8-K Ex-99.1 releases acc 0001402057-25-000191 (Q3 25), -26-000001 (Q4 25), -26-000023 (Q1 26); XBRL",
+   "source_value": "Q3 24 5,516.6/8.7%/2.34/2.63; Q4 24 5,186.0/7.9%/1.97/2.48; Q1 25 5,199.1 (+6.7%)/7.0%/1.69/2.15; Q2 25 5,976.6 (+10.2%)/7.0%/2.05/2.60; Q3 25 5,737.4 (+4.0%)/7.7%/2.21/2.71; Q4 25 5,511.0 (+6.3%)/7.8%/2.14/2.57; Q1 26 5,679.8 (+9.2%)/6.6%/1.82/2.28",
+   "status": "MINOR",
+   "note": "One wrong cell: Q4 25 GAAP diluted EPS is $2.14, not $2.13 (FY25 $8.08 ties). All other cells tie."
+  },
+  {
+   "ticker": "CDW",
+   "claim": "Guidance: no numeric guidance; target to exceed US IT addressable market growth by 200-300bp appears in Nov 2025 and May 2026 releases as well as Feb and Aug 2026",
+   "dossier_location": "Sec 5",
+   "source": "CDW releases of 2025-11-04, 2026-02-04, 2026-05-06, 2026-08-05 (acc 0001402057-25-000191, -26-000001, -26-000023, -26-000062)",
+   "source_value": "Aug 2026: \"we remain confident in our ability to exceed US IT addressable market growth by 200 to 300 basis points\"; Feb 2026 quote verbatim; Nov 2025 carries \"US IT market growth by 200 to 300 basis points\" (no \"addressable\"); the May 2026 (Q1) release contains no such target",
+   "status": "MINOR",
+   "note": "Verbatim Aug and Feb quotes correct; no numeric revenue/EPS guidance in any of the four releases (confirmed). The May 2026 claim is wrong."
+  },
+  {
+   "ticker": "CDW",
+   "claim": "Cash flow: FY25 OCF $1,205.2M, capex $117.1M, FCF $1,088.1M; H1 26 FCF $165.8M vs $393.7M (-58%); adjusted FCF $278.4M vs $458.9M; AR $7,343.7M, inventory $981.8M, DSO 93 vs 80",
+   "dossier_location": "Sec 6 first bullet",
+   "source": "CDW 8-K Ex-99.1 filed 2026-08-05, acc 0001402057-26-000062; FY25 10-K acc 0001402057-26-000011",
+   "source_value": "H1 26: OCF 219.7, capex 53.9, FCF 165.8 vs 393.7 (-57.9%); adjusted FCF 278.4 vs 458.9; AR 7,343.7 (Dec 6,312.4); inventory 981.8 (Dec 563.4, +74%); DSO 93 (Jun 25: 80)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CDW",
+   "claim": "Consolidated 30 Jun 2026: total debt $5,817.0M (current $1,008.9M + LT $4,808.1M), cash $361.8M, net debt $5,455.2M, equity $2,442.1M, revolver availability $1,682.4M; XBRL tag $5,664.7M unreconciled",
+   "dossier_location": "Sec 6 second bullet",
+   "source": "CDW 8-K Ex-99.1 filed 2026-08-05, acc 0001402057-26-000062; 10-Q acc 0001402057-26-000065 debt note",
+   "source_value": "Release: total debt 5,817.0; net debt 5,455.2; revolver availability 1,682.4; equity 2,442.1. 10-Q debt table principal: revolver 175.0 + term loan 634.5 + senior notes 5,000.0 = 5,809.5 (+ other ~7.5 = 5,817.0)",
+   "status": "PASS",
+   "note": "Consolidated parent, correct date; the flagged XBRL gap is a tag-selection difference, the release and 10-Q principal tie to $5,817.0M. Net debt / TTM non-GAAP operating income 5,455.2 / 2,040.9 = 2.67x ties."
+  },
+  {
+   "ticker": "CDW",
+   "claim": "Sep 21 2026 notes: $600M 5.700% 2029, $500M 6.100% 2032, $400M 6.350% 2033; $1.0B 2.67% notes due Dec 2026; Aug 3 2026 CFO retirement 8-K; Mehrotra not standing",
+   "dossier_location": "Sec 6, 10, 11",
+   "source": "CDW 8-K acc 0001193125-26-396653; 10-Q debt table; 8-K acc 0001402057-26-000064; 8-K filed 2026-03-27 (acc 0001402057-26-000016)",
+   "source_value": "Notes issued at $600M/$500M/$400M with those coupons (total $1.5B); $1,000.0M 2.670% senior notes due December 2026; Miralles to retire (full-time through 2027-03-31, advisory to 2028-03-31); Mehrotra not standing, not due to disagreement",
+   "status": "PASS",
+   "note": "The dossier says use of proceeds is inferred; the 8-K does not state it. Weighted coupon ~6.05%."
+  },
+  {
+   "ticker": "CDW",
+   "claim": "Reverse DCF: CoE 9.15% (beta 0.96), g_T 3%; FY25 FCF less SBC $1,004M -> implied 3.1%; TTM FCF less SBC $776M -> 6.5%; base 5.5% => in line",
+   "dossier_location": "Sec 7",
+   "source": "Recomputed on $16.9B market cap; FY25 10-K / Q2 release",
+   "source_value": "Reproduces 3.06% and 6.45%. FCF is after capex and after SBC (SBC $83.6M); equity FCF vs equity value (consistent); 9.15% = 5.17% 10-yr UST + 0.96 x ~4.15% ERP",
+   "status": "PASS",
+   "note": "Method meets the checklist (FCF not EPS, SBC as a cost, equity cash flow against market cap). ERP not stated explicitly but implied; acceptable."
+  },
+  {
+   "ticker": "CDW",
+   "claim": "Verdict INCLUDE-SMALL with implied_vs_base in_line and scenarios bear -2.3% / base +8.6% / bull +18.3%",
+   "dossier_location": "Sec 1, 7",
+   "source": "Dossier internal logic; Q2 release",
+   "source_value": "Evidence set supports INCLUDE-SMALL (cheap on 11.5x NTM P/E, FCF-based reverse DCF straddles base, kill criteria measurable); no contradicting primary-source fact found",
+   "status": "PASS",
+   "note": "No verdict change."
+  },
+  {
+   "ticker": "CEG",
+   "claim": "Q2 2026: revenue $7,504M, operating income $580M, net income $513M, GAAP EPS $1.42 (Q2 2025 $2.67), adjusted operating EPS $2.55 (Q2 2025 $1.91)",
+   "dossier_location": "Sec 4 last row; text below table",
+   "source": "CEG 8-K Ex-99.1 filed 2026-08-06, acc 0001868275-26-000097; CEG 10-Q acc 0001868275-26-000104",
+   "source_value": "GAAP NI $513M / $1.42 vs $839M / $2.67; adjusted operating earnings $2.55 vs $1.91; XBRL revenue 7,504, operating income 580",
+   "status": "PASS",
+   "note": "Calendar fiscal year; labels correct."
+  },
+  {
+   "ticker": "CEG",
+   "claim": "Quarterly table Q2 2024 - Q1 2026 (revenue, operating income, net income, EPS) and adjusted EPS (Q4 24 2.44, Q1 25 2.14, Q2 25 1.91, Q4 25 2.30, Q1 26 2.74); FY25 GAAP EPS $7.40, adjusted $9.39; FY24 GAAP $11.89",
+   "dossier_location": "Sec 4",
+   "source": "XBRL companyfacts CIK 1868275; CEG releases acc 0001868275-26-000029 (Q4/FY25), -26-000063 (Q1 26)",
+   "source_value": "XBRL: revenue 5,475 / 6,550 / 6,788 / 6,101 / 6,570 / 11,122 / 7,504; operating income 1,100 / 1,467 / 451 / 951 / 1,086 / 2,332 / 580; NI 814 / 1,200 / 118 / 839 / 930 / 1,590 / 513; EPS 2.58 / 3.82 / 0.38 / 2.67 / 2.97 / 4.49 / 1.42. Releases: Q4 25 GAAP 1.38 / adj 2.30 (Q4 24 2.71 / 2.44); FY25 7.40 / 9.39 (FY24 11.89 / 8.67); Q1 26 adj 2.74 (Q1 25 2.14)",
+   "status": "PASS",
+   "note": "All cells tie. Note the dossier says XBRL long-term debt $16,994M is the nearest XBRL value; the balance sheet line is $19,111M (see debt fact)."
+  },
+  {
+   "ticker": "CEG",
+   "claim": "FY2026 Adjusted Operating EPS guidance: $11.00-12.00 (2026-03-31, initial), affirmed 2026-05-11, raised to $11.50-12.50 on 2026-08-06",
+   "dossier_location": "Sec 5 table",
+   "source": "CEG 8-K Ex-99.1 acc 0001868275-26-000045 (Mar 31 outlook), -26-000063 (May 11), -26-000097 (Aug 6)",
+   "source_value": "Mar 31: \"Initiating 2026 Adjusted Operating Earnings guidance of $11.00 - $12.00 per share\"; May 11: \"Affirming full year 2026 ... $11.00 - $12.00\"; Aug 6: \"Raising ... to $11.50 - $12.50\"",
+   "status": "PASS",
+   "note": "Verbatim; fourth consecutive year of beating guidance midpoint also confirmed (Feb 24 release)."
+  },
+  {
+   "ticker": "CEG",
+   "claim": "Calpine merger accounting: consideration $21,835M ($17,603M stock for ~50M shares at $354.58 + $4,342M cash); ~$12.6bn debt assumed; goodwill $11,527M vs $420M",
+   "dossier_location": "Sec 6 bullet 1",
+   "source": "CEG 10-Q acc 0001868275-26-000104 Note 2",
+   "source_value": "Total merger consideration 21,835; stock 17,603 (~50M shares, $354.58 close on 2026-01-06); cash 4,342; assumed total debt $12,551M (~$12.6bn); goodwill 11,527 vs 420",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CEG",
+   "claim": "DOJ divestitures: 5 PJM plants (~4.4 GW) $5.0bn and ERCOT plant (Brazos Valley) $860M signed with LS Power, Gregory stake sold Jan 2026; 240-day deadline 4 Sep 2026; none closed, targeted by end of year",
+   "dossier_location": "Sec 6 bullet 2, Sec 9 item 1",
+   "source": "CEG 10-Q acc 0001868275-26-000104 Note 2; FY2025 10-K acc 0001868275-26-000032",
+   "source_value": "Matches: \"within 240 days of closing ... by September 4, 2026\"; PJM $5.0bn (March 2026); Brazos Valley 606 MW $860M (August 2026); \"expect the transactions to close by the end of this year\"",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CEG",
+   "claim": "Balance sheet at 30 Jun 2026: long-term debt $19,111M (Dec-25 $7,250M); short-term borrowings $5,226M (Dec-25 $1,650M); total debt $24.70bn; cash $697M; shares 355M; equity roughly doubled",
+   "dossier_location": "Sec 6 bullet 3 and 12",
+   "source": "CEG 10-Q acc 0001868275-26-000104",
+   "source_value": "Long-term debt 19,111 / 7,250; short-term borrowings 5,226 / 1,650; current LTD 363; total = 24,700; cash 697; shares 355M (312M at Dec-25); shareholders equity 31,977 vs 14,517",
+   "status": "PASS",
+   "note": "Consolidated Constellation Energy Corp. The cross-tie flag (XBRL 16,994) comes from a different tag; the balance sheet ties to the dossier."
+  },
+  {
+   "ticker": "CEG",
+   "claim": "Cash flow: FCF is negative on the live snapshot (-$6.6bn TTM) \"largely because of the acquisition-year capex/financing mix\"; Q2 26 OCF $1,128M; capex $1.2-1.3bn a quarter; FY25 OCF $4,237M",
+   "dossier_location": "Sec 6 bullet 4",
+   "source": "CEG 10-K acc 0001868275-26-000032; 10-Q acc 0001868275-26-000104 (XBRL)",
+   "source_value": "OCF: FY25 4,237; H1 26 1,553 (Q1 425, so Q2 = 1,128); capex: FY25 2,949, H1 26 2,521 (Q1 1,275, Q2 1,246). TTM OCF 4,206 less TTM capex 3,897 = +$0.3bn, not -$6.6bn; the vendor figure must include the ~$4.3bn cash paid for Calpine and other investing items",
+   "status": "FAIL",
+   "note": "Operating cash flow less capex is slightly positive; the -$6.6bn is not capex-driven. Component figures (OCF, capex) are correct."
+  },
+  {
+   "ticker": "CEG",
+   "claim": "Reverse DCF: Gordon growth on NTM EPS with CAPM rf 4.16%, ERP 5.0%, beta 1.117 -> Ke 9.75% -> implied perpetual growth 4.6%",
+   "dossier_location": "Sec 7",
+   "source": "Recomputed; discount rate required by program: 10-yr UST 5.17% on 25 Sep 2026",
+   "source_value": "Reproduces 4.57% with rf 4.16%. With rf 5.17%: Ke 10.76% and implied perpetual growth 5.5% (P 263.27, NTM EPS 13.03). Cash flow is adjusted EPS (not FCF); TTM OCF less capex is about +$0.3bn; stock-based compensation not treated as a cost",
+   "status": "FAIL",
+   "note": "Discount rate inconsistent with the 5.17% Treasury and EPS is used as the cash flow. Corrected implied growth (5.5%) is higher, which reinforces the dossier conclusion (fair-to-full, WATCH); no verdict change."
+  },
+  {
+   "ticker": "CEG",
+   "claim": "Red-flag scan / \"no new 8-K items between 2026-08-06 and 2026-09-25\"; no governance event noted",
+   "dossier_location": "Data Quality Note, Sec 11",
+   "source": "CEG 8-K filed 2026-08-05, acc 0001868275-26-000089 (Item 5.02)",
+   "source_value": "On Aug 4, 2026 Chair Robert Lawless retired and CEO Joseph Dominguez was elected Chair (Charles Harrington Lead Independent Director); Roger Crandall elected director",
+   "status": "MINOR",
+   "note": "The dossier statement for the 2026-08-06 to 2026-09-25 window is correct (no 8-K after Aug 6); the Aug 5 governance 8-K (combined CEO/Chair) is simply not mentioned."
+  },
+  {
+   "ticker": "CEG",
+   "claim": "Price $263.27, market cap $93.3bn, EV $117.0bn, trailing EBITDA $7.95bn, NTM P/E 20.2x",
+   "dossier_location": "Sec 6, 7",
+   "source": "Internal d4 snapshot (market data)",
+   "source_value": "Not an SEC figure. 355M shares x $263.27 = $93.5bn consistent with the stated market cap",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "CF",
+   "claim": "Q2 2026: net sales $2,222M (+17.6%), GAAP operating margin 50.5%, GAAP diluted EPS $4.73, adjusted EBITDA $1,190M; Q1 2026 sales $1,986M, margin 43.5%, EPS $3.98, adjusted EBITDA $983M",
+   "dossier_location": "Sec 4 table rows Q1/Q2 2026; text",
+   "source": "CF 8-K Ex-99.1 filed 2026-08-05, acc 0001324404-26-000017; CF 8-K Ex-99.1 filed 2026-05-06, acc 0001324404-26-000011; 10-Q acc 0001324404-26-000019 (XBRL)",
+   "source_value": "Q2: sales 2,222 vs 1,890; operating income 1,121 (50.45%); EPS 4.73 vs 2.37; adj EBITDA 1,190. Q1: 1,986; 863 (43.5%); EPS 3.98; adj EBITDA 983",
+   "status": "PASS",
+   "note": "Calendar fiscal year; labels correct."
+  },
+  {
+   "ticker": "CF",
+   "claim": "Quarterly table Q3 2024 - Q4 2025: sales, margins, EPS (Q4 24 ~1.86 and Q4 25 ~2.56 \"derived\")",
+   "dossier_location": "Sec 4 table",
+   "source": "CF XBRL; releases CF 8-K Ex-99.1 filed 2026-02-18, acc 0001324404-26-000003 and CF 8-K Ex-99.1 filed 2025-11-05, acc 0001324404-25-000028",
+   "source_value": "Sales 1,370 / 1,524 / 1,663 / 1,890 / 1,659 / 1,872; op margins 26.6 / 28.9 / 27.4 / 34.3 / 35.0 / 33.0 (all tie). Reported EPS: Q3 24 1.55, Q4 24 $1.89, Q1 25 1.85, Q2 25 2.37, Q3 25 2.19, Q4 25 $2.59",
+   "status": "MINOR",
+   "note": "Two derived EPS cells differ from the reported figures: Q4 24 $1.89 (not ~1.86), Q4 25 $2.59 (not ~2.56). FY25 revenue $7,084M (+19.3%) and FY25 EPS $8.97 tie."
+  },
+  {
+   "ticker": "CF",
+   "claim": "TTM (through Q2 26) revenue $7,739M, TTM operating margin 41.1%, TTM GAAP EPS $13.23; P/E 8.67x",
+   "dossier_location": "Sec 4 text; Sec 7 table",
+   "source": "CF XBRL and Q2 release",
+   "source_value": "Revenue 7,084 + 4,208 - 3,553 = 7,739 (ties); operating income 3,181 / 7,739 = 41.1% (ties); EPS Q3 25 2.19 + Q4 25 2.59 + Q1 26 3.98 + Q2 26 4.73 = $13.49 (FY25 8.97 + H1 26 8.71 - H1 25 4.20 = 13.48)",
+   "status": "MINOR",
+   "note": "The pipeline TTM EPS of $13.23 is about 2% low; trailing P/E at $114.67 is 8.5x, not 8.67x. No effect on the conclusion."
+  },
+  {
+   "ticker": "CF",
+   "claim": "Guidance: FY26 gross ammonia ~9.5M tons (cut from FY25 ~10M, due to Yazoo City); capex ~$1.3B total / ~$950M ex-partner (+$40M capitalised interest); Yazoo restart \"Q4 2026 at earliest\" (Feb) -> \"late Q4 2026 at the earliest\" (May) -> \"first half of 2027\" (Aug)",
+   "dossier_location": "Sec 5 table",
+   "source": "CF 8-K Ex-99.1 filed 2025-11-05, acc 0001324404-25-000028; CF 8-K Ex-99.1 filed 2026-02-18, acc 0001324404-26-000003; CF 8-K Ex-99.1 filed 2026-05-06, acc 0001324404-26-000011; CF 8-K Ex-99.1 filed 2026-08-05, acc 0001324404-26-000017",
+   "source_value": "Nov 2025: FY25 ~10M tons, capex ~$925M ($575M own + $300-400M JV; ~$725M ex-partner). Feb/May/Aug 2026: ~9.5M tons; capex ~$1.3B of which ~$550M existing network, ~$600M JV, ~$150M Blue Point common; ~$950M excluding JERA/Mitsui share; \"$40 million of capitalized interest\". Restart language exactly as quoted; Aug: \"first half of 2027\"",
+   "status": "PASS",
+   "note": "All quoted guidance verbatim. Note the $1.3B vs $925M comparison mixes years but is labelled FY25 vs FY26 correctly."
+  },
+  {
+   "ticker": "CF",
+   "claim": "H1 2026 one-offs: litigation gain $170M, insurance recoveries $25M + $50M, impairment $23M, 45Q credits $43M (~$265M pre-tax); Orica/Nelson Brothers settlement named as the source",
+   "dossier_location": "Sec 4 text, Sec 6, Sec 11",
+   "source": "CF 8-K Ex-99.1 filed 2026-08-05, acc 0001324404-26-000017 adjustments table; 10-Q",
+   "source_value": "Litigation settlement gain (170); insurance recoveries property damage (25) and business interruption (50); asset impairment 23; 45Q tax credits (43) for six months. The 10-Q and release do not name the counterparty",
+   "status": "PASS",
+   "note": "Amounts tie. The Orica attribution is from web search and is not in the filings read (UNVERIFIABLE as to name only)."
+  },
+  {
+   "ticker": "CF",
+   "claim": "FY2025 FCF (CFO $2,752M - capex $950M) = $1,802M; SBC $45M; 2025 buybacks 16.6M shares / $1.34B; natural gas ~34% of production cost; $2.0B authorisation with ~$1.48B left; dividend +20% to $0.60",
+   "dossier_location": "Sec 2, Sec 6",
+   "source": "CF XBRL; FY2025 10-K acc 0001324404-26-000007; Q2 release",
+   "source_value": "CFO 2,752; capex 950; SBC 45; 13.2M + 3.4M = 16.6M shares for $1.06B + $0.278B = $1.34B; natural gas \"approximately 34%\"; \"$1.48 billion remains\"; dividend $0.60 (+20%)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CF",
+   "claim": "Mid-cycle build: 2016-2025 operating-margin range 3.7%-48.2%, median ~24%; mid-cycle EPS ~$8.10; scenario FV $91.6 (bear 6.00x9, base 8.10x12, bull 11.50x11; 30/45/25); DCF at 8.5% WACC shows 15-48% upside",
+   "dossier_location": "Sec 7",
+   "source": "CF XBRL (2022: Q1 1,658/2,868 = 57.8%; Q2 1,778/3,389 = 52.5%; FY 5,397/11,186 = 48.2%); recomputation",
+   "source_value": "Peak margins tie; 24% x $7,084M = $1,700M EBIT; (1,700-150) x 0.79 = $1,224M; /151M = $8.11; scenario weights give $91.57. Multiples-based method is acceptable (earnings on a stated mid-cycle basis, not cash); the 8.5% WACC is not tied to the 5.17% 10-yr UST + an equity risk premium, which would put a cost of equity near 9.5-10%",
+   "status": "MINOR",
+   "note": "REJECT rests on the multiples table (not the DCF), and the dossier already down-weights the DCF; a higher discount rate would shrink the DCF upside further. No verdict impact."
+  },
+  {
+   "ticker": "CF",
+   "claim": "Officer retirement 8-K 2026-09-03: CAO Richard A. Hoker retires effective 2027-03-03; Yazoo City release date and cumulative impairments ~$48M plus $51M Donaldsonville",
+   "dossier_location": "Sec 10, Sec 11",
+   "source": "CF 8-K filed 2026-09-03, acc 0001104659-26-105054; 10-Q",
+   "source_value": "Hoker \"intends to retire ... effective as of March 3, 2027\"; impairments $25M (Q4 25) + $23M (Q2 26) = $48M",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CF",
+   "claim": "Q2 2026 operating margin (50.5%) is \"above the prior all-time-high quarter (2022)\"",
+   "dossier_location": "Sec 1 one-sentence reason",
+   "source": "CF XBRL (10-K/10-Q): Q1 2022 operating income 1,658 / sales 2,868; Q2 2022 1,778 / 3,389",
+   "source_value": "Q1 2022 57.8%, Q2 2022 52.5%, both above Q2 2026 50.5%; Q2 2026 sits inside the 2022 peak range (as Sec 4 says)",
+   "status": "FAIL",
+   "note": "Sec 1 wording is wrong (below the 2022 peak quarters, not above); the REJECT logic (peak-range margins) is unaffected and Sec 4 states it correctly."
+  },
+  {
+   "ticker": "CF",
+   "claim": "Verdict REJECT (peak-cycle trap) with revisit as WATCH at ~$85-95; implied by mid-cycle multiples and Street revisions",
+   "dossier_location": "Sec 1, 9",
+   "source": "Dossier evidence vs filings",
+   "source_value": "Filings support peak-range margins, a company-named geopolitical driver (Iran conflict) and a delayed Yazoo City restart; no contradicting fact found",
+   "status": "PASS",
+   "note": "No verdict change."
+  },
+  {
+   "ticker": "CFG",
+   "claim": "Q2 2026: revenue $2,283M (+12% YoY), net income $587M (+35%), diluted EPS $1.30 (+41%); Q1 2026 revenue $2,168M, NI $517M, EPS $1.13",
+   "dossier_location": "Sec 4 last two rows; text",
+   "source": "CFG 8-K Ex-99.1 filed 2026-07-16, acc 0000759944-26-000133 (earnings release + presentation + supplement)",
+   "source_value": "Total revenue 2,283 vs 2,037; net income 587 vs 436; diluted EPS 1.30 vs 0.92 (Q1 26: 2,168 / 517 / 1.13); ROTCE 13.9%; NIM FTE 3.17%",
+   "status": "PASS",
+   "note": "Calendar fiscal year; labels correct."
+  },
+  {
+   "ticker": "CFG",
+   "claim": "Quarterly table Q3 2024 - Q4 2025 (revenue, net income, EPS), YoY column; Q1 2025 YoY \"+2.7%\" with footnote saying EPS flat YoY",
+   "dossier_location": "Sec 4 table and footnote (1)",
+   "source": "CFG 10-Q acc 0000759944-26-000148 (XBRL) and 10-K acc 0000759944-26-000028 (XBRL)",
+   "source_value": "Revenue 1,901 / 1,986 / 1,935 / 2,037 / 2,118 / 2,157 / 2,168 / 2,283; NI 382 / 401 / 373 / 436 / 494 / 528 / 517 / 587; EPS 0.77 / 0.83 / 0.77 / 0.92 / 1.05 / 1.12 / 1.13 / 1.30 (all tie). Q1 2025 revenue vs Q1 2024 $1,959M = -1.2% (not +2.7%); Q1 2024 NI $334M and EPS $0.65, so Q1 2025 NI was +12% and EPS +18% YoY, not flat. Other YoY cells tie (+3.8%, +11.4%, +8.6%, +12.0%, +12.1%)",
+   "status": "FAIL",
+   "note": "The dossier flags the revenue YoY itself but the footnote then says EPS was \"flat YoY ($0.77 vs $0.77)\", which is wrong ($0.65 in Q1 2024)."
+  },
+  {
+   "ticker": "CFG",
+   "claim": "Book value per share $61.96 = total stockholders equity $26,183M / 422.68M shares; P/B ~1.06x at $65.53 \"ties\" to V1 1.068",
+   "dossier_location": "Sec 6 bullet 5",
+   "source": "CFG 10-Q acc 0000759944-26-000148 (XBRL); Q2 release",
+   "source_value": "Total stockholders equity $26,183M includes preferred stock $2,111M; common equity $24,072M -> $56.95 per common share (P/B 1.15x); tangible book value per share $38.29 (P/TBV 1.71x at $65.53)",
+   "status": "FAIL",
+   "note": "Preferred equity must be excluded from book value per common share. The V1 cross-tie only shows both use total equity. Price/TBV 1.71x is the relevant bank multiple."
+  },
+  {
+   "ticker": "CFG",
+   "claim": "Run-rate ROE ~9.0% (annualised Q2 NI $2,348M / ~$26.2bn equity) vs 10.1% implied by P/B; implied_vs_base \"above\"",
+   "dossier_location": "Sec 7",
+   "source": "CFG 8-K Ex-99.1 filed 2026-07-16, acc 0000759944-26-000133 (earnings release + presentation + supplement); CFG 10-Q acc 0000759944-26-000148 (XBRL)",
+   "source_value": "Run-rate on common: NI to common $554M x 4 = $2,216M / ~$24.1bn common equity = 9.2%; company-reported ROTCE 13.9% (Q2), 12.2% (Q1). P/TBV-ROTCE: justified P/TBV = (ROTCE - g)/(CoE - g); with g 3% and CoE 9.7-10.7% (5.17% UST + beta 1.0-1.2 x 4.5%) the 1.71x price implies sustainable ROTCE of 14.5-16.2% vs 13.0-13.9% delivered (H1 average 13.05%)",
+   "status": "MINOR",
+   "note": "Mixed total-equity ROE is acceptable as a rough read but the appropriate bank method is P/TBV-ROTCE; it confirms \"above\" and WATCH. Discount rate was not stated in the dossier."
+  },
+  {
+   "ticker": "CFG",
+   "claim": "NIM guide: 4Q26 322-327bp, 4Q27 330-350bp; NIM +3bp QoQ to 3.17%; CET1 10.4% guided ~10.5% by Q3 with ~$125M buyback; Q2 buyback ~$225M",
+   "dossier_location": "Sec 3, 5, 6",
+   "source": "CFG 8-K Ex-99.1 filed 2026-07-16, acc 0000759944-26-000133 (earnings release + presentation + supplement) presentation slides 17-18",
+   "source_value": "Slide 18: 4Q26 \"~3.22 to 3.27%\", 4Q27 \"~3.30 to 3.50%\" (assumes 10-yr Treasury ~4.50%); Q2 NIM FTE 3.17% (+3bp); slide 17: CET1 \"~10.5%; ~$125 million in share repurchases\"; release: repurchased $225M in Q2",
+   "status": "PASS",
+   "note": "Section 5 says guidance was not verified from the primary source; it is verbatim in the Q2 presentation. Note the NIM path assumes a 4.50% 10-year Treasury, versus 5.17% on 25 Sep 2026."
+  },
+  {
+   "ticker": "CFG",
+   "claim": "CET1 10.4% (kill criterion: below 10.0%)",
+   "dossier_location": "Sec 6 bullet 4; Sec 9 item 2",
+   "source": "CFG 8-K Ex-99.1 filed 2026-07-16, acc 0000759944-26-000133 (earnings release + presentation + supplement) presentation slide 4",
+   "source_value": "Company also reports CET1 of 9.2% adjusted for AOCI opt-out removal",
+   "status": "MINOR",
+   "note": "The 10.0% kill criterion is measured on the reported 10.4%; the fully AOCI-inclusive ratio is already 9.2%, which the dossier does not mention."
+  },
+  {
+   "ticker": "CFG",
+   "claim": "Balance sheet: total assets $233,836M (Jun-26); long-term debt $15,190M vs $12,260M / $11,224M / $10,441M; shares 422.68M vs 431.45M (Sep-25); private bank deposits >$16bn",
+   "dossier_location": "Sec 6",
+   "source": "CFG 10-Q acc 0000759944-26-000148 (XBRL)",
+   "source_value": "Assets 233,836 / 227,918 / 226,351 / 222,747; LongTermDebt 15,190 / 12,260 / 11,224 / 10,441; shares 422,677,660 (Jun-26) vs 431,453,142 (Sep-25); Private Bank spot deposits $17.8bn at Jun-26",
+   "status": "PASS",
+   "note": "Private bank deposits are $17.8bn at Jun-26 (dossier says >$16bn, an earlier figure)."
+  },
+  {
+   "ticker": "CFG",
+   "claim": "V1 row: P/B 1.0679, implied ROE 10.11%, actual ROE 8.12%, verdict \"excessive\" -0.69; scenarios -8.4% / +1.0% / +8.7%",
+   "dossier_location": "Sec 7",
+   "source": "Internal v1_valuation_table.csv (not re-verified; internal model output)",
+   "source_value": "Not an SEC figure; consistent with F108_summary.json (v1_base_3y 0.0098)",
+   "status": "UNVERIFIABLE",
+   "note": "The V1 P/B input uses total equity including preferred (see book-value fact)."
+  },
+  {
+   "ticker": "CFG",
+   "claim": "Verdict WATCH (\"price ahead of delivered ROE\"; implied_vs_base above)",
+   "dossier_location": "Sec 1, 7",
+   "source": "Dossier logic vs recomputation",
+   "source_value": "On P/TBV 1.71x and ROTCE 13.9% the price requires ROTCE of 14.5-16.2%; supports WATCH, not INCLUDE",
+   "status": "PASS",
+   "note": "No verdict change."
+  },
+  {
+   "ticker": "CHD",
+   "claim": "Q2 2026: net sales $1,530.0M (+1.6%), organic +5.8% (volume +4.3%, price/mix +1.5%), GAAP operating income $276.4M, GAAP EPS $0.85, adjusted EPS $0.89 (vs $0.94), adjusted op income $287.2M (-$28.7M), gross margin 45.4%",
+   "dossier_location": "Sec 3 table last row and variance paragraph",
+   "source": "CHD 8-K Ex-99.1 filed 2026-07-31, acc 0001193125-26-326749; CHD 10-Q acc 0001193125-26-327567; XBRL companyfacts",
+   "source_value": "Net sales $1,530.0M; organic +5.8% (volume 4.3%, price/mix 1.5%); income from operations $276.4M; reported EPS $0.85; adjusted EPS $0.89 vs $0.94; adjusted income from operations $287.2M, -$28.7M; gross margin 45.4%, adjusted +40 bps; CFO $286.8M (+24.3%)",
+   "status": "PASS",
+   "note": "Calendar fiscal year; labels correct."
+  },
+  {
+   "ticker": "CHD",
+   "claim": "Six-quarter table (net sales, organic, operating income, GAAP EPS, adjusted EPS, CFO) Q1 2025 - Q1 2026",
+   "dossier_location": "Sec 3 table",
+   "source": "XBRL companyfacts; releases CHD 8-K Ex-99.1 filed 2025-10-31, acc 0001193125-25-259387; CHD 8-K Ex-99.1 filed 2026-01-30, acc 0001193125-26-030474; CHD 8-K Ex-99.1 filed 2026-05-01, acc 0001193125-26-199066",
+   "source_value": "Sales 1,467.1 / 1,506.3 / 1,585.6 / 1,644.2 / 1,469.3; operating income 295.3 / 261.7 / 254.6 / 266.0 / 291.0; GAAP EPS 0.89 / 0.78 / 0.75 / 0.60 / 0.91; adjusted EPS Q3 0.81, Q4 0.86, Q1 26 0.95; organic Q3 +3.4%, Q4 +0.7%, Q1 26 +5.0%; CFO 185.7 / 230.8 / 435.5 / 363.4 / 174.8",
+   "status": "PASS",
+   "note": "All cells tie to filings (Q4 values derived from FY less 9M tie to the release)."
+  },
+  {
+   "ticker": "CHD",
+   "claim": "Guidance quotes: Q3 25 adjusted EPS ~$3.49 (prior midpoint $3.47), CFO ~$1.2B; Q4 25 release 5-8% adjusted EPS growth, organic 3-4%, CFO ~$1.15B; Q1 26 unchanged; Q2 26 raised to 6-8%, organic 4-5%, CFO ~$1.175B (prior $1.150B); Q3 26 adjusted EPS ~$0.89 (+10%)",
+   "dossier_location": "Sec 4",
+   "source": "CHD 8-K Ex-99.1 filed 2025-10-31, acc 0001193125-25-259387; CHD 8-K Ex-99.1 filed 2026-01-30, acc 0001193125-26-030474; CHD 8-K Ex-99.1 filed 2026-05-01, acc 0001193125-26-199066; CHD 8-K Ex-99.1 filed 2026-07-31, acc 0001193125-26-326749",
+   "source_value": "All quoted sentences found verbatim (\"raising our Adjusted EPS expectation ... 6% to 8% ... prior ... 5% to 8%\"; organic \"approximately 4% to 5%, from ... 3% to 4%\"; CFO \"$1.175 billion\"; Q3 \"approximately $0.89 per share, an increase of 10%\"). Q3 25 release: outlook $0.72 beaten by $0.81; Q1 26: outlook $0.92 vs $0.95; Q4 25 organic 0.7% vs outlook ~1.5%",
+   "status": "PASS",
+   "note": "FY2025 outcome adjusted EPS $3.53 and CFO $1,215.4M verified; phasing check ($1.01-1.08 for Q4) recomputes."
+  },
+  {
+   "ticker": "CHD",
+   "claim": "Consolidated 30 Jun 2026: short-term borrowings $49.9M, long-term debt $2,206.3M, cash $254.8M, equity $4,347.8M; senior notes $425M 3.15% 2027, $400M 2.3% 2031, $500M 5.6% 2032, $400M 3.95% 2047, $500M 5.00% 2052; $228.9M repurchase availability; Miss Mouth's $300.0M + $25.0M deferred",
+   "dossier_location": "Sec 5",
+   "source": "CHD 8-K Ex-99.1 filed 2026-07-31, acc 0001193125-26-326749 balance sheet; 10-Q acc 0001193125-26-327567",
+   "source_value": "Short-term borrowings 49.9; long-term debt 2,206.3; \"total debt was $2.3 billion and cash-on-hand was $254.8 million\"; note coupons/maturities as listed; \"$228.9 of share repurchase availability\"; Miss Mouth's $300.0 paid at closing, $25.0 deferred",
+   "status": "PASS",
+   "note": "Right entity and date. Net debt about $2.0B ties."
+  },
+  {
+   "ticker": "CHD",
+   "claim": "FCF: FY25 OCF $1,215.4M less capex $122.4M = $1,093.0M; TTM FCF $1,115M; H1 26 FCF $399.8M vs $377.5M; SBC $42.6M in H1 26",
+   "dossier_location": "Sec 5 bullet 2",
+   "source": "CHD XBRL",
+   "source_value": "FY25 1,215.4 / 122.4; H1 26 OCF 461.6 less capex 61.8 = 399.8; H1 25 416.5 less 39.0 = 377.5; TTM = 1,115.3; SBC H1 26 42.6 (FY25 58.0, H1 25 30.2 -> TTM 70.4)",
+   "status": "PASS",
+   "note": "The precheck flag (net income $861.9M vs XBRL $202.8M) is a mismatch of measures: $861.9M is company-defined FY25 adjusted net income (verified in the Q4 release), the 127% ratio is correct."
+  },
+  {
+   "ticker": "CHD",
+   "claim": "Valuation: FCF yield about 4.5% on TTM FCF $1,115M (about 4.2% on the 2026 guide); price $96.38, ~237.2M shares, market cap ~$22.9B",
+   "dossier_location": "Sec 6 first paragraph",
+   "source": "Recomputed",
+   "source_value": "On market cap $22.9B the TTM FCF yield is 4.9% and the guide-implied yield (~$1,045M) is 4.6%; the stated 4.5% / 4.2% are yields on enterprise value ($24.9B)",
+   "status": "MINOR",
+   "note": "Label the yield as EV-based; levered FCF against EV mixes entities, but the effect is small at ~1.5x leverage."
+  },
+  {
+   "ticker": "CHD",
+   "claim": "Reverse DCF: Ke 8.5%, g_T 3%, linear fade, start FCF $1,115M -> implied 5.1%; base ~6%; implied_vs_base in_line",
+   "dossier_location": "Sec 6 second paragraph",
+   "source": "Recomputed (10-yr linear-fade model); CHD XBRL SBC",
+   "source_value": "Reproduces 5.1% at 8.5% on $1,115M against $22.9B. Stock-based compensation (TTM $70M) is not deducted: FCF after SBC = $1,045M, implied growth 6.7% at 8.5%. Ke 8.5% is consistent with the 5.17% 10-yr UST + ~0.7 beta x 4.5% ERP (not stated)",
+   "status": "MINOR",
+   "note": "SBC should be a cost. Corrected implied 6.7% vs base ~6% is within ~1 point, so in_line is retained (tilting toward above); WATCH reinforced. No summary change."
+  },
+  {
+   "ticker": "CHD",
+   "claim": "H1 2026 adjusted EPS $1.84 versus $1.86 a year ago (\"earnings are not yet growing\")",
+   "dossier_location": "Sec 3 variance paragraph",
+   "source": "Q1 and Q2 2025/2026 releases",
+   "source_value": "H1 2026: 0.95 + 0.89 = $1.84 (ties); H1 2025: 0.91 + 0.94 = $1.85 from the table (the $1.86 could not be found in a filing and is not the sum of the table cells)",
+   "status": "MINOR",
+   "note": "Immaterial: H1 adjusted EPS is flat to -1% either way."
+  },
+  {
+   "ticker": "CHD",
+   "claim": "Verdict WATCH (25.5x guided EPS, steep Q4 ramp +17-26%, implied in line with base)",
+   "dossier_location": "Sec 1, 6",
+   "source": "Dossier logic vs filings",
+   "source_value": "Evidence set supports WATCH; corrected figures do not move it",
+   "status": "PASS",
+   "note": "No verdict change."
+  },
+  {
+   "ticker": "CHRW",
+   "claim": "Q2 2026: revenue $4,934.1M (+19.3%), GAAP operating income $255.7M (+18.4%), GAAP EPS $1.56, adjusted EPS $1.61 (+24.8%), adjusted gross profit $738.0M (+6.5%), adjusted operating margin 34.7% (+360bp), operating expenses +1.0%, OCF $35.9M",
+   "dossier_location": "Sec 3 table last row and paragraph",
+   "source": "CHRW 8-K Ex-99.1 filed 2026-07-29, acc 0001043277-26-000027",
+   "source_value": "Total revenues 4,934,098 vs 4,136,543 (+19.3%); income from operations 255,743 (+18.4%); diluted EPS $1.56; adjusted diluted EPS $1.61 (+24.8%); adjusted gross profits 737,966 (+6.5%); adjusted operating margin 34.7% (+360 bps); operating expenses $482.2M (+1.0%); cash generated by operations $35.9M",
+   "status": "PASS",
+   "note": "Calendar fiscal year; labels correct."
+  },
+  {
+   "ticker": "CHRW",
+   "claim": "Eight-quarter table (revenue, GAAP operating income, GAAP EPS, adjusted EPS, adjusted gross profit, OCF) Q3 24 - Q1 26",
+   "dossier_location": "Sec 3 table",
+   "source": "CHRW 8-K Ex-99.1 filed 2025-10-29, acc 0001043277-25-000050; CHRW 8-K Ex-99.1 filed 2026-01-28, acc 0001043277-26-000005; CHRW 8-K Ex-99.1 filed 2026-04-29, acc 0001043277-26-000014; XBRL",
+   "source_value": "Revenue 4,644.6 / 4,184.7 / 4,046.7 / 4,136.5 / 4,136.8 / 3,912.6 / 4,012.9; operating income 180.1 / 183.8 / 176.9 / 215.9 / 220.8 / 181.4 / 175.7; GAAP EPS 0.80 / 1.22 / 1.11 / 1.26 / 1.34 / 1.12 / 1.22; adjusted EPS Q3 25 1.40, Q4 25 1.23, Q1 26 1.35 (+15.4%); adjusted GP Q3 25 706.1, Q4 25 657.0, Q1 26 660.5 (derived Q3 24 735.3, Q4 24 684.6, Q1 25 673.1); OCF 106.5 / 227.2 / 275.4 / 305.4 / 68.6 / 35.9",
+   "status": "PASS",
+   "note": "All cells tie (Q3 24 adjusted GP $735.3M vs \"~735.7 derived\" is rounding)."
+  },
+  {
+   "ticker": "CHRW",
+   "claim": "Guidance: no numeric guidance; tax rate 18-20% unchanged (Q4 25, Q1 26, Q2 26); capex 2026 lowered from $75-85M (Q4 25, Q1 26) to $65-75M (Q2 26); 2025 capex $65-75M and tax 18-20% in Q3 25",
+   "dossier_location": "Sec 4",
+   "source": "CHRW 8-K Ex-99.1 filed 2026-01-28, acc 0001043277-26-000005; CHRW 8-K Ex-99.1 filed 2026-04-29, acc 0001043277-26-000014; CHRW 8-K Ex-99.1 filed 2026-07-29, acc 0001043277-26-000027; CHRW 8-K Ex-99.1 filed 2025-10-29, acc 0001043277-25-000050",
+   "source_value": "Quotes verbatim: \"we expect our full-year effective tax rate to be 18% to 20%\" in all four releases; capex $75 million to $85 million (Q4 25, Q1 26) then $65 million to $75 million (Q2 26); Q3 25 capex 2025 $65-75 million",
+   "status": "PASS",
+   "note": "Release accession numbers cited in the dossier (-26-000027, -26-000014, -26-000005, -25-000050) are correct."
+  },
+  {
+   "ticker": "CHRW",
+   "claim": "Lipe verdict: $604M compensatory damages, jury verdict 23 July 2026, joint and several exposure, $155M insurance per occurrence; \"One web summary calls the verdict advisory; the 10-Q does not\"; the 8-K of 2026-07-24 was not opened",
+   "dossier_location": "Sec 8 item 3, Sec 10",
+   "source": "CHRW 8-K filed 2026-07-24, acc 0001193125-26-315034 (Item 7.01); 10-Q acc 0001043277-26-000031 Note 7",
+   "source_value": "8-K: \"a jury in Dallas County, Texas issued an advisory verdict ... $604 million ... subject to post-trial proceedings before the court enters a final verdict\". 10-Q: 23% of damages attributed to CHRW, may be held jointly and severally liable for the whole $604M; immaterial accrual; $155M coverage per occurrence, $5M deductible",
+   "status": "FAIL",
+   "note": "The company's own 8-K uses \"advisory verdict\" (so the web summary was right); the dossier said the 10-Q does not and did not open the 8-K. Amounts ($604M, $155M, July 23) are correct; the 23% allocation is not mentioned."
+  },
+  {
+   "ticker": "CHRW",
+   "claim": "Balance sheet 30 Jun 2026: cash $154.6M; long-term debt $1,685.0M (revolver $325.0M Nov 2027; securitization $436.8M Aug 2027; 4.20% notes $598.3M Apr 2028; Series B $150.0M; Series C $175.0M); equity $1,627.7M; covenant 3.75x; DeSpir $77.8M",
+   "dossier_location": "Sec 5",
+   "source": "CHRW 10-Q acc 0001043277-26-000031; XBRL companyfacts",
+   "source_value": "Cash 154,590; long-term debt 1,685,017 (components as listed); equity 1,627,690; Credit Agreement \"maximum leverage ratio of 3.75 to 1.00\" (the Note Purchase Agreement covenant is 3.50x); DeSpir net of cash $77.8M; net debt 1,530",
+   "status": "PASS",
+   "note": "Right entity and date."
+  },
+  {
+   "ticker": "CHRW",
+   "claim": "Cash flow: FY25 OCF $914.5M, FCF about $844M; TTM FCF about $618M; H1 26 OCF $104.5M vs $333.7M; buybacks $432.2M + dividends $154.3M in H1; SBC $80.1M",
+   "dossier_location": "Sec 5",
+   "source": "CHRW XBRL; CHRW 8-K Ex-99.1 filed 2026-07-29, acc 0001043277-26-000027",
+   "source_value": "FY25 OCF 914.5; H1 26 OCF 104.5 vs 333.7; repurchases 432,183; dividends 154,300; TTM OCF 685.3",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CHRW",
+   "claim": "Reverse DCF: 9% discount, 3% terminal, growth fading over 10 years, equity-level starting FCF $700M -> implied 11.7% (8%: 7.1%; 10%: 15.7%); base ~10%; implied_vs_base above",
+   "dossier_location": "Sec 6",
+   "source": "Recomputed (10-yr linear-fade model); CHRW XBRL (SBC FY25 $80.1M; TTM FCF $618M)",
+   "source_value": "Reproduces 11.66% / 7.12% / 15.74% on a $17.19B market cap. Start $700M exceeds TTM FCF $618M and SBC is not deducted; on $620M after SBC the implied figures are 14.7% at 9% (10.0% at 8%, 18.9% at 10%); 9% is below 5.17% 10-yr UST + ~1.0-1.1 beta x 4.5% ERP (9.7-10.1%)",
+   "status": "MINOR",
+   "note": "Method gaps (start FCF not TTM, SBC not a cost, rate not tied to 5.17%) all push the implied growth higher, which reinforces \"above\" and WATCH. No summary change."
+  },
+  {
+   "ticker": "CHRW",
+   "claim": "Events checked to 2026-09-25: no CHRW 8-K after 2026-07-29; no pending deals",
+   "dossier_location": "Data basis; Sec 9",
+   "source": "CHRW 8-K filed 2026-10-05, acc 0001193125-26-413203 (Items 1.01, 7.01, 9.01)",
+   "source_value": "On 2026-10-04 CHRW signed a merger agreement to acquire RXO, Inc. (implied value $5.8bn; $17.25 cash + 0.0856 CHRW share per RXO share standard consideration; up to $4.5bn 364-day bridge facility; expected close first half of 2027; $175M RXO termination fee; company says $300M run-rate net cost synergies)",
+   "status": "MINOR",
+   "note": "Correct for the dossier cutoff but now stale: a transformative debt- and equity-funded acquisition announced after the cutoff. The dossier's leverage kill criterion (consolidated debt above 2.5x EBITDA) is likely to be breached on closing; refresh before any decision. Verdict logic (WATCH) is not contradicted."
+  },
+  {
+   "ticker": "CHRW",
+   "claim": "Verdict WATCH (price needs full freight recovery; Lipe unresolved; implied above base)",
+   "dossier_location": "Sec 1, 6",
+   "source": "Dossier logic vs filings",
+   "source_value": "Corrected valuation arithmetic strengthens \"above\"; Lipe is an unresolved advisory verdict; no contradicting fact in filings",
+   "status": "PASS",
+   "note": "No verdict change."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "Q2-26 revenue $13,526m (-1.7%), operating income $3,063m, net income to Charter $1,292m, diluted EPS $10.66, Adj EBITDA $5,449m (-4.3%), FCF $969m; Q2-25 comparatives 13,766 / 3,279 / 1,301 / 9.18 / 5,693 / 1,046",
+   "dossier_location": "Sec 4 table rows Q2-26 and Q2-25 and variance paragraph",
+   "source": "8-K Ex-99.1 acc 0001091667-26-000051 (2026-07-24)",
+   "source_value": "Revenue 13,526 vs 13,766; op income 3,063 vs 3,279; NI 1,292 vs 1,301; diluted EPS 10.66 vs 9.18; Adj EBITDA 5,449 vs 5,693; FCF 969 vs 1,046; capex 2,871 vs 2,874; OCF 3,925 vs 3,600",
+   "status": "PASS",
+   "note": "Calendar fiscal year; period labels correct (no non-calendar issue). Q2-26 variances (-$240m, -$244m, -$216m, +9.0% OCF) all reproduce."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "Q3-25, Q4-25, Q1-26 and Q3-24, Q4-24, Q1-25 rows (revenue, op income, NI, diluted EPS, Adj EBITDA, FCF) and the YoY / EBITDA-decline series -1.2% / -2.2% / -4.3%",
+   "dossier_location": "Sec 4 table",
+   "source": "8-K Ex-99.1 accs 0001091667-25-000167, -26-000016, -26-000027 (current and prior-year columns)",
+   "source_value": "Q3-25 13,672/3,131/1,137/8.34/5,561/1,621 (PY 13,795/3,335/1,280/8.82/5,647/1,619); Q4-25 13,601/3,261/1,332/10.34/5,691/773 (PY 13,926/3,389/1,466/10.10/5,760/984); Q1-26 13,597/3,208/1,163/9.17/5,637/1,372 (PY 13,735/3,237/1,217/8.42/5,763/1,564); Adj EBITDA YoY -1.2%/-2.2%/-4.3%",
+   "status": "PASS",
+   "note": "All 48 table cells and the acceleration narrative match the releases."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "TTM (Q3-25 to Q2-26) revenue $54.4bn, Adj EBITDA $22.3bn, FCF $4.7bn (prior TTM $5.2bn, -9%), capex $12.1bn; TTM FCF/NI to Charter 96%",
+   "dossier_location": "Sec 4 and Sec 6",
+   "source": "Q2-26 release acc 0001091667-26-000051 TTM columns",
+   "source_value": "TTM Adj EBITDA 22,338; TTM FCF 4,735 vs 5,213 (-9.2%); TTM capex 12,112; TTM NI to Charter 4,924; revenue sum 54,396",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "Operating metrics: Internet -172k (vs -116k), 29.4m customers -1.7% YoY, video -21k (vs -80k), mobile +406k lines (+15.5% lines, mobile service revenue +18.9%), video revenue -9.7%, programmer streaming-app costs $251m vs $67m",
+   "dossier_location": "Sec 4 variance paragraph, Sec 8",
+   "source": "Q2-26 release acc 0001091667-26-000051",
+   "source_value": "Internet net adds (172) vs (116); total 29,388 -1.7%; video (21) vs (80); mobile lines +406 vs +491, 12,540 vs 10,856 (+15.5%); video revenue 3,149 vs 3,488 (-9.7%); $251m vs $67m",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "Capex guidance: FY2026 about $11.4bn (Q2-26 and Q1-26 wording \"excluding impacts from the previously announced Cox transaction\"; Q4-25 initial), FY2025 about $11.5bn (Q3-25); no numeric revenue/EBITDA/FCF guidance",
+   "dossier_location": "Sec 5",
+   "source": "Releases accs 0001091667-26-000051, 0001091667-26-000027, -26-000016, 0001091667-25-000167",
+   "source_value": "Q2-26: \"Charter continues to expect full year 2026 capital expenditures, excluding impacts from the previously announced Cox transaction, to total approximately $11.4 billion.\" Q4-25: \"currently expects full year 2026 capital expenditures to total approximately $11.4 billion.\" Q3-25: \"approximately $11.5 billion.\"",
+   "status": "PASS",
+   "note": "All quotes verbatim; no other numeric guidance exists. CFO 8-K quote \"has not changed any of its previously provided financial outlook or financial policy\" is verbatim (acc 0001140361-26-035084)."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "Consolidated principal debt $93.8bn at 30 Jun 2026 ($12.5bn credit facility, $54.7bn IG secured, $26.7bn HY unsecured), cash $509m, EIP facility $1.6bn, leverage 4.15x at 31 Dec 2025 vs 4.0-4.5x target",
+   "dossier_location": "Sec 6",
+   "source": "10-Q acc 0001091667-26-000052 (risk factors, Liquidity, balance sheet); 10-K acc 0001091667-26-000017",
+   "source_value": "\"principal amount of our debt as of June 30, 2026 was $93.8 billion, consisting of $12.5 billion of credit facility debt, $54.7 billion of investment grade senior secured notes and $26.7 billion of high-yield senior unsecured notes\"; EIP facility 1,596; cash 509; 10-K leverage 4.15 times at 31 Dec 2025; 10-Q leverage 4.18 times at 30 Jun 2026",
+   "status": "MINOR",
+   "note": "Figures and entity (Charter consolidated, excluding Cox) correct. The 10-Q gives a newer leverage figure of 4.18x at 30 Jun 2026 which the dossier omits (inline note added)."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "Pro forma for Cox: LTD $107.2bn, current debt $2.0bn, EIP $1.6bn, cash $0.43bn, net debt about $110bn, about 4.0x pro forma EBITDA of $27.3bn; pro forma interest about $6.06bn; Cox revenue 6M-2026 $6,067m vs $6,323m (-4.0%); Cox 6M OCF less capex about $0.65bn",
+   "dossier_location": "Sec 6 and Sec 7",
+   "source": "8-K acc 0001104659-26-089522 (Ex-99.1 Cox financials, Ex-99.2 pro forma)",
+   "source_value": "Pro forma LTD 107,195; current portion 999+1,038=2,037; EIP 1,596; six-month interest 3,030 (x2=6.06bn; FY25 6,039); FY25 pro forma revenue 67,359 less operating costs 40,060 = 27,299; Cox 6M revenue 6,067 vs 6,323; Cox OCF 1,608, capex 963; incremental interest 278 (x2=0.56bn); preferred 413 a year",
+   "status": "MINOR",
+   "note": "All reproduce. The $27.3bn denominator is full-year 2025 pro forma while debt is at 30 Jun 2026; Charter TTM Adj EBITDA is 22,338 vs 22,708 for FY25 (-1.6%), so leverage on a TTM basis is slightly above 4.0x (about 4.1x). Noted inline. The XBRL cross-tie flag (107,200 vs 94,414) is not an error: it is the pro forma figure."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "New secured notes since 6 Aug: $4.75bn at 6.05%, 6.60%, 6.95%, 7.85%; exchange notes at 7.087% and 7.337%; Cox debt about $12bn",
+   "dossier_location": "Sec 6",
+   "source": "8-Ks accs 0001104659-26-098363, -26-100328, -26-094863, -26-089522",
+   "source_value": "$1.75bn 6.050% 2032 + $1.0bn 6.600% 2034 + $1.0bn 6.950% 2036 + $1.0bn 7.850% 2056 = $4.75bn; 7.087% 2038 and 7.337% 2041 exchange notes; Cox net debt and finance leases about $12.4bn",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "Closing and share count: Liberty merger and Cox closed 19 Aug 2026; Liberty merger retired 38.6m and issued 33.9m Class A shares; Cox gets $6.0bn 6.875% preferred units (conversion $477.41) and 33.6m common units; about 7.2m Liberty preferred; Class A about 114.6m; Taylor chairman for three years",
+   "dossier_location": "Sec 2, Sec 3, Sec 6",
+   "source": "8-K acc 0001140361-26-033909; 10-Q acc 0001091667-26-000052 cover",
+   "source_value": "Closing 19 Aug 2026; 38.6m retired / 33.9m issued (net -4.7m); 119,277,492 Class A at 30 Jun 2026 less 4.7m = 114.6m; 33.6m Cox units at $353.64 reference price; preferred conversion price $477.41; Taylor chair initial three-year term",
+   "status": "PASS",
+   "note": "Class A 114.6m derivation reproduces."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "A/N units about 14.7m (economic share count about 162.9m)",
+   "dossier_location": "Sec 3, Sec 7",
+   "source": "10-Q acc 0001091667-26-000052; 8-K acc 0001140361-26-033909",
+   "source_value": "A/N common unit count not stated in the filing text opened (only that A/N holds a common noncontrolling interest in Charter Holdings)",
+   "status": "UNVERIFIABLE",
+   "note": "Plausible derivation from the noncontrolling interest; not independently reproduced."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "CFO Jessica Fischer resigns, effective 15 Oct 2026; Kevin Howard interim; 8-K filed 31 Aug 2026; Series A preferred dividend payable 15 Oct 2026",
+   "dossier_location": "Sec 1, Sec 10",
+   "source": "8-Ks accs 0001140361-26-035084 and 0001091667-26-000055",
+   "source_value": "Fischer notified resignation 28 Aug, serves through 15 Oct 2026; Howard appointed 30 Aug; 8-K filed 2026-08-31; dividend payable 15 Oct 2026",
+   "status": "PASS",
+   "note": "Matches. No CHTR 8-K after 2026-09-15 in the EDGAR submissions feed fetched this session."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "Reverse DCF (Sec 7): equity FCF about $5.05bn at 14% cost of equity implies about -12% a year; enterprise view WACC 8% on $11.5bn unlevered FCF implies about -0.9% a year",
+   "dossier_location": "Sec 7 and F121 valuation_view_vs_v1",
+   "source": "Recomputed from the dossier inputs; 10-Q/10-K cash-flow statements (SBC: FY2025 $673m, 1H26 $341m, TTM about $635m)",
+   "source_value": "Dossier arithmetic reproduces (-12.1% / -0.9%). But (1) company-defined FCF is after adding back SBC (Charter alone about $0.64bn TTM, Cox SBC not included); after SBC equity FCF is about $4.4bn ($27 a share, 24% yield) and the implied rate is -9.5% at 14% and about -12.5% at 11.0% (5.17% + 1.3 x 4.5%); (2) the 14% and 8% rates are not tied to the 5.17% Treasury plus a stated ERP; (3) the unlevered cash flow adds back pre-tax interest ($6.06bn) instead of after-tax; at 25% tax with SBC deducted, unlevered FCF is about $9.4bn and the EV-based implied growth is about +1.9% at 8% WACC",
+   "status": "FAIL",
+   "note": "Method flaws (SBC, unanchored rates, pre-tax interest add-back). Direction unchanged on the equity view (price implies steep shrinkage, below the base case) but the EV view narrows from -0.9% to about +1.9%, so \"below\" is firm on equity FCF and only marginal on EV. Verdict WATCH unchanged."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "Scenario returns bear -35.6% / base +14.0% / bull +48.1% a year over 3 years (EBITDA -4%/-2%/0%, exit 4.5x/4.9x/5.6x, all FCF to debt paydown)",
+   "dossier_location": "Sec 7, F121 scenario_returns_3y",
+   "source": "Recomputed from stated inputs",
+   "source_value": "Base reproduces at about +13% a year if cumulative FCF paydown is about $17bn; bull about +46%; bear about -45% under a $3.5bn a year FCF path (the dossier -36% implies a higher FCF path); FCF paths are not stated and SBC is not deducted",
+   "status": "UNVERIFIABLE",
+   "note": "Direction and ordering reproduce; the exact bear figure depends on an unstated FCF path. No change made."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "Insider activity: five open-market purchases 28 Apr to 18 May 2026 totalling about $3.8m including the CEO; Rutledge sold about $12.7m on 28 May 2026; Liberty sales to Charter of 2.08m shares ($425m) were buyback participation",
+   "dossier_location": "Sec 11",
+   "source": "Form 4s (accs 0001398905-26-000010, 0001504089-26-000005, 0001563441-26-000011, 0001340406-26-000005, 0001289431-26-000005, 0001104659-26-061248); 10-Q acc 0001091667-26-000052 (share repurchase note)",
+   "source_value": "Purchases: Davis 5,728 @173.72, Nair 1,000 @175.46, Winfrey 3,468 x2 @172.23, Ramos 9,929 @140.93 = $3.77m (5 lines, 4 people); Rutledge sold 69,633 @144.45 + 9,100 @146.96 + 9,100 @146.92 = $12.73m on 26-27 May (Form 4 filed 28 May); Liberty: 10-Q shows 1,936,837 shares / $405m in Q2-26 and 2,807,590 / $595m in 1H26; May 12 Form 4: 1,262,078 @ $204.33 ($258m)",
+   "status": "FAIL",
+   "note": "Purchases and Rutledge dollar total pass (sale date is the filing date, not the trade date: MINOR). The Liberty figure 2.08m shares / $425m is not in the 10-Q or the Form 4s; the Q2 figure is 1.94m / $405m. Substance (buyback participation, not market selling) is correct."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "Red-flag scan: auditor KPMG, ICFR effective at 31 Dec 2025, California AG waste-disposal investigation since 2014 not expected to be material",
+   "dossier_location": "Sec 11",
+   "source": "10-K acc 0001091667-26-000017",
+   "source_value": "KPMG LLP opinion dated 29 Jan 2026; \"internal control over financial reporting was effective\"; California AG and Alameda County DA investigation commenced January 2014 (TWC Feb 2012), no material effect expected",
+   "status": "PASS",
+   "note": "Matches."
+  },
+  {
+   "ticker": "CHTR",
+   "claim": "Price history: closing price down from $427 in May 2025 to $113; 25 Sep 2026 close $112.91; market cap $13.7bn on 121m shares",
+   "dossier_location": "Sec 3, Sec 7",
+   "source": "Not on EDGAR",
+   "source_value": "Price series not available from primary sources; 121m x $112.91 = $13.7bn is arithmetically consistent; Q2-26 diluted shares 121.26m",
+   "status": "UNVERIFIABLE",
+   "note": "Market data, outside the primary-source scope."
+  }
+ ],
+ "verdict_changes": [
+  {
+   "ticker": "CCI",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Kill criterion 5 (second CEO/CFO departure within 24 months of Sep-2025 CEO appointment) is met as worded by the 2026-09-14 8-K (CFO retirement 2027-03-31, COO exit); SBC-adjusted reverse DCF leaves implied growth ~2.6-3.0% vs 3-5% base (marginal)"
+  }
+ ]
+}

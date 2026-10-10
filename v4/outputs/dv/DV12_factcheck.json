@@ -1,0 +1,1210 @@
+{
+ "as_of": "2026-10-08",
+ "scope": [
+  "CVX",
+  "D",
+  "DAL",
+  "DASH",
+  "DD",
+  "DDOG",
+  "DE",
+  "DECK",
+  "DELL",
+  "DGX"
+ ],
+ "facts": [
+  {
+   "ticker": "CVX",
+   "claim": "Q2-2026 revenue $70.06B",
+   "dossier_location": "sec 4 table",
+   "source": "CVX Q2-2026 8-K Ex-99.1, accession 0000093410-26-000162 (filed 2026-07-31)",
+   "source_value": "Total Revenues and Other Income $70,055m; Sales and other operating revenues $67,199m",
+   "status": "MINOR",
+   "note": "Figure matches the total-revenues-and-other-income line (includes $2,125m equity income); label should say so."
+  },
+  {
+   "ticker": "CVX",
+   "claim": "Q2-2026 net income $12.1B",
+   "dossier_location": "sec 4 table",
+   "source": "CVX Q2-2026 8-K Ex-99.1, accession 0000093410-26-000162 (filed 2026-07-31)",
+   "source_value": "Net income attributable to Chevron $12,072m (consolidated $12,214m)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CVX",
+   "claim": "Q2-2026 EPS $6.06 (adj.)",
+   "dossier_location": "sec 4 table",
+   "source": "CVX Q2-2026 8-K Ex-99.1, accession 0000093410-26-000162 (filed 2026-07-31)",
+   "source_value": "GAAP diluted EPS $6.11; adjusted diluted EPS $6.06",
+   "status": "PASS",
+   "note": "Labelled adj. correctly; GAAP $6.11 not shown."
+  },
+  {
+   "ticker": "CVX",
+   "claim": "Q2-2026 OCF $19.7B",
+   "dossier_location": "sec 4 table",
+   "source": "CVX Q2-2026 8-K Ex-99.1, accession 0000093410-26-000162 (filed 2026-07-31)",
+   "source_value": "CFFO $22,633m; CFFO excluding working capital $19,688m",
+   "status": "FAIL",
+   "note": "$19.7B is the ex-working-capital measure, not operating cash flow."
+  },
+  {
+   "ticker": "CVX",
+   "claim": "Production +20% YoY (+674 MBOED)",
+   "dossier_location": "sec 3",
+   "source": "CVX Q2-2026 8-K Ex-99.1, accession 0000093410-26-000162 (filed 2026-07-31)",
+   "source_value": "4,070 vs 3,396 MBOED = +674, +19.8%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CVX",
+   "claim": "Split of +674 MBOED: Hess/Guyana +275, Bakken +180, organic US onshore +110",
+   "dossier_location": "sec 3",
+   "source": "Release and 10-Q MD&A",
+   "source_value": "Release: US upstream +382, international +292; credits Hess acquisition, Permian, Gulf of America; Partitioned Zone curtailments",
+   "status": "UNVERIFIABLE",
+   "note": "Cited only to Investing.com; not in primary documents."
+  },
+  {
+   "ticker": "CVX",
+   "claim": "Hess synergies $1.5bn, 50% above target, six months ahead of schedule",
+   "dossier_location": "sec 3",
+   "source": "CVX Q2-2026 8-K Ex-99.1, accession 0000093410-26-000162 (filed 2026-07-31)",
+   "source_value": "$1.5bn run-rate synergies within one year of closing, exceeding initial target by 50%; six-months-early refers to the $3bn structural-cost target",
+   "status": "MINOR",
+   "note": "Wording conflates two targets."
+  },
+  {
+   "ticker": "CVX",
+   "claim": "Net debt $28.6B, TTM CFFO $45.3B, net debt/CFFO 0.6x",
+   "dossier_location": "sec 6",
+   "source": "CVX Q2-2026 8-K Ex-99.1, accession 0000093410-26-000162 (filed 2026-07-31) Attachment 2",
+   "source_value": "Net debt $28,545m; TTM CFFO $45,321m; 0.6x",
+   "status": "PASS",
+   "note": "28.5 rounds to 28.5 not 28.6; immaterial. Consolidated entity, 30 Jun 2026."
+  },
+  {
+   "ticker": "CVX",
+   "claim": "Debt ratio 16.3%, net debt ratio 13.1%",
+   "dossier_location": "sec 6",
+   "source": "CVX Q2-2026 8-K Ex-99.1, accession 0000093410-26-000162 (filed 2026-07-31) Attachment 2",
+   "source_value": "16.3% and 13.1%",
+   "status": "PASS",
+   "note": "Presented in dossier as aggregator figures; they match the company release exactly."
+  },
+  {
+   "ticker": "CVX",
+   "claim": "Quarterly dividend raised 5% to $1.71 (38th consecutive increase)",
+   "dossier_location": "sec 6, kill criterion 3",
+   "source": "Q4-2025 release accession 0000093410-26-000019; FY2025 10-K 0000093410-26-000078",
+   "source_value": "January 2026: +$0.07 (~4%) to $1.78, 39th consecutive increase",
+   "status": "FAIL",
+   "note": "Stale 2025 rate. Kill criterion streak should be 39."
+  },
+  {
+   "ticker": "CVX",
+   "claim": "2025 dividends paid $12.8B, buybacks $12.1B",
+   "dossier_location": "sec 6",
+   "source": "Q4-2025 release",
+   "source_value": "Dividends $12.8bn; repurchases $12.1bn",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "CVX",
+   "claim": "$10-20bn/year share-repurchase range (guided)",
+   "dossier_location": "sec 5, kill criterion 4",
+   "source": "Q2 release, 10-Q, FY2025 10-K",
+   "source_value": "No range stated; $75bn authorisation, no fixed pace; H1-2026 buybacks $5,689m",
+   "status": "UNVERIFIABLE",
+   "note": "Not company guidance in cited filings."
+  },
+  {
+   "ticker": "CVX",
+   "claim": "Next earnings 23 Oct 2026",
+   "dossier_location": "sec 10",
+   "source": "Project snapshot d4_live_snapshot (Yahoo calendar)",
+   "source_value": "2026-10-30",
+   "status": "MINOR",
+   "note": "Aggregator dates conflict; no primary source."
+  },
+  {
+   "ticker": "CVX",
+   "claim": "Implied vs base: in_line to below (forward P/E ~13x, no discount rate)",
+   "dossier_location": "sec 7",
+   "source": "Recomputed from 10-Q/release cash flows; 10-year Treasury 5.17% on 2026-09-25",
+   "source_value": "Equity reverse DCF at 8.9%: implied FCF growth 1.5% on TTM FCF, 7.9% on FY2025 FCF",
+   "status": "FAIL",
+   "note": "Method had no FCF or discount rate; restated implied_vs_base to in_line, dossier_view fair. Verdict unchanged."
+  },
+  {
+   "ticker": "CVX",
+   "claim": "Verdict logic INCLUDE-SMALL supported by evidence",
+   "dossier_location": "sec 1",
+   "source": "All above",
+   "source_value": "Evidence supports half-weight: strong balance sheet, oil-price dependent",
+   "status": "PASS",
+   "note": "Kill criterion 1 (1.5x) is only 0.2x above the 1.3x reported for 1Q-2026."
+  },
+  {
+   "ticker": "D",
+   "claim": "Merger terms: 0.8138 NEE shares per D share plus ~$360m aggregate cash, signed 15 May 2026",
+   "dossier_location": "sec 0",
+   "source": "Merger 8-K accession 0001193125-26-227930 (filed 2026-05-18)",
+   "source_value": "0.8138 shares; $360 million aggregate Cash Consideration; outside date 15 Nov 2027 extendable to 15 Aug 2028",
+   "status": "PASS",
+   "note": "Dossier cites the wrong accession (-235041, a risk-factor 8-K) for the terms: MINOR citation error."
+  },
+  {
+   "ticker": "D",
+   "claim": "Q2-2026 revenue $4,480m; GAAP EPS $0.37; operating EPS $0.79 vs $0.75",
+   "dossier_location": "sec 4",
+   "source": "D Q2-2026 8-K Ex-99, accession 0001193125-26-326812 (filed 2026-07-31)",
+   "source_value": "Operating Revenue $4,480m; GAAP net income $340m ($0.37); operating earnings $712m ($0.79) vs $649m ($0.75)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "D",
+   "claim": "Guidance \"$3.45 to $3.69 per share, midpoint of $3.57\" reaffirmed",
+   "dossier_location": "sec 5",
+   "source": "D Q2-2026 8-K Ex-99, accession 0001193125-26-326812 (filed 2026-07-31)",
+   "source_value": "\"reaffirms its full-year 2026 operating earnings guidance range of $3.45 to $3.69 per share, midpoint of $3.57 per share\"",
+   "status": "PASS",
+   "note": "Verbatim."
+  },
+  {
+   "ticker": "D",
+   "claim": "Trend: operating income and net income grew steadily; no deceleration visible",
+   "dossier_location": "sec 4",
+   "source": "D Q2-2026 8-K Ex-99, accession 0001193125-26-326812 (filed 2026-07-31); Q1-2026 10-Q XBRL 0001193125-26-200275",
+   "source_value": "GAAP net income Q1-2026 $621m vs $665m; Q2-2026 $340m vs $760m",
+   "status": "FAIL",
+   "note": "GAAP earnings fell year on year in both 2026 quarters; only non-GAAP operating EPS grew."
+  },
+  {
+   "ticker": "D",
+   "claim": "Quarterly table Q4-2024 to Q1-2026 (revenue, op income, net income)",
+   "dossier_location": "sec 4",
+   "source": "D 10-K FY2025 and 10-Q Q1-2026 XBRL",
+   "source_value": "FY2025 revenue $16,506m, NI $2,998m; Q1-2026 revenue $5,019m, op income $1,392m, NI $621m; derived Q4-2025 $4,093m / $567m",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "D",
+   "claim": "CVOW cost ~$11.7bn; final turbines by end-2027",
+   "dossier_location": "sec 5",
+   "source": "D 10-Q Q2-2026 accession 0001193125-26-327487",
+   "source_value": "Estimated total project cost approximately $11.7 billion; final turbines expected by end of 2027",
+   "status": "PASS",
+   "note": "Virginia Power asset, entity scope correctly stated. 81% complete not in filings (UNVERIFIABLE)."
+  },
+  {
+   "ticker": "D",
+   "claim": "81% complete; 53.8 GW contracted data-centre capacity",
+   "dossier_location": "sec 5",
+   "source": "10-Q and release",
+   "source_value": "Not stated in cited primary documents",
+   "status": "UNVERIFIABLE",
+   "note": "Secondary sources only."
+  },
+  {
+   "ticker": "D",
+   "claim": "LongTermDebt $39,320m (2024) to $46,332m (2025), +18%; assets $102,415m to $118,578m; equity $26,863m to $29,147m",
+   "dossier_location": "sec 6",
+   "source": "D XBRL companyfacts (10-K FY2025, 10-Q Q1-2026)",
+   "source_value": "$39,320m; $46,332m (+17.8%); $102,415m; $118,578m; $26,863m; $29,147m",
+   "status": "PASS",
+   "note": "\"Largest jump in 2019-2025 series\" cannot be fully tested (2018-2021 missing from the extract); 2016 was +$6.7bn."
+  },
+  {
+   "ticker": "D",
+   "claim": "NEE close $76.08 on 25 Sep 2026; deal value $62.31; spread 2.7%",
+   "dossier_location": "sec 0, 7",
+   "source": "Project snapshot d4_live_snapshot (Yahoo); arithmetic",
+   "source_value": "NEE $76.08; 0.8138 x 76.08 = $61.91 + $0.41 cash = $62.32; spread 2.7%",
+   "status": "PASS",
+   "note": "Annualised 1.9% is wrong: 2.7% over ~14 months is ~2.3%/yr (MINOR)."
+  },
+  {
+   "ticker": "D",
+   "claim": "Standalone reverse DCF: payout ~45% of $3.57, D1 $1.61, r 8.5%, implied growth 5.85% = in line",
+   "dossier_location": "sec 7",
+   "source": "Q1-2026 10-Q XBRL; Q2 release",
+   "source_value": "Declared dividend $0.6675/quarter = $2.67/year (75% of $3.57); implied growth 3.9%",
+   "status": "FAIL",
+   "note": "Wrong dividend input; restated implied growth 3.9%, standalone implied_vs_base below. Verdict unchanged."
+  },
+  {
+   "ticker": "D",
+   "claim": "Omitted: shareholder approval 3 Sep 2026 and 14 Sep Virginia benefits package; hearing dates",
+   "dossier_location": "sec 8-10",
+   "source": "8-K 0001193125-26-381919; 0001193125-26-390654; Form 425 0001193125-26-330689",
+   "source_value": "671.3m for / 8.6m against; four-year bill credits; VA SCC hearing from 17 Nov 2026; SC final order by 29 Jan 2027",
+   "status": "MINOR",
+   "note": "Events before the 25 Sep cut-off not reflected; no verdict effect."
+  },
+  {
+   "ticker": "D",
+   "claim": "Verdict WATCH supported (thin spread vs multi-regulator risk)",
+   "dossier_location": "sec 1",
+   "source": "All above",
+   "source_value": "Evidence supports WATCH",
+   "status": "PASS",
+   "note": "Shareholder approval removes one risk; regulatory slate remains."
+  },
+  {
+   "ticker": "DAL",
+   "claim": "Q2-2026 revenue $19,757m (+18.7%), op income $1,864m, net income $1,604m, GAAP EPS $2.44",
+   "dossier_location": "sec 4 table",
+   "source": "DAL Q2-2026 8-K Ex-99.1, accession 0000027904-26-000029 (filed 2026-07-10)",
+   "source_value": "19,757; 1,864; 1,604; 2.44 (Q2-25 revenue 16,648)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DAL",
+   "claim": "Q2-2025 op income $2,267m, margin 13.6%",
+   "dossier_location": "sec 4 table",
+   "source": "DAL Q2-2026 8-K Ex-99.1, accession 0000027904-26-000029 (filed 2026-07-10)",
+   "source_value": "Q2-25 comparative recast: operating income $2,102m, margin 12.6%",
+   "status": "MINOR",
+   "note": "Original-basis vs recast comparative; like-for-like margin fall 3.2 pts, not 4.2."
+  },
+  {
+   "ticker": "DAL",
+   "claim": "Q2-2026 non-GAAP: adjusted op income $1.6bn, 8.8%, -24%; EPS $2.44 matches GAAP",
+   "dossier_location": "sec 4 narrative",
+   "source": "DAL Q2-2026 8-K Ex-99.1, accession 0000027904-26-000029 (filed 2026-07-10)",
+   "source_value": "Adjusted op income $1,563m (8.8%, -24%); adjusted net income $1,027m; adjusted EPS $1.56 (Q2-25 $2.12)",
+   "status": "FAIL",
+   "note": "Adjusted EPS is $1.56, not $2.44; GAAP includes special items."
+  },
+  {
+   "ticker": "DAL",
+   "claim": "Q1-2026 revenue $15,854m (+12.9%), op income $501m, net loss $(289)m, EPS $(0.44)",
+   "dossier_location": "sec 4 table",
+   "source": "DAL Q1-2026 8-K Ex-99.1 accession 0000027904-26-000020",
+   "source_value": "Operating revenue $15.9bn; operating income $501m (3.2%); loss per share $(0.44)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DAL",
+   "claim": "FY2026 guide adjusted EPS $6.50-7.50, FCF $3-4bn, leverage ~2x, reaffirmed 10 Jul",
+   "dossier_location": "sec 5",
+   "source": "DAL Q2-2026 8-K Ex-99.1, accession 0000027904-26-000029 (filed 2026-07-10)",
+   "source_value": "FY EPS $6.50-$7.50; FCF $3-$4B; gross leverage approx. 2x; \"Affirming full-year guidance\"",
+   "status": "PASS",
+   "note": "H1 adjusted EPS $2.20 makes the guide back-end loaded."
+  },
+  {
+   "ticker": "DAL",
+   "claim": "Q3-2026 guide: revenue up mid-teens, 11-13% margin, EPS $2.00-2.50",
+   "dossier_location": "sec 5",
+   "source": "DAL Q2-2026 8-K Ex-99.1, accession 0000027904-26-000029 (filed 2026-07-10)",
+   "source_value": "Up mid-teens; 11%-13%; $2.00-$2.50",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DAL",
+   "claim": "Q2 guide given in Q1 release: low-teens revenue growth",
+   "dossier_location": "sec 5",
+   "source": "Q1 release 0000027904-26-000020",
+   "source_value": "Revenue up low-teens; operating margin 6-8%; EPS $1.00-1.50",
+   "status": "PASS",
+   "note": "EPS guide omitted from dossier; Q2 adjusted EPS $1.56 beat it."
+  },
+  {
+   "ticker": "DAL",
+   "claim": "Fuel $3.93 a gallon in June quarter; \"roughly doubling intra-year\"",
+   "dossier_location": "sec 5, 6",
+   "source": "DAL Q2-2026 8-K Ex-99.1, accession 0000027904-26-000029 (filed 2026-07-10)",
+   "source_value": "Adjusted fuel price $3.93, +75% YoY; Q1-2026 $2.62",
+   "status": "MINOR",
+   "note": "$3.93 correct; doubling overstated."
+  },
+  {
+   "ticker": "DAL",
+   "claim": "FCF FY2025 = OCF 8,342 - capex 4,499 = 3,843; \"slightly ahead of midpoint of FY26 guide\"",
+   "dossier_location": "sec 6",
+   "source": "DAL 10-K FY2025 accession 0000027904-26-000013",
+   "source_value": "OCF $8,342m; capex $4.5bn; company free cash flow $4.6bn (adjusted basis)",
+   "status": "MINOR",
+   "note": "Arithmetic right; company-basis FCF $4.6bn means the $3-4bn guide is a decline."
+  },
+  {
+   "ticker": "DAL",
+   "claim": "LongTermDebt $18.1bn (Q1-24) to $15.3bn (FY24) to $12.9bn (Q2-26)",
+   "dossier_location": "sec 6",
+   "source": "DAL XBRL companyfacts",
+   "source_value": "18,127; 15,347; 12,905 ($m)",
+   "status": "PASS",
+   "note": "Consolidated entity."
+  },
+  {
+   "ticker": "DAL",
+   "claim": "Pilot contract amendable 31 Dec 2026; EY auditor since 2006",
+   "dossier_location": "sec 6, 11",
+   "source": "DAL 10-K FY2025",
+   "source_value": "Delta Pilots amendable December 31, 2026; \"auditor since 2006\"",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DAL",
+   "claim": "Reverse DCF at r 10%: 3.4% on $3,843m, 4.6% on $3.5bn; implied_vs_base in_line",
+   "dossier_location": "sec 7",
+   "source": "Recomputed; 10-year Treasury 5.17% on 2026-09-25",
+   "source_value": "At 10.5% (5.17% + 1.29 x 4.14%): 4.3% and 5.6%",
+   "status": "PASS",
+   "note": "FCF method, consistent with Treasury; upper end of range reaches the 4.5% base."
+  },
+  {
+   "ticker": "DAL",
+   "claim": "Bull case: trading at a discount to own 10-year P/E history at 63.9th percentile",
+   "dossier_location": "sec 8",
+   "source": "V1 table value as quoted",
+   "source_value": "63.9th percentile = above the historical median",
+   "status": "MINOR",
+   "note": "Logic error: premium to median, not discount."
+  },
+  {
+   "ticker": "DASH",
+   "claim": "Quarterly revenue/operating income/EPS table Q3-2024 to Q2-2026",
+   "dossier_location": "sec 4",
+   "source": "DASH XBRL companyfacts; 10-Q Q2-2026 0001792789-26-000050",
+   "source_value": "Revenue 3,032/3,284/3,446/(3,955 derived)/4,036/4,454; operating income 155/163/258/(147)/151/156; EPS 0.44/0.65/0.55/0.42/0.46",
+   "status": "PASS",
+   "note": "All rows match; derived Q4 rows reproduce."
+  },
+  {
+   "ticker": "DASH",
+   "claim": "FY2024 net income $123M -> FY2025 $935M; operating income -$38M -> $723M",
+   "dossier_location": "sec 3",
+   "source": "DASH 10-K/A XBRL accession 0001792789-26-000035",
+   "source_value": "123; 935; -38; 723 ($m)",
+   "status": "PASS",
+   "note": "Mechanical cross-tie flags were against single quarters, not these annual figures."
+  },
+  {
+   "ticker": "DASH",
+   "claim": "TTM revenue $15,891M, net income $841M, OCF $2,830M",
+   "dossier_location": "sec 4",
+   "source": "DASH Q2-2026 8-K Ex-99.1, accession 0001792789-26-000048 (filed 2026-08-05)",
+   "source_value": "TTM OCF $2,830M; revenue 3,446+3,955+4,036+4,454=15,891; NI 244+213+184+200=841",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DASH",
+   "claim": "TTM capex ~$897M, FCF ~$1,933M",
+   "dossier_location": "sec 4",
+   "source": "DASH Q2-2026 8-K Ex-99.1, accession 0001792789-26-000048 (filed 2026-08-05)",
+   "source_value": "TTM purchases of property $235M + capitalized software $456M; free cash flow $2,139M",
+   "status": "FAIL",
+   "note": "Capex overstated by $206M; company FCF $2,139M."
+  },
+  {
+   "ticker": "DASH",
+   "claim": "Revenue growth 33-37% for last four quarters, Deliveroo consolidated from mid-2025",
+   "dossier_location": "sec 4",
+   "source": "DASH 10-Q Q2-2026 Note 4; Ex-99.1",
+   "source_value": "Deliveroo closed 2 Oct 2025; revenue growth 27%, 38%, 33%, 36%; ex-Deliveroo Q2-26 revenue +24%, GOV +23%, orders +17%",
+   "status": "FAIL",
+   "note": "Wrong acquisition timing; growth includes inorganic contribution."
+  },
+  {
+   "ticker": "DASH",
+   "claim": "Guidance table: Q1 GOV $31.0-31.8B / EBITDA $675-775M; Q2 $32.4-33.4B / $770-870M; Q3 $33-34B / $950M-1.1B",
+   "dossier_location": "sec 5",
+   "source": "Q4-2025 release 0001792789-26-000012; Q1 release -000036; Q2 release -000048",
+   "source_value": "Verbatim; actuals GOV $31.6B/$754M; $33.1B/$914M",
+   "status": "PASS",
+   "note": "Q2 GOV was inside range; EBITDA above range."
+  },
+  {
+   "ticker": "DASH",
+   "claim": "Balance sheet: cash $4,424M + ST $923M + LT $869M; convertible notes $2,727M; net cash $3.49B",
+   "dossier_location": "sec 6",
+   "source": "DASH Q2-2026 8-K Ex-99.1, accession 0001792789-26-000048 (filed 2026-08-05)",
+   "source_value": "4,424; 923; 869; 2,727",
+   "status": "PASS",
+   "note": "Consolidated entity."
+  },
+  {
+   "ticker": "DASH",
+   "claim": "Buybacks $162M (Q1-26) then $1,049M (Q2-26)",
+   "dossier_location": "sec 6",
+   "source": "DASH 10-Q Q2-2026 XBRL",
+   "source_value": "Q1 $162M; six months $1,049M, so Q2 $887M",
+   "status": "FAIL",
+   "note": "Cumulative figure mislabelled as Q2."
+  },
+  {
+   "ticker": "DASH",
+   "claim": "GAAP vs adjusted gap ~$758M in Q2-26 (Adj. EBITDA $914M vs GAAP operating income $156M)",
+   "dossier_location": "sec 6",
+   "source": "DASH Q2-2026 8-K Ex-99.1, accession 0001792789-26-000048 (filed 2026-08-05)",
+   "source_value": "Adjusted EBITDA $914M; operating income $156M",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DASH",
+   "claim": "California EDD assessment issued January 2023; contested",
+   "dossier_location": "sec 11",
+   "source": "DASH 10-Q Q2-2026",
+   "source_value": "\"In January 2023, the CA EDD issued an assessment ... Dashers are ... properly classified as independent contractors\"",
+   "status": "PASS",
+   "note": "$131.5M multi-state settlement remains UNVERIFIABLE in primary filings."
+  },
+  {
+   "ticker": "DASH",
+   "claim": "10-K/A filed 2026-05-06, reason not diligenced",
+   "dossier_location": "sec 11",
+   "source": "10-K/A accession 0001792789-26-000035",
+   "source_value": "Clerical omission in KPMG report (internal-control scope exclusion of SevenRooms and Deliveroo); financials unchanged",
+   "status": "PASS",
+   "note": "Open item resolved."
+  },
+  {
+   "ticker": "DASH",
+   "claim": "Reverse DCF: FCF $1,933M, 11%, 3% terminal -> 19-20% implied growth; below base 22% (cheap)",
+   "dossier_location": "sec 7",
+   "source": "Recomputed; 10-year Treasury 5.17% on 2026-09-25; SBC $1,114M TTM",
+   "source_value": "After-SBC FCF $1,025M -> 29.6% at 11.5%",
+   "status": "FAIL",
+   "note": "SBC was added back; implied_vs_base restated to above."
+  },
+  {
+   "ticker": "DASH",
+   "claim": "Verdict INCLUDE-SMALL because valuation cheap-to-fair",
+   "dossier_location": "sec 1, 7",
+   "source": "Dossier text vs restated valuation",
+   "source_value": "Dossier logic requires implied_vs_base at or below base",
+   "status": "FAIL",
+   "note": "Own logic gives WATCH."
+  },
+  {
+   "ticker": "DD",
+   "claim": "2Q26: net sales $1,819m (+4%, organic +4%), op EBITDA $448m (24.6%), GAAP EPS cont. ops $1.37, adjusted EPS $1.88",
+   "dossier_location": "sec 4 table",
+   "source": "DD Q2-2026 8-K Ex-99.1, accession 0001666700-26-000049 (filed 2026-08-04)",
+   "source_value": "1,819; 4%; 448; 24.6%; $1.37; $1.88; transaction-adjusted FCF $326m (127%)",
+   "status": "PASS",
+   "note": "Post-split basis; label correct."
+  },
+  {
+   "ticker": "DD",
+   "claim": "1Q26 and 4Q25 and 3Q25 rows (x3 conversion from pre-split EPS)",
+   "dossier_location": "sec 4 table",
+   "source": "Q1-2026 release 0001666700-26-000029; Q4-2025 -000007; Q3-2025 25-000058",
+   "source_value": "1Q26 sales 1,681 (+4%, organic 2%), adj EPS $0.55 x3 = 1.65; 4Q25 1,693, $0.46 x3 = 1.38, GAAP $(0.27) x3; 3Q25 3,072, $1.09 x3 = 3.27",
+   "status": "PASS",
+   "note": "Pre-split releases converted correctly."
+  },
+  {
+   "ticker": "DD",
+   "claim": "2Q interest expense $41m vs $84m; tax $75m on $266m (28%) vs $54m on $78m (69%)",
+   "dossier_location": "sec 4 variance",
+   "source": "DD Q2-2026 8-K Ex-99.1, accession 0001666700-26-000049 (filed 2026-08-04)",
+   "source_value": "Interest expense 41 vs 84; provision 75 / pre-tax 266; 54 / 78",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DD",
+   "claim": "Guidance 2Q26 release: FY adjusted EPS $7.17-$7.32, EBITDA $1,750-$1,770, quote raising midpoint to $7.24",
+   "dossier_location": "sec 5",
+   "source": "DD Q2-2026 8-K Ex-99.1, accession 0001666700-26-000049 (filed 2026-08-04)",
+   "source_value": "Adjusted EPS $7.17-$7.32 (2H $3.65-$3.80); operating EBITDA $1,750-$1,770; \"raising the midpoint ... adjusted EPS guidance to $7.24 per share\"",
+   "status": "PASS",
+   "note": "Verbatim."
+  },
+  {
+   "ticker": "DD",
+   "claim": "1Q26 and 4Q25 guidance rows ($2.35-$2.40; $2.25-$2.30; ~$0.59; ~$0.48) and quotes",
+   "dossier_location": "sec 5",
+   "source": "Q1-2026 and Q4-2025 releases",
+   "source_value": "Adjusted EPS ~$0.59 / $2.35-$2.40; ~$0.48 / $2.25-$2.30; quote on Aramids interest income",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DD",
+   "claim": "FY26 EPS guide up ~7% since February; about half of raise is Aramids interest income",
+   "dossier_location": "sec 5",
+   "source": "Q4-2025 and Q1-2026 releases",
+   "source_value": "$6.825 to $7.245 = +6.1%; no split disclosed",
+   "status": "MINOR",
+   "note": "Arithmetic and unsupported \"half\"."
+  },
+  {
+   "ticker": "DD",
+   "claim": "Balance sheet 30 Jun 2026: cash $1,740m, total debt $3,125m, DuPont equity $13,769m; net debt $1,385m = 0.8x EBITDA",
+   "dossier_location": "sec 6",
+   "source": "DD 10-Q accession 0001666700-26-000053",
+   "source_value": "1,740; 3,125; 13,769; 1,385/1,760 = 0.79x",
+   "status": "PASS",
+   "note": "Consolidated entity; debt carrying value."
+  },
+  {
+   "ticker": "DD",
+   "claim": "6M26 cash flow: capex $178m, dividends $163m, buybacks $275m, Aramids proceeds $1,158m",
+   "dossier_location": "sec 6",
+   "source": "DD 10-Q",
+   "source_value": "178; 163; 275; 1,158",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DD",
+   "claim": "PFAS: $455m over 15 years, ~$125m recorded, Qnity reimburses 44%, $135m reserve fund",
+   "dossier_location": "sec 11",
+   "source": "DD 8-K 0001666700-26-000055 (9 Sep 2026)",
+   "source_value": "\"$455 million, payable over a period of 15 years\"; \"probable loss of about $125 million\"; 44 percent; $135 million Reserve Fund",
+   "status": "PASS",
+   "note": "Quotes verbatim."
+  },
+  {
+   "ticker": "DD",
+   "claim": "Reverse DCF: Ke 8.5%, FCF $950m, implied 3.7% vs base 5.5% -> below",
+   "dossier_location": "sec 7",
+   "source": "Recomputed; 10-year Treasury 5.17% on 2026-09-25; SBC $30m 1H26",
+   "source_value": "At Ke 9.5% and $890m after SBC: 6.7%; base path worth about $122.7 a share",
+   "status": "FAIL",
+   "note": "Discount rate not Treasury-consistent and SBC not deducted; implied_vs_base restated to in_line."
+  },
+  {
+   "ticker": "DD",
+   "claim": "Verdict INCLUDE-SMALL: price implies less growth than evidence supports",
+   "dossier_location": "sec 1",
+   "source": "Dossier evidence vs restated valuation",
+   "source_value": "Operating evidence supports half weight; valuation in line",
+   "status": "MINOR",
+   "note": "Verdict holds, reasoning weaker; no change."
+  },
+  {
+   "ticker": "DD",
+   "claim": "Q3 earnings about 5 Nov 2026 (estimate)",
+   "dossier_location": "sec 10",
+   "source": "Project snapshot yf_calendar_earnings_date",
+   "source_value": "2026-11-05 (estimate)",
+   "status": "UNVERIFIABLE",
+   "note": "No 8-K date announcement as of 2026-10-06."
+  },
+  {
+   "ticker": "DDOG",
+   "claim": "Q2-26 revenue $1,121m (+36%), GAAP op income $5m, GAAP EPS $0.12, non-GAAP margin 23%, non-GAAP EPS $0.65, FCF $279m",
+   "dossier_location": "sec 4 table",
+   "source": "DDOG Q2-2026 8-K Ex-99.1, accession 0001628280-26-053829 (filed 2026-08-06); 10-Q XBRL",
+   "source_value": "Revenue $1,121.5m (+36%); op income $5.5m; EPS $0.12; non-GAAP op margin 23%; non-GAAP EPS $0.65; FCF $279m",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DDOG",
+   "claim": "Quarterly rows Q3-24 to Q1-26 (revenue, op income, EPS, FCF, growth)",
+   "dossier_location": "sec 4 table",
+   "source": "DDOG XBRL companyfacts and releases",
+   "source_value": "Q3-24 690.0/20.3/0.14; Q1-25 761.6/(12.4)/0.07; Q2-25 826.8/(35.5)/0.01; Q3-25 885.7/(5.8)/0.10, FCF $214m; Q4-25 953/9/0.13, FCF $291m; Q1-26 1,006.4/7.3/0.15, FCF $289m",
+   "status": "PASS",
+   "note": "Q4 values reproduce from FY2025 less nine months; TTM FCF 214+291+289+279 = 1,073."
+  },
+  {
+   "ticker": "DDOG",
+   "claim": "Guidance quotes: FY25 $3.386-3.390bn; FY26 initial $4.06-4.10bn, Q1 $951-961m; raised to $4.30-4.34bn, Q2 $1.07-1.08bn; raised to $4.45-4.47bn, Q3 $1.135-1.145bn; FY26 EPS $2.50-2.54 vs $2.36-2.44",
+   "dossier_location": "sec 5",
+   "source": "Releases 0001561550-25-000310; 0001628280-26-006645; -031677; -053829",
+   "source_value": "All ranges verbatim; FY25 actual $3.43bn; Q1 actual $1,006m; Q2 actual $1,121m",
+   "status": "PASS",
+   "note": "Derived Q3 +28-29% and Q4 ~+25% also reproduce ($4.46bn - $2.127bn - $1.14bn = $1.19bn)."
+  },
+  {
+   "ticker": "DDOG",
+   "claim": "10-Q: reduction in usage from largest customer from Q3 2026; ~70% of revenue increase from existing customers; AI-native cohort high-single-digit points",
+   "dossier_location": "sec 4, 8",
+   "source": "DDOG 10-Q period 2026-06-30, accession 0001628280-26-054458",
+   "source_value": "\"we saw a reduction in usage from our largest customer starting in the third quarter of 2026\"; \"Approximately 70% of the increase in revenue was attributable to growth from existing customers\"; AI-native cohort \"contributed high single digit percentage points\"",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DDOG",
+   "claim": "4,720 customers with ARR $100k+ = 91% of ARR; net retention low-120%s",
+   "dossier_location": "sec 2, 8",
+   "source": "DDOG 10-Q period 2026-06-30, accession 0001628280-26-054458",
+   "source_value": "About 4,720 customers, 91% of ARR (89% a year earlier); \"low-120%'s\"",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DDOG",
+   "claim": "Cash/securities $5.0bn; $1.0bn 0% converts due 2029, conversion price ~$217.60; net debt entity consolidated",
+   "dossier_location": "sec 6",
+   "source": "DDOG 10-Q period 2026-06-30, accession 0001628280-26-054458",
+   "source_value": "Cash $435.0m + marketable securities $4.6bn; convertible notes net $985.5m; conversion price approximately $217.60",
+   "status": "PASS",
+   "note": "Diluted share count already reflects the in-the-money converts, so adding $1.0bn debt to EV double-counts about 1% of EV (immaterial)."
+  },
+  {
+   "ticker": "DDOG",
+   "claim": "SBC FY25 $751m (21.9% of revenue); diluted shares 371.0m vs 358.7m (+3.4%)",
+   "dossier_location": "sec 6",
+   "source": "DDOG XBRL; 10-Q",
+   "source_value": "SBC $750.7m / revenue $3,427m = 21.9%; 371.0/358.7 = +3.4%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DDOG",
+   "claim": "H1-26 other income $97.9m vs net income $97.1m; GAAP operating income $12.8m",
+   "dossier_location": "sec 6",
+   "source": "DDOG 10-Q period 2026-06-30, accession 0001628280-26-054458",
+   "source_value": "Other income, net $97,881k; net income $97,132k; operating income $12,782k",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DDOG",
+   "claim": "Reverse DCF at 10% discount rate, 3.5% terminal: implied 25-29% revenue CAGR; implied_vs_base above",
+   "dossier_location": "sec 7",
+   "source": "Recomputed; 10-year Treasury 5.17% on 2026-09-25; beta 1.49 (snapshot)",
+   "source_value": "5.17% + Blume beta 1.32 x 4.14% = 10.6% (11.3% on raw beta); EV $95.5bn",
+   "status": "MINOR",
+   "note": "10% is below the Treasury-consistent 10.6-11.3%; a higher rate raises implied growth, so \"above\" and WATCH are unaffected. Raw TTM FCF $1,073m includes about $190m of interest income that is also in net cash."
+  },
+  {
+   "ticker": "DDOG",
+   "claim": "Verdict WATCH: price needs growth above bull case; largest customer contraction",
+   "dossier_location": "sec 1, 7",
+   "source": "Evidence above",
+   "source_value": "Evidence supports WATCH",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DDOG",
+   "claim": "Reincorporation Delaware to Nevada completed 21 Apr 2026",
+   "dossier_location": "sec 11",
+   "source": "DDOG 10-Q period 2026-06-30, accession 0001628280-26-054458",
+   "source_value": "Registrant now Nevada corporation; 8-K 0001193125-26-168261 filed 2026-04-22 (Items 3.03/5.03/5.07)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DDOG",
+   "claim": "Q3-26 earnings 5 Nov 2026 (estimate)",
+   "dossier_location": "sec 10",
+   "source": "Project snapshot yf calendar",
+   "source_value": "2026-11-05 estimate; no company announcement yet",
+   "status": "UNVERIFIABLE",
+   "note": ""
+  },
+  {
+   "ticker": "DE",
+   "claim": "Q3 FY26 (2 Aug 2026): net sales and revenues $12,608M (+5%), net income $1,379M, EPS $5.10",
+   "dossier_location": "sec 4 table",
+   "source": "DE Q3 FY2026 8-K Ex-99.1, accession 0001104659-26-098904 (filed 2026-08-20)",
+   "source_value": "$12.608 billion; $1.379 billion; $5.10; nine months $3.808 billion",
+   "status": "PASS",
+   "note": "Fiscal quarter labels correct (quarter ended 2 Aug 2026 = fiscal Q3)."
+  },
+  {
+   "ticker": "DE",
+   "claim": "Prior quarters: Q2 $13,369M/$1,773M/$6.55; Q1 $9,611M/$656M/$2.42; Q4 FY25 $12,394M/$1,065M/$3.93",
+   "dossier_location": "sec 4 table",
+   "source": "Releases 0001104659-26-064747; -017239; 0001104659-25-116130",
+   "source_value": "Net income $1.773B ($6.55); $656M ($2.42); $1.065B ($3.93); Q1 revenue $9,611M (+13%)",
+   "status": "PASS",
+   "note": "Fiscal-quarter basis (FYE 1 Nov 2026)."
+  },
+  {
+   "ticker": "DE",
+   "claim": "FY26 net income guidance ranges: $4.00-4.75B, $4.5-5.0B, $4.5-5.0B, $4.75-5.00B",
+   "dossier_location": "sec 5",
+   "source": "Four releases above",
+   "source_value": "Verbatim in each release",
+   "status": "PASS",
+   "note": "Mechanical flags were guidance figures matched to the wrong XBRL period."
+  },
+  {
+   "ticker": "DE",
+   "claim": "FY EPS history FY21-FY25: 18.99, 23.28, 34.63, 25.62, 18.50",
+   "dossier_location": "sec 4, 7",
+   "source": "DE XBRL companyfacts (10-K)",
+   "source_value": "18.99; 23.28; 34.63; 25.62; 18.50",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DE",
+   "claim": "Q3 segments: P&PA $3,998M, 13.2% (13.6%); Small Ag $3,383M, 18.4% (16.0%); C&F $3,618M, 12.1% (7.7%); FS net income $219M",
+   "dossier_location": "sec 4",
+   "source": "DE Q3 FY2026 8-K Ex-99.1, accession 0001104659-26-098904 (filed 2026-08-20)",
+   "source_value": "3,998 / 13.2% vs 13.6%; 18.4% vs 16.0%; 3,618 / 12.1% vs 7.7% / +84%; $219M vs $205M",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DE",
+   "claim": "Tariff recoveries $110M (Q3) and $382M (9M) after 20 Feb 2026 IEEPA decision",
+   "dossier_location": "sec 4",
+   "source": "DE 10-Q period 2026-08-02, accession 0001104659-26-102213 (filed 2026-08-27)",
+   "source_value": "\"$110 and $382\"; Supreme Court decision invalidating IEEPA tariffs dated February 20, 2026",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DE",
+   "claim": "Equipment operations: cash $6,607M + securities $155M; borrowings $9,324M; net debt ~$2.6B; 9M operating cash $4,012M, capex $714M, buybacks $697M, dividends $1,316M, SBC $116M",
+   "dossier_location": "sec 6",
+   "source": "DE 10-Q period 2026-08-02, accession 0001104659-26-102213 (filed 2026-08-27) supplemental consolidating data",
+   "source_value": "Cash 6,607; securities 155; operating cash 4,012; PP&E 714; repurchases 697; dividends paid 1,316; SBC 116",
+   "status": "PASS",
+   "note": "Entity scope (equipment operations vs consolidated $63.8bn borrowings) stated correctly."
+  },
+  {
+   "ticker": "DE",
+   "claim": "FTC right-to-repair suit filed 15 Jan 2025 settled 8 Jul 2026",
+   "dossier_location": "sec 6, 11",
+   "source": "DE 10-Q period 2026-08-02, accession 0001104659-26-102213 (filed 2026-08-27)",
+   "source_value": "\"On January 15, 2025, the FTC ... filed a lawsuit ... On July 8, 2026, we entered into a\" settlement",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DE",
+   "claim": "Reverse DCF uses net income $4.875B at 9%, 3% terminal: implied 13.5%/yr; implied_vs_base above",
+   "dossier_location": "sec 7",
+   "source": "Recomputed; 10-year Treasury 5.17% on 2026-09-25; 10-Q cash flow",
+   "source_value": "FCF after SBC about $4,075M: 16.0% at 9.06%",
+   "status": "FAIL",
+   "note": "Net income used as cash flow; restated number is higher; implied_vs_base stays above, verdict unchanged."
+  },
+  {
+   "ticker": "DE",
+   "claim": "Verdict WATCH: price capitalises full cycle recovery (38x FY26 guide, 30x FY27)",
+   "dossier_location": "sec 1",
+   "source": "Price $690.46 / guide EPS $18.0; Yahoo FY27 consensus",
+   "source_value": "38.4x; 30.2x on $22.84",
+   "status": "PASS",
+   "note": "Aggregator consensus for FY27, labelled as such."
+  },
+  {
+   "ticker": "DE",
+   "claim": "Q4 FY26 results and FY27 guidance about 2026-11-25 (Yahoo estimate)",
+   "dossier_location": "sec 10",
+   "source": "Project snapshot yf calendar",
+   "source_value": "2026-11-25 estimate",
+   "status": "UNVERIFIABLE",
+   "note": "No primary announcement as of 2026-10-06."
+  },
+  {
+   "ticker": "DECK",
+   "claim": "Q1 FY27 (quarter ended 30 Jun 2026): revenue $1,019.5M (+5.7%), GM 56.4%, op margin 15.2% (17.1%), EPS $0.94 vs $0.93",
+   "dossier_location": "sec 4 table",
+   "source": "DECK Q1 FY2027 8-K Ex-99.1, accession 0000910521-26-000015 (filed 2026-07-23)",
+   "source_value": "Net sales $1.020B (+5.7%); gross margin 56.4% vs 55.8%; operating income $155.3M vs $165.3M; EPS $0.94 vs $0.93",
+   "status": "PASS",
+   "note": "Fiscal quarter label correct (Deckers FYE 31 March)."
+  },
+  {
+   "ticker": "DECK",
+   "claim": "HOKA growth 18.5% -> 14.5% -> 7.7%; UGG; DTC +13.0%; international +25.5% / +8.4%",
+   "dossier_location": "sec 4, 8",
+   "source": "Q3 FY26, Q4 FY26, Q1 FY27 releases",
+   "source_value": "HOKA +18.5%, +14.5%, +7.7%; DTC +13.0%; international +25.5% (Q4) and +8.4% (Q1)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DECK",
+   "claim": "Q4 FY26 and FY26: revenue $1.119B / $5.472B, EPS $0.96 / $7.02, GM 57.6% / 57.7%",
+   "dossier_location": "sec 4, 5",
+   "source": "Q4 FY26 release accession 0000910521-26-000007",
+   "source_value": "1,119,369 / 5,472,296 ($000); EPS $0.96 / $7.02; GM 57.6% / 57.7%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DECK",
+   "claim": "Guidance rows: FY26 ~$5.35bn, EPS $6.30-6.39; $5.400-5.425bn, EPS $6.80-6.85, GM ~57%, OM ~22.5%; FY27 $5.86-5.91bn, EPS $7.30-7.45",
+   "dossier_location": "sec 5",
+   "source": "Releases of 2025-10-23, 2026-01-29, 2026-05-21",
+   "source_value": "Verbatim",
+   "status": "PASS",
+   "note": "Raise percentages (+1%, +7-8%, +100bps) check out."
+  },
+  {
+   "ticker": "DECK",
+   "claim": "Q1 FY27 guidance: EPS raised to $7.35-7.50; company did not restate revenue range",
+   "dossier_location": "sec 5",
+   "source": "DECK Q1 FY2027 8-K Ex-99.1, accession 0000910521-26-000015 (filed 2026-07-23)",
+   "source_value": "Net sales \"still expected\" $5.86-$5.91B; GM \"slightly better than 56.5%\"; OM \"slightly better than 21.5%\"; EPS $7.35-$7.50 (+5 cents)",
+   "status": "FAIL",
+   "note": "Revenue range was explicitly restated."
+  },
+  {
+   "ticker": "DECK",
+   "claim": "TTM OCF $1,193.7M, capex $75.9M, FCF $1,117.8M, TTM NI $1,014.8M; SBC about 0.8% of revenue",
+   "dossier_location": "sec 6",
+   "source": "DECK XBRL (10-K FY26 and 10-Q Q1 FY27)",
+   "source_value": "OCF 1,181.955-36.146+47.904; capex 84.623-23.940+15.222; NI 1,024.071-139.203+129.972; SBC TTM $46.8M (0.85%)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DECK",
+   "claim": "Balance sheet: no debt, cash $1.60bn, inventory $807.6M vs $849.4M; FY26 buybacks $1.075bn; ~$5bn authorisation",
+   "dossier_location": "sec 6",
+   "source": "DECK Q1 FY2027 8-K Ex-99.1, accession 0000910521-26-000015 (filed 2026-07-23); Q4 FY26 release",
+   "source_value": "Cash $1.603B; inventories $807.6M vs $849.4M; no outstanding borrowings; FY26 repurchases $1.075B; $4.7B remaining after Q1",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DECK",
+   "claim": "Domestic growth +2.7% to +3.2% in the last two prints",
+   "dossier_location": "sec 9",
+   "source": "Q4 FY26 and Q1 FY27 releases",
+   "source_value": "Domestic +0.3% (Q4 FY26), +3.2% (Q1 FY27); +2.7% was Q3 FY26",
+   "status": "FAIL",
+   "note": "Misstated; also in the F4 summary kill criterion."
+  },
+  {
+   "ticker": "DECK",
+   "claim": "Revenue growth decelerated every quarter for the last four (16.9%->9.1%->7.1%->9.6%->5.7%); FY27 GM guide below Q1 actual",
+   "dossier_location": "sec 4, 8",
+   "source": "Dossier table vs releases",
+   "source_value": "Growth rose from 7.1% to 9.6%; GM guide raised to slightly better than 56.5% (Q1 actual 56.4%)",
+   "status": "MINOR",
+   "note": "Wording errors, no numeric effect on verdict."
+  },
+  {
+   "ticker": "DECK",
+   "claim": "Valuation: qualitative only; implied_vs_base and scenarios missing",
+   "dossier_location": "sec 7",
+   "source": "Recomputed; 10-year Treasury 5.17% on 2026-09-25",
+   "source_value": "After-SBC FCF $1,071M, Ke 9.7%: implied -2.4% 10-year growth; base about +6%",
+   "status": "FAIL",
+   "note": "Added implied_vs_base = below (cheap) and scenarios -8.9% / +10.0% / +21.8%; verdict INCLUDE-SMALL unchanged."
+  },
+  {
+   "ticker": "DECK",
+   "claim": "Q2 FY27 earnings 22-23 Oct 2026 (Yahoo estimate); 8-for-8 beats; $150m->$185m tariff cost",
+   "dossier_location": "sec 8, 10",
+   "source": "Aggregators only",
+   "source_value": "Not in primary filings",
+   "status": "UNVERIFIABLE",
+   "note": "Flagged Tier-4 in the dossier."
+  },
+  {
+   "ticker": "DELL",
+   "claim": "Q2 FY27 (quarter ended 31 Jul 2026): revenue $46,971M (+58%), operating income $5,385M, GAAP EPS $6.34, non-GAAP EPS $7.04",
+   "dossier_location": "sec 4 table",
+   "source": "DELL Q2 FY2027 8-K Ex-99.1, accession 0001571996-26-000039 (filed 2026-09-01)",
+   "source_value": "Net revenue $46,971M (+58%); operating income $5,385M; EPS $6.34; non-GAAP EPS $7.04 (+203%)",
+   "status": "PASS",
+   "note": "Fiscal quarter label correct."
+  },
+  {
+   "ticker": "DELL",
+   "claim": "Q1 FY27: revenue $43,842M (+87.5%), operating income $3,656M, EPS $5.24",
+   "dossier_location": "sec 4 table",
+   "source": "Q1 FY27 release 0001571996-26-000021",
+   "source_value": "Revenue $43.8B (+88%); EPS $5.24; non-GAAP $4.86",
+   "status": "PASS",
+   "note": "Q1 GAAP EPS was above non-GAAP."
+  },
+  {
+   "ticker": "DELL",
+   "claim": "Q4 FY26 derived revenue $33,379M, EPS $3.33; FY26 $113,538M / $8,149M / $8.68",
+   "dossier_location": "sec 4 table",
+   "source": "Q4 FY26 release 0001571996-26-000003; 10-K XBRL",
+   "source_value": "Q4 revenue $33.4B, EPS $3.37; FY26 revenue $113.5B, operating income $8,149M, EPS $8.68",
+   "status": "MINOR",
+   "note": "Derived Q4 EPS $3.33 vs reported $3.37."
+  },
+  {
+   "ticker": "DELL",
+   "claim": "TTM revenue $151,197M, net income $11,378M, GAAP EPS $17.19",
+   "dossier_location": "sec 4",
+   "source": "Dell XBRL and releases",
+   "source_value": "27,005+33,379+43,842+46,971; NI 1,548+2,259+3,438+4,133 = 11,378; EPS 2.28+3.37(3.33)+5.24+6.34",
+   "status": "PASS",
+   "note": "The mechanical cross-tie flag compared the TTM total with a single-quarter XBRL value ($4,133M)."
+  },
+  {
+   "ticker": "DELL",
+   "claim": "Guidance: Q1 FY27 $165-169B / $17.90; Q2 FY27 $192.0B / $25.50 (raises +15% revenue, +42% EPS)",
+   "dossier_location": "sec 5",
+   "source": "DELL Q2 FY2027 8-K Ex-99.1, accession 0001571996-26-000039 (filed 2026-09-01)",
+   "source_value": "FY27 revenue previous $167.0B, updated $192.0B; non-GAAP EPS previous $17.90, updated $25.50; GAAP EPS $24.37 (previous $17.31)",
+   "status": "PASS",
+   "note": "GAAP guide omitted from dossier."
+  },
+  {
+   "ticker": "DELL",
+   "claim": "Debt $34.5B total ($8.5B ST, $26.0B LT), DFS debt $9.6B, core ~$24.9B; cash $11.6B + LT investments $2.7B",
+   "dossier_location": "sec 6",
+   "source": "DELL 10-Q period 2026-07-31, accession 0001571996-26-000046 (filed 2026-09-08) Note 6",
+   "source_value": "Total debt carrying $34,466M; DFS debt $9,618M; cash $11,569M; long-term investments $2,679M",
+   "status": "PASS",
+   "note": "Entity scope (DFS vs core) correctly separated."
+  },
+  {
+   "ticker": "DELL",
+   "claim": "FCF conversion: FY26 OCF $11,185M vs NI $5,936M (1.88x); capex $2,633M; quarterly OCF not isolated",
+   "dossier_location": "sec 6",
+   "source": "10-K XBRL; 10-Q cash flow",
+   "source_value": "FY26 verified; H1 FY27 OCF $6,306M vs NI $7,571M (0.83x), capex $2,202M, FCF $4,104M; Q2 FCF $986M vs $1,868M (-47%)",
+   "status": "MINOR",
+   "note": "FY26 correct; current-period conversion omitted and materially weaker."
+  },
+  {
+   "ticker": "DELL",
+   "claim": "AI backlog $95B, +$34.6B from $60.4B priced-in level",
+   "dossier_location": "sec 8, 9",
+   "source": "DELL Q2 FY2027 8-K Ex-99.1, accession 0001571996-26-000039 (filed 2026-09-01)",
+   "source_value": "Record $95B backlog; $43B entering FY27 (Q4 release); orders $60.9B and AI revenue $16.4B in Q2",
+   "status": "FAIL",
+   "note": "$60.4B is not a backlog figure; arithmetic conflated with the $60B FY27 AI revenue guide."
+  },
+  {
+   "ticker": "DELL",
+   "claim": "ISG margin not separately verified; legal proceedings check incomplete",
+   "dossier_location": "sec 9, 11",
+   "source": "DELL Q2 FY2027 8-K Ex-99.1, accession 0001571996-26-000039 (filed 2026-09-01); DELL 10-Q period 2026-07-31, accession 0001571996-26-000046 (filed 2026-09-08)",
+   "source_value": "ISG operating margin 15.0% vs 8.8%; only an ERISA 401(k) class action filed 28 Jan 2026, no reasonably possible material loss",
+   "status": "PASS",
+   "note": "Open items closed."
+  },
+  {
+   "ticker": "DELL",
+   "claim": "Reverse DCF / scenarios: non-GAAP EPS x exit multiple, no discount rate; implied_vs_base in_line; base +4.8%",
+   "dossier_location": "sec 7",
+   "source": "Recomputed; 10-year Treasury 5.17% on 2026-09-25; SBC $727M TTM",
+   "source_value": "FCF after SBC reverse DCF: 13.6%-19.3% implied vs ~10% base; GAAP-EPS scenarios -16.4% / +3.2% / +17.5%",
+   "status": "FAIL",
+   "note": "SBC added back, no cash-flow DCF; implied_vs_base restated to above."
+  },
+  {
+   "ticker": "DELL",
+   "claim": "Verdict INCLUDE-SMALL supported by in_line valuation",
+   "dossier_location": "sec 1",
+   "source": "Restated valuation and H1 cash conversion",
+   "source_value": "Base return about 3% a year, implied above base",
+   "status": "FAIL",
+   "note": "Own logic gives WATCH."
+  },
+  {
+   "ticker": "DELL",
+   "claim": "Dividend yield well under 1% (not verified to the cent)",
+   "dossier_location": "sec 6",
+   "source": "DELL Q2 FY2027 8-K Ex-99.1, accession 0001571996-26-000039 (filed 2026-09-01)",
+   "source_value": "Quarterly dividend $0.63 declared 1 Sep 2026 ($2.52 a year, 0.45% yield)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DGX",
+   "claim": "Q2-2026 (quarter ended 30 Jun 2026): revenue $3,043m (+10.2%), GAAP operating income $459m (15.1%), GAAP EPS $2.84, adjusted EPS $3.12",
+   "dossier_location": "sec 4 table",
+   "source": "Q2-2026 8-K Ex-99.1, acc 0001022079-26-000067",
+   "source_value": "Net revenues 3,043 vs 2,761 (+10.2%); operating income 459 (15.1%); diluted EPS 2.84; adjusted EPS 3.12 (+19.1%); organic revenue +10.0%",
+   "status": "PASS",
+   "note": "Calendar fiscal year; quarter label correct. Net income attributable $320m."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "Quarter rows Q3-24 to Q1-26 (revenue, GAAP op income, GAAP and adjusted EPS)",
+   "dossier_location": "sec 4 table",
+   "source": "Releases 0001022079-25-000219, -26-000005, -26-000040, -25-000172",
+   "source_value": "Q3-25 2,816/386/2.16/2.60; Q4-25 2,806/386/2.18/2.42; Q1-26 2,895/399/2.24/2.50; Q2-25 2,761/438/2.47/2.62; Q1-25 2,652/346/1.94/2.21; Q3-24 2,488/330/1.99/2.30; Q4-24 2,621/361/1.95/2.23",
+   "status": "PASS",
+   "note": "All 24 cells reproduce; y/y rates reproduce (e.g. 2,806/2,621 = +7.1%)."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "Q2 variance: requisition volume +13.1%, revenue per requisition -2.8%, adjusted op margin 16.5% vs 16.9%, prior-year other operating income $20m vs $1m expense",
+   "dossier_location": "sec 4",
+   "source": "Q2-2026 8-K Ex-99.1, acc 0001022079-26-000067",
+   "source_value": "Volume +13.1% (organic 13.0%), rev/req -2.8%, adjusted margin 16.5% vs 16.9%; other operating expense (income), net 1 vs (20)",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DGX",
+   "claim": "Guidance track record rows: 22 Jul 2025, 21 Oct 2025, 10 Feb 2026, 21 Apr 2026, 23 Jul 2026 (adjusted EPS, revenue, OCF, capex ranges)",
+   "dossier_location": "sec 5",
+   "source": "Releases 0001022079-25-000172, -25-000219, -26-000005, -26-000040, -26-000067",
+   "source_value": "All ranges appear verbatim in the cited tables, e.g. Jul-26 adjusted EPS $11.05-$11.25 vs prior $10.63-$10.83; OCF ~$1.80bn vs ~$1.75bn; capex ~$550m; the tax sentence is verbatim",
+   "status": "PASS",
+   "note": "Midpoint rise $10.60 to $11.15 = +5.2% reproduces."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "21 Oct 2025 raise; actual FY25 adjusted EPS $9.85 \"at the top end\"",
+   "dossier_location": "sec 5",
+   "source": "Release 0001022079-25-000219 and Q4-25 release 0001022079-26-000005",
+   "source_value": "Guide $9.76-$9.84; actual $9.85",
+   "status": "MINOR",
+   "note": "Actual was $0.01 above the top of the range, not at it."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "Debt and cash: cash $626m, total debt $5,642m (10 + 5,632), net debt $5,016m, leases $741m, equity 7,516 / total 7,819, NCI 303 vs 36",
+   "dossier_location": "sec 6",
+   "source": "10-Q acc 0001022079-26-000070 / Q2 release balance sheet",
+   "source_value": "Cash 626; current debt 10; LTD 5,632; lease liabilities 180 + 561 = 741; Quest equity 7,516; total 7,819; NCI 303 vs 36; goodwill 9,112; assets 16,939",
+   "status": "PASS",
+   "note": "Consolidated entity, 30 Jun 2026. Redeemable NCI of $80m sits outside equity and is not in net debt."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "New $494m 5.00% senior note due June 2036",
+   "dossier_location": "sec 6",
+   "source": "10-Q acc 0001022079-26-000070 debt note",
+   "source_value": "$500m aggregate principal, 5.00%, due June 2036, issued at $6m original issue discount (proceeds $494m); $5m issuance costs",
+   "status": "MINOR",
+   "note": "Principal is $500m; $494m is proceeds net of discount."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "TTM FCF about $1,349m (OCF 1,903 less capex 554); FY25 OCF 1,886, capex 527",
+   "dossier_location": "sec 6",
+   "source": "Releases 0001022079-26-000005, -26-000067, -25-000172",
+   "source_value": "FY25 OCF 1,886 / capex 527; H1-26 875 / 252; H1-25 858 / 225 gives TTM OCF 1,903, capex 554, FCF 1,349",
+   "status": "PASS",
+   "note": "Quarterly FCF column (e.g. Q2-26 459 = 597 - 138) also reproduces."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "TTM GAAP net income ~$1.05bn = 243 + ~245 + 251 + 319; XBRL cross-tie lead (dossier $1,050m vs nearest XBRL $334m)",
+   "dossier_location": "sec 6",
+   "source": "Releases 0001022079-25-000219, -26-000005, -26-000040, -26-000067",
+   "source_value": "Q3-25 245, Q4-25 245, Q1-26 252, Q2-26 320 = $1,062m",
+   "status": "MINOR",
+   "note": "Lead is a single-quarter comparison, not an error. The component figures are off by 1-2 each; TTM is $1,062m, not $1,050m."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "Net debt/EBITDA ~2.2x (Yahoo EBITDA $2.27bn)",
+   "dossier_location": "sec 6",
+   "source": "Releases; Yahoo snapshot 2026-09-25",
+   "source_value": "TTM GAAP operating income 1,630 + D&A 580 (570 + 293 - 283) = EBITDA 2,210; net debt 5,016 gives 2.27x; Yahoo EBITDA 2,266 gives 2.21x",
+   "status": "MINOR",
+   "note": "About 2.2-2.3x on either basis; kill criterion 4 (3.0x) unaffected."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "Diluted shares 112m vs 113m; treasury stock essentially unchanged in H1 2026 (no material net buyback)",
+   "dossier_location": "sec 6",
+   "source": "10-Q acc 0001022079-26-000070, Share Repurchases note and cash flow statement",
+   "source_value": "H1-26: repurchased 0.5m shares for $100m (cash flow $102m purchases of treasury stock) vs none in H1-25; $1.3bn authorization remaining after a new $1bn authorization in Feb 2026",
+   "status": "FAIL",
+   "note": "Net treasury balance is flat only because of share reissuance for stock compensation; the company did resume buybacks. Corrected in dossier."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "Dividend $0.86 per quarter ($3.44/yr), ~31% payout on adjusted EPS",
+   "dossier_location": "sec 6",
+   "source": "10-Q acc 0001022079-26-000070",
+   "source_value": "Declared $0.86 in Q1 and Q2 2026 vs $0.80 in each 2025 quarter; 3.44/11.15 = 30.9%",
+   "status": "PASS",
+   "note": ""
+  },
+  {
+   "ticker": "DGX",
+   "claim": "Corewell and Fresenius supply about 8 points of H1 organic volume growth; other volume about +4%",
+   "dossier_location": "sec 3",
+   "source": "10-Q acc 0001022079-26-000070 MD&A",
+   "source_value": "H1 organic volume +11.9%, approximately 8% from the two relationships, about +4% excluding them (Q2: approximately 9% and 4%); Quest holds 51% of the Corewell entity, Corewell 49%",
+   "status": "PASS",
+   "note": "Consolidated results include 100% of the entity; see valuation note on noncontrolling interests."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "About 90% of insured lives accessible; Congress \"has repeatedly acted to delay\" PAMA; RESULTS Act; all attributed to the 10-Q",
+   "dossier_location": "sec 2, sec 8",
+   "source": "10-K acc 0001022079-26-000015 (and 10-Q for legal note)",
+   "source_value": "\"access to over 90% of insured lives\" and \"Congress has repeatedly acted to delay PAMA implementation ... Medicare cuts (2021-2026)\", Results Act 2025 are in the 10-K; the 10-Q text has none of them",
+   "status": "MINOR",
+   "note": "Content is accurate, source attribution is wrong in section 2 and section 8 (10-Q cited, 10-K is the source)."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "Open inquiries: AMCA state AGs, NJ USAO Giants subpoenas, NY AG Medicaid, Texas AG CID, qui tam, 401(k) suits",
+   "dossier_location": "sec 11",
+   "source": "10-Q acc 0001022079-26-000070 legal note",
+   "source_value": "AMCA state AG investigation, NJ USAO subpoenas, NY AG subpoenas, Texas AG CID all present; the 10-Q says the NJ USAO matter was settled",
+   "status": "MINOR",
+   "note": "Dossier lists the NJ USAO subpoenas as an open inquiry; the 10-Q reports that matter as settled."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "Valuation method: reverse DCF FCF0 $1.25bn, Ke 8.5%, terminal 2.5%, 10 years: implied 5.1% vs base 6.0% = in line",
+   "dossier_location": "sec 7",
+   "source": "Recomputed from release guidance (OCF ~$1.80bn less capex ~$550m) and Yahoo snapshot (market cap $26,083m, 110.37m shares, beta 0.549)",
+   "source_value": "Reproduces 5.1%. CAPM check: 5.17% + Blume beta 0.70 x 4.14% = 8.06%, so 8.5% is conservative. FCF is before SBC (about $88m TTM) and before the 49% noncontrolling share of the Corewell entity (~$50m a year): after SBC $1,162m implied growth is 5.0% at 8.06% and 6.1% at 8.5%; after SBC and NCI $1,110m, 5.6% and 6.7%. Interest income immaterial (cash $626m)",
+   "status": "MINOR",
+   "note": "Method is FCF-based and the discount rate is above the Treasury-consistent rate, but the dossier states no ERP and does not deduct SBC. Restated implied growth stays within about 1 point of the 6.0% base, so implied_vs_base = in_line stands."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "Scenario returns 3y: bear -4%, base +6.5%, bull +13.5% (EPS $12.5 x16, $14.4 x19 + $11 dividends, $16.0 x21)",
+   "dossier_location": "sec 7 footer",
+   "source": "Recomputed",
+   "source_value": "(12.5x16+10.5)/236.32 gives -3.8%/yr; (14.4x19+11)/236.32 gives +6.4%/yr; (16x21+11.5)/236.32 gives +13.7%/yr",
+   "status": "PASS",
+   "note": "Rounding only. Base +6.4% sits below the 8.1% CAPM cost of equity and the 8.5% DCF IRR at 6% growth: valuation is thin, consistent with half weight."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "Verdict INCLUDE-SMALL (half weight) with implied_vs_base in_line",
+   "dossier_location": "sec 1, sec 7",
+   "source": "Own evidence",
+   "source_value": "Reverse DCF in_line after SBC and CAPM-consistent Ke (5.0-6.1% implied vs 6.0% base); base scenario +6.4%/yr; three guidance raises; open inquiries and PAMA named",
+   "status": "PASS",
+   "note": "Logic holds; unlike DASH and DELL the valuation is not above base. No verdict change."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "Forward P/E 19.6x (Yahoo $12.06), Labcorp 15.6x, FCF yield 4.8-5.2%, price $236.32",
+   "dossier_location": "sec 7",
+   "source": "Yahoo snapshot data/d4_live_snapshot.parquet (2026-09-25)",
+   "source_value": "Price 236.32; forward EPS 12.058; forward PE 19.60; market cap $26,083m",
+   "status": "PASS",
+   "note": "Labcorp 15.6x not checked against the snapshot: aggregator figure, treated as UNVERIFIABLE."
+  },
+  {
+   "ticker": "DGX",
+   "claim": "Q3 2026 results ~22 Oct 2026; ex-dividend ~6 Oct 2026",
+   "dossier_location": "sec 10",
+   "source": "n/a",
+   "source_value": "Yahoo estimates; no company announcement in primary sources",
+   "status": "UNVERIFIABLE",
+   "note": "Dates are estimates, flagged as such in the dossier."
+  }
+ ],
+ "verdict_changes": [
+  {
+   "ticker": "DASH",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Reverse DCF with SBC deducted implies ~30%/yr FCF growth vs 22% base and 24% organic revenue growth; valuation is above base, which was the stated reason for INCLUDE-SMALL."
+  },
+  {
+   "ticker": "DELL",
+   "old": "INCLUDE-SMALL",
+   "new": "WATCH",
+   "why": "Scenarios used non-GAAP EPS (SBC added back) and no cash-flow DCF; FCF-after-SBC reverse DCF implies 13.6-19.3% growth vs ~10% base (above), GAAP-EPS base return about 3% a year, and H1 FY27 cash conversion fell to 0.83x OCF/NI."
+  }
+ ]
+}
